@@ -66,20 +66,14 @@
   </head>
 <body class="bg-bg-light font-display text-navy antialiased min-h-screen flex flex-col relative pb-[90px]">
 <header class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-3 bg-white/80 backdrop-blur-md border-b border-border-light/50 transition-all duration-300">
-<button class="flex flex-col gap-[3px] items-center justify-center w-10 h-10 -ml-2 text-navy active:scale-95 transition-transform">
+<button id="menu-open" class="flex flex-col gap-[3px] items-center justify-center w-10 h-10 -ml-2 text-navy active:scale-95 transition-transform">
 <div class="w-5 h-[2px] bg-navy rounded-full"></div>
 <div class="w-5 h-[2px] bg-navy rounded-full"></div>
 <div class="w-5 h-[2px] bg-navy rounded-full"></div>
 <span class="text-[9px] font-bold tracking-widest mt-0.5">MENU</span>
 </button>
-<div class="flex-shrink-0 flex flex-col items-center justify-center">
-<div class="flex flex-col items-center">
-<span class="material-symbols-outlined text-3xl text-accent-gold mb-0.5" style="font-variation-settings: 'FILL' 1, 'wght' 300;">sailing</span>
-<div class="flex flex-col items-center leading-none">
-<h1 class="font-serif text-lg text-accent-gold uppercase tracking-[0.1em] font-semibold">Cabo Sailing</h1>
-<span class="font-display text-[8px] text-accent-gold/80 uppercase tracking-[0.2em] font-medium">Ocean Adventures</span>
-</div>
-</div>
+<div class="flex-shrink-0 flex items-center justify-center">
+<img src="images/cabo-sailing-n-l.png" alt="Cabo Sailing" class="h-10"/>
 </div>
 <button class="flex items-center justify-center w-10 h-10 -mr-2 bg-[#25D366] rounded-full text-white active:scale-95 transition-transform shadow-md">
 <i class="fa-brands fa-whatsapp text-2xl"></i>
@@ -281,5 +275,49 @@
 </button>
 </div>
 </nav>
+
+<!-- Menu Overlay -->
+<div id="menu-overlay" class="fixed inset-0 z-[100] flex flex-col h-screen w-full transition-opacity duration-300 hidden" style="background-color:#ffffff;background-image:url('data:image/svg+xml,%3Csvg width=\'100%25\' height=\'100%25\' viewBox=\'0 0 800 800\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'M-100,100 Q150,250 400,100 T900,100\' fill=\'none\' stroke=\'%23d4af37\' stroke-width=\'3\' stroke-opacity=\'0.15\'/%3E%3Cpath d=\'M-100,300 Q150,450 400,300 T900,300\' fill=\'none\' stroke=\'%23d4af37\' stroke-width=\'3\' stroke-opacity=\'0.12\'/%3E%3Cpath d=\'M-100,500 Q150,350 400,500 T900,500\' fill=\'none\' stroke=\'%23d4af37\' stroke-width=\'3\' stroke-opacity=\'0.1\'/%3E%3C/svg%3E');background-repeat:no-repeat;background-size:cover;">
+  <div class="flex items-center justify-between px-6 py-4 border-b border-gray-200 bg-white/80 backdrop-blur-md z-20">
+    <button id="menu-close" class="w-10 h-10 flex items-center justify-center -ml-2 text-navy hover:text-accent-gold transition-colors">
+      <span class="material-symbols-outlined text-3xl">close</span>
+    </button>
+    <div class="flex-1 flex justify-center">
+      <img src="images/cabo-sailing-n-l.png" alt="Cabo Sailing" class="h-12 w-auto object-contain"/>
+    </div>
+    <div class="w-10"></div>
+  </div>
+  <div class="flex-1 overflow-y-auto py-6 px-8 flex flex-col justify-center relative z-10">
+    <nav class="flex flex-col gap-6">
+      <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="#"><span class="material-symbols-outlined text-navy group-hover:text-accent-gold transition-colors text-2xl">home</span><span class="font-semibold">Home</span></a>
+      <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="#"><span class="material-symbols-outlined text-accent-gold group-hover:text-navy transition-colors text-2xl">diamond</span><span class="font-semibold">Private Charters</span></a>
+      <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="#"><span class="material-symbols-outlined text-navy group-hover:text-accent-gold transition-colors text-2xl">groups</span><span class="font-semibold">Shared Charters</span></a>
+      <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="#"><span class="material-symbols-outlined text-accent-gold group-hover:text-navy transition-colors text-2xl">water_drop</span><span class="font-semibold">Whale Watching</span></a>
+      <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="#"><span class="material-symbols-outlined text-navy group-hover:text-accent-gold transition-colors text-2xl">sailing</span><span class="font-semibold">Our Fleet</span></a>
+      <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="#"><span class="material-symbols-outlined text-accent-gold group-hover:text-navy transition-colors text-2xl">room_service</span><span class="font-semibold">Luxury Services</span></a>
+      <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="#"><span class="material-symbols-outlined text-navy group-hover:text-accent-gold transition-colors text-2xl">stars</span><span class="font-semibold">Special Offers</span></a>
+      <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="#"><span class="material-symbols-outlined text-accent-gold group-hover:text-navy transition-colors text-2xl">mail</span><span class="font-semibold">Contact Us</span></a>
+      <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="#"><span class="material-symbols-outlined text-navy group-hover:text-accent-gold transition-colors text-2xl">anchor</span><span class="font-semibold">About Our Crew</span></a>
+    </nav>
+  </div>
+  <div class="px-8 pb-10 pt-4 border-t border-gray-200 bg-white/80 backdrop-blur-md z-20">
+    <div class="flex justify-center gap-8 mb-6">
+      <a class="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center text-navy hover:text-accent-gold transition-colors bg-white shadow-sm" href="#"><i class="fa-brands fa-instagram text-xl"></i></a>
+      <a class="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center text-navy hover:text-accent-gold transition-colors bg-white shadow-sm" href="#"><i class="fa-brands fa-facebook-f text-xl"></i></a>
+    </div>
+    <button class="w-full bg-navy text-white py-4 rounded-xl font-bold uppercase tracking-widest text-sm flex items-center justify-center gap-2 shadow-lg">
+      <span class="material-symbols-outlined">call</span> Call Us Now
+    </button>
+  </div>
+</div>
+
+<script>
+  document.getElementById('menu-open').addEventListener('click', function() {
+    document.getElementById('menu-overlay').classList.remove('hidden');
+  });
+  document.getElementById('menu-close').addEventListener('click', function() {
+    document.getElementById('menu-overlay').classList.add('hidden');
+  });
+</script>
 
 </body></html>
