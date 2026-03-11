@@ -1,0 +1,510 @@
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Private Whale Watching Cruise - Cabo Sailing</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&amp;family=Montserrat:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "navy": "#0A1D37",
+                        "gold": "#C5A059",
+                        "light-grey": "#F8F9FA",
+                        "border-light": "#E5E7EB",
+                        "text-main": "#2D3436"
+                    },
+                    fontFamily: {
+                        "serif": ["Cinzel", "serif"],
+                        "sans": ["Montserrat", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer base {
+            body {
+                @apply font-sans text-text-main bg-white;
+                min-height: 100dvh;
+            }
+            h1, h2, h3, h4 {
+                @apply font-serif;
+            }
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.filled {
+            font-variation-settings: 'FILL' 1;
+        }
+        .safe-area-pb {
+            padding-bottom: env(safe-area-inset-bottom);
+        }
+        #highlights-toggle:checked ~ #highlights-content {
+            max-height: 500px;
+            margin-top: 1.5rem;
+            opacity: 1;
+        }
+        #highlights-toggle:checked ~ label .chevron-icon {
+            transform: rotate(90deg);
+        }
+        .faq-item input:checked ~ .faq-answer {
+            max-height: 300px;
+            margin-top: 0.75rem;
+            opacity: 1;
+        }
+        .faq-item input:checked ~ label .faq-chevron {
+            transform: rotate(180deg);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="antialiased min-h-screen flex flex-col relative pt-[72px] pb-[90px]">
+<header class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-3 bg-white/80 backdrop-blur-md border-b border-gray-200 transition-all duration-300">
+<button id="menu-open" class="flex flex-col gap-[3px] items-center justify-center w-10 h-10 -ml-2 text-navy active:scale-95 transition-transform">
+<div class="w-5 h-[2px] bg-gray-800 rounded-full"></div>
+<div class="w-5 h-[2px] bg-gray-800 rounded-full"></div>
+<div class="w-5 h-[2px] bg-gray-800 rounded-full"></div>
+<span class="text-[9px] font-bold tracking-widest mt-0.5">MENU</span>
+</button>
+<div class="flex-shrink-0 flex items-center justify-center">
+<img src="images/cabo-sailing-n-l.png" alt="Cabo Sailing" class="h-10"/>
+</div>
+<a href="https://wa.me/526241286977?text=hi%2C%20I'm%20sending%20you%20a%20message%20from%20cabosailing.com" target="_blank" class="flex items-center justify-center w-10 h-10 -mr-2 bg-[#25D366] rounded-full text-white active:scale-95 transition-transform shadow-md">
+<i class="fa-brands fa-whatsapp text-2xl"></i>
+</a>
+</header>
+<main class="flex-1 overflow-x-hidden">
+<div class="relative w-full h-[45vh] overflow-hidden">
+<div class="flex h-full">
+<div class="flex-shrink-0 w-full h-full relative">
+<img alt="Humpback whale breaching in Cabo San Lucas" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsPNXa1dALuRh7RdwyoRf93TCW1fJtrL0kaOjRkJ5k1272Y4OJqjAX5NrV2iXzb2LCN_llfLfVJtxTluIdzkWhNSqNzUPx6wAprsrWurADI6oGQbeAC2IteDT4KNG_J-4XqrPA6IQ4p5cbton6Fa-Sd8g3vPEfxR3xMElXTmmINn23_-OP89a8rgBDXbNFjJVWxlln2hbvdyZw6ajy9TauowJqm0fgMILlpngP4MzbKmss4Qy_1Zi7RmYw4XItoHpivSHT5yhBTt0"/>
+<div class="absolute inset-0 bg-gradient-to-b from-navy/30 to-transparent"></div>
+</div>
+</div>
+</div>
+<div class="relative z-10 -mt-10 px-5">
+<div class="bg-white rounded-3xl p-6 shadow-xl shadow-navy/5 border border-border-light">
+<div class="flex flex-col gap-1 mb-6">
+<div class="flex justify-between items-start">
+<h1 class="text-2xl text-navy leading-tight uppercase tracking-wide">Private Whale Watching Cruise</h1>
+<div class="flex items-center gap-1 bg-gold/10 px-2 py-1 rounded text-gold text-xs font-bold shrink-0">
+<span class="material-symbols-outlined text-[14px] filled">star</span> 5.0
+                        </div>
+</div>
+<p class="text-slate-400 text-xs font-medium flex items-center gap-1 mt-2 uppercase tracking-widest">
+<span class="material-symbols-outlined text-sm">location_on</span> Cabo San Lucas, BCS
+                    </p>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-light-grey rounded-2xl p-4 flex flex-col items-center text-center border border-border-light">
+<span class="material-symbols-outlined text-gold mb-2">schedule</span>
+<p class="text-[9px] text-slate-400 uppercase font-bold tracking-widest mb-1">Duration</p>
+<p class="text-sm font-bold text-navy">3 Hours</p>
+</div>
+<div class="bg-light-grey rounded-2xl p-4 flex flex-col items-center text-center border border-border-light">
+<span class="material-symbols-outlined text-gold mb-2">mood</span>
+<p class="text-[9px] text-slate-400 uppercase font-bold tracking-widest mb-1">Difficulty</p>
+<p class="text-sm font-bold text-navy">Easy</p>
+</div>
+</div>
+<div class="mt-6 pt-6 border-t border-border-light">
+<input class="hidden" id="highlights-toggle" type="checkbox"/>
+<label class="flex items-center justify-between cursor-pointer group" for="highlights-toggle">
+<div class="flex items-center gap-3">
+<div class="p-2 bg-navy/5 rounded-full group-active:bg-navy/10 transition-colors">
+<span class="material-symbols-outlined text-navy text-xl">auto_awesome</span>
+</div>
+<span class="text-sm font-semibold text-navy uppercase tracking-wider">Cruise Highlights</span>
+</div>
+<span class="material-symbols-outlined text-slate-300 chevron-icon transition-transform">chevron_right</span>
+</label>
+<div class="max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out" id="highlights-content">
+<div class="space-y-4">
+<div>
+<h4 class="text-xs font-bold text-navy uppercase tracking-wider mb-1">Expert Marine Guidance</h4>
+<p class="text-xs text-slate-500 leading-relaxed">Learn from certified marine biologists about whale behavior and migration patterns.</p>
+</div>
+<div>
+<h4 class="text-xs font-bold text-navy uppercase tracking-wider mb-1">Hydrophone Experience</h4>
+<p class="text-xs text-slate-500 leading-relaxed">Listen to the hauntingly beautiful songs of the humpback whales with our underwater microphones.</p>
+</div>
+<div>
+<h4 class="text-xs font-bold text-navy uppercase tracking-wider mb-1">Close Encounters</h4>
+<p class="text-xs text-slate-500 leading-relaxed">Respectful and responsible proximity to these majestic giants in their natural habitat.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-10">
+<h3 class="text-lg text-navy mb-4 uppercase tracking-wider">About this experience</h3>
+<p class="text-slate-500 leading-relaxed text-sm">
+                    Embark on an awe-inspiring encounter with nature's giants led by our expert marine guides. During whale season, witness the majestic humpback and gray whales as they migrate through the warm waters of Cabo. Our private cruise offers the ultimate intimate setting for breathtaking sightings and educational insights.
+                    <span class="text-gold font-semibold ml-1 cursor-pointer">Read more</span>
+</p>
+</div>
+<div class="mt-10">
+<div class="flex items-center gap-3 mb-6">
+<div class="w-1 h-6 bg-gold rounded-full"></div>
+<h3 class="text-lg text-navy uppercase tracking-wider">What's Included</h3>
+</div>
+<div class="grid grid-cols-1 gap-4 pl-1">
+<div class="flex items-center gap-4">
+<div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-[14px]">check</span>
+</div>
+<span class="text-slate-600 text-sm font-medium">Premium Open Bar</span>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-[14px]">check</span>
+</div>
+<span class="text-slate-600 text-sm font-medium">Light Lunch &amp; Snacks</span>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-[14px]">check</span>
+</div>
+<span class="text-slate-600 text-sm font-medium">Hydrophones to hear whales</span>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-[14px]">check</span>
+</div>
+<span class="text-slate-600 text-sm font-medium">Bilingual Marine Biologist Guide</span>
+</div>
+</div>
+</div>
+<div class="mt-12">
+<div class="flex items-end justify-between mb-6 px-1">
+<h3 class="text-lg text-navy uppercase tracking-wider">Choose Your Boat</h3>
+<span class="text-[10px] text-slate-400 uppercase font-bold tracking-widest">Swipe to explore</span>
+</div>
+<div class="flex overflow-x-auto gap-5 no-scrollbar -mx-5 px-5 pb-8">
+<div class="flex-shrink-0 w-[310px] bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5">
+<div class="h-[380px] w-full relative">
+<img alt="Sailing Yacht" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVFNNv-dZTbaU4dymWoPC2PHA3zuBWLY_wEyVwvtJsLMuEWmPGlPwJiVO1RvVkKKM475WQBRMBtMIUKCzarMt--LUsrqB8qCTUDOBhoM61dspeRrMn3cpCDVLugCjVTC7hWDHJ5xd7OK-iB7fR-hZvHA6iyVmo0uuz8M1vOiECKKuKi8IejicC5JUxDuyQTRoPafSwwmAupn_0FLcK-r2VmgaPHskKr8uDD1HjsVayN1OVqpX6ufXf7SU_-radhXUrPB1cF1hQ1bE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
+<div class="absolute bottom-5 left-6">
+<h4 class="text-white text-xl uppercase tracking-wide">Luxury Yacht 45ft</h4>
+<div class="flex items-center gap-2 text-white/80 text-[10px] mt-1 font-semibold uppercase tracking-wider">
+<span class="material-symbols-outlined text-gold text-xs">group</span>
+<span>Up to 10 Guests</span>
+</div>
+</div>
+<div class="absolute top-4 right-4 flex flex-col gap-2 items-end">
+<div class="bg-gold text-white text-[9px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Selected</div>
+<div class="bg-navy/80 backdrop-blur-sm text-gold text-[10px] font-bold px-2 py-0.5 rounded border border-gold/20 uppercase">Save 15%</div>
+</div>
+</div>
+<div class="p-6 space-y-6">
+<div class="flex justify-between items-center text-navy/60">
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-gold">waves</span>
+<span class="text-[8px] font-bold uppercase tracking-tighter">Stable</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-gold">restaurant</span>
+<span class="text-[8px] font-bold uppercase tracking-tighter">Lunch</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-gold">settings_input_antenna</span>
+<span class="text-[8px] font-bold uppercase tracking-tighter">Hydrophone</span>
+</div>
+</div>
+<div class="h-px bg-border-light"></div>
+<div class="flex items-end justify-between">
+<div class="flex flex-col">
+<span class="text-slate-400 line-through text-xs font-medium">$850.00</span>
+<div class="flex items-baseline gap-2">
+<span class="text-navy font-bold text-2xl">$722.50</span>
+<span class="text-slate-400 text-[9px] font-medium uppercase">Total</span>
+</div>
+</div>
+<button class="bg-navy text-white font-bold text-[10px] px-6 py-3 rounded-xl uppercase tracking-widest active:scale-95 transition-transform">Select</button>
+</div>
+</div>
+</div>
+<div class="flex-shrink-0 w-[310px] bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5 opacity-90">
+<div class="h-[380px] w-full relative">
+<img alt="Sailing Catamaran" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCczjSPVJiaWdFmrUKZ7u6bp9_U27W9TIbr12gmKKxednfJZy1pE5PARmIDa0mm6w-NyXj1AnOpT-Bg4ImEYZ3HBUir8Q_kIKeHFXnn-L02J2QFaAUeIxlFkXZudLbrnEZ3iIk1YFtyw0obgjzBdBTNq8JOkjE-FY-EOnUg47Y4xpUB4JiLSWOTvJeEMhPMPF5AthCcizuxz4y0Z-VhlZ3u0L_GrGkfSWW5OEpb2IPb6ZOAUHpA2xF_YT3ghZIBUUPXYBbfuAlhjhw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
+<div class="absolute bottom-5 left-6">
+<h4 class="text-white text-xl uppercase tracking-wide">Catamaran 38ft</h4>
+<div class="flex items-center gap-2 text-white/80 text-[10px] mt-1 font-semibold uppercase tracking-wider">
+<span class="material-symbols-outlined text-gold text-xs">group</span>
+<span>Up to 12 Guests</span>
+</div>
+</div>
+<div class="absolute top-4 right-4">
+<div class="bg-navy/80 backdrop-blur-sm text-gold text-[10px] font-bold px-2 py-0.5 rounded border border-gold/20 uppercase">Save 15%</div>
+</div>
+</div>
+<div class="p-6 space-y-6">
+<div class="flex justify-between items-center text-navy/60">
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-gold">deck</span>
+<span class="text-[8px] font-bold uppercase tracking-tighter">Large Deck</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-gold">liquor</span>
+<span class="text-[8px] font-bold uppercase tracking-tighter">Full Bar</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-gold">wifi</span>
+<span class="text-[8px] font-bold uppercase tracking-tighter">Wifi</span>
+</div>
+</div>
+<div class="h-px bg-border-light"></div>
+<div class="flex items-end justify-between">
+<div class="flex flex-col">
+<span class="text-slate-400 line-through text-xs font-medium">$1,000.00</span>
+<div class="flex items-baseline gap-2">
+<span class="text-navy font-bold text-2xl">$850.00</span>
+<span class="text-slate-400 text-[9px] font-medium uppercase">Total</span>
+</div>
+</div>
+<button class="bg-light-grey text-navy font-bold text-[10px] px-6 py-3 rounded-xl border border-border-light uppercase tracking-widest active:scale-95 transition-transform">Select</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-12">
+<div class="flex items-center gap-3 mb-6">
+<div class="w-1 h-6 bg-gold rounded-full"></div>
+<h3 class="text-lg text-navy uppercase tracking-wider">About Whales</h3>
+</div>
+<div class="space-y-3">
+<div class="faq-item border border-border-light rounded-2xl overflow-hidden bg-white shadow-sm">
+<input class="hidden" id="about-1" type="checkbox"/>
+<label class="flex items-center justify-between p-4 cursor-pointer" for="about-1">
+<span class="text-sm font-semibold text-navy">Interesting Facts</span>
+<span class="material-symbols-outlined text-slate-400 faq-chevron transition-transform duration-300">expand_more</span>
+</label>
+<div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
+<p class="text-xs text-slate-500 leading-relaxed">Whales are mammals that breathe air and nurse their young. Humpbacks are known for their spectacular breaching and complex songs that can travel for miles underwater.</p>
+</div>
+</div>
+<div class="faq-item border border-border-light rounded-2xl overflow-hidden bg-white shadow-sm">
+<input class="hidden" id="about-2" type="checkbox"/>
+<label class="flex items-center justify-between p-4 cursor-pointer" for="about-2">
+<span class="text-sm font-semibold text-navy">Where they come from?</span>
+<span class="material-symbols-outlined text-slate-400 faq-chevron transition-transform duration-300">expand_more</span>
+</label>
+<div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
+<p class="text-xs text-slate-500 leading-relaxed">Most whales in Cabo migrate from the cold waters of Alaska and Canada. They travel thousands of miles to the warm lagoons of Baja to mate and give birth.</p>
+</div>
+</div>
+<div class="faq-item border border-border-light rounded-2xl overflow-hidden bg-white shadow-sm">
+<input class="hidden" id="about-3" type="checkbox"/>
+<label class="flex items-center justify-between p-4 cursor-pointer" for="about-3">
+<span class="text-sm font-semibold text-navy">Whale species in Cabo</span>
+<span class="material-symbols-outlined text-slate-400 faq-chevron transition-transform duration-300">expand_more</span>
+</label>
+<div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
+<p class="text-xs text-slate-500 leading-relaxed">The most common sightings are Humpback and Gray whales. Occasionally, visitors may spot Blue whales, Orcas, or Whale Sharks in the surrounding waters.</p>
+</div>
+</div>
+<div class="faq-item border border-border-light rounded-2xl overflow-hidden bg-white shadow-sm">
+<input class="hidden" id="about-4" type="checkbox"/>
+<label class="flex items-center justify-between p-4 cursor-pointer" for="about-4">
+<span class="text-sm font-semibold text-navy">Responsible Whale Watching</span>
+<span class="material-symbols-outlined text-slate-400 faq-chevron transition-transform duration-300">expand_more</span>
+</label>
+<div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
+<p class="text-xs text-slate-500 leading-relaxed">We strictly follow environmental guidelines to minimize impact. This includes maintaining safe distances, limiting observation time, and avoiding any disruption to their natural behavior.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-12">
+<div class="flex items-center gap-3 mb-6">
+<div class="w-1 h-6 bg-gold rounded-full"></div>
+<h3 class="text-lg text-navy uppercase tracking-wider">Frequently Asked Questions</h3>
+</div>
+<div class="space-y-3">
+<div class="faq-item border border-border-light rounded-2xl overflow-hidden bg-white shadow-sm">
+<input class="hidden" id="faq-1" type="checkbox"/>
+<label class="flex items-center justify-between p-4 cursor-pointer" for="faq-1">
+<span class="text-sm font-semibold text-navy">When is the best time for sightings?</span>
+<span class="material-symbols-outlined text-slate-400 faq-chevron transition-transform duration-300">expand_more</span>
+</label>
+<div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
+<p class="text-xs text-slate-500 leading-relaxed">Whale season in Cabo runs from mid-December to mid-April. Morning tours often have calmer waters, while afternoon winds can sometimes lead to more active whale behavior.</p>
+</div>
+</div>
+<div class="faq-item border border-border-light rounded-2xl overflow-hidden bg-white shadow-sm">
+<input class="hidden" id="faq-2" type="checkbox"/>
+<label class="flex items-center justify-between p-4 cursor-pointer" for="faq-2">
+<span class="text-sm font-semibold text-navy">What should we bring?</span>
+<span class="material-symbols-outlined text-slate-400 faq-chevron transition-transform duration-300">expand_more</span>
+</label>
+<div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
+<p class="text-xs text-slate-500 leading-relaxed">We recommend sunscreen, a hat, polarized sunglasses, and a light jacket as it can get breezy on the water. Don't forget your camera!</p>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-12">
+<h3 class="text-lg text-navy mb-6 uppercase tracking-wider">What Our Guests Say</h3>
+<div class="flex overflow-x-auto gap-4 no-scrollbar -mx-5 px-5 pb-4">
+<div class="flex-shrink-0 w-[280px] bg-light-grey p-6 rounded-2xl border border-border-light">
+<div class="flex gap-0.5 mb-3">
+<span class="material-symbols-outlined text-gold text-[18px] filled">star</span>
+<span class="material-symbols-outlined text-gold text-[18px] filled">star</span>
+<span class="material-symbols-outlined text-gold text-[18px] filled">star</span>
+<span class="material-symbols-outlined text-gold text-[18px] filled">star</span>
+<span class="material-symbols-outlined text-gold text-[18px] filled">star</span>
+</div>
+<p class="text-sm text-navy font-medium italic mb-5 leading-relaxed">"An incredible experience! Our biologist guide was so knowledgeable. We saw three different breaches up close. Pure magic."</p>
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-navy/10 flex items-center justify-center">
+<span class="text-navy text-xs font-bold">SD</span>
+</div>
+<span class="text-xs font-bold text-navy uppercase tracking-wider">Sarah Davis</span>
+</div>
+</div>
+<div class="flex-shrink-0 w-[280px] bg-light-grey p-6 rounded-2xl border border-border-light">
+<div class="flex gap-0.5 mb-3">
+<span class="material-symbols-outlined text-gold text-[18px] filled">star</span>
+<span class="material-symbols-outlined text-gold text-[18px] filled">star</span>
+<span class="material-symbols-outlined text-gold text-[18px] filled">star</span>
+<span class="material-symbols-outlined text-gold text-[18px] filled">star</span>
+<span class="material-symbols-outlined text-gold text-[18px] filled">star</span>
+</div>
+<p class="text-sm text-navy font-medium italic mb-5 leading-relaxed">"The best part was hearing the whales sing through the hydrophone. Cabo Sailing truly provides a premium experience."</p>
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-navy/10 flex items-center justify-center">
+<span class="text-navy text-xs font-bold">MT</span>
+</div>
+<span class="text-xs font-bold text-navy uppercase tracking-wider">Mark Thompson</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-12 mb-10">
+<div class="flex justify-between items-end mb-5">
+<h3 class="text-lg text-navy uppercase tracking-wider">Meeting Point</h3>
+<button class="text-gold text-xs font-bold uppercase tracking-widest">Get Directions</button>
+</div>
+<div class="w-full h-52 rounded-3xl overflow-hidden relative border border-border-light shadow-md">
+<img alt="Map" class="w-full h-full object-cover grayscale opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtgQzFtJ_sPnhUhm1yZMWbQW9gKKfIJdKGvGuTWWFXumK1GW7zMdWLwfE3DIpiT15se22sOhCeRYku1k1_46xBK8k22ieZIIZZ0ZtsQSt8KZ0zGzy8YvfBL5JcH6TOAlAsUCG2IARU0ks5FcvtzDQvaE3bB8MfXFESnGTpWVfrUFZ3ECpGKGwknOxHhQeUrpxGho8OdMzOLh3TVMbXStvd9GR3TTwdmdVsPpG3OnadYzdogKyzG-9_7hIMVGEkNzq9OeraaotaK7Q"/>
+<div class="absolute inset-0 bg-navy/5 flex items-center justify-center">
+<div class="bg-white p-4 rounded-full shadow-2xl border border-gold/30">
+<span class="material-symbols-outlined text-gold text-3xl">sailing</span>
+</div>
+</div>
+</div>
+<div class="mt-4 flex items-start gap-3">
+<span class="material-symbols-outlined text-gold text-lg mt-0.5">location_on</span>
+<p class="text-slate-500 text-sm leading-relaxed">Dock F, Marina Cabo San Lucas,<br/>BCS, Mexico</p>
+</div>
+</div>
+</div>
+</main>
+<nav class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 px-6 pt-3 pb-8 z-50 shadow-[0_-2px_15px_rgba(0,0,0,0.05)]">
+<div class="flex items-center justify-between max-w-md mx-auto">
+<button class="flex flex-col items-center gap-1 transition-colors text-gray-400 active:text-gray-800">
+<span class="material-symbols-outlined text-2xl">sailing</span>
+<span class="text-[9px] font-bold uppercase tracking-wider">Fleet</span>
+</button>
+<button class="flex flex-col items-center gap-1 transition-colors text-gray-800">
+<span class="material-symbols-outlined text-2xl">calendar_today</span>
+<span class="text-[9px] font-bold uppercase tracking-wider">Charters</span>
+</button>
+<a href="tel:6197842745" class="flex flex-col items-center gap-1 transition-colors text-gray-400 active:text-gray-800">
+<span class="material-symbols-outlined text-2xl">call</span>
+<span class="text-[9px] font-bold uppercase tracking-wider">Contact</span>
+</a>
+<button class="flex flex-col items-center gap-1 transition-colors text-gray-400 active:text-gray-800">
+<span class="material-symbols-outlined text-2xl">account_circle</span>
+<span class="text-[9px] font-bold uppercase tracking-wider">Profile</span>
+</button>
+</div>
+</nav>
+
+<!-- Menu Overlay -->
+<div id="menu-overlay" class="fixed inset-0 z-[100] flex flex-col h-screen w-full transition-opacity duration-300 hidden" style="background-color:#ffffff;background-image:url('data:image/svg+xml,%3Csvg width=\'100%25\' height=\'100%25\' viewBox=\'0 0 800 800\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'M-100,100 Q150,250 400,100 T900,100\' fill=\'none\' stroke=\'%23d4af37\' stroke-width=\'3\' stroke-opacity=\'0.15\'/%3E%3Cpath d=\'M-100,300 Q150,450 400,300 T900,300\' fill=\'none\' stroke=\'%23d4af37\' stroke-width=\'3\' stroke-opacity=\'0.12\'/%3E%3Cpath d=\'M-100,500 Q150,350 400,500 T900,500\' fill=\'none\' stroke=\'%23d4af37\' stroke-width=\'3\' stroke-opacity=\'0.1\'/%3E%3C/svg%3E');background-repeat:no-repeat;background-size:cover;">
+  <div class="flex items-center justify-between px-6 py-4 border-b border-gray-200 bg-white/80 backdrop-blur-md z-20">
+    <button id="menu-close" class="w-10 h-10 flex items-center justify-center -ml-2 text-gray-800 hover:text-yellow-600 transition-colors">
+      <span class="material-symbols-outlined text-3xl">close</span>
+    </button>
+    <div class="flex-1 flex justify-center">
+      <img src="images/cabo-sailing-n-l.png" alt="Cabo Sailing" class="h-12 w-auto object-contain"/>
+    </div>
+    <div class="w-10"></div>
+  </div>
+  <div class="flex-1 overflow-y-auto py-6 px-8 flex flex-col justify-center relative z-10">
+    <nav class="flex flex-col gap-6">
+      <a class="group flex items-center gap-4 text-xl font-serif text-gray-800 hover:text-yellow-600 transition-colors" href="index.html"><span class="material-symbols-outlined text-gray-800 group-hover:text-yellow-600 transition-colors text-2xl">home</span><span class="font-semibold">Home</span></a>
+      <div>
+        <button onclick="this.nextElementSibling.classList.toggle('hidden');this.querySelector('.snorkel-arrow').classList.toggle('rotate-180')" class="group flex items-center gap-4 text-xl font-serif text-gray-800 hover:text-yellow-600 transition-colors w-full">
+          <span class="material-symbols-outlined text-yellow-600 group-hover:text-gray-800 transition-colors text-2xl">scuba_diving</span>
+          <span class="font-semibold">Snorkeling</span>
+          <span class="material-symbols-outlined snorkel-arrow ml-auto transition-transform duration-200 text-xl">expand_more</span>
+        </button>
+        <div class="hidden pl-10 mt-3 flex flex-col gap-4">
+          <a class="text-base font-serif text-gray-500 hover:text-yellow-600 transition-colors" href="private-snorkeling.html">Private</a>
+          <a class="text-base font-serif text-gray-500 hover:text-yellow-600 transition-colors" href="#">Shared</a>
+        </div>
+      </div>
+      <div>
+        <button onclick="this.nextElementSibling.classList.toggle('hidden');this.querySelector('.sunset-arrow').classList.toggle('rotate-180')" class="group flex items-center gap-4 text-xl font-serif text-gray-800 hover:text-yellow-600 transition-colors w-full">
+          <span class="material-symbols-outlined text-gray-800 group-hover:text-yellow-600 transition-colors text-2xl">wb_twilight</span>
+          <span class="font-semibold">Sunset</span>
+          <span class="material-symbols-outlined sunset-arrow ml-auto transition-transform duration-200 text-xl">expand_more</span>
+        </button>
+        <div class="hidden pl-10 mt-3 flex flex-col gap-4">
+          <a class="text-base font-serif text-gray-500 hover:text-yellow-600 transition-colors" href="private-sunset.html">Private</a>
+          <a class="text-base font-serif text-gray-500 hover:text-yellow-600 transition-colors" href="#">Shared</a>
+        </div>
+      </div>
+      <a class="group flex items-center gap-4 text-xl font-serif text-gray-800 hover:text-yellow-600 transition-colors" href="whale-watching.html"><span class="material-symbols-outlined text-yellow-600 group-hover:text-gray-800 transition-colors text-2xl">water_drop</span><span class="font-semibold">Whale Watching</span></a>
+      <a class="group flex items-center gap-4 text-xl font-serif text-gray-800 hover:text-yellow-600 transition-colors" href="#"><span class="material-symbols-outlined text-gray-800 group-hover:text-yellow-600 transition-colors text-2xl">celebration</span><span class="font-semibold">Bachelorette Party</span></a>
+      <a class="group flex items-center gap-4 text-xl font-serif text-gray-800 hover:text-yellow-600 transition-colors" href="#"><span class="material-symbols-outlined text-yellow-600 group-hover:text-gray-800 transition-colors text-2xl">scuba_diving</span><span class="font-semibold">Scuba Diving</span></a>
+      <a class="group flex items-center gap-4 text-xl font-serif text-gray-800 hover:text-yellow-600 transition-colors" href="shuttle-service.html"><span class="material-symbols-outlined text-gray-800 group-hover:text-yellow-600 transition-colors text-2xl">airport_shuttle</span><span class="font-semibold">Shuttle Service</span></a>
+      <a class="group flex items-center gap-4 text-xl font-serif text-gray-800 hover:text-yellow-600 transition-colors" href="#"><span class="material-symbols-outlined text-yellow-600 group-hover:text-gray-800 transition-colors text-2xl">sailing</span><span class="font-semibold">Our Fleet</span></a>
+      <a class="group flex items-center gap-4 text-xl font-serif text-gray-800 hover:text-yellow-600 transition-colors" href="#"><span class="material-symbols-outlined text-gray-800 group-hover:text-yellow-600 transition-colors text-2xl">room_service</span><span class="font-semibold">Luxury Services</span></a>
+      <a class="group flex items-center gap-4 text-xl font-serif text-gray-800 hover:text-yellow-600 transition-colors" href="#"><span class="material-symbols-outlined text-yellow-600 group-hover:text-gray-800 transition-colors text-2xl">stars</span><span class="font-semibold">Special Offers</span></a>
+      <a class="group flex items-center gap-4 text-xl font-serif text-gray-800 hover:text-yellow-600 transition-colors" href="#"><span class="material-symbols-outlined text-gray-800 group-hover:text-yellow-600 transition-colors text-2xl">mail</span><span class="font-semibold">Contact Us</span></a>
+      <a class="group flex items-center gap-4 text-xl font-serif text-gray-800 hover:text-yellow-600 transition-colors" href="#"><span class="material-symbols-outlined text-yellow-600 group-hover:text-gray-800 transition-colors text-2xl">anchor</span><span class="font-semibold">About Our Crew</span></a>
+    </nav>
+  </div>
+  <div class="px-8 pb-10 pt-4 border-t border-gray-200 bg-white/80 backdrop-blur-md z-20">
+    <div class="flex justify-center gap-8 mb-6">
+      <a class="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center text-gray-800 hover:text-yellow-600 transition-colors bg-white shadow-sm" href="#"><i class="fa-brands fa-instagram text-xl"></i></a>
+      <a class="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center text-gray-800 hover:text-yellow-600 transition-colors bg-white shadow-sm" href="#"><i class="fa-brands fa-facebook-f text-xl"></i></a>
+    </div>
+    <a href="tel:6197842745" class="block w-full bg-gray-800 text-white py-4 rounded-xl font-bold uppercase tracking-widest text-sm text-center shadow-lg">
+      <span style="vertical-align:middle" class="material-symbols-outlined text-base">call</span> Call Us Now
+    </a>
+  </div>
+</div>
+
+<script>
+  document.getElementById('menu-open').addEventListener('click', function() {
+    document.getElementById('menu-overlay').classList.remove('hidden');
+  });
+  document.getElementById('menu-close').addEventListener('click', function() {
+    document.getElementById('menu-overlay').classList.add('hidden');
+  });
+</script>
+
+</body></html>

@@ -75,9 +75,9 @@
 <div class="flex-shrink-0 flex items-center justify-center">
 <img src="images/cabo-sailing-n-l.png" alt="Cabo Sailing" class="h-10"/>
 </div>
-<button class="flex items-center justify-center w-10 h-10 -mr-2 bg-[#25D366] rounded-full text-white active:scale-95 transition-transform shadow-md">
+<a href="https://wa.me/526241286977?text=hi%2C%20I'm%20sending%20you%20a%20message%20from%20cabosailing.com" target="_blank" class="flex items-center justify-center w-10 h-10 -mr-2 bg-[#25D366] rounded-full text-white active:scale-95 transition-transform shadow-md">
 <i class="fa-brands fa-whatsapp text-2xl"></i>
-</button>
+</a>
 </header>
 <main class="flex-1 w-full overflow-x-hidden pt-[72px]">
 <div class="relative w-full h-[45vh] min-h-[350px]">
@@ -265,10 +265,10 @@
 <span class="material-symbols-outlined text-2xl filled">calendar_today</span>
 <span class="text-[9px] font-bold uppercase tracking-wider">Charters</span>
 </button>
-<button class="flex flex-col items-center gap-1 transition-colors text-navy/40 active:text-navy">
+<a href="tel:6197842745" class="flex flex-col items-center gap-1 transition-colors text-navy/40 active:text-navy">
 <span class="material-symbols-outlined text-2xl">call</span>
 <span class="text-[9px] font-bold uppercase tracking-wider">Contact</span>
-</button>
+</a>
 <button class="flex flex-col items-center gap-1 transition-colors text-navy/40 active:text-navy">
 <span class="material-symbols-outlined text-2xl">account_circle</span>
 <span class="text-[9px] font-bold uppercase tracking-wider">Profile</span>
@@ -290,14 +290,39 @@
   <div class="flex-1 overflow-y-auto py-6 px-8 flex flex-col justify-center relative z-10">
     <nav class="flex flex-col gap-6">
       <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="#"><span class="material-symbols-outlined text-navy group-hover:text-accent-gold transition-colors text-2xl">home</span><span class="font-semibold">Home</span></a>
-      <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="#"><span class="material-symbols-outlined text-accent-gold group-hover:text-navy transition-colors text-2xl">diamond</span><span class="font-semibold">Private Charters</span></a>
-      <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="#"><span class="material-symbols-outlined text-navy group-hover:text-accent-gold transition-colors text-2xl">groups</span><span class="font-semibold">Shared Charters</span></a>
-      <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="#"><span class="material-symbols-outlined text-accent-gold group-hover:text-navy transition-colors text-2xl">water_drop</span><span class="font-semibold">Whale Watching</span></a>
-      <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="#"><span class="material-symbols-outlined text-navy group-hover:text-accent-gold transition-colors text-2xl">sailing</span><span class="font-semibold">Our Fleet</span></a>
-      <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="#"><span class="material-symbols-outlined text-accent-gold group-hover:text-navy transition-colors text-2xl">room_service</span><span class="font-semibold">Luxury Services</span></a>
-      <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="#"><span class="material-symbols-outlined text-navy group-hover:text-accent-gold transition-colors text-2xl">stars</span><span class="font-semibold">Special Offers</span></a>
-      <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="#"><span class="material-symbols-outlined text-accent-gold group-hover:text-navy transition-colors text-2xl">mail</span><span class="font-semibold">Contact Us</span></a>
-      <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="#"><span class="material-symbols-outlined text-navy group-hover:text-accent-gold transition-colors text-2xl">anchor</span><span class="font-semibold">About Our Crew</span></a>
+      <!-- Snorkeling with dropdown -->
+      <div>
+        <button onclick="document.getElementById('snorkel-dropdown').classList.toggle('hidden');document.getElementById('snorkel-arrow').classList.toggle('rotate-180')" class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors w-full">
+          <span class="material-symbols-outlined text-accent-gold group-hover:text-navy transition-colors text-2xl">scuba_diving</span>
+          <span class="font-semibold">Snorkeling</span>
+          <span id="snorkel-arrow" class="material-symbols-outlined ml-auto transition-transform duration-200 text-xl">expand_more</span>
+        </button>
+        <div id="snorkel-dropdown" class="hidden pl-10 mt-3 flex flex-col gap-4">
+          <a class="text-base font-serif text-navy/70 hover:text-accent-gold transition-colors" href="private-snorkeling.html">Private</a>
+          <a class="text-base font-serif text-navy/70 hover:text-accent-gold transition-colors" href="shared-snorkeling.html">Shared</a>
+        </div>
+      </div>
+      <!-- Sunset with dropdown -->
+      <div>
+        <button onclick="document.getElementById('sunset-dropdown').classList.toggle('hidden');document.getElementById('sunset-arrow').classList.toggle('rotate-180')" class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors w-full">
+          <span class="material-symbols-outlined text-navy group-hover:text-accent-gold transition-colors text-2xl">wb_twilight</span>
+          <span class="font-semibold">Sunset</span>
+          <span id="sunset-arrow" class="material-symbols-outlined ml-auto transition-transform duration-200 text-xl">expand_more</span>
+        </button>
+        <div id="sunset-dropdown" class="hidden pl-10 mt-3 flex flex-col gap-4">
+          <a class="text-base font-serif text-navy/70 hover:text-accent-gold transition-colors" href="private-sunset.html">Private</a>
+          <a class="text-base font-serif text-navy/70 hover:text-accent-gold transition-colors" href="#">Shared</a>
+        </div>
+      </div>
+      <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="whale-watching.html"><span class="material-symbols-outlined text-accent-gold group-hover:text-navy transition-colors text-2xl">water_drop</span><span class="font-semibold">Whale Watching</span></a>
+      <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="#"><span class="material-symbols-outlined text-navy group-hover:text-accent-gold transition-colors text-2xl">celebration</span><span class="font-semibold">Bachelorette Party</span></a>
+      <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="#"><span class="material-symbols-outlined text-accent-gold group-hover:text-navy transition-colors text-2xl">scuba_diving</span><span class="font-semibold">Scuba Diving</span></a>
+      <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="shuttle-service.html"><span class="material-symbols-outlined text-navy group-hover:text-accent-gold transition-colors text-2xl">airport_shuttle</span><span class="font-semibold">Shuttle Service</span></a>
+      <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="#"><span class="material-symbols-outlined text-accent-gold group-hover:text-navy transition-colors text-2xl">sailing</span><span class="font-semibold">Our Fleet</span></a>
+      <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="#"><span class="material-symbols-outlined text-navy group-hover:text-accent-gold transition-colors text-2xl">room_service</span><span class="font-semibold">Luxury Services</span></a>
+      <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="#"><span class="material-symbols-outlined text-accent-gold group-hover:text-navy transition-colors text-2xl">stars</span><span class="font-semibold">Special Offers</span></a>
+      <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="#"><span class="material-symbols-outlined text-navy group-hover:text-accent-gold transition-colors text-2xl">mail</span><span class="font-semibold">Contact Us</span></a>
+      <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="#"><span class="material-symbols-outlined text-accent-gold group-hover:text-navy transition-colors text-2xl">anchor</span><span class="font-semibold">About Our Crew</span></a>
     </nav>
   </div>
   <div class="px-8 pb-10 pt-4 border-t border-gray-200 bg-white/80 backdrop-blur-md z-20">
