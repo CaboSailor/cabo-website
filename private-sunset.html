@@ -71,7 +71,7 @@
         }
     </style>
 </head>
-<body class="antialiased min-h-screen flex flex-col relative pt-[72px] pb-[90px]">
+<body class="antialiased min-h-screen flex flex-col relative pt-[72px]">
 <header class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-3 bg-white/80 backdrop-blur-md border-b border-gray-200 transition-all duration-300">
 <button id="menu-open" class="flex flex-col gap-[3px] items-center justify-center w-10 h-10 -ml-2 text-navy active:scale-95 transition-transform">
 <div class="w-5 h-[2px] bg-gray-800 rounded-full"></div>
@@ -118,7 +118,7 @@
 <div class="bg-light-grey rounded-2xl p-4 flex flex-col items-center text-center border border-border-light">
 <span class="material-symbols-outlined text-gold mb-2">schedule</span>
 <p class="text-[9px] text-slate-400 uppercase font-bold tracking-widest mb-1">Duration</p>
-<p class="text-sm font-bold text-navy">2.5 Hours</p>
+<p class="text-sm font-bold text-navy">3 Hours</p>
 </div>
 <div class="bg-light-grey rounded-2xl p-4 flex flex-col items-center text-center border border-border-light">
 <span class="material-symbols-outlined text-gold mb-2">wb_twilight</span>
@@ -172,13 +172,13 @@
 <div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center">
 <span class="material-symbols-outlined text-white text-[14px]">check</span>
 </div>
-<span class="text-slate-600 text-sm font-medium">Premium Open Bar &amp; Champagne</span>
+<span class="text-slate-600 text-sm font-medium">Premium open bar (See FAQ)</span>
 </div>
 <div class="flex items-center gap-4">
 <div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center">
 <span class="material-symbols-outlined text-white text-[14px]">check</span>
 </div>
-<span class="text-slate-600 text-sm font-medium">Gourmet Appetizer Menu</span>
+<span class="text-slate-600 text-sm font-medium">Gourmet Appetizers menu (see FAQ)</span>
 </div>
 <div class="flex items-center gap-4">
 <div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center">
@@ -194,62 +194,154 @@
 </div>
 </div>
 </div>
+<div class="mx-5 mb-6 bg-light-grey rounded-2xl p-5 border border-border-light">
+  <div class="flex items-center gap-3 mb-4">
+    <span class="material-symbols-outlined text-gold">pin_drop</span>
+    <h3 class="text-base font-bold text-navy uppercase tracking-wider">Meeting Point</h3>
+  </div>
+  <p class="text-sm font-semibold text-navy mb-1">Cabo San Lucas Marina, Dock F</p>
+  <p class="text-xs text-slate-500 leading-relaxed mb-4">Look for the Cabo Sailing team in gold shirts. Please arrive 15 minutes before departure.</p>
+  <div class="flex items-center gap-2 text-xs text-slate-500">
+    <span class="material-symbols-outlined text-gold text-base">schedule</span>
+    <span class="font-semibold text-navy">DEPARTURES: 4:00 PM (Winter) &amp; 4:30 PM (Summer) DAILY</span>
+  </div>
+</div>
 <div class="mt-12">
-<div class="flex items-end justify-between mb-6">
-<h3 class="text-lg text-navy">Choose Your Boat</h3>
-<span class="text-[10px] text-slate-400 uppercase font-bold tracking-widest">Swipe to explore</span>
-</div>
+<div class="flex items-end justify-between mb-6"><h3 class="text-lg text-navy">Choose Your Boat</h3><span class="text-[10px] text-slate-400 uppercase font-bold tracking-widest">Swipe to explore</span></div>
 <div class="flex overflow-x-auto gap-5 no-scrollbar -mx-5 px-5 pb-8">
-<div class="flex-shrink-0 w-[310px] bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5">
-<div class="h-[480px] w-full relative">
-<img alt="Sailing Yacht" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCczjSPVJiaWdFmrUKZ7u6bp9_U27W9TIbr12gmKKxednfJZy1pE5PARmIDa0mm6w-NyXj1AnOpT-Bg4ImEYZ3HBUir8Q_kIKeHFXnn-L02J2QFaAUeIxlFkXZudLbrnEZ3iIk1YFtyw0obgjzBdBTNq8JOkjE-FY-EOnUg47Y4xpUB4JiLSWOTvJeEMhPMPF5AthCcizuxz4y0Z-VhlZ3u0L_GrGkfSWW5OEpb2IPb6ZOAUHpA2xF_YT3ghZIBUUPXYBbfuAlhjhw"/>
-<div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
-<div class="absolute bottom-5 left-6">
-<h4 class="text-white text-xl">Luxury Yacht 46ft</h4>
-<div class="flex items-center gap-2 text-white/80 text-[10px] mt-1 font-semibold uppercase tracking-wider">
-<span class="material-symbols-outlined text-gold text-xs">group</span>
-<span>Max 16 Guests</span>
-</div>
-</div>
-<div class="absolute top-4 right-4 bg-gold text-white text-[9px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Selected</div>
-</div>
-<div class="p-6 space-y-6">
-<div class="flex justify-between items-center text-navy/60">
-<div class="flex flex-col items-center gap-1">
-<span class="material-symbols-outlined text-gold">liquor</span>
-<span class="text-[8px] font-bold uppercase tracking-tighter">Bar</span>
-</div>
-<div class="flex flex-col items-center gap-1">
-<span class="material-symbols-outlined text-gold">restaurant</span>
-<span class="text-[8px] font-bold uppercase tracking-tighter">Appetizers</span>
-</div>
-<div class="flex flex-col items-center gap-1">
-<span class="material-symbols-outlined text-gold">music_note</span>
-<span class="text-[8px] font-bold uppercase tracking-tighter">Music</span>
-</div>
-</div>
-<div class="h-px bg-border-light"></div>
-<div class="space-y-4">
-<div class="flex items-center justify-between">
-<span class="text-navy text-[10px] font-bold uppercase tracking-widest">Special Online Offer</span>
-<div class="bg-gold/10 text-gold text-[10px] font-bold px-2 py-0.5 rounded border border-gold/20 uppercase">Save 15%</div>
-</div>
-<div class="flex items-end justify-between">
-<div class="flex flex-col">
-<span class="text-slate-400 line-through text-xs font-medium">$750.00</span>
-<div class="flex items-baseline gap-2">
-<span class="text-navy font-bold text-2xl">$637.50</span>
-<span class="text-slate-400 text-[9px] font-medium uppercase">Total</span>
-</div>
-</div>
-<button class="bg-light-grey text-navy text-[9px] font-bold px-4 py-2 rounded-full border border-border-light uppercase tracking-widest">Menu</button>
-</div>
-</div>
-<button class="w-full bg-navy text-white font-bold text-[11px] py-4 rounded-2xl uppercase tracking-[0.2em] shadow-lg shadow-navy/20 active:scale-95 transition-transform">
-                                Select Vessel
-                            </button>
-</div>
-</div>
+  <!-- Sailing Boat 38' -->
+  <div class="flex-shrink-0 w-[310px] bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5">
+    <div class="h-[480px] w-full relative">
+      <img alt="Sailing Boat 38'" class="w-full h-full object-cover" src="images/Boats/Sailing 38'/5.Sailing 38'.jpg"/>
+      <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
+      <div class="absolute bottom-5 left-6">
+        <h4 class="text-white text-xl">Sailing Boat 38'</h4>
+        <div class="flex items-center gap-2 text-white/80 text-[10px] mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Max 10 Guests</span></div>
+      </div>
+      <div class="absolute top-4 right-4 bg-gold text-white text-[9px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Best Value</div>
+    </div>
+    <div class="p-6 space-y-6">
+      <div class="flex justify-between items-center text-navy/60">
+        <div class="flex flex-col items-center gap-1"><span class="material-symbols-outlined text-gold">dry_cleaning</span><span class="text-[8px] font-bold uppercase tracking-tighter">Towels</span></div>
+        <div class="flex flex-col items-center gap-1"><span class="material-symbols-outlined text-gold">wb_twilight</span><span class="text-[8px] font-bold uppercase tracking-tighter">Sunset</span></div>
+        <div class="flex flex-col items-center gap-1"><span class="material-symbols-outlined text-gold">liquor</span><span class="text-[8px] font-bold uppercase tracking-tighter">Bar</span></div>
+      </div>
+      <div class="h-px bg-border-light"></div>
+      <div class="space-y-4">
+        <div class="flex items-center justify-between">
+          <span class="text-navy text-[10px] font-bold uppercase tracking-widest">Private Charter</span>
+          <div class="bg-gold/10 text-gold text-[10px] font-bold px-2 py-0.5 rounded border border-gold/20 uppercase">Save 15%</div>
+        </div>
+      </div>
+      <a href="https://wa.me/526241286977?text=Hi%2C%20I'd%20like%20to%20book%20a%20Private%20Sunset%20on%20the%20Sailing%2038" target="_blank" class="block w-full bg-navy text-white font-bold text-[11px] py-4 rounded-2xl uppercase tracking-[0.2em] text-center shadow-lg">Book Now</a>
+    </div>
+  </div>
+  <!-- Sailing Boat 42' -->
+  <div class="flex-shrink-0 w-[310px] bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5">
+    <div class="h-[480px] w-full relative">
+      <img alt="Sailing Boat 42'" class="w-full h-full object-cover" src="images/Boats/Sailing 42'/24.Sailing_42.jpg"/>
+      <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
+      <div class="absolute bottom-5 left-6">
+        <h4 class="text-white text-xl">Sailing Boat 42'</h4>
+        <div class="flex items-center gap-2 text-white/80 text-[10px] mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Max 14 Guests</span></div>
+      </div>
+      <div class="absolute top-4 right-4 bg-gold text-white text-[9px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Most Popular</div>
+    </div>
+    <div class="p-6 space-y-6">
+      <div class="flex justify-between items-center text-navy/60">
+        <div class="flex flex-col items-center gap-1"><span class="material-symbols-outlined text-gold">dry_cleaning</span><span class="text-[8px] font-bold uppercase tracking-tighter">Towels</span></div>
+        <div class="flex flex-col items-center gap-1"><span class="material-symbols-outlined text-gold">wb_twilight</span><span class="text-[8px] font-bold uppercase tracking-tighter">Sunset</span></div>
+        <div class="flex flex-col items-center gap-1"><span class="material-symbols-outlined text-gold">liquor</span><span class="text-[8px] font-bold uppercase tracking-tighter">Bar</span></div>
+      </div>
+      <div class="h-px bg-border-light"></div>
+      <div class="space-y-4">
+        <div class="flex items-center justify-between">
+          <span class="text-navy text-[10px] font-bold uppercase tracking-widest">Private Charter</span>
+          <div class="bg-gold/10 text-gold text-[10px] font-bold px-2 py-0.5 rounded border border-gold/20 uppercase">Save 15%</div>
+        </div>
+      </div>
+      <a href="https://wa.me/526241286977?text=Hi%2C%20I'd%20like%20to%20book%20a%20Private%20Sunset%20on%20the%20Sailing%2042" target="_blank" class="block w-full bg-navy text-white font-bold text-[11px] py-4 rounded-2xl uppercase tracking-[0.2em] text-center shadow-lg">Book Now</a>
+    </div>
+  </div>
+  <!-- Luxury Yacht 42' -->
+  <div class="flex-shrink-0 w-[310px] bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5">
+    <div class="h-[480px] w-full relative">
+      <img alt="Luxury Yacht 42'" class="w-full h-full object-cover" src="images/Boats/Yacht 42'/1.Yacht 42'.jpg"/>
+      <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
+      <div class="absolute bottom-5 left-6">
+        <h4 class="text-white text-xl">Luxury Yacht 42'</h4>
+        <div class="flex items-center gap-2 text-white/80 text-[10px] mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Max 12 Guests</span></div>
+      </div>
+    </div>
+    <div class="p-6 space-y-6">
+      <div class="flex justify-between items-center text-navy/60">
+        <div class="flex flex-col items-center gap-1"><span class="material-symbols-outlined text-gold">dry_cleaning</span><span class="text-[8px] font-bold uppercase tracking-tighter">Towels</span></div>
+        <div class="flex flex-col items-center gap-1"><span class="material-symbols-outlined text-gold">wb_twilight</span><span class="text-[8px] font-bold uppercase tracking-tighter">Sunset</span></div>
+        <div class="flex flex-col items-center gap-1"><span class="material-symbols-outlined text-gold">liquor</span><span class="text-[8px] font-bold uppercase tracking-tighter">Bar</span></div>
+      </div>
+      <div class="h-px bg-border-light"></div>
+      <div class="space-y-4">
+        <div class="flex items-center justify-between">
+          <span class="text-navy text-[10px] font-bold uppercase tracking-widest">Private Charter</span>
+          <div class="bg-gold/10 text-gold text-[10px] font-bold px-2 py-0.5 rounded border border-gold/20 uppercase">Save 15%</div>
+        </div>
+      </div>
+      <a href="https://wa.me/526241286977?text=Hi%2C%20I'd%20like%20to%20book%20a%20Private%20Sunset%20on%20the%20Luxury%20Yacht%2042" target="_blank" class="block w-full bg-navy text-white font-bold text-[11px] py-4 rounded-2xl uppercase tracking-[0.2em] text-center shadow-lg">Book Now</a>
+    </div>
+  </div>
+  <!-- Luxury Yacht 45' -->
+  <div class="flex-shrink-0 w-[310px] bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5">
+    <div class="h-[480px] w-full relative">
+      <img alt="Luxury Yacht 45'" class="w-full h-full object-cover" src="images/Boats/Yacht 45'/1.Yacht 45'.jpg"/>
+      <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
+      <div class="absolute bottom-5 left-6">
+        <h4 class="text-white text-xl">Luxury Yacht 45'</h4>
+        <div class="flex items-center gap-2 text-white/80 text-[10px] mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Max 15 Guests</span></div>
+      </div>
+    </div>
+    <div class="p-6 space-y-6">
+      <div class="flex justify-between items-center text-navy/60">
+        <div class="flex flex-col items-center gap-1"><span class="material-symbols-outlined text-gold">dry_cleaning</span><span class="text-[8px] font-bold uppercase tracking-tighter">Towels</span></div>
+        <div class="flex flex-col items-center gap-1"><span class="material-symbols-outlined text-gold">wb_twilight</span><span class="text-[8px] font-bold uppercase tracking-tighter">Sunset</span></div>
+        <div class="flex flex-col items-center gap-1"><span class="material-symbols-outlined text-gold">liquor</span><span class="text-[8px] font-bold uppercase tracking-tighter">Bar</span></div>
+      </div>
+      <div class="h-px bg-border-light"></div>
+      <div class="space-y-4">
+        <div class="flex items-center justify-between">
+          <span class="text-navy text-[10px] font-bold uppercase tracking-widest">Private Charter</span>
+          <div class="bg-gold/10 text-gold text-[10px] font-bold px-2 py-0.5 rounded border border-gold/20 uppercase">Save 15%</div>
+        </div>
+      </div>
+      <a href="https://wa.me/526241286977?text=Hi%2C%20I'd%20like%20to%20book%20a%20Private%20Sunset%20on%20the%20Luxury%20Yacht%2045" target="_blank" class="block w-full bg-navy text-white font-bold text-[11px] py-4 rounded-2xl uppercase tracking-[0.2em] text-center shadow-lg">Book Now</a>
+    </div>
+  </div>
+  <!-- Luxury Yacht 51' -->
+  <div class="flex-shrink-0 w-[310px] bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5">
+    <div class="h-[480px] w-full relative">
+      <img alt="Luxury Yacht 51'" class="w-full h-full object-cover" src="images/Boats/Yacht 46'/1.Yacht 46'.jpg"/>
+      <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
+      <div class="absolute bottom-5 left-6">
+        <h4 class="text-white text-xl">Luxury Yacht 51'</h4>
+        <div class="flex items-center gap-2 text-white/80 text-[10px] mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Max 20 Guests</span></div>
+      </div>
+      <div class="absolute top-4 right-4 bg-gold text-white text-[9px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Flagship</div>
+    </div>
+    <div class="p-6 space-y-6">
+      <div class="flex justify-between items-center text-navy/60">
+        <div class="flex flex-col items-center gap-1"><span class="material-symbols-outlined text-gold">dry_cleaning</span><span class="text-[8px] font-bold uppercase tracking-tighter">Towels</span></div>
+        <div class="flex flex-col items-center gap-1"><span class="material-symbols-outlined text-gold">wb_twilight</span><span class="text-[8px] font-bold uppercase tracking-tighter">Sunset</span></div>
+        <div class="flex flex-col items-center gap-1"><span class="material-symbols-outlined text-gold">liquor</span><span class="text-[8px] font-bold uppercase tracking-tighter">Bar</span></div>
+      </div>
+      <div class="h-px bg-border-light"></div>
+      <div class="space-y-4">
+        <div class="flex items-center justify-between">
+          <span class="text-navy text-[10px] font-bold uppercase tracking-widest">Private Charter</span>
+          <div class="bg-gold/10 text-gold text-[10px] font-bold px-2 py-0.5 rounded border border-gold/20 uppercase">Save 15%</div>
+        </div>
+      </div>
+      <a href="https://wa.me/526241286977?text=Hi%2C%20I'd%20like%20to%20book%20a%20Private%20Sunset%20on%20the%20Luxury%20Yacht%2051" target="_blank" class="block w-full bg-navy text-white font-bold text-[11px] py-4 rounded-2xl uppercase tracking-[0.2em] text-center shadow-lg">Book Now</a>
+    </div>
+  </div>
 </div>
 </div>
 <div class="mt-12">
@@ -313,56 +405,37 @@
       <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCczjSPVJiaWdFmrUKZ7u6bp9_U27W9TIbr12gmKKxednfJZy1pE5PARmIDa0mm6w-NyXj1AnOpT-Bg4ImEYZ3HBUir8Q_kIKeHFXnn-L02J2QFaAUeIxlFkXZudLbrnEZ3iIk1YFtyw0obgjzBdBTNq8JOkjE-FY-EOnUg47Y4xpUB4JiLSWOTvJeEMhPMPF5AthCcizuxz4y0Z-VhlZ3u0L_GrGkfSWW5OEpb2IPb6ZOAUHpA2xF_YT3ghZIBUUPXYBbfuAlhjhw" alt="Sunset Sailing at Land's End" class="w-full h-48 object-cover rounded-2xl mb-4"/>
       <p class="text-sm text-slate-500 leading-relaxed mb-3">Land's End at sunset is one of the most breathtaking sights in all of Mexico. As the sun dips below the Pacific horizon, the famous Arch glows in shades of amber and rose — a moment that stays with you long after the voyage ends. Our private sunset charter anchors at the perfect vantage point to give you and your guests an unobstructed, unforgettable view.</p>
       <p class="text-sm text-slate-500 leading-relaxed">With just your group on board, a professional crew, and an open bar flowing with premium cocktails, this is the definition of a private luxury experience on the water.</p>
-      <div class="flex gap-6 mt-6">
-        <div><p class="text-xl font-bold text-navy font-serif">2hrs</p><p class="text-[10px] text-slate-400 uppercase tracking-widest font-bold mt-1">Duration</p></div>
-        <div class="w-px bg-border-light"></div>
-        <div><p class="text-xl font-bold text-navy font-serif">Private</p><p class="text-[10px] text-slate-400 uppercase tracking-widest font-bold mt-1">Charter</p></div>
-        <div class="w-px bg-border-light"></div>
-        <div><p class="text-xl font-bold text-navy font-serif">Romantic</p><p class="text-[10px] text-slate-400 uppercase tracking-widest font-bold mt-1">Experience</p></div>
-      </div>
     </div>
 
-    <!-- Meeting Point -->
-    <div class="px-5 pb-10 mt-10">
-      <div class="flex justify-between items-end mb-5">
-        <h3 class="text-lg text-navy">Meeting Point</h3>
-        <button class="text-gold text-xs font-bold uppercase tracking-widest">Get Directions</button>
+<div class="px-5 pb-32">
+  <div class="flex items-center gap-3 mb-4"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-lg text-navy">What Our Guests Say</h3></div>
+  <div class="relative overflow-hidden">
+    <div id="ps-carousel" class="flex transition-transform duration-500 ease-in-out">
+      <div class="min-w-full bg-light-grey rounded-2xl p-5 border border-border-light">
+        <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
+        <p class="text-sm text-slate-600 leading-relaxed italic mb-3">"We booked the private sunset for our anniversary and it was absolutely magical. The crew was incredible, the open bar was generous, and watching the sun set over the Arch with just the two of us was a moment we'll treasure forever."</p>
+        <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center text-white text-xs font-bold">MR</div><div><p class="text-xs font-bold text-navy">Michael &amp; Rosa</p><p class="text-[10px] text-slate-400">New York, NY</p></div></div>
       </div>
-      <div class="w-full h-52 rounded-3xl overflow-hidden relative border border-border-light shadow-md">
-        <img alt="Map" class="w-full h-full object-cover grayscale opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtgQzFtJ_sPnhUhm1yZMWbQW9gKKfIJdKGvGuTWWFXumK1GW7zMdWLwfE3DIpiT15se22sOhCeRYku1k1_46xBK8k22ieZIIZZ0ZtsQSt8KZ0zGzy8YvfBL5JcH6TOAlAsUCG2IARU0ks5FcvtzDQvaE3bB8MfXFESnGTpWVfrUFZ3ECpGKGwknOxHhQeUrpxGho8OdMzOLh3TVMbXStvd9GR3TTwdmdVsPpG3OnadYzdogKyzG-9_7hIMVGEkNzq9OeraaotaK7Q"/>
-        <div class="absolute inset-0 bg-navy/5 flex items-center justify-center">
-          <div class="bg-white p-4 rounded-full shadow-2xl border border-gold/30">
-            <span class="material-symbols-outlined text-gold text-3xl">sailing</span>
-          </div>
-        </div>
+      <div class="min-w-full bg-light-grey rounded-2xl p-5 border border-border-light">
+        <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
+        <p class="text-sm text-slate-600 leading-relaxed italic mb-3">"Booked the private sunset for our group of 8 and it was the highlight of our Cabo trip. Open bar was flowing, the crew was so fun, and sailing past Land's End at golden hour was breathtaking."</p>
+        <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-gold flex items-center justify-center text-white text-xs font-bold">TL</div><div><p class="text-xs font-bold text-navy">Tiffany L.</p><p class="text-[10px] text-slate-400">Los Angeles, CA</p></div></div>
       </div>
-      <div class="mt-4 flex items-start gap-3">
-        <span class="material-symbols-outlined text-gold text-lg mt-0.5">location_on</span>
-        <p class="text-slate-500 text-sm leading-relaxed">Dock F, Marina Cabo San Lucas,<br/>BCS, Mexico</p>
+      <div class="min-w-full bg-light-grey rounded-2xl p-5 border border-border-light">
+        <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
+        <p class="text-sm text-slate-600 leading-relaxed italic mb-3">"My husband proposed on the private sunset charter — it was perfect in every way. The crew helped set everything up, the champagne was ready, and the sunset over the Pacific was the most beautiful backdrop imaginable."</p>
+        <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy/70 flex items-center justify-center text-white text-xs font-bold">SC</div><div><p class="text-xs font-bold text-navy">Sofia C.</p><p class="text-[10px] text-slate-400">Miami, FL</p></div></div>
       </div>
     </div>
+    <div class="flex justify-center gap-2 mt-4">
+      <button onclick="psCarousel(0)" id="ps-dot-0" class="w-2 h-2 rounded-full bg-navy transition-all"></button>
+      <button onclick="psCarousel(1)" id="ps-dot-1" class="w-2 h-2 rounded-full bg-border-light transition-all"></button>
+      <button onclick="psCarousel(2)" id="ps-dot-2" class="w-2 h-2 rounded-full bg-border-light transition-all"></button>
+    </div>
+  </div>
+</div>
 
 </main>
-<nav class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 px-6 pt-3 pb-8 z-50 shadow-[0_-2px_15px_rgba(0,0,0,0.05)]">
-<div class="flex items-center justify-between max-w-md mx-auto">
-<button class="flex flex-col items-center gap-1 transition-colors text-gray-400 active:text-gray-800">
-<span class="material-symbols-outlined text-2xl">sailing</span>
-<span class="text-[9px] font-bold uppercase tracking-wider">Fleet</span>
-</button>
-<button class="flex flex-col items-center gap-1 transition-colors text-gray-800">
-<span class="material-symbols-outlined text-2xl">calendar_today</span>
-<span class="text-[9px] font-bold uppercase tracking-wider">Charters</span>
-</button>
-<a href="tel:6197842745" class="flex flex-col items-center gap-1 transition-colors text-gray-400 active:text-gray-800">
-<span class="material-symbols-outlined text-2xl">call</span>
-<span class="text-[9px] font-bold uppercase tracking-wider">Contact</span>
-</a>
-<button class="flex flex-col items-center gap-1 transition-colors text-gray-400 active:text-gray-800">
-<span class="material-symbols-outlined text-2xl">account_circle</span>
-<span class="text-[9px] font-bold uppercase tracking-wider">Profile</span>
-</button>
-</div>
-</nav>
 
 <!-- Menu Overlay -->
 <div id="menu-overlay" class="fixed inset-0 z-[100] flex flex-col h-screen w-full transition-opacity duration-300 hidden" style="background-color:#ffffff;background-image:url('data:image/svg+xml,%3Csvg width=\'100%25\' height=\'100%25\' viewBox=\'0 0 800 800\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'M-100,100 Q150,250 400,100 T900,100\' fill=\'none\' stroke=\'%23d4af37\' stroke-width=\'3\' stroke-opacity=\'0.15\'/%3E%3Cpath d=\'M-100,300 Q150,450 400,300 T900,300\' fill=\'none\' stroke=\'%23d4af37\' stroke-width=\'3\' stroke-opacity=\'0.12\'/%3E%3Cpath d=\'M-100,500 Q150,350 400,500 T900,500\' fill=\'none\' stroke=\'%23d4af37\' stroke-width=\'3\' stroke-opacity=\'0.1\'/%3E%3C/svg%3E');background-repeat:no-repeat;background-size:cover;">
@@ -430,6 +503,14 @@
     document.getElementById('menu-overlay').classList.add('hidden');
   });
 
+  var psIdx = 0;
+  function psCarousel(i) {
+    psIdx = i;
+    document.getElementById('ps-carousel').style.transform = 'translateX(-' + (i * 100) + '%)';
+    [0,1,2].forEach(function(n) {
+      document.getElementById('ps-dot-'+n).className = 'w-2 h-2 rounded-full transition-all ' + (n===i ? 'bg-navy' : 'bg-border-light');
+    });
+  }
 </script>
 
 </body></html>
