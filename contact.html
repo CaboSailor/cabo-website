@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta name="description" content="Contact Cabo Sailing for sailing tours, snorkeling, sunset cruises & scuba diving in Cabo San Lucas. Call, WhatsApp or fill out our form — we respond within minutes."/>
+<title>Contact Us — Cabo Sailing | Cabo San Lucas Tours & Charters</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    "navy": "#0A1D37",
+                    "gold": "#C5A059",
+                    "light-grey": "#F8F9FA",
+                    "border-light": "#E5E7EB",
+                    "text-main": "#2D3436"
+                },
+                fontFamily: {
+                    "serif": ["Cinzel", "serif"],
+                    "sans": ["Montserrat", "sans-serif"]
+                }
+            },
+        },
+    }
+</script>
+<style type="text/tailwindcss">
+    @layer base {
+        body { @apply font-sans text-text-main bg-white; min-height: 100dvh; }
+        h1, h2, h3, h4 { @apply font-serif; }
+    }
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+    .material-symbols-outlined.filled { font-variation-settings: 'FILL' 1; }
+    .nav-dropdown:hover .nav-dropdown-menu { display: block; }
+</style>
+</head>
+<body class="antialiased min-h-screen flex flex-col relative pt-[72px]">
+
+<!-- ========== MOBILE HEADER ========== -->
+<header class="lg:hidden fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-3 bg-white/80 backdrop-blur-md border-b border-gray-200">
+  <button id="menu-open" class="flex flex-col gap-[3px] items-center justify-center w-10 h-10 -ml-2 text-navy active:scale-95 transition-transform">
+    <div class="w-5 h-[2px] bg-gray-800 rounded-full"></div>
+    <div class="w-5 h-[2px] bg-gray-800 rounded-full"></div>
+    <div class="w-5 h-[2px] bg-gray-800 rounded-full"></div>
+  </button>
+  <img src="images/cabo-sailing-n-l.png" alt="Cabo Sailing" class="h-10"/>
+  <a href="https://wa.me/526241916997?text=hi%2C%20I'm%20sending%20you%20a%20message%20from%20cabosailing.com" target="_blank" class="flex items-center justify-center w-10 h-10 -mr-2 bg-[#25D366] rounded-full text-white shadow-md">
+    <i class="fa-brands fa-whatsapp text-2xl"></i>
+  </a>
+</header>
+
+<!-- ========== DESKTOP HEADER ========== -->
+<header class="hidden lg:flex fixed top-0 left-0 right-0 z-50 items-center justify-between px-12 py-4 bg-white/95 backdrop-blur-md border-b border-border-light shadow-sm">
+  <a href="index.html"><img src="images/cabo-sailing-n-l.png" alt="Cabo Sailing" class="h-12"/></a>
+  <nav class="flex items-center gap-8">
+    <a href="index.html" class="text-base font-semibold text-navy hover:text-gold transition-colors uppercase tracking-wider">Home</a>
+    <div class="nav-dropdown relative">
+      <button class="flex items-center gap-1 text-base font-semibold text-navy hover:text-gold transition-colors uppercase tracking-wider">
+        Tours <span class="material-symbols-outlined text-base">expand_more</span>
+      </button>
+      <div class="nav-dropdown-menu hidden absolute top-full left-0 mt-2 w-48 bg-white rounded-2xl shadow-xl border border-border-light py-2 z-50">
+        <div class="px-4 py-1 text-xs text-slate-400 uppercase font-bold tracking-widest">Snorkeling</div>
+        <a href="private-snorkeling.html" class="block px-4 py-2 text-base text-navy hover:text-gold hover:bg-light-grey transition-colors">Private</a>
+        <a href="shared-snorkeling.html" class="block px-4 py-2 text-base text-navy hover:text-gold hover:bg-light-grey transition-colors">Shared</a>
+        <div class="px-4 py-1 mt-1 text-xs text-slate-400 uppercase font-bold tracking-widest border-t border-border-light pt-2">Sunset</div>
+        <a href="private-sunset.html" class="block px-4 py-2 text-base text-navy hover:text-gold hover:bg-light-grey transition-colors">Private</a>
+        <a href="shared-sunset.html" class="block px-4 py-2 text-base text-navy hover:text-gold hover:bg-light-grey transition-colors">Shared</a>
+        <a href="whale-watching.html" class="block px-4 py-2 text-base text-navy hover:text-gold hover:bg-light-grey transition-colors border-t border-border-light mt-1 pt-2">Whale Watching</a>
+        <a href="shuttle-service.html" class="block px-4 py-2 text-base text-navy hover:text-gold hover:bg-light-grey transition-colors">Shuttle Service</a>
+      </div>
+    </div>
+    <a href="fleet.html" class="text-base font-semibold text-navy hover:text-gold transition-colors uppercase tracking-wider">Our Fleet</a>
+    <a href="contact.html" class="text-base font-semibold text-gold uppercase tracking-wider">Contact</a>
+  </nav>
+  <div class="flex items-center gap-3">
+    <a href="tel:6197842745" class="flex items-center gap-2 text-base font-bold text-navy border border-border-light px-4 py-2 rounded-full hover:border-navy transition-colors">
+      <span class="material-symbols-outlined text-base">call</span> 619-784-2745
+    </a>
+    <a href="https://wa.me/526241916997?text=hi%2C%20I'm%20sending%20you%20a%20message%20from%20cabosailing.com" target="_blank" class="flex items-center gap-2 bg-[#25D366] text-white text-base font-bold px-4 py-2 rounded-full shadow-md hover:bg-[#20c55e] transition-colors">
+      <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp
+    </a>
+  </div>
+</header>
+
+<main class="flex-1">
+
+  <!-- ========== HERO BANNER ========== -->
+  <div class="relative w-full h-[30vh] lg:h-[40vh] overflow-hidden">
+    <img alt="Cabo San Lucas marina at sunset" class="w-full h-full object-cover" src="images/Boats/Sailing 42'/19.Sailing 42'.jpg"/>
+    <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/40 to-navy/20"></div>
+    <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
+      <h1 class="text-3xl lg:text-5xl text-white mb-3">Get in Touch</h1>
+      <p class="text-white/80 text-base lg:text-lg max-w-xl">We'd love to hear from you. Reach out by phone, WhatsApp, email, or fill out the form below — we typically respond within minutes.</p>
+    </div>
+  </div>
+
+  <!-- ========== CONTACT CARDS (MOBILE + DESKTOP) ========== -->
+  <div class="max-w-[1400px] mx-auto px-5 lg:px-10 -mt-10 relative z-10">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <!-- WhatsApp -->
+      <a href="https://wa.me/526241916997?text=hi%2C%20I'm%20sending%20you%20a%20message%20from%20cabosailing.com" target="_blank" class="bg-white rounded-2xl p-5 border border-border-light shadow-lg hover:shadow-xl transition-shadow flex items-center gap-4 group">
+        <div class="w-12 h-12 rounded-full bg-[#25D366] flex items-center justify-center flex-shrink-0">
+          <i class="fa-brands fa-whatsapp text-white text-2xl"></i>
+        </div>
+        <div>
+          <p class="text-sm text-slate-400 uppercase font-bold tracking-widest">WhatsApp</p>
+          <p class="text-base font-bold text-navy group-hover:text-gold transition-colors">+52 624 191 6997</p>
+        </div>
+      </a>
+      <!-- Phone MX -->
+      <a href="tel:+526241438485" class="bg-white rounded-2xl p-5 border border-border-light shadow-lg hover:shadow-xl transition-shadow flex items-center gap-4 group">
+        <div class="w-12 h-12 rounded-full bg-navy flex items-center justify-center flex-shrink-0">
+          <span class="material-symbols-outlined text-gold text-2xl">call</span>
+        </div>
+        <div>
+          <p class="text-sm text-slate-400 uppercase font-bold tracking-widest">Phone (MX)</p>
+          <p class="text-base font-bold text-navy group-hover:text-gold transition-colors">+52 624 143 8485</p>
+        </div>
+      </a>
+      <!-- Phone US -->
+      <a href="tel:6197842745" class="bg-white rounded-2xl p-5 border border-border-light shadow-lg hover:shadow-xl transition-shadow flex items-center gap-4 group">
+        <div class="w-12 h-12 rounded-full bg-navy flex items-center justify-center flex-shrink-0">
+          <span class="material-symbols-outlined text-gold text-2xl">call</span>
+        </div>
+        <div>
+          <p class="text-sm text-slate-400 uppercase font-bold tracking-widest">Phone (US)</p>
+          <p class="text-base font-bold text-navy group-hover:text-gold transition-colors">619-784-2745</p>
+        </div>
+      </a>
+      <!-- Email -->
+      <a href="mailto:info@cabosailing.com" class="bg-white rounded-2xl p-5 border border-border-light shadow-lg hover:shadow-xl transition-shadow flex items-center gap-4 group">
+        <div class="w-12 h-12 rounded-full bg-gold flex items-center justify-center flex-shrink-0">
+          <span class="material-symbols-outlined text-white text-2xl">email</span>
+        </div>
+        <div>
+          <p class="text-sm text-slate-400 uppercase font-bold tracking-widest">Email</p>
+          <p class="text-base font-bold text-navy group-hover:text-gold transition-colors">info@cabosailing.com</p>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- ========== FORM + MAP SECTION ========== -->
+  <div class="max-w-[1400px] mx-auto px-5 lg:px-10 py-16">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+
+      <!-- LEFT: Contact Form -->
+      <div>
+        <div class="flex items-center gap-3 mb-8">
+          <div class="w-1 h-8 bg-gold rounded-full"></div>
+          <h2 class="text-2xl lg:text-3xl text-navy">Send Us a Message</h2>
+        </div>
+
+        <form id="contact-form" class="space-y-6" onsubmit="handleSubmit(event)">
+          <!-- Name -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-sm font-bold text-navy uppercase tracking-widest mb-2" for="first-name">First Name *</label>
+              <input type="text" id="first-name" name="first-name" required class="w-full px-4 py-3 rounded-xl border border-border-light bg-light-grey text-navy font-medium focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-colors"/>
+            </div>
+            <div>
+              <label class="block text-sm font-bold text-navy uppercase tracking-widest mb-2" for="last-name">Last Name *</label>
+              <input type="text" id="last-name" name="last-name" required class="w-full px-4 py-3 rounded-xl border border-border-light bg-light-grey text-navy font-medium focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-colors"/>
+            </div>
+          </div>
+
+          <!-- Email & Phone -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-sm font-bold text-navy uppercase tracking-widest mb-2" for="email">Email *</label>
+              <input type="email" id="email" name="email" required class="w-full px-4 py-3 rounded-xl border border-border-light bg-light-grey text-navy font-medium focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-colors"/>
+            </div>
+            <div>
+              <label class="block text-sm font-bold text-navy uppercase tracking-widest mb-2" for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 rounded-xl border border-border-light bg-light-grey text-navy font-medium focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-colors"/>
+            </div>
+          </div>
+
+          <!-- Activity -->
+          <div>
+            <label class="block text-sm font-bold text-navy uppercase tracking-widest mb-2" for="activity">Activity *</label>
+            <select id="activity" name="activity" required class="w-full px-4 py-3 rounded-xl border border-border-light bg-light-grey text-navy font-medium focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-colors appearance-none cursor-pointer">
+              <option value="" disabled selected>Select an activity...</option>
+              <option value="snorkeling">Snorkeling</option>
+              <option value="sunset-cruise">Sunset Cruise</option>
+              <option value="scuba-diving">Scuba Diving</option>
+              <option value="whale-watching">Whale Watching</option>
+              <option value="bachelorette">Bachelorette Party</option>
+              <option value="shuttle-service">Shuttle Service</option>
+              <option value="other">Other / Not Sure</option>
+            </select>
+          </div>
+
+          <!-- Sailing Type -->
+          <div>
+            <label class="block text-sm font-bold text-navy uppercase tracking-widest mb-2" for="sailing-type">Sailing Type</label>
+            <select id="sailing-type" name="sailing-type" class="w-full px-4 py-3 rounded-xl border border-border-light bg-light-grey text-navy font-medium focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-colors appearance-none cursor-pointer">
+              <option value="" disabled selected>Select sailing type...</option>
+              <option value="shared-cruise">Shared Cruise</option>
+              <option value="private-sailing">Private Sailing</option>
+              <option value="private-yacht">Private Yacht</option>
+              <option value="undecided">I haven't decided yet</option>
+            </select>
+          </div>
+
+          <!-- Date & Group Size -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-sm font-bold text-navy uppercase tracking-widest mb-2" for="date">Preferred Date</label>
+              <input type="date" id="date" name="date" class="w-full px-4 py-3 rounded-xl border border-border-light bg-light-grey text-navy font-medium focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-colors"/>
+            </div>
+            <div>
+              <label class="block text-sm font-bold text-navy uppercase tracking-widest mb-2" for="group-size">Group Size</label>
+              <input type="number" id="group-size" name="group-size" min="1" max="50" placeholder="Number of guests" class="w-full px-4 py-3 rounded-xl border border-border-light bg-light-grey text-navy font-medium focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-colors"/>
+            </div>
+          </div>
+
+          <!-- Message -->
+          <div>
+            <label class="block text-sm font-bold text-navy uppercase tracking-widest mb-2" for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell us about your trip — special requests, questions, anything at all..." class="w-full px-4 py-3 rounded-xl border border-border-light bg-light-grey text-navy font-medium focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-colors resize-none"></textarea>
+          </div>
+
+          <!-- Submit -->
+          <button type="submit" class="w-full sm:w-auto bg-navy text-white font-bold text-sm py-4 px-10 rounded-2xl uppercase tracking-[0.15em] shadow-lg hover:bg-navy/90 transition-colors">
+            Send Message
+          </button>
+          <div id="form-success" class="hidden bg-green-50 border border-green-200 rounded-xl p-4 text-green-700 font-medium text-sm">
+            <span class="material-symbols-outlined text-green-500 text-base align-middle mr-1">check_circle</span>
+            Thank you! We've received your message and will get back to you shortly.
+          </div>
+        </form>
+      </div>
+
+      <!-- RIGHT: Map + Office Info -->
+      <div>
+        <div class="flex items-center gap-3 mb-8">
+          <div class="w-1 h-8 bg-gold rounded-full"></div>
+          <h2 class="text-2xl lg:text-3xl text-navy">Find Us</h2>
+        </div>
+
+        <!-- Map -->
+        <div class="rounded-2xl overflow-hidden border border-border-light shadow-lg mb-8 h-[300px] lg:h-[350px]">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.8!2d-109.9053!3d22.8825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86af4b0fe7ffff01%3A0x9c1c1f6b0e5c5c5c!2sCabo%20San%20Lucas%20Marina!5e0!3m2!1sen!2smx!4v1700000000000" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <!-- Office Info -->
+        <div class="bg-navy rounded-3xl p-8 text-white">
+          <h3 class="text-xl text-white mb-6">Office Information</h3>
+          <div class="space-y-5">
+            <div class="flex items-start gap-4">
+              <span class="material-symbols-outlined text-gold text-2xl mt-0.5">pin_drop</span>
+              <div>
+                <p class="font-bold text-white mb-1">Marina Location</p>
+                <p class="text-white/70 leading-relaxed">Cabo San Lucas Marina, IGY Marina, Dock F<br/>Cabo San Lucas, BCS, Mexico</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <span class="material-symbols-outlined text-gold text-2xl mt-0.5">schedule</span>
+              <div>
+                <p class="font-bold text-white mb-1">Hours of Operation</p>
+                <p class="text-white/70 leading-relaxed">Monday — Sunday: 7:00 AM – 8:00 PM<br/>We're available 365 days a year</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <i class="fa-brands fa-whatsapp text-[#25D366] text-2xl mt-0.5"></i>
+              <div>
+                <p class="font-bold text-white mb-1">Fastest Response</p>
+                <p class="text-white/70 leading-relaxed">WhatsApp is our fastest channel — most inquiries are answered within 5 minutes during business hours.</p>
+              </div>
+            </div>
+          </div>
+          <a href="https://wa.me/526241916997?text=hi%2C%20I'm%20sending%20you%20a%20message%20from%20cabosailing.com" target="_blank" class="flex items-center justify-center gap-2 w-full bg-[#25D366] text-white font-bold text-sm py-4 rounded-2xl uppercase tracking-[0.15em] shadow-lg mt-8 hover:bg-[#20c55e] transition-colors">
+            <i class="fa-brands fa-whatsapp text-xl"></i> Chat on WhatsApp
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ========== DESKTOP FOOTER ========== -->
+  <footer class="bg-navy px-5 lg:px-12 py-12">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-10">
+        <div>
+          <img src="images/cabo-sailing-n-l.png" alt="Cabo Sailing" class="h-10 mb-4" style="filter: brightness(0) invert(1) opacity(0.9)"/>
+          <p class="text-white/50 text-base leading-relaxed">Luxury sailing &amp; snorkeling charters in Cabo San Lucas, Mexico.</p>
+          <div class="flex gap-3 mt-4">
+            <a href="#" class="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center text-white/60 hover:text-white transition-colors"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center text-white/60 hover:text-white transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-white font-bold text-base uppercase tracking-widest mb-4">Tours</h4>
+          <ul class="space-y-2 text-white/50 text-base">
+            <li><a href="private-snorkeling.html" class="hover:text-gold transition-colors">Private Snorkeling</a></li>
+            <li><a href="shared-snorkeling.html" class="hover:text-gold transition-colors">Shared Snorkeling</a></li>
+            <li><a href="private-sunset.html" class="hover:text-gold transition-colors">Private Sunset</a></li>
+            <li><a href="shared-sunset.html" class="hover:text-gold transition-colors">Shared Sunset</a></li>
+            <li><a href="whale-watching.html" class="hover:text-gold transition-colors">Whale Watching</a></li>
+            <li><a href="scuba-diving.html" class="hover:text-gold transition-colors">Scuba Diving</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold text-base uppercase tracking-widest mb-4">Company</h4>
+          <ul class="space-y-2 text-white/50 text-base">
+            <li><a href="fleet.html" class="hover:text-gold transition-colors">Our Fleet</a></li>
+            <li><a href="shuttle-service.html" class="hover:text-gold transition-colors">Shuttle Service</a></li>
+            <li><a href="travel_guide.html" class="hover:text-gold transition-colors">Travel Guide</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold text-base uppercase tracking-widest mb-4">Contact</h4>
+          <div class="space-y-3 text-white/50 text-base">
+            <div class="flex items-center gap-2"><span class="material-symbols-outlined text-gold text-base">call</span><a href="tel:6197842745" class="hover:text-gold transition-colors">619-784-2745</a></div>
+            <div class="flex items-center gap-2"><i class="fa-brands fa-whatsapp text-gold"></i><a href="https://wa.me/526241916997" target="_blank" class="hover:text-gold transition-colors">+52 624 191 6997</a></div>
+            <div class="flex items-center gap-2"><span class="material-symbols-outlined text-gold text-base">email</span><a href="mailto:info@cabosailing.com" class="hover:text-gold transition-colors">info@cabosailing.com</a></div>
+            <div class="flex items-center gap-2"><span class="material-symbols-outlined text-gold text-base">pin_drop</span><span>Cabo San Lucas Marina, Dock F</span></div>
+            <div class="flex items-center gap-2 mt-1"><span class="material-symbols-outlined text-gold text-base">mail</span><a href="contact.html" class="text-white font-bold hover:text-gold transition-colors">Contact Us Now</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-2">
+        <p class="text-white/30 text-sm">&copy; 2026 Cabo Sailing. All rights reserved.</p>
+        <p class="text-white/30 text-sm">Land's End, Cabo San Lucas, Mexico</p>
+      </div>
+    </div>
+  </footer>
+
+</main>
+
+<!-- Menu Overlay (mobile) -->
+<div id="menu-overlay" class="lg:hidden fixed inset-0 z-[100] flex flex-col h-screen w-full transition-opacity duration-300 hidden" style="background-color:#ffffff;background-image:url('data:image/svg+xml,%3Csvg width=\'100%25\' height=\'100%25\' viewBox=\'0 0 800 800\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'M-100,100 Q150,250 400,100 T900,100\' fill=\'none\' stroke=\'%23d4af37\' stroke-width=\'3\' stroke-opacity=\'0.15\'/%3E%3Cpath d=\'M-100,300 Q150,450 400,300 T900,300\' fill=\'none\' stroke=\'%23d4af37\' stroke-width=\'3\' stroke-opacity=\'0.12\'/%3E%3Cpath d=\'M-100,500 Q150,350 400,500 T900,500\' fill=\'none\' stroke=\'%23d4af37\' stroke-width=\'3\' stroke-opacity=\'0.1\'/%3E%3C/svg%3E');background-repeat:no-repeat;background-size:cover;">
+  <div class="flex items-center justify-between px-6 py-4 border-b border-gray-200 bg-white/80 backdrop-blur-md z-20">
+    <button id="menu-close" class="w-10 h-10 flex items-center justify-center -ml-2 text-gray-800"><span class="material-symbols-outlined text-3xl">close</span></button>
+    <img src="images/cabo-sailing-n-l.png" alt="Cabo Sailing" class="h-12 w-auto object-contain"/>
+    <div class="w-10"></div>
+  </div>
+  <div class="flex-1 overflow-y-auto py-6 px-8 flex flex-col justify-center relative z-10">
+    <nav class="flex flex-col gap-6">
+      <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="index.html"><span class="material-symbols-outlined text-navy group-hover:text-accent-gold transition-colors text-2xl">home</span><span class="font-semibold">Home</span></a>
+      <div>
+        <button onclick="document.getElementById('tour-dropdown').classList.toggle('hidden');document.getElementById('tour-arrow').classList.toggle('rotate-180')" class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors w-full">
+          <span class="material-symbols-outlined text-accent-gold group-hover:text-navy transition-colors text-2xl">explore</span>
+          <span class="font-semibold">Tours</span>
+          <span id="tour-arrow" class="material-symbols-outlined ml-auto transition-transform duration-200 text-xl">expand_more</span>
+        </button>
+        <div id="tour-dropdown" class="hidden pl-10 mt-3 space-y-4">
+          <div>
+            <button onclick="event.stopPropagation();document.getElementById('snorkel-dropdown').classList.toggle('hidden');document.getElementById('snorkel-arrow').classList.toggle('rotate-180')" class="group flex items-center gap-2 text-base font-serif text-navy/70 hover:text-accent-gold transition-colors w-full">
+              <span class="font-semibold">Snorkeling</span>
+              <span id="snorkel-arrow" class="material-symbols-outlined transition-transform duration-200 text-lg">expand_more</span>
+            </button>
+            <div id="snorkel-dropdown" class="hidden pl-6 mt-2 space-y-3">
+              <a class="block text-sm font-serif text-navy/60 hover:text-accent-gold transition-colors" href="private-snorkeling.html">Private</a>
+              <a class="block text-sm font-serif text-navy/60 hover:text-accent-gold transition-colors" href="shared-snorkeling.html">Shared</a>
+            </div>
+          </div>
+          <div>
+            <button onclick="event.stopPropagation();document.getElementById('sunset-dropdown').classList.toggle('hidden');document.getElementById('sunset-arrow').classList.toggle('rotate-180')" class="group flex items-center gap-2 text-base font-serif text-navy/70 hover:text-accent-gold transition-colors w-full">
+              <span class="font-semibold">Sunset</span>
+              <span id="sunset-arrow" class="material-symbols-outlined transition-transform duration-200 text-lg">expand_more</span>
+            </button>
+            <div id="sunset-dropdown" class="hidden pl-6 mt-2 space-y-3">
+              <a class="block text-sm font-serif text-navy/60 hover:text-accent-gold transition-colors" href="private-sunset.html">Private</a>
+              <a class="block text-sm font-serif text-navy/60 hover:text-accent-gold transition-colors" href="shared-sunset.html">Shared</a>
+            </div>
+          </div>
+          <a class="block text-base font-serif text-navy/70 hover:text-accent-gold transition-colors" href="whale-watching.html">Whale Watching</a>
+          <a class="block text-base font-serif text-navy/70 hover:text-accent-gold transition-colors" href="bachelorette-party.html">Bachelorette</a>
+          <a class="block text-base font-serif text-navy/70 hover:text-accent-gold transition-colors" href="scuba-diving.html">Scuba Diving</a>
+        </div>
+      </div>
+      <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="shuttle-service.html"><span class="material-symbols-outlined text-navy group-hover:text-accent-gold transition-colors text-2xl">airport_shuttle</span><span class="font-semibold">Shuttle Service</span></a>
+      <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="fleet.html"><span class="material-symbols-outlined text-accent-gold group-hover:text-navy transition-colors text-2xl">sailing</span><span class="font-semibold">Our Fleet</span></a>
+      <a class="group flex items-center gap-4 text-xl font-serif text-accent-gold" href="contact.html"><span class="material-symbols-outlined text-accent-gold text-2xl">mail</span><span class="font-semibold">Contact Us</span></a>
+      <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="travel_guide.html"><span class="material-symbols-outlined text-navy group-hover:text-accent-gold transition-colors text-2xl">menu_book</span><span class="font-semibold">Travel Guide</span></a>
+      <div>
+        <div class="flex items-center gap-4 text-xl font-serif text-navy mb-3">
+          <span class="material-symbols-outlined text-navy text-2xl">call</span>
+          <span class="font-semibold">Call Us</span>
+        </div>
+        <div class="pl-10 space-y-4">
+          <a class="flex items-center gap-2 text-base text-navy/70 hover:text-accent-gold transition-colors" href="https://wa.me/526241916997?text=hi%2C%20I'm%20sending%20you%20a%20message%20from%20cabosailing.com" target="_blank"><i class="fa-brands fa-whatsapp text-[#25D366]"></i> +52 624 191 6997</a>
+          <a class="flex items-center gap-2 text-base text-navy/70 hover:text-accent-gold transition-colors" href="tel:+526241438485"><span class="material-symbols-outlined text-base">call</span> +52 624 143 8485</a>
+          <a class="flex items-center gap-2 text-base text-navy/70 hover:text-accent-gold transition-colors" href="mailto:info@cabosailing.com"><span class="material-symbols-outlined text-base">email</span> info@cabosailing.com</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="px-8 pb-10 pt-4 border-t border-gray-200 bg-white/80 backdrop-blur-md z-20">
+    <div class="flex justify-center gap-8 mb-6">
+      <a class="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center text-gray-800 bg-white shadow-sm" href="#"><i class="fa-brands fa-instagram text-xl"></i></a>
+      <a class="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center text-gray-800 bg-white shadow-sm" href="#"><i class="fa-brands fa-facebook-f text-xl"></i></a>
+    </div>
+    <a href="tel:+526241438485" class="block w-full bg-gray-800 text-white py-4 rounded-xl font-bold uppercase tracking-widest text-base text-center shadow-lg">
+      <span style="vertical-align:middle" class="material-symbols-outlined text-base">call</span> Call Us Now
+    </a>
+  </div>
+</div>
+
+<script>
+  // Mobile menu
+  document.getElementById('menu-open').addEventListener('click', function() {
+    document.getElementById('menu-overlay').classList.remove('hidden');
+  });
+  document.getElementById('menu-close').addEventListener('click', function() {
+    document.getElementById('menu-overlay').classList.add('hidden');
+  });
+
+  // Form submission
+  function handleSubmit(e) {
+    e.preventDefault();
+    var form = document.getElementById('contact-form');
+    var data = new FormData(form);
+    var firstName = data.get('first-name');
+    var lastName = data.get('last-name');
+    var email = data.get('email');
+    var phone = data.get('phone') || 'Not provided';
+    var activity = data.get('activity');
+    var sailingType = data.get('sailing-type') || 'Not selected';
+    var date = data.get('date') || 'Flexible';
+    var groupSize = data.get('group-size') || 'Not specified';
+    var message = data.get('message') || 'No message';
+
+    // Build WhatsApp message
+    var waMsg = 'Hi, I just submitted a contact form on cabosailing.com:\n\n';
+    waMsg += 'Name: ' + firstName + ' ' + lastName + '\n';
+    waMsg += 'Email: ' + email + '\n';
+    waMsg += 'Phone: ' + phone + '\n';
+    waMsg += 'Activity: ' + activity + '\n';
+    waMsg += 'Sailing Type: ' + sailingType + '\n';
+    waMsg += 'Date: ' + date + '\n';
+    waMsg += 'Group Size: ' + groupSize + '\n';
+    waMsg += 'Message: ' + message;
+
+    // Show success message
+    document.getElementById('form-success').classList.remove('hidden');
+    form.reset();
+
+    // Open WhatsApp with the message
+    setTimeout(function() {
+      window.open('https://wa.me/526241916997?text=' + encodeURIComponent(waMsg), '_blank');
+    }, 500);
+  }
+</script>
+
+
+<!-- Floating Quick Availability Button -->
+<a href="javascript:history.back()" class="fixed right-0 top-1/2 -translate-y-1/2 z-50 bg-navy hover:bg-navy/90 transition-colors shadow-xl rounded-l-xl py-3 px-2 lg:py-4 lg:px-2.5 group" style="writing-mode:vertical-rl;text-orientation:mixed;">
+  <span class="text-gold font-bold text-[10px] lg:text-xs uppercase tracking-[0.2em] group-hover:text-white transition-colors">Quick Availability Check</span>
+</a>
+</body></html>

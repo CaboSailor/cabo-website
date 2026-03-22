@@ -8,6 +8,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;700;800&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
 <script>
@@ -20,9 +21,11 @@
                         "accent-gold": "#b38e5d",
                         "accent-gold-light": "#d4af37",
                         "warm-yellow": "#b48a04",
+                        "gold": "#C5A059",
                         "bg-light": "#ffffff",
                         "surface-light": "#f8f9fa",
-                        "border-light": "#e5e7eb"
+                        "border-light": "#e5e7eb",
+                        "light-grey": "#f3f4f6"
                     },
                     fontFamily: {
                         "display": ["Plus Jakarta Sans", "sans-serif"],
@@ -58,15 +61,47 @@
         body {
             min-height: max(884px, 100dvh);
         }
+            /* Fleet card arrow navigation */
+        .fleet-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            border: none;
+            background: rgba(255,255,255,0.25);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            color: white;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.2s;
+            padding: 0;
+        }
+        .fleet-arrow:hover {
+            background: rgba(255,255,255,0.45);
+        }
+        .fleet-arrow.left { left: 10px; }
+        .fleet-arrow.right { right: 10px; }
+        .fleet-arrow .material-symbols-outlined {
+            font-size: 20px;
+            line-height: 1;
+        }
+        .nav-dropdown:hover .nav-dropdown-menu { display: block; }
     </style>
 </head>
 <body class="bg-bg-light font-display text-navy antialiased min-h-screen flex flex-col relative">
-<header class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-3 bg-white/80 backdrop-blur-md border-b border-border-light/50 transition-all duration-300">
+
+<!-- ========== MOBILE HEADER ========== -->
+<header class="lg:hidden fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-3 bg-white/80 backdrop-blur-md border-b border-border-light/50 transition-all duration-300">
 <button id="menu-open" class="flex flex-col gap-[3px] items-center justify-center w-10 h-10 -ml-2 text-navy active:scale-95 transition-transform">
 <div class="w-5 h-[2px] bg-navy rounded-full"></div>
 <div class="w-5 h-[2px] bg-navy rounded-full"></div>
 <div class="w-5 h-[2px] bg-navy rounded-full"></div>
-<span class="text-base font-bold tracking-widest mt-0.5">MENU</span>
 </button>
 <div class="flex-shrink-0 flex items-center justify-center">
 <a href="index.html"><img src="images/cabo-sailing-n-l.png" alt="Cabo Sailing" class="h-10"/></a>
@@ -75,7 +110,38 @@
 <i class="fa-brands fa-whatsapp text-2xl"></i>
 </a>
 </header>
-<main class="flex-1 w-full overflow-x-hidden pt-[72px]">
+
+<!-- ========== DESKTOP HEADER ========== -->
+<header class="hidden lg:flex fixed top-0 left-0 right-0 z-50 items-center justify-between px-12 py-4 bg-white/95 backdrop-blur-md border-b border-border-light shadow-sm">
+  <a href="index.html"><img src="images/cabo-sailing-n-l.png" alt="Cabo Sailing" class="h-12"/></a>
+  <nav class="flex items-center gap-8">
+    <a href="index.html" class="text-base font-semibold text-navy hover:text-gold transition-colors uppercase tracking-wider">Home</a>
+    <div class="nav-dropdown relative">
+      <button class="flex items-center gap-1 text-base font-semibold text-navy hover:text-gold transition-colors uppercase tracking-wider">Tours <span class="material-symbols-outlined text-base">expand_more</span></button>
+      <div class="nav-dropdown-menu hidden absolute top-full left-0 mt-2 w-48 bg-white rounded-2xl shadow-xl border border-border-light py-2 z-50">
+        <div class="px-4 py-1 text-xs text-slate-400 uppercase font-bold tracking-widest">Snorkeling</div>
+        <a href="private-snorkeling.html" class="block px-4 py-2 text-base text-navy hover:text-gold hover:bg-light-grey transition-colors">Private</a>
+        <a href="shared-snorkeling.html" class="block px-4 py-2 text-base text-navy hover:text-gold hover:bg-light-grey transition-colors">Shared</a>
+        <div class="px-4 py-1 mt-1 text-xs text-slate-400 uppercase font-bold tracking-widest border-t border-border-light pt-2">Sunset</div>
+        <a href="private-sunset.html" class="block px-4 py-2 text-base text-navy hover:text-gold hover:bg-light-grey transition-colors">Private</a>
+        <a href="shared-sunset.html" class="block px-4 py-2 text-base text-navy hover:text-gold hover:bg-light-grey transition-colors">Shared</a>
+        <a href="whale-watching.html" class="block px-4 py-2 text-base text-navy hover:text-gold hover:bg-light-grey transition-colors border-t border-border-light mt-1 pt-2">Whale Watching</a>
+        <a href="shuttle-service.html" class="block px-4 py-2 text-base text-navy hover:text-gold hover:bg-light-grey transition-colors">Shuttle Service</a>
+      </div>
+    </div>
+    <a href="fleet.html" class="text-base font-semibold text-gold uppercase tracking-wider">Our Fleet</a>
+    <a href="contact.html" class="text-base font-semibold text-navy hover:text-gold transition-colors uppercase tracking-wider">Contact</a>
+  </nav>
+  <div class="flex items-center gap-3">
+    <a href="tel:6197842745" class="flex items-center gap-2 text-base font-bold text-navy border border-border-light px-4 py-2 rounded-full hover:border-navy transition-colors"><span class="material-symbols-outlined text-base">call</span> 619-784-2745</a>
+    <a href="https://wa.me/526241916997?text=hi%2C%20I'm%20sending%20you%20a%20message%20from%20cabosailing.com" target="_blank" class="flex items-center gap-2 bg-[#25D366] text-white text-base font-bold px-4 py-2 rounded-full shadow-md hover:bg-[#20c55e] transition-colors"><i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp</a>
+  </div>
+</header>
+
+<main class="flex-1 w-full overflow-x-hidden pt-[72px] lg:pt-[80px]">
+
+<!-- ========== MOBILE CONTENT ========== -->
+<div class="lg:hidden">
 <!-- Hero Section -->
 <div class="relative w-full h-[45vh] min-h-[350px]">
 <img alt="Cabo Sailing Fleet" class="w-full h-full object-cover" src="images/Boats/Sailing 42'/24.Sailing_42.jpg"/>
@@ -133,6 +199,9 @@
 <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
 <div class="absolute bottom-5 left-6"><h4 class="text-white font-serif text-xl">Sailing Boat 38'</h4><div class="flex items-center gap-2 text-white/80 text-base mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-accent-gold text-sm">group</span><span>Max 10 Guests</span></div></div>
 <div class="absolute top-4 right-4 bg-accent-gold text-white text-base font-bold px-3 py-1 rounded-full uppercase tracking-widest">Best Value</div>
+
+<button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
+<button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
 </div>
 <div class="p-6 space-y-6">
 <div class="flex justify-between items-center text-navy/60">
@@ -161,6 +230,9 @@
 <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
 <div class="absolute bottom-5 left-6"><h4 class="text-white font-serif text-xl">Sailing Boat 42'</h4><div class="flex items-center gap-2 text-white/80 text-base mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-accent-gold text-sm">group</span><span>Max 14 Guests</span></div></div>
 <div class="absolute top-4 right-4 bg-accent-gold text-white text-base font-bold px-3 py-1 rounded-full uppercase tracking-widest">Most Popular</div>
+
+<button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
+<button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
 </div>
 <div class="p-6 space-y-6">
 <div class="flex justify-between items-center text-navy/60">
@@ -188,6 +260,9 @@
 </div>
 <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
 <div class="absolute bottom-5 left-6"><h4 class="text-white font-serif text-xl">Luxury Yacht 42'</h4><div class="flex items-center gap-2 text-white/80 text-base mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-accent-gold text-sm">group</span><span>Max 12 Guests</span></div></div>
+
+<button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
+<button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
 </div>
 <div class="p-6 space-y-6">
 <div class="flex justify-between items-center text-navy/60">
@@ -215,6 +290,9 @@
 </div>
 <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
 <div class="absolute bottom-5 left-6"><h4 class="text-white font-serif text-xl">Luxury Yacht 45'</h4><div class="flex items-center gap-2 text-white/80 text-base mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-accent-gold text-sm">group</span><span>Max 15 Guests</span></div></div>
+
+<button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
+<button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
 </div>
 <div class="p-6 space-y-6">
 <div class="flex justify-between items-center text-navy/60">
@@ -243,6 +321,9 @@
 <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
 <div class="absolute bottom-5 left-6"><h4 class="text-white font-serif text-xl">Luxury Yacht 51'</h4><div class="flex items-center gap-2 text-white/80 text-base mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-accent-gold text-sm">group</span><span>Max 20 Guests</span></div></div>
 <div class="absolute top-4 right-4 bg-navy text-white text-base font-bold px-3 py-1 rounded-full uppercase tracking-widest">Flagship</div>
+
+<button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
+<button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
 </div>
 <div class="p-6 space-y-6">
 <div class="flex justify-between items-center text-navy/60">
@@ -284,6 +365,9 @@
 <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
 <div class="absolute bottom-5 left-6"><h4 class="text-white font-serif text-xl">Sailing Boat 38'</h4><div class="flex items-center gap-2 text-white/80 text-base mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-accent-gold text-sm">group</span><span>Max 9 Guests</span></div></div>
 <div class="absolute top-4 right-4 bg-accent-gold text-white text-base font-bold px-3 py-1 rounded-full uppercase tracking-widest">Best Value</div>
+
+<button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
+<button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
 </div>
 <div class="p-6 space-y-6">
 <div class="flex justify-between items-center text-navy/60">
@@ -311,6 +395,9 @@
 <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
 <div class="absolute bottom-5 left-6"><h4 class="text-white font-serif text-xl">Sailing Boat 42'</h4><div class="flex items-center gap-2 text-white/80 text-base mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-accent-gold text-sm">group</span><span>Max 14 Guests</span></div></div>
 <div class="absolute top-4 right-4 bg-accent-gold text-white text-base font-bold px-3 py-1 rounded-full uppercase tracking-widest">Most Popular</div>
+
+<button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
+<button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
 </div>
 <div class="p-6 space-y-6">
 <div class="flex justify-between items-center text-navy/60">
@@ -329,6 +416,328 @@
 
 </div>
 </div><!-- end shared-content -->
+</div><!-- end mobile wrapper lg:hidden -->
+
+<!-- ========== DESKTOP CONTENT ========== -->
+<div class="hidden lg:block">
+
+<!-- Hero Image Grid -->
+<div class="max-w-[1400px] mx-auto px-10 pt-10">
+  <div class="grid grid-cols-4 grid-rows-2 gap-2 h-[55vh]">
+    <div class="col-span-2 row-span-2 rounded-2xl overflow-hidden relative">
+      <img alt="Cabo Sailing Fleet" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src="images/Boats/Sailing 42'/24.Sailing_42.jpg"/>
+      <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent rounded-2xl"></div>
+      <div class="absolute bottom-6 left-6">
+        <h1 class="text-4xl text-white leading-tight mb-2" style="font-family: Cinzel, serif;">Our Fleet</h1>
+        <p class="text-white/80 text-sm">Cabo San Lucas · 6 Vessels · 38' to 46'</p>
+      </div>
+    </div>
+    <div class="rounded-2xl overflow-hidden"><img alt="Luxury Yacht" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src="images/Boats/Yacht 46'/9.Yacht 46'.jpg"/></div>
+    <div class="rounded-2xl overflow-hidden"><img alt="Sailing" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src="images/Boats/Yacht 45'/1.Yacht 45'.jpg"/></div>
+    <div class="rounded-2xl overflow-hidden"><img alt="Yacht interior" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src="images/Boats/Sailing 38'/6.Sailing 38'.jpg"/></div>
+    <div class="rounded-2xl overflow-hidden"><img alt="Ocean view" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src="images/Boats/Yacht 42'/3.Yacht 42'.jpg"/></div>
+  </div>
+</div>
+
+<!-- Intro Text -->
+<div class="max-w-[1400px] mx-auto px-10 py-12 text-center">
+  <p class="text-slate-500 leading-relaxed max-w-3xl mx-auto text-lg">Discover our carefully curated collection of sailing boats and luxury yachts, each maintained to the highest standards for your perfect day on the water.</p>
+</div>
+
+<!-- Select Your Boat -->
+<div class="max-w-[1400px] mx-auto px-10">
+  <div class="flex items-center gap-3 mb-2"><div class="w-1 h-6 bg-gold rounded-full" style="background:#C5A059"></div><h2 class="text-3xl text-navy" style="font-family: Cinzel, serif;">Select Your Boat</h2></div>
+
+  <!-- Luxury Yachts Section -->
+  <div class="flex items-center gap-4 mb-6 mt-8">
+    <span class="material-symbols-outlined text-gold text-2xl" style="color:#C5A059">yacht</span>
+    <h3 class="text-xl font-serif text-navy" style="font-family: Cinzel, serif;">Luxury Yachts</h3>
+    <div class="flex-1 h-px" style="background: linear-gradient(to right, #C5A05950, transparent);"></div>
+  </div>
+
+  <div class="grid grid-cols-3 gap-5">
+
+    <!-- Yacht 46' -->
+    <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl">
+      <div class="h-[480px] w-full relative">
+        <div class="boat-carousel relative w-full h-full">
+          <img alt="Luxury Yacht 46'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-100 transition-opacity duration-700" src="images/Boats/Yacht 46'/9.Yacht 46'.jpg"/>
+          <img alt="Luxury Yacht 46'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" src="images/Boats/Yacht 46'/2.Yacht 46'.jpg"/>
+          <img alt="Luxury Yacht 46'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" src="images/Boats/Yacht 46'/7.Yacht 46'.jpg"/>
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
+        <div class="absolute bottom-5 left-6">
+          <h4 class="text-white text-xl" style="font-family: Cinzel, serif;">Luxury Yacht 46'</h4>
+          <div class="flex items-center gap-2 text-white/80 text-base mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-sm" style="color:#C5A059">group</span><span>Up to 20 Guests</span></div>
+        </div>
+        <div class="absolute top-4 right-4 text-white text-base font-bold px-3 py-1 rounded-full uppercase tracking-widest" style="background:#0A1D37">Most Spacious</div>
+        <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
+        <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
+      </div>
+      <div class="p-6 space-y-6">
+        <div class="flex justify-between items-center text-navy/60">
+          <div class="flex flex-col items-center gap-1"><span class="material-symbols-outlined" style="color:#C5A059">dry_cleaning</span><span class="text-base font-bold uppercase tracking-tighter">Towels</span></div>
+          <div class="flex flex-col items-center gap-1"><span class="material-symbols-outlined" style="color:#C5A059">surfing</span><span class="text-base font-bold uppercase tracking-tighter">Paddle Board</span></div>
+          <div class="flex flex-col items-center gap-1"><span class="material-symbols-outlined" style="color:#C5A059">restaurant</span><span class="text-base font-bold uppercase tracking-tighter">Food & Bar</span></div>
+        </div>
+        <div class="h-px bg-border-light"></div>
+        <div class="space-y-4">
+          <div class="flex items-center justify-between"><span class="text-navy text-base font-bold uppercase tracking-widest">Special Online Offer</span><div class="text-base font-bold px-2 py-0.5 rounded border uppercase" style="color:#C5A059;background:rgba(197,160,89,0.1);border-color:rgba(197,160,89,0.2)">Save 15%</div></div>
+          <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-navy/40 line-through text-sm font-medium">$1,690</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$1,436</span><span class="text-navy/40 text-base font-medium uppercase">/ 1-4 guests</span></div></div><div class="flex flex-col items-end"><span class="text-navy/40 text-base font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-navy/40 line-through text-base">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-navy/40 text-base font-medium">/pp</span></div></div></div>
+        </div>
+        <a href="https://wa.me/526241916997?text=Hi%2C%20I'd%20like%20info%20on%20the%20Luxury%20Yacht%2046" target="_blank" class="block w-full bg-navy text-white font-bold text-base py-4 rounded-2xl uppercase tracking-[0.2em] text-center shadow-lg">Book This Boat Now</a>
+      </div>
+    </div>
+
+    <!-- Yacht 45' -->
+    <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl">
+      <div class="h-[480px] w-full relative">
+        <div class="boat-carousel relative w-full h-full">
+          <img alt="Luxury Yacht 45'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-100 transition-opacity duration-700" src="images/Boats/Yacht 45'/1.Yacht 45'.jpg"/>
+          <img alt="Luxury Yacht 45'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" src="images/Boats/Yacht 45'/5.Yacht 45'.jpg"/>
+          <img alt="Luxury Yacht 45'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" src="images/Boats/Yacht 45'/6.Yacht 45'.jpg"/>
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
+        <div class="absolute bottom-5 left-6">
+          <h4 class="text-white text-xl" style="font-family: Cinzel, serif;">Luxury Yacht 45'</h4>
+          <div class="flex items-center gap-2 text-white/80 text-base mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-sm" style="color:#C5A059">group</span><span>Up to 15 Guests</span></div>
+        </div>
+        <div class="absolute top-4 right-4 text-white text-base font-bold px-3 py-1 rounded-full uppercase tracking-widest" style="background:#C5A059">Most Popular</div>
+        <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
+        <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
+      </div>
+      <div class="p-6 space-y-6">
+        <div class="flex justify-between items-center text-navy/60">
+          <div class="flex flex-col items-center gap-1"><span class="material-symbols-outlined" style="color:#C5A059">dry_cleaning</span><span class="text-base font-bold uppercase tracking-tighter">Towels</span></div>
+          <div class="flex flex-col items-center gap-1"><span class="material-symbols-outlined" style="color:#C5A059">surfing</span><span class="text-base font-bold uppercase tracking-tighter">Paddle Board</span></div>
+          <div class="flex flex-col items-center gap-1"><span class="material-symbols-outlined" style="color:#C5A059">restaurant</span><span class="text-base font-bold uppercase tracking-tighter">Food & Bar</span></div>
+        </div>
+        <div class="h-px bg-border-light"></div>
+        <div class="space-y-4">
+          <div class="flex items-center justify-between"><span class="text-navy text-base font-bold uppercase tracking-widest">Special Online Offer</span><div class="text-base font-bold px-2 py-0.5 rounded border uppercase" style="color:#C5A059;background:rgba(197,160,89,0.1);border-color:rgba(197,160,89,0.2)">Save 15%</div></div>
+          <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-navy/40 line-through text-sm font-medium">$1,520</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$1,292</span><span class="text-navy/40 text-base font-medium uppercase">/ 1-4 guests</span></div></div><div class="flex flex-col items-end"><span class="text-navy/40 text-base font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-navy/40 line-through text-base">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-navy/40 text-base font-medium">/pp</span></div></div></div>
+        </div>
+        <a href="https://wa.me/526241916997?text=Hi%2C%20I'd%20like%20info%20on%20the%20Luxury%20Yacht%2045" target="_blank" class="block w-full bg-navy text-white font-bold text-base py-4 rounded-2xl uppercase tracking-[0.2em] text-center shadow-lg">Book This Boat Now</a>
+      </div>
+    </div>
+
+    <!-- Yacht 42' -->
+    <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl">
+      <div class="h-[480px] w-full relative">
+        <div class="boat-carousel relative w-full h-full">
+          <img alt="Luxury Yacht 42'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-100 transition-opacity duration-700" src="images/Boats/Yacht 42'/3.Yacht 42'.jpg"/>
+          <img alt="Luxury Yacht 42'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" src="images/Boats/Yacht 42'/2.Yacht 42'.jpg"/>
+          <img alt="Luxury Yacht 42'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" src="images/Boats/Yacht 42'/5.Yacht 42'.jpg"/>
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
+        <div class="absolute bottom-5 left-6">
+          <h4 class="text-white text-xl" style="font-family: Cinzel, serif;">Luxury Yacht 42'</h4>
+          <div class="flex items-center gap-2 text-white/80 text-base mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-sm" style="color:#C5A059">group</span><span>Up to 12 Guests</span></div>
+        </div>
+        <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
+        <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
+      </div>
+      <div class="p-6 space-y-6">
+        <div class="flex justify-between items-center text-navy/60">
+          <div class="flex flex-col items-center gap-1"><span class="material-symbols-outlined" style="color:#C5A059">dry_cleaning</span><span class="text-base font-bold uppercase tracking-tighter">Towels</span></div>
+          <div class="flex flex-col items-center gap-1"><span class="material-symbols-outlined" style="color:#C5A059">surfing</span><span class="text-base font-bold uppercase tracking-tighter">Paddle Board</span></div>
+          <div class="flex flex-col items-center gap-1"><span class="material-symbols-outlined" style="color:#C5A059">restaurant</span><span class="text-base font-bold uppercase tracking-tighter">Food & Bar</span></div>
+        </div>
+        <div class="h-px bg-border-light"></div>
+        <div class="space-y-4">
+          <div class="flex items-center justify-between"><span class="text-navy text-base font-bold uppercase tracking-widest">Special Online Offer</span><div class="text-base font-bold px-2 py-0.5 rounded border uppercase" style="color:#C5A059;background:rgba(197,160,89,0.1);border-color:rgba(197,160,89,0.2)">Save 15%</div></div>
+          <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-navy/40 line-through text-sm font-medium">$1,350</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$1,148</span><span class="text-navy/40 text-base font-medium uppercase">/ 1-4 guests</span></div></div><div class="flex flex-col items-end"><span class="text-navy/40 text-base font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-navy/40 line-through text-base">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-navy/40 text-base font-medium">/pp</span></div></div></div>
+        </div>
+        <a href="https://wa.me/526241916997?text=Hi%2C%20I'd%20like%20info%20on%20the%20Luxury%20Yacht%2042" target="_blank" class="block w-full bg-navy text-white font-bold text-base py-4 rounded-2xl uppercase tracking-[0.2em] text-center shadow-lg">Book This Boat Now</a>
+      </div>
+    </div>
+
+  </div><!-- end yacht grid -->
+
+  <!-- Sailing Boats Section -->
+  <div class="flex items-center gap-4 mb-6 mt-10">
+    <span class="material-symbols-outlined text-gold text-2xl" style="color:#C5A059">sailing</span>
+    <h3 class="text-xl font-serif text-navy" style="font-family: Cinzel, serif;">Sailing Boats</h3>
+    <div class="flex-1 h-px" style="background: linear-gradient(to right, #C5A05950, transparent);"></div>
+  </div>
+
+  <div class="grid grid-cols-3 gap-5">
+
+    <!-- Sailing 42' (Private) -->
+    <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl">
+      <div class="h-[480px] w-full relative">
+        <div class="boat-carousel relative w-full h-full">
+          <img alt="Sailing Boat 42'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-100 transition-opacity duration-700" src="images/Boats/Sailing 42'/10.Sailing 42'.jpg"/>
+          <img alt="Sailing Boat 42'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" src="images/Boats/Sailing 42'/17.Sailing 42'.jpg"/>
+          <img alt="Sailing Boat 42'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" src="images/Boats/Sailing 42'/12.Sailing 42'.jpg"/>
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
+        <div class="absolute bottom-5 left-6">
+          <h4 class="text-white text-xl" style="font-family: Cinzel, serif;">Sailing 42' <span class="text-sm text-white/70">(Private)</span></h4>
+          <div class="flex items-center gap-2 text-white/80 text-base mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-sm" style="color:#C5A059">group</span><span>Max 14 Guests</span></div>
+        </div>
+        <div class="absolute top-4 right-4 text-white text-base font-bold px-3 py-1 rounded-full uppercase tracking-widest" style="background:#C5A059">Most Popular</div>
+        <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
+        <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
+      </div>
+      <div class="p-6 space-y-6">
+        <div class="flex justify-between items-center text-navy/60">
+          <div class="flex flex-col items-center gap-1"><span class="material-symbols-outlined" style="color:#C5A059">dry_cleaning</span><span class="text-base font-bold uppercase tracking-tighter">Towels</span></div>
+          <div class="flex flex-col items-center gap-1"><span class="material-symbols-outlined" style="color:#C5A059">scuba_diving</span><span class="text-base font-bold uppercase tracking-tighter">Snorkeling</span></div>
+          <div class="flex flex-col items-center gap-1"><span class="material-symbols-outlined" style="color:#C5A059">restaurant</span><span class="text-base font-bold uppercase tracking-tighter">Food</span></div>
+          <div class="flex flex-col items-center gap-1"><span class="material-symbols-outlined" style="color:#C5A059">liquor</span><span class="text-base font-bold uppercase tracking-tighter">Bar</span></div>
+        </div>
+        <div class="h-px bg-border-light"></div>
+        <div class="space-y-4">
+          <div class="flex items-center justify-between"><span class="text-navy text-base font-bold uppercase tracking-widest">Special Online Offer</span><div class="text-base font-bold px-2 py-0.5 rounded border uppercase" style="color:#C5A059;background:rgba(197,160,89,0.1);border-color:rgba(197,160,89,0.2)">Save 15%</div></div>
+          <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-navy/40 line-through text-sm font-medium">$1,090</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$927</span><span class="text-navy/40 text-base font-medium uppercase">/ 1-4 guests</span></div></div><div class="flex flex-col items-end"><span class="text-navy/40 text-base font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-navy/40 line-through text-base">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-navy/40 text-base font-medium">/pp</span></div></div></div>
+        </div>
+        <a href="https://wa.me/526241916997?text=Hi%2C%20I'd%20like%20info%20on%20the%20Sailing%2042" target="_blank" class="block w-full bg-navy text-white font-bold text-base py-4 rounded-2xl uppercase tracking-[0.2em] text-center shadow-lg">Book This Boat Now</a>
+      </div>
+    </div>
+
+    <!-- Sailing 38' (Private) -->
+    <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl">
+      <div class="h-[480px] w-full relative">
+        <div class="boat-carousel relative w-full h-full">
+          <img alt="Sailing Boat 38'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-100 transition-opacity duration-700" src="images/Boats/Sailing 38'/6.Sailing 38'.jpg"/>
+          <img alt="Sailing Boat 38'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" src="images/Boats/Sailing 38'/8.Sailing 38'.JPG"/>
+          <img alt="Sailing Boat 38'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" src="images/Boats/Sailing 38'/5.Sailing 38'.jpg"/>
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
+        <div class="absolute bottom-5 left-6">
+          <h4 class="text-white text-xl" style="font-family: Cinzel, serif;">Sailing 38' <span class="text-sm text-white/70">(Private)</span></h4>
+          <div class="flex items-center gap-2 text-white/80 text-base mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-sm" style="color:#C5A059">group</span><span>Max 10 Guests</span></div>
+        </div>
+        <div class="absolute top-4 right-4 text-white text-base font-bold px-3 py-1 rounded-full uppercase tracking-widest" style="background:#C5A059">Best Value</div>
+        <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
+        <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
+      </div>
+      <div class="p-6 space-y-6">
+        <div class="flex justify-between items-center text-navy/60">
+          <div class="flex flex-col items-center gap-1"><span class="material-symbols-outlined" style="color:#C5A059">dry_cleaning</span><span class="text-base font-bold uppercase tracking-tighter">Towels</span></div>
+          <div class="flex flex-col items-center gap-1"><span class="material-symbols-outlined" style="color:#C5A059">scuba_diving</span><span class="text-base font-bold uppercase tracking-tighter">Snorkeling</span></div>
+          <div class="flex flex-col items-center gap-1"><span class="material-symbols-outlined" style="color:#C5A059">restaurant</span><span class="text-base font-bold uppercase tracking-tighter">Food</span></div>
+          <div class="flex flex-col items-center gap-1"><span class="material-symbols-outlined" style="color:#C5A059">liquor</span><span class="text-base font-bold uppercase tracking-tighter">Bar</span></div>
+        </div>
+        <div class="h-px bg-border-light"></div>
+        <div class="space-y-4">
+          <div class="flex items-center justify-between"><span class="text-navy text-base font-bold uppercase tracking-widest">Special Online Offer</span><div class="text-base font-bold px-2 py-0.5 rounded border uppercase" style="color:#C5A059;background:rgba(197,160,89,0.1);border-color:rgba(197,160,89,0.2)">Save 15%</div></div>
+          <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-navy/40 line-through text-sm font-medium">$825</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$701</span><span class="text-navy/40 text-base font-medium uppercase">/ 1-4 guests</span></div></div><div class="flex flex-col items-end"><span class="text-navy/40 text-base font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-navy/40 line-through text-base">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-navy/40 text-base font-medium">/pp</span></div></div></div>
+        </div>
+        <a href="https://wa.me/526241916997?text=Hi%2C%20I'd%20like%20info%20on%20the%20Sailing%2038" target="_blank" class="block w-full bg-navy text-white font-bold text-base py-4 rounded-2xl uppercase tracking-[0.2em] text-center shadow-lg">Book This Boat Now</a>
+      </div>
+    </div>
+
+    <!-- Sailing 38'-42' (Shared) -->
+    <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl">
+      <div class="h-[480px] w-full relative">
+        <div class="boat-carousel relative w-full h-full">
+          <img alt="Shared Sailing Tour" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-100 transition-opacity duration-700" src="images/Boats/Sailing 42'/10.Sailing 42'.jpg"/>
+          <img alt="Shared Sailing Tour" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" src="images/Boats/Sailing 38'/6.Sailing 38'.jpg"/>
+          <img alt="Shared Sailing Tour" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" src="images/Boats/Sailing 42'/17.Sailing 42'.jpg"/>
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
+        <div class="absolute bottom-5 left-6">
+          <h4 class="text-white text-xl" style="font-family: Cinzel, serif;">Sailing 38'-42' <span class="text-sm text-white/70">(Shared)</span></h4>
+          <div class="flex items-center gap-2 text-white/80 text-base mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-sm" style="color:#C5A059">group</span><span>Max 14 Guests</span></div>
+        </div>
+        <div class="absolute top-4 right-4 text-white text-base font-bold px-3 py-1 rounded-full uppercase tracking-widest" style="background:#0A1D37">Shared Tour</div>
+        <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
+        <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
+      </div>
+      <div class="p-6 space-y-6">
+        <div class="flex justify-between items-center text-navy/60">
+          <div class="flex flex-col items-center gap-1"><span class="material-symbols-outlined" style="color:#C5A059">dry_cleaning</span><span class="text-base font-bold uppercase tracking-tighter">Towels</span></div>
+          <div class="flex flex-col items-center gap-1"><span class="material-symbols-outlined" style="color:#C5A059">scuba_diving</span><span class="text-base font-bold uppercase tracking-tighter">Snorkel Gear</span></div>
+          <div class="flex flex-col items-center gap-1"><span class="material-symbols-outlined" style="color:#C5A059">liquor</span><span class="text-base font-bold uppercase tracking-tighter">Bar</span></div>
+        </div>
+        <div class="h-px bg-border-light"></div>
+        <div class="space-y-4">
+          <div class="flex items-center justify-between"><span class="text-navy text-base font-bold uppercase tracking-widest">Special Online Offer</span><div class="text-base font-bold px-2 py-0.5 rounded border uppercase" style="color:#C5A059;background:rgba(197,160,89,0.1);border-color:rgba(197,160,89,0.2)">Save 15%</div></div>
+          <div class="flex items-end justify-between"><div class="flex flex-col"><span class="text-navy/40 line-through text-sm font-medium">$120</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$102</span><span class="text-navy/40 text-base font-medium uppercase">per person</span></div></div></div>
+        </div>
+        <a href="https://wa.me/526241916997?text=Hi%2C%20I'd%20like%20to%20book%20a%20shared%20sailing%20tour" target="_blank" class="block w-full bg-navy text-white font-bold text-base py-4 rounded-2xl uppercase tracking-[0.2em] text-center shadow-lg">Book This Boat Now</a>
+      </div>
+    </div>
+
+  </div><!-- end sailboat grid -->
+
+</div><!-- end max-w-[1400px] boat section -->
+
+<!-- Article Section -->
+<div class="max-w-[1400px] mx-auto px-10 py-16 border-t border-border-light mt-10">
+  <div class="grid grid-cols-2 gap-16 items-start">
+    <div>
+      <div class="flex items-center gap-3 mb-6"><div class="w-1 h-8 bg-gold rounded-full" style="background:#C5A059"></div><h2 class="text-3xl text-navy" style="font-family: Cinzel, serif;">Why Sail in Cabo San Lucas?</h2></div>
+      <p class="text-slate-500 leading-relaxed mb-5">Cabo San Lucas sits at the very tip of Mexico's Baja California Peninsula, where the Pacific Ocean meets the Sea of Cortez. This unique geography creates some of the most spectacular sailing conditions in the world — calm waters, consistent winds, and an ever-changing backdrop of dramatic rock formations, pristine beaches, and desert landscapes.</p>
+      <p class="text-slate-500 leading-relaxed mb-5">The crown jewel is the famous Arch (El Arco) at Land's End, a natural rock formation that has become the symbol of Cabo. Sailing past the Arch at sunset, with a cocktail in hand and the sky painted in amber and rose, is an experience that draws visitors back year after year.</p>
+      <p class="text-slate-500 leading-relaxed">Whether you're snorkeling at Pelican Rock, celebrating with friends on a private yacht, or watching humpback whales breach alongside your sailboat, every moment on the water in Cabo feels like a once-in-a-lifetime adventure.</p>
+      <div class="flex gap-8 mt-8">
+        <div><p class="text-3xl font-bold text-navy" style="font-family: Cinzel, serif;">340+</p><p class="text-sm text-slate-400 uppercase tracking-widest font-bold mt-1">Sunny Days / Year</p></div>
+        <div class="w-px bg-border-light"></div>
+        <div><p class="text-3xl font-bold text-navy" style="font-family: Cinzel, serif;">25°C</p><p class="text-sm text-slate-400 uppercase tracking-widest font-bold mt-1">Avg. Water Temp</p></div>
+        <div class="w-px bg-border-light"></div>
+        <div><p class="text-3xl font-bold text-navy" style="font-family: Cinzel, serif;">1000+</p><p class="text-sm text-slate-400 uppercase tracking-widest font-bold mt-1">Happy Guests</p></div>
+      </div>
+    </div>
+    <div>
+      <img src="images/Boats/Sailing 42'/14.Sailing 42'.jpg" alt="Sailing past the Arch in Cabo San Lucas" class="w-full h-80 object-cover rounded-3xl shadow-xl mb-6"/>
+      <img src="images/guests on sailboats/Header Sunset 3.jpeg" alt="Sunset sailing in Cabo" class="w-full h-64 object-cover rounded-3xl shadow-xl"/>
+    </div>
+  </div>
+</div>
+
+<!-- Desktop Footer -->
+<footer class="bg-navy mt-20 px-5 lg:px-12 py-12">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-10">
+      <div>
+        <img src="images/cabo-sailing-n-l.png" alt="Cabo Sailing" class="h-10 mb-4" style="filter: brightness(0) invert(1) opacity(0.9)"/>
+        <p class="text-white/50 text-base leading-relaxed">Luxury sailing &amp; snorkeling charters in Cabo San Lucas, Mexico.</p>
+        <div class="flex gap-3 mt-4">
+          <a href="#" class="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center text-white/60 hover:text-white transition-colors"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center text-white/60 hover:text-white transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-white font-bold text-base uppercase tracking-widest mb-4">Tours</h4>
+        <ul class="space-y-2 text-white/50 text-base">
+          <li><a href="private-snorkeling.html" class="hover:text-gold transition-colors">Private Snorkeling</a></li>
+          <li><a href="shared-snorkeling.html" class="hover:text-gold transition-colors">Shared Snorkeling</a></li>
+          <li><a href="private-sunset.html" class="hover:text-gold transition-colors">Private Sunset</a></li>
+          <li><a href="shared-sunset.html" class="hover:text-gold transition-colors">Shared Sunset</a></li>
+          <li><a href="whale-watching.html" class="hover:text-gold transition-colors">Whale Watching</a></li>
+          <li><a href="scuba-diving.html" class="hover:text-gold transition-colors">Scuba Diving</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-bold text-base uppercase tracking-widest mb-4">Company</h4>
+        <ul class="space-y-2 text-white/50 text-base">
+          <li><a href="fleet.html" class="text-gold">Our Fleet</a></li>
+          <li><a href="shuttle-service.html" class="hover:text-gold transition-colors">Shuttle Service</a></li>
+          <li><a href="travel_guide.html" class="hover:text-gold transition-colors">Travel Guide</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-bold text-base uppercase tracking-widest mb-4">Contact</h4>
+        <div class="space-y-3 text-white/50 text-base">
+          <div class="flex items-center gap-2"><span class="material-symbols-outlined text-gold text-base" style="color:#C5A059">call</span><a href="tel:6197842745" class="hover:text-gold transition-colors">619-784-2745</a></div>
+          <div class="flex items-center gap-2"><i class="fa-brands fa-whatsapp" style="color:#C5A059"></i><a href="https://wa.me/526241916997" target="_blank" class="hover:text-gold transition-colors">+52 624 191 6997</a></div>
+          <div class="flex items-center gap-2"><span class="material-symbols-outlined text-gold text-base" style="color:#C5A059">email</span><a href="mailto:info@cabosailing.com" class="hover:text-gold transition-colors">info@cabosailing.com</a></div>
+          <div class="flex items-center gap-2"><span class="material-symbols-outlined text-gold text-base" style="color:#C5A059">pin_drop</span><span>Cabo San Lucas Marina, Dock F</span></div>
+          <div class="flex items-center gap-2 mt-1"><span class="material-symbols-outlined text-gold text-base" style="color:#C5A059">mail</span><a href="contact.html" class="text-white font-bold hover:text-gold transition-colors">Contact Us Now</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-white/10 pt-6 flex items-center justify-between">
+      <p class="text-white/30 text-sm">&copy; 2026 Cabo Sailing. All rights reserved.</p>
+      <p class="text-white/30 text-sm">Land's End, Cabo San Lucas, Mexico</p>
+    </div>
+  </div>
+</footer>
+
+</div><!-- end desktop wrapper hidden lg:block -->
 
 </main>
 
@@ -350,7 +759,7 @@
       <div>
         <button onclick="document.getElementById('tour-dropdown').classList.toggle('hidden');document.getElementById('tour-arrow').classList.toggle('rotate-180')" class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors w-full">
           <span class="material-symbols-outlined text-accent-gold group-hover:text-navy transition-colors text-2xl">explore</span>
-          <span class="font-semibold">Tour</span>
+          <span class="font-semibold">Tours</span>
           <span id="tour-arrow" class="material-symbols-outlined ml-auto transition-transform duration-200 text-xl">expand_more</span>
         </button>
         <div id="tour-dropdown" class="hidden pl-10 mt-3 space-y-4">
@@ -376,20 +785,20 @@
           </div>
           <a class="block text-base font-serif text-navy/70 hover:text-accent-gold transition-colors" href="whale-watching.html">Whale Watching</a>
           <a class="block text-base font-serif text-navy/70 hover:text-accent-gold transition-colors" href="bachelorette-party.html">Bachelorette</a>
-          <a class="block text-base font-serif text-navy/70 hover:text-accent-gold transition-colors" href="#">Scuba Diving</a>
+          <a class="block text-base font-serif text-navy/70 hover:text-accent-gold transition-colors" href="scuba-diving.html">Scuba Diving</a>
         </div>
       </div>
       <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="shuttle-service.html"><span class="material-symbols-outlined text-navy group-hover:text-accent-gold transition-colors text-2xl">airport_shuttle</span><span class="font-semibold">Shuttle Service</span></a>
       <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="fleet.html"><span class="material-symbols-outlined text-accent-gold group-hover:text-navy transition-colors text-2xl">sailing</span><span class="font-semibold">Our Fleet</span></a>
       <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="#"><span class="material-symbols-outlined text-navy group-hover:text-accent-gold transition-colors text-2xl">stars</span><span class="font-semibold">Special Offers</span></a>
       <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="#"><span class="material-symbols-outlined text-accent-gold group-hover:text-navy transition-colors text-2xl">anchor</span><span class="font-semibold">About Our Crew</span></a>
+      <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="travel_guide.html"><span class="material-symbols-outlined text-navy group-hover:text-accent-gold transition-colors text-2xl">menu_book</span><span class="font-semibold">Travel Guide</span></a>
       <div>
-        <button onclick="document.getElementById('contact-dropdown').classList.toggle('hidden');document.getElementById('contact-arrow').classList.toggle('rotate-180')" class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors w-full">
-          <span class="material-symbols-outlined text-navy group-hover:text-accent-gold transition-colors text-2xl">mail</span>
+        <div class="group flex items-center gap-4 text-xl font-serif text-navy">
+          <span class="material-symbols-outlined text-navy text-2xl">mail</span>
           <span class="font-semibold">Contact Info</span>
-          <span id="contact-arrow" class="material-symbols-outlined ml-auto transition-transform duration-200 text-xl">expand_more</span>
-        </button>
-        <div id="contact-dropdown" class="hidden pl-10 mt-3 space-y-4">
+        </div>
+        <div class="pl-10 mt-3 space-y-4">
           <a class="flex items-center gap-2 text-base text-navy/70 hover:text-accent-gold transition-colors" href="https://wa.me/526241916997?text=hi%2C%20I'm%20sending%20you%20a%20message%20from%20cabosailing.com" target="_blank"><i class="fa-brands fa-whatsapp text-[#25D366]"></i> +52 624 191 6997</a>
           <a class="flex items-center gap-2 text-base text-navy/70 hover:text-accent-gold transition-colors" href="tel:+526241438485"><span class="material-symbols-outlined text-base">call</span> +52 624 143 8485</a>
           <a class="flex items-center gap-2 text-base text-navy/70 hover:text-accent-gold transition-colors" href="mailto:info@cabosailing.com"><span class="material-symbols-outlined text-base">email</span> info@cabosailing.com</a>
@@ -425,41 +834,26 @@
     document.getElementById('shared-content').classList.toggle('hidden', isPrivate);
   }
 
-  // Boat image carousel with Intersection Observer
-  (function() {
-    var carousels = document.querySelectorAll('.boat-carousel');
-    var intervals = new Map();
-
-    function startCarousel(carousel) {
-      if (intervals.has(carousel)) return;
-      var slides = carousel.querySelectorAll('.boat-slide');
-      var current = 0;
-      var timer = setInterval(function() {
-        slides[current].style.opacity = '0';
-        current = (current + 1) % slides.length;
-        slides[current].style.opacity = '1';
-      }, 2000);
-      intervals.set(carousel, timer);
+  // Fleet boat card arrow navigation
+  function fleetNav(btn, dir) {
+    var wrap = btn.parentElement.querySelector('.boat-carousel');
+    if (!wrap) {
+      wrap = btn.closest('.h-\\[480px\\]') || btn.closest('[class*="h-["]');
+      if (!wrap) wrap = btn.parentElement;
     }
-
-    function stopCarousel(carousel) {
-      if (!intervals.has(carousel)) return;
-      clearInterval(intervals.get(carousel));
-      intervals.delete(carousel);
-    }
-
-    var observer = new IntersectionObserver(function(entries) {
-      entries.forEach(function(entry) {
-        if (entry.isIntersecting) {
-          startCarousel(entry.target);
-        } else {
-          stopCarousel(entry.target);
-        }
-      });
-    }, { threshold: 0.5 });
-
-    carousels.forEach(function(c) { observer.observe(c); });
-  })();
+    var slides = wrap.querySelectorAll('.boat-slide');
+    var current = 0;
+    slides.forEach(function(s, i) { if (s.style.opacity === '1' || s.classList.contains('opacity-100')) current = i; });
+    slides[current].style.opacity = '0';
+    slides[current].classList.remove('opacity-100');
+    var next = (current + dir + slides.length) % slides.length;
+    slides[next].style.opacity = '1';
+  }
 </script>
 
+
+<!-- Floating Quick Availability Button -->
+<a href="contact.html" class="fixed right-0 top-1/2 -translate-y-1/2 z-50 bg-navy hover:bg-navy/90 transition-colors shadow-xl rounded-l-xl py-3 px-2 lg:py-4 lg:px-2.5 group" style="writing-mode:vertical-rl;text-orientation:mixed;">
+  <span class="text-gold font-bold text-[10px] lg:text-xs uppercase tracking-[0.2em] group-hover:text-white transition-colors">Quick Availability Check</span>
+</a>
 </body></html>

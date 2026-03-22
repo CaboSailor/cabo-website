@@ -53,27 +53,72 @@
     </style>
   </head>
 <body class="antialiased min-h-screen flex flex-col relative pt-[72px]">
-<header class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-3 bg-white/80 backdrop-blur-md border-b border-gray-200 transition-all duration-300">
-<button id="menu-open" class="flex flex-col gap-[3px] items-center justify-center w-10 h-10 -ml-2 text-navy active:scale-95 transition-transform">
-<div class="w-5 h-[2px] bg-gray-800 rounded-full"></div>
-<div class="w-5 h-[2px] bg-gray-800 rounded-full"></div>
-<div class="w-5 h-[2px] bg-gray-800 rounded-full"></div>
-<span class="text-base font-bold tracking-widest mt-0.5">MENU</span>
-</button>
-<div class="flex-shrink-0 flex items-center justify-center">
-<img src="images/cabo-sailing-n-l.png" alt="Cabo Sailing" class="h-10"/>
-</div>
-<a href="https://wa.me/526241916997?text=hi%2C%20I'm%20sending%20you%20a%20message%20from%20cabosailing.com" target="_blank" class="flex items-center justify-center w-10 h-10 -mr-2 bg-[#25D366] rounded-full text-white active:scale-95 transition-transform shadow-md">
-<i class="fa-brands fa-whatsapp text-2xl"></i>
-</a>
+<header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200 transition-all duration-300">
+  <!-- Mobile header -->
+  <div class="flex lg:hidden items-center justify-between px-6 py-3">
+    <button id="menu-open" class="flex flex-col gap-[3px] items-center justify-center w-10 h-10 -ml-2 text-navy active:scale-95 transition-transform">
+      <div class="w-5 h-[2px] bg-gray-800 rounded-full"></div>
+      <div class="w-5 h-[2px] bg-gray-800 rounded-full"></div>
+      <div class="w-5 h-[2px] bg-gray-800 rounded-full"></div>
+    </button>
+    <div class="flex-shrink-0 flex items-center justify-center">
+      <img src="images/cabo-sailing-n-l.png" alt="Cabo Sailing" class="h-10"/>
+    </div>
+    <a href="https://wa.me/526241916997?text=hi%2C%20I'm%20sending%20you%20a%20message%20from%20cabosailing.com" target="_blank" class="flex items-center justify-center w-10 h-10 -mr-2 bg-[#25D366] rounded-full text-white active:scale-95 transition-transform shadow-md">
+      <i class="fa-brands fa-whatsapp text-2xl"></i>
+    </a>
+  </div>
+  <!-- Desktop header -->
+  <div class="hidden lg:flex items-center justify-between px-10 py-3 max-w-[1400px] mx-auto">
+    <a href="index.html" class="flex-shrink-0">
+      <img src="images/cabo-sailing-n-l.png" alt="Cabo Sailing" class="h-12"/>
+    </a>
+    <nav class="flex items-center gap-8">
+      <a href="index.html" class="text-sm font-semibold text-navy uppercase tracking-widest hover:text-gold transition-colors">Home</a>
+      <div class="relative group">
+        <button class="text-sm font-semibold text-navy uppercase tracking-widest hover:text-gold transition-colors flex items-center gap-1">Tours <span class="material-symbols-outlined text-sm">expand_more</span></button>
+        <div class="absolute top-full left-0 mt-2 bg-white rounded-xl shadow-xl border border-border-light py-3 min-w-[220px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+          <p class="px-4 py-1 text-[10px] font-bold text-slate-400 uppercase tracking-widest">Snorkeling</p>
+          <a href="private-snorkeling.html" class="block px-4 py-2 text-sm text-navy hover:bg-light-grey hover:text-gold transition-colors">Private Snorkeling</a>
+          <a href="shared-snorkeling.html" class="block px-4 py-2 text-sm text-navy hover:bg-light-grey hover:text-gold transition-colors">Shared Snorkeling</a>
+          <div class="h-px bg-border-light my-2"></div>
+          <p class="px-4 py-1 text-[10px] font-bold text-slate-400 uppercase tracking-widest">Sunset</p>
+          <a href="private-sunset.html" class="block px-4 py-2 text-sm text-navy hover:bg-light-grey hover:text-gold transition-colors">Private Sunset</a>
+          <a href="shared-sunset.html" class="block px-4 py-2 text-sm text-navy hover:bg-light-grey hover:text-gold transition-colors">Shared Sunset</a>
+          <div class="h-px bg-border-light my-2"></div>
+          <a href="whale-watching.html" class="block px-4 py-2 text-sm text-navy hover:bg-light-grey hover:text-gold transition-colors">Whale Watching</a>
+          <a href="bachelorette-party.html" class="block px-4 py-2 text-sm text-navy hover:bg-light-grey hover:text-gold transition-colors">Bachelorette</a>
+          <a href="scuba-diving.html" class="block px-4 py-2 text-sm text-navy hover:bg-light-grey hover:text-gold transition-colors">Scuba Diving</a>
+        </div>
+      </div>
+      <a href="fleet.html" class="text-sm font-semibold text-navy uppercase tracking-widest hover:text-gold transition-colors">Our Fleet</a>
+      <a href="shuttle-service.html" class="text-sm font-semibold text-gold uppercase tracking-widest">Shuttle</a>
+      <a href="travel_guide.html" class="text-sm font-semibold text-navy uppercase tracking-widest hover:text-gold transition-colors">Travel Guide</a>
+    </nav>
+    <div class="flex items-center gap-4">
+      <a href="tel:+526241438485" class="text-sm font-semibold text-navy hover:text-gold transition-colors flex items-center gap-1"><span class="material-symbols-outlined text-base">call</span> +52 624 143 8485</a>
+      <a href="https://wa.me/526241916997?text=hi%2C%20I'm%20sending%20you%20a%20message%20from%20cabosailing.com" target="_blank" class="flex items-center justify-center w-10 h-10 bg-[#25D366] rounded-full text-white hover:scale-105 transition-transform shadow-md">
+        <i class="fa-brands fa-whatsapp text-xl"></i>
+      </a>
+    </div>
+  </div>
 </header>
 <main class="flex-1">
-<div class="relative w-full h-[45vh] overflow-hidden bg-navy/20">
-<img alt="Luxury van fleet at a premium terminal" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnUJjCSykEQLMNL8v-wODvoufu2R28TaLo9cQ1cGbFQa-IVWX-qRhVyanvCSmma_-SfpOw5ES6gYh2XGMl6z1yvlgSrxo_YzCG2PoZOryNS2pvU2GKZPca7sE-Npg5UPAhDsCvGPCWb58tTPiyt1hvaN9RgIv5VGEjt9tzEdcB2lpg0KkBJFl8pg0F39A1ICqPSG92KUBjVJpWhzEnai_cErE4S-hKbdK0Y30ljgayMXhoe74LsnEXM0HxpQJh_luUe9tb2_fhPnE"/>
-<div class="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/40 to-transparent"></div>
-<div class="absolute bottom-12 left-0 right-0 px-6">
-<h1 class="text-3xl text-white mb-2 leading-tight font-serif">Private Transportation in Cabo San Lucas</h1>
-<p class="text-white/80 text-base font-medium tracking-wide uppercase">Luxury Fleet Service</p>
+<div class="lg:hidden">
+<div class="relative w-full h-[45vh] overflow-hidden">
+<div class="flex overflow-x-auto snap-x snap-mandatory h-full no-scrollbar">
+<div class="flex-shrink-0 w-full h-full snap-center relative"><img alt="Cabo Sailing shuttle van" class="w-full h-full object-cover" src="images/Van.png"/><div class="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/40 to-transparent"></div><div class="absolute bottom-12 left-0 right-0 px-6"><h1 class="text-3xl text-white mb-2 leading-tight font-serif">Seamless Shuttle to Your Cruise &amp; Back</h1><p class="text-white/80 text-base font-medium tracking-wide uppercase">Private Door-to-Door Service</p></div></div>
+<div class="flex-shrink-0 w-full h-full snap-center"><img alt="Yacht 45 in Cabo" class="w-full h-full object-cover" src="images/Boats/Yacht 45'/5.Yacht 45'.jpg"/></div>
+<div class="flex-shrink-0 w-full h-full snap-center"><img alt="Sailing 42 with guests" class="w-full h-full object-cover" src="images/Boats/Sailing 42'/10.Sailing 42'.jpg"/></div>
+<div class="flex-shrink-0 w-full h-full snap-center"><img alt="Happy guests on sailboat" class="w-full h-full object-cover" src="images/Guests/31.03.25 Gil airbnb shoot photos 20mm (42)-topaz-sharpen-exposure.jpg"/></div>
+<div class="flex-shrink-0 w-full h-full snap-center"><img alt="Guests toasting on yacht" class="w-full h-full object-cover" src="images/Guests on yachts/frame grabs yacht (31).jpg"/></div>
+</div>
+<div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-1.5 z-10">
+<div class="w-1.5 h-1.5 rounded-full bg-white"></div>
+<div class="w-1.5 h-1.5 rounded-full bg-white/50"></div>
+<div class="w-1.5 h-1.5 rounded-full bg-white/50"></div>
+<div class="w-1.5 h-1.5 rounded-full bg-white/50"></div>
+<div class="w-1.5 h-1.5 rounded-full bg-white/50"></div>
 </div>
 </div>
 <div class="px-5 -mt-8 relative z-10">
@@ -111,6 +156,20 @@
                 Cruise Pick Up Form
             </button>
 </div>
+    <!-- MOBILE: Seamless Shuttle Section -->
+    <div class="px-5 pt-8 pb-6">
+      <div class="flex items-center gap-3 mb-4"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-lg text-navy">Seamless Shuttle to Your Cruise &amp; Back</h3></div>
+      <img src="images/Van.png" alt="Cabo Sailing shuttle" class="w-full h-48 object-cover rounded-2xl mb-4"/>
+      <p class="text-base text-slate-500 leading-relaxed mb-3">Getting to the marina for your sailing charter should be the easiest part of your day. Our private shuttle picks you up right at your hotel, resort, or vacation rental and takes you directly to the Cabo San Lucas Marina — and brings you back when your cruise is over.</p>
+      <p class="text-base text-slate-500 leading-relaxed">No waiting for taxis, no navigating unfamiliar streets. Just step in, relax, and let us handle the ride so you can focus on the adventure ahead.</p>
+      <div class="flex gap-6 mt-6">
+        <div><p class="text-xl font-bold text-navy font-serif">All Day</p><p class="text-xs text-slate-400 uppercase tracking-widest font-bold mt-1">Available</p></div>
+        <div class="w-px bg-border-light"></div>
+        <div><p class="text-xl font-bold text-navy font-serif">Private</p><p class="text-xs text-slate-400 uppercase tracking-widest font-bold mt-1">Vehicle</p></div>
+        <div class="w-px bg-border-light"></div>
+        <div><p class="text-xl font-bold text-navy font-serif">Door-to-Door</p><p class="text-xs text-slate-400 uppercase tracking-widest font-bold mt-1">Service</p></div>
+      </div>
+    </div>
 <div class="mt-12 px-5">
 <div class="text-center mb-8">
 <h2 class="text-2xl text-navy mb-2">Hotel &amp; Residential to Marina</h2>
@@ -122,25 +181,25 @@
 </div>
 <div class="p-6 space-y-6">
 <div>
-<h4 class="text-navy text-sm font-bold uppercase mb-3 border-b border-slate-100 pb-2">Palmilla Bridge Area</h4>
-<div class="flex justify-between items-center text-base mb-2">
-<span class="text-slate-600">One way (1-10 guests)</span>
-<span class="font-bold text-navy">$60 USD</span>
-</div>
-<div class="flex justify-between items-center text-base">
-<span class="text-slate-600">Round trip (1-10 guests)</span>
-<span class="font-bold text-navy">$105 USD</span>
-</div>
-</div>
-<div>
-<h4 class="text-navy text-sm font-bold uppercase mb-3 border-b border-slate-100 pb-2">Puerto Los Cabos Area</h4>
+<h4 class="text-navy text-sm font-bold uppercase mb-3 border-b border-slate-100 pb-2">Cabo San Lucas to Palmilla Bridge</h4>
 <div class="flex justify-between items-center text-base mb-2">
 <span class="text-slate-600">One way (1-10 guests)</span>
 <span class="font-bold text-navy">$70 USD</span>
 </div>
 <div class="flex justify-between items-center text-base">
 <span class="text-slate-600">Round trip (1-10 guests)</span>
-<span class="font-bold text-navy">$130 USD</span>
+<span class="font-bold text-navy">$120 USD</span>
+</div>
+</div>
+<div>
+<h4 class="text-navy text-sm font-bold uppercase mb-3 border-b border-slate-100 pb-2">Palmilla to Puerto Los Cabos</h4>
+<div class="flex justify-between items-center text-base mb-2">
+<span class="text-slate-600">One way (1-10 guests)</span>
+<span class="font-bold text-navy">$80 USD</span>
+</div>
+<div class="flex justify-between items-center text-base">
+<span class="text-slate-600">Round trip (1-10 guests)</span>
+<span class="font-bold text-navy">$145 USD</span>
 </div>
 </div>
 <p class="text-base text-center text-slate-400 font-bold uppercase pt-2">Extra guest (11th &amp; more): $10 USD per guest</p>
@@ -201,126 +260,275 @@
 <h3 class="text-center text-navy font-bold italic mb-8">Inquire for Service Now!</h3>
 <div class="space-y-3">
 <button class="w-full bg-cabo-yellow hover:bg-yellow-500 text-navy font-bold py-4 rounded-2xl shadow-md transition-all active:scale-[0.98] text-base uppercase tracking-wider">
-                    Airport Transportation Form
-                </button>
-<button class="w-full bg-cabo-yellow hover:bg-yellow-500 text-navy font-bold py-4 rounded-2xl shadow-md transition-all active:scale-[0.98] text-base uppercase tracking-wider">
                     Cruise Pick Up Form
                 </button>
+<button class="w-full bg-white border border-border-light hover:bg-light-grey text-navy font-bold py-4 rounded-2xl shadow-md transition-all active:scale-[0.98] text-base uppercase tracking-wider">
+                    Airport Transportation Form
+                </button>
 </div>
 </div>
-    <!-- MOBILE: Seamless Airport Transfers in Los Cabos -->
-    <div class="px-5 pt-8 pb-6">
-      <div class="flex items-center gap-3 mb-4"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-lg text-navy">Seamless Airport Transfers in Los Cabos</h3></div>
-      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnUJjCSykEQLMNL8v-wODvoufu2R28TaLo9cQ1cGbFQa-IVWX-qRhVyanvCSmma_-SfpOw5ES6gYh2XGMl6z1yvlgSrxo_YzCG2PoZOryNS2pvU2GKZPca7sE-Npg5UPAhDsCvGPCWb58tTPiyt1hvaN9RgIv5VGEjt9tzEdcB2lpg0KkBJFl8pg0F39A1ICqPSG92KUBjVJpWhzEnai_cErE4S-hKbdK0Y30ljgayMXhoe74LsnEXM0HxpQJh_luUe9tb2_fhPnE" alt="Seamless Airport Transfers in Los Cabos" class="w-full h-48 object-cover rounded-2xl mb-4"/>
-      <p class="text-base text-slate-500 leading-relaxed mb-3">After a long flight, the last thing you want is to stress about getting to your hotel or marina. Our professional shuttle service covers all of Los Cabos — from San José del Cabo Airport to resorts, marinas, and hotels across the peninsula.</p>
-      <p class="text-base text-slate-500 leading-relaxed">Enjoy air-conditioned vehicles, friendly bilingual drivers, and door-to-door service so your vacation starts the moment you land.</p>
-      <div class="flex gap-6 mt-6">
-        <div><p class="text-xl font-bold text-navy font-serif">All Day</p><p class="text-xs text-slate-400 uppercase tracking-widest font-bold mt-1">Available</p></div>
-        <div class="w-px bg-border-light"></div>
-        <div><p class="text-xl font-bold text-navy font-serif">Private</p><p class="text-xs text-slate-400 uppercase tracking-widest font-bold mt-1">Vehicle</p></div>
-        <div class="w-px bg-border-light"></div>
-        <div><p class="text-xl font-bold text-navy font-serif">Door-to-Door</p><p class="text-xs text-slate-400 uppercase tracking-widest font-bold mt-1">Service</p></div>
+</div><!-- end mobile lg:hidden wrapper -->
+
+  <!-- ========== DESKTOP LAYOUT ========== -->
+  <div class="hidden lg:block">
+
+    <!-- Hero Gallery -->
+    <div class="max-w-[1400px] mx-auto px-10 pt-10">
+      <div class="grid grid-cols-4 grid-rows-2 gap-2 h-[55vh]">
+        <div class="col-span-2 row-span-2 rounded-2xl overflow-hidden relative">
+          <img alt="Cabo Sailing shuttle van" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src="images/Van.png"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent rounded-2xl"></div>
+          <div class="absolute bottom-6 left-6">
+            <span class="bg-cabo-blue text-white text-sm font-bold px-4 py-1.5 rounded-full uppercase tracking-widest mb-3 inline-block">Door-to-Door Service</span>
+            <h1 class="text-4xl text-white leading-tight">Seamless Shuttle to<br/>Your Cruise &amp; Back</h1>
+          </div>
+        </div>
+        <div class="rounded-2xl overflow-hidden"><img alt="Yacht 45 in Cabo" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src="images/Boats/Yacht 45'/5.Yacht 45'.jpg"/></div>
+        <div class="rounded-2xl overflow-hidden"><img alt="Sailing 42 with guests" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src="images/Boats/Sailing 42'/10.Sailing 42'.jpg"/></div>
+        <div class="rounded-2xl overflow-hidden"><img alt="Happy guests on sailboat" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src="images/Guests/31.03.25 Gil airbnb shoot photos 20mm (42)-topaz-sharpen-exposure.jpg"/></div>
+        <div class="rounded-2xl overflow-hidden"><img alt="Guests toasting on yacht" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src="images/Guests on yachts/frame grabs yacht (31).jpg"/></div>
       </div>
     </div>
 
-    <!-- MOBILE: Guest Reviews Carousel -->
-    <div class="px-5 pb-12">
-      <div class="flex items-center gap-3 mb-4"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-lg text-navy">What Our Guests Say</h3></div>
-      <div class="relative overflow-hidden">
-        <div id="m-carousel" class="flex transition-transform duration-500 ease-in-out">
-          <!-- Review 1 -->
-          <div class="min-w-full bg-light-grey rounded-2xl p-5 border border-border-light">
-            <div class="flex items-center gap-1 mb-2">
-              <span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span>
+    <!-- Why Choose Us -->
+    <div class="max-w-[1400px] mx-auto px-10 py-16">
+      <div class="grid grid-cols-3 gap-8 mb-16">
+        <div class="bg-light-grey rounded-2xl p-8 border border-border-light text-center">
+          <div class="w-14 h-14 rounded-full bg-cabo-blue/10 flex items-center justify-center mx-auto mb-4">
+            <span class="material-symbols-outlined text-cabo-blue text-2xl">security</span>
+          </div>
+          <h3 class="text-navy font-bold text-lg mb-2">Safety First</h3>
+          <p class="text-slate-500 text-base">Licensed, insured vehicles with professionally trained drivers. Your safety is our #1 priority.</p>
+        </div>
+        <div class="bg-light-grey rounded-2xl p-8 border border-border-light text-center">
+          <div class="w-14 h-14 rounded-full bg-cabo-blue/10 flex items-center justify-center mx-auto mb-4">
+            <span class="material-symbols-outlined text-cabo-blue text-2xl">language</span>
+          </div>
+          <h3 class="text-navy font-bold text-lg mb-2">Bilingual Drivers</h3>
+          <p class="text-slate-500 text-base">Professional English and Spanish-speaking drivers who know Los Cabos inside and out.</p>
+        </div>
+        <div class="bg-light-grey rounded-2xl p-8 border border-border-light text-center">
+          <div class="w-14 h-14 rounded-full bg-cabo-blue/10 flex items-center justify-center mx-auto mb-4">
+            <span class="material-symbols-outlined text-cabo-blue text-2xl">payments</span>
+          </div>
+          <h3 class="text-navy font-bold text-lg mb-2">Competitive Prices</h3>
+          <p class="text-slate-500 text-base">Transparent pricing with no hidden fees. Book direct and save compared to hotel transfers.</p>
+        </div>
+      </div>
+
+      <!-- About Section - Cruise Shuttle Focus -->
+      <div class="flex gap-16 items-center mb-20">
+        <div class="flex-1">
+          <div class="flex items-center gap-3 mb-6"><div class="w-1 h-8 bg-gold rounded-full"></div><h2 class="text-3xl text-navy">Seamless Shuttle to Your Cruise &amp; Back</h2></div>
+          <p class="text-slate-500 text-lg leading-relaxed mb-4">Getting to the marina for your sailing charter should be the easiest part of your day. Our private shuttle picks you up right at your hotel, resort, or vacation rental and takes you directly to the Cabo San Lucas Marina — and brings you back when your cruise is over.</p>
+          <p class="text-slate-500 text-lg leading-relaxed mb-8">No waiting for taxis, no navigating unfamiliar streets. Just step in, relax, and let us handle the ride so you can focus on the adventure ahead.</p>
+          <div class="flex gap-10">
+            <div><p class="text-2xl font-bold text-navy font-serif">All Day</p><p class="text-xs text-slate-400 uppercase tracking-widest font-bold mt-1">Available</p></div>
+            <div class="w-px bg-border-light"></div>
+            <div><p class="text-2xl font-bold text-navy font-serif">Private</p><p class="text-xs text-slate-400 uppercase tracking-widest font-bold mt-1">Vehicle</p></div>
+            <div class="w-px bg-border-light"></div>
+            <div><p class="text-2xl font-bold text-navy font-serif">Door-to-Door</p><p class="text-xs text-slate-400 uppercase tracking-widest font-bold mt-1">Service</p></div>
+          </div>
+        </div>
+        <div class="w-[400px] h-[300px] rounded-3xl overflow-hidden flex-shrink-0">
+          <img alt="Cabo Sailing shuttle van" class="w-full h-full object-cover" src="images/Van.png"/>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hotel & Residential Transfers (PRIMARY - comes first) -->
+    <div class="bg-light-grey py-20">
+      <div class="max-w-[1400px] mx-auto px-10">
+        <div class="text-center mb-10">
+          <h2 class="text-3xl text-navy mb-2">Hotel &amp; Residential to Marina</h2>
+          <p class="text-slate-500 text-base">Can be booked during your cruise booking process or separately.</p>
+        </div>
+        <div class="max-w-3xl mx-auto">
+          <div class="bg-white rounded-3xl overflow-hidden border border-border-light shadow-sm">
+            <div class="bg-navy py-4 px-8 text-center">
+              <h3 class="text-white text-sm font-bold uppercase tracking-widest">Hotel &amp; Residential Cruise Transfers</h3>
             </div>
+            <div class="p-8">
+              <div class="grid grid-cols-3 gap-8 text-center mb-6">
+                <div></div>
+                <div class="text-sm font-bold text-slate-400 uppercase tracking-widest">One Way</div>
+                <div class="text-sm font-bold text-slate-400 uppercase tracking-widest">Round Trip</div>
+              </div>
+              <div class="grid grid-cols-3 gap-8 items-center py-4 border-b border-border-light">
+                <div class="text-navy font-bold">Cabo San Lucas to Palmilla Bridge</div>
+                <div class="text-center text-lg font-bold text-navy">$70 <span class="text-sm text-navy/60">USD</span></div>
+                <div class="text-center text-lg font-bold text-navy">$120 <span class="text-sm text-navy/60">USD</span></div>
+              </div>
+              <div class="grid grid-cols-3 gap-8 items-center py-4 border-b border-border-light">
+                <div class="text-navy font-bold">Palmilla to Puerto Los Cabos</div>
+                <div class="text-center text-lg font-bold text-navy">$80 <span class="text-sm text-navy/60">USD</span></div>
+                <div class="text-center text-lg font-bold text-navy">$145 <span class="text-sm text-navy/60">USD</span></div>
+              </div>
+              <p class="text-sm text-center text-slate-400 font-bold uppercase pt-6">Extra guest (11th &amp; more): $10 USD per guest</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="max-w-[1400px] mx-auto px-10 py-20">
+      <div class="bg-navy rounded-3xl p-12 text-center">
+        <h2 class="text-3xl text-white mb-3 font-serif">Ready to Book Your Transfer?</h2>
+        <p class="text-white/70 text-lg mb-8 max-w-2xl mx-auto">Start your Cabo vacation stress-free. Book your private cruise shuttle or airport pickup today.</p>
+        <div class="flex justify-center gap-4">
+          <button class="bg-cabo-yellow hover:bg-yellow-500 text-navy font-bold px-10 py-4 rounded-full uppercase tracking-widest text-sm transition-colors shadow-lg">Cruise Pick Up Form</button>
+          <button class="bg-white/20 text-white font-bold px-10 py-4 rounded-full uppercase tracking-widest text-sm hover:bg-white/30 transition-colors border border-white/40">Airport Transportation Form</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Airport Transfers (SECONDARY - lower on page) -->
+    <div class="max-w-[1400px] mx-auto px-10 pb-20">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl text-navy mb-2">Airport Private Service</h2>
+        <p class="text-slate-400 text-base uppercase tracking-[0.2em] font-bold">Official Transfers</p>
+      </div>
+      <div class="grid grid-cols-3 gap-8">
+        <div class="bg-white rounded-3xl overflow-hidden border border-border-light shadow-sm hover:shadow-lg transition-shadow">
+          <div class="bg-cabo-blue py-4 px-6 text-center">
+            <h3 class="text-white text-sm font-bold uppercase tracking-widest">Airport to San Jose Del Cabo</h3>
+          </div>
+          <div class="p-8 text-center">
+            <p class="text-slate-500 text-sm mb-4">To San Jose hotels zone and residential area</p>
+            <div class="flex justify-center items-baseline gap-1 mb-2">
+              <span class="text-navy font-bold text-5xl">$75</span>
+              <span class="text-navy/60 text-lg font-bold uppercase">USD</span>
+            </div>
+            <p class="text-base text-slate-400 font-bold uppercase tracking-wider">1 to 10 Guests</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-3xl overflow-hidden border border-border-light shadow-sm hover:shadow-lg transition-shadow">
+          <div class="bg-cabo-orange py-4 px-6 text-center">
+            <h3 class="text-white text-sm font-bold uppercase tracking-widest">Airport to Puerto Los Cabos</h3>
+          </div>
+          <div class="p-8 text-center">
+            <p class="text-slate-500 text-sm mb-4">To the Los Cabos Corridor area (between SJD &amp; CSL)</p>
+            <div class="flex justify-center items-baseline gap-1 mb-2">
+              <span class="text-navy font-bold text-5xl">$95</span>
+              <span class="text-navy/60 text-lg font-bold uppercase">USD</span>
+            </div>
+            <p class="text-base text-slate-400 font-bold uppercase tracking-wider">1 to 10 Guests</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-3xl overflow-hidden border border-border-light shadow-sm hover:shadow-lg transition-shadow">
+          <div class="bg-cabo-green py-4 px-6 text-center">
+            <h3 class="text-white text-sm font-bold uppercase tracking-widest">Airport to Diamante Area</h3>
+          </div>
+          <div class="p-8 text-center">
+            <p class="text-slate-500 text-sm mb-4">To Cabo San Lucas hotels zone and residential area</p>
+            <div class="flex justify-center items-baseline gap-1 mb-2">
+              <span class="text-navy font-bold text-5xl">$120</span>
+              <span class="text-navy/60 text-lg font-bold uppercase">USD</span>
+            </div>
+            <p class="text-base text-slate-400 font-bold uppercase tracking-wider">1 to 10 Guests</p>
+          </div>
+        </div>
+      </div>
+      <p class="mt-8 text-center italic text-slate-400 text-base">*5% discount on AIRPORT DROP OFF if booked a cruise with us during your stay.</p>
+    </div>
+
+  </div><!-- end desktop layout -->
+
+    <!-- Guest Reviews Carousel -->
+    <div class="px-5 pb-12 lg:max-w-[1400px] lg:mx-auto lg:px-10 lg:py-16">
+      <div class="flex items-center gap-3 mb-4 lg:mb-8"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-lg lg:text-3xl text-navy">What Our Guests Say</h3></div>
+      <div class="relative">
+        <div id="m-carousel" class="flex overflow-x-auto gap-4 lg:gap-6 no-scrollbar snap-x snap-mandatory pb-4 lg:overflow-hidden">
+          <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
+            <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
             <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Our driver was waiting at arrivals with a sign — so professional. The van was spotless and air-conditioned. After a 5-hour flight it was exactly what we needed. Highly recommend!"</p>
-            <div class="flex items-center gap-2">
-              <div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center text-white text-sm font-bold">PH</div>
-              <div><p class="text-sm font-bold text-navy">Patricia H.</p><p class="text-base text-slate-400">Dallas, TX</p></div>
-            </div>
+            <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center text-white text-sm font-bold">PH</div><div><p class="text-sm font-bold text-navy">Patricia H.</p><p class="text-base text-slate-400">Dallas, TX</p></div></div>
           </div>
-          <!-- Review 2 -->
-          <div class="min-w-full bg-light-grey rounded-2xl p-5 border border-border-light">
-            <div class="flex items-center gap-1 mb-2">
-              <span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span>
-            </div>
+          <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
+            <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
             <p class="text-base text-slate-600 leading-relaxed italic mb-3">"We used the shuttle for a group of 8 for both arrival and departure. Perfectly on time both ways. Our driver gave us great local tips on the way to the resort. Great value!"</p>
-            <div class="flex items-center gap-2">
-              <div class="w-8 h-8 rounded-full bg-gold flex items-center justify-center text-white text-sm font-bold">BN</div>
-              <div><p class="text-sm font-bold text-navy">Brian N.</p><p class="text-base text-slate-400">Chicago, IL</p></div>
-            </div>
+            <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-gold flex items-center justify-center text-white text-sm font-bold">BN</div><div><p class="text-sm font-bold text-navy">Brian N.</p><p class="text-base text-slate-400">Chicago, IL</p></div></div>
           </div>
-          <!-- Review 3 -->
-          <div class="min-w-full bg-light-grey rounded-2xl p-5 border border-border-light">
-            <div class="flex items-center gap-1 mb-2">
-              <span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span>
-            </div>
+          <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
+            <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
             <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Stress-free from start to finish. I messaged via WhatsApp the night before and everything was confirmed instantly. The driver knew every shortcut and we made it to the marina with time to spare."</p>
-            <div class="flex items-center gap-2">
-              <div class="w-8 h-8 rounded-full bg-navy/70 flex items-center justify-center text-white text-sm font-bold">KL</div>
-              <div><p class="text-sm font-bold text-navy">Karen L.</p><p class="text-base text-slate-400">Los Angeles, CA</p></div>
-            </div>
+            <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy/70 flex items-center justify-center text-white text-sm font-bold">KL</div><div><p class="text-sm font-bold text-navy">Karen L.</p><p class="text-base text-slate-400">Los Angeles, CA</p></div></div>
+          </div>
+          <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
+            <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
+            <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Late night flight and our driver was still there waiting with a smile. Cold water bottles in the van, comfortable seats, and a smooth ride to the hotel. Started our vacation perfectly."</p>
+            <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center text-white text-sm font-bold">MT</div><div><p class="text-sm font-bold text-navy">Mark T.</p><p class="text-base text-slate-400">New York, NY</p></div></div>
+          </div>
+          <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
+            <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
+            <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Used the shuttle to get to the marina for our snorkeling trip. Driver was friendly and the booking through WhatsApp was so easy. Way better than trying to figure out a taxi at the airport."</p>
+            <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-gold flex items-center justify-center text-white text-sm font-bold">SR</div><div><p class="text-sm font-bold text-navy">Sandra R.</p><p class="text-base text-slate-400">Miami, FL</p></div></div>
+          </div>
+          <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
+            <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
+            <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Third trip to Cabo and we always book the shuttle through Cabo Sailing now. Reliable, professional, and affordable. They even accommodate our early morning flights without any extra charge."</p>
+            <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy/70 flex items-center justify-center text-white text-sm font-bold">DW</div><div><p class="text-sm font-bold text-navy">Dan W.</p><p class="text-base text-slate-400">Denver, CO</p></div></div>
           </div>
         </div>
-        <!-- Dots -->
-        <div class="flex justify-center gap-2 mt-4">
-          <button onclick="mCarousel(0)" id="m-dot-0" class="w-2 h-2 rounded-full bg-navy transition-all"></button>
-          <button onclick="mCarousel(1)" id="m-dot-1" class="w-2 h-2 rounded-full bg-border-light transition-all"></button>
-          <button onclick="mCarousel(2)" id="m-dot-2" class="w-2 h-2 rounded-full bg-border-light transition-all"></button>
+        <button onclick="scrollShuttleReviews(-1)" class="hidden lg:flex absolute left-[-20px] top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white border border-border-light shadow-md items-center justify-center hover:bg-light-grey transition-colors z-10"><span class="material-symbols-outlined text-navy text-xl">chevron_left</span></button>
+        <button onclick="scrollShuttleReviews(1)" class="hidden lg:flex absolute right-[-20px] top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white border border-border-light shadow-md items-center justify-center hover:bg-light-grey transition-colors z-10"><span class="material-symbols-outlined text-navy text-xl">chevron_right</span></button>
+        <div class="hidden lg:flex justify-center gap-2 mt-4">
+          <button onclick="goToShuttlePage(0)" class="shuttle-review-dot w-2.5 h-2.5 rounded-full bg-navy transition-colors"></button>
+          <button onclick="goToShuttlePage(1)" class="shuttle-review-dot w-2.5 h-2.5 rounded-full bg-border-light transition-colors"></button>
         </div>
       </div>
     </div>
 
-<footer class="bg-navy text-white pt-16 pb-32">
-<div class="px-8 space-y-12">
-<div class="flex flex-col items-center gap-4">
-<span class="material-symbols-outlined text-4xl text-white">sailing</span>
-<h2 class="text-xl tracking-[0.2em] font-serif uppercase">Cabo Sailing</h2>
-</div>
-<div class="grid grid-cols-2 gap-8">
-<div class="space-y-4">
-<h4 class="text-sm font-bold text-slate-400 uppercase tracking-widest">Quick Access</h4>
-<ul class="space-y-2 text-base text-slate-300">
-<li>Home</li>
-<li>Fleet</li>
-<li>Transportation</li>
-<li>Travel Guide</li>
-<li>Privacy Policy</li>
-</ul>
-</div>
-<div class="space-y-4">
-<h4 class="text-sm font-bold text-slate-400 uppercase tracking-widest">Phones</h4>
-<div class="space-y-3 text-base text-slate-300 leading-tight">
-<p>Toll free US: 1 800 209 1669</p>
-<p>Toll free MEX: 01 800 700 8485</p>
-<p>WhatsApp: 52 624 191 6997</p>
-</div>
-</div>
-</div>
-<div class="space-y-4">
-<h4 class="text-sm font-bold text-slate-400 uppercase tracking-widest">Office</h4>
-<p class="text-base text-slate-300 leading-relaxed">
-                        Plaza Nautica Local C-5<br/>
-                        Blvd. Marina, Cabo San Lucas<br/>
-                        Open from: 07:30 am to 8:00 pm
-                    </p>
-</div>
-<div class="flex justify-center gap-6 pt-4">
-<div class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center">
-<span class="material-symbols-outlined text-base">social_leaderboard</span>
-</div>
-<div class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center">
-<span class="material-symbols-outlined text-base">photo_camera</span>
-</div>
-<div class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center">
-<span class="material-symbols-outlined text-base">play_circle</span>
-</div>
-</div>
-<div class="text-center pt-8 border-t border-white/10">
-<p class="text-base text-slate-500 uppercase tracking-widest">© 2025 All Rights Reserved.</p>
-</div>
-</div>
-</footer>
+
+  <!-- Desktop Footer -->
+  <footer class="bg-navy mt-0 px-5 lg:px-12 py-12">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-10">
+        <div>
+          <img src="images/cabo-sailing-n-l.png" alt="Cabo Sailing" class="h-10 mb-4" style="filter: brightness(0) invert(1) opacity(0.9)"/>
+          <p class="text-white/50 text-base leading-relaxed">Luxury sailing &amp; snorkeling charters in Cabo San Lucas, Mexico.</p>
+          <div class="flex gap-3 mt-4">
+            <a href="#" class="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center text-white/60 hover:text-white transition-colors"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center text-white/60 hover:text-white transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-white font-bold text-base uppercase tracking-widest mb-4">Tours</h4>
+          <ul class="space-y-2 text-white/50 text-base">
+            <li><a href="private-snorkeling.html" class="hover:text-gold transition-colors">Private Snorkeling</a></li>
+            <li><a href="shared-snorkeling.html" class="hover:text-gold transition-colors">Shared Snorkeling</a></li>
+            <li><a href="private-sunset.html" class="hover:text-gold transition-colors">Private Sunset</a></li>
+            <li><a href="shared-sunset.html" class="hover:text-gold transition-colors">Shared Sunset</a></li>
+            <li><a href="whale-watching.html" class="hover:text-gold transition-colors">Whale Watching</a></li>
+            <li><a href="shuttle-service.html" class="text-gold">Shuttle Service</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold text-base uppercase tracking-widest mb-4">Company</h4>
+          <ul class="space-y-2 text-white/50 text-base">
+            <li><a href="#" class="hover:text-gold transition-colors">About Our Crew</a></li>
+            <li><a href="fleet.html" class="hover:text-gold transition-colors">Our Fleet</a></li>
+            <li><a href="#" class="hover:text-gold transition-colors">Special Offers</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold text-base uppercase tracking-widest mb-4">Contact</h4>
+          <div class="space-y-3 text-white/50 text-base">
+            <div class="flex items-center gap-2"><span class="material-symbols-outlined text-gold text-base">call</span><a href="tel:+526241438485" class="hover:text-gold transition-colors">+52 624 143 8485</a></div>
+            <div class="flex items-center gap-2"><i class="fa-brands fa-whatsapp text-gold"></i><a href="https://wa.me/526241916997" target="_blank" class="hover:text-gold transition-colors">+52 624 191 6997</a></div>
+            <div class="flex items-center gap-2"><span class="material-symbols-outlined text-gold text-base">email</span><a href="mailto:info@cabosailing.com" class="hover:text-gold transition-colors">info@cabosailing.com</a></div>
+            <div class="flex items-center gap-2"><span class="material-symbols-outlined text-gold text-base">pin_drop</span><span>Plaza Nautica, Cabo San Lucas</span></div>
+            <div class="flex items-center gap-2 mt-1"><span class="material-symbols-outlined text-gold text-base">mail</span><a href="contact.html" class="text-white font-bold hover:text-gold transition-colors">Contact Us Now</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-6 flex items-center justify-between">
+        <p class="text-white/30 text-sm">© 2026 Cabo Sailing. All rights reserved.</p>
+        <p class="text-white/30 text-sm">Land's End, Cabo San Lucas, Mexico</p>
+      </div>
+    </div>
+  </footer>
 </main>
 
 <!-- Menu Overlay -->
@@ -340,7 +548,7 @@
       <div>
         <button onclick="document.getElementById('tour-dropdown').classList.toggle('hidden');document.getElementById('tour-arrow').classList.toggle('rotate-180')" class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors w-full">
           <span class="material-symbols-outlined text-accent-gold group-hover:text-navy transition-colors text-2xl">explore</span>
-          <span class="font-semibold">Tour</span>
+          <span class="font-semibold">Tours</span>
           <span id="tour-arrow" class="material-symbols-outlined ml-auto transition-transform duration-200 text-xl">expand_more</span>
         </button>
         <div id="tour-dropdown" class="hidden pl-10 mt-3 space-y-4">
@@ -366,20 +574,20 @@
           </div>
           <a class="block text-base font-serif text-navy/70 hover:text-accent-gold transition-colors" href="whale-watching.html">Whale Watching</a>
           <a class="block text-base font-serif text-navy/70 hover:text-accent-gold transition-colors" href="bachelorette-party.html">Bachelorette</a>
-          <a class="block text-base font-serif text-navy/70 hover:text-accent-gold transition-colors" href="#">Scuba Diving</a>
+          <a class="block text-base font-serif text-navy/70 hover:text-accent-gold transition-colors" href="scuba-diving.html">Scuba Diving</a>
         </div>
       </div>
       <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="shuttle-service.html"><span class="material-symbols-outlined text-navy group-hover:text-accent-gold transition-colors text-2xl">airport_shuttle</span><span class="font-semibold">Shuttle Service</span></a>
       <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="fleet.html"><span class="material-symbols-outlined text-accent-gold group-hover:text-navy transition-colors text-2xl">sailing</span><span class="font-semibold">Our Fleet</span></a>
       <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="#"><span class="material-symbols-outlined text-navy group-hover:text-accent-gold transition-colors text-2xl">stars</span><span class="font-semibold">Special Offers</span></a>
       <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="#"><span class="material-symbols-outlined text-accent-gold group-hover:text-navy transition-colors text-2xl">anchor</span><span class="font-semibold">About Our Crew</span></a>
+      <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="travel_guide.html"><span class="material-symbols-outlined text-navy group-hover:text-accent-gold transition-colors text-2xl">menu_book</span><span class="font-semibold">Travel Guide</span></a>
       <div>
-        <button onclick="document.getElementById('contact-dropdown').classList.toggle('hidden');document.getElementById('contact-arrow').classList.toggle('rotate-180')" class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors w-full">
-          <span class="material-symbols-outlined text-navy group-hover:text-accent-gold transition-colors text-2xl">mail</span>
+        <div class="group flex items-center gap-4 text-xl font-serif text-navy">
+          <span class="material-symbols-outlined text-navy text-2xl">mail</span>
           <span class="font-semibold">Contact Info</span>
-          <span id="contact-arrow" class="material-symbols-outlined ml-auto transition-transform duration-200 text-xl">expand_more</span>
-        </button>
-        <div id="contact-dropdown" class="hidden pl-10 mt-3 space-y-4">
+        </div>
+        <div class="pl-10 mt-3 space-y-4">
           <a class="flex items-center gap-2 text-base text-navy/70 hover:text-accent-gold transition-colors" href="https://wa.me/526241916997?text=hi%2C%20I'm%20sending%20you%20a%20message%20from%20cabosailing.com" target="_blank"><i class="fa-brands fa-whatsapp text-[#25D366]"></i> +52 624 191 6997</a>
           <a class="flex items-center gap-2 text-base text-navy/70 hover:text-accent-gold transition-colors" href="tel:+526241438485"><span class="material-symbols-outlined text-base">call</span> +52 624 143 8485</a>
           <a class="flex items-center gap-2 text-base text-navy/70 hover:text-accent-gold transition-colors" href="mailto:info@cabosailing.com"><span class="material-symbols-outlined text-base">email</span> info@cabosailing.com</a>
@@ -406,15 +614,23 @@
     document.getElementById('menu-overlay').classList.add('hidden');
   });
 
-  // Mobile carousel
-  var mIdx = 0;
-  function mCarousel(i) {
-    mIdx = i;
-    document.getElementById('m-carousel').style.transform = 'translateX(-' + (i * 100) + '%)';
-    [0,1,2].forEach(function(n) {
-      document.getElementById('m-dot-'+n).className = 'w-2 h-2 rounded-full transition-all ' + (n===i ? 'bg-navy' : 'bg-border-light');
+  var shuttlePage = 0;
+  function scrollShuttleReviews(dir) {
+    shuttlePage = Math.max(0, Math.min(1, shuttlePage + dir));
+    var container = document.getElementById('m-carousel');
+    var card = container.children[0];
+    var gap = 24;
+    container.scrollTo({ left: (card.offsetWidth + gap) * 3 * shuttlePage, behavior: 'smooth' });
+    document.querySelectorAll('.shuttle-review-dot').forEach(function(dot, i) {
+      dot.className = 'shuttle-review-dot w-2.5 h-2.5 rounded-full transition-colors ' + (i === shuttlePage ? 'bg-navy' : 'bg-border-light');
     });
   }
+  function goToShuttlePage(page) { shuttlePage = page; scrollShuttleReviews(0); }
 </script>
 
+
+<!-- Floating Quick Availability Button -->
+<a href="contact.html" class="fixed right-0 top-1/2 -translate-y-1/2 z-50 bg-navy hover:bg-navy/90 transition-colors shadow-xl rounded-l-xl py-3 px-2 lg:py-4 lg:px-2.5 group" style="writing-mode:vertical-rl;text-orientation:mixed;">
+  <span class="text-gold font-bold text-[10px] lg:text-xs uppercase tracking-[0.2em] group-hover:text-white transition-colors">Quick Availability Check</span>
+</a>
 </body></html>
