@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta name="description" content="Find out if you need a passport to travel to Cabo San Lucas. Covers U.S., Canadian, U.K., and European travelers, visa rules, cruise passengers, and entry requirements for Mexico."/>
+<title>Do You Need a Passport to Go to Cabo San Lucas? | Cabo Sailing</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    "navy": "#0a1d37",
+                    "navy-light": "#1a3a63",
+                    "gold": "#C5A059",
+                    "accent-gold": "#b38e5d",
+                    "accent-gold-light": "#d4af37",
+                    "warm-yellow": "#b48a04",
+                    "bg-light": "#ffffff",
+                    "surface-light": "#f8f9fa",
+                    "border-light": "#e5e7eb",
+                    "light-grey": "#F8F9FA"
+                },
+                fontFamily: {
+                    "display": ["Plus Jakarta Sans", "sans-serif"],
+                    "serif": ["Playfair Display", "serif"],
+                    "script": ["Great Vibes", "cursive"]
+                }
+            },
+        },
+    }
+</script>
+<style type="text/tailwindcss">
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+    .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .material-symbols-outlined.filled {
+        font-variation-settings: 'FILL' 1;
+    }
+    .safe-area-pb {
+        padding-bottom: env(safe-area-inset-bottom);
+    }
+    .gold-divider {
+        background: linear-gradient(to right, transparent, #b38e5d, transparent);
+    }
+    @media (min-width: 1024px) {
+        .mobile-only { display: none !important; }
+        .desktop-only { display: flex !important; }
+    }
+    @media (max-width: 1023px) {
+        .desktop-only { display: none !important; }
+    }
+</style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+    .fleet-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        border: none;
+        background: rgba(255,255,255,0.25);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        color: white;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background 0.2s;
+        padding: 0;
+    }
+    .fleet-arrow:hover {
+        background: rgba(255,255,255,0.45);
+    }
+    .fleet-arrow.left { left: 10px; }
+    .fleet-arrow.right { right: 10px; }
+    .fleet-arrow .material-symbols-outlined {
+        font-size: 20px;
+        line-height: 1;
+    }
+    .article-body h2 {
+        font-family: 'Playfair Display', serif;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #0a1d37;
+        margin-top: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    .article-body p {
+        color: rgba(10,29,55,0.7);
+        font-size: 1rem;
+        line-height: 1.8;
+        margin-bottom: 1.25rem;
+    }
+    .article-body .spot-list {
+        list-style: none;
+        padding: 0;
+        margin: 1.5rem 0;
+    }
+    .article-body .spot-list li {
+        padding: 0.5rem 0;
+        color: rgba(10,29,55,0.7);
+        font-size: 1rem;
+        display: flex;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    .article-body .spot-list li strong {
+        color: #0a1d37;
+    }
+</style>
+</head>
+<body class="bg-bg-light font-display text-navy antialiased min-h-screen flex flex-col relative">
+
+<!-- Header -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-border-light/50 transition-all duration-300">
+  <!-- Mobile header -->
+  <div class="mobile-only flex items-center justify-between px-6 py-3">
+    <button id="menu-open" class="flex flex-col gap-[3px] items-center justify-center w-10 h-10 -ml-2 text-navy active:scale-95 transition-transform">
+      <div class="w-5 h-[2px] bg-navy rounded-full"></div>
+      <div class="w-5 h-[2px] bg-navy rounded-full"></div>
+      <div class="w-5 h-[2px] bg-navy rounded-full"></div>
+    </button>
+    <div class="flex-shrink-0 flex items-center justify-center">
+      <a href="index.html"><img src="images/cabo-sailing-n-l.png" alt="Cabo Sailing" class="h-10"/></a>
+    </div>
+    <a href="https://wa.me/526241916997?text=hi%2C%20I'm%20sending%20you%20a%20message%20from%20cabosailing.com" target="_blank" class="flex items-center justify-center w-10 h-10 -mr-2 bg-[#25D366] rounded-full text-white active:scale-95 transition-transform shadow-md">
+      <i class="fa-brands fa-whatsapp text-2xl"></i>
+    </a>
+  </div>
+  <!-- Desktop header -->
+  <div class="desktop-only items-center justify-between px-10 py-3 max-w-[1400px] mx-auto">
+    <a href="index.html" class="flex-shrink-0">
+      <img src="images/cabo-sailing-n-l.png" alt="Cabo Sailing" class="h-12"/>
+    </a>
+    <nav class="flex items-center gap-8">
+      <a href="index.html" class="text-sm font-semibold text-navy uppercase tracking-widest hover:text-accent-gold transition-colors">Home</a>
+      <div class="relative group">
+        <button class="text-sm font-semibold text-navy uppercase tracking-widest hover:text-accent-gold transition-colors flex items-center gap-1">Tours <span class="material-symbols-outlined text-sm">expand_more</span></button>
+        <div class="absolute top-full left-0 mt-2 bg-white rounded-xl shadow-xl border border-border-light py-3 min-w-[220px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+          <p class="px-4 py-1 text-[10px] font-bold text-slate-400 uppercase tracking-widest">Snorkeling</p>
+          <a href="private-snorkeling.html" class="block px-4 py-2 text-sm text-navy hover:bg-surface-light hover:text-accent-gold transition-colors">Private Snorkeling</a>
+          <a href="shared-snorkeling.html" class="block px-4 py-2 text-sm text-navy hover:bg-surface-light hover:text-accent-gold transition-colors">Shared Snorkeling</a>
+          <div class="h-px bg-border-light my-2"></div>
+          <p class="px-4 py-1 text-[10px] font-bold text-slate-400 uppercase tracking-widest">Sunset</p>
+          <a href="private-sunset.html" class="block px-4 py-2 text-sm text-navy hover:bg-surface-light hover:text-accent-gold transition-colors">Private Sunset</a>
+          <a href="shared-sunset.html" class="block px-4 py-2 text-sm text-navy hover:bg-surface-light hover:text-accent-gold transition-colors">Shared Sunset</a>
+          <div class="h-px bg-border-light my-2"></div>
+          <a href="whale-watching.html" class="block px-4 py-2 text-sm text-navy hover:bg-surface-light hover:text-accent-gold transition-colors">Whale Watching</a>
+          <a href="bachelorette-party.html" class="block px-4 py-2 text-sm text-navy hover:bg-surface-light hover:text-accent-gold transition-colors">Bachelorette</a>
+          <a href="scuba-diving.html" class="block px-4 py-2 text-sm text-navy hover:bg-surface-light hover:text-accent-gold transition-colors">Scuba Diving</a>
+        </div>
+      </div>
+      <a href="fleet.html" class="text-sm font-semibold text-navy uppercase tracking-widest hover:text-accent-gold transition-colors">Our Fleet</a>
+      <a href="shuttle-service.html" class="text-sm font-semibold text-navy uppercase tracking-widest hover:text-accent-gold transition-colors">Shuttle</a>
+      <a href="travel_guide.html" class="text-sm font-semibold text-accent-gold uppercase tracking-widest">Travel Guide</a>
+    </nav>
+    <div class="flex items-center gap-4">
+      <a href="tel:+526241438485" class="text-sm font-semibold text-navy hover:text-accent-gold transition-colors flex items-center gap-1"><span class="material-symbols-outlined text-base">call</span> +52 624 143 8485</a>
+      <a href="https://wa.me/526241916997?text=hi%2C%20I'm%20sending%20you%20a%20message%20from%20cabosailing.com" target="_blank" class="flex items-center justify-center w-10 h-10 bg-[#25D366] rounded-full text-white hover:scale-105 transition-transform shadow-md">
+        <i class="fa-brands fa-whatsapp text-xl"></i>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main class="flex-1 w-full overflow-x-hidden pt-[72px]">
+
+<!-- Travel Guide Sub-Menu -->
+<div class="sticky top-[60px] z-40 bg-white border-b border-border-light/50 shadow-sm">
+<div class="max-w-5xl mx-auto">
+  <nav class="flex overflow-x-auto no-scrollbar">
+    <a href="travel_guide.html" class="shrink-0 px-4 lg:px-6 py-3.5 text-sm font-bold uppercase tracking-widest border-b-2 border-transparent text-navy/50 hover:text-navy hover:border-accent-gold/50 transition-colors">Home</a>
+    <a href="travel_guide_activities.html" class="shrink-0 px-4 lg:px-6 py-3.5 text-sm font-bold uppercase tracking-widest border-b-2 border-transparent text-navy/50 hover:text-navy hover:border-accent-gold/50 transition-colors">Activities</a>
+    <a href="travel_guide_attractions.html" class="shrink-0 px-4 lg:px-6 py-3.5 text-sm font-bold uppercase tracking-widest border-b-2 border-transparent text-navy/50 hover:text-navy hover:border-accent-gold/50 transition-colors">Attractions</a>
+    <a href="travel_guide_traveling.html" class="shrink-0 px-4 lg:px-6 py-3.5 text-sm font-bold uppercase tracking-widest border-b-2 border-accent-gold text-navy transition-colors whitespace-nowrap">Traveling to Cabo</a>
+    <a href="travel_guide_culture.html" class="shrink-0 px-4 lg:px-6 py-3.5 text-sm font-bold uppercase tracking-widest border-b-2 border-transparent text-navy/50 hover:text-navy hover:border-accent-gold/50 transition-colors whitespace-nowrap">Culture &amp; Food</a>
+  </nav>
+</div>
+</div>
+
+<!-- Hero Image -->
+<div class="relative w-full h-[60vh] min-h-[450px] lg:h-[68vh]">
+<img alt="Los Cabos International Airport terminal" class="w-full h-full object-cover object-center" src="https://www.cabosailing.com/wp-content/uploads/2019/08/los-cabos-international-airport-featured-image.jpg.webp"/>
+<div class="absolute inset-0 bg-gradient-to-t from-navy/70 via-navy/30 to-transparent"></div>
+<div class="absolute inset-0 flex flex-col items-center justify-end z-10 text-center px-8 pb-10">
+<div class="flex flex-col items-center gap-3">
+  <div class="flex items-center gap-2">
+    <a href="travel_guide.html" class="text-white/70 text-xs uppercase tracking-[0.2em] font-bold hover:text-white transition-colors">Travel Guide</a>
+    <span class="text-white/40 text-xs">/</span>
+    <a href="travel_guide_traveling.html" class="text-white/70 text-xs uppercase tracking-[0.2em] font-bold hover:text-white transition-colors">Traveling to Cabo</a>
+  </div>
+  <h1 class="text-2xl md:text-4xl lg:text-5xl font-serif text-white leading-tight drop-shadow-lg font-semibold max-w-3xl">
+    Do You Need a Passport to Go to Cabo San Lucas?
+  </h1>
+  <div class="w-12 h-[1px] bg-accent-gold-light"></div>
+</div>
+</div>
+</div>
+
+<!-- Article + Sidebar Layout -->
+<div class="max-w-[1400px] mx-auto px-6 lg:px-10 py-10 lg:py-14">
+<div class="lg:flex lg:gap-12">
+
+<!-- Article Content (Right on desktop, First on mobile) -->
+<article class="article-body lg:flex-1 lg:order-2 max-w-3xl">
+
+  <p class="text-navy/70 text-lg leading-relaxed mb-8 font-medium">Cabo San Lucas is one of Mexico's most popular beach destinations, and for good reason. Travelers come for the sailing, whale watching, snorkeling, diving, desert scenery, and easy access from the U.S. and Canada. Before you go, though, it is important to make sure your travel documents are in order. I updated this guide based on current Mexican government and consular information.</p>
+
+  <h2>The short answer</h2>
+  <p>Yes &mdash; if you are a foreign traveler going to Cabo San Lucas, you should travel with a valid, unexpired passport. Mexico requires foreign nationals entering by air, land, or sea to present a valid passport or other valid travel document, and it must remain valid for the duration of the trip. Mexico itself does not generally require six months of passport validity, but your airline or any transit country may apply its own boarding rules, so it is smart to check with them before departure.</p>
+
+  <h2>Traveling to Cabo San Lucas from the U.S.</h2>
+  <p>For U.S. travelers flying to Los Cabos, a valid U.S. passport is the standard document you should carry. Mexico's consular guidance states that all foreign nationals must present a valid, unexpired passport, and that it only needs to be valid for the duration of the stay in Mexico. However, some airlines may still apply additional passport-validity rules, so it is worth confirming directly with the carrier before your flight.</p>
+  <p>If you are entering Mexico as a tourist or for another non-paid activity, you may also be asked by immigration officers to show supporting documents such as a hotel reservation, return or onward travel, and details of the purpose of your trip. Entry is always subject to review by Mexican immigration authorities at the port of entry.</p>
+
+  <h2>Passport validity and entry rules</h2>
+  <p>Mexico's rule is straightforward: your passport must be valid and unexpired during your stay. That said, this is one area where travelers often get confused because airlines sometimes follow different boarding standards, especially on itineraries involving the United States or other countries with stricter passport-validity practices. To avoid problems at the airport, always verify your airline's specific requirements before travel.</p>
+
+  <h2>Do you need a visa?</h2>
+  <p>That depends on your nationality and immigration status, but many travelers to Cabo do not need a Mexican visa for tourism or other non-remunerated stays of up to 180 days. Mexican consular guidance also provides facilitated entry in some cases for travelers who hold certain valid visas or permanent resident cards from countries such as the U.S., Canada, the U.K., Japan, and Schengen-area countries. The final determination is still made by immigration authorities on arrival.</p>
+
+  <h2>Permanent residents of other countries</h2>
+  <p>Mexican consulates state that some travelers who hold a valid permanent resident card from countries such as the United States, Canada, Japan, the United Kingdom, Schengen-area countries, or Pacific Alliance countries may enter Mexico for tourism and other unpaid activities without a Mexican visa, as long as they also hold a valid passport from their nationality. Because these rules are status-specific, travelers should confirm the exact current requirement with the nearest Mexican consulate before departure.</p>
+
+  <h2>Cruise passengers</h2>
+  <p>If you are visiting Mexican maritime ports on a leisure cruise, Mexican consular guidance states that foreign travelers generally do not need a visa or consular stamp for that visit, but they should still carry a valid, unexpired passport or travel document. If your cruise line has its own requirements, follow those as well.</p>
+
+  <h2>Flying to Mexico: immigration form information</h2>
+  <p>Travelers flying into Mexico should know that the immigration process has changed from the old paper form many people remember. The National Immigration Institute indicates that, for air arrivals, foreigners no longer complete the traditional physical FMM in the same way and instead can access the digital migratory form process (FMMd). If needed, this digital record can be downloaded after entry through the official INM portal.</p>
+
+  <h2>Entering Mexico by land</h2>
+  <p>If you are driving to Baja California Sur, the process is different. Foreign nationals entering Mexico by land may still need to complete the Forma Migratoria Multiple (FMM) through the INM system. The official INM guidance says the electronic FMM can be obtained online for land entry, must be printed, and presented with a valid passport or passport card at the point where entry is requested. The FMM may be granted for up to 180 days for visitors, but the actual authorized stay is determined by Mexican immigration officers.</p>
+  <p>It is also important to note that a U.S. passport card is generally limited for certain land border uses and is not a substitute for a regular passport for international air travel or unrestricted travel within Mexico in all situations. For a trip all the way to Cabo San Lucas, travelers should be careful not to rely on a border-only interpretation of the passport card.</p>
+
+  <h2>Children and minors traveling to Cabo</h2>
+  <p>Minors should travel with their own valid passport. For foreign minors entering Mexico as visitors for a short stay, Mexican consular guidance indicates that those traveling alone or with a third party generally do not require a parental authorization letter just to enter as visitors. However, some airlines may require additional forms for unaccompanied minors or children traveling with only one parent.</p>
+  <p>There is an important distinction here: Mexico has specific forms and authorization requirements related to leaving Mexico for certain Mexican minors and some foreign minors who are residents in Mexico. Those are different from the basic tourist-entry rules and should not be confused with short-stay visitor entry requirements.</p>
+
+  <h2>Traveling from Canada</h2>
+  <p>Current Mexican consular guidance says that Canadian nationals and permanent residents of Canada do not require a visa to enter Mexico for tourism. Canadian travelers should carry a valid passport, and while Mexico does not impose a minimum passport-validity period, the passport must be valid at entry and during the intended stay.</p>
+
+  <h2>Traveling from the U.K. and Europe</h2>
+  <p>Many travelers from the U.K. and the European Union can visit Mexico without a visa for tourism or other non-paid activities for stays of up to 180 days, subject to immigration approval on arrival. Travelers should still carry a valid passport and be ready to show proof of the purpose of the trip if asked. If a traveler holds a travel document rather than a standard passport, different visa rules may apply, so it is best to verify with the appropriate Mexican consulate before traveling.</p>
+
+  <h2>Always double-check before you fly</h2>
+  <p>Entry requirements can change, and the final decision to admit a traveler belongs to Mexican immigration authorities at the port of entry. Before flying to Cabo San Lucas, check your airline's passport rules, verify whether you need a visa, and review the latest information from the nearest Mexican consulate or the Instituto Nacional de Migracion.</p>
+  <p>Safe travels &mdash; and once you arrive, take advantage of what Cabo does best: getting out on the water. Whether you choose whale watching in season, a snorkeling cruise, or a private yacht day, it is one of the best ways to experience Los Cabos. If you want a polished but relaxed on-the-water experience, <a href="index.html" class="text-accent-gold font-semibold hover:underline">Cabo Sailing</a> is an easy recommendation for both whale watching and general sailing or yacht outings.</p>
+
+</article>
+
+<!-- Suggested Activities Sidebar (Left on desktop, After article on mobile) -->
+<aside class="lg:w-[420px] lg:order-1 lg:shrink-0 mt-14 lg:mt-0">
+  <div class="lg:sticky lg:top-[140px]">
+    <h3 class="text-xs font-bold uppercase tracking-[0.2em] text-accent-gold mb-6">Suggested Activities</h3>
+
+    <!-- Suggested Activity Cards -->
+    <div class="space-y-4 mb-8">
+      <a href="shuttle-service.html" class="flex items-center gap-4 bg-white border border-border-light rounded-2xl p-3 shadow-sm hover:shadow-md transition-shadow">
+        <img alt="Airport Shuttle Service" class="w-20 h-20 rounded-xl object-cover shrink-0" src="https://www.cabosailing.com/wp-content/uploads/2019/08/los-cabos-international-airport-featured-image.jpg.webp"/>
+        <div>
+          <h4 class="text-sm font-bold text-navy mb-1">Shuttle Service</h4>
+          <p class="text-navy/50 text-xs leading-relaxed">Hassle-free airport transfers to your hotel. Private &amp; comfortable rides.</p>
+          <span class="text-accent-gold text-[10px] font-bold uppercase tracking-widest mt-1 inline-block">Book a transfer</span>
+        </div>
+      </a>
+      <a href="private-snorkeling.html" class="flex items-center gap-4 bg-white border border-border-light rounded-2xl p-3 shadow-sm hover:shadow-md transition-shadow">
+        <img alt="Private Snorkeling" class="w-20 h-20 rounded-xl object-cover shrink-0" src="images/Boats/Yacht 45'/1.Yacht 45'.jpg"/>
+        <div>
+          <h4 class="text-sm font-bold text-navy mb-1">Private Snorkeling</h4>
+          <p class="text-navy/50 text-xs leading-relaxed">Your own boat to Pelican Rock &amp; the Arch. Open bar &amp; snorkel gear included.</p>
+          <span class="text-accent-gold text-[10px] font-bold uppercase tracking-widest mt-1 inline-block">From $701</span>
+        </div>
+      </a>
+      <a href="whale-watching.html" class="flex items-center gap-4 bg-white border border-border-light rounded-2xl p-3 shadow-sm hover:shadow-md transition-shadow">
+        <img alt="Whale Watching" class="w-20 h-20 rounded-xl object-cover shrink-0" src="images/Whales/_IGP5743.JPG"/>
+        <div>
+          <h4 class="text-sm font-bold text-navy mb-1">Whale Watching</h4>
+          <p class="text-navy/50 text-xs leading-relaxed">Witness humpback whales up close from a private sailboat. Dec&ndash;Apr season.</p>
+          <span class="text-accent-gold text-[10px] font-bold uppercase tracking-widest mt-1 inline-block">From $701</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</aside>
+
+</div><!-- end flex layout -->
+</div><!-- end max-w container -->
+
+</main>
+
+<!-- Menu Overlay -->
+<div id="menu-overlay" class="fixed inset-0 z-[100] flex flex-col h-screen w-full transition-opacity duration-300 hidden" style="background-color:#ffffff;background-image:url('data:image/svg+xml,%3Csvg width=\'100%25\' height=\'100%25\' viewBox=\'0 0 800 800\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'M-100,100 Q150,250 400,100 T900,100\' fill=\'none\' stroke=\'%23d4af37\' stroke-width=\'3\' stroke-opacity=\'0.15\'/%3E%3Cpath d=\'M-100,300 Q150,450 400,300 T900,300\' fill=\'none\' stroke=\'%23d4af37\' stroke-width=\'3\' stroke-opacity=\'0.12\'/%3E%3Cpath d=\'M-100,500 Q150,350 400,500 T900,500\' fill=\'none\' stroke=\'%23d4af37\' stroke-width=\'3\' stroke-opacity=\'0.1\'/%3E%3C/svg%3E');background-repeat:no-repeat;background-size:cover;">
+  <div class="flex items-center justify-between px-6 py-4 border-b border-gray-200 bg-white/80 backdrop-blur-md z-20">
+    <button id="menu-close" class="w-10 h-10 flex items-center justify-center -ml-2 text-navy hover:text-accent-gold transition-colors">
+      <span class="material-symbols-outlined text-3xl">close</span>
+    </button>
+    <div class="flex-1 flex justify-center">
+      <img src="images/cabo-sailing-n-l.png" alt="Cabo Sailing" class="h-12 w-auto object-contain"/>
+    </div>
+    <div class="w-10"></div>
+  </div>
+  <div class="flex-1 overflow-y-auto py-6 px-8 flex flex-col justify-center relative z-10">
+    <nav class="flex flex-col gap-6">
+      <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="index.html"><span class="material-symbols-outlined text-navy group-hover:text-accent-gold transition-colors text-2xl">home</span><span class="font-semibold">Home</span></a>
+      <div>
+        <button onclick="document.getElementById('tour-dropdown').classList.toggle('hidden');document.getElementById('tour-arrow').classList.toggle('rotate-180')" class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors w-full">
+          <span class="material-symbols-outlined text-accent-gold group-hover:text-navy transition-colors text-2xl">explore</span>
+          <span class="font-semibold">Tours</span>
+          <span id="tour-arrow" class="material-symbols-outlined ml-auto transition-transform duration-200 text-xl">expand_more</span>
+        </button>
+        <div id="tour-dropdown" class="hidden pl-10 mt-3 space-y-4">
+          <div>
+            <button onclick="event.stopPropagation();document.getElementById('snorkel-dropdown').classList.toggle('hidden');document.getElementById('snorkel-arrow').classList.toggle('rotate-180')" class="group flex items-center gap-2 text-base font-serif text-navy/70 hover:text-accent-gold transition-colors w-full">
+              <span class="font-semibold">Snorkeling</span>
+              <span id="snorkel-arrow" class="material-symbols-outlined transition-transform duration-200 text-lg">expand_more</span>
+            </button>
+            <div id="snorkel-dropdown" class="hidden pl-6 mt-2 space-y-3">
+              <a class="block text-sm font-serif text-navy/60 hover:text-accent-gold transition-colors" href="private-snorkeling.html">Private</a>
+              <a class="block text-sm font-serif text-navy/60 hover:text-accent-gold transition-colors" href="shared-snorkeling.html">Shared</a>
+            </div>
+          </div>
+          <div>
+            <button onclick="event.stopPropagation();document.getElementById('sunset-dropdown').classList.toggle('hidden');document.getElementById('sunset-arrow').classList.toggle('rotate-180')" class="group flex items-center gap-2 text-base font-serif text-navy/70 hover:text-accent-gold transition-colors w-full">
+              <span class="font-semibold">Sunset</span>
+              <span id="sunset-arrow" class="material-symbols-outlined transition-transform duration-200 text-lg">expand_more</span>
+            </button>
+            <div id="sunset-dropdown" class="hidden pl-6 mt-2 space-y-3">
+              <a class="block text-sm font-serif text-navy/60 hover:text-accent-gold transition-colors" href="private-sunset.html">Private</a>
+              <a class="block text-sm font-serif text-navy/60 hover:text-accent-gold transition-colors" href="shared-sunset.html">Shared</a>
+            </div>
+          </div>
+          <a class="block text-base font-serif text-navy/70 hover:text-accent-gold transition-colors" href="whale-watching.html">Whale Watching</a>
+          <a class="block text-base font-serif text-navy/70 hover:text-accent-gold transition-colors" href="bachelorette-party.html">Bachelorette</a>
+          <a class="block text-base font-serif text-navy/70 hover:text-accent-gold transition-colors" href="scuba-diving.html">Scuba Diving</a>
+        </div>
+      </div>
+      <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="shuttle-service.html"><span class="material-symbols-outlined text-navy group-hover:text-accent-gold transition-colors text-2xl">airport_shuttle</span><span class="font-semibold">Shuttle Service</span></a>
+      <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="fleet.html"><span class="material-symbols-outlined text-accent-gold group-hover:text-navy transition-colors text-2xl">sailing</span><span class="font-semibold">Our Fleet</span></a>
+      <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="#"><span class="material-symbols-outlined text-navy group-hover:text-accent-gold transition-colors text-2xl">stars</span><span class="font-semibold">Special Offers</span></a>
+      <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="#"><span class="material-symbols-outlined text-accent-gold group-hover:text-navy transition-colors text-2xl">anchor</span><span class="font-semibold">About Our Crew</span></a>
+      <a class="group flex items-center gap-4 text-xl font-serif text-accent-gold" href="travel_guide.html"><span class="material-symbols-outlined text-accent-gold text-2xl">menu_book</span><span class="font-semibold">Travel Guide</span></a>
+      <div>
+        <div class="group flex items-center gap-4 text-xl font-serif text-navy">
+          <span class="material-symbols-outlined text-navy text-2xl">mail</span>
+          <span class="font-semibold">Contact Info</span>
+        </div>
+        <div class="pl-10 mt-3 space-y-4">
+          <a class="flex items-center gap-2 text-base text-navy/70 hover:text-accent-gold transition-colors" href="https://wa.me/526241916997?text=hi%2C%20I'm%20sending%20you%20a%20message%20from%20cabosailing.com" target="_blank"><i class="fa-brands fa-whatsapp text-[#25D366]"></i> +52 624 191 6997</a>
+          <a class="flex items-center gap-2 text-base text-navy/70 hover:text-accent-gold transition-colors" href="tel:+526241438485"><span class="material-symbols-outlined text-base">call</span> +52 624 143 8485</a>
+          <a class="flex items-center gap-2 text-base text-navy/70 hover:text-accent-gold transition-colors" href="mailto:info@cabosailing.com"><span class="material-symbols-outlined text-base">email</span> info@cabosailing.com</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="px-8 pb-10 pt-4 border-t border-gray-200 bg-white/80 backdrop-blur-md z-20">
+    <div class="flex justify-center gap-8 mb-6">
+      <a class="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center text-navy hover:text-accent-gold transition-colors bg-white shadow-sm" href="#"><i class="fa-brands fa-instagram text-xl"></i></a>
+      <a class="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center text-navy hover:text-accent-gold transition-colors bg-white shadow-sm" href="#"><i class="fa-brands fa-facebook-f text-xl"></i></a>
+    </div>
+    <a href="tel:+526241438485" class="w-full bg-navy text-white py-4 rounded-xl font-bold uppercase tracking-widest text-base flex items-center justify-center gap-2 shadow-lg">
+      <span class="material-symbols-outlined">call</span> Call Us Now
+    </a>
+  </div>
+</div>
+
+<script>
+  document.getElementById('menu-open').addEventListener('click', function() {
+    document.getElementById('menu-overlay').classList.remove('hidden');
+  });
+  document.getElementById('menu-close').addEventListener('click', function() {
+    document.getElementById('menu-overlay').classList.add('hidden');
+  });
+
+  function fleetNav(btn, dir) {
+    var wrap = btn.parentElement.querySelector('.boat-carousel');
+    if (!wrap) {
+      wrap = btn.closest('[class*="h-["]');
+      if (!wrap) wrap = btn.parentElement;
+    }
+    var slides = wrap.querySelectorAll('.boat-slide');
+    var current = 0;
+    slides.forEach(function(s, i) { if (s.style.opacity === '1' || s.classList.contains('opacity-100')) current = i; });
+    slides[current].style.opacity = '0';
+    slides[current].classList.remove('opacity-100');
+    var next = (current + dir + slides.length) % slides.length;
+    slides[next].style.opacity = '1';
+  }
+</script>
+
+<footer class="bg-navy mt-20 px-5 lg:px-12 py-12">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-10">
+      <div>
+        <img src="images/cabo-sailing-n-l.png" alt="Cabo Sailing" class="h-10 mb-4" style="filter: brightness(0) invert(1) opacity(0.9)"/>
+        <p class="text-white/50 text-base leading-relaxed">Luxury sailing &amp; snorkeling charters in Cabo San Lucas, Mexico.</p>
+        <div class="flex gap-3 mt-4">
+          <a href="#" class="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center text-white/60 hover:text-white transition-colors"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center text-white/60 hover:text-white transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-white font-bold text-base uppercase tracking-widest mb-4">Tours</h4>
+        <ul class="space-y-2 text-white/50 text-base">
+          <li><a href="private-snorkeling.html" class="hover:text-gold transition-colors">Private Snorkeling</a></li>
+          <li><a href="shared-snorkeling.html" class="hover:text-gold transition-colors">Shared Snorkeling</a></li>
+          <li><a href="private-sunset.html" class="hover:text-gold transition-colors">Private Sunset</a></li>
+          <li><a href="shared-sunset.html" class="hover:text-gold transition-colors">Shared Sunset</a></li>
+          <li><a href="whale-watching.html" class="hover:text-gold transition-colors">Whale Watching</a></li>
+          <li><a href="scuba-diving.html" class="hover:text-gold transition-colors">Scuba Diving</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-bold text-base uppercase tracking-widest mb-4">Company</h4>
+        <ul class="space-y-2 text-white/50 text-base">
+          <li><a href="fleet.html" class="hover:text-gold transition-colors">Our Fleet</a></li>
+          <li><a href="shuttle-service.html" class="hover:text-gold transition-colors">Shuttle Service</a></li>
+          <li><a href="travel_guide.html" class="text-gold">Travel Guide</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-bold text-base uppercase tracking-widest mb-4">Contact</h4>
+        <div class="space-y-3 text-white/50 text-base">
+          <div class="flex items-center gap-2"><span class="material-symbols-outlined text-gold text-base" style="color:#C5A059">call</span><a href="tel:6197842745" class="hover:text-gold transition-colors">619-784-2745</a></div>
+          <div class="flex items-center gap-2"><i class="fa-brands fa-whatsapp" style="color:#C5A059"></i><a href="https://wa.me/526241916997" target="_blank" class="hover:text-gold transition-colors">+52 624 191 6997</a></div>
+          <div class="flex items-center gap-2"><span class="material-symbols-outlined text-gold text-base" style="color:#C5A059">email</span><a href="mailto:info@cabosailing.com" class="hover:text-gold transition-colors">info@cabosailing.com</a></div>
+          <div class="flex items-center gap-2"><span class="material-symbols-outlined text-gold text-base" style="color:#C5A059">pin_drop</span><span>Cabo San Lucas Marina, Dock F</span></div>
+          <div class="flex items-center gap-2 mt-1"><span class="material-symbols-outlined text-gold text-base" style="color:#C5A059">mail</span><a href="contact.html" class="text-white font-bold hover:text-gold transition-colors">Contact Us Now</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-white/10 pt-6 flex items-center justify-between">
+      <p class="text-white/30 text-sm">&copy; 2026 Cabo Sailing. All rights reserved.</p>
+      <p class="text-white/30 text-sm">Land's End, Cabo San Lucas, Mexico</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating Quick Availability Button -->
+<a href="contact.html" class="fixed right-0 top-1/2 -translate-y-1/2 z-50 bg-navy hover:bg-navy/90 transition-colors shadow-xl rounded-l-xl py-3 px-2 lg:py-4 lg:px-2.5 group" style="writing-mode:vertical-rl;text-orientation:mixed;">
+  <span class="text-gold font-bold text-[10px] lg:text-xs uppercase tracking-[0.2em] group-hover:text-white transition-colors">Quick Availability Check</span>
+</a>
+</body></html>

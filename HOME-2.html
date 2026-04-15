@@ -65,6 +65,10 @@
         .gold-divider {
             background: linear-gradient(to right, transparent, #b38e5d, transparent);
         }
+        .font-serif-italic {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+        }
         /* Desktop nav */
         @media (min-width: 1024px) {
             .mobile-only { display: none !important; }
@@ -90,14 +94,14 @@
         }
         /* Fleet boat card image uniformity */
         .fleet-img-wrap {
-            aspect-ratio: 8 / 11;
+            aspect-ratio: 5 / 8;
             width: 100%;
             overflow: hidden;
             border-radius: 1.5rem 1.5rem 0 0;
         }
         @media (min-width: 1024px) {
             .fleet-img-wrap {
-                aspect-ratio: 32 / 33;
+                aspect-ratio: 4 / 5;
             }
         }
         .fleet-img-wrap img {
@@ -320,139 +324,215 @@
 </div>
 
 
-<!-- PRIVATE EXPERIENCES -->
-<div id="section-private" class="px-6 mb-12 lg:max-w-[1400px] lg:mx-auto lg:px-10 scroll-mt-[80px]">
-<h2 class="text-base lg:text-xl font-serif text-navy mb-1 flex items-center gap-3">
-<span class="w-6 lg:w-8 h-[1px] bg-accent-gold"></span>Private Yachts &amp; Sailing Charters
-</h2>
-<p class="text-navy/50 text-xs lg:text-sm mb-4 lg:mb-6 pl-9 lg:pl-11">Your boat. Your schedule. Fully personalized experience.</p>
-<div class="grid grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-6">
-<a href="private-snorkeling.html" class="group relative bg-white rounded-[1.5rem] overflow-hidden shadow-xl border border-border-light/60 block">
-<div class="relative h-[360px] lg:h-[440px] overflow-hidden">
-<span class="absolute top-4 left-4 z-30 bg-accent-gold text-white px-3 py-1 rounded-full text-[9px] font-bold tracking-widest uppercase shadow-lg">Most Popular</span>
-<div class="activity-carousel absolute inset-0 group-hover:scale-105 transition-transform duration-700">
-<img alt="Private Snorkeling" class="activity-slide w-full h-full object-cover object-center absolute inset-0 opacity-100 transition-opacity duration-1000" src="images/guests on sailboats/girl to the horizon.jpeg"/>
-<img alt="Private Snorkeling" class="activity-slide w-full h-full object-cover object-center absolute inset-0 opacity-0 transition-opacity duration-1000" src="images/guests on sailboats/para el video.jpg"/>
-<img alt="Private Snorkeling" class="activity-slide w-full h-full object-cover object-center absolute inset-0 opacity-0 transition-opacity duration-1000" src="images/Guests on yachts/frame grabs yacht (33).jpg"/>
-<img alt="Private Snorkeling" class="activity-slide w-full h-full object-cover object-center absolute inset-0 opacity-0 transition-opacity duration-1000" src="images/guests on sailboats/Sailing and waiving.jpg"/>
-<img alt="Private Snorkeling" class="activity-slide w-full h-full object-cover object-center absolute inset-0 opacity-0 transition-opacity duration-1000" src="images/guests on sailboats/4k.01_41_40_08.Still129.jpg"/>
+<!-- PRIVATE EXPERIENCES (HOME-2 redesign) -->
+<section id="section-private" class="py-16 lg:py-24 bg-white scroll-mt-[80px]">
+<div class="max-w-screen-2xl mx-auto px-6 lg:px-10 space-y-32 lg:space-y-40">
+
+<!-- Activity 1: Private Snorkeling -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-16 items-center">
+<div class="md:col-span-7 relative group">
+<div class="absolute top-6 left-6 z-30 bg-accent-gold text-white px-4 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase shadow-xl">Most Popular</div>
+<div class="aspect-[4/5] md:aspect-[16/10] overflow-hidden rounded-lg shadow-2xl">
+<img alt="Private Snorkeling" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="images/guests on sailboats/girl to the horizon.jpeg"/>
 </div>
-<div class="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-navy via-navy/70 to-transparent pointer-events-none"></div>
-<div class="absolute bottom-0 left-0 right-0 p-5 border-b-4 border-accent-gold">
-<span class="text-accent-gold-light font-serif-italic text-xl lg:text-2xl block leading-tight mb-1">Deep Sea Serenity</span>
-<h3 class="text-white text-base lg:text-lg font-serif font-semibold mb-2">Private Snorkeling</h3>
-<p class="text-white/70 text-xs leading-relaxed mb-3 hidden lg:block">Private charter to Pelican's Rock &amp; Land's End. Open bar and snorkel gear included.</p>
-<div class="inline-flex items-center gap-1 text-accent-gold-light text-[10px] font-bold uppercase tracking-widest">More info <span class="material-symbols-outlined text-sm">arrow_forward</span></div>
+<div class="absolute -bottom-10 -right-4 md:-right-10 bg-navy p-8 md:p-12 max-w-[280px] md:max-w-xs shadow-2xl z-20 border-b-4 border-accent-gold rounded-lg bg-opacity-80 backdrop-blur-sm">
+<h3 class="text-accent-gold-light font-serif-italic text-2xl md:text-3xl mb-4">Deep Sea Serenity</h3>
+<p class="text-sky-100 text-xs md:text-sm leading-relaxed">Explore underwater cathedrals and coral gardens in total exclusivity.</p>
 </div>
 </div>
-</a>
-<a href="private-sunset.html" class="group relative bg-white rounded-[1.5rem] overflow-hidden shadow-xl border border-border-light/60 block">
-<div class="relative h-[360px] lg:h-[440px] overflow-hidden">
-<span class="absolute top-4 left-4 z-30 bg-accent-gold text-white px-3 py-1 rounded-full text-[9px] font-bold tracking-widest uppercase shadow-lg">Premium</span>
-<div class="activity-carousel absolute inset-0 group-hover:scale-105 transition-transform duration-700">
-<img alt="Private Sunset Cruise" class="activity-slide w-full h-full object-cover object-center absolute inset-0 opacity-100 transition-opacity duration-1000" src="images/Guests on yachts/frame grabs yacht (17).jpg"/>
-<img alt="Private Sunset Cruise" class="activity-slide w-full h-full object-cover object-center absolute inset-0 opacity-0 transition-opacity duration-1000" src="images/Guests on yachts/Breeze 2.jpeg"/>
-<img alt="Private Sunset Cruise" class="activity-slide w-full h-full object-cover object-center absolute inset-0 opacity-0 transition-opacity duration-1000" src="images/Guests on yachts/14.08.23 cabo sailing, boat emma, carlos sanchez (1272).jpg"/>
-<img alt="Private Sunset Cruise" class="activity-slide w-full h-full object-cover object-center absolute inset-0 opacity-0 transition-opacity duration-1000" src="images/Guests/cheers sailing.jpg"/>
-<img alt="Private Sunset Cruise" class="activity-slide w-full h-full object-cover object-center absolute inset-0 opacity-0 transition-opacity duration-1000" src="images/Guests/guests.jpg"/>
+<div class="md:col-span-5 space-y-8 pt-16 md:pt-0">
+<div class="space-y-4">
+<span class="text-accent-gold font-bold text-xs tracking-widest uppercase block">Private Charter</span>
+<h2 class="text-4xl lg:text-5xl font-serif-italic text-navy leading-tight">Private Snorkeling Cruise <span class="text-2xl lg:text-3xl text-navy/60">(Yacht or Sailboat)</span></h2>
+<p class="text-accent-gold/80 text-[11px] font-bold tracking-widest uppercase">Trusted by hundreds of guests every month</p>
 </div>
-<div class="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-navy via-navy/70 to-transparent pointer-events-none"></div>
-<div class="absolute bottom-0 left-0 right-0 p-5 border-b-4 border-accent-gold">
-<span class="text-accent-gold-light font-serif-italic text-xl lg:text-2xl block leading-tight mb-1">Golden Hour Magic</span>
-<h3 class="text-white text-base lg:text-lg font-serif font-semibold mb-2">Private Sunset Cruise</h3>
-<p class="text-white/70 text-xs leading-relaxed mb-3 hidden lg:block">Golden hour on the Pacific — premium open bar, your group, and the Arch at sunset.</p>
-<div class="inline-flex items-center gap-1 text-accent-gold-light text-[10px] font-bold uppercase tracking-widest">More info <span class="material-symbols-outlined text-sm">arrow_forward</span></div>
+<p class="text-navy/70 text-base lg:text-lg leading-relaxed">A private cruise to Cabo's best snorkeling spots with time to swim, relax, and enjoy food and drinks onboard.<br/>Perfect for families, couples, or groups who want a fun, flexible experience at their own pace.<br/>No crowds, more time in the water, and a crew focused entirely on your group.</p>
+<ul class="space-y-3 pt-2">
+<li class="flex items-center gap-3 text-navy/70 font-medium text-sm"><span class="material-symbols-outlined text-accent-gold text-lg">groups</span> Up to 18 guests</li>
+<li class="flex items-center gap-3 text-navy/70 font-medium text-sm"><span class="material-symbols-outlined text-accent-gold text-lg">local_bar</span> Open bar &amp; food</li>
+<li class="flex items-center gap-3 text-navy/70 font-medium text-sm"><span class="material-symbols-outlined text-accent-gold text-lg">pool</span> Snorkeling gear &amp; towels included</li>
+</ul>
+<div class="border-t border-border-light pt-6 space-y-4">
+<div class="text-2xl font-bold text-navy">From $1,230</div>
+<a href="private-snorkeling.html" class="block text-center bg-transparent text-navy border border-navy w-full py-4 rounded-lg font-bold tracking-widest text-sm hover:bg-navy/5 transition-all uppercase">More Info</a>
 </div>
-</div>
-</a>
-<a href="whale-watching.html" class="group relative bg-white rounded-[1.5rem] overflow-hidden shadow-xl border border-border-light/60 block">
-<div class="relative h-[360px] lg:h-[440px] overflow-hidden">
-<span class="absolute top-4 left-4 z-30 bg-accent-gold text-white px-3 py-1 rounded-full text-[9px] font-bold tracking-widest uppercase shadow-lg">Sells Out Fast</span>
-<div class="activity-carousel absolute inset-0 group-hover:scale-105 transition-transform duration-700">
-<img alt="Whale Watching" class="activity-slide w-full h-full object-cover object-center absolute inset-0 opacity-100 transition-opacity duration-1000" src="images/Whales/FB_IMG_1549234715137.jpg"/>
-<img alt="Whale Watching" class="activity-slide w-full h-full object-cover object-center absolute inset-0 opacity-0 transition-opacity duration-1000" src="images/Whales/_IGP5740.JPG"/>
-<img alt="Whale Watching" class="activity-slide w-full h-full object-cover object-center absolute inset-0 opacity-0 transition-opacity duration-1000" src="images/Whales/family on board.jpg"/>
-<img alt="Whale Watching" class="activity-slide w-full h-full object-cover object-center absolute inset-0 opacity-0 transition-opacity duration-1000" src="images/Whales/img062.jpg"/>
-</div>
-<div class="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-navy via-navy/70 to-transparent pointer-events-none"></div>
-<div class="absolute bottom-0 left-0 right-0 p-5 border-b-4 border-accent-gold">
-<span class="text-accent-gold-light font-serif-italic text-xl lg:text-2xl block leading-tight mb-1">Ocean Giants</span>
-<h3 class="text-white text-base lg:text-lg font-serif font-semibold mb-2">Whale Watching</h3>
-<p class="text-white/70 text-xs leading-relaxed mb-3 hidden lg:block">Encounters with humpbacks and gray whales during Cabo's whale season.</p>
-<div class="inline-flex items-center gap-1 text-accent-gold-light text-[10px] font-bold uppercase tracking-widest">More info <span class="material-symbols-outlined text-sm">arrow_forward</span></div>
-</div>
-</div>
-</a>
-<a href="bachelorette-party.html" class="group relative bg-white rounded-[1.5rem] overflow-hidden shadow-xl border border-border-light/60 block">
-<div class="relative h-[360px] lg:h-[440px] overflow-hidden">
-<span class="absolute top-4 left-4 z-30 bg-accent-gold text-white px-3 py-1 rounded-full text-[9px] font-bold tracking-widest uppercase shadow-lg">Smooth Sailing</span>
-<div class="activity-carousel absolute inset-0 group-hover:scale-105 transition-transform duration-700">
-<img alt="Bachelorette Party" class="activity-slide w-full h-full object-cover object-center absolute inset-0 opacity-100 transition-opacity duration-1000" src="images/Bachelorette/Bcahelorette and arch.png"/>
-<img alt="Bachelorette Party" class="activity-slide w-full h-full object-cover object-center absolute inset-0 opacity-0 transition-opacity duration-1000" src="images/Bachelorette/DSC_0107-2.jpg"/>
-<img alt="Bachelorette Party" class="activity-slide w-full h-full object-cover object-center absolute inset-0 opacity-0 transition-opacity duration-1000" src="images/Bachelorette/DSC_3744.JPG"/>
-<img alt="Bachelorette Party" class="activity-slide w-full h-full object-cover object-center absolute inset-0 opacity-0 transition-opacity duration-1000" src="images/Bachelorette/Bachelorette dance.png"/>
-<img alt="Bachelorette Party" class="activity-slide w-full h-full object-cover object-center absolute inset-0 opacity-0 transition-opacity duration-1000" src="images/Bachelorette/DSC_0055.jpg"/>
-</div>
-<div class="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-navy via-navy/70 to-transparent pointer-events-none"></div>
-<div class="absolute bottom-0 left-0 right-0 p-5 border-b-4 border-accent-gold">
-<span class="text-accent-gold-light font-serif-italic text-xl lg:text-2xl block leading-tight mb-1">Ultimate Soirée</span>
-<h3 class="text-white text-base lg:text-lg font-serif font-semibold mb-2">Bachelorette Party</h3>
-<p class="text-white/70 text-xs leading-relaxed mb-3 hidden lg:block">Private yacht party — open bar, music, and Cabo's coastline as your backdrop.</p>
-<div class="inline-flex items-center gap-1 text-accent-gold-light text-[10px] font-bold uppercase tracking-widest">More info <span class="material-symbols-outlined text-sm">arrow_forward</span></div>
-</div>
-</div>
-</a>
 </div>
 </div>
 
-<!-- SHARED EXPERIENCES -->
-<div id="section-shared" class="bg-[#f5f3ef] border-y border-border-light/50 py-12 scroll-mt-[80px]">
-<div class="px-6 lg:max-w-[1400px] lg:mx-auto lg:px-10">
-<h2 class="text-base lg:text-xl font-serif text-navy mb-1 flex items-center gap-3">
-<span class="w-6 lg:w-8 h-[1px] bg-accent-gold"></span>Small Group Shared Sailing Cruises
-</h2>
-<p class="text-navy/50 text-xs lg:text-sm mb-4 lg:mb-6 pl-9 lg:pl-11">Affordable luxury with limited guests onboard.</p>
-<div class="grid grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-6">
-<a href="shared-snorkeling.html" class="group relative bg-white rounded-[1.5rem] overflow-hidden shadow-xl border border-border-light/60 block">
-<div class="relative h-[360px] lg:h-[440px] overflow-hidden">
-<span class="absolute top-4 left-4 z-30 bg-accent-gold text-white px-3 py-1 rounded-full text-[9px] font-bold tracking-widest uppercase shadow-lg">Most Popular</span>
-<div class="activity-carousel absolute inset-0 group-hover:scale-105 transition-transform duration-700">
-<img alt="Shared Snorkeling" class="activity-slide w-full h-full object-cover object-center absolute inset-0 opacity-100 transition-opacity duration-1000" src="images/guests on sailboats/4k.01_16_49_02.Still113.jpg"/>
-<img alt="Shared Snorkeling" class="activity-slide w-full h-full object-cover object-center absolute inset-0 opacity-0 transition-opacity duration-1000" src="images/Boats/Sailing 38'/5.Sailing 38'.jpg"/>
-<img alt="Shared Snorkeling" class="activity-slide w-full h-full object-cover object-center absolute inset-0 opacity-0 transition-opacity duration-1000" src="images/Boats/Sailing 42'/24.Sailing_42.jpg"/>
-<img alt="Shared Snorkeling" class="activity-slide w-full h-full object-cover object-center absolute inset-0 opacity-0 transition-opacity duration-1000" src="images/guests on sailboats/IMGP6059.JPG"/>
-<img alt="Shared Snorkeling" class="activity-slide w-full h-full object-cover object-center absolute inset-0 opacity-0 transition-opacity duration-1000" src="images/guests on sailboats/snorkeling (7).jpg"/>
+<!-- Activity 2: Private Sunset Cruise -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-16 items-center">
+<div class="md:col-span-7 order-1 md:order-2 relative group">
+<div class="absolute top-6 left-6 z-30 bg-accent-gold text-white px-4 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase shadow-xl bg-opacity-80 backdrop-blur-sm">Premium</div>
+<div class="aspect-[4/5] md:aspect-[16/10] overflow-hidden rounded-lg shadow-2xl">
+<img alt="Private Sunset Cruise" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="images/Guests on yachts/frame grabs yacht (17).jpg"/>
 </div>
-<div class="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-navy via-navy/70 to-transparent pointer-events-none"></div>
-<div class="absolute bottom-0 left-0 right-0 p-5 border-b-4 border-accent-gold">
-<span class="text-accent-gold-light font-serif-italic text-xl lg:text-2xl block leading-tight mb-1">Baja Explorers</span>
-<h3 class="text-white text-base lg:text-lg font-serif font-semibold mb-2">Shared Snorkeling</h3>
-<p class="text-white/70 text-xs leading-relaxed mb-3 hidden lg:block">Snorkel at Pelican's Rock &amp; the Arch, open bar included — at an unbeatable price.</p>
-<div class="inline-flex items-center gap-1 text-accent-gold-light text-[10px] font-bold uppercase tracking-widest">More info <span class="material-symbols-outlined text-sm">arrow_forward</span></div>
+<div class="absolute -bottom-10 -left-4 md:-left-10 bg-accent-gold p-8 md:p-12 max-w-[280px] md:max-w-xs shadow-2xl z-20 border-b-4 border-amber-300 rounded-lg bg-opacity-80 backdrop-blur-sm">
+<h3 class="text-white font-serif-italic text-2xl md:text-3xl mb-4">Golden Hour Magic</h3>
+<p class="text-amber-50 text-xs md:text-sm leading-relaxed">Sip premium champagne as the Baja sky transforms into a canvas of gold and violet.</p>
 </div>
 </div>
-</a>
-<a href="shared-sunset.html" class="group relative bg-white rounded-[1.5rem] overflow-hidden shadow-xl border border-border-light/60 block">
-<div class="relative h-[360px] lg:h-[440px] overflow-hidden">
-<span class="absolute top-4 left-4 z-30 bg-accent-gold text-white px-3 py-1 rounded-full text-[9px] font-bold tracking-widest uppercase shadow-lg">Premium</span>
-<div class="activity-carousel absolute inset-0 group-hover:scale-105 transition-transform duration-700">
-<img alt="Shared Sunset Cruise" class="activity-slide w-full h-full object-cover object-center absolute inset-0 opacity-100 transition-opacity duration-1000" src="images/guests on sailboats/_IGP5236.JPG"/>
-<img alt="Shared Sunset Cruise" class="activity-slide w-full h-full object-cover object-center absolute inset-0 opacity-0 transition-opacity duration-1000" src="images/guests on sailboats/Header Sunset 3.jpeg"/>
-<img alt="Shared Sunset Cruise" class="activity-slide w-full h-full object-cover object-center absolute inset-0 opacity-0 transition-opacity duration-1000" src="images/Guests/Guests sunset sail.jpg"/>
-<img alt="Shared Sunset Cruise" class="activity-slide w-full h-full object-cover object-center absolute inset-0 opacity-0 transition-opacity duration-1000" src="images/guests on sailboats/Guests sailing sunset 1.png"/>
+<div class="md:col-span-5 order-2 md:order-1 space-y-8 pt-16 md:pt-0">
+<div class="space-y-4">
+<span class="text-accent-gold font-bold text-xs tracking-widest uppercase block">Exclusive Experience</span>
+<h2 class="text-4xl lg:text-5xl font-serif-italic text-navy leading-tight">Private Sunset Cruise <span class="text-2xl lg:text-3xl text-navy/60">(Yacht or Sailboat)</span></h2>
+<p class="text-accent-gold/80 text-[11px] font-bold tracking-widest uppercase">Favorite choice for couples</p>
 </div>
-<div class="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-navy via-navy/70 to-transparent pointer-events-none"></div>
-<div class="absolute bottom-0 left-0 right-0 p-5 border-b-4 border-accent-gold">
-<span class="text-accent-gold-light font-serif-italic text-xl lg:text-2xl block leading-tight mb-1">Twilight Harmony</span>
-<h3 class="text-white text-base lg:text-lg font-serif font-semibold mb-2">Shared Sunset Cruise</h3>
-<p class="text-white/70 text-xs leading-relaxed mb-3 hidden lg:block">Sail into golden hour with open bar and live music — shared with a small, friendly group.</p>
-<div class="inline-flex items-center gap-1 text-accent-gold-light text-[10px] font-bold uppercase tracking-widest">More info <span class="material-symbols-outlined text-sm">arrow_forward</span></div>
-</div>
-</div>
-</a>
+<p class="text-navy/70 text-base lg:text-lg leading-relaxed">A private evening cruise past Cabo's Arch with drinks, light bites, and unforgettable sunset views.<br/>Ideal for couples, celebrations, or anyone looking for a relaxed and memorable experience.<br/>More intimate, smoother, and far less crowded than typical sunset tours.</p>
+<ul class="space-y-3 pt-2">
+<li class="flex items-center gap-3 text-navy/70 font-medium text-sm"><span class="material-symbols-outlined text-accent-gold text-lg">groups</span> Up to 18 guests</li>
+<li class="flex items-center gap-3 text-navy/70 font-medium text-sm"><span class="material-symbols-outlined text-accent-gold text-lg">local_bar</span> Open bar &amp; food</li>
+<li class="flex items-center gap-3 text-navy/70 font-medium text-sm"><span class="material-symbols-outlined text-accent-gold text-lg">pool</span> Snorkeling gear &amp; towels included</li>
+</ul>
+<div class="border-t border-border-light pt-6 space-y-4">
+<div class="text-2xl font-bold text-navy">From $1,230</div>
+<a href="private-sunset.html" class="block text-center bg-transparent text-navy border border-navy w-full py-4 rounded-lg font-bold tracking-widest text-sm hover:bg-navy/5 transition-all uppercase">More Info</a>
 </div>
 </div>
 </div>
+
+<!-- Activity 3: Whale Watching -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-16 items-center">
+<div class="md:col-span-7 relative group">
+<div class="absolute top-6 left-6 z-30 bg-accent-gold text-white px-4 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase shadow-xl">Sells Out Fast</div>
+<div class="aspect-[4/5] md:aspect-[16/10] overflow-hidden rounded-lg shadow-2xl">
+<img alt="Whale Watching" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="images/Whales/FB_IMG_1549234715137.jpg"/>
+</div>
+<div class="absolute -bottom-10 -right-4 md:-right-10 bg-teal-900 p-8 md:p-12 max-w-[280px] md:max-w-xs shadow-2xl z-20 border-b-4 border-teal-400 rounded-lg bg-opacity-80 backdrop-blur-sm">
+<h3 class="text-teal-200 font-serif-italic text-2xl md:text-3xl mb-4">Ocean Giants</h3>
+<p class="text-teal-50/70 text-xs md:text-sm leading-relaxed">A front-row seat to the most majestic migration on the planet.</p>
+</div>
+</div>
+<div class="md:col-span-5 space-y-8 pt-16 md:pt-0">
+<div class="space-y-4">
+<span class="text-accent-gold font-bold text-xs tracking-widest uppercase block">Seasonal Wonder</span>
+<h2 class="text-4xl lg:text-5xl font-serif-italic text-navy leading-tight">Private Whale Watching Cruise <span class="text-2xl lg:text-3xl text-navy/60">(Yacht or Sailboat)</span></h2>
+<p class="text-accent-gold/80 text-[11px] font-bold tracking-widest uppercase">Last month's best seller</p>
+</div>
+<p class="text-navy/70 text-base lg:text-lg leading-relaxed">A private cruise to see Cabo's whales up close, guided by an experienced crew in their natural habitat.<br/>Perfect for families, couples, or small groups looking for a more personal and comfortable wildlife experience.<br/>Closer encounters, no crowds, and the flexibility to follow the whales at your own pace.</p>
+<ul class="space-y-3 pt-2">
+<li class="flex items-center gap-3 text-navy/70 font-medium text-sm"><span class="material-symbols-outlined text-accent-gold text-lg">groups</span> Up to 18 guests</li>
+<li class="flex items-center gap-3 text-navy/70 font-medium text-sm"><span class="material-symbols-outlined text-accent-gold text-lg">local_bar</span> Open bar &amp; food</li>
+<li class="flex items-center gap-3 text-navy/70 font-medium text-sm"><span class="material-symbols-outlined text-accent-gold text-lg">pool</span> Snorkeling gear &amp; towels included</li>
+</ul>
+<div class="border-t border-border-light pt-6 space-y-4">
+<div class="text-2xl font-bold text-navy">From $1,230</div>
+<a href="whale-watching.html" class="block text-center bg-transparent text-navy border border-navy w-full py-4 rounded-lg font-bold tracking-widest text-sm hover:bg-navy/5 transition-all uppercase">More Info</a>
+</div>
+</div>
+</div>
+
+<!-- Activity 4: Bachelorette Party -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-16 items-center">
+<div class="md:col-span-7 order-1 md:order-2 relative group">
+<div class="absolute top-6 left-6 z-30 bg-accent-gold text-white px-4 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase shadow-xl">VIP Experience</div>
+<div class="aspect-[4/5] md:aspect-[16/10] overflow-hidden rounded-lg shadow-2xl">
+<img alt="Bachelorette Party" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="images/Bachelorette/Bcahelorette and arch.png"/>
+</div>
+<div class="absolute -bottom-10 -left-4 md:-left-10 bg-indigo-900 p-8 md:p-12 max-w-[280px] md:max-w-xs shadow-2xl z-20 border-b-4 border-pink-400 rounded-lg bg-opacity-80 backdrop-blur-sm">
+<h3 class="text-indigo-100 font-serif-italic text-2xl md:text-3xl mb-4">Ultimate Soirée</h3>
+<p class="text-indigo-200 text-xs md:text-sm leading-relaxed">Custom themes and cocktails for a celebration she will never forget.</p>
+</div>
+</div>
+<div class="md:col-span-5 order-2 md:order-1 space-y-8 pt-16 md:pt-0">
+<div class="space-y-4">
+<span class="text-accent-gold font-bold text-xs tracking-widest uppercase block">Celebrations</span>
+<h2 class="text-4xl lg:text-5xl font-serif-italic text-navy leading-tight">Private Bachelorette Party Cruise <span class="text-2xl lg:text-3xl text-navy/60">(Yacht or Sailboat)</span></h2>
+<p class="text-accent-gold/80 text-[11px] font-bold tracking-widest uppercase">Trusted event experts</p>
+</div>
+<p class="text-navy/70 text-base lg:text-lg leading-relaxed">A private cruise designed for celebrating—music, drinks, great views, and plenty of time to relax and have fun with your group.<br/>Perfect for bachelorette parties looking for a stylish, fun, and stress-free experience on the water.<br/>Your own space, no crowds, and a crew that takes care of everything so you can focus on celebrating.</p>
+<ul class="space-y-3 pt-2">
+<li class="flex items-center gap-3 text-navy/70 font-medium text-sm"><span class="material-symbols-outlined text-accent-gold text-lg">groups</span> Up to 18 guests</li>
+<li class="flex items-center gap-3 text-navy/70 font-medium text-sm"><span class="material-symbols-outlined text-accent-gold text-lg">local_bar</span> Open bar &amp; food</li>
+<li class="flex items-center gap-3 text-navy/70 font-medium text-sm"><span class="material-symbols-outlined text-accent-gold text-lg">pool</span> Snorkeling gear &amp; towels included</li>
+</ul>
+<div class="border-t border-border-light pt-6 space-y-4">
+<div class="text-2xl font-bold text-navy">From $1,230</div>
+<a href="bachelorette-party.html" class="block text-center bg-transparent text-navy border border-navy w-full py-4 rounded-lg font-bold tracking-widest text-sm hover:bg-navy/5 transition-all uppercase">More Info</a>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+
+<!-- SHARED EXPERIENCES (HOME-2 redesign) -->
+<section id="section-shared" class="py-16 lg:py-24 bg-[#f5f3ef] border-y border-border-light/50 scroll-mt-[80px]">
+<div class="max-w-screen-2xl mx-auto px-6 lg:px-10 space-y-32 lg:space-y-40">
+
+<!-- Activity 5: Shared Snorkeling -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-16 items-center">
+<div class="md:col-span-7 relative group">
+<div class="absolute top-6 left-6 z-30 bg-accent-gold text-white px-4 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase shadow-xl">Most Popular</div>
+<div class="aspect-[4/5] md:aspect-[16/10] overflow-hidden rounded-lg shadow-2xl">
+<img alt="Shared Snorkeling" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="images/guests on sailboats/4k.01_16_49_02.Still113.jpg"/>
+</div>
+<div class="absolute -bottom-10 -right-4 md:-right-10 bg-slate-800 p-8 md:p-12 max-w-[280px] md:max-w-xs shadow-2xl z-20 border-b-4 border-slate-400 rounded-lg bg-opacity-80 backdrop-blur-sm">
+<h3 class="text-slate-200 font-serif-italic text-2xl md:text-3xl mb-4">Baja Explorers</h3>
+<p class="text-slate-400 text-xs md:text-sm leading-relaxed">Small-group camaraderie on the pristine Sea of Cortez.</p>
+</div>
+</div>
+<div class="md:col-span-5 space-y-8 pt-16 md:pt-0">
+<div class="space-y-4">
+<span class="text-accent-gold font-bold text-xs tracking-widest uppercase block">Shared Journey</span>
+<h2 class="text-4xl lg:text-5xl font-serif-italic text-navy leading-tight">Small Group Snorkeling Cruise</h2>
+<p class="text-accent-gold/80 text-[11px] font-bold tracking-widest uppercase">Favorite for small groups</p>
+</div>
+<p class="text-navy/70 text-base lg:text-lg leading-relaxed">A shared sailing trip to Cabo's best snorkeling spots with drinks, light food, and a friendly atmosphere.<br/>Perfect for travelers who want a high-quality experience without booking a private boat.<br/>Limited to small groups, so it feels comfortable—not crowded like typical tours.</p>
+<ul class="space-y-3 pt-2">
+<li class="flex items-center gap-3 text-navy/70 font-medium text-sm"><span class="material-symbols-outlined text-accent-gold text-lg">groups</span> Up to 18 guests</li>
+<li class="flex items-center gap-3 text-navy/70 font-medium text-sm"><span class="material-symbols-outlined text-accent-gold text-lg">local_bar</span> Open bar &amp; food</li>
+<li class="flex items-center gap-3 text-navy/70 font-medium text-sm"><span class="material-symbols-outlined text-accent-gold text-lg">pool</span> Snorkeling gear &amp; towels included</li>
+</ul>
+<div class="border-t border-border-light pt-6 space-y-4">
+<div class="text-2xl font-bold text-navy">From $1,230</div>
+<a href="shared-snorkeling.html" class="block text-center bg-transparent text-navy border border-navy w-full py-4 rounded-lg font-bold tracking-widest text-sm hover:bg-navy/5 transition-all uppercase">More Info</a>
+</div>
+</div>
+</div>
+
+<!-- Activity 6: Shared Sunset Cruise -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-16 items-center">
+<div class="md:col-span-7 order-1 md:order-2 relative group">
+<div class="absolute top-6 left-6 z-30 bg-accent-gold text-white px-4 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase shadow-xl">Premium</div>
+<div class="aspect-[4/5] md:aspect-[16/10] overflow-hidden rounded-lg shadow-2xl">
+<img alt="Shared Sunset Cruise" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="images/guests on sailboats/_IGP5236.JPG"/>
+</div>
+<div class="absolute -bottom-10 -left-4 md:-left-10 bg-orange-950 p-8 md:p-12 max-w-[280px] md:max-w-xs shadow-2xl z-20 border-b-4 border-orange-500 rounded-lg bg-opacity-80 backdrop-blur-sm">
+<h3 class="text-orange-200 font-serif-italic text-2xl md:text-3xl mb-4">Twilight Harmony</h3>
+<p class="text-orange-100/60 text-xs md:text-sm leading-relaxed">Socialize and unwind as the day fades into a star-studded evening.</p>
+</div>
+</div>
+<div class="md:col-span-5 order-2 md:order-1 space-y-8 pt-16 md:pt-0">
+<div class="space-y-4">
+<span class="text-accent-gold font-bold text-xs tracking-widest uppercase block">Community Sailing</span>
+<h2 class="text-4xl lg:text-5xl font-serif-italic text-navy leading-tight">Small Group Sunset Sailing Cruise</h2>
+<p class="text-accent-gold/80 text-[11px] font-bold tracking-widest uppercase">Trusted by hundreds of guests every month</p>
+</div>
+<p class="text-navy/70 text-base lg:text-lg leading-relaxed">A relaxing sunset sail past Cabo's Arch with drinks, music, and stunning views.<br/>Ideal for couples or friends looking for an easy, memorable evening on the water.<br/>Small group setting, smooth sailing, and a more laid-back vibe than party cruises.</p>
+<ul class="space-y-3 pt-2">
+<li class="flex items-center gap-3 text-navy/70 font-medium text-sm"><span class="material-symbols-outlined text-accent-gold text-lg">groups</span> Up to 18 guests</li>
+<li class="flex items-center gap-3 text-navy/70 font-medium text-sm"><span class="material-symbols-outlined text-accent-gold text-lg">local_bar</span> Open bar &amp; food</li>
+<li class="flex items-center gap-3 text-navy/70 font-medium text-sm"><span class="material-symbols-outlined text-accent-gold text-lg">pool</span> Snorkeling gear &amp; towels included</li>
+</ul>
+<div class="border-t border-border-light pt-6 space-y-4">
+<div class="text-2xl font-bold text-navy">From $1,230</div>
+<a href="shared-sunset.html" class="block text-center bg-transparent text-navy border border-navy w-full py-4 rounded-lg font-bold tracking-widest text-sm hover:bg-navy/5 transition-all uppercase">More Info</a>
+</div>
+</div>
+</div>
+
+</div>
+<!-- Bottom Private / Shared Toggle -->
+<div class="px-6 pt-12 lg:max-w-[800px] lg:mx-auto text-center">
+  <p class="text-navy/60 text-sm mb-4">Switch between private and shared experiences</p>
+  <div class="flex items-center justify-center gap-1 bg-white rounded-full p-1 max-w-[280px] mx-auto border border-border-light shadow-sm">
+    <button onclick="document.getElementById('section-private').scrollIntoView({behavior:'smooth',block:'start'})" class="flex-1 py-2.5 rounded-full text-sm font-bold uppercase tracking-widest transition-all text-navy/60 hover:bg-navy/5">Private</button>
+    <button onclick="document.getElementById('section-shared').scrollIntoView({behavior:'smooth',block:'start'})" class="flex-1 py-2.5 rounded-full text-sm font-bold uppercase tracking-widest transition-all bg-navy text-white shadow-md">Shared</button>
+  </div>
+</div>
+</section>
+
 
 <!-- Our Fleet -->
 <div class="bg-surface-light pt-12 pb-8 border-t border-border-light/50">
@@ -463,9 +543,9 @@
 </div>
 </div>
 <div class="px-6 lg:max-w-[1400px] lg:mx-auto lg:px-10">
-<div class="flex items-center gap-4 mb-6 mt-8"><span class="material-symbols-outlined text-gold text-xl lg:text-2xl">yacht</span><h3 class="text-base lg:text-2xl font-serif text-navy">Private Yachts</h3><div class="flex-1 h-px bg-gradient-to-r from-gold/30 to-transparent"></div></div>
-<div class="grid grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-6 pb-8">
-<!-- 46' Luxury Yacht — Most Spacious -->
+<div class="flex items-center gap-4 mb-4 mt-8"><span class="material-symbols-outlined text-gold text-xl lg:text-2xl">yacht</span><h3 class="text-base lg:text-2xl font-serif text-navy">Private Yachts</h3><div class="flex-1 h-px bg-gradient-to-r from-gold/30 to-transparent"></div></div>
+<div class="grid grid-cols-2 gap-4 lg:grid-cols-3 lg:gap-6 pb-8 lg:max-w-[1100px] lg:mx-auto">
+<!-- 51' Luxury Yacht — Most Spacious -->
 <div class="w-full bg-white border border-border-light rounded-[1.5rem] overflow-hidden shadow-xl shadow-navy/5">
   <div class="fleet-img-wrap w-full relative">
     <div class="boat-carousel relative w-full h-full">
@@ -477,25 +557,19 @@
     </div>
     <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
     <div class="absolute bottom-3 left-3 lg:bottom-5 lg:left-6">
-      <h4 class="text-white text-sm lg:text-xl">Luxury Yacht 46'</h4>
-      <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-[8px] lg:text-[10px] mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Up to 20 Guests</span></div>
+      <h4 class="text-white text-sm lg:text-xl">Luxury Yacht 51'</h4>
+      <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-[8px] lg:text-[10px] mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-sm lg:text-base">group</span><span>Up to 20 Guests</span></div>
     </div>
     <div class="absolute top-2 right-2 lg:top-4 lg:right-4 bg-gold text-white text-[7px] lg:text-[9px] font-bold px-2 py-0.5 lg:px-3 lg:py-1 rounded-full uppercase tracking-widest">Most Spacious</div>
     <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
     <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
   </div>
   <div class="p-3 space-y-3 lg:p-4 lg:space-y-4">
-    <div class="flex justify-between items-center text-navy/60 gap-1">
-      <div class="flex flex-col items-center gap-1"><span class="material-symbols-outlined text-gold">dry_cleaning</span><span class="text-[7px] lg:text-[8px] font-bold uppercase tracking-tighter">Towels</span></div>
-      <div class="flex flex-col items-center gap-1"><i class="fa-solid fa-mask-snorkel text-gold" style="font-size:20px"></i><span class="text-[7px] lg:text-[8px] font-bold uppercase tracking-tighter">Snorkel Gear</span></div>
-      <div class="flex flex-col items-center gap-1"><span class="material-symbols-outlined text-gold">liquor</span><span class="text-[7px] lg:text-[8px] font-bold uppercase tracking-tighter">Bar</span></div>
-    </div>
-    <div class="h-px bg-border-light"></div>
     <div class="space-y-4">
       <div class="flex items-center justify-between"><span class="text-navy text-[8px] lg:text-[10px] font-bold uppercase tracking-widest">Special Online Offer</span><div class="bg-gold/10 text-gold text-[8px] lg:text-[10px] font-bold px-1.5 py-0.5 rounded border border-gold/20 uppercase">Save 15%</div></div>
-      <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-slate-400 line-through text-[10px] lg:text-xs font-medium">$1,690</span><div class="flex items-baseline gap-2"><span class="text-slate-400 text-[9px] font-medium uppercase">from</span><span class="text-navy font-bold text-lg lg:text-2xl">$1,436</span><span class="text-slate-400 text-[9px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="hidden lg:flex flex-col items-end"><span class="text-slate-400 text-[8px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-slate-400 line-through text-[10px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-400 text-[9px] font-medium">/pp</span></div></div></div>
+      <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-red-600 line-through decoration-2 text-xs lg:text-sm font-semibold">$1,690</span><div class="flex items-baseline gap-2"><span class="text-slate-400 text-[9px] font-medium uppercase">from</span><span class="text-navy font-bold text-lg lg:text-2xl">$1,436</span><span class="text-slate-400 text-[9px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="hidden lg:flex flex-col items-end"><span class="text-slate-400 text-[8px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-slate-400 line-through text-[10px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-400 text-[9px] font-medium">/pp</span></div></div></div>
     </div>
-    <a href="https://wa.me/526241916997?text=Hi%2C%20I'd%20like%20to%20book%20the%20Luxury%20Yacht%2046" target="_blank" class="block w-full bg-navy text-white font-bold text-[8px] lg:text-[10px] py-2.5 lg:py-3 rounded-xl uppercase tracking-[0.1em] lg:tracking-[0.15em] text-center shadow-lg">Check Availability</a>
+    <a href="https://wa.me/526241916997?text=Hi%2C%20I'd%20like%20to%20book%20the%20Luxury%20Yacht%2051" target="_blank" class="block w-full bg-navy text-white font-bold text-[8px] lg:text-[10px] py-2.5 lg:py-3 rounded-xl uppercase tracking-[0.1em] lg:tracking-[0.15em] text-center shadow-lg">Check Availability</a>
   </div>
 </div>
 <!-- 45' Luxury Yacht — Most Popular -->
@@ -510,22 +584,16 @@
     <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
     <div class="absolute bottom-3 left-3 lg:bottom-5 lg:left-6">
       <h4 class="text-white text-sm lg:text-xl">Luxury Yacht 45'</h4>
-      <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-[8px] lg:text-[10px] mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Up to 12 Guests</span></div>
+      <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-[8px] lg:text-[10px] mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-sm lg:text-base">group</span><span>Up to 12 Guests</span></div>
     </div>
     <div class="absolute top-2 right-2 lg:top-4 lg:right-4 bg-gold text-white text-[7px] lg:text-[9px] font-bold px-2 py-0.5 lg:px-3 lg:py-1 rounded-full uppercase tracking-widest">Most Popular</div>
     <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
     <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
   </div>
   <div class="p-3 space-y-3 lg:p-4 lg:space-y-4">
-    <div class="flex justify-between items-center text-navy/60 gap-1">
-      <div class="flex flex-col items-center gap-1"><span class="material-symbols-outlined text-gold">dry_cleaning</span><span class="text-[7px] lg:text-[8px] font-bold uppercase tracking-tighter">Towels</span></div>
-      <div class="flex flex-col items-center gap-1"><i class="fa-solid fa-mask-snorkel text-gold" style="font-size:20px"></i><span class="text-[7px] lg:text-[8px] font-bold uppercase tracking-tighter">Snorkel Gear</span></div>
-      <div class="flex flex-col items-center gap-1"><span class="material-symbols-outlined text-gold">liquor</span><span class="text-[7px] lg:text-[8px] font-bold uppercase tracking-tighter">Bar</span></div>
-    </div>
-    <div class="h-px bg-border-light"></div>
     <div class="space-y-4">
       <div class="flex items-center justify-between"><span class="text-navy text-[8px] lg:text-[10px] font-bold uppercase tracking-widest">Special Online Offer</span><div class="bg-gold/10 text-gold text-[8px] lg:text-[10px] font-bold px-1.5 py-0.5 rounded border border-gold/20 uppercase">Save 15%</div></div>
-      <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-slate-400 line-through text-[10px] lg:text-xs font-medium">$1,520</span><div class="flex items-baseline gap-2"><span class="text-slate-400 text-[9px] font-medium uppercase">from</span><span class="text-navy font-bold text-lg lg:text-2xl">$1,292</span><span class="text-slate-400 text-[9px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="hidden lg:flex flex-col items-end"><span class="text-slate-400 text-[8px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-slate-400 line-through text-[10px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-400 text-[9px] font-medium">/pp</span></div></div></div>
+      <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-red-600 line-through decoration-2 text-xs lg:text-sm font-semibold">$1,520</span><div class="flex items-baseline gap-2"><span class="text-slate-400 text-[9px] font-medium uppercase">from</span><span class="text-navy font-bold text-lg lg:text-2xl">$1,292</span><span class="text-slate-400 text-[9px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="hidden lg:flex flex-col items-end"><span class="text-slate-400 text-[8px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-slate-400 line-through text-[10px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-400 text-[9px] font-medium">/pp</span></div></div></div>
     </div>
     <a href="https://wa.me/526241916997?text=Hi%2C%20I'd%20like%20to%20book%20the%20Luxury%20Yacht%2045" target="_blank" class="block w-full bg-navy text-white font-bold text-[8px] lg:text-[10px] py-2.5 lg:py-3 rounded-xl uppercase tracking-[0.1em] lg:tracking-[0.15em] text-center shadow-lg">Check Availability</a>
   </div>
@@ -542,22 +610,16 @@
     <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
     <div class="absolute bottom-3 left-3 lg:bottom-5 lg:left-6">
       <h4 class="text-white text-sm lg:text-xl">Luxury Yacht 42'</h4>
-      <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-[8px] lg:text-[10px] mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Up to 18 Guests</span></div>
+      <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-[8px] lg:text-[10px] mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-sm lg:text-base">group</span><span>Up to 18 Guests</span></div>
     </div>
     <div class="absolute top-2 right-2 lg:top-4 lg:right-4 bg-gold text-white text-[7px] lg:text-[9px] font-bold px-2 py-0.5 lg:px-3 lg:py-1 rounded-full uppercase tracking-widest">Best Value</div>
     <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
     <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
   </div>
   <div class="p-3 space-y-3 lg:p-4 lg:space-y-4">
-    <div class="flex justify-between items-center text-navy/60 gap-1">
-      <div class="flex flex-col items-center gap-1"><span class="material-symbols-outlined text-gold">dry_cleaning</span><span class="text-[7px] lg:text-[8px] font-bold uppercase tracking-tighter">Towels</span></div>
-      <div class="flex flex-col items-center gap-1"><i class="fa-solid fa-mask-snorkel text-gold" style="font-size:20px"></i><span class="text-[7px] lg:text-[8px] font-bold uppercase tracking-tighter">Snorkel Gear</span></div>
-      <div class="flex flex-col items-center gap-1"><span class="material-symbols-outlined text-gold">liquor</span><span class="text-[7px] lg:text-[8px] font-bold uppercase tracking-tighter">Bar</span></div>
-    </div>
-    <div class="h-px bg-border-light"></div>
     <div class="space-y-4">
       <div class="flex items-center justify-between"><span class="text-navy text-[8px] lg:text-[10px] font-bold uppercase tracking-widest">Special Online Offer</span><div class="bg-gold/10 text-gold text-[8px] lg:text-[10px] font-bold px-1.5 py-0.5 rounded border border-gold/20 uppercase">Save 15%</div></div>
-      <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-slate-400 line-through text-[10px] lg:text-xs font-medium">$1,350</span><div class="flex items-baseline gap-2"><span class="text-slate-400 text-[9px] font-medium uppercase">from</span><span class="text-navy font-bold text-lg lg:text-2xl">$1,148</span><span class="text-slate-400 text-[9px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="hidden lg:flex flex-col items-end"><span class="text-slate-400 text-[8px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-slate-400 line-through text-[10px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-400 text-[9px] font-medium">/pp</span></div></div></div>
+      <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-red-600 line-through decoration-2 text-xs lg:text-sm font-semibold">$1,350</span><div class="flex items-baseline gap-2"><span class="text-slate-400 text-[9px] font-medium uppercase">from</span><span class="text-navy font-bold text-lg lg:text-2xl">$1,148</span><span class="text-slate-400 text-[9px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="hidden lg:flex flex-col items-end"><span class="text-slate-400 text-[8px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-slate-400 line-through text-[10px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-400 text-[9px] font-medium">/pp</span></div></div></div>
     </div>
     <a href="https://wa.me/526241916997?text=Hi%2C%20I'd%20like%20to%20book%20the%20Luxury%20Yacht%2042" target="_blank" class="block w-full bg-navy text-white font-bold text-[8px] lg:text-[10px] py-2.5 lg:py-3 rounded-xl uppercase tracking-[0.1em] lg:tracking-[0.15em] text-center shadow-lg">Check Availability</a>
   </div>
@@ -568,8 +630,8 @@
 <!-- Sailing -->
 <div class="bg-[#f5f3ef] border-b border-border-light/50 pt-8 pb-12 mb-14">
 <div class="px-6 lg:max-w-[1400px] lg:mx-auto lg:px-10">
-<div class="flex items-center gap-4 mb-6"><span class="material-symbols-outlined text-gold text-xl lg:text-2xl">sailing</span><h3 class="text-base lg:text-2xl font-serif text-navy">Sailing</h3><div class="flex-1 h-px bg-gradient-to-r from-gold/30 to-transparent"></div></div>
-<div class="grid grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-6">
+<div class="flex items-center gap-4 mb-4"><span class="material-symbols-outlined text-gold text-xl lg:text-2xl">sailing</span><h3 class="text-base lg:text-2xl font-serif text-navy">Sailing</h3><div class="flex-1 h-px bg-gradient-to-r from-gold/30 to-transparent"></div></div>
+<div class="grid grid-cols-2 gap-4 lg:flex lg:flex-wrap lg:justify-center lg:gap-6 items-stretch lg:max-w-[1100px] lg:mx-auto [&>div]:lg:w-[calc((100%-3rem)/3)]">
 <!-- 42' Sailing Boat — Best Value -->
 <div class="w-full bg-white border border-border-light rounded-[1.5rem] overflow-hidden shadow-xl shadow-navy/5">
   <div class="fleet-img-wrap w-full relative">
@@ -583,22 +645,16 @@
     <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
     <div class="absolute bottom-3 left-3 lg:bottom-5 lg:left-6">
       <h4 class="text-white text-sm lg:text-xl">Sailing Boat 42'</h4>
-      <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-[8px] lg:text-[10px] mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Up to 14 Guests</span></div>
+      <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-[8px] lg:text-[10px] mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-sm lg:text-base">group</span><span>Up to 14 Guests</span></div>
     </div>
     <div class="absolute top-2 right-2 lg:top-4 lg:right-4 bg-gold text-white text-[7px] lg:text-[9px] font-bold px-2 py-0.5 lg:px-3 lg:py-1 rounded-full uppercase tracking-widest">Best Value</div>
     <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
     <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
   </div>
   <div class="p-3 space-y-3 lg:p-4 lg:space-y-4">
-    <div class="flex justify-between items-center text-navy/60 gap-1">
-      <div class="flex flex-col items-center gap-1"><span class="material-symbols-outlined text-gold">dry_cleaning</span><span class="text-[7px] lg:text-[8px] font-bold uppercase tracking-tighter">Towels</span></div>
-      <div class="flex flex-col items-center gap-1"><i class="fa-solid fa-mask-snorkel text-gold" style="font-size:20px"></i><span class="text-[7px] lg:text-[8px] font-bold uppercase tracking-tighter">Snorkel Gear</span></div>
-      <div class="flex flex-col items-center gap-1"><span class="material-symbols-outlined text-gold">liquor</span><span class="text-[7px] lg:text-[8px] font-bold uppercase tracking-tighter">Bar</span></div>
-    </div>
-    <div class="h-px bg-border-light"></div>
     <div class="space-y-4">
       <div class="flex items-center justify-between"><span class="text-navy text-[8px] lg:text-[10px] font-bold uppercase tracking-widest">Special Online Offer</span><div class="bg-gold/10 text-gold text-[8px] lg:text-[10px] font-bold px-1.5 py-0.5 rounded border border-gold/20 uppercase">Save 15%</div></div>
-      <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-slate-400 line-through text-[10px] lg:text-xs font-medium">$1,090</span><div class="flex items-baseline gap-2"><span class="text-slate-400 text-[9px] font-medium uppercase">from</span><span class="text-navy font-bold text-lg lg:text-2xl">$927</span><span class="text-slate-400 text-[9px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="hidden lg:flex flex-col items-end"><span class="text-slate-400 text-[8px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-slate-400 line-through text-[10px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-400 text-[9px] font-medium">/pp</span></div></div></div>
+      <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-red-600 line-through decoration-2 text-xs lg:text-sm font-semibold">$1,090</span><div class="flex items-baseline gap-2"><span class="text-slate-400 text-[9px] font-medium uppercase">from</span><span class="text-navy font-bold text-lg lg:text-2xl">$927</span><span class="text-slate-400 text-[9px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="hidden lg:flex flex-col items-end"><span class="text-slate-400 text-[8px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-slate-400 line-through text-[10px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-400 text-[9px] font-medium">/pp</span></div></div></div>
     </div>
     <a href="https://wa.me/526241916997?text=Hi%2C%20I'd%20like%20to%20book%20the%20Sailing%20Boat%2042" target="_blank" class="block w-full bg-navy text-white font-bold text-[8px] lg:text-[10px] py-2.5 lg:py-3 rounded-xl uppercase tracking-[0.1em] lg:tracking-[0.15em] text-center shadow-lg">Check Availability</a>
   </div>
@@ -615,28 +671,23 @@
     <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
     <div class="absolute bottom-3 left-3 lg:bottom-5 lg:left-6">
       <h4 class="text-white text-sm lg:text-xl">Sailing Boat 38'</h4>
-      <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-[8px] lg:text-[10px] mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Up to 9 Guests</span></div>
+      <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-[8px] lg:text-[10px] mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-sm lg:text-base">group</span><span>Up to 9 Guests</span></div>
     </div>
     <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
     <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
   </div>
   <div class="p-3 space-y-3 lg:p-4 lg:space-y-4">
-    <div class="flex justify-between items-center text-navy/60 gap-1">
-      <div class="flex flex-col items-center gap-1"><span class="material-symbols-outlined text-gold">dry_cleaning</span><span class="text-[7px] lg:text-[8px] font-bold uppercase tracking-tighter">Towels</span></div>
-      <div class="flex flex-col items-center gap-1"><i class="fa-solid fa-mask-snorkel text-gold" style="font-size:20px"></i><span class="text-[7px] lg:text-[8px] font-bold uppercase tracking-tighter">Snorkel Gear</span></div>
-      <div class="flex flex-col items-center gap-1"><span class="material-symbols-outlined text-gold">liquor</span><span class="text-[7px] lg:text-[8px] font-bold uppercase tracking-tighter">Bar</span></div>
-    </div>
-    <div class="h-px bg-border-light"></div>
     <div class="space-y-4">
       <div class="flex items-center justify-between"><span class="text-navy text-[8px] lg:text-[10px] font-bold uppercase tracking-widest">Special Online Offer</span><div class="bg-gold/10 text-gold text-[8px] lg:text-[10px] font-bold px-1.5 py-0.5 rounded border border-gold/20 uppercase">Save 15%</div></div>
-      <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-slate-400 line-through text-[10px] lg:text-xs font-medium">$825</span><div class="flex items-baseline gap-2"><span class="text-slate-400 text-[9px] font-medium uppercase">from</span><span class="text-navy font-bold text-lg lg:text-2xl">$701</span><span class="text-slate-400 text-[9px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="hidden lg:flex flex-col items-end"><span class="text-slate-400 text-[8px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-slate-400 line-through text-[10px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-400 text-[9px] font-medium">/pp</span></div></div></div>
+      <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-red-600 line-through decoration-2 text-xs lg:text-sm font-semibold">$825</span><div class="flex items-baseline gap-2"><span class="text-slate-400 text-[9px] font-medium uppercase">from</span><span class="text-navy font-bold text-lg lg:text-2xl">$701</span><span class="text-slate-400 text-[9px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="hidden lg:flex flex-col items-end"><span class="text-slate-400 text-[8px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-slate-400 line-through text-[10px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-400 text-[9px] font-medium">/pp</span></div></div></div>
     </div>
     <a href="https://wa.me/526241916997?text=Hi%2C%20I'd%20like%20to%20book%20the%20Sailing%20Boat%2038" target="_blank" class="block w-full bg-navy text-white font-bold text-[8px] lg:text-[10px] py-2.5 lg:py-3 rounded-xl uppercase tracking-[0.1em] lg:tracking-[0.15em] text-center shadow-lg">Check Availability</a>
   </div>
 </div>
 <!-- Shared Sailing Card -->
-<div class="w-full bg-white border border-border-light rounded-[1.5rem] overflow-hidden shadow-xl shadow-navy/5">
-  <div class="fleet-img-wrap w-full relative">
+<div class="w-full bg-white border-2 border-navy/80 rounded-[1.5rem] overflow-hidden shadow-xl shadow-navy/10">
+  <div class="bg-navy text-white text-center py-2 lg:py-2.5 text-[8px] lg:text-[10px] font-bold uppercase tracking-[0.15em] lg:tracking-[0.2em] flex items-center justify-center gap-2"><span class="material-symbols-outlined text-gold text-sm lg:text-base">groups</span>Shared Group Sailing — Join Others</div>
+  <div class="fleet-img-wrap w-full relative" style="border-radius:0;">
     <div class="boat-carousel relative w-full h-full">
       <img alt="Sailing 42'" class="boat-slide boat-hero absolute inset-0 opacity-100 transition-opacity duration-700" src="images/Boats/Sailing 42'/17.Sailing 42'.jpg"/>
       <img alt="Sailing 42'" class="boat-slide absolute inset-0 opacity-0 transition-opacity duration-700" src="images/Boats/Sailing 42'/24.Sailing_42.jpg"/>
@@ -644,23 +695,17 @@
     </div>
     <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
     <div class="absolute bottom-3 left-3 lg:bottom-5 lg:left-6">
-      <h4 class="text-white text-sm lg:text-xl">Sailing Boat 42'</h4>
-      <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-[8px] lg:text-[10px] mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Up to 14 Guests</span></div>
+      <h4 class="text-white text-sm lg:text-xl">Sailing Boat 38'–42'</h4>
+      <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-[8px] lg:text-[10px] mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-sm lg:text-base">group</span><span>Up to 12 Guests</span></div>
     </div>
     <div class="absolute top-2 right-2 lg:top-4 lg:right-4 bg-accent-gold text-white text-[7px] lg:text-[9px] font-bold px-2 py-0.5 lg:px-3 lg:py-1 rounded-full uppercase tracking-widest">Only 12 Spots Per Tour</div>
     <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
     <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
   </div>
   <div class="p-3 space-y-3 lg:p-4 lg:space-y-4">
-    <div class="flex justify-between items-center text-navy/60 gap-1">
-      <div class="flex flex-col items-center gap-1"><span class="material-symbols-outlined text-gold">dry_cleaning</span><span class="text-[7px] lg:text-[8px] font-bold uppercase tracking-tighter">Towels</span></div>
-      <div class="flex flex-col items-center gap-1"><i class="fa-solid fa-mask-snorkel text-gold" style="font-size:20px"></i><span class="text-[7px] lg:text-[8px] font-bold uppercase tracking-tighter">Snorkel Gear</span></div>
-      <div class="flex flex-col items-center gap-1"><span class="material-symbols-outlined text-gold">liquor</span><span class="text-[7px] lg:text-[8px] font-bold uppercase tracking-tighter">Bar</span></div>
-    </div>
-    <div class="h-px bg-border-light"></div>
     <div class="space-y-4">
       <div class="flex items-center justify-between"><span class="text-navy text-[8px] lg:text-[10px] font-bold uppercase tracking-widest">Special Online Offer</span><div class="bg-gold/10 text-gold text-[8px] lg:text-[10px] font-bold px-1.5 py-0.5 rounded border border-gold/20 uppercase">Save 15%</div></div>
-      <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-slate-400 line-through text-[10px] lg:text-xs font-medium">$120</span><div class="flex items-baseline gap-2"><span class="text-slate-400 text-[9px] font-medium uppercase">from</span><span class="text-navy font-bold text-lg lg:text-2xl">$102</span><span class="text-slate-400 text-[9px] font-medium uppercase">/ person</span></div></div></div>
+      <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-red-600 line-through decoration-2 text-xs lg:text-sm font-semibold">$120</span><div class="flex items-baseline gap-2"><span class="text-slate-400 text-[9px] font-medium uppercase">from</span><span class="text-navy font-bold text-lg lg:text-2xl">$102</span><span class="text-slate-400 text-[9px] font-medium uppercase">/ person</span></div></div></div>
     </div>
     <a href="https://wa.me/526241916997?text=Hi%2C%20I'd%20like%20to%20book%20a%20shared%20tour%20on%20the%20Sailing%2042" target="_blank" class="block w-full bg-navy text-white font-bold text-[8px] lg:text-[10px] py-2.5 lg:py-3 rounded-xl uppercase tracking-[0.1em] lg:tracking-[0.15em] text-center shadow-lg">Check Availability</a>
   </div>
@@ -709,7 +754,7 @@
   </div>
 </div>
 <div class="px-6 mb-12 lg:max-w-[1400px] lg:mx-auto lg:px-10">
-<div class="bg-white border border-border-light rounded-[2.5rem] p-8 shadow-sm">
+<div class="relative border border-border-light rounded-[2.5rem] p-8 shadow-sm overflow-hidden bg-cover bg-center" style="background-image: url('images/Boats/Sailing 42%27/Guest_sailing_deck_A.jpeg');">
 <div class="flex items-center justify-between mb-8">
 <div>
 <h2 class="text-xl font-serif text-navy mb-2 font-semibold">What Our Guests Say</h2>
@@ -728,37 +773,37 @@
 </div>
 <div class="relative">
 <div id="reviews-carousel" class="flex overflow-x-auto gap-6 no-scrollbar snap-x snap-mandatory pb-4 lg:overflow-hidden">
-<div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-surface-light p-8 rounded-2xl border border-border-light/50 shadow-sm">
+<div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-white/60 backdrop-blur-sm p-8 rounded-2xl border border-white/40 shadow-sm">
 <p class="text-navy/70 text-base italic mb-6 leading-relaxed">"Absolutely the highlight of our trip. The crew was impeccable and the yacht was stunning. Exceeded all our expectations from booking to the final sail."</p>
 <div class="flex items-center gap-2">
 <span class="text-navy text-sm font-bold uppercase tracking-widest">— Sarah J.</span>
 </div>
 </div>
-<div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-surface-light p-8 rounded-2xl border border-border-light/50 shadow-sm">
+<div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-white/60 backdrop-blur-sm p-8 rounded-2xl border border-white/40 shadow-sm">
 <p class="text-navy/70 text-base italic mb-6 leading-relaxed">"Sunset cruise was magical. Service was top notch, food was delicious. Highly recommend! The colors over Land's End were unforgettable."</p>
 <div class="flex items-center gap-2">
 <span class="text-navy text-sm font-bold uppercase tracking-widest">— Mike T.</span>
 </div>
 </div>
-<div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-surface-light p-8 rounded-2xl border border-border-light/50 shadow-sm">
+<div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-white/60 backdrop-blur-sm p-8 rounded-2xl border border-white/40 shadow-sm">
 <p class="text-navy/70 text-base italic mb-6 leading-relaxed">"Best snorkeling experience in Cabo! The crew made us feel so welcome, the open bar was fantastic, and seeing the Arch from the water was breathtaking. Already planning to come back!"</p>
 <div class="flex items-center gap-2">
 <span class="text-navy text-sm font-bold uppercase tracking-widest">— Jessica R.</span>
 </div>
 </div>
-<div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-surface-light p-8 rounded-2xl border border-border-light/50 shadow-sm">
+<div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-white/60 backdrop-blur-sm p-8 rounded-2xl border border-white/40 shadow-sm">
 <p class="text-navy/70 text-base italic mb-6 leading-relaxed">"We booked the private whale watching tour and it was incredible. Saw humpbacks breaching just meters from the boat. The captain knew exactly where to go. A once-in-a-lifetime experience!"</p>
 <div class="flex items-center gap-2">
 <span class="text-navy text-sm font-bold uppercase tracking-widest">— David & Lisa M.</span>
 </div>
 </div>
-<div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-surface-light p-8 rounded-2xl border border-border-light/50 shadow-sm">
+<div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-white/60 backdrop-blur-sm p-8 rounded-2xl border border-white/40 shadow-sm">
 <p class="text-navy/70 text-base italic mb-6 leading-relaxed">"Planned our bachelorette party through Cabo Sailing and it was perfection. The girls loved every second — the music, the drinks, the vibes. They handled everything so we could just enjoy."</p>
 <div class="flex items-center gap-2">
 <span class="text-navy text-sm font-bold uppercase tracking-widest">— Amanda K.</span>
 </div>
 </div>
-<div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-surface-light p-8 rounded-2xl border border-border-light/50 shadow-sm">
+<div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-white/60 backdrop-blur-sm p-8 rounded-2xl border border-white/40 shadow-sm">
 <p class="text-navy/70 text-base italic mb-6 leading-relaxed">"Third year in a row booking with Cabo Sailing. Consistent quality every time. The shared sunset tour is an unbeatable value — premium experience at a fraction of the private cost."</p>
 <div class="flex items-center gap-2">
 <span class="text-navy text-sm font-bold uppercase tracking-widest">— Carlos G.</span>
@@ -778,6 +823,52 @@
 </div>
 </div>
 </div>
+
+<!-- FAQ Section -->
+<section class="py-16 lg:py-24 bg-surface-light border-t border-border-light/50">
+<div class="max-w-[900px] mx-auto px-6 lg:px-10">
+<div class="text-center mb-10">
+  <p class="text-sm font-bold uppercase tracking-[0.2em] text-accent-gold mb-2">FAQ</p>
+  <h2 class="text-2xl lg:text-3xl font-serif text-navy font-semibold leading-tight">Everything You Need to Know Before Booking</h2>
+</div>
+<div class="space-y-3">
+  <details class="group bg-white border border-border-light rounded-2xl px-5 py-4 shadow-sm">
+    <summary class="flex items-center justify-between cursor-pointer list-none font-serif text-navy text-base lg:text-lg font-semibold">What's included in the cruise?<span class="material-symbols-outlined text-accent-gold transition-transform group-open:rotate-180">expand_more</span></summary>
+    <p class="text-navy/70 text-sm lg:text-base leading-relaxed mt-3">All cruises include crew, open bar, snorkeling gear, and light food or snacks. Private charters can be customized based on your preferences.</p>
+  </details>
+  <details class="group bg-white border border-border-light rounded-2xl px-5 py-4 shadow-sm">
+    <summary class="flex items-center justify-between cursor-pointer list-none font-serif text-navy text-base lg:text-lg font-semibold">Is the cruise private or shared?<span class="material-symbols-outlined text-accent-gold transition-transform group-open:rotate-180">expand_more</span></summary>
+    <p class="text-navy/70 text-sm lg:text-base leading-relaxed mt-3">We offer both options. Private charters are exclusively for your group, while shared cruises are limited to small groups (max 12 guests) for a more comfortable experience.</p>
+  </details>
+  <details class="group bg-white border border-border-light rounded-2xl px-5 py-4 shadow-sm">
+    <summary class="flex items-center justify-between cursor-pointer list-none font-serif text-navy text-base lg:text-lg font-semibold">How many people are on board?<span class="material-symbols-outlined text-accent-gold transition-transform group-open:rotate-180">expand_more</span></summary>
+    <p class="text-navy/70 text-sm lg:text-base leading-relaxed mt-3">Private cruises vary by your group (up to 18–20 guests depending on the yacht). Shared cruises are intentionally limited to around 14 guests to avoid crowds.</p>
+  </details>
+  <details class="group bg-white border border-border-light rounded-2xl px-5 py-4 shadow-sm">
+    <summary class="flex items-center justify-between cursor-pointer list-none font-serif text-navy text-base lg:text-lg font-semibold">What is your cancellation policy?<span class="material-symbols-outlined text-accent-gold transition-transform group-open:rotate-180">expand_more</span></summary>
+    <div class="text-navy/70 text-sm lg:text-base leading-relaxed mt-3 space-y-1">
+      <p>Free cancellation or changes up to 48 hours before departure.</p>
+      <p>50% refund between 48–24 hours.</p>
+      <p>No refund within 24 hours or for no-shows.</p>
+    </div>
+  </details>
+  <details class="group bg-white border border-border-light rounded-2xl px-5 py-4 shadow-sm">
+    <summary class="flex items-center justify-between cursor-pointer list-none font-serif text-navy text-base lg:text-lg font-semibold">What happens in case of bad weather?<span class="material-symbols-outlined text-accent-gold transition-transform group-open:rotate-180">expand_more</span></summary>
+    <p class="text-navy/70 text-sm lg:text-base leading-relaxed mt-3">Safety comes first. If conditions are not suitable, we'll reschedule your cruise or provide a full refund.</p>
+  </details>
+  <details class="group bg-white border border-border-light rounded-2xl px-5 py-4 shadow-sm">
+    <summary class="flex items-center justify-between cursor-pointer list-none font-serif text-navy text-base lg:text-lg font-semibold">Why choose you over other Cabo cruises?<span class="material-symbols-outlined text-accent-gold transition-transform group-open:rotate-180">expand_more</span></summary>
+    <p class="text-navy/70 text-sm lg:text-base leading-relaxed mt-3">We operate our own fleet, limit group sizes, and focus on personalized service—offering a more comfortable and premium experience than typical crowded tours.</p>
+  </details>
+</div>
+<div class="mt-12 text-center bg-navy rounded-3xl p-8 lg:p-10 shadow-xl">
+  <h3 class="text-white text-xl lg:text-2xl font-serif font-semibold mb-2">Ready to Experience Cabo from the Water?</h3>
+  <p class="text-white/70 text-sm lg:text-base mb-6">Check availability and secure your spot in minutes.</p>
+  <a href="https://wa.me/526241916997?text=Hi%2C%20I'd%20like%20to%20check%20availability" target="_blank" class="inline-flex items-center justify-center gap-3 bg-accent-gold hover:bg-gold text-white font-bold uppercase tracking-[0.15em] text-xs lg:text-sm px-8 py-4 rounded-md shadow-xl transition-all">Check Availability<span class="material-symbols-outlined text-lg">arrow_forward</span></a>
+</div>
+</div>
+</section>
+
 <footer class="bg-navy text-white mt-16">
   <div class="max-w-[1400px] mx-auto px-5 lg:px-10 py-16">
     <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">

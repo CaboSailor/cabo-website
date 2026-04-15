@@ -37,53 +37,66 @@
     .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
     .material-symbols-outlined.filled { font-variation-settings: 'FILL' 1; }
     .nav-dropdown:hover .nav-dropdown-menu { display: block; }
+    /* Desktop nav */
+    @media (min-width: 1024px) {
+        .mobile-only { display: none !important; }
+        .desktop-only { display: flex !important; }
+    }
+    @media (max-width: 1023px) {
+        .desktop-only { display: none !important; }
+    }
 </style>
 </head>
 <body class="antialiased min-h-screen flex flex-col relative pt-[72px]">
 
-<!-- ========== MOBILE HEADER ========== -->
-<header class="lg:hidden fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-3 bg-white/80 backdrop-blur-md border-b border-gray-200">
-  <button id="menu-open" class="flex flex-col gap-[3px] items-center justify-center w-10 h-10 -ml-2 text-navy active:scale-95 transition-transform">
-    <div class="w-5 h-[2px] bg-gray-800 rounded-full"></div>
-    <div class="w-5 h-[2px] bg-gray-800 rounded-full"></div>
-    <div class="w-5 h-[2px] bg-gray-800 rounded-full"></div>
-  </button>
-  <img src="images/cabo-sailing-n-l.png" alt="Cabo Sailing" class="h-10"/>
-  <a href="https://wa.me/526241916997?text=hi%2C%20I'm%20sending%20you%20a%20message%20from%20cabosailing.com" target="_blank" class="flex items-center justify-center w-10 h-10 -mr-2 bg-[#25D366] rounded-full text-white shadow-md">
-    <i class="fa-brands fa-whatsapp text-2xl"></i>
-  </a>
-</header>
-
-<!-- ========== DESKTOP HEADER ========== -->
-<header class="hidden lg:flex fixed top-0 left-0 right-0 z-50 items-center justify-between px-12 py-4 bg-white/95 backdrop-blur-md border-b border-border-light shadow-sm">
-  <a href="index.html"><img src="images/cabo-sailing-n-l.png" alt="Cabo Sailing" class="h-12"/></a>
-  <nav class="flex items-center gap-8">
-    <a href="index.html" class="text-base font-semibold text-navy hover:text-gold transition-colors uppercase tracking-wider">Home</a>
-    <div class="nav-dropdown relative">
-      <button class="flex items-center gap-1 text-base font-semibold text-navy hover:text-gold transition-colors uppercase tracking-wider">
-        Tours <span class="material-symbols-outlined text-base">expand_more</span>
-      </button>
-      <div class="nav-dropdown-menu hidden absolute top-full left-0 mt-2 w-48 bg-white rounded-2xl shadow-xl border border-border-light py-2 z-50">
-        <div class="px-4 py-1 text-xs text-slate-400 uppercase font-bold tracking-widest">Snorkeling</div>
-        <a href="private-snorkeling.html" class="block px-4 py-2 text-base text-navy hover:text-gold hover:bg-light-grey transition-colors">Private</a>
-        <a href="shared-snorkeling.html" class="block px-4 py-2 text-base text-navy hover:text-gold hover:bg-light-grey transition-colors">Shared</a>
-        <div class="px-4 py-1 mt-1 text-xs text-slate-400 uppercase font-bold tracking-widest border-t border-border-light pt-2">Sunset</div>
-        <a href="private-sunset.html" class="block px-4 py-2 text-base text-navy hover:text-gold hover:bg-light-grey transition-colors">Private</a>
-        <a href="shared-sunset.html" class="block px-4 py-2 text-base text-navy hover:text-gold hover:bg-light-grey transition-colors">Shared</a>
-        <a href="whale-watching.html" class="block px-4 py-2 text-base text-navy hover:text-gold hover:bg-light-grey transition-colors border-t border-border-light mt-1 pt-2">Whale Watching</a>
-        <a href="shuttle-service.html" class="block px-4 py-2 text-base text-navy hover:text-gold hover:bg-light-grey transition-colors">Shuttle Service</a>
-      </div>
+<header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-border-light/50 transition-all duration-300">
+  <!-- Mobile header -->
+  <div class="mobile-only flex items-center justify-between px-6 py-3">
+    <button id="menu-open" class="flex flex-col gap-[3px] items-center justify-center w-10 h-10 -ml-2 text-navy active:scale-95 transition-transform">
+      <div class="w-5 h-[2px] bg-gray-800 rounded-full"></div>
+      <div class="w-5 h-[2px] bg-gray-800 rounded-full"></div>
+      <div class="w-5 h-[2px] bg-gray-800 rounded-full"></div>
+    </button>
+    <div class="flex-shrink-0 flex items-center justify-center">
+      <img src="images/cabo-sailing-n-l.png" alt="Cabo Sailing" class="h-10"/>
     </div>
-    <a href="fleet.html" class="text-base font-semibold text-navy hover:text-gold transition-colors uppercase tracking-wider">Our Fleet</a>
-    <a href="contact.html" class="text-base font-semibold text-gold uppercase tracking-wider">Contact</a>
-  </nav>
-  <div class="flex items-center gap-3">
-    <a href="tel:6197842745" class="flex items-center gap-2 text-base font-bold text-navy border border-border-light px-4 py-2 rounded-full hover:border-navy transition-colors">
-      <span class="material-symbols-outlined text-base">call</span> 619-784-2745
+    <a href="https://wa.me/526241916997?text=hi%2C%20I'm%20sending%20you%20a%20message%20from%20cabosailing.com" target="_blank" class="flex items-center justify-center w-10 h-10 -mr-2 bg-[#25D366] rounded-full text-white active:scale-95 transition-transform shadow-md">
+      <i class="fa-brands fa-whatsapp text-2xl"></i>
     </a>
-    <a href="https://wa.me/526241916997?text=hi%2C%20I'm%20sending%20you%20a%20message%20from%20cabosailing.com" target="_blank" class="flex items-center gap-2 bg-[#25D366] text-white text-base font-bold px-4 py-2 rounded-full shadow-md hover:bg-[#20c55e] transition-colors">
-      <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp
+  </div>
+  <!-- Desktop header -->
+  <div class="desktop-only items-center justify-between px-10 py-3 max-w-[1400px] mx-auto">
+    <a href="index.html" class="flex-shrink-0">
+      <img src="images/cabo-sailing-n-l.png" alt="Cabo Sailing" class="h-12"/>
     </a>
+    <nav class="flex items-center gap-8">
+      <a href="index.html" class="text-sm font-semibold text-navy uppercase tracking-widest hover:text-gold transition-colors">Home</a>
+      <div class="relative group">
+        <button class="text-sm font-semibold text-navy uppercase tracking-widest hover:text-gold transition-colors flex items-center gap-1">Tours <span class="material-symbols-outlined text-sm">expand_more</span></button>
+        <div class="absolute top-full left-0 mt-2 bg-white rounded-xl shadow-xl border border-border-light py-3 min-w-[220px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+          <p class="px-4 py-1 text-[10px] font-bold text-slate-400 uppercase tracking-widest">Snorkeling</p>
+          <a href="private-snorkeling.html" class="block px-4 py-2 text-sm text-navy hover:bg-light-grey hover:text-gold transition-colors">Private Snorkeling</a>
+          <a href="shared-snorkeling.html" class="block px-4 py-2 text-sm text-navy hover:bg-light-grey hover:text-gold transition-colors">Shared Snorkeling</a>
+          <div class="h-px bg-border-light my-2"></div>
+          <p class="px-4 py-1 text-[10px] font-bold text-slate-400 uppercase tracking-widest">Sunset</p>
+          <a href="private-sunset.html" class="block px-4 py-2 text-sm text-navy hover:bg-light-grey hover:text-gold transition-colors">Private Sunset</a>
+          <a href="shared-sunset.html" class="block px-4 py-2 text-sm text-navy hover:bg-light-grey hover:text-gold transition-colors">Shared Sunset</a>
+          <div class="h-px bg-border-light my-2"></div>
+          <a href="whale-watching.html" class="block px-4 py-2 text-sm text-navy hover:bg-light-grey hover:text-gold transition-colors">Whale Watching</a>
+          <a href="bachelorette-party.html" class="block px-4 py-2 text-sm text-navy hover:bg-light-grey hover:text-gold transition-colors">Bachelorette</a>
+          <a href="scuba-diving.html" class="block px-4 py-2 text-sm text-navy hover:bg-light-grey hover:text-gold transition-colors">Scuba Diving</a>
+        </div>
+      </div>
+      <a href="fleet.html" class="text-sm font-semibold text-navy uppercase tracking-widest hover:text-gold transition-colors">Our Fleet</a>
+      <a href="shuttle-service.html" class="text-sm font-semibold text-navy uppercase tracking-widest hover:text-gold transition-colors">Shuttle</a>
+      <a href="travel_guide.html" class="text-sm font-semibold text-navy uppercase tracking-widest hover:text-gold transition-colors">Travel Guide</a>
+    </nav>
+    <div class="flex items-center gap-4">
+      <a href="tel:+526241438485" class="text-sm font-semibold text-navy hover:text-gold transition-colors flex items-center gap-1"><span class="material-symbols-outlined text-base">call</span> +52 624 143 8485</a>
+      <a href="https://wa.me/526241916997?text=hi%2C%20I'm%20sending%20you%20a%20message%20from%20cabosailing.com" target="_blank" class="flex items-center justify-center w-10 h-10 bg-[#25D366] rounded-full text-white hover:scale-105 transition-transform shadow-md">
+        <i class="fa-brands fa-whatsapp text-xl"></i>
+      </a>
+    </div>
   </div>
 </header>
 
@@ -234,6 +247,10 @@
             <span class="material-symbols-outlined text-green-500 text-base align-middle mr-1">check_circle</span>
             Thank you! We've received your message and will get back to you shortly.
           </div>
+          <div id="form-error" class="hidden bg-red-50 border border-red-200 rounded-xl p-4 text-red-700 font-medium text-sm">
+            <span class="material-symbols-outlined text-red-500 text-base align-middle mr-1">error</span>
+            Something went wrong sending your message. Please try again or contact us directly at <a href="mailto:info@cabosailing.com" class="underline font-bold">info@cabosailing.com</a> or via <a href="https://wa.me/526241916997" target="_blank" class="underline font-bold">WhatsApp</a>.
+          </div>
         </form>
       </div>
 
@@ -336,15 +353,20 @@
 </main>
 
 <!-- Menu Overlay (mobile) -->
-<div id="menu-overlay" class="lg:hidden fixed inset-0 z-[100] flex flex-col h-screen w-full transition-opacity duration-300 hidden" style="background-color:#ffffff;background-image:url('data:image/svg+xml,%3Csvg width=\'100%25\' height=\'100%25\' viewBox=\'0 0 800 800\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'M-100,100 Q150,250 400,100 T900,100\' fill=\'none\' stroke=\'%23d4af37\' stroke-width=\'3\' stroke-opacity=\'0.15\'/%3E%3Cpath d=\'M-100,300 Q150,450 400,300 T900,300\' fill=\'none\' stroke=\'%23d4af37\' stroke-width=\'3\' stroke-opacity=\'0.12\'/%3E%3Cpath d=\'M-100,500 Q150,350 400,500 T900,500\' fill=\'none\' stroke=\'%23d4af37\' stroke-width=\'3\' stroke-opacity=\'0.1\'/%3E%3C/svg%3E');background-repeat:no-repeat;background-size:cover;">
+<div id="menu-overlay" class="fixed inset-0 z-[100] flex flex-col h-screen w-full transition-opacity duration-300 hidden" style="background-color:#ffffff;background-image:url('data:image/svg+xml,%3Csvg width=\'100%25\' height=\'100%25\' viewBox=\'0 0 800 800\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'M-100,100 Q150,250 400,100 T900,100\' fill=\'none\' stroke=\'%23d4af37\' stroke-width=\'3\' stroke-opacity=\'0.15\'/%3E%3Cpath d=\'M-100,300 Q150,450 400,300 T900,300\' fill=\'none\' stroke=\'%23d4af37\' stroke-width=\'3\' stroke-opacity=\'0.12\'/%3E%3Cpath d=\'M-100,500 Q150,350 400,500 T900,500\' fill=\'none\' stroke=\'%23d4af37\' stroke-width=\'3\' stroke-opacity=\'0.1\'/%3E%3C/svg%3E');background-repeat:no-repeat;background-size:cover;">
   <div class="flex items-center justify-between px-6 py-4 border-b border-gray-200 bg-white/80 backdrop-blur-md z-20">
-    <button id="menu-close" class="w-10 h-10 flex items-center justify-center -ml-2 text-gray-800"><span class="material-symbols-outlined text-3xl">close</span></button>
-    <img src="images/cabo-sailing-n-l.png" alt="Cabo Sailing" class="h-12 w-auto object-contain"/>
+    <button id="menu-close" class="w-10 h-10 flex items-center justify-center -ml-2 text-navy hover:text-accent-gold transition-colors">
+      <span class="material-symbols-outlined text-3xl">close</span>
+    </button>
+    <div class="flex-1 flex justify-center">
+      <img src="images/cabo-sailing-n-l.png" alt="Cabo Sailing" class="h-12 w-auto object-contain"/>
+    </div>
     <div class="w-10"></div>
   </div>
   <div class="flex-1 overflow-y-auto py-6 px-8 flex flex-col justify-center relative z-10">
     <nav class="flex flex-col gap-6">
       <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="index.html"><span class="material-symbols-outlined text-navy group-hover:text-accent-gold transition-colors text-2xl">home</span><span class="font-semibold">Home</span></a>
+      <!-- Tour dropdown -->
       <div>
         <button onclick="document.getElementById('tour-dropdown').classList.toggle('hidden');document.getElementById('tour-arrow').classList.toggle('rotate-180')" class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors w-full">
           <span class="material-symbols-outlined text-accent-gold group-hover:text-navy transition-colors text-2xl">explore</span>
@@ -352,6 +374,7 @@
           <span id="tour-arrow" class="material-symbols-outlined ml-auto transition-transform duration-200 text-xl">expand_more</span>
         </button>
         <div id="tour-dropdown" class="hidden pl-10 mt-3 space-y-4">
+          <!-- Snorkeling sub-dropdown -->
           <div>
             <button onclick="event.stopPropagation();document.getElementById('snorkel-dropdown').classList.toggle('hidden');document.getElementById('snorkel-arrow').classList.toggle('rotate-180')" class="group flex items-center gap-2 text-base font-serif text-navy/70 hover:text-accent-gold transition-colors w-full">
               <span class="font-semibold">Snorkeling</span>
@@ -362,6 +385,7 @@
               <a class="block text-sm font-serif text-navy/60 hover:text-accent-gold transition-colors" href="shared-snorkeling.html">Shared</a>
             </div>
           </div>
+          <!-- Sunset sub-dropdown -->
           <div>
             <button onclick="event.stopPropagation();document.getElementById('sunset-dropdown').classList.toggle('hidden');document.getElementById('sunset-arrow').classList.toggle('rotate-180')" class="group flex items-center gap-2 text-base font-serif text-navy/70 hover:text-accent-gold transition-colors w-full">
               <span class="font-semibold">Sunset</span>
@@ -379,14 +403,16 @@
       </div>
       <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="shuttle-service.html"><span class="material-symbols-outlined text-navy group-hover:text-accent-gold transition-colors text-2xl">airport_shuttle</span><span class="font-semibold">Shuttle Service</span></a>
       <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="fleet.html"><span class="material-symbols-outlined text-accent-gold group-hover:text-navy transition-colors text-2xl">sailing</span><span class="font-semibold">Our Fleet</span></a>
-      <a class="group flex items-center gap-4 text-xl font-serif text-accent-gold" href="contact.html"><span class="material-symbols-outlined text-accent-gold text-2xl">mail</span><span class="font-semibold">Contact Us</span></a>
+      <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="#"><span class="material-symbols-outlined text-navy group-hover:text-accent-gold transition-colors text-2xl">stars</span><span class="font-semibold">Special Offers</span></a>
+      <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="#"><span class="material-symbols-outlined text-accent-gold group-hover:text-navy transition-colors text-2xl">anchor</span><span class="font-semibold">About Our Crew</span></a>
       <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="travel_guide.html"><span class="material-symbols-outlined text-navy group-hover:text-accent-gold transition-colors text-2xl">menu_book</span><span class="font-semibold">Travel Guide</span></a>
+      <!-- Contact Info -->
       <div>
-        <div class="flex items-center gap-4 text-xl font-serif text-navy mb-3">
-          <span class="material-symbols-outlined text-navy text-2xl">call</span>
-          <span class="font-semibold">Call Us</span>
+        <div class="group flex items-center gap-4 text-xl font-serif text-navy">
+          <span class="material-symbols-outlined text-navy text-2xl">mail</span>
+          <span class="font-semibold">Contact Info</span>
         </div>
-        <div class="pl-10 space-y-4">
+        <div class="pl-10 mt-3 space-y-4">
           <a class="flex items-center gap-2 text-base text-navy/70 hover:text-accent-gold transition-colors" href="https://wa.me/526241916997?text=hi%2C%20I'm%20sending%20you%20a%20message%20from%20cabosailing.com" target="_blank"><i class="fa-brands fa-whatsapp text-[#25D366]"></i> +52 624 191 6997</a>
           <a class="flex items-center gap-2 text-base text-navy/70 hover:text-accent-gold transition-colors" href="tel:+526241438485"><span class="material-symbols-outlined text-base">call</span> +52 624 143 8485</a>
           <a class="flex items-center gap-2 text-base text-navy/70 hover:text-accent-gold transition-colors" href="mailto:info@cabosailing.com"><span class="material-symbols-outlined text-base">email</span> info@cabosailing.com</a>
@@ -396,16 +422,51 @@
   </div>
   <div class="px-8 pb-10 pt-4 border-t border-gray-200 bg-white/80 backdrop-blur-md z-20">
     <div class="flex justify-center gap-8 mb-6">
-      <a class="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center text-gray-800 bg-white shadow-sm" href="#"><i class="fa-brands fa-instagram text-xl"></i></a>
-      <a class="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center text-gray-800 bg-white shadow-sm" href="#"><i class="fa-brands fa-facebook-f text-xl"></i></a>
+      <a class="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center text-navy hover:text-accent-gold transition-colors bg-white shadow-sm" href="#"><i class="fa-brands fa-instagram text-xl"></i></a>
+      <a class="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center text-navy hover:text-accent-gold transition-colors bg-white shadow-sm" href="#"><i class="fa-brands fa-facebook-f text-xl"></i></a>
     </div>
-    <a href="tel:+526241438485" class="block w-full bg-gray-800 text-white py-4 rounded-xl font-bold uppercase tracking-widest text-base text-center shadow-lg">
-      <span style="vertical-align:middle" class="material-symbols-outlined text-base">call</span> Call Us Now
+    <a href="tel:+526241438485" class="w-full bg-navy text-white py-4 rounded-xl font-bold uppercase tracking-widest text-base flex items-center justify-center gap-2 shadow-lg">
+      <span class="material-symbols-outlined">call</span> Call Us Now
     </a>
   </div>
 </div>
 
+<!-- EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
 <script>
+  // =====================================================================
+  // EMAILJS CONFIGURATION — Replace these with your actual EmailJS IDs
+  //
+  // 1. Create a free account at https://www.emailjs.com
+  // 2. Add an Email Service (Gmail, Outlook, etc.) → copy the Service ID
+  // 3. Create Template 1 (notification to info@cabosailing.com):
+  //    - To Email: info@cabosailing.com
+  //    - Reply To: {{from_email}}
+  //    - Subject: Website Availability Check — {{from_name}}
+  //    - Body: use variables like {{from_name}}, {{from_email}}, {{phone}},
+  //            {{activity}}, {{sailing_type}}, {{date}}, {{group_size}}, {{message}}
+  // 4. Create Template 2 (auto-reply to guest — summary of their inquiry):
+  //    - To Email: {{to_email}}
+  //    - From Name: Cabo Sailing
+  //    - Subject: We Received Your Inquiry — Cabo Sailing
+  //    - Body: Include a summary of the inquiry they just submitted:
+  //            Name: {{from_name}}, Email: {{from_email}}, Phone: {{phone}},
+  //            Activity: {{activity}}, Sailing Type: {{sailing_type}},
+  //            Preferred Date: {{date}}, Group Size: {{group_size}},
+  //            Message: {{message}}
+  //            + mention fast response times, office hours (7:30 AM – 8:00 PM MT),
+  //              and to check spam/junk folder
+  // 5. Copy your Public Key from Account > API Keys
+  // =====================================================================
+  var EMAILJS_PUBLIC_KEY = 'YOUR_PUBLIC_KEY';        // ← Replace
+  var EMAILJS_SERVICE_ID = 'YOUR_SERVICE_ID';        // ← Replace
+  var EMAILJS_TEMPLATE_NOTIFY = 'YOUR_TEMPLATE_ID_NOTIFY';  // ← Template for info@cabosailing.com
+  var EMAILJS_TEMPLATE_AUTOREPLY = 'YOUR_TEMPLATE_ID_AUTOREPLY'; // ← Template for guest auto-reply
+
+  // Initialize EmailJS
+  emailjs.init(EMAILJS_PUBLIC_KEY);
+
   // Mobile menu
   document.getElementById('menu-open').addEventListener('click', function() {
     document.getElementById('menu-overlay').classList.remove('hidden');
@@ -414,40 +475,65 @@
     document.getElementById('menu-overlay').classList.add('hidden');
   });
 
+  // Format activity/sailing-type labels for display
+  function formatLabel(value) {
+    if (!value) return 'Not selected';
+    return value.replace(/-/g, ' ').replace(/\b\w/g, function(c) { return c.toUpperCase(); });
+  }
+
   // Form submission
   function handleSubmit(e) {
     e.preventDefault();
     var form = document.getElementById('contact-form');
+    var submitBtn = form.querySelector('button[type="submit"]');
     var data = new FormData(form);
+
     var firstName = data.get('first-name');
     var lastName = data.get('last-name');
     var email = data.get('email');
     var phone = data.get('phone') || 'Not provided';
-    var activity = data.get('activity');
-    var sailingType = data.get('sailing-type') || 'Not selected';
+    var activity = formatLabel(data.get('activity'));
+    var sailingType = formatLabel(data.get('sailing-type'));
     var date = data.get('date') || 'Flexible';
     var groupSize = data.get('group-size') || 'Not specified';
     var message = data.get('message') || 'No message';
+    var fullName = firstName + ' ' + lastName;
 
-    // Build WhatsApp message
-    var waMsg = 'Hi, I just submitted a contact form on cabosailing.com:\n\n';
-    waMsg += 'Name: ' + firstName + ' ' + lastName + '\n';
-    waMsg += 'Email: ' + email + '\n';
-    waMsg += 'Phone: ' + phone + '\n';
-    waMsg += 'Activity: ' + activity + '\n';
-    waMsg += 'Sailing Type: ' + sailingType + '\n';
-    waMsg += 'Date: ' + date + '\n';
-    waMsg += 'Group Size: ' + groupSize + '\n';
-    waMsg += 'Message: ' + message;
+    // Disable button while sending
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending...';
 
-    // Show success message
-    document.getElementById('form-success').classList.remove('hidden');
-    form.reset();
+    // Template parameters (shared by both templates)
+    var templateParams = {
+      from_name: fullName,
+      from_email: email,
+      to_email: email,
+      phone: phone,
+      activity: activity,
+      sailing_type: sailingType,
+      date: date,
+      group_size: groupSize,
+      message: message
+    };
 
-    // Open WhatsApp with the message
-    setTimeout(function() {
-      window.open('https://wa.me/526241916997?text=' + encodeURIComponent(waMsg), '_blank');
-    }, 500);
+    // Send both emails in parallel
+    Promise.all([
+      // Email 1: Notification to info@cabosailing.com
+      emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_NOTIFY, templateParams),
+      // Email 2: Auto-reply confirmation to the guest
+      emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_AUTOREPLY, templateParams)
+    ]).then(function() {
+      // Both emails sent — redirect to thank you page
+      window.location.href = 'thank-you.html';
+    }).catch(function(error) {
+      console.error('EmailJS error:', error);
+      // Re-enable button
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Send Message';
+      // Show error message
+      document.getElementById('form-error').classList.remove('hidden');
+      document.getElementById('form-success').classList.add('hidden');
+    });
   }
 </script>
 
