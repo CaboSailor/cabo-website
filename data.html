@@ -209,6 +209,45 @@
       </div>
     </div>
 
+    <!-- ==================== HOW TO USE ==================== -->
+    <div class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
+      <div class="bg-gray-50 px-6 py-4 border-b border-gray-200">
+        <h2 class="text-lg font-bold text-gray-800">
+          <span class="material-symbols-outlined section-icon">help</span>How to Update Prices
+        </h2>
+      </div>
+      <div class="px-6 py-6">
+        <ol class="space-y-4 text-sm text-gray-700">
+          <li class="flex gap-3">
+            <span class="flex-shrink-0 w-7 h-7 rounded-full bg-[#1e3a5f] text-white text-xs font-bold flex items-center justify-center">1</span>
+            <div><strong class="text-gray-900">Edit the values above</strong> — change any prices, discounts, labels, or colors directly in the fields. The "Site Price" columns update automatically based on the discount %.</div>
+          </li>
+          <li class="flex gap-3">
+            <span class="flex-shrink-0 w-7 h-7 rounded-full bg-[#1e3a5f] text-white text-xs font-bold flex items-center justify-center">2</span>
+            <div><strong class="text-gray-900">Click "Save &amp; Download"</strong> — this downloads a file called <code class="bg-gray-100 px-1.5 py-0.5 rounded text-xs font-mono">prices.json</code> to your computer.</div>
+          </li>
+          <li class="flex gap-3">
+            <span class="flex-shrink-0 w-7 h-7 rounded-full bg-[#1e3a5f] text-white text-xs font-bold flex items-center justify-center">3</span>
+            <div><strong class="text-gray-900">Replace the file in your project</strong> — move the downloaded <code class="bg-gray-100 px-1.5 py-0.5 rounded text-xs font-mono">prices.json</code> into the <code class="bg-gray-100 px-1.5 py-0.5 rounded text-xs font-mono">data/</code> folder of your website project, replacing the existing file.</div>
+          </li>
+          <li class="flex gap-3">
+            <span class="flex-shrink-0 w-7 h-7 rounded-full bg-[#1e3a5f] text-white text-xs font-bold flex items-center justify-center">4</span>
+            <div><strong class="text-gray-900">Push to GitHub</strong> — open your terminal and run:
+              <div class="bg-gray-900 text-green-400 rounded-lg px-4 py-3 mt-2 font-mono text-xs leading-relaxed">
+                git add data/prices.json<br/>
+                git commit -m "Update prices"<br/>
+                git push
+              </div>
+            </div>
+          </li>
+          <li class="flex gap-3">
+            <span class="flex-shrink-0 w-7 h-7 rounded-full bg-[#1e3a5f] text-white text-xs font-bold flex items-center justify-center">5</span>
+            <div><strong class="text-gray-900">Done!</strong> — Netlify will automatically deploy the update within 1-2 minutes. All pages on the site will show the new prices.</div>
+          </li>
+        </ol>
+      </div>
+    </div>
+
   </div>
 </div>
 
