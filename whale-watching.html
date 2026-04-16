@@ -495,7 +495,7 @@
         <div class="flex items-center justify-between"><span class="text-navy text-[10px] font-bold uppercase tracking-widest">Special Online Offer</span><div class="bg-gold/10 text-gold text-[10px] font-bold px-2 py-0.5 rounded border border-gold/20 uppercase">Save 15%</div></div>
         <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-red-600 line-through decoration-2 text-xs lg:text-sm font-semibold">$1,350</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$1,148</span><span class="text-slate-400 text-[9px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="flex flex-col items-end"><span class="text-slate-400 text-[8px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-slate-400 line-through text-[10px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-400 text-[9px] font-medium">/pp</span></div></div></div>
       </div>
-      <a href="https://wa.me/526241916997?text=Hi%2C%20I'd%20like%20to%20book%20a%20Whale%20Watching%20tour%20on%20the%20Luxury%20Yacht%2042" target="_blank" class="block w-full bg-navy text-white font-bold text-[11px] py-4 rounded-2xl uppercase tracking-[0.2em] text-center shadow-lg">Check Availability</a>
+      <button type="button" onclick="openRezdyModal('168008')" class="block w-full bg-navy text-white font-bold text-[11px] py-4 rounded-2xl uppercase tracking-[0.2em] text-center shadow-lg">Check Availability</button>
     </div>
   </div>
 </div>
@@ -889,5 +889,43 @@ function heroNav(btn, dir) {
   if (!wrap) return;
   wrap.scrollBy({ left: dir * wrap.offsetWidth, behavior: 'smooth' });
 }
+</script>
+
+<!-- Rezdy Booking Modal -->
+<div id="rezdyModal" class="fixed inset-0 z-[200] hidden items-center justify-center bg-black/70 backdrop-blur-sm px-4" onclick="if(event.target===this)closeRezdyModal()">
+  <div class="relative bg-white rounded-2xl shadow-2xl w-full max-w-[340px] max-h-[92vh] overflow-hidden flex flex-col">
+    <div class="flex items-center justify-between px-4 py-3 border-b border-border-light bg-white">
+      <span class="text-navy font-bold text-sm uppercase tracking-[0.15em]">Check Availability</span>
+      <button type="button" onclick="closeRezdyModal()" aria-label="Close" class="w-8 h-8 rounded-full flex items-center justify-center text-navy hover:bg-light-grey">
+        <span class="material-symbols-outlined">close</span>
+      </button>
+    </div>
+    <div class="flex-1 overflow-auto bg-white">
+      <iframe id="rezdyIframe" seamless="" width="300" height="1000" frameborder="0" class="rezdy block mx-auto" src=""></iframe>
+    </div>
+  </div>
+</div>
+<script defer type="text/javascript" src="https://cabosailing.rezdy.com/pluginJs"></script>
+<script>
+function openRezdyModal(widgetId){
+  var modal=document.getElementById('rezdyModal');
+  var iframe=document.getElementById('rezdyIframe');
+  iframe.src='https://cabosailing.rezdy.com/calendarWidget/'+widgetId+'?iframe=true';
+  modal.classList.remove('hidden');
+  modal.classList.add('flex');
+  document.body.style.overflow='hidden';
+}
+function closeRezdyModal(){
+  var modal=document.getElementById('rezdyModal');
+  var iframe=document.getElementById('rezdyIframe');
+  modal.classList.add('hidden');
+  modal.classList.remove('flex');
+  iframe.src='';
+  document.body.style.overflow='';
+}
+document.addEventListener('keydown',function(e){
+  var modal=document.getElementById('rezdyModal');
+  if(e.key==='Escape'&&modal&&!modal.classList.contains('hidden'))closeRezdyModal();
+});
 </script>
 </body></html>

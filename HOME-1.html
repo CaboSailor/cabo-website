@@ -559,7 +559,7 @@
       <div class="flex items-center justify-between"><span class="text-navy text-[8px] lg:text-[10px] font-bold uppercase tracking-widest">Special Online Offer</span><div class="bg-gold/10 text-gold text-[8px] lg:text-[10px] font-bold px-1.5 py-0.5 rounded border border-gold/20 uppercase">Save 15%</div></div>
       <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-slate-400 line-through text-[10px] lg:text-xs font-medium">$1,350</span><div class="flex items-baseline gap-2"><span class="text-slate-400 text-[9px] font-medium uppercase">from</span><span class="text-navy font-bold text-lg lg:text-2xl">$1,148</span><span class="text-slate-400 text-[9px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="hidden lg:flex flex-col items-end"><span class="text-slate-400 text-[8px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-slate-400 line-through text-[10px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-400 text-[9px] font-medium">/pp</span></div></div></div>
     </div>
-    <a href="https://wa.me/526241916997?text=Hi%2C%20I'd%20like%20to%20book%20the%20Luxury%20Yacht%2042" target="_blank" class="block w-full bg-navy text-white font-bold text-[8px] lg:text-[10px] py-2.5 lg:py-3 rounded-xl uppercase tracking-[0.1em] lg:tracking-[0.15em] text-center shadow-lg">Check Availability</a>
+    <button type="button" onclick="openRezdyModal('168008')" class="block w-full bg-navy text-white font-bold text-[8px] lg:text-[10px] py-2.5 lg:py-3 rounded-xl uppercase tracking-[0.1em] lg:tracking-[0.15em] text-center shadow-lg">Check Availability</button>
   </div>
 </div>
 </div><!-- end yacht grid -->
@@ -959,4 +959,42 @@
 <a href="contact.html" class="fixed right-0 top-1/2 -translate-y-1/2 z-50 bg-navy hover:bg-navy/90 transition-colors shadow-xl rounded-l-xl py-3 px-2 lg:py-4 lg:px-2.5 group" style="writing-mode:vertical-rl;text-orientation:mixed;">
   <span class="text-gold font-bold text-[10px] lg:text-xs uppercase tracking-[0.2em] group-hover:text-white transition-colors">Quick Availability Check</span>
 </a>
+
+<!-- Rezdy Booking Modal -->
+<div id="rezdyModal" class="fixed inset-0 z-[200] hidden items-center justify-center bg-black/70 backdrop-blur-sm px-4" onclick="if(event.target===this)closeRezdyModal()">
+  <div class="relative bg-white rounded-2xl shadow-2xl w-full max-w-[340px] max-h-[92vh] overflow-hidden flex flex-col">
+    <div class="flex items-center justify-between px-4 py-3 border-b border-border-light bg-white">
+      <span class="text-navy font-bold text-sm uppercase tracking-[0.15em]">Check Availability</span>
+      <button type="button" onclick="closeRezdyModal()" aria-label="Close" class="w-8 h-8 rounded-full flex items-center justify-center text-navy hover:bg-light-grey">
+        <span class="material-symbols-outlined">close</span>
+      </button>
+    </div>
+    <div class="flex-1 overflow-auto bg-white">
+      <iframe id="rezdyIframe" seamless="" width="300" height="1000" frameborder="0" class="rezdy block mx-auto" src=""></iframe>
+    </div>
+  </div>
+</div>
+<script defer type="text/javascript" src="https://cabosailing.rezdy.com/pluginJs"></script>
+<script>
+function openRezdyModal(widgetId){
+  var modal=document.getElementById('rezdyModal');
+  var iframe=document.getElementById('rezdyIframe');
+  iframe.src='https://cabosailing.rezdy.com/calendarWidget/'+widgetId+'?iframe=true';
+  modal.classList.remove('hidden');
+  modal.classList.add('flex');
+  document.body.style.overflow='hidden';
+}
+function closeRezdyModal(){
+  var modal=document.getElementById('rezdyModal');
+  var iframe=document.getElementById('rezdyIframe');
+  modal.classList.add('hidden');
+  modal.classList.remove('flex');
+  iframe.src='';
+  document.body.style.overflow='';
+}
+document.addEventListener('keydown',function(e){
+  var modal=document.getElementById('rezdyModal');
+  if(e.key==='Escape'&&modal&&!modal.classList.contains('hidden'))closeRezdyModal();
+});
+</script>
 </body></html>
