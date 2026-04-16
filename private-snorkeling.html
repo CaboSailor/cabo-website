@@ -114,17 +114,17 @@
 <header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200 transition-all duration-300">
   <!-- Mobile header -->
   <div class="mobile-only flex items-center justify-between px-6 py-3">
-    <button id="menu-open" class="flex flex-col gap-[3px] items-center justify-center w-10 h-10 -ml-2 text-navy active:scale-95 transition-transform">
-      <div class="w-5 h-[2px] bg-gray-800 rounded-full"></div>
-      <div class="w-5 h-[2px] bg-gray-800 rounded-full"></div>
-      <div class="w-5 h-[2px] bg-gray-800 rounded-full"></div>
-    </button>
+    <a href="https://wa.me/526241916997?text=hi%2C%20I'm%20sending%20you%20a%20message%20from%20cabosailing.com" target="_blank" class="flex items-center justify-center w-10 h-10 -ml-2 bg-[#25D366] rounded-full text-white active:scale-95 transition-transform shadow-md">
+      <i class="fa-brands fa-whatsapp text-2xl"></i>
+    </a>
     <div class="flex-shrink-0 flex items-center justify-center">
       <img src="images/cabo-sailing-n-l.png" alt="Cabo Sailing" class="h-10"/>
     </div>
-    <a href="https://wa.me/526241916997?text=hi%2C%20I'm%20sending%20you%20a%20message%20from%20cabosailing.com" target="_blank" class="flex items-center justify-center w-10 h-10 -mr-2 bg-[#25D366] rounded-full text-white active:scale-95 transition-transform shadow-md">
-      <i class="fa-brands fa-whatsapp text-2xl"></i>
-    </a>
+    <button id="menu-open" class="flex flex-col gap-1 items-center justify-center w-10 h-10 -mr-2 text-navy active:scale-95 transition-transform">
+      <div class="w-6 h-[2.5px] bg-gray-800 rounded-full"></div>
+      <div class="w-6 h-[2.5px] bg-gray-800 rounded-full"></div>
+      <div class="w-6 h-[2.5px] bg-gray-800 rounded-full"></div>
+    </button>
   </div>
   <!-- Desktop header -->
   <div class="desktop-only items-center justify-between px-10 py-3 max-w-[1400px] mx-auto">
@@ -134,7 +134,7 @@
     <nav class="flex items-center gap-8">
       <a href="index.html" class="text-sm font-semibold text-navy uppercase tracking-widest hover:text-gold transition-colors">Home</a>
       <div class="relative group">
-        <button class="text-sm font-semibold text-navy uppercase tracking-widest hover:text-gold transition-colors flex items-center gap-1">Tours <span class="material-symbols-outlined text-sm">expand_more</span></button>
+        <a href="tours.html" class="text-sm font-semibold text-navy uppercase tracking-widest hover:text-gold transition-colors flex items-center gap-1">Tours <span class="material-symbols-outlined text-sm">expand_more</span></a>
         <div class="absolute top-full left-0 mt-2 bg-white rounded-xl shadow-xl border border-border-light py-3 min-w-[220px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
           <p class="px-4 py-1 text-[10px] font-bold text-slate-400 uppercase tracking-widest">Snorkeling</p>
           <a href="private-snorkeling.html" class="block px-4 py-2 text-sm text-navy hover:bg-light-grey hover:text-gold transition-colors">Private Snorkeling</a>
@@ -174,13 +174,8 @@
 <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent pt-8 pb-6 px-4 pointer-events-none">
 <p class="text-white text-[11px] text-center font-semibold tracking-wide">Land's End &amp; the Arch · Sea Lion Colony · Pelican Rock · Chileno / Santa Maria</p>
 </div>
-<div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-1.5">
-<div class="w-1.5 h-1.5 rounded-full bg-white"></div>
-<div class="w-1.5 h-1.5 rounded-full bg-white/50"></div>
-<div class="w-1.5 h-1.5 rounded-full bg-white/50"></div>
-<div class="w-1.5 h-1.5 rounded-full bg-white/50"></div>
-<div class="w-1.5 h-1.5 rounded-full bg-white/50"></div>
-</div>
+<button class="fleet-arrow left" onclick="heroNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
+<button class="fleet-arrow right" onclick="heroNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
 </div>
 <div class="hidden lg:block max-w-[1400px] mx-auto px-10 mt-6 relative">
 <div class="grid grid-cols-4 grid-rows-2 gap-2 h-[55vh]" id="hero-desktop-grid">
@@ -197,6 +192,14 @@
 <div class="hidden lg:flex max-w-[1400px] mx-auto px-10 gap-10 mt-10">
   <!-- Left column (~2/3) -->
   <div class="flex-1 min-w-0">
+    <!-- Breadcrumbs -->
+    <nav class="flex items-center gap-1.5 text-xs text-slate-400 mb-4" aria-label="Breadcrumb">
+      <a href="index.html" class="hover:text-gold transition-colors">Home</a>
+      <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+      <span>Tours</span>
+      <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+      <span class="text-navy font-semibold">Private Snorkeling</span>
+    </nav>
     <div class="mb-2">
       <h1 class="text-4xl text-navy leading-tight">Your Own Private Snorkeling Cruise in Cabo</h1>
     </div>
@@ -357,6 +360,13 @@
 <!-- MOBILE: Original card layout -->
 <div class="lg:hidden relative z-10 -mt-4 px-5">
 <div class="bg-white rounded-3xl p-6 shadow-xl shadow-navy/5 border border-border-light">
+<nav class="flex items-center gap-1.5 text-xs text-slate-400 mb-4" aria-label="Breadcrumb">
+<a href="index.html" class="hover:text-gold transition-colors">Home</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span>Tours</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-navy font-semibold">Private Snorkeling</span>
+</nav>
 <div class="flex flex-col gap-1 mb-6">
 <div>
 <h1 class="text-2xl text-navy leading-tight">Your Own Private Snorkeling Cruise in Cabo</h1>
@@ -374,6 +384,16 @@
 <span class="material-symbols-outlined text-gold mb-2">sailing</span>
 <p class="text-xs text-slate-400 uppercase font-bold tracking-widest mb-1">Difficulty</p>
 <p class="text-base font-bold text-navy">Easy</p>
+</div>
+<div class="bg-light-grey rounded-2xl p-4 flex flex-col items-center text-center border border-border-light">
+<span class="material-symbols-outlined text-gold mb-2">family_restroom</span>
+<p class="text-xs text-slate-400 uppercase font-bold tracking-widest mb-1">Family</p>
+<p class="text-base font-bold text-navy">Friendly</p>
+</div>
+<div class="bg-light-grey rounded-2xl p-4 flex flex-col items-center text-center border border-border-light">
+<span class="material-symbols-outlined text-gold mb-2">event_available</span>
+<p class="text-xs text-slate-400 uppercase font-bold tracking-widest mb-1">Free Cancellation</p>
+<p class="text-base font-bold text-navy">Up to 24h</p>
 </div>
 </div>
 <div class="mt-6 pt-6 border-t border-border-light">
@@ -891,45 +911,10 @@
   <div class="flex-1 overflow-y-auto py-6 px-8 flex flex-col justify-center relative z-10">
     <nav class="flex flex-col gap-6">
       <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="index.html"><span class="material-symbols-outlined text-navy group-hover:text-accent-gold transition-colors text-2xl">home</span><span class="font-semibold">Home</span></a>
-      <!-- Tour dropdown -->
-      <div>
-        <button onclick="document.getElementById('tour-dropdown').classList.toggle('hidden');document.getElementById('tour-arrow').classList.toggle('rotate-180')" class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors w-full">
-          <span class="material-symbols-outlined text-accent-gold group-hover:text-navy transition-colors text-2xl">explore</span>
-          <span class="font-semibold">Tours</span>
-          <span id="tour-arrow" class="material-symbols-outlined ml-auto transition-transform duration-200 text-xl">expand_more</span>
-        </button>
-        <div id="tour-dropdown" class="hidden pl-10 mt-3 space-y-4">
-          <!-- Snorkeling sub-dropdown -->
-          <div>
-            <button onclick="event.stopPropagation();document.getElementById('snorkel-dropdown').classList.toggle('hidden');document.getElementById('snorkel-arrow').classList.toggle('rotate-180')" class="group flex items-center gap-2 text-base font-serif text-navy/70 hover:text-accent-gold transition-colors w-full">
-              <span class="font-semibold">Snorkeling</span>
-              <span id="snorkel-arrow" class="material-symbols-outlined transition-transform duration-200 text-lg">expand_more</span>
-            </button>
-            <div id="snorkel-dropdown" class="hidden pl-6 mt-2 space-y-3">
-              <a class="block text-sm font-serif text-navy/60 hover:text-accent-gold transition-colors" href="private-snorkeling.html">Private</a>
-              <a class="block text-sm font-serif text-navy/60 hover:text-accent-gold transition-colors" href="shared-snorkeling.html">Shared</a>
-            </div>
-          </div>
-          <!-- Sunset sub-dropdown -->
-          <div>
-            <button onclick="event.stopPropagation();document.getElementById('sunset-dropdown').classList.toggle('hidden');document.getElementById('sunset-arrow').classList.toggle('rotate-180')" class="group flex items-center gap-2 text-base font-serif text-navy/70 hover:text-accent-gold transition-colors w-full">
-              <span class="font-semibold">Sunset</span>
-              <span id="sunset-arrow" class="material-symbols-outlined transition-transform duration-200 text-lg">expand_more</span>
-            </button>
-            <div id="sunset-dropdown" class="hidden pl-6 mt-2 space-y-3">
-              <a class="block text-sm font-serif text-navy/60 hover:text-accent-gold transition-colors" href="private-sunset.html">Private</a>
-              <a class="block text-sm font-serif text-navy/60 hover:text-accent-gold transition-colors" href="shared-sunset.html">Shared</a>
-            </div>
-          </div>
-          <a class="block text-base font-serif text-navy/70 hover:text-accent-gold transition-colors" href="whale-watching.html">Whale Watching</a>
-          <a class="block text-base font-serif text-navy/70 hover:text-accent-gold transition-colors" href="bachelorette-party.html">Bachelorette</a>
-          <a class="block text-base font-serif text-navy/70 hover:text-accent-gold transition-colors" href="scuba-diving.html">Scuba Diving</a>
-        </div>
-      </div>
+      <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="tours.html"><span class="material-symbols-outlined text-accent-gold group-hover:text-navy transition-colors text-2xl">explore</span><span class="font-semibold">Tours</span><span class="material-symbols-outlined ml-auto text-xl text-navy/30">chevron_right</span></a>
       <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="shuttle-service.html"><span class="material-symbols-outlined text-navy group-hover:text-accent-gold transition-colors text-2xl">airport_shuttle</span><span class="font-semibold">Shuttle Service</span></a>
       <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="fleet.html"><span class="material-symbols-outlined text-accent-gold group-hover:text-navy transition-colors text-2xl">sailing</span><span class="font-semibold">Our Fleet</span></a>
       <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="#"><span class="material-symbols-outlined text-navy group-hover:text-accent-gold transition-colors text-2xl">stars</span><span class="font-semibold">Special Offers</span></a>
-      <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="#"><span class="material-symbols-outlined text-accent-gold group-hover:text-navy transition-colors text-2xl">anchor</span><span class="font-semibold">About Our Crew</span></a>
       <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="travel_guide.html"><span class="material-symbols-outlined text-navy group-hover:text-accent-gold transition-colors text-2xl">menu_book</span><span class="font-semibold">Travel Guide</span></a>
       <!-- Contact Info - always open -->
       <div>
@@ -1069,6 +1054,7 @@
           <li><a href="fleet.html" class="hover:text-gold transition-colors">Our Fleet</a></li>
           <li><a href="shuttle-service.html" class="hover:text-gold transition-colors">Shuttle Service</a></li>
           <li><a href="travel_guide.html" class="hover:text-gold transition-colors">Travel Guide</a></li>
+          <li><a href="#" class="hover:text-gold transition-colors">About Our Crew</a></li>
         </ul>
       </div>
       <div>
@@ -1093,4 +1079,11 @@
 <a href="contact.html" class="fixed right-0 top-1/2 -translate-y-1/2 z-50 bg-navy hover:bg-navy/90 transition-colors shadow-xl rounded-l-xl py-3 px-2 lg:py-4 lg:px-2.5 group" style="writing-mode:vertical-rl;text-orientation:mixed;">
   <span class="text-gold font-bold text-[10px] lg:text-xs uppercase tracking-[0.2em] group-hover:text-white transition-colors">Quick Availability Check</span>
 </a>
+<script>
+function heroNav(btn, dir) {
+  var wrap = btn.closest('.overflow-hidden').querySelector('.snap-x');
+  if (!wrap) return;
+  wrap.scrollBy({ left: dir * wrap.offsetWidth, behavior: 'smooth' });
+}
+</script>
 </body></html>
