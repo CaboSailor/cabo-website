@@ -1,0 +1,101 @@
+{
+  "activities": {
+    "private-sunset": {
+      "name": "Private Sunset Sailing",
+      "fromPrice": 701,
+      "discountLabel": "Save 15%",
+      "color": "#1e3a5f"
+    },
+    "private-snorkeling": {
+      "name": "Private Snorkeling",
+      "fromPrice": 701,
+      "discountLabel": "Save 15%",
+      "color": "#1e3a5f"
+    },
+    "whale-watching": {
+      "name": "Whale Watching",
+      "fromPrice": 701,
+      "discountLabel": "Save 15%",
+      "color": "#1e3a5f"
+    },
+    "scuba-diving": {
+      "name": "Scuba Diving",
+      "fromPrice": 270,
+      "discountLabel": "",
+      "color": "#1e3a5f"
+    },
+    "bachelorette-party": {
+      "name": "Bachelorette Party",
+      "fromPrice": 701,
+      "discountLabel": "Save 15%",
+      "color": "#E8789A"
+    },
+    "shared-sunset": {
+      "name": "Shared Sunset Sailing",
+      "fromPrice": 72,
+      "discountLabel": "Save 15%",
+      "color": "#1e3a5f"
+    },
+    "shared-snorkeling": {
+      "name": "Shared Snorkeling",
+      "fromPrice": 102,
+      "discountLabel": "Save 15%",
+      "color": "#1e3a5f"
+    }
+  },
+  "boats": {
+    "yacht-51": {
+      "name": "Luxury Yacht 51'",
+      "regularPrice": 1690,
+      "extraGuestRegular": 100,
+      "discount": 15
+    },
+    "yacht-45": {
+      "name": "Luxury Yacht 45'",
+      "regularPrice": 1520,
+      "extraGuestRegular": 100,
+      "discount": 15
+    },
+    "yacht-42": {
+      "name": "Luxury Yacht 42'",
+      "regularPrice": 1350,
+      "extraGuestRegular": 100,
+      "discount": 15
+    },
+    "sailing-42": {
+      "name": "Private Sailing 42'",
+      "regularPrice": 1090,
+      "extraGuestRegular": 100,
+      "discount": 15
+    },
+    "sailing-38": {
+      "name": "Private Sailing 38'",
+      "regularPrice": 825,
+      "extraGuestRegular": 100,
+      "discount": 15
+    },
+    "shared-sailing": {
+      "name": "Shared Sailing",
+      "regularPrice": 85,
+      "extraGuestRegular": 0,
+      "discount": 15
+    }
+  },
+  "scuba": {
+    "certified": 270,
+    "nonCertified": 290,
+    "mexicanMenu": 14
+  },
+  "shuttle": {
+    "caboToPalmilla": {
+      "oneWay": 70,
+      "roundTrip": 120,
+      "extraGuest": 10
+    },
+    "palmillaToPuerto": {
+      "oneWay": 80,
+      "roundTrip": 145,
+      "extraGuest": 10
+    }
+  }
+}
