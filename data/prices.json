@@ -3,19 +3,19 @@
     "private-sunset": {
       "name": "Private Sunset Sailing",
       "fromPrice": 701,
-      "discountLabel": "Save 15%",
+      "discountLabel": "Save 30%",
       "color": "#1e3a5f"
     },
     "private-snorkeling": {
       "name": "Private Snorkeling",
       "fromPrice": 701,
-      "discountLabel": "Save 15%",
+      "discountLabel": "Save 30%",
       "color": "#1e3a5f"
     },
     "whale-watching": {
       "name": "Whale Watching",
       "fromPrice": 701,
-      "discountLabel": "Save 15%",
+      "discountLabel": "Save 30%",
       "color": "#1e3a5f"
     },
     "scuba-diving": {
@@ -27,19 +27,19 @@
     "bachelorette-party": {
       "name": "Bachelorette Party",
       "fromPrice": 701,
-      "discountLabel": "Save 15%",
-      "color": "#E8789A"
+      "discountLabel": "Save 30%",
+      "color": "#e8789a"
     },
     "shared-sunset": {
       "name": "Shared Sunset Sailing",
       "fromPrice": 72,
-      "discountLabel": "Save 15%",
+      "discountLabel": "Save 30%",
       "color": "#1e3a5f"
     },
     "shared-snorkeling": {
       "name": "Shared Snorkeling",
-      "fromPrice": 102,
-      "discountLabel": "Save 15%",
+      "fromPrice": 84,
+      "discountLabel": "Save 30%",
       "color": "#1e3a5f"
     }
   },
@@ -48,37 +48,37 @@
       "name": "Luxury Yacht 51'",
       "regularPrice": 1690,
       "extraGuestRegular": 100,
-      "discount": 15
+      "discount": 30
     },
     "yacht-45": {
       "name": "Luxury Yacht 45'",
       "regularPrice": 1520,
       "extraGuestRegular": 100,
-      "discount": 15
+      "discount": 30
     },
     "yacht-42": {
       "name": "Luxury Yacht 42'",
       "regularPrice": 1350,
       "extraGuestRegular": 100,
-      "discount": 15
+      "discount": 30
     },
     "sailing-42": {
       "name": "Private Sailing 42'",
       "regularPrice": 1090,
       "extraGuestRegular": 100,
-      "discount": 15
+      "discount": 30
     },
     "sailing-38": {
       "name": "Private Sailing 38'",
       "regularPrice": 825,
       "extraGuestRegular": 100,
-      "discount": 15
+      "discount": 30
     },
     "shared-sailing": {
       "name": "Shared Sailing",
-      "regularPrice": 85,
+      "regularPrice": 120,
       "extraGuestRegular": 0,
-      "discount": 15
+      "discount": 30
     }
   },
   "scuba": {
