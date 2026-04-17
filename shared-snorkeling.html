@@ -2,7 +2,7 @@
 <html lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta name="description" content="Join our shared sailing & snorkeling tour in Cabo San Lucas. Snorkel at Pelican's Rock & the Arch, open bar & lunch included. From $102/person — Save 15% online."/>
+<meta name="description" content="Join our shared sailing & snorkeling tour in Cabo San Lucas. Snorkel at Pelican's Rock & the Arch, open bar & lunch included. From $102/person — Save 30% online."/>
 <title>Shared Sailing & Snorkeling Tour Cabo San Lucas — Open Bar & Lunch | Cabo Sailing</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&amp;family=Montserrat:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
@@ -291,7 +291,7 @@
         <h3 class="text-white text-lg font-serif">Book Your Spot</h3>
         <div class="mt-3 flex items-center justify-center gap-2">
           <span class="material-symbols-outlined text-gold text-base">local_offer</span>
-          <span class="text-white font-bold text-sm">Save 15%</span>
+          <span class="text-white font-bold text-sm">Save 30%</span>
           <span class="text-white/60 text-sm">— use promo code</span>
           <span class="bg-white/15 text-white font-bold text-sm tracking-[0.15em] px-2.5 py-0.5 rounded border border-white/20">SAIL-15</span>
         </div>
@@ -382,24 +382,6 @@
 </div>
 </div>
 
-<!-- Mobile price + book block -->
-<div class="mt-6 pt-6 border-t border-border-light">
-  <div class="flex items-center justify-between mb-4">
-    <div>
-      <p class="text-xs text-slate-400 uppercase font-bold tracking-widest mb-1">Per person</p>
-      <div class="flex items-baseline gap-2">
-        <span class="text-red-600 line-through decoration-2 text-sm font-semibold">$120</span>
-        <span class="text-navy font-bold text-2xl">$102</span>
-      </div>
-    </div>
-    <div class="bg-gold/10 text-gold text-[10px] font-bold px-3 py-1.5 rounded border border-gold/20 uppercase tracking-widest">Save 15% — SAIL-15</div>
-  </div>
-  <button onclick="document.getElementById('rezdy-modal-shared-snorkel').classList.remove('hidden')" class="block w-full bg-navy text-white font-bold text-[12px] py-4 rounded-2xl uppercase tracking-[0.2em] text-center shadow-lg cursor-pointer">Check Availability</button>
-  <a href="https://wa.me/526241916997?text=Hi%2C%20I'd%20like%20to%20book%20the%20Shared%20Snorkeling%20Tour" target="_blank" class="block w-full bg-[#25D366] text-white font-bold text-[12px] py-4 rounded-2xl uppercase tracking-[0.2em] text-center shadow-lg mt-3">
-    <i class="fa-brands fa-whatsapp text-lg mr-2" style="vertical-align:middle"></i> Book via WhatsApp
-  </a>
-</div>
-
 <div class="mt-10">
 <h3 class="text-lg text-navy mb-4">About this experience</h3>
 <p class="text-slate-500 leading-relaxed text-base">Join our popular shared snorkeling tour and discover the magic of Cabo San Lucas alongside fellow adventurers. Visit the famous Arch, snorkel alongside tropical fish at Pelican Rock, and enjoy a refreshing open bar and lunch onboard — all at an unbeatable price.</p>
@@ -464,6 +446,55 @@
     <span class="material-symbols-outlined text-gold text-base">schedule</span>
     <span class="font-semibold text-navy">DEPARTURES: 9:00 AM DAILY</span>
   </div>
+</div>
+
+<!-- Mobile Book Your Spot -->
+<div class="lg:hidden mx-5 mt-10 mb-6">
+  <div class="bg-navy rounded-2xl p-4 text-center mb-4">
+    <h3 class="text-white text-lg font-serif">Book Your Spot</h3>
+    <div class="mt-2 flex items-center justify-center gap-2 flex-wrap">
+      <span class="material-symbols-outlined text-gold text-base">local_offer</span>
+      <span class="text-white font-bold text-sm">Save 30%</span>
+      <span class="text-white/60 text-sm">— use promo code</span>
+      <span class="bg-white/15 text-white font-bold text-sm tracking-[0.15em] px-2.5 py-0.5 rounded border border-white/20">SAIL-15</span>
+    </div>
+  </div>
+  <!-- Boat card -->
+  <div class="w-full bg-white border border-border-light rounded-2xl overflow-hidden shadow-md shadow-navy/5 mb-4">
+    <div class="h-[240px] w-full relative">
+      <div class="boat-carousel relative w-full h-full">
+        <img alt="Sailing Boat 38'-42'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-100 transition-opacity duration-700" src="images/Boats/Sailing 42'/10.Sailing 42'.jpg"/>
+        <img alt="Sailing Boat 38'-42'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" src="images/Boats/Sailing 38'/6.Sailing 38'.jpg"/>
+        <img alt="Sailing Boat 38'-42'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" src="images/Boats/Sailing 42'/17.Sailing 42'.jpg"/>
+      </div>
+      <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
+      <div class="absolute bottom-3 left-4">
+        <h4 class="text-white text-base font-serif">Sailing Boat 38'-42'</h4>
+        <div class="flex items-center gap-2 text-white/80 text-[9px] mt-0.5 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Up to 14 Guests</span></div>
+      </div>
+      <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
+      <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
+    </div>
+  </div>
+  <!-- Rezdy calendar inline -->
+  <p class="text-center text-slate-500 text-sm mb-3">Select a date to check availability</p>
+  <iframe seamless="" width="100%" height="800px" frameborder="0" class="rezdy" src="https://cabosailing.rezdy.com/productsCalendar/561442?iframe=true" style="border:none;"></iframe>
+  <div class="mt-4 space-y-3">
+    <div class="flex justify-between items-center py-2 border-b border-border-light">
+      <span class="text-sm text-slate-500">Per person</span>
+      <div class="flex items-baseline gap-2">
+        <span class="text-red-600 line-through decoration-2 text-sm font-semibold">$120</span>
+        <span class="text-navy font-bold text-xl">$102</span>
+      </div>
+    </div>
+    <div class="flex justify-between items-center py-2">
+      <span class="text-sm text-slate-500">Duration</span>
+      <span class="text-navy font-semibold">3 Hours</span>
+    </div>
+  </div>
+  <a href="https://wa.me/526241916997?text=Hi%2C%20I'd%20like%20to%20book%20the%20Shared%20Snorkeling%20Tour" target="_blank" class="block w-full bg-[#25D366] text-white font-bold text-[12px] py-4 rounded-2xl uppercase tracking-[0.2em] text-center shadow-lg mt-4">
+    <i class="fa-brands fa-whatsapp text-lg mr-2" style="vertical-align:middle"></i> Book via WhatsApp
+  </a>
 </div>
 
 <!-- Want a private experience? -->
@@ -768,4 +799,5 @@ function heroNav(btn, dir) {
   wrap.scrollBy({ left: dir * wrap.offsetWidth, behavior: 'smooth' });
 }
 </script>
+<script src="js/boat-swipe.js"></script>
 </body></html>
