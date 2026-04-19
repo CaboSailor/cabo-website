@@ -1,0 +1,136 @@
+---
+import { Image } from 'astro:assets';
+import logo from '../assets/images/cabo-sailing-logo.png';
+
+interface Props {
+  variant?: 'home' | 'subpage';
+  activePage?: string;
+}
+
+const { variant = 'subpage', activePage = '' } = Astro.props;
+
+const navLinks = [
+  { href: '/', label: 'Home', key: 'home' },
+  { href: '/tours', label: 'Tours', key: 'tours', hasDropdown: true },
+  { href: '/fleet', label: 'Our Fleet', key: 'fleet' },
+  { href: '/shuttle-service', label: 'Shuttle', key: 'shuttle' },
+  { href: '/travel-guide', label: 'Travel Guide', key: 'travel-guide' },
+];
+
+const tourDropdown = [
+  { group: 'Snorkeling', items: [
+    { href: '/private-snorkeling', label: 'Private Snorkeling' },
+    { href: '/shared-snorkeling', label: 'Shared Snorkeling' },
+  ]},
+  { group: 'Sunset', items: [
+    { href: '/private-sunset', label: 'Private Sunset' },
+    { href: '/shared-sunset', label: 'Shared Sunset' },
+  ]},
+  { group: null, items: [
+    { href: '/whale-watching', label: 'Whale Watching' },
+    { href: '/bachelorette-party', label: 'Bachelorette' },
+    { href: '/scuba-diving', label: 'Scuba Diving' },
+  ]},
+];
+---
+
+{variant === 'home' ? (
+  <header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-border-light/50 transition-all duration-300">
+    <!-- Mobile header (home) -->
+    <div class="mobile-only flex items-center justify-between px-6 py-3">
+      <a href="https://wa.me/526241916997?text=hi%2C%20I'm%20sending%20you%20a%20message%20from%20cabosailing.com" target="_blank" class="flex items-center justify-center w-10 h-10 -ml-2 bg-[#25D366] rounded-full text-white active:scale-95 transition-transform shadow-md">
+        <i class="fa-brands fa-whatsapp text-2xl"></i>
+      </a>
+      <div class="flex-shrink-0 flex items-center justify-center">
+        <Image src={logo} alt="Cabo Sailing" class="h-10" width={160} height={40} />
+      </div>
+      <button id="menu-open" class="flex flex-col gap-1 items-center justify-center w-10 h-10 -mr-2 text-navy active:scale-95 transition-transform">
+        <div class="w-6 h-[2.5px] bg-navy rounded-full"></div>
+        <div class="w-6 h-[2.5px] bg-navy rounded-full"></div>
+        <div class="w-6 h-[2.5px] bg-navy rounded-full"></div>
+      </button>
+    </div>
+    <!-- Desktop header -->
+    <div class="desktop-only items-center justify-between px-10 py-3 max-w-[1400px] mx-auto">
+      <a href="/" class="flex-shrink-0">
+        <Image src={logo} alt="Cabo Sailing" class="h-12" width={192} height={48} />
+      </a>
+      <nav class="flex items-center gap-8">
+        {navLinks.map(link => (
+          link.hasDropdown ? (
+            <div class="relative group">
+              <a href={link.href} class={`text-sm font-semibold uppercase tracking-widest hover:text-gold transition-colors flex items-center gap-1 ${activePage === link.key ? 'text-gold' : 'text-navy'}`}>{link.label} <span class="material-symbols-outlined text-sm">expand_more</span></a>
+              <div class="absolute top-full left-0 mt-2 bg-white rounded-xl shadow-xl border border-border-light py-3 min-w-[220px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                {tourDropdown.map((section, idx) => (
+                  <>
+                    {idx > 0 && <div class="h-px bg-border-light my-2"></div>}
+                    {section.group && <p class="px-4 py-1 text-[10px] font-bold text-slate-400 uppercase tracking-widest">{section.group}</p>}
+                    {section.items.map(item => (
+                      <a href={item.href} class="block px-4 py-2 text-sm text-navy hover:bg-light-grey hover:text-gold transition-colors">{item.label}</a>
+                    ))}
+                  </>
+                ))}
+              </div>
+            </div>
+          ) : (
+            <a href={link.href} class={`text-sm font-semibold uppercase tracking-widest hover:text-gold transition-colors ${activePage === link.key ? 'text-gold' : 'text-navy'}`}>{link.label}</a>
+          )
+        ))}
+      </nav>
+      <div class="flex items-center gap-4">
+        <a href="tel:+526241438485" class="text-sm font-semibold text-navy hover:text-gold transition-colors flex items-center gap-1"><span class="material-symbols-outlined text-base">call</span> +52 624 143 8485</a>
+        <a href="https://wa.me/526241916997?text=hi%2C%20I'm%20sending%20you%20a%20message%20from%20cabosailing.com" target="_blank" class="flex items-center justify-center w-10 h-10 bg-[#25D366] rounded-full text-white hover:scale-105 transition-transform shadow-md">
+          <i class="fa-brands fa-whatsapp text-xl"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+) : (
+  <>
+    <!-- Mobile header (subpage) -->
+    <div class="lg:hidden fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-3 bg-white/80 backdrop-blur-md border-b border-border-light/50">
+      <div class="flex-shrink-0 flex items-center justify-center">
+        <a href="/"><Image src={logo} alt="Cabo Sailing" class="h-10" width={160} height={40} /></a>
+      </div>
+      <button onclick="history.back()" class="flex items-center justify-center w-10 h-10 -mr-2 text-navy active:scale-95 transition-transform">
+        <span class="material-symbols-outlined text-3xl">close</span>
+      </button>
+    </div>
+    <!-- Desktop header (subpage) -->
+    <header class="hidden lg:block fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-border-light/50 transition-all duration-300">
+      <div class="flex items-center justify-between px-10 py-3 max-w-[1400px] mx-auto">
+        <a href="/" class="flex-shrink-0">
+          <Image src={logo} alt="Cabo Sailing" class="h-12" width={192} height={48} />
+        </a>
+        <nav class="flex items-center gap-8">
+          {navLinks.map(link => (
+            link.hasDropdown ? (
+              <div class="relative group">
+                <a href={link.href} class={`text-sm font-semibold uppercase tracking-widest hover:text-gold transition-colors flex items-center gap-1 ${activePage === link.key ? 'text-gold' : 'text-navy'}`}>{link.label} <span class="material-symbols-outlined text-sm">expand_more</span></a>
+                <div class="absolute top-full left-0 mt-2 bg-white rounded-xl shadow-xl border border-border-light py-3 min-w-[220px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                  {tourDropdown.map((section, idx) => (
+                    <>
+                      {idx > 0 && <div class="h-px bg-border-light my-2"></div>}
+                      {section.group && <p class="px-4 py-1 text-[10px] font-bold text-slate-400 uppercase tracking-widest">{section.group}</p>}
+                      {section.items.map(item => (
+                        <a href={item.href} class="block px-4 py-2 text-sm text-navy hover:bg-light-grey hover:text-gold transition-colors">{item.label}</a>
+                      ))}
+                    </>
+                  ))}
+                </div>
+              </div>
+            ) : (
+              <a href={link.href} class={`text-sm font-semibold uppercase tracking-widest hover:text-gold transition-colors ${activePage === link.key ? 'text-gold' : 'text-navy'}`}>{link.label}</a>
+            )
+          ))}
+        </nav>
+        <div class="flex items-center gap-4">
+          <a href="tel:+526241438485" class="text-sm font-semibold text-navy hover:text-gold transition-colors flex items-center gap-1"><span class="material-symbols-outlined text-base">call</span> +52 624 143 8485</a>
+          <a href="https://wa.me/526241916997?text=hi%2C%20I'm%20sending%20you%20a%20message%20from%20cabosailing.com" target="_blank" class="flex items-center justify-center w-10 h-10 bg-[#25D366] rounded-full text-white hover:scale-105 transition-transform shadow-md">
+            <i class="fa-brands fa-whatsapp text-xl"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+  </>
+)}

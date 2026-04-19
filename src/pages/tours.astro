@@ -1,0 +1,122 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import FloatingCTA from '../components/FloatingCTA.astro';
+import { Image } from 'astro:assets';
+
+// Tour card images
+import privateSnorkelingImg from "../assets/images/guests-on-sailboats/cabo-private-snorkeling-ocean-view.jpeg";
+import privateSunsetImg from "../assets/images/guests-on-yachts/cabo-yacht-charter-guests-01.jpg";
+import sharedSnorkelingImg from "../assets/images/guests-on-sailboats/cabo-sailboat-guests-snorkeling-02.jpg";
+import sharedSunsetImg from "../assets/images/guests-on-sailboats/cabo-sunset-sailing-cruise.jpeg";
+import whaleWatchingImg from "../assets/images/whales/cabo-whale-watching-breaching.jpg";
+import bacheloretteImg from "../assets/images/bachelorette/cabo-bachelorette-party-el-arco.png";
+import scubaDivingImg from "../assets/images/scuba-diving/cabo-scuba-diving-underwater.jpg";
+---
+
+<BaseLayout title="Tours — Cabo Sailing | Boat Tours in Cabo San Lucas" description="Explore all boat tours in Cabo San Lucas. Private & shared snorkeling, sunset cruises, whale watching, bachelorette parties & scuba diving.">
+  <Header variant="subpage" activePage="tours" />
+
+  <main class="flex-1 w-full overflow-x-hidden pt-[60px] lg:pt-[72px]">
+
+    <!-- Page heading -->
+    <div class="max-w-[900px] mx-auto px-5 lg:px-10 pt-8 lg:pt-12 pb-6 text-center">
+      <nav class="flex items-center justify-center gap-1.5 text-xs text-slate-400 mb-4" aria-label="Breadcrumb">
+        <a href="/" class="hover:text-gold transition-colors">Home</a>
+        <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+        <span class="text-navy font-semibold">Tours</span>
+      </nav>
+      <h1 class="text-3xl lg:text-4xl font-serif text-navy mb-3">Our Tours</h1>
+      <p class="text-slate-500 text-sm lg:text-base max-w-md mx-auto">Choose your perfect experience on the water in Cabo San Lucas.</p>
+    </div>
+
+    <!-- Tour grid -->
+    <div class="max-w-[900px] mx-auto px-5 lg:px-10 pb-16">
+      <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
+
+        <!-- Private Snorkeling -->
+        <a href="/private-snorkeling" class="group block rounded-2xl overflow-hidden shadow-lg border border-border-light bg-white">
+          <div class="relative h-[180px] lg:h-[220px] overflow-hidden">
+            <Image src={privateSnorkelingImg} alt="Private Snorkeling" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width={800} height={500} />
+            <div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
+          </div>
+          <div class="p-4 text-center">
+            <h3 class="text-sm lg:text-base font-bold text-navy">Private Snorkeling</h3>
+          </div>
+        </a>
+
+        <!-- Private Sunset -->
+        <a href="/private-sunset" class="group block rounded-2xl overflow-hidden shadow-lg border border-border-light bg-white">
+          <div class="relative h-[180px] lg:h-[220px] overflow-hidden">
+            <Image src={privateSunsetImg} alt="Private Sunset" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width={800} height={500} />
+            <div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
+          </div>
+          <div class="p-4 text-center">
+            <h3 class="text-sm lg:text-base font-bold text-navy">Private Sunset</h3>
+          </div>
+        </a>
+
+        <!-- Shared Snorkeling -->
+        <a href="/shared-snorkeling" class="group block rounded-2xl overflow-hidden shadow-lg border border-border-light bg-white">
+          <div class="relative h-[180px] lg:h-[220px] overflow-hidden">
+            <Image src={sharedSnorkelingImg} alt="Shared Snorkeling" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width={800} height={500} />
+            <div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
+          </div>
+          <div class="p-4 text-center">
+            <h3 class="text-sm lg:text-base font-bold text-navy">Shared Snorkeling</h3>
+          </div>
+        </a>
+
+        <!-- Shared Sunset -->
+        <a href="/shared-sunset" class="group block rounded-2xl overflow-hidden shadow-lg border border-border-light bg-white">
+          <div class="relative h-[180px] lg:h-[220px] overflow-hidden">
+            <Image src={sharedSunsetImg} alt="Shared Sunset" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width={800} height={500} />
+            <div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
+          </div>
+          <div class="p-4 text-center">
+            <h3 class="text-sm lg:text-base font-bold text-navy">Shared Sunset</h3>
+          </div>
+        </a>
+
+        <!-- Private Whale Watching -->
+        <a href="/whale-watching" class="group block rounded-2xl overflow-hidden shadow-lg border border-border-light bg-white">
+          <div class="relative h-[180px] lg:h-[220px] overflow-hidden">
+            <Image src={whaleWatchingImg} alt="Private Whale Watching" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width={800} height={500} />
+            <div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
+          </div>
+          <div class="p-4 text-center">
+            <h3 class="text-sm lg:text-base font-bold text-navy">Private Whale Watching</h3>
+          </div>
+        </a>
+
+        <!-- Bachelorette Party -->
+        <a href="/bachelorette-party" class="group block rounded-2xl overflow-hidden shadow-lg border border-border-light bg-white">
+          <div class="relative h-[180px] lg:h-[220px] overflow-hidden">
+            <Image src={bacheloretteImg} alt="Bachelorette Party" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width={800} height={500} />
+            <div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
+          </div>
+          <div class="p-4 text-center">
+            <h3 class="text-sm lg:text-base font-bold text-navy">Bachelorette Party</h3>
+          </div>
+        </a>
+
+        <!-- Scuba Diving -->
+        <a href="/scuba-diving" class="group block rounded-2xl overflow-hidden shadow-lg border border-border-light bg-white">
+          <div class="relative h-[180px] lg:h-[220px] overflow-hidden">
+            <Image src={scubaDivingImg} alt="Scuba Diving" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width={800} height={500} />
+            <div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
+          </div>
+          <div class="p-4 text-center">
+            <h3 class="text-sm lg:text-base font-bold text-navy">Scuba Diving</h3>
+          </div>
+        </a>
+
+      </div>
+    </div>
+
+  </main>
+
+  <Footer />
+  <FloatingCTA />
+</BaseLayout>

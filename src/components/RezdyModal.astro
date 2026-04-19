@@ -1,0 +1,67 @@
+---
+// Rezdy booking modal - include on any page that needs booking functionality
+---
+
+<div id="rezdyModal" class="fixed inset-0 z-[200] hidden items-center justify-center bg-black/30 px-4" onclick="if(event.target===this)closeRezdyModal()">
+  <div class="relative bg-white rounded-2xl shadow-2xl w-full max-w-[340px] max-h-[92vh] overflow-hidden flex flex-col">
+    <div class="flex items-center justify-between px-4 py-3 border-b border-border-light bg-white">
+      <span class="text-navy font-bold text-sm uppercase tracking-[0.15em]">Check Availability</span>
+      <button type="button" onclick="closeRezdyModal()" aria-label="Close" class="w-8 h-8 rounded-full flex items-center justify-center text-navy hover:bg-light-grey">
+        <span class="material-symbols-outlined">close</span>
+      </button>
+    </div>
+    <div class="flex-1 overflow-auto bg-white">
+      <iframe id="rezdyIframe" seamless="" width="300" height="1000" frameborder="0" class="rezdy block mx-auto" src=""></iframe>
+    </div>
+  </div>
+</div>
+
+<script is:inline defer src="https://cabosailing.rezdy.com/pluginJs"></script>
+<script is:inline>
+function openRezdyModal(widgetId, type){
+  type = type || 'calendarWidget';
+  var modal=document.getElementById('rezdyModal');
+  var iframe=document.getElementById('rezdyIframe');
+  var card=modal.firstElementChild;
+  iframe.src='https://cabosailing.rezdy.com/'+type+'/'+widgetId+'?iframe=true';
+  if(type==='productsCalendar'){
+    card.classList.remove('max-w-[340px]');
+    card.classList.add('max-w-lg');
+    iframe.setAttribute('width','100%');
+    iframe.classList.remove('mx-auto');
+  } else {
+    card.classList.remove('max-w-lg');
+    card.classList.add('max-w-[340px]');
+    iframe.setAttribute('width','300');
+    iframe.classList.add('mx-auto');
+  }
+  modal.classList.remove('hidden');
+  modal.classList.add('flex');
+  var scrollY=window.scrollY||window.pageYOffset||0;
+  document.body.dataset.rezdyScrollY=scrollY;
+  document.body.style.position='fixed';
+  document.body.style.top='-'+scrollY+'px';
+  document.body.style.left='0';
+  document.body.style.right='0';
+  document.body.style.width='100%';
+}
+function closeRezdyModal(){
+  var modal=document.getElementById('rezdyModal');
+  var iframe=document.getElementById('rezdyIframe');
+  modal.classList.add('hidden');
+  modal.classList.remove('flex');
+  iframe.src='';
+  var scrollY=parseInt(document.body.dataset.rezdyScrollY||'0',10);
+  document.body.style.position='';
+  document.body.style.top='';
+  document.body.style.left='';
+  document.body.style.right='';
+  document.body.style.width='';
+  delete document.body.dataset.rezdyScrollY;
+  window.scrollTo(0,scrollY);
+}
+document.addEventListener('keydown',function(e){
+  var modal=document.getElementById('rezdyModal');
+  if(e.key==='Escape'&&modal&&!modal.classList.contains('hidden'))closeRezdyModal();
+});
+</script>

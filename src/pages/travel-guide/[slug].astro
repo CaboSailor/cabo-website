@@ -1,0 +1,276 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import FloatingCTA from '../../components/FloatingCTA.astro';
+import SnorkelBoatCards from '../../components/SnorkelBoatCards.astro';
+import { Image } from 'astro:assets';
+import { getCollection, render } from 'astro:content';
+
+// Sidebar images
+import yacht45Img from "../../assets/images/boats/yacht-45/cabo-private-yacht-45-exterior-01.jpg";
+import whalesImg from "../../assets/images/whales/cabo-whale-watching-humpback.jpg";
+import sailing42Img from "../../assets/images/boats/sailing-42/cabo-sailing-42-exterior-01.jpg";
+
+export async function getStaticPaths() {
+  const posts = await getCollection('travel-guide');
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+const { title, description, heroImage, heroAlt, category, categoryLink, activeSubmenu, bestTime, relatedActivity, sidebarType, hasBoatCards } = post.data;
+
+// Get up to 3 other guides from the same category
+const allPosts = await getCollection('travel-guide');
+const relatedPosts = allPosts
+  .filter((p) => p.data.category === category && p.id !== post.id)
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 3);
+---
+
+<BaseLayout title={`${title} | Cabo Sailing`} description={description}>
+  <Header variant="subpage" activePage="travel-guide" />
+
+  <main class="flex-1 w-full overflow-x-hidden pt-[60px] lg:pt-[72px]">
+
+    <!-- Travel Guide Sub-Menu -->
+    <div class="sticky top-[60px] z-40 bg-white border-b border-border-light/50 shadow-sm">
+      <div class="max-w-5xl mx-auto">
+        <nav class="flex overflow-x-auto no-scrollbar">
+          <a href="/travel-guide" class={`shrink-0 px-4 lg:px-6 py-3.5 text-sm font-bold uppercase tracking-widest border-b-2 transition-colors ${activeSubmenu === 'home' ? 'border-accent-gold text-navy' : 'border-transparent text-navy/50 hover:text-navy hover:border-accent-gold/50'}`}>Home</a>
+          <a href="/travel-guide-activities" class={`shrink-0 px-4 lg:px-6 py-3.5 text-sm font-bold uppercase tracking-widest border-b-2 transition-colors ${activeSubmenu === 'activities' ? 'border-accent-gold text-navy' : 'border-transparent text-navy/50 hover:text-navy hover:border-accent-gold/50'}`}>Activities</a>
+          <a href="/travel-guide-attractions" class={`shrink-0 px-4 lg:px-6 py-3.5 text-sm font-bold uppercase tracking-widest border-b-2 transition-colors ${activeSubmenu === 'attractions' ? 'border-accent-gold text-navy' : 'border-transparent text-navy/50 hover:text-navy hover:border-accent-gold/50'}`}>Attractions</a>
+          <a href="/travel-guide-traveling" class={`shrink-0 px-4 lg:px-6 py-3.5 text-sm font-bold uppercase tracking-widest border-b-2 transition-colors whitespace-nowrap ${activeSubmenu === 'traveling' ? 'border-accent-gold text-navy' : 'border-transparent text-navy/50 hover:text-navy hover:border-accent-gold/50'}`}>Traveling to Cabo</a>
+          <a href="/travel-guide-culture" class={`shrink-0 px-4 lg:px-6 py-3.5 text-sm font-bold uppercase tracking-widest border-b-2 transition-colors whitespace-nowrap ${activeSubmenu === 'culture' ? 'border-accent-gold text-navy' : 'border-transparent text-navy/50 hover:text-navy hover:border-accent-gold/50'}`}>Culture &amp; Food</a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Hero Image -->
+    <div class="relative w-full h-[60vh] min-h-[450px] lg:h-[68vh]">
+      <img alt={heroAlt} class="w-full h-full object-cover object-center" src={heroImage}/>
+      <div class="absolute inset-0 bg-gradient-to-t from-navy/70 via-navy/30 to-transparent"></div>
+      <div class="absolute inset-0 flex flex-col items-center justify-end z-10 text-center px-8 pb-10">
+        <div class="flex flex-col items-center gap-3">
+          <nav class="flex items-center gap-1.5 text-xs text-white/60 mb-2" aria-label="Breadcrumb">
+            <a href="/" class="hover:text-white transition-colors">Home</a>
+            <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+            <a href="/travel-guide" class="hover:text-white transition-colors">Travel Guide</a>
+            <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+            <a href={categoryLink} class="hover:text-white transition-colors">{category}</a>
+          </nav>
+          <h1 class="text-2xl md:text-4xl lg:text-5xl font-serif text-white leading-tight drop-shadow-lg font-semibold max-w-3xl">
+            {title}
+          </h1>
+          <div class="w-12 h-[1px] bg-accent-gold-light"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Article + Sidebar Layout -->
+    <div class="max-w-[1400px] mx-auto px-6 lg:px-10 py-10 lg:py-14">
+      <div class="lg:flex lg:gap-12">
+
+        <!-- Article Content -->
+        <article class="article-body lg:flex-1 lg:order-2 max-w-3xl">
+
+          {/* Breadcrumbs */}
+          <nav class="flex items-center gap-1.5 text-xs text-navy/40 mb-6" aria-label="Breadcrumb">
+            <a href="/" class="hover:text-navy transition-colors">Home</a>
+            <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+            <a href="/travel-guide" class="hover:text-navy transition-colors">Travel Guide</a>
+            <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+            <a href={categoryLink} class="hover:text-navy transition-colors">{category}</a>
+            <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+            <span class="text-navy/60">{title}</span>
+          </nav>
+
+          {/* Quick Facts Box */}
+          {(category || bestTime) && (
+            <div class="quick-facts mb-10 rounded-2xl border border-accent-gold/20 bg-accent-gold/5 p-5 lg:p-6">
+              <h3 class="text-xs font-bold uppercase tracking-[0.2em] text-accent-gold mb-4 flex items-center gap-2">
+                <span class="material-symbols-outlined text-base">info</span>
+                Quick Facts
+              </h3>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+                {category && (
+                  <div>
+                    <span class="block text-navy/40 text-xs uppercase tracking-wider mb-1">Category</span>
+                    <span class="text-navy font-semibold">{category}</span>
+                  </div>
+                )}
+                {bestTime && (
+                  <div>
+                    <span class="block text-navy/40 text-xs uppercase tracking-wider mb-1">Best Time</span>
+                    <span class="text-navy font-semibold">{bestTime}</span>
+                  </div>
+                )}
+              </div>
+            </div>
+          )}
+
+          <Content />
+
+          {/* CTA Buttons */}
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-3 mt-12 mb-4">
+            <a href="/fleet" class="inline-flex items-center gap-2 bg-accent-gold hover:bg-accent-gold-dark text-white text-sm font-bold uppercase tracking-widest px-6 py-3 rounded-full transition-colors">
+              See Our Fleet
+            </a>
+            <a href="https://wa.me/526241439798" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white text-sm font-bold uppercase tracking-widest px-6 py-3 rounded-full transition-colors">
+              Get a Quote
+            </a>
+          </div>
+
+          {/* More in [Category] */}
+          {relatedPosts.length > 0 && (
+            <div class="mt-14">
+              <h3 class="text-xs font-bold uppercase tracking-[0.2em] text-accent-gold mb-6 flex items-center gap-2">
+                <span class="material-symbols-outlined text-base">auto_stories</span>
+                More in {category}
+              </h3>
+              <div class="grid gap-4">
+                {relatedPosts.map((related) => (
+                  <a href={`/travel-guide/${related.id}`} class="flex items-center gap-4 bg-white border border-border-light rounded-2xl p-3 shadow-sm hover:shadow-md transition-shadow group">
+                    <img alt={related.data.heroAlt} class="w-20 h-20 rounded-xl object-cover shrink-0" src={related.data.heroImage} />
+                    <div class="min-w-0">
+                      <h4 class="text-sm font-bold text-navy mb-1 group-hover:text-accent-gold transition-colors line-clamp-2">{related.data.title}</h4>
+                      <p class="text-navy/50 text-xs leading-relaxed line-clamp-2">{related.data.description}</p>
+                    </div>
+                  </a>
+                ))}
+              </div>
+            </div>
+          )}
+
+        </article>
+
+        <!-- Sidebar -->
+        <aside class="lg:w-[420px] lg:order-1 lg:shrink-0 mt-14 lg:mt-0">
+          <div class="lg:sticky lg:top-[140px]">
+            <h3 class="text-xs font-bold uppercase tracking-[0.2em] text-accent-gold mb-6">Suggested Activities</h3>
+
+            {sidebarType === "default" && (
+              <div class="space-y-4 mb-8">
+                <a href="/shuttle-service" class="flex items-center gap-4 bg-white border border-border-light rounded-2xl p-3 shadow-sm hover:shadow-md transition-shadow">
+                  <img alt="Airport Shuttle Service" class="w-20 h-20 rounded-xl object-cover shrink-0" src="https://www.cabosailing.com/wp-content/uploads/2019/08/los-cabos-international-airport-featured-image.jpg.webp"/>
+                  <div>
+                    <h4 class="text-sm font-bold text-navy mb-1">Shuttle Service</h4>
+                    <p class="text-navy/50 text-xs leading-relaxed">Hassle-free airport transfers to your hotel. Private &amp; comfortable rides.</p>
+                    <span class="text-accent-gold text-[10px] font-bold uppercase tracking-widest mt-1 inline-block">Book a transfer</span>
+                  </div>
+                </a>
+                <a href="/private-snorkeling" class="flex items-center gap-4 bg-white border border-border-light rounded-2xl p-3 shadow-sm hover:shadow-md transition-shadow">
+                  <Image alt="Private Snorkeling" class="w-20 h-20 rounded-xl object-cover shrink-0" src={yacht45Img} />
+                  <div>
+                    <h4 class="text-sm font-bold text-navy mb-1">Private Snorkeling</h4>
+                    <p class="text-navy/50 text-xs leading-relaxed">Your own boat to Pelican Rock &amp; the Arch. Open bar &amp; snorkel gear included.</p>
+                    <span class="text-accent-gold text-[10px] font-bold uppercase tracking-widest mt-1 inline-block">From $701</span>
+                  </div>
+                </a>
+                <a href="/whale-watching" class="flex items-center gap-4 bg-white border border-border-light rounded-2xl p-3 shadow-sm hover:shadow-md transition-shadow">
+                  <Image alt="Whale Watching" class="w-20 h-20 rounded-xl object-cover shrink-0" src={whalesImg} />
+                  <div>
+                    <h4 class="text-sm font-bold text-navy mb-1">Whale Watching</h4>
+                    <p class="text-navy/50 text-xs leading-relaxed">Witness humpback whales up close from a private sailboat. Dec&ndash;Apr season.</p>
+                    <span class="text-accent-gold text-[10px] font-bold uppercase tracking-widest mt-1 inline-block">From $701</span>
+                  </div>
+                </a>
+              </div>
+            )}
+
+            {sidebarType === "snorkeling" && (
+              <div class="space-y-4 mb-8">
+                <a href="/private-snorkeling" class="flex items-center gap-4 bg-white border border-border-light rounded-2xl p-3 shadow-sm hover:shadow-md transition-shadow">
+                  <Image alt="Private Snorkeling" class="w-20 h-20 rounded-xl object-cover shrink-0" src={yacht45Img} />
+                  <div>
+                    <h4 class="text-sm font-bold text-navy mb-1">Private Snorkeling</h4>
+                    <p class="text-navy/50 text-xs leading-relaxed">Your own boat to Pelican Rock &amp; the Arch. Open bar &amp; snorkel gear included.</p>
+                    <span class="text-accent-gold text-[10px] font-bold uppercase tracking-widest mt-1 inline-block">From $701</span>
+                  </div>
+                </a>
+                <a href="/shared-snorkeling" class="flex items-center gap-4 bg-white border border-border-light rounded-2xl p-3 shadow-sm hover:shadow-md transition-shadow">
+                  <Image alt="Shared Snorkeling" class="w-20 h-20 rounded-xl object-cover shrink-0" src={sailing42Img} />
+                  <div>
+                    <h4 class="text-sm font-bold text-navy mb-1">Shared Snorkeling</h4>
+                    <p class="text-navy/50 text-xs leading-relaxed">Join a group sailing cruise with snorkeling, open bar &amp; lunch.</p>
+                    <span class="text-accent-gold text-[10px] font-bold uppercase tracking-widest mt-1 inline-block">From $102/pp</span>
+                  </div>
+                </a>
+                <a href="/scuba-diving" class="flex items-center gap-4 bg-white border border-border-light rounded-2xl p-3 shadow-sm hover:shadow-md transition-shadow">
+                  <img alt="Scuba Diving" class="w-20 h-20 rounded-xl object-cover shrink-0" src="https://www.cabosailing.com/wp-content/uploads/2018/07/cabo-scuba-diving.jpg.webp"/>
+                  <div>
+                    <h4 class="text-sm font-bold text-navy mb-1">Scuba Diving</h4>
+                    <p class="text-navy/50 text-xs leading-relaxed">Explore Cabo's underwater world with certified dive instructors.</p>
+                    <span class="text-accent-gold text-[10px] font-bold uppercase tracking-widest mt-1 inline-block">View options</span>
+                  </div>
+                </a>
+              </div>
+            )}
+          </div>
+        </aside>
+
+      </div>
+    </div>
+
+  </main>
+
+  <Footer />
+  <FloatingCTA />
+</BaseLayout>
+
+<style>
+  .article-body :global(hr) {
+    border: none;
+    border-top: 1px solid rgba(10,29,55,0.08);
+    margin: 2.5rem 0;
+  }
+  .article-body h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0a1d37;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  .article-body h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #0a1d37;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+  }
+  .article-body p {
+    color: rgba(10,29,55,0.7);
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 1.25rem;
+  }
+  .article-body :global(a) {
+    color: #c5a059;
+    font-weight: 600;
+  }
+  .article-body :global(a:hover) {
+    text-decoration: underline;
+  }
+  .article-body :global(.spot-list) {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+  }
+  .article-body :global(.spot-list li) {
+    padding: 0.5rem 0;
+    color: rgba(10,29,55,0.7);
+    font-size: 1rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  .article-body :global(.spot-list li strong) {
+    color: #0a1d37;
+  }
+</style>

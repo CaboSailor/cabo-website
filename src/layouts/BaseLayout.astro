@@ -1,0 +1,137 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+  bodyClass?: string;
+}
+
+const {
+  title = "Cabo San Lucas Boat Tours & Sailing Charters | Cabo Sailing",
+  description = "Book the best boat tours in Cabo San Lucas. Private & shared sailing charters, snorkeling at Pelican's Rock, sunset cruises & whale watching. Open bar included. Save 30% online.",
+  bodyClass = "bg-bg-light font-display text-navy antialiased min-h-screen flex flex-col relative",
+} = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content={description} />
+  <title>{title}</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="generator" content={Astro.generator} />
+
+  <!-- Tailwind CSS (CDN) -->
+  <script is:inline src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+  <!-- Google Fonts — all families used across the site -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+
+  <!-- Tailwind Config -->
+  <script is:inline>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "navy": "#0a1d37",
+            "navy-light": "#1a3a63",
+            "accent-gold": "#b38e5d",
+            "accent-gold-light": "#d4af37",
+            "warm-yellow": "#b48a04",
+            "gold": "#C5A059",
+            "light-grey": "#F8F9FA",
+            "bg-light": "#ffffff",
+            "surface-light": "#f8f9fa",
+            "border-light": "#e5e7eb"
+          },
+          fontFamily: {
+            "display": ["Plus Jakarta Sans", "sans-serif"],
+            "serif": ["Playfair Display", "serif"],
+            "script": ["Great Vibes", "cursive"],
+            "heading": ["Cinzel", "serif"],
+            "body": ["Montserrat", "sans-serif"]
+          }
+        },
+      },
+    }
+  </script>
+
+  <!-- Global Styles -->
+  <style is:inline type="text/tailwindcss">
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .material-symbols-outlined.filled {
+      font-variation-settings: 'FILL' 1;
+    }
+    .safe-area-pb { padding-bottom: env(safe-area-inset-bottom); }
+    .hero-video-wrap iframe {
+      width: 100vw; height: 56.25vw; min-height: 100%; min-width: 177.78vh;
+      position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    }
+    .gold-divider {
+      background: linear-gradient(to right, transparent, #b38e5d, transparent);
+    }
+    .font-serif-italic {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+    }
+    @media (min-width: 1024px) {
+      .mobile-only { display: none !important; }
+      .desktop-only { display: flex !important; }
+    }
+    @media (max-width: 1023px) {
+      .desktop-only { display: none !important; }
+    }
+    .group:hover .activity-carousel img,
+    .group:hover .activity-slide { transform: scale(1.05); }
+    .activity-carousel img,
+    .activity-slide { transition: transform 0.5s ease; }
+    .fleet-img-wrap img { transition: transform 0.5s ease; }
+    .fleet-img-wrap:hover img { transform: scale(1.05); }
+    .fleet-img-wrap {
+      height: 400px; width: 100%; overflow: hidden;
+      border-radius: 2.5rem 2.5rem 0 0;
+    }
+    .fleet-img-wrap img { width: 100%; height: 100%; object-fit: cover; }
+    .fleet-img-wrap .boat-slide { border-radius: 2.5rem 2.5rem 0 0; }
+    .fleet-img-wrap .boat-hero { object-position: center 60%; }
+    .fleet-arrow {
+      position: absolute; top: 50%; transform: translateY(-50%); z-index: 10;
+      width: 36px; height: 36px; border-radius: 50%; border: none;
+      background: rgba(255,255,255,0.25); backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px); color: white; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      transition: background 0.2s; padding: 0;
+    }
+    .fleet-arrow:hover { background: rgba(255,255,255,0.45); }
+    .fleet-arrow.left { left: 10px; }
+    .fleet-arrow.right { right: 10px; }
+    .fleet-arrow .material-symbols-outlined { font-size: 20px; line-height: 1; }
+  </style>
+  <style is:inline>
+    body { min-height: max(884px, 100dvh); }
+  </style>
+
+  <!-- Per-page head content (tracking scripts, extra styles, etc.) -->
+  <slot name="head" />
+</head>
+<body class={bodyClass}>
+  <slot />
+
+  <!-- Global scripts -->
+  <script is:inline src="/js/prices.js" defer></script>
+  <script is:inline src="/js/boat-swipe.js"></script>
+</body>
+</html>
