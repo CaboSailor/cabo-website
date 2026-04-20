@@ -3,37 +3,41 @@
 ---
 
 <div id="rezdyModal" class="fixed inset-0 z-[200] hidden items-center justify-center bg-black/30 px-4" onclick="if(event.target===this)closeRezdyModal()">
-  <div class="relative bg-white rounded-2xl shadow-2xl w-full max-w-[340px] max-h-[92vh] overflow-hidden flex flex-col">
+  <div class="relative bg-white rounded-2xl shadow-2xl w-full max-w-[340px] lg:max-w-[510px] max-h-[92vh] overflow-hidden flex flex-col">
     <div class="flex items-center justify-between px-4 py-3 border-b border-border-light bg-white">
-      <span class="text-navy font-bold text-sm uppercase tracking-[0.15em]">Check Availability</span>
+      <span class="rezdy-modal-title text-navy font-bold text-sm uppercase tracking-[0.15em]">Check Availability</span>
       <button type="button" onclick="closeRezdyModal()" aria-label="Close" class="w-8 h-8 rounded-full flex items-center justify-center text-navy hover:bg-light-grey">
         <span class="material-symbols-outlined">close</span>
       </button>
     </div>
     <div class="flex-1 overflow-auto bg-white">
-      <iframe id="rezdyIframe" seamless="" width="300" height="1000" frameborder="0" class="rezdy block mx-auto" src=""></iframe>
+      <iframe id="rezdyIframe" seamless="" width="300" height="1000" frameborder="0" class="rezdy block mx-auto lg:!w-full" src=""></iframe>
     </div>
   </div>
 </div>
 
 <script is:inline defer src="https://cabosailing.rezdy.com/pluginJs"></script>
 <script is:inline>
+var _rezdyPromo='';
+fetch('/data/prices.json?v='+Date.now()).then(function(r){return r.json()}).then(function(d){_rezdyPromo=d.promoCode||''}).catch(function(){});
 function openRezdyModal(widgetId, type){
   type = type || 'calendarWidget';
   var modal=document.getElementById('rezdyModal');
   var iframe=document.getElementById('rezdyIframe');
   var card=modal.firstElementChild;
+  var titleEl=modal.querySelector('.rezdy-modal-title');
+  if(_rezdyPromo){titleEl.innerHTML='Check Availability <span class="inline-block ml-3 text-[11px] lg:text-xs font-bold normal-case tracking-normal text-white bg-gold px-2 py-0.5 rounded-full">Use code: <span class="text-[13px] lg:text-sm font-extrabold">'+_rezdyPromo+'</span></span>';}else{titleEl.textContent='Check Availability';}
   iframe.src='https://cabosailing.rezdy.com/'+type+'/'+widgetId+'?iframe=true';
   if(type==='productsCalendar'){
-    card.classList.remove('max-w-[340px]');
+    card.classList.remove('max-w-[340px]','lg:max-w-[510px]');
     card.classList.add('max-w-lg');
     iframe.setAttribute('width','100%');
-    iframe.classList.remove('mx-auto');
+    iframe.classList.remove('mx-auto','lg:!w-full');
   } else {
     card.classList.remove('max-w-lg');
-    card.classList.add('max-w-[340px]');
+    card.classList.add('max-w-[340px]','lg:max-w-[510px]');
     iframe.setAttribute('width','300');
-    iframe.classList.add('mx-auto');
+    iframe.classList.add('mx-auto','lg:!w-full');
   }
   modal.classList.remove('hidden');
   modal.classList.add('flex');
