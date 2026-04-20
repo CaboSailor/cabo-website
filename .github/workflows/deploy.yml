@@ -33,6 +33,7 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./dist/
           server-dir: /cabosailing.com/new.cabosailing/
+          dangerous-clean-slate: true
           exclude: |
             .git*
             .node_modules/*
