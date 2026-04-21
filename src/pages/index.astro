@@ -79,65 +79,21 @@ import iconPaddleboard from '../assets/icons/paddle-board-clean.png';
       <p class="text-white/85 text-sm lg:text-lg mt-4 max-w-xl leading-relaxed">Small groups. Premium service. Smooth sailing.</p>
     </div>
   </div>
-  <!-- Review Strip -->
-  <div class="absolute bottom-0 left-0 right-0 bg-navy/50 backdrop-blur-sm py-5 px-6 lg:px-10 z-10">
-    <div class="max-w-[1400px] mx-auto flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
-      <div class="flex-1">
-        <div class="flex items-center gap-2 mb-2">
-          <p class="text-white text-xl lg:text-2xl font-serif font-semibold leading-snug">"The best experience in Cabo"</p>
-          <div class="flex items-center gap-0.5 lg:hidden">
-            <span class="material-symbols-outlined text-gold filled text-sm">star</span>
-            <span class="material-symbols-outlined text-gold filled text-sm">star</span>
-            <span class="material-symbols-outlined text-gold filled text-sm">star</span>
-            <span class="material-symbols-outlined text-gold filled text-sm">star</span>
-            <span class="material-symbols-outlined text-gold filled text-sm">star</span>
-          </div>
-        </div>
-        <p class="text-white/70 text-sm leading-relaxed max-w-[480px] hidden lg:block">The crew was amazing, the boat was beautiful, and the views were absolutely unforgettable.</p>
-        <p class="text-white/40 text-xs uppercase tracking-widest font-bold mt-2">Rachel K. &mdash; Seattle, WA</p>
-      </div>
-      <div class="hidden lg:flex items-center gap-6 lg:gap-8 flex-shrink-0">
-        <div class="flex flex-col items-center gap-1">
-          <div class="flex items-center gap-1">
-            <span class="text-white font-bold text-lg">4.9</span>
-            <div class="flex items-center gap-0.5">
-              <span class="material-symbols-outlined text-gold filled text-sm">star</span>
-              <span class="material-symbols-outlined text-gold filled text-sm">star</span>
-              <span class="material-symbols-outlined text-gold filled text-sm">star</span>
-              <span class="material-symbols-outlined text-gold filled text-sm">star</span>
-              <span class="material-symbols-outlined text-gold filled text-sm">star</span>
-            </div>
-          </div>
-          <span class="text-white/40 text-[10px] uppercase tracking-widest font-bold">TripAdvisor</span>
-        </div>
-        <div class="flex flex-col items-center gap-1">
-          <div class="flex items-center gap-1">
-            <span class="text-white font-bold text-lg">4.9</span>
-            <div class="flex items-center gap-0.5">
-              <span class="material-symbols-outlined text-gold filled text-sm">star</span>
-              <span class="material-symbols-outlined text-gold filled text-sm">star</span>
-              <span class="material-symbols-outlined text-gold filled text-sm">star</span>
-              <span class="material-symbols-outlined text-gold filled text-sm">star</span>
-              <span class="material-symbols-outlined text-gold filled text-sm">star</span>
-            </div>
-          </div>
-          <span class="text-white/40 text-[10px] uppercase tracking-widest font-bold">Google</span>
-        </div>
-        <div class="flex flex-col items-center gap-1">
-          <div class="flex items-center gap-1">
-            <span class="text-white font-bold text-lg">4.8</span>
-            <div class="flex items-center gap-0.5">
-              <span class="material-symbols-outlined text-gold filled text-sm">star</span>
-              <span class="material-symbols-outlined text-gold filled text-sm">star</span>
-              <span class="material-symbols-outlined text-gold filled text-sm">star</span>
-              <span class="material-symbols-outlined text-gold filled text-sm">star</span>
-              <span class="material-symbols-outlined text-gold filled text-sm">star</span>
-            </div>
-          </div>
-          <span class="text-white/40 text-[10px] uppercase tracking-widest font-bold">Yelp</span>
-        </div>
-      </div>
+  <!-- Review Card -->
+  <div class="absolute bottom-6 left-6 lg:bottom-10 lg:left-10 z-10 bg-white/15 backdrop-blur-md rounded-2xl px-5 py-4 lg:px-8 lg:py-5 max-w-[420px] lg:max-w-[480px] border border-white/20 shadow-2xl">
+    <div class="flex items-center gap-1 mb-2">
+      <span class="material-symbols-outlined text-gold filled text-lg">star</span>
+      <span class="material-symbols-outlined text-gold filled text-lg">star</span>
+      <span class="material-symbols-outlined text-gold filled text-lg">star</span>
+      <span class="material-symbols-outlined text-gold filled text-lg">star</span>
+      <span class="material-symbols-outlined text-gold filled text-lg">star</span>
     </div>
+    <p class="text-white text-lg lg:text-xl font-serif font-semibold leading-snug italic">"The crew was amazing, the boat was beautiful, and the views were absolutely unforgettable."</p>
+    <p class="text-white/50 text-xs uppercase tracking-widest font-bold mt-3">Rachel K. &mdash; Seattle, WA</p>
+  </div>
+  <!-- TripAdvisor Travelers' Choice -->
+  <div class="absolute bottom-6 right-6 lg:bottom-10 lg:right-10 z-10 hidden md:block">
+    <img src="https://static.tacdn.com/img2/travelers_choice/widgets/tchotel_2024_L.png" alt="TripAdvisor Travelers' Choice 2024" class="h-24 lg:h-32 w-auto drop-shadow-2xl opacity-70" />
   </div>
   <script is:inline>
     (function(){
@@ -179,17 +135,17 @@ import iconPaddleboard from '../assets/icons/paddle-board-clean.png';
       <p class="text-sky-100 text-xs md:text-sm leading-relaxed">Calm bays, clear water, no crowds — just your private charter.</p>
     </div>
   </div>
+  <div class="md:hidden flex justify-center -mt-4 mb--4"><span class="material-symbols-outlined text-accent-gold text-2xl">expand_more</span></div>
   <div class="md:col-span-5 space-y-8 pt-16 md:pt-0">
     <div class="space-y-4">
-      <span class="text-accent-gold font-bold text-xs tracking-widest uppercase block">Private Charter</span>
       <h2 class="text-4xl lg:text-5xl font-serif-italic text-navy leading-tight">Private Snorkeling Cruise <span class="text-2xl lg:text-3xl text-navy/60">(Yacht or Sailboat)</span></h2>
       <p class="text-accent-gold/80 text-[11px] font-bold tracking-widest uppercase">Trusted by hundreds of guests every month</p>
     </div>
     <p class="text-navy/70 text-base lg:text-lg leading-relaxed">A private cruise to Cabo's best snorkeling spots with time to swim, relax, and enjoy food and drinks onboard.<br/>Perfect for families, couples, or groups who want a fun, flexible experience at their own pace.<br/>No crowds, more time in the water, and a crew focused entirely on your group.</p>
     <ul class="space-y-3 pt-2">
-      <li class="flex items-center gap-3 text-navy/70 font-medium text-sm"><span class="material-symbols-outlined text-accent-gold text-lg">groups</span> Up to 18 guests</li>
-      <li class="flex items-center gap-3 text-navy/70 font-medium text-sm"><span class="material-symbols-outlined text-accent-gold text-lg">local_bar</span> Open bar &amp; food</li>
-      <li class="flex items-center gap-3 text-navy/70 font-medium text-sm"><span class="material-symbols-outlined text-accent-gold text-lg">pool</span> Snorkeling gear &amp; towels included</li>
+      <li class="flex items-start gap-3 text-navy/70 font-medium text-base lg:text-lg leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> Your Own Private Yacht or Sailboat – No crowds, just your group on a premium vessel.</li>
+      <li class="flex items-start gap-3 text-navy/70 font-medium text-base lg:text-lg leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> Sightseeing &amp; Snorkeling – Visit Land's End and the Arch, then dive into Cabo's best reefs.</li>
+      <li class="flex items-start gap-3 text-navy/70 font-medium text-base lg:text-lg leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> All-Inclusive Service – Premium open bar and fresh local food included.</li>
     </ul>
     <div class="border-t border-border-light pt-6 space-y-4">
       <a href="/private-snorkeling" class="block text-center bg-transparent text-navy border border-navy w-full py-4 rounded-lg font-bold tracking-widest text-sm hover:bg-navy/5 transition-all uppercase">More Info</a>
@@ -210,17 +166,17 @@ import iconPaddleboard from '../assets/icons/paddle-board-clean.png';
       <p class="text-amber-50 text-xs md:text-sm leading-relaxed">Sip an ice-cold, freshly-made margarita as the Baja sky transforms into a canvas of gold and violet.</p>
     </div>
   </div>
+  <div class="md:hidden flex justify-center -mt-4"><span class="material-symbols-outlined text-accent-gold text-2xl">expand_more</span></div>
   <div class="md:col-span-5 order-2 md:order-1 space-y-8 pt-16 md:pt-0">
     <div class="space-y-4">
-      <span class="text-accent-gold font-bold text-xs tracking-widest uppercase block">Exclusive Experience</span>
       <h2 class="text-4xl lg:text-5xl font-serif-italic text-navy leading-tight">Private Sunset Cruise <span class="text-2xl lg:text-3xl text-navy/60">(Yacht or Sailboat)</span></h2>
       <p class="text-accent-gold/80 text-[11px] font-bold tracking-widest uppercase">Favorite choice for couples</p>
     </div>
     <p class="text-navy/70 text-base lg:text-lg leading-relaxed">A private evening cruise past Cabo's Arch with drinks, light bites, and unforgettable sunset views.<br/>Ideal for couples, celebrations, or anyone looking for a relaxed and memorable experience.<br/>More intimate, smoother, and far less crowded than typical sunset tours.</p>
     <ul class="space-y-3 pt-2">
-      <li class="flex items-center gap-3 text-navy/70 font-medium text-sm"><span class="material-symbols-outlined text-accent-gold text-lg">groups</span> Up to 18 guests</li>
-      <li class="flex items-center gap-3 text-navy/70 font-medium text-sm"><span class="material-symbols-outlined text-accent-gold text-lg">local_bar</span> Open bar &amp; food</li>
-      <li class="flex items-center gap-3 text-navy/70 font-medium text-sm"><span class="material-symbols-outlined text-accent-gold text-lg">pool</span> Snorkeling gear &amp; towels included</li>
+      <li class="flex items-start gap-3 text-navy/70 font-medium text-base lg:text-lg leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> Spotless, luxurious yacht or sailboat</li>
+      <li class="flex items-start gap-3 text-navy/70 font-medium text-base lg:text-lg leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> All-inclusive service — premium open bar &amp; fresh local bites</li>
+      <li class="flex items-start gap-3 text-navy/70 font-medium text-base lg:text-lg leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> Private sunset experience — Cabo's most iconic views, just for you</li>
     </ul>
     <div class="border-t border-border-light pt-6 space-y-4">
       <a href="/private-sunset" class="block text-center bg-transparent text-navy border border-navy w-full py-4 rounded-lg font-bold tracking-widest text-sm hover:bg-navy/5 transition-all uppercase">More Info</a>
@@ -241,17 +197,17 @@ import iconPaddleboard from '../assets/icons/paddle-board-clean.png';
       <p class="text-teal-50/70 text-xs md:text-sm leading-relaxed">A front-row seat to the most majestic migration on the planet.</p>
     </div>
   </div>
+  <div class="md:hidden flex justify-center -mt-4"><span class="material-symbols-outlined text-accent-gold text-2xl">expand_more</span></div>
   <div class="md:col-span-5 space-y-8 pt-16 md:pt-0">
     <div class="space-y-4">
-      <span class="text-accent-gold font-bold text-xs tracking-widest uppercase block">Seasonal Wonder</span>
       <h2 class="text-4xl lg:text-5xl font-serif-italic text-navy leading-tight">Private Whale Watching Cruise <span class="text-2xl lg:text-3xl text-navy/60">(Yacht or Sailboat)</span></h2>
       <p class="text-accent-gold/80 text-[11px] font-bold tracking-widest uppercase">Last month's best seller</p>
     </div>
     <p class="text-navy/70 text-base lg:text-lg leading-relaxed">A private cruise to see Cabo's whales up close, guided by an experienced crew in their natural habitat.<br/>Perfect for families, couples, or small groups looking for a more personal and comfortable wildlife experience.<br/>Closer encounters, no crowds, and the flexibility to follow the whales at your own pace.</p>
     <ul class="space-y-3 pt-2">
-      <li class="flex items-center gap-3 text-navy/70 font-medium text-sm"><span class="material-symbols-outlined text-accent-gold text-lg">groups</span> Up to 18 guests</li>
-      <li class="flex items-center gap-3 text-navy/70 font-medium text-sm"><span class="material-symbols-outlined text-accent-gold text-lg">local_bar</span> Open bar &amp; food</li>
-      <li class="flex items-center gap-3 text-navy/70 font-medium text-sm"><span class="material-symbols-outlined text-accent-gold text-lg">pool</span> Snorkeling gear &amp; towels included</li>
+      <li class="flex items-start gap-3 text-navy/70 font-medium text-base lg:text-lg leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> Your own private yacht or sailboat</li>
+      <li class="flex items-start gap-3 text-navy/70 font-medium text-base lg:text-lg leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> Up-close whale encounters — front-row views in their natural habitat</li>
+      <li class="flex items-start gap-3 text-navy/70 font-medium text-base lg:text-lg leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> All-inclusive experience — drinks, snacks, and expert crew</li>
     </ul>
     <div class="border-t border-border-light pt-6 space-y-4">
       <a href="/whale-watching" class="block text-center bg-transparent text-navy border border-navy w-full py-4 rounded-lg font-bold tracking-widest text-sm hover:bg-navy/5 transition-all uppercase">More Info</a>
@@ -272,17 +228,17 @@ import iconPaddleboard from '../assets/icons/paddle-board-clean.png';
       <p class="text-indigo-200 text-xs md:text-sm leading-relaxed">Custom themes and cocktails for a celebration she will never forget.</p>
     </div>
   </div>
+  <div class="md:hidden flex justify-center -mt-4"><span class="material-symbols-outlined text-accent-gold text-2xl">expand_more</span></div>
   <div class="md:col-span-5 order-2 md:order-1 space-y-8 pt-16 md:pt-0">
     <div class="space-y-4">
-      <span class="text-accent-gold font-bold text-xs tracking-widest uppercase block">Celebrations</span>
       <h2 class="text-4xl lg:text-5xl font-serif-italic text-navy leading-tight">Private Bachelorette Party Cruise <span class="text-2xl lg:text-3xl text-navy/60">(Yacht or Sailboat)</span></h2>
       <p class="text-accent-gold/80 text-[11px] font-bold tracking-widest uppercase">Trusted event experts</p>
     </div>
     <p class="text-navy/70 text-base lg:text-lg leading-relaxed">A private cruise designed for celebrating—music, drinks, great views, and plenty of time to relax and have fun with your group.<br/>Perfect for bachelorette parties looking for a stylish, fun, and stress-free experience on the water.<br/>Your own space, no crowds, and a crew that takes care of everything so you can focus on celebrating.</p>
     <ul class="space-y-3 pt-2">
-      <li class="flex items-center gap-3 text-navy/70 font-medium text-sm"><span class="material-symbols-outlined text-accent-gold text-lg">groups</span> Up to 18 guests</li>
-      <li class="flex items-center gap-3 text-navy/70 font-medium text-sm"><span class="material-symbols-outlined text-accent-gold text-lg">local_bar</span> Open bar &amp; food</li>
-      <li class="flex items-center gap-3 text-navy/70 font-medium text-sm"><span class="material-symbols-outlined text-accent-gold text-lg">pool</span> Snorkeling gear &amp; towels included</li>
+      <li class="flex items-start gap-3 text-navy/70 font-medium text-base lg:text-lg leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> Luxury yacht or sailboat — made for celebrating</li>
+      <li class="flex items-start gap-3 text-navy/70 font-medium text-base lg:text-lg leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> Your party, your way — music, vibe, and unforgettable moments</li>
+      <li class="flex items-start gap-3 text-navy/70 font-medium text-base lg:text-lg leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> All-inclusive — open bar, snacks, and everything onboard</li>
     </ul>
     <div class="border-t border-border-light pt-6 space-y-4">
       <a href="/bachelorette-party" class="block text-center bg-transparent text-navy border border-navy w-full py-4 rounded-lg font-bold tracking-widest text-sm hover:bg-navy/5 transition-all uppercase">More Info</a>
@@ -310,17 +266,17 @@ import iconPaddleboard from '../assets/icons/paddle-board-clean.png';
       <p class="text-slate-400 text-xs md:text-sm leading-relaxed">Sailing, snorkeling, and wild nature in pristine Baja waters.</p>
     </div>
   </div>
+  <div class="md:hidden flex justify-center -mt-4"><span class="material-symbols-outlined text-accent-gold text-2xl">expand_more</span></div>
   <div class="md:col-span-5 space-y-8 pt-16 md:pt-0">
     <div class="space-y-4">
-      <span class="text-accent-gold font-bold text-xs tracking-widest uppercase block">Shared Journey</span>
-      <h2 class="text-4xl lg:text-5xl font-serif-italic text-navy leading-tight">Small Group Snorkeling Cruise</h2>
+      <h2 class="text-4xl lg:text-5xl font-serif-italic text-navy leading-tight">Small Group Shared Snorkeling Cruise</h2>
       <p class="text-accent-gold/80 text-[11px] font-bold tracking-widest uppercase">Favorite for small groups</p>
     </div>
     <p class="text-navy/70 text-base lg:text-lg leading-relaxed">A shared sailing trip to Cabo's best snorkeling spots with drinks, light food, and a friendly atmosphere.<br/>Perfect for travelers who want a high-quality experience without booking a private boat.<br/>Limited to small groups, so it feels comfortable—not crowded like typical tours.</p>
     <ul class="space-y-3 pt-2">
-      <li class="flex items-center gap-3 text-navy/70 font-medium text-sm"><span class="material-symbols-outlined text-accent-gold text-lg">groups</span> Up to 18 guests</li>
-      <li class="flex items-center gap-3 text-navy/70 font-medium text-sm"><span class="material-symbols-outlined text-accent-gold text-lg">local_bar</span> Open bar &amp; food</li>
-      <li class="flex items-center gap-3 text-navy/70 font-medium text-sm"><span class="material-symbols-outlined text-accent-gold text-lg">pool</span> Snorkeling gear &amp; towels included</li>
+      <li class="flex items-start gap-3 text-navy/70 font-medium text-base lg:text-lg leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> Beautiful sailing yacht — smaller groups, away from the crowds</li>
+      <li class="flex items-start gap-3 text-navy/70 font-medium text-base lg:text-lg leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> Sightseeing &amp; snorkeling — Land's End, the Arch, and Cabo's best snorkeling site</li>
+      <li class="flex items-start gap-3 text-navy/70 font-medium text-base lg:text-lg leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> All-inclusive service — open bar, lunch, gear, and towels included</li>
     </ul>
     <div class="border-t border-border-light pt-6 space-y-4">
       <a href="/shared-snorkeling" class="block text-center bg-transparent text-navy border border-navy w-full py-4 rounded-lg font-bold tracking-widest text-sm hover:bg-navy/5 transition-all uppercase">More Info</a>
@@ -341,17 +297,17 @@ import iconPaddleboard from '../assets/icons/paddle-board-clean.png';
       <p class="text-orange-100/60 text-xs md:text-sm leading-relaxed">Socialize and unwind as the day fades into a star-studded evening.</p>
     </div>
   </div>
+  <div class="md:hidden flex justify-center -mt-4"><span class="material-symbols-outlined text-accent-gold text-2xl">expand_more</span></div>
   <div class="md:col-span-5 order-2 md:order-1 space-y-8 pt-16 md:pt-0">
     <div class="space-y-4">
-      <span class="text-accent-gold font-bold text-xs tracking-widest uppercase block">Community Sailing</span>
-      <h2 class="text-4xl lg:text-5xl font-serif-italic text-navy leading-tight">Small Group Sunset Sailing Cruise</h2>
+      <h2 class="text-4xl lg:text-5xl font-serif-italic text-navy leading-tight">Small Group Shared Sunset Sailing Cruise</h2>
       <p class="text-accent-gold/80 text-[11px] font-bold tracking-widest uppercase">Trusted by hundreds of guests every month</p>
     </div>
     <p class="text-navy/70 text-base lg:text-lg leading-relaxed">A relaxing sunset sail past Cabo's Arch with drinks, music, and stunning views.<br/>Ideal for couples or friends looking for an easy, memorable evening on the water.<br/>Small group setting, smooth sailing, and a more laid-back vibe than party cruises.</p>
     <ul class="space-y-3 pt-2">
-      <li class="flex items-center gap-3 text-navy/70 font-medium text-sm"><span class="material-symbols-outlined text-accent-gold text-lg">groups</span> Up to 18 guests</li>
-      <li class="flex items-center gap-3 text-navy/70 font-medium text-sm"><span class="material-symbols-outlined text-accent-gold text-lg">local_bar</span> Open bar &amp; food</li>
-      <li class="flex items-center gap-3 text-navy/70 font-medium text-sm"><span class="material-symbols-outlined text-accent-gold text-lg">pool</span> Snorkeling gear &amp; towels included</li>
+      <li class="flex items-start gap-3 text-navy/70 font-medium text-base lg:text-lg leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> Smooth, comfortable sailing — drinks &amp; light bites included</li>
+      <li class="flex items-start gap-3 text-navy/70 font-medium text-base lg:text-lg leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> Small-group experience — relaxed vibe with the right music</li>
+      <li class="flex items-start gap-3 text-navy/70 font-medium text-base lg:text-lg leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> Unforgettable sunset views — front row on the water</li>
     </ul>
     <div class="border-t border-border-light pt-6 space-y-4">
       <a href="/shared-sunset" class="block text-center bg-transparent text-navy border border-navy w-full py-4 rounded-lg font-bold tracking-widest text-sm hover:bg-navy/5 transition-all uppercase">More Info</a>
@@ -374,8 +330,7 @@ import iconPaddleboard from '../assets/icons/paddle-board-clean.png';
 <div class="bg-surface-light pt-12 pb-8 border-t border-border-light/50">
 <div class="px-6 flex justify-between items-end mb-8 lg:max-w-[1400px] lg:mx-auto lg:px-10">
   <div>
-    <h2 class="text-lg lg:text-xl font-serif text-navy mb-1 font-semibold">Our Fleet</h2>
-    <p class="text-navy/60 text-sm">All of our vessels, ranging from 38' to 51', are carefully managed and maintained to the highest standards.</p>
+    <h2 class="text-lg lg:text-xl font-serif text-navy mb-1 font-semibold">Scroll our boats — find a perfect fit for your unique experience.</h2>
   </div>
 </div>
 <div class="px-6 lg:max-w-[1400px] lg:mx-auto lg:px-10">
@@ -392,6 +347,7 @@ import iconPaddleboard from '../assets/icons/paddle-board-clean.png';
           <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs lg:text-[10px] mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-sm lg:text-base">group</span><span>Up to 20 Guests</span></div>
         </div>
         <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[9px] font-bold px-2.5 py-1 lg:px-3 lg:py-1 rounded-full uppercase tracking-widest">Most Spacious</div>
+        <div class="absolute bottom-4 right-4 bg-accent-gold text-white text-sm font-bold px-2.5 py-1 rounded-lg shadow-lg">-30%</div>
       </div>
       <div class="p-4 space-y-4 lg:p-4 lg:space-y-4">
         <div class="grid grid-cols-4 gap-1 pb-3 border-b border-border-light/50">
@@ -401,7 +357,6 @@ import iconPaddleboard from '../assets/icons/paddle-board-clean.png';
           <div class="flex items-center justify-center h-10 lg:h-12"><span class="material-symbols-outlined filled text-gold text-2xl lg:text-3xl leading-none">local_bar</span></div>
         </div>
         <div class="space-y-4">
-          <div class="flex items-center justify-between"><span class="text-navy text-[11px] lg:text-[10px] font-bold uppercase tracking-widest">Special Online Offer</span><div class="bg-gold/10 text-gold text-[11px] lg:text-[10px] font-bold px-1.5 py-0.5 rounded border border-gold/20 uppercase">Save 30%</div></div>
           <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-accent-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$1,690</span><div class="flex items-baseline gap-2"><span class="text-slate-400 text-[11px] font-medium uppercase">from</span><span class="text-navy font-bold text-2xl lg:text-2xl">$1,436</span><span class="text-slate-400 text-[11px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="flex flex-col items-end"><span class="text-slate-400 text-[11px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-accent-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-400 text-[9px] font-medium">/pp</span></div></div></div>
         </div>
         <button type="button" onclick="openRezdyModal('165509')" class="block w-full bg-navy text-white font-bold text-[11px] lg:text-[10px] py-3.5 lg:py-3 rounded-xl uppercase tracking-[0.1em] lg:tracking-[0.15em] text-center shadow-lg">Check Availability</button>
@@ -418,6 +373,7 @@ import iconPaddleboard from '../assets/icons/paddle-board-clean.png';
           <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs lg:text-[10px] mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-sm lg:text-base">group</span><span>Up to 12 Guests</span></div>
         </div>
         <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[9px] font-bold px-2.5 py-1 lg:px-3 lg:py-1 rounded-full uppercase tracking-widest">Most Popular</div>
+        <div class="absolute bottom-4 right-4 bg-accent-gold text-white text-sm font-bold px-2.5 py-1 rounded-lg shadow-lg">-30%</div>
       </div>
       <div class="p-4 space-y-4 lg:p-4 lg:space-y-4">
         <div class="grid grid-cols-4 gap-1 pb-3 border-b border-border-light/50">
@@ -427,7 +383,6 @@ import iconPaddleboard from '../assets/icons/paddle-board-clean.png';
           <div class="flex items-center justify-center h-10 lg:h-12"><span class="material-symbols-outlined filled text-gold text-2xl lg:text-3xl leading-none">local_bar</span></div>
         </div>
         <div class="space-y-4">
-          <div class="flex items-center justify-between"><span class="text-navy text-[11px] lg:text-[10px] font-bold uppercase tracking-widest">Special Online Offer</span><div class="bg-gold/10 text-gold text-[11px] lg:text-[10px] font-bold px-1.5 py-0.5 rounded border border-gold/20 uppercase">Save 30%</div></div>
           <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-accent-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$1,520</span><div class="flex items-baseline gap-2"><span class="text-slate-400 text-[11px] font-medium uppercase">from</span><span class="text-navy font-bold text-2xl lg:text-2xl">$1,292</span><span class="text-slate-400 text-[11px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="flex flex-col items-end"><span class="text-slate-400 text-[11px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-accent-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-400 text-[9px] font-medium">/pp</span></div></div></div>
         </div>
         <button type="button" onclick="openRezdyModal('528988')" class="block w-full bg-navy text-white font-bold text-[11px] lg:text-[10px] py-3.5 lg:py-3 rounded-xl uppercase tracking-[0.1em] lg:tracking-[0.15em] text-center shadow-lg">Check Availability</button>
@@ -449,6 +404,7 @@ import iconPaddleboard from '../assets/icons/paddle-board-clean.png';
           <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs lg:text-[10px] mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-sm lg:text-base">group</span><span>Up to 18 Guests</span></div>
         </div>
         <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[9px] font-bold px-2.5 py-1 lg:px-3 lg:py-1 rounded-full uppercase tracking-widest">Best Value</div>
+        <div class="absolute bottom-4 right-4 bg-accent-gold text-white text-sm font-bold px-2.5 py-1 rounded-lg shadow-lg z-10">-30%</div>
         <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
         <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
       </div>
@@ -460,7 +416,6 @@ import iconPaddleboard from '../assets/icons/paddle-board-clean.png';
           <div class="flex items-center justify-center h-10 lg:h-12"><span class="material-symbols-outlined filled text-gold text-2xl lg:text-3xl leading-none">local_bar</span></div>
         </div>
         <div class="space-y-4">
-          <div class="flex items-center justify-between"><span class="text-navy text-[11px] lg:text-[10px] font-bold uppercase tracking-widest">Special Online Offer</span><div class="bg-gold/10 text-gold text-[11px] lg:text-[10px] font-bold px-1.5 py-0.5 rounded border border-gold/20 uppercase">Save 30%</div></div>
           <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-accent-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$1,350</span><div class="flex items-baseline gap-2"><span class="text-slate-400 text-[11px] font-medium uppercase">from</span><span class="text-navy font-bold text-2xl lg:text-2xl">$1,148</span><span class="text-slate-400 text-[11px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="flex flex-col items-end"><span class="text-slate-400 text-[11px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-accent-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-400 text-[9px] font-medium">/pp</span></div></div></div>
         </div>
         <button type="button" onclick="openRezdyModal('168008')" class="block w-full bg-navy text-white font-bold text-[11px] lg:text-[10px] py-3.5 lg:py-3 rounded-xl uppercase tracking-[0.1em] lg:tracking-[0.15em] text-center shadow-lg">Check Availability</button>
@@ -493,6 +448,7 @@ import iconPaddleboard from '../assets/icons/paddle-board-clean.png';
           <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs lg:text-[10px] mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-sm lg:text-base">group</span><span>Up to 14 Guests</span></div>
         </div>
         <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[9px] font-bold px-2.5 py-1 lg:px-3 lg:py-1 rounded-full uppercase tracking-widest">Best Value</div>
+        <div class="absolute bottom-4 right-4 bg-accent-gold text-white text-sm font-bold px-2.5 py-1 rounded-lg shadow-lg z-10">-30%</div>
         <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
         <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
       </div>
@@ -503,7 +459,6 @@ import iconPaddleboard from '../assets/icons/paddle-board-clean.png';
           <div class="flex items-center justify-center h-10 lg:h-12"><span class="material-symbols-outlined filled text-gold text-2xl lg:text-3xl leading-none">local_bar</span></div>
         </div>
         <div class="space-y-4">
-          <div class="flex items-center justify-between"><span class="text-navy text-[11px] lg:text-[10px] font-bold uppercase tracking-widest">Special Online Offer</span><div class="bg-gold/10 text-gold text-[11px] lg:text-[10px] font-bold px-1.5 py-0.5 rounded border border-gold/20 uppercase">Save 30%</div></div>
           <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-accent-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$1,090</span><div class="flex items-baseline gap-2"><span class="text-slate-400 text-[11px] font-medium uppercase">from</span><span class="text-navy font-bold text-2xl lg:text-2xl">$927</span><span class="text-slate-400 text-[11px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="flex flex-col items-end"><span class="text-slate-400 text-[11px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-accent-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-400 text-[9px] font-medium">/pp</span></div></div></div>
         </div>
         <a href="https://wa.me/526241916997?text=Hi%2C%20I'd%20like%20to%20book%20the%20Sailing%20Boat%2042" target="_blank" class="block w-full bg-navy text-white font-bold text-[11px] lg:text-[10px] py-3.5 lg:py-3 rounded-xl uppercase tracking-[0.1em] lg:tracking-[0.15em] text-center shadow-lg">Check Availability</a>
@@ -524,6 +479,7 @@ import iconPaddleboard from '../assets/icons/paddle-board-clean.png';
           <h4 class="text-white text-lg lg:text-xl">Sailing Boat 38'</h4>
           <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs lg:text-[10px] mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-sm lg:text-base">group</span><span>Up to 9 Guests</span></div>
         </div>
+        <div class="absolute bottom-4 right-4 bg-accent-gold text-white text-sm font-bold px-2.5 py-1 rounded-lg shadow-lg z-10">-30%</div>
         <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
         <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
       </div>
@@ -534,7 +490,6 @@ import iconPaddleboard from '../assets/icons/paddle-board-clean.png';
           <div class="flex items-center justify-center h-10 lg:h-12"><span class="material-symbols-outlined filled text-gold text-2xl lg:text-3xl leading-none">local_bar</span></div>
         </div>
         <div class="space-y-4">
-          <div class="flex items-center justify-between"><span class="text-navy text-[11px] lg:text-[10px] font-bold uppercase tracking-widest">Special Online Offer</span><div class="bg-gold/10 text-gold text-[11px] lg:text-[10px] font-bold px-1.5 py-0.5 rounded border border-gold/20 uppercase">Save 30%</div></div>
           <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-accent-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$825</span><div class="flex items-baseline gap-2"><span class="text-slate-400 text-[11px] font-medium uppercase">from</span><span class="text-navy font-bold text-2xl lg:text-2xl">$701</span><span class="text-slate-400 text-[11px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="flex flex-col items-end"><span class="text-slate-400 text-[11px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-accent-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-400 text-[9px] font-medium">/pp</span></div></div></div>
         </div>
         <button type="button" onclick="openRezdyModal('165682')" class="block w-full bg-navy text-white font-bold text-[11px] lg:text-[10px] py-3.5 lg:py-3 rounded-xl uppercase tracking-[0.1em] lg:tracking-[0.15em] text-center shadow-lg">Check Availability</button>
@@ -556,6 +511,7 @@ import iconPaddleboard from '../assets/icons/paddle-board-clean.png';
           <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs lg:text-[10px] mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-sm lg:text-base">group</span><span>Up to 12 Guests</span></div>
         </div>
         <div class="absolute top-4 right-4 bg-accent-gold text-white text-[10px] lg:text-[9px] font-bold px-2.5 py-1 lg:px-3 lg:py-1 rounded-full uppercase tracking-widest">Only 12 Spots Per Tour</div>
+        <div class="absolute bottom-4 right-4 bg-accent-gold text-white text-sm font-bold px-2.5 py-1 rounded-lg shadow-lg z-10">-30%</div>
         <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
         <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
       </div>
@@ -566,7 +522,6 @@ import iconPaddleboard from '../assets/icons/paddle-board-clean.png';
           <div class="flex items-center justify-center h-10 lg:h-12"><span class="material-symbols-outlined filled text-gold text-2xl lg:text-3xl leading-none">local_bar</span></div>
         </div>
         <div class="space-y-4">
-          <div class="flex items-center justify-between"><span class="text-navy text-[11px] lg:text-[10px] font-bold uppercase tracking-widest">Special Online Offer</span><div class="bg-gold/10 text-gold text-[11px] lg:text-[10px] font-bold px-1.5 py-0.5 rounded border border-gold/20 uppercase">Save 30%</div></div>
           <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-accent-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$120</span><div class="flex items-baseline gap-2"><span class="text-slate-400 text-[11px] font-medium uppercase">from</span><span class="text-navy font-bold text-2xl lg:text-2xl">$102</span><span class="text-slate-400 text-[11px] font-medium uppercase">/ person</span></div></div></div>
         </div>
         <button type="button" onclick="openRezdyModal('642955','productsCalendar')" class="block w-full bg-navy text-white font-bold text-[11px] lg:text-[10px] py-3.5 lg:py-3 rounded-xl uppercase tracking-[0.1em] lg:tracking-[0.15em] text-center shadow-lg">Check Availability</button>
