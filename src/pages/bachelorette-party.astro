@@ -43,6 +43,7 @@ import DSC_4259_copy from "../assets/images/bachelorette/cabo-bachelorette-group
       max-height: 800px; margin-top: 0.75rem; opacity: 1;
     }
     .faq-item input:checked ~ label .faq-chevron { transform: rotate(180deg); }
+    #rezdyModal .rezdy-modal-title .bg-gold { background-color: #E8789A !important; }
     @keyframes float-up { 0% { transform: translateY(0) rotate(0deg); opacity:0.7; } 100% { transform: translateY(-100px) rotate(360deg); opacity:0; } }
     .confetti-dot { position:absolute; border-radius:50%; animation: float-up 4s infinite; }
     .festive-divider { background: linear-gradient(90deg, transparent, #E8789A 20%, #C5A059 50%, #E8789A 80%, transparent); height: 2px; }
@@ -192,7 +193,7 @@ import DSC_4259_copy from "../assets/images/bachelorette/cabo-bachelorette-group
             <div class="space-y-4">
               <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$1,690</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$1,436</span><span class="text-slate-400 text-[11px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="flex flex-col items-end"><span class="text-slate-400 text-[11px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-400 text-[11px] font-medium">/pp</span></div></div></div>
             </div>
-            <a href="https://wa.me/526241916997?text=Hi%2C%20I'd%20like%20to%20book%20a%20Bachelorette%20Party%20on%20the%20Yacht%2046" target="_blank" class="block w-full text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg" style="background-color:#E8789A;">Book Now</a>
+            <button type="button" onclick="openRezdyModal('165509')" class="block w-full text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg cursor-pointer" style="background-color:#E8789A;">Check Availability</button>
           </div>
         </div>
         <!-- Yacht 45' -->
@@ -216,7 +217,7 @@ import DSC_4259_copy from "../assets/images/bachelorette/cabo-bachelorette-group
             <div class="space-y-4">
               <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$1,520</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$1,292</span><span class="text-slate-400 text-[11px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="flex flex-col items-end"><span class="text-slate-400 text-[11px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-400 text-[11px] font-medium">/pp</span></div></div></div>
             </div>
-            <a href="https://wa.me/526241916997?text=Hi%2C%20I'd%20like%20to%20book%20a%20Bachelorette%20Party%20on%20the%20Yacht%2045" target="_blank" class="block w-full text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg" style="background-color:#E8789A;">Book Now</a>
+            <button type="button" onclick="openRezdyModal('528988')" class="block w-full text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg cursor-pointer" style="background-color:#E8789A;">Check Availability</button>
           </div>
         </div>
         <!-- Yacht 42' -->
@@ -240,7 +241,7 @@ import DSC_4259_copy from "../assets/images/bachelorette/cabo-bachelorette-group
             <div class="space-y-4">
               <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$1,350</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$1,148</span><span class="text-slate-400 text-[11px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="flex flex-col items-end"><span class="text-slate-400 text-[11px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-400 text-[11px] font-medium">/pp</span></div></div></div>
             </div>
-            <a href="https://wa.me/526241916997?text=Hi%2C%20I'd%20like%20to%20book%20a%20Bachelorette%20Party%20on%20the%20Yacht%2042" target="_blank" class="block w-full text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg" style="background-color:#E8789A;">Book Now</a>
+            <button type="button" onclick="openRezdyModal('168008')" class="block w-full text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg cursor-pointer" style="background-color:#E8789A;">Check Availability</button>
           </div>
         </div>
       </div>
@@ -289,7 +290,7 @@ import DSC_4259_copy from "../assets/images/bachelorette/cabo-bachelorette-group
             <div class="space-y-4">
               <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$825</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$701</span><span class="text-slate-400 text-[11px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="flex flex-col items-end"><span class="text-slate-400 text-[11px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-400 text-[11px] font-medium">/pp</span></div></div></div>
             </div>
-            <a href="https://wa.me/526241916997?text=Hi%2C%20I'd%20like%20to%20book%20a%20Bachelorette%20Party%20on%20the%20Sailing%2038" target="_blank" class="block w-full text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg" style="background-color:#E8789A;">Book Now</a>
+            <button type="button" onclick="openRezdyModal('165682')" class="block w-full text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg cursor-pointer" style="background-color:#E8789A;">Check Availability</button>
           </div>
         </div>
       </div>
@@ -571,7 +572,7 @@ import DSC_4259_copy from "../assets/images/bachelorette/cabo-bachelorette-group
                   <div class="space-y-4">
                     <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$1,690</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$1,436</span><span class="text-slate-400 text-[11px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="flex flex-col items-end"><span class="text-slate-400 text-[11px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-400 text-[11px] font-medium">/pp</span></div></div></div>
                   </div>
-                  <a href="https://wa.me/526241916997?text=Hi%2C%20I'd%20like%20to%20book%20a%20Bachelorette%20Party%20on%20the%20Yacht%2046" target="_blank" class="block w-full text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg" style="background-color:#E8789A;">Book Now</a>
+                  <button type="button" onclick="openRezdyModal('165509')" class="block w-full text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg cursor-pointer" style="background-color:#E8789A;">Check Availability</button>
                 </div>
               </div>
               <!-- Yacht 45' -->
@@ -595,7 +596,7 @@ import DSC_4259_copy from "../assets/images/bachelorette/cabo-bachelorette-group
                   <div class="space-y-4">
                     <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$1,520</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$1,292</span><span class="text-slate-400 text-[11px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="flex flex-col items-end"><span class="text-slate-400 text-[11px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-400 text-[11px] font-medium">/pp</span></div></div></div>
                   </div>
-                  <a href="https://wa.me/526241916997?text=Hi%2C%20I'd%20like%20to%20book%20a%20Bachelorette%20Party%20on%20the%20Yacht%2045" target="_blank" class="block w-full text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg" style="background-color:#E8789A;">Book Now</a>
+                  <button type="button" onclick="openRezdyModal('528988')" class="block w-full text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg cursor-pointer" style="background-color:#E8789A;">Check Availability</button>
                 </div>
               </div>
               <!-- Yacht 42' -->
@@ -619,7 +620,7 @@ import DSC_4259_copy from "../assets/images/bachelorette/cabo-bachelorette-group
                   <div class="space-y-4">
                     <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$1,350</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$1,148</span><span class="text-slate-400 text-[11px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="flex flex-col items-end"><span class="text-slate-400 text-[11px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-400 text-[11px] font-medium">/pp</span></div></div></div>
                   </div>
-                  <a href="https://wa.me/526241916997?text=Hi%2C%20I'd%20like%20to%20book%20a%20Bachelorette%20Party%20on%20the%20Yacht%2042" target="_blank" class="block w-full text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg" style="background-color:#E8789A;">Book Now</a>
+                  <button type="button" onclick="openRezdyModal('168008')" class="block w-full text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg cursor-pointer" style="background-color:#E8789A;">Check Availability</button>
                 </div>
               </div>
             </div>
@@ -669,14 +670,14 @@ import DSC_4259_copy from "../assets/images/bachelorette/cabo-bachelorette-group
                   <div class="space-y-4">
                     <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$825</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$701</span><span class="text-slate-400 text-[11px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="flex flex-col items-end"><span class="text-slate-400 text-[11px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-400 text-[11px] font-medium">/pp</span></div></div></div>
                   </div>
-                  <a href="https://wa.me/526241916997?text=Hi%2C%20I'd%20like%20to%20book%20a%20Bachelorette%20Party%20on%20the%20Sailing%2038" target="_blank" class="block w-full text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg" style="background-color:#E8789A;">Book Now</a>
+                  <button type="button" onclick="openRezdyModal('165682')" class="block w-full text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg cursor-pointer" style="background-color:#E8789A;">Check Availability</button>
                 </div>
               </div>
             </div>
           </div>
 
       <!-- Quick Comparison -->
-      <div class="mt-10 mb-12">
+      <div class="mt-10 mb-12 max-w-4xl mx-auto">
         <div class="flex items-center gap-3 mb-4"><div class="w-1 h-6 rounded-full" style="background-color:#E8789A;"></div><h3 class="text-xl text-navy">Quick Comparison</h3></div>
         <table class="w-full text-left border-collapse">
           <thead>
@@ -697,7 +698,7 @@ import DSC_4259_copy from "../assets/images/bachelorette/cabo-bachelorette-group
       </div>
 
           <!-- Desktop FAQ -->
-          <div class="mb-12">
+          <div class="mb-12 max-w-4xl mx-auto">
             <div class="flex items-center gap-3 mb-6"><div class="w-1 h-6 rounded-full" style="background-color:#E8789A;"></div><h2 class="text-2xl text-navy">Frequently Asked Questions</h2></div>
             <div class="space-y-3">
               <div class="faq-item border border-border-light rounded-2xl px-6 py-5">
@@ -743,7 +744,7 @@ import DSC_4259_copy from "../assets/images/bachelorette/cabo-bachelorette-group
           </div>
 
       <!-- Make It Extra Special -->
-      <div class="mt-16 rounded-3xl p-10 border border-border-light" style="background: linear-gradient(135deg, #FDF2F5 0%, #FFF8FA 100%);">
+      <div class="mt-16 rounded-3xl p-10 border border-border-light max-w-4xl mx-auto" style="background: linear-gradient(135deg, #FDF2F5 0%, #FFF8FA 100%);">
         <div class="flex items-center gap-3 mb-6"><div class="w-1 h-8 rounded-full" style="background-color:#E8789A;"></div><h2 class="text-2xl text-navy">Make It Extra Special</h2></div>
         <p class="text-slate-500 leading-relaxed mb-6">Let us take care of the little details so you can focus on enjoying the moment with your girls. Extras available:</p>
         <div class="grid grid-cols-2 gap-4">
@@ -757,6 +758,7 @@ import DSC_4259_copy from "../assets/images/bachelorette/cabo-bachelorette-group
           <i class="fa-brands fa-whatsapp text-lg"></i> Contact Us Now via WhatsApp
         </a>
       </div>
+    </div>
     <!-- DESKTOP: Celebrate in Style -->
     <div class="max-w-[1400px] mx-auto px-10 py-16 border-t border-border-light">
       <div class="grid grid-cols-2 gap-16 items-center">
@@ -916,5 +918,16 @@ import DSC_4259_copy from "../assets/images/bachelorette/cabo-bachelorette-group
     var next = (current + dir + slides.length) % slides.length;
     slides[next].style.opacity = '1';
   }
+  </script>
+  <script is:inline>
+  // Override promo icon to champagne for bachelorette page
+  (function() {
+    var _orig = window.openRezdyModal;
+    window.openRezdyModal = function(widgetId, type) {
+      _orig(widgetId, type);
+      var icon = document.querySelector('#rezdyModal .rezdy-modal-title .material-symbols-outlined');
+      if (icon) icon.textContent = 'wine_bar';
+    };
+  })();
   </script>
 </BaseLayout>

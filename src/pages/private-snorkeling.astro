@@ -440,7 +440,7 @@ import Chileno from "../assets/images/blog/chileno-bay-cabo-snorkeling.jpg";
       <div class="space-y-4">
         <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$1,350</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$1,148</span><span class="text-slate-400 text-[11px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="flex flex-col items-end"><span class="text-slate-400 text-[11px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-400 text-[11px] font-medium">/pp</span></div></div></div>
       </div>
-      <button onclick="document.getElementById('rezdy-modal-yacht42-snorkel').classList.remove('hidden')" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg cursor-pointer">Check Availability</button>
+      <button type="button" onclick="openRezdyModal('168008')" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg cursor-pointer">Check Availability</button>
     </div>
   </div>
 </div>
@@ -470,7 +470,7 @@ import Chileno from "../assets/images/blog/chileno-bay-cabo-snorkeling.jpg";
       <div class="space-y-4">
         <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$1,090</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$927</span><span class="text-slate-400 text-[11px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="flex flex-col items-end"><span class="text-slate-400 text-[11px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-400 text-[11px] font-medium">/pp</span></div></div></div>
       </div>
-      <button onclick="document.getElementById('rezdy-modal-42-snorkel').classList.remove('hidden')" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg cursor-pointer">Check Availability</button>
+      <button type="button" onclick="openRezdyModal('642955','productsCalendar')" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg cursor-pointer">Check Availability</button>
     </div>
   </div>
   <!-- Sailing Boat 38' -->
@@ -719,50 +719,6 @@ import Chileno from "../assets/images/blog/chileno-bay-cabo-snorkeling.jpg";
   <FloatingCTA />
   <RezdyModal />
 
-  <!-- Rezdy Booking Modal - 42' Yacht -->
-<div id="rezdy-modal-yacht42-snorkel" class="hidden fixed inset-0 z-[200] flex items-center justify-center">
-  <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" onclick="document.getElementById('rezdy-modal-yacht42-snorkel').classList.add('hidden')"></div>
-  <div class="relative z-10 bg-white rounded-3xl shadow-2xl w-[92%] max-w-lg max-h-[85vh] overflow-hidden flex flex-col">
-    <div class="flex items-center justify-between px-5 py-4 border-b border-border-light">
-      <h3 class="font-heading text-navy text-lg font-semibold">Book — Luxury Yacht 42'</h3>
-      <button onclick="document.getElementById('rezdy-modal-yacht42-snorkel').classList.add('hidden')" class="w-9 h-9 flex items-center justify-center rounded-full bg-surface-light text-navy hover:bg-navy hover:text-white transition-colors">
-        <span class="material-symbols-outlined text-xl">close</span>
-      </button>
-    </div>
-    <div class="flex-1 overflow-y-auto">
-      <iframe seamless="" width="100%" height="1000px" frameborder="0" class="rezdy" src="https://cabosailing.rezdy.com/calendarWidget/168008?iframe=true"></iframe>
-    </div>
-  </div>
-</div>
-<!-- Rezdy Booking Modal - 42' Sailing -->
-<div id="rezdy-modal-42-snorkel" class="hidden fixed inset-0 z-[200] flex items-center justify-center">
-  <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" onclick="document.getElementById('rezdy-modal-42-snorkel').classList.add('hidden')"></div>
-  <div class="relative z-10 bg-white rounded-3xl shadow-2xl w-[92%] max-w-lg max-h-[85vh] overflow-hidden flex flex-col">
-    <div class="flex items-center justify-between px-5 py-4 border-b border-border-light">
-      <h3 class="font-heading text-navy text-lg font-semibold">Book — Sailing 42'</h3>
-      <button onclick="document.getElementById('rezdy-modal-42-snorkel').classList.add('hidden')" class="w-9 h-9 flex items-center justify-center rounded-full bg-surface-light text-navy hover:bg-navy hover:text-white transition-colors">
-        <span class="material-symbols-outlined text-xl">close</span>
-      </button>
-    </div>
-    <div class="flex-1 overflow-y-auto">
-      <iframe seamless="" width="100%" height="1000px" frameborder="0" class="rezdy" src="https://cabosailing.rezdy.com/productsCalendar/561442?iframe=true"></iframe>
-    </div>
-  </div>
-</div>
-<!-- Rezdy Booking Modal -->
-<div id="rezdyModal" class="fixed inset-0 z-[200] hidden items-center justify-center bg-black/30 px-4" onclick="if(event.target===this)closeRezdyModal()">
-  <div class="relative bg-white rounded-2xl shadow-2xl w-full max-w-[340px] max-h-[92vh] overflow-hidden flex flex-col">
-    <div class="flex items-center justify-between px-4 py-3 border-b border-border-light bg-white">
-      <span class="text-navy font-bold text-sm uppercase tracking-[0.15em]">Check Availability</span>
-      <button type="button" onclick="closeRezdyModal()" aria-label="Close" class="w-8 h-8 rounded-full flex items-center justify-center text-navy hover:bg-light-grey">
-        <span class="material-symbols-outlined">close</span>
-      </button>
-    </div>
-    <div class="flex-1 overflow-auto bg-white">
-      <iframe id="rezdyIframe" seamless="" width="300" height="1000" frameborder="0" class="rezdy block mx-auto" src=""></iframe>
-    </div>
-  </div>
-</div>
 
   <script is:inline>
 

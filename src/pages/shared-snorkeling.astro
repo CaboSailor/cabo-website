@@ -139,39 +139,57 @@ import img_17_Sailing_42 from "../assets/images/boats/sailing-42/cabo-sailing-42
       <div class="grid grid-cols-2 gap-5 pl-1">
         <div class="flex items-center gap-4">
           <div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0">
-            <span class="material-symbols-outlined text-white text-[14px]">check</span>
+            <span class="material-symbols-outlined text-white text-[14px]">local_bar</span>
           </div>
-          <span class="text-slate-600 text-base font-medium">Open bar throughout the tour</span>
+          <div>
+            <span class="text-slate-600 text-base font-medium">Open bar</span>
+            <p class="text-slate-400 text-sm">Enjoy refreshing drinks throughout the cruise</p>
+          </div>
         </div>
         <div class="flex items-center gap-4">
           <div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0">
-            <span class="material-symbols-outlined text-white text-[14px]">check</span>
+            <span class="material-symbols-outlined text-white text-[14px]">restaurant</span>
           </div>
-          <span class="text-slate-600 text-base font-medium">Lunch &amp; light bites onboard</span>
+          <div>
+            <span class="text-slate-600 text-base font-medium">Light lunch onboard</span>
+            <p class="text-slate-400 text-sm">Fresh snacks served after snorkeling</p>
+          </div>
         </div>
         <div class="flex items-center gap-4">
           <div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0">
-            <span class="material-symbols-outlined text-white text-[14px]">check</span>
+            <span class="material-symbols-outlined text-white text-[14px]">scuba_diving</span>
           </div>
-          <span class="text-slate-600 text-base font-medium">Snorkel gear &amp; towels provided</span>
+          <div>
+            <span class="text-slate-600 text-base font-medium">Snorkeling experience</span>
+            <p class="text-slate-400 text-sm">Gear included — explore Cabo's best spots</p>
+          </div>
         </div>
         <div class="flex items-center gap-4">
           <div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0">
-            <span class="material-symbols-outlined text-white text-[14px]">check</span>
+            <span class="material-symbols-outlined text-white text-[14px]">sailing</span>
           </div>
-          <span class="text-slate-600 text-base font-medium">Bilingual crew &amp; professional captain</span>
+          <div>
+            <span class="text-slate-600 text-base font-medium">Comfortable sailing yacht</span>
+            <p class="text-slate-400 text-sm">Smooth ride with limited guests onboard</p>
+          </div>
         </div>
         <div class="flex items-center gap-4">
           <div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0">
-            <span class="material-symbols-outlined text-white text-[14px]">check</span>
+            <span class="material-symbols-outlined text-white text-[14px]">dry_cleaning</span>
           </div>
-          <span class="text-slate-600 text-base font-medium">Comfortable bathrooms onboard</span>
+          <div>
+            <span class="text-slate-600 text-base font-medium">Towels provided</span>
+            <p class="text-slate-400 text-sm">Everything you need for the water</p>
+          </div>
         </div>
         <div class="flex items-center gap-4">
           <div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0">
-            <span class="material-symbols-outlined text-white text-[14px]">check</span>
+            <span class="material-symbols-outlined text-white text-[14px]">person</span>
           </div>
-          <span class="text-slate-600 text-base font-medium flex items-center gap-2"><span class="flex text-gold"><span class="material-symbols-outlined text-[18px] filled">star</span><span class="material-symbols-outlined text-[18px] filled">star</span><span class="material-symbols-outlined text-[18px] filled">star</span><span class="material-symbols-outlined text-[18px] filled">star</span><span class="material-symbols-outlined text-[18px] filled">star</span></span>rated activity</span>
+          <div>
+            <span class="text-slate-600 text-base font-medium">Experienced bilingual crew</span>
+            <p class="text-slate-400 text-sm">Friendly, professional, and safety-focused</p>
+          </div>
         </div>
       </div>
     </div>
@@ -194,14 +212,9 @@ import img_17_Sailing_42 from "../assets/images/boats/sailing-42/cabo-sailing-42
   <!-- Right column - Calendar -->
   <div class="w-[380px] flex-shrink-0">
     <div class="sticky top-[90px] bg-white rounded-3xl shadow-xl shadow-navy/5 border border-border-light overflow-hidden">
-      <div class="bg-navy p-5 text-center">
-        <h3 class="text-white text-lg font-heading">Book Your Spot</h3>
-        <div class="mt-3 flex items-center justify-center gap-2">
-          <span class="material-symbols-outlined text-gold text-base">local_offer</span>
-          <span class="text-white font-bold text-sm">Save 30%</span>
-          <span class="text-white/60 text-sm">— use promo code</span>
-          <span class="bg-white/15 text-white font-bold text-sm tracking-[0.15em] px-2.5 py-0.5 rounded border border-white/20">SAIL-15</span>
-        </div>
+      <div class="bg-gradient-to-br from-navy via-navy to-[#1a3a5c] p-6 text-center border-b-4 border-gold">
+        <h3 class="text-white text-2xl font-heading tracking-wide">Book Your Spot</h3>
+        <p class="text-white/70 text-sm mt-1">Limited spots — book today to secure your date</p>
       </div>
       <!-- Boat card 38'-42' (no icons) -->
       <div class="p-5 pb-0">
@@ -213,10 +226,11 @@ import img_17_Sailing_42 from "../assets/images/boats/sailing-42/cabo-sailing-42
               <Image src={img_17_Sailing_42} alt="Sailing Boat 38'-42'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" width={800} height={500} />
             </div>
             <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
-            <div class="absolute bottom-3 left-4">
-              <h4 class="text-white text-base font-heading">Sailing Boat 38'-42'</h4>
-              <div class="flex items-center gap-2 text-white/80 text-[9px] mt-0.5 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Up to 14 Guests</span></div>
+            <div class="absolute bottom-4 left-4">
+              <h4 class="text-white text-lg font-heading">Sailing Boat 38'-42'</h4>
+              <div class="flex items-center gap-2 text-white/90 text-xs mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-sm">group</span><span>Up to 14 Guests</span></div>
             </div>
+            <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-30%</div>
             <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
             <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
           </div>
@@ -314,28 +328,46 @@ import img_17_Sailing_42 from "../assets/images/boats/sailing-42/cabo-sailing-42
 </div>
 <div class="grid grid-cols-1 gap-5 pl-1">
 <div class="flex items-center gap-4">
-<div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center"><span class="material-symbols-outlined text-white text-[14px]">check</span></div>
-<span class="text-slate-600 text-base font-medium">Open bar throughout the tour</span>
+<div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[14px]">local_bar</span></div>
+<div>
+<span class="text-slate-600 text-base font-medium">Open bar</span>
+<p class="text-slate-400 text-sm">Enjoy refreshing drinks throughout the cruise</p>
+</div>
 </div>
 <div class="flex items-center gap-4">
-<div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center"><span class="material-symbols-outlined text-white text-[14px]">check</span></div>
-<span class="text-slate-600 text-base font-medium">Lunch &amp; light bites onboard</span>
+<div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[14px]">restaurant</span></div>
+<div>
+<span class="text-slate-600 text-base font-medium">Light lunch onboard</span>
+<p class="text-slate-400 text-sm">Fresh snacks served after snorkeling</p>
+</div>
 </div>
 <div class="flex items-center gap-4">
-<div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center"><span class="material-symbols-outlined text-white text-[14px]">check</span></div>
-<span class="text-slate-600 text-base font-medium">Snorkel gear + towels provided</span>
+<div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[14px]">scuba_diving</span></div>
+<div>
+<span class="text-slate-600 text-base font-medium">Snorkeling experience</span>
+<p class="text-slate-400 text-sm">Gear included — explore Cabo's best spots</p>
+</div>
 </div>
 <div class="flex items-center gap-4">
-<div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center"><span class="material-symbols-outlined text-white text-[14px]">check</span></div>
-<span class="text-slate-600 text-base font-medium">Bilingual crew &amp; professional captain</span>
+<div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[14px]">sailing</span></div>
+<div>
+<span class="text-slate-600 text-base font-medium">Comfortable sailing yacht</span>
+<p class="text-slate-400 text-sm">Smooth ride with limited guests onboard</p>
+</div>
 </div>
 <div class="flex items-center gap-4">
-<div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center"><span class="material-symbols-outlined text-white text-[14px]">check</span></div>
-<span class="text-slate-600 text-base font-medium">Comfortable bathrooms onboard</span>
+<div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[14px]">dry_cleaning</span></div>
+<div>
+<span class="text-slate-600 text-base font-medium">Towels provided</span>
+<p class="text-slate-400 text-sm">Everything you need for the water</p>
+</div>
 </div>
 <div class="flex items-center gap-4">
-<div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center"><span class="material-symbols-outlined text-white text-[14px]">check</span></div>
-<span class="text-slate-600 text-base font-medium flex items-center gap-2"><span class="flex text-gold"><span class="material-symbols-outlined text-[18px] filled">star</span><span class="material-symbols-outlined text-[18px] filled">star</span><span class="material-symbols-outlined text-[18px] filled">star</span><span class="material-symbols-outlined text-[18px] filled">star</span><span class="material-symbols-outlined text-[18px] filled">star</span></span>rated activity</span>
+<div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[14px]">person</span></div>
+<div>
+<span class="text-slate-600 text-base font-medium">Experienced bilingual crew</span>
+<p class="text-slate-400 text-sm">Friendly, professional, and safety-focused</p>
+</div>
 </div>
 </div>
 </div>
@@ -357,14 +389,9 @@ import img_17_Sailing_42 from "../assets/images/boats/sailing-42/cabo-sailing-42
 
 <!-- Mobile Book Your Spot -->
 <div class="lg:hidden mx-5 mt-10 mb-6">
-  <div class="bg-navy rounded-2xl p-4 text-center mb-4">
-    <h3 class="text-white text-lg font-heading">Book Your Spot</h3>
-    <div class="mt-2 flex items-center justify-center gap-2 flex-wrap">
-      <span class="material-symbols-outlined text-gold text-base">local_offer</span>
-      <span class="text-white font-bold text-sm">Save 30%</span>
-      <span class="text-white/60 text-sm">— use promo code</span>
-      <span class="bg-white/15 text-white font-bold text-sm tracking-[0.15em] px-2.5 py-0.5 rounded border border-white/20">SAIL-15</span>
-    </div>
+  <div class="bg-gradient-to-br from-navy via-navy to-[#1a3a5c] rounded-2xl p-5 text-center mb-4 border-b-4 border-gold shadow-lg shadow-navy/20">
+    <h3 class="text-white text-2xl font-heading tracking-wide">Book Your Spot</h3>
+    <p class="text-white/70 text-sm mt-1">Limited spots — book today to secure your date</p>
   </div>
   <!-- Boat card -->
   <div class="w-full bg-white border border-border-light rounded-2xl overflow-hidden shadow-md shadow-navy/5 mb-4">
@@ -375,10 +402,11 @@ import img_17_Sailing_42 from "../assets/images/boats/sailing-42/cabo-sailing-42
         <Image src={img_17_Sailing_42} alt="Sailing Boat 38'-42'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" width={800} height={500} />
       </div>
       <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
-      <div class="absolute bottom-3 left-4">
-        <h4 class="text-white text-base font-heading">Sailing Boat 38'-42'</h4>
-        <div class="flex items-center gap-2 text-white/80 text-[9px] mt-0.5 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Up to 14 Guests</span></div>
+      <div class="absolute bottom-4 left-4">
+        <h4 class="text-white text-lg font-heading">Sailing Boat 38'-42'</h4>
+        <div class="flex items-center gap-2 text-white/90 text-xs mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-sm">group</span><span>Up to 14 Guests</span></div>
       </div>
+      <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-30%</div>
       <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
       <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
     </div>
