@@ -1,0 +1,73 @@
+# =============================================================================
+# 301 Redirects — Old travel-guide blog URLs → new site
+# Generated from migration/redirects.json (source: Travel_Guide_Migration_Plan_v2)
+# =============================================================================
+
+RewriteEngine On
+
+# -----------------------------------------------------------------------------
+# Travel Guide Hub (general articles → /travel-guide/)
+# -----------------------------------------------------------------------------
+RewriteRule ^13-best-all-inclusive-family-resorts-in-cabo-san-lucas/?$ /travel-guide/ [R=301,L]
+RewriteRule ^cooking-classes-in-los-cabos/?$ /travel-guide/ [R=301,L]
+RewriteRule ^20-all-inclusive-adult-only-resorts-in-cabo-san-lucas/?$ /travel-guide/ [R=301,L]
+RewriteRule ^the-best-bars-in-cabo/?$ /travel-guide/ [R=301,L]
+RewriteRule ^nightlife-in-cabo-san-lucas/?$ /travel-guide/ [R=301,L]
+RewriteRule ^best-art-shops-in-cabo/?$ /travel-guide/ [R=301,L]
+RewriteRule ^18-noteworthy-san-jose-del-cabo-restaurants-to-visit/?$ /travel-guide/ [R=301,L]
+RewriteRule ^where-to-take-the-best-photos-in-cabo/?$ /travel-guide/ [R=301,L]
+RewriteRule ^cabo-history-vacation/?$ /travel-guide/ [R=301,L]
+RewriteRule ^21-best-hotels-to-stay-in-los-cabos/?$ /travel-guide/ [R=301,L]
+RewriteRule ^visiting-cabo-with-a-large-group/?$ /travel-guide/ [R=301,L]
+RewriteRule ^cabo-san-lucas-activities/?$ /travel-guide/ [R=301,L]
+RewriteRule ^finding-calm-in-cabo/?$ /travel-guide/ [R=301,L]
+RewriteRule ^educational-excursions-in-cabo-san-lucas/?$ /travel-guide/ [R=301,L]
+RewriteRule ^winter-activities-in-cabo/?$ /travel-guide/ [R=301,L]
+RewriteRule ^ten-cabo-golf-courses/?$ /travel-guide/ [R=301,L]
+RewriteRule ^10-san-jose-del-cabo-hotels-to-consider-for-your-trip/?$ /travel-guide/ [R=301,L]
+RewriteRule ^unique-dining-experiences-in-cabo/?$ /travel-guide/ [R=301,L]
+RewriteRule ^instagram-spots-cabo/?$ /travel-guide/ [R=301,L]
+RewriteRule ^cabo-san-lucas-watersports/?$ /travel-guide/ [R=301,L]
+RewriteRule ^flying-to-los-cabos/?$ /travel-guide/ [R=301,L]
+RewriteRule ^best-places-to-relax-on-your-cabo-vacation/?$ /travel-guide/ [R=301,L]
+RewriteRule ^cabo-vacation-tips/?$ /travel-guide/ [R=301,L]
+RewriteRule ^where-to-eat-in-cabo/?$ /travel-guide/ [R=301,L]
+RewriteRule ^cabo-san-lucas-travel-tips/?$ /travel-guide/ [R=301,L]
+RewriteRule ^foodie-hotspots-in-cabo-san-lucas/?$ /travel-guide/ [R=301,L]
+RewriteRule ^places-to-stay-in-cabo-san-lucas/?$ /travel-guide/ [R=301,L]
+RewriteRule ^10-best-los-cabos-resorts-for-an-exclusive-retreat/?$ /travel-guide/ [R=301,L]
+
+# -----------------------------------------------------------------------------
+# Travel Guide — Safety article
+# -----------------------------------------------------------------------------
+RewriteRule ^cabo-san-lucas-safe/?$ /travel-guide/is-cabo-safe/ [R=301,L]
+
+# -----------------------------------------------------------------------------
+# Celebrations & Weddings (→ /bachelorette/)
+# -----------------------------------------------------------------------------
+RewriteRule ^bachelorette-party/?$ /bachelorette/ [R=301,L]
+RewriteRule ^es/bachelorette-party/?$ /es/bachelorette/ [R=301,L]
+RewriteRule ^15-bachelorette-boat-party-ideas-for-the-ultimate-celebration/?$ /bachelorette/ [R=301,L]
+RewriteRule ^10-cabo-honeymoon-resorts-that-provide-the-perfect-romantic-atmosphere/?$ /bachelorette/ [R=301,L]
+RewriteRule ^15-spectacular-wedding-venues-in-cabo-san-lucas/?$ /bachelorette/ [R=301,L]
+RewriteRule ^romantic-getaway-in-los-cabos/?$ /bachelorette/ [R=301,L]
+RewriteRule ^plan-your-big-day-with-an-unforgettable-wedding-yacht-charter-experience/?$ /bachelorette/ [R=301,L]
+
+# -----------------------------------------------------------------------------
+# Snorkeling & Scuba
+# -----------------------------------------------------------------------------
+RewriteRule ^how-to-make-the-most-of-a-snorkeling-trip-in-cabo-san-lucas/?$ /shared-snorkeling/ [R=301,L]
+RewriteRule ^the-best-places-to-snorkel-and-scuba-dive-in-cabo/?$ /shared-snorkeling/ [R=301,L]
+RewriteRule ^is-cabo-san-lucas-good-for-scuba-diving/?$ /scuba-diving/ [R=301,L]
+RewriteRule ^preparing-for-your-scuba-diving-trip-to-cabo-san-lucas/?$ /scuba-diving/ [R=301,L]
+
+# -----------------------------------------------------------------------------
+# Fleet (sailboat & yacht articles → /fleet/)
+# -----------------------------------------------------------------------------
+RewriteRule ^cabo-sailing-coupon-codes/?$ /fleet/ [R=301,L]
+RewriteRule ^the-best-time-to-book-a-sailing-tour-in-cabo-san-lucas/?$ /fleet/ [R=301,L]
+RewriteRule ^yacht-charter-costs-in-cabo-san-lucas-what-to-expect/?$ /fleet/ [R=301,L]
+RewriteRule ^cabo-luxury-sailboats-vs-yachts/?$ /fleet/ [R=301,L]
+RewriteRule ^what-you-need-to-know-about-sailboat-chartering-in-cabo-san-lucas/?$ /fleet/ [R=301,L]
+RewriteRule ^cabo-sailing-adds-luxurious-sport-yachts-fleet/?$ /fleet/ [R=301,L]
+RewriteRule ^how-to-charter-a-yacht-in-cabo-san-lucas/?$ /fleet/ [R=301,L]
