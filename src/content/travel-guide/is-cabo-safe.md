@@ -1,7 +1,7 @@
 ---
-title: "Is Cabo San Lucas Safe in 2026? A Local Expert's Honest Answer"
+title: "Is Cabo San Lucas Safe in 2026? Local's Safety Guide | Cabo Sailing"
 pubDate: 2025-02-10
-description: "Is Cabo safe in 2026? Local experts share safety tips, travel advisories & insider advice. See our fleet and book a private charter from the marina!"
+description: "Is Cabo safe? Honest 2026 safety guide from locals — crime stats, safe areas, scams to avoid, water safety, and tips for families. Updated regularly."
 heroImage: "https://www.cabosailing.com/wp-content/uploads/2019/08/los-cabos-international-airport-featured-image.jpg.webp"
 heroAlt: "Los Cabos International Airport terminal"
 category: "Traveling to Cabo"

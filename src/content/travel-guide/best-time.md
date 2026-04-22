@@ -1,7 +1,7 @@
 ---
-title: "Best Time to Visit Cabo San Lucas in 2026 — A Local Expert's Guide"
+title: "Best Time to Visit Cabo San Lucas — Month-by-Month Guide"
 pubDate: 2025-01-15
-description: "Planning a Cabo trip in 2026? Our local experts share the best months for weather, whale watching & deals. See our fleet and book your charter today!"
+description: "The best time to visit Cabo depends on what you want — whales, low prices, calm water or nightlife. Month-by-month guide from locals at Cabo Sailing."
 heroImage: "https://www.cabosailing.com/wp-content/uploads/2019/08/los-cabos-international-airport-featured-image.jpg.webp"
 heroAlt: "Los Cabos International Airport terminal"
 category: "Traveling to Cabo"

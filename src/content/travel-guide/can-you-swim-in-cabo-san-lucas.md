@@ -1,7 +1,7 @@
 ---
-title: "Can You Swim in Cabo San Lucas? A Local Expert's 2026 Beach Guide"
+title: "Can You Swim in Cabo San Lucas? Safe Beaches & Warnings | Cabo Sailing"
 pubDate: 2026-04-19
-description: "Find out which Cabo beaches are safe to swim, snorkel & dive in 2026. Local expert picks for families & pros. See our fleet!"
+description: "Which Cabo beaches are swimmable and which aren't? Local's guide to safe swimming in Cabo San Lucas — flags, currents, and the best calm-water beaches."
 heroImage: "https://www.cabosailing.com/wp-content/uploads/2017/11/cabo-san-lucas-medano-beach-1024x675.jpg"
 heroAlt: "Médano Beach in Cabo San Lucas with calm swimmable water"
 category: "Activities"
