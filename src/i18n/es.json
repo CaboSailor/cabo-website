@@ -1,0 +1,58 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "tours": "Tours",
+    "fleet": "Nuestra Flota",
+    "shuttle": "Transporte",
+    "travelGuide": "Guia de Viaje",
+    "contact": "Contacto"
+  },
+  "nav.tourDropdown": {
+    "snorkeling": "Snorkel",
+    "sunset": "Atardecer",
+    "privateSnorkeling": "Snorkel Privado",
+    "sharedSnorkeling": "Snorkel Compartido",
+    "privateSunset": "Atardecer Privado",
+    "sharedSunset": "Atardecer Compartido",
+    "whaleWatching": "Avistamiento de Ballenas",
+    "bachelorette": "Despedida de Soltera",
+    "scubaDiving": "Buceo"
+  },
+  "common": {
+    "moreInfo": "Mas Info",
+    "checkAvailability": "Ver Disponibilidad",
+    "bookViaWhatsApp": "Reservar por WhatsApp",
+    "contactUs": "Contacto",
+    "callUsNow": "Llamar Ahora",
+    "perPerson": "Por persona",
+    "duration": "Duracion",
+    "freeCancel": "Cancelacion Gratuita",
+    "upTo24h": "Hasta 24h",
+    "save30": "Ahorra 30%",
+    "from": "desde",
+    "guests": "Invitados",
+    "extraGuests": "Invitados extra",
+    "selectDate": "Selecciona una fecha para ver disponibilidad",
+    "bookYourSpot": "Reserva Tu Lugar"
+  },
+  "home": {
+    "heroTitle": "Veleros de Lujo y<br/>Cruceros en Yate en<br/><span style=\"color:#f5e0b8\">Cabo San Lucas</span>",
+    "heroSubtitle": "Grupos pequenos. Servicio premium. Navegacion suave.",
+    "findCruise": "Encuentra Tu Crucero Perfecto",
+    "findCruiseSubtitle": "Privado o en grupo pequeno — disenado para comodidad, espacio y momentos inolvidables.",
+    "privateCruises": "Cruceros Privados",
+    "sharedCruises": "Cruceros Compartidos",
+    "switchExperiences": "Cambia entre experiencias privadas y compartidas",
+    "whatGuestsSay": "Lo Que Dicen Nuestros Huespedes",
+    "faq": "Preguntas Frecuentes",
+    "faqTitle": "Todo Lo Que Necesitas Saber Antes de Reservar",
+    "readyTitle": "Listo Para Vivir Cabo Desde el Agua?",
+    "readySubtitle": "Consulta disponibilidad y reserva tu lugar en minutos."
+  },
+  "footer": {
+    "aboutUs": "Sobre Nosotros",
+    "quickLinks": "Enlaces Rapidos",
+    "contact": "Contacto",
+    "rights": "Todos los derechos reservados."
+  }
+}

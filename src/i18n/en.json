@@ -1,0 +1,58 @@
+{
+  "nav": {
+    "home": "Home",
+    "tours": "Tours",
+    "fleet": "Our Fleet",
+    "shuttle": "Shuttle",
+    "travelGuide": "Travel Guide",
+    "contact": "Contact Us"
+  },
+  "nav.tourDropdown": {
+    "snorkeling": "Snorkeling",
+    "sunset": "Sunset",
+    "privateSnorkeling": "Private Snorkeling",
+    "sharedSnorkeling": "Shared Snorkeling",
+    "privateSunset": "Private Sunset",
+    "sharedSunset": "Shared Sunset",
+    "whaleWatching": "Whale Watching",
+    "bachelorette": "Bachelorette",
+    "scubaDiving": "Scuba Diving"
+  },
+  "common": {
+    "moreInfo": "More Info",
+    "checkAvailability": "Check Availability",
+    "bookViaWhatsApp": "Book via WhatsApp",
+    "contactUs": "Contact Us",
+    "callUsNow": "Call Us Now",
+    "perPerson": "Per person",
+    "duration": "Duration",
+    "freeCancel": "Free Cancellation",
+    "upTo24h": "Up to 24h",
+    "save30": "Save 30%",
+    "from": "from",
+    "guests": "Guests",
+    "extraGuests": "Extra guests",
+    "selectDate": "Select a date to check availability",
+    "bookYourSpot": "Book Your Spot"
+  },
+  "home": {
+    "heroTitle": "Luxury Sailing &<br/>Yacht Cruises in<br/><span style=\"color:#f5e0b8\">Cabo San Lucas</span>",
+    "heroSubtitle": "Small groups. Premium service. Smooth sailing.",
+    "findCruise": "Find Your Perfect Cruise",
+    "findCruiseSubtitle": "Private or small-group — designed for comfort, space, and unforgettable moments.",
+    "privateCruises": "Private Cruises",
+    "sharedCruises": "Shared Cruises",
+    "switchExperiences": "Switch between private and shared experiences",
+    "whatGuestsSay": "What Our Guests Say",
+    "faq": "FAQ",
+    "faqTitle": "Everything You Need to Know Before Booking",
+    "readyTitle": "Ready to Experience Cabo from the Water?",
+    "readySubtitle": "Check availability and secure your spot in minutes."
+  },
+  "footer": {
+    "aboutUs": "About Us",
+    "quickLinks": "Quick Links",
+    "contact": "Contact",
+    "rights": "All rights reserved."
+  }
+}

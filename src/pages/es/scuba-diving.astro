@@ -1,37 +1,37 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import FloatingCTA from '../components/FloatingCTA.astro';
-import RezdyModal from '../components/RezdyModal.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import FloatingCTA from '../../components/FloatingCTA.astro';
+import RezdyModal from '../../components/RezdyModal.astro';
 import { Image } from 'astro:assets';
 
 // Hero / main images
-import heroImg from "../assets/images/scuba-diving/cabo-scuba-diving-underwater.jpg";
-import scubaImg7 from "../assets/images/scuba-diving/cabo-scuba-diving-reef.jpg";
-import scubaImg9 from "../assets/images/scuba-diving/cabo-scuba-diving-fish.jpg";
-import scubaImg5 from "../assets/images/scuba-diving/cabo-scuba-diving-coral.jpg";
-import scubaImg17 from "../assets/images/scuba-diving/cabo-scuba-diving-adventure.jpg";
+import heroImg from "../../assets/images/scuba-diving/cabo-scuba-diving-underwater.jpg";
+import scubaImg7 from "../../assets/images/scuba-diving/cabo-scuba-diving-reef.jpg";
+import scubaImg9 from "../../assets/images/scuba-diving/cabo-scuba-diving-fish.jpg";
+import scubaImg5 from "../../assets/images/scuba-diving/cabo-scuba-diving-coral.jpg";
+import scubaImg17 from "../../assets/images/scuba-diving/cabo-scuba-diving-adventure.jpg";
 
 // Boat images
-import yacht51_9 from "../assets/images/boats/yacht-51/cabo-luxury-yacht-51-ocean-view.jpg";
-import yacht51_2 from "../assets/images/boats/yacht-51/cabo-luxury-yacht-51-exterior-01.jpg";
-import yacht51_7 from "../assets/images/boats/yacht-51/cabo-luxury-yacht-51-exterior-03.jpg";
-import yacht45_1 from "../assets/images/boats/yacht-45/cabo-private-yacht-45-exterior-01.jpg";
-import yacht45_5 from "../assets/images/boats/yacht-45/cabo-private-yacht-45-exterior-03.jpg";
-import yacht45_6 from "../assets/images/boats/yacht-45/cabo-private-yacht-45-bow.jpg";
-import yacht42_3 from "../assets/images/boats/yacht-42/cabo-private-yacht-42-exterior-02.jpg";
-import yacht42_2 from "../assets/images/boats/yacht-42/cabo-private-yacht-42-exterior-01.jpg";
-import yacht42_5 from "../assets/images/boats/yacht-42/cabo-private-yacht-42-exterior-03.jpg";
-import sailing42_10 from "../assets/images/boats/sailing-42/cabo-sailing-42-exterior-01.jpg";
-import sailing42_17 from "../assets/images/boats/sailing-42/cabo-sailing-42-sailing-view.jpg";
-import sailing42_12 from "../assets/images/boats/sailing-42/cabo-sailing-42-exterior-02.jpg";
+import yacht51_9 from "../../assets/images/boats/yacht-51/cabo-luxury-yacht-51-ocean-view.jpg";
+import yacht51_2 from "../../assets/images/boats/yacht-51/cabo-luxury-yacht-51-exterior-01.jpg";
+import yacht51_7 from "../../assets/images/boats/yacht-51/cabo-luxury-yacht-51-exterior-03.jpg";
+import yacht45_1 from "../../assets/images/boats/yacht-45/cabo-private-yacht-45-exterior-01.jpg";
+import yacht45_5 from "../../assets/images/boats/yacht-45/cabo-private-yacht-45-exterior-03.jpg";
+import yacht45_6 from "../../assets/images/boats/yacht-45/cabo-private-yacht-45-bow.jpg";
+import yacht42_3 from "../../assets/images/boats/yacht-42/cabo-private-yacht-42-exterior-02.jpg";
+import yacht42_2 from "../../assets/images/boats/yacht-42/cabo-private-yacht-42-exterior-01.jpg";
+import yacht42_5 from "../../assets/images/boats/yacht-42/cabo-private-yacht-42-exterior-03.jpg";
+import sailing42_10 from "../../assets/images/boats/sailing-42/cabo-sailing-42-exterior-01.jpg";
+import sailing42_17 from "../../assets/images/boats/sailing-42/cabo-sailing-42-sailing-view.jpg";
+import sailing42_12 from "../../assets/images/boats/sailing-42/cabo-sailing-42-exterior-02.jpg";
 
 // Icons
-import yachtIcon from "../assets/icons/Yacht icon.png";
+import yachtIcon from "../../assets/icons/Yacht icon.png";
 ---
 
-<BaseLayout title="Private Scuba Diving Charters in Cabo San Lucas | Cabo Sailing" description="Private scuba diving charters to Cabo's top dive sites — Pelican Rock, Land's End, Santa María. PADI guides, full gear and surface support included." hreflangs={{ en: '/scuba-diving', es: '/es/scuba-diving' }}>
+<BaseLayout title="Buceo Privado en Cabo San Lucas | Cabo Sailing" description="Tours privados de buceo a los mejores sitios de Cabo — Pelican Rock, Land's End, Santa María. Guías certificados PADI y equipo completo incluido." hreflangs={{ en: '/scuba-diving', es: '/es/scuba-diving' }}>
   <Header variant="subpage" activePage="scuba-diving" />
 
   <main class="flex-1 w-full overflow-x-hidden pt-[60px] lg:pt-[72px]">
@@ -48,7 +48,7 @@ import yachtIcon from "../assets/icons/Yacht icon.png";
         <div class="flex-shrink-0 w-full h-full snap-center"><Image alt="Luxury Yacht 45'" class="w-full h-full object-cover" src={yacht45_1} width={800} height={500} /></div>
         <div class="flex-shrink-0 w-full h-full snap-center"><Image alt="Sailing Boat 42'" class="w-full h-full object-cover" src={sailing42_10} width={800} height={500} /></div>
       </div>
-      <div class="absolute top-4 left-4 bg-gold text-white text-base font-bold px-3 py-1 rounded-full uppercase tracking-widest">Underwater Adventure</div>
+      <div class="absolute top-4 left-4 bg-gold text-white text-base font-bold px-3 py-1 rounded-full uppercase tracking-widest">Aventura Submarina</div>
       <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent pt-10 pb-5 px-4">
         <div class="max-w-[360px] mx-auto text-center">
           <div class="flex items-center justify-center gap-0.5 mb-1.5">
@@ -58,7 +58,7 @@ import yachtIcon from "../assets/icons/Yacht icon.png";
             <span class="material-symbols-outlined text-gold filled text-lg">star</span>
             <span class="material-symbols-outlined text-gold filled text-lg">star</span>
           </div>
-          <p class="text-white text-base leading-snug">"Incredible dive spots and a top-notch crew. Felt safe the entire time."</p>
+          <p class="text-white text-base leading-snug">"Sitios de buceo increíbles y una tripulación de primera. Nos sentimos seguros todo el tiempo."</p>
           <p class="text-white/50 text-xs uppercase tracking-widest font-bold mt-2">Tom R. &mdash; Miami, FL</p>
         </div>
       </div>
@@ -70,15 +70,15 @@ import yachtIcon from "../assets/icons/Yacht icon.png";
     <div class="lg:hidden relative z-10 -mt-4 px-5">
       <div class="bg-white rounded-3xl p-6 shadow-xl shadow-navy/5 border border-border-light">
         <nav class="flex items-center gap-1.5 text-xs text-slate-400 mb-4" aria-label="Breadcrumb">
-          <a href="/" class="hover:text-gold transition-colors">Home</a>
+          <a href="/es/" class="hover:text-gold transition-colors">Inicio</a>
           <span class="material-symbols-outlined text-[14px]">chevron_right</span>
           <span>Tours</span>
           <span class="material-symbols-outlined text-[14px]">chevron_right</span>
-          <span class="text-navy font-semibold">Scuba Diving</span>
+          <span class="text-navy font-semibold">Buceo</span>
         </nav>
         <div class="flex flex-col gap-1 mb-6">
           <div class="flex justify-between items-start">
-            <h1 class="text-2xl text-navy leading-tight">Scuba Diving in Cabo San Lucas</h1>
+            <h1 class="text-2xl text-navy leading-tight">Buceo en Cabo San Lucas</h1>
           </div>
           <p class="text-slate-400 text-sm font-medium flex items-center gap-1 mt-2 uppercase tracking-widest">
             <span class="material-symbols-outlined text-base">location_on</span> Land's End, Cabo San Lucas
@@ -87,23 +87,23 @@ import yachtIcon from "../assets/icons/Yacht icon.png";
         <div class="grid grid-cols-2 gap-4">
           <div class="bg-light-grey rounded-2xl p-4 flex flex-col items-center text-center border border-border-light">
             <span class="material-symbols-outlined text-gold mb-2">schedule</span>
-            <p class="text-xs text-slate-400 uppercase font-bold tracking-widest mb-1">Duration</p>
-            <p class="text-base font-bold text-navy">4 Hours</p>
+            <p class="text-xs text-slate-400 uppercase font-bold tracking-widest mb-1">Duración</p>
+            <p class="text-base font-bold text-navy">4 Horas</p>
           </div>
           <div class="bg-light-grey rounded-2xl p-4 flex flex-col items-center text-center border border-border-light">
             <span class="material-symbols-outlined text-gold mb-2">trending_down</span>
-            <p class="text-xs text-slate-400 uppercase font-bold tracking-widest mb-1">Difficulty</p>
-            <p class="text-base font-bold text-navy">Mid-High</p>
+            <p class="text-xs text-slate-400 uppercase font-bold tracking-widest mb-1">Dificultad</p>
+            <p class="text-base font-bold text-navy">Media-Alta</p>
           </div>
           <div class="bg-light-grey rounded-2xl p-4 flex flex-col items-center text-center border border-border-light">
             <span class="material-symbols-outlined text-gold mb-2">scuba_diving</span>
-            <p class="text-xs text-slate-400 uppercase font-bold tracking-widest mb-1">Divers</p>
-            <p class="text-base font-bold text-navy">All Levels</p>
+            <p class="text-xs text-slate-400 uppercase font-bold tracking-widest mb-1">Buzos</p>
+            <p class="text-base font-bold text-navy">Todos los Niveles</p>
           </div>
           <div class="bg-light-grey rounded-2xl p-4 flex flex-col items-center text-center border border-border-light">
             <span class="material-symbols-outlined text-gold mb-2">event_available</span>
-            <p class="text-xs text-slate-400 uppercase font-bold tracking-widest mb-1">Free Cancellation</p>
-            <p class="text-base font-bold text-navy">Up to 24h</p>
+            <p class="text-xs text-slate-400 uppercase font-bold tracking-widest mb-1">Cancelación Gratuita</p>
+            <p class="text-base font-bold text-navy">Hasta 24h</p>
           </div>
         </div>
         <div class="mt-6 pt-6 border-t border-border-light">
@@ -111,77 +111,77 @@ import yachtIcon from "../assets/icons/Yacht icon.png";
           <label class="flex items-center justify-between cursor-pointer group" for="highlights-toggle">
             <div class="flex items-center gap-3">
               <div class="p-2 bg-navy/5 rounded-full"><span class="material-symbols-outlined text-navy text-xl">auto_awesome</span></div>
-              <span class="text-base font-semibold text-navy">Tour Highlights</span>
+              <span class="text-base font-semibold text-navy">Aspectos Destacados del Tour</span>
             </div>
             <span class="material-symbols-outlined text-slate-300 chevron-icon transition-transform">chevron_right</span>
           </label>
           <div class="max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out" id="highlights-content">
             <div class="space-y-4">
-              <div class="flex items-start gap-3"><span class="material-symbols-outlined text-gold flex-shrink-0" style="font-size:20px">scuba_diving</span><div><h4 class="text-sm font-bold text-navy uppercase tracking-wider mb-1">PADI-Certified Guides</h4><p class="text-sm text-slate-500 leading-relaxed">Expert instructors for all skill levels.</p></div></div>
-              <div class="flex items-start gap-3"><span class="material-symbols-outlined text-gold flex-shrink-0" style="font-size:20px">pets</span><div><h4 class="text-sm font-bold text-navy uppercase tracking-wider mb-1">Sea Lion Encounters</h4><p class="text-sm text-slate-500 leading-relaxed">Dive alongside playful sea lions at Pelican Rock.</p></div></div>
-              <div class="flex items-start gap-3"><span class="material-symbols-outlined text-gold flex-shrink-0" style="font-size:20px">visibility</span><div><h4 class="text-sm font-bold text-navy uppercase tracking-wider mb-1">No Previous Experience Needed</h4><p class="text-sm text-slate-500 leading-relaxed">Our PADI instructors guide beginners through every step.</p></div></div>
-              <div class="flex items-start gap-3"><span class="material-symbols-outlined text-gold flex-shrink-0" style="font-size:20px">inventory_2</span><div><h4 class="text-sm font-bold text-navy uppercase tracking-wider mb-1">All Equipment Included</h4><p class="text-sm text-slate-500 leading-relaxed">Full scuba gear, wetsuit, and tanks provided.</p></div></div>
-              <div class="flex items-start gap-3"><span class="material-symbols-outlined text-gold flex-shrink-0" style="font-size:20px">waves</span><div><h4 class="text-sm font-bold text-navy uppercase tracking-wider mb-1">Multiple Dive Sites</h4><p class="text-sm text-slate-500 leading-relaxed">Pelican Rock, Neptune's Finger, Land's End.</p></div></div>
-              <div class="flex items-start gap-3"><span class="material-symbols-outlined text-gold flex-shrink-0" style="font-size:20px">photo_camera</span><div><h4 class="text-sm font-bold text-navy uppercase tracking-wider mb-1">Marine Life Paradise</h4><p class="text-sm text-slate-500 leading-relaxed">Tropical fish, rays, moray eels, seahorses &amp; more.</p></div></div>
+              <div class="flex items-start gap-3"><span class="material-symbols-outlined text-gold flex-shrink-0" style="font-size:20px">scuba_diving</span><div><h4 class="text-sm font-bold text-navy uppercase tracking-wider mb-1">Guías Certificados PADI</h4><p class="text-sm text-slate-500 leading-relaxed">Instructores expertos para todos los niveles.</p></div></div>
+              <div class="flex items-start gap-3"><span class="material-symbols-outlined text-gold flex-shrink-0" style="font-size:20px">pets</span><div><h4 class="text-sm font-bold text-navy uppercase tracking-wider mb-1">Encuentros con Lobos Marinos</h4><p class="text-sm text-slate-500 leading-relaxed">Bucea junto a juguetones lobos marinos en Pelican Rock.</p></div></div>
+              <div class="flex items-start gap-3"><span class="material-symbols-outlined text-gold flex-shrink-0" style="font-size:20px">visibility</span><div><h4 class="text-sm font-bold text-navy uppercase tracking-wider mb-1">Sin Experiencia Previa Necesaria</h4><p class="text-sm text-slate-500 leading-relaxed">Nuestros instructores PADI guían a principiantes en cada paso.</p></div></div>
+              <div class="flex items-start gap-3"><span class="material-symbols-outlined text-gold flex-shrink-0" style="font-size:20px">inventory_2</span><div><h4 class="text-sm font-bold text-navy uppercase tracking-wider mb-1">Todo el Equipo Incluido</h4><p class="text-sm text-slate-500 leading-relaxed">Equipo completo de buceo, traje de neopreno y tanques incluidos.</p></div></div>
+              <div class="flex items-start gap-3"><span class="material-symbols-outlined text-gold flex-shrink-0" style="font-size:20px">waves</span><div><h4 class="text-sm font-bold text-navy uppercase tracking-wider mb-1">Múltiples Sitios de Buceo</h4><p class="text-sm text-slate-500 leading-relaxed">Pelican Rock, Neptune's Finger, Land's End.</p></div></div>
+              <div class="flex items-start gap-3"><span class="material-symbols-outlined text-gold flex-shrink-0" style="font-size:20px">photo_camera</span><div><h4 class="text-sm font-bold text-navy uppercase tracking-wider mb-1">Paraíso de Vida Marina</h4><p class="text-sm text-slate-500 leading-relaxed">Peces tropicales, rayas, morenas, caballitos de mar y más.</p></div></div>
             </div>
           </div>
         </div>
       </div>
       <div class="mt-8">
-        <h3 class="text-lg text-navy mb-4">About this experience</h3>
-        <p class="text-slate-500 leading-relaxed text-base"><span id="about-short">A perfect choice for mixed groups of divers and snorkelers to enjoy a day on the water together, discover the vibrant underwater world of Cabo San Lucas with our guided scuba diving tours. Whether yo</span><span id="about-full" class="hidden">u're a certified diver or trying scuba for the first time, our PADI-certified instructors ensure a safe and unforgettable experience. Dive into crystal-clear waters at some of Cabo's most iconic dive sites and come face-to-face with incredible marine life.</span><button id="about-read-more" onclick="document.getElementById('about-full').classList.remove('hidden');this.classList.add('hidden');" class="text-gold font-semibold ml-1 lg:hidden">Read more</button></p>
+        <h3 class="text-lg text-navy mb-4">Sobre esta experiencia</h3>
+        <p class="text-slate-500 leading-relaxed text-base"><span id="about-short">Una opción perfecta para grupos mixtos de buzos y snorkelers que quieren disfrutar un día juntos en el agua. Descubre el vibrante mundo submarino de Cabo San Lucas con nuestros tours guiados de buce</span><span id="about-full" class="hidden">o. Ya seas un buzo certificado o estés probando el buceo por primera vez, nuestros instructores certificados PADI garantizan una experiencia segura e inolvidable. Sumérgete en aguas cristalinas en algunos de los sitios de buceo más icónicos de Cabo y encuéntrate cara a cara con una increíble vida marina.</span><button id="about-read-more" onclick="document.getElementById('about-full').classList.remove('hidden');this.classList.add('hidden');" class="text-gold font-semibold ml-1 lg:hidden">Leer más</button></p>
       </div>
       <div class="mt-10">
-        <div class="flex items-center gap-3 mb-6"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-lg text-navy">What's Included</h3></div>
+        <div class="flex items-center gap-3 mb-6"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-lg text-navy">Qué Incluye</h3></div>
         <div class="grid grid-cols-1 gap-5 pl-1">
-          <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[14px]">check</span></div><span class="text-slate-600 text-base font-medium">2 Guided Dives</span></div>
-          <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[14px]">check</span></div><span class="text-slate-600 text-base font-medium">Full Scuba Equipment</span></div>
-          <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[14px]">check</span></div><span class="text-slate-600 text-base font-medium">PADI Instructor / Guide</span></div>
-          <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[14px]">check</span></div><span class="text-slate-600 text-base font-medium">Introductory Class</span></div>
-          <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[14px]">check</span></div><span class="text-slate-600 text-base font-medium">Lunch &amp; Bar</span></div>
-          <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[14px]">check</span></div><span class="text-slate-600 text-base font-medium">Bathroom &amp; Changing Area</span></div>
+          <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[14px]">check</span></div><span class="text-slate-600 text-base font-medium">2 Inmersiones Guiadas</span></div>
+          <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[14px]">check</span></div><span class="text-slate-600 text-base font-medium">Equipo Completo de Buceo</span></div>
+          <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[14px]">check</span></div><span class="text-slate-600 text-base font-medium">Instructor / Guía PADI</span></div>
+          <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[14px]">check</span></div><span class="text-slate-600 text-base font-medium">Clase Introductoria</span></div>
+          <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[14px]">check</span></div><span class="text-slate-600 text-base font-medium">Almuerzo y Barra</span></div>
+          <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[14px]">check</span></div><span class="text-slate-600 text-base font-medium">Baño y Vestidor</span></div>
         </div>
         <div class="mt-6 bg-light-grey rounded-2xl p-5 border border-border-light space-y-4">
           <div class="flex items-center justify-between">
-            <div><p class="text-base font-bold text-navy">Certified Diver (2 Dives)</p><p class="text-sm text-slate-400">PADI divemaster guide &amp; full equipment</p></div>
+            <div><p class="text-base font-bold text-navy">Buzo Certificado (2 Inmersiones)</p><p class="text-sm text-slate-400">Guía PADI divemaster y equipo completo</p></div>
             <span class="text-base font-bold text-gold">$270 USD</span>
           </div>
           <div class="flex items-center justify-between">
-            <div><p class="text-base font-bold text-navy">Non-Certified Diver (2 Dives)</p><p class="text-sm text-slate-400">PADI instructor, intro course &amp; full equipment</p></div>
+            <div><p class="text-base font-bold text-navy">Buzo No Certificado (2 Inmersiones)</p><p class="text-sm text-slate-400">Instructor PADI, curso introductorio y equipo completo</p></div>
             <span class="text-base font-bold text-gold">$290 USD</span>
           </div>
         </div>
       </div>
       <div class="mt-10">
-        <div class="flex items-center gap-3 mb-6"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-lg text-navy">What to Bring</h3></div>
+        <div class="flex items-center gap-3 mb-6"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-lg text-navy">Qué Traer</h3></div>
         <div class="grid grid-cols-1 gap-5 pl-1">
-          <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full bg-gold/20 flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-gold text-[14px]">backpack</span></div><span class="text-slate-600 text-base font-medium">Swimsuit</span></div>
-          <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full bg-gold/20 flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-gold text-[14px]">wb_sunny</span></div><span class="text-slate-600 text-base font-medium">Sunscreen (reef-safe preferred)</span></div>
-          <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full bg-gold/20 flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-gold text-[14px]">badge</span></div><span class="text-slate-600 text-base font-medium">Certification card (if certified diver)</span></div>
-          <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full bg-gold/20 flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-gold text-[14px]">favorite</span></div><span class="text-slate-600 text-base font-medium">Sense of adventure!</span></div>
+          <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full bg-gold/20 flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-gold text-[14px]">backpack</span></div><span class="text-slate-600 text-base font-medium">Traje de baño</span></div>
+          <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full bg-gold/20 flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-gold text-[14px]">wb_sunny</span></div><span class="text-slate-600 text-base font-medium">Protector solar (biodegradable de preferencia)</span></div>
+          <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full bg-gold/20 flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-gold text-[14px]">badge</span></div><span class="text-slate-600 text-base font-medium">Tarjeta de certificación (si eres buzo certificado)</span></div>
+          <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full bg-gold/20 flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-gold text-[14px]">favorite</span></div><span class="text-slate-600 text-base font-medium">¡Espíritu aventurero!</span></div>
         </div>
       </div>
 
-      <!-- Mobile Meeting Point -->
+      <!-- Mobile Punto de Encuentro -->
       <div class="mt-10 bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-3 mb-4">
           <span class="material-symbols-outlined text-gold">pin_drop</span>
-          <h3 class="text-base font-bold text-navy uppercase tracking-wider">Meeting Point</h3>
+          <h3 class="text-base font-bold text-navy uppercase tracking-wider">Punto de Encuentro</h3>
         </div>
         <p class="text-base font-semibold text-navy mb-1">Cabo San Lucas Marina, Dock F</p>
-        <p class="text-sm text-slate-500 leading-relaxed mb-4">Look for the Cabo Sailing team in black polo shirts with our logo. Please arrive 15 minutes before departure.</p>
+        <p class="text-sm text-slate-500 leading-relaxed mb-4">Busca al equipo de Cabo Sailing con camisas polo negras con nuestro logo. Por favor llega 15 minutos antes de la salida.</p>
         <div class="flex items-center gap-2 text-sm text-slate-500">
           <span class="material-symbols-outlined text-gold text-base">schedule</span>
-          <span class="font-semibold text-navy">DEPARTURES: 9:00 AM &amp; 12:30 PM DAILY</span>
+          <span class="font-semibold text-navy">SALIDAS: 9:00 AM y 12:30 PM DIARIO</span>
         </div>
       </div>
 
-      <!-- Mobile: Select Your Boat -->
+      <!-- Mobile: Elige Tu Barco -->
       <div class="mt-10">
-        <div class="flex items-center gap-3 mb-2"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-lg text-navy">Select Your Boat</h3></div>
+        <div class="flex items-center gap-3 mb-2"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-lg text-navy">Elige Tu Barco</h3></div>
         <div class="flex items-center gap-4 mb-4 mt-6">
           <Image src={yachtIcon} alt="Yacht" class="h-6 w-auto" style="filter: invert(55%) sepia(30%) saturate(500%) hue-rotate(10deg) brightness(85%);" width={24} height={24} />
-          <h3 class="text-base font-serif text-navy">Yachts</h3>
+          <h3 class="text-base font-serif text-navy">Yates</h3>
           <div class="flex-1 h-px bg-gradient-to-r from-gold/30 to-transparent"></div>
         </div>
         <div class="flex flex-col gap-5">
@@ -195,14 +195,14 @@ import yachtIcon from "../assets/icons/Yacht icon.png";
               <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
               <div class="absolute bottom-5 left-6">
                 <h4 class="text-white text-lg lg:text-xl">Luxury Yacht 51'</h4>
-                <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Up to 20 Guests</span></div>
+                <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Hasta 20 Invitados</span></div>
               </div>
-              <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Most Spacious</div>
+              <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Más Espacioso</div>
               <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
               <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
             </div>
             <div class="p-5">
-              <a href="https://wa.me/526241916997?text=Hi%2C%20I'd%20like%20to%20book%20Scuba%20Diving%20on%20the%20Luxury%20Yacht%2051" target="_blank" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg">Book Now</a>
+              <a href="https://wa.me/526241916997?text=Hi%2C%20I'd%20like%20to%20book%20Scuba%20Diving%20on%20the%20Luxury%20Yacht%2051" target="_blank" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg">Reservar Ahora</a>
             </div>
           </div>
           <!-- Yacht 45' -->
@@ -215,14 +215,14 @@ import yachtIcon from "../assets/icons/Yacht icon.png";
               <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
               <div class="absolute bottom-5 left-6">
                 <h4 class="text-white text-lg lg:text-xl">Luxury Yacht 45'</h4>
-                <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Up to 12 Guests</span></div>
+                <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Hasta 12 Invitados</span></div>
               </div>
-              <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Most Popular</div>
+              <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Más Popular</div>
               <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
               <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
             </div>
             <div class="p-5">
-              <a href="https://wa.me/526241916997?text=Hi%2C%20I'd%20like%20to%20book%20Scuba%20Diving%20on%20the%20Luxury%20Yacht%2045" target="_blank" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg">Book Now</a>
+              <a href="https://wa.me/526241916997?text=Hi%2C%20I'd%20like%20to%20book%20Scuba%20Diving%20on%20the%20Luxury%20Yacht%2045" target="_blank" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg">Reservar Ahora</a>
             </div>
           </div>
           <!-- Yacht 42' -->
@@ -235,20 +235,20 @@ import yachtIcon from "../assets/icons/Yacht icon.png";
               <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
               <div class="absolute bottom-5 left-6">
                 <h4 class="text-white text-lg lg:text-xl">Luxury Yacht 42'</h4>
-                <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Up to 18 Guests</span></div>
+                <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Hasta 18 Invitados</span></div>
               </div>
-              <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Best Value</div>
+              <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Mejor Precio</div>
               <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
               <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
             </div>
             <div class="p-5">
-              <a href="https://wa.me/526241916997?text=Hi%2C%20I'd%20like%20to%20book%20Scuba%20Diving%20on%20the%20Luxury%20Yacht%2042" target="_blank" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg">Book Now</a>
+              <a href="https://wa.me/526241916997?text=Hi%2C%20I'd%20like%20to%20book%20Scuba%20Diving%20on%20the%20Luxury%20Yacht%2042" target="_blank" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg">Reservar Ahora</a>
             </div>
           </div>
         </div>
         <div class="flex items-center gap-4 mb-4 mt-8">
           <span class="material-symbols-outlined text-gold text-xl">sailing</span>
-          <h3 class="text-base font-serif text-navy">Sailboat</h3>
+          <h3 class="text-base font-serif text-navy">Velero</h3>
           <div class="flex-1 h-px bg-gradient-to-r from-gold/30 to-transparent"></div>
         </div>
         <div class="flex flex-col gap-5">
@@ -262,14 +262,14 @@ import yachtIcon from "../assets/icons/Yacht icon.png";
               <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
               <div class="absolute bottom-5 left-6">
                 <h4 class="text-white text-lg lg:text-xl">Sailing Boat 42'</h4>
-                <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Up to 14 Guests</span></div>
+                <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Hasta 14 Invitados</span></div>
               </div>
-              <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Sailing Experience</div>
+              <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Experiencia en Velero</div>
               <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
               <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
             </div>
             <div class="p-5">
-              <button type="button" onclick="openRezdyModal('642955','productsCalendar')" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg">Check Availability</button>
+              <button type="button" onclick="openRezdyModal('642955','productsCalendar')" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg">Ver Disponibilidad</button>
             </div>
           </div>
         </div>
@@ -281,58 +281,58 @@ import yachtIcon from "../assets/icons/Yacht icon.png";
           <div class="faq-item border border-border-light rounded-2xl overflow-hidden bg-white">
             <input class="hidden" id="faq1" type="checkbox"/>
             <label class="flex items-center justify-between p-4 cursor-pointer" for="faq1">
-              <span class="flex items-center gap-2 text-base font-semibold text-navy"><span class="material-symbols-outlined text-gold" style="font-size:18px">restaurant</span>Yacht Menu &amp; Bar</span>
+              <span class="flex items-center gap-2 text-base font-semibold text-navy"><span class="material-symbols-outlined text-gold" style="font-size:18px">restaurant</span>Menú y Barra del Yate</span>
               <span class="material-symbols-outlined text-slate-300 faq-chevron transition-transform flex-shrink-0">expand_more</span>
             </label>
             <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
               <div class="text-sm text-slate-500 leading-relaxed space-y-3">
-                <div><p class="font-semibold text-navy mb-1">Bar</p><p>Premium brands open bar includes red and white wine, margaritas, beer, rum, vodka, tequila, whiskey, juices, sodas, and bottled water.</p></div>
-                <div><p class="font-semibold text-navy mb-1">Food</p><p>Fresh tortilla chips with Mexican salsa and homemade guacamole, fresh baguette sandwiches, freshly made quesadillas, a selection of seasonal fruit, and a sweet bite to finish.</p></div>
-                <div class="border-t border-border-light pt-3"><p class="font-semibold text-navy mb-1">Options:</p><p><span class="font-semibold text-navy">Mexican Menu — $14 USD per person:</span> Tortilla chips with salsa and homemade guacamole, beef and chicken corn tortilla burritos, rice and beans, freshly made quesadillas, and dessert.</p></div>
-                <p class="text-slate-400 italic">Contact our office team for Kosher, Vegan or Vegetarian options.</p>
+                <div><p class="font-semibold text-navy mb-1">Barra</p><p>Barra libre de marcas premium incluye vino tinto y blanco, margaritas, cerveza, ron, vodka, tequila, whiskey, jugos, refrescos y agua embotellada.</p></div>
+                <div><p class="font-semibold text-navy mb-1">Comida</p><p>Totopos frescos con salsa mexicana y guacamole casero, sándwiches de baguette, quesadillas recién hechas, selección de fruta de temporada y un postre para terminar.</p></div>
+                <div class="border-t border-border-light pt-3"><p class="font-semibold text-navy mb-1">Opciones:</p><p><span class="font-semibold text-navy">Menú Mexicano — $14 USD por persona:</span> Totopos con salsa y guacamole casero, burritos de res y pollo en tortilla de maíz, arroz y frijoles, quesadillas recién hechas y postre.</p></div>
+                <p class="text-slate-400 italic">Contacta a nuestro equipo para opciones Kosher, Veganas o Vegetarianas.</p>
               </div>
             </div>
           </div>
           <div class="faq-item border border-border-light rounded-2xl overflow-hidden bg-white">
             <input class="hidden" id="faq2" type="checkbox"/>
             <label class="flex items-center justify-between p-4 cursor-pointer" for="faq2">
-              <span class="flex items-center gap-2 text-base font-semibold text-navy"><span class="material-symbols-outlined text-gold" style="font-size:18px">restaurant</span>Sailing Menu &amp; Bar</span>
+              <span class="flex items-center gap-2 text-base font-semibold text-navy"><span class="material-symbols-outlined text-gold" style="font-size:18px">restaurant</span>Menú y Barra del Velero</span>
               <span class="material-symbols-outlined text-slate-300 faq-chevron transition-transform flex-shrink-0">expand_more</span>
             </label>
             <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
               <div class="text-sm text-slate-500 leading-relaxed space-y-3">
-                <div><p class="font-semibold text-navy mb-1">Bar:</p><p>Unlimited bar includes: red &amp; white wine, margaritas, beers, rum, vodka, tequila, whiskey, juices, sodas, bottled water.</p></div>
-                <div><p class="font-semibold text-navy mb-1">Food:</p><p>Tortilla chips, Mexican salsa, homemade guacamole, fresh baguette sandwiches, selection of fresh cut fruit platter, sweet bite.<br/>Vegetarian options upon request.</p></div>
-                <div class="border-t border-border-light pt-3"><p class="text-center font-semibold text-slate-400 mb-2">— OR —</p><p><span class="font-semibold text-navy">Mexican option ($14 USD per person):</span> Tortilla chips, salsa &amp; homemade guacamole, beef &amp; chicken corn tortilla burritos, rice and beans, quesadillas and dessert.</p></div>
-                <p class="text-slate-400 italic">Contact our office team for Kosher, Vegan or Vegetarian options.</p>
+                <div><p class="font-semibold text-navy mb-1">Barra:</p><p>Barra libre incluye: vino tinto y blanco, margaritas, cervezas, ron, vodka, tequila, whiskey, jugos, refrescos, agua embotellada.</p></div>
+                <div><p class="font-semibold text-navy mb-1">Comida:</p><p>Totopos, salsa mexicana, guacamole casero, sándwiches de baguette, selección de fruta fresca, postre.<br/>Opciones vegetarianas bajo solicitud.</p></div>
+                <div class="border-t border-border-light pt-3"><p class="text-center font-semibold text-slate-400 mb-2">— O —</p><p><span class="font-semibold text-navy">Opción Mexicana ($14 USD por persona):</span> Totopos, salsa y guacamole casero, burritos de res y pollo en tortilla de maíz, arroz y frijoles, quesadillas y postre.</p></div>
+                <p class="text-slate-400 italic">Contacta a nuestro equipo para opciones Kosher, Veganas o Vegetarianas.</p>
               </div>
             </div>
           </div>
           <div class="faq-item border border-border-light rounded-2xl px-5 py-4">
             <input class="hidden" id="faq3" type="checkbox"/>
-            <label class="flex items-center justify-between cursor-pointer" for="faq3"><span class="text-base font-semibold text-navy pr-4">Do I need to be certified?</span><span class="material-symbols-outlined text-slate-300 faq-chevron transition-transform flex-shrink-0">expand_more</span></label>
-            <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300"><p class="text-sm text-slate-500 leading-relaxed">No! We offer Discover Scuba programs for complete beginners. Our PADI-certified instructors provide a full briefing and guide you through every step. Certified divers can enjoy 2-tank dives at our best sites.</p></div>
+            <label class="flex items-center justify-between cursor-pointer" for="faq3"><span class="text-base font-semibold text-navy pr-4">¿Necesito estar certificado?</span><span class="material-symbols-outlined text-slate-300 faq-chevron transition-transform flex-shrink-0">expand_more</span></label>
+            <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300"><p class="text-sm text-slate-500 leading-relaxed">¡No! Ofrecemos programas Discover Scuba para principiantes. Nuestros instructores certificados PADI brindan una sesión informativa completa y te guían en cada paso. Los buzos certificados pueden disfrutar inmersiones de 2 tanques en nuestros mejores sitios.</p></div>
           </div>
           <div class="faq-item border border-border-light rounded-2xl px-5 py-4">
             <input class="hidden" id="faq4" type="checkbox"/>
-            <label class="flex items-center justify-between cursor-pointer" for="faq4"><span class="text-base font-semibold text-navy pr-4">What marine life will I see?</span><span class="material-symbols-outlined text-slate-300 faq-chevron transition-transform flex-shrink-0">expand_more</span></label>
-            <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300"><p class="text-sm text-slate-500 leading-relaxed">Cabo's waters are home to sea lions, tropical fish, moray eels, rays, seahorses, octopus, and colorful coral formations. Pelican Rock is famous for its resident sea lion colony that loves to interact with divers.</p></div>
+            <label class="flex items-center justify-between cursor-pointer" for="faq4"><span class="text-base font-semibold text-navy pr-4">¿Qué vida marina veré?</span><span class="material-symbols-outlined text-slate-300 faq-chevron transition-transform flex-shrink-0">expand_more</span></label>
+            <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300"><p class="text-sm text-slate-500 leading-relaxed">Las aguas de Cabo albergan lobos marinos, peces tropicales, morenas, rayas, caballitos de mar, pulpos y coloridas formaciones de coral. Pelican Rock es famoso por su colonia residente de lobos marinos que les encanta interactuar con los buzos.</p></div>
           </div>
           <div class="faq-item border border-border-light rounded-2xl px-5 py-4">
             <input class="hidden" id="faq5" type="checkbox"/>
-            <label class="flex items-center justify-between cursor-pointer" for="faq5"><span class="text-base font-semibold text-navy pr-4">Where will we dive?</span><span class="material-symbols-outlined text-slate-300 faq-chevron transition-transform flex-shrink-0">expand_more</span></label>
-            <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300"><p class="text-sm text-slate-500 leading-relaxed">Our dive sites include Pelican's Rock and Land's End — two of Cabo's most iconic underwater locations, teeming with marine life and crystal-clear visibility.</p></div>
+            <label class="flex items-center justify-between cursor-pointer" for="faq5"><span class="text-base font-semibold text-navy pr-4">¿Dónde bucearemos?</span><span class="material-symbols-outlined text-slate-300 faq-chevron transition-transform flex-shrink-0">expand_more</span></label>
+            <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300"><p class="text-sm text-slate-500 leading-relaxed">Nuestros sitios de buceo incluyen Pelican Rock y Land's End — dos de los lugares submarinos más icónicos de Cabo, llenos de vida marina y con visibilidad cristalina.</p></div>
           </div>
         </div>
       </div>
 
       <div class="sticky bottom-0 bg-white border-t border-border-light px-5 py-4 -mx-5">
-        <a href="https://wa.me/526241916997?text=Hi%2C%20I'm%20interested%20in%20the%20Scuba%20Diving%20tour%20in%20Cabo.%20Can%20you%20send%20me%20pricing%20and%20availability%3F" target="_blank" class="block w-full bg-navy text-white text-center py-4 rounded-2xl font-bold uppercase tracking-widest text-base shadow-lg">Book Now via WhatsApp</a>
+        <a href="https://wa.me/526241916997?text=Hi%2C%20I'm%20interested%20in%20the%20Scuba%20Diving%20tour%20in%20Cabo.%20Can%20you%20send%20me%20pricing%20and%20availability%3F" target="_blank" class="block w-full bg-navy text-white text-center py-4 rounded-2xl font-bold uppercase tracking-widest text-base shadow-lg">Reservar por WhatsApp</a>
       </div>
 
       <!-- MOBILE: Guest Reviews Carousel -->
       <div class="px-5 pb-32">
-        <div class="flex items-center gap-3 mb-4"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-lg text-navy">What Our Guests Say</h3></div>
+        <div class="flex items-center gap-3 mb-4"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-lg text-navy">Lo Que Dicen Nuestros Clientes</h3></div>
         <div class="relative">
           <div id="m-carousel" class="flex overflow-x-auto gap-4 no-scrollbar snap-x snap-mandatory pb-4">
             <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] bg-light-grey rounded-2xl p-5 border border-border-light">
@@ -381,7 +381,7 @@ import yachtIcon from "../assets/icons/Yacht icon.png";
               <div class="flex items-center gap-3 mb-3">
                 <span class="bg-gold text-white text-base font-bold px-4 py-1.5 rounded-full uppercase tracking-widest">Underwater Adventure</span>
               </div>
-              <h1 class="text-4xl text-white leading-tight mb-2">Scuba Diving in Cabo San Lucas</h1>
+              <h1 class="text-4xl text-white leading-tight mb-2">Buceo en Cabo San Lucas</h1>
               <div class="flex items-center gap-2 mt-3">
               <div class="flex items-center gap-0.5">
                 <span class="material-symbols-outlined text-gold filled text-base">star</span>
@@ -390,7 +390,7 @@ import yachtIcon from "../assets/icons/Yacht icon.png";
                 <span class="material-symbols-outlined text-gold filled text-base">star</span>
                 <span class="material-symbols-outlined text-gold filled text-base">star</span>
               </div>
-              <p class="text-white/90 text-sm">"Incredible dive spots and a top-notch crew."</p>
+              <p class="text-white/90 text-sm">"Sitios de buceo increíbles y una tripulación de primera."</p>
               <p class="text-white/50 text-xs uppercase tracking-widest font-bold">— Tom R.</p>
             </div>
             </div>
@@ -405,20 +405,20 @@ import yachtIcon from "../assets/icons/Yacht icon.png";
         <div>
 
             <nav class="flex items-center gap-1.5 text-xs text-slate-400 mb-4" aria-label="Breadcrumb">
-              <a href="/" class="hover:text-gold transition-colors">Home</a>
+              <a href="/es/" class="hover:text-gold transition-colors">Inicio</a>
               <span class="material-symbols-outlined text-[14px]">chevron_right</span>
               <span>Tours</span>
               <span class="material-symbols-outlined text-[14px]">chevron_right</span>
-              <span class="text-navy font-semibold">Scuba Diving</span>
+              <span class="text-navy font-semibold">Buceo</span>
             </nav>
 
             <!-- Quick Stats Bar -->
             <div class="flex items-center gap-8 pb-8 border-b border-border-light mb-10">
-              <div class="flex items-center gap-2"><span class="material-symbols-outlined text-gold">schedule</span><div><p class="text-xs text-slate-400 uppercase font-bold tracking-widest">Duration</p><p class="text-base font-bold text-navy">4 Hours</p><p class="text-xs text-slate-400 mt-0.5">Extra time available</p></div></div>
+              <div class="flex items-center gap-2"><span class="material-symbols-outlined text-gold">schedule</span><div><p class="text-xs text-slate-400 uppercase font-bold tracking-widest">Duración</p><p class="text-base font-bold text-navy">4 Horas</p><p class="text-xs text-slate-400 mt-0.5">Tiempo extra disponible</p></div></div>
               <div class="w-px h-10 bg-border-light"></div>
-              <div class="flex items-center gap-2"><span class="material-symbols-outlined text-gold">trending_down</span><div><p class="text-xs text-slate-400 uppercase font-bold tracking-widest">Difficulty</p><p class="text-base font-bold text-navy">Mid-High</p></div></div>
+              <div class="flex items-center gap-2"><span class="material-symbols-outlined text-gold">trending_down</span><div><p class="text-xs text-slate-400 uppercase font-bold tracking-widest">Dificultad</p><p class="text-base font-bold text-navy">Media-Alta</p></div></div>
               <div class="w-px h-10 bg-border-light"></div>
-              <div class="flex items-center gap-2"><span class="material-symbols-outlined text-gold">scuba_diving</span><div><p class="text-xs text-slate-400 uppercase font-bold tracking-widest">Divers</p><p class="text-base font-bold text-navy">Both certified and non certified</p></div></div>
+              <div class="flex items-center gap-2"><span class="material-symbols-outlined text-gold">scuba_diving</span><div><p class="text-xs text-slate-400 uppercase font-bold tracking-widest">Buzos</p><p class="text-base font-bold text-navy">Certificados y no certificados</p></div></div>
             </div>
 
             <!-- Photo Gallery Strip -->
@@ -436,7 +436,7 @@ import yachtIcon from "../assets/icons/Yacht icon.png";
 
             <!-- Highlights — visual cards -->
             <div class="mb-12">
-              <div class="flex items-center gap-3 mb-6"><div class="w-1 h-6 bg-gold rounded-full"></div><h2 class="text-2xl text-navy">Tour Highlights</h2></div>
+              <div class="flex items-center gap-3 mb-6"><div class="w-1 h-6 bg-gold rounded-full"></div><h2 class="text-2xl text-navy">Aspectos Destacados del Tour</h2></div>
               <div class="grid grid-cols-3 gap-6">
                 <div class="relative rounded-3xl overflow-hidden h-64 group">
                   <Image src={scubaImg5} alt="Sea lion encounter" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width={400} height={300} />
@@ -468,53 +468,53 @@ import yachtIcon from "../assets/icons/Yacht icon.png";
               </div>
             </div>
 
-            <!-- About + What's Included + Meeting Point -->
+            <!-- About + Qué Incluye + Punto de Encuentro -->
             <div class="mt-10 flex gap-12">
-              <!-- LEFT: About + What's Included -->
+              <!-- LEFT: About + Qué Incluye -->
               <div class="flex-1">
                 <!-- About -->
                 <div class="mb-12">
-                  <h2 class="text-2xl text-navy mb-5">About This Experience</h2>
-                  <p class="text-slate-500 leading-relaxed">A perfect choice for mixed groups of divers and snorkelers to enjoy a day on the water together, discover the vibrant underwater world of Cabo San Lucas with our guided scuba diving tours. Whether you're a certified diver or trying scuba for the first time, our PADI-certified instructors ensure a safe and unforgettable experience. Dive into crystal-clear waters at some of Cabo's most iconic dive sites and come face-to-face with incredible marine life.</p>
+                  <h2 class="text-2xl text-navy mb-5">Sobre Esta Experiencia</h2>
+                  <p class="text-slate-500 leading-relaxed">Una opción perfecta para grupos mixtos de buzos y snorkelers que quieren disfrutar un día juntos en el agua. Descubre el vibrante mundo submarino de Cabo San Lucas con nuestros tours guiados de buceo. Ya seas un buzo certificado o estés probando el buceo por primera vez, nuestros instructores certificados PADI garantizan una experiencia segura e inolvidable. Sumérgete en aguas cristalinas en algunos de los sitios de buceo más icónicos de Cabo y encuéntrate cara a cara con una increíble vida marina.</p>
                 </div>
 
-                <!-- What's Included -->
+                <!-- Qué Incluye -->
                 <div class="mb-12 bg-gradient-to-br from-sky-50 via-cyan-50/50 to-blue-50 rounded-3xl p-8 border border-sky-100">
-                  <div class="flex items-center gap-3 mb-6"><div class="w-1 h-6 bg-gold rounded-full"></div><h2 class="text-2xl text-navy">What's Included</h2></div>
+                  <div class="flex items-center gap-3 mb-6"><div class="w-1 h-6 bg-gold rounded-full"></div><h2 class="text-2xl text-navy">Qué Incluye</h2></div>
                   <div class="grid grid-cols-2 gap-4">
-                    <div class="flex items-center gap-3 bg-white/70 rounded-2xl px-4 py-3 border border-white"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-base">check</span></div><span class="text-slate-700 font-semibold text-sm">2 Guided Dives</span></div>
-                    <div class="flex items-center gap-3 bg-white/70 rounded-2xl px-4 py-3 border border-white"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-base">check</span></div><span class="text-slate-700 font-semibold text-sm">Full Scuba Equipment</span></div>
-                    <div class="flex items-center gap-3 bg-white/70 rounded-2xl px-4 py-3 border border-white"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-base">check</span></div><span class="text-slate-700 font-semibold text-sm">PADI Instructor / Guide</span></div>
-                    <div class="flex items-center gap-3 bg-white/70 rounded-2xl px-4 py-3 border border-white"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-base">check</span></div><span class="text-slate-700 font-semibold text-sm">Introductory Class</span></div>
-                    <div class="flex items-center gap-3 bg-white/70 rounded-2xl px-4 py-3 border border-white"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-base">check</span></div><span class="text-slate-700 font-semibold text-sm">Lunch &amp; Bar</span></div>
-                    <div class="flex items-center gap-3 bg-white/70 rounded-2xl px-4 py-3 border border-white"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-base">check</span></div><span class="text-slate-700 font-semibold text-sm">Bathroom &amp; Changing Area</span></div>
+                    <div class="flex items-center gap-3 bg-white/70 rounded-2xl px-4 py-3 border border-white"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-base">check</span></div><span class="text-slate-700 font-semibold text-sm">2 Inmersiones Guiadas</span></div>
+                    <div class="flex items-center gap-3 bg-white/70 rounded-2xl px-4 py-3 border border-white"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-base">check</span></div><span class="text-slate-700 font-semibold text-sm">Equipo Completo de Buceo</span></div>
+                    <div class="flex items-center gap-3 bg-white/70 rounded-2xl px-4 py-3 border border-white"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-base">check</span></div><span class="text-slate-700 font-semibold text-sm">Instructor / Guía PADI</span></div>
+                    <div class="flex items-center gap-3 bg-white/70 rounded-2xl px-4 py-3 border border-white"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-base">check</span></div><span class="text-slate-700 font-semibold text-sm">Clase Introductoria</span></div>
+                    <div class="flex items-center gap-3 bg-white/70 rounded-2xl px-4 py-3 border border-white"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-base">check</span></div><span class="text-slate-700 font-semibold text-sm">Almuerzo y Barra</span></div>
+                    <div class="flex items-center gap-3 bg-white/70 rounded-2xl px-4 py-3 border border-white"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-base">check</span></div><span class="text-slate-700 font-semibold text-sm">Baño y Vestidor</span></div>
                   </div>
                 </div>
 
-                <!-- What to Bring -->
+                <!-- Qué Traer -->
                 <div class="mb-12">
-                  <div class="flex items-center gap-3 mb-6"><div class="w-1 h-6 bg-gold rounded-full"></div><h2 class="text-2xl text-navy">What to Bring</h2></div>
+                  <div class="flex items-center gap-3 mb-6"><div class="w-1 h-6 bg-gold rounded-full"></div><h2 class="text-2xl text-navy">Qué Traer</h2></div>
                   <div class="grid grid-cols-2 gap-4">
-                    <div class="flex items-center gap-3 bg-light-grey rounded-2xl px-4 py-3 border border-border-light"><span class="material-symbols-outlined text-gold">checkroom</span><span class="text-slate-700 font-semibold text-sm">Swimsuit</span></div>
-                    <div class="flex items-center gap-3 bg-light-grey rounded-2xl px-4 py-3 border border-border-light"><span class="material-symbols-outlined text-gold">wb_sunny</span><span class="text-slate-700 font-semibold text-sm">Sunscreen (reef-safe preferred)</span></div>
-                    <div class="flex items-center gap-3 bg-light-grey rounded-2xl px-4 py-3 border border-border-light"><span class="material-symbols-outlined text-gold">badge</span><span class="text-slate-700 font-semibold text-sm">Certification card (if certified)</span></div>
-                    <div class="flex items-center gap-3 bg-light-grey rounded-2xl px-4 py-3 border border-border-light"><span class="material-symbols-outlined text-gold">favorite</span><span class="text-slate-700 font-semibold text-sm">Sense of adventure!</span></div>
+                    <div class="flex items-center gap-3 bg-light-grey rounded-2xl px-4 py-3 border border-border-light"><span class="material-symbols-outlined text-gold">checkroom</span><span class="text-slate-700 font-semibold text-sm">Traje de baño</span></div>
+                    <div class="flex items-center gap-3 bg-light-grey rounded-2xl px-4 py-3 border border-border-light"><span class="material-symbols-outlined text-gold">wb_sunny</span><span class="text-slate-700 font-semibold text-sm">Protector solar (biodegradable de preferencia)</span></div>
+                    <div class="flex items-center gap-3 bg-light-grey rounded-2xl px-4 py-3 border border-border-light"><span class="material-symbols-outlined text-gold">badge</span><span class="text-slate-700 font-semibold text-sm">Tarjeta de certificación (si aplica)</span></div>
+                    <div class="flex items-center gap-3 bg-light-grey rounded-2xl px-4 py-3 border border-border-light"><span class="material-symbols-outlined text-gold">favorite</span><span class="text-slate-700 font-semibold text-sm">¡Espíritu aventurero!</span></div>
                   </div>
                 </div>
               </div>
 
-              <!-- RIGHT: Meeting Point (sticky) -->
+              <!-- RIGHT: Punto de Encuentro (sticky) -->
               <div class="w-[380px] flex-shrink-0">
                 <div class="sticky top-[90px] bg-light-grey rounded-2xl p-8 border border-border-light">
                   <div class="flex items-center gap-3 mb-4">
                     <span class="material-symbols-outlined text-gold text-2xl">pin_drop</span>
-                    <h3 class="text-lg font-bold text-navy uppercase tracking-wider">Meeting Point</h3>
+                    <h3 class="text-lg font-bold text-navy uppercase tracking-wider">Punto de Encuentro</h3>
                   </div>
                   <p class="text-lg font-semibold text-navy mb-1">Cabo San Lucas Marina, Dock F</p>
-                  <p class="text-sm text-slate-500 leading-relaxed mb-4">Look for the Cabo Sailing team in black polo shirts with our logo. Please arrive 15 minutes before departure.</p>
+                  <p class="text-sm text-slate-500 leading-relaxed mb-4">Busca al equipo de Cabo Sailing con camisas polo negras con nuestro logo. Por favor llega 15 minutos antes de la salida.</p>
                   <div class="flex items-center gap-2 text-sm text-slate-500">
                     <span class="material-symbols-outlined text-gold text-base">schedule</span>
-                    <span class="font-semibold text-navy">DEPARTURES: 9:00 AM &amp; 12:30 PM DAILY</span>
+                    <span class="font-semibold text-navy">SALIDAS: 9:00 AM y 12:30 PM DIARIO</span>
                   </div>
                 </div>
               </div>
@@ -523,9 +523,9 @@ import yachtIcon from "../assets/icons/Yacht icon.png";
         </div>
       </div>
 
-      <!-- DESKTOP: Select Your Boat — full width -->
+      <!-- DESKTOP: Elige Tu Barco — full width -->
       <div class="max-w-[1400px] mx-auto px-10 py-16">
-        <div class="flex items-center gap-3 mb-8"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-lg lg:text-2xl text-navy">Scroll our boats — find a perfect fit for your unique scuba diving experience</h3></div>
+        <div class="flex items-center gap-3 mb-8"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-lg lg:text-2xl text-navy">Explora nuestros barcos — encuentra el perfecto para tu experiencia única de buceo</h3></div>
         <div class="grid grid-cols-3 gap-5 pb-8">
           <!-- Luxury Yacht 51' -->
           <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="yacht-51">
@@ -538,16 +538,16 @@ import yachtIcon from "../assets/icons/Yacht icon.png";
               <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
               <div class="absolute bottom-5 left-6">
                 <h4 class="text-white text-lg lg:text-xl">Luxury Yacht 51'</h4>
-                <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Up to 20 Guests</span></div>
+                <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Hasta 20 Invitados</span></div>
               </div>
-              <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Most Spacious</div>
+              <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Más Espacioso</div>
               <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-30%</div>
               <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
               <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
             </div>
             <div class="p-6 space-y-6">
-              <p class="text-slate-500 text-sm italic text-center pb-3 border-b border-border-light/50">Best for large groups & maximum space</p>
-              <a href="https://wa.me/526241916997?text=Hi%2C%20I'd%20like%20to%20book%20Scuba%20Diving%20on%20the%20Luxury%20Yacht%2051" target="_blank" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg">Book Now</a>
+              <p class="text-slate-500 text-sm italic text-center pb-3 border-b border-border-light/50">Ideal para grupos grandes y máximo espacio</p>
+              <a href="https://wa.me/526241916997?text=Hi%2C%20I'd%20like%20to%20book%20Scuba%20Diving%20on%20the%20Luxury%20Yacht%2051" target="_blank" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg">Reservar Ahora</a>
             </div>
           </div>
           <!-- Luxury Yacht 45' -->
@@ -561,16 +561,16 @@ import yachtIcon from "../assets/icons/Yacht icon.png";
               <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
               <div class="absolute bottom-5 left-6">
                 <h4 class="text-white text-lg lg:text-xl">Luxury Yacht 45'</h4>
-                <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Up to 12 Guests</span></div>
+                <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Hasta 12 Invitados</span></div>
               </div>
-              <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Most Popular</div>
+              <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Más Popular</div>
               <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-30%</div>
               <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
               <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
             </div>
             <div class="p-6 space-y-6">
-              <p class="text-slate-500 text-sm italic text-center pb-3 border-b border-border-light/50">Newest vessel, sleek & modern luxury</p>
-              <a href="https://wa.me/526241916997?text=Hi%2C%20I'd%20like%20to%20book%20Scuba%20Diving%20on%20the%20Luxury%20Yacht%2045" target="_blank" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg">Book Now</a>
+              <p class="text-slate-500 text-sm italic text-center pb-3 border-b border-border-light/50">Embarcación más nueva, lujo moderno y elegante</p>
+              <a href="https://wa.me/526241916997?text=Hi%2C%20I'd%20like%20to%20book%20Scuba%20Diving%20on%20the%20Luxury%20Yacht%2045" target="_blank" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg">Reservar Ahora</a>
             </div>
           </div>
           <!-- Luxury Yacht 42' -->
@@ -584,16 +584,16 @@ import yachtIcon from "../assets/icons/Yacht icon.png";
               <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
               <div class="absolute bottom-5 left-6">
                 <h4 class="text-white text-lg lg:text-xl">Luxury Yacht 42'</h4>
-                <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Up to 18 Guests</span></div>
+                <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Hasta 18 Invitados</span></div>
               </div>
-              <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Best Value</div>
+              <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Mejor Precio</div>
               <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-30%</div>
               <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
               <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
             </div>
             <div class="p-6 space-y-6">
-              <p class="text-slate-500 text-sm italic text-center pb-3 border-b border-border-light/50">Great value, perfect for dive groups</p>
-              <a href="https://wa.me/526241916997?text=Hi%2C%20I'd%20like%20to%20book%20Scuba%20Diving%20on%20the%20Luxury%20Yacht%2042" target="_blank" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg">Book Now</a>
+              <p class="text-slate-500 text-sm italic text-center pb-3 border-b border-border-light/50">Gran valor, perfecto para grupos de buceo</p>
+              <a href="https://wa.me/526241916997?text=Hi%2C%20I'd%20like%20to%20book%20Scuba%20Diving%20on%20the%20Luxury%20Yacht%2042" target="_blank" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg">Reservar Ahora</a>
             </div>
           </div>
         </div>
@@ -610,16 +610,16 @@ import yachtIcon from "../assets/icons/Yacht icon.png";
               <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
               <div class="absolute bottom-5 left-6">
                 <h4 class="text-white text-lg lg:text-xl">Sailing Boat 42'</h4>
-                <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Up to 14 Guests</span></div>
+                <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Hasta 14 Invitados</span></div>
               </div>
-              <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Sailing Experience</div>
+              <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Experiencia en Velero</div>
               <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-30%</div>
               <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
               <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
             </div>
             <div class="p-6 space-y-6">
-              <p class="text-slate-500 text-sm italic text-center pb-3 border-b border-border-light/50">Smooth sailing, dive & sail adventure</p>
-              <button type="button" onclick="openRezdyModal('642955','productsCalendar')" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg">Check Availability</button>
+              <p class="text-slate-500 text-sm italic text-center pb-3 border-b border-border-light/50">Navegación suave, aventura de buceo y vela</p>
+              <button type="button" onclick="openRezdyModal('642955','productsCalendar')" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg">Ver Disponibilidad</button>
             </div>
           </div>
         </div>
@@ -632,47 +632,47 @@ import yachtIcon from "../assets/icons/Yacht icon.png";
           <div class="faq-item border border-border-light rounded-2xl overflow-hidden bg-white">
             <input class="hidden" id="dfaq1" type="checkbox"/>
             <label class="flex items-center justify-between p-4 cursor-pointer" for="dfaq1">
-              <span class="flex items-center gap-2 font-semibold text-navy"><span class="material-symbols-outlined text-gold" style="font-size:18px">restaurant</span>Yacht Menu &amp; Bar</span>
+              <span class="flex items-center gap-2 font-semibold text-navy"><span class="material-symbols-outlined text-gold" style="font-size:18px">restaurant</span>Menú y Barra del Yate</span>
               <span class="material-symbols-outlined text-slate-300 faq-chevron transition-transform flex-shrink-0">expand_more</span>
             </label>
             <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
               <div class="text-base text-slate-500 leading-relaxed space-y-3">
-                <div><p class="font-semibold text-navy mb-1">Bar</p><p>Premium brands open bar includes red and white wine, margaritas, beer, rum, vodka, tequila, whiskey, juices, sodas, and bottled water.</p></div>
-                <div><p class="font-semibold text-navy mb-1">Food</p><p>Fresh tortilla chips with Mexican salsa and homemade guacamole, fresh baguette sandwiches, freshly made quesadillas, a selection of seasonal fruit, and a sweet bite to finish.</p></div>
-                <div class="border-t border-border-light pt-3"><p class="font-semibold text-navy mb-1">Options:</p><p><span class="font-semibold text-navy">Mexican Menu — $14 USD per person:</span> Tortilla chips with salsa and homemade guacamole, beef and chicken corn tortilla burritos, rice and beans, freshly made quesadillas, and dessert.</p></div>
-                <p class="text-slate-400 italic">Contact our office team for Kosher, Vegan or Vegetarian options.</p>
+                <div><p class="font-semibold text-navy mb-1">Barra</p><p>Barra libre de marcas premium incluye vino tinto y blanco, margaritas, cerveza, ron, vodka, tequila, whiskey, jugos, refrescos y agua embotellada.</p></div>
+                <div><p class="font-semibold text-navy mb-1">Comida</p><p>Totopos frescos con salsa mexicana y guacamole casero, sándwiches de baguette, quesadillas recién hechas, selección de fruta de temporada y un postre para terminar.</p></div>
+                <div class="border-t border-border-light pt-3"><p class="font-semibold text-navy mb-1">Opciones:</p><p><span class="font-semibold text-navy">Menú Mexicano — $14 USD por persona:</span> Totopos con salsa y guacamole casero, burritos de res y pollo en tortilla de maíz, arroz y frijoles, quesadillas recién hechas y postre.</p></div>
+                <p class="text-slate-400 italic">Contacta a nuestro equipo para opciones Kosher, Veganas o Vegetarianas.</p>
               </div>
             </div>
           </div>
           <div class="faq-item border border-border-light rounded-2xl overflow-hidden bg-white">
             <input class="hidden" id="dfaq2" type="checkbox"/>
             <label class="flex items-center justify-between p-4 cursor-pointer" for="dfaq2">
-              <span class="flex items-center gap-2 font-semibold text-navy"><span class="material-symbols-outlined text-gold" style="font-size:18px">restaurant</span>Sailing Menu &amp; Bar</span>
+              <span class="flex items-center gap-2 font-semibold text-navy"><span class="material-symbols-outlined text-gold" style="font-size:18px">restaurant</span>Menú y Barra del Velero</span>
               <span class="material-symbols-outlined text-slate-300 faq-chevron transition-transform flex-shrink-0">expand_more</span>
             </label>
             <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
               <div class="text-base text-slate-500 leading-relaxed space-y-3">
-                <div><p class="font-semibold text-navy mb-1">Bar:</p><p>Unlimited bar includes: red &amp; white wine, margaritas, beers, rum, vodka, tequila, whiskey, juices, sodas, bottled water.</p></div>
-                <div><p class="font-semibold text-navy mb-1">Food:</p><p>Tortilla chips, Mexican salsa, homemade guacamole, fresh baguette sandwiches, selection of fresh cut fruit platter, sweet bite.<br/>Vegetarian options upon request.</p></div>
-                <div class="border-t border-border-light pt-3"><p class="text-center font-semibold text-slate-400 mb-2">— OR —</p><p><span class="font-semibold text-navy">Mexican option ($14 USD per person):</span> Tortilla chips, salsa &amp; homemade guacamole, beef &amp; chicken corn tortilla burritos, rice and beans, quesadillas and dessert.</p></div>
-                <p class="text-slate-400 italic">Contact our office team for Kosher, Vegan or Vegetarian options.</p>
+                <div><p class="font-semibold text-navy mb-1">Barra:</p><p>Barra libre incluye: vino tinto y blanco, margaritas, cervezas, ron, vodka, tequila, whiskey, jugos, refrescos, agua embotellada.</p></div>
+                <div><p class="font-semibold text-navy mb-1">Comida:</p><p>Totopos, salsa mexicana, guacamole casero, sándwiches de baguette, selección de fruta fresca, postre.<br/>Opciones vegetarianas bajo solicitud.</p></div>
+                <div class="border-t border-border-light pt-3"><p class="text-center font-semibold text-slate-400 mb-2">— O —</p><p><span class="font-semibold text-navy">Opción Mexicana ($14 USD por persona):</span> Totopos, salsa y guacamole casero, burritos de res y pollo en tortilla de maíz, arroz y frijoles, quesadillas y postre.</p></div>
+                <p class="text-slate-400 italic">Contacta a nuestro equipo para opciones Kosher, Veganas o Vegetarianas.</p>
               </div>
             </div>
           </div>
           <div class="faq-item border border-border-light rounded-2xl px-6 py-5">
             <input class="hidden" id="dfaq3" type="checkbox"/>
-            <label class="flex items-center justify-between cursor-pointer" for="dfaq3"><span class="font-semibold text-navy">Do I need to be certified?</span><span class="material-symbols-outlined text-slate-300 faq-chevron transition-transform flex-shrink-0">expand_more</span></label>
-            <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300"><p class="text-base text-slate-500 leading-relaxed">No! We offer Discover Scuba programs for complete beginners. Our PADI-certified instructors provide a full briefing and guide you through every step. Certified divers can enjoy 2-tank dives at our best sites.</p></div>
+            <label class="flex items-center justify-between cursor-pointer" for="dfaq3"><span class="font-semibold text-navy">¿Necesito estar certificado?</span><span class="material-symbols-outlined text-slate-300 faq-chevron transition-transform flex-shrink-0">expand_more</span></label>
+            <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300"><p class="text-base text-slate-500 leading-relaxed">¡No! Ofrecemos programas Discover Scuba para principiantes. Nuestros instructores certificados PADI brindan una sesión informativa completa y te guían en cada paso. Los buzos certificados pueden disfrutar inmersiones de 2 tanques en nuestros mejores sitios.</p></div>
           </div>
           <div class="faq-item border border-border-light rounded-2xl px-6 py-5">
             <input class="hidden" id="dfaq4" type="checkbox"/>
-            <label class="flex items-center justify-between cursor-pointer" for="dfaq4"><span class="font-semibold text-navy">What marine life will I see?</span><span class="material-symbols-outlined text-slate-300 faq-chevron transition-transform flex-shrink-0">expand_more</span></label>
-            <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300"><p class="text-base text-slate-500 leading-relaxed">Cabo's waters are home to sea lions, tropical fish, moray eels, rays, seahorses, octopus, and colorful coral formations. Pelican Rock is famous for its resident sea lion colony that loves to interact with divers.</p></div>
+            <label class="flex items-center justify-between cursor-pointer" for="dfaq4"><span class="font-semibold text-navy">¿Qué vida marina veré?</span><span class="material-symbols-outlined text-slate-300 faq-chevron transition-transform flex-shrink-0">expand_more</span></label>
+            <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300"><p class="text-base text-slate-500 leading-relaxed">Las aguas de Cabo albergan lobos marinos, peces tropicales, morenas, rayas, caballitos de mar, pulpos y coloridas formaciones de coral. Pelican Rock es famoso por su colonia residente de lobos marinos que les encanta interactuar con los buzos.</p></div>
           </div>
           <div class="faq-item border border-border-light rounded-2xl px-6 py-5">
             <input class="hidden" id="dfaq5" type="checkbox"/>
-            <label class="flex items-center justify-between cursor-pointer" for="dfaq5"><span class="font-semibold text-navy">Where will we dive?</span><span class="material-symbols-outlined text-slate-300 faq-chevron transition-transform flex-shrink-0">expand_more</span></label>
-            <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300"><p class="text-base text-slate-500 leading-relaxed">Our dive sites include Pelican's Rock and Land's End — two of Cabo's most iconic underwater locations, teeming with marine life and crystal-clear visibility.</p></div>
+            <label class="flex items-center justify-between cursor-pointer" for="dfaq5"><span class="font-semibold text-navy">¿Dónde bucearemos?</span><span class="material-symbols-outlined text-slate-300 faq-chevron transition-transform flex-shrink-0">expand_more</span></label>
+            <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300"><p class="text-base text-slate-500 leading-relaxed">Nuestros sitios de buceo incluyen Pelican Rock y Land's End — dos de los lugares submarinos más icónicos de Cabo, llenos de vida marina y con visibilidad cristalina.</p></div>
           </div>
         </div>
       </div>
@@ -681,15 +681,15 @@ import yachtIcon from "../assets/icons/Yacht icon.png";
       <div class="max-w-7xl mx-auto px-12 py-16 border-t border-border-light">
         <div class="grid grid-cols-2 gap-16 items-center">
           <div>
-            <div class="flex items-center gap-3 mb-6"><div class="w-1 h-8 bg-gold rounded-full"></div><h2 class="text-3xl text-navy">Diving at Pelican Rock</h2></div>
-            <p class="text-slate-500 leading-relaxed mb-5">Pelican Rock is Cabo's premier dive site, located at the base of the famous Land's End formations. The calm, crystal-clear waters are home to a thriving ecosystem of tropical fish, moray eels, rays, and a playful colony of sea lions that love to interact with divers.</p>
-            <p class="text-slate-500 leading-relaxed">Our expert dive team knows every crevice and coral formation, ensuring you see the very best of what Cabo's underwater world has to offer — from tiny seahorses to massive schools of fish.</p>
+            <div class="flex items-center gap-3 mb-6"><div class="w-1 h-8 bg-gold rounded-full"></div><h2 class="text-3xl text-navy">Buceo en Pelican Rock</h2></div>
+            <p class="text-slate-500 leading-relaxed mb-5">Pelican Rock es el sitio de buceo más importante de Cabo, ubicado en la base de las famosas formaciones de Land's End. Las aguas tranquilas y cristalinas albergan un ecosistema próspero de peces tropicales, morenas, rayas y una juguetona colonia de lobos marinos que les encanta interactuar con los buzos.</p>
+            <p class="text-slate-500 leading-relaxed">Nuestro equipo experto de buceo conoce cada grieta y formación de coral, asegurando que veas lo mejor del mundo submarino de Cabo — desde pequeños caballitos de mar hasta enormes cardúmenes de peces.</p>
             <div class="flex gap-8 mt-8">
-              <div><p class="text-3xl font-bold text-navy font-serif">30+</p><p class="text-sm text-slate-400 uppercase tracking-widest font-bold mt-1">Species</p></div>
+              <div><p class="text-3xl font-bold text-navy font-serif">30+</p><p class="text-sm text-slate-400 uppercase tracking-widest font-bold mt-1">Especies</p></div>
               <div class="w-px bg-border-light"></div>
-              <div><p class="text-3xl font-bold text-navy font-serif">25m</p><p class="text-sm text-slate-400 uppercase tracking-widest font-bold mt-1">Visibility</p></div>
+              <div><p class="text-3xl font-bold text-navy font-serif">25m</p><p class="text-sm text-slate-400 uppercase tracking-widest font-bold mt-1">Visibilidad</p></div>
               <div class="w-px bg-border-light"></div>
-              <div><p class="text-3xl font-bold text-navy font-serif">All</p><p class="text-sm text-slate-400 uppercase tracking-widest font-bold mt-1">Skill Levels</p></div>
+              <div><p class="text-3xl font-bold text-navy font-serif">Todos</p><p class="text-sm text-slate-400 uppercase tracking-widest font-bold mt-1">Los Niveles</p></div>
             </div>
           </div>
           <div>
@@ -705,15 +705,15 @@ import yachtIcon from "../assets/icons/Yacht icon.png";
             <Image src={scubaImg17} alt="Scuba diving at Land's End" class="w-full h-80 object-cover rounded-3xl shadow-xl" width={600} height={320} />
           </div>
           <div>
-            <div class="flex items-center gap-3 mb-6"><div class="w-1 h-8 bg-gold rounded-full"></div><h2 class="text-3xl text-navy">Diving at Land's End</h2></div>
-            <p class="text-slate-500 leading-relaxed mb-5">Land's End offers a thrilling dive experience at the very tip of the Baja Peninsula, where the Sea of Cortez meets the Pacific Ocean. The dramatic underwater rock formations create a unique habitat for diverse marine life, including large schools of fish, rays, and occasional encounters with larger pelagic species.</p>
-            <p class="text-slate-500 leading-relaxed">The underwater landscape features dramatic walls, swim-throughs, and sandy channels that make every dive an adventure. This site is perfect for certified divers looking for a more challenging and rewarding dive experience.</p>
+            <div class="flex items-center gap-3 mb-6"><div class="w-1 h-8 bg-gold rounded-full"></div><h2 class="text-3xl text-navy">Buceo en Land's End</h2></div>
+            <p class="text-slate-500 leading-relaxed mb-5">Land's End ofrece una emocionante experiencia de buceo en la punta de la Península de Baja, donde el Mar de Cortés se encuentra con el Océano Pacífico. Las dramáticas formaciones rocosas submarinas crean un hábitat único para diversa vida marina, incluyendo grandes cardúmenes de peces, rayas y encuentros ocasionales con especies pelágicas más grandes.</p>
+            <p class="text-slate-500 leading-relaxed">El paisaje submarino presenta paredes dramáticas, túneles y canales de arena que hacen de cada inmersión una aventura. Este sitio es perfecto para buzos certificados que buscan una experiencia de buceo más desafiante y gratificante.</p>
             <div class="flex gap-8 mt-8">
-              <div><p class="text-3xl font-bold text-navy font-serif">40+</p><p class="text-sm text-slate-400 uppercase tracking-widest font-bold mt-1">Species</p></div>
+              <div><p class="text-3xl font-bold text-navy font-serif">40+</p><p class="text-sm text-slate-400 uppercase tracking-widest font-bold mt-1">Especies</p></div>
               <div class="w-px bg-border-light"></div>
-              <div><p class="text-3xl font-bold text-navy font-serif">20m</p><p class="text-sm text-slate-400 uppercase tracking-widest font-bold mt-1">Visibility</p></div>
+              <div><p class="text-3xl font-bold text-navy font-serif">20m</p><p class="text-sm text-slate-400 uppercase tracking-widest font-bold mt-1">Visibilidad</p></div>
               <div class="w-px bg-border-light"></div>
-              <div><p class="text-3xl font-bold text-navy font-serif">Mid-High</p><p class="text-sm text-slate-400 uppercase tracking-widest font-bold mt-1">Difficulty</p></div>
+              <div><p class="text-3xl font-bold text-navy font-serif">Media-Alta</p><p class="text-sm text-slate-400 uppercase tracking-widest font-bold mt-1">Dificultad</p></div>
             </div>
           </div>
         </div>
@@ -722,7 +722,7 @@ import yachtIcon from "../assets/icons/Yacht icon.png";
       <!-- DESKTOP: Guest Reviews -->
       <div class="max-w-7xl mx-auto px-12 pb-20">
         <div class="flex items-center justify-between mb-10">
-          <div class="flex items-center gap-3"><div class="w-1 h-8 bg-gold rounded-full"></div><h2 class="text-3xl text-navy">What Our Guests Say</h2></div>
+          <div class="flex items-center gap-3"><div class="w-1 h-8 bg-gold rounded-full"></div><h2 class="text-3xl text-navy">Lo Que Dicen Nuestros Clientes</h2></div>
           <div class="flex gap-2">
             <button onclick="scrollDReviews(-1)" class="w-10 h-10 rounded-full border border-border-light flex items-center justify-center text-navy hover:bg-light-grey transition-colors"><span class="material-symbols-outlined text-xl">chevron_left</span></button>
             <button onclick="scrollDReviews(1)" class="w-10 h-10 rounded-full border border-border-light flex items-center justify-center text-navy hover:bg-light-grey transition-colors"><span class="material-symbols-outlined text-xl">chevron_right</span></button>

@@ -1,0 +1,953 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import FloatingCTA from '../../components/FloatingCTA.astro';
+import RezdyModal from '../../components/RezdyModal.astro';
+import { Image } from 'astro:assets';
+
+import DSC_0107_2 from "../../assets/images/bachelorette/cabo-bachelorette-boat-party-01.jpg";
+import frame_grabs_yacht_30 from "../../assets/images/guests-on-yachts/cabo-yacht-charter-guests-03.jpg";
+import DSC_0307_2 from "../../assets/images/bachelorette/cabo-bachelorette-boat-party-02.jpg";
+import Barco_Day_10_copy from "../../assets/images/bachelorette/cabo-bachelorette-boat-day.jpg";
+import img_4k_01_41_40_08_Still129 from "../../assets/images/guests-on-sailboats/cabo-sailboat-party-fun.jpg";
+import img_9_Yacht_51 from "../../assets/images/boats/yacht-51/cabo-luxury-yacht-51-ocean-view.jpg";
+import img_2_Yacht_51 from "../../assets/images/boats/yacht-51/cabo-luxury-yacht-51-exterior-01.jpg";
+import img_7_Yacht_51 from "../../assets/images/boats/yacht-51/cabo-luxury-yacht-51-exterior-03.jpg";
+import img_1_Yacht_45 from "../../assets/images/boats/yacht-45/cabo-private-yacht-45-exterior-01.jpg";
+import img_5_Yacht_45 from "../../assets/images/boats/yacht-45/cabo-private-yacht-45-exterior-03.jpg";
+import img_6_Yacht_45 from "../../assets/images/boats/yacht-45/cabo-private-yacht-45-bow.jpg";
+import img_3_Yacht_42 from "../../assets/images/boats/yacht-42/cabo-private-yacht-42-exterior-02.jpg";
+import img_2_Yacht_42 from "../../assets/images/boats/yacht-42/cabo-private-yacht-42-exterior-01.jpg";
+import img_5_Yacht_42 from "../../assets/images/boats/yacht-42/cabo-private-yacht-42-exterior-03.jpg";
+import img_10_Sailing_42 from "../../assets/images/boats/sailing-42/cabo-sailing-42-exterior-01.jpg";
+import img_17_Sailing_42 from "../../assets/images/boats/sailing-42/cabo-sailing-42-sailing-view.jpg";
+import img_12_Sailing_42 from "../../assets/images/boats/sailing-42/cabo-sailing-42-exterior-02.jpg";
+import img_6_Sailing_38 from "../../assets/images/boats/sailing-38/cabo-sailing-38-exterior-02.jpg";
+import img_8_Sailing_38 from "../../assets/images/boats/sailing-38/cabo-sailing-38-exterior-03.jpg";
+import img_5_Sailing_38 from "../../assets/images/boats/sailing-38/cabo-sailing-38-exterior-01.jpg";
+import DSC_3713 from "../../assets/images/bachelorette/cabo-bachelorette-celebration.jpg";
+import DSC_4259_copy from "../../assets/images/bachelorette/cabo-bachelorette-group-photo.jpg";
+---
+
+<BaseLayout bodyClass="bg-white font-body text-text-main antialiased min-h-screen flex flex-col relative" title="Despedida de Soltera en Yate en Cabo San Lucas | Cabo Sailing" description="Yate privado para despedida de soltera en Cabo. Decoracion personalizada, barra libre, parada de snorkel y opcion al atardecer — fin de semana inolvidable." hreflangs={{ en: '/bachelorette-party', es: '/es/bachelorette-party' }}>
+  <Header variant="subpage" activePage="tours" />
+
+
+  <style is:inline type="text/tailwindcss">
+    #highlights-toggle:checked ~ #highlights-content {
+      max-height: 500px; margin-top: 1.5rem; opacity: 1;
+    }
+    #highlights-toggle:checked ~ label .chevron-icon { transform: rotate(90deg); }
+    .faq-item input:checked ~ .faq-answer {
+      max-height: 800px; margin-top: 0.75rem; opacity: 1;
+    }
+    .faq-item input:checked ~ label .faq-chevron { transform: rotate(180deg); }
+    #rezdyModal .rezdy-modal-title .bg-gold { background-color: #E8789A !important; }
+    @keyframes float-up { 0% { transform: translateY(0) rotate(0deg); opacity:0.7; } 100% { transform: translateY(-100px) rotate(360deg); opacity:0; } }
+    .confetti-dot { position:absolute; border-radius:50%; animation: float-up 4s infinite; }
+    .festive-divider { background: linear-gradient(90deg, transparent, #E8789A 20%, #C5A059 50%, #E8789A 80%, transparent); height: 2px; }
+  </style>
+
+  <main class="flex-1 w-full overflow-x-hidden pt-[60px] lg:pt-[72px]">
+
+
+  <!-- ========== HERO ========== -->
+  <div class="relative w-full h-[45vh] lg:hidden overflow-hidden">
+    <div class="flex overflow-x-auto snap-x snap-mandatory h-full no-scrollbar">
+      <div class="flex-shrink-0 w-full h-full snap-center relative">
+        <Image src={DSC_0107_2} alt="Five women on yacht bow in Cabo" class="w-full h-full object-cover" width={800} height={500} />
+        <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
+      </div>
+      <div class="flex-shrink-0 w-full h-full snap-center"><Image src={frame_grabs_yacht_30} alt="Woman sunbathing on yacht deck" class="w-full h-full object-cover" width={800} height={500} /></div>
+      <div class="flex-shrink-0 w-full h-full snap-center"><Image src={DSC_0307_2} alt="Bride and squad arms raised" class="w-full h-full object-cover" width={800} height={500} /></div>
+      <div class="flex-shrink-0 w-full h-full snap-center"><Image src={Barco_Day_10_copy} alt="Champagne toast at El Arco" class="w-full h-full object-cover" width={800} height={500} /></div>
+      <div class="flex-shrink-0 w-full h-full snap-center"><Image src={img_4k_01_41_40_08_Still129} alt="Large group celebrating near Arch" class="w-full h-full object-cover" width={800} height={500} /></div>
+    </div>
+    <div class="absolute top-4 left-4 text-white text-base font-bold px-3 py-1 rounded-full uppercase tracking-widest" style="background-color:#E8789A;">Despedida de Soltera</div>
+    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent pt-10 pb-5 px-4">
+      <div class="max-w-[360px] mx-auto text-center">
+        <div class="flex items-center justify-center gap-0.5 mb-1.5">
+          <span class="material-symbols-outlined text-gold filled text-lg">star</span>
+          <span class="material-symbols-outlined text-gold filled text-lg">star</span>
+          <span class="material-symbols-outlined text-gold filled text-lg">star</span>
+          <span class="material-symbols-outlined text-gold filled text-lg">star</span>
+          <span class="material-symbols-outlined text-gold filled text-lg">star</span>
+        </div>
+        <p class="text-white text-base leading-snug">"The girls loved every second — music, drinks, perfect vibes. Best party ever."</p>
+        <p class="text-white/50 text-xs uppercase tracking-widest font-bold mt-2">Amanda K. &mdash; Los Angeles, CA</p>
+      </div>
+    </div>
+    <button class="fleet-arrow left" onclick="heroNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
+    <button class="fleet-arrow right" onclick="heroNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
+  </div>
+
+  <!-- Decorative festive ribbon divider -->
+  <div class="festive-divider w-full"></div>
+  <div class="flex items-center justify-center py-2 bg-white text-base text-slate-400 font-medium tracking-widest gap-2 text-center">
+    <span class="text-base">🥂</span>
+    <span class="text-base uppercase font-bold tracking-[0.2em]" style="color:#E8789A;">Privado · Celebracion · Cabo San Lucas</span>
+    <span class="text-base">🥂</span>
+  </div>
+  <div class="festive-divider w-full"></div>
+
+  <!-- ========== MOBILE LAYOUT ========== -->
+  <div class="lg:hidden relative z-10 -mt-4 px-5">
+    <div class="bg-white rounded-3xl p-6 shadow-xl shadow-navy/5 border border-border-light">
+      <nav class="flex items-center gap-1.5 text-xs text-slate-400 mb-4" aria-label="Breadcrumb">
+        <a href="/es/" class="hover:text-gold transition-colors">Inicio</a>
+        <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+        <span>Tours</span>
+        <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+        <span class="text-navy font-semibold">Bachelorette</span>
+      </nav>
+      <div class="flex flex-col gap-1 mb-6">
+        <div class="flex justify-between items-start">
+          <h1 class="text-2xl text-navy leading-tight">Crucero Privado de Despedida de Soltera en Cabo</h1>
+          <div class="flex items-center gap-1 bg-gold/10 px-2 py-1 rounded text-gold text-sm font-bold">
+            <span class="material-symbols-outlined text-[14px] filled">star</span> 5.0
+          </div>
+        </div>
+        <!-- Pink pill badge -->
+        <div class="mt-2 text-center">
+          <span class="inline-block text-white text-base font-bold px-3 py-1 rounded-full uppercase tracking-widest" style="background-color:#E8789A;">Celebracion Mas Popular</span>
+        </div>
+        <p class="text-slate-400 text-sm font-medium flex items-center gap-1 mt-2 uppercase tracking-widest">
+          <span class="material-symbols-outlined text-base">location_on</span> Cabo Marina, Dock F
+        </p>
+      </div>
+      <div class="grid grid-cols-2 gap-3">
+        <div class="bg-light-grey rounded-2xl p-3 flex flex-col items-center text-center border border-border-light">
+          <span class="material-symbols-outlined text-gold mb-1">schedule</span>
+          <p class="text-xs text-slate-400 uppercase font-bold tracking-widest mb-0.5">Duracion</p>
+          <p class="text-sm font-bold text-navy">3 Horas</p>
+        </div>
+        <div class="bg-light-grey rounded-2xl p-3 flex flex-col items-center text-center border border-border-light">
+          <span class="material-symbols-outlined mb-1" style="color:#E8789A;">celebration</span>
+          <p class="text-xs text-slate-400 uppercase font-bold tracking-widest mb-0.5">Grupo</p>
+          <p class="text-sm font-bold text-navy">Charter Privado</p>
+        </div>
+        <div class="bg-light-grey rounded-2xl p-3 flex flex-col items-center text-center border border-border-light">
+          <span class="material-symbols-outlined text-gold mb-1">groups</span>
+          <p class="text-xs text-slate-400 uppercase font-bold tracking-widest mb-0.5">Capacidad</p>
+          <p class="text-sm font-bold text-navy">Hasta 14</p>
+        </div>
+        <div class="bg-light-grey rounded-2xl p-3 flex flex-col items-center text-center border border-border-light">
+          <span class="material-symbols-outlined text-gold filled mb-1">star</span>
+          <p class="text-xs text-slate-400 uppercase font-bold tracking-widest mb-0.5">Calificacion</p>
+          <p class="text-sm font-bold text-navy">5.0 / 5.0</p>
+        </div>
+      </div>
+      <div class="mt-6 pt-6 border-t border-border-light">
+        <input class="hidden" id="highlights-toggle" type="checkbox"/>
+        <label class="flex items-center justify-between cursor-pointer group" for="highlights-toggle">
+          <div class="flex items-center gap-3">
+            <div class="p-2 rounded-full" style="background-color:#E8789A20;"><span class="material-symbols-outlined text-xl" style="color:#E8789A;">celebration</span></div>
+            <span class="text-base font-semibold text-navy">Elige Tu Estilo</span>
+          </div>
+          <span class="material-symbols-outlined text-slate-300 chevron-icon transition-transform">chevron_right</span>
+        </label>
+        <div class="max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out" id="highlights-content">
+          <div class="space-y-4">
+            <div><h4 class="text-sm font-bold text-navy uppercase tracking-wider mb-1">🎉 El Crucero Fiestero</h4><p class="text-sm text-slate-500 leading-relaxed">Musica fuerte, mucha energia, baile y bebidas sin parar. Perfecto si tu grupo quiere una celebracion divertida y animada.</p></div>
+            <div><h4 class="text-sm font-bold text-navy uppercase tracking-wider mb-1">🌅 Vibra de Atardecer</h4><p class="text-sm text-slate-500 leading-relaxed">Hora dorada, energia relajada, fotos increibles. Ideal para una experiencia mas elegante y hermosa.</p></div>
+            <div><h4 class="text-sm font-bold text-navy uppercase tracking-wider mb-1">🥂 Dia de Lujo Relajado</h4><p class="text-sm text-slate-500 leading-relaxed">Nada, flota, paddleboard, saborea y relajate. Gran mezcla de diversion y relax.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-8">
+      <h3 class="text-lg text-navy mb-3">Por Que Esta Es La Indicada</h3>
+      <p class="text-slate-500 leading-relaxed text-base font-semibold mb-3" style="color:#E8789A;">Esto no es solo un paseo en barco — es tu evento principal.</p>
+      <p class="text-slate-500 leading-relaxed text-base">Imagina esto: musica sonando, bebidas fluyendo, tu grupo riendo en cubierta... el Arco de fondo, champagne en mano, y cero estres por la logistica. Nosotros nos encargamos de todo — tu solo lleguas y disfrutas.</p>
+    </div>
+
+    <div class="mt-10">
+      <div class="flex items-center gap-3 mb-6"><div class="w-1 h-6 rounded-full" style="background-color:#E8789A;"></div><h3 class="text-lg text-navy">Que Incluye</h3></div>
+      <div class="grid grid-cols-1 gap-5 pl-1">
+        <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0" style="background-color:#E8789A;"><span class="material-symbols-outlined text-white text-[14px]">check</span></div><span class="text-slate-600 text-base font-medium">Barco privado (sin otros pasajeros)</span></div>
+        <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0" style="background-color:#E8789A;"><span class="material-symbols-outlined text-white text-[14px]">check</span></div><span class="text-slate-600 text-base font-medium">Barra libre (cocteles, cerveza, tequila, refrescos)</span></div>
+        <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0" style="background-color:#E8789A;"><span class="material-symbols-outlined text-white text-[14px]">check</span></div><span class="text-slate-600 text-base font-medium">Comida (almuerzo ligero o snacks)</span></div>
+        <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0" style="background-color:#E8789A;"><span class="material-symbols-outlined text-white text-[14px]">check</span></div><span class="text-slate-600 text-base font-medium">Equipo de snorkel y paddleboard</span></div>
+        <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0" style="background-color:#E8789A;"><span class="material-symbols-outlined text-white text-[14px]">check</span></div><span class="text-slate-600 text-base font-medium">Toallas</span></div>
+        <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0" style="background-color:#E8789A;"><span class="material-symbols-outlined text-white text-[14px]">check</span></div><span class="text-slate-600 text-base font-medium">Sistema de sonido Bluetooth</span></div>
+        <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0" style="background-color:#E8789A;"><span class="material-symbols-outlined text-white text-[14px]">check</span></div><span class="text-slate-600 text-base font-medium">Tripulacion bilingue experimentada</span></div>
+      </div>
+    </div>
+
+    <div class="mt-10 rounded-3xl p-6 border border-border-light" style="background:linear-gradient(135deg,#0A1D37,#1a3a6b);">
+      <div class="flex items-center gap-3 mb-4"><span class="material-symbols-outlined text-gold text-2xl">pin_drop</span><h3 class="text-lg text-white">Punto de Encuentro</h3></div>
+      <p class="text-white/70 text-base leading-relaxed">Cabo Marina, Dock F. Busca al equipo de Cabo Sailing con camisas doradas. Por favor llega 15 minutos antes de la salida.</p>
+      <div class="mt-4 flex items-center gap-2 text-sm font-bold uppercase tracking-widest" style="color:#C5A059;"><span class="material-symbols-outlined text-base">schedule</span>Salidas: 10:00 AM o 4:00 PM diario</div>
+    </div>
+
+    <div class="mt-12 px-0">
+      <div class="flex items-center gap-3 mb-8"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-lg lg:text-2xl text-navy">Explora nuestros barcos — encuentra el ideal para tu despedida de soltera</h3></div>
+      <div class="flex flex-col gap-5 lg:grid lg:grid-cols-3 pb-8">
+        <!-- Yacht 51' -->
+        <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="yacht-51">
+          <div class="h-[280px] w-full relative">
+            <div class="boat-carousel relative w-full h-full">
+<Image src={img_9_Yacht_51} alt="Luxury Yacht 51'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-100 transition-opacity duration-700" width={800} height={500} />
+<Image src={img_2_Yacht_51} alt="Luxury Yacht 51'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" width={800} height={500} />
+<Image src={img_7_Yacht_51} alt="Luxury Yacht 51'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" width={800} height={500} />
+</div>
+            <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
+            <div class="absolute bottom-5 left-6"><h4 class="text-white text-lg lg:text-xl">Luxury Yacht 51'</h4><div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Hasta 20 Pasajeros</span></div></div>
+            <div class="absolute top-4 right-4 text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest" style="background-color:#E8789A;">Mas Espacioso</div>
+
+          <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-30%</div>
+          <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
+          <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
+</div>
+          <div class="p-4 space-y-4">
+      <p class="text-slate-500 text-sm italic text-center pb-3 border-b border-border-light/50">Ideal para grupos grandes y maximo espacio</p>
+            <div class="space-y-4">
+              <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$1,690</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$1,436</span><span class="text-slate-400 text-[11px] font-medium uppercase">/ 1-4 pasajeros</span></div></div><div class="flex flex-col items-end"><span class="text-slate-400 text-[11px] font-medium">Pasajeros extra</span><div class="flex items-baseline gap-1"><span class="text-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-400 text-[11px] font-medium">/pp</span></div></div></div>
+            </div>
+            <button type="button" onclick="openRezdyModal('165509')" class="block w-full text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg cursor-pointer" style="background-color:#E8789A;">Ver Disponibilidad</button>
+          </div>
+        </div>
+        <!-- Yacht 45' -->
+        <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="yacht-45">
+          <div class="h-[280px] w-full relative">
+            <div class="boat-carousel relative w-full h-full">
+<Image src={img_1_Yacht_45} alt="Luxury Yacht 45'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-100 transition-opacity duration-700" width={800} height={500} />
+<Image src={img_5_Yacht_45} alt="Luxury Yacht 45'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" width={800} height={500} />
+<Image src={img_6_Yacht_45} alt="Luxury Yacht 45'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" width={800} height={500} />
+</div>
+            <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
+            <div class="absolute bottom-5 left-6"><h4 class="text-white text-lg lg:text-xl">Luxury Yacht 45'</h4><div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Hasta 12 Pasajeros</span></div></div>
+            <div class="absolute top-4 right-4 text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest" style="background-color:#E8789A;">Mas Popular</div>
+
+          <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-30%</div>
+          <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
+          <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
+</div>
+          <div class="p-4 space-y-4">
+      <p class="text-slate-500 text-sm italic text-center pb-3 border-b border-border-light/50">Embarcacion mas nueva, lujo moderno y elegante</p>
+            <div class="space-y-4">
+              <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$1,520</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$1,292</span><span class="text-slate-400 text-[11px] font-medium uppercase">/ 1-4 pasajeros</span></div></div><div class="flex flex-col items-end"><span class="text-slate-400 text-[11px] font-medium">Pasajeros extra</span><div class="flex items-baseline gap-1"><span class="text-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-400 text-[11px] font-medium">/pp</span></div></div></div>
+            </div>
+            <button type="button" onclick="openRezdyModal('528988')" class="block w-full text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg cursor-pointer" style="background-color:#E8789A;">Ver Disponibilidad</button>
+          </div>
+        </div>
+        <!-- Yacht 42' -->
+        <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="yacht-42">
+          <div class="h-[280px] w-full relative">
+            <div class="boat-carousel relative w-full h-full">
+<Image src={img_3_Yacht_42} alt="Luxury Yacht 42'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-100 transition-opacity duration-700" width={800} height={500} />
+<Image src={img_2_Yacht_42} alt="Luxury Yacht 42'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" width={800} height={500} />
+<Image src={img_5_Yacht_42} alt="Luxury Yacht 42'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" width={800} height={500} />
+</div>
+            <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
+            <div class="absolute bottom-5 left-6"><h4 class="text-white text-lg lg:text-xl">Luxury Yacht 42'</h4><div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Hasta 18 Pasajeros</span></div></div>
+            <div class="absolute top-4 right-4 text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest" style="background-color:#E8789A;">Mejor Valor</div>
+
+          <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-30%</div>
+          <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
+          <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
+</div>
+          <div class="p-4 space-y-4">
+      <p class="text-slate-500 text-sm italic text-center pb-3 border-b border-border-light/50">Excelente valor, perfecto para fiestas</p>
+            <div class="space-y-4">
+              <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$1,350</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$1,148</span><span class="text-slate-400 text-[11px] font-medium uppercase">/ 1-4 pasajeros</span></div></div><div class="flex flex-col items-end"><span class="text-slate-400 text-[11px] font-medium">Pasajeros extra</span><div class="flex items-baseline gap-1"><span class="text-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-400 text-[11px] font-medium">/pp</span></div></div></div>
+            </div>
+            <button type="button" onclick="openRezdyModal('168008')" class="block w-full text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg cursor-pointer" style="background-color:#E8789A;">Ver Disponibilidad</button>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col gap-5 lg:grid lg:grid-cols-2 lg:max-w-[900px] lg:mx-auto pb-8">
+        <!-- Sailing 42' -->
+        <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="sailing-42">
+          <div class="h-[280px] w-full relative">
+            <div class="boat-carousel relative w-full h-full">
+<Image src={img_10_Sailing_42} alt="Sailing Boat 42'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-100 transition-opacity duration-700" width={800} height={500} />
+<Image src={img_17_Sailing_42} alt="Sailing Boat 42'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" width={800} height={500} />
+<Image src={img_12_Sailing_42} alt="Sailing Boat 42'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" width={800} height={500} />
+</div>
+            <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
+            <div class="absolute bottom-5 left-6"><h4 class="text-white text-lg lg:text-xl">Sailing Boat 42'</h4><div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Hasta 14 Pasajeros</span></div></div>
+            <div class="absolute top-4 right-4 text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest" style="background-color:#E8789A;">Mejor Valor</div>
+
+          <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-30%</div>
+          <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
+          <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
+</div>
+          <div class="p-4 space-y-4">
+      <p class="text-slate-500 text-sm italic text-center pb-3 border-b border-border-light/50">Navegacion suave, diversion al sol</p>
+            <div class="space-y-4">
+              <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$1,090</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$927</span><span class="text-slate-400 text-[11px] font-medium uppercase">/ 1-4 pasajeros</span></div></div><div class="flex flex-col items-end"><span class="text-slate-400 text-[11px] font-medium">Pasajeros extra</span><div class="flex items-baseline gap-1"><span class="text-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-400 text-[11px] font-medium">/pp</span></div></div></div>
+            </div>
+            <button type="button" onclick="openRezdyModal('642955','productsCalendar')" class="block w-full text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg" style="background-color:#E8789A;">Ver Disponibilidad</button>
+          </div>
+        </div>
+        <!-- Sailing 38' -->
+        <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="sailing-38">
+          <div class="h-[280px] w-full relative">
+            <div class="boat-carousel relative w-full h-full">
+<Image src={img_6_Sailing_38} alt="Sailing Boat 38'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-100 transition-opacity duration-700" width={800} height={500} />
+<Image src={img_8_Sailing_38} alt="Sailing Boat 38'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" width={800} height={500} />
+<Image src={img_5_Sailing_38} alt="Sailing Boat 38'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" width={800} height={500} />
+</div>
+            <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
+            <div class="absolute bottom-5 left-6"><h4 class="text-white text-lg lg:text-xl">Sailing Boat 38'</h4><div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Hasta 9 Pasajeros</span></div></div>
+
+          <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-30%</div>
+          <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
+          <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
+</div>
+          <div class="p-4 space-y-4">
+      <p class="text-slate-500 text-sm italic text-center pb-3 border-b border-border-light/50">Intimo y aventurero, velero clasico</p>
+            <div class="space-y-4">
+              <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$825</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$701</span><span class="text-slate-400 text-[11px] font-medium uppercase">/ 1-4 pasajeros</span></div></div><div class="flex flex-col items-end"><span class="text-slate-400 text-[11px] font-medium">Pasajeros extra</span><div class="flex items-baseline gap-1"><span class="text-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-400 text-[11px] font-medium">/pp</span></div></div></div>
+            </div>
+            <button type="button" onclick="openRezdyModal('165682')" class="block w-full text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg cursor-pointer" style="background-color:#E8789A;">Ver Disponibilidad</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Comparacion Rapida dropdown -->
+      <div class="mt-8 faq-item">
+        <input class="hidden" id="m-comparison-toggle" type="checkbox"/>
+        <label class="flex items-center justify-between cursor-pointer border border-border-light rounded-2xl p-4 bg-white" for="m-comparison-toggle">
+          <span class="flex items-center gap-3"><div class="w-1 h-6 rounded-full" style="background-color:#E8789A;"></div><span class="text-base font-semibold text-navy">Comparacion Rapida</span></span>
+          <span class="material-symbols-outlined text-slate-400 faq-chevron transition-transform duration-300">expand_more</span>
+        </label>
+        <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out">
+          <div class="overflow-x-auto mt-3 px-1 pb-2">
+            <table class="w-full text-left border-collapse min-w-[460px]">
+              <thead><tr class="border-b-2 border-gold/30"><th class="py-3 pr-4 text-xs font-bold text-navy uppercase tracking-widest">Barco</th><th class="py-3 pr-4 text-xs font-bold text-navy uppercase tracking-widest">Pasajeros</th><th class="py-3 text-xs font-bold text-navy uppercase tracking-widest">Experiencia</th></tr></thead>
+              <tbody class="text-sm">
+                <tr class="border-b border-border-light"><td class="py-3 pr-4 font-semibold text-navy">42' Yacht</td><td class="py-3 pr-4 text-slate-500">Up to 18</td><td class="py-3 text-slate-500">Crucero de fiesta de lujo</td></tr>
+                <tr class="border-b border-border-light bg-gold/5"><td class="py-3 pr-4 font-semibold text-navy"><span class="text-gold mr-1">&#11088;</span>45' Yacht</td><td class="py-3 pr-4 text-slate-500">Up to 12</td><td class="py-3 text-slate-500">Fiesta en yate mas popular</td></tr>
+                <tr class="border-b border-border-light"><td class="py-3 pr-4 font-semibold text-navy">46' Yacht</td><td class="py-3 pr-4 text-slate-500">Up to 20</td><td class="py-3 text-slate-500">Yate mas grande</td></tr>
+                <tr class="border-b border-border-light bg-gold/5"><td class="py-3 pr-4 font-semibold text-navy"><span class="text-gold mr-1">&#11088;</span>42' Sailboat</td><td class="py-3 pr-4 text-slate-500">Hasta 14</td><td class="py-3 text-slate-500">Mejor valor fiesta en velero</td></tr>
+                <tr><td class="py-3 pr-4 font-semibold text-navy">38' Sailboat</td><td class="py-3 pr-4 text-slate-500">Up to 9</td><td class="py-3 text-slate-500">Celebracion intima en velero</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-10 mb-6">
+      <div class="flex items-center gap-3 mb-6"><div class="w-1 h-6 rounded-full" style="background-color:#E8789A;"></div><h3 class="text-lg text-navy">FAQ</h3></div>
+      <div class="flex flex-col gap-4">
+        <div class="faq-item border border-border-light rounded-2xl px-5 py-4">
+          <input class="hidden" id="faq-yacht-menu" type="checkbox"/>
+          <label class="flex items-center justify-between cursor-pointer" for="faq-yacht-menu"><span class="flex items-center gap-2 text-base font-semibold text-navy pr-4"><span class="material-symbols-outlined text-gold" style="font-size:18px">restaurant</span>Menu y Barra del Yate</span><span class="material-symbols-outlined text-slate-300 faq-chevron transition-transform flex-shrink-0">expand_more</span></label>
+          <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300">
+            <div class="text-sm text-slate-500 leading-relaxed space-y-3 mt-3">
+              <div><p class="font-semibold text-navy mb-1">Barra</p><p>Barra libre de marcas premium incluye vino tinto y blanco, margaritas, cerveza, ron, vodka, tequila, whiskey, jugos, refrescos y agua embotellada.</p></div>
+              <div><p class="font-semibold text-navy mb-1">Comida</p><p>Totopos frescos con salsa mexicana y guacamole casero, sandwiches de baguette frescos, quesadillas recien hechas, seleccion de fruta de temporada y un postre para terminar.</p></div>
+              <div class="border-t border-border-light pt-3"><p class="font-semibold text-navy mb-1">Opciones:</p><p><span class="font-semibold text-navy">Menu Mexicano — $14 USD por persona:</span> Totopos con salsa y guacamole casero, burritos de res y pollo en tortilla de maiz, arroz con frijoles, quesadillas recien hechas y postre.</p></div>
+              <p class="text-slate-400 italic">Contacta a nuestro equipo para opciones Kosher, Veganas o Vegetarianas.</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item border border-border-light rounded-2xl px-5 py-4">
+          <input class="hidden" id="faq-sail-menu" type="checkbox"/>
+          <label class="flex items-center justify-between cursor-pointer" for="faq-sail-menu"><span class="flex items-center gap-2 text-base font-semibold text-navy pr-4"><span class="material-symbols-outlined text-gold" style="font-size:18px">restaurant</span>Menu y Barra del Velero</span><span class="material-symbols-outlined text-slate-300 faq-chevron transition-transform flex-shrink-0">expand_more</span></label>
+          <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300">
+            <div class="text-sm text-slate-500 leading-relaxed space-y-3 mt-3">
+              <div><p class="font-semibold text-navy mb-1">Barra:</p><p>Barra libre incluye: vino tinto y blanco, margaritas, cervezas, ron, vodka, tequila, whiskey, jugos, refrescos, agua embotellada.</p></div>
+              <div><p class="font-semibold text-navy mb-1">Comida:</p><p>Totopos, salsa mexicana, guacamole casero, sandwiches de baguette frescos, seleccion de fruta fresca cortada, postre.<br/>Opciones vegetarianas bajo peticion.</p></div>
+              <div class="border-t border-border-light pt-3"><p class="text-center font-semibold text-slate-400 mb-2">— O —</p><p><span class="font-semibold text-navy">Opcion Mexicana ($14 USD por persona):</span> Totopos, salsa y guacamole casero, burritos de res y pollo en tortilla de maiz, arroz con frijoles, quesadillas y postre.</p></div>
+              <p class="text-slate-400 italic">Contacta a nuestro equipo para opciones Kosher, Veganas o Vegetarianas.</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item border border-border-light rounded-2xl px-5 py-4">
+          <input class="hidden" id="faq-1" type="checkbox"/>
+          <label class="flex items-center justify-between cursor-pointer" for="faq-1"><span class="flex items-center gap-2 text-base font-semibold text-navy pr-4"><span class="material-symbols-outlined" style="font-size:18px;color:#E8789A;">lock</span>Es privado?</span><span class="material-symbols-outlined text-slate-300 faq-chevron transition-transform flex-shrink-0">expand_more</span></label>
+          <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300"><p class="text-sm text-slate-500 leading-relaxed">Si — el barco es exclusivamente para tu grupo. Sin otros pasajeros, sin espacio compartido.</p></div>
+        </div>
+        <div class="faq-item border border-border-light rounded-2xl px-5 py-4">
+          <input class="hidden" id="faq-2" type="checkbox"/>
+          <label class="flex items-center justify-between cursor-pointer" for="faq-2"><span class="flex items-center gap-2 text-base font-semibold text-navy pr-4"><span class="material-symbols-outlined text-gold" style="font-size:18px">music_note</span>Podemos poner nuestra propia musica?</span><span class="material-symbols-outlined text-slate-300 faq-chevron transition-transform flex-shrink-0">expand_more</span></label>
+          <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300"><p class="text-sm text-slate-500 leading-relaxed">Absolutamente — sistema de sonido Bluetooth a bordo. Trae tu playlist y ponla tan fuerte como quieras.</p></div>
+        </div>
+        <div class="faq-item border border-border-light rounded-2xl px-5 py-4">
+          <input class="hidden" id="faq-3" type="checkbox"/>
+          <label class="flex items-center justify-between cursor-pointer" for="faq-3"><span class="flex items-center gap-2 text-base font-semibold text-navy pr-4"><span class="material-symbols-outlined" style="font-size:18px;color:#E8789A;">celebration</span>Podemos decorar? Es dificil de organizar?</span><span class="material-symbols-outlined text-slate-300 faq-chevron transition-transform flex-shrink-0">expand_more</span></label>
+          <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300"><p class="text-sm text-slate-500 leading-relaxed">Si, las decoraciones ligeras son bienvenidas — trae tus bandas, pancartas, lo que quieras. Y no, no es nada dificil — solo envianos el tamano de tu grupo y las fechas y te guiaremos paso a paso.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile: Hazlo Extra Especial -->
+    <div class="mt-10 rounded-2xl p-5 border border-border-light" style="background: linear-gradient(135deg, #FDF2F5 0%, #FFF8FA 100%);">
+      <div class="flex items-center gap-3 mb-4"><div class="w-1 h-6 rounded-full" style="background-color:#E8789A;"></div><h3 class="text-lg text-navy">Hazlo Extra Especial</h3></div>
+      <p class="text-sm text-slate-500 leading-relaxed mb-4">Dejanos cuidar los pequenos detalles para que te enfoques en disfrutar el momento con tus amigas. Extras disponibles:</p>
+      <div class="space-y-4">
+        <div class="flex items-start gap-3"><span class="material-symbols-outlined" style="color:#E8789A;">cake</span><div><p class="font-semibold text-navy text-sm">Pastel de Celebracion</p><p class="text-xs text-slate-500">Una dulce sorpresa para celebrar a la novia.</p></div></div>
+        <div class="flex items-start gap-3"><span class="material-symbols-outlined text-gold">wine_bar</span><div><p class="font-semibold text-navy text-sm">Prosecco</p><p class="text-xs text-slate-500">Perfecto para brindis y fotos (1 botella es ideal para 4 personas).</p></div></div>
+        <div class="flex items-start gap-3"><span class="material-symbols-outlined text-gold">photo_camera</span><div><p class="font-semibold text-navy text-sm">Fotografo / Videografo Profesional</p><p class="text-xs text-slate-500">Captura cada risa, brindis y momento inolvidable.</p></div></div>
+        <div class="flex items-start gap-3"><span class="material-symbols-outlined" style="color:#E8789A;">bakery_dining</span><div><p class="font-semibold text-navy text-sm">Postres Especiales</p><p class="text-xs text-slate-500">Agrega deliciosos bocadillos para hacer la celebracion aun mas dulce.</p></div></div>
+        <div class="flex items-start gap-3"><span class="material-symbols-outlined text-gold">auto_awesome</span><div><p class="font-semibold text-navy text-sm">Tu Idea Mas Loca</p><p class="text-xs text-slate-500">Decoraciones, sorpresas o algo unico para la novia — con gusto te ayudamos a hacerlo realidad.</p></div></div>
+      </div>
+      <a href="https://wa.me/526241916997?text=Hi%2C%20I'd%20like%20to%20add%20extras%20to%20my%20Bachelorette%20Party" target="_blank" class="block w-full text-white text-center py-4 rounded-2xl font-bold uppercase tracking-widest text-sm shadow-lg mt-6" style="background-color:#E8789A;">
+        <i class="fa-brands fa-whatsapp text-lg mr-2" style="vertical-align:middle"></i> Contactanos Ahora por WhatsApp
+      </a>
+    </div>
+
+    <!-- MOBILE: Celebra con Estilo -->
+    <div class="px-5 pt-8 pb-6">
+      <div class="flex items-center gap-3 mb-4"><div class="w-1 h-6 rounded-full" style="background-color:#E8789A;"></div><h3 class="text-lg text-navy">Celebra con Estilo</h3></div>
+      <Image src={DSC_3713} alt="Despedida de Soltera in Cabo San Lucas" class="w-full h-48 object-cover rounded-2xl mb-4" width={800} height={500} />
+      <p class="text-base text-slate-500 leading-relaxed mb-3">Cabo San Lucas es uno de los destinos mas iconicos del mundo — y el escenario perfecto para la despedida de soltera definitiva. Aguas cristalinas, el famoso Arco y el horizonte infinito del Pacifico crean un ambiente que ningun club o resort puede igualar.</p>
+      <p class="text-base text-slate-500 leading-relaxed">Nuestra experimentada tripulacion sabe como hacer una fiesta. Desde el momento en que subes a bordo hasta el brindis final al atardecer, cada detalle esta cubierto para que la futura novia y su grupo se enfoquen en una sola cosa: pasarla increible.</p>
+    </div>
+
+    <!-- MOBILE: Guest Reviews Carousel -->
+    <div class="px-5 pb-12">
+      <div class="flex items-center gap-3 mb-4"><div class="w-1 h-6 rounded-full" style="background-color:#E8789A;"></div><h3 class="text-lg text-navy">Lo Que Dicen Nuestras Invitadas</h3></div>
+      <div class="relative">
+        <div id="m-carousel" class="flex overflow-x-auto gap-4 no-scrollbar snap-x snap-mandatory pb-4">
+          <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] bg-light-grey rounded-2xl p-5 border border-border-light">
+            <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
+            <p class="text-base text-slate-600 leading-relaxed italic mb-3">"We booked the bachelorette party for my best friend and it was beyond perfect. The boat was beautifully decorated, the crew was incredible, and the open bar kept everyone going. Best decision we made for the whole trip!"</p>
+            <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full flex items-center justify-center text-white text-sm font-bold" style="background-color:#E8789A;">SK</div><div><p class="text-sm font-bold text-navy">Stephanie K.</p><p class="text-base text-slate-400">Dallas, TX</p></div></div>
+          </div>
+          <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] bg-light-grey rounded-2xl p-5 border border-border-light">
+            <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
+            <p class="text-base text-slate-600 leading-relaxed italic mb-3">"10 girls, 3 hours, zero complaints. The crew was so attentive and fun, the champagne was flowing, and sailing past the Arch with the whole squad was a moment none of us will ever forget. 100% recommend!"</p>
+            <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-gold flex items-center justify-center text-white text-sm font-bold">AM</div><div><p class="text-sm font-bold text-navy">Ashley M.</p><p class="text-base text-slate-400">Phoenix, AZ</p></div></div>
+          </div>
+          <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] bg-light-grey rounded-2xl p-5 border border-border-light">
+            <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
+            <p class="text-base text-slate-600 leading-relaxed italic mb-3">"I was the maid of honor and was so stressed about planning the perfect bachelorette. This exceeded every expectation. The photos alone were worth every penny. The bride couldn't stop smiling the entire time!"</p>
+            <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center text-white text-sm font-bold">RT</div><div><p class="text-sm font-bold text-navy">Rachel T.</p><p class="text-base text-slate-400">Chicago, IL</p></div></div>
+          </div>
+          <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] bg-light-grey rounded-2xl p-5 border border-border-light">
+            <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
+            <p class="text-base text-slate-600 leading-relaxed italic mb-3">"The crew went above and beyond — they had decorations ready, played our playlist, and even helped us take the best group photos. It felt like they'd been planning the party with us for months."</p>
+            <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full flex items-center justify-center text-white text-sm font-bold" style="background-color:#E8789A;">LP</div><div><p class="text-sm font-bold text-navy">Lauren P.</p><p class="text-base text-slate-400">Nashville, TN</p></div></div>
+          </div>
+          <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] bg-light-grey rounded-2xl p-5 border border-border-light">
+            <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
+            <p class="text-base text-slate-600 leading-relaxed italic mb-3">"We had 12 girls on board and there was plenty of room for everyone to dance, lounge, and take photos. The sunset timing was perfect and the drinks never stopped flowing. Best bachelorette ever!"</p>
+            <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-gold flex items-center justify-center text-white text-sm font-bold">CW</div><div><p class="text-sm font-bold text-navy">Chelsea W.</p><p class="text-base text-slate-400">San Diego, CA</p></div></div>
+          </div>
+          <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] bg-light-grey rounded-2xl p-5 border border-border-light">
+            <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
+            <p class="text-base text-slate-600 leading-relaxed italic mb-3">"My sister planned this for my bachelorette and I cried happy tears. Sailing at sunset, surrounded by my best friends, champagne in hand — it was everything I dreamed of and more. Thank you Cabo Sailing!"</p>
+            <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center text-white text-sm font-bold">JD</div><div><p class="text-sm font-bold text-navy">Jessica D.</p><p class="text-base text-slate-400">Atlanta, GA</p></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== DESKTOP LAYOUT ========== -->
+  <div class="hidden lg:block">
+    <div class="max-w-[1400px] mx-auto px-10 pt-10">
+      <div class="grid grid-cols-4 grid-rows-2 gap-2 h-[55vh]">
+        <div class="col-span-2 row-span-2 rounded-2xl overflow-hidden relative">
+          <Image src={DSC_0107_2} alt="Five women on yacht bow in Cabo" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} />
+          <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent rounded-2xl"></div>
+          <div class="absolute bottom-6 left-6">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="text-white text-base font-bold px-4 py-1.5 rounded-full uppercase tracking-widest" style="background-color:#E8789A;">Celebracion Mas Popular</span>
+              <div class="flex items-center gap-1 bg-white/20 backdrop-blur-sm px-3 py-1.5 rounded-full text-white text-sm font-bold">
+                <span class="material-symbols-outlined text-gold text-base filled">star</span> 5.0 Calificacion
+              </div>
+            </div>
+            <h1 class="text-4xl text-white leading-tight mb-2">Crucero Privado de Despedida de Soltera en Cabo</h1>
+            <p class="text-white/90 text-base italic font-heading mb-1">Tu barco. Tu musica. Tu momento.</p>
+            <div class="flex items-center gap-2 mt-3">
+              <div class="flex items-center gap-0.5">
+                <span class="material-symbols-outlined text-gold filled text-base">star</span>
+                <span class="material-symbols-outlined text-gold filled text-base">star</span>
+                <span class="material-symbols-outlined text-gold filled text-base">star</span>
+                <span class="material-symbols-outlined text-gold filled text-base">star</span>
+                <span class="material-symbols-outlined text-gold filled text-base">star</span>
+              </div>
+              <p class="text-white/90 text-sm">"The girls loved every second — best party ever."</p>
+              <p class="text-white/50 text-xs uppercase tracking-widest font-bold">— Amanda K.</p>
+            </div>
+          </div>
+        </div>
+        <div class="rounded-2xl overflow-hidden"><Image src={DSC_4259_copy} alt="Grupo celebrating on sailboat bow" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
+        <div class="rounded-2xl overflow-hidden"><Image src={DSC_0307_2} alt="Bride and squad arms raised" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
+        <div class="rounded-2xl overflow-hidden"><Image src={Barco_Day_10_copy} alt="Champagne toast at El Arco" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
+        <div class="rounded-2xl overflow-hidden"><Image src={img_4k_01_41_40_08_Still129} alt="Large group celebrating near Arch" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
+      </div>
+    </div>
+    <div class="max-w-[1400px] mx-auto px-10 py-16">
+      <div>
+
+          <nav class="flex items-center gap-1.5 text-xs text-slate-400 mb-4" aria-label="Breadcrumb">
+            <a href="/es/" class="hover:text-gold transition-colors">Inicio</a>
+            <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+            <span>Tours</span>
+            <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+            <span class="text-navy font-semibold">Bachelorette</span>
+          </nav>
+
+          <!-- Quick Stats Bar -->
+          <div class="flex items-center gap-8 pb-8 border-b border-border-light mb-10">
+            <div class="flex items-center gap-2"><span class="material-symbols-outlined text-gold">schedule</span><div><p class="text-xs text-slate-400 uppercase font-bold tracking-widest">Duracion</p><p class="text-base font-bold text-navy">3 Horas</p><p class="text-xs text-slate-400 mt-0.5">Tiempo extra disponible</p></div></div>
+            <div class="w-px h-10 bg-border-light"></div>
+            <div class="flex items-center gap-2"><span class="material-symbols-outlined" style="color:#E8789A;">celebration</span><div><p class="text-xs text-slate-400 uppercase font-bold tracking-widest">Tipo de Grupo</p><p class="text-base font-bold text-navy">Charter Privado</p></div></div>
+            <div class="w-px h-10 bg-border-light"></div>
+            <div class="flex items-center gap-2"><span class="material-symbols-outlined text-gold">groups</span><div><p class="text-xs text-slate-400 uppercase font-bold tracking-widest">Capacidad</p><p class="text-base font-bold text-navy">Hasta 14 Pasajeros</p></div></div>
+            <div class="w-px h-10 bg-border-light"></div>
+            <div class="flex items-center gap-2"><span class="material-symbols-outlined text-gold filled">star</span><div><p class="text-xs text-slate-400 uppercase font-bold tracking-widest">Calificacion</p><p class="text-base font-bold text-navy">5.0 / 5.0</p></div></div>
+          </div>
+
+          <!-- About -->
+          <div class="mb-12">
+            <h2 class="text-2xl text-navy mb-3">Por Que Esta Es La Indicada</h2>
+            <p class="text-base font-semibold leading-relaxed mb-3" style="color:#E8789A;">Esto no es solo un paseo en barco — es tu evento principal.</p>
+            <p class="text-slate-500 leading-relaxed">Imagina esto: musica sonando, bebidas fluyendo, tu grupo riendo en cubierta... el Arco de fondo, champagne en mano, y cero estres por la logistica. Celebra a la futura novia en un yate o velero privado — con barra libre, excelente comida y las vistas mas iconicas de Cabo. Sin multitudes, sin estres, solo tu grupo y un dia perfecto en el agua. Nosotros nos encargamos de todo — tu solo lleguas y disfrutas.</p>
+          </div>
+
+          <!-- Highlights — always visible on desktop -->
+          <div class="mb-12">
+            <div class="flex items-center gap-3 mb-2"><div class="w-1 h-6 rounded-full" style="background-color:#E8789A;"></div><h2 class="text-2xl text-navy">Elige Tu Estilo</h2></div>
+            <p class="text-slate-500 leading-relaxed mb-6">No todas las despedidas de soltera son iguales — por eso somos flexibles. No estas segura? Te ayudamos a elegir el barco y horario ideal para tu grupo.</p>
+            <div class="grid grid-cols-3 gap-6">
+              <div class="bg-light-grey rounded-3xl p-6 border border-border-light">
+                <span class="material-symbols-outlined text-3xl mb-3 block" style="color:#E8789A;">celebration</span>
+                <h4 class="text-base font-bold text-navy uppercase tracking-wider mb-2">🎉 El Crucero Fiestero</h4>
+                <p class="text-base text-slate-500 leading-relaxed">Musica fuerte, mucha energia, baile y bebidas sin parar. Perfecto si tu grupo quiere una celebracion divertida y animada.</p>
+              </div>
+              <div class="bg-light-grey rounded-3xl p-6 border border-border-light">
+                <span class="material-symbols-outlined text-gold text-3xl mb-3 block">wb_twilight</span>
+                <h4 class="text-base font-bold text-navy uppercase tracking-wider mb-2">🌅 Vibra de Atardecer</h4>
+                <p class="text-base text-slate-500 leading-relaxed">Hora dorada, energia relajada, fotos increibles. Ideal para una experiencia mas elegante y hermosa.</p>
+              </div>
+              <div class="bg-light-grey rounded-3xl p-6 border border-border-light">
+                <span class="material-symbols-outlined text-gold text-3xl mb-3 block">pool</span>
+                <h4 class="text-base font-bold text-navy uppercase tracking-wider mb-2">🥂 Dia de Lujo Relajado</h4>
+                <p class="text-base text-slate-500 leading-relaxed">Nada, flota, paddleboard, saborea y relajate. Gran mezcla de diversion y relax.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- About + Que Incluye (left) / Punto de Encuentro (right) -->
+          <div class="mt-10 flex gap-12">
+            <!-- Left column: About + Que Incluye stacked -->
+            <div class="flex-1">
+              <!-- Que Incluye -->
+              <div class="mb-12">
+                <div class="flex items-center gap-3 mb-6"><div class="w-1 h-6 rounded-full" style="background-color:#E8789A;"></div><h2 class="text-2xl text-navy">Que Incluye</h2></div>
+                <div class="grid grid-cols-2 gap-4">
+                  <div class="flex items-center gap-3"><div class="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0" style="background-color:#E8789A;"><span class="material-symbols-outlined text-white text-base">check</span></div><span class="text-slate-600 font-medium">Barco privado (sin otros pasajeros)</span></div>
+                  <div class="flex items-center gap-3"><div class="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0" style="background-color:#E8789A;"><span class="material-symbols-outlined text-white text-base">check</span></div><span class="text-slate-600 font-medium">Barra libre (cocteles, cerveza, tequila)</span></div>
+                  <div class="flex items-center gap-3"><div class="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0" style="background-color:#E8789A;"><span class="material-symbols-outlined text-white text-base">check</span></div><span class="text-slate-600 font-medium">Comida (almuerzo ligero o snacks)</span></div>
+                  <div class="flex items-center gap-3"><div class="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0" style="background-color:#E8789A;"><span class="material-symbols-outlined text-white text-base">check</span></div><span class="text-slate-600 font-medium">Equipo de snorkel y paddleboard</span></div>
+                  <div class="flex items-center gap-3"><div class="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0" style="background-color:#E8789A;"><span class="material-symbols-outlined text-white text-base">check</span></div><span class="text-slate-600 font-medium">Toallas</span></div>
+                  <div class="flex items-center gap-3"><div class="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0" style="background-color:#E8789A;"><span class="material-symbols-outlined text-white text-base">check</span></div><span class="text-slate-600 font-medium">Sistema de sonido Bluetooth</span></div>
+                  <div class="flex items-center gap-3 col-span-2"><div class="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0" style="background-color:#E8789A;"><span class="material-symbols-outlined text-white text-base">check</span></div><span class="text-slate-600 font-medium">Tripulacion bilingue experimentada</span></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right column: Punto de Encuentro -->
+            <div class="w-[380px] flex-shrink-0">
+              <div class="sticky top-[90px] bg-light-grey rounded-2xl p-8 border border-border-light">
+                <div class="flex items-center gap-3 mb-4">
+                  <span class="material-symbols-outlined text-gold text-2xl">pin_drop</span>
+                  <h3 class="text-lg font-bold text-navy uppercase tracking-wider">Punto de Encuentro</h3>
+                </div>
+                <p class="text-lg font-semibold text-navy mb-1">Cabo San Lucas Marina, Dock F</p>
+                <p class="text-sm text-slate-500 leading-relaxed mb-4">Busca al equipo de Cabo Sailing con camisas doradas. Por favor llega 15 minutos antes de la salida.</p>
+                <div class="flex items-center gap-2 text-sm text-slate-500">
+                  <span class="material-symbols-outlined text-gold text-base">schedule</span>
+                  <span class="font-semibold text-navy">SALIDAS: 10:00 AM o 4:00 PM DIARIO</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      </div>
+    </div><!-- end max-w -->
+
+    <!-- DESKTOP: Choose Your Party Barco — full width -->
+    <div class="max-w-[1400px] mx-auto px-10 py-16">
+      <div class="flex items-center gap-3 mb-8"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-lg lg:text-2xl text-navy">Explora nuestros barcos — encuentra el ideal para tu despedida de soltera</h3></div>
+            <div class="grid grid-cols-3 gap-5 pb-8">
+              <!-- Yacht 51' -->
+              <div class="bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="yacht-51">
+                <div class="h-[400px] w-full relative">
+                  <div class="boat-carousel relative w-full h-full">
+<Image src={img_9_Yacht_51} alt="Luxury Yacht 51'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-100 transition-opacity duration-700" width={800} height={500} />
+<Image src={img_2_Yacht_51} alt="Luxury Yacht 51'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" width={800} height={500} />
+<Image src={img_7_Yacht_51} alt="Luxury Yacht 51'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" width={800} height={500} />
+</div>
+                  <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
+                  <div class="absolute bottom-5 left-6"><h4 class="text-white text-lg lg:text-xl">Luxury Yacht 51'</h4><div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Hasta 20 Pasajeros</span></div></div>
+                  <div class="absolute top-4 right-4 text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest" style="background-color:#E8789A;">Mas Espacioso</div>
+
+                <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-30%</div>
+                <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
+                <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
+</div>
+                <div class="p-4 space-y-4">
+      <p class="text-slate-500 text-sm italic text-center pb-3 border-b border-border-light/50">Ideal para grupos grandes y maximo espacio</p>
+                  <div class="space-y-4">
+                    <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$1,690</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$1,436</span><span class="text-slate-400 text-[11px] font-medium uppercase">/ 1-4 pasajeros</span></div></div><div class="flex flex-col items-end"><span class="text-slate-400 text-[11px] font-medium">Pasajeros extra</span><div class="flex items-baseline gap-1"><span class="text-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-400 text-[11px] font-medium">/pp</span></div></div></div>
+                  </div>
+                  <button type="button" onclick="openRezdyModal('165509')" class="block w-full text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg cursor-pointer" style="background-color:#E8789A;">Ver Disponibilidad</button>
+                </div>
+              </div>
+              <!-- Yacht 45' -->
+              <div class="bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="yacht-45">
+                <div class="h-[400px] w-full relative">
+                  <div class="boat-carousel relative w-full h-full">
+<Image src={img_1_Yacht_45} alt="Luxury Yacht 45'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-100 transition-opacity duration-700" width={800} height={500} />
+<Image src={img_5_Yacht_45} alt="Luxury Yacht 45'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" width={800} height={500} />
+<Image src={img_6_Yacht_45} alt="Luxury Yacht 45'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" width={800} height={500} />
+</div>
+                  <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
+                  <div class="absolute bottom-5 left-6"><h4 class="text-white text-lg lg:text-xl">Luxury Yacht 45'</h4><div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Hasta 12 Pasajeros</span></div></div>
+                  <div class="absolute top-4 right-4 text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest" style="background-color:#E8789A;">Mas Popular</div>
+
+                <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-30%</div>
+                <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
+                <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
+</div>
+                <div class="p-4 space-y-4">
+      <p class="text-slate-500 text-sm italic text-center pb-3 border-b border-border-light/50">Embarcacion mas nueva, lujo moderno y elegante</p>
+                  <div class="space-y-4">
+                    <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$1,520</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$1,292</span><span class="text-slate-400 text-[11px] font-medium uppercase">/ 1-4 pasajeros</span></div></div><div class="flex flex-col items-end"><span class="text-slate-400 text-[11px] font-medium">Pasajeros extra</span><div class="flex items-baseline gap-1"><span class="text-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-400 text-[11px] font-medium">/pp</span></div></div></div>
+                  </div>
+                  <button type="button" onclick="openRezdyModal('528988')" class="block w-full text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg cursor-pointer" style="background-color:#E8789A;">Ver Disponibilidad</button>
+                </div>
+              </div>
+              <!-- Yacht 42' -->
+              <div class="bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="yacht-42">
+                <div class="h-[400px] w-full relative">
+                  <div class="boat-carousel relative w-full h-full">
+<Image src={img_3_Yacht_42} alt="Luxury Yacht 42'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-100 transition-opacity duration-700" width={800} height={500} />
+<Image src={img_2_Yacht_42} alt="Luxury Yacht 42'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" width={800} height={500} />
+<Image src={img_5_Yacht_42} alt="Luxury Yacht 42'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" width={800} height={500} />
+</div>
+                  <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
+                  <div class="absolute bottom-5 left-6"><h4 class="text-white text-lg lg:text-xl">Luxury Yacht 42'</h4><div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Hasta 18 Pasajeros</span></div></div>
+                  <div class="absolute top-4 right-4 text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest" style="background-color:#E8789A;">Mejor Valor</div>
+
+                <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-30%</div>
+                <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
+                <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
+</div>
+                <div class="p-4 space-y-4">
+      <p class="text-slate-500 text-sm italic text-center pb-3 border-b border-border-light/50">Excelente valor, perfecto para fiestas</p>
+                  <div class="space-y-4">
+                    <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$1,350</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$1,148</span><span class="text-slate-400 text-[11px] font-medium uppercase">/ 1-4 pasajeros</span></div></div><div class="flex flex-col items-end"><span class="text-slate-400 text-[11px] font-medium">Pasajeros extra</span><div class="flex items-baseline gap-1"><span class="text-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-400 text-[11px] font-medium">/pp</span></div></div></div>
+                  </div>
+                  <button type="button" onclick="openRezdyModal('168008')" class="block w-full text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg cursor-pointer" style="background-color:#E8789A;">Ver Disponibilidad</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-5 max-w-[900px] mx-auto pb-8">
+              <!-- Sailing 42' -->
+              <div class="bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="sailing-42">
+                <div class="h-[400px] w-full relative">
+                  <div class="boat-carousel relative w-full h-full">
+<Image src={img_10_Sailing_42} alt="Sailing Boat 42'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-100 transition-opacity duration-700" width={800} height={500} />
+<Image src={img_17_Sailing_42} alt="Sailing Boat 42'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" width={800} height={500} />
+<Image src={img_12_Sailing_42} alt="Sailing Boat 42'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" width={800} height={500} />
+</div>
+                  <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
+                  <div class="absolute bottom-5 left-6"><h4 class="text-white text-lg lg:text-xl">Sailing Boat 42'</h4><div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Hasta 14 Pasajeros</span></div></div>
+                  <div class="absolute top-4 right-4 text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest" style="background-color:#E8789A;">Mejor Valor</div>
+
+                <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-30%</div>
+                <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
+                <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
+</div>
+                <div class="p-4 space-y-4">
+      <p class="text-slate-500 text-sm italic text-center pb-3 border-b border-border-light/50">Navegacion suave, diversion al sol</p>
+                  <div class="space-y-4">
+                    <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$1,090</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$927</span><span class="text-slate-400 text-[11px] font-medium uppercase">/ 1-4 pasajeros</span></div></div><div class="flex flex-col items-end"><span class="text-slate-400 text-[11px] font-medium">Pasajeros extra</span><div class="flex items-baseline gap-1"><span class="text-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-400 text-[11px] font-medium">/pp</span></div></div></div>
+                  </div>
+                  <button type="button" onclick="openRezdyModal('642955','productsCalendar')" class="block w-full text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg" style="background-color:#E8789A;">Ver Disponibilidad</button>
+                </div>
+              </div>
+              <!-- Sailing 38' -->
+              <div class="bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="sailing-38">
+                <div class="h-[400px] w-full relative">
+                  <div class="boat-carousel relative w-full h-full">
+<Image src={img_6_Sailing_38} alt="Sailing Boat 38'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-100 transition-opacity duration-700" width={800} height={500} />
+<Image src={img_8_Sailing_38} alt="Sailing Boat 38'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" width={800} height={500} />
+<Image src={img_5_Sailing_38} alt="Sailing Boat 38'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" width={800} height={500} />
+</div>
+                  <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
+                  <div class="absolute bottom-5 left-6"><h4 class="text-white text-lg lg:text-xl">Sailing Boat 38'</h4><div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Hasta 9 Pasajeros</span></div></div>
+
+                <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-30%</div>
+                <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
+                <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
+</div>
+                <div class="p-4 space-y-4">
+      <p class="text-slate-500 text-sm italic text-center pb-3 border-b border-border-light/50">Intimo y aventurero, velero clasico</p>
+                  <div class="space-y-4">
+                    <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$825</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$701</span><span class="text-slate-400 text-[11px] font-medium uppercase">/ 1-4 pasajeros</span></div></div><div class="flex flex-col items-end"><span class="text-slate-400 text-[11px] font-medium">Pasajeros extra</span><div class="flex items-baseline gap-1"><span class="text-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-400 text-[11px] font-medium">/pp</span></div></div></div>
+                  </div>
+                  <button type="button" onclick="openRezdyModal('165682')" class="block w-full text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg cursor-pointer" style="background-color:#E8789A;">Ver Disponibilidad</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      <!-- Comparacion Rapida -->
+      <div class="mt-10 mb-12 max-w-4xl mx-auto">
+        <div class="flex items-center gap-3 mb-4"><div class="w-1 h-6 rounded-full" style="background-color:#E8789A;"></div><h3 class="text-xl text-navy">Comparacion Rapida</h3></div>
+        <table class="w-full text-left border-collapse">
+          <thead>
+            <tr class="border-b-2 border-gold/30">
+              <th class="py-3 pr-4 text-xs font-bold text-navy uppercase tracking-widest">Barco</th>
+              <th class="py-3 pr-4 text-xs font-bold text-navy uppercase tracking-widest">Pasajeros</th>
+              <th class="py-3 text-xs font-bold text-navy uppercase tracking-widest">Experiencia</th>
+            </tr>
+          </thead>
+          <tbody class="text-sm">
+            <tr class="border-b border-border-light"><td class="py-3 pr-4 font-semibold text-navy">42' Yacht</td><td class="py-3 pr-4 text-slate-500">Up to 18</td><td class="py-3 text-slate-500">Crucero de lujo para despedida de soltera</td></tr>
+            <tr class="border-b border-border-light bg-gold/5"><td class="py-3 pr-4 font-semibold text-navy"><span class="text-gold mr-1">&#11088;</span>45' Yacht</td><td class="py-3 pr-4 text-slate-500">Up to 12</td><td class="py-3 text-slate-500">Fiesta en yate mas popular</td></tr>
+            <tr class="border-b border-border-light"><td class="py-3 pr-4 font-semibold text-navy">46' Yacht</td><td class="py-3 pr-4 text-slate-500">Up to 20</td><td class="py-3 text-slate-500">Yate mas grande — la fiesta definitiva</td></tr>
+            <tr class="border-b border-border-light bg-gold/5"><td class="py-3 pr-4 font-semibold text-navy"><span class="text-gold mr-1">&#11088;</span>42' Sailboat</td><td class="py-3 pr-4 text-slate-500">Hasta 14</td><td class="py-3 text-slate-500">Mejor valor fiesta en velero</td></tr>
+            <tr><td class="py-3 pr-4 font-semibold text-navy">38' Sailboat</td><td class="py-3 pr-4 text-slate-500">Up to 9</td><td class="py-3 text-slate-500">Celebracion intima en velero</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+          <!-- Desktop FAQ -->
+          <div class="mb-12 max-w-4xl mx-auto">
+            <div class="flex items-center gap-3 mb-6"><div class="w-1 h-6 rounded-full" style="background-color:#E8789A;"></div><h2 class="text-2xl text-navy">Preguntas Frecuentes</h2></div>
+            <div class="space-y-3">
+              <div class="faq-item border border-border-light rounded-2xl px-6 py-5">
+                <input class="hidden" id="dfaq-0" type="checkbox"/>
+                <label class="flex items-center justify-between cursor-pointer" for="dfaq-0"><span class="flex items-center gap-2 font-semibold text-navy"><span class="material-symbols-outlined text-gold" style="font-size:20px">restaurant</span>Menu y Barra del Yate</span><span class="material-symbols-outlined text-slate-300 faq-chevron transition-transform flex-shrink-0">expand_more</span></label>
+                <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300">
+                  <div class="text-base text-slate-500 leading-relaxed space-y-3 mt-3">
+                    <div><p class="font-semibold text-navy mb-1">Barra</p><p>Barra libre de marcas premium incluye vino tinto y blanco, margaritas, cerveza, ron, vodka, tequila, whiskey, jugos, refrescos y agua embotellada.</p></div>
+                    <div><p class="font-semibold text-navy mb-1">Comida</p><p>Totopos frescos con salsa mexicana y guacamole casero, sandwiches de baguette frescos, quesadillas recien hechas, seleccion de fruta de temporada y un postre para terminar.</p></div>
+                    <div class="border-t border-border-light pt-3"><p class="font-semibold text-navy mb-1">Opciones:</p><p><span class="font-semibold text-navy">Menu Mexicano — $14 USD por persona:</span> Totopos con salsa y guacamole casero, burritos de res y pollo en tortilla de maiz, arroz con frijoles, quesadillas recien hechas y postre.</p></div>
+                    <p class="text-slate-400 italic">Contacta a nuestro equipo para opciones Kosher, Veganas o Vegetarianas.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="faq-item border border-border-light rounded-2xl px-6 py-5">
+                <input class="hidden" id="dfaq-0b" type="checkbox"/>
+                <label class="flex items-center justify-between cursor-pointer" for="dfaq-0b"><span class="flex items-center gap-2 font-semibold text-navy"><span class="material-symbols-outlined text-gold" style="font-size:20px">restaurant</span>Menu y Barra del Velero</span><span class="material-symbols-outlined text-slate-300 faq-chevron transition-transform flex-shrink-0">expand_more</span></label>
+                <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300">
+                  <div class="text-base text-slate-500 leading-relaxed space-y-3 mt-3">
+                    <div><p class="font-semibold text-navy mb-1">Barra:</p><p>Barra libre incluye: vino tinto y blanco, margaritas, cervezas, ron, vodka, tequila, whiskey, jugos, refrescos, agua embotellada.</p></div>
+                    <div><p class="font-semibold text-navy mb-1">Comida:</p><p>Totopos, salsa mexicana, guacamole casero, sandwiches de baguette frescos, seleccion de fruta fresca cortada, postre.<br/>Opciones vegetarianas bajo peticion.</p></div>
+                    <div class="border-t border-border-light pt-3"><p class="text-center font-semibold text-slate-400 mb-2">— O —</p><p><span class="font-semibold text-navy">Opcion Mexicana ($14 USD por persona):</span> Totopos, salsa y guacamole casero, burritos de res y pollo en tortilla de maiz, arroz con frijoles, quesadillas y postre.</p></div>
+                    <p class="text-slate-400 italic">Contacta a nuestro equipo para opciones Kosher, Veganas o Vegetarianas.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="faq-item border border-border-light rounded-2xl px-6 py-5">
+                <input class="hidden" id="dfaq-1" type="checkbox"/>
+                <label class="flex items-center justify-between cursor-pointer" for="dfaq-1"><span class="flex items-center gap-2 font-semibold text-navy"><span class="material-symbols-outlined" style="font-size:20px;color:#E8789A;">lock</span>Es privado?</span><span class="material-symbols-outlined text-slate-300 faq-chevron transition-transform flex-shrink-0">expand_more</span></label>
+                <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300"><p class="text-base text-slate-500 leading-relaxed">Si — el barco es exclusivamente para tu grupo. Sin otros pasajeros, sin espacio compartido.</p></div>
+              </div>
+              <div class="faq-item border border-border-light rounded-2xl px-6 py-5">
+                <input class="hidden" id="dfaq-2" type="checkbox"/>
+                <label class="flex items-center justify-between cursor-pointer" for="dfaq-2"><span class="flex items-center gap-2 font-semibold text-navy"><span class="material-symbols-outlined text-gold" style="font-size:20px">music_note</span>Podemos poner nuestra propia musica?</span><span class="material-symbols-outlined text-slate-300 faq-chevron transition-transform flex-shrink-0">expand_more</span></label>
+                <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300"><p class="text-base text-slate-500 leading-relaxed">Absolutamente — sistema de sonido Bluetooth a bordo. Trae tu playlist y ponla tan fuerte como quieras.</p></div>
+              </div>
+              <div class="faq-item border border-border-light rounded-2xl px-6 py-5">
+                <input class="hidden" id="dfaq-3" type="checkbox"/>
+                <label class="flex items-center justify-between cursor-pointer" for="dfaq-3"><span class="flex items-center gap-2 font-semibold text-navy"><span class="material-symbols-outlined" style="font-size:20px;color:#E8789A;">celebration</span>Podemos decorar? Es dificil de organizar?</span><span class="material-symbols-outlined text-slate-300 faq-chevron transition-transform flex-shrink-0">expand_more</span></label>
+                <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300"><p class="text-base text-slate-500 leading-relaxed">Si, las decoraciones ligeras son bienvenidas — trae tus bandas, pancartas, lo que quieras. Y no, no es nada dificil — solo envianos el tamano de tu grupo y las fechas y te guiaremos paso a paso.</p></div>
+              </div>
+            </div>
+          </div>
+
+      <!-- Hazlo Extra Especial -->
+      <div class="mt-16 rounded-3xl p-10 border border-border-light max-w-4xl mx-auto" style="background: linear-gradient(135deg, #FDF2F5 0%, #FFF8FA 100%);">
+        <div class="flex items-center gap-3 mb-6"><div class="w-1 h-8 rounded-full" style="background-color:#E8789A;"></div><h2 class="text-2xl text-navy">Hazlo Extra Especial</h2></div>
+        <p class="text-slate-500 leading-relaxed mb-6">Dejanos cuidar los pequenos detalles para que te enfoques en disfrutar el momento con tus amigas. Extras disponibles:</p>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="flex items-start gap-3"><span class="material-symbols-outlined mt-0.5" style="color:#E8789A;">cake</span><div><p class="font-semibold text-navy">Pastel de Celebracion</p><p class="text-sm text-slate-500">Una dulce sorpresa para celebrar a la novia.</p></div></div>
+          <div class="flex items-start gap-3"><span class="material-symbols-outlined text-gold mt-0.5">wine_bar</span><div><p class="font-semibold text-navy">Prosecco</p><p class="text-sm text-slate-500">Perfecto para brindis y fotos (1 botella es ideal para 4 personas).</p></div></div>
+          <div class="flex items-start gap-3"><span class="material-symbols-outlined text-gold mt-0.5">photo_camera</span><div><p class="font-semibold text-navy">Fotografo / Videografo Profesional</p><p class="text-sm text-slate-500">Captura cada risa, brindis y momento inolvidable.</p></div></div>
+          <div class="flex items-start gap-3"><span class="material-symbols-outlined mt-0.5" style="color:#E8789A;">bakery_dining</span><div><p class="font-semibold text-navy">Postres Especiales</p><p class="text-sm text-slate-500">Agrega deliciosos bocadillos para hacer la celebracion aun mas dulce.</p></div></div>
+          <div class="flex items-start gap-3 col-span-2"><span class="material-symbols-outlined text-gold mt-0.5">auto_awesome</span><div><p class="font-semibold text-navy">Tu Idea Mas Loca</p><p class="text-sm text-slate-500">Decoraciones, sorpresas o algo unico para la novia — con gusto te ayudamos a hacerlo realidad.</p></div></div>
+        </div>
+        <a href="https://wa.me/526241916997?text=Hi%2C%20I'd%20like%20to%20add%20extras%20to%20my%20Bachelorette%20Party" target="_blank" class="inline-flex items-center gap-2 mt-8 text-white font-bold text-sm py-4 px-8 rounded-2xl uppercase tracking-[0.15em] shadow-lg hover:opacity-90 transition-opacity" style="background-color:#E8789A;">
+          <i class="fa-brands fa-whatsapp text-lg"></i> Contactanos Ahora por WhatsApp
+        </a>
+      </div>
+    </div>
+    <!-- DESKTOP: Celebra con Estilo -->
+    <div class="max-w-[1400px] mx-auto px-10 py-16 border-t border-border-light">
+      <div class="grid grid-cols-2 gap-16 items-center">
+        <div>
+          <div class="flex items-center gap-3 mb-6"><div class="w-1 h-8 rounded-full" style="background-color:#E8789A;"></div><h2 class="text-3xl text-navy">Celebra con Estilo en Cabo San Lucas</h2></div>
+          <p class="text-slate-500 leading-relaxed mb-5">Cabo San Lucas es uno de los destinos mas iconicos del mundo — y el escenario perfecto para la despedida de soltera definitiva. Aguas cristalinas, el famoso Arco y el horizonte infinito del Pacifico crean un ambiente que ningun club o resort puede igualar.</p>
+          <p class="text-slate-500 leading-relaxed">Nuestra experimentada tripulacion sabe como hacer una fiesta. Desde el momento en que subes a bordo hasta el brindis final al atardecer, cada detalle esta cubierto para que la futura novia y su grupo se enfoquen en una sola cosa: pasarla increible.</p>
+          <div class="flex gap-8 mt-8">
+            <div><p class="text-3xl font-bold text-navy font-heading">3hrs</p><p class="text-sm text-slate-400 uppercase tracking-widest font-bold mt-1">Duracion</p></div>
+            <div class="w-px bg-border-light"></div>
+            <div><p class="text-3xl font-bold font-heading" style="color:#E8789A;">Private</p><p class="text-sm text-slate-400 uppercase tracking-widest font-bold mt-1">&nbsp;</p></div>
+            <div class="w-px bg-border-light"></div>
+            <div><p class="text-3xl font-bold text-navy font-heading">14</p><p class="text-sm text-slate-400 uppercase tracking-widest font-bold mt-1">Max Invitadas</p></div>
+          </div>
+        </div>
+        <div>
+          <Image src={DSC_3713} alt="Despedida de Soltera Celebration in Cabo" class="w-full h-80 object-cover rounded-3xl shadow-xl" width={800} height={500} />
+        </div>
+      </div>
+    </div>
+
+    <!-- DESKTOP: Guest Reviews -->
+    <div class="max-w-[1400px] mx-auto px-10 pb-20">
+      <div class="flex items-center justify-between mb-10">
+        <div class="flex items-center gap-3"><div class="w-1 h-8 rounded-full" style="background-color:#E8789A;"></div><h2 class="text-3xl text-navy">Lo Que Dicen Nuestras Invitadas</h2></div>
+        <div class="flex gap-2">
+          <button onclick="scrollDReviews(-1)" class="w-10 h-10 rounded-full border border-border-light flex items-center justify-center text-navy hover:bg-light-grey transition-colors"><span class="material-symbols-outlined text-xl">chevron_left</span></button>
+          <button onclick="scrollDReviews(1)" class="w-10 h-10 rounded-full border border-border-light flex items-center justify-center text-navy hover:bg-light-grey transition-colors"><span class="material-symbols-outlined text-xl">chevron_right</span></button>
+        </div>
+      </div>
+      <div class="relative overflow-hidden">
+        <div id="d-carousel" class="flex gap-8 transition-transform duration-500 ease-in-out" style="width:calc(200% + 2rem)">
+          <div class="bg-light-grey rounded-3xl p-8 border border-border-light flex-1">
+            <div class="flex items-center gap-1 mb-4"><span class="material-symbols-outlined text-gold filled">star</span><span class="material-symbols-outlined text-gold filled">star</span><span class="material-symbols-outlined text-gold filled">star</span><span class="material-symbols-outlined text-gold filled">star</span><span class="material-symbols-outlined text-gold filled">star</span></div>
+            <p class="text-slate-600 leading-relaxed italic mb-6">"We booked the bachelorette party for my best friend and it was beyond perfect. The boat was beautifully decorated, the crew was incredible, and the open bar kept everyone going. Best decision we made for the whole trip!"</p>
+            <div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full flex items-center justify-center text-white text-base font-bold" style="background-color:#E8789A;">SK</div><div><p class="font-bold text-navy">Stephanie K.</p><p class="text-sm text-slate-400">Dallas, TX</p></div></div>
+          </div>
+          <div class="bg-light-grey rounded-3xl p-8 border border-border-light flex-1">
+            <div class="flex items-center gap-1 mb-4"><span class="material-symbols-outlined text-gold filled">star</span><span class="material-symbols-outlined text-gold filled">star</span><span class="material-symbols-outlined text-gold filled">star</span><span class="material-symbols-outlined text-gold filled">star</span><span class="material-symbols-outlined text-gold filled">star</span></div>
+            <p class="text-slate-600 leading-relaxed italic mb-6">"10 girls, 3 hours, zero complaints. The crew was so attentive and fun, the champagne was flowing, and sailing past the Arch with the whole squad was a moment none of us will ever forget. 100% recommend!"</p>
+            <div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-gold flex items-center justify-center text-white text-base font-bold">AM</div><div><p class="font-bold text-navy">Ashley M.</p><p class="text-sm text-slate-400">Phoenix, AZ</p></div></div>
+          </div>
+          <div class="bg-light-grey rounded-3xl p-8 border border-border-light flex-1">
+            <div class="flex items-center gap-1 mb-4"><span class="material-symbols-outlined text-gold filled">star</span><span class="material-symbols-outlined text-gold filled">star</span><span class="material-symbols-outlined text-gold filled">star</span><span class="material-symbols-outlined text-gold filled">star</span><span class="material-symbols-outlined text-gold filled">star</span></div>
+            <p class="text-slate-600 leading-relaxed italic mb-6">"I was the maid of honor and was so stressed about planning the perfect bachelorette. This exceeded every expectation. The photos alone were worth every penny. The bride couldn't stop smiling the entire time!"</p>
+            <div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-navy flex items-center justify-center text-white text-base font-bold">RT</div><div><p class="font-bold text-navy">Rachel T.</p><p class="text-sm text-slate-400">Chicago, IL</p></div></div>
+          </div>
+          <div class="bg-light-grey rounded-3xl p-8 border border-border-light flex-1">
+            <div class="flex items-center gap-1 mb-4"><span class="material-symbols-outlined text-gold filled">star</span><span class="material-symbols-outlined text-gold filled">star</span><span class="material-symbols-outlined text-gold filled">star</span><span class="material-symbols-outlined text-gold filled">star</span><span class="material-symbols-outlined text-gold filled">star</span></div>
+            <p class="text-slate-600 leading-relaxed italic mb-6">"The crew went above and beyond — they had decorations ready, played our playlist, and even helped us take the best group photos. It felt like they'd been planning the party with us for months."</p>
+            <div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full flex items-center justify-center text-white text-base font-bold" style="background-color:#E8789A;">LP</div><div><p class="font-bold text-navy">Lauren P.</p><p class="text-sm text-slate-400">Nashville, TN</p></div></div>
+          </div>
+          <div class="bg-light-grey rounded-3xl p-8 border border-border-light flex-1">
+            <div class="flex items-center gap-1 mb-4"><span class="material-symbols-outlined text-gold filled">star</span><span class="material-symbols-outlined text-gold filled">star</span><span class="material-symbols-outlined text-gold filled">star</span><span class="material-symbols-outlined text-gold filled">star</span><span class="material-symbols-outlined text-gold filled">star</span></div>
+            <p class="text-slate-600 leading-relaxed italic mb-6">"We had 12 girls on board and there was plenty of room for everyone to dance, lounge, and take photos. The sunset timing was perfect and the drinks never stopped flowing. Best bachelorette ever!"</p>
+            <div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-gold flex items-center justify-center text-white text-base font-bold">CW</div><div><p class="font-bold text-navy">Chelsea W.</p><p class="text-sm text-slate-400">San Diego, CA</p></div></div>
+          </div>
+          <div class="bg-light-grey rounded-3xl p-8 border border-border-light flex-1">
+            <div class="flex items-center gap-1 mb-4"><span class="material-symbols-outlined text-gold filled">star</span><span class="material-symbols-outlined text-gold filled">star</span><span class="material-symbols-outlined text-gold filled">star</span><span class="material-symbols-outlined text-gold filled">star</span><span class="material-symbols-outlined text-gold filled">star</span></div>
+            <p class="text-slate-600 leading-relaxed italic mb-6">"My sister planned this for my bachelorette and I cried happy tears. Sailing at sunset, surrounded by my best friends, champagne in hand — it was everything I dreamed of and more. Thank you Cabo Sailing!"</p>
+            <div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-navy flex items-center justify-center text-white text-base font-bold">JD</div><div><p class="font-bold text-navy">Jessica D.</p><p class="text-sm text-slate-400">Atlanta, GA</p></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center gap-2 mt-6">
+        <button onclick="dCarouselTo(0)" id="d-dot-0" class="w-2.5 h-2.5 rounded-full bg-navy transition-all"></button>
+        <button onclick="dCarouselTo(1)" id="d-dot-1" class="w-2.5 h-2.5 rounded-full bg-border-light transition-all"></button>
+      </div>
+    </div>
+
+  </div><!-- end desktop layout -->
+
+    <!-- Desktop Footer -->
+    <footer class="bg-navy mt-20 px-5 lg:px-12 py-12">
+      <div class="max-w-[1400px] mx-auto">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-10">
+          <div>
+            <img src="/cabo-sailing-logo.png" alt="Cabo Sailing" class="h-10 mb-4" style="filter: brightness(0) invert(1) opacity(0.9)"/>
+            <p class="text-white/50 text-base leading-relaxed">Charters de lujo en velero y snorkel en Cabo San Lucas, Mexico.</p>
+            <div class="flex gap-3 mt-4">
+              <a href="#" class="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center text-white/60 hover:text-white transition-colors"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center text-white/60 hover:text-white transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-white font-bold text-base uppercase tracking-widest mb-4">Tours</h4>
+            <ul class="space-y-2 text-white/50 text-base">
+              <li><a href="/es/private-snorkeling" class="hover:text-gold transition-colors">Snorkel Privado</a></li>
+              <li><a href="/es/shared-snorkeling" class="hover:text-gold transition-colors">Snorkel Compartido</a></li>
+              <li><a href="/es/private-sunset" class="hover:text-gold transition-colors">Atardecer Privado</a></li>
+              <li><a href="/es/shared-sunset" class="hover:text-gold transition-colors">Atardecer Compartido</a></li>
+              <li><a href="/es/whale-watching" class="hover:text-gold transition-colors">Avistamiento de Ballenas</a></li>
+              <li><a href="/es/bachelorette-party" class="text-gold">Despedida de Soltera</a></li>
+              <li><a href="/es/scuba-diving" class="hover:text-gold transition-colors">Buceo</a></li>
+              <li><a href="/es/shuttle-service" class="hover:text-gold transition-colors">Servicio de Transporte</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-white font-bold text-base uppercase tracking-widest mb-4">Empresa</h4>
+            <ul class="space-y-2 text-white/50 text-base">
+              <li><a href="#" class="hover:text-gold transition-colors">Nuestra Tripulacion</a></li>
+              <li><a href="#" class="hover:text-gold transition-colors">Nuestra Flota</a></li>
+              <li><a href="#" class="hover:text-gold transition-colors">Ofertas Especiales</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-white font-bold text-base uppercase tracking-widest mb-4">Contacto</h4>
+            <div class="space-y-3 text-white/50 text-base">
+              <div class="flex items-center gap-2"><span class="material-symbols-outlined text-gold text-base">call</span><a href="tel:+526241438485" class="hover:text-gold transition-colors">+52 624 143 8485</a></div>
+              <div class="flex items-center gap-2"><i class="fa-brands fa-whatsapp text-gold"></i><a href="https://wa.me/526241916997" target="_blank" class="hover:text-gold transition-colors">+52 624 191 6997</a></div>
+              <div class="flex items-center gap-2"><span class="material-symbols-outlined text-gold text-base">pin_drop</span><span>Cabo San Lucas Marina, Dock F</span></div>
+              <div class="flex items-center gap-2 mt-1"><span class="material-symbols-outlined text-gold text-base">mail</span><a href="/es/contact" class="text-white font-bold hover:text-gold transition-colors">Contactanos Ahora</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-white/10 pt-6 flex items-center justify-between">
+          <p class="text-white/30 text-sm">© 2026 Cabo Sailing. Todos los derechos reservados.</p>
+          <p class="text-white/30 text-sm">Land's End, Cabo San Lucas, Mexico</p>
+        </div>
+      </div>
+    </footer>
+
+
+  </main>
+
+  <Footer />
+  <FloatingCTA />
+  <RezdyModal />
+
+  <script is:inline>
+
+  function heroNav(btn, dir) {
+    var wrap = btn.closest('.overflow-hidden').querySelector('.snap-x');
+    if (!wrap) return;
+    wrap.scrollBy({ left: dir * wrap.offsetWidth, behavior: 'smooth' });
+  }
+
+  var dPage = 0;
+  function scrollDReviews(dir) { dPage = Math.max(0, Math.min(1, dPage + dir)); updateDCarousel(); }
+  function dCarouselTo(page) { dPage = page; updateDCarousel(); }
+  function updateDCarousel() {
+    document.getElementById('d-carousel').style.transform = 'translateX(-' + (dPage * 50) + '%)';
+    [0,1].forEach(function(n) {
+      document.getElementById('d-dot-'+n).className = 'w-2.5 h-2.5 rounded-full transition-all ' + (n===dPage ? 'bg-navy' : 'bg-border-light');
+    });
+  }
+
+  // Fleet boat card arrow navigation
+  function fleetNav(btn, dir) {
+    var wrap = btn.closest('.h-\[480px\]') || btn.closest('[class*="h-["]');
+    if (!wrap) wrap = btn.parentElement;
+    var slides = wrap.querySelectorAll('.boat-slide');
+    var current = 0;
+    slides.forEach(function(s, i) { if (s.style.opacity === '1' || s.classList.contains('opacity-100')) current = i; });
+    slides[current].style.opacity = '0';
+    slides[current].classList.remove('opacity-100');
+    var next = (current + dir + slides.length) % slides.length;
+    slides[next].style.opacity = '1';
+  }
+  </script>
+  <script is:inline>
+  // Override promo icon to champagne for bachelorette page
+  (function() {
+    var _orig = window.openRezdyModal;
+    window.openRezdyModal = function(widgetId, type) {
+      _orig(widgetId, type);
+      var icon = document.querySelector('#rezdyModal .rezdy-modal-title .material-symbols-outlined');
+      if (icon) icon.textContent = 'wine_bar';
+    };
+  })();
+  </script>
+</BaseLayout>

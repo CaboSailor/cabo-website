@@ -1,35 +1,35 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import FloatingCTA from '../components/FloatingCTA.astro';
-import RezdyModal from '../components/RezdyModal.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import FloatingCTA from '../../components/FloatingCTA.astro';
+import RezdyModal from '../../components/RezdyModal.astro';
 import { Image } from 'astro:assets';
 
-import img_31_03_25_Gil_airbnb_shoot_photos_35mm_226_topaz_sharpen_exposure from "../assets/images/guests/cabo-sailing-guests-cheers.jpg";
-import img_4k_01_49_05_19_Still141 from "../assets/images/guests-on-yachts/cabo-private-sunset-cruise-guests.jpg";
-import img_31_03_25_Gil_airbnb_shoot_photos_20mm_483_topaz_sharpen_exposure from "../assets/images/guests/cabo-charter-guests-sunset.jpg";
-import Header_Sunset_3 from "../assets/images/guests-on-sailboats/cabo-sunset-sailing-cruise.jpeg";
-import img_20_Sailing_42 from "../assets/images/boats/sailing-42/cabo-sailing-42-deck-view.jpg";
-import img_31_03_25_Gil_airbnb_shoot_photos_20mm_33_topaz_sharpen_exposure from "../assets/images/guests/cabo-charter-guests-smiling.jpg";
-import img_9_Yacht_51 from "../assets/images/boats/yacht-51/cabo-luxury-yacht-51-ocean-view.jpg";
-import img_2_Yacht_51 from "../assets/images/boats/yacht-51/cabo-luxury-yacht-51-exterior-01.jpg";
-import img_7_Yacht_51 from "../assets/images/boats/yacht-51/cabo-luxury-yacht-51-exterior-03.jpg";
-import img_1_Yacht_45 from "../assets/images/boats/yacht-45/cabo-private-yacht-45-exterior-01.jpg";
-import img_5_Yacht_45 from "../assets/images/boats/yacht-45/cabo-private-yacht-45-exterior-03.jpg";
-import img_6_Yacht_45 from "../assets/images/boats/yacht-45/cabo-private-yacht-45-bow.jpg";
-import img_3_Yacht_42 from "../assets/images/boats/yacht-42/cabo-private-yacht-42-exterior-02.jpg";
-import img_2_Yacht_42 from "../assets/images/boats/yacht-42/cabo-private-yacht-42-exterior-01.jpg";
-import img_5_Yacht_42 from "../assets/images/boats/yacht-42/cabo-private-yacht-42-exterior-03.jpg";
-import img_10_Sailing_42 from "../assets/images/boats/sailing-42/cabo-sailing-42-exterior-01.jpg";
-import img_17_Sailing_42 from "../assets/images/boats/sailing-42/cabo-sailing-42-sailing-view.jpg";
-import img_12_Sailing_42 from "../assets/images/boats/sailing-42/cabo-sailing-42-exterior-02.jpg";
-import img_6_Sailing_38 from "../assets/images/boats/sailing-38/cabo-sailing-38-exterior-02.jpg";
-import img_8_Sailing_38 from "../assets/images/boats/sailing-38/cabo-sailing-38-exterior-03.jpg";
-import img_5_Sailing_38 from "../assets/images/boats/sailing-38/cabo-sailing-38-exterior-01.jpg";
+import img_31_03_25_Gil_airbnb_shoot_photos_35mm_226_topaz_sharpen_exposure from "../../assets/images/guests/cabo-sailing-guests-cheers.jpg";
+import img_4k_01_49_05_19_Still141 from "../../assets/images/guests-on-yachts/cabo-private-sunset-cruise-guests.jpg";
+import img_31_03_25_Gil_airbnb_shoot_photos_20mm_483_topaz_sharpen_exposure from "../../assets/images/guests/cabo-charter-guests-sunset.jpg";
+import Header_Sunset_3 from "../../assets/images/guests-on-sailboats/cabo-sunset-sailing-cruise.jpeg";
+import img_20_Sailing_42 from "../../assets/images/boats/sailing-42/cabo-sailing-42-deck-view.jpg";
+import img_31_03_25_Gil_airbnb_shoot_photos_20mm_33_topaz_sharpen_exposure from "../../assets/images/guests/cabo-charter-guests-smiling.jpg";
+import img_9_Yacht_51 from "../../assets/images/boats/yacht-51/cabo-luxury-yacht-51-ocean-view.jpg";
+import img_2_Yacht_51 from "../../assets/images/boats/yacht-51/cabo-luxury-yacht-51-exterior-01.jpg";
+import img_7_Yacht_51 from "../../assets/images/boats/yacht-51/cabo-luxury-yacht-51-exterior-03.jpg";
+import img_1_Yacht_45 from "../../assets/images/boats/yacht-45/cabo-private-yacht-45-exterior-01.jpg";
+import img_5_Yacht_45 from "../../assets/images/boats/yacht-45/cabo-private-yacht-45-exterior-03.jpg";
+import img_6_Yacht_45 from "../../assets/images/boats/yacht-45/cabo-private-yacht-45-bow.jpg";
+import img_3_Yacht_42 from "../../assets/images/boats/yacht-42/cabo-private-yacht-42-exterior-02.jpg";
+import img_2_Yacht_42 from "../../assets/images/boats/yacht-42/cabo-private-yacht-42-exterior-01.jpg";
+import img_5_Yacht_42 from "../../assets/images/boats/yacht-42/cabo-private-yacht-42-exterior-03.jpg";
+import img_10_Sailing_42 from "../../assets/images/boats/sailing-42/cabo-sailing-42-exterior-01.jpg";
+import img_17_Sailing_42 from "../../assets/images/boats/sailing-42/cabo-sailing-42-sailing-view.jpg";
+import img_12_Sailing_42 from "../../assets/images/boats/sailing-42/cabo-sailing-42-exterior-02.jpg";
+import img_6_Sailing_38 from "../../assets/images/boats/sailing-38/cabo-sailing-38-exterior-02.jpg";
+import img_8_Sailing_38 from "../../assets/images/boats/sailing-38/cabo-sailing-38-exterior-03.jpg";
+import img_5_Sailing_38 from "../../assets/images/boats/sailing-38/cabo-sailing-38-exterior-01.jpg";
 ---
 
-<BaseLayout bodyClass="bg-white font-body text-text-main antialiased min-h-screen flex flex-col relative" title="Private Sunset Cruise in Cabo San Lucas | Cabo Sailing" description="Private sunset cruise for up to 12 guests on our yacht or sailboat. Open bar, snacks and front-row views of the Arch of Cabo San Lucas." hreflangs={{ en: '/private-sunset', es: '/es/private-sunset' }}>
+<BaseLayout bodyClass="bg-white font-body text-text-main antialiased min-h-screen flex flex-col relative" title="Crucero Privado al Atardecer en Cabo San Lucas | Cabo Sailing" description="Crucero privado al atardecer en yate o velero, hasta 12 personas. Barra libre, snacks y vista al Arco de Cabo San Lucas." hreflangs={{ en: '/private-sunset', es: '/es/private-sunset' }}>
   <Header variant="subpage" activePage="tours" />
 
 
@@ -101,16 +101,16 @@ import img_5_Sailing_38 from "../assets/images/boats/sailing-38/cabo-sailing-38-
   <div>
     <!-- Breadcrumbs -->
     <nav class="flex items-center gap-1.5 text-xs text-slate-400 mb-4" aria-label="Breadcrumb">
-      <a href="/" class="hover:text-gold transition-colors">Home</a>
+      <a href="/es/" class="hover:text-gold transition-colors">Inicio</a>
       <span class="material-symbols-outlined text-[14px]">chevron_right</span>
       <span>Tours</span>
       <span class="material-symbols-outlined text-[14px]">chevron_right</span>
-      <span class="text-navy font-semibold">Private Sunset</span>
+      <span class="text-navy font-semibold">Atardecer Privado</span>
     </nav>
     <div class="mb-2">
-      <h1 class="text-4xl text-navy leading-tight">Private Sunset Sailing Cruise in Cabo</h1>
+      <h1 class="text-4xl text-navy leading-tight">Crucero Privado al Atardecer en Cabo</h1>
     </div>
-    <p class="text-slate-500 text-base leading-relaxed mt-4">A relaxed, beautiful way to experience Cabo at its best.</p>
+    <p class="text-slate-500 text-base leading-relaxed mt-4">Una forma relajada y hermosa de experimentar lo mejor de Cabo.</p>
     <p class="text-slate-400 text-sm font-medium flex items-center gap-1 mt-3 uppercase tracking-widest">
       <span class="material-symbols-outlined text-base">location_on</span> Land's End, Cabo San Lucas
     </p>
@@ -119,57 +119,57 @@ import img_5_Sailing_38 from "../assets/images/boats/sailing-38/cabo-sailing-38-
     <div class="flex gap-4 mt-8">
       <div class="bg-light-grey rounded-2xl px-6 py-4 flex flex-col items-center text-center border border-border-light flex-1">
         <span class="material-symbols-outlined text-gold mb-2">schedule</span>
-        <p class="text-xs text-slate-400 uppercase font-bold tracking-widest mb-1">Duration</p>
-        <p class="text-base font-bold text-navy">3 Hours</p>
-        <p class="text-xs text-slate-400 mt-0.5">Extra time available</p>
+        <p class="text-xs text-slate-400 uppercase font-bold tracking-widest mb-1">Duracion</p>
+        <p class="text-base font-bold text-navy">3 Horas</p>
+        <p class="text-xs text-slate-400 mt-0.5">Tiempo extra disponible</p>
       </div>
       <div class="bg-light-grey rounded-2xl px-6 py-4 flex flex-col items-center text-center border border-border-light flex-1">
         <span class="material-symbols-outlined text-gold mb-2">wb_twilight</span>
-        <p class="text-xs text-slate-400 uppercase font-bold tracking-widest mb-1">Type</p>
-        <p class="text-base font-bold text-navy">Sunset</p>
+        <p class="text-xs text-slate-400 uppercase font-bold tracking-widest mb-1">Tipo</p>
+        <p class="text-base font-bold text-navy">Atardecer</p>
       </div>
       <div class="bg-light-grey rounded-2xl px-6 py-4 flex flex-col items-center text-center border border-border-light flex-1">
         <span class="material-symbols-outlined text-gold mb-2">favorite</span>
-        <p class="text-xs text-slate-400 uppercase font-bold tracking-widest mb-1">Occasion</p>
-        <p class="text-base font-bold text-navy">Romantic</p>
+        <p class="text-xs text-slate-400 uppercase font-bold tracking-widest mb-1">Ocasion</p>
+        <p class="text-base font-bold text-navy">Romantico</p>
       </div>
       <div class="bg-light-grey rounded-2xl px-6 py-4 flex flex-col items-center text-center border border-border-light flex-1">
         <span class="material-symbols-outlined text-gold mb-2">event_available</span>
-        <p class="text-xs text-slate-400 uppercase font-bold tracking-widest mb-1">Free Cancellation</p>
-        <p class="text-base font-bold text-navy">Up to 24h</p>
+        <p class="text-xs text-slate-400 uppercase font-bold tracking-widest mb-1">Cancelacion Gratuita</p>
+        <p class="text-base font-bold text-navy">Hasta 24h</p>
       </div>
     </div>
 
-    <!-- About + What's Included (left) / Meeting Point (right) -->
+    <!-- About + Que Incluye (left) / Punto de Encuentro (right) -->
     <div class="mt-10 flex gap-12">
-      <!-- Left column: About + What's Included stacked -->
+      <!-- Left column: About + Que Incluye stacked -->
       <div class="flex-1">
-        <h3 class="text-2xl text-navy mb-4">About this experience</h3>
+        <h3 class="text-2xl text-navy mb-4">Sobre esta experiencia</h3>
         <p class="text-slate-500 leading-relaxed text-base">
-          Experience the magic of golden hour on the Pacific with a private sunset sailing charter. Cruise along the stunning coastline of Cabo San Lucas as the sky erupts in brilliant oranges and pinks — the perfect backdrop for romance, celebration, or simply unwinding in style.
+          Vive la magia de la hora dorada en el Pacifico con un charter privado al atardecer. Navega por la impresionante costa de Cabo San Lucas mientras el cielo se ilumina en brillantes naranjas y rosas — el escenario perfecto para el romance, la celebracion o simplemente relajarse con estilo.
         </p>
 
-        <!-- The Experience timeline -->
+        <!-- La Experiencia timeline -->
         <div class="mt-8">
           <div class="flex items-center gap-3 mb-5">
             <div class="w-1 h-6 bg-gold rounded-full"></div>
-            <h4 class="text-sm font-bold text-navy uppercase tracking-widest">The Experience</h4>
+            <h4 class="text-sm font-bold text-navy uppercase tracking-widest">La Experiencia</h4>
           </div>
           <ol class="relative border-l-2 border-gold/30 ml-2 space-y-5 pl-6">
-            <li class="relative"><span class="absolute -left-[33px] top-0 w-6 h-6 rounded-full bg-navy text-white text-[11px] font-bold flex items-center justify-center">1</span><span class="text-slate-600 text-base">Meet at the marina</span></li>
-            <li class="relative"><span class="absolute -left-[33px] top-0 w-6 h-6 rounded-full bg-navy text-white text-[11px] font-bold flex items-center justify-center">2</span><span class="text-slate-600 text-base">Cruise past Cabo's highlights (Arch, sea lions, beaches)</span></li>
-            <li class="relative"><span class="absolute -left-[33px] top-0 w-6 h-6 rounded-full bg-navy text-white text-[11px] font-bold flex items-center justify-center">3</span><span class="text-slate-600 text-base">Settle into the best views as the sun begins to drop</span></li>
-            <li class="relative"><span class="absolute -left-[33px] top-0 w-6 h-6 rounded-full bg-navy text-white text-[11px] font-bold flex items-center justify-center">4</span><span class="text-slate-600 text-base">Enjoy the golden hour with drinks and light bites</span></li>
-            <li class="relative"><span class="absolute -left-[33px] top-0 w-6 h-6 rounded-full bg-navy text-white text-[11px] font-bold flex items-center justify-center">5</span><span class="text-slate-600 text-base">Watch the sunset over the Pacific, then cruise back along the coastline</span></li>
+            <li class="relative"><span class="absolute -left-[33px] top-0 w-6 h-6 rounded-full bg-navy text-white text-[11px] font-bold flex items-center justify-center">1</span><span class="text-slate-600 text-base">Encuentro en la marina</span></li>
+            <li class="relative"><span class="absolute -left-[33px] top-0 w-6 h-6 rounded-full bg-navy text-white text-[11px] font-bold flex items-center justify-center">2</span><span class="text-slate-600 text-base">Navega por los puntos destacados de Cabo (Arco, lobos marinos, playas)</span></li>
+            <li class="relative"><span class="absolute -left-[33px] top-0 w-6 h-6 rounded-full bg-navy text-white text-[11px] font-bold flex items-center justify-center">3</span><span class="text-slate-600 text-base">Acomodate para las mejores vistas mientras el sol comienza a bajar</span></li>
+            <li class="relative"><span class="absolute -left-[33px] top-0 w-6 h-6 rounded-full bg-navy text-white text-[11px] font-bold flex items-center justify-center">4</span><span class="text-slate-600 text-base">Disfruta la hora dorada con bebidas y aperitivos</span></li>
+            <li class="relative"><span class="absolute -left-[33px] top-0 w-6 h-6 rounded-full bg-navy text-white text-[11px] font-bold flex items-center justify-center">5</span><span class="text-slate-600 text-base">Contempla el atardecer sobre el Pacifico, luego regresa navegando por la costa</span></li>
           </ol>
-          <p class="mt-5 text-slate-500 italic text-sm">No rush. No fixed script. Just a relaxed, beautiful time on the water.</p>
+          <p class="mt-5 text-slate-500 italic text-sm">Sin prisas. Sin guion fijo. Solo un momento relajado y hermoso en el agua.</p>
         </div>
 
-        <!-- What's Included -->
+        <!-- Que Incluye -->
         <div class="mt-10">
           <div class="flex items-center gap-3 mb-6">
             <div class="w-1 h-6 bg-gold rounded-full"></div>
-            <h3 class="text-2xl text-navy">What's Included</h3>
+            <h3 class="text-2xl text-navy">Que Incluye</h3>
           </div>
           <div class="grid grid-cols-2 gap-5 pl-1">
             <div class="flex items-center gap-4">
@@ -177,8 +177,8 @@ import img_5_Sailing_38 from "../assets/images/boats/sailing-38/cabo-sailing-38-
                 <span class="material-symbols-outlined text-white text-[14px]">local_bar</span>
               </div>
               <div>
-                <span class="text-slate-600 text-base font-medium">Open bar</span>
-                <p class="text-slate-400 text-sm">Premium drinks served throughout your cruise</p>
+                <span class="text-slate-600 text-base font-medium">Barra libre</span>
+                <p class="text-slate-400 text-sm">Bebidas premium durante todo el crucero</p>
               </div>
             </div>
             <div class="flex items-center gap-4">
@@ -186,8 +186,8 @@ import img_5_Sailing_38 from "../assets/images/boats/sailing-38/cabo-sailing-38-
                 <span class="material-symbols-outlined text-white text-[14px]">restaurant</span>
               </div>
               <div>
-                <span class="text-slate-600 text-base font-medium">Light bites onboard</span>
-                <p class="text-slate-400 text-sm">Fresh snacks to enjoy as the sun sets</p>
+                <span class="text-slate-600 text-base font-medium">Aperitivos a bordo</span>
+                <p class="text-slate-400 text-sm">Snacks frescos para disfrutar mientras cae el sol</p>
               </div>
             </div>
             <div class="flex items-center gap-4">
@@ -195,8 +195,8 @@ import img_5_Sailing_38 from "../assets/images/boats/sailing-38/cabo-sailing-38-
                 <span class="material-symbols-outlined text-white text-[14px]">wb_twilight</span>
               </div>
               <div>
-                <span class="text-slate-600 text-base font-medium">Private sunset experience</span>
-                <p class="text-slate-400 text-sm">Front-row views of Cabo's most iconic sunset</p>
+                <span class="text-slate-600 text-base font-medium">Experiencia privada al atardecer</span>
+                <p class="text-slate-400 text-sm">Vistas de primera fila del atardecer mas iconico de Cabo</p>
               </div>
             </div>
             <div class="flex items-center gap-4">
@@ -204,8 +204,8 @@ import img_5_Sailing_38 from "../assets/images/boats/sailing-38/cabo-sailing-38-
                 <span class="material-symbols-outlined text-white text-[14px]">sailing</span>
               </div>
               <div>
-                <span class="text-slate-600 text-base font-medium">Private yacht or sailboat</span>
-                <p class="text-slate-400 text-sm">Only your group onboard — no sharing</p>
+                <span class="text-slate-600 text-base font-medium">Yate o velero privado</span>
+                <p class="text-slate-400 text-sm">Solo tu grupo a bordo — sin compartir</p>
               </div>
             </div>
             <div class="flex items-center gap-4">
@@ -213,8 +213,8 @@ import img_5_Sailing_38 from "../assets/images/boats/sailing-38/cabo-sailing-38-
                 <span class="material-symbols-outlined text-white text-[14px]">music_note</span>
               </div>
               <div>
-                <span class="text-slate-600 text-base font-medium">Bluetooth music system</span>
-                <p class="text-slate-400 text-sm">Set your own vibe for the evening</p>
+                <span class="text-slate-600 text-base font-medium">Sistema de musica Bluetooth</span>
+                <p class="text-slate-400 text-sm">Pon tu propia musica para la velada</p>
               </div>
             </div>
             <div class="flex items-center gap-4">
@@ -222,26 +222,26 @@ import img_5_Sailing_38 from "../assets/images/boats/sailing-38/cabo-sailing-38-
                 <span class="material-symbols-outlined text-white text-[14px]">person</span>
               </div>
               <div>
-                <span class="text-slate-600 text-base font-medium">Experienced bilingual crew</span>
-                <p class="text-slate-400 text-sm">Professional, friendly, and safety-first</p>
+                <span class="text-slate-600 text-base font-medium">Tripulacion bilingue con experiencia</span>
+                <p class="text-slate-400 text-sm">Profesional, amigable y con seguridad ante todo</p>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Right column: Meeting Point -->
+      <!-- Right column: Punto de Encuentro -->
       <div class="w-[380px] flex-shrink-0">
         <div class="sticky top-[90px] bg-light-grey rounded-2xl p-8 border border-border-light">
           <div class="flex items-center gap-3 mb-4">
             <span class="material-symbols-outlined text-gold text-2xl">pin_drop</span>
-            <h3 class="text-lg font-bold text-navy uppercase tracking-wider">Meeting Point</h3>
+            <h3 class="text-lg font-bold text-navy uppercase tracking-wider">Punto de Encuentro</h3>
           </div>
           <p class="text-lg font-semibold text-navy mb-1">Cabo San Lucas Marina, Dock F</p>
-          <p class="text-sm text-slate-500 leading-relaxed mb-4">Look for the Cabo Sailing team in black polo shirts with our logo. Please arrive 15 minutes before departure.</p>
+          <p class="text-sm text-slate-500 leading-relaxed mb-4">Busca al equipo de Cabo Sailing con polos negros y nuestro logo. Por favor llega 15 minutos antes de la salida.</p>
           <div class="flex items-center gap-2 text-sm text-slate-500">
             <span class="material-symbols-outlined text-gold text-base">schedule</span>
-            <span class="font-semibold text-navy">DEPARTURES: 4:00 PM (Winter) &amp; 4:30 PM (Summer) DAILY</span>
+            <span class="font-semibold text-navy">SALIDAS: 4:00 PM (Invierno) y 4:30 PM (Verano) DIARIO</span>
           </div>
         </div>
       </div>
@@ -253,17 +253,17 @@ import img_5_Sailing_38 from "../assets/images/boats/sailing-38/cabo-sailing-38-
 <div class="lg:hidden relative z-10 -mt-4 px-5">
 <div class="bg-white rounded-3xl p-6 shadow-xl shadow-navy/5 border border-border-light">
 <nav class="flex items-center gap-1.5 text-xs text-slate-400 mb-4" aria-label="Breadcrumb">
-<a href="/" class="hover:text-gold transition-colors">Home</a>
+<a href="/es/" class="hover:text-gold transition-colors">Inicio</a>
 <span class="material-symbols-outlined text-[14px]">chevron_right</span>
 <span>Tours</span>
 <span class="material-symbols-outlined text-[14px]">chevron_right</span>
-<span class="text-navy font-semibold">Private Sunset</span>
+<span class="text-navy font-semibold">Atardecer Privado</span>
 </nav>
 <div class="flex flex-col gap-1 mb-6">
 <div>
-<h1 class="text-2xl text-navy leading-tight">Private Sunset Sailing Cruise in Cabo</h1>
+<h1 class="text-2xl text-navy leading-tight">Crucero Privado al Atardecer en Cabo</h1>
 </div>
-<p class="text-slate-500 text-sm leading-relaxed mt-2">A relaxed, beautiful way to experience Cabo at its best.</p>
+<p class="text-slate-500 text-sm leading-relaxed mt-2">Una forma relajada y hermosa de experimentar lo mejor de Cabo.</p>
 <p class="text-slate-400 text-sm font-medium flex items-center gap-1 mt-2 uppercase tracking-widest">
 <span class="material-symbols-outlined text-base">location_on</span> Land's End, Cabo San Lucas
                     </p>
@@ -271,23 +271,23 @@ import img_5_Sailing_38 from "../assets/images/boats/sailing-38/cabo-sailing-38-
 <div class="grid grid-cols-2 gap-4">
 <div class="bg-light-grey rounded-2xl p-4 flex flex-col items-center text-center border border-border-light">
 <span class="material-symbols-outlined text-gold mb-2">schedule</span>
-<p class="text-xs text-slate-400 uppercase font-bold tracking-widest mb-1">Duration</p>
-<p class="text-base font-bold text-navy">3 Hours</p>
+<p class="text-xs text-slate-400 uppercase font-bold tracking-widest mb-1">Duracion</p>
+<p class="text-base font-bold text-navy">3 Horas</p>
 </div>
 <div class="bg-light-grey rounded-2xl p-4 flex flex-col items-center text-center border border-border-light">
 <span class="material-symbols-outlined text-gold mb-2">wb_twilight</span>
-<p class="text-xs text-slate-400 uppercase font-bold tracking-widest mb-1">Type</p>
-<p class="text-base font-bold text-navy">Sunset</p>
+<p class="text-xs text-slate-400 uppercase font-bold tracking-widest mb-1">Tipo</p>
+<p class="text-base font-bold text-navy">Atardecer</p>
 </div>
 <div class="bg-light-grey rounded-2xl p-4 flex flex-col items-center text-center border border-border-light">
 <span class="material-symbols-outlined text-gold mb-2">favorite</span>
-<p class="text-xs text-slate-400 uppercase font-bold tracking-widest mb-1">Occasion</p>
-<p class="text-base font-bold text-navy">Romantic</p>
+<p class="text-xs text-slate-400 uppercase font-bold tracking-widest mb-1">Ocasion</p>
+<p class="text-base font-bold text-navy">Romantico</p>
 </div>
 <div class="bg-light-grey rounded-2xl p-4 flex flex-col items-center text-center border border-border-light">
 <span class="material-symbols-outlined text-gold mb-2">event_available</span>
-<p class="text-xs text-slate-400 uppercase font-bold tracking-widest mb-1">Free Cancellation</p>
-<p class="text-base font-bold text-navy">Up to 24h</p>
+<p class="text-xs text-slate-400 uppercase font-bold tracking-widest mb-1">Cancelacion Gratuita</p>
+<p class="text-base font-bold text-navy">Hasta 24h</p>
 </div>
 </div>
 <div class="mt-6 pt-6 border-t border-border-light">
@@ -297,95 +297,95 @@ import img_5_Sailing_38 from "../assets/images/boats/sailing-38/cabo-sailing-38-
 <div class="p-2 bg-navy/5 rounded-full group-active:bg-navy/10 transition-colors">
 <span class="material-symbols-outlined text-navy text-xl">auto_awesome</span>
 </div>
-<span class="text-base font-semibold text-navy">Cruise Highlights</span>
+<span class="text-base font-semibold text-navy">Puntos Destacados del Crucero</span>
 </div>
 <span class="material-symbols-outlined text-slate-300 chevron-icon transition-transform">chevron_right</span>
 </label>
 <div class="max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out" id="highlights-content">
 <div class="space-y-4">
 <div>
-<h4 class="text-sm font-bold text-navy uppercase tracking-wider mb-1">Golden Hour Views</h4>
-<p class="text-sm text-slate-500 leading-relaxed">Watch the sun dip below the Pacific horizon from the deck of your private yacht.</p>
+<h4 class="text-sm font-bold text-navy uppercase tracking-wider mb-1">Vistas de la Hora Dorada</h4>
+<p class="text-sm text-slate-500 leading-relaxed">Contempla el sol hundiendose en el horizonte del Pacifico desde la cubierta de tu yate privado.</p>
 </div>
 <div>
-<h4 class="text-sm font-bold text-navy uppercase tracking-wider mb-1">Premium Open Bar</h4>
-<p class="text-sm text-slate-500 leading-relaxed">Toast the sunset with champagne, fine wines, spirits, and craft cocktails.</p>
+<h4 class="text-sm font-bold text-navy uppercase tracking-wider mb-1">Barra Libre Premium</h4>
+<p class="text-sm text-slate-500 leading-relaxed">Brinda al atardecer con champana, vinos finos, licores y cocteles artesanales.</p>
 </div>
 <div>
-<h4 class="text-sm font-bold text-navy uppercase tracking-wider mb-1">Curated Appetizers</h4>
-<p class="text-sm text-slate-500 leading-relaxed">Enjoy a selection of gourmet appetizers prepared by our onboard crew.</p>
+<h4 class="text-sm font-bold text-navy uppercase tracking-wider mb-1">Aperitivos Selectos</h4>
+<p class="text-sm text-slate-500 leading-relaxed">Disfruta una seleccion de aperitivos gourmet preparados por nuestra tripulacion a bordo.</p>
 </div>
 </div>
 </div>
 </div>
 </div>
 <div class="mt-10">
-<h3 class="text-lg text-navy mb-4">About this experience</h3>
+<h3 class="text-lg text-navy mb-4">Sobre esta experiencia</h3>
 <div id="about-text">
-<p class="text-slate-500 leading-relaxed text-base"><span id="about-short">Experience the magic of golden hour on the Pacific with a private sunset sailing charter. Cruise along the stunning coastline of Cabo San Lucas as the sky erupts in brilliant oranges and pinks....</span><span id="about-full" class="hidden"> The perfect backdrop for romance, celebration, or simply unwinding in style.</span>
-<span id="about-read-more" class="text-gold font-semibold ml-1 cursor-pointer" onclick="document.getElementById('about-full').classList.remove('hidden');document.getElementById('about-short').textContent='Experience the magic of golden hour on the Pacific with a private sunset sailing charter. Cruise along the stunning coastline of Cabo San Lucas as the sky erupts in brilliant oranges and pinks —';this.remove()">Read more</span></p>
+<p class="text-slate-500 leading-relaxed text-base"><span id="about-short">Vive la magia de la hora dorada en el Pacifico con un charter privado al atardecer. Navega por la impresionante costa de Cabo San Lucas mientras el cielo se ilumina en brillantes naranjas y rosas...</span><span id="about-full" class="hidden"> El escenario perfecto para el romance, la celebracion o simplemente relajarse con estilo.</span>
+<span id="about-read-more" class="text-gold font-semibold ml-1 cursor-pointer" onclick="document.getElementById('about-full').classList.remove('hidden');document.getElementById('about-short').textContent='Vive la magia de la hora dorada en el Pacifico con un charter privado al atardecer. Navega por la impresionante costa de Cabo San Lucas mientras el cielo se ilumina en brillantes naranjas y rosas —';this.remove()">Leer mas</span></p>
 </div>
 <div class="mt-7">
 <div class="flex items-center gap-3 mb-4">
 <div class="w-1 h-5 bg-gold rounded-full"></div>
-<h4 class="text-xs font-bold text-navy uppercase tracking-widest">The Experience</h4>
+<h4 class="text-xs font-bold text-navy uppercase tracking-widest">La Experiencia</h4>
 </div>
 <ol class="relative border-l-2 border-gold/30 ml-2 space-y-4 pl-5">
-<li class="relative"><span class="absolute -left-[29px] top-0 w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center">1</span><span class="text-slate-600 text-sm">Meet at the marina</span></li>
-<li class="relative"><span class="absolute -left-[29px] top-0 w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center">2</span><span class="text-slate-600 text-sm">Cruise past Cabo's highlights (Arch, sea lions, beaches)</span></li>
-<li class="relative"><span class="absolute -left-[29px] top-0 w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center">3</span><span class="text-slate-600 text-sm">Settle into the best views as the sun begins to drop</span></li>
-<li class="relative"><span class="absolute -left-[29px] top-0 w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center">4</span><span class="text-slate-600 text-sm">Enjoy the golden hour with drinks and light bites</span></li>
-<li class="relative"><span class="absolute -left-[29px] top-0 w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center">5</span><span class="text-slate-600 text-sm">Watch the sunset over the Pacific, then cruise back along the coastline</span></li>
+<li class="relative"><span class="absolute -left-[29px] top-0 w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center">1</span><span class="text-slate-600 text-sm">Encuentro en la marina</span></li>
+<li class="relative"><span class="absolute -left-[29px] top-0 w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center">2</span><span class="text-slate-600 text-sm">Navega por los puntos destacados de Cabo (Arco, lobos marinos, playas)</span></li>
+<li class="relative"><span class="absolute -left-[29px] top-0 w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center">3</span><span class="text-slate-600 text-sm">Acomodate para las mejores vistas mientras el sol comienza a bajar</span></li>
+<li class="relative"><span class="absolute -left-[29px] top-0 w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center">4</span><span class="text-slate-600 text-sm">Disfruta la hora dorada con bebidas y aperitivos</span></li>
+<li class="relative"><span class="absolute -left-[29px] top-0 w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center">5</span><span class="text-slate-600 text-sm">Contempla el atardecer sobre el Pacifico, luego regresa navegando por la costa</span></li>
 </ol>
-<p class="mt-4 text-slate-500 italic text-xs">No rush. No fixed script. Just a relaxed, beautiful time on the water.</p>
+<p class="mt-4 text-slate-500 italic text-xs">Sin prisas. Sin guion fijo. Solo un momento relajado y hermoso en el agua.</p>
 </div>
 </div>
 <div class="mt-10">
 <div class="flex items-center gap-3 mb-6">
 <div class="w-1 h-6 bg-gold rounded-full"></div>
-<h3 class="text-lg text-navy">What's Included</h3>
+<h3 class="text-lg text-navy">Que Incluye</h3>
 </div>
 <div class="grid grid-cols-1 gap-5 pl-1">
 <div class="flex items-center gap-4">
 <div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[14px]">local_bar</span></div>
 <div>
-<span class="text-slate-600 text-base font-medium">Open bar</span>
-<p class="text-slate-400 text-sm">Premium drinks served throughout your cruise</p>
+<span class="text-slate-600 text-base font-medium">Barra libre</span>
+<p class="text-slate-400 text-sm">Bebidas premium durante todo el crucero</p>
 </div>
 </div>
 <div class="flex items-center gap-4">
 <div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[14px]">restaurant</span></div>
 <div>
-<span class="text-slate-600 text-base font-medium">Light bites onboard</span>
-<p class="text-slate-400 text-sm">Fresh snacks to enjoy as the sun sets</p>
+<span class="text-slate-600 text-base font-medium">Aperitivos a bordo</span>
+<p class="text-slate-400 text-sm">Snacks frescos para disfrutar mientras cae el sol</p>
 </div>
 </div>
 <div class="flex items-center gap-4">
 <div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[14px]">wb_twilight</span></div>
 <div>
-<span class="text-slate-600 text-base font-medium">Private sunset experience</span>
-<p class="text-slate-400 text-sm">Front-row views of Cabo's most iconic sunset</p>
+<span class="text-slate-600 text-base font-medium">Experiencia privada al atardecer</span>
+<p class="text-slate-400 text-sm">Vistas de primera fila del atardecer mas iconico de Cabo</p>
 </div>
 </div>
 <div class="flex items-center gap-4">
 <div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[14px]">sailing</span></div>
 <div>
-<span class="text-slate-600 text-base font-medium">Private yacht or sailboat</span>
-<p class="text-slate-400 text-sm">Only your group onboard — no sharing</p>
+<span class="text-slate-600 text-base font-medium">Yate o velero privado</span>
+<p class="text-slate-400 text-sm">Solo tu grupo a bordo — sin compartir</p>
 </div>
 </div>
 <div class="flex items-center gap-4">
 <div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[14px]">music_note</span></div>
 <div>
-<span class="text-slate-600 text-base font-medium">Bluetooth music system</span>
-<p class="text-slate-400 text-sm">Set your own vibe for the evening</p>
+<span class="text-slate-600 text-base font-medium">Sistema de musica Bluetooth</span>
+<p class="text-slate-400 text-sm">Pon tu propia musica para la velada</p>
 </div>
 </div>
 <div class="flex items-center gap-4">
 <div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[14px]">person</span></div>
 <div>
-<span class="text-slate-600 text-base font-medium">Experienced bilingual crew</span>
-<p class="text-slate-400 text-sm">Professional, friendly, and safety-first</p>
+<span class="text-slate-600 text-base font-medium">Tripulacion bilingue con experiencia</span>
+<p class="text-slate-400 text-sm">Profesional, amigable y con seguridad ante todo</p>
 </div>
 </div>
 </div>
@@ -394,21 +394,21 @@ import img_5_Sailing_38 from "../assets/images/boats/sailing-38/cabo-sailing-38-
 <div class="lg:hidden mx-5 mt-10 mb-6 bg-light-grey rounded-2xl p-5 border border-border-light">
   <div class="flex items-center gap-3 mb-4">
     <span class="material-symbols-outlined text-gold">pin_drop</span>
-    <h3 class="text-base font-bold text-navy uppercase tracking-wider">Meeting Point</h3>
+    <h3 class="text-base font-bold text-navy uppercase tracking-wider">Punto de Encuentro</h3>
   </div>
   <p class="text-base font-semibold text-navy mb-1">Cabo San Lucas Marina, Dock F</p>
-  <p class="text-sm text-slate-500 leading-relaxed mb-4">Look for the Cabo Sailing team in black polo shirts with our logo. Please arrive 15 minutes before departure.</p>
+  <p class="text-sm text-slate-500 leading-relaxed mb-4">Busca al equipo de Cabo Sailing con polos negros y nuestro logo. Por favor llega 15 minutos antes de la salida.</p>
   <div class="flex items-center gap-2 text-sm text-slate-500">
     <span class="material-symbols-outlined text-gold text-base">schedule</span>
-    <span class="font-semibold text-navy">DEPARTURES: 4:00 PM (Winter) &amp; 4:30 PM (Summer) DAILY</span>
+    <span class="font-semibold text-navy">SALIDAS: 4:00 PM (Invierno) y 4:30 PM (Verano) DIARIO</span>
   </div>
 </div>
 
 <div id="choose-your-boat" class="mt-12 lg:mt-0 lg:max-w-[1400px] lg:mx-auto lg:px-10 lg:py-16 px-5">
-<div class="flex items-center gap-3 mb-8"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-lg lg:text-2xl text-navy">Scroll our boats — find a perfect fit for your unique sunset experience</h3></div>
+<div class="flex items-center gap-3 mb-8"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-lg lg:text-2xl text-navy">Explora nuestros barcos — encuentra el ideal para tu experiencia al atardecer</h3></div>
 
 <div class="flex flex-col gap-5 lg:grid lg:grid-cols-3 pb-8">
-  <!-- Luxury Yacht 51' — Most Spacious -->
+  <!-- Luxury Yacht 51' — Mas Espacioso -->
   <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="yacht-51">
     <div class="h-[400px] w-full relative">
       <div class="boat-carousel relative w-full h-full">
@@ -419,23 +419,23 @@ import img_5_Sailing_38 from "../assets/images/boats/sailing-38/cabo-sailing-38-
       <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
       <div class="absolute bottom-5 left-6">
         <h4 class="text-white text-lg lg:text-xl">Luxury Yacht 51'</h4>
-        <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Up to 20 Guests</span></div>
+        <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Hasta 20 Personas</span></div>
       </div>
-      <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Most Spacious</div>
+      <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Mas Espacioso</div>
     <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-30%</div>
     <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
     <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
 </div>
     <div class="p-4 space-y-4">
-      <p class="text-slate-500 text-sm italic text-center pb-3 border-b border-border-light/50">Best for large groups &amp; maximum space</p>
+      <p class="text-slate-500 text-sm italic text-center pb-3 border-b border-border-light/50">Ideal para grupos grandes y maximo espacio</p>
       <div class="flex justify-between items-end">
-        <div class="flex flex-col"><span class="text-accent-gold line-through decoration-2 text-[0.9rem] font-semibold">$1,690</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$1,436</span><span class="text-slate-400 text-[11px] font-medium uppercase">/ 1-4 guests</span></div></div>
-        <div class="flex flex-col items-end"><span class="text-slate-400 text-[11px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-accent-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-400 text-[11px] font-medium">/pp</span></div></div>
+        <div class="flex flex-col"><span class="text-accent-gold line-through decoration-2 text-[0.9rem] font-semibold">$1,690</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$1,436</span><span class="text-slate-400 text-[11px] font-medium uppercase">/ 1-4 personas</span></div></div>
+        <div class="flex flex-col items-end"><span class="text-slate-400 text-[11px] font-medium">Personas extra</span><div class="flex items-baseline gap-1"><span class="text-accent-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-400 text-[11px] font-medium">/pp</span></div></div>
       </div>
-      <button type="button" onclick="openRezdyModal('165509')" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg">Check Availability</button>
+      <button type="button" onclick="openRezdyModal('165509')" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg">Ver Disponibilidad</button>
     </div>
   </div>
-  <!-- Luxury Yacht 45' — Most Popular -->
+  <!-- Luxury Yacht 45' — Mas Popular -->
   <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="yacht-45">
     <div class="h-[400px] w-full relative">
       <div class="boat-carousel relative w-full h-full">
@@ -446,23 +446,23 @@ import img_5_Sailing_38 from "../assets/images/boats/sailing-38/cabo-sailing-38-
       <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
       <div class="absolute bottom-5 left-6">
         <h4 class="text-white text-lg lg:text-xl">Luxury Yacht 45'</h4>
-        <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Up to 12 Guests</span></div>
+        <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Hasta 12 Personas</span></div>
       </div>
-      <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Most Popular</div>
+      <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Mas Popular</div>
     <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-30%</div>
     <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
     <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
 </div>
     <div class="p-4 space-y-4">
-      <p class="text-slate-500 text-sm italic text-center pb-3 border-b border-border-light/50">Newest vessel, sleek &amp; modern luxury</p>
+      <p class="text-slate-500 text-sm italic text-center pb-3 border-b border-border-light/50">Embarcacion mas nueva, lujo moderno y elegante</p>
       <div class="flex justify-between items-end">
-        <div class="flex flex-col"><span class="text-accent-gold line-through decoration-2 text-[0.9rem] font-semibold">$1,520</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$1,292</span><span class="text-slate-400 text-[11px] font-medium uppercase">/ 1-4 guests</span></div></div>
-        <div class="flex flex-col items-end"><span class="text-slate-400 text-[11px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-accent-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-400 text-[11px] font-medium">/pp</span></div></div>
+        <div class="flex flex-col"><span class="text-accent-gold line-through decoration-2 text-[0.9rem] font-semibold">$1,520</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$1,292</span><span class="text-slate-400 text-[11px] font-medium uppercase">/ 1-4 personas</span></div></div>
+        <div class="flex flex-col items-end"><span class="text-slate-400 text-[11px] font-medium">Personas extra</span><div class="flex items-baseline gap-1"><span class="text-accent-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-400 text-[11px] font-medium">/pp</span></div></div>
       </div>
-      <button type="button" onclick="openRezdyModal('528988')" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg">Check Availability</button>
+      <button type="button" onclick="openRezdyModal('528988')" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg">Ver Disponibilidad</button>
     </div>
   </div>
-  <!-- Luxury Yacht 42' — Best Value -->
+  <!-- Luxury Yacht 42' — Mejor Valor -->
   <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="yacht-42">
     <div class="h-[400px] w-full relative">
       <div class="boat-carousel relative w-full h-full">
@@ -473,20 +473,20 @@ import img_5_Sailing_38 from "../assets/images/boats/sailing-38/cabo-sailing-38-
       <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
       <div class="absolute bottom-5 left-6">
         <h4 class="text-white text-lg lg:text-xl">Luxury Yacht 42'</h4>
-        <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Up to 18 Guests</span></div>
+        <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Hasta 18 Personas</span></div>
       </div>
-      <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Best Value</div>
+      <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Mejor Valor</div>
     <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-30%</div>
     <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
     <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
 </div>
     <div class="p-4 space-y-4">
-      <p class="text-slate-500 text-sm italic text-center pb-3 border-b border-border-light/50">Great value, perfect for celebrations</p>
+      <p class="text-slate-500 text-sm italic text-center pb-3 border-b border-border-light/50">Gran valor, perfecto para celebraciones</p>
       <div class="flex justify-between items-end">
-        <div class="flex flex-col"><span class="text-accent-gold line-through decoration-2 text-[0.9rem] font-semibold">$1,350</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$1,148</span><span class="text-slate-400 text-[11px] font-medium uppercase">/ 1-4 guests</span></div></div>
-        <div class="flex flex-col items-end"><span class="text-slate-400 text-[11px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-accent-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-400 text-[11px] font-medium">/pp</span></div></div>
+        <div class="flex flex-col"><span class="text-accent-gold line-through decoration-2 text-[0.9rem] font-semibold">$1,350</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$1,148</span><span class="text-slate-400 text-[11px] font-medium uppercase">/ 1-4 personas</span></div></div>
+        <div class="flex flex-col items-end"><span class="text-slate-400 text-[11px] font-medium">Personas extra</span><div class="flex items-baseline gap-1"><span class="text-accent-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-400 text-[11px] font-medium">/pp</span></div></div>
       </div>
-      <button type="button" onclick="openRezdyModal('168008')" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg">Check Availability</button>
+      <button type="button" onclick="openRezdyModal('168008')" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg">Ver Disponibilidad</button>
     </div>
   </div>
 </div>
@@ -503,20 +503,20 @@ import img_5_Sailing_38 from "../assets/images/boats/sailing-38/cabo-sailing-38-
       <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
       <div class="absolute bottom-5 left-6">
         <h4 class="text-white text-lg lg:text-xl">Sailing Boat 42'</h4>
-        <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Up to 14 Guests</span></div>
+        <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Hasta 14 Personas</span></div>
       </div>
-      <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Best Value</div>
+      <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Mejor Valor</div>
     <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-30%</div>
     <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
     <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
 </div>
     <div class="p-4 space-y-4">
-      <p class="text-slate-500 text-sm italic text-center pb-3 border-b border-border-light/50">Smooth sailing, true wind-in-your-hair feel</p>
+      <p class="text-slate-500 text-sm italic text-center pb-3 border-b border-border-light/50">Navegacion suave, autentica sensacion de viento en tu cabello</p>
       <div class="flex justify-between items-end">
-        <div class="flex flex-col"><span class="text-accent-gold line-through decoration-2 text-[0.9rem] font-semibold">$1,090</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$927</span><span class="text-slate-400 text-[11px] font-medium uppercase">/ 1-4 guests</span></div></div>
-        <div class="flex flex-col items-end"><span class="text-slate-400 text-[11px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-accent-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-400 text-[11px] font-medium">/pp</span></div></div>
+        <div class="flex flex-col"><span class="text-accent-gold line-through decoration-2 text-[0.9rem] font-semibold">$1,090</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$927</span><span class="text-slate-400 text-[11px] font-medium uppercase">/ 1-4 personas</span></div></div>
+        <div class="flex flex-col items-end"><span class="text-slate-400 text-[11px] font-medium">Personas extra</span><div class="flex items-baseline gap-1"><span class="text-accent-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-400 text-[11px] font-medium">/pp</span></div></div>
       </div>
-      <button type="button" onclick="openRezdyModal('642955','productsCalendar')" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg">Check Availability</button>
+      <button type="button" onclick="openRezdyModal('642955','productsCalendar')" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg">Ver Disponibilidad</button>
     </div>
   </div>
   <!-- Sailing Boat 38' -->
@@ -530,19 +530,19 @@ import img_5_Sailing_38 from "../assets/images/boats/sailing-38/cabo-sailing-38-
       <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
       <div class="absolute bottom-5 left-6">
         <h4 class="text-white text-lg lg:text-xl">Sailing Boat 38'</h4>
-        <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Up to 9 Guests</span></div>
+        <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Hasta 9 Personas</span></div>
       </div>
     <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-30%</div>
     <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
     <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
 </div>
     <div class="p-4 space-y-4">
-      <p class="text-slate-500 text-sm italic text-center pb-3 border-b border-border-light/50">Intimate &amp; romantic, classic sailing</p>
+      <p class="text-slate-500 text-sm italic text-center pb-3 border-b border-border-light/50">Intimo y romantico, navegacion clasica</p>
       <div class="flex justify-between items-end">
-        <div class="flex flex-col"><span class="text-accent-gold line-through decoration-2 text-[0.9rem] font-semibold">$825</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$701</span><span class="text-slate-400 text-[11px] font-medium uppercase">/ 1-4 guests</span></div></div>
-        <div class="flex flex-col items-end"><span class="text-slate-400 text-[11px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-accent-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-400 text-[11px] font-medium">/pp</span></div></div>
+        <div class="flex flex-col"><span class="text-accent-gold line-through decoration-2 text-[0.9rem] font-semibold">$825</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$701</span><span class="text-slate-400 text-[11px] font-medium uppercase">/ 1-4 personas</span></div></div>
+        <div class="flex flex-col items-end"><span class="text-slate-400 text-[11px] font-medium">Personas extra</span><div class="flex items-baseline gap-1"><span class="text-accent-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-400 text-[11px] font-medium">/pp</span></div></div>
       </div>
-      <button type="button" onclick="openRezdyModal('165682')" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg">Check Availability</button>
+      <button type="button" onclick="openRezdyModal('165682')" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg">Ver Disponibilidad</button>
     </div>
   </div>
 </div>
@@ -553,7 +553,7 @@ import img_5_Sailing_38 from "../assets/images/boats/sailing-38/cabo-sailing-38-
   <div class="lg:hidden faq-item">
     <input class="hidden" id="comparison-toggle" type="checkbox"/>
     <label class="flex items-center justify-between cursor-pointer border border-border-light rounded-2xl p-4 bg-white" for="comparison-toggle">
-      <span class="flex items-center gap-3"><div class="w-1 h-6 bg-gold rounded-full"></div><span class="text-base font-semibold text-navy">Quick Comparison</span></span>
+      <span class="flex items-center gap-3"><div class="w-1 h-6 bg-gold rounded-full"></div><span class="text-base font-semibold text-navy">Comparacion Rapida</span></span>
       <span class="material-symbols-outlined text-slate-400 faq-chevron transition-transform duration-300">expand_more</span>
     </label>
     <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out">
@@ -561,17 +561,17 @@ import img_5_Sailing_38 from "../assets/images/boats/sailing-38/cabo-sailing-38-
         <table class="w-full text-left border-collapse min-w-[460px]">
           <thead>
             <tr class="border-b-2 border-gold/30">
-              <th class="py-3 pr-4 text-xs font-bold text-navy uppercase tracking-widest">Boat</th>
-              <th class="py-3 pr-4 text-xs font-bold text-navy uppercase tracking-widest">Guests</th>
-              <th class="py-3 text-xs font-bold text-navy uppercase tracking-widest">Experience</th>
+              <th class="py-3 pr-4 text-xs font-bold text-navy uppercase tracking-widest">Barco</th>
+              <th class="py-3 pr-4 text-xs font-bold text-navy uppercase tracking-widest">Personas</th>
+              <th class="py-3 text-xs font-bold text-navy uppercase tracking-widest">Experiencia</th>
             </tr>
           </thead>
           <tbody class="text-sm">
-            <tr class="border-b border-border-light"><td class="py-3 pr-4 font-semibold text-navy">42' Yacht</td><td class="py-3 pr-4 text-slate-500">Up to 18</td><td class="py-3 text-slate-500">Luxury experience — lowest cost — sunset cruise</td></tr>
-            <tr class="border-b border-border-light bg-gold/5"><td class="py-3 pr-4 font-semibold text-navy"><span class="text-gold mr-1">&#11088;</span>45' Yacht</td><td class="py-3 pr-4 text-slate-500">Up to 12</td><td class="py-3 text-slate-500">Newest vessel — sunset cruise</td></tr>
-            <tr class="border-b border-border-light"><td class="py-3 pr-4 font-semibold text-navy">51' Yacht</td><td class="py-3 pr-4 text-slate-500">Up to 20</td><td class="py-3 text-slate-500">Most spacious, largest yacht — sunset cruise</td></tr>
-            <tr class="border-b border-border-light bg-gold/5"><td class="py-3 pr-4 font-semibold text-navy"><span class="text-gold mr-1">&#11088;</span>42' Sailboat</td><td class="py-3 pr-4 text-slate-500">Up to 14</td><td class="py-3 text-slate-500">True sailing experience — spacious vessel</td></tr>
-            <tr><td class="py-3 pr-4 font-semibold text-navy">38' Sailboat</td><td class="py-3 pr-4 text-slate-500">Up to 9</td><td class="py-3 text-slate-500">Best sailing experience — sunset cruise</td></tr>
+            <tr class="border-b border-border-light"><td class="py-3 pr-4 font-semibold text-navy">42' Yacht</td><td class="py-3 pr-4 text-slate-500">Hasta 18</td><td class="py-3 text-slate-500">Experiencia de lujo — menor costo — crucero al atardecer</td></tr>
+            <tr class="border-b border-border-light bg-gold/5"><td class="py-3 pr-4 font-semibold text-navy"><span class="text-gold mr-1">&#11088;</span>45' Yacht</td><td class="py-3 pr-4 text-slate-500">Hasta 12</td><td class="py-3 text-slate-500">Embarcacion mas nueva — crucero al atardecer</td></tr>
+            <tr class="border-b border-border-light"><td class="py-3 pr-4 font-semibold text-navy">51' Yacht</td><td class="py-3 pr-4 text-slate-500">Hasta 20</td><td class="py-3 text-slate-500">Mas espacioso, yate mas grande — crucero al atardecer</td></tr>
+            <tr class="border-b border-border-light bg-gold/5"><td class="py-3 pr-4 font-semibold text-navy"><span class="text-gold mr-1">&#11088;</span>42' Sailboat</td><td class="py-3 pr-4 text-slate-500">Hasta 14</td><td class="py-3 text-slate-500">Experiencia de vela autentica — embarcacion espaciosa</td></tr>
+            <tr><td class="py-3 pr-4 font-semibold text-navy">38' Sailboat</td><td class="py-3 pr-4 text-slate-500">Hasta 9</td><td class="py-3 text-slate-500">Mejor experiencia de vela — crucero al atardecer</td></tr>
           </tbody>
         </table>
       </div>
@@ -579,21 +579,21 @@ import img_5_Sailing_38 from "../assets/images/boats/sailing-38/cabo-sailing-38-
   </div>
   <!-- Desktop: always visible -->
   <div class="hidden lg:block">
-    <div class="flex items-center gap-3 mb-4"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-xl text-navy">Quick Comparison</h3></div>
+    <div class="flex items-center gap-3 mb-4"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-xl text-navy">Comparacion Rapida</h3></div>
     <table class="w-full text-left border-collapse">
       <thead>
         <tr class="border-b-2 border-gold/30">
-          <th class="py-3 pr-4 text-xs font-bold text-navy uppercase tracking-widest">Boat</th>
-          <th class="py-3 pr-4 text-xs font-bold text-navy uppercase tracking-widest">Guests</th>
-          <th class="py-3 text-xs font-bold text-navy uppercase tracking-widest">Experience</th>
+          <th class="py-3 pr-4 text-xs font-bold text-navy uppercase tracking-widest">Barco</th>
+          <th class="py-3 pr-4 text-xs font-bold text-navy uppercase tracking-widest">Personas</th>
+          <th class="py-3 text-xs font-bold text-navy uppercase tracking-widest">Experiencia</th>
         </tr>
       </thead>
       <tbody class="text-sm">
-        <tr class="border-b border-border-light"><td class="py-3 pr-4 font-semibold text-navy">42' Yacht</td><td class="py-3 pr-4 text-slate-500">Up to 18</td><td class="py-3 text-slate-500">Luxury experience — lowest cost — sunset cruise</td></tr>
-        <tr class="border-b border-border-light bg-gold/5"><td class="py-3 pr-4 font-semibold text-navy"><span class="text-gold mr-1">&#11088;</span>45' Yacht</td><td class="py-3 pr-4 text-slate-500">Up to 12</td><td class="py-3 text-slate-500">Newest vessel — sunset cruise</td></tr>
-        <tr class="border-b border-border-light"><td class="py-3 pr-4 font-semibold text-navy">51' Yacht</td><td class="py-3 pr-4 text-slate-500">Up to 20</td><td class="py-3 text-slate-500">Most spacious, largest yacht — sunset cruise</td></tr>
-        <tr class="border-b border-border-light bg-gold/5"><td class="py-3 pr-4 font-semibold text-navy"><span class="text-gold mr-1">&#11088;</span>42' Sailboat</td><td class="py-3 pr-4 text-slate-500">Up to 14</td><td class="py-3 text-slate-500">True sailing experience — spacious vessel</td></tr>
-        <tr><td class="py-3 pr-4 font-semibold text-navy">38' Sailboat</td><td class="py-3 pr-4 text-slate-500">Up to 9</td><td class="py-3 text-slate-500">Best sailing experience — sunset cruise</td></tr>
+        <tr class="border-b border-border-light"><td class="py-3 pr-4 font-semibold text-navy">42' Yacht</td><td class="py-3 pr-4 text-slate-500">Hasta 18</td><td class="py-3 text-slate-500">Experiencia de lujo — menor costo — crucero al atardecer</td></tr>
+        <tr class="border-b border-border-light bg-gold/5"><td class="py-3 pr-4 font-semibold text-navy"><span class="text-gold mr-1">&#11088;</span>45' Yacht</td><td class="py-3 pr-4 text-slate-500">Hasta 12</td><td class="py-3 text-slate-500">Embarcacion mas nueva — crucero al atardecer</td></tr>
+        <tr class="border-b border-border-light"><td class="py-3 pr-4 font-semibold text-navy">51' Yacht</td><td class="py-3 pr-4 text-slate-500">Hasta 20</td><td class="py-3 text-slate-500">Mas espacioso, yate mas grande — crucero al atardecer</td></tr>
+        <tr class="border-b border-border-light bg-gold/5"><td class="py-3 pr-4 font-semibold text-navy"><span class="text-gold mr-1">&#11088;</span>42' Sailboat</td><td class="py-3 pr-4 text-slate-500">Hasta 14</td><td class="py-3 text-slate-500">Experiencia de vela autentica — embarcacion espaciosa</td></tr>
+        <tr><td class="py-3 pr-4 font-semibold text-navy">38' Sailboat</td><td class="py-3 pr-4 text-slate-500">Hasta 9</td><td class="py-3 text-slate-500">Mejor experiencia de vela — crucero al atardecer</td></tr>
       </tbody>
     </table>
   </div>
@@ -603,7 +603,7 @@ import img_5_Sailing_38 from "../assets/images/boats/sailing-38/cabo-sailing-38-
 <div class="mt-12 lg:max-w-[1400px] lg:mx-auto lg:px-10 lg:py-8">
 <div class="flex items-center gap-3 mb-6">
 <div class="w-1 h-6 bg-gold rounded-full"></div>
-<h3 class="text-lg lg:text-3xl text-navy">Frequently Asked Questions</h3>
+<h3 class="text-lg lg:text-3xl text-navy">Preguntas Frecuentes</h3>
 </div>
 <div class="space-y-6 lg:max-w-3xl">
 
@@ -611,61 +611,61 @@ import img_5_Sailing_38 from "../assets/images/boats/sailing-38/cabo-sailing-38-
     <div class="faq-item border border-border-light rounded-2xl overflow-hidden bg-white">
       <input class="hidden" id="faq-yacht-menu" type="checkbox"/>
       <label class="flex items-center justify-between p-4 cursor-pointer" for="faq-yacht-menu">
-        <span class="flex items-center gap-2 text-base font-semibold text-navy"><span class="material-symbols-outlined text-gold" style="font-size:18px">restaurant</span>Yacht Menu &amp; Bar</span>
+        <span class="flex items-center gap-2 text-base font-semibold text-navy"><span class="material-symbols-outlined text-gold" style="font-size:18px">restaurant</span>Menu y Bar del Yate</span>
         <span class="material-symbols-outlined text-slate-400 faq-chevron transition-transform duration-300">expand_more</span>
       </label>
       <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
         <div class="text-sm text-slate-500 leading-relaxed space-y-3">
-          <div><p class="font-semibold text-navy mb-1">Bar</p><p>Premium brands open bar includes red and white wine, margaritas, beer, rum, vodka, tequila, whiskey, juices, sodas, and bottled water.</p></div>
-          <div><p class="font-semibold text-navy mb-1">Food</p><p>Fresh tortilla chips with Mexican salsa and homemade guacamole, fresh baguette sandwiches, freshly made quesadillas, a selection of seasonal fruit, and a sweet bite to finish.</p></div>
-          <div class="border-t border-border-light pt-3"><p class="font-semibold text-navy mb-1">Options:</p><p><span class="font-semibold text-navy">Mexican Menu — $14 USD per person:</span> Tortilla chips with salsa and homemade guacamole, beef and chicken corn tortilla burritos, rice and beans, freshly made quesadillas, and dessert.</p></div>
-          <p class="text-slate-400 italic">Contact our office team for Kosher, Vegan or Vegetarian options.</p>
+          <div><p class="font-semibold text-navy mb-1">Bar</p><p>Barra libre premium incluye vino tinto y blanco, margaritas, cerveza, ron, vodka, tequila, whiskey, jugos, refrescos y agua embotellada.</p></div>
+          <div><p class="font-semibold text-navy mb-1">Comida</p><p>Totopos frescos con salsa mexicana y guacamole casero, sandwiches de baguette frescos, quesadillas recien hechas, seleccion de fruta de temporada y un postre para terminar.</p></div>
+          <div class="border-t border-border-light pt-3"><p class="font-semibold text-navy mb-1">Opciones:</p><p><span class="font-semibold text-navy">Menu Mexicano — $14 USD por persona:</span> Totopos con salsa y guacamole casero, burritos de res y pollo en tortilla de maiz, arroz y frijoles, quesadillas recien hechas y postre.</p></div>
+          <p class="text-slate-400 italic">Contacta a nuestro equipo para opciones Kosher, Veganas o Vegetarianas.</p>
         </div>
       </div>
     </div>
     <div class="faq-item border border-border-light rounded-2xl overflow-hidden bg-white">
       <input class="hidden" id="faq-sail-menu" type="checkbox"/>
       <label class="flex items-center justify-between p-4 cursor-pointer" for="faq-sail-menu">
-        <span class="flex items-center gap-2 text-base font-semibold text-navy"><span class="material-symbols-outlined text-gold" style="font-size:18px">restaurant</span>Sailing Menu &amp; Bar</span>
+        <span class="flex items-center gap-2 text-base font-semibold text-navy"><span class="material-symbols-outlined text-gold" style="font-size:18px">restaurant</span>Menu y Bar del Velero</span>
         <span class="material-symbols-outlined text-slate-400 faq-chevron transition-transform duration-300">expand_more</span>
       </label>
       <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
         <div class="text-sm text-slate-500 leading-relaxed space-y-3">
-          <div><p class="font-semibold text-navy mb-1">Bar:</p><p>Unlimited bar includes: red &amp; white wine, margaritas, beers, rum, vodka, tequila, whiskey, juices, sodas, bottled water.</p></div>
-          <div><p class="font-semibold text-navy mb-1">Food:</p><p>Tortilla chips, Mexican salsa, homemade guacamole, fresh baguette sandwiches, selection of fresh cut fruit platter, sweet bite.<br/>Vegetarian options upon request.</p></div>
-          <div class="border-t border-border-light pt-3"><p class="text-center font-semibold text-slate-400 mb-2">— OR —</p><p><span class="font-semibold text-navy">Mexican option ($14 USD per person):</span> Tortilla chips, salsa &amp; homemade guacamole, beef &amp; chicken corn tortilla burritos, rice and beans, quesadillas and dessert.</p></div>
-          <p class="text-slate-400 italic">Contact our office team for Kosher, Vegan or Vegetarian options.</p>
+          <div><p class="font-semibold text-navy mb-1">Bar:</p><p>Barra libre ilimitada incluye: vino tinto y blanco, margaritas, cervezas, ron, vodka, tequila, whiskey, jugos, refrescos, agua embotellada.</p></div>
+          <div><p class="font-semibold text-navy mb-1">Comida:</p><p>Totopos, salsa mexicana, guacamole casero, sandwiches de baguette frescos, seleccion de fruta fresca, postre.<br/>Opciones vegetarianas disponibles bajo solicitud.</p></div>
+          <div class="border-t border-border-light pt-3"><p class="text-center font-semibold text-slate-400 mb-2">— OR —</p><p><span class="font-semibold text-navy">Opcion Mexicana ($14 USD por persona):</span> Totopos, salsa y guacamole casero, burritos de res y pollo en tortilla de maiz, arroz y frijoles, quesadillas y postre.</p></div>
+          <p class="text-slate-400 italic">Contacta a nuestro equipo para opciones Kosher, Veganas o Vegetarianas.</p>
         </div>
       </div>
     </div>
 <div class="faq-item border border-border-light rounded-2xl overflow-hidden bg-white">
 <input class="hidden" id="faq-1" type="checkbox"/>
 <label class="flex items-center justify-between p-4 cursor-pointer" for="faq-1">
-<span class="text-base font-semibold text-navy">What time does the cruise depart?</span>
+<span class="text-base font-semibold text-navy">A que hora sale el crucero?</span>
 <span class="material-symbols-outlined text-slate-400 faq-chevron transition-transform duration-300">expand_more</span>
 </label>
 <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
-<p class="text-sm text-slate-500 leading-relaxed">Departure time varies by season to ensure you catch the best sunset. We'll confirm the exact time when you book, typically around 5:00–6:00 PM.</p>
+<p class="text-sm text-slate-500 leading-relaxed">El horario de salida varia segun la temporada para asegurar el mejor atardecer. Confirmaremos la hora exacta al reservar, generalmente entre 5:00 y 6:00 PM.</p>
 </div>
 </div>
 <div class="faq-item border border-border-light rounded-2xl overflow-hidden bg-white">
 <input class="hidden" id="faq-2" type="checkbox"/>
 <label class="flex items-center justify-between p-4 cursor-pointer" for="faq-2">
-<span class="text-base font-semibold text-navy">Can we bring our own food or drinks?</span>
+<span class="text-base font-semibold text-navy">Podemos traer nuestra propia comida o bebidas?</span>
 <span class="material-symbols-outlined text-slate-400 faq-chevron transition-transform duration-300">expand_more</span>
 </label>
 <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
-<p class="text-sm text-slate-500 leading-relaxed">We provide a full premium bar and appetizers, but you're welcome to bring a special cake or personal touches for celebrations. Contact us to arrange any extras.</p>
+<p class="text-sm text-slate-500 leading-relaxed">Ofrecemos barra libre premium y aperitivos, pero puedes traer un pastel especial o detalles personales para celebraciones. Contactanos para coordinar extras.</p>
 </div>
 </div>
 <div class="faq-item border border-border-light rounded-2xl overflow-hidden bg-white">
 <input class="hidden" id="faq-3" type="checkbox"/>
 <label class="flex items-center justify-between p-4 cursor-pointer" for="faq-3">
-<span class="text-base font-semibold text-navy">Is this good for proposals or anniversaries?</span>
+<span class="text-base font-semibold text-navy">Es bueno para propuestas o aniversarios?</span>
 <span class="material-symbols-outlined text-slate-400 faq-chevron transition-transform duration-300">expand_more</span>
 </label>
 <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
-<p class="text-sm text-slate-500 leading-relaxed">Absolutely! Our sunset cruise is one of the most romantic experiences in Cabo. We can help arrange flowers, decorations, or a special setup for your occasion.</p>
+<p class="text-sm text-slate-500 leading-relaxed">Por supuesto! Nuestro crucero al atardecer es una de las experiencias mas romanticas en Cabo. Podemos ayudarte a organizar flores, decoraciones o una preparacion especial para tu ocasion.</p>
 </div>
 </div>
 </div>
@@ -673,26 +673,26 @@ import img_5_Sailing_38 from "../assets/images/boats/sailing-38/cabo-sailing-38-
 </div><!-- close FAQ wrapper -->
 <div class="mt-12 lg:max-w-[1400px] lg:mx-auto lg:px-10 px-5">
   <div class="rounded-2xl bg-navy text-white text-center px-6 py-10 lg:py-14 shadow-lg">
-    <h3 class="font-heading text-2xl lg:text-3xl mb-2">Your private boat is waiting</h3>
-    <p class="text-white/80 mb-6">Check live availability now</p>
-    <a href="#choose-your-boat" class="inline-block bg-gold text-navy font-bold text-[12px] px-8 py-4 rounded-2xl uppercase tracking-[0.2em] shadow-lg">Check Availability</a>
+    <h3 class="font-heading text-2xl lg:text-3xl mb-2">Tu barco privado te espera</h3>
+    <p class="text-white/80 mb-6">Consulta disponibilidad en tiempo real</p>
+    <a href="#choose-your-boat" class="inline-block bg-gold text-navy font-bold text-[12px] px-8 py-4 rounded-2xl uppercase tracking-[0.2em] shadow-lg">Ver Disponibilidad</a>
   </div>
 </div>
 
-    <!-- Sunset Sailing at Land's End -->
+    <!-- Navegacion al Atardecer en Land's End -->
     <div class="px-5 pt-8 pb-6 lg:max-w-[1400px] lg:mx-auto lg:px-10 lg:pt-16 lg:pb-10">
-      <div class="flex items-center gap-3 mb-4"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-lg lg:text-3xl text-navy">Sunset Sailing at Land's End</h3></div>
+      <div class="flex items-center gap-3 mb-4"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-lg lg:text-3xl text-navy">Navegacion al Atardecer en Land's End</h3></div>
       <div class="lg:flex lg:gap-10 lg:items-start">
-        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCczjSPVJiaWdFmrUKZ7u6bp9_U27W9TIbr12gmKKxednfJZy1pE5PARmIDa0mm6w-NyXj1AnOpT-Bg4ImEYZ3HBUir8Q_kIKeHFXnn-L02J2QFaAUeIxlFkXZudLbrnEZ3iIk1YFtyw0obgjzBdBTNq8JOkjE-FY-EOnUg47Y4xpUB4JiLSWOTvJeEMhPMPF5AthCcizuxz4y0Z-VhlZ3u0L_GrGkfSWW5OEpb2IPb6ZOAUHpA2xF_YT3ghZIBUUPXYBbfuAlhjhw" alt="Sunset Sailing at Land's End" class="w-full h-48 lg:h-[300px] object-cover rounded-2xl mb-4 lg:mb-0 lg:w-1/2 lg:flex-shrink-0"/>
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCczjSPVJiaWdFmrUKZ7u6bp9_U27W9TIbr12gmKKxednfJZy1pE5PARmIDa0mm6w-NyXj1AnOpT-Bg4ImEYZ3HBUir8Q_kIKeHFXnn-L02J2QFaAUeIxlFkXZudLbrnEZ3iIk1YFtyw0obgjzBdBTNq8JOkjE-FY-EOnUg47Y4xpUB4JiLSWOTvJeEMhPMPF5AthCcizuxz4y0Z-VhlZ3u0L_GrGkfSWW5OEpb2IPb6ZOAUHpA2xF_YT3ghZIBUUPXYBbfuAlhjhw" alt="Navegacion al Atardecer en Land's End" class="w-full h-48 lg:h-[300px] object-cover rounded-2xl mb-4 lg:mb-0 lg:w-1/2 lg:flex-shrink-0"/>
         <div>
-          <p class="text-base text-slate-500 leading-relaxed mb-3">Land's End at sunset is one of the most breathtaking sights in all of Mexico. As the sun dips below the Pacific horizon, the famous Arch glows in shades of amber and rose — a moment that stays with you long after the voyage ends. Our private sunset charter anchors at the perfect vantage point to give you and your guests an unobstructed, unforgettable view.</p>
-          <p class="text-base text-slate-500 leading-relaxed">With just your group on board, a professional crew, and an open bar flowing with premium cocktails, this is the definition of a private luxury experience on the water.</p>
+          <p class="text-base text-slate-500 leading-relaxed mb-3">Land's End al atardecer es uno de los espectaculos mas impresionantes de todo Mexico. Mientras el sol se hunde bajo el horizonte del Pacifico, el famoso Arco brilla en tonos ambar y rosa — un momento que permanece contigo mucho despues de que termina el viaje. Nuestro charter privado al atardecer se ancla en el punto perfecto para darte a ti y a tus invitados una vista inolvidable y sin obstrucciones.</p>
+          <p class="text-base text-slate-500 leading-relaxed">Con solo tu grupo a bordo, una tripulacion profesional y una barra libre con cocteles premium, esta es la definicion de una experiencia de lujo privada en el agua.</p>
         </div>
       </div>
     </div>
 
 <div class="px-5 pb-32 lg:max-w-[1400px] lg:mx-auto lg:px-10 lg:py-16 lg:pb-20">
-  <div class="flex items-center gap-3 mb-4 lg:mb-8"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-lg lg:text-3xl text-navy">What Our Guests Say</h3></div>
+  <div class="flex items-center gap-3 mb-4 lg:mb-8"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-lg lg:text-3xl text-navy">Lo Que Dicen Nuestros Huespedes</h3></div>
   <div class="relative">
     <div id="ps-carousel" class="flex overflow-x-auto gap-4 lg:gap-6 no-scrollbar snap-x snap-mandatory pb-4 lg:overflow-hidden">
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
@@ -702,7 +702,7 @@ import img_5_Sailing_38 from "../assets/images/boats/sailing-38/cabo-sailing-38-
       </div>
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Booked the private sunset for our group of 8 and it was the highlight of our Cabo trip. Open bar was flowing, the crew was so fun, and sailing past Land's End at golden hour was breathtaking."</p>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Booked the private sunset for our group of 8 and it was the highlight of our Cabo trip. Barra libre was flowing, the crew was so fun, and sailing past Land's End at golden hour was breathtaking."</p>
         <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-gold flex items-center justify-center text-white text-sm font-bold">TL</div><div><p class="text-sm font-bold text-navy">Tiffany L.</p><p class="text-base text-slate-400">Los Angeles, CA</p></div></div>
       </div>
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">

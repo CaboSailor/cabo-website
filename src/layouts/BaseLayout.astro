@@ -1,24 +1,45 @@
 ---
+import MobileMenu from '../components/MobileMenu.astro';
+import { getLangFromUrl, getLocalePath } from '../i18n/utils';
+
 interface Props {
   title?: string;
   description?: string;
   bodyClass?: string;
+  ogImage?: string;
+  hreflangs?: { en: string; es: string };
 }
 
 const {
   title = "Cabo San Lucas Boat Tours & Sailing Charters | Cabo Sailing",
   description = "Book the best boat tours in Cabo San Lucas. Private & shared sailing charters, snorkeling at Pelican's Rock, sunset cruises & whale watching. Open bar included. Save 30% online.",
   bodyClass = "bg-bg-light font-display text-navy antialiased min-h-screen flex flex-col relative",
+  ogImage,
+  hreflangs,
 } = Astro.props;
+
+const lang = getLangFromUrl(Astro.url);
+const siteUrl = 'https://new.cabosailing.com';
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang={lang}>
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content={description} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:type" content="website" />
+  {ogImage && <meta property="og:image" content={ogImage} />}
   <title>{title}</title>
+  {hreflangs && (
+    <>
+      <link rel="alternate" hreflang="en" href={`${siteUrl}${hreflangs.en}`} />
+      <link rel="alternate" hreflang="es" href={`${siteUrl}${hreflangs.es}`} />
+      <link rel="alternate" hreflang="x-default" href={`${siteUrl}${hreflangs.en}`} />
+    </>
+  )}
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="icon" href="/favicon.ico" />
   <meta name="generator" content={Astro.generator} />
@@ -129,6 +150,7 @@ const {
 </head>
 <body class={bodyClass}>
   <slot />
+  <MobileMenu />
 
   <!-- Global scripts -->
   <script is:inline src="/js/prices.js" defer></script>
