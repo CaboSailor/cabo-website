@@ -40,10 +40,6 @@ const switchUrl = getLocalePath(altLang, currentPath.replace(/^\/es(\/|$)/, '/')
     </nav>
   </div>
   <div class="px-8 pb-10 pt-4 border-t border-gray-200 bg-white/80 backdrop-blur-md z-20">
-    <a href={switchUrl} class="flex items-center justify-center gap-2 mb-6 py-3 rounded-xl border border-border-light text-navy font-bold text-base uppercase tracking-widest hover:bg-navy/5 transition-colors">
-      <span class="material-symbols-outlined text-gold text-xl">translate</span>
-      {altLang === 'es' ? 'Espanol' : 'English'}
-    </a>
     <div class="flex justify-center gap-8 mb-6">
       <a class="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center text-navy hover:text-accent-gold transition-colors bg-white shadow-sm" href="#"><i class="fa-brands fa-instagram text-xl"></i></a>
       <a class="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center text-navy hover:text-accent-gold transition-colors bg-white shadow-sm" href="#"><i class="fa-brands fa-facebook-f text-xl"></i></a>

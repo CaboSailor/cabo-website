@@ -33,7 +33,7 @@ const tourDropdown = [
   ]},
   { group: null, items: [
     { href: '/whale-watching', label: 'Whale Watching' },
-    { href: '/bachelorette-party', label: 'Bachelorette' },
+    { href: '/bachelorette', label: 'Bachelorette' },
     { href: '/scuba-diving', label: 'Scuba Diving' },
   ]},
 ];
@@ -49,11 +49,14 @@ const tourDropdown = [
       <div class="flex-shrink-0 flex items-center justify-center">
         <Image src={logo} alt="Cabo Sailing" class="h-10 w-auto object-contain" width={301} height={69} />
       </div>
-      <button id="menu-open" class="flex flex-col gap-1 items-center justify-center w-10 h-10 -mr-2 text-navy active:scale-95 transition-transform">
-        <div class="w-6 h-[2.5px] bg-navy rounded-full"></div>
-        <div class="w-6 h-[2.5px] bg-navy rounded-full"></div>
-        <div class="w-6 h-[2.5px] bg-navy rounded-full"></div>
-      </button>
+      <div class="flex items-center gap-2 -mr-2">
+        <a href={switchUrl} class="text-[10px] font-bold uppercase tracking-widest text-navy border border-border-light rounded-full px-2 py-1">{altLang === 'es' ? 'ES' : 'EN'}</a>
+        <button id="menu-open" class="flex flex-col gap-1 items-center justify-center w-10 h-10 text-navy active:scale-95 transition-transform">
+          <div class="w-6 h-[2.5px] bg-navy rounded-full"></div>
+          <div class="w-6 h-[2.5px] bg-navy rounded-full"></div>
+          <div class="w-6 h-[2.5px] bg-navy rounded-full"></div>
+        </button>
+      </div>
     </div>
     <!-- Desktop header -->
     <div class="desktop-only items-center justify-between px-10 py-3 max-w-[1400px] mx-auto">
@@ -101,11 +104,14 @@ const tourDropdown = [
       <div class="flex-shrink-0 flex items-center justify-center">
         <a href="/"><Image src={logo} alt="Cabo Sailing" class="h-10 w-auto object-contain" width={301} height={69} /></a>
       </div>
-      <button id="menu-open" class="flex flex-col gap-1 items-center justify-center w-10 h-10 -mr-2 text-navy active:scale-95 transition-transform">
-        <div class="w-6 h-[2.5px] bg-navy rounded-full"></div>
-        <div class="w-6 h-[2.5px] bg-navy rounded-full"></div>
-        <div class="w-6 h-[2.5px] bg-navy rounded-full"></div>
-      </button>
+      <div class="flex items-center gap-2 -mr-2">
+        <a href={switchUrl} class="text-[10px] font-bold uppercase tracking-widest text-navy border border-border-light rounded-full px-2 py-1">{altLang === 'es' ? 'ES' : 'EN'}</a>
+        <button id="menu-open" class="flex flex-col gap-1 items-center justify-center w-10 h-10 text-navy active:scale-95 transition-transform">
+          <div class="w-6 h-[2.5px] bg-navy rounded-full"></div>
+          <div class="w-6 h-[2.5px] bg-navy rounded-full"></div>
+          <div class="w-6 h-[2.5px] bg-navy rounded-full"></div>
+        </button>
+      </div>
     </div>
     <!-- Desktop header (subpage) -->
     <header class="hidden lg:block fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-border-light/50 transition-all duration-300">
