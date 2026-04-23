@@ -1,7 +1,7 @@
 ---
-title: "Do You Need a Passport for Cabo San Lucas in 2026? A Local Expert Explains"
+title: "Do You Need a Passport for Cabo? 2026 Requirements"
 pubDate: 2025-02-05
-description: "Need a passport for Cabo in 2026? Local experts cover visa rules, entry docs & cruise requirements for Mexico. Get a quote for your Cabo charter today!"
+description: "Yes, US and Canadian citizens need a passport to enter Mexico by air. Cruise passengers sometimes use a passport card. Full 2026 rules and tips."
 heroImage: "https://www.cabosailing.com/wp-content/uploads/2019/08/los-cabos-international-airport-featured-image.jpg.webp"
 heroAlt: "Los Cabos International Airport terminal"
 category: "Traveling to Cabo"
@@ -17,7 +17,54 @@ We run a charter business from the Cabo San Lucas Marina and welcome guests from
 
 ## The short answer
 
-Yes &mdash; if you are a foreign traveler going to Cabo San Lucas, you should travel with a valid, unexpired passport. Mexico requires foreign nationals entering by air, land, or sea to present a valid passport or other valid travel document, and it must remain valid for the duration of the trip. Mexico itself does not generally require six months of passport validity, but your airline or any transit country may apply its own boarding rules, so it is smart to check with them before departure.
+<div class="bg-blue-50 border border-blue-200 rounded-xl p-6 my-6">
+  <p class="font-bold text-blue-800 text-lg mb-2">✅ Yes — you need a valid passport to visit Cabo San Lucas.</p>
+  <p class="text-blue-900 text-sm mb-1"><strong>US & Canadian citizens:</strong> Valid passport, no visa needed, stays up to 180 days.</p>
+  <p class="text-blue-900 text-sm mb-1"><strong>UK & EU citizens:</strong> Valid passport, no visa needed, stays up to 180 days.</p>
+  <p class="text-blue-900 text-sm mb-1"><strong>Cruise passengers:</strong> Valid passport recommended. Some cruise lines accept a US passport card.</p>
+  <p class="text-blue-900 text-sm mb-0"><strong>Passport validity:</strong> Must be valid for the duration of your stay. No six-month rule in Mexico, but check your airline.</p>
+</div>
+
+---
+
+## Entry requirements by travel method
+
+<table class="w-full text-sm border border-gray-200 rounded-lg overflow-hidden my-6">
+  <thead class="bg-navy text-white">
+    <tr>
+      <th class="text-left px-4 py-3">How You're Arriving</th>
+      <th class="text-left px-4 py-3">Passport Required?</th>
+      <th class="text-left px-4 py-3">Visa Required?</th>
+      <th class="text-left px-4 py-3">Immigration Form</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-100">
+      <td class="px-4 py-3 font-semibold">Commercial flight</td>
+      <td class="px-4 py-3">Yes &mdash; valid passport book</td>
+      <td class="px-4 py-3">No (most nationalities, up to 180 days)</td>
+      <td class="px-4 py-3">Digital FMMd &mdash; processed automatically on arrival</td>
+    </tr>
+    <tr class="border-b border-gray-100 bg-gray-50">
+      <td class="px-4 py-3 font-semibold">Cruise ship</td>
+      <td class="px-4 py-3">Yes &mdash; passport book or card (check cruise line)</td>
+      <td class="px-4 py-3">No</td>
+      <td class="px-4 py-3">Not required for port visits</td>
+    </tr>
+    <tr class="border-b border-gray-100">
+      <td class="px-4 py-3 font-semibold">Driving / land border</td>
+      <td class="px-4 py-3">Yes &mdash; passport book (card has limitations)</td>
+      <td class="px-4 py-3">No (most nationalities)</td>
+      <td class="px-4 py-3">FMM online &mdash; print and present at border</td>
+    </tr>
+    <tr>
+      <td class="px-4 py-3 font-semibold">Private plane</td>
+      <td class="px-4 py-3">Yes &mdash; valid passport book</td>
+      <td class="px-4 py-3">No (most nationalities)</td>
+      <td class="px-4 py-3">Digital FMMd or paper FMM depending on airport</td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 

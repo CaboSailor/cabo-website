@@ -24,6 +24,77 @@ Yes, you can swim in Cabo San Lucas &mdash; but **only at specific beaches**. Th
 
 ---
 
+## Cabo Beaches at a Glance — Swim Safety
+
+<table class="w-full text-sm border border-gray-200 rounded-lg overflow-hidden my-6">
+  <thead class="bg-navy text-white">
+    <tr>
+      <th class="text-left px-4 py-3">Beach</th>
+      <th class="text-left px-4 py-3">Swim Safe?</th>
+      <th class="text-left px-4 py-3">Water</th>
+      <th class="text-left px-4 py-3">Best For</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-100">
+      <td class="px-4 py-3 font-semibold">Médano Beach</td>
+      <td class="px-4 py-3 text-green-700 font-semibold">🟢 Yes</td>
+      <td class="px-4 py-3">Calm, sandy entry</td>
+      <td class="px-4 py-3">Families, walking in from shore, beach clubs</td>
+    </tr>
+    <tr class="border-b border-gray-100 bg-gray-50">
+      <td class="px-4 py-3 font-semibold">Santa María Bay</td>
+      <td class="px-4 py-3 text-green-700 font-semibold">🟢 Yes</td>
+      <td class="px-4 py-3">Crystal clear, reef-protected</td>
+      <td class="px-4 py-3">Snorkeling, swimming, Blue Flag beach</td>
+    </tr>
+    <tr class="border-b border-gray-100">
+      <td class="px-4 py-3 font-semibold">Chileno Bay</td>
+      <td class="px-4 py-3 text-green-700 font-semibold">🟢 Yes</td>
+      <td class="px-4 py-3">Calm, sandy with rocky reef</td>
+      <td class="px-4 py-3">Snorkeling, kids, Blue Flag beach</td>
+    </tr>
+    <tr class="border-b border-gray-100 bg-gray-50">
+      <td class="px-4 py-3 font-semibold">Lover's Beach</td>
+      <td class="px-4 py-3 text-green-700 font-semibold">🟢 Yes</td>
+      <td class="px-4 py-3">Calm (Cortez side only)</td>
+      <td class="px-4 py-3">Boat access only, scenic swimming</td>
+    </tr>
+    <tr class="border-b border-gray-100">
+      <td class="px-4 py-3 font-semibold">Cannery Beaches</td>
+      <td class="px-4 py-3 text-green-700 font-semibold">🟢 Yes</td>
+      <td class="px-4 py-3">Calm, sheltered</td>
+      <td class="px-4 py-3">Quiet day, fewer crowds, local vibe</td>
+    </tr>
+    <tr class="border-b border-gray-100 bg-gray-50">
+      <td class="px-4 py-3 font-semibold">Palmilla Beach</td>
+      <td class="px-4 py-3 text-yellow-600 font-semibold">🟡 Caution</td>
+      <td class="px-4 py-3">Usually calm, occasional swells</td>
+      <td class="px-4 py-3">Wading, calm days only, check flags</td>
+    </tr>
+    <tr class="border-b border-gray-100">
+      <td class="px-4 py-3 font-semibold">Divorce Beach</td>
+      <td class="px-4 py-3 text-red-600 font-semibold">🔴 No</td>
+      <td class="px-4 py-3">Violent surf, strong undertow</td>
+      <td class="px-4 py-3">Photos only &mdash; never enter the water</td>
+    </tr>
+    <tr class="border-b border-gray-100 bg-gray-50">
+      <td class="px-4 py-3 font-semibold">Solmar Beach</td>
+      <td class="px-4 py-3 text-red-600 font-semibold">🔴 No</td>
+      <td class="px-4 py-3">Powerful waves, steep drop-off</td>
+      <td class="px-4 py-3">Sunbathing only &mdash; do not swim</td>
+    </tr>
+    <tr>
+      <td class="px-4 py-3 font-semibold">Unmarked Pacific beaches</td>
+      <td class="px-4 py-3 text-red-600 font-semibold">🔴 No</td>
+      <td class="px-4 py-3">Rip currents, no lifeguards</td>
+      <td class="px-4 py-3">Avoid &mdash; no flags, no safety infrastructure</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
 ## The Best Beaches for Swimming
 
 ---
@@ -91,6 +162,8 @@ In Los Cabos, the Blue Flag beaches include **M&eacute;dano**, **Chileno**, **Sa
 ## The Beaches You Should NOT Swim At
 
 This section might save your vacation &mdash; or your life.
+
+The reason comes down to geography. Cabo San Lucas sits at the very tip of the Baja Peninsula, where the Pacific Ocean meets the Sea of Cortez. The Pacific side is open ocean &mdash; deep water reaches the shore fast, creating steep underwater drop-offs just a few meters from the sand. Cold, powerful currents sweep south along the coast, and waves break directly onto the beach with no reef or bay to absorb the energy. The Sea of Cortez side is the opposite: sheltered bays, gradual sandy bottoms, and reef systems that break up wave action before it reaches shore. That's why Médano Beach feels like a swimming pool while Divorce Beach &mdash; less than a kilometer away &mdash; can pull a strong swimmer out in seconds.
 
 The Pacific-facing coastline in Cabo is stunning from the shore. But the water is treacherous. Steep underwater drop-offs, rip currents that pull you out faster than you can react, and waves that break with real force. Even experienced swimmers get caught off guard.
 
