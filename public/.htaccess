@@ -41,6 +41,7 @@ RewriteRule ^10-best-los-cabos-resorts-for-an-exclusive-retreat/?$ /travel-guide
 # Travel Guide — Safety article
 # -----------------------------------------------------------------------------
 RewriteRule ^cabo-san-lucas-safe/?$ /travel-guide/is-cabo-safe/ [R=301,L]
+RewriteRule ^do-you-need-a-passport-to-go-to-cabo-san-lucas/?$ /travel-guide/passport-to-cabo/ [R=301,L]
 
 # -----------------------------------------------------------------------------
 # Celebrations & Weddings (→ /bachelorette/)
