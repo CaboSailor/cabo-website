@@ -7,6 +7,7 @@ interface Props {
   description?: string;
   bodyClass?: string;
   ogImage?: string;
+  ogImageAlt?: string;
   hreflangs?: { en: string; es: string };
 }
 
@@ -14,12 +15,14 @@ const {
   title = "Cabo San Lucas Boat Tours & Sailing Charters | Cabo Sailing",
   description = "Book the best boat tours in Cabo San Lucas. Private & shared sailing charters, snorkeling at Pelican's Rock, sunset cruises & whale watching. Open bar included. Save 30% online.",
   bodyClass = "bg-bg-light font-display text-navy antialiased min-h-screen flex flex-col relative",
-  ogImage,
+  ogImage = "/og/home.jpg",
+  ogImageAlt,
   hreflangs,
 } = Astro.props;
 
 const lang = getLangFromUrl(Astro.url);
-const siteUrl = 'https://new.cabosailing.com';
+const siteUrl = 'https://cabosailing.com';
+const ogImageUrl = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}`;
 ---
 
 <!DOCTYPE html>
@@ -31,7 +34,14 @@ const siteUrl = 'https://new.cabosailing.com';
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
   <meta property="og:type" content="website" />
-  {ogImage && <meta property="og:image" content={ogImage} />}
+  <meta property="og:image" content={ogImageUrl} />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content={ogImageAlt ?? title} />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={ogImageUrl} />
   <title>{title}</title>
   {hreflangs && (
     <>

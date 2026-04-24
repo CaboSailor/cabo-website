@@ -4,7 +4,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://new.cabosailing.com',
+  site: 'https://cabosailing.com',
   integrations: [
     sitemap({
       i18n: {
