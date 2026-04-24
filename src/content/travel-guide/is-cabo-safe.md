@@ -1,5 +1,5 @@
 ---
-title: "Is Cabo San Lucas Safe in 2026? Local's Safety Guide | Cabo Sailing"
+title: "Is Cabo San Lucas Safe in 2026? Local's Safety Guide"
 pubDate: 2025-02-10
 description: "Is Cabo safe? Honest 2026 safety guide from locals — crime stats, safe areas, scams to avoid, water safety, and tips for families. Updated regularly."
 heroImage: "https://www.cabosailing.com/wp-content/uploads/2019/08/los-cabos-international-airport-featured-image.jpg.webp"
@@ -100,6 +100,7 @@ The short version: if you stay in the areas tourists normally visit, you'll feel
   <li><strong>Keep valuables secure</strong> &mdash; avoid displaying expensive jewelry or large amounts of cash</li>
   <li><strong>Stick to well-traveled areas at night</strong> &mdash; the main tourist zones are lively and safe, but quieter side streets are best avoided after dark</li>
   <li><strong>Use trusted transportation</strong> &mdash; hotel shuttles, reputable taxi services, or pre-arranged transfers are the way to go. Providers like <a href="/shuttle-service" class="text-accent-gold font-semibold hover:underline">Cabo Sailing</a> offer reliable airport shuttle service.</li>
+  <li><strong>Respect the ocean</strong> &mdash; some Cabo beaches have strong currents and riptides. Always check flag warnings and signs before swimming. Stick to designated swimming areas like Medano Beach and Chileno Bay. See our <a href="/travel-guide/can-you-swim-in-cabo-san-lucas" class="text-accent-gold font-semibold hover:underline">swim safety guide</a> for a full beach-by-beach breakdown.</li>
   <li><strong>Trust your instincts</strong> &mdash; if something feels off, step away. This applies anywhere in the world</li>
 </ul>
 

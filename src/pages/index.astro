@@ -147,10 +147,10 @@ const travelAgencySchema = JSON.stringify({
 <!-- Experience Heading -->
 <div class="px-6 relative z-20 pt-8 mb-8 lg:max-w-[800px] lg:mx-auto text-center">
   <h2 class="text-xl md:text-2xl lg:text-3xl font-serif text-navy font-semibold leading-tight">Find Your Perfect Cruise</h2>
-  <p class="text-navy/60 text-sm mt-2 max-w-[400px] mx-auto">Private or small-group — designed for comfort, space, and unforgettable moments.</p>
+  <p class="text-navy/70 text-sm mt-2 max-w-[400px] mx-auto">Private or small-group — designed for comfort, space, and unforgettable moments.</p>
   <div class="flex items-center justify-center gap-1 mt-6 bg-light-grey rounded-full p-1 max-w-[360px] mx-auto border border-border-light">
-    <button id="toggle-private" onclick="document.getElementById('section-private').scrollIntoView({behavior:'smooth',block:'start'});document.getElementById('toggle-private').classList.add('bg-navy','text-white','shadow-md');document.getElementById('toggle-private').classList.remove('text-navy/60');document.getElementById('toggle-shared').classList.remove('bg-navy','text-white','shadow-md');document.getElementById('toggle-shared').classList.add('text-navy/60')" class="flex-1 py-2.5 rounded-full text-sm font-bold uppercase tracking-widest transition-all bg-navy text-white shadow-md">Private Cruises</button>
-    <button id="toggle-shared" onclick="document.getElementById('section-shared').scrollIntoView({behavior:'smooth',block:'start'});document.getElementById('toggle-shared').classList.add('bg-navy','text-white','shadow-md');document.getElementById('toggle-shared').classList.remove('text-navy/60');document.getElementById('toggle-private').classList.remove('bg-navy','text-white','shadow-md');document.getElementById('toggle-private').classList.add('text-navy/60')" class="flex-1 py-2.5 rounded-full text-sm font-bold uppercase tracking-widest transition-all text-navy/60">Shared Cruises</button>
+    <button id="toggle-private" onclick="document.getElementById('section-private').scrollIntoView({behavior:'smooth',block:'start'});document.getElementById('toggle-private').classList.add('bg-navy','text-white','shadow-md');document.getElementById('toggle-private').classList.remove('text-navy/70');document.getElementById('toggle-shared').classList.remove('bg-navy','text-white','shadow-md');document.getElementById('toggle-shared').classList.add('text-navy/70')" class="flex-1 py-2.5 rounded-full text-sm font-bold uppercase tracking-widest transition-all bg-navy text-white shadow-md">Private Cruises</button>
+    <button id="toggle-shared" onclick="document.getElementById('section-shared').scrollIntoView({behavior:'smooth',block:'start'});document.getElementById('toggle-shared').classList.add('bg-navy','text-white','shadow-md');document.getElementById('toggle-shared').classList.remove('text-navy/70');document.getElementById('toggle-private').classList.remove('bg-navy','text-white','shadow-md');document.getElementById('toggle-private').classList.add('text-navy/70')" class="flex-1 py-2.5 rounded-full text-sm font-bold uppercase tracking-widest transition-all text-navy/70">Shared Cruises</button>
   </div>
 </div>
 
@@ -161,7 +161,7 @@ const travelAgencySchema = JSON.stringify({
 <!-- Activity 1: Private Snorkeling -->
 <div data-activity="private-snorkeling" class="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-16 items-center">
   <div class="md:col-span-7 relative group">
-    <div class="absolute top-6 left-6 z-30 bg-accent-gold text-white px-4 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase shadow-xl">Most Popular</div>
+    <div class="absolute top-6 left-6 z-30 bg-accent-gold-dark text-white px-4 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase shadow-xl">Most Popular</div>
     <div class="absolute top-6 right-6 z-30 bg-red-600 text-white px-4 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase shadow-xl">20% Off</div>
     <div class="aspect-[3/4] md:aspect-[16/10] overflow-hidden rounded-lg shadow-2xl">
       <Image src={actPrivateSnorkeling} alt="Private Snorkeling" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" width={1200} height={750} />
@@ -174,8 +174,8 @@ const travelAgencySchema = JSON.stringify({
 
   <div class="md:col-span-5 space-y-8 pt-4 md:pt-0">
     <div class="space-y-4">
-      <h2 class="text-4xl lg:text-5xl font-serif-italic text-navy leading-tight">Private Snorkeling Cruise <span class="text-2xl lg:text-3xl text-navy/60">(Yacht or Sailboat)</span></h2>
-      <p class="text-accent-gold/80 text-[11px] font-bold tracking-widest uppercase">Trusted by hundreds of guests every month</p>
+      <h2 class="text-4xl lg:text-5xl font-serif-italic text-navy leading-tight">Private Snorkeling Cruise <span class="text-2xl lg:text-3xl text-navy/70">(Yacht or Sailboat)</span></h2>
+      <p class="text-accent-gold-dark text-[11px] font-bold tracking-widest uppercase">Trusted by hundreds of guests every month</p>
     </div>
     <p class="text-navy/70 text-base lg:text-lg leading-relaxed">A private cruise to Cabo's best snorkeling spots with time to swim, relax, and enjoy food and drinks onboard.<br/>Perfect for families, couples, or groups who want a fun, flexible experience at their own pace.<br/>No crowds, more time in the water, and a crew focused entirely on your group.</p>
     <ul class="space-y-3 pt-2">
@@ -184,7 +184,7 @@ const travelAgencySchema = JSON.stringify({
       <li class="flex items-start gap-3 text-navy/70 font-medium text-base lg:text-lg leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> All-Inclusive Service – Premium open bar and fresh local food included.</li>
     </ul>
     <div class="pt-6 space-y-4">
-      <a href="/private-snorkeling" class="block text-center bg-transparent text-navy border border-navy w-full py-4 rounded-lg font-bold tracking-widest text-sm hover:bg-navy/5 transition-all uppercase">More Info</a>
+      <a href="/private-snorkeling" class="block text-center bg-transparent text-navy border border-navy w-full py-4 rounded-lg font-bold tracking-widest text-sm hover:bg-navy/5 transition-all uppercase">Private Snorkeling Details</a>
     </div>
     <div class="md:hidden border-b border-border-light mt-8"></div>
   </div>
@@ -193,21 +193,21 @@ const travelAgencySchema = JSON.stringify({
 <!-- Activity 2: Private Sunset Cruise -->
 <div data-activity="private-sunset" class="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-16 items-center">
   <div class="md:col-span-7 order-1 md:order-2 relative group">
-    <div class="absolute top-6 left-6 z-30 bg-accent-gold text-white px-4 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase shadow-xl bg-opacity-80 backdrop-blur-sm">Premium</div>
+    <div class="absolute top-6 left-6 z-30 bg-accent-gold-dark text-white px-4 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase shadow-xl bg-opacity-80 backdrop-blur-sm">Premium</div>
     <div class="absolute top-6 right-6 z-30 bg-red-600 text-white px-4 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase shadow-xl">20% Off</div>
     <div class="aspect-[3/4] md:aspect-[16/10] overflow-hidden rounded-lg shadow-2xl">
       <Image src={actPrivateSunset} alt="Private Sunset Cruise" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" width={1200} height={750} />
     </div>
     <div class="absolute -bottom-6 left-2 md:-left-10 bg-accent-gold p-8 md:p-12 max-w-[280px] md:max-w-xs shadow-2xl z-20 border-b-4 border-amber-300 rounded-lg bg-opacity-80 backdrop-blur-sm">
       <h3 class="text-white font-serif-italic text-2xl md:text-3xl mb-4">Golden Hour Magic</h3>
-      <p class="text-amber-50 text-xs md:text-sm leading-relaxed">Sip an ice-cold, freshly-made margarita as the Baja sky transforms into a canvas of gold and violet.</p>
+      <p class="text-white text-xs md:text-sm leading-relaxed">Sip an ice-cold, freshly-made margarita as the Baja sky transforms into a canvas of gold and violet.</p>
     </div>
   </div>
 
   <div class="md:col-span-5 order-2 md:order-1 space-y-8 pt-4 md:pt-0">
     <div class="space-y-4">
-      <h2 class="text-4xl lg:text-5xl font-serif-italic text-navy leading-tight">Private Sunset Cruise <span class="text-2xl lg:text-3xl text-navy/60">(Yacht or Sailboat)</span></h2>
-      <p class="text-accent-gold/80 text-[11px] font-bold tracking-widest uppercase">Favorite choice for couples</p>
+      <h2 class="text-4xl lg:text-5xl font-serif-italic text-navy leading-tight">Private Sunset Cruise <span class="text-2xl lg:text-3xl text-navy/70">(Yacht or Sailboat)</span></h2>
+      <p class="text-accent-gold-dark text-[11px] font-bold tracking-widest uppercase">Favorite choice for couples</p>
     </div>
     <p class="text-navy/70 text-base lg:text-lg leading-relaxed">A private evening cruise past Cabo's Arch with drinks, light bites, and unforgettable sunset views.<br/>Ideal for couples, celebrations, or anyone looking for a relaxed and memorable experience.<br/>More intimate, smoother, and far less crowded than typical sunset tours.</p>
     <ul class="space-y-3 pt-2">
@@ -216,7 +216,7 @@ const travelAgencySchema = JSON.stringify({
       <li class="flex items-start gap-3 text-navy/70 font-medium text-base lg:text-lg leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> Private sunset experience — Cabo's most iconic views, just for you</li>
     </ul>
     <div class="pt-6 space-y-4">
-      <a href="/private-sunset" class="block text-center bg-transparent text-navy border border-navy w-full py-4 rounded-lg font-bold tracking-widest text-sm hover:bg-navy/5 transition-all uppercase">More Info</a>
+      <a href="/private-sunset" class="block text-center bg-transparent text-navy border border-navy w-full py-4 rounded-lg font-bold tracking-widest text-sm hover:bg-navy/5 transition-all uppercase">Private Sunset Details</a>
     </div>
     <div class="md:hidden border-b border-border-light mt-8"></div>
   </div>
@@ -225,7 +225,7 @@ const travelAgencySchema = JSON.stringify({
 <!-- Activity 3: Whale Watching -->
 <div data-activity="whale-watching" class="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-16 items-center">
   <div class="md:col-span-7 relative group">
-    <div class="absolute top-6 left-6 z-30 bg-accent-gold text-white px-4 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase shadow-xl">Sells Out Fast</div>
+    <div class="absolute top-6 left-6 z-30 bg-accent-gold-dark text-white px-4 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase shadow-xl">Sells Out Fast</div>
     <div class="absolute top-6 right-6 z-30 bg-red-600 text-white px-4 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase shadow-xl">20% Off</div>
     <div class="aspect-[3/4] md:aspect-[16/10] overflow-hidden rounded-lg shadow-2xl">
       <Image src={actWhaleWatching} alt="Whale Watching" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" width={1200} height={750} />
@@ -238,8 +238,8 @@ const travelAgencySchema = JSON.stringify({
 
   <div class="md:col-span-5 space-y-8 pt-4 md:pt-0">
     <div class="space-y-4">
-      <h2 class="text-4xl lg:text-5xl font-serif-italic text-navy leading-tight">Private Whale Watching Cruise <span class="text-2xl lg:text-3xl text-navy/60">(Yacht or Sailboat)</span></h2>
-      <p class="text-accent-gold/80 text-[11px] font-bold tracking-widest uppercase">Last month's best seller</p>
+      <h2 class="text-4xl lg:text-5xl font-serif-italic text-navy leading-tight">Private Whale Watching Cruise <span class="text-2xl lg:text-3xl text-navy/70">(Yacht or Sailboat)</span></h2>
+      <p class="text-accent-gold-dark text-[11px] font-bold tracking-widest uppercase">Last month's best seller</p>
     </div>
     <p class="text-navy/70 text-base lg:text-lg leading-relaxed">A private cruise to see Cabo's whales up close, guided by an experienced crew in their natural habitat.<br/>Perfect for families, couples, or small groups looking for a more personal and comfortable wildlife experience.<br/>Closer encounters, no crowds, and the flexibility to follow the whales at your own pace.</p>
     <ul class="space-y-3 pt-2">
@@ -248,7 +248,7 @@ const travelAgencySchema = JSON.stringify({
       <li class="flex items-start gap-3 text-navy/70 font-medium text-base lg:text-lg leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> All-inclusive experience — drinks, snacks, and expert crew</li>
     </ul>
     <div class="pt-6 space-y-4">
-      <a href="/whale-watching" class="block text-center bg-transparent text-navy border border-navy w-full py-4 rounded-lg font-bold tracking-widest text-sm hover:bg-navy/5 transition-all uppercase">More Info</a>
+      <a href="/whale-watching" class="block text-center bg-transparent text-navy border border-navy w-full py-4 rounded-lg font-bold tracking-widest text-sm hover:bg-navy/5 transition-all uppercase">Whale Watching Details</a>
     </div>
     <div class="md:hidden border-b border-border-light mt-8"></div>
   </div>
@@ -257,7 +257,7 @@ const travelAgencySchema = JSON.stringify({
 <!-- Activity 4: Bachelorette Party -->
 <div data-activity="bachelorette-party" class="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-16 items-center">
   <div class="md:col-span-7 order-1 md:order-2 relative group">
-    <div class="absolute top-6 left-6 z-30 bg-accent-gold text-white px-4 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase shadow-xl">VIP Experience</div>
+    <div class="absolute top-6 left-6 z-30 bg-accent-gold-dark text-white px-4 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase shadow-xl">VIP Experience</div>
     <div class="absolute top-6 right-6 z-30 bg-red-600 text-white px-4 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase shadow-xl">20% Off</div>
     <div class="aspect-[3/4] md:aspect-[16/10] overflow-hidden rounded-lg shadow-2xl">
       <Image src={actBachelorette} alt="Bachelorette Party" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" width={1200} height={750} />
@@ -270,8 +270,8 @@ const travelAgencySchema = JSON.stringify({
 
   <div class="md:col-span-5 order-2 md:order-1 space-y-8 pt-4 md:pt-0">
     <div class="space-y-4">
-      <h2 class="text-4xl lg:text-5xl font-serif-italic text-navy leading-tight">Private Bachelorette Party Cruise <span class="text-2xl lg:text-3xl text-navy/60">(Yacht or Sailboat)</span></h2>
-      <p class="text-accent-gold/80 text-[11px] font-bold tracking-widest uppercase">Trusted event experts</p>
+      <h2 class="text-4xl lg:text-5xl font-serif-italic text-navy leading-tight">Private Bachelorette Party Cruise <span class="text-2xl lg:text-3xl text-navy/70">(Yacht or Sailboat)</span></h2>
+      <p class="text-accent-gold-dark text-[11px] font-bold tracking-widest uppercase">Trusted event experts</p>
     </div>
     <p class="text-navy/70 text-base lg:text-lg leading-relaxed">A private cruise designed for celebrating—music, drinks, great views, and plenty of time to relax and have fun with your group.<br/>Perfect for bachelorette parties looking for a stylish, fun, and stress-free experience on the water.<br/>Your own space, no crowds, and a crew that takes care of everything so you can focus on celebrating.</p>
     <ul class="space-y-3 pt-2">
@@ -280,7 +280,7 @@ const travelAgencySchema = JSON.stringify({
       <li class="flex items-start gap-3 text-navy/70 font-medium text-base lg:text-lg leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> All-inclusive — open bar, snacks, and everything onboard</li>
     </ul>
     <div class="pt-6 space-y-4">
-      <a href="/bachelorette" class="block text-center bg-transparent text-navy border border-navy w-full py-4 rounded-lg font-bold tracking-widest text-sm hover:bg-navy/5 transition-all uppercase">More Info</a>
+      <a href="/bachelorette" class="block text-center bg-transparent text-navy border border-navy w-full py-4 rounded-lg font-bold tracking-widest text-sm hover:bg-navy/5 transition-all uppercase">Bachelorette Cruise Details</a>
     </div>
   </div>
 </div>
@@ -295,21 +295,21 @@ const travelAgencySchema = JSON.stringify({
 <!-- Activity 5: Shared Snorkeling -->
 <div data-activity="shared-snorkeling" class="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-16 items-center">
   <div class="md:col-span-7 relative group">
-    <div class="absolute top-6 left-6 z-30 bg-accent-gold text-white px-4 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase shadow-xl">Most Popular</div>
+    <div class="absolute top-6 left-6 z-30 bg-accent-gold-dark text-white px-4 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase shadow-xl">Most Popular</div>
     <div class="absolute top-6 right-6 z-30 bg-red-600 text-white px-4 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase shadow-xl">20% Off</div>
     <div class="aspect-[3/4] md:aspect-[16/10] overflow-hidden rounded-lg shadow-2xl">
       <Image src={actSharedSnorkeling} alt="Shared Snorkeling" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" width={1200} height={750} />
     </div>
     <div class="absolute -bottom-6 right-2 md:-right-10 bg-slate-800 p-8 md:p-12 max-w-[280px] md:max-w-xs shadow-2xl z-20 border-b-4 border-slate-400 rounded-lg bg-opacity-80 backdrop-blur-sm">
       <h3 class="text-slate-200 font-serif-italic text-2xl md:text-3xl mb-4">Baja Explorers</h3>
-      <p class="text-slate-400 text-xs md:text-sm leading-relaxed">Sailing, snorkeling, and wild nature in pristine Baja waters.</p>
+      <p class="text-slate-500 text-xs md:text-sm leading-relaxed">Sailing, snorkeling, and wild nature in pristine Baja waters.</p>
     </div>
   </div>
 
   <div class="md:col-span-5 space-y-8 pt-4 md:pt-0">
     <div class="space-y-4">
       <h2 class="text-4xl lg:text-5xl font-serif-italic text-navy leading-tight">Small Group Shared Snorkeling Cruise</h2>
-      <p class="text-accent-gold/80 text-[11px] font-bold tracking-widest uppercase">Favorite for small groups</p>
+      <p class="text-accent-gold-dark text-[11px] font-bold tracking-widest uppercase">Favorite for small groups</p>
     </div>
     <p class="text-navy/70 text-base lg:text-lg leading-relaxed">A shared sailing trip to Cabo's best snorkeling spots with drinks, light food, and a friendly atmosphere.<br/>Perfect for travelers who want a high-quality experience without booking a private boat.<br/>Limited to small groups, so it feels comfortable—not crowded like typical tours.</p>
     <ul class="space-y-3 pt-2">
@@ -318,7 +318,7 @@ const travelAgencySchema = JSON.stringify({
       <li class="flex items-start gap-3 text-navy/70 font-medium text-base lg:text-lg leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> All-inclusive service — open bar, lunch, gear, and towels included</li>
     </ul>
     <div class="pt-6 space-y-4">
-      <a href="/shared-snorkeling" class="block text-center bg-transparent text-navy border border-navy w-full py-4 rounded-lg font-bold tracking-widest text-sm hover:bg-navy/5 transition-all uppercase">More Info</a>
+      <a href="/shared-snorkeling" class="block text-center bg-transparent text-navy border border-navy w-full py-4 rounded-lg font-bold tracking-widest text-sm hover:bg-navy/5 transition-all uppercase">Shared Snorkeling Details</a>
     </div>
     <div class="md:hidden border-b border-border-light mt-8"></div>
   </div>
@@ -327,7 +327,7 @@ const travelAgencySchema = JSON.stringify({
 <!-- Activity 6: Shared Sunset Cruise -->
 <div data-activity="shared-sunset" class="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-16 items-center">
   <div class="md:col-span-7 order-1 md:order-2 relative group">
-    <div class="absolute top-6 left-6 z-30 bg-accent-gold text-white px-4 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase shadow-xl">Premium</div>
+    <div class="absolute top-6 left-6 z-30 bg-accent-gold-dark text-white px-4 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase shadow-xl">Premium</div>
     <div class="absolute top-6 right-6 z-30 bg-red-600 text-white px-4 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase shadow-xl">20% Off</div>
     <div class="aspect-[3/4] md:aspect-[16/10] overflow-hidden rounded-lg shadow-2xl">
       <Image src={actSharedSunset} alt="Shared Sunset Cruise" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" width={1200} height={750} />
@@ -341,7 +341,7 @@ const travelAgencySchema = JSON.stringify({
   <div class="md:col-span-5 order-2 md:order-1 space-y-8 pt-4 md:pt-0">
     <div class="space-y-4">
       <h2 class="text-4xl lg:text-5xl font-serif-italic text-navy leading-tight">Small Group Shared Sunset Sailing Cruise</h2>
-      <p class="text-accent-gold/80 text-[11px] font-bold tracking-widest uppercase">Trusted by hundreds of guests every month</p>
+      <p class="text-accent-gold-dark text-[11px] font-bold tracking-widest uppercase">Trusted by hundreds of guests every month</p>
     </div>
     <p class="text-navy/70 text-base lg:text-lg leading-relaxed">A relaxing sunset sail past Cabo's Arch with drinks, music, and stunning views.<br/>Ideal for couples or friends looking for an easy, memorable evening on the water.<br/>Small group setting, smooth sailing, and a more laid-back vibe than party cruises.</p>
     <ul class="space-y-3 pt-2">
@@ -350,7 +350,7 @@ const travelAgencySchema = JSON.stringify({
       <li class="flex items-start gap-3 text-navy/70 font-medium text-base lg:text-lg leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> Unforgettable sunset views — front row on the water</li>
     </ul>
     <div class="pt-6 space-y-4">
-      <a href="/shared-sunset" class="block text-center bg-transparent text-navy border border-navy w-full py-4 rounded-lg font-bold tracking-widest text-sm hover:bg-navy/5 transition-all uppercase">More Info</a>
+      <a href="/shared-sunset" class="block text-center bg-transparent text-navy border border-navy w-full py-4 rounded-lg font-bold tracking-widest text-sm hover:bg-navy/5 transition-all uppercase">Shared Sunset Details</a>
     </div>
   </div>
 </div>
@@ -358,9 +358,9 @@ const travelAgencySchema = JSON.stringify({
 </div>
 <!-- Bottom Toggle -->
 <div class="px-6 pt-12 lg:max-w-[800px] lg:mx-auto text-center">
-  <p class="text-navy/60 text-sm mb-4">Switch between private and shared experiences</p>
+  <p class="text-navy/70 text-sm mb-4">Switch between private and shared experiences</p>
   <div class="flex items-center justify-center gap-1 bg-white rounded-full p-1 max-w-[360px] mx-auto border border-border-light shadow-sm">
-    <button onclick="document.getElementById('section-private').scrollIntoView({behavior:'smooth',block:'start'})" class="flex-1 py-2.5 rounded-full text-sm font-bold uppercase tracking-widest transition-all text-navy/60 hover:bg-navy/5">Private Cruises</button>
+    <button onclick="document.getElementById('section-private').scrollIntoView({behavior:'smooth',block:'start'})" class="flex-1 py-2.5 rounded-full text-sm font-bold uppercase tracking-widest transition-all text-navy/70 hover:bg-navy/5">Private Cruises</button>
     <button onclick="document.getElementById('section-shared').scrollIntoView({behavior:'smooth',block:'start'})" class="flex-1 py-2.5 rounded-full text-sm font-bold uppercase tracking-widest transition-all bg-navy text-white shadow-md">Shared Cruises</button>
   </div>
 </div>
@@ -387,7 +387,7 @@ const travelAgencySchema = JSON.stringify({
           <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs lg:text-[10px] mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-sm lg:text-base">group</span><span>Up to 20 Guests</span></div>
         </div>
         <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[9px] font-bold px-2.5 py-1 lg:px-3 lg:py-1 rounded-full uppercase tracking-widest">Most Spacious</div>
-        <div class="absolute bottom-4 right-4 bg-accent-gold text-white text-sm font-bold px-2.5 py-1 rounded-lg shadow-lg">-30%</div>
+        <div class="absolute bottom-4 right-4 bg-accent-gold-dark text-white text-sm font-bold px-2.5 py-1 rounded-lg shadow-lg">-30%</div>
       </div>
       <div class="p-4 space-y-4 lg:p-4 lg:space-y-4">
         <div class="grid grid-cols-4 gap-1 pb-3 border-b border-border-light/50">
@@ -397,7 +397,7 @@ const travelAgencySchema = JSON.stringify({
           <div class="flex items-center justify-center h-10 lg:h-12"><span class="material-symbols-outlined filled text-gold text-2xl lg:text-3xl leading-none">local_bar</span></div>
         </div>
         <div class="space-y-4">
-          <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-accent-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$1,690</span><div class="flex items-baseline gap-2"><span class="text-slate-400 text-[11px] font-medium uppercase">from</span><span class="text-navy font-bold text-2xl lg:text-2xl">$1,436</span><span class="text-slate-400 text-[11px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="flex flex-col items-end"><span class="text-slate-400 text-[11px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-accent-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-400 text-[9px] font-medium">/pp</span></div></div></div>
+          <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-accent-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$1,690</span><div class="flex items-baseline gap-2"><span class="text-slate-500 text-[11px] font-medium uppercase">from</span><span class="text-navy font-bold text-2xl lg:text-2xl">$1,436</span><span class="text-slate-500 text-[11px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="flex flex-col items-end"><span class="text-slate-500 text-[11px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-accent-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-500 text-[9px] font-medium">/pp</span></div></div></div>
         </div>
         <button type="button" onclick="openRezdyModal('165509')" class="block w-full bg-navy text-white font-bold text-[11px] lg:text-[10px] py-3.5 lg:py-3 rounded-xl uppercase tracking-[0.1em] lg:tracking-[0.15em] text-center shadow-lg">Check Availability</button>
       </div>
@@ -413,7 +413,7 @@ const travelAgencySchema = JSON.stringify({
           <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs lg:text-[10px] mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-sm lg:text-base">group</span><span>Up to 12 Guests</span></div>
         </div>
         <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[9px] font-bold px-2.5 py-1 lg:px-3 lg:py-1 rounded-full uppercase tracking-widest">Most Popular</div>
-        <div class="absolute bottom-4 right-4 bg-accent-gold text-white text-sm font-bold px-2.5 py-1 rounded-lg shadow-lg">-30%</div>
+        <div class="absolute bottom-4 right-4 bg-accent-gold-dark text-white text-sm font-bold px-2.5 py-1 rounded-lg shadow-lg">-30%</div>
       </div>
       <div class="p-4 space-y-4 lg:p-4 lg:space-y-4">
         <div class="grid grid-cols-4 gap-1 pb-3 border-b border-border-light/50">
@@ -423,7 +423,7 @@ const travelAgencySchema = JSON.stringify({
           <div class="flex items-center justify-center h-10 lg:h-12"><span class="material-symbols-outlined filled text-gold text-2xl lg:text-3xl leading-none">local_bar</span></div>
         </div>
         <div class="space-y-4">
-          <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-accent-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$1,520</span><div class="flex items-baseline gap-2"><span class="text-slate-400 text-[11px] font-medium uppercase">from</span><span class="text-navy font-bold text-2xl lg:text-2xl">$1,292</span><span class="text-slate-400 text-[11px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="flex flex-col items-end"><span class="text-slate-400 text-[11px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-accent-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-400 text-[9px] font-medium">/pp</span></div></div></div>
+          <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-accent-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$1,520</span><div class="flex items-baseline gap-2"><span class="text-slate-500 text-[11px] font-medium uppercase">from</span><span class="text-navy font-bold text-2xl lg:text-2xl">$1,292</span><span class="text-slate-500 text-[11px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="flex flex-col items-end"><span class="text-slate-500 text-[11px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-accent-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-500 text-[9px] font-medium">/pp</span></div></div></div>
         </div>
         <button type="button" onclick="openRezdyModal('528988')" class="block w-full bg-navy text-white font-bold text-[11px] lg:text-[10px] py-3.5 lg:py-3 rounded-xl uppercase tracking-[0.1em] lg:tracking-[0.15em] text-center shadow-lg">Check Availability</button>
       </div>
@@ -444,7 +444,7 @@ const travelAgencySchema = JSON.stringify({
           <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs lg:text-[10px] mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-sm lg:text-base">group</span><span>Up to 18 Guests</span></div>
         </div>
         <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[9px] font-bold px-2.5 py-1 lg:px-3 lg:py-1 rounded-full uppercase tracking-widest">Best Value</div>
-        <div class="absolute bottom-4 right-4 bg-accent-gold text-white text-sm font-bold px-2.5 py-1 rounded-lg shadow-lg z-10">-30%</div>
+        <div class="absolute bottom-4 right-4 bg-accent-gold-dark text-white text-sm font-bold px-2.5 py-1 rounded-lg shadow-lg z-10">-30%</div>
         <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
         <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
       </div>
@@ -456,7 +456,7 @@ const travelAgencySchema = JSON.stringify({
           <div class="flex items-center justify-center h-10 lg:h-12"><span class="material-symbols-outlined filled text-gold text-2xl lg:text-3xl leading-none">local_bar</span></div>
         </div>
         <div class="space-y-4">
-          <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-accent-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$1,350</span><div class="flex items-baseline gap-2"><span class="text-slate-400 text-[11px] font-medium uppercase">from</span><span class="text-navy font-bold text-2xl lg:text-2xl">$1,148</span><span class="text-slate-400 text-[11px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="flex flex-col items-end"><span class="text-slate-400 text-[11px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-accent-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-400 text-[9px] font-medium">/pp</span></div></div></div>
+          <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-accent-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$1,350</span><div class="flex items-baseline gap-2"><span class="text-slate-500 text-[11px] font-medium uppercase">from</span><span class="text-navy font-bold text-2xl lg:text-2xl">$1,148</span><span class="text-slate-500 text-[11px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="flex flex-col items-end"><span class="text-slate-500 text-[11px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-accent-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-500 text-[9px] font-medium">/pp</span></div></div></div>
         </div>
         <button type="button" onclick="openRezdyModal('168008')" class="block w-full bg-navy text-white font-bold text-[11px] lg:text-[10px] py-3.5 lg:py-3 rounded-xl uppercase tracking-[0.1em] lg:tracking-[0.15em] text-center shadow-lg">Check Availability</button>
       </div>
@@ -488,7 +488,7 @@ const travelAgencySchema = JSON.stringify({
           <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs lg:text-[10px] mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-sm lg:text-base">group</span><span>Up to 14 Guests</span></div>
         </div>
         <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[9px] font-bold px-2.5 py-1 lg:px-3 lg:py-1 rounded-full uppercase tracking-widest">Best Value</div>
-        <div class="absolute bottom-4 right-4 bg-accent-gold text-white text-sm font-bold px-2.5 py-1 rounded-lg shadow-lg z-10">-30%</div>
+        <div class="absolute bottom-4 right-4 bg-accent-gold-dark text-white text-sm font-bold px-2.5 py-1 rounded-lg shadow-lg z-10">-30%</div>
         <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
         <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
       </div>
@@ -499,7 +499,7 @@ const travelAgencySchema = JSON.stringify({
           <div class="flex items-center justify-center h-10 lg:h-12"><span class="material-symbols-outlined filled text-gold text-2xl lg:text-3xl leading-none">local_bar</span></div>
         </div>
         <div class="space-y-4">
-          <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-accent-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$1,090</span><div class="flex items-baseline gap-2"><span class="text-slate-400 text-[11px] font-medium uppercase">from</span><span class="text-navy font-bold text-2xl lg:text-2xl">$927</span><span class="text-slate-400 text-[11px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="flex flex-col items-end"><span class="text-slate-400 text-[11px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-accent-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-400 text-[9px] font-medium">/pp</span></div></div></div>
+          <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-accent-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$1,090</span><div class="flex items-baseline gap-2"><span class="text-slate-500 text-[11px] font-medium uppercase">from</span><span class="text-navy font-bold text-2xl lg:text-2xl">$927</span><span class="text-slate-500 text-[11px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="flex flex-col items-end"><span class="text-slate-500 text-[11px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-accent-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-500 text-[9px] font-medium">/pp</span></div></div></div>
         </div>
         <a href="https://wa.me/526241916997?text=Hi%2C%20I'd%20like%20to%20book%20the%20Sailing%20Boat%2042" target="_blank" class="block w-full bg-navy text-white font-bold text-[11px] lg:text-[10px] py-3.5 lg:py-3 rounded-xl uppercase tracking-[0.1em] lg:tracking-[0.15em] text-center shadow-lg">Check Availability</a>
       </div>
@@ -519,7 +519,7 @@ const travelAgencySchema = JSON.stringify({
           <h4 class="text-white text-lg lg:text-xl">Sailing Boat 38'</h4>
           <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs lg:text-[10px] mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-sm lg:text-base">group</span><span>Up to 9 Guests</span></div>
         </div>
-        <div class="absolute bottom-4 right-4 bg-accent-gold text-white text-sm font-bold px-2.5 py-1 rounded-lg shadow-lg z-10">-30%</div>
+        <div class="absolute bottom-4 right-4 bg-accent-gold-dark text-white text-sm font-bold px-2.5 py-1 rounded-lg shadow-lg z-10">-30%</div>
         <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
         <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
       </div>
@@ -530,7 +530,7 @@ const travelAgencySchema = JSON.stringify({
           <div class="flex items-center justify-center h-10 lg:h-12"><span class="material-symbols-outlined filled text-gold text-2xl lg:text-3xl leading-none">local_bar</span></div>
         </div>
         <div class="space-y-4">
-          <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-accent-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$825</span><div class="flex items-baseline gap-2"><span class="text-slate-400 text-[11px] font-medium uppercase">from</span><span class="text-navy font-bold text-2xl lg:text-2xl">$701</span><span class="text-slate-400 text-[11px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="flex flex-col items-end"><span class="text-slate-400 text-[11px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-accent-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-400 text-[9px] font-medium">/pp</span></div></div></div>
+          <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-accent-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$825</span><div class="flex items-baseline gap-2"><span class="text-slate-500 text-[11px] font-medium uppercase">from</span><span class="text-navy font-bold text-2xl lg:text-2xl">$701</span><span class="text-slate-500 text-[11px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="flex flex-col items-end"><span class="text-slate-500 text-[11px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-accent-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-500 text-[9px] font-medium">/pp</span></div></div></div>
         </div>
         <button type="button" onclick="openRezdyModal('165682')" class="block w-full bg-navy text-white font-bold text-[11px] lg:text-[10px] py-3.5 lg:py-3 rounded-xl uppercase tracking-[0.1em] lg:tracking-[0.15em] text-center shadow-lg">Check Availability</button>
       </div>
@@ -550,8 +550,8 @@ const travelAgencySchema = JSON.stringify({
           <h4 class="text-white text-lg lg:text-xl">Sailing Boat 38'–42'</h4>
           <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs lg:text-[10px] mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-sm lg:text-base">group</span><span>Up to 12 Guests</span></div>
         </div>
-        <div class="absolute top-4 right-4 bg-accent-gold text-white text-[10px] lg:text-[9px] font-bold px-2.5 py-1 lg:px-3 lg:py-1 rounded-full uppercase tracking-widest">Only 12 Spots Per Tour</div>
-        <div class="absolute bottom-4 right-4 bg-accent-gold text-white text-sm font-bold px-2.5 py-1 rounded-lg shadow-lg z-10">-30%</div>
+        <div class="absolute top-4 right-4 bg-accent-gold-dark text-white text-[10px] lg:text-[9px] font-bold px-2.5 py-1 lg:px-3 lg:py-1 rounded-full uppercase tracking-widest">Only 12 Spots Per Tour</div>
+        <div class="absolute bottom-4 right-4 bg-accent-gold-dark text-white text-sm font-bold px-2.5 py-1 rounded-lg shadow-lg z-10">-30%</div>
         <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
         <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
       </div>
@@ -562,7 +562,7 @@ const travelAgencySchema = JSON.stringify({
           <div class="flex items-center justify-center h-10 lg:h-12"><span class="material-symbols-outlined filled text-gold text-2xl lg:text-3xl leading-none">local_bar</span></div>
         </div>
         <div class="space-y-4">
-          <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-accent-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$120</span><div class="flex items-baseline gap-2"><span class="text-slate-400 text-[11px] font-medium uppercase">from</span><span class="text-navy font-bold text-2xl lg:text-2xl">$102</span><span class="text-slate-400 text-[11px] font-medium uppercase">/ person</span></div></div></div>
+          <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-accent-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$120</span><div class="flex items-baseline gap-2"><span class="text-slate-500 text-[11px] font-medium uppercase">from</span><span class="text-navy font-bold text-2xl lg:text-2xl">$102</span><span class="text-slate-500 text-[11px] font-medium uppercase">/ person</span></div></div></div>
         </div>
         <button type="button" onclick="openRezdyModal('642955','productsCalendar')" class="block w-full bg-navy text-white font-bold text-[11px] lg:text-[10px] py-3.5 lg:py-3 rounded-xl uppercase tracking-[0.1em] lg:tracking-[0.15em] text-center shadow-lg">Check Availability</button>
       </div>
@@ -582,32 +582,32 @@ const travelAgencySchema = JSON.stringify({
     <div class="bg-surface-light border border-border-light rounded-2xl p-5">
       <span class="material-symbols-outlined text-accent-gold text-2xl mb-3 block">anchor</span>
       <h3 class="text-sm font-bold text-navy uppercase tracking-wider mb-2">Expert Local Crew</h3>
-      <p class="text-base text-navy/60 leading-relaxed">Bilingual captains with 10+ years sailing Cabo's waters. Your safety and fun are our top priority.</p>
+      <p class="text-base text-navy/70 leading-relaxed">Bilingual captains with 10+ years sailing Cabo's waters. Your safety and fun are our top priority.</p>
     </div>
     <div class="bg-surface-light border border-border-light rounded-2xl p-5">
       <span class="material-symbols-outlined text-accent-gold text-2xl mb-3 block">local_bar</span>
       <h3 class="text-sm font-bold text-navy uppercase tracking-wider mb-2">All-Inclusive</h3>
-      <p class="text-base text-navy/60 leading-relaxed">Premium open bar, excellent food, all the amenities. No hidden fees.</p>
+      <p class="text-base text-navy/70 leading-relaxed">Premium open bar, excellent food, all the amenities. No hidden fees.</p>
     </div>
     <div class="bg-surface-light border border-border-light rounded-2xl p-5">
       <span class="material-symbols-outlined text-accent-gold text-2xl mb-3 block">sailing</span>
       <h3 class="text-sm font-bold text-navy uppercase tracking-wider mb-2">Best Boats in Cabo</h3>
-      <p class="text-base text-navy/60 leading-relaxed">Inviting 38' to 51' luxury yachts and sailing. Owned and managed in-house.</p>
+      <p class="text-base text-navy/70 leading-relaxed">Inviting 38' to 51' luxury yachts and sailing. Owned and managed in-house.</p>
     </div>
     <div class="bg-surface-light border border-border-light rounded-2xl p-5">
       <span class="material-symbols-outlined text-accent-gold text-2xl mb-3 block">savings</span>
       <h3 class="text-sm font-bold text-navy uppercase tracking-wider mb-2">Book Direct & Save</h3>
-      <p class="text-base text-navy/60 leading-relaxed">Book direct and enjoy our monthly discount.</p>
+      <p class="text-base text-navy/70 leading-relaxed">Book direct and enjoy our monthly discount.</p>
     </div>
     <div class="bg-surface-light border border-border-light rounded-2xl p-5">
       <span class="material-symbols-outlined text-accent-gold text-2xl mb-3 block">groups</span>
       <h3 class="text-sm font-bold text-navy uppercase tracking-wider mb-2">Private & Shared</h3>
-      <p class="text-base text-navy/60 leading-relaxed">Charter the whole boat for your group, or join a small shared tour — perfect for every budget.</p>
+      <p class="text-base text-navy/70 leading-relaxed">Charter the whole boat for your group, or join a small shared tour — perfect for every budget.</p>
     </div>
     <div class="bg-surface-light border border-border-light rounded-2xl p-5">
       <span class="material-symbols-outlined text-accent-gold text-2xl mb-3 block">recommend</span>
       <h3 class="text-sm font-bold text-navy uppercase tracking-wider mb-2">5-Star Rated</h3>
-      <p class="text-base text-navy/60 leading-relaxed">Hundreds of 5-star reviews on TripAdvisor and Google. Cabo's most trusted sailing charter.</p>
+      <p class="text-base text-navy/70 leading-relaxed">Hundreds of 5-star reviews on TripAdvisor and Google. Cabo's most trusted sailing charter.</p>
     </div>
   </div>
 </div>

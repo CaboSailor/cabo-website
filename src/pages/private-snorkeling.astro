@@ -64,7 +64,7 @@ const breadcrumbSchema = JSON.stringify({
   <Header variant="subpage" activePage="tours" />
 
 
-  <style is:inline type="text/tailwindcss">
+  <style is:inline>
     #highlights-toggle:checked ~ #highlights-content {
       max-height: 500px; margin-top: 1.5rem; opacity: 1;
     }
@@ -121,7 +121,7 @@ const breadcrumbSchema = JSON.stringify({
     </div>
     <div>
       <p class="text-navy text-sm leading-snug">"Hands down the best snorkeling trip we've ever done. The crew made it feel so special."</p>
-      <p class="text-navy/40 text-[10px] uppercase tracking-widest font-bold mt-2">Mike &amp; Sarah T. &mdash; Austin, TX</p>
+      <p class="text-navy/60 text-[10px] uppercase tracking-widest font-bold mt-2">Mike &amp; Sarah T. &mdash; Austin, TX</p>
     </div>
   </div>
 </div>
@@ -131,7 +131,7 @@ const breadcrumbSchema = JSON.stringify({
 <div class="hidden lg:block max-w-[1400px] mx-auto px-10 mt-10">
   <div>
     <!-- Breadcrumbs -->
-    <nav class="flex items-center gap-1.5 text-xs text-slate-400 mb-4" aria-label="Breadcrumb">
+    <nav class="flex items-center gap-1.5 text-xs text-slate-500 mb-4" aria-label="Breadcrumb">
       <a href="/" class="hover:text-gold transition-colors">Home</a>
       <span class="material-symbols-outlined text-[14px]">chevron_right</span>
       <span>Tours</span>
@@ -152,23 +152,23 @@ const breadcrumbSchema = JSON.stringify({
     <div class="flex gap-4 mt-8">
       <div class="bg-light-grey rounded-2xl px-6 py-4 flex flex-col items-center text-center border border-border-light flex-1">
         <span class="material-symbols-outlined text-gold mb-2">schedule</span>
-        <p class="text-xs text-slate-400 uppercase font-bold tracking-widest mb-1">Duration</p>
+        <p class="text-xs text-slate-500 uppercase font-bold tracking-widest mb-1">Duration</p>
         <p class="text-base font-bold text-navy">3 Hours</p>
-        <p class="text-xs text-slate-400 mt-0.5">Extra time available</p>
+        <p class="text-xs text-slate-500 mt-0.5">Extra time available</p>
       </div>
       <div class="bg-light-grey rounded-2xl px-6 py-4 flex flex-col items-center text-center border border-border-light flex-1">
         <span class="material-symbols-outlined text-gold mb-2">sailing</span>
-        <p class="text-xs text-slate-400 uppercase font-bold tracking-widest mb-1">Difficulty</p>
+        <p class="text-xs text-slate-500 uppercase font-bold tracking-widest mb-1">Difficulty</p>
         <p class="text-base font-bold text-navy">Easy</p>
       </div>
       <div class="bg-light-grey rounded-2xl px-6 py-4 flex flex-col items-center text-center border border-border-light flex-1">
         <span class="material-symbols-outlined text-gold mb-2">family_restroom</span>
-        <p class="text-xs text-slate-400 uppercase font-bold tracking-widest mb-1">Family</p>
+        <p class="text-xs text-slate-500 uppercase font-bold tracking-widest mb-1">Family</p>
         <p class="text-base font-bold text-navy">Friendly</p>
       </div>
       <div class="bg-light-grey rounded-2xl px-6 py-4 flex flex-col items-center text-center border border-border-light flex-1">
         <span class="material-symbols-outlined text-gold mb-2">event_available</span>
-        <p class="text-xs text-slate-400 uppercase font-bold tracking-widest mb-1">Free Cancellation</p>
+        <p class="text-xs text-slate-500 uppercase font-bold tracking-widest mb-1">Free Cancellation</p>
         <p class="text-base font-bold text-navy">Up to 24h</p>
       </div>
     </div>
@@ -186,7 +186,7 @@ const breadcrumbSchema = JSON.stringify({
       <div class="mt-8">
         <div class="flex items-center gap-3 mb-5">
           <div class="w-1 h-6 bg-gold rounded-full"></div>
-          <h4 class="text-sm font-bold text-navy uppercase tracking-widest">The Experience</h4>
+          <h3 class="text-sm font-bold text-navy uppercase tracking-widest">The Experience</h3>
         </div>
         <ol class="relative border-l-2 border-gold/30 ml-2 space-y-5 pl-6">
           <li class="relative"><span class="absolute -left-[33px] top-0 w-6 h-6 rounded-full bg-navy text-white text-[11px] font-bold flex items-center justify-center">1</span><span class="text-slate-600 text-base">Meet at the marina</span></li>
@@ -270,7 +270,7 @@ const breadcrumbSchema = JSON.stringify({
 <!-- MOBILE: Original card layout -->
 <div class="lg:hidden relative z-10 -mt-4 px-5">
 <div class="bg-white rounded-3xl p-6 shadow-xl shadow-navy/5 border border-border-light">
-<nav class="flex items-center gap-1.5 text-xs text-slate-400 mb-4" aria-label="Breadcrumb">
+<nav class="flex items-center gap-1.5 text-xs text-slate-500 mb-4" aria-label="Breadcrumb">
 <a href="/" class="hover:text-gold transition-colors">Home</a>
 <span class="material-symbols-outlined text-[14px]">chevron_right</span>
 <span>Tours</span>
@@ -287,22 +287,22 @@ const breadcrumbSchema = JSON.stringify({
 <div class="grid grid-cols-2 gap-4">
 <div class="bg-light-grey rounded-2xl p-4 flex flex-col items-center text-center border border-border-light">
 <span class="material-symbols-outlined text-gold mb-2">schedule</span>
-<p class="text-xs text-slate-400 uppercase font-bold tracking-widest mb-1">Duration</p>
+<p class="text-xs text-slate-500 uppercase font-bold tracking-widest mb-1">Duration</p>
 <p class="text-base font-bold text-navy">3 Hours</p>
 </div>
 <div class="bg-light-grey rounded-2xl p-4 flex flex-col items-center text-center border border-border-light">
 <span class="material-symbols-outlined text-gold mb-2">sailing</span>
-<p class="text-xs text-slate-400 uppercase font-bold tracking-widest mb-1">Difficulty</p>
+<p class="text-xs text-slate-500 uppercase font-bold tracking-widest mb-1">Difficulty</p>
 <p class="text-base font-bold text-navy">Easy</p>
 </div>
 <div class="bg-light-grey rounded-2xl p-4 flex flex-col items-center text-center border border-border-light">
 <span class="material-symbols-outlined text-gold mb-2">family_restroom</span>
-<p class="text-xs text-slate-400 uppercase font-bold tracking-widest mb-1">Family</p>
+<p class="text-xs text-slate-500 uppercase font-bold tracking-widest mb-1">Family</p>
 <p class="text-base font-bold text-navy">Friendly</p>
 </div>
 <div class="bg-light-grey rounded-2xl p-4 flex flex-col items-center text-center border border-border-light">
 <span class="material-symbols-outlined text-gold mb-2">event_available</span>
-<p class="text-xs text-slate-400 uppercase font-bold tracking-widest mb-1">Free Cancellation</p>
+<p class="text-xs text-slate-500 uppercase font-bold tracking-widest mb-1">Free Cancellation</p>
 <p class="text-base font-bold text-navy">Up to 24h</p>
 </div>
 </div>
@@ -320,15 +320,15 @@ const breadcrumbSchema = JSON.stringify({
 <div class="max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out" id="highlights-content">
 <div class="space-y-4">
 <div>
-<h4 class="text-sm font-bold text-navy uppercase tracking-wider mb-1">Scenic Landmarks</h4>
+<h3 class="text-sm font-bold text-navy uppercase tracking-wider mb-1">Scenic Landmarks</h3>
 <p class="text-sm text-slate-700 leading-relaxed">Sail past the world-famous Arch of Cabo San Lucas and the vibrant sea lion colony.</p>
 </div>
 <div>
-<h4 class="text-sm font-bold text-navy uppercase tracking-wider mb-1">Land's End Arch</h4>
+<h3 class="text-sm font-bold text-navy uppercase tracking-wider mb-1">Land's End Arch</h3>
 <p class="text-sm text-slate-700 leading-relaxed">Sail past Cabo's world-famous Arch — the natural gateway between the Pacific Ocean and the Sea of Cortez.</p>
 </div>
 <div>
-<h4 class="text-sm font-bold text-navy uppercase tracking-wider mb-1">Luxury Comfort</h4>
+<h3 class="text-sm font-bold text-navy uppercase tracking-wider mb-1">Luxury Comfort</h3>
 <p class="text-sm text-slate-700 leading-relaxed">Relax on padded decks with premium amenities while our crew caters to your every need.</p>
 </div>
 </div>
@@ -344,7 +344,7 @@ const breadcrumbSchema = JSON.stringify({
 <div class="mt-7">
 <div class="flex items-center gap-3 mb-4">
 <div class="w-1 h-5 bg-gold rounded-full"></div>
-<h4 class="text-xs font-bold text-navy uppercase tracking-widest">The Experience</h4>
+<h3 class="text-xs font-bold text-navy uppercase tracking-widest">The Experience</h3>
 </div>
 <ol class="relative border-l-2 border-gold/30 ml-2 space-y-4 pl-5">
 <li class="relative"><span class="absolute -left-[29px] top-0 w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center">1</span><span class="text-slate-600 text-sm">Meet at the marina</span></li>
@@ -427,7 +427,7 @@ const breadcrumbSchema = JSON.stringify({
 </div>
       <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
       <div class="absolute bottom-5 left-6">
-        <h4 class="text-white text-lg lg:text-xl">Luxury Yacht 51'</h4>
+        <h3 class="text-white text-lg lg:text-xl">Luxury Yacht 51'</h3>
         <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Up to 20 Guests</span></div>
       </div>
       <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Most Spacious</div>
@@ -439,7 +439,7 @@ const breadcrumbSchema = JSON.stringify({
     <div class="p-4 space-y-4">
       <p class="text-slate-700 text-sm italic text-center pb-3 border-b border-border-light/50">Best for large groups &amp; maximum space</p>
       <div class="space-y-4">
-        <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$1,690</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$1,436</span><span class="text-slate-400 text-[11px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="flex flex-col items-end"><span class="text-slate-400 text-[11px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-400 text-[11px] font-medium">/pp</span></div></div></div>
+        <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$1,690</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$1,436</span><span class="text-slate-500 text-[11px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="flex flex-col items-end"><span class="text-slate-500 text-[11px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-500 text-[11px] font-medium">/pp</span></div></div></div>
       </div>
       <button type="button" onclick="openRezdyModal('165509')" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg">Check Availability</button>
     </div>
@@ -454,7 +454,7 @@ const breadcrumbSchema = JSON.stringify({
 </div>
       <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
       <div class="absolute bottom-5 left-6">
-        <h4 class="text-white text-lg lg:text-xl">Luxury Yacht 45'</h4>
+        <h3 class="text-white text-lg lg:text-xl">Luxury Yacht 45'</h3>
         <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Up to 12 Guests</span></div>
       </div>
       <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Most Popular</div>
@@ -466,7 +466,7 @@ const breadcrumbSchema = JSON.stringify({
     <div class="p-4 space-y-4">
       <p class="text-slate-700 text-sm italic text-center pb-3 border-b border-border-light/50">Newest vessel, sleek &amp; modern luxury</p>
       <div class="space-y-4">
-        <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$1,520</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$1,292</span><span class="text-slate-400 text-[11px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="flex flex-col items-end"><span class="text-slate-400 text-[11px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-400 text-[11px] font-medium">/pp</span></div></div></div>
+        <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$1,520</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$1,292</span><span class="text-slate-500 text-[11px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="flex flex-col items-end"><span class="text-slate-500 text-[11px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-500 text-[11px] font-medium">/pp</span></div></div></div>
       </div>
       <button type="button" onclick="openRezdyModal('528988')" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg">Check Availability</button>
     </div>
@@ -481,7 +481,7 @@ const breadcrumbSchema = JSON.stringify({
 </div>
       <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
       <div class="absolute bottom-5 left-6">
-        <h4 class="text-white text-lg lg:text-xl">Luxury Yacht 42'</h4>
+        <h3 class="text-white text-lg lg:text-xl">Luxury Yacht 42'</h3>
         <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Up to 18 Guests</span></div>
       </div>
       <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Best Value</div>
@@ -493,7 +493,7 @@ const breadcrumbSchema = JSON.stringify({
     <div class="p-4 space-y-4">
       <p class="text-slate-700 text-sm italic text-center pb-3 border-b border-border-light/50">Great value, perfect for families</p>
       <div class="space-y-4">
-        <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$1,350</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$1,148</span><span class="text-slate-400 text-[11px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="flex flex-col items-end"><span class="text-slate-400 text-[11px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-400 text-[11px] font-medium">/pp</span></div></div></div>
+        <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$1,350</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$1,148</span><span class="text-slate-500 text-[11px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="flex flex-col items-end"><span class="text-slate-500 text-[11px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-500 text-[11px] font-medium">/pp</span></div></div></div>
       </div>
       <button type="button" onclick="openRezdyModal('168008')" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg cursor-pointer">Check Availability</button>
     </div>
@@ -511,7 +511,7 @@ const breadcrumbSchema = JSON.stringify({
 </div>
       <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
       <div class="absolute bottom-5 left-6">
-        <h4 class="text-white text-lg lg:text-xl">Sailing Boat 42'</h4>
+        <h3 class="text-white text-lg lg:text-xl">Sailing Boat 42'</h3>
         <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Up to 14 Guests</span></div>
       </div>
       <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Best Value</div>
@@ -523,7 +523,7 @@ const breadcrumbSchema = JSON.stringify({
     <div class="p-4 space-y-4">
       <p class="text-slate-700 text-sm italic text-center pb-3 border-b border-border-light/50">Smooth sailing, snorkel at Pelican Rock</p>
       <div class="space-y-4">
-        <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$1,090</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$927</span><span class="text-slate-400 text-[11px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="flex flex-col items-end"><span class="text-slate-400 text-[11px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-400 text-[11px] font-medium">/pp</span></div></div></div>
+        <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$1,090</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$927</span><span class="text-slate-500 text-[11px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="flex flex-col items-end"><span class="text-slate-500 text-[11px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-500 text-[11px] font-medium">/pp</span></div></div></div>
       </div>
       <button type="button" onclick="openRezdyModal('642955','productsCalendar')" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg cursor-pointer">Check Availability</button>
     </div>
@@ -538,7 +538,7 @@ const breadcrumbSchema = JSON.stringify({
 </div>
       <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
       <div class="absolute bottom-5 left-6">
-        <h4 class="text-white text-lg lg:text-xl">Sailing Boat 38'</h4>
+        <h3 class="text-white text-lg lg:text-xl">Sailing Boat 38'</h3>
         <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Up to 9 Guests</span></div>
       </div>
 
@@ -549,7 +549,7 @@ const breadcrumbSchema = JSON.stringify({
     <div class="p-4 space-y-4">
       <p class="text-slate-700 text-sm italic text-center pb-3 border-b border-border-light/50">Intimate &amp; adventurous, classic sailing</p>
       <div class="space-y-4">
-        <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$825</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$701</span><span class="text-slate-400 text-[11px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="flex flex-col items-end"><span class="text-slate-400 text-[11px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-400 text-[11px] font-medium">/pp</span></div></div></div>
+        <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$825</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$701</span><span class="text-slate-500 text-[11px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="flex flex-col items-end"><span class="text-slate-500 text-[11px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-500 text-[11px] font-medium">/pp</span></div></div></div>
       </div>
       <button type="button" onclick="openRezdyModal('165682')" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg cursor-pointer">Check Availability</button>
     </div>
@@ -563,7 +563,7 @@ const breadcrumbSchema = JSON.stringify({
     <input class="hidden" id="comparison-toggle" type="checkbox"/>
     <label class="flex items-center justify-between cursor-pointer border border-border-light rounded-2xl p-4 bg-white" for="comparison-toggle">
       <span class="flex items-center gap-3"><div class="w-1 h-6 bg-gold rounded-full"></div><span class="text-base font-semibold text-navy">Quick Comparison</span></span>
-      <span class="material-symbols-outlined text-slate-400 faq-chevron transition-transform duration-300">expand_more</span>
+      <span class="material-symbols-outlined text-slate-500 faq-chevron transition-transform duration-300">expand_more</span>
     </label>
     <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out">
       <div class="overflow-x-auto mt-3 px-1 pb-2">
@@ -620,14 +620,14 @@ const breadcrumbSchema = JSON.stringify({
       <input class="hidden" id="faq-yacht-menu" type="checkbox"/>
       <label class="flex items-center justify-between p-4 cursor-pointer" for="faq-yacht-menu">
         <span class="flex items-center gap-2 text-base font-semibold text-navy"><span class="material-symbols-outlined text-gold" style="font-size:18px">restaurant</span>Yacht Menu &amp; Bar</span>
-        <span class="material-symbols-outlined text-slate-400 faq-chevron transition-transform duration-300">expand_more</span>
+        <span class="material-symbols-outlined text-slate-500 faq-chevron transition-transform duration-300">expand_more</span>
       </label>
       <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
         <div class="text-sm text-slate-700 leading-relaxed space-y-3">
           <div><p class="font-semibold text-navy mb-1">Bar</p><p>Premium brands open bar includes red and white wine, margaritas, beer, rum, vodka, tequila, whiskey, juices, sodas, and bottled water.</p></div>
           <div><p class="font-semibold text-navy mb-1">Food</p><p>Fresh tortilla chips with Mexican salsa and homemade guacamole, fresh baguette sandwiches, freshly made quesadillas, a selection of seasonal fruit, and a sweet bite to finish.</p></div>
           <div class="border-t border-border-light pt-3"><p class="font-semibold text-navy mb-1">Options:</p><p><span class="font-semibold text-navy">Mexican Menu — $14 USD per person:</span> Tortilla chips with salsa and homemade guacamole, beef and chicken corn tortilla burritos, rice and beans, freshly made quesadillas, and dessert.</p></div>
-          <p class="text-slate-400 italic">Contact our office team for Kosher, Vegan or Vegetarian options.</p>
+          <p class="text-slate-500 italic">Contact our office team for Kosher, Vegan or Vegetarian options.</p>
         </div>
       </div>
     </div>
@@ -635,14 +635,14 @@ const breadcrumbSchema = JSON.stringify({
       <input class="hidden" id="faq-sail-menu" type="checkbox"/>
       <label class="flex items-center justify-between p-4 cursor-pointer" for="faq-sail-menu">
         <span class="flex items-center gap-2 text-base font-semibold text-navy"><span class="material-symbols-outlined text-gold" style="font-size:18px">restaurant</span>Sailing Menu &amp; Bar</span>
-        <span class="material-symbols-outlined text-slate-400 faq-chevron transition-transform duration-300">expand_more</span>
+        <span class="material-symbols-outlined text-slate-500 faq-chevron transition-transform duration-300">expand_more</span>
       </label>
       <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
         <div class="text-sm text-slate-700 leading-relaxed space-y-3">
           <div><p class="font-semibold text-navy mb-1">Bar:</p><p>Unlimited bar includes: red &amp; white wine, margaritas, beers, rum, vodka, tequila, whiskey, juices, sodas, bottled water.</p></div>
           <div><p class="font-semibold text-navy mb-1">Food:</p><p>Tortilla chips, Mexican salsa, homemade guacamole, fresh baguette sandwiches, selection of fresh cut fruit platter, sweet bite.<br/>Vegetarian options upon request.</p></div>
-          <div class="border-t border-border-light pt-3"><p class="text-center font-semibold text-slate-400 mb-2">— OR —</p><p><span class="font-semibold text-navy">Mexican option ($14 USD per person):</span> Tortilla chips, salsa &amp; homemade guacamole, beef &amp; chicken corn tortilla burritos, rice and beans, quesadillas and dessert.</p></div>
-          <p class="text-slate-400 italic">Contact our office team for Kosher, Vegan or Vegetarian options.</p>
+          <div class="border-t border-border-light pt-3"><p class="text-center font-semibold text-slate-500 mb-2">— OR —</p><p><span class="font-semibold text-navy">Mexican option ($14 USD per person):</span> Tortilla chips, salsa &amp; homemade guacamole, beef &amp; chicken corn tortilla burritos, rice and beans, quesadillas and dessert.</p></div>
+          <p class="text-slate-500 italic">Contact our office team for Kosher, Vegan or Vegetarian options.</p>
         </div>
       </div>
     </div>
@@ -650,7 +650,7 @@ const breadcrumbSchema = JSON.stringify({
       <input class="hidden" id="faq-1" type="checkbox"/>
       <label class="flex items-center justify-between p-4 cursor-pointer" for="faq-1">
         <span class="text-base font-semibold text-navy">What should we bring?</span>
-        <span class="material-symbols-outlined text-slate-400 faq-chevron transition-transform duration-300">expand_more</span>
+        <span class="material-symbols-outlined text-slate-500 faq-chevron transition-transform duration-300">expand_more</span>
       </label>
       <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
         <p class="text-sm text-slate-700 leading-relaxed">We recommend bringing a towel, biodegradable sunscreen, sunglasses, and a hat. Don't forget your camera for the stunning views!</p>
@@ -660,7 +660,7 @@ const breadcrumbSchema = JSON.stringify({
       <input class="hidden" id="faq-2" type="checkbox"/>
       <label class="flex items-center justify-between p-4 cursor-pointer" for="faq-2">
         <span class="text-base font-semibold text-navy">Can we customize our route?</span>
-        <span class="material-symbols-outlined text-slate-400 faq-chevron transition-transform duration-300">expand_more</span>
+        <span class="material-symbols-outlined text-slate-500 faq-chevron transition-transform duration-300">expand_more</span>
       </label>
       <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
         <p class="text-sm text-slate-700 leading-relaxed">Absolutely! This is a private tour, so you can spend more time snorkeling, whale watching (in season), or just sailing at your own pace.</p>
@@ -670,7 +670,7 @@ const breadcrumbSchema = JSON.stringify({
       <input class="hidden" id="faq-3" type="checkbox"/>
       <label class="flex items-center justify-between p-4 cursor-pointer" for="faq-3">
         <span class="text-base font-semibold text-navy">Is the open bar included?</span>
-        <span class="material-symbols-outlined text-slate-400 faq-chevron transition-transform duration-300">expand_more</span>
+        <span class="material-symbols-outlined text-slate-500 faq-chevron transition-transform duration-300">expand_more</span>
       </label>
       <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
         <p class="text-sm text-slate-700 leading-relaxed">Yes, a premium open bar featuring spirits, beer, wine, and soft drinks is included for all guests throughout the duration of the charter.</p>
@@ -730,32 +730,32 @@ const breadcrumbSchema = JSON.stringify({
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
         <p class="text-base text-slate-600 leading-relaxed italic mb-3">"The snorkeling at Pelican Rock was absolutely incredible — so many colorful fish and a sea lion swam right past us! The crew was amazing and the open bar made it even better. Best charter in Cabo, no question."</p>
-        <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center text-white text-sm font-bold">JM</div><div><p class="text-sm font-bold text-navy">Jessica M.</p><p class="text-base text-slate-400">Austin, TX</p></div></div>
+        <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center text-white text-sm font-bold">JM</div><div><p class="text-sm font-bold text-navy">Jessica M.</p><p class="text-base text-slate-500">Austin, TX</p></div></div>
       </div>
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
         <p class="text-base text-slate-600 leading-relaxed italic mb-3">"We did the private snorkeling charter for our family of 6 and it was absolutely the highlight of our trip. The kids loved it, the snorkel gear was top quality, and having the boat to ourselves made it so special."</p>
-        <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-gold flex items-center justify-center text-white text-sm font-bold">DH</div><div><p class="text-sm font-bold text-navy">David H.</p><p class="text-base text-slate-400">Chicago, IL</p></div></div>
+        <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-gold flex items-center justify-center text-white text-sm font-bold">DH</div><div><p class="text-sm font-bold text-navy">David H.</p><p class="text-base text-slate-500">Chicago, IL</p></div></div>
       </div>
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
         <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Sailing to the Arch and then snorkeling at Pelican Rock was a bucket-list experience. The bilingual crew was knowledgeable and fun. The open bar and snacks kept everyone happy the whole time. 10/10!"</p>
-        <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy/70 flex items-center justify-center text-white text-sm font-bold">AP</div><div><p class="text-sm font-bold text-navy">Amanda P.</p><p class="text-base text-slate-400">Seattle, WA</p></div></div>
+        <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy/70 flex items-center justify-center text-white text-sm font-bold">AP</div><div><p class="text-sm font-bold text-navy">Amanda P.</p><p class="text-base text-slate-500">Seattle, WA</p></div></div>
       </div>
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
         <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Our guide spotted a sea turtle and led us right to it. The water was crystal clear and the marine life was incredible. The private charter meant we could take our time and really enjoy every moment."</p>
-        <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center text-white text-sm font-bold">MR</div><div><p class="text-sm font-bold text-navy">Mike R.</p><p class="text-base text-slate-400">Portland, OR</p></div></div>
+        <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center text-white text-sm font-bold">MR</div><div><p class="text-sm font-bold text-navy">Mike R.</p><p class="text-base text-slate-500">Portland, OR</p></div></div>
       </div>
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
         <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Brought my parents who are in their 70s and the crew was so patient and helpful getting them in and out of the water. They said it was the best experience of their trip. First-class service all around."</p>
-        <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-gold flex items-center justify-center text-white text-sm font-bold">LT</div><div><p class="text-sm font-bold text-navy">Lisa T.</p><p class="text-base text-slate-400">Phoenix, AZ</p></div></div>
+        <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-gold flex items-center justify-center text-white text-sm font-bold">LT</div><div><p class="text-sm font-bold text-navy">Lisa T.</p><p class="text-base text-slate-500">Phoenix, AZ</p></div></div>
       </div>
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
         <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Second year booking the private snorkeling with Cabo Sailing. The crew remembered us! Equipment was brand new, the route was perfect, and having the whole boat to ourselves is the only way to do it."</p>
-        <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy/70 flex items-center justify-center text-white text-sm font-bold">BN</div><div><p class="text-sm font-bold text-navy">Brian N.</p><p class="text-base text-slate-400">San Diego, CA</p></div></div>
+        <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy/70 flex items-center justify-center text-white text-sm font-bold">BN</div><div><p class="text-sm font-bold text-navy">Brian N.</p><p class="text-base text-slate-500">San Diego, CA</p></div></div>
       </div>
     </div>
     <button onclick="scrollMReviews(-1)" class="hidden lg:flex absolute left-[-20px] top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white border border-border-light shadow-md items-center justify-center hover:bg-light-grey transition-colors z-10"><span class="material-symbols-outlined text-navy text-xl">chevron_left</span></button>

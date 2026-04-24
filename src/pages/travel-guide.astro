@@ -87,10 +87,10 @@ const breadcrumbSchema = JSON.stringify({
       <div class="max-w-5xl mx-auto">
         <nav class="flex overflow-x-auto no-scrollbar">
           <a href="/travel-guide" class="shrink-0 px-4 lg:px-6 py-3.5 text-sm font-bold uppercase tracking-widest border-b-2 border-accent-gold text-navy transition-colors">Home</a>
-          <a href="/travel-guide-activities" class="shrink-0 px-4 lg:px-6 py-3.5 text-sm font-bold uppercase tracking-widest border-b-2 border-transparent text-navy/50 hover:text-navy hover:border-accent-gold/50 transition-colors">Activities</a>
-          <a href="/travel-guide-attractions" class="shrink-0 px-4 lg:px-6 py-3.5 text-sm font-bold uppercase tracking-widest border-b-2 border-transparent text-navy/50 hover:text-navy hover:border-accent-gold/50 transition-colors">Attractions</a>
-          <a href="/travel-guide-traveling" class="shrink-0 px-4 lg:px-6 py-3.5 text-sm font-bold uppercase tracking-widest border-b-2 border-transparent text-navy/50 hover:text-navy hover:border-accent-gold/50 transition-colors whitespace-nowrap">Traveling to Cabo</a>
-          <a href="/travel-guide-culture" class="shrink-0 px-4 lg:px-6 py-3.5 text-sm font-bold uppercase tracking-widest border-b-2 border-transparent text-navy/50 hover:text-navy hover:border-accent-gold/50 transition-colors whitespace-nowrap">Culture &amp; Food</a>
+          <a href="/travel-guide-activities" class="shrink-0 px-4 lg:px-6 py-3.5 text-sm font-bold uppercase tracking-widest border-b-2 border-transparent text-navy/70 hover:text-navy hover:border-accent-gold/50 transition-colors">Activities</a>
+          <a href="/travel-guide-attractions" class="shrink-0 px-4 lg:px-6 py-3.5 text-sm font-bold uppercase tracking-widest border-b-2 border-transparent text-navy/70 hover:text-navy hover:border-accent-gold/50 transition-colors">Attractions</a>
+          <a href="/travel-guide-traveling" class="shrink-0 px-4 lg:px-6 py-3.5 text-sm font-bold uppercase tracking-widest border-b-2 border-transparent text-navy/70 hover:text-navy hover:border-accent-gold/50 transition-colors whitespace-nowrap">Traveling to Cabo</a>
+          <a href="/travel-guide-culture" class="shrink-0 px-4 lg:px-6 py-3.5 text-sm font-bold uppercase tracking-widest border-b-2 border-transparent text-navy/70 hover:text-navy hover:border-accent-gold/50 transition-colors whitespace-nowrap">Culture &amp; Food</a>
         </nav>
       </div>
     </div>
@@ -108,7 +108,7 @@ const breadcrumbSchema = JSON.stringify({
         {grouped.map(({ category, articles, meta }) => (
           <a href={`#${meta.id}`} class="inline-flex items-center gap-1.5 bg-white border border-border-light/60 text-navy text-sm font-bold px-4 py-2 rounded-full hover:border-accent-gold hover:text-accent-gold transition-colors shadow-sm">
             <span class="material-symbols-outlined text-base">{meta.icon}</span>
-            {category} <span class="text-navy/40 font-normal">({articles.length})</span>
+            {category} <span class="text-navy/60 font-normal">({articles.length})</span>
           </a>
         ))}
       </div>
@@ -152,11 +152,11 @@ const breadcrumbSchema = JSON.stringify({
                   <div class="flex items-center gap-2 mb-3">
                     <span class="bg-accent-gold/10 text-accent-gold text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-widest border border-accent-gold/20">{category}</span>
                     {article.data.relatedActivity && (
-                      <a href={article.data.relatedActivity} class="bg-navy/5 text-navy/70 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-widest border border-navy/10 hover:bg-navy hover:text-white transition-colors" onclick="event.stopPropagation()">Book this experience</a>
+                      <span class="bg-navy/5 text-navy/70 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-widest border border-navy/10">Book this experience</span>
                     )}
                   </div>
                   <h3 class="text-lg font-serif text-navy font-semibold mb-2 leading-snug">{article.data.title}</h3>
-                  <p class="text-navy/50 text-sm leading-relaxed mb-4">{excerpt}</p>
+                  <p class="text-navy/70 text-sm leading-relaxed mb-4">{excerpt}</p>
                   <div class="inline-flex items-center gap-1 text-accent-gold text-sm font-bold uppercase tracking-widest">Read article <span class="material-symbols-outlined text-base">arrow_forward</span></div>
                 </div>
               </a>

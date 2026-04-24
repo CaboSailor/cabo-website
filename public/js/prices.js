@@ -1,5 +1,5 @@
 (function(){
-  fetch('data/prices.json?v='+Date.now())
+  fetch('/data/prices.json?v='+Date.now())
     .then(function(r){ return r.json(); })
     .then(function(data){
 

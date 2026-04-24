@@ -1,6 +1,7 @@
 ---
 import MobileMenu from '../components/MobileMenu.astro';
 import { getLangFromUrl, getLocalePath } from '../i18n/utils';
+import '../styles/global.css';
 
 interface Props {
   title?: string;
@@ -23,6 +24,8 @@ const {
 const lang = getLangFromUrl(Astro.url);
 const siteUrl = 'https://cabosailing.com';
 const ogImageUrl = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}`;
+const canonicalPath = Astro.url.pathname.endsWith('/') ? Astro.url.pathname : `${Astro.url.pathname}/`;
+const canonicalUrl = `${siteUrl}${canonicalPath}`;
 ---
 
 <!DOCTYPE html>
@@ -43,6 +46,7 @@ const ogImageUrl = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}`
   <meta name="twitter:description" content={description} />
   <meta name="twitter:image" content={ogImageUrl} />
   <title>{title}</title>
+  <link rel="canonical" href={canonicalUrl} />
   {hreflangs && (
     <>
       <link rel="alternate" hreflang="en" href={`${siteUrl}${hreflangs.en}`} />
@@ -54,50 +58,21 @@ const ogImageUrl = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}`
   <link rel="icon" href="/favicon.ico" />
   <meta name="generator" content={Astro.generator} />
 
-  <!-- Tailwind CSS (CDN) -->
-  <script is:inline src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <!-- Google Fonts — non-blocking load -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Great+Vibes&family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;500;600;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Great+Vibes&family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;500;600;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Great+Vibes&family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;500;600;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" /></noscript>
 
-  <!-- Google Fonts — all families used across the site -->
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;700;800&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
-
-  <!-- Font Awesome -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
-
-  <!-- Tailwind Config -->
-  <script is:inline>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            "navy": "#0a1d37",
-            "navy-light": "#1a3a63",
-            "accent-gold": "#b38e5d",
-            "accent-gold-light": "#d4af37",
-            "warm-yellow": "#b48a04",
-            "gold": "#C5A059",
-            "light-grey": "#F8F9FA",
-            "bg-light": "#ffffff",
-            "surface-light": "#f8f9fa",
-            "border-light": "#e5e7eb"
-          },
-          fontFamily: {
-            "display": ["Plus Jakarta Sans", "sans-serif"],
-            "serif": ["Playfair Display", "serif"],
-            "script": ["Great Vibes", "cursive"],
-            "heading": ["Cinzel", "serif"],
-            "body": ["Montserrat", "sans-serif"]
-          }
-        },
-      },
-    }
-  </script>
+  <!-- Font Awesome — non-blocking load -->
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" /></noscript>
 
   <!-- Global Styles -->
-  <style is:inline type="text/tailwindcss">
+  <style is:inline>
     .no-scrollbar::-webkit-scrollbar { display: none; }
     .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
     .material-symbols-outlined {

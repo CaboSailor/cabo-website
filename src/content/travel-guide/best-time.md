@@ -29,7 +29,7 @@ Festivals like San Jos&eacute; del Cabo's celebrations in March and Semana Santa
 If whale watching is on your list, this is the time to visit. Booking a [sailing or yacht-based experience](/whale-watching) offers a quieter, more personal encounter compared to larger boats.
 
 <div class="my-8 rounded-2xl overflow-hidden shadow-lg">
-  <img alt="Whale watching from a sailboat in Cabo San Lucas" class="w-full h-[280px] lg:h-[360px] object-cover" src="/_astro/cabo-whale-watching-humpback.jpg" />
+  <img alt="Whale watching from a sailboat in Cabo San Lucas" class="w-full h-[280px] lg:h-[360px] object-cover" src="/images/whales/cabo-whale-watching-humpback.jpg" />
 </div>
 
 ---
@@ -65,7 +65,7 @@ This is also prime fishing season, with species like marlin, tuna, and sailfish 
 Hotel rates begin to rise again, so booking in advance is recommended.
 
 <div class="my-8 rounded-2xl overflow-hidden shadow-lg">
-  <img alt="Chileno Bay along the Tourist Corridor in Los Cabos" class="w-full h-[280px] lg:h-[360px] object-cover" src="/_astro/chileno-bay-cabo-snorkeling.jpg" />
+  <img alt="Chileno Bay along the Tourist Corridor in Los Cabos" class="w-full h-[280px] lg:h-[360px] object-cover" src="/images/blog/chileno-bay-cabo-snorkeling.jpg" />
 </div>
 
 <!-- Temperature & Precipitation Chart -->
@@ -106,7 +106,7 @@ Cabo is known for its excellent [snorkeling and diving locations](/travel-guide/
 Many of the best spots are accessible by boat, making guided excursions a great option.
 
 <div class="my-8 rounded-2xl overflow-hidden shadow-lg">
-  <img alt="Snorkeling in crystal clear waters of Cabo San Lucas" class="w-full h-[280px] lg:h-[360px] object-cover" src="/_astro/cabo-yacht-snorkeling-tour.jpg" />
+  <img alt="Snorkeling in crystal clear waters of Cabo San Lucas" class="w-full h-[280px] lg:h-[360px] object-cover" src="/images/blog/cabo-yacht-snorkeling-tour.jpg" />
 </div>
 
 ---

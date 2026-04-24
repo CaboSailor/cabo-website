@@ -73,7 +73,6 @@ const breadcrumbSchema = JSON.stringify({
 ---
 
 <BaseLayout title={`${title} | Cabo Sailing`} description={description} ogImage={heroImage} ogImageAlt={heroAlt}>
-  <link slot="head" rel="canonical" href={canonicalUrl} />
   <script slot="head" type="application/ld+json" set:html={articleSchema} />
   <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
   <Header variant="subpage" activePage="travel-guide" />
@@ -84,11 +83,11 @@ const breadcrumbSchema = JSON.stringify({
     <div class="sticky top-[60px] z-40 bg-white border-b border-border-light/50 shadow-sm">
       <div class="max-w-5xl mx-auto">
         <nav class="flex overflow-x-auto no-scrollbar">
-          <a href="/travel-guide" class={`shrink-0 px-4 lg:px-6 py-3.5 text-sm font-bold uppercase tracking-widest border-b-2 transition-colors ${activeSubmenu === 'home' ? 'border-accent-gold text-navy' : 'border-transparent text-navy/50 hover:text-navy hover:border-accent-gold/50'}`}>Home</a>
-          <a href="/travel-guide-activities" class={`shrink-0 px-4 lg:px-6 py-3.5 text-sm font-bold uppercase tracking-widest border-b-2 transition-colors ${activeSubmenu === 'activities' ? 'border-accent-gold text-navy' : 'border-transparent text-navy/50 hover:text-navy hover:border-accent-gold/50'}`}>Activities</a>
-          <a href="/travel-guide-attractions" class={`shrink-0 px-4 lg:px-6 py-3.5 text-sm font-bold uppercase tracking-widest border-b-2 transition-colors ${activeSubmenu === 'attractions' ? 'border-accent-gold text-navy' : 'border-transparent text-navy/50 hover:text-navy hover:border-accent-gold/50'}`}>Attractions</a>
-          <a href="/travel-guide-traveling" class={`shrink-0 px-4 lg:px-6 py-3.5 text-sm font-bold uppercase tracking-widest border-b-2 transition-colors whitespace-nowrap ${activeSubmenu === 'traveling' ? 'border-accent-gold text-navy' : 'border-transparent text-navy/50 hover:text-navy hover:border-accent-gold/50'}`}>Traveling to Cabo</a>
-          <a href="/travel-guide-culture" class={`shrink-0 px-4 lg:px-6 py-3.5 text-sm font-bold uppercase tracking-widest border-b-2 transition-colors whitespace-nowrap ${activeSubmenu === 'culture' ? 'border-accent-gold text-navy' : 'border-transparent text-navy/50 hover:text-navy hover:border-accent-gold/50'}`}>Culture &amp; Food</a>
+          <a href="/travel-guide" class={`shrink-0 px-4 lg:px-6 py-3.5 text-sm font-bold uppercase tracking-widest border-b-2 transition-colors ${activeSubmenu === 'home' ? 'border-accent-gold text-navy' : 'border-transparent text-navy/70 hover:text-navy hover:border-accent-gold/50'}`}>Home</a>
+          <a href="/travel-guide-activities" class={`shrink-0 px-4 lg:px-6 py-3.5 text-sm font-bold uppercase tracking-widest border-b-2 transition-colors ${activeSubmenu === 'activities' ? 'border-accent-gold text-navy' : 'border-transparent text-navy/70 hover:text-navy hover:border-accent-gold/50'}`}>Activities</a>
+          <a href="/travel-guide-attractions" class={`shrink-0 px-4 lg:px-6 py-3.5 text-sm font-bold uppercase tracking-widest border-b-2 transition-colors ${activeSubmenu === 'attractions' ? 'border-accent-gold text-navy' : 'border-transparent text-navy/70 hover:text-navy hover:border-accent-gold/50'}`}>Attractions</a>
+          <a href="/travel-guide-traveling" class={`shrink-0 px-4 lg:px-6 py-3.5 text-sm font-bold uppercase tracking-widest border-b-2 transition-colors whitespace-nowrap ${activeSubmenu === 'traveling' ? 'border-accent-gold text-navy' : 'border-transparent text-navy/70 hover:text-navy hover:border-accent-gold/50'}`}>Traveling to Cabo</a>
+          <a href="/travel-guide-culture" class={`shrink-0 px-4 lg:px-6 py-3.5 text-sm font-bold uppercase tracking-widest border-b-2 transition-colors whitespace-nowrap ${activeSubmenu === 'culture' ? 'border-accent-gold text-navy' : 'border-transparent text-navy/70 hover:text-navy hover:border-accent-gold/50'}`}>Culture &amp; Food</a>
         </nav>
       </div>
     </div>
@@ -122,7 +121,7 @@ const breadcrumbSchema = JSON.stringify({
         <article class="article-body lg:flex-1 lg:order-2 max-w-3xl">
 
           {/* Breadcrumbs */}
-          <nav class="flex items-center gap-1.5 text-xs text-navy/40 mb-6" aria-label="Breadcrumb">
+          <nav class="flex items-center gap-1.5 text-xs text-navy/60 mb-6" aria-label="Breadcrumb">
             <a href="/" class="hover:text-navy transition-colors">Home</a>
             <span class="material-symbols-outlined text-[14px]">chevron_right</span>
             <a href="/travel-guide" class="hover:text-navy transition-colors">Travel Guide</a>
@@ -142,13 +141,13 @@ const breadcrumbSchema = JSON.stringify({
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
                 {category && (
                   <div>
-                    <span class="block text-navy/40 text-xs uppercase tracking-wider mb-1">Category</span>
+                    <span class="block text-navy/60 text-xs uppercase tracking-wider mb-1">Category</span>
                     <span class="text-navy font-semibold">{category}</span>
                   </div>
                 )}
                 {bestTime && (
                   <div>
-                    <span class="block text-navy/40 text-xs uppercase tracking-wider mb-1">Best Time</span>
+                    <span class="block text-navy/60 text-xs uppercase tracking-wider mb-1">Best Time</span>
                     <span class="text-navy font-semibold">{bestTime}</span>
                   </div>
                 )}
@@ -181,7 +180,7 @@ const breadcrumbSchema = JSON.stringify({
                     <img alt={related.data.heroAlt} class="w-20 h-20 rounded-xl object-cover shrink-0" src={related.data.heroImage} />
                     <div class="min-w-0">
                       <h4 class="text-sm font-bold text-navy mb-1 group-hover:text-accent-gold transition-colors line-clamp-2">{related.data.title}</h4>
-                      <p class="text-navy/50 text-xs leading-relaxed line-clamp-2">{related.data.description}</p>
+                      <p class="text-navy/70 text-xs leading-relaxed line-clamp-2">{related.data.description}</p>
                     </div>
                   </a>
                 ))}
@@ -202,7 +201,7 @@ const breadcrumbSchema = JSON.stringify({
                   <img alt="Airport Shuttle Service" class="w-20 h-20 rounded-xl object-cover shrink-0" src="https://www.cabosailing.com/wp-content/uploads/2019/08/los-cabos-international-airport-featured-image.jpg.webp"/>
                   <div>
                     <h4 class="text-sm font-bold text-navy mb-1">Shuttle Service</h4>
-                    <p class="text-navy/50 text-xs leading-relaxed">Hassle-free airport transfers to your hotel. Private &amp; comfortable rides.</p>
+                    <p class="text-navy/70 text-xs leading-relaxed">Hassle-free airport transfers to your hotel. Private &amp; comfortable rides.</p>
                     <span class="text-accent-gold text-[10px] font-bold uppercase tracking-widest mt-1 inline-block">Book a transfer</span>
                   </div>
                 </a>
@@ -210,7 +209,7 @@ const breadcrumbSchema = JSON.stringify({
                   <Image alt="Private Snorkeling" class="w-20 h-20 rounded-xl object-cover shrink-0" src={yacht45Img} />
                   <div>
                     <h4 class="text-sm font-bold text-navy mb-1">Private Snorkeling</h4>
-                    <p class="text-navy/50 text-xs leading-relaxed">Your own boat to Pelican Rock &amp; the Arch. Open bar &amp; snorkel gear included.</p>
+                    <p class="text-navy/70 text-xs leading-relaxed">Your own boat to Pelican Rock &amp; the Arch. Open bar &amp; snorkel gear included.</p>
                     <span class="text-accent-gold text-[10px] font-bold uppercase tracking-widest mt-1 inline-block">From $701</span>
                   </div>
                 </a>
@@ -218,7 +217,7 @@ const breadcrumbSchema = JSON.stringify({
                   <Image alt="Whale Watching" class="w-20 h-20 rounded-xl object-cover shrink-0" src={whalesImg} />
                   <div>
                     <h4 class="text-sm font-bold text-navy mb-1">Whale Watching</h4>
-                    <p class="text-navy/50 text-xs leading-relaxed">Witness humpback whales up close from a private sailboat. Dec&ndash;Apr season.</p>
+                    <p class="text-navy/70 text-xs leading-relaxed">Witness humpback whales up close from a private sailboat. Dec&ndash;Apr season.</p>
                     <span class="text-accent-gold text-[10px] font-bold uppercase tracking-widest mt-1 inline-block">From $701</span>
                   </div>
                 </a>
@@ -231,7 +230,7 @@ const breadcrumbSchema = JSON.stringify({
                   <Image alt="Private Snorkeling" class="w-20 h-20 rounded-xl object-cover shrink-0" src={yacht45Img} />
                   <div>
                     <h4 class="text-sm font-bold text-navy mb-1">Private Snorkeling</h4>
-                    <p class="text-navy/50 text-xs leading-relaxed">Your own boat to Pelican Rock &amp; the Arch. Open bar &amp; snorkel gear included.</p>
+                    <p class="text-navy/70 text-xs leading-relaxed">Your own boat to Pelican Rock &amp; the Arch. Open bar &amp; snorkel gear included.</p>
                     <span class="text-accent-gold text-[10px] font-bold uppercase tracking-widest mt-1 inline-block">From $701</span>
                   </div>
                 </a>
@@ -239,7 +238,7 @@ const breadcrumbSchema = JSON.stringify({
                   <Image alt="Shared Snorkeling" class="w-20 h-20 rounded-xl object-cover shrink-0" src={sailing42Img} />
                   <div>
                     <h4 class="text-sm font-bold text-navy mb-1">Shared Snorkeling</h4>
-                    <p class="text-navy/50 text-xs leading-relaxed">Join a group sailing cruise with snorkeling, open bar &amp; lunch.</p>
+                    <p class="text-navy/70 text-xs leading-relaxed">Join a group sailing cruise with snorkeling, open bar &amp; lunch.</p>
                     <span class="text-accent-gold text-[10px] font-bold uppercase tracking-widest mt-1 inline-block">From $102/pp</span>
                   </div>
                 </a>
@@ -247,7 +246,7 @@ const breadcrumbSchema = JSON.stringify({
                   <img alt="Scuba Diving" class="w-20 h-20 rounded-xl object-cover shrink-0" src="https://www.cabosailing.com/wp-content/uploads/2018/07/cabo-scuba-diving.jpg.webp"/>
                   <div>
                     <h4 class="text-sm font-bold text-navy mb-1">Scuba Diving</h4>
-                    <p class="text-navy/50 text-xs leading-relaxed">Explore Cabo's underwater world with certified dive instructors.</p>
+                    <p class="text-navy/70 text-xs leading-relaxed">Explore Cabo's underwater world with certified dive instructors.</p>
                     <span class="text-accent-gold text-[10px] font-bold uppercase tracking-widest mt-1 inline-block">View options</span>
                   </div>
                 </a>

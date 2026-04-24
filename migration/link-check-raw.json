@@ -1,0 +1,4432 @@
+{
+  "links": [
+    {
+      "url": "http://localhost:4321/",
+      "status": 200,
+      "state": "OK",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/favicon.svg",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/favicon.ico",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-sailing-logo.HRuC0z1w_1ywhNx.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/FloatingCTA.MKtSTHU6.css",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/tours",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/es",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/private-snorkeling",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/private-sunset",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/shared-snorkeling",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/shared-sunset",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/whale-watching",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/scuba-diving",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/bachelorette",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/fleet",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/shuttle-service",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-sailboat-guests-snorkeling-01.CF1t0gV5_1Fc3aB.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-sailing-38-el-arco-arch.Bg65l-Te_Z1N89z2.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-yacht-charter-guests-01-copy.Dy4d8ymq_1GxLTm.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-bachelorette-party.YiNBui_F_x4mFX.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/es/tours/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/tours"
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-sailboat-guests-snorkeling-02.Dya336NZ_ZtHdfl.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/tours",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-private-snorkeling-ocean-view.0azhCbt9_z52DN.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/tours",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-yacht-charter-guests-01.C-9yKJkz_1KjpYJ.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/tours",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-whale-watching-breaching.W4IeRCIX_mhnR8.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/tours",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/tours/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/tours",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-sunset-sailing-cruise.CO2j_MFn_Z1zI0oI.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/tours",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-bachelorette-party-el-arco.Dyz9Qw4E_2e5wT7.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/tours",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-scuba-diving-underwater.DBLFZ6FT_NlgCr.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/tours",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-sailing-adventure-guests.BoEQDKpE_Z12aFee.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/private-snorkeling",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-sailboat-guests-snorkeling-01.CF1t0gV5_1fbS9U.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/private-snorkeling",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-sailing-guests-portrait.BzuV1RCe_ZdU6MO.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/private-snorkeling",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/es/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/es",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/es/private-snorkeling",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/es",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-private-yacht-42-exterior-02.x3T3qUqr_1W18bR.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/private-snorkeling",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/es/whale-watching",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/es",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/es/private-sunset",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/es",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/es/private-snorkeling/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/private-snorkeling",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/es/bachelorette",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/es",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/es/shared-sunset",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/es",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/es/shared-snorkeling",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/es",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/es/shuttle-service/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/shuttle-service"
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-airport-shuttle-van.1qT0tuuD_1sYC9R.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/shuttle-service",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-yacht-charter-guests-04.DVgzXGiq_2u4fy8.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/shuttle-service",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-airport-shuttle-van.1qT0tuuD_ZcHDfB.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/shuttle-service",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-airport-shuttle-van.1qT0tuuD_6pnMP.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/shuttle-service",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide-activities",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide-attractions",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide-traveling",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide-culture",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/best-sunset-cruises-in-cabo/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/6-types-of-whales-you-can-spot-in-cabo/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/avoiding-seasickness/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/snorkeling-diving/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/shopping-in-cabo/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-bachelorette-boat-party-01.BnIl5KM-_Z1G0Yce.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/bachelorette",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-yacht-charter-guests-03.QEDogQrs_1QXOVx.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/bachelorette",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-bachelorette-boat-day.BH23BVwi_1UmxsP.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/bachelorette",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/es/bachelorette/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/bachelorette",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-bachelorette-celebration.D1jA7jq6_Z2oDXRs.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/bachelorette",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-bachelorette-boat-party-02.1yqfntGq_2fuPhz.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/bachelorette",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/cabo-sailing-logo.png",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/bachelorette"
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-sailboat-party-fun.Drn5RYqB_ZvWY4S.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/bachelorette",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/bachelorette/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/bachelorette",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide-activities",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/travel-guide/"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/es/travel-guide/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/snorkeling-diving",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide-activities",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide-activities/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide-activities"
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/6-types-of-whales-you-can-spot-in-cabo",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide-activities",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/snorkeling-at-lovers-beach-cabos-premier-underwater-adventure",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide-activities",
+      "failureDetails": []
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/shopping-in-cabo/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/shopping-in-cabo/"
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/los-cabos-open-of-surf",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide-activities",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/can-you-swim-in-cabo-san-lucas",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide-activities",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/is-it-safe-for-kids-to-snorkel-in-cabo",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide-activities",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/es/contact",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/bachelorette"
+    },
+    {
+      "url": "http://localhost:4321/es/shuttle-service",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/bachelorette"
+    },
+    {
+      "url": "http://localhost:4321/es/scuba-diving",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/es/bachelorette",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/snorkeling-at-lovers-beach-cabos-premier-underwater-adventure/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/snorkeling-at-lovers-beach-cabos-premier-underwater-adventure"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/los-cabos-open-of-surf/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/los-cabos-open-of-surf"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/is-it-safe-for-kids-to-snorkel-in-cabo/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/is-it-safe-for-kids-to-snorkel-in-cabo"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/can-you-swim-in-cabo-san-lucas/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/can-you-swim-in-cabo-san-lucas"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Great+Vibes&family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;500;600;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-private-snorkeling-ocean-view.0azhCbt9_Z2cTk2v.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-private-sunset-cruise-guests.BYG9PGyy_Z19dMb8.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-whale-watching-breaching.W4IeRCIX_Vt6Tc.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-bachelorette-party-el-arco.Dyz9Qw4E_Z2u7mIi.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-sailboat-guests-snorkeling-02.Dya336NZ_Z2u2AQX.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/es/tours/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/tours/"
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-shared-sunset-sailing.DqSrLbD8_ZKj2Lh.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/snorkel1.COHXiuwz_Z2mOuyx.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-luxury-yacht-51-charter-v2.CL-rsPc7_Z23kv1A.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/paddle-board-clean.DBzhEBfW_12rTp0.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-private-yacht-42-bow.DejtwQnd_RiEeJ.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-private-yacht-42-aerial.DMSY2FfY_Z2ibBvL.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-yacht-guests-relaxing.CiI43H9Q_ZNxOMi.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-sailing-38-el-arco-arch.Bg65l-Te_Z1wWf21.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-private-yacht-42-aerial-wide.DO1QR1SJ_1X4jsK.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-sailing-guests-waving.DWN2ZoPz_ibnPf.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-sailing-42-interior.DldzYvbg_14pd1.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-sailing-42-guests-deck.BhAsriIw_2j9vQ9.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-private-snorkeling-ocean-view.0azhCbt9_Z2bOYwW.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-sailing-38-el-arco.BJg6edPe_Z1J5eYl.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-private-yacht-45-charter.DqLU393__1U0HlV.png",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-sailing-38-interior.B12OzVIX_1Ta3Cv.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-sailing-38-party-deck.BcXVubZt_Z1YAn5W.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-sailing-42-exterior-03.CP2jNpyi_1teX7.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-sailing-42-sailing-view.DIdIHqcZ_1a0Cn8.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-sailing-42-aerial.iJAHWqKg_Z1AIQhW.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-sailing-42-exterior-01.DUt209mL_ZarYlS.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-sailing-logo.HRuC0z1w_1DIq4f.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/contact",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/es/contact/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/contact"
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-sailing-42-ocean.Cv50Cerb_1pD8Ot.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/contact",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/contact/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/contact",
+      "failureDetails": []
+    },
+    {
+      "url": "https://www.facebook.com/CaboSailing/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://www.instagram.com/cabosailing/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/js/prices.js",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/js/boat-swipe.js",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-sailing-snorkeling-tour.BAtvIZl6_Z1z0AxV.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/private-snorkeling",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-luxury-yacht-51-exterior-01.Dlkk5Gsi_51Svl.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/private-snorkeling",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-luxury-yacht-51-ocean-view.BBzryYJY_F9Cla.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/private-snorkeling",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-luxury-yacht-51-exterior-03.BFUg81O8_Z7zQx4.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/private-snorkeling",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-private-yacht-45-exterior-01.BVZnjBBh_ZUhhSt.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/private-snorkeling",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-private-yacht-45-exterior-03.BdvAB6_w_23PccA.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/private-snorkeling",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-private-yacht-42-exterior-01.BQffghfF_Z2hn5Kk.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/private-snorkeling",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-private-yacht-45-bow.C6q0wzPG_1folKM.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/private-snorkeling",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-private-yacht-42-exterior-03.DUJCcKDe_ZzKlJo.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/private-snorkeling",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-sailing-42-exterior-01.DUt209mL_1d7W4g.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/private-snorkeling",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-sailing-42-sailing-view.DIdIHqcZ_Z1BvtGH.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/private-snorkeling",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-sailing-42-exterior-02.BKZ3URA4_Z1Cz5O.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/private-snorkeling",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-sailing-38-exterior-02.qA-IzTc2_29BMjO.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/private-snorkeling",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-sailing-38-exterior-03.P1GGpdPe_ppVgn.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/private-snorkeling",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-sailing-38-exterior-01.EjsqXA2q_zNtsF.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/private-snorkeling",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/private-snorkeling/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/private-snorkeling",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/chileno-bay-cabo-snorkeling.BK-wuAhC_zIVA4.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/private-snorkeling",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-snorkeling-adventure.i1_1nkCf_1wr2tx.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/shared-snorkeling",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-sailing-42-deck-view.B2cxCIXt_1CxKMR.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/shared-snorkeling",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/es/shared-snorkeling/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/shared-snorkeling",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/shared-snorkeling/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/shared-snorkeling",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-private-sunset-cruise-guests.BYG9PGyy_Zh1arv.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/private-sunset",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-charter-guests-smiling.CTjx5ljm_ZnRS2L.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/private-sunset",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-sailing-guests-cheers.D033DLYb_Z1914Cw.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/private-sunset",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-charter-guests-sunset.BnULoW8K_Z21BAdP.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/private-sunset",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/es/private-sunset/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/private-sunset",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/private-sunset/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/private-sunset",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-sunset-cruise-guests.yZelm7JH_1cvbHC.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/shared-sunset",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-private-yacht-45-exterior-03.BdvAB6_w_16xCxc.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/shuttle-service",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-yacht-charter-guests-04.DVgzXGiq_Z1TMPsj.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/shuttle-service",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-sailing-42-exterior-01.DUt209mL_Z2gE3De.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/shuttle-service",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-charter-guests-smiling.CTjx5ljm_1cwf3F.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/shuttle-service",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-airport-shuttle-van.1qT0tuuD_Z2roXOz.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/shuttle-service",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/shuttle-service/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/shuttle-service",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-whale-watching-ocean.CxOm_lkd_Z1oWpia.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/whale-watching",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/shared-sunset/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/shared-sunset",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-whale-watching-close-up.Ctac_0i0_Z2iSUFq.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/whale-watching",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-whale-watching-boat-tour.DNanNcED_Z2cBG8M.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/whale-watching",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-whale-watching-humpback.BThwXkGa_Z13FIx0.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/whale-watching",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/es/shared-sunset/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/shared-sunset",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/es/whale-watching/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/whale-watching",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-whale-watching-family.CBDw1bZ__12IqzR.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/whale-watching",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/whale-watching/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/whale-watching",
+      "failureDetails": []
+    },
+    {
+      "url": "https://static.tacdn.com/img2/travelers_choice/widgets/tchotel_2024_L.png",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://www.youtube.com/@cabosailing4394/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/can-you-swim-in-cabo-san-lucas/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/celebrate-your-birthday-in-cabo/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/boat-rental-license-cabo/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/snorkeling-at-lovers-beach-cabos-premier-underwater-adventure/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/los-cabos-open-of-surf/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/is-it-safe-for-kids-to-snorkel-in-cabo/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/private-sailing-charter-cost/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/snorkeling-chileno-bay/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/pelican-rock-snorkeling/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/morning-activities-in-cabo/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/whale-watching-tips/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/sea-lions-in-cabo/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/todos-santos-true-mexican-oasis-near-cabo/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/babymooning-in-cabo/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/activities-for-senior-travelers-in-cabo/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/best-time/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/cabo-on-a-budget/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/make-the-best-of-your-cabo-san-lucas-port-call/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/cabo-vs-hawaii/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/cabo-vs-punta-cana/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/do-you-need-a-passport-to-go-to-cabo-san-lucas/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/is-cabo-safe/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/is-cabo-worth-the-splurge-a-breakdown-of-value-vs-cost/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/top-nine-outfit-ideas-for-your-cabo-vacation/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/drive-from-la-to-cabo-san-lucas/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/la-paz-vs-cabo-which-destination-offers-more-for-your-vacation/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/Yacht%20icon.B9V5oBo__Z1iBLUn.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/scuba-diving",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-luxury-yacht-51-ocean-view.BBzryYJY_Z1dGLGl.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/scuba-diving",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/cabo-san-lucas-museums/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/convenient-ways-to-get-from-la-paz-to-cabo-for-every-type-of-traveler/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-private-yacht-45-exterior-01.BVZnjBBh_Za1KEJ.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/scuba-diving",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-scuba-diving-fish.B0x7pumV_Z1fl9EC.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/scuba-diving",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-scuba-diving-coral.COXYJiQB_1DVwRN.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/scuba-diving",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/traditional-food-cabo/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-luxury-yacht-51-exterior-01.Dlkk5Gsi_ZOQR31.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/scuba-diving",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/clubs-in-cabo/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-scuba-diving-coral.COXYJiQB_Z2n9yMs.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/scuba-diving",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-scuba-diving-reef.DHRUj5dD_EVO1M.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/scuba-diving",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-scuba-diving-adventure.BROn6YKv_Z1d0R1F.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/scuba-diving",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-scuba-diving-fish.B0x7pumV_Zcf7vW.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/scuba-diving",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-luxury-yacht-51-ocean-view.BBzryYJY_11csxr.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/scuba-diving",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-luxury-yacht-51-exterior-03.BFUg81O8_2q0eKO.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/scuba-diving",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/honeymoon-in-cabo/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-luxury-yacht-51-exterior-01.Dlkk5Gsi_Z2rz8YH.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/scuba-diving",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-private-yacht-45-bow.C6q0wzPG_1PbUTQ.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/scuba-diving",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-private-yacht-45-exterior-01.BVZnjBBh_Zf1pqz.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/scuba-diving",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-private-yacht-45-exterior-03.BdvAB6_w_1Mxspc.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/scuba-diving",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/es/scuba-diving/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/scuba-diving",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-private-yacht-42-exterior-02.x3T3qUqr_1FIoot.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/scuba-diving",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-private-yacht-42-exterior-01.BQffghfF_2wwjgd.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/scuba-diving",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-private-yacht-42-exterior-03.DUJCcKDe_ZQ35wM.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/scuba-diving",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-sailing-42-exterior-01.DUt209mL_ZALjYU.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/scuba-diving",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-sailing-42-sailing-view.DIdIHqcZ_ZRc6T.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/scuba-diving",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-scuba-diving-reef.DHRUj5dD_2uBkhw.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/scuba-diving",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-sailing-42-exterior-02.BKZ3URA4_Z1PwQa0.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/scuba-diving",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-scuba-diving-adventure.BROn6YKv_FwF1g.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/scuba-diving",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-scuba-diving-underwater.DBLFZ6FT_2glcYC.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/scuba-diving",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/scuba-diving/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/scuba-diving",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-sailing-38-exterior-01.EjsqXA2q_ZMLrWt.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/fleet",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-sailing-38-exterior-02.qA-IzTc2_1n4beR.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/fleet",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-sailing-38-exterior-03.P1GGpdPe_Zm7ENz.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/fleet",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-private-yacht-42-exterior-03.DUJCcKDe_y98Ry.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/fleet",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/Yacht%20icon.B9V5oBo__ZxYEAn.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/fleet",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-sailing-42-exterior-02.BKZ3URA4_Z1pdvvX.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/fleet",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-luxury-yacht-51-exterior-03.BFUg81O8_13HraU.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/fleet",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-luxury-yacht-51-exterior-01.Dlkk5Gsi_1gkcek.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/fleet",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-private-yacht-45-bow.C6q0wzPG_Z2c8UGM.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/fleet",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-private-yacht-42-exterior-01.BQffghfF_Z18sA8n.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/fleet",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-private-yacht-45-exterior-03.BdvAB6_w_Z1RrqYo.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/fleet",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-private-yacht-42-exterior-02.x3T3qUqr_Z1Ygv07.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/fleet",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-sunset-sailing-cruise.CO2j_MFn_Z2mgBtF.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/fleet",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-private-yacht-45-exterior-01.BVZnjBBh_1VaiBB.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/fleet",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-luxury-yacht-51-ocean-view.BBzryYJY_RuhA0.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/fleet",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/fleet/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/fleet",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/celebrate-your-birthday-in-cabo/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/celebrate-your-birthday-in-cabo/"
+    },
+    {
+      "url": "http://localhost:4321/images/la-paz/la-paz-bcs.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/es/fleet/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/fleet",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide-traveling",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/travel-guide/"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide-culture",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/travel-guide/"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide-attractions",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/travel-guide/"
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/todos-santos-true-mexican-oasis-near-cabo",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide-attractions",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/sea-lions-in-cabo",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide-attractions",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide-attractions/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide-attractions",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide-attractions/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide-attractions"
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/cabo-san-lucas-museums",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide-culture",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/traditional-food-cabo",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide-culture",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/whale-watching-tips",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide-attractions",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide-culture/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide-culture"
+    },
+    {
+      "url": "http://localhost:4321/travel-guide-culture/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide-culture",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/clubs-in-cabo",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide-culture",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/honeymoon-in-cabo",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide-culture",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/boat-rental-license-cabo/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/boat-rental-license-cabo/"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/snorkeling-chileno-bay/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/snorkeling-chileno-bay/"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/private-sailing-charter-cost/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/private-sailing-charter-cost/"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/pelican-rock-snorkeling/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/pelican-rock-snorkeling/"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/morning-activities-in-cabo/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/morning-activities-in-cabo/"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/whale-watching-tips/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/whale-watching-tips/"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/sea-lions-in-cabo/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/sea-lions-in-cabo/"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/todos-santos-true-mexican-oasis-near-cabo/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/todos-santos-true-mexican-oasis-near-cabo/"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/babymooning-in-cabo/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/babymooning-in-cabo/"
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/celebrate-your-birthday-in-cabo",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide-activities",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/morning-activities-in-cabo",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide-activities",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/best-sunset-cruises-in-cabo",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide-activities",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/avoiding-seasickness",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide-activities",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/snorkeling-chileno-bay",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide-activities",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/boat-rental-license-cabo",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide-activities",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/shopping-in-cabo",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide-activities",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/private-sailing-charter-cost",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide-activities",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/pelican-rock-snorkeling",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide-activities",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide-activities/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide-activities",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/best-time",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide-traveling",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/convenient-ways-to-get-from-la-paz-to-cabo-for-every-type-of-traveler",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide-traveling",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/make-the-best-of-your-cabo-san-lucas-port-call",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide-traveling",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/is-cabo-worth-the-splurge-a-breakdown-of-value-vs-cost",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide-traveling",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/do-you-need-a-passport-to-go-to-cabo-san-lucas",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide-traveling",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/babymooning-in-cabo",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide-traveling",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/is-cabo-safe",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide-traveling",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/top-nine-outfit-ideas-for-your-cabo-vacation",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide-traveling",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/drive-from-la-to-cabo-san-lucas",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide-traveling",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/la-paz-vs-cabo-which-destination-offers-more-for-your-vacation",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide-traveling",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide-traveling/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide-traveling"
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/cabo-vs-punta-cana",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide-traveling",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/cabo-on-a-budget",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide-traveling",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/activities-for-senior-travelers-in-cabo",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide-traveling",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/travel-guide-traveling/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide-traveling",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/activities-for-senior-travelers-in-cabo/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/activities-for-senior-travelers-in-cabo/"
+    },
+    {
+      "url": "http://localhost:4321/_astro/chileno-bay-cabo-snorkeling.BK-wuAhC_Z2lSSXR.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide-traveling",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/best-time/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/best-time/"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/cabo-on-a-budget/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/cabo-on-a-budget/"
+    },
+    {
+      "url": "http://localhost:4321/_astro/chileno-bay-cabo-snorkeling.jpg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/best-time/"
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-whale-watching-humpback.jpg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/best-time/"
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-yacht-snorkeling-tour.jpg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/best-time/"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/best-sunset-cruises-in-cabo/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/best-sunset-cruises-in-cabo/"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/6-types-of-whales-you-can-spot-in-cabo/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/6-types-of-whales-you-can-spot-in-cabo/"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/avoiding-seasickness/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/avoiding-seasickness/"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/snorkeling-diving/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/snorkeling-diving/"
+    },
+    {
+      "url": "http://localhost:4321/travel-guide/cabo-vs-hawaii",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide-traveling",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/make-the-best-of-your-cabo-san-lucas-port-call/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/make-the-best-of-your-cabo-san-lucas-port-call/"
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-private-yacht-45-exterior-01.BVZnjBBh_Z2vPIFc.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide/best-sunset-cruises-in-cabo/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-sailing-42-exterior-01.DUt209mL_HjFyk.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide/snorkeling-diving/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-whale-watching-humpback.BThwXkGa_1EKXKg.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide/best-sunset-cruises-in-cabo/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/cabo-vs-punta-cana/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/cabo-vs-punta-cana/"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/do-you-need-a-passport-to-go-to-cabo-san-lucas/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/do-you-need-a-passport-to-go-to-cabo-san-lucas/"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/is-cabo-safe/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/is-cabo-safe/"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/is-cabo-worth-the-splurge-a-breakdown-of-value-vs-cost/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/is-cabo-worth-the-splurge-a-breakdown-of-value-vs-cost/"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/top-nine-outfit-ideas-for-your-cabo-vacation/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/top-nine-outfit-ideas-for-your-cabo-vacation/"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/drive-from-la-to-cabo-san-lucas/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/drive-from-la-to-cabo-san-lucas/"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/la-paz-vs-cabo-which-destination-offers-more-for-your-vacation/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/la-paz-vs-cabo-which-destination-offers-more-for-your-vacation/"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/cabo-san-lucas-museums/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/cabo-san-lucas-museums/"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/convenient-ways-to-get-from-la-paz-to-cabo-for-every-type-of-traveler/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/convenient-ways-to-get-from-la-paz-to-cabo-for-every-type-of-traveler/"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/traditional-food-cabo/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/traditional-food-cabo/"
+    },
+    {
+      "url": "http://localhost:4321/images/la-paz/la-paz-life.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide/convenient-ways-to-get-from-la-paz-to-cabo-for-every-type-of-traveler/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/images/la-paz/la-paz-baja.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide/convenient-ways-to-get-from-la-paz-to-cabo-for-every-type-of-traveler/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/cabo-vs-hawaii/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/cabo-vs-hawaii/"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/clubs-in-cabo/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/clubs-in-cabo/"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/honeymoon-in-cabo/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/honeymoon-in-cabo/"
+    },
+    {
+      "url": "https://cabosailing.rezdy.com/pluginJs",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuCczjSPVJiaWdFmrUKZ7u6bp9_U27W9TIbr12gmKKxednfJZy1pE5PARmIDa0mm6w-NyXj1AnOpT-Bg4ImEYZ3HBUir8Q_kIKeHFXnn-L02J2QFaAUeIxlFkXZudLbrnEZ3iIk1YFtyw0obgjzBdBTNq8JOkjE-FY-EOnUg47Y4xpUB4JiLSWOTvJeEMhPMPF5AthCcizuxz4y0Z-VhlZ3u0L_GrGkfSWW5OEpb2IPb6ZOAUHpA2xF_YT3ghZIBUUPXYBbfuAlhjhw",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/private-sunset",
+      "failureDetails": []
+    },
+    {
+      "url": "https://www.cabosailing.com/wp-content/uploads/2018/01/mexican-clams.jpg",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "https://www.cabosailing.com/wp-content/uploads/2024/12/best-destinations-for-shopp.png",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "https://www.cabosailing.com/wp-content/uploads/2025/07/x-of-the-best-sunset-cruise.png",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "https://www.cabosailing.com/wp-content/uploads/2019/02/cabo-sailing-adventures.jpg",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "https://www.cabosailing.com/wp-content/uploads/2018/09/snorkeling-5.jpg.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "https://www.cabosailing.com/wp-content/uploads/2019/10/morning-activities-cabo.jpg",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "https://www.cabosailing.com/wp-content/uploads/2018/08/fun-activities-cabo.jpg.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "https://www.cabosailing.com/wp-content/uploads/2018/09/celebrate-in-cabo-san-lucas-1080x675.jpg",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "https://www.cabosailing.com/wp-content/uploads/2025/02/cabo-san-lucas-whale-watchi.png",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "https://www.cabosailing.com/wp-content/uploads/2017/06/42-f-2-1.jpg",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "https://www.cabosailing.com/wp-content/uploads/2025/10/how-much-does-a-private-sailing-charter-in-cabo-san-lucas-cost.jpg",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "https://www.cabosailing.com/wp-content/uploads/2025/09/cabo-vs-hawaii-which-vacation-spot.png",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuDsPNXa1dALuRh7RdwyoRf93TCW1fJtrL0kaOjRkJ5k1272Y4OJqjAX5NrV2iXzb2LCN_llfLfVJtxTluIdzkWhNSqNzUPx6wAprsrWurADI6oGQbeAC2IteDT4KNG_J-4XqrPA6IQ4p5cbton6Fa-Sd8g3vPEfxR3xMElXTmmINn23_-OP89a8rgBDXbNFjJVWxlln2hbvdyZw6ajy9TauowJqm0fgMILlpngP4MzbKmss4Qy_1Zi7RmYw4XItoHpivSHT5yhBTt0",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/private-snorkeling",
+      "failureDetails": []
+    },
+    {
+      "url": "https://www.cabosailing.com/wp-content/uploads/2024/09/Do-You-Need-A-License-To-Rent-A-Boat-In-Cabo.j2.jpg",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "https://www.cabosailing.com/wp-content/uploads/2018/09/snorkeling-1.jpg",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "https://www.cabosailing.com/wp-content/uploads/2025/09/cabo-vs-punta-cana-which-destination.png",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "https://www.cabosailing.com/wp-content/uploads/2025/03/most-famous-clubs-in-cabo-for-night.jpg",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "https://www.cabosailing.com/wp-content/uploads/2017/11/cabo-san-lucas-medano-beach-1024x675.jpg",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "https://www.cabosailing.com/wp-content/uploads/2025/03/helpful-travel-tips-for-couples.jpg",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "https://www.cabosailing.com/wp-content/uploads/2019/08/los-cabos-international-airport-featured-image.jpg.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide",
+      "failureDetails": []
+    },
+    {
+      "url": "https://www.cabosailing.com/wp-content/uploads/2018/02/baja-california-sur.png.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/es/travel-guide/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://www.cabosailing.com/wp-content/uploads/2019/08/santa-maria-bay-featured-image.jpg.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide-activities",
+      "failureDetails": []
+    },
+    {
+      "url": "https://www.cabosailing.com/wp-content/uploads/2018/10/cabofood-1080x675.jpg.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/es/travel-guide/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://www.cabosailing.com/wp-content/uploads/2017/11/chileno-beach.jpg.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide/can-you-swim-in-cabo-san-lucas",
+      "failureDetails": []
+    },
+    {
+      "url": "https://www.cabosailing.com/wp-content/uploads/2019/12/blue-flag-swimming-beaches-in-cabo.jpeg.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide/can-you-swim-in-cabo-san-lucas",
+      "failureDetails": []
+    },
+    {
+      "url": "https://www.cabosailing.com/wp-content/uploads/2018/07/cabo-scuba-diving.jpg.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide/snorkeling-diving/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/contact",
+      "failureDetails": []
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide/best-time/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.8!2d-109.9053!3d22.8825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86af4b0fe7ffff01%3A0x9c1c1f6b0e5c5c5c!2sCabo%20San%20Lucas%20Marina!5e0!3m2!1sen!2smx!4v1700000000000",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/contact",
+      "failureDetails": []
+    },
+    {
+      "url": "https://www.blueflag.global/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide/can-you-swim-in-cabo-san-lucas",
+      "failureDetails": []
+    },
+    {
+      "url": "https://cabosailing.rezdy.com/productsCalendar/561442?iframe=true",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/shared-snorkeling",
+      "failureDetails": []
+    },
+    {
+      "url": "https://cabosailing.com/bachelorette",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/bachelorette",
+      "failureDetails": []
+    },
+    {
+      "url": "https://cabosailing.com/es/bachelorette",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/bachelorette",
+      "failureDetails": []
+    },
+    {
+      "url": "https://cabosailing.com/bachelorette/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/bachelorette",
+      "failureDetails": []
+    },
+    {
+      "url": "https://cabosailing.com/es/bachelorette/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/es/bachelorette",
+      "failureDetails": []
+    },
+    {
+      "url": "https://cabosailing.com/es/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://cabosailing.com/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/cabo-sailing-logo.png",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/bachelorette"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide-activities",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/travel-guide"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide-attractions",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/travel-guide"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide-traveling",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/travel-guide"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide-culture",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/travel-guide"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/snorkeling-diving/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/snorkeling-diving"
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide/los-cabos-open-of-surf/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide/los-cabos-open-of-surf",
+      "failureDetails": []
+    },
+    {
+      "url": "https://cabosailing.com/shared-snorkeling/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/shared-snorkeling",
+      "failureDetails": []
+    },
+    {
+      "url": "https://cabosailing.com/shared-snorkeling",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/shared-snorkeling",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/6-types-of-whales-you-can-spot-in-cabo/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/6-types-of-whales-you-can-spot-in-cabo"
+    },
+    {
+      "url": "https://cabosailing.com/es/shared-snorkeling",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/shared-snorkeling",
+      "failureDetails": []
+    },
+    {
+      "url": "https://cabosailing.com/whale-watching/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/whale-watching",
+      "failureDetails": []
+    },
+    {
+      "url": "https://cabosailing.com/es/whale-watching",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/whale-watching",
+      "failureDetails": []
+    },
+    {
+      "url": "https://cabosailing.com/whale-watching",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/whale-watching",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/cabo-sailing-logo.png",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/bachelorette/"
+    },
+    {
+      "url": "http://localhost:4321/es/shuttle-service",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/bachelorette/"
+    },
+    {
+      "url": "http://localhost:4321/es/contact",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/bachelorette/"
+    },
+    {
+      "url": "https://cabosailing.com/es/whale-watching/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/es/whale-watching",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/cabo-sailing-logo.png",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/bachelorette/"
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide/can-you-swim-in-cabo-san-lucas/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide/can-you-swim-in-cabo-san-lucas",
+      "failureDetails": []
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide/6-types-of-whales-you-can-spot-in-cabo/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide/6-types-of-whales-you-can-spot-in-cabo/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://cabosailing.com/es/shared-snorkeling/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/es/shared-snorkeling",
+      "failureDetails": []
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide/is-it-safe-for-kids-to-snorkel-in-cabo/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide/is-it-safe-for-kids-to-snorkel-in-cabo",
+      "failureDetails": []
+    },
+    {
+      "url": "https://cabosailing.com/contact/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/contact",
+      "failureDetails": []
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide/celebrate-your-birthday-in-cabo/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide/celebrate-your-birthday-in-cabo/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide/sea-lions-in-cabo/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide/sea-lions-in-cabo/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide/babymooning-in-cabo/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide/babymooning-in-cabo/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide/snorkeling-at-lovers-beach-cabos-premier-underwater-adventure/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide/snorkeling-at-lovers-beach-cabos-premier-underwater-adventure",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:4321/es/contact/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/contact/"
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide/best-time/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide/best-time/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide/morning-activities-in-cabo/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide/morning-activities-in-cabo/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide/top-nine-outfit-ideas-for-your-cabo-vacation/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide/top-nine-outfit-ideas-for-your-cabo-vacation/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide/is-cabo-worth-the-splurge-a-breakdown-of-value-vs-cost/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide/is-cabo-worth-the-splurge-a-breakdown-of-value-vs-cost/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide/drive-from-la-to-cabo-san-lucas/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide/drive-from-la-to-cabo-san-lucas/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide/cabo-vs-hawaii/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide/cabo-vs-hawaii/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide/do-you-need-a-passport-to-go-to-cabo-san-lucas/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide/do-you-need-a-passport-to-go-to-cabo-san-lucas/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide/cabo-vs-punta-cana/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide/cabo-vs-punta-cana/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide/make-the-best-of-your-cabo-san-lucas-port-call/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide/make-the-best-of-your-cabo-san-lucas-port-call/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide/la-paz-vs-cabo-which-destination-offers-more-for-your-vacation/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide/la-paz-vs-cabo-which-destination-offers-more-for-your-vacation/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide/cabo-on-a-budget/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide/cabo-on-a-budget/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide/avoiding-seasickness/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide/avoiding-seasickness/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide/convenient-ways-to-get-from-la-paz-to-cabo-for-every-type-of-traveler/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide/convenient-ways-to-get-from-la-paz-to-cabo-for-every-type-of-traveler/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide/activities-for-senior-travelers-in-cabo/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide/activities-for-senior-travelers-in-cabo/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://cabosailing.com/tours/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/tours",
+      "failureDetails": []
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide/todos-santos-true-mexican-oasis-near-cabo/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide/todos-santos-true-mexican-oasis-near-cabo/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide/cabo-san-lucas-museums/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:4321/travel-guide/cabo-san-lucas-museums/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://cabosailing.com/og/home.jpg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/"
+    },
+    {
+      "url": "https://cabosailing.com/og/home.jpg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/tours"
+    },
+    {
+      "url": "https://cabosailing.com/og/home.jpg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es"
+    },
+    {
+      "url": "https://cabosailing.com/og/home.jpg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/tours/"
+    },
+    {
+      "url": "https://cabosailing.com/og/home.jpg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/shuttle-service"
+    },
+    {
+      "url": "https://cabosailing.com/og/home.jpg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/"
+    },
+    {
+      "url": "https://cabosailing.com/og/home.jpg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide-attractions"
+    },
+    {
+      "url": "https://cabosailing.com/og/home.jpg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide-culture"
+    },
+    {
+      "url": "https://cabosailing.com/og/home.jpg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide-activities"
+    },
+    {
+      "url": "https://cabosailing.com/og/home.jpg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide-traveling"
+    },
+    {
+      "url": "https://cabosailing.com/og/home.jpg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/contact"
+    },
+    {
+      "url": "https://cabosailing.com/og/home.jpg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/contact/"
+    },
+    {
+      "url": "https://cabosailing.com/og/home.jpg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/shuttle-service/"
+    },
+    {
+      "url": "http://localhost:4321/es/shuttle-service/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/shuttle-service/"
+    },
+    {
+      "url": "https://cabosailing.com/og/shared-snorkeling.jpg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/shared-snorkeling"
+    },
+    {
+      "url": "https://cabosailing.com/og/shared-snorkeling.jpg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/shared-snorkeling"
+    },
+    {
+      "url": "https://cabosailing.com/og/shared-snorkeling.jpg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/shared-snorkeling/"
+    },
+    {
+      "url": "https://cabosailing.com/og/shared-snorkeling.jpg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/shared-snorkeling/"
+    },
+    {
+      "url": "https://cabosailing.com/og/private-snorkeling.jpg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/private-snorkeling"
+    },
+    {
+      "url": "https://cabosailing.com/og/private-snorkeling.jpg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/private-snorkeling"
+    },
+    {
+      "url": "https://cabosailing.com/og/private-snorkeling.jpg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/private-snorkeling/"
+    },
+    {
+      "url": "https://cabosailing.com/og/private-snorkeling.jpg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/private-snorkeling/"
+    },
+    {
+      "url": "https://cabosailing.com/og/private-sunset.jpg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/private-sunset"
+    },
+    {
+      "url": "https://cabosailing.com/og/private-sunset.jpg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/private-sunset"
+    },
+    {
+      "url": "https://cabosailing.com/og/private-sunset.jpg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/private-sunset/"
+    },
+    {
+      "url": "https://cabosailing.com/og/private-sunset.jpg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/private-sunset/"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/can-you-swim-in-cabo-san-lucas/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/can-you-swim-in-cabo-san-lucas/"
+    },
+    {
+      "url": "https://cabosailing.com/og/travel-guide.jpg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide"
+    },
+    {
+      "url": "https://cabosailing.com/og/travel-guide.jpg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/travel-guide/"
+    },
+    {
+      "url": "https://cabosailing.com/og/travel-guide.jpg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/"
+    },
+    {
+      "url": "https://cabosailing.com/og/travel-guide.jpg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/travel-guide"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/snorkeling-at-lovers-beach-cabos-premier-underwater-adventure/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/snorkeling-at-lovers-beach-cabos-premier-underwater-adventure/"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/los-cabos-open-of-surf/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/los-cabos-open-of-surf/"
+    },
+    {
+      "url": "https://cabosailing.com/og/whale-watching-sailing.jpg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/whale-watching"
+    },
+    {
+      "url": "https://cabosailing.com/og/whale-watching-sailing.jpg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/whale-watching"
+    },
+    {
+      "url": "https://cabosailing.com/og/whale-watching-sailing.jpg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/whale-watching/"
+    },
+    {
+      "url": "https://cabosailing.com/og/whale-watching-sailing.jpg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/whale-watching/"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/is-it-safe-for-kids-to-snorkel-in-cabo/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/is-it-safe-for-kids-to-snorkel-in-cabo/"
+    },
+    {
+      "url": "https://cabosailing.com/og/shared-sunset.jpg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/shared-sunset"
+    },
+    {
+      "url": "https://cabosailing.com/og/shared-sunset.jpg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/shared-sunset"
+    },
+    {
+      "url": "https://cabosailing.com/og/shared-sunset.jpg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/shared-sunset/"
+    },
+    {
+      "url": "https://cabosailing.com/og/shared-sunset.jpg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/shared-sunset/"
+    },
+    {
+      "url": "https://cabosailing.com/og/scuba-diving-sailboat.jpg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/scuba-diving"
+    },
+    {
+      "url": "https://cabosailing.com/og/scuba-diving-sailboat.jpg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/scuba-diving"
+    },
+    {
+      "url": "https://cabosailing.com/og/our-fleet.jpg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/fleet"
+    },
+    {
+      "url": "https://cabosailing.com/og/bachelorette.jpg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/bachelorette"
+    },
+    {
+      "url": "https://cabosailing.com/og/bachelorette.jpg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/bachelorette"
+    },
+    {
+      "url": "https://cabosailing.com/og/bachelorette.jpg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/bachelorette/"
+    },
+    {
+      "url": "https://cabosailing.com/og/bachelorette.jpg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/bachelorette/"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/best-sunset-cruises-in-cabo/"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/6-types-of-whales-you-can-spot-in-cabo/"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/avoiding-seasickness/"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/snorkeling-diving/"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/shopping-in-cabo/"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/snorkeling-diving"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/6-types-of-whales-you-can-spot-in-cabo"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/snorkeling-at-lovers-beach-cabos-premier-underwater-adventure"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/los-cabos-open-of-surf"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/is-it-safe-for-kids-to-snorkel-in-cabo"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/can-you-swim-in-cabo-san-lucas"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/celebrate-your-birthday-in-cabo/"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/can-you-swim-in-cabo-san-lucas/"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/boat-rental-license-cabo/"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/snorkeling-at-lovers-beach-cabos-premier-underwater-adventure/"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/los-cabos-open-of-surf/"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/is-it-safe-for-kids-to-snorkel-in-cabo/"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/snorkeling-chileno-bay/"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/private-sailing-charter-cost/"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/pelican-rock-snorkeling/"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/morning-activities-in-cabo/"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/whale-watching-tips/"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/sea-lions-in-cabo/"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/todos-santos-true-mexican-oasis-near-cabo/"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/babymooning-in-cabo/"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/activities-for-senior-travelers-in-cabo/"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/best-time/"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/cabo-on-a-budget/"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/make-the-best-of-your-cabo-san-lucas-port-call/"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/cabo-vs-punta-cana/"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/do-you-need-a-passport-to-go-to-cabo-san-lucas/"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/is-cabo-safe/"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/is-cabo-worth-the-splurge-a-breakdown-of-value-vs-cost/"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/top-nine-outfit-ideas-for-your-cabo-vacation/"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/drive-from-la-to-cabo-san-lucas/"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/la-paz-vs-cabo-which-destination-offers-more-for-your-vacation/"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/cabo-san-lucas-museums/"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/convenient-ways-to-get-from-la-paz-to-cabo-for-every-type-of-traveler/"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/traditional-food-cabo/"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/cabo-vs-hawaii/"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/clubs-in-cabo/"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/honeymoon-in-cabo/"
+    },
+    {
+      "url": "https://cabosailing.com/og/home.jpg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide-attractions/"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide-attractions/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide-attractions/"
+    },
+    {
+      "url": "https://cabosailing.com/og/home.jpg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide-culture/"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide-culture/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide-culture/"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/todos-santos-true-mexican-oasis-near-cabo"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/todos-santos-true-mexican-oasis-near-cabo/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/todos-santos-true-mexican-oasis-near-cabo"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/sea-lions-in-cabo"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/sea-lions-in-cabo/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/sea-lions-in-cabo"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/cabo-san-lucas-museums"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/cabo-san-lucas-museums/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/cabo-san-lucas-museums"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/traditional-food-cabo"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/traditional-food-cabo/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/traditional-food-cabo"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/whale-watching-tips"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/whale-watching-tips/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/whale-watching-tips"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/clubs-in-cabo"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/clubs-in-cabo/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/clubs-in-cabo"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/honeymoon-in-cabo"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/honeymoon-in-cabo/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/honeymoon-in-cabo"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/celebrate-your-birthday-in-cabo"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/celebrate-your-birthday-in-cabo/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/celebrate-your-birthday-in-cabo"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/morning-activities-in-cabo"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/morning-activities-in-cabo/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/morning-activities-in-cabo"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/best-sunset-cruises-in-cabo"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/best-sunset-cruises-in-cabo/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/best-sunset-cruises-in-cabo"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/avoiding-seasickness"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/avoiding-seasickness/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/avoiding-seasickness"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/snorkeling-chileno-bay"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/snorkeling-chileno-bay/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/snorkeling-chileno-bay"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/boat-rental-license-cabo"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/boat-rental-license-cabo/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/boat-rental-license-cabo"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/shopping-in-cabo"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/shopping-in-cabo/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/shopping-in-cabo"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/private-sailing-charter-cost"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/private-sailing-charter-cost/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/private-sailing-charter-cost"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/pelican-rock-snorkeling"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/pelican-rock-snorkeling/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/pelican-rock-snorkeling"
+    },
+    {
+      "url": "https://cabosailing.com/og/home.jpg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide-activities/"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide-activities/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide-activities/"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/best-time"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/best-time/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/best-time"
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-whale-watching-humpback.jpg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/best-time"
+    },
+    {
+      "url": "http://localhost:4321/_astro/chileno-bay-cabo-snorkeling.jpg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/best-time"
+    },
+    {
+      "url": "http://localhost:4321/_astro/cabo-yacht-snorkeling-tour.jpg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/best-time"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/convenient-ways-to-get-from-la-paz-to-cabo-for-every-type-of-traveler"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/convenient-ways-to-get-from-la-paz-to-cabo-for-every-type-of-traveler/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/convenient-ways-to-get-from-la-paz-to-cabo-for-every-type-of-traveler"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/make-the-best-of-your-cabo-san-lucas-port-call"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/make-the-best-of-your-cabo-san-lucas-port-call/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/make-the-best-of-your-cabo-san-lucas-port-call"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/is-cabo-worth-the-splurge-a-breakdown-of-value-vs-cost"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/is-cabo-worth-the-splurge-a-breakdown-of-value-vs-cost/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/is-cabo-worth-the-splurge-a-breakdown-of-value-vs-cost"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/do-you-need-a-passport-to-go-to-cabo-san-lucas"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/do-you-need-a-passport-to-go-to-cabo-san-lucas/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/do-you-need-a-passport-to-go-to-cabo-san-lucas"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/babymooning-in-cabo"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/babymooning-in-cabo/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/babymooning-in-cabo"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/is-cabo-safe"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/is-cabo-safe/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/is-cabo-safe"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/top-nine-outfit-ideas-for-your-cabo-vacation"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/top-nine-outfit-ideas-for-your-cabo-vacation/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/top-nine-outfit-ideas-for-your-cabo-vacation"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/drive-from-la-to-cabo-san-lucas"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/drive-from-la-to-cabo-san-lucas/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/drive-from-la-to-cabo-san-lucas"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/la-paz-vs-cabo-which-destination-offers-more-for-your-vacation"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/la-paz-vs-cabo-which-destination-offers-more-for-your-vacation/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/la-paz-vs-cabo-which-destination-offers-more-for-your-vacation"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/cabo-vs-punta-cana"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/cabo-vs-punta-cana/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/cabo-vs-punta-cana"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/cabo-on-a-budget"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/cabo-on-a-budget/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/cabo-on-a-budget"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/activities-for-senior-travelers-in-cabo"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/activities-for-senior-travelers-in-cabo/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/activities-for-senior-travelers-in-cabo"
+    },
+    {
+      "url": "https://cabosailing.com/og/home.jpg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide-traveling/"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide-traveling/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide-traveling/"
+    },
+    {
+      "url": "https://cabosailing.com/og/scuba-diving-sailboat.jpg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/scuba-diving/"
+    },
+    {
+      "url": "https://cabosailing.com/og/scuba-diving-sailboat.jpg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/scuba-diving/"
+    },
+    {
+      "url": "https://cabosailing.com/images/la-paz/la-paz-bcs.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/la-paz-vs-cabo-which-destination-offers-more-for-your-vacation/"
+    },
+    {
+      "url": "https://cabosailing.com/images/la-paz/la-paz-bcs.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/convenient-ways-to-get-from-la-paz-to-cabo-for-every-type-of-traveler/"
+    },
+    {
+      "url": "https://cabosailing.com/images/la-paz/la-paz-bcs.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/convenient-ways-to-get-from-la-paz-to-cabo-for-every-type-of-traveler"
+    },
+    {
+      "url": "https://cabosailing.com/images/la-paz/la-paz-bcs.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/la-paz-vs-cabo-which-destination-offers-more-for-your-vacation"
+    },
+    {
+      "url": "https://cabosailing.com/og/our-fleet.jpg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/fleet/"
+    },
+    {
+      "url": "https://cabosailing.com/private-snorkeling/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/private-snorkeling"
+    },
+    {
+      "url": "https://cabosailing.com/private-snorkeling/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/private-snorkeling/"
+    },
+    {
+      "url": "https://cabosailing.com/og/our-fleet.jpg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/fleet/"
+    },
+    {
+      "url": "https://cabosailing.com/es/private-snorkeling",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/private-snorkeling"
+    },
+    {
+      "url": "https://cabosailing.com/es/private-snorkeling",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/private-snorkeling"
+    },
+    {
+      "url": "https://cabosailing.com/es/private-snorkeling",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/private-snorkeling/"
+    },
+    {
+      "url": "https://cabosailing.com/es/private-snorkeling",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/private-snorkeling/"
+    },
+    {
+      "url": "https://cabosailing.com/favicon.svg",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/cabo-vs-hawaii"
+    },
+    {
+      "url": "http://localhost:4321/es/travel-guide/cabo-vs-hawaii/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/cabo-vs-hawaii"
+    },
+    {
+      "url": "https://cabosailing.com/private-snorkeling",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/private-snorkeling"
+    },
+    {
+      "url": "https://cabosailing.com/private-snorkeling",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/private-snorkeling"
+    },
+    {
+      "url": "https://cabosailing.com/private-snorkeling",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/private-snorkeling/"
+    },
+    {
+      "url": "https://cabosailing.com/private-snorkeling",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/private-snorkeling/"
+    },
+    {
+      "url": "https://cabosailing.com/private-sunset/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/private-sunset"
+    },
+    {
+      "url": "https://cabosailing.com/private-sunset/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/private-sunset/"
+    },
+    {
+      "url": "https://cabosailing.com/es/travel-guide",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide"
+    },
+    {
+      "url": "https://cabosailing.com/es/travel-guide",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/travel-guide/"
+    },
+    {
+      "url": "https://cabosailing.com/es/travel-guide",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/"
+    },
+    {
+      "url": "https://cabosailing.com/es/travel-guide",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/travel-guide"
+    },
+    {
+      "url": "https://cabosailing.com/es/private-sunset",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/private-sunset"
+    },
+    {
+      "url": "https://cabosailing.com/es/private-sunset",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/private-sunset"
+    },
+    {
+      "url": "https://cabosailing.com/es/private-sunset",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/private-sunset/"
+    },
+    {
+      "url": "https://cabosailing.com/es/private-sunset",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/private-sunset/"
+    },
+    {
+      "url": "https://cabosailing.com/private-sunset",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/private-sunset"
+    },
+    {
+      "url": "https://cabosailing.com/private-sunset",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/private-sunset"
+    },
+    {
+      "url": "https://cabosailing.com/private-sunset",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/private-sunset/"
+    },
+    {
+      "url": "https://cabosailing.com/private-sunset",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/private-sunset/"
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide"
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/travel-guide/"
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/"
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/travel-guide"
+    },
+    {
+      "url": "https://cabosailing.com/shared-sunset",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/shared-sunset"
+    },
+    {
+      "url": "https://cabosailing.com/shared-sunset",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/shared-sunset"
+    },
+    {
+      "url": "https://cabosailing.com/shared-sunset",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/shared-sunset/"
+    },
+    {
+      "url": "https://cabosailing.com/shared-sunset",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/shared-sunset/"
+    },
+    {
+      "url": "https://cabosailing.com/scuba-diving",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/scuba-diving"
+    },
+    {
+      "url": "https://cabosailing.com/scuba-diving",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/scuba-diving"
+    },
+    {
+      "url": "https://cabosailing.com/scuba-diving",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/scuba-diving/"
+    },
+    {
+      "url": "https://cabosailing.com/scuba-diving",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/scuba-diving/"
+    },
+    {
+      "url": "https://cabosailing.com/es/shared-sunset",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/shared-sunset"
+    },
+    {
+      "url": "https://cabosailing.com/es/shared-sunset",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/shared-sunset"
+    },
+    {
+      "url": "https://cabosailing.com/es/shared-sunset",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/shared-sunset/"
+    },
+    {
+      "url": "https://cabosailing.com/es/shared-sunset",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/shared-sunset/"
+    },
+    {
+      "url": "https://cabosailing.com/fleet",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/fleet"
+    },
+    {
+      "url": "https://cabosailing.com/fleet",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/fleet/"
+    },
+    {
+      "url": "https://cabosailing.com/fleet",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/fleet/"
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide"
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/"
+    },
+    {
+      "url": "https://cabosailing.com/shared-sunset/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/shared-sunset"
+    },
+    {
+      "url": "https://cabosailing.com/shared-sunset/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/shared-sunset/"
+    },
+    {
+      "url": "https://cabosailing.com/scuba-diving/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/scuba-diving"
+    },
+    {
+      "url": "https://cabosailing.com/scuba-diving/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/scuba-diving/"
+    },
+    {
+      "url": "https://cabosailing.com/shuttle-service/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/shuttle-service"
+    },
+    {
+      "url": "https://cabosailing.com/shuttle-service/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/shuttle-service/"
+    },
+    {
+      "url": "https://cabosailing.com/es/fleet",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/fleet"
+    },
+    {
+      "url": "https://cabosailing.com/es/fleet",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/fleet/"
+    },
+    {
+      "url": "https://cabosailing.com/es/fleet",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/fleet/"
+    },
+    {
+      "url": "https://cabosailing.com/es/travel-guide/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/travel-guide/"
+    },
+    {
+      "url": "https://cabosailing.com/es/travel-guide/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/travel-guide"
+    },
+    {
+      "url": "https://cabosailing.com/es/scuba-diving",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/scuba-diving"
+    },
+    {
+      "url": "https://cabosailing.com/es/scuba-diving",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/scuba-diving"
+    },
+    {
+      "url": "https://cabosailing.com/es/scuba-diving",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/scuba-diving/"
+    },
+    {
+      "url": "https://cabosailing.com/es/scuba-diving",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/scuba-diving/"
+    },
+    {
+      "url": "https://cabosailing.com/es/shared-sunset/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/shared-sunset"
+    },
+    {
+      "url": "https://cabosailing.com/es/shared-sunset/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/shared-sunset/"
+    },
+    {
+      "url": "https://cabosailing.com/es/private-snorkeling/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/private-snorkeling"
+    },
+    {
+      "url": "https://cabosailing.com/es/private-snorkeling/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/private-snorkeling/"
+    },
+    {
+      "url": "https://cabosailing.com/es/private-sunset/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/private-sunset"
+    },
+    {
+      "url": "https://cabosailing.com/es/private-sunset/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/private-sunset/"
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide-culture/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide-culture"
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide-culture/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide-culture/"
+    },
+    {
+      "url": "https://cabosailing.com/fleet/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/fleet"
+    },
+    {
+      "url": "https://cabosailing.com/fleet/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/fleet/"
+    },
+    {
+      "url": "https://cabosailing.com/es/fleet/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/fleet/"
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide-activities/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide-activities"
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide-activities/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide-activities/"
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide/best-sunset-cruises-in-cabo/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/best-sunset-cruises-in-cabo/"
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide/best-sunset-cruises-in-cabo/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/best-sunset-cruises-in-cabo"
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide-traveling/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide-traveling"
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide-traveling/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide-traveling/"
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide-attractions/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide-attractions"
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide-attractions/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide-attractions/"
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide/shopping-in-cabo/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/shopping-in-cabo/"
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide/shopping-in-cabo/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/shopping-in-cabo"
+    },
+    {
+      "url": "https://cabosailing.com/es/scuba-diving/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/scuba-diving"
+    },
+    {
+      "url": "https://cabosailing.com/es/scuba-diving/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/es/scuba-diving/"
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide/snorkeling-diving/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/snorkeling-diving/"
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide/snorkeling-diving/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/snorkeling-diving"
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide/snorkeling-chileno-bay/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/snorkeling-chileno-bay/"
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide/snorkeling-chileno-bay/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/snorkeling-chileno-bay"
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide/boat-rental-license-cabo/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/boat-rental-license-cabo/"
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide/boat-rental-license-cabo/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/boat-rental-license-cabo"
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide/honeymoon-in-cabo/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/honeymoon-in-cabo/"
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide/honeymoon-in-cabo/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/honeymoon-in-cabo"
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide/whale-watching-tips/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/whale-watching-tips/"
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide/whale-watching-tips/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/whale-watching-tips"
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide/traditional-food-cabo/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/traditional-food-cabo/"
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide/traditional-food-cabo/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/traditional-food-cabo"
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide/is-cabo-safe/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/is-cabo-safe/"
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide/is-cabo-safe/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/is-cabo-safe"
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide/private-sailing-charter-cost/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/private-sailing-charter-cost/"
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide/private-sailing-charter-cost/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/private-sailing-charter-cost"
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide/pelican-rock-snorkeling/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/pelican-rock-snorkeling/"
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide/pelican-rock-snorkeling/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/pelican-rock-snorkeling"
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide/clubs-in-cabo/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/clubs-in-cabo/"
+    },
+    {
+      "url": "https://cabosailing.com/travel-guide/clubs-in-cabo/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://localhost:4321/travel-guide/clubs-in-cabo"
+    }
+  ],
+  "passed": false
+}
