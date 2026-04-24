@@ -8,9 +8,19 @@ import { Image } from 'astro:assets';
 
 // Hero image
 import heroImg from "../assets/images/boats/sailing-42/cabo-sailing-42-ocean.jpg";
+
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://cabosailing.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Contact" }
+  ]
+});
 ---
 
 <BaseLayout title="Contact Us — Cabo Sailing | Cabo San Lucas Tours & Charters" description="Contact Cabo Sailing for sailing tours, snorkeling, sunset cruises & scuba diving in Cabo San Lucas. Call, WhatsApp or fill out our form — we respond within minutes.">
+  <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
   <Header variant="subpage" activePage="contact" />
 
   <main class="flex-1 w-full overflow-x-hidden pt-[60px] lg:pt-[72px]">

@@ -29,9 +29,40 @@ import sailing42_12 from "../assets/images/boats/sailing-42/cabo-sailing-42-exte
 
 // Icons
 import yachtIcon from "../assets/icons/Yacht icon.png";
+
+const touristTripSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "TouristTrip",
+  "name": "Private Scuba Diving Charters in Cabo San Lucas",
+  "description": "Private scuba diving charters to Cabo's top dive sites \u2014 Pelican Rock, Land's End, Santa Mar\u00eda. PADI guides, full gear and surface support included.",
+  "touristType": "Divers, Adventure Seekers, Couples",
+  "provider": {
+    "@type": "TravelAgency",
+    "name": "Cabo Sailing Ocean Adventures",
+    "url": "https://cabosailing.com"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://cabosailing.com/scuba-diving/",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock"
+  }
+});
+
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://cabosailing.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Tours", "item": "https://cabosailing.com/tours/" },
+    { "@type": "ListItem", "position": 3, "name": "Private Scuba Diving" }
+  ]
+});
 ---
 
-<BaseLayout title="Private Scuba Diving Charters in Cabo San Lucas | Cabo Sailing" description="Private scuba diving charters to Cabo's top dive sites — Pelican Rock, Land's End, Santa María. PADI guides, full gear and surface support included." hreflangs={{ en: '/scuba-diving', es: '/es/scuba-diving' }}>
+<BaseLayout title="Private Scuba Diving Charters in Cabo San Lucas | Cabo Sailing" description="Private scuba diving charters to Cabo's top dive sites — Pelican Rock, Land's End, Santa María. PADI guides, full gear and surface support included." ogImage="/og/scuba-diving-sailboat.jpg" ogImageAlt="Scuba diving in Cabo San Lucas" hreflangs={{ en: '/scuba-diving', es: '/es/scuba-diving' }}>
+  <script slot="head" type="application/ld+json" set:html={touristTripSchema} />
+  <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
   <Header variant="subpage" activePage="scuba-diving" />
 
   <main class="flex-1 w-full overflow-x-hidden pt-[60px] lg:pt-[72px]">

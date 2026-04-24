@@ -15,9 +15,19 @@ import img_31_03_25_Gil_airbnb_shoot_photos_20mm_33_topaz_sharpen_exposure from 
 import img_10_Sailing_42 from "../../assets/images/boats/sailing-42/cabo-sailing-42-exterior-01.jpg";
 import img_6_Sailing_38 from "../../assets/images/boats/sailing-38/cabo-sailing-38-exterior-02.jpg";
 import img_17_Sailing_42 from "../../assets/images/boats/sailing-42/cabo-sailing-42-sailing-view.jpg";
+
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://cabosailing.com/es/" },
+    { "@type": "ListItem", "position": 2, "name": "Crucero Compartido al Atardecer" }
+  ]
+});
 ---
 
-<BaseLayout bodyClass="bg-white font-body text-text-main antialiased min-h-screen flex flex-col relative" title="Crucero al Atardecer Compartido en Cabo San Lucas | Cabo Sailing" description="Crucero compartido al atardecer en velero, Cabo San Lucas. Grupo pequeño, barra libre, snacks y vista al Arco. Salida diaria desde la marina." hreflangs={{ en: '/shared-sunset', es: '/es/shared-sunset' }}>
+<BaseLayout bodyClass="bg-white font-body text-text-main antialiased min-h-screen flex flex-col relative" title="Crucero al Atardecer Compartido en Cabo San Lucas | Cabo Sailing" description="Crucero compartido al atardecer en velero, Cabo San Lucas. Grupo pequeño, barra libre, snacks y vista al Arco. Salida diaria desde la marina." ogImage="/og/shared-sunset.jpg" ogImageAlt="Sunset sailing cruise in Cabo San Lucas" hreflangs={{ en: '/shared-sunset', es: '/es/shared-sunset' }}>
+  <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
   <Header variant="subpage" activePage="tours" />
 
 

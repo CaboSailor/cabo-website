@@ -3,10 +3,60 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import FloatingCTA from '../components/FloatingCTA.astro';
-import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
+
+const allArticles = await getCollection('travel-guide');
+
+const VALID_CATEGORIES = ['Activities', 'Attractions', 'Traveling to Cabo', 'Culture & Food'] as const;
+
+const categoryMeta: Record<string, { id: string; icon: string; description: string }> = {
+  'Activities': {
+    id: 'activities',
+    icon: 'surfing',
+    description: 'Snorkeling, diving, sailing, fishing, and everything you can experience in Cabo San Lucas.',
+  },
+  'Attractions': {
+    id: 'attractions',
+    icon: 'photo_camera',
+    description: 'From Land\'s End to hidden beaches, historic landmarks, and Instagram-worthy spots in Los Cabos.',
+  },
+  'Traveling to Cabo': {
+    id: 'traveling',
+    icon: 'flight',
+    description: 'Flights, driving routes, budgets, safety, and everything you need to plan your trip.',
+  },
+  'Culture & Food': {
+    id: 'culture',
+    icon: 'restaurant',
+    description: 'Fine dining, street food, museums, nightlife, and the vibrant culture that makes Cabo special.',
+  },
+};
+
+// Flag articles with unknown categories
+const flagged = allArticles.filter(
+  (a) => !VALID_CATEGORIES.includes(a.data.category as any)
+);
+
+// Group by category, sort alphabetically by title
+const grouped = VALID_CATEGORIES.map((cat) => {
+  const articles = allArticles
+    .filter((a) => a.data.category === cat)
+    .sort((a, b) => a.data.title.localeCompare(b.data.title));
+  return { category: cat, articles, meta: categoryMeta[cat] };
+});
+
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://cabosailing.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Travel Guide" }
+  ]
+});
 ---
 
-<BaseLayout title="Cabo San Lucas Travel Guide — Safety, Whales & Sights | Cabo Sailing" description="Cabo San Lucas travel guide — safety, whale season, Lovers Beach, sea lions, passport rules and the best things to do. Written by locals at Cabo Sailing." hreflangs={{ en: '/travel-guide', es: '/es/travel-guide' }}>
+<BaseLayout title="Cabo San Lucas Travel Guide — Safety, Whales & Sights | Cabo Sailing" description="Cabo San Lucas travel guide — safety, whale season, Lovers Beach, sea lions, passport rules and the best things to do. Written by locals at Cabo Sailing." ogImage="/og/travel-guide.jpg" ogImageAlt="The Arch of Cabo San Lucas" hreflangs={{ en: '/travel-guide', es: '/es/travel-guide' }}>
+  <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
   <Header variant="subpage" activePage="travel-guide" />
 
   <main class="flex-1 w-full overflow-x-hidden pt-[60px] lg:pt-[72px]">
@@ -52,72 +102,69 @@ import { Image } from 'astro:assets';
       </p>
     </div>
 
-    <!-- Category Cards Grid -->
-    <div class="px-6 lg:px-0 max-w-5xl mx-auto pb-16">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 lg:gap-8">
-
-        <!-- Activities Card -->
-        <a href="/travel-guide-activities" class="guide-card bg-white rounded-2xl overflow-hidden shadow-md border border-border-light/60 block">
-          <div class="h-[220px] lg:h-[260px] overflow-hidden">
-            <img alt="Fun activities in Cabo San Lucas" class="w-full h-full object-cover" src="https://www.cabosailing.com/wp-content/uploads/2018/08/fun-activities-cabo.jpg.webp"/>
-          </div>
-          <div class="p-5 lg:p-6">
-            <div class="flex items-center gap-2 mb-2">
-              <span class="material-symbols-outlined text-accent-gold text-lg">surfing</span>
-              <h3 class="text-lg lg:text-xl font-serif text-navy font-semibold">Activities</h3>
-            </div>
-            <p class="text-navy/60 text-sm leading-relaxed mb-3">Sport fishing, sailing, ATV tours, parasailing, and more — discover the most exciting things to do in Cabo San Lucas.</p>
-            <div class="inline-flex items-center gap-1 text-accent-gold text-sm font-bold uppercase tracking-widest">Explore <span class="material-symbols-outlined text-base">arrow_forward</span></div>
-          </div>
-        </a>
-
-        <!-- Attractions Card -->
-        <a href="/travel-guide-attractions" class="guide-card bg-white rounded-2xl overflow-hidden shadow-md border border-border-light/60 block">
-          <div class="h-[220px] lg:h-[260px] overflow-hidden">
-            <img alt="Tourist spots Baja California" class="w-full h-full object-cover" src="https://www.cabosailing.com/wp-content/uploads/2018/02/baja-california-sur.png.webp"/>
-          </div>
-          <div class="p-5 lg:p-6">
-            <div class="flex items-center gap-2 mb-2">
-              <span class="material-symbols-outlined text-accent-gold text-lg">photo_camera</span>
-              <h3 class="text-lg lg:text-xl font-serif text-navy font-semibold">Attractions</h3>
-            </div>
-            <p class="text-navy/60 text-sm leading-relaxed mb-3">From Land's End to hidden beaches, historic landmarks, and Instagram-worthy spots — the must-see destinations in Los Cabos.</p>
-            <div class="inline-flex items-center gap-1 text-accent-gold text-sm font-bold uppercase tracking-widest">Explore <span class="material-symbols-outlined text-base">arrow_forward</span></div>
-          </div>
-        </a>
-
-        <!-- Traveling to Cabo Card -->
-        <a href="/travel-guide-traveling" class="guide-card bg-white rounded-2xl overflow-hidden shadow-md border border-border-light/60 block">
-          <div class="h-[220px] lg:h-[260px] overflow-hidden">
-            <img alt="Los Cabos International Airport" class="w-full h-full object-cover" src="https://www.cabosailing.com/wp-content/uploads/2019/08/los-cabos-international-airport-featured-image.jpg.webp"/>
-          </div>
-          <div class="p-5 lg:p-6">
-            <div class="flex items-center gap-2 mb-2">
-              <span class="material-symbols-outlined text-accent-gold text-lg">flight</span>
-              <h3 class="text-lg lg:text-xl font-serif text-navy font-semibold">Traveling to Cabo</h3>
-            </div>
-            <p class="text-navy/60 text-sm leading-relaxed mb-3">Flights, driving routes, best time to visit, and everything you need to plan your trip to Cabo San Lucas.</p>
-            <div class="inline-flex items-center gap-1 text-accent-gold text-sm font-bold uppercase tracking-widest">Explore <span class="material-symbols-outlined text-base">arrow_forward</span></div>
-          </div>
-        </a>
-
-        <!-- Culture & Food Card -->
-        <a href="/travel-guide-culture" class="guide-card bg-white rounded-2xl overflow-hidden shadow-md border border-border-light/60 block">
-          <div class="h-[220px] lg:h-[260px] overflow-hidden">
-            <img alt="Traditional Mexican food Cabo" class="w-full h-full object-cover" src="https://www.cabosailing.com/wp-content/uploads/2018/10/cabofood-1080x675.jpg.webp"/>
-          </div>
-          <div class="p-5 lg:p-6">
-            <div class="flex items-center gap-2 mb-2">
-              <span class="material-symbols-outlined text-accent-gold text-lg">restaurant</span>
-              <h3 class="text-lg lg:text-xl font-serif text-navy font-semibold">Culture &amp; Food</h3>
-            </div>
-            <p class="text-navy/60 text-sm leading-relaxed mb-3">Fine dining, street food, museums, local history, and the vibrant culture that makes Cabo truly special.</p>
-            <div class="inline-flex items-center gap-1 text-accent-gold text-sm font-bold uppercase tracking-widest">Explore <span class="material-symbols-outlined text-base">arrow_forward</span></div>
-          </div>
-        </a>
-
+    <!-- Category Anchor Nav -->
+    <div class="px-6 lg:px-0 max-w-5xl mx-auto pb-8">
+      <div class="flex flex-wrap justify-center gap-3">
+        {grouped.map(({ category, articles, meta }) => (
+          <a href={`#${meta.id}`} class="inline-flex items-center gap-1.5 bg-white border border-border-light/60 text-navy text-sm font-bold px-4 py-2 rounded-full hover:border-accent-gold hover:text-accent-gold transition-colors shadow-sm">
+            <span class="material-symbols-outlined text-base">{meta.icon}</span>
+            {category} <span class="text-navy/40 font-normal">({articles.length})</span>
+          </a>
+        ))}
       </div>
     </div>
+
+    <!-- Flagged Articles Warning -->
+    {flagged.length > 0 && (
+      <div class="px-6 lg:px-0 max-w-5xl mx-auto pb-8">
+        <div class="bg-yellow-50 border border-yellow-200 rounded-xl p-4 text-sm text-yellow-800">
+          <strong>Warning:</strong> {flagged.length} article(s) have an unknown category and are not displayed:
+          <ul class="mt-2 list-disc list-inside">
+            {flagged.map((a) => (
+              <li>{a.data.title} — category: "{a.data.category}"</li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    )}
+
+    <!-- Article Sections by Category -->
+    {grouped.map(({ category, articles, meta }) => (
+      <section id={meta.id} class="section-anchor px-6 lg:px-0 max-w-5xl mx-auto pb-16">
+        <div class="flex items-center gap-3 mb-2">
+          <span class="material-symbols-outlined text-accent-gold text-2xl">{meta.icon}</span>
+          <h2 class="text-2xl lg:text-3xl font-serif text-navy font-semibold">{category}</h2>
+          <span class="text-navy/30 text-sm font-display">({articles.length})</span>
+        </div>
+        <p class="text-navy/60 text-sm lg:text-base leading-relaxed mb-8 max-w-2xl">{meta.description}</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          {articles.map((article) => {
+            const excerpt = article.data.description.length > 150
+              ? article.data.description.slice(0, 147) + '...'
+              : article.data.description;
+            return (
+              <a href={`/travel-guide/${article.id}/`} class="guide-card bg-white rounded-2xl overflow-hidden shadow-md border border-border-light/60 block">
+                <div class="h-[220px] lg:h-[240px] overflow-hidden">
+                  <img alt={article.data.heroAlt} class="w-full h-full object-cover" src={article.data.heroImage} loading="lazy" />
+                </div>
+                <div class="p-5 lg:p-6">
+                  <div class="flex items-center gap-2 mb-3">
+                    <span class="bg-accent-gold/10 text-accent-gold text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-widest border border-accent-gold/20">{category}</span>
+                    {article.data.relatedActivity && (
+                      <a href={article.data.relatedActivity} class="bg-navy/5 text-navy/70 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-widest border border-navy/10 hover:bg-navy hover:text-white transition-colors" onclick="event.stopPropagation()">Book this experience</a>
+                    )}
+                  </div>
+                  <h3 class="text-lg font-serif text-navy font-semibold mb-2 leading-snug">{article.data.title}</h3>
+                  <p class="text-navy/50 text-sm leading-relaxed mb-4">{excerpt}</p>
+                  <div class="inline-flex items-center gap-1 text-accent-gold text-sm font-bold uppercase tracking-widest">Read article <span class="material-symbols-outlined text-base">arrow_forward</span></div>
+                </div>
+              </a>
+            );
+          })}
+        </div>
+      </section>
+    ))}
 
     <!-- CTA Section -->
     <div class="px-6 lg:px-0 max-w-5xl mx-auto mb-12">
@@ -151,10 +198,6 @@ import { Image } from 'astro:assets';
     transform: scale(0.98);
   }
   .section-anchor {
-    scroll-margin-top: 80px;
-  }
-  .submenu-active {
-    color: #0a1d37;
-    border-bottom-color: #b38e5d;
+    scroll-margin-top: 120px;
   }
 </style>

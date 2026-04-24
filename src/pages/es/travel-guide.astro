@@ -4,9 +4,19 @@ import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import FloatingCTA from '../../components/FloatingCTA.astro';
 import { Image } from 'astro:assets';
+
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://cabosailing.com/es/" },
+    { "@type": "ListItem", "position": 2, "name": "Guía de Viaje" }
+  ]
+});
 ---
 
-<BaseLayout title="Guía de Viaje de Cabo San Lucas — Qué Hacer y Cuándo Ir" description="Guía de viaje de Cabo San Lucas: qué hacer, playas, temporada de ballenas, seguridad, el Arco y más — consejos locales de Cabo Sailing." hreflangs={{ en: '/travel-guide', es: '/es/travel-guide' }}>
+<BaseLayout title="Guía de Viaje de Cabo San Lucas — Qué Hacer y Cuándo Ir" description="Guía de viaje de Cabo San Lucas: qué hacer, playas, temporada de ballenas, seguridad, el Arco y más — consejos locales de Cabo Sailing." ogImage="/og/travel-guide.jpg" ogImageAlt="The Arch of Cabo San Lucas" hreflangs={{ en: '/travel-guide', es: '/es/travel-guide' }}>
+  <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
   <Header variant="subpage" activePage="travel-guide" />
 
   <main class="flex-1 w-full overflow-x-hidden pt-[60px] lg:pt-[72px]">

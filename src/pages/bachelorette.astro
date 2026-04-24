@@ -28,9 +28,40 @@ import img_8_Sailing_38 from "../assets/images/boats/sailing-38/cabo-sailing-38-
 import img_5_Sailing_38 from "../assets/images/boats/sailing-38/cabo-sailing-38-exterior-01.jpg";
 import DSC_3713 from "../assets/images/bachelorette/cabo-bachelorette-celebration.jpg";
 import DSC_4259_copy from "../assets/images/bachelorette/cabo-bachelorette-group-photo.jpg";
+
+const touristTripSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "TouristTrip",
+  "name": "Bachelorette Boat Charters in Cabo San Lucas",
+  "description": "Private bachelorette yacht and sailboat charters in Cabo. Custom decorations, open bar, snorkel stop and sunset option \u2014 unforgettable weekend on the water.",
+  "touristType": "Bachelorette Parties, Groups, Celebrations",
+  "provider": {
+    "@type": "TravelAgency",
+    "name": "Cabo Sailing Ocean Adventures",
+    "url": "https://cabosailing.com"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://cabosailing.com/bachelorette/",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock"
+  }
+});
+
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://cabosailing.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Tours", "item": "https://cabosailing.com/tours/" },
+    { "@type": "ListItem", "position": 3, "name": "Bachelorette Boat Charters" }
+  ]
+});
 ---
 
-<BaseLayout bodyClass="bg-white font-body text-text-main antialiased min-h-screen flex flex-col relative" title="Bachelorette Boat Charters in Cabo San Lucas | Cabo Sailing" description="Private bachelorette yacht and sailboat charters in Cabo. Custom decorations, open bar, snorkel stop and sunset option — unforgettable weekend on the water." hreflangs={{ en: '/bachelorette', es: '/es/bachelorette' }}>
+<BaseLayout bodyClass="bg-white font-body text-text-main antialiased min-h-screen flex flex-col relative" title="Bachelorette Boat Charters in Cabo San Lucas | Cabo Sailing" description="Private bachelorette yacht and sailboat charters in Cabo. Custom decorations, open bar, snorkel stop and sunset option — unforgettable weekend on the water." ogImage="/og/bachelorette.jpg" ogImageAlt="Bachelorette yacht charter in Cabo San Lucas" hreflangs={{ en: '/bachelorette', es: '/es/bachelorette' }}>
+  <script slot="head" type="application/ld+json" set:html={touristTripSchema} />
+  <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
   <Header variant="subpage" activePage="tours" />
 
 

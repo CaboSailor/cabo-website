@@ -1,0 +1,155 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import FloatingCTA from '../components/FloatingCTA.astro';
+
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://cabosailing.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Travel Guide", "item": "https://cabosailing.com/travel-guide/" },
+    { "@type": "ListItem", "position": 3, "name": "Culture & Food" }
+  ]
+});
+---
+
+<BaseLayout title="Cabo Culture & Food — Travel Guide | Cabo Sailing" description="Cabo San Lucas culture and food guide — local cuisine, restaurants, traditions, festivals and the authentic side of Los Cabos beyond the resorts.">
+  <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
+  <Header variant="subpage" activePage="travel-guide" />
+
+  <main class="flex-1 w-full overflow-x-hidden pt-[60px] lg:pt-[72px]">
+
+    <!-- Hero Section -->
+    <div class="relative w-full h-[40vh] min-h-[300px] lg:h-[50vh]">
+      <img alt="Traditional Mexican food in Cabo San Lucas" class="w-full h-full object-cover" src="https://www.cabosailing.com/wp-content/uploads/2018/08/fun-activities-cabo.jpg.webp"/>
+      <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/40 to-transparent"></div>
+      <div class="absolute inset-0 flex flex-col items-center justify-end z-10 text-center px-8 pb-10">
+        <div class="flex flex-col items-center gap-3">
+          <div class="flex items-center gap-2">
+            <a href="/travel-guide" class="text-white/70 text-xs uppercase tracking-[0.2em] font-bold hover:text-white transition-colors">Travel Guide</a>
+            <span class="text-white/40 text-xs">/</span>
+            <span class="text-white text-xs uppercase tracking-[0.2em] font-bold">Culture &amp; Food</span>
+          </div>
+          <h1 class="text-3xl md:text-5xl font-serif text-white uppercase tracking-[0.15em] leading-tight drop-shadow-lg font-light">
+            Culture &amp; Food
+          </h1>
+          <div class="w-12 h-[1px] bg-accent-gold-light"></div>
+          <p class="text-white/90 text-sm max-w-[400px] leading-relaxed">Local cuisine, restaurants, traditions, and the authentic side of Los Cabos beyond the resorts.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Horizontal Sub-Menu -->
+    <div class="sticky top-[60px] z-40 bg-white border-b border-border-light/50 shadow-sm">
+      <div class="max-w-5xl mx-auto">
+        <nav class="flex overflow-x-auto no-scrollbar">
+          <a href="/travel-guide" class="shrink-0 px-4 lg:px-6 py-3.5 text-sm font-bold uppercase tracking-widest border-b-2 border-transparent text-navy/50 hover:text-navy hover:border-accent-gold/50 transition-colors">Home</a>
+          <a href="/travel-guide-activities" class="shrink-0 px-4 lg:px-6 py-3.5 text-sm font-bold uppercase tracking-widest border-b-2 border-transparent text-navy/50 hover:text-navy hover:border-accent-gold/50 transition-colors">Activities</a>
+          <a href="/travel-guide-attractions" class="shrink-0 px-4 lg:px-6 py-3.5 text-sm font-bold uppercase tracking-widest border-b-2 border-transparent text-navy/50 hover:text-navy hover:border-accent-gold/50 transition-colors">Attractions</a>
+          <a href="/travel-guide-traveling" class="shrink-0 px-4 lg:px-6 py-3.5 text-sm font-bold uppercase tracking-widest border-b-2 border-transparent text-navy/50 hover:text-navy hover:border-accent-gold/50 transition-colors whitespace-nowrap">Traveling to Cabo</a>
+          <a href="/travel-guide-culture" class="shrink-0 px-4 lg:px-6 py-3.5 text-sm font-bold uppercase tracking-widest border-b-2 border-accent-gold text-navy transition-colors whitespace-nowrap">Culture &amp; Food</a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Articles Grid -->
+    <div class="px-6 lg:px-0 max-w-5xl mx-auto pt-10 pb-16">
+
+      <p class="text-navy/60 text-base lg:text-lg leading-relaxed max-w-2xl mb-10">Cabo San Lucas is more than resorts and nightlife. These guides explore the local food, culture, and traditions that make Baja California Sur one of Mexico's most unique regions.</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+
+        <!-- Article 1: Museums -->
+        <a href="/travel-guide/cabo-san-lucas-museums" class="guide-card bg-white rounded-2xl overflow-hidden shadow-md border border-border-light/60 block">
+          <div class="h-[220px] lg:h-[240px] overflow-hidden">
+            <img alt="Museo de Cabo San Lucas" class="w-full h-full object-cover" src="https://www.cabosailing.com/wp-content/uploads/2018/08/fun-activities-cabo.jpg.webp"/>
+          </div>
+          <div class="p-5 lg:p-6">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="bg-accent-gold/10 text-accent-gold text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-widest border border-accent-gold/20">Culture &amp; Food</span>
+            </div>
+            <h3 class="text-lg font-serif text-navy font-semibold mb-2 leading-snug">Cabo San Lucas Museums &amp; Cultural Sites</h3>
+            <p class="text-navy/50 text-sm leading-relaxed mb-4">5 museums worth visiting &mdash; hours, prices, kid-friendly picks, and great rainy-day alternatives.</p>
+            <div class="inline-flex items-center gap-1 text-accent-gold text-sm font-bold uppercase tracking-widest">Read article <span class="material-symbols-outlined text-base">arrow_forward</span></div>
+          </div>
+        </a>
+
+        <a href="/travel-guide/clubs-in-cabo" class="guide-card bg-white rounded-2xl overflow-hidden shadow-md border border-border-light/60 block">
+          <div class="h-[220px] lg:h-[240px] overflow-hidden">
+            <img alt="Nightclub scene in Cabo San Lucas" class="w-full h-full object-cover" src="https://www.cabosailing.com/wp-content/uploads/2025/03/most-famous-clubs-in-cabo-for-night.jpg"/>
+          </div>
+          <div class="p-5 lg:p-6">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="bg-accent-gold/10 text-accent-gold text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-widest border border-accent-gold/20">Culture &amp; Food</span>
+            </div>
+            <h3 class="text-lg font-serif text-navy font-semibold mb-2 leading-snug">12 Famous Clubs in Cabo for Your Night Out</h3>
+            <p class="text-navy/50 text-sm leading-relaxed mb-4">El Squid Roe, Mandala, La Vaquita, Mango Deck &mdash; where to dance and party in Cabo.</p>
+            <div class="inline-flex items-center gap-1 text-accent-gold text-sm font-bold uppercase tracking-widest">Read article <span class="material-symbols-outlined text-base">arrow_forward</span></div>
+          </div>
+        </a>
+
+        <a href="/travel-guide/traditional-food-cabo" class="guide-card bg-white rounded-2xl overflow-hidden shadow-md border border-border-light/60 block">
+          <div class="h-[220px] lg:h-[240px] overflow-hidden">
+            <img alt="Traditional Mexican chocolate clams from Cabo" class="w-full h-full object-cover" src="https://www.cabosailing.com/wp-content/uploads/2018/01/mexican-clams.jpg"/>
+          </div>
+          <div class="p-5 lg:p-6">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="bg-accent-gold/10 text-accent-gold text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-widest border border-accent-gold/20">Culture &amp; Food</span>
+            </div>
+            <h3 class="text-lg font-serif text-navy font-semibold mb-2 leading-snug">Cabo San Lucas Traditional Food You Must Try</h3>
+            <p class="text-navy/50 text-sm leading-relaxed mb-4">Chocolate clams, fish tacos, smoked marlin, tamales, pitahaya, and local drinks.</p>
+            <div class="inline-flex items-center gap-1 text-accent-gold text-sm font-bold uppercase tracking-widest">Read article <span class="material-symbols-outlined text-base">arrow_forward</span></div>
+          </div>
+        </a>
+
+        <a href="/travel-guide/honeymoon-in-cabo" class="guide-card bg-white rounded-2xl overflow-hidden shadow-md border border-border-light/60 block">
+          <div class="h-[220px] lg:h-[240px] overflow-hidden">
+            <img alt="Romantic honeymoon couple in Cabo San Lucas" class="w-full h-full object-cover" src="https://www.cabosailing.com/wp-content/uploads/2025/03/helpful-travel-tips-for-couples.jpg"/>
+          </div>
+          <div class="p-5 lg:p-6">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="bg-accent-gold/10 text-accent-gold text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-widest border border-accent-gold/20">Culture &amp; Food</span>
+            </div>
+            <h3 class="text-lg font-serif text-navy font-semibold mb-2 leading-snug">Honeymoon in Cabo &mdash; Tips for Couples</h3>
+            <p class="text-navy/50 text-sm leading-relaxed mb-4">Romantic resorts, sunset cruises, beach dining, couples spa, and day trips for newlyweds.</p>
+            <div class="inline-flex items-center gap-1 text-accent-gold text-sm font-bold uppercase tracking-widest">Read article <span class="material-symbols-outlined text-base">arrow_forward</span></div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="px-6 lg:px-0 max-w-5xl mx-auto mb-12">
+      <div class="bg-navy rounded-[2rem] p-8 text-center">
+        <h2 class="text-xl font-serif text-white mb-3 font-semibold">Ready to Experience Cabo?</h2>
+        <p class="text-white/70 text-sm mb-6 leading-relaxed">Book your sailing charter, snorkeling tour, or sunset cruise with us. We'll make your Cabo trip unforgettable.</p>
+        <a href="https://wa.me/526241916997?text=hi%2C%20I'm%20sending%20you%20a%20message%20from%20cabosailing.com" target="_blank" class="inline-flex items-center gap-2 bg-[#25D366] text-white px-6 py-3 rounded-xl font-bold text-sm uppercase tracking-widest active:scale-95 transition-transform shadow-lg">
+          <i class="fa-brands fa-whatsapp text-lg"></i> Message Us on WhatsApp
+        </a>
+        <div class="mt-4">
+          <a href="tel:+526241438485" class="text-white/60 text-sm hover:text-white transition-colors">Or call +52 624 143 8485</a>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <Footer />
+  <FloatingCTA />
+</BaseLayout>
+
+<style>
+  .guide-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .guide-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+  }
+  .guide-card:active {
+    transform: scale(0.98);
+  }
+</style>

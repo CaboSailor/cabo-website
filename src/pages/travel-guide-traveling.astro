@@ -7,9 +7,20 @@ import { Image } from 'astro:assets';
 
 // Local images
 import chilenoImg from "../assets/images/blog/chileno-bay-cabo-snorkeling.jpg";
+
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://cabosailing.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Travel Guide", "item": "https://cabosailing.com/travel-guide/" },
+    { "@type": "ListItem", "position": 3, "name": "Traveling to Cabo" }
+  ]
+});
 ---
 
 <BaseLayout title="Traveling to Cabo San Lucas — Travel Guide | Cabo Sailing" description="Planning a trip to Cabo San Lucas? From passport requirements and the best time to visit, to getting around and what to expect — these guides cover everything you need to know before you go.">
+  <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
   <Header variant="subpage" activePage="travel-guide" />
 
   <main class="flex-1 w-full overflow-x-hidden pt-[60px] lg:pt-[72px]">
@@ -70,7 +81,7 @@ import chilenoImg from "../assets/images/blog/chileno-bay-cabo-snorkeling.jpg";
         </a>
 
         <!-- Article 2: Passport Requirements -->
-        <a href="/travel-guide/passport-to-cabo" class="guide-card bg-white rounded-2xl overflow-hidden shadow-md border border-border-light/60 block">
+        <a href="/travel-guide/do-you-need-a-passport-to-go-to-cabo-san-lucas" class="guide-card bg-white rounded-2xl overflow-hidden shadow-md border border-border-light/60 block">
           <div class="h-[220px] lg:h-[240px] overflow-hidden">
             <img alt="Do You Need a Passport to Go to Cabo San Lucas?" class="w-full h-full object-cover" src="https://www.cabosailing.com/wp-content/uploads/2019/08/los-cabos-international-airport-featured-image.jpg.webp"/>
           </div>
@@ -84,7 +95,67 @@ import chilenoImg from "../assets/images/blog/chileno-bay-cabo-snorkeling.jpg";
           </div>
         </a>
 
-        <!-- Article 3: Safety -->
+        <!-- Article 3: La Paz to Cabo -->
+        <a href="/travel-guide/convenient-ways-to-get-from-la-paz-to-cabo-for-every-type-of-traveler" class="guide-card bg-white rounded-2xl overflow-hidden shadow-md border border-border-light/60 block">
+          <div class="h-[220px] lg:h-[240px] overflow-hidden">
+            <img alt="La Paz to Cabo San Lucas — 5 Ways to Get There" class="w-full h-full object-cover" src="/images/la-paz/la-paz-bcs.webp"/>
+          </div>
+          <div class="p-5 lg:p-6">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="bg-accent-gold/10 text-accent-gold text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-widest border border-accent-gold/20">Traveling to Cabo</span>
+            </div>
+            <h3 class="text-lg font-serif text-navy font-semibold mb-2 leading-snug">La Paz to Cabo San Lucas &mdash; 5 Ways to Get There</h3>
+            <p class="text-navy/50 text-sm leading-relaxed mb-4">Bus, shuttle, rental car, taxi, or private transfer. Distance, prices, timing, and the best option for each type of traveler.</p>
+            <div class="inline-flex items-center gap-1 text-accent-gold text-sm font-bold uppercase tracking-widest">Read article <span class="material-symbols-outlined text-base">arrow_forward</span></div>
+          </div>
+        </a>
+
+        <!-- Article 4: Is Cabo Worth It -->
+        <a href="/travel-guide/is-cabo-worth-the-splurge-a-breakdown-of-value-vs-cost" class="guide-card bg-white rounded-2xl overflow-hidden shadow-md border border-border-light/60 block">
+          <div class="h-[220px] lg:h-[240px] overflow-hidden">
+            <img alt="Is Cabo Worth It? Honest Value vs. Cost Breakdown" class="w-full h-full object-cover" src="https://www.cabosailing.com/wp-content/uploads/2018/08/fun-activities-cabo.jpg.webp"/>
+          </div>
+          <div class="p-5 lg:p-6">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="bg-accent-gold/10 text-accent-gold text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-widest border border-accent-gold/20">Traveling to Cabo</span>
+            </div>
+            <h3 class="text-lg font-serif text-navy font-semibold mb-2 leading-snug">Is Cabo Worth It? Honest Value vs. Cost Breakdown</h3>
+            <p class="text-navy/50 text-sm leading-relaxed mb-4">What Cabo actually costs in 2026 &mdash; hotels, dining, activities, and how to decide if it fits your budget.</p>
+            <div class="inline-flex items-center gap-1 text-accent-gold text-sm font-bold uppercase tracking-widest">Read article <span class="material-symbols-outlined text-base">arrow_forward</span></div>
+          </div>
+        </a>
+
+        <!-- Article 5: Cruise Port -->
+        <a href="/travel-guide/make-the-best-of-your-cabo-san-lucas-port-call" class="guide-card bg-white rounded-2xl overflow-hidden shadow-md border border-border-light/60 block">
+          <div class="h-[220px] lg:h-[240px] overflow-hidden">
+            <img alt="Cabo San Lucas Cruise Port" class="w-full h-full object-cover" src="https://www.cabosailing.com/wp-content/uploads/2018/08/fun-activities-cabo.jpg.webp"/>
+          </div>
+          <div class="p-5 lg:p-6">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="bg-accent-gold/10 text-accent-gold text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-widest border border-accent-gold/20">Traveling to Cabo</span>
+            </div>
+            <h3 class="text-lg font-serif text-navy font-semibold mb-2 leading-snug">Cabo Cruise Port &mdash; Best Things to Do in One Day</h3>
+            <p class="text-navy/50 text-sm leading-relaxed mb-4">Maximize your hours ashore &mdash; tender logistics, top activities by time window, and the best lunch spots near the marina.</p>
+            <div class="inline-flex items-center gap-1 text-accent-gold text-sm font-bold uppercase tracking-widest">Read article <span class="material-symbols-outlined text-base">arrow_forward</span></div>
+          </div>
+        </a>
+
+        <!-- Article 6: Babymoon -->
+        <a href="/travel-guide/babymooning-in-cabo" class="guide-card bg-white rounded-2xl overflow-hidden shadow-md border border-border-light/60 block">
+          <div class="h-[220px] lg:h-[240px] overflow-hidden">
+            <img alt="Babymoon in Cabo San Lucas" class="w-full h-full object-cover" src="https://www.cabosailing.com/wp-content/uploads/2018/08/fun-activities-cabo.jpg.webp"/>
+          </div>
+          <div class="p-5 lg:p-6">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="bg-accent-gold/10 text-accent-gold text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-widest border border-accent-gold/20">Traveling to Cabo</span>
+            </div>
+            <h3 class="text-lg font-serif text-navy font-semibold mb-2 leading-snug">Babymoon in Cabo &mdash; Romantic Pre-Baby Getaway Guide</h3>
+            <p class="text-navy/50 text-sm leading-relaxed mb-4">Pregnancy-safe activities, best resorts for expecting couples, what to pack, and what to skip.</p>
+            <div class="inline-flex items-center gap-1 text-accent-gold text-sm font-bold uppercase tracking-widest">Read article <span class="material-symbols-outlined text-base">arrow_forward</span></div>
+          </div>
+        </a>
+
+        <!-- Article 7: Safety -->
         <a href="/travel-guide/is-cabo-safe" class="guide-card bg-white rounded-2xl overflow-hidden shadow-md border border-border-light/60 block">
           <div class="h-[220px] lg:h-[240px] overflow-hidden">
             <img alt="Is Cabo San Lucas Safe?" class="w-full h-full object-cover" src="https://www.cabosailing.com/wp-content/uploads/2019/08/los-cabos-international-airport-featured-image.jpg.webp"/>
@@ -95,6 +166,109 @@ import chilenoImg from "../assets/images/blog/chileno-bay-cabo-snorkeling.jpg";
             </div>
             <h3 class="text-lg font-serif text-navy font-semibold mb-2 leading-snug">Is Cabo San Lucas Safe? What Travelers Should Know</h3>
             <p class="text-navy/50 text-sm leading-relaxed mb-4">Travel advisories, practical safety tips, and why Cabo is one of Mexico's most welcoming tourist destinations.</p>
+            <div class="inline-flex items-center gap-1 text-accent-gold text-sm font-bold uppercase tracking-widest">Read article <span class="material-symbols-outlined text-base">arrow_forward</span></div>
+          </div>
+        </a>
+
+        <!-- Article 8: Drive from LA -->
+        <a href="/travel-guide/drive-from-la-to-cabo-san-lucas" class="guide-card bg-white rounded-2xl overflow-hidden shadow-md border border-border-light/60 block">
+          <div class="h-[220px] lg:h-[240px] overflow-hidden">
+            <img alt="Highway through the Baja California desert" class="w-full h-full object-cover" src="https://www.cabosailing.com/wp-content/uploads/2018/08/fun-activities-cabo.jpg.webp"/>
+          </div>
+          <div class="p-5 lg:p-6">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="bg-accent-gold/10 text-accent-gold text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-widest border border-accent-gold/20">Traveling to Cabo</span>
+            </div>
+            <h3 class="text-lg font-serif text-navy font-semibold mb-2 leading-snug">LA to Cabo Drive &mdash; Complete Road Trip Guide</h3>
+            <p class="text-navy/50 text-sm leading-relaxed mb-4">Distance, border crossing, 3-day itinerary, insurance, road conditions, and overnight stops.</p>
+            <div class="inline-flex items-center gap-1 text-accent-gold text-sm font-bold uppercase tracking-widest">Read article <span class="material-symbols-outlined text-base">arrow_forward</span></div>
+          </div>
+        </a>
+
+        <!-- Article 9: Outfit Ideas -->
+        <a href="/travel-guide/top-nine-outfit-ideas-for-your-cabo-vacation" class="guide-card bg-white rounded-2xl overflow-hidden shadow-md border border-border-light/60 block">
+          <div class="h-[220px] lg:h-[240px] overflow-hidden">
+            <img alt="Cabo vacation outfit ideas" class="w-full h-full object-cover" src="https://www.cabosailing.com/wp-content/uploads/2018/08/fun-activities-cabo.jpg.webp"/>
+          </div>
+          <div class="p-5 lg:p-6">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="bg-accent-gold/10 text-accent-gold text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-widest border border-accent-gold/20">Traveling to Cabo</span>
+            </div>
+            <h3 class="text-lg font-serif text-navy font-semibold mb-2 leading-snug">What to Wear in Cabo &mdash; 9 Outfit Ideas by Activity</h3>
+            <p class="text-navy/50 text-sm leading-relaxed mb-4">Outfits for beach, boat charters, dinners and nightlife. Fabrics, colors and what to leave at home.</p>
+            <div class="inline-flex items-center gap-1 text-accent-gold text-sm font-bold uppercase tracking-widest">Read article <span class="material-symbols-outlined text-base">arrow_forward</span></div>
+          </div>
+        </a>
+
+        <!-- Article 10: Cabo on a Budget -->
+        <a href="/travel-guide/cabo-on-a-budget" class="guide-card bg-white rounded-2xl overflow-hidden shadow-md border border-border-light/60 block">
+          <div class="h-[220px] lg:h-[240px] overflow-hidden">
+            <img alt="Street food in downtown Cabo San Lucas" class="w-full h-full object-cover" src="https://www.cabosailing.com/wp-content/uploads/2018/08/fun-activities-cabo.jpg.webp"/>
+          </div>
+          <div class="p-5 lg:p-6">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="bg-accent-gold/10 text-accent-gold text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-widest border border-accent-gold/20">Traveling to Cabo</span>
+            </div>
+            <h3 class="text-lg font-serif text-navy font-semibold mb-2 leading-snug">Cabo on a Budget &mdash; 2026 Guide to Doing Cabo for Less</h3>
+            <p class="text-navy/50 text-sm leading-relaxed mb-4">Free activities, cheap eats, budget tours, and a sample day under $75/person.</p>
+            <div class="inline-flex items-center gap-1 text-accent-gold text-sm font-bold uppercase tracking-widest">Read article <span class="material-symbols-outlined text-base">arrow_forward</span></div>
+          </div>
+        </a>
+
+        <!-- Article 11: Senior Travelers -->
+        <a href="/travel-guide/activities-for-senior-travelers-in-cabo" class="guide-card bg-white rounded-2xl overflow-hidden shadow-md border border-border-light/60 block">
+          <div class="h-[220px] lg:h-[240px] overflow-hidden">
+            <img alt="Senior couple on a sunset cruise in Cabo" class="w-full h-full object-cover" src="https://www.cabosailing.com/wp-content/uploads/2018/08/fun-activities-cabo.jpg.webp"/>
+          </div>
+          <div class="p-5 lg:p-6">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="bg-accent-gold/10 text-accent-gold text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-widest border border-accent-gold/20">Traveling to Cabo</span>
+            </div>
+            <h3 class="text-lg font-serif text-navy font-semibold mb-2 leading-snug">Cabo for Seniors &mdash; Best Activities for Older Travelers</h3>
+            <p class="text-navy/50 text-sm leading-relaxed mb-4">Gentle boat cruises, accessible beaches, golf, whale watching, and comfort-first recommendations.</p>
+            <div class="inline-flex items-center gap-1 text-accent-gold text-sm font-bold uppercase tracking-widest">Read article <span class="material-symbols-outlined text-base">arrow_forward</span></div>
+          </div>
+        </a>
+
+        <!-- Article 12: La Paz vs Cabo -->
+        <a href="/travel-guide/la-paz-vs-cabo-which-destination-offers-more-for-your-vacation" class="guide-card bg-white rounded-2xl overflow-hidden shadow-md border border-border-light/60 block">
+          <div class="h-[220px] lg:h-[240px] overflow-hidden">
+            <img alt="La Paz vs Cabo San Lucas comparison" class="w-full h-full object-cover" src="/images/la-paz/la-paz-bcs.webp"/>
+          </div>
+          <div class="p-5 lg:p-6">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="bg-accent-gold/10 text-accent-gold text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-widest border border-accent-gold/20">Traveling to Cabo</span>
+            </div>
+            <h3 class="text-lg font-serif text-navy font-semibold mb-2 leading-snug">La Paz vs. Cabo &mdash; Which Is Better for Your Trip?</h3>
+            <p class="text-navy/50 text-sm leading-relaxed mb-4">Beaches, activities, prices, nightlife &mdash; and whether you can do both in one trip.</p>
+            <div class="inline-flex items-center gap-1 text-accent-gold text-sm font-bold uppercase tracking-widest">Read article <span class="material-symbols-outlined text-base">arrow_forward</span></div>
+          </div>
+        </a>
+
+        <a href="/travel-guide/cabo-vs-punta-cana" class="guide-card bg-white rounded-2xl overflow-hidden shadow-md border border-border-light/60 block">
+          <div class="h-[220px] lg:h-[240px] overflow-hidden">
+            <img alt="Cabo vs Punta Cana destination comparison" class="w-full h-full object-cover" src="https://www.cabosailing.com/wp-content/uploads/2025/09/cabo-vs-punta-cana-which-destination.png"/>
+          </div>
+          <div class="p-5 lg:p-6">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="bg-accent-gold/10 text-accent-gold text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-widest border border-accent-gold/20">Traveling to Cabo</span>
+            </div>
+            <h3 class="text-lg font-serif text-navy font-semibold mb-2 leading-snug">Cabo vs. Punta Cana &mdash; Which Destination Is Right?</h3>
+            <p class="text-navy/50 text-sm leading-relaxed mb-4">Geography, climate, cost, cuisine, and nightlife compared side by side.</p>
+            <div class="inline-flex items-center gap-1 text-accent-gold text-sm font-bold uppercase tracking-widest">Read article <span class="material-symbols-outlined text-base">arrow_forward</span></div>
+          </div>
+        </a>
+
+        <a href="/travel-guide/cabo-vs-hawaii" class="guide-card bg-white rounded-2xl overflow-hidden shadow-md border border-border-light/60 block">
+          <div class="h-[220px] lg:h-[240px] overflow-hidden">
+            <img alt="Cabo vs Hawaii vacation comparison" class="w-full h-full object-cover" src="https://www.cabosailing.com/wp-content/uploads/2025/09/cabo-vs-hawaii-which-vacation-spot.png"/>
+          </div>
+          <div class="p-5 lg:p-6">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="bg-accent-gold/10 text-accent-gold text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-widest border border-accent-gold/20">Traveling to Cabo</span>
+            </div>
+            <h3 class="text-lg font-serif text-navy font-semibold mb-2 leading-snug">Cabo vs. Hawaii &mdash; Which Vacation Spot Is Better?</h3>
+            <p class="text-navy/50 text-sm leading-relaxed mb-4">Weather, beaches, activities, cost, and nightlife &mdash; two iconic destinations compared.</p>
             <div class="inline-flex items-center gap-1 text-accent-gold text-sm font-bold uppercase tracking-widest">Read article <span class="material-symbols-outlined text-base">arrow_forward</span></div>
           </div>
         </a>

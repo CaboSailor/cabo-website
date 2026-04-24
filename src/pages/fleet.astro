@@ -44,9 +44,19 @@ import headerSunset3 from "../assets/images/guests-on-sailboats/cabo-sunset-sail
 
 // Icons
 import yachtIcon from "../assets/icons/Yacht icon.png";
+
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://cabosailing.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Our Fleet" }
+  ]
+});
 ---
 
-<BaseLayout title="Our Fleet — Yachts & Sailboats in Cabo San Lucas | Cabo Sailing" description="Meet our fleet: Sea Ray yachts (42', 45', 46') and Hunter sailboats (38', 42') for private charters in Cabo San Lucas. Specs, capacity and photos inside." hreflangs={{ en: '/fleet', es: '/es/fleet' }}>
+<BaseLayout title="Our Fleet — Yachts & Sailboats in Cabo San Lucas | Cabo Sailing" description="Meet our fleet: Sea Ray yachts (42', 45', 46') and Hunter sailboats (38', 42') for private charters in Cabo San Lucas. Specs, capacity and photos inside." ogImage="/og/our-fleet.jpg" ogImageAlt="Cabo Sailing fleet of yachts and sailboats" hreflangs={{ en: '/fleet', es: '/es/fleet' }}>
+  <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
   <Header variant="subpage" activePage="fleet" />
 
   <main class="flex-1 w-full overflow-x-hidden pt-[60px] lg:pt-[72px]">

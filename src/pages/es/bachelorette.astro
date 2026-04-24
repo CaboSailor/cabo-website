@@ -28,9 +28,19 @@ import img_8_Sailing_38 from "../../assets/images/boats/sailing-38/cabo-sailing-
 import img_5_Sailing_38 from "../../assets/images/boats/sailing-38/cabo-sailing-38-exterior-01.jpg";
 import DSC_3713 from "../../assets/images/bachelorette/cabo-bachelorette-celebration.jpg";
 import DSC_4259_copy from "../../assets/images/bachelorette/cabo-bachelorette-group-photo.jpg";
+
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://cabosailing.com/es/" },
+    { "@type": "ListItem", "position": 2, "name": "Despedida de Soltera" }
+  ]
+});
 ---
 
-<BaseLayout bodyClass="bg-white font-body text-text-main antialiased min-h-screen flex flex-col relative" title="Despedida de Soltera en Yate en Cabo San Lucas | Cabo Sailing" description="Yate privado para despedida de soltera en Cabo. Decoración personalizada, barra libre, parada de snorkel y opción al atardecer — fin de semana inolvidable." hreflangs={{ en: '/bachelorette', es: '/es/bachelorette' }}>
+<BaseLayout bodyClass="bg-white font-body text-text-main antialiased min-h-screen flex flex-col relative" title="Despedida de Soltera en Yate en Cabo San Lucas | Cabo Sailing" description="Yate privado para despedida de soltera en Cabo. Decoración personalizada, barra libre, parada de snorkel y opción al atardecer — fin de semana inolvidable." ogImage="/og/bachelorette.jpg" ogImageAlt="Bachelorette yacht charter in Cabo San Lucas" hreflangs={{ en: '/bachelorette', es: '/es/bachelorette' }}>
+  <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
   <Header variant="subpage" activePage="tours" />
 
 

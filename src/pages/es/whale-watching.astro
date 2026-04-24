@@ -26,9 +26,19 @@ import img_12_Sailing_42 from "../../assets/images/boats/sailing-42/cabo-sailing
 import img_6_Sailing_38 from "../../assets/images/boats/sailing-38/cabo-sailing-38-exterior-02.jpg";
 import img_8_Sailing_38 from "../../assets/images/boats/sailing-38/cabo-sailing-38-exterior-03.jpg";
 import img_5_Sailing_38 from "../../assets/images/boats/sailing-38/cabo-sailing-38-exterior-01.jpg";
+
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://cabosailing.com/es/" },
+    { "@type": "ListItem", "position": 2, "name": "Avistamiento de Ballenas" }
+  ]
+});
 ---
 
-<BaseLayout bodyClass="bg-white font-body text-text-main antialiased min-h-screen flex flex-col relative" title="Avistamiento de Ballenas Privado en Cabo San Lucas (Dic–Abr)" description="Tour privado de avistamiento de ballenas en Cabo San Lucas, diciembre a abril. Observa ballenas jorobadas y grises desde tu propio yate o velero." hreflangs={{ en: '/whale-watching', es: '/es/whale-watching' }}>
+<BaseLayout bodyClass="bg-white font-body text-text-main antialiased min-h-screen flex flex-col relative" title="Avistamiento de Ballenas Privado en Cabo San Lucas (Dic–Abr)" description="Tour privado de avistamiento de ballenas en Cabo San Lucas, diciembre a abril. Observa ballenas jorobadas y grises desde tu propio yate o velero." ogImage="/og/whale-watching-sailing.jpg" ogImageAlt="Whale watching in Cabo San Lucas" hreflangs={{ en: '/whale-watching', es: '/es/whale-watching' }}>
+  <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
   <Header variant="subpage" activePage="tours" />
 
 

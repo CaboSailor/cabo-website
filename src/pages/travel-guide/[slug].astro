@@ -30,9 +30,52 @@ const relatedPosts = allPosts
   .filter((p) => p.data.category === category && p.id !== post.id)
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
   .slice(0, 3);
+
+const canonicalUrl = `https://cabosailing.com/travel-guide/${post.id}/`;
+const pubDateISO = post.data.pubDate.toISOString();
+const articleSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": title,
+  "description": description,
+  "image": heroImage,
+  "datePublished": pubDateISO,
+  "dateModified": pubDateISO,
+  "author": {
+    "@type": "Organization",
+    "name": "Cabo Sailing Ocean Adventures",
+    "url": "https://cabosailing.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Cabo Sailing Ocean Adventures",
+    "url": "https://cabosailing.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://cabosailing.com/favicon.svg"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": canonicalUrl
+  }
+});
+
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://cabosailing.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Travel Guide", "item": "https://cabosailing.com/travel-guide/" },
+    { "@type": "ListItem", "position": 3, "name": title }
+  ]
+});
 ---
 
-<BaseLayout title={`${title} | Cabo Sailing`} description={description}>
+<BaseLayout title={`${title} | Cabo Sailing`} description={description} ogImage={heroImage} ogImageAlt={heroAlt}>
+  <link slot="head" rel="canonical" href={canonicalUrl} />
+  <script slot="head" type="application/ld+json" set:html={articleSchema} />
+  <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
   <Header variant="subpage" activePage="travel-guide" />
 
   <main class="flex-1 w-full overflow-x-hidden pt-[60px] lg:pt-[72px]">
@@ -117,7 +160,7 @@ const relatedPosts = allPosts
 
           {/* CTA Buttons */}
           <div class="flex flex-col sm:flex-row items-center justify-center gap-3 mt-12 mb-4">
-            <a href="/fleet" class="inline-flex items-center gap-2 bg-accent-gold hover:bg-accent-gold-dark text-white text-sm font-bold uppercase tracking-widest px-6 py-3 rounded-full transition-colors">
+            <a href="/fleet" class="inline-flex items-center gap-2 bg-accent-gold hover:bg-accent-gold-dark text-navy text-sm font-bold uppercase tracking-widest px-6 py-3 rounded-full transition-colors">
               See Our Fleet
             </a>
             <a href="https://wa.me/526241439798" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white text-sm font-bold uppercase tracking-widest px-6 py-3 rounded-full transition-colors">

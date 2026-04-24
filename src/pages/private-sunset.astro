@@ -27,9 +27,40 @@ import img_12_Sailing_42 from "../assets/images/boats/sailing-42/cabo-sailing-42
 import img_6_Sailing_38 from "../assets/images/boats/sailing-38/cabo-sailing-38-exterior-02.jpg";
 import img_8_Sailing_38 from "../assets/images/boats/sailing-38/cabo-sailing-38-exterior-03.jpg";
 import img_5_Sailing_38 from "../assets/images/boats/sailing-38/cabo-sailing-38-exterior-01.jpg";
+
+const touristTripSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "TouristTrip",
+  "name": "Private Sunset Cruise in Cabo San Lucas",
+  "description": "Private sunset cruise for up to 12 guests on our yacht or sailboat. Open bar, snacks and front-row views of the Arch of Cabo San Lucas.",
+  "touristType": "Couples, Groups, Celebrations",
+  "provider": {
+    "@type": "TravelAgency",
+    "name": "Cabo Sailing Ocean Adventures",
+    "url": "https://cabosailing.com"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://cabosailing.com/private-sunset/",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock"
+  }
+});
+
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://cabosailing.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Tours", "item": "https://cabosailing.com/tours/" },
+    { "@type": "ListItem", "position": 3, "name": "Private Sunset Cruise" }
+  ]
+});
 ---
 
-<BaseLayout bodyClass="bg-white font-body text-text-main antialiased min-h-screen flex flex-col relative" title="Private Sunset Cruise in Cabo San Lucas | Cabo Sailing" description="Private sunset cruise for up to 12 guests on our yacht or sailboat. Open bar, snacks and front-row views of the Arch of Cabo San Lucas." hreflangs={{ en: '/private-sunset', es: '/es/private-sunset' }}>
+<BaseLayout bodyClass="bg-white font-body text-text-main antialiased min-h-screen flex flex-col relative" title="Private Sunset Cruise in Cabo San Lucas | Cabo Sailing" description="Private sunset cruise for up to 12 guests on our yacht or sailboat. Open bar, snacks and front-row views of the Arch of Cabo San Lucas." ogImage="/og/private-sunset.jpg" ogImageAlt="Private sunset sailing at the Arch of Cabo San Lucas" hreflangs={{ en: '/private-sunset', es: '/es/private-sunset' }}>
+  <script slot="head" type="application/ld+json" set:html={touristTripSchema} />
+  <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
   <Header variant="subpage" activePage="tours" />
 
 

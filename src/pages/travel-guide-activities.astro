@@ -4,9 +4,20 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import FloatingCTA from '../components/FloatingCTA.astro';
 import { Image } from 'astro:assets';
+
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://cabosailing.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Travel Guide", "item": "https://cabosailing.com/travel-guide/" },
+    { "@type": "ListItem", "position": 3, "name": "Activities" }
+  ]
+});
 ---
 
 <BaseLayout title="Activities — Travel Guide Blog | Cabo Sailing" description="Discover the best activities in Cabo San Lucas — snorkeling, diving, fishing, sailing, and more. Your guide to things to do in Los Cabos.">
+  <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
   <Header variant="subpage" activePage="travel-guide" />
 
   <main class="flex-1 w-full overflow-x-hidden pt-[60px] lg:pt-[72px]">
@@ -81,12 +92,200 @@ import { Image } from 'astro:assets';
           </div>
         </a>
 
-        <!-- Placeholder: More articles coming soon -->
-        <div class="bg-surface-light rounded-2xl border border-border-light/60 border-dashed flex flex-col items-center justify-center p-8 text-center min-h-[400px]">
-          <span class="material-symbols-outlined text-accent-gold/40 text-4xl mb-3">edit_note</span>
-          <p class="text-navy/30 text-sm font-bold uppercase tracking-widest mb-1">More articles</p>
-          <p class="text-navy/20 text-xs">Coming soon</p>
-        </div>
+        <!-- Article 3: 6 Whale Species -->
+        <a href="/travel-guide/6-types-of-whales-you-can-spot-in-cabo" class="guide-card bg-white rounded-2xl overflow-hidden shadow-md border border-border-light/60 block">
+          <div class="h-[220px] lg:h-[240px] overflow-hidden">
+            <img alt="Humpback whale breaching near Cabo San Lucas" class="w-full h-full object-cover" src="https://www.cabosailing.com/wp-content/uploads/2018/09/snorkeling-5.jpg.webp"/>
+          </div>
+          <div class="p-5 lg:p-6">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="bg-accent-gold/10 text-accent-gold text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-widest border border-accent-gold/20">Activities</span>
+            </div>
+            <h3 class="text-lg font-serif text-navy font-semibold mb-2 leading-snug">6 Whale Species You Can Spot in Cabo (2026)</h3>
+            <p class="text-navy/50 text-sm leading-relaxed mb-4">Humpback, gray, blue, fin, sperm, orca &mdash; when to see each, how to identify them, and the best whale watching tours.</p>
+            <div class="inline-flex items-center gap-1 text-accent-gold text-sm font-bold uppercase tracking-widest">Read article <span class="material-symbols-outlined text-base">arrow_forward</span></div>
+          </div>
+        </a>
+
+        <!-- Article 4: Los Cabos Open of Surf -->
+        <a href="/travel-guide/los-cabos-open-of-surf" class="guide-card bg-white rounded-2xl overflow-hidden shadow-md border border-border-light/60 block">
+          <div class="h-[220px] lg:h-[240px] overflow-hidden">
+            <img alt="Surfers competing at the Los Cabos Open of Surf" class="w-full h-full object-cover" src="https://www.cabosailing.com/wp-content/uploads/2018/08/fun-activities-cabo.jpg.webp"/>
+          </div>
+          <div class="p-5 lg:p-6">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="bg-accent-gold/10 text-accent-gold text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-widest border border-accent-gold/20">Activities</span>
+            </div>
+            <h3 class="text-lg font-serif text-navy font-semibold mb-2 leading-snug">Los Cabos Open of Surf &mdash; Mexico's Premier Surf Event</h3>
+            <p class="text-navy/50 text-sm leading-relaxed mb-4">History, dates, how to attend, what to expect, and where to watch at Zippers Beach.</p>
+            <div class="inline-flex items-center gap-1 text-accent-gold text-sm font-bold uppercase tracking-widest">Read article <span class="material-symbols-outlined text-base">arrow_forward</span></div>
+          </div>
+        </a>
+
+        <!-- Article 5: Lover's Beach Snorkeling -->
+        <a href="/travel-guide/snorkeling-at-lovers-beach-cabos-premier-underwater-adventure" class="guide-card bg-white rounded-2xl overflow-hidden shadow-md border border-border-light/60 block">
+          <div class="h-[220px] lg:h-[240px] overflow-hidden">
+            <img alt="Snorkeling at Lover's Beach in Cabo San Lucas" class="w-full h-full object-cover" src="https://www.cabosailing.com/wp-content/uploads/2018/09/snorkeling-5.jpg.webp"/>
+          </div>
+          <div class="p-5 lg:p-6">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="bg-accent-gold/10 text-accent-gold text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-widest border border-accent-gold/20">Activities</span>
+            </div>
+            <h3 class="text-lg font-serif text-navy font-semibold mb-2 leading-snug">Snorkeling at Lover's Beach &mdash; Cabo's Best Underwater Spot</h3>
+            <p class="text-navy/50 text-sm leading-relaxed mb-4">How to get there, marine life, best time to go, and how it compares to other Cabo snorkel spots.</p>
+            <div class="inline-flex items-center gap-1 text-accent-gold text-sm font-bold uppercase tracking-widest">Read article <span class="material-symbols-outlined text-base">arrow_forward</span></div>
+          </div>
+        </a>
+
+        <!-- Article 6: Kids Snorkeling -->
+        <a href="/travel-guide/is-it-safe-for-kids-to-snorkel-in-cabo" class="guide-card bg-white rounded-2xl overflow-hidden shadow-md border border-border-light/60 block">
+          <div class="h-[220px] lg:h-[240px] overflow-hidden">
+            <img alt="Family snorkeling in Cabo San Lucas" class="w-full h-full object-cover" src="https://www.cabosailing.com/wp-content/uploads/2018/09/snorkeling-5.jpg.webp"/>
+          </div>
+          <div class="p-5 lg:p-6">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="bg-accent-gold/10 text-accent-gold text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-widest border border-accent-gold/20">Activities</span>
+            </div>
+            <h3 class="text-lg font-serif text-navy font-semibold mb-2 leading-snug">Is It Safe for Kids to Snorkel in Cabo?</h3>
+            <p class="text-navy/50 text-sm leading-relaxed mb-4">Age guidelines, best kid-friendly spots, gear tips, and how to build your child's confidence in the water.</p>
+            <div class="inline-flex items-center gap-1 text-accent-gold text-sm font-bold uppercase tracking-widest">Read article <span class="material-symbols-outlined text-base">arrow_forward</span></div>
+          </div>
+        </a>
+
+        <!-- Article 7: Morning Activities -->
+        <a href="/travel-guide/morning-activities-in-cabo" class="guide-card bg-white rounded-2xl overflow-hidden shadow-md border border-border-light/60 block">
+          <div class="h-[220px] lg:h-[240px] overflow-hidden">
+            <img alt="Early morning in Cabo San Lucas" class="w-full h-full object-cover" src="https://www.cabosailing.com/wp-content/uploads/2019/10/morning-activities-cabo.jpg"/>
+          </div>
+          <div class="p-5 lg:p-6">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="bg-accent-gold/10 text-accent-gold text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-widest border border-accent-gold/20">Activities</span>
+            </div>
+            <h3 class="text-lg font-serif text-navy font-semibold mb-2 leading-snug">Morning Activities in Cabo for Early Birds</h3>
+            <p class="text-navy/50 text-sm leading-relaxed mb-4">Sunrise beaches, fishing charters, marina walks, and downtown exploring before the crowds arrive.</p>
+            <div class="inline-flex items-center gap-1 text-accent-gold text-sm font-bold uppercase tracking-widest">Read article <span class="material-symbols-outlined text-base">arrow_forward</span></div>
+          </div>
+        </a>
+
+        <!-- Article 8: Best Sunset Cruises -->
+        <a href="/travel-guide/best-sunset-cruises-in-cabo" class="guide-card bg-white rounded-2xl overflow-hidden shadow-md border border-border-light/60 block">
+          <div class="h-[220px] lg:h-[240px] overflow-hidden">
+            <img alt="Sunset cruise in Cabo San Lucas" class="w-full h-full object-cover" src="https://www.cabosailing.com/wp-content/uploads/2025/07/x-of-the-best-sunset-cruise.png"/>
+          </div>
+          <div class="p-5 lg:p-6">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="bg-accent-gold/10 text-accent-gold text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-widest border border-accent-gold/20">Activities</span>
+            </div>
+            <h3 class="text-lg font-serif text-navy font-semibold mb-2 leading-snug">7 Best Sunset Cruises in Cabo San Lucas</h3>
+            <p class="text-navy/50 text-sm leading-relaxed mb-4">Luxury sailing, party boats, dinner cruises, private yachts, and combo tours &mdash; find the right one.</p>
+            <div class="inline-flex items-center gap-1 text-accent-gold text-sm font-bold uppercase tracking-widest">Read article <span class="material-symbols-outlined text-base">arrow_forward</span></div>
+          </div>
+        </a>
+
+        <!-- Article 9: Avoiding Seasickness -->
+        <a href="/travel-guide/avoiding-seasickness" class="guide-card bg-white rounded-2xl overflow-hidden shadow-md border border-border-light/60 block">
+          <div class="h-[220px] lg:h-[240px] overflow-hidden">
+            <img alt="Sailing adventure in Cabo San Lucas" class="w-full h-full object-cover" src="https://www.cabosailing.com/wp-content/uploads/2019/02/cabo-sailing-adventures.jpg"/>
+          </div>
+          <div class="p-5 lg:p-6">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="bg-accent-gold/10 text-accent-gold text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-widest border border-accent-gold/20">Activities</span>
+            </div>
+            <h3 class="text-lg font-serif text-navy font-semibold mb-2 leading-snug">Avoiding Seasickness on Your Cabo Sailing Trip</h3>
+            <p class="text-navy/50 text-sm leading-relaxed mb-4">Ginger, hydration, horizon tricks, and more &mdash; proven tips to sail comfortably.</p>
+            <div class="inline-flex items-center gap-1 text-accent-gold text-sm font-bold uppercase tracking-widest">Read article <span class="material-symbols-outlined text-base">arrow_forward</span></div>
+          </div>
+        </a>
+
+        <!-- Article 10: Boat Rental License -->
+        <a href="/travel-guide/boat-rental-license-cabo" class="guide-card bg-white rounded-2xl overflow-hidden shadow-md border border-border-light/60 block">
+          <div class="h-[220px] lg:h-[240px] overflow-hidden">
+            <img alt="Boat rental in Cabo San Lucas" class="w-full h-full object-cover" src="https://www.cabosailing.com/wp-content/uploads/2024/09/Do-You-Need-A-License-To-Rent-A-Boat-In-Cabo.j2.jpg"/>
+          </div>
+          <div class="p-5 lg:p-6">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="bg-accent-gold/10 text-accent-gold text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-widest border border-accent-gold/20">Activities</span>
+            </div>
+            <h3 class="text-lg font-serif text-navy font-semibold mb-2 leading-snug">Do You Need a License to Rent a Boat in Cabo?</h3>
+            <p class="text-navy/50 text-sm leading-relaxed mb-4">Rules for small boats, yachts, bareboat charters, and skippered rentals in Cabo.</p>
+            <div class="inline-flex items-center gap-1 text-accent-gold text-sm font-bold uppercase tracking-widest">Read article <span class="material-symbols-outlined text-base">arrow_forward</span></div>
+          </div>
+        </a>
+
+        <!-- Article 11: Birthday in Cabo -->
+        <a href="/travel-guide/celebrate-your-birthday-in-cabo" class="guide-card bg-white rounded-2xl overflow-hidden shadow-md border border-border-light/60 block">
+          <div class="h-[220px] lg:h-[240px] overflow-hidden">
+            <img alt="Birthday celebration in Cabo San Lucas" class="w-full h-full object-cover" src="https://www.cabosailing.com/wp-content/uploads/2018/09/celebrate-in-cabo-san-lucas-1080x675.jpg"/>
+          </div>
+          <div class="p-5 lg:p-6">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="bg-accent-gold/10 text-accent-gold text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-widest border border-accent-gold/20">Activities</span>
+            </div>
+            <h3 class="text-lg font-serif text-navy font-semibold mb-2 leading-snug">Celebrate Your Birthday in Cabo San Lucas</h3>
+            <p class="text-navy/50 text-sm leading-relaxed mb-4">Fine dining, yacht adventures, nightlife, and spa days &mdash; ideas for every style.</p>
+            <div class="inline-flex items-center gap-1 text-accent-gold text-sm font-bold uppercase tracking-widest">Read article <span class="material-symbols-outlined text-base">arrow_forward</span></div>
+          </div>
+        </a>
+
+        <!-- Article 12: Private Charter Cost -->
+        <a href="/travel-guide/private-sailing-charter-cost" class="guide-card bg-white rounded-2xl overflow-hidden shadow-md border border-border-light/60 block">
+          <div class="h-[220px] lg:h-[240px] overflow-hidden">
+            <img alt="Private sailing charter in Cabo San Lucas" class="w-full h-full object-cover" src="https://www.cabosailing.com/wp-content/uploads/2025/10/how-much-does-a-private-sailing-charter-in-cabo-san-lucas-cost.jpg"/>
+          </div>
+          <div class="p-5 lg:p-6">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="bg-accent-gold/10 text-accent-gold text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-widest border border-accent-gold/20">Activities</span>
+            </div>
+            <h3 class="text-lg font-serif text-navy font-semibold mb-2 leading-snug">How Much Does a Private Sailing Charter Cost?</h3>
+            <p class="text-navy/50 text-sm leading-relaxed mb-4">Half-day, full-day, and luxury yacht prices &mdash; what's included and tips for booking.</p>
+            <div class="inline-flex items-center gap-1 text-accent-gold text-sm font-bold uppercase tracking-widest">Read article <span class="material-symbols-outlined text-base">arrow_forward</span></div>
+          </div>
+        </a>
+
+        <!-- Article 13: Chileno Bay Snorkeling -->
+        <a href="/travel-guide/snorkeling-chileno-bay" class="guide-card bg-white rounded-2xl overflow-hidden shadow-md border border-border-light/60 block">
+          <div class="h-[220px] lg:h-[240px] overflow-hidden">
+            <img alt="Snorkeling in Chileno Bay" class="w-full h-full object-cover" src="https://www.cabosailing.com/wp-content/uploads/2018/09/snorkeling-1.jpg"/>
+          </div>
+          <div class="p-5 lg:p-6">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="bg-accent-gold/10 text-accent-gold text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-widest border border-accent-gold/20">Activities</span>
+            </div>
+            <h3 class="text-lg font-serif text-navy font-semibold mb-2 leading-snug">Snorkeling Tour in Chileno Bay</h3>
+            <p class="text-navy/50 text-sm leading-relaxed mb-4">Crystal-clear water, tropical fish, sea turtles &mdash; explore Cabo's underwater paradise.</p>
+            <div class="inline-flex items-center gap-1 text-accent-gold text-sm font-bold uppercase tracking-widest">Read article <span class="material-symbols-outlined text-base">arrow_forward</span></div>
+          </div>
+        </a>
+
+        <!-- Article 14: Pelican Rock Snorkeling -->
+        <a href="/travel-guide/pelican-rock-snorkeling" class="guide-card bg-white rounded-2xl overflow-hidden shadow-md border border-border-light/60 block">
+          <div class="h-[220px] lg:h-[240px] overflow-hidden">
+            <img alt="Pelican Rock snorkeling in Cabo San Lucas" class="w-full h-full object-cover" src="https://www.cabosailing.com/wp-content/uploads/2017/06/42-f-2-1.jpg"/>
+          </div>
+          <div class="p-5 lg:p-6">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="bg-accent-gold/10 text-accent-gold text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-widest border border-accent-gold/20">Activities</span>
+            </div>
+            <h3 class="text-lg font-serif text-navy font-semibold mb-2 leading-snug">Pelican Rock Snorkeling Tour</h3>
+            <p class="text-navy/50 text-sm leading-relaxed mb-4">Colorful fish, sea lions, and clear water near Lover's Beach &mdash; Cabo bay's best snorkel spot.</p>
+            <div class="inline-flex items-center gap-1 text-accent-gold text-sm font-bold uppercase tracking-widest">Read article <span class="material-symbols-outlined text-base">arrow_forward</span></div>
+          </div>
+        </a>
+
+        <!-- Article: Shopping in Cabo -->
+        <a href="/travel-guide/shopping-in-cabo" class="guide-card bg-white rounded-2xl overflow-hidden shadow-md border border-border-light/60 block">
+          <div class="h-[220px] lg:h-[240px] overflow-hidden">
+            <img alt="Shopping in Cabo San Lucas" class="w-full h-full object-cover" src="https://www.cabosailing.com/wp-content/uploads/2024/12/best-destinations-for-shopp.png"/>
+          </div>
+          <div class="p-5 lg:p-6">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="bg-accent-gold/10 text-accent-gold text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-widest border border-accent-gold/20">Activities</span>
+            </div>
+            <h3 class="text-lg font-serif text-navy font-semibold mb-2 leading-snug">Best Shopping Destinations in Cabo San Lucas</h3>
+            <p class="text-navy/50 text-sm leading-relaxed mb-4">Luxury malls, artisan markets, glass factory, Talavera pottery &mdash; a local's shopping guide.</p>
+            <div class="inline-flex items-center gap-1 text-accent-gold text-sm font-bold uppercase tracking-widest">Read article <span class="material-symbols-outlined text-base">arrow_forward</span></div>
+          </div>
+        </a>
 
       </div>
     </div>

@@ -44,9 +44,19 @@ import headerSunset3 from "../../assets/images/guests-on-sailboats/cabo-sunset-s
 
 // Icons
 import yachtIcon from "../../assets/icons/Yacht icon.png";
+
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://cabosailing.com/es/" },
+    { "@type": "ListItem", "position": 2, "name": "Nuestra Flota" }
+  ]
+});
 ---
 
-<BaseLayout title="Nuestra Flota — Yates y Veleros en Cabo San Lucas | Cabo Sailing" description="Conoce nuestra flota: yates Sea Ray (42', 45', 46') y veleros Hunter (38', 42') para charters privados en Cabo San Lucas. Fotos, capacidad y especificaciones." hreflangs={{ en: '/fleet', es: '/es/fleet' }}>
+<BaseLayout title="Nuestra Flota — Yates y Veleros en Cabo San Lucas | Cabo Sailing" description="Conoce nuestra flota: yates Sea Ray (42', 45', 46') y veleros Hunter (38', 42') para charters privados en Cabo San Lucas. Fotos, capacidad y especificaciones." ogImage="/og/our-fleet.jpg" ogImageAlt="Cabo Sailing fleet of yachts and sailboats" hreflangs={{ en: '/fleet', es: '/es/fleet' }}>
+  <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
   <Header variant="subpage" activePage="fleet" />
 
   <main class="flex-1 w-full overflow-x-hidden pt-[60px] lg:pt-[72px]">

@@ -26,9 +26,40 @@ import img_12_Sailing_42 from "../assets/images/boats/sailing-42/cabo-sailing-42
 import img_6_Sailing_38 from "../assets/images/boats/sailing-38/cabo-sailing-38-exterior-02.jpg";
 import img_8_Sailing_38 from "../assets/images/boats/sailing-38/cabo-sailing-38-exterior-03.jpg";
 import img_5_Sailing_38 from "../assets/images/boats/sailing-38/cabo-sailing-38-exterior-01.jpg";
+
+const touristTripSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "TouristTrip",
+  "name": "Private Whale Watching in Cabo San Lucas",
+  "description": "Private whale watching charters during humpback season (Dec\u2013Apr). See humpbacks and grays up close from your own yacht or sailboat in Cabo San Lucas.",
+  "touristType": "Families, Nature Lovers, Couples",
+  "provider": {
+    "@type": "TravelAgency",
+    "name": "Cabo Sailing Ocean Adventures",
+    "url": "https://cabosailing.com"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://cabosailing.com/whale-watching/",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock"
+  }
+});
+
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://cabosailing.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Tours", "item": "https://cabosailing.com/tours/" },
+    { "@type": "ListItem", "position": 3, "name": "Private Whale Watching" }
+  ]
+});
 ---
 
-<BaseLayout bodyClass="bg-white font-body text-text-main antialiased min-h-screen flex flex-col relative" title="Private Whale Watching in Cabo San Lucas (Dec–Apr) | Cabo Sailing" description="Private whale watching charters during humpback season (Dec–Apr). See humpbacks and grays up close from your own yacht or sailboat in Cabo San Lucas." hreflangs={{ en: '/whale-watching', es: '/es/whale-watching' }}>
+<BaseLayout bodyClass="bg-white font-body text-text-main antialiased min-h-screen flex flex-col relative" title="Private Whale Watching in Cabo San Lucas (Dec–Apr) | Cabo Sailing" description="Private whale watching charters during humpback season (Dec–Apr). See humpbacks and grays up close from your own yacht or sailboat in Cabo San Lucas." ogImage="/og/whale-watching-sailing.jpg" ogImageAlt="Whale watching in Cabo San Lucas" hreflangs={{ en: '/whale-watching', es: '/es/whale-watching' }}>
+  <script slot="head" type="application/ld+json" set:html={touristTripSchema} />
+  <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
   <Header variant="subpage" activePage="tours" />
 
 

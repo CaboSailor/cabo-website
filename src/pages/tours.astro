@@ -13,9 +13,19 @@ import sharedSunsetImg from "../assets/images/guests-on-sailboats/cabo-sunset-sa
 import whaleWatchingImg from "../assets/images/whales/cabo-whale-watching-breaching.jpg";
 import bacheloretteImg from "../assets/images/bachelorette/cabo-bachelorette-party-el-arco.png";
 import scubaDivingImg from "../assets/images/scuba-diving/cabo-scuba-diving-underwater.jpg";
+
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://cabosailing.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Tours" }
+  ]
+});
 ---
 
 <BaseLayout title="Tours — Cabo Sailing | Boat Tours in Cabo San Lucas" description="Explore all boat tours in Cabo San Lucas. Private & shared snorkeling, sunset cruises, whale watching, bachelorette parties & scuba diving.">
+  <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
   <Header variant="subpage" activePage="tours" />
 
   <main class="flex-1 w-full overflow-x-hidden pt-[60px] lg:pt-[72px]">

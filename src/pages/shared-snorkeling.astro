@@ -15,9 +15,40 @@ import Cabo_Sailing_Snorkeling_17 from "../assets/images/guests-on-sailboats/cab
 import img_10_Sailing_42 from "../assets/images/boats/sailing-42/cabo-sailing-42-exterior-01.jpg";
 import img_6_Sailing_38 from "../assets/images/boats/sailing-38/cabo-sailing-38-exterior-02.jpg";
 import img_17_Sailing_42 from "../assets/images/boats/sailing-42/cabo-sailing-42-sailing-view.jpg";
+
+const touristTripSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "TouristTrip",
+  "name": "Shared Snorkeling Tour in Cabo San Lucas",
+  "description": "Shared snorkel tour to Cabo's best reefs — the Arch and Pelican Rock. Small group, all gear, drinks and snacks included. Daily departures.",
+  "touristType": "Budget Travelers, Solo Travelers, Couples",
+  "provider": {
+    "@type": "TravelAgency",
+    "name": "Cabo Sailing Ocean Adventures",
+    "url": "https://cabosailing.com"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://cabosailing.com/shared-snorkeling/",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock"
+  }
+});
+
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://cabosailing.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Tours", "item": "https://cabosailing.com/tours/" },
+    { "@type": "ListItem", "position": 3, "name": "Shared Snorkeling Tour" }
+  ]
+});
 ---
 
-<BaseLayout bodyClass="bg-white font-body text-text-main antialiased min-h-screen flex flex-col relative" title="Shared Snorkeling Tour in Cabo San Lucas — Small Group | Cabo Sailing" description="Shared snorkel tour to Cabo's best reefs — the Arch and Pelican Rock. Small group, all gear, drinks and snacks included. Daily departures." hreflangs={{ en: '/shared-snorkeling', es: '/es/shared-snorkeling' }}>
+<BaseLayout bodyClass="bg-white font-body text-text-main antialiased min-h-screen flex flex-col relative" title="Shared Snorkeling Tour in Cabo San Lucas — Small Group | Cabo Sailing" description="Shared snorkel tour to Cabo's best reefs — the Arch and Pelican Rock. Small group, all gear, drinks and snacks included. Daily departures." ogImage="/og/shared-snorkeling.jpg" ogImageAlt="Small-group snorkeling tour in Cabo San Lucas" hreflangs={{ en: '/shared-snorkeling', es: '/es/shared-snorkeling' }}>
+  <script slot="head" type="application/ld+json" set:html={touristTripSchema} />
+  <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
   <Header variant="subpage" activePage="tours" />
 
 

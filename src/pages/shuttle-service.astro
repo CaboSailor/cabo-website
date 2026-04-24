@@ -12,9 +12,19 @@ import yacht45_5 from "../assets/images/boats/yacht-45/cabo-private-yacht-45-ext
 import sailing42_10 from "../assets/images/boats/sailing-42/cabo-sailing-42-exterior-01.jpg";
 import guestsImg from "../assets/images/guests/cabo-charter-guests-smiling.jpg";
 import guestsYachtImg from "../assets/images/guests-on-yachts/cabo-yacht-charter-guests-04.jpg";
+
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://cabosailing.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Shuttle Service" }
+  ]
+});
 ---
 
 <BaseLayout title="Los Cabos Airport Shuttle & Transfer Service | Cabo Sailing" description="Reliable airport shuttle and transfer service in Los Cabos. Air-conditioned vehicles, bilingual drivers, door-to-door service from SJD Airport to Cabo San Lucas.">
+  <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
   <Header variant="subpage" activePage="shuttle" />
 
   <main class="flex-1 w-full overflow-x-hidden pt-[60px] lg:pt-[72px]">

@@ -15,9 +15,40 @@ import img_31_03_25_Gil_airbnb_shoot_photos_20mm_33_topaz_sharpen_exposure from 
 import img_10_Sailing_42 from "../assets/images/boats/sailing-42/cabo-sailing-42-exterior-01.jpg";
 import img_6_Sailing_38 from "../assets/images/boats/sailing-38/cabo-sailing-38-exterior-02.jpg";
 import img_17_Sailing_42 from "../assets/images/boats/sailing-42/cabo-sailing-42-sailing-view.jpg";
+
+const touristTripSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "TouristTrip",
+  "name": "Shared Sunset Cruise in Cabo San Lucas",
+  "description": "Shared sunset sailing cruise in Cabo San Lucas. Small group on a sailboat, open bar, snacks and views of the Arch. Daily departures from the marina.",
+  "touristType": "Budget Travelers, Couples, Solo Travelers",
+  "provider": {
+    "@type": "TravelAgency",
+    "name": "Cabo Sailing Ocean Adventures",
+    "url": "https://cabosailing.com"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://cabosailing.com/shared-sunset/",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock"
+  }
+});
+
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://cabosailing.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Tours", "item": "https://cabosailing.com/tours/" },
+    { "@type": "ListItem", "position": 3, "name": "Shared Sunset Cruise" }
+  ]
+});
 ---
 
-<BaseLayout bodyClass="bg-white font-body text-text-main antialiased min-h-screen flex flex-col relative" title="Shared Sunset Cruise in Cabo San Lucas — Small Group | Cabo Sailing" description="Shared sunset sailing cruise in Cabo San Lucas. Small group on a sailboat, open bar, snacks and views of the Arch. Daily departures from the marina." hreflangs={{ en: '/shared-sunset', es: '/es/shared-sunset' }}>
+<BaseLayout bodyClass="bg-white font-body text-text-main antialiased min-h-screen flex flex-col relative" title="Shared Sunset Cruise in Cabo San Lucas — Small Group | Cabo Sailing" description="Shared sunset sailing cruise in Cabo San Lucas. Small group on a sailboat, open bar, snacks and views of the Arch. Daily departures from the marina." ogImage="/og/shared-sunset.jpg" ogImageAlt="Sunset sailing cruise in Cabo San Lucas" hreflangs={{ en: '/shared-sunset', es: '/es/shared-sunset' }}>
+  <script slot="head" type="application/ld+json" set:html={touristTripSchema} />
+  <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
   <Header variant="subpage" activePage="tours" />
 
 

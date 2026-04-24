@@ -55,9 +55,33 @@ import reviewsBg from "../assets/images/boats/sailing-42/cabo-sailing-42-guests-
 // Icons
 import iconSnorkel from '../assets/icons/snorkel1.png';
 import iconPaddleboard from '../assets/icons/paddle-board-clean.png';
+
+const travelAgencySchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "TravelAgency",
+  "name": "Cabo Sailing Ocean Adventures",
+  "url": "https://cabosailing.com",
+  "logo": "https://cabosailing.com/og/home.jpg",
+  "telephone": "+52-624-143-8485",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "F Dock, Centro, Marina",
+    "postalCode": "23450",
+    "addressLocality": "Cabo San Lucas",
+    "addressRegion": "Baja California Sur",
+    "addressCountry": "MX"
+  },
+  "openingHours": "Mo-Su 07:30-20:00",
+  "sameAs": [
+    "https://www.facebook.com/CaboSailing/",
+    "https://www.instagram.com/cabosailing/",
+    "https://www.youtube.com/@cabosailing4394/"
+  ]
+});
 ---
 
-<BaseLayout title="Private Yacht & Sailboat Charters in Cabo San Lucas | Cabo Sailing" description="Private yacht and sailboat charters in Cabo San Lucas — sunset cruises, snorkeling, whale watching and bachelorettes. Crew, drinks and gear included." hreflangs={{ en: '/', es: '/es/' }}>
+<BaseLayout title="Private Yacht & Sailboat Charters in Cabo San Lucas | Cabo Sailing" description="Private yacht and sailboat charters in Cabo San Lucas — sunset cruises, snorkeling, whale watching and bachelorettes. Crew, drinks and gear included." ogImage="/og/home.jpg" ogImageAlt="Cabo Sailing luxury yacht in Cabo San Lucas" hreflangs={{ en: '/', es: '/es/' }}>
+<script slot="head" type="application/ld+json" set:html={travelAgencySchema} />
 
 <Header variant="home" activePage="home" />
 
