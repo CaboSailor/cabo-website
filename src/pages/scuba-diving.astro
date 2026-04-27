@@ -13,19 +13,18 @@ import scubaImg9 from "../assets/images/scuba-diving/cabo-scuba-diving-fish.jpg"
 import scubaImg5 from "../assets/images/scuba-diving/cabo-scuba-diving-coral.jpg";
 import scubaImg17 from "../assets/images/scuba-diving/cabo-scuba-diving-adventure.jpg";
 
-// Boat images
+// Boat images (carousel originals kept for hero/gallery)
 import yacht51_9 from "../assets/images/boats/yacht-51/cabo-luxury-yacht-51-ocean-view.jpg";
 import yacht51_2 from "../assets/images/boats/yacht-51/cabo-luxury-yacht-51-exterior-01.jpg";
-import yacht51_7 from "../assets/images/boats/yacht-51/cabo-luxury-yacht-51-exterior-03.jpg";
 import yacht45_1 from "../assets/images/boats/yacht-45/cabo-private-yacht-45-exterior-01.jpg";
-import yacht45_5 from "../assets/images/boats/yacht-45/cabo-private-yacht-45-exterior-03.jpg";
-import yacht45_6 from "../assets/images/boats/yacht-45/cabo-private-yacht-45-bow.jpg";
-import yacht42_3 from "../assets/images/boats/yacht-42/cabo-private-yacht-42-exterior-02.jpg";
-import yacht42_2 from "../assets/images/boats/yacht-42/cabo-private-yacht-42-exterior-01.jpg";
-import yacht42_5 from "../assets/images/boats/yacht-42/cabo-private-yacht-42-exterior-03.jpg";
 import sailing42_10 from "../assets/images/boats/sailing-42/cabo-sailing-42-exterior-01.jpg";
-import sailing42_17 from "../assets/images/boats/sailing-42/cabo-sailing-42-sailing-view.jpg";
-import sailing42_12 from "../assets/images/boats/sailing-42/cabo-sailing-42-exterior-02.jpg";
+
+// Boat card images (single image per card)
+import yacht51Boat from "../assets/images/boats/yacht-51/cabo-sailing-yacht-51-boat.png";
+import yacht45Img from "../assets/images/boats/yacht-45/cabo-private-yacht-45-charter.png";
+import yacht42Boat from "../assets/images/boats/yacht-42/cabo-sailig-yacht-42-boat.png";
+import sailing42View from "../assets/images/boats/sailing-42/cabo-sailing-42-sailing-view.png";
+import sailing38Boat from "../assets/images/boats/sailing-38/cabo-sailing-38-home-boat.png";
 
 // Icons
 import yachtIcon from "../assets/icons/Yacht icon.png";
@@ -218,19 +217,14 @@ const breadcrumbSchema = JSON.stringify({
         <div class="flex flex-col gap-5">
           <!-- Yacht 51' -->
           <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="yacht-51">
-            <div class="h-[320px] w-full relative">
-              <div class="boat-carousel relative w-full h-full">
-                <Image alt="Luxury Yacht 51'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-100 transition-opacity duration-700" src={yacht51_9} width={800} height={500} />
-                <Image alt="Luxury Yacht 51'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" src={yacht51_2} width={800} height={500} />
-              </div>
+            <div class="fleet-img-wrap w-full relative">
+              <Image src={yacht51Boat} alt="Luxury Yacht 51'" class="w-full h-full object-cover object-center" style="transform: scale(1.1);" width={1023} height={1537} format="png" quality={100} />
               <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
               <div class="absolute bottom-5 left-6">
                 <h3 class="text-white text-lg lg:text-xl">Luxury Yacht 51'</h3>
                 <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Up to 20 Guests</span></div>
               </div>
               <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Most Spacious</div>
-              <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
-              <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
             </div>
             <div class="p-5">
               <a href="https://wa.me/526241916997?text=Hi%2C%20I'd%20like%20to%20book%20Scuba%20Diving%20on%20the%20Luxury%20Yacht%2051" target="_blank" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg">Book Now</a>
@@ -238,19 +232,14 @@ const breadcrumbSchema = JSON.stringify({
           </div>
           <!-- Yacht 45' -->
           <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="yacht-45">
-            <div class="h-[320px] w-full relative">
-              <div class="boat-carousel relative w-full h-full">
-                <Image alt="Luxury Yacht 45'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-100 transition-opacity duration-700" src={yacht45_1} width={800} height={500} />
-                <Image alt="Luxury Yacht 45'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" src={yacht45_5} width={800} height={500} />
-              </div>
+            <div class="fleet-img-wrap w-full relative">
+              <Image src={yacht45Img} alt="Luxury Yacht 45'" class="w-full h-full object-cover object-center" style="transform: none !important;" width={1023} height={1537} format="png" quality={100} />
               <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
               <div class="absolute bottom-5 left-6">
                 <h3 class="text-white text-lg lg:text-xl">Luxury Yacht 45'</h3>
                 <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Up to 12 Guests</span></div>
               </div>
               <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Most Popular</div>
-              <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
-              <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
             </div>
             <div class="p-5">
               <a href="https://wa.me/526241916997?text=Hi%2C%20I'd%20like%20to%20book%20Scuba%20Diving%20on%20the%20Luxury%20Yacht%2045" target="_blank" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg">Book Now</a>
@@ -258,19 +247,14 @@ const breadcrumbSchema = JSON.stringify({
           </div>
           <!-- Yacht 42' -->
           <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="yacht-42">
-            <div class="h-[320px] w-full relative">
-              <div class="boat-carousel relative w-full h-full">
-                <Image alt="Luxury Yacht 42'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-100 transition-opacity duration-700" src={yacht42_3} width={800} height={500} />
-                <Image alt="Luxury Yacht 42'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" src={yacht42_2} width={800} height={500} />
-              </div>
+            <div class="fleet-img-wrap w-full relative">
+              <Image src={yacht42Boat} alt="Luxury Yacht 42'" class="w-full h-full object-cover object-center" style="transform: scale(1.1);" width={1023} height={1537} format="png" quality={100} />
               <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
               <div class="absolute bottom-5 left-6">
                 <h3 class="text-white text-lg lg:text-xl">Luxury Yacht 42'</h3>
                 <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Up to 18 Guests</span></div>
               </div>
               <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Best Value</div>
-              <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
-              <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
             </div>
             <div class="p-5">
               <a href="https://wa.me/526241916997?text=Hi%2C%20I'd%20like%20to%20book%20Scuba%20Diving%20on%20the%20Luxury%20Yacht%2042" target="_blank" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg">Book Now</a>
@@ -285,19 +269,14 @@ const breadcrumbSchema = JSON.stringify({
         <div class="flex flex-col gap-5">
           <!-- Sailing 42' -->
           <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="sailing-42">
-            <div class="h-[320px] w-full relative">
-              <div class="boat-carousel relative w-full h-full">
-                <Image alt="Sailing Boat 42'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-100 transition-opacity duration-700" src={sailing42_10} width={800} height={500} />
-                <Image alt="Sailing Boat 42'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" src={sailing42_17} width={800} height={500} />
-              </div>
+            <div class="fleet-img-wrap w-full relative">
+              <Image src={sailing42View} alt="Sailing Boat 42'" class="w-full h-full object-cover object-center" style="transform: scale(1.1);" width={1024} height={1536} format="png" quality={100} />
               <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
               <div class="absolute bottom-5 left-6">
                 <h3 class="text-white text-lg lg:text-xl">Sailing Boat 42'</h3>
                 <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Up to 14 Guests</span></div>
               </div>
               <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Sailing Experience</div>
-              <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
-              <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
             </div>
             <div class="p-5">
               <button type="button" onclick="openRezdyModal('642955','productsCalendar')" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg">Check Availability</button>
@@ -557,15 +536,11 @@ const breadcrumbSchema = JSON.stringify({
       <!-- DESKTOP: Select Your Boat — full width -->
       <div class="max-w-[1400px] mx-auto px-10 py-16">
         <div class="flex items-center gap-3 mb-8"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-lg lg:text-2xl text-navy">Scroll our boats — find a perfect fit for your unique scuba diving experience</h3></div>
-        <div class="grid grid-cols-3 gap-5 pb-8">
+        <div class="grid grid-cols-3 gap-5 pb-8 max-w-[1100px] mx-auto">
           <!-- Luxury Yacht 51' -->
           <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="yacht-51">
-            <div class="h-[480px] w-full relative">
-              <div class="boat-carousel relative w-full h-full">
-                <Image alt="Luxury Yacht 51'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-100 transition-opacity duration-700" src={yacht51_9} width={600} height={480} />
-                <Image alt="Luxury Yacht 51'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" src={yacht51_2} width={600} height={480} />
-                <Image alt="Luxury Yacht 51'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" src={yacht51_7} width={600} height={480} />
-              </div>
+            <div class="fleet-img-wrap w-full relative">
+              <Image src={yacht51Boat} alt="Luxury Yacht 51'" class="w-full h-full object-cover object-center" style="transform: scale(1.1);" width={1023} height={1537} format="png" quality={100} />
               <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
               <div class="absolute bottom-5 left-6">
                 <h3 class="text-white text-lg lg:text-xl">Luxury Yacht 51'</h3>
@@ -573,8 +548,6 @@ const breadcrumbSchema = JSON.stringify({
               </div>
               <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Most Spacious</div>
               <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-30%</div>
-              <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
-              <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
             </div>
             <div class="p-6 space-y-6">
               <p class="text-slate-500 text-sm italic text-center pb-3 border-b border-border-light/50">Best for large groups & maximum space</p>
@@ -583,12 +556,8 @@ const breadcrumbSchema = JSON.stringify({
           </div>
           <!-- Luxury Yacht 45' -->
           <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="yacht-45">
-            <div class="h-[480px] w-full relative">
-              <div class="boat-carousel relative w-full h-full">
-                <Image alt="Luxury Yacht 45'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-100 transition-opacity duration-700" src={yacht45_1} width={600} height={480} />
-                <Image alt="Luxury Yacht 45'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" src={yacht45_5} width={600} height={480} />
-                <Image alt="Luxury Yacht 45'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" src={yacht45_6} width={600} height={480} />
-              </div>
+            <div class="fleet-img-wrap w-full relative">
+              <Image src={yacht45Img} alt="Luxury Yacht 45'" class="w-full h-full object-cover object-center" style="transform: none !important;" width={1023} height={1537} format="png" quality={100} />
               <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
               <div class="absolute bottom-5 left-6">
                 <h3 class="text-white text-lg lg:text-xl">Luxury Yacht 45'</h3>
@@ -596,8 +565,6 @@ const breadcrumbSchema = JSON.stringify({
               </div>
               <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Most Popular</div>
               <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-30%</div>
-              <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
-              <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
             </div>
             <div class="p-6 space-y-6">
               <p class="text-slate-500 text-sm italic text-center pb-3 border-b border-border-light/50">Newest vessel, sleek & modern luxury</p>
@@ -606,12 +573,8 @@ const breadcrumbSchema = JSON.stringify({
           </div>
           <!-- Luxury Yacht 42' -->
           <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="yacht-42">
-            <div class="h-[480px] w-full relative">
-              <div class="boat-carousel relative w-full h-full">
-                <Image alt="Luxury Yacht 42'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-100 transition-opacity duration-700" src={yacht42_3} width={600} height={480} />
-                <Image alt="Luxury Yacht 42'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" src={yacht42_2} width={600} height={480} />
-                <Image alt="Luxury Yacht 42'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" src={yacht42_5} width={600} height={480} />
-              </div>
+            <div class="fleet-img-wrap w-full relative">
+              <Image src={yacht42Boat} alt="Luxury Yacht 42'" class="w-full h-full object-cover object-center" style="transform: scale(1.1);" width={1023} height={1537} format="png" quality={100} />
               <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
               <div class="absolute bottom-5 left-6">
                 <h3 class="text-white text-lg lg:text-xl">Luxury Yacht 42'</h3>
@@ -619,8 +582,6 @@ const breadcrumbSchema = JSON.stringify({
               </div>
               <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Best Value</div>
               <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-30%</div>
-              <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
-              <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
             </div>
             <div class="p-6 space-y-6">
               <p class="text-slate-500 text-sm italic text-center pb-3 border-b border-border-light/50">Great value, perfect for dive groups</p>
@@ -629,15 +590,12 @@ const breadcrumbSchema = JSON.stringify({
           </div>
         </div>
 
-        <div class="grid grid-cols-3 gap-5 pb-8">
+        <div class="grid grid-cols-3 gap-5 pb-8 max-w-[1100px] mx-auto">
+          <div></div>
           <!-- Sailing Boat 42' -->
           <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="sailing-42">
-            <div class="h-[480px] w-full relative">
-              <div class="boat-carousel relative w-full h-full">
-                <Image alt="Sailing Boat 42'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-100 transition-opacity duration-700" src={sailing42_10} width={600} height={480} />
-                <Image alt="Sailing Boat 42'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" src={sailing42_17} width={600} height={480} />
-                <Image alt="Sailing Boat 42'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" src={sailing42_12} width={600} height={480} />
-              </div>
+            <div class="fleet-img-wrap w-full relative">
+              <Image src={sailing42View} alt="Sailing Boat 42'" class="w-full h-full object-cover object-center" style="transform: scale(1.1);" width={1024} height={1536} format="png" quality={100} />
               <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
               <div class="absolute bottom-5 left-6">
                 <h3 class="text-white text-lg lg:text-xl">Sailing Boat 42'</h3>
@@ -645,8 +603,6 @@ const breadcrumbSchema = JSON.stringify({
               </div>
               <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Sailing Experience</div>
               <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-30%</div>
-              <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
-              <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
             </div>
             <div class="p-6 space-y-6">
               <p class="text-slate-500 text-sm italic text-center pb-3 border-b border-border-light/50">Smooth sailing, dive & sail adventure</p>

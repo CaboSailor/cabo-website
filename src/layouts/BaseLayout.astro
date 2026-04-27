@@ -115,16 +115,15 @@ const canonicalUrl = `${siteUrl}${canonicalPath}`;
     .fleet-img-wrap .boat-hero { object-position: center 60%; }
     .fleet-arrow {
       position: absolute; top: 50%; transform: translateY(-50%); z-index: 10;
-      width: 36px; height: 36px; border-radius: 50%; border: none;
-      background: rgba(255,255,255,0.25); backdrop-filter: blur(4px);
-      -webkit-backdrop-filter: blur(4px); color: white; cursor: pointer;
+      width: 28px; height: 80px; border-radius: 6px; border: none;
+      background: none; color: rgba(255,255,255,0.5); cursor: pointer;
       display: flex; align-items: center; justify-content: center;
-      transition: background 0.2s; padding: 0;
+      transition: color 0.2s; padding: 0;
     }
-    .fleet-arrow:hover { background: rgba(255,255,255,0.45); }
+    .fleet-arrow:hover { color: rgba(255,255,255,0.85); }
     .fleet-arrow.left { left: 10px; }
     .fleet-arrow.right { right: 10px; }
-    .fleet-arrow .material-symbols-outlined { font-size: 20px; line-height: 1; }
+    .fleet-arrow .material-symbols-outlined { font-size: 36px; line-height: 1; font-weight: 300; }
   </style>
   <style is:inline>
     body { min-height: max(884px, 100dvh); }

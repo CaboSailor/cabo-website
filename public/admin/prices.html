@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Price Editor — Cabo Sailing</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f3ef; color: #1e3a5f; min-height: 100vh; }
+
+  .header { background: #1e3a5f; color: #fff; padding: 20px 24px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 10; }
+  .header h1 { font-size: 18px; font-weight: 700; letter-spacing: 0.5px; }
+  .header .saved { background: #22c55e; color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 13px; font-weight: 600; opacity: 0; transition: opacity 0.3s; }
+  .header .saved.show { opacity: 1; }
+
+  .container { max-width: 800px; margin: 0 auto; padding: 24px 16px 80px; }
+
+  /* Global discount */
+  .global-section { background: #fff; border-radius: 16px; padding: 20px 24px; margin-bottom: 24px; border: 2px solid #c9a227; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+  .global-section h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #96722a; margin-bottom: 12px; }
+  .global-row { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+  .global-row label { font-size: 14px; font-weight: 600; }
+  .global-row input { width: 80px; padding: 8px 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 16px; text-align: center; }
+  .global-row .apply-btn { background: #1e3a5f; color: #fff; border: none; padding: 8px 20px; border-radius: 8px; font-size: 13px; font-weight: 600; cursor: pointer; text-transform: uppercase; letter-spacing: 0.5px; }
+  .global-row .apply-btn:hover { background: #15304f; }
+
+  /* Promo code */
+  .promo-section { background: #fff; border-radius: 16px; padding: 20px 24px; margin-bottom: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+  .promo-section h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #666; margin-bottom: 12px; }
+  .promo-section input { width: 200px; padding: 8px 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 16px; }
+
+  /* Section headers */
+  .section-title { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #96722a; margin: 28px 0 12px; padding-left: 4px; }
+
+  /* Boat cards */
+  .boat-card { background: #fff; border-radius: 16px; padding: 20px 24px; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); transition: box-shadow 0.2s; }
+  .boat-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.1); }
+  .boat-card .boat-name { font-size: 16px; font-weight: 700; margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
+  .boat-card .boat-name .discount-badge { background: #1e3a5f; color: #fff; font-size: 11px; padding: 3px 10px; border-radius: 12px; font-weight: 600; }
+
+  .fields { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
+  .field { display: flex; flex-direction: column; gap: 4px; }
+  .field label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; color: #888; }
+  .field input { padding: 10px 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 16px; width: 100%; }
+  .field input:focus { outline: none; border-color: #c9a227; box-shadow: 0 0 0 3px rgba(201,162,39,0.15); }
+  .field .computed { font-size: 14px; font-weight: 700; color: #22c55e; padding: 10px 0; }
+
+  /* Scuba & shuttle */
+  .sub-fields { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+
+  /* Save button */
+  .save-bar { position: fixed; bottom: 0; left: 0; right: 0; background: #fff; border-top: 1px solid #ddd; padding: 14px 24px; display: flex; justify-content: center; z-index: 10; }
+  .save-btn { background: #1e3a5f; color: #fff; border: none; padding: 12px 48px; border-radius: 10px; font-size: 15px; font-weight: 700; cursor: pointer; text-transform: uppercase; letter-spacing: 1px; transition: background 0.2s; }
+  .save-btn:hover { background: #15304f; }
+  .save-btn:active { transform: scale(0.98); }
+
+  @media (max-width: 600px) {
+    .fields { grid-template-columns: 1fr 1fr; }
+    .global-row { flex-direction: column; align-items: flex-start; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Price Editor</h1>
+  <span class="saved" id="savedBadge">Saved</span>
+</div>
+
+<div class="container" id="app"></div>
+
+<div class="save-bar">
+  <button class="save-btn" onclick="saveAll()">Save Prices</button>
+</div>
+
+<script>
+var prices = null;
+
+// Load current prices
+fetch('/data/prices.json?v=' + Date.now())
+  .then(function(r) { return r.json(); })
+  .then(function(data) {
+    prices = data;
+    render();
+  });
+
+function render() {
+  var app = document.getElementById('app');
+  var html = '';
+
+  // Global discount
+  html += '<div class="global-section">';
+  html += '<h2>Global Discount</h2>';
+  html += '<div class="global-row">';
+  html += '<label>Set discount % for all boats:</label>';
+  html += '<input type="number" id="globalDiscount" min="0" max="99" value="" placeholder="%">';
+  html += '<button class="apply-btn" onclick="applyGlobalDiscount()">Apply to All</button>';
+  html += '</div></div>';
+
+  // Promo code
+  html += '<div class="promo-section">';
+  html += '<h2>Promo Code</h2>';
+  html += '<input type="text" id="promoCode" value="' + esc(prices.promoCode || '') + '" placeholder="e.g. SAIL-30">';
+  html += '</div>';
+
+  // --- Boats ---
+  html += '<div class="section-title">Private Boats</div>';
+
+  var boatOrder = ['yacht-51', 'yacht-45', 'yacht-42', 'sailing-42', 'sailing-38', 'shared-sailing'];
+  boatOrder.forEach(function(id) {
+    var b = prices.boats[id];
+    if (!b) return;
+    var discounted = Math.round(b.regularPrice * (1 - (b.discount || 0) / 100));
+    var extraDisc = b.extraGuestRegular > 0 ? Math.round(b.extraGuestRegular * (1 - (b.discount || 0) / 100)) : 0;
+
+    html += '<div class="boat-card" data-bid="' + id + '">';
+    html += '<div class="boat-name">' + esc(b.name) + ' <span class="discount-badge">-' + (b.discount || 0) + '%</span></div>';
+    html += '<div class="fields">';
+    html += field('Regular Price', 'boat-reg-' + id, b.regularPrice, '$');
+    html += field('Discount %', 'boat-disc-' + id, b.discount || 0, '%');
+    html += readonlyField('Final Price', '$' + discounted.toLocaleString(), 'boat-final-' + id);
+    if (b.extraGuestRegular > 0) {
+      html += field('Extra Guest', 'boat-extra-' + id, b.extraGuestRegular, '$');
+      html += readonlyField('Extra Final', '$' + extraDisc, 'boat-extrafinal-' + id);
+    }
+    html += '</div></div>';
+  });
+
+  // --- Scuba ---
+  html += '<div class="section-title">Scuba Diving</div>';
+  html += '<div class="boat-card">';
+  html += '<div class="boat-name">Scuba Diving</div>';
+  html += '<div class="sub-fields">';
+  html += field('Certified', 'scuba-certified', prices.scuba.certified, '$');
+  html += field('Non-Certified', 'scuba-nonCertified', prices.scuba.nonCertified, '$');
+  html += field('Mexican Menu', 'scuba-mexicanMenu', prices.scuba.mexicanMenu, '$');
+  html += '</div></div>';
+
+  // --- Shuttle ---
+  html += '<div class="section-title">Shuttle Service</div>';
+  html += '<div class="boat-card">';
+  html += '<div class="boat-name">Cabo → Palmilla</div>';
+  html += '<div class="sub-fields">';
+  html += field('One Way', 'shuttle-cp-ow', prices.shuttle.caboToPalmilla.oneWay, '$');
+  html += field('Round Trip', 'shuttle-cp-rt', prices.shuttle.caboToPalmilla.roundTrip, '$');
+  html += field('Extra Guest', 'shuttle-cp-ex', prices.shuttle.caboToPalmilla.extraGuest, '$');
+  html += '</div></div>';
+
+  html += '<div class="boat-card">';
+  html += '<div class="boat-name">Palmilla → Puerto Los Cabos</div>';
+  html += '<div class="sub-fields">';
+  html += field('One Way', 'shuttle-pp-ow', prices.shuttle.palmillaToPuerto.oneWay, '$');
+  html += field('Round Trip', 'shuttle-pp-rt', prices.shuttle.palmillaToPuerto.roundTrip, '$');
+  html += field('Extra Guest', 'shuttle-pp-ex', prices.shuttle.palmillaToPuerto.extraGuest, '$');
+  html += '</div></div>';
+
+  app.innerHTML = html;
+
+  // Attach live recalc listeners to boat fields
+  boatOrder.forEach(function(id) {
+    var regEl = document.getElementById('boat-reg-' + id);
+    var discEl = document.getElementById('boat-disc-' + id);
+    if (regEl) regEl.addEventListener('input', function() { recalcBoat(id); });
+    if (discEl) discEl.addEventListener('input', function() { recalcBoat(id); });
+
+    var extraEl = document.getElementById('boat-extra-' + id);
+    if (extraEl) extraEl.addEventListener('input', function() { recalcBoat(id); });
+  });
+}
+
+function field(label, id, value, prefix) {
+  return '<div class="field"><label>' + label + '</label><input type="number" id="' + id + '" value="' + value + '" min="0"></div>';
+}
+
+function readonlyField(label, value, id) {
+  return '<div class="field"><label>' + label + '</label><div class="computed" id="' + id + '">' + value + '</div></div>';
+}
+
+function esc(s) {
+  var d = document.createElement('div');
+  d.textContent = s;
+  return d.innerHTML;
+}
+
+function recalcBoat(id) {
+  var reg = parseInt(document.getElementById('boat-reg-' + id).value) || 0;
+  var disc = parseInt(document.getElementById('boat-disc-' + id).value) || 0;
+  var final = Math.round(reg * (1 - disc / 100));
+
+  var finalEl = document.getElementById('boat-final-' + id);
+  if (finalEl) finalEl.textContent = '$' + final.toLocaleString();
+
+  // Badge
+  var card = document.querySelector('[data-bid="' + id + '"]');
+  if (card) {
+    var badge = card.querySelector('.discount-badge');
+    if (badge) badge.textContent = '-' + disc + '%';
+  }
+
+  // Extra guest
+  var extraEl = document.getElementById('boat-extra-' + id);
+  var extraFinalEl = document.getElementById('boat-extrafinal-' + id);
+  if (extraEl && extraFinalEl) {
+    var extra = parseInt(extraEl.value) || 0;
+    extraFinalEl.textContent = '$' + Math.round(extra * (1 - disc / 100));
+  }
+}
+
+function applyGlobalDiscount() {
+  var val = parseInt(document.getElementById('globalDiscount').value);
+  if (isNaN(val) || val < 0 || val > 99) return alert('Enter a valid percentage (0-99)');
+
+  var boatOrder = ['yacht-51', 'yacht-45', 'yacht-42', 'sailing-42', 'sailing-38', 'shared-sailing'];
+  boatOrder.forEach(function(id) {
+    var el = document.getElementById('boat-disc-' + id);
+    if (el) {
+      el.value = val;
+      recalcBoat(id);
+    }
+  });
+}
+
+function saveAll() {
+  // Collect boat data
+  var boatOrder = ['yacht-51', 'yacht-45', 'yacht-42', 'sailing-42', 'sailing-38', 'shared-sailing'];
+  boatOrder.forEach(function(id) {
+    var b = prices.boats[id];
+    if (!b) return;
+    b.regularPrice = parseInt(document.getElementById('boat-reg-' + id).value) || 0;
+    b.discount = parseInt(document.getElementById('boat-disc-' + id).value) || 0;
+    var extraEl = document.getElementById('boat-extra-' + id);
+    if (extraEl) b.extraGuestRegular = parseInt(extraEl.value) || 0;
+  });
+
+  // Update activity fromPrice based on cheapest boat's discounted price
+  // private activities use sailing-38 as cheapest, shared use shared-sailing
+  var s38disc = Math.round(prices.boats['sailing-38'].regularPrice * (1 - (prices.boats['sailing-38'].discount || 0) / 100));
+  var sharedDisc = Math.round(prices.boats['shared-sailing'].regularPrice * (1 - (prices.boats['shared-sailing'].discount || 0) / 100));
+  ['private-sunset', 'private-snorkeling', 'whale-watching', 'bachelorette-party'].forEach(function(id) {
+    if (prices.activities[id]) prices.activities[id].fromPrice = s38disc;
+  });
+  if (prices.activities['shared-sunset']) prices.activities['shared-sunset'].fromPrice = sharedDisc;
+  if (prices.activities['shared-snorkeling']) prices.activities['shared-snorkeling'].fromPrice = sharedDisc;
+
+  // Update discount labels
+  var topDiscount = prices.boats['yacht-51'].discount || 0;
+  Object.keys(prices.activities).forEach(function(id) {
+    prices.activities[id].discountLabel = topDiscount > 0 ? 'Save ' + topDiscount + '%' : '';
+  });
+
+  // Promo code
+  prices.promoCode = document.getElementById('promoCode').value.trim();
+  boatOrder.forEach(function(id) {
+    if (prices.boats[id]) prices.boats[id].promoCode = prices.promoCode;
+  });
+
+  // Scuba
+  prices.scuba.certified = parseInt(document.getElementById('scuba-certified').value) || 0;
+  prices.scuba.nonCertified = parseInt(document.getElementById('scuba-nonCertified').value) || 0;
+  prices.scuba.mexicanMenu = parseInt(document.getElementById('scuba-mexicanMenu').value) || 0;
+
+  // Shuttle
+  prices.shuttle.caboToPalmilla.oneWay = parseInt(document.getElementById('shuttle-cp-ow').value) || 0;
+  prices.shuttle.caboToPalmilla.roundTrip = parseInt(document.getElementById('shuttle-cp-rt').value) || 0;
+  prices.shuttle.caboToPalmilla.extraGuest = parseInt(document.getElementById('shuttle-cp-ex').value) || 0;
+  prices.shuttle.palmillaToPuerto.oneWay = parseInt(document.getElementById('shuttle-pp-ow').value) || 0;
+  prices.shuttle.palmillaToPuerto.roundTrip = parseInt(document.getElementById('shuttle-pp-rt').value) || 0;
+  prices.shuttle.palmillaToPuerto.extraGuest = parseInt(document.getElementById('shuttle-pp-ex').value) || 0;
+
+  // Download as JSON file
+  var blob = new Blob([JSON.stringify(prices, null, 2)], { type: 'application/json' });
+  var a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'prices.json';
+  a.click();
+  URL.revokeObjectURL(a.href);
+
+  // Show saved badge
+  var badge = document.getElementById('savedBadge');
+  badge.textContent = 'Downloaded — replace public/data/prices.json';
+  badge.classList.add('show');
+  setTimeout(function() { badge.classList.remove('show'); }, 4000);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+{
+  "activities": {
+    "private-snorkeling": [
+      "guests-on-sailboats/cabo-private-snorkeling-ocean-view.jpeg"
+    ],
+    "private-sunset": [
+      "guests-on-yachts/cabo-private-sunset-cruise-guests.jpg",
+      "guests-on-sailboats/cabo-shared-sunset-sailing.jpg"
+    ],
+    "whale-watching": [
+      "whales/cabo-whale-watching-breaching.jpg"
+    ],
+    "bachelorette-party": [
+      "bachelorette/cabo-bachelorette-party-el-arco.png"
+    ],
+    "shared-snorkeling": [
+      "guests-on-sailboats/cabo-sailboat-guests-snorkeling-02.jpg"
+    ],
+    "shared-sunset": [
+      "guests-on-sailboats/cabo-shared-sunset-sailing.jpg"
+    ]
+  },
+  "fleet": {
+    "yacht-51": [
+      "boats/yacht-51/cabo-sailing-yacht-51-boat.png",
+      "boats/yacht-51/cabo-luxury-yacht-51-charter-v2.png",
+      "boats/yacht-51/cabo-luxury-yacht-51-ocean-view.jpg",
+      "guests-on-yachts/sun-filled-boat-day-with-friends.png"
+    ],
+    "yacht-45": [
+      "boats/yacht-45/cabo-private-yacht-45-charter.png"
+    ],
+    "yacht-42": [
+      "boats/yacht-42/cabo-sailig-yacht-42-boat.png"
+    ],
+    "sailing-42": [
+      "boats/sailing-42/cabo-sailing-42-sailing-view.png",
+      "guests-on-sailboats/cheers-on-a-sunny-coastal-adventure.png"
+    ],
+    "sailing-38": [
+      "boats/sailing-38/cabo-sailing-38-home-boat.png",
+      "guests-on-sailboats/relaxing-sailboat-getaway-with-friends.png"
+    ]
+  }
+}
