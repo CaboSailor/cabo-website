@@ -127,7 +127,9 @@ const canonicalUrl = `${siteUrl}${canonicalPath}`;
   </style>
   <style is:inline>
     html, body { overflow-x: hidden; overscroll-behavior-x: none; }
-    body { min-height: max(884px, 100dvh); }
+    html { touch-action: pan-y; }
+    body { min-height: max(884px, 100dvh); touch-action: pan-y; }
+    [class*="overflow-x-auto"], [class*="overflow-x-scroll"], .no-scrollbar { touch-action: pan-x; }
   </style>
 
   <!-- Per-page head content (tracking scripts, extra styles, etc.) -->
