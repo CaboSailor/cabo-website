@@ -28,9 +28,6 @@ import yacht42Boat from "../assets/images/boats/yacht-42/cabo-sailig-yacht-42-bo
 import sailing42View from "../assets/images/boats/sailing-42/cabo-sailing-42-sailing-view.png";
 import sailing38Boat from "../assets/images/boats/sailing-38/cabo-sailing-38-home-boat.png";
 
-// Icons
-import yachtIcon from "../assets/icons/Yacht icon.png";
-
 const touristTripSchema = JSON.stringify({
   "@context": "https://schema.org",
   "@type": "TouristTrip",
@@ -174,6 +171,10 @@ const breadcrumbSchema = JSON.stringify({
           <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[14px]">check</span></div><span class="text-slate-600 text-base font-medium">Bathroom &amp; Changing Area</span></div>
         </div>
         <div class="mt-6 bg-light-grey rounded-2xl p-5 border border-border-light space-y-4">
+          <div class="border-b border-border-light pb-3">
+            <p class="text-sm font-bold text-navy uppercase tracking-wider">Scuba Diving Add-on</p>
+            <p class="text-sm text-slate-600 italic mt-1">Not included in charter price</p>
+          </div>
           <div class="flex items-center justify-between">
             <div><p class="text-base font-bold text-navy">Certified Diver (2 Dives)</p><p class="text-sm text-slate-500">PADI divemaster guide &amp; full equipment</p></div>
             <span class="text-base font-bold text-gold">$270 USD</span>
@@ -210,12 +211,7 @@ const breadcrumbSchema = JSON.stringify({
 
       <!-- Mobile: Select Your Boat -->
       <div class="mt-10">
-        <div class="flex items-center gap-3 mb-2"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-lg text-navy">Select Your Boat</h3></div>
-        <div class="flex items-center gap-4 mb-4 mt-6">
-          <Image src={yachtIcon} alt="Yacht" class="h-6 w-auto" style="filter: invert(55%) sepia(30%) saturate(500%) hue-rotate(10deg) brightness(85%);" width={24} height={24} />
-          <h3 class="text-base font-serif text-navy">Yachts</h3>
-          <div class="flex-1 h-px bg-gradient-to-r from-gold/30 to-transparent"></div>
-        </div>
+        <div class="flex items-center gap-3 mb-6"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-lg text-navy">Scroll our boats — find a perfect fit for your unique scuba diving experience</h3></div>
         <div class="flex flex-col gap-5">
           <!-- Yacht 51' -->
           <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="yacht-51">
@@ -229,7 +225,7 @@ const breadcrumbSchema = JSON.stringify({
               <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Most Spacious</div>
             </div>
             <div class="p-5">
-              <a href="https://wa.me/526241916997?text=Hi%2C%20I'd%20like%20to%20book%20Scuba%20Diving%20on%20the%20Luxury%20Yacht%2051" target="_blank" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg">Book Now</a>
+              <button type="button" onclick="openRezdyModal('165509')" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg cursor-pointer">Check Availability</button>
             </div>
           </div>
           <!-- Yacht 45' -->
@@ -244,7 +240,7 @@ const breadcrumbSchema = JSON.stringify({
               <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Most Popular</div>
             </div>
             <div class="p-5">
-              <a href="https://wa.me/526241916997?text=Hi%2C%20I'd%20like%20to%20book%20Scuba%20Diving%20on%20the%20Luxury%20Yacht%2045" target="_blank" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg">Book Now</a>
+              <button type="button" onclick="openRezdyModal('528988')" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg cursor-pointer">Check Availability</button>
             </div>
           </div>
           <!-- Yacht 42' -->
@@ -259,16 +255,9 @@ const breadcrumbSchema = JSON.stringify({
               <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Best Value</div>
             </div>
             <div class="p-5">
-              <a href="https://wa.me/526241916997?text=Hi%2C%20I'd%20like%20to%20book%20Scuba%20Diving%20on%20the%20Luxury%20Yacht%2042" target="_blank" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg">Book Now</a>
+              <button type="button" onclick="openRezdyModal('168008')" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg cursor-pointer">Check Availability</button>
             </div>
           </div>
-        </div>
-        <div class="flex items-center gap-4 mb-4 mt-8">
-          <span class="material-symbols-outlined text-gold text-xl">sailing</span>
-          <h3 class="text-base font-serif text-navy">Sailboat</h3>
-          <div class="flex-1 h-px bg-gradient-to-r from-gold/30 to-transparent"></div>
-        </div>
-        <div class="flex flex-col gap-5">
           <!-- Sailing 42' -->
           <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="sailing-42">
             <div class="fleet-img-wrap w-full relative">
@@ -501,6 +490,20 @@ const breadcrumbSchema = JSON.stringify({
                     <div class="flex items-center gap-3 bg-white/70 rounded-2xl px-4 py-3 border border-white"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-base">check</span></div><span class="text-slate-700 font-semibold text-sm">Lunch &amp; Bar</span></div>
                     <div class="flex items-center gap-3 bg-white/70 rounded-2xl px-4 py-3 border border-white"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-base">check</span></div><span class="text-slate-700 font-semibold text-sm">Bathroom &amp; Changing Area</span></div>
                   </div>
+                  <div class="mt-6 bg-white rounded-2xl p-6 border border-white space-y-4">
+                    <div class="border-b border-border-light pb-3">
+                      <p class="text-sm font-bold text-navy uppercase tracking-wider">Scuba Diving Add-on</p>
+                      <p class="text-sm text-slate-600 italic mt-1">Not included in charter price</p>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <div><p class="text-base font-bold text-navy">Certified Diver (2 Dives)</p><p class="text-sm text-slate-500">PADI divemaster guide &amp; full equipment</p></div>
+                      <span class="text-base font-bold text-gold">$270 USD</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <div><p class="text-base font-bold text-navy">Non-Certified Diver (2 Dives)</p><p class="text-sm text-slate-500">PADI instructor, intro course &amp; full equipment</p></div>
+                      <span class="text-base font-bold text-gold">$290 USD</span>
+                    </div>
+                  </div>
                 </div>
 
                 <!-- What to Bring -->
@@ -553,7 +556,7 @@ const breadcrumbSchema = JSON.stringify({
             </div>
             <div class="p-6 space-y-6">
               <p class="text-slate-500 text-sm italic text-center pb-3 border-b border-border-light/50">Best for large groups & maximum space</p>
-              <a href="https://wa.me/526241916997?text=Hi%2C%20I'd%20like%20to%20book%20Scuba%20Diving%20on%20the%20Luxury%20Yacht%2051" target="_blank" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg">Book Now</a>
+              <button type="button" onclick="openRezdyModal('165509')" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg cursor-pointer">Check Availability</button>
             </div>
           </div>
           <!-- Luxury Yacht 45' -->
@@ -570,7 +573,7 @@ const breadcrumbSchema = JSON.stringify({
             </div>
             <div class="p-6 space-y-6">
               <p class="text-slate-500 text-sm italic text-center pb-3 border-b border-border-light/50">Newest vessel, sleek & modern luxury</p>
-              <a href="https://wa.me/526241916997?text=Hi%2C%20I'd%20like%20to%20book%20Scuba%20Diving%20on%20the%20Luxury%20Yacht%2045" target="_blank" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg">Book Now</a>
+              <button type="button" onclick="openRezdyModal('528988')" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg cursor-pointer">Check Availability</button>
             </div>
           </div>
           <!-- Luxury Yacht 42' -->
@@ -587,7 +590,7 @@ const breadcrumbSchema = JSON.stringify({
             </div>
             <div class="p-6 space-y-6">
               <p class="text-slate-500 text-sm italic text-center pb-3 border-b border-border-light/50">Great value, perfect for dive groups</p>
-              <a href="https://wa.me/526241916997?text=Hi%2C%20I'd%20like%20to%20book%20Scuba%20Diving%20on%20the%20Luxury%20Yacht%2042" target="_blank" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg">Book Now</a>
+              <button type="button" onclick="openRezdyModal('168008')" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg cursor-pointer">Check Availability</button>
             </div>
           </div>
         </div>
