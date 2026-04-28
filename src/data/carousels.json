@@ -1,23 +1,36 @@
 {
   "activities": {
     "private-snorkeling": [
-      "guests-on-sailboats/cabo-private-snorkeling-ocean-view.jpeg"
+      "guests-on-yachts/sunny-yacht-cruise-on-the-open-sea.png",
+      "guests-on-sailboats/cabo-private-snorkeling-ocean-view.jpeg",
+      "guests-on-sailboats/snorkeling-fun-under-the-sun.png"
     ],
     "private-sunset": [
       "guests-on-yachts/cabo-private-sunset-cruise-guests.jpg",
-      "guests-on-sailboats/cabo-shared-sunset-sailing.jpg"
+      "guests-on-yachts/sunset-love-on-the-open-sea.png",
+      "guests-on-sailboats/romantic-sailboat-kiss-at-sunset.png"
     ],
     "whale-watching": [
-      "whales/cabo-whale-watching-breaching.jpg"
+      "whales/cabo-whale-watching-breaching.jpg",
+      "whales/cabo-whale-watching-humpback.jpg",
+      "whales/cabo-whale-watching-close-up.jpg"
     ],
     "bachelorette-party": [
-      "bachelorette/cabo-bachelorette-party-el-arco.png"
+      "bachelorette/celebration-on-a-sunny-yacht-party.png",
+      "guests-on-sailboats/sunshine-and-celebration-on-the-yacht.png",
+      "bachelorette/sunny-yacht-fun-with-friends.png",
+      "guests-on-yachts/sun-filled-boat-day-with-friends.png"
     ],
     "shared-snorkeling": [
-      "guests-on-sailboats/cabo-sailboat-guests-snorkeling-02.jpg"
+      "guests-on-sailboats/sailing-through-cabo's-vibrant-waters.png",
+      "guests-on-sailboats/snorkelers-enjoying-a-sunny-boat-ride.png",
+      "guests-on-sailboats/sunlit-boat-ride-by-the-ocean.png",
+      "guests-on-sailboats/snorkeler-exploring-underwater-paradise.png"
     ],
     "shared-sunset": [
-      "guests-on-sailboats/cabo-shared-sunset-sailing.jpg"
+      "guests-on-sailboats/cabo-shared-sunset-sailing.jpg",
+      "guests-on-sailboats/cabo-sunset-sailing-cruise.jpeg",
+      "guests-on-sailboats/leisure-sailing-under-a-clear-sky.png"
     ]
   },
   "fleet": {

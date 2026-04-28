@@ -166,7 +166,7 @@ const travelAgencySchema = JSON.stringify({
 
     <div class={`aspect-[4/5] md:aspect-[16/9] overflow-hidden rounded-lg shadow-2xl ${activityImages['private-snorkeling'].length > 1 ? 'activity-carousel' : ''} relative`}>
       {activityImages['private-snorkeling'].map((img, idx) => (
-        <Image src={img} alt="Private Snorkeling" class={`activity-slide w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ${idx > 0 ? 'absolute inset-0' : ''}`} style={`opacity:${idx === 0 ? 1 : 0}; transition: opacity 0.5s ease-in-out, transform 0.7s ease-in-out;`} width={1200} height={750} />
+        <Image src={img} alt="Private Snorkeling" class="activity-slide absolute inset-0 w-full h-full object-cover group-hover:scale-105" style={`opacity:${idx === 0 ? 1 : 0}; transition: opacity 0.6s ease-in-out, transform 0.7s ease-in-out;`} width={1200} height={750} />
       ))}
       {activityImages['private-snorkeling'].length > 1 && (
         <><button class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-7 h-20 rounded-md text-white/50 hover:text-white/85 transition-all"><span class="material-symbols-outlined text-4xl font-light">chevron_left</span></button>
@@ -206,7 +206,7 @@ const travelAgencySchema = JSON.stringify({
 
     <div class={`aspect-[4/5] md:aspect-[16/9] overflow-hidden rounded-lg shadow-2xl ${activityImages['private-sunset'].length > 1 ? 'activity-carousel' : ''} relative`}>
       {activityImages['private-sunset'].map((img, idx) => (
-        <Image src={img} alt="Private Sunset Cruise" class={`activity-slide w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ${idx > 0 ? 'absolute inset-0' : ''}`} style={`opacity:${idx === 0 ? 1 : 0}; transition: opacity 0.5s ease-in-out, transform 0.7s ease-in-out;`} width={1200} height={750} />
+        <Image src={img} alt="Private Sunset Cruise" class="activity-slide absolute inset-0 w-full h-full object-cover group-hover:scale-105" style={`opacity:${idx === 0 ? 1 : 0}; transition: opacity 0.6s ease-in-out, transform 0.7s ease-in-out;`} width={1200} height={750} />
       ))}
       {activityImages['private-sunset'].length > 1 && (
         <><button class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-7 h-20 rounded-md text-white/50 hover:text-white/85 transition-all"><span class="material-symbols-outlined text-4xl font-light">chevron_left</span></button>
@@ -246,7 +246,7 @@ const travelAgencySchema = JSON.stringify({
 
     <div class={`aspect-[4/5] md:aspect-[16/9] overflow-hidden rounded-lg shadow-2xl ${activityImages['whale-watching'].length > 1 ? 'activity-carousel' : ''} relative`}>
       {activityImages['whale-watching'].map((img, idx) => (
-        <Image src={img} alt="Whale Watching" class={`activity-slide w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ${idx > 0 ? 'absolute inset-0' : ''}`} style={`opacity:${idx === 0 ? 1 : 0}; transition: opacity 0.5s ease-in-out, transform 0.7s ease-in-out;`} width={1200} height={750} />
+        <Image src={img} alt="Whale Watching" class="activity-slide absolute inset-0 w-full h-full object-cover group-hover:scale-105" style={`opacity:${idx === 0 ? 1 : 0}; transition: opacity 0.6s ease-in-out, transform 0.7s ease-in-out;`} width={1200} height={750} />
       ))}
       {activityImages['whale-watching'].length > 1 && (
         <><button class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-7 h-20 rounded-md text-white/50 hover:text-white/85 transition-all"><span class="material-symbols-outlined text-4xl font-light">chevron_left</span></button>
@@ -286,7 +286,7 @@ const travelAgencySchema = JSON.stringify({
 
     <div class={`aspect-[4/5] md:aspect-[16/9] overflow-hidden rounded-lg shadow-2xl ${activityImages['bachelorette-party'].length > 1 ? 'activity-carousel' : ''} relative`}>
       {activityImages['bachelorette-party'].map((img, idx) => (
-        <Image src={img} alt="Bachelorette Party" class={`activity-slide w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ${idx > 0 ? 'absolute inset-0' : ''}`} style={`opacity:${idx === 0 ? 1 : 0}; transition: opacity 0.5s ease-in-out, transform 0.7s ease-in-out;`} width={1200} height={750} />
+        <Image src={img} alt="Bachelorette Party" class="activity-slide absolute inset-0 w-full h-full object-cover group-hover:scale-105" style={`opacity:${idx === 0 ? 1 : 0}; transition: opacity 0.6s ease-in-out, transform 0.7s ease-in-out;`} width={1200} height={750} />
       ))}
       {activityImages['bachelorette-party'].length > 1 && (
         <><button class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-7 h-20 rounded-md text-white/50 hover:text-white/85 transition-all"><span class="material-symbols-outlined text-4xl font-light">chevron_left</span></button>
@@ -332,7 +332,7 @@ const travelAgencySchema = JSON.stringify({
 
     <div class={`aspect-[4/5] md:aspect-[16/9] overflow-hidden rounded-lg shadow-2xl ${activityImages['shared-snorkeling'].length > 1 ? 'activity-carousel' : ''} relative`}>
       {activityImages['shared-snorkeling'].map((img, idx) => (
-        <Image src={img} alt="Shared Snorkeling" class={`activity-slide w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ${idx > 0 ? 'absolute inset-0' : ''}`} style={`opacity:${idx === 0 ? 1 : 0}; transition: opacity 0.5s ease-in-out, transform 0.7s ease-in-out;`} width={1200} height={750} />
+        <Image src={img} alt="Shared Snorkeling" class="activity-slide absolute inset-0 w-full h-full object-cover group-hover:scale-105" style={`opacity:${idx === 0 ? 1 : 0}; transition: opacity 0.6s ease-in-out, transform 0.7s ease-in-out;`} width={1200} height={750} />
       ))}
       {activityImages['shared-snorkeling'].length > 1 && (
         <><button class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-7 h-20 rounded-md text-white/50 hover:text-white/85 transition-all"><span class="material-symbols-outlined text-4xl font-light">chevron_left</span></button>
@@ -372,7 +372,7 @@ const travelAgencySchema = JSON.stringify({
 
     <div class={`aspect-[4/5] md:aspect-[16/9] overflow-hidden rounded-lg shadow-2xl ${activityImages['shared-sunset'].length > 1 ? 'activity-carousel' : ''} relative`}>
       {activityImages['shared-sunset'].map((img, idx) => (
-        <Image src={img} alt="Shared Sunset Cruise" class={`activity-slide w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ${idx > 0 ? 'absolute inset-0' : ''}`} style={`opacity:${idx === 0 ? 1 : 0}; transition: opacity 0.5s ease-in-out, transform 0.7s ease-in-out;`} width={1200} height={750} />
+        <Image src={img} alt="Shared Sunset Cruise" class="activity-slide absolute inset-0 w-full h-full object-cover group-hover:scale-105" style={`opacity:${idx === 0 ? 1 : 0}; transition: opacity 0.6s ease-in-out, transform 0.7s ease-in-out;`} width={1200} height={750} />
       ))}
       {activityImages['shared-sunset'].length > 1 && (
         <><button class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-7 h-20 rounded-md text-white/50 hover:text-white/85 transition-all"><span class="material-symbols-outlined text-4xl font-light">chevron_left</span></button>
