@@ -14,10 +14,12 @@ import scubaImg5 from "../assets/images/scuba-diving/seal-and-divers-in-underwat
 import scubaImg17 from "../assets/images/scuba-diving/diver-through-vibrant-coral-reef-window.png";
 
 // Boat images (carousel originals kept for hero/gallery)
-import yacht51_9 from "../assets/images/boats/yacht-51/cabo-luxury-yacht-51-ocean-view.jpg";
-import yacht51_2 from "../assets/images/boats/yacht-51/cabo-luxury-yacht-51-exterior-01.jpg";
-import yacht45_1 from "../assets/images/boats/yacht-45/cabo-private-yacht-45-exterior-01.jpg";
-import sailing42_10 from "../assets/images/boats/sailing-42/cabo-sailing-42-exterior-01.jpg";
+import heroThumb1 from "../assets/images/scuba-diving/school-of-fish-in-clear-ocean.png";
+import galleryLeft from "../assets/images/guests-on-sailboats/snorkeler-exploring-underwater-paradise.png";
+import galleryRight from "../assets/images/scuba-diving/swirling-school-of-fish-in-blue-water.png";
+import heroThumb2 from "../assets/images/guests-on-sailboats/snorkelers-enjoying-a-sunny-boat-ride.png";
+import heroThumb3 from "../assets/images/guests-on-yachts/paddleboarding-adventure-on-a-sunny-beach.png";
+import heroThumb4 from "../assets/images/guests-on-yachts/celebration-on-the-boat-at-sea.png";
 
 // Boat card images (single image per card)
 import yacht51Boat from "../assets/images/boats/yacht-51/cabo-sailing-yacht-51-boat.png";
@@ -73,10 +75,10 @@ const breadcrumbSchema = JSON.stringify({
           <Image alt="Dive boat with crew, turquoise water, Cabo cliffs" class="w-full h-full object-cover" src={heroImg} width={800} height={500} />
           <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
         </div>
-        <div class="flex-shrink-0 w-full h-full snap-center"><Image alt="Luxury Yacht 51'" class="w-full h-full object-cover" src={yacht51_9} width={800} height={500} /></div>
-        <div class="flex-shrink-0 w-full h-full snap-center"><Image alt="Luxury Yacht 51'" class="w-full h-full object-cover" src={yacht51_2} width={800} height={500} /></div>
-        <div class="flex-shrink-0 w-full h-full snap-center"><Image alt="Luxury Yacht 45'" class="w-full h-full object-cover" src={yacht45_1} width={800} height={500} /></div>
-        <div class="flex-shrink-0 w-full h-full snap-center"><Image alt="Sailing Boat 42'" class="w-full h-full object-cover" src={sailing42_10} width={800} height={500} /></div>
+        <div class="flex-shrink-0 w-full h-full snap-center"><Image alt="School of fish in blue water" class="w-full h-full object-cover" src={heroThumb1} width={800} height={500} /></div>
+        <div class="flex-shrink-0 w-full h-full snap-center"><Image alt="Snorkelers on a sunny boat ride" class="w-full h-full object-cover" src={heroThumb2} width={800} height={500} /></div>
+        <div class="flex-shrink-0 w-full h-full snap-center"><Image alt="Paddleboarding adventure on a sunny beach" class="w-full h-full object-cover" src={heroThumb3} width={800} height={500} /></div>
+        <div class="flex-shrink-0 w-full h-full snap-center"><Image alt="Celebration on the boat at sea" class="w-full h-full object-cover" src={heroThumb4} width={800} height={500} /></div>
       </div>
       <div class="absolute top-4 left-4 bg-gold text-white text-base font-bold px-3 py-1 rounded-full uppercase tracking-widest">Underwater Adventure</div>
       <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent pt-10 pb-5 px-4">
@@ -321,17 +323,17 @@ const breadcrumbSchema = JSON.stringify({
           <div class="faq-item border border-border-light rounded-2xl px-5 py-4">
             <input class="hidden" id="faq3" type="checkbox"/>
             <label class="flex items-center justify-between cursor-pointer" for="faq3"><span class="text-base font-semibold text-navy pr-4">Do I need to be certified?</span><span class="material-symbols-outlined text-slate-300 faq-chevron transition-transform flex-shrink-0">expand_more</span></label>
-            <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300"><p class="text-sm text-slate-500 leading-relaxed">No! We offer Discover Scuba programs for complete beginners. Our PADI-certified instructors provide a full briefing and guide you through every step. Certified divers can enjoy 2-tank dives at our best sites.</p></div>
+            <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300"><div class="text-sm text-slate-500 leading-relaxed space-y-2"><p>Not at all! First time? Our Discover Scuba experience is designed just for you. You&rsquo;ll get a simple, relaxed introduction with a PADI-certified instructor by your side every step of the way.</p><p>Already certified? Even better&mdash;join our 2-tank dives and explore some of the best sites around.</p></div></div>
           </div>
           <div class="faq-item border border-border-light rounded-2xl px-5 py-4">
             <input class="hidden" id="faq4" type="checkbox"/>
             <label class="flex items-center justify-between cursor-pointer" for="faq4"><span class="text-base font-semibold text-navy pr-4">What marine life will I see?</span><span class="material-symbols-outlined text-slate-300 faq-chevron transition-transform flex-shrink-0">expand_more</span></label>
-            <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300"><p class="text-sm text-slate-500 leading-relaxed">Cabo's waters are home to sea lions, tropical fish, moray eels, rays, seahorses, octopus, and colorful coral formations. Pelican Rock is famous for its resident sea lion colony that loves to interact with divers.</p></div>
+            <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300"><div class="text-sm text-slate-500 leading-relaxed space-y-2"><p>You&rsquo;ll experience two very different&mdash;and equally amazing&mdash;spots.</p><p>At Pelican Rock, expect schools of colorful tropical fish, rays, and beautiful soft corals. Above the water, pelicans and cormorants are often diving and fishing around you, adding to the whole scene.</p><p>At Land&rsquo;s End, the highlight is the playful sea lions&mdash;curious, energetic, and often swimming right alongside you.</p></div></div>
           </div>
           <div class="faq-item border border-border-light rounded-2xl px-5 py-4">
             <input class="hidden" id="faq5" type="checkbox"/>
             <label class="flex items-center justify-between cursor-pointer" for="faq5"><span class="text-base font-semibold text-navy pr-4">Where will we dive?</span><span class="material-symbols-outlined text-slate-300 faq-chevron transition-transform flex-shrink-0">expand_more</span></label>
-            <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300"><p class="text-sm text-slate-500 leading-relaxed">Our dive sites include Pelican's Rock and Land's End — two of Cabo's most iconic underwater locations, teeming with marine life and crystal-clear visibility.</p></div>
+            <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300"><div class="text-sm text-slate-500 leading-relaxed space-y-2"><p>You&rsquo;ll explore two of Cabo&rsquo;s most iconic spots, Pelican Rock and Land&rsquo;s End, each offering a completely different experience.</p><p>Pelican Rock is known for its clear, calm waters and vibrant marine life, making it perfect for both beginners and certified divers.</p><p>Just around the corner, Land&rsquo;s End offers dramatic rock formations and the chance to encounter playful sea lions in their natural habitat.</p></div></div>
           </div>
         </div>
       </div>
@@ -405,10 +407,10 @@ const breadcrumbSchema = JSON.stringify({
             </div>
             </div>
           </div>
-          <div class="rounded-2xl overflow-hidden"><Image alt="Luxury Yacht 51'" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src={yacht51_9} width={600} height={400} /></div>
-          <div class="rounded-2xl overflow-hidden"><Image alt="Luxury Yacht 51'" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src={yacht51_2} width={600} height={400} /></div>
-          <div class="rounded-2xl overflow-hidden"><Image alt="Luxury Yacht 45'" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src={yacht45_1} width={600} height={400} /></div>
-          <div class="rounded-2xl overflow-hidden"><Image alt="Sailing Boat 42'" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src={sailing42_10} width={600} height={400} /></div>
+          <div class="rounded-2xl overflow-hidden"><Image alt="School of fish in blue water" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src={heroThumb1} width={600} height={400} /></div>
+          <div class="rounded-2xl overflow-hidden"><Image alt="Snorkelers on a sunny boat ride" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src={heroThumb2} width={600} height={400} /></div>
+          <div class="rounded-2xl overflow-hidden"><Image alt="Paddleboarding adventure on a sunny beach" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src={heroThumb3} width={600} height={400} /></div>
+          <div class="rounded-2xl overflow-hidden"><Image alt="Celebration on the boat at sea" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src={heroThumb4} width={600} height={400} /></div>
         </div>
       </div>
       <div class="max-w-7xl mx-auto px-12 py-16">
@@ -434,13 +436,13 @@ const breadcrumbSchema = JSON.stringify({
             <!-- Photo Gallery Strip -->
             <div class="mb-12 grid grid-cols-4 gap-3 h-44">
               <div class="rounded-2xl overflow-hidden col-span-2">
-                <Image src={scubaImg7} alt="Scuba diving in Cabo" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={600} height={300} />
+                <Image src={galleryLeft} alt="Snorkeler exploring underwater paradise" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={600} height={300} />
               </div>
               <div class="rounded-2xl overflow-hidden">
                 <Image src={scubaImg9} alt="Tropical fish school" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={300} height={300} />
               </div>
               <div class="rounded-2xl overflow-hidden">
-                <Image src={scubaImg5} alt="Divers with sea lion" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={300} height={300} />
+                <Image src={galleryRight} alt="School of fish in blue water" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={300} height={300} />
               </div>
             </div>
 
@@ -449,7 +451,7 @@ const breadcrumbSchema = JSON.stringify({
               <div class="flex items-center gap-3 mb-6"><div class="w-1 h-6 bg-gold rounded-full"></div><h2 class="text-2xl text-navy">Tour Highlights</h2></div>
               <div class="grid grid-cols-3 gap-6">
                 <div class="relative rounded-3xl overflow-hidden h-64 group">
-                  <Image src={scubaImg5} alt="Sea lion encounter" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width={400} height={300} />
+                  <Image src={scubaImg7} alt="Scuba diving adventure in tropical waters" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width={400} height={300} />
                   <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
                   <div class="absolute bottom-0 left-0 right-0 p-5">
                     <span class="material-symbols-outlined text-gold text-2xl mb-1 block">scuba_diving</span>
@@ -458,7 +460,7 @@ const breadcrumbSchema = JSON.stringify({
                   </div>
                 </div>
                 <div class="relative rounded-3xl overflow-hidden h-64 group">
-                  <Image src={scubaImg9} alt="Colorful marine life" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width={400} height={300} />
+                  <Image src={scubaImg5} alt="Diver with sea lion" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width={400} height={300} />
                   <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
                   <div class="absolute bottom-0 left-0 right-0 p-5">
                     <span class="material-symbols-outlined text-gold text-2xl mb-1 block">pets</span>
@@ -649,17 +651,17 @@ const breadcrumbSchema = JSON.stringify({
           <div class="faq-item border border-border-light rounded-2xl px-6 py-5">
             <input class="hidden" id="dfaq3" type="checkbox"/>
             <label class="flex items-center justify-between cursor-pointer" for="dfaq3"><span class="font-semibold text-navy">Do I need to be certified?</span><span class="material-symbols-outlined text-slate-300 faq-chevron transition-transform flex-shrink-0">expand_more</span></label>
-            <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300"><p class="text-base text-slate-500 leading-relaxed">No! We offer Discover Scuba programs for complete beginners. Our PADI-certified instructors provide a full briefing and guide you through every step. Certified divers can enjoy 2-tank dives at our best sites.</p></div>
+            <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300"><div class="text-base text-slate-500 leading-relaxed space-y-3"><p>Not at all! First time? Our Discover Scuba experience is designed just for you. You&rsquo;ll get a simple, relaxed introduction with a PADI-certified instructor by your side every step of the way.</p><p>Already certified? Even better&mdash;join our 2-tank dives and explore some of the best sites around.</p></div></div>
           </div>
           <div class="faq-item border border-border-light rounded-2xl px-6 py-5">
             <input class="hidden" id="dfaq4" type="checkbox"/>
             <label class="flex items-center justify-between cursor-pointer" for="dfaq4"><span class="font-semibold text-navy">What marine life will I see?</span><span class="material-symbols-outlined text-slate-300 faq-chevron transition-transform flex-shrink-0">expand_more</span></label>
-            <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300"><p class="text-base text-slate-500 leading-relaxed">Cabo's waters are home to sea lions, tropical fish, moray eels, rays, seahorses, octopus, and colorful coral formations. Pelican Rock is famous for its resident sea lion colony that loves to interact with divers.</p></div>
+            <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300"><div class="text-base text-slate-500 leading-relaxed space-y-3"><p>You&rsquo;ll experience two very different&mdash;and equally amazing&mdash;spots.</p><p>At Pelican Rock, expect schools of colorful tropical fish, rays, and beautiful soft corals. Above the water, pelicans and cormorants are often diving and fishing around you, adding to the whole scene.</p><p>At Land&rsquo;s End, the highlight is the playful sea lions&mdash;curious, energetic, and often swimming right alongside you.</p></div></div>
           </div>
           <div class="faq-item border border-border-light rounded-2xl px-6 py-5">
             <input class="hidden" id="dfaq5" type="checkbox"/>
             <label class="flex items-center justify-between cursor-pointer" for="dfaq5"><span class="font-semibold text-navy">Where will we dive?</span><span class="material-symbols-outlined text-slate-300 faq-chevron transition-transform flex-shrink-0">expand_more</span></label>
-            <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300"><p class="text-base text-slate-500 leading-relaxed">Our dive sites include Pelican's Rock and Land's End — two of Cabo's most iconic underwater locations, teeming with marine life and crystal-clear visibility.</p></div>
+            <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300"><div class="text-base text-slate-500 leading-relaxed space-y-3"><p>You&rsquo;ll explore two of Cabo&rsquo;s most iconic spots, Pelican Rock and Land&rsquo;s End, each offering a completely different experience.</p><p>Pelican Rock is known for its clear, calm waters and vibrant marine life, making it perfect for both beginners and certified divers.</p><p>Just around the corner, Land&rsquo;s End offers dramatic rock formations and the chance to encounter playful sea lions in their natural habitat.</p></div></div>
           </div>
         </div>
       </div>
@@ -769,7 +771,7 @@ const breadcrumbSchema = JSON.stringify({
     .material-symbols-outlined.filled { font-variation-settings: 'FILL' 1; }
     #highlights-toggle:checked ~ #highlights-content { max-height: 500px; margin-top: 1.5rem; opacity: 1; }
     #highlights-toggle:checked ~ label .chevron-icon { transform: rotate(90deg); }
-    .faq-item input:checked ~ .faq-answer { max-height: 200px; margin-top: 0.75rem; opacity: 1; }
+    .faq-item input:checked ~ .faq-answer { max-height: 1000px; margin-top: 0.75rem; opacity: 1; }
     .faq-item input:checked ~ label .faq-chevron { transform: rotate(180deg); }
     .fleet-arrow {
       position: absolute;

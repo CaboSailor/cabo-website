@@ -166,12 +166,19 @@ const travelAgencySchema = JSON.stringify({
 
     <div class={`aspect-[4/5] md:aspect-[16/9] overflow-hidden rounded-lg shadow-2xl ${activityImages['private-snorkeling'].length > 1 ? 'activity-carousel' : ''} relative`}>
       {activityImages['private-snorkeling'].map((img, idx) => (
-        <Image src={img} alt="Private Snorkeling" class="activity-slide absolute inset-0 w-full h-full object-cover group-hover:scale-105" style={`opacity:${idx === 0 ? 1 : 0}; transition: opacity 0.6s ease-in-out, transform 0.7s ease-in-out;`} width={1200} height={750} />
+        <Image src={img} alt="Private Snorkeling" class="activity-slide absolute inset-0 w-full h-full object-cover" style={`opacity:${idx === 0 ? 1 : 0};`} width={1200} height={750} />
       ))}
       {activityImages['private-snorkeling'].length > 1 && (
-        <><button class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-7 h-20 rounded-md text-white/50 hover:text-white/85 transition-all"><span class="material-symbols-outlined text-4xl font-light">chevron_left</span></button>
-        <button class="carousel-next absolute right-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-7 h-20 rounded-md text-white/50 hover:text-white/85 transition-all"><span class="material-symbols-outlined text-4xl font-light">chevron_right</span></button>
-        <div class="carousel-dots absolute bottom-3 left-1/2 -translate-x-1/2 z-20 flex gap-2"></div></>
+        <><button class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_left</span></button>
+        <button class="carousel-next absolute right-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_right</span></button>
+        <div class="carousel-dots absolute bottom-3 left-1/2 -translate-x-1/2 z-20 flex gap-2"></div>
+        <div class="swipe-hint md:hidden absolute inset-0 z-20 pointer-events-none flex items-center justify-center">
+          <div class="bg-black/55 backdrop-blur-sm text-white px-5 py-2.5 rounded-full flex items-center gap-2 shadow-2xl">
+            <span class="material-symbols-outlined text-2xl">arrow_back</span>
+            <span class="text-[11px] uppercase tracking-widest font-bold">Swipe</span>
+            <span class="material-symbols-outlined text-2xl">arrow_forward</span>
+          </div>
+        </div></>
       )}
     </div>
     <div class="absolute -bottom-4 right-2 md:-right-10 bg-navy p-5 md:p-8 max-w-[260px] md:max-w-[280px] shadow-2xl z-20 border-b-4 border-accent-gold rounded-lg bg-opacity-80 backdrop-blur-sm">
@@ -206,12 +213,19 @@ const travelAgencySchema = JSON.stringify({
 
     <div class={`aspect-[4/5] md:aspect-[16/9] overflow-hidden rounded-lg shadow-2xl ${activityImages['private-sunset'].length > 1 ? 'activity-carousel' : ''} relative`}>
       {activityImages['private-sunset'].map((img, idx) => (
-        <Image src={img} alt="Private Sunset Cruise" class="activity-slide absolute inset-0 w-full h-full object-cover group-hover:scale-105" style={`opacity:${idx === 0 ? 1 : 0}; transition: opacity 0.6s ease-in-out, transform 0.7s ease-in-out;`} width={1200} height={750} />
+        <Image src={img} alt="Private Sunset Cruise" class="activity-slide absolute inset-0 w-full h-full object-cover" style={`opacity:${idx === 0 ? 1 : 0};`} width={1200} height={750} />
       ))}
       {activityImages['private-sunset'].length > 1 && (
-        <><button class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-7 h-20 rounded-md text-white/50 hover:text-white/85 transition-all"><span class="material-symbols-outlined text-4xl font-light">chevron_left</span></button>
-        <button class="carousel-next absolute right-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-7 h-20 rounded-md text-white/50 hover:text-white/85 transition-all"><span class="material-symbols-outlined text-4xl font-light">chevron_right</span></button>
-        <div class="carousel-dots absolute bottom-3 left-1/2 -translate-x-1/2 z-20 flex gap-2"></div></>
+        <><button class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_left</span></button>
+        <button class="carousel-next absolute right-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_right</span></button>
+        <div class="carousel-dots absolute bottom-3 left-1/2 -translate-x-1/2 z-20 flex gap-2"></div>
+        <div class="swipe-hint md:hidden absolute inset-0 z-20 pointer-events-none flex items-center justify-center">
+          <div class="bg-black/55 backdrop-blur-sm text-white px-5 py-2.5 rounded-full flex items-center gap-2 shadow-2xl">
+            <span class="material-symbols-outlined text-2xl">arrow_back</span>
+            <span class="text-[11px] uppercase tracking-widest font-bold">Swipe</span>
+            <span class="material-symbols-outlined text-2xl">arrow_forward</span>
+          </div>
+        </div></>
       )}
     </div>
     <div class="absolute -bottom-4 left-2 md:-left-10 bg-accent-gold p-5 md:p-8 max-w-[260px] md:max-w-[280px] shadow-2xl z-20 border-b-4 border-amber-300 rounded-lg bg-opacity-80 backdrop-blur-sm">
@@ -246,12 +260,19 @@ const travelAgencySchema = JSON.stringify({
 
     <div class={`aspect-[4/5] md:aspect-[16/9] overflow-hidden rounded-lg shadow-2xl ${activityImages['whale-watching'].length > 1 ? 'activity-carousel' : ''} relative`}>
       {activityImages['whale-watching'].map((img, idx) => (
-        <Image src={img} alt="Whale Watching" class="activity-slide absolute inset-0 w-full h-full object-cover group-hover:scale-105" style={`opacity:${idx === 0 ? 1 : 0}; transition: opacity 0.6s ease-in-out, transform 0.7s ease-in-out;`} width={1200} height={750} />
+        <Image src={img} alt="Whale Watching" class="activity-slide absolute inset-0 w-full h-full object-cover" style={`opacity:${idx === 0 ? 1 : 0};`} width={1200} height={750} />
       ))}
       {activityImages['whale-watching'].length > 1 && (
-        <><button class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-7 h-20 rounded-md text-white/50 hover:text-white/85 transition-all"><span class="material-symbols-outlined text-4xl font-light">chevron_left</span></button>
-        <button class="carousel-next absolute right-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-7 h-20 rounded-md text-white/50 hover:text-white/85 transition-all"><span class="material-symbols-outlined text-4xl font-light">chevron_right</span></button>
-        <div class="carousel-dots absolute bottom-3 left-1/2 -translate-x-1/2 z-20 flex gap-2"></div></>
+        <><button class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_left</span></button>
+        <button class="carousel-next absolute right-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_right</span></button>
+        <div class="carousel-dots absolute bottom-3 left-1/2 -translate-x-1/2 z-20 flex gap-2"></div>
+        <div class="swipe-hint md:hidden absolute inset-0 z-20 pointer-events-none flex items-center justify-center">
+          <div class="bg-black/55 backdrop-blur-sm text-white px-5 py-2.5 rounded-full flex items-center gap-2 shadow-2xl">
+            <span class="material-symbols-outlined text-2xl">arrow_back</span>
+            <span class="text-[11px] uppercase tracking-widest font-bold">Swipe</span>
+            <span class="material-symbols-outlined text-2xl">arrow_forward</span>
+          </div>
+        </div></>
       )}
     </div>
     <div class="absolute -bottom-4 right-2 md:-right-10 bg-teal-900 p-5 md:p-8 max-w-[260px] md:max-w-[280px] shadow-2xl z-20 border-b-4 border-teal-400 rounded-lg bg-opacity-80 backdrop-blur-sm">
@@ -286,12 +307,19 @@ const travelAgencySchema = JSON.stringify({
 
     <div class={`aspect-[4/5] md:aspect-[16/9] overflow-hidden rounded-lg shadow-2xl ${activityImages['bachelorette-party'].length > 1 ? 'activity-carousel' : ''} relative`}>
       {activityImages['bachelorette-party'].map((img, idx) => (
-        <Image src={img} alt="Bachelorette Party" class="activity-slide absolute inset-0 w-full h-full object-cover group-hover:scale-105" style={`opacity:${idx === 0 ? 1 : 0}; transition: opacity 0.6s ease-in-out, transform 0.7s ease-in-out;`} width={1200} height={750} />
+        <Image src={img} alt="Bachelorette Party" class="activity-slide absolute inset-0 w-full h-full object-cover" style={`opacity:${idx === 0 ? 1 : 0};`} width={1200} height={750} />
       ))}
       {activityImages['bachelorette-party'].length > 1 && (
-        <><button class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-7 h-20 rounded-md text-white/50 hover:text-white/85 transition-all"><span class="material-symbols-outlined text-4xl font-light">chevron_left</span></button>
-        <button class="carousel-next absolute right-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-7 h-20 rounded-md text-white/50 hover:text-white/85 transition-all"><span class="material-symbols-outlined text-4xl font-light">chevron_right</span></button>
-        <div class="carousel-dots absolute bottom-3 left-1/2 -translate-x-1/2 z-20 flex gap-2"></div></>
+        <><button class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_left</span></button>
+        <button class="carousel-next absolute right-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_right</span></button>
+        <div class="carousel-dots absolute bottom-3 left-1/2 -translate-x-1/2 z-20 flex gap-2"></div>
+        <div class="swipe-hint md:hidden absolute inset-0 z-20 pointer-events-none flex items-center justify-center">
+          <div class="bg-black/55 backdrop-blur-sm text-white px-5 py-2.5 rounded-full flex items-center gap-2 shadow-2xl">
+            <span class="material-symbols-outlined text-2xl">arrow_back</span>
+            <span class="text-[11px] uppercase tracking-widest font-bold">Swipe</span>
+            <span class="material-symbols-outlined text-2xl">arrow_forward</span>
+          </div>
+        </div></>
       )}
     </div>
     <div class="absolute -bottom-4 left-2 md:-left-10 bg-indigo-900 p-5 md:p-8 max-w-[260px] md:max-w-[280px] shadow-2xl z-20 border-b-4 border-pink-400 rounded-lg bg-opacity-80 backdrop-blur-sm">
@@ -332,12 +360,19 @@ const travelAgencySchema = JSON.stringify({
 
     <div class={`aspect-[4/5] md:aspect-[16/9] overflow-hidden rounded-lg shadow-2xl ${activityImages['shared-snorkeling'].length > 1 ? 'activity-carousel' : ''} relative`}>
       {activityImages['shared-snorkeling'].map((img, idx) => (
-        <Image src={img} alt="Shared Snorkeling" class="activity-slide absolute inset-0 w-full h-full object-cover group-hover:scale-105" style={`opacity:${idx === 0 ? 1 : 0}; transition: opacity 0.6s ease-in-out, transform 0.7s ease-in-out;`} width={1200} height={750} />
+        <Image src={img} alt="Shared Snorkeling" class="activity-slide absolute inset-0 w-full h-full object-cover" style={`opacity:${idx === 0 ? 1 : 0};`} width={1200} height={750} />
       ))}
       {activityImages['shared-snorkeling'].length > 1 && (
-        <><button class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-7 h-20 rounded-md text-white/50 hover:text-white/85 transition-all"><span class="material-symbols-outlined text-4xl font-light">chevron_left</span></button>
-        <button class="carousel-next absolute right-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-7 h-20 rounded-md text-white/50 hover:text-white/85 transition-all"><span class="material-symbols-outlined text-4xl font-light">chevron_right</span></button>
-        <div class="carousel-dots absolute bottom-3 left-1/2 -translate-x-1/2 z-20 flex gap-2"></div></>
+        <><button class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_left</span></button>
+        <button class="carousel-next absolute right-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_right</span></button>
+        <div class="carousel-dots absolute bottom-3 left-1/2 -translate-x-1/2 z-20 flex gap-2"></div>
+        <div class="swipe-hint md:hidden absolute inset-0 z-20 pointer-events-none flex items-center justify-center">
+          <div class="bg-black/55 backdrop-blur-sm text-white px-5 py-2.5 rounded-full flex items-center gap-2 shadow-2xl">
+            <span class="material-symbols-outlined text-2xl">arrow_back</span>
+            <span class="text-[11px] uppercase tracking-widest font-bold">Swipe</span>
+            <span class="material-symbols-outlined text-2xl">arrow_forward</span>
+          </div>
+        </div></>
       )}
     </div>
     <div class="absolute -bottom-4 right-2 md:-right-10 bg-slate-800 p-5 md:p-8 max-w-[260px] md:max-w-[280px] shadow-2xl z-20 border-b-4 border-slate-400 rounded-lg bg-opacity-80 backdrop-blur-sm">
@@ -372,12 +407,19 @@ const travelAgencySchema = JSON.stringify({
 
     <div class={`aspect-[4/5] md:aspect-[16/9] overflow-hidden rounded-lg shadow-2xl ${activityImages['shared-sunset'].length > 1 ? 'activity-carousel' : ''} relative`}>
       {activityImages['shared-sunset'].map((img, idx) => (
-        <Image src={img} alt="Shared Sunset Cruise" class="activity-slide absolute inset-0 w-full h-full object-cover group-hover:scale-105" style={`opacity:${idx === 0 ? 1 : 0}; transition: opacity 0.6s ease-in-out, transform 0.7s ease-in-out;`} width={1200} height={750} />
+        <Image src={img} alt="Shared Sunset Cruise" class="activity-slide absolute inset-0 w-full h-full object-cover" style={`opacity:${idx === 0 ? 1 : 0};`} width={1200} height={750} />
       ))}
       {activityImages['shared-sunset'].length > 1 && (
-        <><button class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-7 h-20 rounded-md text-white/50 hover:text-white/85 transition-all"><span class="material-symbols-outlined text-4xl font-light">chevron_left</span></button>
-        <button class="carousel-next absolute right-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-7 h-20 rounded-md text-white/50 hover:text-white/85 transition-all"><span class="material-symbols-outlined text-4xl font-light">chevron_right</span></button>
-        <div class="carousel-dots absolute bottom-3 left-1/2 -translate-x-1/2 z-20 flex gap-2"></div></>
+        <><button class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_left</span></button>
+        <button class="carousel-next absolute right-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_right</span></button>
+        <div class="carousel-dots absolute bottom-3 left-1/2 -translate-x-1/2 z-20 flex gap-2"></div>
+        <div class="swipe-hint md:hidden absolute inset-0 z-20 pointer-events-none flex items-center justify-center">
+          <div class="bg-black/55 backdrop-blur-sm text-white px-5 py-2.5 rounded-full flex items-center gap-2 shadow-2xl">
+            <span class="material-symbols-outlined text-2xl">arrow_back</span>
+            <span class="text-[11px] uppercase tracking-widest font-bold">Swipe</span>
+            <span class="material-symbols-outlined text-2xl">arrow_forward</span>
+          </div>
+        </div></>
       )}
     </div>
     <div class="absolute -bottom-4 left-2 md:-left-10 bg-orange-950 p-5 md:p-8 max-w-[260px] md:max-w-[280px] shadow-2xl z-20 border-b-4 border-orange-500 rounded-lg bg-opacity-80 backdrop-blur-sm">
@@ -433,9 +475,16 @@ const travelAgencySchema = JSON.stringify({
           <Image src={img} alt="Luxury Yacht 51' private charter in Cabo San Lucas" class={`activity-slide w-full h-full object-cover object-center ${idx > 0 ? 'absolute inset-0' : ''}`} style={`transform: scale(1.1); opacity:${idx === 0 ? 1 : 0}; transition: opacity 0.5s ease-in-out;`} width={1023} height={1537} format="png" quality={100} />
         ))}
         {fleetImages['yacht-51'].length > 1 && (
-          <><button class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-7 h-20 rounded-md text-white/50 hover:text-white/85 transition-all"><span class="material-symbols-outlined text-4xl font-light">chevron_left</span></button>
-          <button class="carousel-next absolute right-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-7 h-20 rounded-md text-white/50 hover:text-white/85 transition-all"><span class="material-symbols-outlined text-4xl font-light">chevron_right</span></button>
-          <div class="carousel-dots absolute bottom-3 left-1/2 -translate-x-1/2 z-20 flex gap-2"></div></>
+          <><button class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_left</span></button>
+          <button class="carousel-next absolute right-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_right</span></button>
+          <div class="carousel-dots absolute bottom-3 left-1/2 -translate-x-1/2 z-20 flex gap-2"></div>
+        <div class="swipe-hint md:hidden absolute inset-0 z-20 pointer-events-none flex items-center justify-center">
+          <div class="bg-black/55 backdrop-blur-sm text-white px-5 py-2.5 rounded-full flex items-center gap-2 shadow-2xl">
+            <span class="material-symbols-outlined text-2xl">arrow_back</span>
+            <span class="text-[11px] uppercase tracking-widest font-bold">Swipe</span>
+            <span class="material-symbols-outlined text-2xl">arrow_forward</span>
+          </div>
+        </div></>
         )}
         <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
         <div class="absolute bottom-5 left-6">
@@ -460,9 +509,16 @@ const travelAgencySchema = JSON.stringify({
           <Image src={img} alt="Luxury Yacht 45' private charter in Cabo San Lucas" class={`activity-slide w-full h-full object-cover object-center ${idx > 0 ? 'absolute inset-0' : ''}`} style={`transform: none !important; opacity:${idx === 0 ? 1 : 0}; transition: opacity 0.5s ease-in-out;`} width={1023} height={1537} format="png" quality={100} />
         ))}
         {fleetImages['yacht-45'].length > 1 && (
-          <><button class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-7 h-20 rounded-md text-white/50 hover:text-white/85 transition-all"><span class="material-symbols-outlined text-4xl font-light">chevron_left</span></button>
-          <button class="carousel-next absolute right-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-7 h-20 rounded-md text-white/50 hover:text-white/85 transition-all"><span class="material-symbols-outlined text-4xl font-light">chevron_right</span></button>
-          <div class="carousel-dots absolute bottom-3 left-1/2 -translate-x-1/2 z-20 flex gap-2"></div></>
+          <><button class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_left</span></button>
+          <button class="carousel-next absolute right-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_right</span></button>
+          <div class="carousel-dots absolute bottom-3 left-1/2 -translate-x-1/2 z-20 flex gap-2"></div>
+        <div class="swipe-hint md:hidden absolute inset-0 z-20 pointer-events-none flex items-center justify-center">
+          <div class="bg-black/55 backdrop-blur-sm text-white px-5 py-2.5 rounded-full flex items-center gap-2 shadow-2xl">
+            <span class="material-symbols-outlined text-2xl">arrow_back</span>
+            <span class="text-[11px] uppercase tracking-widest font-bold">Swipe</span>
+            <span class="material-symbols-outlined text-2xl">arrow_forward</span>
+          </div>
+        </div></>
         )}
         <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
         <div class="absolute bottom-5 left-6">
@@ -487,9 +543,16 @@ const travelAgencySchema = JSON.stringify({
           <Image src={img} alt="Luxury Yacht 42' private charter in Cabo San Lucas" class={`activity-slide w-full h-full object-cover object-center ${idx > 0 ? 'absolute inset-0' : ''}`} style={`transform: scale(1.1); opacity:${idx === 0 ? 1 : 0}; transition: opacity 0.5s ease-in-out;`} width={1023} height={1537} format="png" quality={100} />
         ))}
         {fleetImages['yacht-42'].length > 1 && (
-          <><button class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-7 h-20 rounded-md text-white/50 hover:text-white/85 transition-all"><span class="material-symbols-outlined text-4xl font-light">chevron_left</span></button>
-          <button class="carousel-next absolute right-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-7 h-20 rounded-md text-white/50 hover:text-white/85 transition-all"><span class="material-symbols-outlined text-4xl font-light">chevron_right</span></button>
-          <div class="carousel-dots absolute bottom-3 left-1/2 -translate-x-1/2 z-20 flex gap-2"></div></>
+          <><button class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_left</span></button>
+          <button class="carousel-next absolute right-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_right</span></button>
+          <div class="carousel-dots absolute bottom-3 left-1/2 -translate-x-1/2 z-20 flex gap-2"></div>
+        <div class="swipe-hint md:hidden absolute inset-0 z-20 pointer-events-none flex items-center justify-center">
+          <div class="bg-black/55 backdrop-blur-sm text-white px-5 py-2.5 rounded-full flex items-center gap-2 shadow-2xl">
+            <span class="material-symbols-outlined text-2xl">arrow_back</span>
+            <span class="text-[11px] uppercase tracking-widest font-bold">Swipe</span>
+            <span class="material-symbols-outlined text-2xl">arrow_forward</span>
+          </div>
+        </div></>
         )}
         <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
         <div class="absolute bottom-5 left-6">
@@ -524,9 +587,16 @@ const travelAgencySchema = JSON.stringify({
           <Image src={img} alt="Sailing Boat 42' private charter in Cabo San Lucas" class={`activity-slide w-full h-full object-cover object-center ${idx > 0 ? 'absolute inset-0' : ''}`} style={`transform: scale(1.1); opacity:${idx === 0 ? 1 : 0}; transition: opacity 0.5s ease-in-out;`} width={1024} height={1536} format="png" quality={100} />
         ))}
         {fleetImages['sailing-42'].length > 1 && (
-          <><button class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-7 h-20 rounded-md text-white/50 hover:text-white/85 transition-all"><span class="material-symbols-outlined text-4xl font-light">chevron_left</span></button>
-          <button class="carousel-next absolute right-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-7 h-20 rounded-md text-white/50 hover:text-white/85 transition-all"><span class="material-symbols-outlined text-4xl font-light">chevron_right</span></button>
-          <div class="carousel-dots absolute bottom-3 left-1/2 -translate-x-1/2 z-20 flex gap-2"></div></>
+          <><button class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_left</span></button>
+          <button class="carousel-next absolute right-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_right</span></button>
+          <div class="carousel-dots absolute bottom-3 left-1/2 -translate-x-1/2 z-20 flex gap-2"></div>
+        <div class="swipe-hint md:hidden absolute inset-0 z-20 pointer-events-none flex items-center justify-center">
+          <div class="bg-black/55 backdrop-blur-sm text-white px-5 py-2.5 rounded-full flex items-center gap-2 shadow-2xl">
+            <span class="material-symbols-outlined text-2xl">arrow_back</span>
+            <span class="text-[11px] uppercase tracking-widest font-bold">Swipe</span>
+            <span class="material-symbols-outlined text-2xl">arrow_forward</span>
+          </div>
+        </div></>
         )}
         <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
         <div class="absolute bottom-5 left-6">
@@ -551,9 +621,16 @@ const travelAgencySchema = JSON.stringify({
           <Image src={img} alt="Sailing Boat 38' private charter in Cabo San Lucas" class={`activity-slide w-full h-full object-cover object-center ${idx > 0 ? 'absolute inset-0' : ''}`} style={`transform: scale(1.1); opacity:${idx === 0 ? 1 : 0}; transition: opacity 0.5s ease-in-out;`} width={1024} height={1536} format="png" quality={100} />
         ))}
         {fleetImages['sailing-38'].length > 1 && (
-          <><button class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-7 h-20 rounded-md text-white/50 hover:text-white/85 transition-all"><span class="material-symbols-outlined text-4xl font-light">chevron_left</span></button>
-          <button class="carousel-next absolute right-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-7 h-20 rounded-md text-white/50 hover:text-white/85 transition-all"><span class="material-symbols-outlined text-4xl font-light">chevron_right</span></button>
-          <div class="carousel-dots absolute bottom-3 left-1/2 -translate-x-1/2 z-20 flex gap-2"></div></>
+          <><button class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_left</span></button>
+          <button class="carousel-next absolute right-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_right</span></button>
+          <div class="carousel-dots absolute bottom-3 left-1/2 -translate-x-1/2 z-20 flex gap-2"></div>
+        <div class="swipe-hint md:hidden absolute inset-0 z-20 pointer-events-none flex items-center justify-center">
+          <div class="bg-black/55 backdrop-blur-sm text-white px-5 py-2.5 rounded-full flex items-center gap-2 shadow-2xl">
+            <span class="material-symbols-outlined text-2xl">arrow_back</span>
+            <span class="text-[11px] uppercase tracking-widest font-bold">Swipe</span>
+            <span class="material-symbols-outlined text-2xl">arrow_forward</span>
+          </div>
+        </div></>
         )}
         <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
         <div class="absolute bottom-5 left-6">
@@ -802,6 +879,28 @@ const travelAgencySchema = JSON.stringify({
     });
   })();
 
+  // Mobile swipe hint — fades in when carousel scrolls into view, then fades out
+  (function() {
+    var hints = document.querySelectorAll('.swipe-hint');
+    if (!hints.length || !('IntersectionObserver' in window)) return;
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+    hints.forEach(function(hint) {
+      // Hide instantly on first user touch on its carousel
+      var carousel = hint.closest('.activity-carousel');
+      if (carousel) {
+        carousel.addEventListener('touchstart', function() { hint.classList.add('dismissed'); }, { passive: true, once: true });
+      }
+      observer.observe(hint);
+    });
+  })();
+
   var reviewsPage = 0;
   function scrollReviews(dir) {
     reviewsPage = Math.max(0, Math.min(1, reviewsPage + dir));
@@ -828,5 +927,38 @@ const travelAgencySchema = JSON.stringify({
     });
   }
 </script>
+
+<style>
+  .activity-slide {
+    transform: scale(1);
+    transform-origin: center center;
+    will-change: transform, opacity;
+    transition: opacity 0.6s ease-in-out, transform 0.7s ease-in-out;
+    backface-visibility: hidden;
+  }
+  @media (hover: hover) {
+    .activity-carousel:hover .activity-slide,
+    .group:hover .activity-slide {
+      transform: scale(1.05);
+    }
+  }
+  .swipe-hint {
+    opacity: 0;
+  }
+  .swipe-hint.active {
+    animation: swipeHintShow 2.6s ease-in-out forwards;
+  }
+  .swipe-hint.dismissed {
+    opacity: 0 !important;
+    animation: none !important;
+    transition: opacity 0.25s ease-out;
+  }
+  @keyframes swipeHintShow {
+    0%   { opacity: 0; transform: translateY(6px); }
+    15%  { opacity: 1; transform: translateY(0); }
+    70%  { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(0); }
+  }
+</style>
 
 </BaseLayout>
