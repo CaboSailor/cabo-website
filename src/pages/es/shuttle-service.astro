@@ -1,29 +1,29 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import FloatingCTA from '../components/FloatingCTA.astro';
-import RezdyModal from '../components/RezdyModal.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import FloatingCTA from '../../components/FloatingCTA.astro';
+import RezdyModal from '../../components/RezdyModal.astro';
 import { Image } from 'astro:assets';
 
 // Images
-import vanImg from "../assets/images/cabo-airport-shuttle-van.png";
-import yacht45_5 from "../assets/images/boats/yacht-45/cabo-private-yacht-45-exterior-03.jpg";
-import sailing42_10 from "../assets/images/boats/sailing-42/cabo-sailing-42-exterior-01.jpg";
-import guestsImg from "../assets/images/guests-on-sailboats/cabo-charter-guests-smiling.jpg";
-import guestsYachtImg from "../assets/images/guests-on-yachts/cabo-yacht-charter-guests-04.jpg";
+import vanImg from "../../assets/images/cabo-airport-shuttle-van.png";
+import yacht45_5 from "../../assets/images/boats/yacht-45/cabo-private-yacht-45-exterior-03.jpg";
+import sailing42_10 from "../../assets/images/boats/sailing-42/cabo-sailing-42-exterior-01.jpg";
+import guestsImg from "../../assets/images/guests-on-sailboats/cabo-charter-guests-smiling.jpg";
+import guestsYachtImg from "../../assets/images/guests-on-yachts/cabo-yacht-charter-guests-04.jpg";
 
 const breadcrumbSchema = JSON.stringify({
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://cabosailing.com/" },
-    { "@type": "ListItem", "position": 2, "name": "Shuttle Service" }
+    { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://cabosailing.com/es/" },
+    { "@type": "ListItem", "position": 2, "name": "Servicio de Transporte" }
   ]
 });
 ---
 
-<BaseLayout title="Los Cabos Airport Shuttle & Transfer Service | Cabo Sailing" description="Reliable airport shuttle and transfer service in Los Cabos. Air-conditioned vehicles, bilingual drivers, door-to-door service from SJD Airport to Cabo San Lucas." hreflangs={{ en: '/shuttle-service', es: '/es/shuttle-service' }}>
+<BaseLayout title="Transporte y Traslados al Aeropuerto en Los Cabos | Cabo Sailing" description="Servicio confiable de transporte y traslados al aeropuerto en Los Cabos. Vehículos con aire acondicionado, choferes bilingües y servicio puerta a puerta desde el aeropuerto SJD a Cabo San Lucas." hreflangs={{ en: '/shuttle-service', es: '/es/shuttle-service' }}>
   <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
   <Header variant="subpage" activePage="shuttle" />
 
@@ -34,17 +34,17 @@ const breadcrumbSchema = JSON.stringify({
       <div class="relative w-full h-[45vh] overflow-hidden">
         <div class="flex overflow-x-auto snap-x snap-mandatory h-full no-scrollbar">
           <div class="flex-shrink-0 w-full h-full snap-center relative">
-            <Image alt="Cabo Sailing shuttle van" class="w-full h-full object-cover" src={vanImg} width={800} height={500} />
+            <Image alt="Van de transporte de Cabo Sailing" class="w-full h-full object-cover" src={vanImg} width={800} height={500} />
             <div class="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/40 to-transparent"></div>
             <div class="absolute bottom-12 left-0 right-0 px-6">
-              <h1 class="text-3xl text-white mb-2 leading-tight font-serif">Seamless Shuttle to Your Cruise &amp; Back</h1>
-              <p class="text-white/80 text-base font-medium tracking-wide uppercase">Private Door-to-Door Service</p>
+              <h1 class="text-3xl text-white mb-2 leading-tight font-serif">Transporte sin Complicaciones a tu Crucero y de Regreso</h1>
+              <p class="text-white/80 text-base font-medium tracking-wide uppercase">Servicio Privado Puerta a Puerta</p>
             </div>
           </div>
-          <div class="flex-shrink-0 w-full h-full snap-center"><Image alt="Yacht 45 in Cabo" class="w-full h-full object-cover" src={yacht45_5} width={800} height={500} /></div>
-          <div class="flex-shrink-0 w-full h-full snap-center"><Image alt="Sailing 42 with guests" class="w-full h-full object-cover" src={sailing42_10} width={800} height={500} /></div>
-          <div class="flex-shrink-0 w-full h-full snap-center"><Image alt="Happy guests on sailboat" class="w-full h-full object-cover" src={guestsImg} width={800} height={500} /></div>
-          <div class="flex-shrink-0 w-full h-full snap-center"><Image alt="Guests toasting on yacht" class="w-full h-full object-cover" src={guestsYachtImg} width={800} height={500} /></div>
+          <div class="flex-shrink-0 w-full h-full snap-center"><Image alt="Yate 45 en Cabo" class="w-full h-full object-cover" src={yacht45_5} width={800} height={500} /></div>
+          <div class="flex-shrink-0 w-full h-full snap-center"><Image alt="Velero 42 con invitados" class="w-full h-full object-cover" src={sailing42_10} width={800} height={500} /></div>
+          <div class="flex-shrink-0 w-full h-full snap-center"><Image alt="Invitados felices en velero" class="w-full h-full object-cover" src={guestsImg} width={800} height={500} /></div>
+          <div class="flex-shrink-0 w-full h-full snap-center"><Image alt="Invitados brindando en yate" class="w-full h-full object-cover" src={guestsYachtImg} width={800} height={500} /></div>
         </div>
         <button class="fleet-arrow left" onclick="heroNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
         <button class="fleet-arrow right" onclick="heroNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
@@ -52,87 +52,87 @@ const breadcrumbSchema = JSON.stringify({
       <div class="px-5 -mt-8 relative z-10">
         <div class="bg-white rounded-3xl p-6 shadow-xl shadow-navy/5 border border-border-light">
           <nav class="flex items-center gap-1.5 text-xs text-slate-500 mb-4" aria-label="Breadcrumb">
-            <a href="/" class="hover:text-gold transition-colors">Home</a>
+            <a href="/es/" class="hover:text-gold transition-colors">Inicio</a>
             <span class="material-symbols-outlined text-[14px]">chevron_right</span>
-            <span class="text-navy font-semibold">Shuttle Service</span>
+            <span class="text-navy font-semibold">Servicio de Transporte</span>
           </nav>
-          <p class="text-navy font-bold text-center mb-6 leading-relaxed text-lg">Why use our service?</p>
+          <p class="text-navy font-bold text-center mb-6 leading-relaxed text-lg">¿Por qué usar nuestro servicio?</p>
           <div class="space-y-4">
             <div class="flex items-center gap-3">
               <div class="flex-shrink-0 w-6 h-6 rounded-full bg-cabo-blue/10 flex items-center justify-center">
                 <span class="material-symbols-outlined text-cabo-blue text-base">security</span>
               </div>
-              <span class="text-base font-medium text-slate-600">Safety is our #1 priority!</span>
+              <span class="text-base font-medium text-slate-600">¡La seguridad es nuestra prioridad #1!</span>
             </div>
             <div class="flex items-center gap-3">
               <div class="flex-shrink-0 w-6 h-6 rounded-full bg-cabo-blue/10 flex items-center justify-center">
                 <span class="material-symbols-outlined text-cabo-blue text-base">language</span>
               </div>
-              <span class="text-base font-medium text-slate-600">Professional bilingual drivers</span>
+              <span class="text-base font-medium text-slate-600">Choferes profesionales bilingües</span>
             </div>
             <div class="flex items-center gap-3">
               <div class="flex-shrink-0 w-6 h-6 rounded-full bg-cabo-blue/10 flex items-center justify-center">
                 <span class="material-symbols-outlined text-cabo-blue text-base">payments</span>
               </div>
-              <span class="text-base font-medium text-slate-600">Competitive Prices</span>
+              <span class="text-base font-medium text-slate-600">Precios Competitivos</span>
             </div>
           </div>
         </div>
       </div>
       <div class="px-5 mt-8 space-y-3">
-        <button class="w-full bg-cabo-yellow hover:bg-yellow-500 text-navy font-bold py-4 rounded-2xl shadow-md transition-all active:scale-[0.98] text-base uppercase tracking-wider">Airport Transportation Form</button>
-        <button class="w-full bg-cabo-yellow hover:bg-yellow-500 text-navy font-bold py-4 rounded-2xl shadow-md transition-all active:scale-[0.98] text-base uppercase tracking-wider">Cruise Pick Up Form</button>
+        <button class="w-full bg-cabo-yellow hover:bg-yellow-500 text-navy font-bold py-4 rounded-2xl shadow-md transition-all active:scale-[0.98] text-base uppercase tracking-wider">Formulario de Transporte al Aeropuerto</button>
+        <button class="w-full bg-cabo-yellow hover:bg-yellow-500 text-navy font-bold py-4 rounded-2xl shadow-md transition-all active:scale-[0.98] text-base uppercase tracking-wider">Formulario de Recogida para Crucero</button>
       </div>
 
       <!-- MOBILE: Seamless Shuttle Section -->
       <div class="px-5 pt-8 pb-6">
-        <div class="flex items-center gap-3 mb-4"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-lg text-navy">Seamless Shuttle to Your Cruise &amp; Back</h3></div>
-        <Image src={vanImg} alt="Cabo Sailing shuttle" class="w-full h-48 object-cover rounded-2xl mb-4" width={600} height={200} />
-        <p class="text-base text-slate-500 leading-relaxed mb-3">Getting to the marina for your sailing charter should be the easiest part of your day. Our private shuttle picks you up right at your hotel, resort, or vacation rental and takes you directly to the Cabo San Lucas Marina — and brings you back when your cruise is over.</p>
-        <p class="text-base text-slate-500 leading-relaxed">No waiting for taxis, no navigating unfamiliar streets. Just step in, relax, and let us handle the ride so you can focus on the adventure ahead.</p>
+        <div class="flex items-center gap-3 mb-4"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-lg text-navy">Transporte sin Complicaciones a tu Crucero y de Regreso</h3></div>
+        <Image src={vanImg} alt="Transporte de Cabo Sailing" class="w-full h-48 object-cover rounded-2xl mb-4" width={600} height={200} />
+        <p class="text-base text-slate-500 leading-relaxed mb-3">Llegar a la marina para tu crucero en velero debería ser la parte más fácil de tu día. Nuestro transporte privado te recoge directamente en tu hotel, resort o renta vacacional y te lleva directo a la Marina de Cabo San Lucas — y te trae de regreso al terminar el crucero.</p>
+        <p class="text-base text-slate-500 leading-relaxed">Sin esperar taxis, sin navegar calles desconocidas. Solo súbete, relájate y déjanos manejar el viaje para que te enfoques en la aventura que te espera.</p>
         <div class="flex gap-6 mt-6">
-          <div><p class="text-xl font-bold text-navy font-serif">All Day</p><p class="text-xs text-slate-500 uppercase tracking-widest font-bold mt-1">Available</p></div>
+          <div><p class="text-xl font-bold text-navy font-serif">Todo el Día</p><p class="text-xs text-slate-500 uppercase tracking-widest font-bold mt-1">Disponible</p></div>
           <div class="w-px bg-border-light"></div>
-          <div><p class="text-xl font-bold text-navy font-serif">Private</p><p class="text-xs text-slate-500 uppercase tracking-widest font-bold mt-1">Vehicle</p></div>
+          <div><p class="text-xl font-bold text-navy font-serif">Privado</p><p class="text-xs text-slate-500 uppercase tracking-widest font-bold mt-1">Vehículo</p></div>
           <div class="w-px bg-border-light"></div>
-          <div><p class="text-xl font-bold text-navy font-serif">Door-to-Door</p><p class="text-xs text-slate-500 uppercase tracking-widest font-bold mt-1">Service</p></div>
+          <div><p class="text-xl font-bold text-navy font-serif">Puerta a Puerta</p><p class="text-xs text-slate-500 uppercase tracking-widest font-bold mt-1">Servicio</p></div>
         </div>
       </div>
 
       <!-- Mobile: Hotel & Residential -->
       <div class="mt-12 px-5">
         <div class="text-center mb-8">
-          <h2 class="text-2xl text-navy mb-2">Hotel &amp; Residential to Marina</h2>
-          <p class="text-slate-500 text-sm px-4">Can be booked during your cruise booking process or separately.</p>
+          <h2 class="text-2xl text-navy mb-2">Hotel y Residencial a la Marina</h2>
+          <p class="text-slate-500 text-sm px-4">Se puede reservar durante el proceso de reserva del crucero o por separado.</p>
         </div>
         <div class="bg-white rounded-[2rem] overflow-hidden border border-border-light shadow-lg">
           <div class="bg-navy py-4 px-6 text-center">
-            <h3 class="text-white text-sm font-bold uppercase tracking-widest">Hotel &amp; Residential Cruise Transfers</h3>
+            <h3 class="text-white text-sm font-bold uppercase tracking-widest">Traslados de Hotel y Residencial para Crucero</h3>
           </div>
           <div class="p-6 space-y-6">
             <div>
-              <h4 class="text-navy text-sm font-bold uppercase mb-3 border-b border-slate-100 pb-2">Cabo San Lucas to Palmilla Bridge</h4>
+              <h4 class="text-navy text-sm font-bold uppercase mb-3 border-b border-slate-100 pb-2">Cabo San Lucas a Puente de Palmilla</h4>
               <div class="flex justify-between items-center text-base mb-2">
-                <span class="text-slate-600">One way (1-10 guests)</span>
+                <span class="text-slate-600">Sencillo (1-10 invitados)</span>
                 <span class="font-bold text-navy">$70 USD</span>
               </div>
               <div class="flex justify-between items-center text-base">
-                <span class="text-slate-600">Round trip (1-10 guests)</span>
+                <span class="text-slate-600">Redondo (1-10 invitados)</span>
                 <span class="font-bold text-navy">$120 USD</span>
               </div>
             </div>
             <div>
-              <h4 class="text-navy text-sm font-bold uppercase mb-3 border-b border-slate-100 pb-2">Palmilla to Puerto Los Cabos</h4>
+              <h4 class="text-navy text-sm font-bold uppercase mb-3 border-b border-slate-100 pb-2">Palmilla a Puerto Los Cabos</h4>
               <div class="flex justify-between items-center text-base mb-2">
-                <span class="text-slate-600">One way (1-10 guests)</span>
+                <span class="text-slate-600">Sencillo (1-10 invitados)</span>
                 <span class="font-bold text-navy">$80 USD</span>
               </div>
               <div class="flex justify-between items-center text-base">
-                <span class="text-slate-600">Round trip (1-10 guests)</span>
+                <span class="text-slate-600">Redondo (1-10 invitados)</span>
                 <span class="font-bold text-navy">$145 USD</span>
               </div>
             </div>
-            <p class="text-base text-center text-slate-500 font-bold uppercase pt-2">Extra guest (11th &amp; more): $10 USD per guest</p>
+            <p class="text-base text-center text-slate-500 font-bold uppercase pt-2">Invitado extra (a partir del 11°): $10 USD por invitado</p>
           </div>
         </div>
       </div>
@@ -140,59 +140,59 @@ const breadcrumbSchema = JSON.stringify({
       <!-- Mobile: Airport Private Service -->
       <div class="mt-16 px-5">
         <div class="text-center mb-8">
-          <h2 class="text-2xl text-navy mb-2">Airport Private Service</h2>
-          <p class="text-slate-500 text-base uppercase tracking-[0.2em] font-bold">Official Transfers</p>
+          <h2 class="text-2xl text-navy mb-2">Servicio Privado al Aeropuerto</h2>
+          <p class="text-slate-500 text-base uppercase tracking-[0.2em] font-bold">Traslados Oficiales</p>
         </div>
         <div class="space-y-6">
           <div class="bg-white rounded-[2rem] overflow-hidden border border-border-light shadow-lg">
             <div class="bg-cabo-blue py-3 px-6 text-center">
-              <h3 class="text-white text-sm font-bold uppercase tracking-widest">Airport to San Jose Del Cabo</h3>
+              <h3 class="text-white text-sm font-bold uppercase tracking-widest">Aeropuerto a San José del Cabo</h3>
             </div>
             <div class="p-6 text-center">
-              <p class="text-slate-500 text-sm mb-2">To San Jose hotels zone and residential area</p>
+              <p class="text-slate-500 text-sm mb-2">A la zona hotelera y residencial de San José</p>
               <div class="flex justify-center items-baseline gap-1">
                 <span class="text-navy font-bold text-3xl">$75</span>
                 <span class="text-navy/60 text-base font-bold uppercase">USD</span>
               </div>
-              <p class="text-base text-slate-500 mt-2 font-bold uppercase tracking-wider">1 to 10 Guests</p>
+              <p class="text-base text-slate-500 mt-2 font-bold uppercase tracking-wider">1 a 10 Invitados</p>
             </div>
           </div>
           <div class="bg-white rounded-[2rem] overflow-hidden border border-border-light shadow-lg">
             <div class="bg-cabo-orange py-3 px-6 text-center">
-              <h3 class="text-white text-sm font-bold uppercase tracking-widest">Airport to Puerto Los Cabos</h3>
+              <h3 class="text-white text-sm font-bold uppercase tracking-widest">Aeropuerto a Puerto Los Cabos</h3>
             </div>
             <div class="p-6 text-center">
-              <p class="text-slate-500 text-sm mb-2">To the Los Cabos Corridor area (between SJD &amp; CSL)</p>
+              <p class="text-slate-500 text-sm mb-2">Al área del Corredor de Los Cabos (entre SJD y CSL)</p>
               <div class="flex justify-center items-baseline gap-1">
                 <span class="text-navy font-bold text-3xl">$95</span>
                 <span class="text-navy/60 text-base font-bold uppercase">USD</span>
               </div>
-              <p class="text-base text-slate-500 mt-2 font-bold uppercase tracking-wider">1 to 10 Guests</p>
+              <p class="text-base text-slate-500 mt-2 font-bold uppercase tracking-wider">1 a 10 Invitados</p>
             </div>
           </div>
           <div class="bg-white rounded-[2rem] overflow-hidden border border-border-light shadow-lg">
             <div class="bg-cabo-green py-3 px-6 text-center">
-              <h3 class="text-white text-sm font-bold uppercase tracking-widest">Airport to Diamante Area</h3>
+              <h3 class="text-white text-sm font-bold uppercase tracking-widest">Aeropuerto al Área de Diamante</h3>
             </div>
             <div class="p-6 text-center">
-              <p class="text-slate-500 text-sm mb-2">To Cabo San Lucas hotels zone and residential area</p>
+              <p class="text-slate-500 text-sm mb-2">A la zona hotelera y residencial de Cabo San Lucas</p>
               <div class="flex justify-center items-baseline gap-1">
                 <span class="text-navy font-bold text-3xl">$120</span>
                 <span class="text-navy/60 text-base font-bold uppercase">USD</span>
               </div>
-              <p class="text-base text-slate-500 mt-2 font-bold uppercase tracking-wider">1 to 10 Guests</p>
+              <p class="text-base text-slate-500 mt-2 font-bold uppercase tracking-wider">1 a 10 Invitados</p>
             </div>
           </div>
         </div>
-        <p class="mt-6 text-center italic text-slate-500 text-base px-4">*5% discount on AIRPORT DROP OFF if booked a cruise with us during your stay.</p>
+        <p class="mt-6 text-center italic text-slate-500 text-base px-4">*5% de descuento en TRASLADO AL AEROPUERTO si reservaste un crucero con nosotros durante tu estancia.</p>
       </div>
 
       <!-- Mobile: CTA -->
       <div class="mt-16 px-5 py-12 bg-light-grey">
-        <h3 class="text-center text-navy font-bold italic mb-8">Inquire for Service Now!</h3>
+        <h3 class="text-center text-navy font-bold italic mb-8">¡Solicita el Servicio Ahora!</h3>
         <div class="space-y-3">
-          <button class="w-full bg-cabo-yellow hover:bg-yellow-500 text-navy font-bold py-4 rounded-2xl shadow-md transition-all active:scale-[0.98] text-base uppercase tracking-wider">Cruise Pick Up Form</button>
-          <button class="w-full bg-white border border-border-light hover:bg-light-grey text-navy font-bold py-4 rounded-2xl shadow-md transition-all active:scale-[0.98] text-base uppercase tracking-wider">Airport Transportation Form</button>
+          <button class="w-full bg-cabo-yellow hover:bg-yellow-500 text-navy font-bold py-4 rounded-2xl shadow-md transition-all active:scale-[0.98] text-base uppercase tracking-wider">Formulario de Recogida para Crucero</button>
+          <button class="w-full bg-white border border-border-light hover:bg-light-grey text-navy font-bold py-4 rounded-2xl shadow-md transition-all active:scale-[0.98] text-base uppercase tracking-wider">Formulario de Transporte al Aeropuerto</button>
         </div>
       </div>
     </div><!-- end mobile -->
@@ -204,26 +204,26 @@ const breadcrumbSchema = JSON.stringify({
       <div class="max-w-[1400px] mx-auto px-10 pt-10">
         <div class="grid grid-cols-4 grid-rows-2 gap-2 h-[55vh]">
           <div class="col-span-2 row-span-2 rounded-2xl overflow-hidden relative">
-            <Image alt="Cabo Sailing shuttle van" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src={vanImg} width={1200} height={800} />
+            <Image alt="Van de transporte de Cabo Sailing" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src={vanImg} width={1200} height={800} />
             <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent rounded-2xl"></div>
             <div class="absolute bottom-6 left-6">
-              <span class="bg-cabo-blue text-white text-sm font-bold px-4 py-1.5 rounded-full uppercase tracking-widest mb-3 inline-block">Door-to-Door Service</span>
-              <h1 class="text-4xl text-white leading-tight">Seamless Shuttle to<br/>Your Cruise &amp; Back</h1>
+              <span class="bg-cabo-blue text-white text-sm font-bold px-4 py-1.5 rounded-full uppercase tracking-widest mb-3 inline-block">Servicio Puerta a Puerta</span>
+              <h1 class="text-4xl text-white leading-tight">Transporte sin Complicaciones<br/>a tu Crucero y de Regreso</h1>
             </div>
           </div>
-          <div class="rounded-2xl overflow-hidden"><Image alt="Yacht 45 in Cabo" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src={yacht45_5} width={600} height={400} /></div>
-          <div class="rounded-2xl overflow-hidden"><Image alt="Sailing 42 with guests" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src={sailing42_10} width={600} height={400} /></div>
-          <div class="rounded-2xl overflow-hidden"><Image alt="Happy guests on sailboat" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src={guestsImg} width={600} height={400} /></div>
-          <div class="rounded-2xl overflow-hidden"><Image alt="Guests toasting on yacht" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src={guestsYachtImg} width={600} height={400} /></div>
+          <div class="rounded-2xl overflow-hidden"><Image alt="Yate 45 en Cabo" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src={yacht45_5} width={600} height={400} /></div>
+          <div class="rounded-2xl overflow-hidden"><Image alt="Velero 42 con invitados" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src={sailing42_10} width={600} height={400} /></div>
+          <div class="rounded-2xl overflow-hidden"><Image alt="Invitados felices en velero" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src={guestsImg} width={600} height={400} /></div>
+          <div class="rounded-2xl overflow-hidden"><Image alt="Invitados brindando en yate" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src={guestsYachtImg} width={600} height={400} /></div>
         </div>
       </div>
 
       <!-- Breadcrumb -->
       <div class="max-w-[1400px] mx-auto px-10 pt-8">
         <nav class="flex items-center gap-1.5 text-xs text-slate-500" aria-label="Breadcrumb">
-          <a href="/" class="hover:text-gold transition-colors">Home</a>
+          <a href="/es/" class="hover:text-gold transition-colors">Inicio</a>
           <span class="material-symbols-outlined text-[14px]">chevron_right</span>
-          <span class="text-navy font-semibold">Shuttle Service</span>
+          <span class="text-navy font-semibold">Servicio de Transporte</span>
         </nav>
       </div>
 
@@ -234,41 +234,41 @@ const breadcrumbSchema = JSON.stringify({
             <div class="w-14 h-14 rounded-full bg-cabo-blue/10 flex items-center justify-center mx-auto mb-4">
               <span class="material-symbols-outlined text-cabo-blue text-2xl">security</span>
             </div>
-            <h3 class="text-navy font-bold text-lg mb-2">Safety First</h3>
-            <p class="text-slate-500 text-base">Licensed, insured vehicles with professionally trained drivers. Your safety is our #1 priority.</p>
+            <h3 class="text-navy font-bold text-lg mb-2">Seguridad Primero</h3>
+            <p class="text-slate-500 text-base">Vehículos con licencia y asegurados, con choferes profesionalmente capacitados. Tu seguridad es nuestra prioridad #1.</p>
           </div>
           <div class="bg-light-grey rounded-2xl p-8 border border-border-light text-center">
             <div class="w-14 h-14 rounded-full bg-cabo-blue/10 flex items-center justify-center mx-auto mb-4">
               <span class="material-symbols-outlined text-cabo-blue text-2xl">language</span>
             </div>
-            <h3 class="text-navy font-bold text-lg mb-2">Bilingual Drivers</h3>
-            <p class="text-slate-500 text-base">Professional English and Spanish-speaking drivers who know Los Cabos inside and out.</p>
+            <h3 class="text-navy font-bold text-lg mb-2">Choferes Bilingües</h3>
+            <p class="text-slate-500 text-base">Choferes profesionales que hablan inglés y español, y conocen Los Cabos a la perfección.</p>
           </div>
           <div class="bg-light-grey rounded-2xl p-8 border border-border-light text-center">
             <div class="w-14 h-14 rounded-full bg-cabo-blue/10 flex items-center justify-center mx-auto mb-4">
               <span class="material-symbols-outlined text-cabo-blue text-2xl">payments</span>
             </div>
-            <h3 class="text-navy font-bold text-lg mb-2">Competitive Prices</h3>
-            <p class="text-slate-500 text-base">Transparent pricing with no hidden fees. Book direct and save compared to hotel transfers.</p>
+            <h3 class="text-navy font-bold text-lg mb-2">Precios Competitivos</h3>
+            <p class="text-slate-500 text-base">Precios transparentes sin cargos ocultos. Reserva directo y ahorra comparado con los traslados del hotel.</p>
           </div>
         </div>
 
         <!-- About Section -->
         <div class="flex gap-16 items-center mb-20">
           <div class="flex-1">
-            <div class="flex items-center gap-3 mb-6"><div class="w-1 h-8 bg-gold rounded-full"></div><h2 class="text-3xl text-navy">Seamless Shuttle to Your Cruise &amp; Back</h2></div>
-            <p class="text-slate-500 text-lg leading-relaxed mb-4">Getting to the marina for your sailing charter should be the easiest part of your day. Our private shuttle picks you up right at your hotel, resort, or vacation rental and takes you directly to the Cabo San Lucas Marina — and brings you back when your cruise is over.</p>
-            <p class="text-slate-500 text-lg leading-relaxed mb-8">No waiting for taxis, no navigating unfamiliar streets. Just step in, relax, and let us handle the ride so you can focus on the adventure ahead.</p>
+            <div class="flex items-center gap-3 mb-6"><div class="w-1 h-8 bg-gold rounded-full"></div><h2 class="text-3xl text-navy">Transporte sin Complicaciones a tu Crucero y de Regreso</h2></div>
+            <p class="text-slate-500 text-lg leading-relaxed mb-4">Llegar a la marina para tu crucero en velero debería ser la parte más fácil de tu día. Nuestro transporte privado te recoge directamente en tu hotel, resort o renta vacacional y te lleva directo a la Marina de Cabo San Lucas — y te trae de regreso al terminar el crucero.</p>
+            <p class="text-slate-500 text-lg leading-relaxed mb-8">Sin esperar taxis, sin navegar calles desconocidas. Solo súbete, relájate y déjanos manejar el viaje para que te enfoques en la aventura que te espera.</p>
             <div class="flex gap-10">
-              <div><p class="text-2xl font-bold text-navy font-serif">All Day</p><p class="text-xs text-slate-500 uppercase tracking-widest font-bold mt-1">Available</p></div>
+              <div><p class="text-2xl font-bold text-navy font-serif">Todo el Día</p><p class="text-xs text-slate-500 uppercase tracking-widest font-bold mt-1">Disponible</p></div>
               <div class="w-px bg-border-light"></div>
-              <div><p class="text-2xl font-bold text-navy font-serif">Private</p><p class="text-xs text-slate-500 uppercase tracking-widest font-bold mt-1">Vehicle</p></div>
+              <div><p class="text-2xl font-bold text-navy font-serif">Privado</p><p class="text-xs text-slate-500 uppercase tracking-widest font-bold mt-1">Vehículo</p></div>
               <div class="w-px bg-border-light"></div>
-              <div><p class="text-2xl font-bold text-navy font-serif">Door-to-Door</p><p class="text-xs text-slate-500 uppercase tracking-widest font-bold mt-1">Service</p></div>
+              <div><p class="text-2xl font-bold text-navy font-serif">Puerta a Puerta</p><p class="text-xs text-slate-500 uppercase tracking-widest font-bold mt-1">Servicio</p></div>
             </div>
           </div>
           <div class="w-[400px] h-[300px] rounded-3xl overflow-hidden flex-shrink-0">
-            <Image alt="Cabo Sailing shuttle van" class="w-full h-full object-cover" src={vanImg} width={400} height={300} />
+            <Image alt="Van de transporte de Cabo Sailing" class="w-full h-full object-cover" src={vanImg} width={400} height={300} />
           </div>
         </div>
       </div>
@@ -277,31 +277,31 @@ const breadcrumbSchema = JSON.stringify({
       <div class="bg-light-grey py-20">
         <div class="max-w-[1400px] mx-auto px-10">
           <div class="text-center mb-10">
-            <h2 class="text-3xl text-navy mb-2">Hotel &amp; Residential to Marina</h2>
-            <p class="text-slate-500 text-base">Can be booked during your cruise booking process or separately.</p>
+            <h2 class="text-3xl text-navy mb-2">Hotel y Residencial a la Marina</h2>
+            <p class="text-slate-500 text-base">Se puede reservar durante el proceso de reserva del crucero o por separado.</p>
           </div>
           <div class="max-w-3xl mx-auto">
             <div class="bg-white rounded-3xl overflow-hidden border border-border-light shadow-sm">
               <div class="bg-navy py-4 px-8 text-center">
-                <h3 class="text-white text-sm font-bold uppercase tracking-widest">Hotel &amp; Residential Cruise Transfers</h3>
+                <h3 class="text-white text-sm font-bold uppercase tracking-widest">Traslados de Hotel y Residencial para Crucero</h3>
               </div>
               <div class="p-8">
                 <div class="grid grid-cols-3 gap-8 text-center mb-6">
                   <div></div>
-                  <div class="text-sm font-bold text-slate-500 uppercase tracking-widest">One Way</div>
-                  <div class="text-sm font-bold text-slate-500 uppercase tracking-widest">Round Trip</div>
+                  <div class="text-sm font-bold text-slate-500 uppercase tracking-widest">Sencillo</div>
+                  <div class="text-sm font-bold text-slate-500 uppercase tracking-widest">Redondo</div>
                 </div>
                 <div class="grid grid-cols-3 gap-8 items-center py-4 border-b border-border-light">
-                  <div class="text-navy font-bold">Cabo San Lucas to Palmilla Bridge</div>
+                  <div class="text-navy font-bold">Cabo San Lucas a Puente de Palmilla</div>
                   <div class="text-center text-lg font-bold text-navy">$70 <span class="text-sm text-navy/60">USD</span></div>
                   <div class="text-center text-lg font-bold text-navy">$120 <span class="text-sm text-navy/60">USD</span></div>
                 </div>
                 <div class="grid grid-cols-3 gap-8 items-center py-4 border-b border-border-light">
-                  <div class="text-navy font-bold">Palmilla to Puerto Los Cabos</div>
+                  <div class="text-navy font-bold">Palmilla a Puerto Los Cabos</div>
                   <div class="text-center text-lg font-bold text-navy">$80 <span class="text-sm text-navy/60">USD</span></div>
                   <div class="text-center text-lg font-bold text-navy">$145 <span class="text-sm text-navy/60">USD</span></div>
                 </div>
-                <p class="text-sm text-center text-slate-500 font-bold uppercase pt-6">Extra guest (11th &amp; more): $10 USD per guest</p>
+                <p class="text-sm text-center text-slate-500 font-bold uppercase pt-6">Invitado extra (a partir del 11°): $10 USD por invitado</p>
               </div>
             </div>
           </div>
@@ -311,11 +311,11 @@ const breadcrumbSchema = JSON.stringify({
       <!-- CTA Section -->
       <div class="max-w-[1400px] mx-auto px-10 py-20">
         <div class="bg-navy rounded-3xl p-12 text-center">
-          <h2 class="text-3xl text-white mb-3 font-serif">Ready to Book Your Transfer?</h2>
-          <p class="text-white/70 text-lg mb-8 max-w-2xl mx-auto">Start your Cabo vacation stress-free. Book your private cruise shuttle or airport pickup today.</p>
+          <h2 class="text-3xl text-white mb-3 font-serif">¿Listo para Reservar tu Traslado?</h2>
+          <p class="text-white/70 text-lg mb-8 max-w-2xl mx-auto">Comienza tus vacaciones en Cabo sin estrés. Reserva tu transporte privado para crucero o tu recogida en el aeropuerto hoy.</p>
           <div class="flex justify-center gap-4">
-            <button class="bg-cabo-yellow hover:bg-yellow-500 text-navy font-bold px-10 py-4 rounded-full uppercase tracking-widest text-sm transition-colors shadow-lg">Cruise Pick Up Form</button>
-            <button class="bg-white/20 text-white font-bold px-10 py-4 rounded-full uppercase tracking-widest text-sm hover:bg-white/30 transition-colors border border-white/40">Airport Transportation Form</button>
+            <button class="bg-cabo-yellow hover:bg-yellow-500 text-navy font-bold px-10 py-4 rounded-full uppercase tracking-widest text-sm transition-colors shadow-lg">Formulario de Recogida para Crucero</button>
+            <button class="bg-white/20 text-white font-bold px-10 py-4 rounded-full uppercase tracking-widest text-sm hover:bg-white/30 transition-colors border border-white/40">Formulario de Transporte al Aeropuerto</button>
           </div>
         </div>
       </div>
@@ -323,88 +323,88 @@ const breadcrumbSchema = JSON.stringify({
       <!-- Airport Transfers -->
       <div class="max-w-[1400px] mx-auto px-10 pb-20">
         <div class="text-center mb-12">
-          <h2 class="text-3xl text-navy mb-2">Airport Private Service</h2>
-          <p class="text-slate-500 text-base uppercase tracking-[0.2em] font-bold">Official Transfers</p>
+          <h2 class="text-3xl text-navy mb-2">Servicio Privado al Aeropuerto</h2>
+          <p class="text-slate-500 text-base uppercase tracking-[0.2em] font-bold">Traslados Oficiales</p>
         </div>
         <div class="grid grid-cols-3 gap-8">
           <div class="bg-white rounded-3xl overflow-hidden border border-border-light shadow-sm hover:shadow-lg transition-shadow">
             <div class="bg-cabo-blue py-4 px-6 text-center">
-              <h3 class="text-white text-sm font-bold uppercase tracking-widest">Airport to San Jose Del Cabo</h3>
+              <h3 class="text-white text-sm font-bold uppercase tracking-widest">Aeropuerto a San José del Cabo</h3>
             </div>
             <div class="p-8 text-center">
-              <p class="text-slate-500 text-sm mb-4">To San Jose hotels zone and residential area</p>
+              <p class="text-slate-500 text-sm mb-4">A la zona hotelera y residencial de San José</p>
               <div class="flex justify-center items-baseline gap-1 mb-2">
                 <span class="text-navy font-bold text-5xl">$75</span>
                 <span class="text-navy/60 text-lg font-bold uppercase">USD</span>
               </div>
-              <p class="text-base text-slate-500 font-bold uppercase tracking-wider">1 to 10 Guests</p>
+              <p class="text-base text-slate-500 font-bold uppercase tracking-wider">1 a 10 Invitados</p>
             </div>
           </div>
           <div class="bg-white rounded-3xl overflow-hidden border border-border-light shadow-sm hover:shadow-lg transition-shadow">
             <div class="bg-cabo-orange py-4 px-6 text-center">
-              <h3 class="text-white text-sm font-bold uppercase tracking-widest">Airport to Puerto Los Cabos</h3>
+              <h3 class="text-white text-sm font-bold uppercase tracking-widest">Aeropuerto a Puerto Los Cabos</h3>
             </div>
             <div class="p-8 text-center">
-              <p class="text-slate-500 text-sm mb-4">To the Los Cabos Corridor area (between SJD &amp; CSL)</p>
+              <p class="text-slate-500 text-sm mb-4">Al área del Corredor de Los Cabos (entre SJD y CSL)</p>
               <div class="flex justify-center items-baseline gap-1 mb-2">
                 <span class="text-navy font-bold text-5xl">$95</span>
                 <span class="text-navy/60 text-lg font-bold uppercase">USD</span>
               </div>
-              <p class="text-base text-slate-500 font-bold uppercase tracking-wider">1 to 10 Guests</p>
+              <p class="text-base text-slate-500 font-bold uppercase tracking-wider">1 a 10 Invitados</p>
             </div>
           </div>
           <div class="bg-white rounded-3xl overflow-hidden border border-border-light shadow-sm hover:shadow-lg transition-shadow">
             <div class="bg-cabo-green py-4 px-6 text-center">
-              <h3 class="text-white text-sm font-bold uppercase tracking-widest">Airport to Diamante Area</h3>
+              <h3 class="text-white text-sm font-bold uppercase tracking-widest">Aeropuerto al Área de Diamante</h3>
             </div>
             <div class="p-8 text-center">
-              <p class="text-slate-500 text-sm mb-4">To Cabo San Lucas hotels zone and residential area</p>
+              <p class="text-slate-500 text-sm mb-4">A la zona hotelera y residencial de Cabo San Lucas</p>
               <div class="flex justify-center items-baseline gap-1 mb-2">
                 <span class="text-navy font-bold text-5xl">$120</span>
                 <span class="text-navy/60 text-lg font-bold uppercase">USD</span>
               </div>
-              <p class="text-base text-slate-500 font-bold uppercase tracking-wider">1 to 10 Guests</p>
+              <p class="text-base text-slate-500 font-bold uppercase tracking-wider">1 a 10 Invitados</p>
             </div>
           </div>
         </div>
-        <p class="mt-8 text-center italic text-slate-500 text-base">*5% discount on AIRPORT DROP OFF if booked a cruise with us during your stay.</p>
+        <p class="mt-8 text-center italic text-slate-500 text-base">*5% de descuento en TRASLADO AL AEROPUERTO si reservaste un crucero con nosotros durante tu estancia.</p>
       </div>
 
     </div><!-- end desktop layout -->
 
     <!-- Guest Reviews Carousel -->
     <div class="px-5 pb-12 lg:max-w-[1400px] lg:mx-auto lg:px-10 lg:py-16">
-      <div class="flex items-center gap-3 mb-4 lg:mb-8"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-lg lg:text-3xl text-navy">What Our Guests Say</h3></div>
+      <div class="flex items-center gap-3 mb-4 lg:mb-8"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-lg lg:text-3xl text-navy">Lo Que Dicen Nuestros Invitados</h3></div>
       <div class="relative">
         <div id="m-carousel" class="flex overflow-x-auto gap-4 lg:gap-6 no-scrollbar snap-x snap-mandatory pb-4 lg:overflow-hidden">
           <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
             <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-            <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Our driver was waiting at arrivals with a sign — so professional. The van was spotless and air-conditioned. After a 5-hour flight it was exactly what we needed. Highly recommend!"</p>
+            <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Nuestro chofer nos esperaba en llegadas con un letrero — muy profesional. La van estaba impecable y con aire acondicionado. Después de un vuelo de 5 horas era exactamente lo que necesitábamos. ¡Muy recomendado!"</p>
             <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center text-white text-sm font-bold">PH</div><div><p class="text-sm font-bold text-navy">Patricia H.</p><p class="text-base text-slate-500">Dallas, TX</p></div></div>
           </div>
           <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
             <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-            <p class="text-base text-slate-600 leading-relaxed italic mb-3">"We used the shuttle for a group of 8 for both arrival and departure. Perfectly on time both ways. Our driver gave us great local tips on the way to the resort. Great value!"</p>
+            <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Usamos el transporte para un grupo de 8 tanto a la llegada como a la salida. Perfectamente puntual en ambos viajes. Nuestro chofer nos dio excelentes consejos locales rumbo al resort. ¡Gran valor!"</p>
             <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-gold flex items-center justify-center text-white text-sm font-bold">BN</div><div><p class="text-sm font-bold text-navy">Brian N.</p><p class="text-base text-slate-500">Chicago, IL</p></div></div>
           </div>
           <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
             <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-            <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Stress-free from start to finish. I messaged via WhatsApp the night before and everything was confirmed instantly. The driver knew every shortcut and we made it to the marina with time to spare."</p>
+            <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Sin estrés de principio a fin. Mandé mensaje por WhatsApp la noche anterior y todo se confirmó al instante. El chofer conocía cada atajo y llegamos a la marina con tiempo de sobra."</p>
             <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy/70 flex items-center justify-center text-white text-sm font-bold">KL</div><div><p class="text-sm font-bold text-navy">Karen L.</p><p class="text-base text-slate-500">Los Angeles, CA</p></div></div>
           </div>
           <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
             <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-            <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Late night flight and our driver was still there waiting with a smile. Cold water bottles in the van, comfortable seats, and a smooth ride to the hotel. Started our vacation perfectly."</p>
+            <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Vuelo nocturno y nuestro chofer seguía ahí esperando con una sonrisa. Botellas de agua fría en la van, asientos cómodos y un viaje suave al hotel. Inicio perfecto de las vacaciones."</p>
             <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center text-white text-sm font-bold">MT</div><div><p class="text-sm font-bold text-navy">Mark T.</p><p class="text-base text-slate-500">New York, NY</p></div></div>
           </div>
           <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
             <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-            <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Used the shuttle to get to the marina for our snorkeling trip. Driver was friendly and the booking through WhatsApp was so easy. Way better than trying to figure out a taxi at the airport."</p>
+            <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Usamos el transporte para llegar a la marina para nuestro tour de snorkel. El chofer fue amable y reservar por WhatsApp fue muy fácil. Mucho mejor que tratar de tomar un taxi en el aeropuerto."</p>
             <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-gold flex items-center justify-center text-white text-sm font-bold">SR</div><div><p class="text-sm font-bold text-navy">Sandra R.</p><p class="text-base text-slate-500">Miami, FL</p></div></div>
           </div>
           <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
             <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-            <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Third trip to Cabo and we always book the shuttle through Cabo Sailing now. Reliable, professional, and affordable. They even accommodate our early morning flights without any extra charge."</p>
+            <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Tercer viaje a Cabo y siempre reservamos el transporte con Cabo Sailing. Confiable, profesional y económico. Incluso acomodan nuestros vuelos temprano en la mañana sin cargo extra."</p>
             <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy/70 flex items-center justify-center text-white text-sm font-bold">DW</div><div><p class="text-sm font-bold text-navy">Dan W.</p><p class="text-base text-slate-500">Denver, CO</p></div></div>
           </div>
         </div>

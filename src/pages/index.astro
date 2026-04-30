@@ -13,6 +13,9 @@ import heroSlide2 from "../assets/images/guests-on-yachts/relaxing-day-on-a-luxu
 import heroSlide3 from "../assets/images/guests-on-sailboats/sailing-through-cabo's-vibrant-waters.png";
 import heroSlide4 from "../assets/images/guests-on-yachts/cabo-yacht-charter-guests-01-copy.png";
 
+// Mobile-only bachelorette slide
+import bacheloretteMobileFirst from "../assets/images/bachelorette/Mobile/summer-vibes-on-the-boat.png";
+
 // Carousel config
 import carouselConfig from "../data/carousels.json";
 
@@ -164,7 +167,7 @@ const travelAgencySchema = JSON.stringify({
   <div class="md:col-span-7 relative group">
     <div class="absolute top-6 left-6 z-30 bg-accent-gold-dark text-white px-4 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase shadow-xl">Most Popular</div>
 
-    <div class={`aspect-[4/5] md:aspect-[16/9] overflow-hidden rounded-lg shadow-2xl ${activityImages['private-snorkeling'].length > 1 ? 'activity-carousel' : ''} relative`}>
+    <div class={`aspect-[4/3] md:aspect-[16/9] overflow-hidden rounded-lg shadow-2xl ${activityImages['private-snorkeling'].length > 1 ? 'activity-carousel' : ''} relative`}>
       {activityImages['private-snorkeling'].map((img, idx) => (
         <Image src={img} alt="Private Snorkeling" class="activity-slide absolute inset-0 w-full h-full object-cover" style={`opacity:${idx === 0 ? 1 : 0};`} width={1200} height={750} />
       ))}
@@ -211,7 +214,7 @@ const travelAgencySchema = JSON.stringify({
   <div class="md:col-span-7 order-1 md:order-2 relative group">
     <div class="absolute top-6 left-6 z-30 bg-accent-gold-dark text-white px-4 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase shadow-xl bg-opacity-80 backdrop-blur-sm">Premium</div>
 
-    <div class={`aspect-[4/5] md:aspect-[16/9] overflow-hidden rounded-lg shadow-2xl ${activityImages['private-sunset'].length > 1 ? 'activity-carousel' : ''} relative`}>
+    <div class={`aspect-[4/3] md:aspect-[16/9] overflow-hidden rounded-lg shadow-2xl ${activityImages['private-sunset'].length > 1 ? 'activity-carousel' : ''} relative`}>
       {activityImages['private-sunset'].map((img, idx) => (
         <Image src={img} alt="Private Sunset Cruise" class="activity-slide absolute inset-0 w-full h-full object-cover" style={`opacity:${idx === 0 ? 1 : 0};`} width={1200} height={750} />
       ))}
@@ -258,7 +261,7 @@ const travelAgencySchema = JSON.stringify({
   <div class="md:col-span-7 relative group">
     <div class="absolute top-6 left-6 z-30 bg-accent-gold-dark text-white px-4 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase shadow-xl">Sells Out Fast</div>
 
-    <div class={`aspect-[4/5] md:aspect-[16/9] overflow-hidden rounded-lg shadow-2xl ${activityImages['whale-watching'].length > 1 ? 'activity-carousel' : ''} relative`}>
+    <div class={`aspect-[4/3] md:aspect-[16/9] overflow-hidden rounded-lg shadow-2xl ${activityImages['whale-watching'].length > 1 ? 'activity-carousel' : ''} relative`}>
       {activityImages['whale-watching'].map((img, idx) => (
         <Image src={img} alt="Whale Watching" class="activity-slide absolute inset-0 w-full h-full object-cover" style={`opacity:${idx === 0 ? 1 : 0};`} width={1200} height={750} />
       ))}
@@ -305,7 +308,8 @@ const travelAgencySchema = JSON.stringify({
   <div class="md:col-span-7 order-1 md:order-2 relative group">
     <div class="absolute top-6 left-6 z-30 bg-accent-gold-dark text-white px-4 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase shadow-xl">VIP Experience</div>
 
-    <div class={`aspect-[4/5] md:aspect-[16/9] overflow-hidden rounded-lg shadow-2xl ${activityImages['bachelorette-party'].length > 1 ? 'activity-carousel' : ''} relative`}>
+    <div class={`aspect-[4/3] md:aspect-[16/9] overflow-hidden rounded-lg shadow-2xl ${activityImages['bachelorette-party'].length > 1 ? 'activity-carousel' : ''} relative`}>
+      <Image src={bacheloretteMobileFirst} alt="Summer vibes on the boat" class="activity-slide absolute inset-0 w-full h-full object-cover md:hidden" style="opacity:1;" width={1200} height={750} />
       {activityImages['bachelorette-party'].map((img, idx) => (
         <Image src={img} alt="Bachelorette Party" class="activity-slide absolute inset-0 w-full h-full object-cover" style={`opacity:${idx === 0 ? 1 : 0};`} width={1200} height={750} />
       ))}
@@ -358,7 +362,7 @@ const travelAgencySchema = JSON.stringify({
   <div class="md:col-span-7 relative group">
     <div class="absolute top-6 left-6 z-30 bg-accent-gold-dark text-white px-4 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase shadow-xl">Most Popular</div>
 
-    <div class={`aspect-[4/5] md:aspect-[16/9] overflow-hidden rounded-lg shadow-2xl ${activityImages['shared-snorkeling'].length > 1 ? 'activity-carousel' : ''} relative`}>
+    <div class={`aspect-[4/3] md:aspect-[16/9] overflow-hidden rounded-lg shadow-2xl ${activityImages['shared-snorkeling'].length > 1 ? 'activity-carousel' : ''} relative`}>
       {activityImages['shared-snorkeling'].map((img, idx) => (
         <Image src={img} alt="Shared Snorkeling" class="activity-slide absolute inset-0 w-full h-full object-cover" style={`opacity:${idx === 0 ? 1 : 0};`} width={1200} height={750} />
       ))}
@@ -405,7 +409,7 @@ const travelAgencySchema = JSON.stringify({
   <div class="md:col-span-7 order-1 md:order-2 relative group">
     <div class="absolute top-6 left-6 z-30 bg-accent-gold-dark text-white px-4 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase shadow-xl">Premium</div>
 
-    <div class={`aspect-[4/5] md:aspect-[16/9] overflow-hidden rounded-lg shadow-2xl ${activityImages['shared-sunset'].length > 1 ? 'activity-carousel' : ''} relative`}>
+    <div class={`aspect-[4/3] md:aspect-[16/9] overflow-hidden rounded-lg shadow-2xl ${activityImages['shared-sunset'].length > 1 ? 'activity-carousel' : ''} relative`}>
       {activityImages['shared-sunset'].map((img, idx) => (
         <Image src={img} alt="Shared Sunset Cruise" class="activity-slide absolute inset-0 w-full h-full object-cover" style={`opacity:${idx === 0 ? 1 : 0};`} width={1200} height={750} />
       ))}
@@ -837,8 +841,12 @@ const travelAgencySchema = JSON.stringify({
 
   (function() {
     document.querySelectorAll('.activity-carousel').forEach(function(carousel) {
-      var slides = carousel.querySelectorAll('.activity-slide');
+      var slides = Array.prototype.filter.call(
+        carousel.querySelectorAll('.activity-slide'),
+        function(s) { return s.offsetParent !== null; }
+      );
       if (slides.length < 2) return;
+      slides.forEach(function(s, i) { s.style.opacity = i === 0 ? '1' : '0'; });
       var current = 0;
       var dotsWrap = carousel.querySelector('.carousel-dots');
 
