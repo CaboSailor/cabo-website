@@ -7,7 +7,7 @@ import RezdyModal from '../../components/RezdyModal.astro';
 import { Image } from 'astro:assets';
 
 // Hero / main images
-import heroImg from "../../assets/images/scuba-diving/scuba-divers-preparing-near-the-boat.png";
+import { scubaDiving as heroImg } from "../../data/tour-heroes";
 import scubaImg7 from "../../assets/images/scuba-diving/scuba-diving-adventure-in-tropical-waters.png";
 import scubaImg9 from "../../assets/images/scuba-diving/vibrant-tropical-school-of-fish-underwater.png";
 import scubaImg5 from "../../assets/images/scuba-diving/seal-and-divers-in-underwater-harmony.png";
@@ -210,7 +210,7 @@ const breadcrumbSchema = JSON.stringify({
               </div>
               <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
               <div class="absolute bottom-5 left-6">
-                <h3 class="text-white text-lg lg:text-xl">Luxury Yacht 51'</h3>
+                <h3 class="text-white text-lg lg:text-xl">Yate de Lujo 51'</h3>
                 <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Hasta 20 Invitados</span></div>
               </div>
               <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Más Espacioso</div>
@@ -230,7 +230,7 @@ const breadcrumbSchema = JSON.stringify({
               </div>
               <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
               <div class="absolute bottom-5 left-6">
-                <h3 class="text-white text-lg lg:text-xl">Luxury Yacht 45'</h3>
+                <h3 class="text-white text-lg lg:text-xl">Yate de Lujo 45'</h3>
                 <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Hasta 12 Invitados</span></div>
               </div>
               <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Más Popular</div>
@@ -250,7 +250,7 @@ const breadcrumbSchema = JSON.stringify({
               </div>
               <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
               <div class="absolute bottom-5 left-6">
-                <h3 class="text-white text-lg lg:text-xl">Luxury Yacht 42'</h3>
+                <h3 class="text-white text-lg lg:text-xl">Yate de Lujo 42'</h3>
                 <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Hasta 18 Invitados</span></div>
               </div>
               <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Mejor Precio</div>
@@ -270,7 +270,7 @@ const breadcrumbSchema = JSON.stringify({
               </div>
               <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
               <div class="absolute bottom-5 left-6">
-                <h3 class="text-white text-lg lg:text-xl">Sailing Boat 42'</h3>
+                <h3 class="text-white text-lg lg:text-xl">Velero 42'</h3>
                 <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Hasta 14 Invitados</span></div>
               </div>
               <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Experiencia en Velero</div>
@@ -346,22 +346,22 @@ const breadcrumbSchema = JSON.stringify({
           <div id="m-carousel" class="flex overflow-x-auto gap-4 no-scrollbar snap-x snap-mandatory pb-4">
             <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] bg-light-grey rounded-2xl p-5 border border-border-light">
               <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-              <p class="text-base text-slate-600 leading-relaxed italic mb-3">"The dive at Pelican Rock was incredible — we swam with sea lions and saw so many colorful fish. The instructor was patient and made us feel completely safe. Best dive experience ever!"</p>
+              <p class="text-base text-slate-600 leading-relaxed italic mb-3">"El buceo en Pelican Rock fue increible — nadamos con lobos marinos y vimos muchisimos peces de colores. El instructor fue paciente y nos hizo sentir completamente seguros. La mejor experiencia de buceo!"</p>
               <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center text-white text-sm font-bold">RK</div><div><p class="text-sm font-bold text-navy">Rachel K.</p><p class="text-base text-slate-500">Seattle, WA</p></div></div>
             </div>
             <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] bg-light-grey rounded-2xl p-5 border border-border-light">
               <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-              <p class="text-base text-slate-600 leading-relaxed italic mb-3">"I'd never been scuba diving before and this was the perfect introduction. The PADI instructor was amazing, the equipment was brand new, and seeing the underwater world of Cabo was mind-blowing."</p>
+              <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Nunca habia buceado y esta fue la introduccion perfecta. El instructor PADI fue genial, el equipo nuevo y ver el mundo submarino de Cabo fue alucinante."</p>
               <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-gold flex items-center justify-center text-white text-sm font-bold">MT</div><div><p class="text-sm font-bold text-navy">Mike T.</p><p class="text-base text-slate-500">Denver, CO</p></div></div>
             </div>
             <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] bg-light-grey rounded-2xl p-5 border border-border-light">
               <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-              <p class="text-base text-slate-600 leading-relaxed italic mb-3">"We're certified divers and have dived all over the world. Cabo's marine life diversity rivals anything we've seen. The sea lions at Pelican Rock were the highlight — so playful and curious!"</p>
+              <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Somos buzos certificados y hemos buceado por todo el mundo. La diversidad de vida marina en Cabo rivaliza con todo lo que hemos visto. Los lobos marinos en Pelican Rock fueron lo mejor — tan juguetones y curiosos!"</p>
               <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy/70 flex items-center justify-center text-white text-sm font-bold">DM</div><div><p class="text-sm font-bold text-navy">David &amp; Sarah M.</p><p class="text-base text-slate-500">San Diego, CA</p></div></div>
             </div>
             <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] bg-light-grey rounded-2xl p-5 border border-border-light">
               <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-              <p class="text-base text-slate-600 leading-relaxed italic mb-3">"The boat ride past the Arch was beautiful, and then the diving was next level. Crystal clear water, tons of fish, and the crew was so professional. Already planning our next dive trip back."</p>
+              <p class="text-base text-slate-600 leading-relaxed italic mb-3">"El paseo en barco junto al Arco fue hermoso, y el buceo fue de otro nivel. Agua cristalina, montones de peces y la tripulacion super profesional. Ya estamos planeando nuestro proximo viaje de buceo."</p>
               <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center text-white text-sm font-bold">AP</div><div><p class="text-sm font-bold text-navy">Amanda P.</p><p class="text-base text-slate-500">Austin, TX</p></div></div>
             </div>
             <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] bg-light-grey rounded-2xl p-5 border border-border-light">
@@ -371,7 +371,7 @@ const breadcrumbSchema = JSON.stringify({
             </div>
             <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] bg-light-grey rounded-2xl p-5 border border-border-light">
               <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-              <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Two-tank dive was worth every penny. First dive at Pelican Rock with the sea lions, second at Neptune's Finger with amazing coral. The visibility was easily 25 meters. World-class diving."</p>
+              <p class="text-base text-slate-600 leading-relaxed italic mb-3">"El buceo de dos tanques valio cada centavo. Primera inmersion en Pelican Rock con los lobos marinos, segunda en Neptune's Finger con coral increible. La visibilidad facil de 25 metros. Buceo de clase mundial."</p>
               <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy/70 flex items-center justify-center text-white text-sm font-bold">CG</div><div><p class="text-sm font-bold text-navy">Carlos G.</p><p class="text-base text-slate-500">Miami, FL</p></div></div>
             </div>
           </div>
@@ -549,7 +549,7 @@ const breadcrumbSchema = JSON.stringify({
       <!-- DESKTOP: Elige Tu Barco — full width -->
       <div class="max-w-[1400px] mx-auto px-10 py-16">
         <div class="flex items-center gap-3 mb-8"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-lg lg:text-2xl text-navy">Explora nuestros barcos — encuentra el perfecto para tu experiencia única de buceo</h3></div>
-        <div class="grid grid-cols-3 gap-5 pb-8">
+        <div class="grid grid-cols-3 gap-5 pb-8 max-w-[1100px] mx-auto">
           <!-- Luxury Yacht 51' -->
           <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="yacht-51">
             <div class="h-[480px] w-full relative">
@@ -560,7 +560,7 @@ const breadcrumbSchema = JSON.stringify({
               </div>
               <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
               <div class="absolute bottom-5 left-6">
-                <h3 class="text-white text-lg lg:text-xl">Luxury Yacht 51'</h3>
+                <h3 class="text-white text-lg lg:text-xl">Yate de Lujo 51'</h3>
                 <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Hasta 20 Invitados</span></div>
               </div>
               <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Más Espacioso</div>
@@ -583,7 +583,7 @@ const breadcrumbSchema = JSON.stringify({
               </div>
               <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
               <div class="absolute bottom-5 left-6">
-                <h3 class="text-white text-lg lg:text-xl">Luxury Yacht 45'</h3>
+                <h3 class="text-white text-lg lg:text-xl">Yate de Lujo 45'</h3>
                 <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Hasta 12 Invitados</span></div>
               </div>
               <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Más Popular</div>
@@ -606,7 +606,7 @@ const breadcrumbSchema = JSON.stringify({
               </div>
               <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
               <div class="absolute bottom-5 left-6">
-                <h3 class="text-white text-lg lg:text-xl">Luxury Yacht 42'</h3>
+                <h3 class="text-white text-lg lg:text-xl">Yate de Lujo 42'</h3>
                 <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Hasta 18 Invitados</span></div>
               </div>
               <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Mejor Precio</div>
@@ -621,7 +621,7 @@ const breadcrumbSchema = JSON.stringify({
           </div>
         </div>
 
-        <div class="grid grid-cols-3 gap-5 pb-8">
+        <div class="grid grid-cols-3 gap-5 pb-8 max-w-[1100px] mx-auto">
           <div></div>
           <!-- Sailing Boat 42' -->
           <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="sailing-42">
@@ -633,7 +633,7 @@ const breadcrumbSchema = JSON.stringify({
               </div>
               <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
               <div class="absolute bottom-5 left-6">
-                <h3 class="text-white text-lg lg:text-xl">Sailing Boat 42'</h3>
+                <h3 class="text-white text-lg lg:text-xl">Velero 42'</h3>
                 <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Hasta 14 Invitados</span></div>
               </div>
               <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Experiencia en Velero</div>
@@ -756,22 +756,22 @@ const breadcrumbSchema = JSON.stringify({
           <div id="d-carousel" class="flex gap-8 transition-transform duration-500 ease-in-out" style="width:calc(200% + 2rem)">
             <div class="bg-light-grey rounded-3xl p-8 border border-border-light flex-1">
               <div class="flex items-center gap-1 mb-4"><span class="material-symbols-outlined text-gold filled">star</span><span class="material-symbols-outlined text-gold filled">star</span><span class="material-symbols-outlined text-gold filled">star</span><span class="material-symbols-outlined text-gold filled">star</span><span class="material-symbols-outlined text-gold filled">star</span></div>
-              <p class="text-slate-600 leading-relaxed italic mb-6">"The dive at Pelican Rock was incredible — we swam with sea lions and saw so many colorful fish. The instructor was patient and made us feel completely safe. Best dive experience ever!"</p>
+              <p class="text-slate-600 leading-relaxed italic mb-6">"El buceo en Pelican Rock fue increible — nadamos con lobos marinos y vimos muchisimos peces de colores. El instructor fue paciente y nos hizo sentir completamente seguros. La mejor experiencia de buceo!"</p>
               <div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-navy flex items-center justify-center text-white text-base font-bold">RK</div><div><p class="font-bold text-navy">Rachel K.</p><p class="text-sm text-slate-500">Seattle, WA</p></div></div>
             </div>
             <div class="bg-light-grey rounded-3xl p-8 border border-border-light flex-1">
               <div class="flex items-center gap-1 mb-4"><span class="material-symbols-outlined text-gold filled">star</span><span class="material-symbols-outlined text-gold filled">star</span><span class="material-symbols-outlined text-gold filled">star</span><span class="material-symbols-outlined text-gold filled">star</span><span class="material-symbols-outlined text-gold filled">star</span></div>
-              <p class="text-slate-600 leading-relaxed italic mb-6">"I'd never been scuba diving before and this was the perfect introduction. The PADI instructor was amazing, the equipment was brand new, and seeing the underwater world of Cabo was mind-blowing."</p>
+              <p class="text-slate-600 leading-relaxed italic mb-6">"Nunca habia buceado y esta fue la introduccion perfecta. El instructor PADI fue genial, el equipo nuevo y ver el mundo submarino de Cabo fue alucinante."</p>
               <div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-gold flex items-center justify-center text-white text-base font-bold">MT</div><div><p class="font-bold text-navy">Mike T.</p><p class="text-sm text-slate-500">Denver, CO</p></div></div>
             </div>
             <div class="bg-light-grey rounded-3xl p-8 border border-border-light flex-1">
               <div class="flex items-center gap-1 mb-4"><span class="material-symbols-outlined text-gold filled">star</span><span class="material-symbols-outlined text-gold filled">star</span><span class="material-symbols-outlined text-gold filled">star</span><span class="material-symbols-outlined text-gold filled">star</span><span class="material-symbols-outlined text-gold filled">star</span></div>
-              <p class="text-slate-600 leading-relaxed italic mb-6">"We're certified divers and have dived all over the world. Cabo's marine life diversity rivals anything we've seen. The sea lions at Pelican Rock were the highlight — so playful and curious!"</p>
+              <p class="text-slate-600 leading-relaxed italic mb-6">"Somos buzos certificados y hemos buceado por todo el mundo. La diversidad de vida marina en Cabo rivaliza con todo lo que hemos visto. Los lobos marinos en Pelican Rock fueron lo mejor — tan juguetones y curiosos!"</p>
               <div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-navy/70 flex items-center justify-center text-white text-base font-bold">DM</div><div><p class="font-bold text-navy">David &amp; Sarah M.</p><p class="text-sm text-slate-500">San Diego, CA</p></div></div>
             </div>
             <div class="bg-light-grey rounded-3xl p-8 border border-border-light flex-1">
               <div class="flex items-center gap-1 mb-4"><span class="material-symbols-outlined text-gold filled">star</span><span class="material-symbols-outlined text-gold filled">star</span><span class="material-symbols-outlined text-gold filled">star</span><span class="material-symbols-outlined text-gold filled">star</span><span class="material-symbols-outlined text-gold filled">star</span></div>
-              <p class="text-slate-600 leading-relaxed italic mb-6">"The boat ride past the Arch was beautiful, and then the diving was next level. Crystal clear water, tons of fish, and the crew was so professional. Already planning our next dive trip back."</p>
+              <p class="text-slate-600 leading-relaxed italic mb-6">"El paseo en barco junto al Arco fue hermoso, y el buceo fue de otro nivel. Agua cristalina, montones de peces y la tripulacion super profesional. Ya estamos planeando nuestro proximo viaje de buceo."</p>
               <div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-navy flex items-center justify-center text-white text-base font-bold">AP</div><div><p class="font-bold text-navy">Amanda P.</p><p class="text-sm text-slate-500">Austin, TX</p></div></div>
             </div>
             <div class="bg-light-grey rounded-3xl p-8 border border-border-light flex-1">
@@ -781,7 +781,7 @@ const breadcrumbSchema = JSON.stringify({
             </div>
             <div class="bg-light-grey rounded-3xl p-8 border border-border-light flex-1">
               <div class="flex items-center gap-1 mb-4"><span class="material-symbols-outlined text-gold filled">star</span><span class="material-symbols-outlined text-gold filled">star</span><span class="material-symbols-outlined text-gold filled">star</span><span class="material-symbols-outlined text-gold filled">star</span><span class="material-symbols-outlined text-gold filled">star</span></div>
-              <p class="text-slate-600 leading-relaxed italic mb-6">"Two-tank dive was worth every penny. First dive at Pelican Rock with the sea lions, second at Neptune's Finger with amazing coral. The visibility was easily 25 meters. World-class diving."</p>
+              <p class="text-slate-600 leading-relaxed italic mb-6">"El buceo de dos tanques valio cada centavo. Primera inmersion en Pelican Rock con los lobos marinos, segunda en Neptune's Finger con coral increible. La visibilidad facil de 25 metros. Buceo de clase mundial."</p>
               <div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-navy/70 flex items-center justify-center text-white text-base font-bold">CG</div><div><p class="font-bold text-navy">Carlos G.</p><p class="text-sm text-slate-500">Miami, FL</p></div></div>
             </div>
           </div>

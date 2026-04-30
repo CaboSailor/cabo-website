@@ -8,10 +8,10 @@ import FloatingCTA from '../components/FloatingCTA.astro';
 import { Image } from 'astro:assets';
 
 // Hero slides
-import heroSlide1 from "../assets/images/guests-on-sailboats/cabo-sailboat-guests-snorkeling-01.jpg";
-import heroSlide2 from "../assets/images/guests-on-yachts/cabo-yacht-charter-guests-01-copy.png";
-import heroSlide3 from "../assets/images/boats/sailing-38/cabo-sailing-38-el-arco-arch.png";
-import heroSlide4 from "../assets/images/bachelorette/cabo-bachelorette-party.jpg";
+import heroSlide1 from "../assets/images/guests-on-sailboats/luxury-sailboat-in-tropical-waters.png";
+import heroSlide2 from "../assets/images/guests-on-yachts/relaxing-day-on-a-luxury-boat.png";
+import heroSlide3 from "../assets/images/guests-on-sailboats/sailing-through-cabo's-vibrant-waters.png";
+import heroSlide4 from "../assets/images/guests-on-yachts/cabo-yacht-charter-guests-01-copy.png";
 
 // Carousel config
 import carouselConfig from "../data/carousels.json";
@@ -91,10 +91,10 @@ const travelAgencySchema = JSON.stringify({
 
 <!-- Hero Section -->
 <div class="relative w-full h-[72vh] lg:h-[85vh] min-h-[560px] overflow-hidden" style="margin-bottom:-1px">
-  <Image src={heroSlide1} alt="Luxury Yacht 51' in Cabo San Lucas" class="hero-slide absolute inset-0 w-full h-full object-cover block opacity-100 transition-opacity duration-1000" width={1920} height={1080} loading="eager" />
-  <Image src={heroSlide2} alt="Luxury Yacht 51' cruising" class="hero-slide absolute inset-0 w-full h-full object-cover block opacity-0 transition-opacity duration-1000" width={1920} height={1080} />
-  <Image src={heroSlide3} alt="Sailing 38' at the Arch in Cabo San Lucas" class="hero-slide absolute inset-0 w-full h-full object-cover block opacity-0 transition-opacity duration-1000" width={1920} height={1080} />
-  <Image src={heroSlide4} alt="Cabo bachelorette party on a boat" class="hero-slide absolute inset-0 w-full h-full object-cover block opacity-0 transition-opacity duration-1000" width={1920} height={1080} />
+  <Image src={heroSlide1} alt="Luxury sailboat in tropical waters" class="hero-slide absolute inset-0 w-full h-full object-cover block opacity-100 transition-opacity duration-1000" width={1920} height={1080} loading="eager" />
+  <Image src={heroSlide2} alt="Relaxing day on a luxury boat" class="hero-slide absolute inset-0 w-full h-full object-cover block opacity-0 transition-opacity duration-1000" width={1920} height={1080} />
+  <Image src={heroSlide3} alt="Sailing through Cabo's vibrant waters" class="hero-slide absolute inset-0 w-full h-full object-cover block opacity-0 transition-opacity duration-1000" width={1920} height={1080} />
+  <Image src={heroSlide4} alt="Guests enjoying a Cabo yacht charter" class="hero-slide absolute inset-0 w-full h-full object-cover block opacity-0 transition-opacity duration-1000" width={1920} height={1080} />
   <div class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent"></div>
   <div class="absolute inset-0 flex items-end lg:items-center px-6 lg:px-20 pb-24 lg:pb-0">
     <div class="max-w-3xl text-left">

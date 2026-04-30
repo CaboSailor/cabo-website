@@ -29,7 +29,7 @@ Festivals like San Jos&eacute; del Cabo's celebrations in March and Semana Santa
 If whale watching is on your list, this is the time to visit. Booking a [sailing or yacht-based experience](/whale-watching) offers a quieter, more personal encounter compared to larger boats.
 
 <div class="my-8 rounded-2xl overflow-hidden shadow-lg">
-  <img alt="Whale watching from a sailboat in Cabo San Lucas" class="w-full h-[280px] lg:h-[360px] object-cover" src="/images/whales/cabo-whale-watching-humpback.jpg" />
+  <img alt="Humpback whale breaching in Cabo San Lucas" class="w-full h-[280px] lg:h-[360px] object-cover" src="/images/whales/cabo-whale-watching-breaching.jpg" />
 </div>
 
 ---

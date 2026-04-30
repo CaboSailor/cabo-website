@@ -6,26 +6,16 @@ import FloatingCTA from '../../components/FloatingCTA.astro';
 import RezdyModal from '../../components/RezdyModal.astro';
 import { Image } from 'astro:assets';
 
-import img_4k_01_38_47_13_Still123 from "../../assets/images/guests-on-sailboats/cabo-sailboat-guests-snorkeling-01.jpg";
-import img_4k_01_16_49_02_Still113 from "../../assets/images/guests-on-sailboats/cabo-sailboat-guests-snorkeling-02.jpg";
-import Cabo_Sailing_1 from "../../assets/images/guests-on-sailboats/cabo-sailing-adventure-guests.jpg";
-import img_31_03_25_Gil_airbnb_shoot_photos_20mm_51_topaz_sharpen_exposure from "../../assets/images/guests-on-sailboats/cabo-sailing-guests-portrait.jpg";
-import img_3_Yacht_42 from "../../assets/images/boats/yacht-42/cabo-private-yacht-42-exterior-02.jpg";
-import Cabo_Sailing_Snorkeling_17 from "../../assets/images/guests-on-sailboats/cabo-sailing-snorkeling-tour.jpg";
-import img_9_Yacht_51 from "../../assets/images/boats/yacht-51/cabo-luxury-yacht-51-ocean-view.jpg";
-import img_2_Yacht_51 from "../../assets/images/boats/yacht-51/cabo-luxury-yacht-51-exterior-01.jpg";
-import img_7_Yacht_51 from "../../assets/images/boats/yacht-51/cabo-luxury-yacht-51-exterior-03.jpg";
-import img_1_Yacht_45 from "../../assets/images/boats/yacht-45/cabo-private-yacht-45-exterior-01.jpg";
-import img_5_Yacht_45 from "../../assets/images/boats/yacht-45/cabo-private-yacht-45-exterior-03.jpg";
-import img_6_Yacht_45 from "../../assets/images/boats/yacht-45/cabo-private-yacht-45-bow.jpg";
-import img_2_Yacht_42 from "../../assets/images/boats/yacht-42/cabo-private-yacht-42-exterior-01.jpg";
-import img_5_Yacht_42 from "../../assets/images/boats/yacht-42/cabo-private-yacht-42-exterior-03.jpg";
-import img_10_Sailing_42 from "../../assets/images/boats/sailing-42/cabo-sailing-42-exterior-01.jpg";
-import img_17_Sailing_42 from "../../assets/images/boats/sailing-42/cabo-sailing-42-sailing-view.jpg";
-import img_12_Sailing_42 from "../../assets/images/boats/sailing-42/cabo-sailing-42-exterior-02.jpg";
-import img_6_Sailing_38 from "../../assets/images/boats/sailing-38/cabo-sailing-38-exterior-02.jpg";
-import img_8_Sailing_38 from "../../assets/images/boats/sailing-38/cabo-sailing-38-exterior-03.jpg";
-import img_5_Sailing_38 from "../../assets/images/boats/sailing-38/cabo-sailing-38-exterior-01.jpg";
+import { privateSnorkeling as heroSunnyYachtCruise } from "../../data/tour-heroes";
+import sunnySailboatAdventure from "../../assets/images/guests-on-yachts/sunny-day-sailboat-adventure-on-the-coast.png";
+import relaxingLuxuryBoat from "../../assets/images/guests-on-yachts/relaxing-day-on-a-luxury-boat.png";
+import sailingGuestsWaving from "../../assets/images/guests-on-sailboats/cabo-sailing-guests-waving.jpg";
+import cheersCoastalAdventure from "../../assets/images/guests-on-sailboats/cheers-on-a-sunny-coastal-adventure.png";
+import yacht51Boat from "../../assets/images/boats/yacht-51/cabo-sailing-yacht-51-boat.png";
+import yacht45Img from "../../assets/images/boats/yacht-45/cabo-private-yacht-45-charter.png";
+import yacht42Boat from "../../assets/images/boats/yacht-42/cabo-sailig-yacht-42-boat.png";
+import sailing42View from "../../assets/images/boats/sailing-42/cabo-sailing-42-sailing-view.png";
+import sailing38Boat from "../../assets/images/boats/sailing-38/cabo-sailing-38-home-boat.png";
 import Chileno from "../../assets/images/blog/chileno-bay-cabo-snorkeling.jpg";
 
 const breadcrumbSchema = JSON.stringify({
@@ -59,11 +49,11 @@ const breadcrumbSchema = JSON.stringify({
 <!-- Hero Gallery -->
 <div class="lg:hidden relative w-full h-[45vh] overflow-hidden">
 <div class="flex overflow-x-auto snap-x snap-mandatory h-full no-scrollbar">
-<div class="flex-shrink-0 w-full h-full snap-center"><Image src={img_4k_01_38_47_13_Still123} alt="Aerial view sailboat in turquoise water" class="w-full h-full object-cover" width={800} height={500} /></div>
-<div class="flex-shrink-0 w-full h-full snap-center"><Image src={img_4k_01_16_49_02_Still113} alt="Happy snorkelers with thumbs up" class="w-full h-full object-cover" width={800} height={500} /></div>
-<div class="flex-shrink-0 w-full h-full snap-center"><Image src={Cabo_Sailing_1} alt="Woman jumping off bow into turquoise water" class="w-full h-full object-cover" width={800} height={500} /></div>
-<div class="flex-shrink-0 w-full h-full snap-center"><Image src={img_31_03_25_Gil_airbnb_shoot_photos_20mm_51_topaz_sharpen_exposure} alt="Happy guests with mimosas and El Arco" class="w-full h-full object-cover" width={800} height={500} /></div>
-<div class="flex-shrink-0 w-full h-full snap-center"><Image src={img_3_Yacht_42} alt="Yacht at El Arco with guests" class="w-full h-full object-cover" width={800} height={500} /></div>
+<div class="flex-shrink-0 w-full h-full snap-center"><Image src={heroSunnyYachtCruise} alt="Crucero soleado en yate por mar abierto" class="w-full h-full object-cover" width={800} height={500} /></div>
+<div class="flex-shrink-0 w-full h-full snap-center"><Image src={sunnySailboatAdventure} alt="Aventura en velero un día soleado en la costa" class="w-full h-full object-cover" width={800} height={500} /></div>
+<div class="flex-shrink-0 w-full h-full snap-center"><Image src={relaxingLuxuryBoat} alt="Día relajante en un yate de lujo" class="w-full h-full object-cover" width={800} height={500} /></div>
+<div class="flex-shrink-0 w-full h-full snap-center"><Image src={sailingGuestsWaving} alt="Huéspedes saludando desde el velero" class="w-full h-full object-cover" width={800} height={500} /></div>
+<div class="flex-shrink-0 w-full h-full snap-center"><Image src={cheersCoastalAdventure} alt="Brindis en una aventura costera soleada" class="w-full h-full object-cover" width={800} height={500} /></div>
 </div>
 <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent pt-10 pb-5 px-4">
   <div class="max-w-[360px] mx-auto text-center">
@@ -74,7 +64,7 @@ const breadcrumbSchema = JSON.stringify({
       <span class="material-symbols-outlined text-gold filled text-sm">star</span>
       <span class="material-symbols-outlined text-gold filled text-sm">star</span>
     </div>
-    <p class="text-white text-base leading-snug">"Hands down the best snorkeling trip we've ever done. The crew made it feel so special."</p>
+    <p class="text-white text-base leading-snug">"Sin duda el mejor tour de snorkel que hemos hecho. La tripulacion lo hizo muy especial."</p>
     <p class="text-white/50 text-[10px] uppercase tracking-widest font-bold mt-2">Mike &amp; Sarah T. &mdash; Austin, TX</p>
   </div>
 </div>
@@ -83,11 +73,11 @@ const breadcrumbSchema = JSON.stringify({
 </div>
 <div class="hidden lg:block max-w-[1400px] mx-auto px-10 mt-6 relative">
 <div class="grid grid-cols-4 grid-rows-2 gap-2 h-[55vh]" id="hero-desktop-grid">
-<div class="col-span-2 row-span-2 rounded-2xl overflow-hidden"><Image src={img_4k_01_38_47_13_Still123} alt="Aerial view sailboat in turquoise water" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
-<div class="rounded-2xl overflow-hidden"><Image src={img_4k_01_16_49_02_Still113} alt="Happy snorkelers with thumbs up" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
-<div class="rounded-2xl overflow-hidden"><Image src={Cabo_Sailing_1} alt="Woman jumping off bow into turquoise water" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
-<div class="rounded-2xl overflow-hidden"><Image src={img_31_03_25_Gil_airbnb_shoot_photos_20mm_51_topaz_sharpen_exposure} alt="Happy guests with mimosas and El Arco" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
-<div class="rounded-2xl overflow-hidden"><Image src={Cabo_Sailing_Snorkeling_17} alt="Underwater snorkeling with starfish" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
+<div class="col-span-2 row-span-2 rounded-2xl overflow-hidden"><Image src={heroSunnyYachtCruise} alt="Crucero soleado en yate por mar abierto" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
+<div class="rounded-2xl overflow-hidden"><Image src={sunnySailboatAdventure} alt="Aventura en velero un día soleado en la costa" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
+<div class="rounded-2xl overflow-hidden"><Image src={relaxingLuxuryBoat} alt="Día relajante en un yate de lujo" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
+<div class="rounded-2xl overflow-hidden"><Image src={sailingGuestsWaving} alt="Huéspedes saludando desde el velero" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
+<div class="rounded-2xl overflow-hidden"><Image src={cheersCoastalAdventure} alt="Brindis en una aventura costera soleada" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
 </div>
 <div class="mt-4 flex justify-center">
   <div class="max-w-[520px] flex items-start gap-4">
@@ -99,7 +89,7 @@ const breadcrumbSchema = JSON.stringify({
       <span class="material-symbols-outlined text-gold filled text-base">star</span>
     </div>
     <div>
-      <p class="text-navy text-sm leading-snug">"Hands down the best snorkeling trip we've ever done. The crew made it feel so special."</p>
+      <p class="text-navy text-sm leading-snug">"Sin duda el mejor tour de snorkel que hemos hecho. La tripulacion lo hizo muy especial."</p>
       <p class="text-navy/60 text-[10px] uppercase tracking-widest font-bold mt-2">Mike &amp; Sarah T. &mdash; Austin, TX</p>
     </div>
   </div>
@@ -395,25 +385,19 @@ const breadcrumbSchema = JSON.stringify({
 
 <div id="choose-your-boat" class="mt-12 lg:mt-0 lg:max-w-[1400px] lg:mx-auto lg:px-10 lg:py-16 px-5">
 <div class="flex items-center gap-3 mb-8"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-lg lg:text-2xl text-navy">Explora nuestros barcos — encuentra el ideal para tu experiencia de snorkel</h3></div>
-<div class="flex flex-col gap-5 lg:grid lg:grid-cols-3 pb-8">
+<div class="flex flex-col gap-5 lg:grid lg:grid-cols-3 lg:max-w-[1100px] lg:mx-auto pb-8">
   <!-- Luxury Yacht 51' — Mas Espacioso -->
   <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="yacht-51">
-    <div class="h-[400px] w-full relative">
-      <div class="boat-carousel relative w-full h-full">
-<Image src={img_9_Yacht_51} alt="Luxury Yacht 51'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-100 transition-opacity duration-700" width={800} height={500} />
-<Image src={img_2_Yacht_51} alt="Luxury Yacht 51'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" width={800} height={500} />
-<Image src={img_7_Yacht_51} alt="Luxury Yacht 51'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" width={800} height={500} />
-</div>
+    <div class="fleet-img-wrap w-full relative">
+<Image src={yacht51Boat} alt="Luxury Yacht 51'" class="w-full h-full object-cover object-center" style="transform: scale(1.1);" width={1023} height={1537} format="png" quality={100} />
       <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
       <div class="absolute bottom-5 left-6">
-        <h3 class="text-white text-lg lg:text-xl">Luxury Yacht 51'</h3>
+        <h3 class="text-white text-lg lg:text-xl">Yate de Lujo 51'</h3>
         <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Hasta 20 Personas</span></div>
       </div>
       <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Mas Espacioso</div>
 
     <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-30%</div>
-    <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
-    <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
 </div>
     <div class="p-4 space-y-4">
       <p class="text-slate-700 text-sm italic text-center pb-3 border-b border-border-light/50">Ideal para grupos grandes y maximo espacio</p>
@@ -425,22 +409,16 @@ const breadcrumbSchema = JSON.stringify({
   </div>
   <!-- Luxury Yacht 45' — Mas Popular -->
   <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="yacht-45">
-    <div class="h-[400px] w-full relative">
-      <div class="boat-carousel relative w-full h-full">
-<Image src={img_1_Yacht_45} alt="Luxury Yacht 45'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-100 transition-opacity duration-700" width={800} height={500} />
-<Image src={img_5_Yacht_45} alt="Luxury Yacht 45'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" width={800} height={500} />
-<Image src={img_6_Yacht_45} alt="Luxury Yacht 45'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" width={800} height={500} />
-</div>
+    <div class="fleet-img-wrap w-full relative">
+<Image src={yacht45Img} alt="Luxury Yacht 45'" class="w-full h-full object-cover object-center" style="transform: none !important;" width={1023} height={1537} format="png" quality={100} />
       <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
       <div class="absolute bottom-5 left-6">
-        <h3 class="text-white text-lg lg:text-xl">Luxury Yacht 45'</h3>
+        <h3 class="text-white text-lg lg:text-xl">Yate de Lujo 45'</h3>
         <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Hasta 12 Personas</span></div>
       </div>
       <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Mas Popular</div>
 
     <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-30%</div>
-    <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
-    <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
 </div>
     <div class="p-4 space-y-4">
       <p class="text-slate-700 text-sm italic text-center pb-3 border-b border-border-light/50">Embarcacion mas nueva, lujo moderno y elegante</p>
@@ -452,22 +430,16 @@ const breadcrumbSchema = JSON.stringify({
   </div>
   <!-- Luxury Yacht 42' — Mejor Valor -->
   <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="yacht-42">
-    <div class="h-[400px] w-full relative">
-      <div class="boat-carousel relative w-full h-full">
-<Image src={img_3_Yacht_42} alt="Luxury Yacht 42'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-100 transition-opacity duration-700" width={800} height={500} />
-<Image src={img_2_Yacht_42} alt="Luxury Yacht 42'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" width={800} height={500} />
-<Image src={img_5_Yacht_42} alt="Luxury Yacht 42'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" width={800} height={500} />
-</div>
+    <div class="fleet-img-wrap w-full relative">
+<Image src={yacht42Boat} alt="Luxury Yacht 42'" class="w-full h-full object-cover object-center" style="transform: scale(1.1);" width={1023} height={1537} format="png" quality={100} />
       <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
       <div class="absolute bottom-5 left-6">
-        <h3 class="text-white text-lg lg:text-xl">Luxury Yacht 42'</h3>
+        <h3 class="text-white text-lg lg:text-xl">Yate de Lujo 42'</h3>
         <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Hasta 18 Personas</span></div>
       </div>
       <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Mejor Valor</div>
 
     <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-30%</div>
-    <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
-    <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
 </div>
     <div class="p-4 space-y-4">
       <p class="text-slate-700 text-sm italic text-center pb-3 border-b border-border-light/50">Gran valor, perfecto para familias</p>
@@ -482,22 +454,16 @@ const breadcrumbSchema = JSON.stringify({
 <div class="flex flex-col gap-5 lg:grid lg:grid-cols-2 lg:max-w-3xl lg:mx-auto pb-8">
   <!-- Sailing Boat 42' — Mejor Valor -->
   <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="sailing-42">
-    <div class="h-[400px] w-full relative">
-      <div class="boat-carousel relative w-full h-full">
-<Image src={img_10_Sailing_42} alt="Sailing Boat 42'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-100 transition-opacity duration-700" width={800} height={500} />
-<Image src={img_17_Sailing_42} alt="Sailing Boat 42'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" width={800} height={500} />
-<Image src={img_12_Sailing_42} alt="Sailing Boat 42'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" width={800} height={500} />
-</div>
+    <div class="fleet-img-wrap w-full relative">
+<Image src={sailing42View} alt="Sailing Boat 42'" class="w-full h-full object-cover object-center" style="transform: scale(1.1);" width={1024} height={1536} format="png" quality={100} />
       <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
       <div class="absolute bottom-5 left-6">
-        <h3 class="text-white text-lg lg:text-xl">Sailing Boat 42'</h3>
+        <h3 class="text-white text-lg lg:text-xl">Velero 42'</h3>
         <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Hasta 14 Personas</span></div>
       </div>
       <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Mejor Valor</div>
 
     <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-30%</div>
-    <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
-    <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
 </div>
     <div class="p-4 space-y-4">
       <p class="text-slate-700 text-sm italic text-center pb-3 border-b border-border-light/50">Navegacion suave, snorkel en Pelican Rock</p>
@@ -509,21 +475,15 @@ const breadcrumbSchema = JSON.stringify({
   </div>
   <!-- Sailing Boat 38' -->
   <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="sailing-38">
-    <div class="h-[400px] w-full relative">
-      <div class="boat-carousel relative w-full h-full">
-<Image src={img_6_Sailing_38} alt="Sailing Boat 38'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-100 transition-opacity duration-700" width={800} height={500} />
-<Image src={img_8_Sailing_38} alt="Sailing Boat 38'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" width={800} height={500} />
-<Image src={img_5_Sailing_38} alt="Sailing Boat 38'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" width={800} height={500} />
-</div>
+    <div class="fleet-img-wrap w-full relative">
+<Image src={sailing38Boat} alt="Sailing Boat 38'" class="w-full h-full object-cover object-center" style="transform: scale(1.1);" width={1024} height={1536} format="png" quality={100} />
       <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
       <div class="absolute bottom-5 left-6">
-        <h3 class="text-white text-lg lg:text-xl">Sailing Boat 38'</h3>
+        <h3 class="text-white text-lg lg:text-xl">Velero 38'</h3>
         <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Hasta 9 Personas</span></div>
       </div>
 
     <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-30%</div>
-    <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
-    <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
 </div>
     <div class="p-4 space-y-4">
       <p class="text-slate-700 text-sm italic text-center pb-3 border-b border-border-light/50">Intimo y aventurero, navegacion clasica</p>
@@ -555,11 +515,11 @@ const breadcrumbSchema = JSON.stringify({
             </tr>
           </thead>
           <tbody class="text-sm">
-            <tr class="border-b border-border-light"><td class="py-3 pr-4 font-semibold text-navy">42' Yacht</td><td class="py-3 pr-4 text-slate-700">Hasta 18</td><td class="py-3 text-slate-700">Experiencia de lujo — menor costo — snorkel en Bahia Chileno</td></tr>
-            <tr class="border-b border-border-light bg-gold/5"><td class="py-3 pr-4 font-semibold text-navy"><span class="text-gold mr-1">&#11088;</span>45' Yacht</td><td class="py-3 pr-4 text-slate-700">Hasta 12</td><td class="py-3 text-slate-700">Embarcacion mas nueva — snorkel en Bahia Chileno</td></tr>
-            <tr class="border-b border-border-light"><td class="py-3 pr-4 font-semibold text-navy">51' Yacht</td><td class="py-3 pr-4 text-slate-700">Hasta 20</td><td class="py-3 text-slate-700">Mas espacioso, yate mas grande — snorkel en Bahia Chileno</td></tr>
-            <tr class="border-b border-border-light bg-gold/5"><td class="py-3 pr-4 font-semibold text-navy"><span class="text-gold mr-1">&#11088;</span>42' Sailboat</td><td class="py-3 pr-4 text-slate-700">Hasta 14</td><td class="py-3 text-slate-700">Experiencia de vela autentica — embarcacion espaciosa — snorkel en Pelican Rock</td></tr>
-            <tr><td class="py-3 pr-4 font-semibold text-navy">38' Sailboat</td><td class="py-3 pr-4 text-slate-700">Hasta 9</td><td class="py-3 text-slate-700">Mejor experiencia de vela — snorkel en Pelican Rock</td></tr>
+            <tr class="border-b border-border-light"><td class="py-3 pr-4 font-semibold text-navy">Yate 42'</td><td class="py-3 pr-4 text-slate-700">Hasta 18</td><td class="py-3 text-slate-700">Comodidad + valor — snorkel en Bahia Chileno</td></tr>
+            <tr class="border-b border-border-light bg-gold/5"><td class="py-3 pr-4 font-semibold text-navy"><span class="text-gold mr-1">&#11088;</span>Yate 45'</td><td class="py-3 pr-4 text-slate-700">Hasta 12</td><td class="py-3 text-slate-700">Sensacion premium — snorkel en Bahia Chileno</td></tr>
+            <tr class="border-b border-border-light"><td class="py-3 pr-4 font-semibold text-navy">Yate 51'</td><td class="py-3 pr-4 text-slate-700">Hasta 20</td><td class="py-3 text-slate-700">Grupos grandes, gran espacio — snorkel en Bahia Chileno</td></tr>
+            <tr class="border-b border-border-light bg-gold/5"><td class="py-3 pr-4 font-semibold text-navy"><span class="text-gold mr-1">&#11088;</span>Velero 42'</td><td class="py-3 pr-4 text-slate-700">Hasta 14</td><td class="py-3 text-slate-700">Navega y haz snorkel — Pelican Rock</td></tr>
+            <tr><td class="py-3 pr-4 font-semibold text-navy">Velero 38'</td><td class="py-3 pr-4 text-slate-700">Hasta 9</td><td class="py-3 text-slate-700">Navegacion en grupo pequeno — Pelican Rock</td></tr>
           </tbody>
         </table>
       </div>
@@ -577,11 +537,11 @@ const breadcrumbSchema = JSON.stringify({
         </tr>
       </thead>
       <tbody class="text-sm">
-        <tr class="border-b border-border-light"><td class="py-3 pr-4 font-semibold text-navy">42' Yacht</td><td class="py-3 pr-4 text-slate-700">Hasta 18</td><td class="py-3 text-slate-700">Experiencia de lujo — menor costo — snorkel en Bahia Chileno</td></tr>
-        <tr class="border-b border-border-light bg-gold/5"><td class="py-3 pr-4 font-semibold text-navy"><span class="text-gold mr-1">&#11088;</span>45' Yacht</td><td class="py-3 pr-4 text-slate-700">Hasta 12</td><td class="py-3 text-slate-700">Embarcacion mas nueva — snorkel en Bahia Chileno</td></tr>
-        <tr class="border-b border-border-light"><td class="py-3 pr-4 font-semibold text-navy">51' Yacht</td><td class="py-3 pr-4 text-slate-700">Hasta 20</td><td class="py-3 text-slate-700">Mas espacioso, yate mas grande — snorkel en Bahia Chileno</td></tr>
-        <tr class="border-b border-border-light bg-gold/5"><td class="py-3 pr-4 font-semibold text-navy"><span class="text-gold mr-1">&#11088;</span>42' Sailboat</td><td class="py-3 pr-4 text-slate-700">Hasta 14</td><td class="py-3 text-slate-700">Experiencia de vela autentica — embarcacion espaciosa — snorkel en Pelican Rock</td></tr>
-        <tr><td class="py-3 pr-4 font-semibold text-navy">38' Sailboat</td><td class="py-3 pr-4 text-slate-700">Hasta 9</td><td class="py-3 text-slate-700">Mejor experiencia de vela — snorkel en Pelican Rock</td></tr>
+        <tr class="border-b border-border-light"><td class="py-3 pr-4 font-semibold text-navy">Yate 42'</td><td class="py-3 pr-4 text-slate-700">Hasta 18</td><td class="py-3 text-slate-700">Comodidad + valor — snorkel en Bahia Chileno</td></tr>
+        <tr class="border-b border-border-light bg-gold/5"><td class="py-3 pr-4 font-semibold text-navy"><span class="text-gold mr-1">&#11088;</span>Yate 45'</td><td class="py-3 pr-4 text-slate-700">Hasta 12</td><td class="py-3 text-slate-700">Sensacion premium — snorkel en Bahia Chileno</td></tr>
+        <tr class="border-b border-border-light"><td class="py-3 pr-4 font-semibold text-navy">Yate 51'</td><td class="py-3 pr-4 text-slate-700">Hasta 20</td><td class="py-3 text-slate-700">Grupos grandes, gran espacio — snorkel en Bahia Chileno</td></tr>
+        <tr class="border-b border-border-light bg-gold/5"><td class="py-3 pr-4 font-semibold text-navy"><span class="text-gold mr-1">&#11088;</span>Velero 42'</td><td class="py-3 pr-4 text-slate-700">Hasta 14</td><td class="py-3 text-slate-700">Navega y haz snorkel — Pelican Rock</td></tr>
+        <tr><td class="py-3 pr-4 font-semibold text-navy">Velero 38'</td><td class="py-3 pr-4 text-slate-700">Hasta 9</td><td class="py-3 text-slate-700">Navegacion en grupo pequeno — Pelican Rock</td></tr>
       </tbody>
     </table>
   </div>
@@ -708,32 +668,32 @@ const breadcrumbSchema = JSON.stringify({
     <div id="m-carousel" class="flex overflow-x-auto gap-4 lg:gap-6 no-scrollbar snap-x snap-mandatory pb-4 lg:overflow-hidden">
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"The snorkeling at Pelican Rock was absolutely incredible — so many colorful fish and a sea lion swam right past us! The crew was amazing and the open bar made it even better. Best charter in Cabo, no question."</p>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"El snorkel en Pelican Rock fue absolutamente increible — muchisimos peces de colores y un lobo marino paso nadando a nuestro lado! La tripulacion fue genial y la barra libre lo hizo aun mejor. Sin duda el mejor charter en Cabo."</p>
         <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center text-white text-sm font-bold">JM</div><div><p class="text-sm font-bold text-navy">Jessica M.</p><p class="text-base text-slate-500">Austin, TX</p></div></div>
       </div>
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"We did the private snorkeling charter for our family of 6 and it was absolutely the highlight of our trip. The kids loved it, the snorkel gear was top quality, and having the boat to ourselves made it so special."</p>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Hicimos el charter privado de snorkel para nuestra familia de 6 y fue lo mejor del viaje. A los ninos les encanto, el equipo de snorkel era de primera calidad, y tener el barco solo para nosotros lo hizo muy especial."</p>
         <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-gold flex items-center justify-center text-white text-sm font-bold">DH</div><div><p class="text-sm font-bold text-navy">David H.</p><p class="text-base text-slate-500">Chicago, IL</p></div></div>
       </div>
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Sailing to the Arch and then snorkeling at Pelican Rock was a bucket-list experience. The bilingual crew was knowledgeable and fun. The open bar and snacks kept everyone happy the whole time. 10/10!"</p>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Navegar al Arco y hacer snorkel en Pelican Rock fue una experiencia inolvidable. La tripulacion bilingue conocia muy bien el lugar y se divertia con nosotros. La barra libre y los snacks mantuvieron a todos felices todo el tiempo. 10/10!"</p>
         <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy/70 flex items-center justify-center text-white text-sm font-bold">AP</div><div><p class="text-sm font-bold text-navy">Amanda P.</p><p class="text-base text-slate-500">Seattle, WA</p></div></div>
       </div>
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Our guide spotted a sea turtle and led us right to it. The water was crystal clear and the marine life was incredible. The private charter meant we could take our time and really enjoy every moment."</p>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Nuestro guia detecto una tortuga marina y nos llevo directo a ella. El agua estaba cristalina y la vida marina fue increible. Al ser un charter privado pudimos tomarnos nuestro tiempo y disfrutar cada momento."</p>
         <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center text-white text-sm font-bold">MR</div><div><p class="text-sm font-bold text-navy">Mike R.</p><p class="text-base text-slate-500">Portland, OR</p></div></div>
       </div>
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Brought my parents who are in their 70s and the crew was so patient and helpful getting them in and out of the water. They said it was the best experience of their trip. First-class service all around."</p>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Llevamos a mis padres de mas de 70 anos y la tripulacion fue muy paciente y atenta para ayudarlos a entrar y salir del agua. Dijeron que fue la mejor experiencia del viaje. Servicio de primera clase de principio a fin."</p>
         <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-gold flex items-center justify-center text-white text-sm font-bold">LT</div><div><p class="text-sm font-bold text-navy">Lisa T.</p><p class="text-base text-slate-500">Phoenix, AZ</p></div></div>
       </div>
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Second year booking the private snorkeling with Cabo Sailing. The crew remembered us! Equipment was brand new, the route was perfect, and having the whole boat to ourselves is the only way to do it."</p>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Segundo ano reservando el snorkel privado con Cabo Sailing. La tripulacion nos recordo! El equipo era nuevo, la ruta perfecta, y tener todo el barco para nosotros es la unica forma de hacerlo."</p>
         <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy/70 flex items-center justify-center text-white text-sm font-bold">BN</div><div><p class="text-sm font-bold text-navy">Brian N.</p><p class="text-base text-slate-500">San Diego, CA</p></div></div>
       </div>
     </div>

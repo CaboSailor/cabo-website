@@ -6,12 +6,12 @@ import FloatingCTA from '../components/FloatingCTA.astro';
 import RezdyModal from '../components/RezdyModal.astro';
 import { Image } from 'astro:assets';
 
-import img_31_03_25_Gil_airbnb_shoot_photos_35mm_226_topaz_sharpen_exposure from "../assets/images/guests-on-sailboats/cabo-sailing-guests-cheers.jpg";
-import img_4k_01_49_05_19_Still141 from "../assets/images/guests-on-yachts/cabo-private-sunset-cruise-guests.jpg";
-import img_31_03_25_Gil_airbnb_shoot_photos_20mm_483_topaz_sharpen_exposure from "../assets/images/guests-on-yachts/cabo-charter-guests-sunset.jpg";
-import Header_Sunset_3 from "../assets/images/guests-on-sailboats/cabo-sunset-sailing-cruise.jpeg";
-import img_20_Sailing_42 from "../assets/images/boats/sailing-42/cabo-sailing-42-deck-view.jpg";
-import img_31_03_25_Gil_airbnb_shoot_photos_20mm_33_topaz_sharpen_exposure from "../assets/images/guests-on-sailboats/cabo-charter-guests-smiling.jpg";
+import { privateSunset as heroRomanticSunset } from "../data/tour-heroes";
+import yachtGuestsRelaxing from "../assets/images/guests-on-yachts/cabo-yacht-guests-relaxing.jpg";
+import familyYachtEscape from "../assets/images/guests-on-yachts/family-enjoying-a-yacht-escape.png";
+import relaxingSunnyYacht from "../assets/images/guests-on-yachts/relaxing-on-a-sunny-yacht.png";
+import familyFunSunnySailboat from "../assets/images/guests-on-sailboats/family-fun-on-a-sunny-sailboat.png";
+import landsEndGoldenHour from "../assets/images/guests-on-yachts/luxury-yacht-cruising-on-sunny-waters.png";
 import yacht51Boat from "../assets/images/boats/yacht-51/cabo-sailing-yacht-51-boat.png";
 import yacht45Img from "../assets/images/boats/yacht-45/cabo-private-yacht-45-charter.png";
 import yacht42Boat from "../assets/images/boats/yacht-42/cabo-sailig-yacht-42-boat.png";
@@ -70,11 +70,11 @@ const breadcrumbSchema = JSON.stringify({
 <!-- Hero Gallery -->
 <div class="lg:hidden relative w-full h-[45vh] overflow-hidden">
 <div class="flex overflow-x-auto snap-x snap-mandatory h-full no-scrollbar" id="hero-scroll">
-<div class="flex-shrink-0 w-full h-full snap-center"><Image src={img_31_03_25_Gil_airbnb_shoot_photos_35mm_226_topaz_sharpen_exposure} alt="Guests toasting at sunset near El Arco" class="w-full h-full object-cover" width={800} height={500} /></div>
-<div class="flex-shrink-0 w-full h-full snap-center"><Image src={img_4k_01_49_05_19_Still141} alt="Happy guests at golden hour" class="w-full h-full object-cover" width={800} height={500} /></div>
-<div class="flex-shrink-0 w-full h-full snap-center"><Image src={img_31_03_25_Gil_airbnb_shoot_photos_20mm_483_topaz_sharpen_exposure} alt="Motor yacht at golden hour" class="w-full h-full object-cover" width={800} height={500} /></div>
-<div class="flex-shrink-0 w-full h-full snap-center"><Image src={Header_Sunset_3} alt="Couples with Cabo Arch at sunset" class="w-full h-full object-cover" width={800} height={500} /></div>
-<div class="flex-shrink-0 w-full h-full snap-center"><Image src={img_20_Sailing_42} alt="Couple watching sunset on sailboat" class="w-full h-full object-cover" width={800} height={500} /></div>
+<div class="flex-shrink-0 w-full h-full snap-center"><Image src={heroRomanticSunset} alt="Romantic sunset on a private yacht in Cabo" class="w-full h-full object-cover" width={800} height={500} /></div>
+<div class="flex-shrink-0 w-full h-full snap-center"><Image src={yachtGuestsRelaxing} alt="Yacht guests relaxing on the bow" class="w-full h-full object-cover" width={800} height={500} /></div>
+<div class="flex-shrink-0 w-full h-full snap-center"><Image src={familyYachtEscape} alt="Family enjoying a yacht escape near El Arco" class="w-full h-full object-cover" width={800} height={500} /></div>
+<div class="flex-shrink-0 w-full h-full snap-center"><Image src={relaxingSunnyYacht} alt="Guests relaxing on a sunny yacht" class="w-full h-full object-cover" width={800} height={500} /></div>
+<div class="flex-shrink-0 w-full h-full snap-center"><Image src={familyFunSunnySailboat} alt="Family having fun on a sunny sailboat" class="w-full h-full object-cover" width={800} height={500} /></div>
 </div>
 <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent pt-10 pb-5 px-4">
   <div class="max-w-[360px] mx-auto text-center">
@@ -94,11 +94,11 @@ const breadcrumbSchema = JSON.stringify({
 </div>
 <div class="hidden lg:block max-w-[1400px] mx-auto px-10 mt-6">
 <div class="grid grid-cols-4 grid-rows-2 gap-2 h-[55vh]">
-<div class="col-span-2 row-span-2 rounded-2xl overflow-hidden"><Image src={img_31_03_25_Gil_airbnb_shoot_photos_35mm_226_topaz_sharpen_exposure} alt="Guests toasting at sunset near El Arco" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
-<div class="rounded-2xl overflow-hidden"><Image src={img_4k_01_49_05_19_Still141} alt="Happy guests at golden hour" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
-<div class="rounded-2xl overflow-hidden"><Image src={img_31_03_25_Gil_airbnb_shoot_photos_20mm_33_topaz_sharpen_exposure} alt="Woman at bow with El Arco" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
-<div class="rounded-2xl overflow-hidden"><Image src={Header_Sunset_3} alt="Couples with Cabo Arch at sunset" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
-<div class="rounded-2xl overflow-hidden"><Image src={img_20_Sailing_42} alt="Couple watching sunset on sailboat" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
+<div class="col-span-2 row-span-2 rounded-2xl overflow-hidden"><Image src={heroRomanticSunset} alt="Romantic sunset on a private yacht in Cabo" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
+<div class="rounded-2xl overflow-hidden"><Image src={yachtGuestsRelaxing} alt="Yacht guests relaxing on the bow" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
+<div class="rounded-2xl overflow-hidden"><Image src={familyYachtEscape} alt="Family enjoying a yacht escape near El Arco" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
+<div class="rounded-2xl overflow-hidden"><Image src={relaxingSunnyYacht} alt="Guests relaxing on a sunny yacht" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
+<div class="rounded-2xl overflow-hidden"><Image src={familyFunSunnySailboat} alt="Family having fun on a sunny sailboat" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
 </div>
 <div class="mt-4 flex justify-center">
   <div class="max-w-[520px] flex items-start gap-4">
@@ -558,11 +558,11 @@ const breadcrumbSchema = JSON.stringify({
             </tr>
           </thead>
           <tbody class="text-sm">
-            <tr class="border-b border-border-light"><td class="py-3 pr-4 font-semibold text-navy">42' Yacht</td><td class="py-3 pr-4 text-slate-500">Up to 18</td><td class="py-3 text-slate-500">Luxury experience — lowest cost — sunset cruise</td></tr>
-            <tr class="border-b border-border-light bg-gold/5"><td class="py-3 pr-4 font-semibold text-navy"><span class="text-gold mr-1">&#11088;</span>45' Yacht</td><td class="py-3 pr-4 text-slate-500">Up to 12</td><td class="py-3 text-slate-500">Newest vessel — sunset cruise</td></tr>
-            <tr class="border-b border-border-light"><td class="py-3 pr-4 font-semibold text-navy">51' Yacht</td><td class="py-3 pr-4 text-slate-500">Up to 20</td><td class="py-3 text-slate-500">Most spacious, largest yacht — sunset cruise</td></tr>
-            <tr class="border-b border-border-light bg-gold/5"><td class="py-3 pr-4 font-semibold text-navy"><span class="text-gold mr-1">&#11088;</span>42' Sailboat</td><td class="py-3 pr-4 text-slate-500">Up to 14</td><td class="py-3 text-slate-500">True sailing experience — spacious vessel</td></tr>
-            <tr><td class="py-3 pr-4 font-semibold text-navy">38' Sailboat</td><td class="py-3 pr-4 text-slate-500">Up to 9</td><td class="py-3 text-slate-500">Best sailing experience — sunset cruise</td></tr>
+            <tr class="border-b border-border-light"><td class="py-3 pr-4 font-semibold text-navy">42' Yacht</td><td class="py-3 pr-4 text-slate-500">Up to 18</td><td class="py-3 text-slate-500">Luxury feel — best value for larger group</td></tr>
+            <tr class="border-b border-border-light bg-gold/5"><td class="py-3 pr-4 font-semibold text-navy"><span class="text-gold mr-1">&#11088;</span>45' Yacht</td><td class="py-3 pr-4 text-slate-500">Up to 12</td><td class="py-3 text-slate-500">Newest yacht — perfectly balanced experience</td></tr>
+            <tr class="border-b border-border-light"><td class="py-3 pr-4 font-semibold text-navy">51' Yacht</td><td class="py-3 pr-4 text-slate-500">Up to 20</td><td class="py-3 text-slate-500">Our largest — maximum space and comfort</td></tr>
+            <tr class="border-b border-border-light bg-gold/5"><td class="py-3 pr-4 font-semibold text-navy"><span class="text-gold mr-1">&#11088;</span>42' Sailboat</td><td class="py-3 pr-4 text-slate-500">Up to 14</td><td class="py-3 text-slate-500">Spacious sailing with a relaxed vibe</td></tr>
+            <tr><td class="py-3 pr-4 font-semibold text-navy">38' Sailboat</td><td class="py-3 pr-4 text-slate-500">Up to 9</td><td class="py-3 text-slate-500">Classic sailing — intimate and authentic</td></tr>
           </tbody>
         </table>
       </div>
@@ -580,11 +580,11 @@ const breadcrumbSchema = JSON.stringify({
         </tr>
       </thead>
       <tbody class="text-sm">
-        <tr class="border-b border-border-light"><td class="py-3 pr-4 font-semibold text-navy">42' Yacht</td><td class="py-3 pr-4 text-slate-500">Up to 18</td><td class="py-3 text-slate-500">Luxury experience — lowest cost — sunset cruise</td></tr>
-        <tr class="border-b border-border-light bg-gold/5"><td class="py-3 pr-4 font-semibold text-navy"><span class="text-gold mr-1">&#11088;</span>45' Yacht</td><td class="py-3 pr-4 text-slate-500">Up to 12</td><td class="py-3 text-slate-500">Newest vessel — sunset cruise</td></tr>
-        <tr class="border-b border-border-light"><td class="py-3 pr-4 font-semibold text-navy">51' Yacht</td><td class="py-3 pr-4 text-slate-500">Up to 20</td><td class="py-3 text-slate-500">Most spacious, largest yacht — sunset cruise</td></tr>
-        <tr class="border-b border-border-light bg-gold/5"><td class="py-3 pr-4 font-semibold text-navy"><span class="text-gold mr-1">&#11088;</span>42' Sailboat</td><td class="py-3 pr-4 text-slate-500">Up to 14</td><td class="py-3 text-slate-500">True sailing experience — spacious vessel</td></tr>
-        <tr><td class="py-3 pr-4 font-semibold text-navy">38' Sailboat</td><td class="py-3 pr-4 text-slate-500">Up to 9</td><td class="py-3 text-slate-500">Best sailing experience — sunset cruise</td></tr>
+        <tr class="border-b border-border-light"><td class="py-3 pr-4 font-semibold text-navy">42' Yacht</td><td class="py-3 pr-4 text-slate-500">Up to 18</td><td class="py-3 text-slate-500">Luxury feel — best value for larger group</td></tr>
+        <tr class="border-b border-border-light bg-gold/5"><td class="py-3 pr-4 font-semibold text-navy"><span class="text-gold mr-1">&#11088;</span>45' Yacht</td><td class="py-3 pr-4 text-slate-500">Up to 12</td><td class="py-3 text-slate-500">Newest yacht — perfectly balanced experience</td></tr>
+        <tr class="border-b border-border-light"><td class="py-3 pr-4 font-semibold text-navy">51' Yacht</td><td class="py-3 pr-4 text-slate-500">Up to 20</td><td class="py-3 text-slate-500">Our largest — maximum space and comfort</td></tr>
+        <tr class="border-b border-border-light bg-gold/5"><td class="py-3 pr-4 font-semibold text-navy"><span class="text-gold mr-1">&#11088;</span>42' Sailboat</td><td class="py-3 pr-4 text-slate-500">Up to 14</td><td class="py-3 text-slate-500">Spacious sailing with a relaxed vibe</td></tr>
+        <tr><td class="py-3 pr-4 font-semibold text-navy">38' Sailboat</td><td class="py-3 pr-4 text-slate-500">Up to 9</td><td class="py-3 text-slate-500">Classic sailing — intimate and authentic</td></tr>
       </tbody>
     </table>
   </div>
@@ -674,7 +674,7 @@ const breadcrumbSchema = JSON.stringify({
     <div class="px-5 pt-8 pb-6 lg:max-w-[1400px] lg:mx-auto lg:px-10 lg:pt-16 lg:pb-10">
       <div class="flex items-center gap-3 mb-4"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-lg lg:text-3xl text-navy">Sunset Sailing at Land's End</h3></div>
       <div class="lg:flex lg:gap-10 lg:items-start">
-        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCczjSPVJiaWdFmrUKZ7u6bp9_U27W9TIbr12gmKKxednfJZy1pE5PARmIDa0mm6w-NyXj1AnOpT-Bg4ImEYZ3HBUir8Q_kIKeHFXnn-L02J2QFaAUeIxlFkXZudLbrnEZ3iIk1YFtyw0obgjzBdBTNq8JOkjE-FY-EOnUg47Y4xpUB4JiLSWOTvJeEMhPMPF5AthCcizuxz4y0Z-VhlZ3u0L_GrGkfSWW5OEpb2IPb6ZOAUHpA2xF_YT3ghZIBUUPXYBbfuAlhjhw" alt="Sunset Sailing at Land's End" class="w-full h-48 lg:h-[300px] object-cover rounded-2xl mb-4 lg:mb-0 lg:w-1/2 lg:flex-shrink-0"/>
+        <Image src={landsEndGoldenHour} alt="Luxury yacht cruising on sunny waters at Land's End" class="w-full h-48 lg:h-[300px] object-cover rounded-2xl mb-4 lg:mb-0 lg:w-1/2 lg:flex-shrink-0" width={1200} height={800} />
         <div>
           <p class="text-base text-slate-500 leading-relaxed mb-3">Land's End at sunset is one of the most breathtaking sights in all of Mexico. As the sun dips below the Pacific horizon, the famous Arch glows in shades of amber and rose — a moment that stays with you long after the voyage ends. Our private sunset charter anchors at the perfect vantage point to give you and your guests an unobstructed, unforgettable view.</p>
           <p class="text-base text-slate-500 leading-relaxed">With just your group on board, a professional crew, and an open bar flowing with premium cocktails, this is the definition of a private luxury experience on the water.</p>

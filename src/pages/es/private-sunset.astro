@@ -6,27 +6,17 @@ import FloatingCTA from '../../components/FloatingCTA.astro';
 import RezdyModal from '../../components/RezdyModal.astro';
 import { Image } from 'astro:assets';
 
-import img_31_03_25_Gil_airbnb_shoot_photos_35mm_226_topaz_sharpen_exposure from "../../assets/images/guests-on-sailboats/cabo-sailing-guests-cheers.jpg";
-import img_4k_01_49_05_19_Still141 from "../../assets/images/guests-on-yachts/cabo-private-sunset-cruise-guests.jpg";
-import img_31_03_25_Gil_airbnb_shoot_photos_20mm_483_topaz_sharpen_exposure from "../../assets/images/guests-on-yachts/cabo-charter-guests-sunset.jpg";
-import Header_Sunset_3 from "../../assets/images/guests-on-sailboats/cabo-sunset-sailing-cruise.jpeg";
-import img_20_Sailing_42 from "../../assets/images/boats/sailing-42/cabo-sailing-42-deck-view.jpg";
-import img_31_03_25_Gil_airbnb_shoot_photos_20mm_33_topaz_sharpen_exposure from "../../assets/images/guests-on-sailboats/cabo-charter-guests-smiling.jpg";
-import img_9_Yacht_51 from "../../assets/images/boats/yacht-51/cabo-luxury-yacht-51-ocean-view.jpg";
-import img_2_Yacht_51 from "../../assets/images/boats/yacht-51/cabo-luxury-yacht-51-exterior-01.jpg";
-import img_7_Yacht_51 from "../../assets/images/boats/yacht-51/cabo-luxury-yacht-51-exterior-03.jpg";
-import img_1_Yacht_45 from "../../assets/images/boats/yacht-45/cabo-private-yacht-45-exterior-01.jpg";
-import img_5_Yacht_45 from "../../assets/images/boats/yacht-45/cabo-private-yacht-45-exterior-03.jpg";
-import img_6_Yacht_45 from "../../assets/images/boats/yacht-45/cabo-private-yacht-45-bow.jpg";
-import img_3_Yacht_42 from "../../assets/images/boats/yacht-42/cabo-private-yacht-42-exterior-02.jpg";
-import img_2_Yacht_42 from "../../assets/images/boats/yacht-42/cabo-private-yacht-42-exterior-01.jpg";
-import img_5_Yacht_42 from "../../assets/images/boats/yacht-42/cabo-private-yacht-42-exterior-03.jpg";
-import img_10_Sailing_42 from "../../assets/images/boats/sailing-42/cabo-sailing-42-exterior-01.jpg";
-import img_17_Sailing_42 from "../../assets/images/boats/sailing-42/cabo-sailing-42-sailing-view.jpg";
-import img_12_Sailing_42 from "../../assets/images/boats/sailing-42/cabo-sailing-42-exterior-02.jpg";
-import img_6_Sailing_38 from "../../assets/images/boats/sailing-38/cabo-sailing-38-exterior-02.jpg";
-import img_8_Sailing_38 from "../../assets/images/boats/sailing-38/cabo-sailing-38-exterior-03.jpg";
-import img_5_Sailing_38 from "../../assets/images/boats/sailing-38/cabo-sailing-38-exterior-01.jpg";
+import { privateSunset as heroRomanticSunset } from "../../data/tour-heroes";
+import yachtGuestsRelaxing from "../../assets/images/guests-on-yachts/cabo-yacht-guests-relaxing.jpg";
+import familyYachtEscape from "../../assets/images/guests-on-yachts/family-enjoying-a-yacht-escape.png";
+import relaxingSunnyYacht from "../../assets/images/guests-on-yachts/relaxing-on-a-sunny-yacht.png";
+import familyFunSunnySailboat from "../../assets/images/guests-on-sailboats/family-fun-on-a-sunny-sailboat.png";
+import landsEndGoldenHour from "../../assets/images/guests-on-yachts/luxury-yacht-cruising-on-sunny-waters.png";
+import yacht51Boat from "../../assets/images/boats/yacht-51/cabo-sailing-yacht-51-boat.png";
+import yacht45Img from "../../assets/images/boats/yacht-45/cabo-private-yacht-45-charter.png";
+import yacht42Boat from "../../assets/images/boats/yacht-42/cabo-sailig-yacht-42-boat.png";
+import sailing42View from "../../assets/images/boats/sailing-42/cabo-sailing-42-sailing-view.png";
+import sailing38Boat from "../../assets/images/boats/sailing-38/cabo-sailing-38-home-boat.png";
 
 const breadcrumbSchema = JSON.stringify({
   "@context": "https://schema.org",
@@ -59,11 +49,11 @@ const breadcrumbSchema = JSON.stringify({
 <!-- Hero Gallery -->
 <div class="lg:hidden relative w-full h-[45vh] overflow-hidden">
 <div class="flex overflow-x-auto snap-x snap-mandatory h-full no-scrollbar" id="hero-scroll">
-<div class="flex-shrink-0 w-full h-full snap-center"><Image src={img_31_03_25_Gil_airbnb_shoot_photos_35mm_226_topaz_sharpen_exposure} alt="Guests toasting at sunset near El Arco" class="w-full h-full object-cover" width={800} height={500} /></div>
-<div class="flex-shrink-0 w-full h-full snap-center"><Image src={img_4k_01_49_05_19_Still141} alt="Happy guests at golden hour" class="w-full h-full object-cover" width={800} height={500} /></div>
-<div class="flex-shrink-0 w-full h-full snap-center"><Image src={img_31_03_25_Gil_airbnb_shoot_photos_20mm_483_topaz_sharpen_exposure} alt="Motor yacht at golden hour" class="w-full h-full object-cover" width={800} height={500} /></div>
-<div class="flex-shrink-0 w-full h-full snap-center"><Image src={Header_Sunset_3} alt="Couples with Cabo Arch at sunset" class="w-full h-full object-cover" width={800} height={500} /></div>
-<div class="flex-shrink-0 w-full h-full snap-center"><Image src={img_20_Sailing_42} alt="Couple watching sunset on sailboat" class="w-full h-full object-cover" width={800} height={500} /></div>
+<div class="flex-shrink-0 w-full h-full snap-center"><Image src={heroRomanticSunset} alt="Atardecer romántico en yate privado en Cabo" class="w-full h-full object-cover" width={800} height={500} /></div>
+<div class="flex-shrink-0 w-full h-full snap-center"><Image src={yachtGuestsRelaxing} alt="Huéspedes relajándose en la proa del yate" class="w-full h-full object-cover" width={800} height={500} /></div>
+<div class="flex-shrink-0 w-full h-full snap-center"><Image src={familyYachtEscape} alt="Familia disfrutando de una escapada en yate cerca de El Arco" class="w-full h-full object-cover" width={800} height={500} /></div>
+<div class="flex-shrink-0 w-full h-full snap-center"><Image src={relaxingSunnyYacht} alt="Huéspedes relajándose en un yate soleado" class="w-full h-full object-cover" width={800} height={500} /></div>
+<div class="flex-shrink-0 w-full h-full snap-center"><Image src={familyFunSunnySailboat} alt="Familia divirtiéndose en un velero soleado" class="w-full h-full object-cover" width={800} height={500} /></div>
 </div>
 <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent pt-10 pb-5 px-4">
   <div class="max-w-[360px] mx-auto text-center">
@@ -74,7 +64,7 @@ const breadcrumbSchema = JSON.stringify({
       <span class="material-symbols-outlined text-gold filled text-lg">star</span>
       <span class="material-symbols-outlined text-gold filled text-lg">star</span>
     </div>
-    <p class="text-white text-base leading-snug">"The sunset was unreal. Drinks flowing, perfect vibes — our favorite night in Cabo."</p>
+    <p class="text-white text-base leading-snug">"El atardecer fue irreal. Bebidas sin parar, ambiente perfecto — nuestra noche favorita en Cabo."</p>
     <p class="text-white/50 text-xs uppercase tracking-widest font-bold mt-2">Lauren &amp; Jake M. &mdash; Denver, CO</p>
   </div>
 </div>
@@ -83,11 +73,11 @@ const breadcrumbSchema = JSON.stringify({
 </div>
 <div class="hidden lg:block max-w-[1400px] mx-auto px-10 mt-6">
 <div class="grid grid-cols-4 grid-rows-2 gap-2 h-[55vh]">
-<div class="col-span-2 row-span-2 rounded-2xl overflow-hidden"><Image src={img_31_03_25_Gil_airbnb_shoot_photos_35mm_226_topaz_sharpen_exposure} alt="Guests toasting at sunset near El Arco" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
-<div class="rounded-2xl overflow-hidden"><Image src={img_4k_01_49_05_19_Still141} alt="Happy guests at golden hour" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
-<div class="rounded-2xl overflow-hidden"><Image src={img_31_03_25_Gil_airbnb_shoot_photos_20mm_33_topaz_sharpen_exposure} alt="Woman at bow with El Arco" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
-<div class="rounded-2xl overflow-hidden"><Image src={Header_Sunset_3} alt="Couples with Cabo Arch at sunset" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
-<div class="rounded-2xl overflow-hidden"><Image src={img_20_Sailing_42} alt="Couple watching sunset on sailboat" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
+<div class="col-span-2 row-span-2 rounded-2xl overflow-hidden"><Image src={heroRomanticSunset} alt="Atardecer romántico en yate privado en Cabo" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
+<div class="rounded-2xl overflow-hidden"><Image src={yachtGuestsRelaxing} alt="Huéspedes relajándose en la proa del yate" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
+<div class="rounded-2xl overflow-hidden"><Image src={familyYachtEscape} alt="Familia disfrutando de una escapada en yate cerca de El Arco" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
+<div class="rounded-2xl overflow-hidden"><Image src={relaxingSunnyYacht} alt="Huéspedes relajándose en un yate soleado" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
+<div class="rounded-2xl overflow-hidden"><Image src={familyFunSunnySailboat} alt="Familia divirtiéndose en un velero soleado" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
 </div>
 <div class="mt-4 flex justify-center">
   <div class="max-w-[520px] flex items-start gap-4">
@@ -99,7 +89,7 @@ const breadcrumbSchema = JSON.stringify({
       <span class="material-symbols-outlined text-gold filled text-base">star</span>
     </div>
     <div>
-      <p class="text-navy text-sm leading-snug">"The sunset was unreal. Drinks flowing, perfect vibes — our favorite night in Cabo."</p>
+      <p class="text-navy text-sm leading-snug">"El atardecer fue irreal. Bebidas sin parar, ambiente perfecto — nuestra noche favorita en Cabo."</p>
       <p class="text-navy/60 text-[10px] uppercase tracking-widest font-bold mt-2">Lauren &amp; Jake M. &mdash; Denver, CO</p>
     </div>
   </div>
@@ -417,24 +407,18 @@ const breadcrumbSchema = JSON.stringify({
 <div id="choose-your-boat" class="mt-12 lg:mt-0 lg:max-w-[1400px] lg:mx-auto lg:px-10 lg:py-16 px-5">
 <div class="flex items-center gap-3 mb-8"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-lg lg:text-2xl text-navy">Explora nuestros barcos — encuentra el ideal para tu experiencia al atardecer</h3></div>
 
-<div class="flex flex-col gap-5 lg:grid lg:grid-cols-3 pb-8">
+<div class="flex flex-col gap-5 lg:grid lg:grid-cols-3 lg:max-w-[1100px] lg:mx-auto pb-8">
   <!-- Luxury Yacht 51' — Mas Espacioso -->
   <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="yacht-51">
-    <div class="h-[400px] w-full relative">
-      <div class="boat-carousel relative w-full h-full">
-<Image src={img_9_Yacht_51} alt="Luxury Yacht 51'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-100 transition-opacity duration-700" width={800} height={500} />
-<Image src={img_2_Yacht_51} alt="Luxury Yacht 51'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" width={800} height={500} />
-<Image src={img_7_Yacht_51} alt="Luxury Yacht 51'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" width={800} height={500} />
-</div>
+    <div class="fleet-img-wrap w-full relative">
+      <Image src={yacht51Boat} alt="Luxury Yacht 51'" class="w-full h-full object-cover object-center" style="transform: scale(1.1);" width={1023} height={1537} format="png" quality={100} />
       <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
       <div class="absolute bottom-5 left-6">
-        <h3 class="text-white text-lg lg:text-xl">Luxury Yacht 51'</h3>
+        <h3 class="text-white text-lg lg:text-xl">Yate de Lujo 51'</h3>
         <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Hasta 20 Personas</span></div>
       </div>
       <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Mas Espacioso</div>
     <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-30%</div>
-    <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
-    <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
 </div>
     <div class="p-4 space-y-4">
       <p class="text-slate-500 text-sm italic text-center pb-3 border-b border-border-light/50">Ideal para grupos grandes y maximo espacio</p>
@@ -447,21 +431,15 @@ const breadcrumbSchema = JSON.stringify({
   </div>
   <!-- Luxury Yacht 45' — Mas Popular -->
   <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="yacht-45">
-    <div class="h-[400px] w-full relative">
-      <div class="boat-carousel relative w-full h-full">
-<Image src={img_1_Yacht_45} alt="Luxury Yacht 45'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-100 transition-opacity duration-700" width={800} height={500} />
-<Image src={img_5_Yacht_45} alt="Luxury Yacht 45'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" width={800} height={500} />
-<Image src={img_6_Yacht_45} alt="Luxury Yacht 45'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" width={800} height={500} />
-</div>
+    <div class="fleet-img-wrap w-full relative">
+      <Image src={yacht45Img} alt="Luxury Yacht 45'" class="w-full h-full object-cover object-center" style="transform: none !important;" width={1023} height={1537} format="png" quality={100} />
       <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
       <div class="absolute bottom-5 left-6">
-        <h3 class="text-white text-lg lg:text-xl">Luxury Yacht 45'</h3>
+        <h3 class="text-white text-lg lg:text-xl">Yate de Lujo 45'</h3>
         <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Hasta 12 Personas</span></div>
       </div>
       <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Mas Popular</div>
     <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-30%</div>
-    <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
-    <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
 </div>
     <div class="p-4 space-y-4">
       <p class="text-slate-500 text-sm italic text-center pb-3 border-b border-border-light/50">Embarcacion mas nueva, lujo moderno y elegante</p>
@@ -474,21 +452,15 @@ const breadcrumbSchema = JSON.stringify({
   </div>
   <!-- Luxury Yacht 42' — Mejor Valor -->
   <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="yacht-42">
-    <div class="h-[400px] w-full relative">
-      <div class="boat-carousel relative w-full h-full">
-<Image src={img_3_Yacht_42} alt="Luxury Yacht 42'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-100 transition-opacity duration-700" width={800} height={500} />
-<Image src={img_2_Yacht_42} alt="Luxury Yacht 42'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" width={800} height={500} />
-<Image src={img_5_Yacht_42} alt="Luxury Yacht 42'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" width={800} height={500} />
-</div>
+    <div class="fleet-img-wrap w-full relative">
+      <Image src={yacht42Boat} alt="Luxury Yacht 42'" class="w-full h-full object-cover object-center" style="transform: scale(1.1);" width={1023} height={1537} format="png" quality={100} />
       <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
       <div class="absolute bottom-5 left-6">
-        <h3 class="text-white text-lg lg:text-xl">Luxury Yacht 42'</h3>
+        <h3 class="text-white text-lg lg:text-xl">Yate de Lujo 42'</h3>
         <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Hasta 18 Personas</span></div>
       </div>
       <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Mejor Valor</div>
     <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-30%</div>
-    <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
-    <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
 </div>
     <div class="p-4 space-y-4">
       <p class="text-slate-500 text-sm italic text-center pb-3 border-b border-border-light/50">Gran valor, perfecto para celebraciones</p>
@@ -504,21 +476,15 @@ const breadcrumbSchema = JSON.stringify({
 <div class="flex flex-col gap-5 lg:grid lg:grid-cols-2 lg:max-w-3xl lg:mx-auto pb-8">
   <!-- Sailing Boat 42' -->
   <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="sailing-42">
-    <div class="h-[400px] w-full relative">
-      <div class="boat-carousel relative w-full h-full">
-<Image src={img_10_Sailing_42} alt="Sailing Boat 42'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-100 transition-opacity duration-700" width={800} height={500} />
-<Image src={img_17_Sailing_42} alt="Sailing Boat 42'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" width={800} height={500} />
-<Image src={img_12_Sailing_42} alt="Sailing Boat 42'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" width={800} height={500} />
-</div>
+    <div class="fleet-img-wrap w-full relative">
+      <Image src={sailing42View} alt="Sailing Boat 42'" class="w-full h-full object-cover object-center" style="transform: scale(1.1);" width={1024} height={1536} format="png" quality={100} />
       <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
       <div class="absolute bottom-5 left-6">
-        <h3 class="text-white text-lg lg:text-xl">Sailing Boat 42'</h3>
+        <h3 class="text-white text-lg lg:text-xl">Velero 42'</h3>
         <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Hasta 14 Personas</span></div>
       </div>
       <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Mejor Valor</div>
     <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-30%</div>
-    <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
-    <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
 </div>
     <div class="p-4 space-y-4">
       <p class="text-slate-500 text-sm italic text-center pb-3 border-b border-border-light/50">Navegacion suave, autentica sensacion de viento en tu cabello</p>
@@ -531,20 +497,14 @@ const breadcrumbSchema = JSON.stringify({
   </div>
   <!-- Sailing Boat 38' -->
   <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="sailing-38">
-    <div class="h-[400px] w-full relative">
-      <div class="boat-carousel relative w-full h-full">
-<Image src={img_6_Sailing_38} alt="Sailing Boat 38'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-100 transition-opacity duration-700" width={800} height={500} />
-<Image src={img_8_Sailing_38} alt="Sailing Boat 38'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" width={800} height={500} />
-<Image src={img_5_Sailing_38} alt="Sailing Boat 38'" class="boat-slide w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-700" width={800} height={500} />
-</div>
+    <div class="fleet-img-wrap w-full relative">
+      <Image src={sailing38Boat} alt="Sailing Boat 38'" class="w-full h-full object-cover object-center" style="transform: scale(1.1);" width={1024} height={1536} format="png" quality={100} />
       <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
       <div class="absolute bottom-5 left-6">
-        <h3 class="text-white text-lg lg:text-xl">Sailing Boat 38'</h3>
+        <h3 class="text-white text-lg lg:text-xl">Velero 38'</h3>
         <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Hasta 9 Personas</span></div>
       </div>
     <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-30%</div>
-    <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
-    <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
 </div>
     <div class="p-4 space-y-4">
       <p class="text-slate-500 text-sm italic text-center pb-3 border-b border-border-light/50">Intimo y romantico, navegacion clasica</p>
@@ -577,11 +537,11 @@ const breadcrumbSchema = JSON.stringify({
             </tr>
           </thead>
           <tbody class="text-sm">
-            <tr class="border-b border-border-light"><td class="py-3 pr-4 font-semibold text-navy">42' Yacht</td><td class="py-3 pr-4 text-slate-500">Hasta 18</td><td class="py-3 text-slate-500">Experiencia de lujo — menor costo — crucero al atardecer</td></tr>
-            <tr class="border-b border-border-light bg-gold/5"><td class="py-3 pr-4 font-semibold text-navy"><span class="text-gold mr-1">&#11088;</span>45' Yacht</td><td class="py-3 pr-4 text-slate-500">Hasta 12</td><td class="py-3 text-slate-500">Embarcacion mas nueva — crucero al atardecer</td></tr>
-            <tr class="border-b border-border-light"><td class="py-3 pr-4 font-semibold text-navy">51' Yacht</td><td class="py-3 pr-4 text-slate-500">Hasta 20</td><td class="py-3 text-slate-500">Mas espacioso, yate mas grande — crucero al atardecer</td></tr>
-            <tr class="border-b border-border-light bg-gold/5"><td class="py-3 pr-4 font-semibold text-navy"><span class="text-gold mr-1">&#11088;</span>42' Sailboat</td><td class="py-3 pr-4 text-slate-500">Hasta 14</td><td class="py-3 text-slate-500">Experiencia de vela autentica — embarcacion espaciosa</td></tr>
-            <tr><td class="py-3 pr-4 font-semibold text-navy">38' Sailboat</td><td class="py-3 pr-4 text-slate-500">Hasta 9</td><td class="py-3 text-slate-500">Mejor experiencia de vela — crucero al atardecer</td></tr>
+            <tr class="border-b border-border-light"><td class="py-3 pr-4 font-semibold text-navy">Yate 42'</td><td class="py-3 pr-4 text-slate-500">Hasta 18</td><td class="py-3 text-slate-500">Sensacion de lujo — mejor valor para grupos grandes</td></tr>
+            <tr class="border-b border-border-light bg-gold/5"><td class="py-3 pr-4 font-semibold text-navy"><span class="text-gold mr-1">&#11088;</span>Yate 45'</td><td class="py-3 pr-4 text-slate-500">Hasta 12</td><td class="py-3 text-slate-500">Yate mas nuevo — experiencia perfectamente balanceada</td></tr>
+            <tr class="border-b border-border-light"><td class="py-3 pr-4 font-semibold text-navy">Yate 51'</td><td class="py-3 pr-4 text-slate-500">Hasta 20</td><td class="py-3 text-slate-500">Nuestro mas grande — maximo espacio y comodidad</td></tr>
+            <tr class="border-b border-border-light bg-gold/5"><td class="py-3 pr-4 font-semibold text-navy"><span class="text-gold mr-1">&#11088;</span>Velero 42'</td><td class="py-3 pr-4 text-slate-500">Hasta 14</td><td class="py-3 text-slate-500">Navegacion espaciosa con ambiente relajado</td></tr>
+            <tr><td class="py-3 pr-4 font-semibold text-navy">Velero 38'</td><td class="py-3 pr-4 text-slate-500">Hasta 9</td><td class="py-3 text-slate-500">Navegacion clasica — intima y autentica</td></tr>
           </tbody>
         </table>
       </div>
@@ -599,11 +559,11 @@ const breadcrumbSchema = JSON.stringify({
         </tr>
       </thead>
       <tbody class="text-sm">
-        <tr class="border-b border-border-light"><td class="py-3 pr-4 font-semibold text-navy">42' Yacht</td><td class="py-3 pr-4 text-slate-500">Hasta 18</td><td class="py-3 text-slate-500">Experiencia de lujo — menor costo — crucero al atardecer</td></tr>
-        <tr class="border-b border-border-light bg-gold/5"><td class="py-3 pr-4 font-semibold text-navy"><span class="text-gold mr-1">&#11088;</span>45' Yacht</td><td class="py-3 pr-4 text-slate-500">Hasta 12</td><td class="py-3 text-slate-500">Embarcacion mas nueva — crucero al atardecer</td></tr>
-        <tr class="border-b border-border-light"><td class="py-3 pr-4 font-semibold text-navy">51' Yacht</td><td class="py-3 pr-4 text-slate-500">Hasta 20</td><td class="py-3 text-slate-500">Mas espacioso, yate mas grande — crucero al atardecer</td></tr>
-        <tr class="border-b border-border-light bg-gold/5"><td class="py-3 pr-4 font-semibold text-navy"><span class="text-gold mr-1">&#11088;</span>42' Sailboat</td><td class="py-3 pr-4 text-slate-500">Hasta 14</td><td class="py-3 text-slate-500">Experiencia de vela autentica — embarcacion espaciosa</td></tr>
-        <tr><td class="py-3 pr-4 font-semibold text-navy">38' Sailboat</td><td class="py-3 pr-4 text-slate-500">Hasta 9</td><td class="py-3 text-slate-500">Mejor experiencia de vela — crucero al atardecer</td></tr>
+        <tr class="border-b border-border-light"><td class="py-3 pr-4 font-semibold text-navy">Yate 42'</td><td class="py-3 pr-4 text-slate-500">Hasta 18</td><td class="py-3 text-slate-500">Sensacion de lujo — mejor valor para grupos grandes</td></tr>
+        <tr class="border-b border-border-light bg-gold/5"><td class="py-3 pr-4 font-semibold text-navy"><span class="text-gold mr-1">&#11088;</span>Yate 45'</td><td class="py-3 pr-4 text-slate-500">Hasta 12</td><td class="py-3 text-slate-500">Yate mas nuevo — experiencia perfectamente balanceada</td></tr>
+        <tr class="border-b border-border-light"><td class="py-3 pr-4 font-semibold text-navy">Yate 51'</td><td class="py-3 pr-4 text-slate-500">Hasta 20</td><td class="py-3 text-slate-500">Nuestro mas grande — maximo espacio y comodidad</td></tr>
+        <tr class="border-b border-border-light bg-gold/5"><td class="py-3 pr-4 font-semibold text-navy"><span class="text-gold mr-1">&#11088;</span>Velero 42'</td><td class="py-3 pr-4 text-slate-500">Hasta 14</td><td class="py-3 text-slate-500">Navegacion espaciosa con ambiente relajado</td></tr>
+        <tr><td class="py-3 pr-4 font-semibold text-navy">Velero 38'</td><td class="py-3 pr-4 text-slate-500">Hasta 9</td><td class="py-3 text-slate-500">Navegacion clasica — intima y autentica</td></tr>
       </tbody>
     </table>
   </div>
@@ -693,7 +653,7 @@ const breadcrumbSchema = JSON.stringify({
     <div class="px-5 pt-8 pb-6 lg:max-w-[1400px] lg:mx-auto lg:px-10 lg:pt-16 lg:pb-10">
       <div class="flex items-center gap-3 mb-4"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-lg lg:text-3xl text-navy">Navegacion al Atardecer en Land's End</h3></div>
       <div class="lg:flex lg:gap-10 lg:items-start">
-        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCczjSPVJiaWdFmrUKZ7u6bp9_U27W9TIbr12gmKKxednfJZy1pE5PARmIDa0mm6w-NyXj1AnOpT-Bg4ImEYZ3HBUir8Q_kIKeHFXnn-L02J2QFaAUeIxlFkXZudLbrnEZ3iIk1YFtyw0obgjzBdBTNq8JOkjE-FY-EOnUg47Y4xpUB4JiLSWOTvJeEMhPMPF5AthCcizuxz4y0Z-VhlZ3u0L_GrGkfSWW5OEpb2IPb6ZOAUHpA2xF_YT3ghZIBUUPXYBbfuAlhjhw" alt="Navegacion al Atardecer en Land's End" class="w-full h-48 lg:h-[300px] object-cover rounded-2xl mb-4 lg:mb-0 lg:w-1/2 lg:flex-shrink-0"/>
+        <Image src={landsEndGoldenHour} alt="Yate de lujo navegando en aguas soleadas en Land's End" class="w-full h-48 lg:h-[300px] object-cover rounded-2xl mb-4 lg:mb-0 lg:w-1/2 lg:flex-shrink-0" width={1200} height={800} />
         <div>
           <p class="text-base text-slate-500 leading-relaxed mb-3">Land's End al atardecer es uno de los espectaculos mas impresionantes de todo Mexico. Mientras el sol se hunde bajo el horizonte del Pacifico, el famoso Arco brilla en tonos ambar y rosa — un momento que permanece contigo mucho despues de que termina el viaje. Nuestro charter privado al atardecer se ancla en el punto perfecto para darte a ti y a tus invitados una vista inolvidable y sin obstrucciones.</p>
           <p class="text-base text-slate-500 leading-relaxed">Con solo tu grupo a bordo, una tripulacion profesional y una barra libre con cocteles premium, esta es la definicion de una experiencia de lujo privada en el agua.</p>
@@ -707,32 +667,32 @@ const breadcrumbSchema = JSON.stringify({
     <div id="ps-carousel" class="flex overflow-x-auto gap-4 lg:gap-6 no-scrollbar snap-x snap-mandatory pb-4 lg:overflow-hidden">
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"We booked the private sunset for our anniversary and it was absolutely magical. The crew was incredible, the open bar was generous, and watching the sun set over the Arch with just the two of us was a moment we'll treasure forever."</p>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Reservamos el atardecer privado para nuestro aniversario y fue absolutamente magico. La tripulacion fue increible, la barra libre generosa y ver el sol ponerse sobre el Arco solos los dos fue un momento que atesoraremos para siempre."</p>
         <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center text-white text-sm font-bold">MR</div><div><p class="text-sm font-bold text-navy">Michael &amp; Rosa</p><p class="text-base text-slate-500">New York, NY</p></div></div>
       </div>
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Booked the private sunset for our group of 8 and it was the highlight of our Cabo trip. Barra libre was flowing, the crew was so fun, and sailing past Land's End at golden hour was breathtaking."</p>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Reservamos el atardecer privado para nuestro grupo de 8 y fue lo mejor de nuestro viaje a Cabo. La barra libre no paro, la tripulacion fue muy divertida y navegar junto a Land's End a la hora dorada fue impresionante."</p>
         <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-gold flex items-center justify-center text-white text-sm font-bold">TL</div><div><p class="text-sm font-bold text-navy">Tiffany L.</p><p class="text-base text-slate-500">Los Angeles, CA</p></div></div>
       </div>
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"My husband proposed on the private sunset charter — it was perfect in every way. The crew helped set everything up, the champagne was ready, and the sunset over the Pacific was the most beautiful backdrop imaginable."</p>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Mi esposo me propuso matrimonio en el charter privado al atardecer — fue perfecto en todos los sentidos. La tripulacion ayudo a preparar todo, la champana lista, y el atardecer sobre el Pacifico fue el escenario mas hermoso imaginable."</p>
         <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy/70 flex items-center justify-center text-white text-sm font-bold">SC</div><div><p class="text-sm font-bold text-navy">Sofia C.</p><p class="text-base text-slate-500">Miami, FL</p></div></div>
       </div>
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"The colors at sunset were unreal — pinks, oranges, purples all melting into the ocean. The crew pointed out whales in the distance and we even saw dolphins playing near the bow. A truly magical evening."</p>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Los colores del atardecer eran irreales — rosas, naranjas, morados fundiendose en el oceano. La tripulacion nos senalo ballenas a la distancia e incluso vimos delfines jugando cerca de la proa. Una velada verdaderamente magica."</p>
         <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center text-white text-sm font-bold">JK</div><div><p class="text-sm font-bold text-navy">Jennifer K.</p><p class="text-base text-slate-500">Houston, TX</p></div></div>
       </div>
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"We celebrated our 25th anniversary on the private sunset cruise. The crew surprised us with a special toast. Everything was first class — the boat, the drinks, the service. Worth every penny."</p>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Celebramos nuestro 25 aniversario en el crucero privado al atardecer. La tripulacion nos sorprendio con un brindis especial. Todo fue de primera clase — el barco, las bebidas, el servicio. Vale cada centavo."</p>
         <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-gold flex items-center justify-center text-white text-sm font-bold">RW</div><div><p class="text-sm font-bold text-navy">Robert &amp; Wendy</p><p class="text-base text-slate-500">Denver, CO</p></div></div>
       </div>
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Third time booking with Cabo Sailing and the private sunset never disappoints. This time we brought friends from abroad and they were completely blown away. The crew remembered us from last year!"</p>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Tercera vez reservando con Cabo Sailing y el atardecer privado nunca decepciona. Esta vez trajimos amigos del extranjero y quedaron completamente impresionados. La tripulacion nos recordo del ano pasado!"</p>
         <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy/70 flex items-center justify-center text-white text-sm font-bold">CG</div><div><p class="text-sm font-bold text-navy">Carlos G.</p><p class="text-base text-slate-500">San Francisco, CA</p></div></div>
       </div>
     </div>

@@ -8,10 +8,10 @@ import FloatingCTA from '../../components/FloatingCTA.astro';
 import { Image } from 'astro:assets';
 
 // Hero slides
-import heroSlide1 from "../../assets/images/guests-on-sailboats/cabo-sailboat-guests-snorkeling-01.jpg";
-import heroSlide2 from "../../assets/images/guests-on-yachts/cabo-yacht-charter-guests-01-copy.png";
-import heroSlide3 from "../../assets/images/boats/sailing-38/cabo-sailing-38-el-arco-arch.png";
-import heroSlide4 from "../../assets/images/bachelorette/cabo-bachelorette-party.jpg";
+import heroSlide1 from "../../assets/images/guests-on-sailboats/luxury-sailboat-in-tropical-waters.png";
+import heroSlide2 from "../../assets/images/guests-on-yachts/relaxing-day-on-a-luxury-boat.png";
+import heroSlide3 from "../../assets/images/guests-on-sailboats/sailing-through-cabo's-vibrant-waters.png";
+import heroSlide4 from "../../assets/images/guests-on-yachts/cabo-yacht-charter-guests-01-copy.png";
 
 // Activity section images
 import actPrivateSnorkeling from "../../assets/images/guests-on-sailboats/cabo-private-snorkeling-ocean-view.jpeg";
@@ -21,40 +21,31 @@ import actBachelorette from "../../assets/images/bachelorette/cabo-bachelorette-
 import actSharedSnorkeling from "../../assets/images/guests-on-sailboats/cabo-sailboat-guests-snorkeling-02.jpg";
 import actSharedSunset from "../../assets/images/guests-on-sailboats/cabo-shared-sunset-sailing.jpg";
 
-// Fleet: Yacht 51'
-import yacht51Img from "../../assets/images/boats/yacht-51/cabo-luxury-yacht-51-charter-v2.png";
-
-// Fleet: Yacht 45'
-import yacht45Img from "../../assets/images/boats/yacht-45/cabo-private-yacht-45-charter.png";
-
-// Fleet: Yacht 42'
-import yacht42_1 from "../../assets/images/boats/yacht-42/cabo-private-yacht-42-aerial.jpg";
-import yacht42_2 from "../../assets/images/boats/yacht-42/cabo-private-yacht-42-bow.jpg";
-import yacht42_3 from "../../assets/images/guests-on-yachts/cabo-yacht-guests-relaxing.jpg";
-import yacht42_4 from "../../assets/images/boats/yacht-42/cabo-private-yacht-42-aerial-wide.jpg";
-
-// Fleet: Sailing 42'
-import sailing42_2 from "../../assets/images/guests-on-sailboats/cabo-sailing-guests-waving.jpg";
-import sailing42_3 from "../../assets/images/boats/sailing-42/cabo-sailing-42-interior.png";
-import sailing42_5 from "../../assets/images/guests-on-sailboats/cabo-sailing-42-guests-deck.jpg";
-
-// Fleet: Sailing 38'
-import sailing38_1 from "../../assets/images/boats/sailing-38/cabo-sailing-38-el-arco.png";
-import sailing38_2 from "../../assets/images/boats/sailing-38/cabo-sailing-38-party-deck.png";
-import sailing38_3 from "../../assets/images/boats/sailing-38/cabo-sailing-38-interior.png";
-import sailing38_4 from "../../assets/images/guests-on-sailboats/cabo-sailing-38-guests-enjoying.jpg";
-
-// Fleet: Shared Sailing
-import sharedSailing1 from "../../assets/images/boats/sailing-42/cabo-sailing-42-sailing-view.jpg";
-import sharedSailing2 from "../../assets/images/boats/sailing-42/cabo-sailing-42-aerial.jpg";
-import sharedSailing3 from "../../assets/images/boats/sailing-42/cabo-sailing-42-exterior-01.jpg";
+// Carousel config (mirror EN home)
+import carouselConfig from "../../data/carousels.json";
+import sharedSailingBoat from "../../assets/images/boats/sailing-42/cabosailing-sailiboat-42.png";
 
 // Reviews background
 import reviewsBg from "../../assets/images/boats/sailing-42/cabo-sailing-42-guests-on-deck.jpeg";
 
-// Icons
-import iconSnorkel from '../../assets/icons/snorkel1.png';
-import iconPaddleboard from '../../assets/icons/paddle-board-clean.png';
+// Glob all images so we can look them up by path from the JSON
+const allImages = import.meta.glob<{ default: ImageMetadata }>('../../assets/images/**/*.{jpg,jpeg,png,webp}', { eager: true });
+
+function getImage(relativePath: string): ImageMetadata {
+  const key = `../../assets/images/${relativePath}`;
+  const mod = allImages[key];
+  if (!mod) throw new Error(`Image not found: ${relativePath} (looked up as ${key})`);
+  return mod.default;
+}
+
+function getImages(paths: string[]): ImageMetadata[] {
+  return paths.map(getImage);
+}
+
+const fleetImages: Record<string, ImageMetadata[]> = {};
+for (const [key, paths] of Object.entries(carouselConfig.fleet)) {
+  fleetImages[key] = getImages(paths as string[]);
+}
 ---
 
 <BaseLayout title="Yates y Veleros Privados en Cabo San Lucas | Cabo Sailing" description="Renta de yates y veleros privados en Cabo San Lucas — atardeceres, snorkel al Arco, ballenas y despedidas de soltera. Tripulación, bebidas y equipo incluidos." ogImage="/og/home.jpg" ogImageAlt="Cabo Sailing luxury yacht in Cabo San Lucas" hreflangs={{ en: '/', es: '/es/' }}>
@@ -66,15 +57,15 @@ import iconPaddleboard from '../../assets/icons/paddle-board-clean.png';
 
 <!-- Hero Section -->
 <div class="relative w-full h-[72vh] lg:h-[85vh] min-h-[560px] overflow-hidden" style="margin-bottom:-1px">
-  <Image src={heroSlide1} alt="Luxury Yacht 51' in Cabo San Lucas" class="hero-slide absolute inset-0 w-full h-full object-cover block opacity-100 transition-opacity duration-1000" width={1920} height={1080} loading="eager" />
-  <Image src={heroSlide2} alt="Luxury Yacht 51' cruising" class="hero-slide absolute inset-0 w-full h-full object-cover block opacity-0 transition-opacity duration-1000" width={1920} height={1080} />
-  <Image src={heroSlide3} alt="Sailing 38' at the Arch in Cabo San Lucas" class="hero-slide absolute inset-0 w-full h-full object-cover block opacity-0 transition-opacity duration-1000" width={1920} height={1080} />
-  <Image src={heroSlide4} alt="Cabo bachelorette party on a boat" class="hero-slide absolute inset-0 w-full h-full object-cover block opacity-0 transition-opacity duration-1000" width={1920} height={1080} />
+  <Image src={heroSlide1} alt="Velero de lujo en aguas tropicales" class="hero-slide absolute inset-0 w-full h-full object-cover block opacity-100 transition-opacity duration-1000" width={1920} height={1080} loading="eager" />
+  <Image src={heroSlide2} alt="Día relajante en un yate de lujo" class="hero-slide absolute inset-0 w-full h-full object-cover block opacity-0 transition-opacity duration-1000" width={1920} height={1080} />
+  <Image src={heroSlide3} alt="Navegando por las aguas vibrantes de Cabo" class="hero-slide absolute inset-0 w-full h-full object-cover block opacity-0 transition-opacity duration-1000" width={1920} height={1080} />
+  <Image src={heroSlide4} alt="Invitados disfrutando de un charter de yate en Cabo" class="hero-slide absolute inset-0 w-full h-full object-cover block opacity-0 transition-opacity duration-1000" width={1920} height={1080} />
   <div class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent"></div>
   <div class="absolute inset-0 flex items-end lg:items-center px-6 lg:px-20 pb-24 lg:pb-0">
     <div class="max-w-3xl text-left">
       <h1 class="font-serif font-semibold text-white text-4xl sm:text-5xl lg:text-7xl leading-[1.08] drop-shadow-2xl">
-        Veleros de Lujo y<br/>Cruceros en Yate en<br/><span style="color:#f5e0b8">Cabo San Lucas</span>
+        Cruceros de lujo en<br/>yates y veleros en<br/><span style="color:#f5e0b8">Cabo San Lucas</span>
       </h1>
       <p class="text-white/85 text-sm lg:text-lg mt-4 max-w-xl leading-relaxed">Grupos pequenos. Servicio premium. Navegacion perfecta.</p>
       <!-- Review (inline on mobile, absolute on desktop) -->
@@ -132,14 +123,13 @@ import iconPaddleboard from '../../assets/icons/paddle-board-clean.png';
 
 <!-- PRIVATE EXPERIENCES -->
 <section id="section-private" class="pt-8 pb-16 lg:pt-12 lg:pb-24 bg-white scroll-mt-[80px]">
-<div class="max-w-screen-2xl mx-auto px-6 lg:px-10 space-y-24 lg:space-y-40">
+<div class="max-w-screen-2xl mx-auto px-6 lg:px-10 space-y-12 lg:space-y-20">
 
 <!-- Activity 1: Private Snorkeling -->
-<div data-activity="private-snorkeling" class="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-16 items-center">
+<div data-activity="private-snorkeling" class="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12 items-center">
   <div class="md:col-span-7 relative group">
     <div class="absolute top-6 left-6 z-30 bg-accent-gold-dark text-white px-4 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase shadow-xl">Mas Popular</div>
-    <div class="absolute top-6 right-6 z-30 bg-red-600 text-white px-4 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase shadow-xl">20% Off</div>
-    <div class="aspect-[3/4] md:aspect-[16/10] overflow-hidden rounded-lg shadow-2xl">
+    <div class="aspect-[4/5] md:aspect-[16/9] overflow-hidden rounded-lg shadow-2xl">
       <Image src={actPrivateSnorkeling} alt="Private Snorkeling" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" width={1200} height={750} />
     </div>
     <div class="absolute -bottom-6 right-2 md:-right-10 bg-navy p-8 md:p-12 max-w-[280px] md:max-w-xs shadow-2xl z-20 border-b-4 border-accent-gold rounded-lg bg-opacity-80 backdrop-blur-sm">
@@ -148,30 +138,30 @@ import iconPaddleboard from '../../assets/icons/paddle-board-clean.png';
     </div>
   </div>
 
-  <div class="md:col-span-5 space-y-8 pt-4 md:pt-0">
+  <div class="md:col-span-5 space-y-2 pt-4 md:pt-0">
     <div class="space-y-4">
-      <h2 class="text-4xl lg:text-5xl font-serif-italic text-navy leading-tight">Crucero Privado de Snorkel <span class="text-2xl lg:text-3xl text-navy/70">(Yate o Velero)</span></h2>
+      <h2 class="text-3xl lg:text-4xl font-serif-italic text-navy leading-tight">Crucero Privado de Snorkel <span class="text-xl lg:text-2xl text-navy/70">(Yate o Velero)</span></h2>
       <p class="text-accent-gold-dark text-[11px] font-bold tracking-widest uppercase">Elegido por cientos de huespedes cada mes</p>
+      <p class="text-navy/50 text-sm font-medium flex items-center gap-1.5"><span class="material-symbols-outlined text-base">schedule</span> 3 Horas</p>
     </div>
-    <p class="text-navy/70 text-base lg:text-lg leading-relaxed">Un crucero privado a los mejores puntos de snorkel de Cabo con tiempo para nadar, relajarse y disfrutar comida y bebidas a bordo.<br/>Perfecto para familias, parejas o grupos que buscan una experiencia divertida y flexible a su propio ritmo.<br/>Sin multitudes, mas tiempo en el agua y una tripulacion enfocada completamente en tu grupo.</p>
-    <ul class="space-y-3 pt-2">
-      <li class="flex items-start gap-3 text-navy/70 font-medium text-base lg:text-lg leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> Tu Propio Yate o Velero Privado – Sin multitudes, solo tu grupo en una embarcacion premium.</li>
-      <li class="flex items-start gap-3 text-navy/70 font-medium text-base lg:text-lg leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> Paisajes y Snorkel – Visita Land's End y el Arco, luego sumérgete en los mejores arrecifes de Cabo.</li>
-      <li class="flex items-start gap-3 text-navy/70 font-medium text-base lg:text-lg leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> Servicio Todo Incluido – Barra libre premium y comida local fresca incluida.</li>
+    <p class="text-navy/70 text-sm lg:text-base leading-relaxed">Un crucero privado a los mejores puntos de snorkel de Cabo con tiempo para nadar, relajarse y disfrutar comida y bebidas a bordo.<br/>Perfecto para familias, parejas o grupos que buscan una experiencia divertida y flexible a su propio ritmo.<br/>Sin multitudes, mas tiempo en el agua y una tripulacion enfocada completamente en tu grupo.</p>
+    <ul class="space-y-2">
+      <li class="flex items-start gap-3 text-navy/70 font-medium text-sm lg:text-base leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> Tu Propio Yate o Velero Privado – Sin multitudes, solo tu grupo en una embarcacion premium.</li>
+      <li class="flex items-start gap-3 text-navy/70 font-medium text-sm lg:text-base leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> Paisajes y Snorkel – Visita Land's End y el Arco, luego sumérgete en los mejores arrecifes de Cabo.</li>
+      <li class="flex items-start gap-3 text-navy/70 font-medium text-sm lg:text-base leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> Servicio Todo Incluido – Barra libre premium y comida local fresca incluida.</li>
     </ul>
-    <div class="pt-6 space-y-4">
-      <a href="/es/private-snorkeling" class="block text-center bg-transparent text-navy border border-navy w-full py-4 rounded-lg font-bold tracking-widest text-sm hover:bg-navy/5 transition-all uppercase">Detalles Snorkel Privado</a>
+    <div class="space-y-4">
+      <a href="/es/private-snorkeling" class="block text-center bg-transparent text-navy border border-navy w-full py-3 rounded-lg font-bold tracking-widest text-sm hover:bg-navy/5 transition-all uppercase">Detalles Snorkel Privado</a>
     </div>
     <div class="md:hidden border-b border-border-light mt-8"></div>
   </div>
 </div>
 
 <!-- Activity 2: Private Sunset Cruise -->
-<div data-activity="private-sunset" class="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-16 items-center">
+<div data-activity="private-sunset" class="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12 items-center">
   <div class="md:col-span-7 order-1 md:order-2 relative group">
     <div class="absolute top-6 left-6 z-30 bg-accent-gold-dark text-white px-4 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase shadow-xl bg-opacity-80 backdrop-blur-sm">Premium</div>
-    <div class="absolute top-6 right-6 z-30 bg-red-600 text-white px-4 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase shadow-xl">20% Off</div>
-    <div class="aspect-[3/4] md:aspect-[16/10] overflow-hidden rounded-lg shadow-2xl">
+    <div class="aspect-[4/5] md:aspect-[16/9] overflow-hidden rounded-lg shadow-2xl">
       <Image src={actPrivateSunset} alt="Private Sunset Cruise" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" width={1200} height={750} />
     </div>
     <div class="absolute -bottom-6 left-2 md:-left-10 bg-accent-gold p-8 md:p-12 max-w-[280px] md:max-w-xs shadow-2xl z-20 border-b-4 border-amber-300 rounded-lg bg-opacity-80 backdrop-blur-sm">
@@ -180,30 +170,30 @@ import iconPaddleboard from '../../assets/icons/paddle-board-clean.png';
     </div>
   </div>
 
-  <div class="md:col-span-5 order-2 md:order-1 space-y-8 pt-4 md:pt-0">
+  <div class="md:col-span-5 order-2 md:order-1 space-y-2 pt-4 md:pt-0">
     <div class="space-y-4">
-      <h2 class="text-4xl lg:text-5xl font-serif-italic text-navy leading-tight">Crucero Privado al Atardecer <span class="text-2xl lg:text-3xl text-navy/70">(Yate o Velero)</span></h2>
+      <h2 class="text-3xl lg:text-4xl font-serif-italic text-navy leading-tight">Crucero Privado al Atardecer <span class="text-xl lg:text-2xl text-navy/70">(Yate o Velero)</span></h2>
       <p class="text-accent-gold-dark text-[11px] font-bold tracking-widest uppercase">La opcion favorita para parejas</p>
+      <p class="text-navy/50 text-sm font-medium flex items-center gap-1.5"><span class="material-symbols-outlined text-base">schedule</span> 3 Horas</p>
     </div>
-    <p class="text-navy/70 text-base lg:text-lg leading-relaxed">Un crucero privado nocturno pasando por el Arco de Cabo con bebidas, bocadillos y vistas inolvidables del atardecer.<br/>Ideal para parejas, celebraciones o cualquiera que busque una experiencia relajada y memorable.<br/>Mas intimo, mas suave y mucho menos concurrido que los tours tipicos de atardecer.</p>
-    <ul class="space-y-3 pt-2">
-      <li class="flex items-start gap-3 text-navy/70 font-medium text-base lg:text-lg leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> Yate o velero impecable y lujoso</li>
-      <li class="flex items-start gap-3 text-navy/70 font-medium text-base lg:text-lg leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> Servicio todo incluido — barra libre premium y bocadillos locales frescos</li>
-      <li class="flex items-start gap-3 text-navy/70 font-medium text-base lg:text-lg leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> Experiencia privada de atardecer — las vistas mas iconicas de Cabo, solo para ti</li>
+    <p class="text-navy/70 text-sm lg:text-base leading-relaxed">Un crucero privado nocturno pasando por el Arco de Cabo con bebidas, bocadillos y vistas inolvidables del atardecer.<br/>Ideal para parejas, celebraciones o cualquiera que busque una experiencia relajada y memorable.<br/>Mas intimo, mas suave y mucho menos concurrido que los tours tipicos de atardecer.</p>
+    <ul class="space-y-2">
+      <li class="flex items-start gap-3 text-navy/70 font-medium text-sm lg:text-base leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> Yate o velero impecable y lujoso</li>
+      <li class="flex items-start gap-3 text-navy/70 font-medium text-sm lg:text-base leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> Servicio todo incluido — barra libre premium y bocadillos locales frescos</li>
+      <li class="flex items-start gap-3 text-navy/70 font-medium text-sm lg:text-base leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> Experiencia privada de atardecer — las vistas mas iconicas de Cabo, solo para ti</li>
     </ul>
-    <div class="pt-6 space-y-4">
-      <a href="/es/private-sunset" class="block text-center bg-transparent text-navy border border-navy w-full py-4 rounded-lg font-bold tracking-widest text-sm hover:bg-navy/5 transition-all uppercase">Detalles Atardecer Privado</a>
+    <div class="space-y-4">
+      <a href="/es/private-sunset" class="block text-center bg-transparent text-navy border border-navy w-full py-3 rounded-lg font-bold tracking-widest text-sm hover:bg-navy/5 transition-all uppercase">Detalles Atardecer Privado</a>
     </div>
     <div class="md:hidden border-b border-border-light mt-8"></div>
   </div>
 </div>
 
 <!-- Activity 3: Whale Watching -->
-<div data-activity="whale-watching" class="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-16 items-center">
+<div data-activity="whale-watching" class="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12 items-center">
   <div class="md:col-span-7 relative group">
     <div class="absolute top-6 left-6 z-30 bg-accent-gold-dark text-white px-4 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase shadow-xl">Se Agota Rapido</div>
-    <div class="absolute top-6 right-6 z-30 bg-red-600 text-white px-4 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase shadow-xl">20% Off</div>
-    <div class="aspect-[3/4] md:aspect-[16/10] overflow-hidden rounded-lg shadow-2xl">
+    <div class="aspect-[4/5] md:aspect-[16/9] overflow-hidden rounded-lg shadow-2xl">
       <Image src={actWhaleWatching} alt="Whale Watching" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" width={1200} height={750} />
     </div>
     <div class="absolute -bottom-6 right-2 md:-right-10 bg-teal-900 p-8 md:p-12 max-w-[280px] md:max-w-xs shadow-2xl z-20 border-b-4 border-teal-400 rounded-lg bg-opacity-80 backdrop-blur-sm">
@@ -212,30 +202,30 @@ import iconPaddleboard from '../../assets/icons/paddle-board-clean.png';
     </div>
   </div>
 
-  <div class="md:col-span-5 space-y-8 pt-4 md:pt-0">
+  <div class="md:col-span-5 space-y-2 pt-4 md:pt-0">
     <div class="space-y-4">
-      <h2 class="text-4xl lg:text-5xl font-serif-italic text-navy leading-tight">Crucero Privado de Avistamiento de Ballenas <span class="text-2xl lg:text-3xl text-navy/70">(Yate o Velero)</span></h2>
+      <h2 class="text-3xl lg:text-4xl font-serif-italic text-navy leading-tight">Crucero Privado de Avistamiento de Ballenas <span class="text-xl lg:text-2xl text-navy/70">(Yate o Velero)</span></h2>
       <p class="text-accent-gold-dark text-[11px] font-bold tracking-widest uppercase">El mas vendido del mes pasado</p>
+      <p class="text-navy/50 text-sm font-medium flex items-center gap-1.5"><span class="material-symbols-outlined text-base">schedule</span> 3 Horas</p>
     </div>
-    <p class="text-navy/70 text-base lg:text-lg leading-relaxed">Un crucero privado para ver las ballenas de Cabo de cerca, guiado por una tripulacion experimentada en su habitat natural.<br/>Perfecto para familias, parejas o grupos pequenos que buscan una experiencia de vida silvestre mas personal y comoda.<br/>Encuentros mas cercanos, sin multitudes y la flexibilidad de seguir a las ballenas a tu propio ritmo.</p>
-    <ul class="space-y-3 pt-2">
-      <li class="flex items-start gap-3 text-navy/70 font-medium text-base lg:text-lg leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> Tu propio yate o velero privado</li>
-      <li class="flex items-start gap-3 text-navy/70 font-medium text-base lg:text-lg leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> Encuentros cercanos con ballenas — vistas de primera fila en su habitat natural</li>
-      <li class="flex items-start gap-3 text-navy/70 font-medium text-base lg:text-lg leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> Experiencia todo incluido — bebidas, bocadillos y tripulacion experta</li>
+    <p class="text-navy/70 text-sm lg:text-base leading-relaxed">Un crucero privado para ver las ballenas de Cabo de cerca, guiado por una tripulacion experimentada en su habitat natural.<br/>Perfecto para familias, parejas o grupos pequenos que buscan una experiencia de vida silvestre mas personal y comoda.<br/>Encuentros mas cercanos, sin multitudes y la flexibilidad de seguir a las ballenas a tu propio ritmo.</p>
+    <ul class="space-y-2">
+      <li class="flex items-start gap-3 text-navy/70 font-medium text-sm lg:text-base leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> Tu propio yate o velero privado</li>
+      <li class="flex items-start gap-3 text-navy/70 font-medium text-sm lg:text-base leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> Encuentros cercanos con ballenas — vistas de primera fila en su habitat natural</li>
+      <li class="flex items-start gap-3 text-navy/70 font-medium text-sm lg:text-base leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> Experiencia todo incluido — bebidas, bocadillos y tripulacion experta</li>
     </ul>
-    <div class="pt-6 space-y-4">
-      <a href="/es/whale-watching" class="block text-center bg-transparent text-navy border border-navy w-full py-4 rounded-lg font-bold tracking-widest text-sm hover:bg-navy/5 transition-all uppercase">Detalles Avistamiento de Ballenas</a>
+    <div class="space-y-4">
+      <a href="/es/whale-watching" class="block text-center bg-transparent text-navy border border-navy w-full py-3 rounded-lg font-bold tracking-widest text-sm hover:bg-navy/5 transition-all uppercase">Detalles Avistamiento de Ballenas</a>
     </div>
     <div class="md:hidden border-b border-border-light mt-8"></div>
   </div>
 </div>
 
 <!-- Activity 4: Bachelorette Party -->
-<div data-activity="bachelorette-party" class="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-16 items-center">
+<div data-activity="bachelorette-party" class="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12 items-center">
   <div class="md:col-span-7 order-1 md:order-2 relative group">
     <div class="absolute top-6 left-6 z-30 bg-accent-gold-dark text-white px-4 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase shadow-xl">Experiencia VIP</div>
-    <div class="absolute top-6 right-6 z-30 bg-red-600 text-white px-4 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase shadow-xl">20% Off</div>
-    <div class="aspect-[3/4] md:aspect-[16/10] overflow-hidden rounded-lg shadow-2xl">
+    <div class="aspect-[4/5] md:aspect-[16/9] overflow-hidden rounded-lg shadow-2xl">
       <Image src={actBachelorette} alt="Bachelorette Party" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" width={1200} height={750} />
     </div>
     <div class="absolute -bottom-6 left-2 md:-left-10 bg-indigo-900 p-8 md:p-12 max-w-[280px] md:max-w-xs shadow-2xl z-20 border-b-4 border-pink-400 rounded-lg bg-opacity-80 backdrop-blur-sm">
@@ -244,19 +234,20 @@ import iconPaddleboard from '../../assets/icons/paddle-board-clean.png';
     </div>
   </div>
 
-  <div class="md:col-span-5 order-2 md:order-1 space-y-8 pt-4 md:pt-0">
+  <div class="md:col-span-5 order-2 md:order-1 space-y-2 pt-4 md:pt-0">
     <div class="space-y-4">
-      <h2 class="text-4xl lg:text-5xl font-serif-italic text-navy leading-tight">Crucero Privado de Despedida de Soltera <span class="text-2xl lg:text-3xl text-navy/70">(Yate o Velero)</span></h2>
+      <h2 class="text-3xl lg:text-4xl font-serif-italic text-navy leading-tight">Crucero Privado de Despedida de Soltera <span class="text-xl lg:text-2xl text-navy/70">(Yate o Velero)</span></h2>
       <p class="text-accent-gold-dark text-[11px] font-bold tracking-widest uppercase">Expertos en eventos de confianza</p>
+      <p class="text-navy/50 text-sm font-medium flex items-center gap-1.5"><span class="material-symbols-outlined text-base">schedule</span> 3 Horas</p>
     </div>
-    <p class="text-navy/70 text-base lg:text-lg leading-relaxed">Un crucero privado disenado para celebrar: musica, bebidas, excelentes vistas y mucho tiempo para relajarse y divertirse con tu grupo.<br/>Perfecto para despedidas de soltera que buscan una experiencia elegante, divertida y sin estres en el agua.<br/>Tu propio espacio, sin multitudes y una tripulacion que se encarga de todo para que puedas concentrarte en celebrar.</p>
-    <ul class="space-y-3 pt-2">
-      <li class="flex items-start gap-3 text-navy/70 font-medium text-base lg:text-lg leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> Yate o velero de lujo — hecho para celebrar</li>
-      <li class="flex items-start gap-3 text-navy/70 font-medium text-base lg:text-lg leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> Tu fiesta, a tu manera — musica, ambiente y momentos inolvidables</li>
-      <li class="flex items-start gap-3 text-navy/70 font-medium text-base lg:text-lg leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> Todo incluido — barra libre, bocadillos y todo a bordo</li>
+    <p class="text-navy/70 text-sm lg:text-base leading-relaxed">Un crucero privado disenado para celebrar: musica, bebidas, excelentes vistas y mucho tiempo para relajarse y divertirse con tu grupo.<br/>Perfecto para despedidas de soltera que buscan una experiencia elegante, divertida y sin estres en el agua.<br/>Tu propio espacio, sin multitudes y una tripulacion que se encarga de todo para que puedas concentrarte en celebrar.</p>
+    <ul class="space-y-2">
+      <li class="flex items-start gap-3 text-navy/70 font-medium text-sm lg:text-base leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> Yate o velero de lujo — hecho para celebrar</li>
+      <li class="flex items-start gap-3 text-navy/70 font-medium text-sm lg:text-base leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> Tu fiesta, a tu manera — musica, ambiente y momentos inolvidables</li>
+      <li class="flex items-start gap-3 text-navy/70 font-medium text-sm lg:text-base leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> Todo incluido — barra libre, bocadillos y todo a bordo</li>
     </ul>
-    <div class="pt-6 space-y-4">
-      <a href="/es/bachelorette" class="block text-center bg-transparent text-navy border border-navy w-full py-4 rounded-lg font-bold tracking-widest text-sm hover:bg-navy/5 transition-all uppercase">Detalles Despedida de Soltera</a>
+    <div class="space-y-4">
+      <a href="/es/bachelorette" class="block text-center bg-transparent text-navy border border-navy w-full py-3 rounded-lg font-bold tracking-widest text-sm hover:bg-navy/5 transition-all uppercase">Detalles Despedida de Soltera</a>
     </div>
   </div>
 </div>
@@ -266,14 +257,13 @@ import iconPaddleboard from '../../assets/icons/paddle-board-clean.png';
 
 <!-- SHARED EXPERIENCES -->
 <section id="section-shared" class="py-16 lg:py-24 bg-[#f5f3ef] border-y border-border-light/50 scroll-mt-[80px]">
-<div class="max-w-screen-2xl mx-auto px-6 lg:px-10 space-y-24 lg:space-y-40">
+<div class="max-w-screen-2xl mx-auto px-6 lg:px-10 space-y-12 lg:space-y-20">
 
 <!-- Activity 5: Shared Snorkeling -->
-<div data-activity="shared-snorkeling" class="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-16 items-center">
+<div data-activity="shared-snorkeling" class="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12 items-center">
   <div class="md:col-span-7 relative group">
     <div class="absolute top-6 left-6 z-30 bg-accent-gold-dark text-white px-4 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase shadow-xl">Mas Popular</div>
-    <div class="absolute top-6 right-6 z-30 bg-red-600 text-white px-4 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase shadow-xl">20% Off</div>
-    <div class="aspect-[3/4] md:aspect-[16/10] overflow-hidden rounded-lg shadow-2xl">
+    <div class="aspect-[4/5] md:aspect-[16/9] overflow-hidden rounded-lg shadow-2xl">
       <Image src={actSharedSnorkeling} alt="Shared Snorkeling" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" width={1200} height={750} />
     </div>
     <div class="absolute -bottom-6 right-2 md:-right-10 bg-slate-800 p-8 md:p-12 max-w-[280px] md:max-w-xs shadow-2xl z-20 border-b-4 border-slate-400 rounded-lg bg-opacity-80 backdrop-blur-sm">
@@ -282,30 +272,30 @@ import iconPaddleboard from '../../assets/icons/paddle-board-clean.png';
     </div>
   </div>
 
-  <div class="md:col-span-5 space-y-8 pt-4 md:pt-0">
+  <div class="md:col-span-5 space-y-2 pt-4 md:pt-0">
     <div class="space-y-4">
-      <h2 class="text-4xl lg:text-5xl font-serif-italic text-navy leading-tight">Crucero Compartido de Snorkel en Grupo Pequeno</h2>
+      <h2 class="text-3xl lg:text-4xl font-serif-italic text-navy leading-tight">Crucero Compartido de Snorkel en Grupo Pequeno</h2>
       <p class="text-accent-gold-dark text-[11px] font-bold tracking-widest uppercase">Favorito para grupos pequenos</p>
+      <p class="text-navy/50 text-sm font-medium flex items-center gap-1.5"><span class="material-symbols-outlined text-base">schedule</span> 3 Horas</p>
     </div>
-    <p class="text-navy/70 text-base lg:text-lg leading-relaxed">Un viaje compartido en velero a los mejores puntos de snorkel de Cabo con bebidas, comida ligera y un ambiente amigable.<br/>Perfecto para viajeros que quieren una experiencia de alta calidad sin reservar un barco privado.<br/>Limitado a grupos pequenos, para que se sienta comodo, no abarrotado como los tours tipicos.</p>
-    <ul class="space-y-3 pt-2">
-      <li class="flex items-start gap-3 text-navy/70 font-medium text-base lg:text-lg leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> Hermoso velero — grupos pequenos, lejos de las multitudes</li>
-      <li class="flex items-start gap-3 text-navy/70 font-medium text-base lg:text-lg leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> Paisajes y snorkel — Land's End, el Arco y el mejor sitio de snorkel de Cabo</li>
-      <li class="flex items-start gap-3 text-navy/70 font-medium text-base lg:text-lg leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> Servicio todo incluido — barra libre, almuerzo, equipo y toallas incluidas</li>
+    <p class="text-navy/70 text-sm lg:text-base leading-relaxed">Un viaje compartido en velero a los mejores puntos de snorkel de Cabo con bebidas, comida ligera y un ambiente amigable.<br/>Perfecto para viajeros que quieren una experiencia de alta calidad sin reservar un barco privado.<br/>Limitado a grupos pequenos, para que se sienta comodo, no abarrotado como los tours tipicos.</p>
+    <ul class="space-y-2">
+      <li class="flex items-start gap-3 text-navy/70 font-medium text-sm lg:text-base leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> Hermoso velero — grupos pequenos, lejos de las multitudes</li>
+      <li class="flex items-start gap-3 text-navy/70 font-medium text-sm lg:text-base leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> Paisajes y snorkel — Land's End, el Arco y el mejor sitio de snorkel de Cabo</li>
+      <li class="flex items-start gap-3 text-navy/70 font-medium text-sm lg:text-base leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> Servicio todo incluido — barra libre, almuerzo, equipo y toallas incluidas</li>
     </ul>
-    <div class="pt-6 space-y-4">
-      <a href="/es/shared-snorkeling" class="block text-center bg-transparent text-navy border border-navy w-full py-4 rounded-lg font-bold tracking-widest text-sm hover:bg-navy/5 transition-all uppercase">Detalles Snorkel Compartido</a>
+    <div class="space-y-4">
+      <a href="/es/shared-snorkeling" class="block text-center bg-transparent text-navy border border-navy w-full py-3 rounded-lg font-bold tracking-widest text-sm hover:bg-navy/5 transition-all uppercase">Detalles Snorkel Compartido</a>
     </div>
     <div class="md:hidden border-b border-border-light mt-8"></div>
   </div>
 </div>
 
 <!-- Activity 6: Shared Sunset Cruise -->
-<div data-activity="shared-sunset" class="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-16 items-center">
+<div data-activity="shared-sunset" class="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12 items-center">
   <div class="md:col-span-7 order-1 md:order-2 relative group">
     <div class="absolute top-6 left-6 z-30 bg-accent-gold-dark text-white px-4 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase shadow-xl">Premium</div>
-    <div class="absolute top-6 right-6 z-30 bg-red-600 text-white px-4 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase shadow-xl">20% Off</div>
-    <div class="aspect-[3/4] md:aspect-[16/10] overflow-hidden rounded-lg shadow-2xl">
+    <div class="aspect-[4/5] md:aspect-[16/9] overflow-hidden rounded-lg shadow-2xl">
       <Image src={actSharedSunset} alt="Shared Sunset Cruise" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" width={1200} height={750} />
     </div>
     <div class="absolute -bottom-6 left-2 md:-left-10 bg-orange-950 p-8 md:p-12 max-w-[280px] md:max-w-xs shadow-2xl z-20 border-b-4 border-orange-500 rounded-lg bg-opacity-80 backdrop-blur-sm">
@@ -314,19 +304,20 @@ import iconPaddleboard from '../../assets/icons/paddle-board-clean.png';
     </div>
   </div>
 
-  <div class="md:col-span-5 order-2 md:order-1 space-y-8 pt-4 md:pt-0">
+  <div class="md:col-span-5 order-2 md:order-1 space-y-2 pt-4 md:pt-0">
     <div class="space-y-4">
-      <h2 class="text-4xl lg:text-5xl font-serif-italic text-navy leading-tight">Crucero Compartido de Atardecer en Grupo Pequeno</h2>
+      <h2 class="text-3xl lg:text-4xl font-serif-italic text-navy leading-tight">Crucero Compartido de Atardecer en Grupo Pequeno</h2>
       <p class="text-accent-gold-dark text-[11px] font-bold tracking-widest uppercase">Elegido por cientos de huespedes cada mes</p>
+      <p class="text-navy/50 text-sm font-medium flex items-center gap-1.5"><span class="material-symbols-outlined text-base">schedule</span> 2 Horas</p>
     </div>
-    <p class="text-navy/70 text-base lg:text-lg leading-relaxed">Un relajante paseo en velero al atardecer pasando por el Arco de Cabo con bebidas, musica y vistas impresionantes.<br/>Ideal para parejas o amigos que buscan una tarde facil y memorable en el agua.<br/>Ambiente de grupo pequeno, navegacion suave y un ambiente mas relajado que los cruceros de fiesta.</p>
-    <ul class="space-y-3 pt-2">
-      <li class="flex items-start gap-3 text-navy/70 font-medium text-base lg:text-lg leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> Navegacion suave y comoda — bebidas y bocadillos incluidos</li>
-      <li class="flex items-start gap-3 text-navy/70 font-medium text-base lg:text-lg leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> Experiencia en grupo pequeno — ambiente relajado con la musica perfecta</li>
-      <li class="flex items-start gap-3 text-navy/70 font-medium text-base lg:text-lg leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> Vistas inolvidables del atardecer — primera fila en el agua</li>
+    <p class="text-navy/70 text-sm lg:text-base leading-relaxed">Un relajante paseo en velero al atardecer pasando por el Arco de Cabo con bebidas, musica y vistas impresionantes.<br/>Ideal para parejas o amigos que buscan una tarde facil y memorable en el agua.<br/>Ambiente de grupo pequeno, navegacion suave y un ambiente mas relajado que los cruceros de fiesta.</p>
+    <ul class="space-y-2">
+      <li class="flex items-start gap-3 text-navy/70 font-medium text-sm lg:text-base leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> Navegacion suave y comoda — bebidas y bocadillos incluidos</li>
+      <li class="flex items-start gap-3 text-navy/70 font-medium text-sm lg:text-base leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> Experiencia en grupo pequeno — ambiente relajado con la musica perfecta</li>
+      <li class="flex items-start gap-3 text-navy/70 font-medium text-sm lg:text-base leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> Vistas inolvidables del atardecer — primera fila en el agua</li>
     </ul>
-    <div class="pt-6 space-y-4">
-      <a href="/es/shared-sunset" class="block text-center bg-transparent text-navy border border-navy w-full py-4 rounded-lg font-bold tracking-widest text-sm hover:bg-navy/5 transition-all uppercase">Detalles Atardecer Compartido</a>
+    <div class="space-y-4">
+      <a href="/es/shared-sunset" class="block text-center bg-transparent text-navy border border-navy w-full py-3 rounded-lg font-bold tracking-widest text-sm hover:bg-navy/5 transition-all uppercase">Detalles Atardecer Compartido</a>
     </div>
   </div>
 </div>
@@ -355,25 +346,32 @@ import iconPaddleboard from '../../assets/icons/paddle-board-clean.png';
 
     <!-- 51' Luxury Yacht -->
     <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="yacht-51">
-      <div class="fleet-img-wrap w-full relative">
-        <Image src={yacht51Img} alt="Luxury Yacht 51' private charter in Cabo San Lucas" class="w-full h-full object-cover object-bottom bg-[#1a2a3a]" width={800} height={400} />
+      <div class={`fleet-img-wrap w-full relative ${fleetImages['yacht-51'].length > 1 ? 'activity-carousel' : ''}`}>
+        {fleetImages['yacht-51'].map((img, idx) => (
+          <Image src={img} alt="Yate de Lujo 51' charter privado en Cabo San Lucas" class={`activity-slide w-full h-full object-cover object-center ${idx > 0 ? 'absolute inset-0' : ''}`} style={`transform: scale(1.1); opacity:${idx === 0 ? 1 : 0}; transition: opacity 0.5s ease-in-out;`} width={1023} height={1537} format="png" quality={100} />
+        ))}
+        {fleetImages['yacht-51'].length > 1 && (
+          <><button class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_left</span></button>
+          <button class="carousel-next absolute right-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_right</span></button>
+          <div class="carousel-dots absolute bottom-3 left-1/2 -translate-x-1/2 z-20 flex gap-2"></div>
+        <div class="swipe-hint md:hidden absolute inset-0 z-20 pointer-events-none flex items-center justify-center">
+          <div class="bg-black/55 backdrop-blur-sm text-white px-5 py-2.5 rounded-full flex items-center gap-2 shadow-2xl">
+            <span class="material-symbols-outlined text-2xl">arrow_back</span>
+            <span class="text-[11px] uppercase tracking-widest font-bold">Desliza</span>
+            <span class="material-symbols-outlined text-2xl">arrow_forward</span>
+          </div>
+        </div></>
+        )}
         <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
         <div class="absolute bottom-5 left-6">
-          <h4 class="text-white text-lg lg:text-xl">Luxury Yacht 51'</h4>
+          <h4 class="text-white text-lg lg:text-xl">Yate de Lujo 51'</h4>
           <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs lg:text-[10px] mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-sm lg:text-base">group</span><span>Hasta 20 Invitados</span></div>
         </div>
         <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[9px] font-bold px-2.5 py-1 lg:px-3 lg:py-1 rounded-full uppercase tracking-widest">Mas Espacioso</div>
-        <div class="absolute bottom-4 right-4 bg-accent-gold-dark text-white text-sm font-bold px-2.5 py-1 rounded-lg shadow-lg">-30%</div>
       </div>
       <div class="p-4 space-y-4 lg:p-4 lg:space-y-4">
-        <div class="grid grid-cols-4 gap-1 pb-3 border-b border-border-light/50">
-          <div class="flex items-center justify-center h-10 lg:h-12"><span class="material-symbols-outlined filled text-gold text-2xl lg:text-3xl leading-none">dry_cleaning</span></div>
-          <div class="flex items-center justify-center h-10 lg:h-12"><Image src={iconSnorkel} alt="Snorkel" class="w-10 h-10 lg:w-12 lg:h-12 object-contain" width={48} height={48} /></div>
-          <div class="flex items-center justify-center h-10 lg:h-12"><Image src={iconPaddleboard} alt="Paddleboard" class="w-10 h-10 lg:w-12 lg:h-12 object-contain" width={48} height={48} /></div>
-          <div class="flex items-center justify-center h-10 lg:h-12"><span class="material-symbols-outlined filled text-gold text-2xl lg:text-3xl leading-none">local_bar</span></div>
-        </div>
         <div class="space-y-4">
-          <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-accent-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$1,690</span><div class="flex items-baseline gap-2"><span class="text-slate-500 text-[11px] font-medium uppercase">from</span><span class="text-navy font-bold text-2xl lg:text-2xl">$1,436</span><span class="text-slate-500 text-[11px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="flex flex-col items-end"><span class="text-slate-500 text-[11px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-accent-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-500 text-[9px] font-medium">/pp</span></div></div></div>
+          <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-accent-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$1,690</span><div class="flex items-baseline gap-2"><span class="text-slate-500 text-[11px] font-medium uppercase">desde</span><span class="text-navy font-bold text-2xl lg:text-2xl">$1,436</span><span class="text-slate-500 text-[11px] font-medium uppercase">/ 1-4 invitados</span></div></div><div class="flex flex-col items-end"><span class="text-slate-500 text-[11px] font-medium">Invitados extra</span><div class="flex items-baseline gap-1"><span class="text-accent-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-500 text-[9px] font-medium">/pp</span></div></div></div>
         </div>
         <button type="button" onclick="openRezdyModal('165509')" class="block w-full bg-navy text-white font-bold text-[11px] lg:text-[10px] py-3.5 lg:py-3 rounded-xl uppercase tracking-[0.1em] lg:tracking-[0.15em] text-center shadow-lg">Ver Disponibilidad</button>
       </div>
@@ -381,25 +379,32 @@ import iconPaddleboard from '../../assets/icons/paddle-board-clean.png';
 
     <!-- 45' Luxury Yacht -->
     <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="yacht-45">
-      <div class="fleet-img-wrap w-full relative">
-        <Image src={yacht45Img} alt="Luxury Yacht 45' private charter in Cabo San Lucas" class="w-full h-full object-cover object-center" style="transform: none !important;" width={1023} height={1537} format="png" quality={100} />
+      <div class={`fleet-img-wrap w-full relative ${fleetImages['yacht-45'].length > 1 ? 'activity-carousel' : ''}`}>
+        {fleetImages['yacht-45'].map((img, idx) => (
+          <Image src={img} alt="Yate de Lujo 45' charter privado en Cabo San Lucas" class={`activity-slide w-full h-full object-cover object-center ${idx > 0 ? 'absolute inset-0' : ''}`} style={`transform: none !important; opacity:${idx === 0 ? 1 : 0}; transition: opacity 0.5s ease-in-out;`} width={1023} height={1537} format="png" quality={100} />
+        ))}
+        {fleetImages['yacht-45'].length > 1 && (
+          <><button class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_left</span></button>
+          <button class="carousel-next absolute right-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_right</span></button>
+          <div class="carousel-dots absolute bottom-3 left-1/2 -translate-x-1/2 z-20 flex gap-2"></div>
+        <div class="swipe-hint md:hidden absolute inset-0 z-20 pointer-events-none flex items-center justify-center">
+          <div class="bg-black/55 backdrop-blur-sm text-white px-5 py-2.5 rounded-full flex items-center gap-2 shadow-2xl">
+            <span class="material-symbols-outlined text-2xl">arrow_back</span>
+            <span class="text-[11px] uppercase tracking-widest font-bold">Desliza</span>
+            <span class="material-symbols-outlined text-2xl">arrow_forward</span>
+          </div>
+        </div></>
+        )}
         <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
         <div class="absolute bottom-5 left-6">
-          <h4 class="text-white text-lg lg:text-xl">Luxury Yacht 45'</h4>
+          <h4 class="text-white text-lg lg:text-xl">Yate de Lujo 45'</h4>
           <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs lg:text-[10px] mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-sm lg:text-base">group</span><span>Hasta 12 Invitados</span></div>
         </div>
         <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[9px] font-bold px-2.5 py-1 lg:px-3 lg:py-1 rounded-full uppercase tracking-widest">Mas Popular</div>
-        <div class="absolute bottom-4 right-4 bg-accent-gold-dark text-white text-sm font-bold px-2.5 py-1 rounded-lg shadow-lg">-30%</div>
       </div>
       <div class="p-4 space-y-4 lg:p-4 lg:space-y-4">
-        <div class="grid grid-cols-4 gap-1 pb-3 border-b border-border-light/50">
-          <div class="flex items-center justify-center h-10 lg:h-12"><span class="material-symbols-outlined filled text-gold text-2xl lg:text-3xl leading-none">dry_cleaning</span></div>
-          <div class="flex items-center justify-center h-10 lg:h-12"><Image src={iconSnorkel} alt="Snorkel" class="w-10 h-10 lg:w-12 lg:h-12 object-contain" width={48} height={48} /></div>
-          <div class="flex items-center justify-center h-10 lg:h-12"><Image src={iconPaddleboard} alt="Paddleboard" class="w-10 h-10 lg:w-12 lg:h-12 object-contain" width={48} height={48} /></div>
-          <div class="flex items-center justify-center h-10 lg:h-12"><span class="material-symbols-outlined filled text-gold text-2xl lg:text-3xl leading-none">local_bar</span></div>
-        </div>
         <div class="space-y-4">
-          <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-accent-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$1,520</span><div class="flex items-baseline gap-2"><span class="text-slate-500 text-[11px] font-medium uppercase">from</span><span class="text-navy font-bold text-2xl lg:text-2xl">$1,292</span><span class="text-slate-500 text-[11px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="flex flex-col items-end"><span class="text-slate-500 text-[11px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-accent-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-500 text-[9px] font-medium">/pp</span></div></div></div>
+          <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-accent-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$1,520</span><div class="flex items-baseline gap-2"><span class="text-slate-500 text-[11px] font-medium uppercase">desde</span><span class="text-navy font-bold text-2xl lg:text-2xl">$1,292</span><span class="text-slate-500 text-[11px] font-medium uppercase">/ 1-4 invitados</span></div></div><div class="flex flex-col items-end"><span class="text-slate-500 text-[11px] font-medium">Invitados extra</span><div class="flex items-baseline gap-1"><span class="text-accent-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-500 text-[9px] font-medium">/pp</span></div></div></div>
         </div>
         <button type="button" onclick="openRezdyModal('528988')" class="block w-full bg-navy text-white font-bold text-[11px] lg:text-[10px] py-3.5 lg:py-3 rounded-xl uppercase tracking-[0.1em] lg:tracking-[0.15em] text-center shadow-lg">Ver Disponibilidad</button>
       </div>
@@ -407,32 +412,32 @@ import iconPaddleboard from '../../assets/icons/paddle-board-clean.png';
 
     <!-- 42' Luxury Yacht -->
     <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="yacht-42">
-      <div class="fleet-img-wrap w-full relative">
-        <div class="boat-carousel relative w-full h-full">
-          <Image src={yacht42_1} alt="Luxury Yacht 42'" class="boat-slide boat-hero absolute inset-0 opacity-100 transition-opacity duration-700" width={800} height={400} />
-          <Image src={yacht42_2} alt="Luxury Yacht 42'" class="boat-slide absolute inset-0 opacity-0 transition-opacity duration-700" width={800} height={400} />
-          <Image src={yacht42_3} alt="Luxury Yacht 42'" class="boat-slide absolute inset-0 opacity-0 transition-opacity duration-700" width={800} height={400} />
-          <Image src={yacht42_4} alt="Luxury Yacht 42'" class="boat-slide absolute inset-0 opacity-0 transition-opacity duration-700" width={800} height={400} />
-        </div>
+      <div class={`fleet-img-wrap w-full relative ${fleetImages['yacht-42'].length > 1 ? 'activity-carousel' : ''}`}>
+        {fleetImages['yacht-42'].map((img, idx) => (
+          <Image src={img} alt="Yate de Lujo 42' charter privado en Cabo San Lucas" class={`activity-slide w-full h-full object-cover object-center ${idx > 0 ? 'absolute inset-0' : ''}`} style={`transform: scale(1.1); opacity:${idx === 0 ? 1 : 0}; transition: opacity 0.5s ease-in-out;`} width={1023} height={1537} format="png" quality={100} />
+        ))}
+        {fleetImages['yacht-42'].length > 1 && (
+          <><button class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_left</span></button>
+          <button class="carousel-next absolute right-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_right</span></button>
+          <div class="carousel-dots absolute bottom-3 left-1/2 -translate-x-1/2 z-20 flex gap-2"></div>
+        <div class="swipe-hint md:hidden absolute inset-0 z-20 pointer-events-none flex items-center justify-center">
+          <div class="bg-black/55 backdrop-blur-sm text-white px-5 py-2.5 rounded-full flex items-center gap-2 shadow-2xl">
+            <span class="material-symbols-outlined text-2xl">arrow_back</span>
+            <span class="text-[11px] uppercase tracking-widest font-bold">Desliza</span>
+            <span class="material-symbols-outlined text-2xl">arrow_forward</span>
+          </div>
+        </div></>
+        )}
         <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
         <div class="absolute bottom-5 left-6">
-          <h4 class="text-white text-lg lg:text-xl">Luxury Yacht 42'</h4>
+          <h4 class="text-white text-lg lg:text-xl">Yate de Lujo 42'</h4>
           <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs lg:text-[10px] mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-sm lg:text-base">group</span><span>Hasta 18 Invitados</span></div>
         </div>
         <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[9px] font-bold px-2.5 py-1 lg:px-3 lg:py-1 rounded-full uppercase tracking-widest">Mejor Valor</div>
-        <div class="absolute bottom-4 right-4 bg-accent-gold-dark text-white text-sm font-bold px-2.5 py-1 rounded-lg shadow-lg z-10">-30%</div>
-        <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
-        <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
       </div>
       <div class="p-4 space-y-4 lg:p-4 lg:space-y-4">
-        <div class="grid grid-cols-4 gap-1 pb-3 border-b border-border-light/50">
-          <div class="flex items-center justify-center h-10 lg:h-12"><span class="material-symbols-outlined filled text-gold text-2xl lg:text-3xl leading-none">dry_cleaning</span></div>
-          <div class="flex items-center justify-center h-10 lg:h-12"><Image src={iconSnorkel} alt="Snorkel" class="w-10 h-10 lg:w-12 lg:h-12 object-contain" width={48} height={48} /></div>
-          <div class="flex items-center justify-center h-10 lg:h-12"><Image src={iconPaddleboard} alt="Paddleboard" class="w-10 h-10 lg:w-12 lg:h-12 object-contain" width={48} height={48} /></div>
-          <div class="flex items-center justify-center h-10 lg:h-12"><span class="material-symbols-outlined filled text-gold text-2xl lg:text-3xl leading-none">local_bar</span></div>
-        </div>
         <div class="space-y-4">
-          <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-accent-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$1,350</span><div class="flex items-baseline gap-2"><span class="text-slate-500 text-[11px] font-medium uppercase">from</span><span class="text-navy font-bold text-2xl lg:text-2xl">$1,148</span><span class="text-slate-500 text-[11px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="flex flex-col items-end"><span class="text-slate-500 text-[11px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-accent-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-500 text-[9px] font-medium">/pp</span></div></div></div>
+          <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-accent-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$1,350</span><div class="flex items-baseline gap-2"><span class="text-slate-500 text-[11px] font-medium uppercase">desde</span><span class="text-navy font-bold text-2xl lg:text-2xl">$1,148</span><span class="text-slate-500 text-[11px] font-medium uppercase">/ 1-4 invitados</span></div></div><div class="flex flex-col items-end"><span class="text-slate-500 text-[11px] font-medium">Invitados extra</span><div class="flex items-baseline gap-1"><span class="text-accent-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-500 text-[9px] font-medium">/pp</span></div></div></div>
         </div>
         <button type="button" onclick="openRezdyModal('168008')" class="block w-full bg-navy text-white font-bold text-[11px] lg:text-[10px] py-3.5 lg:py-3 rounded-xl uppercase tracking-[0.1em] lg:tracking-[0.15em] text-center shadow-lg">Ver Disponibilidad</button>
       </div>
@@ -450,32 +455,32 @@ import iconPaddleboard from '../../assets/icons/paddle-board-clean.png';
 
     <!-- 42' Sailing Boat -->
     <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="sailing-42">
-      <div class="fleet-img-wrap w-full relative">
-        <div class="boat-carousel relative w-full h-full">
-          <Image src={heroSlide3} alt="Sailing Boat 42'" class="boat-slide boat-hero absolute inset-0 opacity-100 transition-opacity duration-700" width={800} height={400} />
-          <Image src={sailing42_2} alt="Sailing Boat 42'" class="boat-slide absolute inset-0 opacity-0 transition-opacity duration-700" width={800} height={400} />
-          <Image src={sailing42_3} alt="Sailing Boat 42'" class="boat-slide absolute inset-0 opacity-0 transition-opacity duration-700" width={800} height={400} />
-          <Image src={actPrivateSnorkeling} alt="Sailing Boat 42'" class="boat-slide absolute inset-0 opacity-0 transition-opacity duration-700" width={800} height={400} />
-          <Image src={sailing42_5} alt="Sailing Boat 42'" class="boat-slide absolute inset-0 opacity-0 transition-opacity duration-700" width={800} height={400} />
-        </div>
+      <div class={`fleet-img-wrap w-full relative ${fleetImages['sailing-42'].length > 1 ? 'activity-carousel' : ''}`}>
+        {fleetImages['sailing-42'].map((img, idx) => (
+          <Image src={img} alt="Velero 42' charter privado en Cabo San Lucas" class={`activity-slide w-full h-full object-cover object-center ${idx > 0 ? 'absolute inset-0' : ''}`} style={`transform: scale(1.1); opacity:${idx === 0 ? 1 : 0}; transition: opacity 0.5s ease-in-out;`} width={1024} height={1536} format="png" quality={100} />
+        ))}
+        {fleetImages['sailing-42'].length > 1 && (
+          <><button class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_left</span></button>
+          <button class="carousel-next absolute right-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_right</span></button>
+          <div class="carousel-dots absolute bottom-3 left-1/2 -translate-x-1/2 z-20 flex gap-2"></div>
+        <div class="swipe-hint md:hidden absolute inset-0 z-20 pointer-events-none flex items-center justify-center">
+          <div class="bg-black/55 backdrop-blur-sm text-white px-5 py-2.5 rounded-full flex items-center gap-2 shadow-2xl">
+            <span class="material-symbols-outlined text-2xl">arrow_back</span>
+            <span class="text-[11px] uppercase tracking-widest font-bold">Desliza</span>
+            <span class="material-symbols-outlined text-2xl">arrow_forward</span>
+          </div>
+        </div></>
+        )}
         <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
         <div class="absolute bottom-5 left-6">
-          <h4 class="text-white text-lg lg:text-xl">Sailing Boat 42'</h4>
+          <h4 class="text-white text-lg lg:text-xl">Velero 42'</h4>
           <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs lg:text-[10px] mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-sm lg:text-base">group</span><span>Hasta 14 Invitados</span></div>
         </div>
         <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[9px] font-bold px-2.5 py-1 lg:px-3 lg:py-1 rounded-full uppercase tracking-widest">Mejor Valor</div>
-        <div class="absolute bottom-4 right-4 bg-accent-gold-dark text-white text-sm font-bold px-2.5 py-1 rounded-lg shadow-lg z-10">-30%</div>
-        <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
-        <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
       </div>
       <div class="p-4 space-y-4 lg:p-4 lg:space-y-4">
-        <div class="grid grid-cols-3 gap-1 pb-3 border-b border-border-light/50">
-          <div class="flex items-center justify-center h-10 lg:h-12"><span class="material-symbols-outlined filled text-gold text-2xl lg:text-3xl leading-none">dry_cleaning</span></div>
-          <div class="flex items-center justify-center h-10 lg:h-12"><Image src={iconSnorkel} alt="Snorkel" class="w-10 h-10 lg:w-12 lg:h-12 object-contain" width={48} height={48} /></div>
-          <div class="flex items-center justify-center h-10 lg:h-12"><span class="material-symbols-outlined filled text-gold text-2xl lg:text-3xl leading-none">local_bar</span></div>
-        </div>
         <div class="space-y-4">
-          <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-accent-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$1,090</span><div class="flex items-baseline gap-2"><span class="text-slate-500 text-[11px] font-medium uppercase">from</span><span class="text-navy font-bold text-2xl lg:text-2xl">$927</span><span class="text-slate-500 text-[11px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="flex flex-col items-end"><span class="text-slate-500 text-[11px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-accent-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-500 text-[9px] font-medium">/pp</span></div></div></div>
+          <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-accent-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$1,090</span><div class="flex items-baseline gap-2"><span class="text-slate-500 text-[11px] font-medium uppercase">desde</span><span class="text-navy font-bold text-2xl lg:text-2xl">$927</span><span class="text-slate-500 text-[11px] font-medium uppercase">/ 1-4 invitados</span></div></div><div class="flex flex-col items-end"><span class="text-slate-500 text-[11px] font-medium">Invitados extra</span><div class="flex items-baseline gap-1"><span class="text-accent-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-500 text-[9px] font-medium">/pp</span></div></div></div>
         </div>
         <a href="https://wa.me/526241916997?text=Hi%2C%20I'd%20like%20to%20book%20the%20Sailing%20Boat%2042" target="_blank" class="block w-full bg-navy text-white font-bold text-[11px] lg:text-[10px] py-3.5 lg:py-3 rounded-xl uppercase tracking-[0.1em] lg:tracking-[0.15em] text-center shadow-lg">Ver Disponibilidad</a>
       </div>
@@ -483,30 +488,31 @@ import iconPaddleboard from '../../assets/icons/paddle-board-clean.png';
 
     <!-- 38' Sailing Boat -->
     <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="sailing-38">
-      <div class="fleet-img-wrap w-full relative">
-        <div class="boat-carousel relative w-full h-full">
-          <Image src={sailing38_1} alt="Sailing Boat 38'" class="boat-slide boat-hero absolute inset-0 opacity-100 transition-opacity duration-700" width={800} height={400} />
-          <Image src={sailing38_2} alt="Sailing Boat 38'" class="boat-slide absolute inset-0 opacity-0 transition-opacity duration-700" width={800} height={400} />
-          <Image src={sailing38_3} alt="Sailing Boat 38'" class="boat-slide absolute inset-0 opacity-0 transition-opacity duration-700" width={800} height={400} />
-          <Image src={sailing38_4} alt="Sailing Boat 38'" class="boat-slide absolute inset-0 opacity-0 transition-opacity duration-700" width={800} height={400} />
-        </div>
+      <div class={`fleet-img-wrap w-full relative ${fleetImages['sailing-38'].length > 1 ? 'activity-carousel' : ''}`}>
+        {fleetImages['sailing-38'].map((img, idx) => (
+          <Image src={img} alt="Velero 38' charter privado en Cabo San Lucas" class={`activity-slide w-full h-full object-cover object-center ${idx > 0 ? 'absolute inset-0' : ''}`} style={`transform: scale(1.1); opacity:${idx === 0 ? 1 : 0}; transition: opacity 0.5s ease-in-out;`} width={1024} height={1536} format="png" quality={100} />
+        ))}
+        {fleetImages['sailing-38'].length > 1 && (
+          <><button class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_left</span></button>
+          <button class="carousel-next absolute right-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_right</span></button>
+          <div class="carousel-dots absolute bottom-3 left-1/2 -translate-x-1/2 z-20 flex gap-2"></div>
+        <div class="swipe-hint md:hidden absolute inset-0 z-20 pointer-events-none flex items-center justify-center">
+          <div class="bg-black/55 backdrop-blur-sm text-white px-5 py-2.5 rounded-full flex items-center gap-2 shadow-2xl">
+            <span class="material-symbols-outlined text-2xl">arrow_back</span>
+            <span class="text-[11px] uppercase tracking-widest font-bold">Desliza</span>
+            <span class="material-symbols-outlined text-2xl">arrow_forward</span>
+          </div>
+        </div></>
+        )}
         <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
         <div class="absolute bottom-5 left-6">
-          <h4 class="text-white text-lg lg:text-xl">Sailing Boat 38'</h4>
+          <h4 class="text-white text-lg lg:text-xl">Velero 38'</h4>
           <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs lg:text-[10px] mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-sm lg:text-base">group</span><span>Hasta 9 Invitados</span></div>
         </div>
-        <div class="absolute bottom-4 right-4 bg-accent-gold-dark text-white text-sm font-bold px-2.5 py-1 rounded-lg shadow-lg z-10">-30%</div>
-        <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
-        <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
       </div>
       <div class="p-4 space-y-4 lg:p-4 lg:space-y-4">
-        <div class="grid grid-cols-3 gap-1 pb-3 border-b border-border-light/50">
-          <div class="flex items-center justify-center h-10 lg:h-12"><span class="material-symbols-outlined filled text-gold text-2xl lg:text-3xl leading-none">dry_cleaning</span></div>
-          <div class="flex items-center justify-center h-10 lg:h-12"><Image src={iconSnorkel} alt="Snorkel" class="w-10 h-10 lg:w-12 lg:h-12 object-contain" width={48} height={48} /></div>
-          <div class="flex items-center justify-center h-10 lg:h-12"><span class="material-symbols-outlined filled text-gold text-2xl lg:text-3xl leading-none">local_bar</span></div>
-        </div>
         <div class="space-y-4">
-          <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-accent-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$825</span><div class="flex items-baseline gap-2"><span class="text-slate-500 text-[11px] font-medium uppercase">from</span><span class="text-navy font-bold text-2xl lg:text-2xl">$701</span><span class="text-slate-500 text-[11px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="flex flex-col items-end"><span class="text-slate-500 text-[11px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-accent-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-500 text-[9px] font-medium">/pp</span></div></div></div>
+          <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-accent-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$825</span><div class="flex items-baseline gap-2"><span class="text-slate-500 text-[11px] font-medium uppercase">desde</span><span class="text-navy font-bold text-2xl lg:text-2xl">$701</span><span class="text-slate-500 text-[11px] font-medium uppercase">/ 1-4 invitados</span></div></div><div class="flex flex-col items-end"><span class="text-slate-500 text-[11px] font-medium">Invitados extra</span><div class="flex items-baseline gap-1"><span class="text-accent-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-500 text-[9px] font-medium">/pp</span></div></div></div>
         </div>
         <button type="button" onclick="openRezdyModal('165682')" class="block w-full bg-navy text-white font-bold text-[11px] lg:text-[10px] py-3.5 lg:py-3 rounded-xl uppercase tracking-[0.1em] lg:tracking-[0.15em] text-center shadow-lg">Ver Disponibilidad</button>
       </div>
@@ -514,34 +520,22 @@ import iconPaddleboard from '../../assets/icons/paddle-board-clean.png';
 
     <!-- Shared Sailing Card -->
     <div class="w-full bg-white border-2 border-navy/80 rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/10">
-      <div class="bg-navy text-white text-center py-2 lg:py-2.5 text-[11px] lg:text-[10px] font-bold uppercase tracking-[0.15em] lg:tracking-[0.2em] flex items-center justify-center gap-2"><span class="material-symbols-outlined text-gold text-sm lg:text-base">groups</span>Velero Compartido — Unete a Otros</div>
-      <div class="fleet-img-wrap w-full relative" style="border-radius:0 0 0 0;">
-        <div class="boat-carousel relative w-full h-full">
-          <Image src={sharedSailing1} alt="Sailing 42'" class="boat-slide boat-hero absolute inset-0 opacity-100 transition-opacity duration-700" width={800} height={400} />
-          <Image src={sharedSailing2} alt="Sailing 42'" class="boat-slide absolute inset-0 opacity-0 transition-opacity duration-700" width={800} height={400} />
-          <Image src={sharedSailing3} alt="Sailing 42'" class="boat-slide absolute inset-0 opacity-0 transition-opacity duration-700" width={800} height={400} />
-        </div>
+      <div class="fleet-img-wrap w-full relative">
+        <Image src={sharedSailingBoat} alt="Velero compartido 42' en Cabo San Lucas" class="w-full h-full object-cover" style="transform: scale(1.1); object-position: center 90%;" width={1023} height={1537} format="png" quality={100} />
         <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
         <div class="absolute bottom-5 left-6">
-          <h4 class="text-white text-lg lg:text-xl">Sailing Boat 38'–42'</h4>
+          <h4 class="text-white text-lg lg:text-xl">Velero 38'–42'</h4>
           <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs lg:text-[10px] mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-sm lg:text-base">group</span><span>Hasta 12 Invitados</span></div>
         </div>
         <div class="absolute top-4 right-4 bg-accent-gold-dark text-white text-[10px] lg:text-[9px] font-bold px-2.5 py-1 lg:px-3 lg:py-1 rounded-full uppercase tracking-widest">Solo 12 Lugares Por Tour</div>
-        <div class="absolute bottom-4 right-4 bg-accent-gold-dark text-white text-sm font-bold px-2.5 py-1 rounded-lg shadow-lg z-10">-30%</div>
-        <button class="fleet-arrow left" onclick="fleetNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
-        <button class="fleet-arrow right" onclick="fleetNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
       </div>
       <div class="p-4 space-y-4 lg:p-4 lg:space-y-4">
-        <div class="grid grid-cols-3 gap-1 pb-3 border-b border-border-light/50">
-          <div class="flex items-center justify-center h-10 lg:h-12"><span class="material-symbols-outlined filled text-gold text-2xl lg:text-3xl leading-none">dry_cleaning</span></div>
-          <div class="flex items-center justify-center h-10 lg:h-12"><Image src={iconSnorkel} alt="Snorkel" class="w-10 h-10 lg:w-12 lg:h-12 object-contain" width={48} height={48} /></div>
-          <div class="flex items-center justify-center h-10 lg:h-12"><span class="material-symbols-outlined filled text-gold text-2xl lg:text-3xl leading-none">local_bar</span></div>
-        </div>
         <div class="space-y-4">
-          <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-accent-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$120</span><div class="flex items-baseline gap-2"><span class="text-slate-500 text-[11px] font-medium uppercase">from</span><span class="text-navy font-bold text-2xl lg:text-2xl">$102</span><span class="text-slate-500 text-[11px] font-medium uppercase">/ person</span></div></div></div>
+          <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-accent-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$120</span><div class="flex items-baseline gap-2"><span class="text-slate-500 text-[11px] font-medium uppercase">desde</span><span class="text-navy font-bold text-2xl lg:text-2xl">$102</span><span class="text-slate-500 text-[11px] font-medium uppercase">/ persona</span></div></div></div>
         </div>
-        <button type="button" onclick="openRezdyModal('642955','productsCalendar')" class="block w-full bg-navy text-white font-bold text-[11px] lg:text-[10px] py-3.5 lg:py-3 rounded-xl uppercase tracking-[0.1em] lg:tracking-[0.15em] text-center shadow-lg">Ver Disponibilidad</button>
+        <button type="button" onclick="openRezdyModal('642955','productsCalendar')" class="block w-full bg-accent-gold text-white font-bold text-[11px] lg:text-[10px] py-3.5 lg:py-3 rounded-xl uppercase tracking-[0.1em] lg:tracking-[0.15em] text-center shadow-lg">Ver Disponibilidad</button>
       </div>
+      <div class="bg-navy text-white text-center py-2 lg:py-2.5 text-[11px] lg:text-[10px] font-bold uppercase tracking-[0.15em] lg:tracking-[0.2em] flex items-center justify-center gap-2"><span class="material-symbols-outlined text-gold text-sm lg:text-base">groups</span>Velero Compartido — Unete a Otros</div>
     </div>
 
   </div>
@@ -551,39 +545,39 @@ import iconPaddleboard from '../../assets/icons/paddle-board-clean.png';
 <!-- Why Choose Cabo Sailing -->
 <div class="px-6 mb-10 lg:max-w-[1400px] lg:mx-auto lg:px-10">
   <div class="mb-6">
-    <p class="text-sm font-bold uppercase tracking-[0.2em] text-accent-gold mb-2">The Cabo Sailing Difference</p>
-    <h2 class="text-2xl font-serif text-navy font-semibold leading-tight">Why Choose Cabo Sailing</h2>
+    <p class="text-sm font-bold uppercase tracking-[0.2em] text-accent-gold mb-2">La Diferencia de Cabo Sailing</p>
+    <h2 class="text-2xl font-serif text-navy font-semibold leading-tight">Por Que Elegir Cabo Sailing</h2>
   </div>
   <div class="grid grid-cols-2 lg:grid-cols-3 gap-4">
     <div class="bg-surface-light border border-border-light rounded-2xl p-5">
       <span class="material-symbols-outlined text-accent-gold text-2xl mb-3 block">anchor</span>
-      <h3 class="text-sm font-bold text-navy uppercase tracking-wider mb-2">Expert Local Crew</h3>
-      <p class="text-base text-navy/70 leading-relaxed">Bilingual captains with 10+ years sailing Cabo's waters. Your safety and fun are our top priority.</p>
+      <h3 class="text-sm font-bold text-navy uppercase tracking-wider mb-2">Tripulacion Local Experta</h3>
+      <p class="text-base text-navy/70 leading-relaxed">Capitanes bilingues con mas de 10 anos navegando las aguas de Cabo. Tu seguridad y diversion son nuestra prioridad.</p>
     </div>
     <div class="bg-surface-light border border-border-light rounded-2xl p-5">
       <span class="material-symbols-outlined text-accent-gold text-2xl mb-3 block">local_bar</span>
-      <h3 class="text-sm font-bold text-navy uppercase tracking-wider mb-2">All-Inclusive</h3>
-      <p class="text-base text-navy/70 leading-relaxed">Premium open bar, excellent food, all the amenities. No hidden fees.</p>
+      <h3 class="text-sm font-bold text-navy uppercase tracking-wider mb-2">Todo Incluido</h3>
+      <p class="text-base text-navy/70 leading-relaxed">Barra libre premium, excelente comida y todas las comodidades. Sin cargos ocultos.</p>
     </div>
     <div class="bg-surface-light border border-border-light rounded-2xl p-5">
       <span class="material-symbols-outlined text-accent-gold text-2xl mb-3 block">sailing</span>
-      <h3 class="text-sm font-bold text-navy uppercase tracking-wider mb-2">Best Boats in Cabo</h3>
-      <p class="text-base text-navy/70 leading-relaxed">Inviting 38' to 51' luxury yachts and sailing. Owned and managed in-house.</p>
+      <h3 class="text-sm font-bold text-navy uppercase tracking-wider mb-2">Los Mejores Barcos en Cabo</h3>
+      <p class="text-base text-navy/70 leading-relaxed">Acogedores yates y veleros de lujo de 38' a 51'. Propios y gestionados internamente.</p>
     </div>
     <div class="bg-surface-light border border-border-light rounded-2xl p-5">
       <span class="material-symbols-outlined text-accent-gold text-2xl mb-3 block">savings</span>
-      <h3 class="text-sm font-bold text-navy uppercase tracking-wider mb-2">Book Direct & Save</h3>
-      <p class="text-base text-navy/70 leading-relaxed">Book direct and enjoy our monthly discount.</p>
+      <h3 class="text-sm font-bold text-navy uppercase tracking-wider mb-2">Reserva Directo y Ahorra</h3>
+      <p class="text-base text-navy/70 leading-relaxed">Reserva con nosotros directamente y disfruta de nuestro descuento mensual.</p>
     </div>
     <div class="bg-surface-light border border-border-light rounded-2xl p-5">
       <span class="material-symbols-outlined text-accent-gold text-2xl mb-3 block">groups</span>
-      <h3 class="text-sm font-bold text-navy uppercase tracking-wider mb-2">Private & Shared</h3>
-      <p class="text-base text-navy/70 leading-relaxed">Charter the whole boat for your group, or join a small shared tour — perfect for every budget.</p>
+      <h3 class="text-sm font-bold text-navy uppercase tracking-wider mb-2">Privado y Compartido</h3>
+      <p class="text-base text-navy/70 leading-relaxed">Renta el barco completo para tu grupo o unete a un pequeno tour compartido — perfecto para cualquier presupuesto.</p>
     </div>
     <div class="bg-surface-light border border-border-light rounded-2xl p-5">
       <span class="material-symbols-outlined text-accent-gold text-2xl mb-3 block">recommend</span>
-      <h3 class="text-sm font-bold text-navy uppercase tracking-wider mb-2">5-Star Rated</h3>
-      <p class="text-base text-navy/70 leading-relaxed">Hundreds of 5-star reviews on TripAdvisor and Google. Cabo's most trusted sailing charter.</p>
+      <h3 class="text-sm font-bold text-navy uppercase tracking-wider mb-2">Calificacion 5 Estrellas</h3>
+      <p class="text-base text-navy/70 leading-relaxed">Cientos de resenas de 5 estrellas en TripAdvisor y Google. El charter mas confiable de Cabo.</p>
     </div>
   </div>
 </div>
@@ -610,27 +604,27 @@ import iconPaddleboard from '../../assets/icons/paddle-board-clean.png';
     <div class="relative">
       <div id="reviews-carousel" class="flex overflow-x-auto gap-6 no-scrollbar snap-x snap-mandatory pb-4 lg:overflow-hidden">
         <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-white/60 backdrop-blur-sm p-8 rounded-2xl border border-white/40 shadow-sm">
-          <p class="text-navy/70 text-base italic mb-6 leading-relaxed">"Absolutely the highlight of our trip. The crew was impeccable and the yacht was stunning. Exceeded all our expectations from booking to the final sail."</p>
+          <p class="text-navy/70 text-base italic mb-6 leading-relaxed">"Sin duda lo mejor de nuestro viaje. La tripulacion fue impecable y el yate espectacular. Superaron todas nuestras expectativas desde la reserva hasta el ultimo paseo."</p>
           <div class="flex items-center gap-2"><span class="text-navy text-sm font-bold uppercase tracking-widest">— Sarah J.</span></div>
         </div>
         <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-white/60 backdrop-blur-sm p-8 rounded-2xl border border-white/40 shadow-sm">
-          <p class="text-navy/70 text-base italic mb-6 leading-relaxed">"Sunset cruise was magical. Service was top notch, food was delicious. Highly recommend! The colors over Land's End were unforgettable."</p>
+          <p class="text-navy/70 text-base italic mb-6 leading-relaxed">"El crucero al atardecer fue magico. Servicio de primera, comida deliciosa. Muy recomendado! Los colores sobre Land's End fueron inolvidables."</p>
           <div class="flex items-center gap-2"><span class="text-navy text-sm font-bold uppercase tracking-widest">— Mike T.</span></div>
         </div>
         <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-white/60 backdrop-blur-sm p-8 rounded-2xl border border-white/40 shadow-sm">
-          <p class="text-navy/70 text-base italic mb-6 leading-relaxed">"Best snorkeling experience in Cabo! The crew made us feel so welcome, the open bar was fantastic, and seeing the Arch from the water was breathtaking. Already planning to come back!"</p>
+          <p class="text-navy/70 text-base italic mb-6 leading-relaxed">"La mejor experiencia de snorkel en Cabo! La tripulacion nos hizo sentir muy bienvenidos, la barra libre fue fantastica y ver el Arco desde el agua fue impresionante. Ya estamos planeando volver!"</p>
           <div class="flex items-center gap-2"><span class="text-navy text-sm font-bold uppercase tracking-widest">— Jessica R.</span></div>
         </div>
         <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-white/60 backdrop-blur-sm p-8 rounded-2xl border border-white/40 shadow-sm">
-          <p class="text-navy/70 text-base italic mb-6 leading-relaxed">"We booked the private whale watching tour and it was incredible. Saw humpbacks breaching just meters from the boat. The captain knew exactly where to go. A once-in-a-lifetime experience!"</p>
+          <p class="text-navy/70 text-base italic mb-6 leading-relaxed">"Reservamos el tour privado de avistamiento de ballenas y fue increible. Vimos jorobadas saltando a pocos metros del barco. El capitan sabia exactamente a donde ir. Una experiencia unica en la vida!"</p>
           <div class="flex items-center gap-2"><span class="text-navy text-sm font-bold uppercase tracking-widest">— David & Lisa M.</span></div>
         </div>
         <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-white/60 backdrop-blur-sm p-8 rounded-2xl border border-white/40 shadow-sm">
-          <p class="text-navy/70 text-base italic mb-6 leading-relaxed">"Planned our bachelorette party through Cabo Sailing and it was perfection. The girls loved every second — the music, the drinks, the vibes. They handled everything so we could just enjoy."</p>
+          <p class="text-navy/70 text-base italic mb-6 leading-relaxed">"Organizamos nuestra despedida de soltera con Cabo Sailing y fue perfecta. A las chicas les encanto cada segundo — la musica, las bebidas, el ambiente. Se encargaron de todo para que solo disfrutaramos."</p>
           <div class="flex items-center gap-2"><span class="text-navy text-sm font-bold uppercase tracking-widest">— Amanda K.</span></div>
         </div>
         <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-white/60 backdrop-blur-sm p-8 rounded-2xl border border-white/40 shadow-sm">
-          <p class="text-navy/70 text-base italic mb-6 leading-relaxed">"Third year in a row booking with Cabo Sailing. Consistent quality every time. The shared sunset tour is an unbeatable value — premium experience at a fraction of the private cost."</p>
+          <p class="text-navy/70 text-base italic mb-6 leading-relaxed">"Tercer ano consecutivo reservando con Cabo Sailing. Calidad constante cada vez. El tour compartido al atardecer es un valor insuperable — experiencia premium a una fraccion del costo privado."</p>
           <div class="flex items-center gap-2"><span class="text-navy text-sm font-bold uppercase tracking-widest">— Carlos G.</span></div>
         </div>
       </div>
@@ -713,32 +707,69 @@ import iconPaddleboard from '../../assets/icons/paddle-board-clean.png';
   }
 
   (function() {
-    var carousels = document.querySelectorAll('.activity-carousel');
-    var intervals = new Map();
-    function startCarousel(carousel) {
-      if (intervals.has(carousel)) return;
+    document.querySelectorAll('.activity-carousel').forEach(function(carousel) {
       var slides = carousel.querySelectorAll('.activity-slide');
       if (slides.length < 2) return;
       var current = 0;
-      var timer = setInterval(function() {
+      var dotsWrap = carousel.querySelector('.carousel-dots');
+
+      // Build dots
+      if (dotsWrap) {
+        slides.forEach(function(_, i) {
+          var dot = document.createElement('button');
+          dot.className = 'w-2 h-2 rounded-full transition-all ' + (i === 0 ? 'bg-white scale-125' : 'bg-white/50');
+          dot.addEventListener('click', function() { goTo(i); });
+          dotsWrap.appendChild(dot);
+        });
+      }
+
+      function goTo(idx) {
         slides[current].style.opacity = '0';
-        current = (current + 1) % slides.length;
+        current = ((idx % slides.length) + slides.length) % slides.length;
         slides[current].style.opacity = '1';
-      }, 3000);
-      intervals.set(carousel, timer);
-    }
-    function stopCarousel(carousel) {
-      if (!intervals.has(carousel)) return;
-      clearInterval(intervals.get(carousel));
-      intervals.delete(carousel);
-    }
+        if (dotsWrap) {
+          dotsWrap.querySelectorAll('button').forEach(function(d, i) {
+            d.className = 'w-2 h-2 rounded-full transition-all ' + (i === current ? 'bg-white scale-125' : 'bg-white/50');
+          });
+        }
+      }
+
+      // Arrow buttons
+      var prev = carousel.querySelector('.carousel-prev');
+      var next = carousel.querySelector('.carousel-next');
+      if (prev) prev.addEventListener('click', function() { goTo(current - 1); });
+      if (next) next.addEventListener('click', function() { goTo(current + 1); });
+
+      // Touch swipe
+      var startX = 0;
+      carousel.addEventListener('touchstart', function(e) { startX = e.touches[0].clientX; }, { passive: true });
+      carousel.addEventListener('touchend', function(e) {
+        var diff = startX - e.changedTouches[0].clientX;
+        if (Math.abs(diff) > 40) goTo(current + (diff > 0 ? 1 : -1));
+      });
+    });
+  })();
+
+  // Mobile swipe hint — fades in when carousel scrolls into view, then fades out
+  (function() {
+    var hints = document.querySelectorAll('.swipe-hint');
+    if (!hints.length || !('IntersectionObserver' in window)) return;
     var observer = new IntersectionObserver(function(entries) {
       entries.forEach(function(entry) {
-        if (entry.isIntersecting) { startCarousel(entry.target); }
-        else { stopCarousel(entry.target); }
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          observer.unobserve(entry.target);
+        }
       });
-    }, { threshold: 0.3 });
-    carousels.forEach(function(c) { observer.observe(c); });
+    }, { threshold: 0.5 });
+    hints.forEach(function(hint) {
+      // Hide instantly on first user touch on its carousel
+      var carousel = hint.closest('.activity-carousel');
+      if (carousel) {
+        carousel.addEventListener('touchstart', function() { hint.classList.add('dismissed'); }, { passive: true, once: true });
+      }
+      observer.observe(hint);
+    });
   })();
 
   var reviewsPage = 0;
@@ -767,5 +798,38 @@ import iconPaddleboard from '../../assets/icons/paddle-board-clean.png';
     });
   }
 </script>
+
+<style>
+  .activity-slide {
+    transform: scale(1);
+    transform-origin: center center;
+    will-change: transform, opacity;
+    transition: opacity 0.6s ease-in-out, transform 0.7s ease-in-out;
+    backface-visibility: hidden;
+  }
+  @media (hover: hover) {
+    .activity-carousel:hover .activity-slide,
+    .group:hover .activity-slide {
+      transform: scale(1.05);
+    }
+  }
+  .swipe-hint {
+    opacity: 0;
+  }
+  .swipe-hint.active {
+    animation: swipeHintShow 2.6s ease-in-out forwards;
+  }
+  .swipe-hint.dismissed {
+    opacity: 0 !important;
+    animation: none !important;
+    transition: opacity 0.25s ease-out;
+  }
+  @keyframes swipeHintShow {
+    0%   { opacity: 0; transform: translateY(6px); }
+    15%  { opacity: 1; transform: translateY(0); }
+    70%  { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(0); }
+  }
+</style>
 
 </BaseLayout>

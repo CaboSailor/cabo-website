@@ -1,7 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import logo from '../assets/images/cabo-sailing-logo.png';
-import { getLangFromUrl, getLocalePath, getAlternateLang } from '../i18n/utils';
+import { getLangFromUrl, getLocalePath, getAlternateLang, t } from '../i18n/utils';
 
 interface Props {
   variant?: 'home' | 'subpage';
@@ -13,28 +13,29 @@ const lang = getLangFromUrl(Astro.url);
 const altLang = getAlternateLang(lang);
 const currentPath = Astro.url.pathname;
 const switchUrl = getLocalePath(altLang, currentPath.replace(/^\/es(\/|$)/, '/'));
+const lp = (path: string) => getLocalePath(lang, path);
 
 const navLinks = [
-  { href: '/', label: 'Home', key: 'home' },
-  { href: '/tours', label: 'Tours', key: 'tours', hasDropdown: true },
-  { href: '/fleet', label: 'Our Fleet', key: 'fleet' },
-  { href: '/shuttle-service', label: 'Shuttle', key: 'shuttle' },
-  { href: '/travel-guide', label: 'Travel Guide', key: 'travel-guide' },
+  { href: lp('/'), label: t(lang, 'nav.home'), key: 'home' },
+  { href: lp('/tours'), label: t(lang, 'nav.tours'), key: 'tours', hasDropdown: true },
+  { href: lp('/fleet'), label: t(lang, 'nav.fleet'), key: 'fleet' },
+  { href: lp('/shuttle-service'), label: t(lang, 'nav.shuttle'), key: 'shuttle' },
+  { href: lp('/travel-guide'), label: t(lang, 'nav.travelGuide'), key: 'travel-guide' },
 ];
 
 const tourDropdown = [
-  { group: 'Snorkeling', items: [
-    { href: '/private-snorkeling', label: 'Private Snorkeling' },
-    { href: '/shared-snorkeling', label: 'Shared Snorkeling' },
+  { group: t(lang, 'nav.tourDropdown.snorkeling'), items: [
+    { href: lp('/private-snorkeling'), label: t(lang, 'nav.tourDropdown.privateSnorkeling') },
+    { href: lp('/shared-snorkeling'), label: t(lang, 'nav.tourDropdown.sharedSnorkeling') },
   ]},
-  { group: 'Sunset', items: [
-    { href: '/private-sunset', label: 'Private Sunset' },
-    { href: '/shared-sunset', label: 'Shared Sunset' },
+  { group: t(lang, 'nav.tourDropdown.sunset'), items: [
+    { href: lp('/private-sunset'), label: t(lang, 'nav.tourDropdown.privateSunset') },
+    { href: lp('/shared-sunset'), label: t(lang, 'nav.tourDropdown.sharedSunset') },
   ]},
   { group: null, items: [
-    { href: '/whale-watching', label: 'Whale Watching' },
-    { href: '/bachelorette', label: 'Bachelorette' },
-    { href: '/scuba-diving', label: 'Scuba Diving' },
+    { href: lp('/whale-watching'), label: t(lang, 'nav.tourDropdown.whaleWatching') },
+    { href: lp('/bachelorette'), label: t(lang, 'nav.tourDropdown.bachelorette') },
+    { href: lp('/scuba-diving'), label: t(lang, 'nav.tourDropdown.scubaDiving') },
   ]},
 ];
 ---
@@ -60,7 +61,7 @@ const tourDropdown = [
     </div>
     <!-- Desktop header -->
     <div class="desktop-only items-center justify-between px-10 py-3 max-w-[1400px] mx-auto">
-      <a href="/" class="flex-shrink-0">
+      <a href={lp('/')} class="flex-shrink-0">
         <Image src={logo} alt="Cabo Sailing" class="h-12 w-auto object-contain" width={301} height={69} />
       </a>
       <nav class="flex items-center gap-8">
@@ -102,7 +103,7 @@ const tourDropdown = [
         <i class="fa-brands fa-whatsapp text-2xl"></i>
       </a>
       <div class="flex-shrink-0 flex items-center justify-center">
-        <a href="/"><Image src={logo} alt="Cabo Sailing" class="h-10 w-auto object-contain" width={301} height={69} /></a>
+        <a href={lp('/')}><Image src={logo} alt="Cabo Sailing" class="h-10 w-auto object-contain" width={301} height={69} /></a>
       </div>
       <div class="flex items-center gap-2 -mr-2">
         <a href={switchUrl} class="text-[10px] font-bold uppercase tracking-widest text-navy border border-border-light rounded-full px-2 py-1">{altLang === 'es' ? 'ES' : 'EN'}</a>
@@ -116,7 +117,7 @@ const tourDropdown = [
     <!-- Desktop header (subpage) -->
     <header class="hidden lg:block fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-border-light/50 transition-all duration-300">
       <div class="flex items-center justify-between px-10 py-3 max-w-[1400px] mx-auto">
-        <a href="/" class="flex-shrink-0">
+        <a href={lp('/')} class="flex-shrink-0">
           <Image src={logo} alt="Cabo Sailing" class="h-12 w-auto object-contain" width={301} height={69} />
         </a>
         <nav class="flex items-center gap-8">

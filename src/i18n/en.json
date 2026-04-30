@@ -4,19 +4,22 @@
     "tours": "Tours",
     "fleet": "Our Fleet",
     "shuttle": "Shuttle",
+    "shuttleService": "Shuttle Service",
     "travelGuide": "Travel Guide",
-    "contact": "Contact Us"
-  },
-  "nav.tourDropdown": {
-    "snorkeling": "Snorkeling",
-    "sunset": "Sunset",
-    "privateSnorkeling": "Private Snorkeling",
-    "sharedSnorkeling": "Shared Snorkeling",
-    "privateSunset": "Private Sunset",
-    "sharedSunset": "Shared Sunset",
-    "whaleWatching": "Whale Watching",
-    "bachelorette": "Bachelorette",
-    "scubaDiving": "Scuba Diving"
+    "contact": "Contact Us",
+    "contactInfo": "Contact Info",
+    "specialOffers": "Special Offers",
+    "tourDropdown": {
+      "snorkeling": "Snorkeling",
+      "sunset": "Sunset",
+      "privateSnorkeling": "Private Snorkeling",
+      "sharedSnorkeling": "Shared Snorkeling",
+      "privateSunset": "Private Sunset",
+      "sharedSunset": "Shared Sunset",
+      "whaleWatching": "Whale Watching",
+      "bachelorette": "Bachelorette",
+      "scubaDiving": "Scuba Diving"
+    }
   },
   "common": {
     "moreInfo": "More Info",
@@ -53,6 +56,13 @@
     "aboutUs": "About Us",
     "quickLinks": "Quick Links",
     "contact": "Contact",
-    "rights": "All rights reserved."
+    "rights": "All rights reserved.",
+    "tours": "Tours",
+    "company": "Company",
+    "tagline": "Premium yacht and sailing charters in Cabo San Lucas. Creating unforgettable experiences on the Sea of Cortez.",
+    "aboutCrew": "About Our Crew",
+    "contactNow": "Contact Us Now",
+    "location": "Cabo San Lucas, Mexico",
+    "bachelorette": "Bachelorette Party"
   }
 }

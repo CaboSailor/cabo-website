@@ -6,13 +6,15 @@ import FloatingCTA from '../components/FloatingCTA.astro';
 import { Image } from 'astro:assets';
 
 // Tour card images
-import privateSnorkelingImg from "../assets/images/guests-on-sailboats/cabo-private-snorkeling-ocean-view.jpeg";
-import privateSunsetImg from "../assets/images/guests-on-yachts/cabo-yacht-charter-guests-01.jpg";
-import sharedSnorkelingImg from "../assets/images/guests-on-sailboats/cabo-sailboat-guests-snorkeling-02.jpg";
-import sharedSunsetImg from "../assets/images/guests-on-sailboats/cabo-sunset-sailing-cruise.jpeg";
-import whaleWatchingImg from "../assets/images/whales/cabo-whale-watching-breaching.jpg";
-import bacheloretteImg from "../assets/images/bachelorette/cabo-bachelorette-party-el-arco.png";
-import scubaDivingImg from "../assets/images/scuba-diving/scuba-divers-preparing-near-the-boat.png";
+import {
+  privateSnorkeling as privateSnorkelingImg,
+  privateSunset as privateSunsetImg,
+  sharedSnorkeling as sharedSnorkelingImg,
+  sharedSunset as sharedSunsetImg,
+  whaleWatching as whaleWatchingImg,
+  bachelorette as bacheloretteImg,
+  scubaDiving as scubaDivingImg,
+} from '../data/tour-heroes';
 
 const breadcrumbSchema = JSON.stringify({
   "@context": "https://schema.org",
@@ -24,7 +26,7 @@ const breadcrumbSchema = JSON.stringify({
 });
 ---
 
-<BaseLayout title="Tours — Cabo Sailing | Boat Tours in Cabo San Lucas" description="Explore all boat tours in Cabo San Lucas. Private & shared snorkeling, sunset cruises, whale watching, bachelorette parties & scuba diving.">
+<BaseLayout title="Tours — Cabo Sailing | Boat Tours in Cabo San Lucas" description="Explore all boat tours in Cabo San Lucas. Private & shared snorkeling, sunset cruises, whale watching, bachelorette parties & scuba diving." hreflangs={{ en: '/tours', es: '/es/tours' }}>
   <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
   <Header variant="subpage" activePage="tours" />
 
@@ -52,7 +54,7 @@ const breadcrumbSchema = JSON.stringify({
             <div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
           </div>
           <div class="p-4 text-center">
-            <h3 class="text-sm lg:text-base font-bold text-navy">Private Snorkeling</h3>
+            <h3 class="text-sm lg:text-base font-bold text-navy group-hover:text-gold transition-colors">Private Snorkeling</h3>
           </div>
         </a>
 
@@ -63,7 +65,7 @@ const breadcrumbSchema = JSON.stringify({
             <div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
           </div>
           <div class="p-4 text-center">
-            <h3 class="text-sm lg:text-base font-bold text-navy">Private Sunset</h3>
+            <h3 class="text-sm lg:text-base font-bold text-navy group-hover:text-gold transition-colors">Private Sunset</h3>
           </div>
         </a>
 
@@ -74,7 +76,7 @@ const breadcrumbSchema = JSON.stringify({
             <div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
           </div>
           <div class="p-4 text-center">
-            <h3 class="text-sm lg:text-base font-bold text-navy">Shared Snorkeling</h3>
+            <h3 class="text-sm lg:text-base font-bold text-navy group-hover:text-gold transition-colors">Shared Snorkeling</h3>
           </div>
         </a>
 
@@ -85,7 +87,7 @@ const breadcrumbSchema = JSON.stringify({
             <div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
           </div>
           <div class="p-4 text-center">
-            <h3 class="text-sm lg:text-base font-bold text-navy">Shared Sunset</h3>
+            <h3 class="text-sm lg:text-base font-bold text-navy group-hover:text-gold transition-colors">Shared Sunset</h3>
           </div>
         </a>
 
@@ -96,7 +98,7 @@ const breadcrumbSchema = JSON.stringify({
             <div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
           </div>
           <div class="p-4 text-center">
-            <h3 class="text-sm lg:text-base font-bold text-navy">Private Whale Watching</h3>
+            <h3 class="text-sm lg:text-base font-bold text-navy group-hover:text-gold transition-colors">Private Whale Watching</h3>
           </div>
         </a>
 
@@ -107,7 +109,7 @@ const breadcrumbSchema = JSON.stringify({
             <div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
           </div>
           <div class="p-4 text-center">
-            <h3 class="text-sm lg:text-base font-bold text-navy">Bachelorette Party</h3>
+            <h3 class="text-sm lg:text-base font-bold text-navy group-hover:text-gold transition-colors">Bachelorette Party</h3>
           </div>
         </a>
 
@@ -118,7 +120,7 @@ const breadcrumbSchema = JSON.stringify({
             <div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
           </div>
           <div class="p-4 text-center">
-            <h3 class="text-sm lg:text-base font-bold text-navy">Scuba Diving</h3>
+            <h3 class="text-sm lg:text-base font-bold text-navy group-hover:text-gold transition-colors">Scuba Diving</h3>
           </div>
         </a>
 

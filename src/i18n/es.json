@@ -4,19 +4,22 @@
     "tours": "Tours",
     "fleet": "Nuestra Flota",
     "shuttle": "Transporte",
+    "shuttleService": "Servicio de Transporte",
     "travelGuide": "Guia de Viaje",
-    "contact": "Contacto"
-  },
-  "nav.tourDropdown": {
-    "snorkeling": "Snorkel",
-    "sunset": "Atardecer",
-    "privateSnorkeling": "Snorkel Privado",
-    "sharedSnorkeling": "Snorkel Compartido",
-    "privateSunset": "Atardecer Privado",
-    "sharedSunset": "Atardecer Compartido",
-    "whaleWatching": "Avistamiento de Ballenas",
-    "bachelorette": "Despedida de Soltera",
-    "scubaDiving": "Buceo"
+    "contact": "Contacto",
+    "contactInfo": "Informacion de Contacto",
+    "specialOffers": "Ofertas Especiales",
+    "tourDropdown": {
+      "snorkeling": "Snorkel",
+      "sunset": "Atardecer",
+      "privateSnorkeling": "Snorkel Privado",
+      "sharedSnorkeling": "Snorkel Compartido",
+      "privateSunset": "Atardecer Privado",
+      "sharedSunset": "Atardecer Compartido",
+      "whaleWatching": "Avistamiento de Ballenas",
+      "bachelorette": "Despedida de Soltera",
+      "scubaDiving": "Buceo"
+    }
   },
   "common": {
     "moreInfo": "Mas Info",
@@ -53,6 +56,13 @@
     "aboutUs": "Sobre Nosotros",
     "quickLinks": "Enlaces Rapidos",
     "contact": "Contacto",
-    "rights": "Todos los derechos reservados."
+    "rights": "Todos los derechos reservados.",
+    "tours": "Tours",
+    "company": "Empresa",
+    "tagline": "Charters premium de yates y veleros en Cabo San Lucas. Creando experiencias inolvidables en el Mar de Cortes.",
+    "aboutCrew": "Nuestra Tripulacion",
+    "contactNow": "Contactanos Ahora",
+    "location": "Cabo San Lucas, Mexico",
+    "bachelorette": "Despedida de Soltera"
   }
 }

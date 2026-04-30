@@ -1,12 +1,13 @@
 ---
 import { Image } from 'astro:assets';
 import logo from '../assets/images/cabo-sailing-logo.png';
-import { getLangFromUrl, getLocalePath, getAlternateLang } from '../i18n/utils';
+import { getLangFromUrl, getLocalePath, getAlternateLang, t } from '../i18n/utils';
 
 const lang = getLangFromUrl(Astro.url);
 const altLang = getAlternateLang(lang);
 const currentPath = Astro.url.pathname;
 const switchUrl = getLocalePath(altLang, currentPath.replace(/^\/es(\/|$)/, '/'));
+const lp = (path: string) => getLocalePath(lang, path);
 ---
 
 <div id="menu-overlay" class="fixed inset-0 z-[100] flex flex-col h-screen w-full transition-opacity duration-300 hidden" style="background-color:#ffffff;background-image:url('data:image/svg+xml,%3Csvg width=\'100%25\' height=\'100%25\' viewBox=\'0 0 800 800\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'M-100,100 Q150,250 400,100 T900,100\' fill=\'none\' stroke=\'%23d4af37\' stroke-width=\'3\' stroke-opacity=\'0.15\'/%3E%3Cpath d=\'M-100,300 Q150,450 400,300 T900,300\' fill=\'none\' stroke=\'%23d4af37\' stroke-width=\'3\' stroke-opacity=\'0.12\'/%3E%3Cpath d=\'M-100,500 Q150,350 400,500 T900,500\' fill=\'none\' stroke=\'%23d4af37\' stroke-width=\'3\' stroke-opacity=\'0.1\'/%3E%3C/svg%3E');background-repeat:no-repeat;background-size:cover;">
@@ -21,15 +22,15 @@ const switchUrl = getLocalePath(altLang, currentPath.replace(/^\/es(\/|$)/, '/')
   </div>
   <div class="flex-1 overflow-y-auto py-6 px-8 flex flex-col justify-center relative z-10">
     <nav class="flex flex-col gap-6">
-      <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="/tours"><span class="material-symbols-outlined text-accent-gold group-hover:text-navy transition-colors text-2xl">explore</span><span class="font-semibold">Tours</span><span class="material-symbols-outlined ml-auto text-xl text-navy/30">chevron_right</span></a>
-      <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="/shuttle-service"><span class="material-symbols-outlined text-navy group-hover:text-accent-gold transition-colors text-2xl">airport_shuttle</span><span class="font-semibold">Shuttle Service</span></a>
-      <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="/fleet"><span class="material-symbols-outlined text-accent-gold group-hover:text-navy transition-colors text-2xl">sailing</span><span class="font-semibold">Our Fleet</span></a>
-      <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="#"><span class="material-symbols-outlined text-navy group-hover:text-accent-gold transition-colors text-2xl">stars</span><span class="font-semibold">Special Offers</span></a>
-      <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="/travel-guide"><span class="material-symbols-outlined text-navy group-hover:text-accent-gold transition-colors text-2xl">menu_book</span><span class="font-semibold">Travel Guide</span></a>
+      <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href={lp('/tours')}><span class="material-symbols-outlined text-accent-gold group-hover:text-navy transition-colors text-2xl">explore</span><span class="font-semibold">{t(lang, 'nav.tours')}</span><span class="material-symbols-outlined ml-auto text-xl text-navy/30">chevron_right</span></a>
+      <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href={lp('/shuttle-service')}><span class="material-symbols-outlined text-navy group-hover:text-accent-gold transition-colors text-2xl">airport_shuttle</span><span class="font-semibold">{t(lang, 'nav.shuttleService')}</span></a>
+      <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href={lp('/fleet')}><span class="material-symbols-outlined text-accent-gold group-hover:text-navy transition-colors text-2xl">sailing</span><span class="font-semibold">{t(lang, 'nav.fleet')}</span></a>
+      <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href="#"><span class="material-symbols-outlined text-navy group-hover:text-accent-gold transition-colors text-2xl">stars</span><span class="font-semibold">{t(lang, 'nav.specialOffers')}</span></a>
+      <a class="group flex items-center gap-4 text-xl font-serif text-navy hover:text-accent-gold transition-colors" href={lp('/travel-guide')}><span class="material-symbols-outlined text-navy group-hover:text-accent-gold transition-colors text-2xl">menu_book</span><span class="font-semibold">{t(lang, 'nav.travelGuide')}</span></a>
       <div>
         <div class="group flex items-center gap-4 text-xl font-serif text-navy">
           <span class="material-symbols-outlined text-navy text-2xl">mail</span>
-          <span class="font-semibold">Contact Info</span>
+          <span class="font-semibold">{t(lang, 'nav.contactInfo')}</span>
         </div>
         <div class="pl-10 mt-3 space-y-4">
           <a class="flex items-center gap-2 text-base text-navy/70 hover:text-accent-gold transition-colors" href="https://wa.me/526241916997?text=hi%2C%20I'm%20sending%20you%20a%20message%20from%20cabosailing.com" target="_blank"><i class="fa-brands fa-whatsapp text-[#25D366]"></i> +52 624 191 6997</a>
@@ -45,7 +46,7 @@ const switchUrl = getLocalePath(altLang, currentPath.replace(/^\/es(\/|$)/, '/')
       <a class="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center text-navy hover:text-accent-gold transition-colors bg-white shadow-sm" href="#"><i class="fa-brands fa-facebook-f text-xl"></i></a>
     </div>
     <a href="tel:+526241438485" class="w-full bg-navy text-white py-4 rounded-xl font-bold uppercase tracking-widest text-base flex items-center justify-center gap-2 shadow-lg">
-      <span class="material-symbols-outlined">call</span> Call Us Now
+      <span class="material-symbols-outlined">call</span> {t(lang, 'common.callUsNow')}
     </a>
   </div>
 </div>

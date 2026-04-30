@@ -6,12 +6,11 @@ import FloatingCTA from '../components/FloatingCTA.astro';
 import RezdyModal from '../components/RezdyModal.astro';
 import { Image } from 'astro:assets';
 
-import img_4k_01_38_47_13_Still123 from "../assets/images/guests-on-sailboats/cabo-sailboat-guests-snorkeling-01.jpg";
-import img_4k_01_16_49_02_Still113 from "../assets/images/guests-on-sailboats/cabo-sailboat-guests-snorkeling-02.jpg";
-import Cabo_Sailing_1 from "../assets/images/guests-on-sailboats/cabo-sailing-adventure-guests.jpg";
-import img_31_03_25_Gil_airbnb_shoot_photos_20mm_51_topaz_sharpen_exposure from "../assets/images/guests-on-sailboats/cabo-sailing-guests-portrait.jpg";
-import img_3_Yacht_42 from "../assets/images/boats/yacht-42/cabo-private-yacht-42-exterior-02.jpg";
-import Cabo_Sailing_Snorkeling_17 from "../assets/images/guests-on-sailboats/cabo-sailing-snorkeling-tour.jpg";
+import { privateSnorkeling as heroSunnyYachtCruise } from "../data/tour-heroes";
+import sunnySailboatAdventure from "../assets/images/guests-on-yachts/sunny-day-sailboat-adventure-on-the-coast.png";
+import relaxingLuxuryBoat from "../assets/images/guests-on-yachts/relaxing-day-on-a-luxury-boat.png";
+import sailingGuestsWaving from "../assets/images/guests-on-sailboats/cabo-sailing-guests-waving.jpg";
+import cheersCoastalAdventure from "../assets/images/guests-on-sailboats/cheers-on-a-sunny-coastal-adventure.png";
 import yacht51Boat from "../assets/images/boats/yacht-51/cabo-sailing-yacht-51-boat.png";
 import yacht45Img from "../assets/images/boats/yacht-45/cabo-private-yacht-45-charter.png";
 import yacht42Boat from "../assets/images/boats/yacht-42/cabo-sailig-yacht-42-boat.png";
@@ -71,11 +70,11 @@ const breadcrumbSchema = JSON.stringify({
 <!-- Hero Gallery -->
 <div class="lg:hidden relative w-full h-[45vh] overflow-hidden">
 <div class="flex overflow-x-auto snap-x snap-mandatory h-full no-scrollbar">
-<div class="flex-shrink-0 w-full h-full snap-center"><Image src={img_4k_01_38_47_13_Still123} alt="Aerial view sailboat in turquoise water" class="w-full h-full object-cover" width={800} height={500} /></div>
-<div class="flex-shrink-0 w-full h-full snap-center"><Image src={img_4k_01_16_49_02_Still113} alt="Happy snorkelers with thumbs up" class="w-full h-full object-cover" width={800} height={500} /></div>
-<div class="flex-shrink-0 w-full h-full snap-center"><Image src={Cabo_Sailing_1} alt="Woman jumping off bow into turquoise water" class="w-full h-full object-cover" width={800} height={500} /></div>
-<div class="flex-shrink-0 w-full h-full snap-center"><Image src={img_31_03_25_Gil_airbnb_shoot_photos_20mm_51_topaz_sharpen_exposure} alt="Happy guests with mimosas and El Arco" class="w-full h-full object-cover" width={800} height={500} /></div>
-<div class="flex-shrink-0 w-full h-full snap-center"><Image src={img_3_Yacht_42} alt="Yacht at El Arco with guests" class="w-full h-full object-cover" width={800} height={500} /></div>
+<div class="flex-shrink-0 w-full h-full snap-center"><Image src={heroSunnyYachtCruise} alt="Sunny yacht cruise on the open sea" class="w-full h-full object-cover" width={800} height={500} /></div>
+<div class="flex-shrink-0 w-full h-full snap-center"><Image src={sunnySailboatAdventure} alt="Sunny day sailboat adventure on the coast" class="w-full h-full object-cover" width={800} height={500} /></div>
+<div class="flex-shrink-0 w-full h-full snap-center"><Image src={relaxingLuxuryBoat} alt="Relaxing day on a luxury boat" class="w-full h-full object-cover" width={800} height={500} /></div>
+<div class="flex-shrink-0 w-full h-full snap-center"><Image src={sailingGuestsWaving} alt="Sailing guests waving from the boat" class="w-full h-full object-cover" width={800} height={500} /></div>
+<div class="flex-shrink-0 w-full h-full snap-center"><Image src={cheersCoastalAdventure} alt="Cheers on a sunny coastal adventure" class="w-full h-full object-cover" width={800} height={500} /></div>
 </div>
 <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent pt-10 pb-5 px-4">
   <div class="max-w-[360px] mx-auto text-center">
@@ -95,11 +94,11 @@ const breadcrumbSchema = JSON.stringify({
 </div>
 <div class="hidden lg:block max-w-[1400px] mx-auto px-10 mt-6 relative">
 <div class="grid grid-cols-4 grid-rows-2 gap-2 h-[55vh]" id="hero-desktop-grid">
-<div class="col-span-2 row-span-2 rounded-2xl overflow-hidden"><Image src={img_4k_01_38_47_13_Still123} alt="Aerial view sailboat in turquoise water" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
-<div class="rounded-2xl overflow-hidden"><Image src={img_4k_01_16_49_02_Still113} alt="Happy snorkelers with thumbs up" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
-<div class="rounded-2xl overflow-hidden"><Image src={Cabo_Sailing_1} alt="Woman jumping off bow into turquoise water" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
-<div class="rounded-2xl overflow-hidden"><Image src={img_31_03_25_Gil_airbnb_shoot_photos_20mm_51_topaz_sharpen_exposure} alt="Happy guests with mimosas and El Arco" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
-<div class="rounded-2xl overflow-hidden"><Image src={Cabo_Sailing_Snorkeling_17} alt="Underwater snorkeling with starfish" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
+<div class="col-span-2 row-span-2 rounded-2xl overflow-hidden"><Image src={heroSunnyYachtCruise} alt="Sunny yacht cruise on the open sea" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
+<div class="rounded-2xl overflow-hidden"><Image src={sunnySailboatAdventure} alt="Sunny day sailboat adventure on the coast" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
+<div class="rounded-2xl overflow-hidden"><Image src={relaxingLuxuryBoat} alt="Relaxing day on a luxury boat" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
+<div class="rounded-2xl overflow-hidden"><Image src={sailingGuestsWaving} alt="Sailing guests waving from the boat" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
+<div class="rounded-2xl overflow-hidden"><Image src={cheersCoastalAdventure} alt="Cheers on a sunny coastal adventure" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
 </div>
 <div class="mt-4 flex justify-center">
   <div class="max-w-[520px] flex items-start gap-4">
@@ -537,11 +536,11 @@ const breadcrumbSchema = JSON.stringify({
             </tr>
           </thead>
           <tbody class="text-sm">
-            <tr class="border-b border-border-light"><td class="py-3 pr-4 font-semibold text-navy">42' Yacht</td><td class="py-3 pr-4 text-slate-700">Up to 18</td><td class="py-3 text-slate-700">Luxury experience — lowest cost — snorkel in Chileno Bay</td></tr>
-            <tr class="border-b border-border-light bg-gold/5"><td class="py-3 pr-4 font-semibold text-navy"><span class="text-gold mr-1">&#11088;</span>45' Yacht</td><td class="py-3 pr-4 text-slate-700">Up to 12</td><td class="py-3 text-slate-700">Newest vessel — snorkel in Chileno Bay</td></tr>
-            <tr class="border-b border-border-light"><td class="py-3 pr-4 font-semibold text-navy">51' Yacht</td><td class="py-3 pr-4 text-slate-700">Up to 20</td><td class="py-3 text-slate-700">Most spacious, largest yacht — snorkel in Chileno Bay</td></tr>
-            <tr class="border-b border-border-light bg-gold/5"><td class="py-3 pr-4 font-semibold text-navy"><span class="text-gold mr-1">&#11088;</span>42' Sailboat</td><td class="py-3 pr-4 text-slate-700">Up to 14</td><td class="py-3 text-slate-700">True sailing experience — spacious vessel — snorkel at Pelican Rock</td></tr>
-            <tr><td class="py-3 pr-4 font-semibold text-navy">38' Sailboat</td><td class="py-3 pr-4 text-slate-700">Up to 9</td><td class="py-3 text-slate-700">Best sailing experience — snorkel at Pelican Rock</td></tr>
+            <tr class="border-b border-border-light"><td class="py-3 pr-4 font-semibold text-navy">42' Yacht</td><td class="py-3 pr-4 text-slate-700">Up to 18</td><td class="py-3 text-slate-700">Comfort + value — snorkel in Chileno Bay</td></tr>
+            <tr class="border-b border-border-light bg-gold/5"><td class="py-3 pr-4 font-semibold text-navy"><span class="text-gold mr-1">&#11088;</span>45' Yacht</td><td class="py-3 pr-4 text-slate-700">Up to 12</td><td class="py-3 text-slate-700">Premium feel — snorkel in Chileno Bay</td></tr>
+            <tr class="border-b border-border-light"><td class="py-3 pr-4 font-semibold text-navy">51' Yacht</td><td class="py-3 pr-4 text-slate-700">Up to 20</td><td class="py-3 text-slate-700">Big groups, big space — snorkel in Chileno Bay</td></tr>
+            <tr class="border-b border-border-light bg-gold/5"><td class="py-3 pr-4 font-semibold text-navy"><span class="text-gold mr-1">&#11088;</span>42' Sailboat</td><td class="py-3 pr-4 text-slate-700">Up to 14</td><td class="py-3 text-slate-700">Sail &amp; snorkel — Pelican Rock</td></tr>
+            <tr><td class="py-3 pr-4 font-semibold text-navy">38' Sailboat</td><td class="py-3 pr-4 text-slate-700">Up to 9</td><td class="py-3 text-slate-700">Small group sailing — Pelican Rock</td></tr>
           </tbody>
         </table>
       </div>
@@ -559,11 +558,11 @@ const breadcrumbSchema = JSON.stringify({
         </tr>
       </thead>
       <tbody class="text-sm">
-        <tr class="border-b border-border-light"><td class="py-3 pr-4 font-semibold text-navy">42' Yacht</td><td class="py-3 pr-4 text-slate-700">Up to 18</td><td class="py-3 text-slate-700">Luxury experience — lowest cost — snorkel in Chileno Bay</td></tr>
-        <tr class="border-b border-border-light bg-gold/5"><td class="py-3 pr-4 font-semibold text-navy"><span class="text-gold mr-1">&#11088;</span>45' Yacht</td><td class="py-3 pr-4 text-slate-700">Up to 12</td><td class="py-3 text-slate-700">Newest vessel — snorkel in Chileno Bay</td></tr>
-        <tr class="border-b border-border-light"><td class="py-3 pr-4 font-semibold text-navy">51' Yacht</td><td class="py-3 pr-4 text-slate-700">Up to 20</td><td class="py-3 text-slate-700">Most spacious, largest yacht — snorkel in Chileno Bay</td></tr>
-        <tr class="border-b border-border-light bg-gold/5"><td class="py-3 pr-4 font-semibold text-navy"><span class="text-gold mr-1">&#11088;</span>42' Sailboat</td><td class="py-3 pr-4 text-slate-700">Up to 14</td><td class="py-3 text-slate-700">True sailing experience — spacious vessel — snorkel at Pelican Rock</td></tr>
-        <tr><td class="py-3 pr-4 font-semibold text-navy">38' Sailboat</td><td class="py-3 pr-4 text-slate-700">Up to 9</td><td class="py-3 text-slate-700">Best sailing experience — snorkel at Pelican Rock</td></tr>
+        <tr class="border-b border-border-light"><td class="py-3 pr-4 font-semibold text-navy">42' Yacht</td><td class="py-3 pr-4 text-slate-700">Up to 18</td><td class="py-3 text-slate-700">Comfort + value — snorkel in Chileno Bay</td></tr>
+        <tr class="border-b border-border-light bg-gold/5"><td class="py-3 pr-4 font-semibold text-navy"><span class="text-gold mr-1">&#11088;</span>45' Yacht</td><td class="py-3 pr-4 text-slate-700">Up to 12</td><td class="py-3 text-slate-700">Premium feel — snorkel in Chileno Bay</td></tr>
+        <tr class="border-b border-border-light"><td class="py-3 pr-4 font-semibold text-navy">51' Yacht</td><td class="py-3 pr-4 text-slate-700">Up to 20</td><td class="py-3 text-slate-700">Big groups, big space — snorkel in Chileno Bay</td></tr>
+        <tr class="border-b border-border-light bg-gold/5"><td class="py-3 pr-4 font-semibold text-navy"><span class="text-gold mr-1">&#11088;</span>42' Sailboat</td><td class="py-3 pr-4 text-slate-700">Up to 14</td><td class="py-3 text-slate-700">Sail &amp; snorkel — Pelican Rock</td></tr>
+        <tr><td class="py-3 pr-4 font-semibold text-navy">38' Sailboat</td><td class="py-3 pr-4 text-slate-700">Up to 9</td><td class="py-3 text-slate-700">Small group sailing — Pelican Rock</td></tr>
       </tbody>
     </table>
   </div>
