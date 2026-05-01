@@ -36,7 +36,10 @@ $sailingType = clean_body  ($_POST['sailing-type'] ?? '');
 $date        = clean_body  ($_POST['date']         ?? '');
 $groupSize   = clean_body  ($_POST['group-size']   ?? '');
 $message     = clean_body  ($_POST['message']      ?? '');
-$lang        = ($_POST['lang'] ?? 'en') === 'es' ? 'es' : 'en';
+
+// Detect language from the page that submitted the form
+$referer = $_SERVER['HTTP_REFERER'] ?? '';
+$lang    = strpos($referer, '/es/') !== false ? 'es' : 'en';
 
 if ($firstName === '' || $lastName === '' || $email === '' || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
     http_response_code(400);
@@ -59,6 +62,9 @@ $groupSize   = $groupSize   !== '' ? $groupSize   : ($lang === 'es' ? 'No especi
 $message     = $message     !== '' ? $message     : ($lang === 'es' ? 'Sin mensaje'     : 'No message');
 
 // ===== Email 1: Notify Cabo Sailing =====
+// From = guest, so info@cabosailing.com sees the guest's name/email in the
+// inbox From column and "Reply" goes straight back to them. Sender header
+// records the true envelope origin for mail clients that surface it.
 $notifySubject = 'Check availability from cabosailing website';
 $notifyBody    =
     "New inquiry from cabosailing.com\n\n" .
@@ -68,12 +74,11 @@ $notifyBody    =
     "Activity:       $activity\n" .
     "Sailing Type:   $sailingType\n" .
     "Preferred Date: $date\n" .
-    "Group Size:     $groupSize\n" .
-    "Language:       " . strtoupper($lang) . "\n\n" .
+    "Group Size:     $groupSize\n\n" .
     "Message:\n$message\n";
 $notifyHeaders =
-    "From: Cabosailing.com Inquiry <$companyEmail>\r\n" .
-    "Reply-To: $fullName <$email>\r\n" .
+    "From: $fullName <$email>\r\n" .
+    "Sender: $companyEmail\r\n" .
     "Content-Type: text/plain; charset=UTF-8\r\n" .
     "X-Mailer: cabosailing.com contact form\r\n";
 
