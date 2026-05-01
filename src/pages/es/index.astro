@@ -5,6 +5,7 @@ import Footer from '../../components/Footer.astro';
 
 import RezdyModal from '../../components/RezdyModal.astro';
 import FloatingCTA from '../../components/FloatingCTA.astro';
+import CarouselImage from '../../components/CarouselImage.astro';
 import { Image } from 'astro:assets';
 
 // Hero slides
@@ -15,7 +16,6 @@ import heroSlide4 from "../../assets/images/guests-on-yachts/cabo-yacht-charter-
 
 // Carousel config (mirror EN home)
 import carouselConfig from "../../data/carousels.json";
-import sharedSailingBoat from "../../assets/images/boats/sailing-42/cabosailing-sailiboat-42.png";
 
 // Reviews background
 import reviewsBg from "../../assets/images/boats/sailing-42/cabo-sailing-42-guests-on-deck.jpeg";
@@ -606,15 +606,14 @@ for (const [key, paths] of Object.entries(carouselConfig.fleet)) {
 
     <!-- Shared Sailing Card -->
     <div class="w-full bg-white border-2 border-navy/80 rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/10">
-      <div class="fleet-img-wrap w-full relative">
-        <Image src={sharedSailingBoat} alt="Velero compartido 42' en Cabo San Lucas" class="w-full h-full object-cover" style="transform: scale(1.1); object-position: center 90%;" width={1023} height={1537} format="png" quality={100} />
+      <CarouselImage type="boat" id="shared-sailing" alt="Velero compartido 42' en Cabo San Lucas" imgStyle="transform: scale(1.1); object-position: center 90%;">
         <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
         <div class="absolute bottom-5 left-6">
           <h4 class="text-white text-lg lg:text-xl">Velero 38'–42'</h4>
           <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs lg:text-[10px] mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-sm lg:text-base">group</span><span>Hasta 12 Invitados</span></div>
         </div>
         <div class="absolute top-4 right-4 bg-accent-gold-dark text-white text-[10px] lg:text-[9px] font-bold px-2.5 py-1 lg:px-3 lg:py-1 rounded-full uppercase tracking-widest">Solo 12 Lugares Por Tour</div>
-      </div>
+      </CarouselImage>
       <div class="p-4 space-y-4 lg:p-4 lg:space-y-4">
         <div class="space-y-4">
           <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-accent-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$120</span><div class="flex items-baseline gap-2"><span class="text-slate-500 text-[11px] font-medium uppercase">desde</span><span class="text-navy font-bold text-2xl lg:text-2xl">$102</span><span class="text-slate-500 text-[11px] font-medium uppercase">/ persona</span></div></div></div>

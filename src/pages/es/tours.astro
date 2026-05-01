@@ -3,18 +3,17 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import FloatingCTA from '../../components/FloatingCTA.astro';
-import { Image } from 'astro:assets';
+import CarouselImage from '../../components/CarouselImage.astro';
 
-// Tour card images
-import {
-  privateSnorkeling as privateSnorkelingImg,
-  privateSunset as privateSunsetImg,
-  sharedSnorkeling as sharedSnorkelingImg,
-  sharedSunset as sharedSunsetImg,
-  whaleWatching as whaleWatchingImg,
-  bachelorette as bacheloretteImg,
-  scubaDiving as scubaDivingImg,
-} from '../../data/tour-heroes';
+const tiles = [
+  { href: '/es/private-snorkeling', id: 'private-snorkeling', label: 'Snorkel Privado',           alt: 'Snorkel Privado' },
+  { href: '/es/private-sunset',     id: 'private-sunset',     label: 'Atardecer Privado',         alt: 'Atardecer Privado' },
+  { href: '/es/shared-snorkeling',  id: 'shared-snorkeling',  label: 'Snorkel Compartido',        alt: 'Snorkel Compartido' },
+  { href: '/es/shared-sunset',      id: 'shared-sunset',      label: 'Atardecer Compartido',      alt: 'Atardecer Compartido' },
+  { href: '/es/whale-watching',     id: 'whale-watching',     label: 'Avistamiento de Ballenas',  alt: 'Avistamiento de Ballenas Privado' },
+  { href: '/es/bachelorette',       id: 'bachelorette-party', label: 'Despedida de Soltera',      alt: 'Despedida de Soltera' },
+  { href: '/es/scuba-diving',       id: 'scuba-diving',       label: 'Buceo',                     alt: 'Buceo' },
+];
 
 const breadcrumbSchema = JSON.stringify({
   "@context": "https://schema.org",
@@ -47,82 +46,16 @@ const breadcrumbSchema = JSON.stringify({
     <div class="max-w-[900px] mx-auto px-5 lg:px-10 pb-16">
       <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
 
-        <!-- Snorkel Privado -->
-        <a href="/es/private-snorkeling" class="group block rounded-2xl overflow-hidden shadow-lg border border-border-light bg-white">
-          <div class="relative h-[180px] lg:h-[220px] overflow-hidden">
-            <Image src={privateSnorkelingImg} alt="Snorkel Privado" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width={800} height={500} />
-            <div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
-          </div>
-          <div class="p-4 text-center">
-            <h3 class="text-sm lg:text-base font-bold text-navy group-hover:text-gold transition-colors">Snorkel Privado</h3>
-          </div>
-        </a>
-
-        <!-- Atardecer Privado -->
-        <a href="/es/private-sunset" class="group block rounded-2xl overflow-hidden shadow-lg border border-border-light bg-white">
-          <div class="relative h-[180px] lg:h-[220px] overflow-hidden">
-            <Image src={privateSunsetImg} alt="Atardecer Privado" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width={800} height={500} />
-            <div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
-          </div>
-          <div class="p-4 text-center">
-            <h3 class="text-sm lg:text-base font-bold text-navy group-hover:text-gold transition-colors">Atardecer Privado</h3>
-          </div>
-        </a>
-
-        <!-- Snorkel Compartido -->
-        <a href="/es/shared-snorkeling" class="group block rounded-2xl overflow-hidden shadow-lg border border-border-light bg-white">
-          <div class="relative h-[180px] lg:h-[220px] overflow-hidden">
-            <Image src={sharedSnorkelingImg} alt="Snorkel Compartido" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width={800} height={500} />
-            <div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
-          </div>
-          <div class="p-4 text-center">
-            <h3 class="text-sm lg:text-base font-bold text-navy group-hover:text-gold transition-colors">Snorkel Compartido</h3>
-          </div>
-        </a>
-
-        <!-- Atardecer Compartido -->
-        <a href="/es/shared-sunset" class="group block rounded-2xl overflow-hidden shadow-lg border border-border-light bg-white">
-          <div class="relative h-[180px] lg:h-[220px] overflow-hidden">
-            <Image src={sharedSunsetImg} alt="Atardecer Compartido" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width={800} height={500} />
-            <div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
-          </div>
-          <div class="p-4 text-center">
-            <h3 class="text-sm lg:text-base font-bold text-navy group-hover:text-gold transition-colors">Atardecer Compartido</h3>
-          </div>
-        </a>
-
-        <!-- Avistamiento de Ballenas Privado -->
-        <a href="/es/whale-watching" class="group block rounded-2xl overflow-hidden shadow-lg border border-border-light bg-white">
-          <div class="relative h-[180px] lg:h-[220px] overflow-hidden">
-            <Image src={whaleWatchingImg} alt="Avistamiento de Ballenas Privado" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width={800} height={500} />
-            <div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
-          </div>
-          <div class="p-4 text-center">
-            <h3 class="text-sm lg:text-base font-bold text-navy group-hover:text-gold transition-colors">Avistamiento de Ballenas</h3>
-          </div>
-        </a>
-
-        <!-- Despedida de Soltera -->
-        <a href="/es/bachelorette" class="group block rounded-2xl overflow-hidden shadow-lg border border-border-light bg-white">
-          <div class="relative h-[180px] lg:h-[220px] overflow-hidden">
-            <Image src={bacheloretteImg} alt="Despedida de Soltera" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width={800} height={500} />
-            <div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
-          </div>
-          <div class="p-4 text-center">
-            <h3 class="text-sm lg:text-base font-bold text-navy group-hover:text-gold transition-colors">Despedida de Soltera</h3>
-          </div>
-        </a>
-
-        <!-- Buceo -->
-        <a href="/es/scuba-diving" class="group block rounded-2xl overflow-hidden shadow-lg border border-border-light bg-white">
-          <div class="relative h-[180px] lg:h-[220px] overflow-hidden">
-            <Image src={scubaDivingImg} alt="Buceo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width={800} height={500} />
-            <div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
-          </div>
-          <div class="p-4 text-center">
-            <h3 class="text-sm lg:text-base font-bold text-navy group-hover:text-gold transition-colors">Buceo</h3>
-          </div>
-        </a>
+        {tiles.map((t) => (
+          <a href={t.href} class="group block rounded-2xl overflow-hidden shadow-lg border border-border-light bg-white">
+            <CarouselImage type="activity" id={t.id} alt={t.alt} groupHoverZoom wrapperClass="relative h-[180px] lg:h-[220px] overflow-hidden w-full">
+              <div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
+            </CarouselImage>
+            <div class="p-4 text-center">
+              <h3 class="text-sm lg:text-base font-bold text-navy group-hover:text-gold transition-colors">{t.label}</h3>
+            </div>
+          </a>
+        ))}
 
       </div>
     </div>

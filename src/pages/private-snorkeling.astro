@@ -4,6 +4,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import FloatingCTA from '../components/FloatingCTA.astro';
 import RezdyModal from '../components/RezdyModal.astro';
+import CarouselImage from '../components/CarouselImage.astro';
 import { Image } from 'astro:assets';
 
 import { privateSnorkeling as heroSunnyYachtCruise } from "../data/tour-heroes";
@@ -11,11 +12,6 @@ import sunnySailboatAdventure from "../assets/images/guests-on-yachts/sunny-day-
 import relaxingLuxuryBoat from "../assets/images/guests-on-yachts/relaxing-day-on-a-luxury-boat.png";
 import sailingGuestsWaving from "../assets/images/guests-on-sailboats/cabo-sailing-guests-waving.jpg";
 import cheersCoastalAdventure from "../assets/images/guests-on-sailboats/cheers-on-a-sunny-coastal-adventure.png";
-import yacht51Boat from "../assets/images/boats/yacht-51/cabo-sailing-yacht-51-boat.png";
-import yacht45Img from "../assets/images/boats/yacht-45/cabo-private-yacht-45-charter.png";
-import yacht42Boat from "../assets/images/boats/yacht-42/cabo-sailig-yacht-42-boat.png";
-import sailing42View from "../assets/images/boats/sailing-42/cabo-sailing-42-sailing-view.png";
-import sailing38Boat from "../assets/images/boats/sailing-38/cabo-sailing-38-home-boat.png";
 import Chileno from "../assets/images/blog/chileno-bay-cabo-snorkeling.jpg";
 
 const touristTripSchema = JSON.stringify({
@@ -409,17 +405,15 @@ const breadcrumbSchema = JSON.stringify({
 <div class="flex flex-col gap-5 lg:grid lg:grid-cols-3 lg:max-w-[1100px] lg:mx-auto pb-8">
   <!-- Luxury Yacht 51' — Most Spacious -->
   <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="yacht-51">
-    <div class="fleet-img-wrap w-full relative">
-<Image src={yacht51Boat} alt="Luxury Yacht 51'" class="w-full h-full object-cover object-center" style="transform: scale(1.1);" width={1023} height={1537} format="png" quality={100} />
+    <CarouselImage type="boat" id="yacht-51" alt="Luxury Yacht 51' private snorkeling charter">
       <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
       <div class="absolute bottom-5 left-6">
         <h3 class="text-white text-lg lg:text-xl">Luxury Yacht 51'</h3>
         <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Up to 20 Guests</span></div>
       </div>
       <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Most Spacious</div>
-
-    <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-30%</div>
-</div>
+      <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-30%</div>
+    </CarouselImage>
     <div class="p-4 space-y-4">
       <p class="text-slate-700 text-sm italic text-center pb-3 border-b border-border-light/50">Best for large groups &amp; maximum space</p>
       <div class="space-y-4">
@@ -430,17 +424,15 @@ const breadcrumbSchema = JSON.stringify({
   </div>
   <!-- Luxury Yacht 45' — Most Popular -->
   <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="yacht-45">
-    <div class="fleet-img-wrap w-full relative">
-<Image src={yacht45Img} alt="Luxury Yacht 45'" class="w-full h-full object-cover object-center" style="transform: none !important;" width={1023} height={1537} format="png" quality={100} />
+    <CarouselImage type="boat" id="yacht-45" alt="Luxury Yacht 45' private snorkeling charter" imgStyle="transform: none;">
       <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
       <div class="absolute bottom-5 left-6">
         <h3 class="text-white text-lg lg:text-xl">Luxury Yacht 45'</h3>
         <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Up to 12 Guests</span></div>
       </div>
       <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Most Popular</div>
-
-    <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-30%</div>
-</div>
+      <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-30%</div>
+    </CarouselImage>
     <div class="p-4 space-y-4">
       <p class="text-slate-700 text-sm italic text-center pb-3 border-b border-border-light/50">Newest vessel, sleek &amp; modern luxury</p>
       <div class="space-y-4">
@@ -451,17 +443,15 @@ const breadcrumbSchema = JSON.stringify({
   </div>
   <!-- Luxury Yacht 42' — Best Value -->
   <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="yacht-42">
-    <div class="fleet-img-wrap w-full relative">
-<Image src={yacht42Boat} alt="Luxury Yacht 42'" class="w-full h-full object-cover object-center" style="transform: scale(1.1);" width={1023} height={1537} format="png" quality={100} />
+    <CarouselImage type="boat" id="yacht-42" alt="Luxury Yacht 42' private snorkeling charter">
       <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
       <div class="absolute bottom-5 left-6">
         <h3 class="text-white text-lg lg:text-xl">Luxury Yacht 42'</h3>
         <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Up to 18 Guests</span></div>
       </div>
       <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Best Value</div>
-
-    <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-30%</div>
-</div>
+      <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-30%</div>
+    </CarouselImage>
     <div class="p-4 space-y-4">
       <p class="text-slate-700 text-sm italic text-center pb-3 border-b border-border-light/50">Great value, perfect for families</p>
       <div class="space-y-4">
@@ -475,17 +465,15 @@ const breadcrumbSchema = JSON.stringify({
 <div class="flex flex-col gap-5 lg:grid lg:grid-cols-2 lg:max-w-3xl lg:mx-auto pb-8">
   <!-- Sailing Boat 42' — Best Value -->
   <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="sailing-42">
-    <div class="fleet-img-wrap w-full relative">
-<Image src={sailing42View} alt="Sailing Boat 42'" class="w-full h-full object-cover object-center" style="transform: scale(1.1);" width={1024} height={1536} format="png" quality={100} />
+    <CarouselImage type="boat" id="sailing-42" alt="Sailing Boat 42' private snorkeling charter">
       <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
       <div class="absolute bottom-5 left-6">
         <h3 class="text-white text-lg lg:text-xl">Sailing Boat 42'</h3>
         <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Up to 14 Guests</span></div>
       </div>
       <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Best Value</div>
-
-    <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-30%</div>
-</div>
+      <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-30%</div>
+    </CarouselImage>
     <div class="p-4 space-y-4">
       <p class="text-slate-700 text-sm italic text-center pb-3 border-b border-border-light/50">Smooth sailing, snorkel at Pelican Rock</p>
       <div class="space-y-4">
@@ -496,16 +484,14 @@ const breadcrumbSchema = JSON.stringify({
   </div>
   <!-- Sailing Boat 38' -->
   <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="sailing-38">
-    <div class="fleet-img-wrap w-full relative">
-<Image src={sailing38Boat} alt="Sailing Boat 38'" class="w-full h-full object-cover object-center" style="transform: scale(1.1);" width={1024} height={1536} format="png" quality={100} />
+    <CarouselImage type="boat" id="sailing-38" alt="Sailing Boat 38' private snorkeling charter">
       <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
       <div class="absolute bottom-5 left-6">
         <h3 class="text-white text-lg lg:text-xl">Sailing Boat 38'</h3>
         <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Up to 9 Guests</span></div>
       </div>
-
-    <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-30%</div>
-</div>
+      <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-30%</div>
+    </CarouselImage>
     <div class="p-4 space-y-4">
       <p class="text-slate-700 text-sm italic text-center pb-3 border-b border-border-light/50">Intimate &amp; adventurous, classic sailing</p>
       <div class="space-y-4">

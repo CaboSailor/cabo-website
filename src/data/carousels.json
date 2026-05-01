@@ -34,6 +34,9 @@
       "guests-on-sailboats/romantic-sailboat-kiss-at-sunset.png",
       "guests-on-sailboats/cabo-shared-sunset-sailing.jpg",
       "guests-on-sailboats/relaxing-sailboat-ride-in-golden-hour.png"
+    ],
+    "scuba-diving": [
+      "scuba-diving/scuba-divers-preparing-near-the-boat.png"
     ]
   },
   "fleet": {
@@ -56,6 +59,9 @@
     "sailing-38": [
       "boats/sailing-38/cabo-sailing-38-home-boat.png",
       "guests-on-sailboats/relaxing-sailboat-getaway-with-friends.png"
+    ],
+    "shared-sailing": [
+      "boats/sailing-42/cabosailing-sailiboat-42.png"
     ]
   }
 }
