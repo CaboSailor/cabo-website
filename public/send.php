@@ -99,7 +99,7 @@ if ($lang === 'es') {
         'Fecha Preferida: ' . $h($date) . '<br>' .
         'Invitados: ' . $h($groupSize) . '<br>' .
         'Nombre: ' . $h($fullName) . '</p>' .
-        '<p>En horario de oficina, normalmente respondemos en minutos.<br>' .
+        '<p>En horario de oficina (7:30 AM a 8:00 PM), normalmente respondemos en minutos.<br>' .
         'Si tu solicitud es urgente o prefieres una respuesta mas rapida:</p>' .
         '<p>WhatsApp: ' . $waLink . '<br>' .
         'Llamanos: ' . $telLink . '</p>' .
@@ -117,7 +117,7 @@ if ($lang === 'es') {
         'Preferred Date: ' . $h($date) . '<br>' .
         'Guests: ' . $h($groupSize) . '<br>' .
         'Name: ' . $h($fullName) . '</p>' .
-        '<p>During office hours, we usually reply within minutes.<br>' .
+        '<p>During office hours (7:30 AM to 8:00 PM), we usually reply within minutes.<br>' .
         'If your request is urgent or you prefer faster communication:</p>' .
         '<p>WhatsApp: ' . $waLink . '<br>' .
         'Call: ' . $telLink . '</p>' .
