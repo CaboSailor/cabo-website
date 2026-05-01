@@ -243,24 +243,20 @@ const breadcrumbSchema = JSON.stringify({
   <script is:inline src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
   <script is:inline>
-    // =====================================================================
-    // EMAILJS CONFIGURATION — Replace these with your actual EmailJS IDs
-    // =====================================================================
+    // EmailJS — uses the same template IDs as /contact.
+    // Setup instructions live in src/pages/contact.astro.
     var EMAILJS_PUBLIC_KEY = 'YOUR_PUBLIC_KEY';
     var EMAILJS_SERVICE_ID = 'YOUR_SERVICE_ID';
     var EMAILJS_TEMPLATE_NOTIFY = 'YOUR_TEMPLATE_ID_NOTIFY';
     var EMAILJS_TEMPLATE_AUTOREPLY = 'YOUR_TEMPLATE_ID_AUTOREPLY';
 
-    // Initialize EmailJS
     emailjs.init(EMAILJS_PUBLIC_KEY);
 
-    // Format activity/sailing-type labels for display
     function formatLabel(value) {
       if (!value) return 'No seleccionado';
       return value.replace(/-/g, ' ').replace(/\b\w/g, function(c) { return c.toUpperCase(); });
     }
 
-    // Form submission
     function handleSubmit(e) {
       e.preventDefault();
       var form = document.getElementById('contact-form');
@@ -278,24 +274,21 @@ const breadcrumbSchema = JSON.stringify({
       var message = data.get('message') || 'Sin mensaje';
       var fullName = firstName + ' ' + lastName;
 
-      // Disable button while sending
       submitBtn.disabled = true;
       submitBtn.textContent = 'Enviando...';
 
-      // Template parameters (shared by both templates)
       var templateParams = {
-        from_name: fullName,
-        from_email: email,
-        to_email: email,
-        phone: phone,
+        guest_name: fullName,
+        guest_email: email,
+        guest_phone: phone,
+        reply_to: email,
         activity: activity,
         sailing_type: sailingType,
-        date: date,
+        preferred_date: date,
         group_size: groupSize,
         message: message
       };
 
-      // Send both emails in parallel
       Promise.all([
         emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_NOTIFY, templateParams),
         emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_AUTOREPLY, templateParams)
@@ -314,7 +307,6 @@ const breadcrumbSchema = JSON.stringify({
       });
     }
 
-    // Attach form handler
     document.getElementById('contact-form').addEventListener('submit', handleSubmit);
   </script>
 </BaseLayout>

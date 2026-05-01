@@ -6,17 +6,23 @@ const contactHref = getLocalePath(lang, '/contact');
 const label = t(lang, 'nav.contact');
 ---
 
-<a href={contactHref} id="floating-cta" class="fixed right-0 bottom-[33vh] z-50 bg-navy hover:bg-navy/90 transition-all shadow-xl rounded-l-xl py-3 px-2 lg:py-4 lg:px-2.5 group opacity-0 translate-x-full" style="writing-mode:vertical-rl;text-orientation:mixed;">
-  <span class="text-gold font-bold text-[10px] lg:text-xs uppercase tracking-[0.2em] group-hover:text-white transition-colors">{label}</span>
+<a
+  href={contactHref}
+  id="floating-cta"
+  aria-label={label}
+  class="bg-navy hover:bg-navy/90 shadow-xl rounded-l-xl py-3 px-2 lg:py-4 lg:px-2.5 group"
+>
+  <span class="text-accent-gold-light font-bold text-[10px] lg:text-xs uppercase tracking-[0.2em] group-hover:text-white transition-colors">{label}</span>
 </a>
 
-<script is:inline>
-  setTimeout(function() {
-    var cta = document.getElementById('floating-cta');
-    if (cta) {
-      cta.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-      cta.style.opacity = '1';
-      cta.style.transform = 'translateX(0)';
-    }
-  }, 2000);
-</script>
+<style>
+  #floating-cta {
+    position: fixed;
+    right: 0;
+    bottom: 33vh;
+    z-index: 50;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transition: background-color 0.2s ease;
+  }
+</style>

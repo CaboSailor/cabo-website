@@ -244,23 +244,72 @@ const breadcrumbSchema = JSON.stringify({
 
   <script is:inline>
     // =====================================================================
-    // EMAILJS CONFIGURATION — Replace these with your actual EmailJS IDs
+    // EMAILJS CONFIGURATION
+    // ---------------------------------------------------------------------
+    // 1. Sign up at emailjs.com and connect info@cabosailing.com as the
+    //    email service (Gmail / SMTP).
+    // 2. Create two templates and copy their IDs below.
+    // 3. Use these template params in both templates: {{guest_name}},
+    //    {{guest_email}}, {{guest_phone}}, {{activity}}, {{sailing_type}},
+    //    {{preferred_date}}, {{group_size}}, {{message}}, {{reply_to}}.
+    //
+    // ===== Template 1: NOTIFY (Cabo Sailing receives this) =====
+    //   To Email:   info@cabosailing.com
+    //   From Name:  Cabosailing.com Inquiry
+    //   Reply To:   {{reply_to}}                <- so "Reply" auto-fills the guest
+    //   Subject:    Check availability from cabosailing website
+    //   Content:
+    //     New inquiry from cabosailing.com
+    //
+    //     Name: {{guest_name}}
+    //     Email: {{guest_email}}
+    //     Phone: {{guest_phone}}
+    //
+    //     Activity: {{activity}}
+    //     Sailing Type: {{sailing_type}}
+    //     Preferred Date: {{preferred_date}}
+    //     Group Size: {{group_size}}
+    //
+    //     Message:
+    //     {{message}}
+    //
+    // ===== Template 2: AUTOREPLY (the guest receives this) =====
+    //   To Email:   {{guest_email}}
+    //   From Name:  Cabo Sailing
+    //   Reply To:   info@cabosailing.com
+    //   Subject:    Your Cabo Sailing cruise inquiry
+    //   Content:
+    //     Hi {{guest_name}},
+    //
+    //     You're all set — we've got your request!
+    //     We're checking availability and will get back to you shortly
+    //     with the best options.
+    //
+    //     Your Request Summary
+    //     Activity: {{activity}} — {{sailing_type}}
+    //     Preferred Date: {{preferred_date}}
+    //     Guests: {{group_size}}
+    //     Name: {{guest_name}}
+    //
+    //     During office hours, we usually reply within minutes.
+    //     If your request is urgent or you prefer faster communication:
+    //       WhatsApp: https://wa.me/526241916997
+    //       Call:     +52 624 143 8485
+    //
+    //     — Cabo Sailing Team
     // =====================================================================
     var EMAILJS_PUBLIC_KEY = 'YOUR_PUBLIC_KEY';
     var EMAILJS_SERVICE_ID = 'YOUR_SERVICE_ID';
     var EMAILJS_TEMPLATE_NOTIFY = 'YOUR_TEMPLATE_ID_NOTIFY';
     var EMAILJS_TEMPLATE_AUTOREPLY = 'YOUR_TEMPLATE_ID_AUTOREPLY';
 
-    // Initialize EmailJS
     emailjs.init(EMAILJS_PUBLIC_KEY);
 
-    // Format activity/sailing-type labels for display
     function formatLabel(value) {
       if (!value) return 'Not selected';
       return value.replace(/-/g, ' ').replace(/\b\w/g, function(c) { return c.toUpperCase(); });
     }
 
-    // Form submission
     function handleSubmit(e) {
       e.preventDefault();
       var form = document.getElementById('contact-form');
@@ -278,24 +327,21 @@ const breadcrumbSchema = JSON.stringify({
       var message = data.get('message') || 'No message';
       var fullName = firstName + ' ' + lastName;
 
-      // Disable button while sending
       submitBtn.disabled = true;
       submitBtn.textContent = 'Sending...';
 
-      // Template parameters (shared by both templates)
       var templateParams = {
-        from_name: fullName,
-        from_email: email,
-        to_email: email,
-        phone: phone,
+        guest_name: fullName,
+        guest_email: email,
+        guest_phone: phone,
+        reply_to: email,
         activity: activity,
         sailing_type: sailingType,
-        date: date,
+        preferred_date: date,
         group_size: groupSize,
         message: message
       };
 
-      // Send both emails in parallel
       Promise.all([
         emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_NOTIFY, templateParams),
         emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_AUTOREPLY, templateParams)
@@ -314,7 +360,6 @@ const breadcrumbSchema = JSON.stringify({
       });
     }
 
-    // Attach form handler
     document.getElementById('contact-form').addEventListener('submit', handleSubmit);
   </script>
 </BaseLayout>
