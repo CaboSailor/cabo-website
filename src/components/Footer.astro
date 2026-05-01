@@ -33,6 +33,8 @@ const lp = (path: string) => getLocalePath(lang, path);
           <a href={lp('/shuttle-service')} class="block hover:text-white transition-colors">{t(lang, 'nav.shuttleService')}</a>
           <a href={lp('/travel-guide')} class="block hover:text-white transition-colors">{t(lang, 'nav.travelGuide')}</a>
           <a href="#" class="block hover:text-white transition-colors">{t(lang, 'footer.aboutCrew')}</a>
+          <a href={lp('/policies')} class="block hover:text-white transition-colors">{t(lang, 'footer.policies')}</a>
+          <a href={lp('/sitemap')} class="block hover:text-white transition-colors">{t(lang, 'footer.sitemap')}</a>
         </div>
       </div>
       <div>
@@ -42,6 +44,11 @@ const lp = (path: string) => getLocalePath(lang, path);
           <a href="tel:+526241438485" class="flex items-center gap-2 hover:text-white transition-colors"><span class="material-symbols-outlined text-sm">call</span> +52 624 143 8485</a>
           <a href="mailto:info@cabosailing.com" class="flex items-center gap-2 hover:text-white transition-colors"><span class="material-symbols-outlined text-sm">email</span> info@cabosailing.com</a>
           <div class="flex items-center gap-2 mt-1"><span class="material-symbols-outlined text-gold text-base">mail</span><a href={lp('/contact')} class="text-white font-bold hover:text-gold transition-colors">{t(lang, 'footer.contactNow')}</a></div>
+          <div class="flex items-center gap-3 mt-4">
+            <a href="https://www.instagram.com/cabosailing/" target="_blank" rel="noopener" aria-label="Instagram" class="text-white/60 hover:text-white transition-colors"><i class="fa-brands fa-instagram text-lg"></i></a>
+            <a href="https://www.facebook.com/CaboSailing/" target="_blank" rel="noopener" aria-label="Facebook" class="text-white/60 hover:text-white transition-colors"><i class="fa-brands fa-facebook text-lg"></i></a>
+            <a href="https://www.youtube.com/@cabosailing4394/featured" target="_blank" rel="noopener" aria-label="YouTube" class="text-white/60 hover:text-white transition-colors"><i class="fa-brands fa-youtube text-lg"></i></a>
+          </div>
         </div>
       </div>
     </div>

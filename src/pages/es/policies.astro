@@ -1,0 +1,122 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import FloatingCTA from '../../components/FloatingCTA.astro';
+import RezdyModal from '../../components/RezdyModal.astro';
+
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://cabosailing.com/es/" },
+    { "@type": "ListItem", "position": 2, "name": "Políticas de Reservas y Cancelación" }
+  ]
+});
+---
+
+<BaseLayout title="Políticas de Reservas y Cancelación | Cabo Sailing" description="Políticas de reservas, cancelación, clima, número de invitados y tabaquismo para los charters privados y compartidos de Cabo Sailing." hreflangs={{ en: '/policies', es: '/es/policies' }}>
+  <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
+  <Header variant="subpage" activePage="" />
+
+  <main class="flex-1 w-full overflow-x-hidden pt-[60px] lg:pt-[72px]">
+    <div class="max-w-[860px] mx-auto px-5 lg:px-8 py-10 lg:py-16">
+
+      <!-- Breadcrumb -->
+      <nav class="flex items-center gap-1.5 text-xs text-slate-500 mb-6" aria-label="Breadcrumb">
+        <a href="/es/" class="hover:text-gold transition-colors">Inicio</a>
+        <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+        <span class="text-navy font-semibold">Políticas de Reservas y Cancelación</span>
+      </nav>
+
+      <!-- Header -->
+      <header class="mb-10">
+        <h1 class="text-3xl lg:text-4xl text-navy font-serif mb-3">Políticas de Reservas y Cancelación</h1>
+        <p class="text-slate-500 text-base lg:text-lg leading-relaxed">Un resumen claro de cómo funcionan las reservas, cambios, clima y políticas a bordo en Cabo Sailing. ¿Dudas? <a href="/es/contact" class="text-accent-gold font-semibold hover:underline">Contáctanos</a> &mdash; con gusto te ayudamos.</p>
+      </header>
+
+      <!-- Política de Cancelación -->
+      <section id="cancellation" class="mb-10 bg-white rounded-2xl border border-border-light shadow-sm p-6 lg:p-8">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-1 h-7 bg-gold rounded-full"></div>
+          <h2 class="text-2xl text-navy">Política de Cancelación</h2>
+        </div>
+        <p class="text-slate-600 text-base leading-relaxed mb-4">Los planes cambian &mdash; lo entendemos. Puedes cancelar o modificar tu reservación hasta 48 horas antes de la salida sin cargo de cancelación.</p>
+        <ul class="space-y-2 text-base text-slate-600">
+          <li class="flex items-start gap-3"><span class="material-symbols-outlined text-cabo-blue text-base mt-0.5">schedule</span><span><strong class="text-navy">Más de 48 horas antes de la salida</strong> &mdash; sin cargo de cancelación</span></li>
+          <li class="flex items-start gap-3"><span class="material-symbols-outlined text-cabo-orange text-base mt-0.5">schedule</span><span><strong class="text-navy">Entre 48 y 24 horas antes de la salida</strong> &mdash; reembolso del 50%</span></li>
+          <li class="flex items-start gap-3"><span class="material-symbols-outlined text-red-500 text-base mt-0.5">block</span><span><strong class="text-navy">Menos de 24 horas o no presentarse</strong> &mdash; no reembolsable (se aplica el 100% del cargo)</span></li>
+        </ul>
+      </section>
+
+      <!-- Ajustes en el Número de Invitados -->
+      <section id="guest-count" class="mb-10 bg-white rounded-2xl border border-border-light shadow-sm p-6 lg:p-8">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-1 h-7 bg-gold rounded-full"></div>
+          <h2 class="text-2xl text-navy">Ajustes en el Número de Invitados</h2>
+        </div>
+        <p class="text-slate-600 text-base leading-relaxed mb-3">Puedes actualizar el tamaño de tu grupo hasta la noche anterior a tu cruise.</p>
+        <ul class="space-y-2 text-base text-slate-600">
+          <li class="flex items-start gap-3"><span class="material-symbols-outlined text-cabo-blue text-base mt-0.5">groups</span><span>Si tu grupo se reduce, te reembolsaremos la diferencia.</span></li>
+          <li class="flex items-start gap-3"><span class="material-symbols-outlined text-red-500 text-base mt-0.5">person_off</span><span>No se otorgan reembolsos por invitados que no se presenten el día del cruise.</span></li>
+          <li class="flex items-start gap-3"><span class="material-symbols-outlined text-cabo-orange text-base mt-0.5">person_add</span><span>Si se suman invitados adicionales el mismo día y no estaban incluidos en tu confirmación, se aplicará un cargo por persona.</span></li>
+        </ul>
+      </section>
+
+      <!-- Política de Clima -->
+      <section id="weather" class="mb-10 bg-white rounded-2xl border border-border-light shadow-sm p-6 lg:p-8">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-1 h-7 bg-gold rounded-full"></div>
+          <h2 class="text-2xl text-navy">Política de Clima</h2>
+        </div>
+        <p class="text-slate-600 text-base leading-relaxed mb-3">Tu seguridad y experiencia son lo primero.</p>
+        <ul class="space-y-2 text-base text-slate-600">
+          <li class="flex items-start gap-3"><span class="material-symbols-outlined text-cabo-blue text-base mt-0.5">event_available</span><span>En caso de clima desfavorable, haremos lo posible por reagendar tu cruise en un horario que te funcione.</span></li>
+          <li class="flex items-start gap-3"><span class="material-symbols-outlined text-cabo-green text-base mt-0.5">payments</span><span>Si no es posible reagendar, recibirás un reembolso completo.</span></li>
+        </ul>
+      </section>
+
+      <!-- Política de Reservas -->
+      <section id="reservations" class="mb-10 bg-white rounded-2xl border border-border-light shadow-sm p-6 lg:p-8">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-1 h-7 bg-gold rounded-full"></div>
+          <h2 class="text-2xl text-navy">Política de Reservas</h2>
+        </div>
+        <ul class="space-y-3 text-base text-slate-600">
+          <li class="flex items-start gap-3"><span class="material-symbols-outlined text-cabo-blue text-base mt-0.5">mark_email_read</span><span>Una vez confirmada tu reservación, recibirás un correo con tu número de confirmación &mdash; consérvalo para tu referencia.</span></li>
+          <li class="flex items-start gap-3"><span class="material-symbols-outlined text-cabo-blue text-base mt-0.5">credit_card</span><span>Los cargos a tu tarjeta de crédito suelen aparecer en tu estado de cuenta dentro de 24 horas como &ldquo;Cabo Sailing.&rdquo;</span></li>
+          <li class="flex items-start gap-3"><span class="material-symbols-outlined text-cabo-blue text-base mt-0.5">support_agent</span><span>Si tienes preguntas o necesitas ayuda en cualquier momento, no dudes en escribirnos &mdash; siempre estamos felices de ayudar.</span></li>
+        </ul>
+      </section>
+
+      <!-- Política de Tabaquismo -->
+      <section id="smoking" class="mb-10 bg-white rounded-2xl border border-border-light shadow-sm p-6 lg:p-8">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-1 h-7 bg-gold rounded-full"></div>
+          <h2 class="text-2xl text-navy">Política de Tabaquismo</h2>
+        </div>
+        <p class="text-slate-600 text-base leading-relaxed mb-3">Para mantener una experiencia cómoda para todos, generalmente no se permite fumar a bordo.</p>
+        <p class="text-slate-600 text-base leading-relaxed">En cruises privados, pueden permitirse excepciones cuando la embarcación esté anclada, en la popa (parte trasera) y solo con la aprobación de la tripulación.</p>
+      </section>
+
+      <!-- Contact CTA -->
+      <div class="bg-navy rounded-2xl p-6 lg:p-8 text-center text-white">
+        <h2 class="text-xl lg:text-2xl text-white mb-2 font-serif">¿Aún tienes preguntas?</h2>
+        <p class="text-white/70 text-base mb-6">Escríbenos en cualquier momento &mdash; normalmente respondemos en minutos durante horario de oficina.</p>
+        <div class="flex flex-col sm:flex-row gap-3 justify-center">
+          <a href="https://wa.me/526241916997" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20c55e] text-white font-bold px-6 py-3 rounded-xl uppercase tracking-widest text-sm transition-colors">
+            <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp
+          </a>
+          <a href="/es/contact" class="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white font-bold px-6 py-3 rounded-xl uppercase tracking-widest text-sm transition-colors border border-white/30">
+            <span class="material-symbols-outlined text-base">mail</span> Formulario de Contacto
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <Footer />
+  <FloatingCTA />
+  <RezdyModal />
+</BaseLayout>

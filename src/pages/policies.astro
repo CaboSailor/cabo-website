@@ -1,0 +1,122 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import FloatingCTA from '../components/FloatingCTA.astro';
+import RezdyModal from '../components/RezdyModal.astro';
+
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://cabosailing.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Reservations & Cancelations" }
+  ]
+});
+---
+
+<BaseLayout title="Reservations & Cancelations | Cabo Sailing" description="Cabo Sailing reservations, cancellation, weather, guest count, and smoking policies for our private and shared yacht and sailing charters." hreflangs={{ en: '/policies', es: '/es/policies' }}>
+  <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
+  <Header variant="subpage" activePage="" />
+
+  <main class="flex-1 w-full overflow-x-hidden pt-[60px] lg:pt-[72px]">
+    <div class="max-w-[860px] mx-auto px-5 lg:px-8 py-10 lg:py-16">
+
+      <!-- Breadcrumb -->
+      <nav class="flex items-center gap-1.5 text-xs text-slate-500 mb-6" aria-label="Breadcrumb">
+        <a href="/" class="hover:text-gold transition-colors">Home</a>
+        <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+        <span class="text-navy font-semibold">Reservations &amp; Cancelations</span>
+      </nav>
+
+      <!-- Header -->
+      <header class="mb-10">
+        <h1 class="text-3xl lg:text-4xl text-navy font-serif mb-3">Reservations &amp; Cancelations</h1>
+        <p class="text-slate-500 text-base lg:text-lg leading-relaxed">A clear summary of how reservations, changes, weather, and on-board policies work at Cabo Sailing. Questions? <a href="/contact" class="text-accent-gold font-semibold hover:underline">Contact us</a> &mdash; we&rsquo;re happy to help.</p>
+      </header>
+
+      <!-- Cancellation Policy -->
+      <section id="cancellation" class="mb-10 bg-white rounded-2xl border border-border-light shadow-sm p-6 lg:p-8">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-1 h-7 bg-gold rounded-full"></div>
+          <h2 class="text-2xl text-navy">Cancellation Policy</h2>
+        </div>
+        <p class="text-slate-600 text-base leading-relaxed mb-4">Plans change &mdash; we get it. You may cancel or modify your reservation up to 48 hours before departure with no cancellation fee.</p>
+        <ul class="space-y-2 text-base text-slate-600">
+          <li class="flex items-start gap-3"><span class="material-symbols-outlined text-cabo-blue text-base mt-0.5">schedule</span><span><strong class="text-navy">More than 48 hours before departure</strong> &mdash; no cancellation fee</span></li>
+          <li class="flex items-start gap-3"><span class="material-symbols-outlined text-cabo-orange text-base mt-0.5">schedule</span><span><strong class="text-navy">48 to 24 hours before departure</strong> &mdash; 50% refund</span></li>
+          <li class="flex items-start gap-3"><span class="material-symbols-outlined text-red-500 text-base mt-0.5">block</span><span><strong class="text-navy">Less than 24 hours or no-show</strong> &mdash; non-refundable (100% charge applies)</span></li>
+        </ul>
+      </section>
+
+      <!-- Guest Count Adjustments -->
+      <section id="guest-count" class="mb-10 bg-white rounded-2xl border border-border-light shadow-sm p-6 lg:p-8">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-1 h-7 bg-gold rounded-full"></div>
+          <h2 class="text-2xl text-navy">Guest Count Adjustments</h2>
+        </div>
+        <p class="text-slate-600 text-base leading-relaxed mb-3">You&rsquo;re welcome to update your group size up to the evening before your cruise.</p>
+        <ul class="space-y-2 text-base text-slate-600">
+          <li class="flex items-start gap-3"><span class="material-symbols-outlined text-cabo-blue text-base mt-0.5">groups</span><span>If your group becomes smaller, we&rsquo;ll refund the difference.</span></li>
+          <li class="flex items-start gap-3"><span class="material-symbols-outlined text-red-500 text-base mt-0.5">person_off</span><span>No refunds are provided for guests who do not show up on the day of the cruise.</span></li>
+          <li class="flex items-start gap-3"><span class="material-symbols-outlined text-cabo-orange text-base mt-0.5">person_add</span><span>If additional guests join on the day and were not included in your confirmation, a per-person fee will apply.</span></li>
+        </ul>
+      </section>
+
+      <!-- Weather Policy -->
+      <section id="weather" class="mb-10 bg-white rounded-2xl border border-border-light shadow-sm p-6 lg:p-8">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-1 h-7 bg-gold rounded-full"></div>
+          <h2 class="text-2xl text-navy">Weather Policy</h2>
+        </div>
+        <p class="text-slate-600 text-base leading-relaxed mb-3">Your safety and experience come first.</p>
+        <ul class="space-y-2 text-base text-slate-600">
+          <li class="flex items-start gap-3"><span class="material-symbols-outlined text-cabo-blue text-base mt-0.5">event_available</span><span>In case of unfavorable weather, we&rsquo;ll do our best to reschedule your cruise at a time that works for you.</span></li>
+          <li class="flex items-start gap-3"><span class="material-symbols-outlined text-cabo-green text-base mt-0.5">payments</span><span>If rescheduling isn&rsquo;t possible, you&rsquo;ll receive a full refund.</span></li>
+        </ul>
+      </section>
+
+      <!-- Reservations Policy -->
+      <section id="reservations" class="mb-10 bg-white rounded-2xl border border-border-light shadow-sm p-6 lg:p-8">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-1 h-7 bg-gold rounded-full"></div>
+          <h2 class="text-2xl text-navy">Reservations Policy</h2>
+        </div>
+        <ul class="space-y-3 text-base text-slate-600">
+          <li class="flex items-start gap-3"><span class="material-symbols-outlined text-cabo-blue text-base mt-0.5">mark_email_read</span><span>Once your booking is confirmed, you&rsquo;ll receive an email with your confirmation number &mdash; please keep it for reference.</span></li>
+          <li class="flex items-start gap-3"><span class="material-symbols-outlined text-cabo-blue text-base mt-0.5">credit_card</span><span>Credit card charges typically appear on your bank statement within 24 hours as &ldquo;Cabo Sailing.&rdquo;</span></li>
+          <li class="flex items-start gap-3"><span class="material-symbols-outlined text-cabo-blue text-base mt-0.5">support_agent</span><span>If you have any questions or need assistance at any point, feel free to reach out &mdash; we&rsquo;re always happy to help.</span></li>
+        </ul>
+      </section>
+
+      <!-- Smoking Policy -->
+      <section id="smoking" class="mb-10 bg-white rounded-2xl border border-border-light shadow-sm p-6 lg:p-8">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-1 h-7 bg-gold rounded-full"></div>
+          <h2 class="text-2xl text-navy">Smoking Policy</h2>
+        </div>
+        <p class="text-slate-600 text-base leading-relaxed mb-3">To keep the experience comfortable for everyone, smoking is generally not permitted on board.</p>
+        <p class="text-slate-600 text-base leading-relaxed">On private cruises, exceptions may be allowed while anchored, at the stern (rear) of the vessel, and only with crew approval.</p>
+      </section>
+
+      <!-- Contact CTA -->
+      <div class="bg-navy rounded-2xl p-6 lg:p-8 text-center text-white">
+        <h2 class="text-xl lg:text-2xl text-white mb-2 font-serif">Still have questions?</h2>
+        <p class="text-white/70 text-base mb-6">Reach out anytime &mdash; we typically reply within minutes during office hours.</p>
+        <div class="flex flex-col sm:flex-row gap-3 justify-center">
+          <a href="https://wa.me/526241916997" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20c55e] text-white font-bold px-6 py-3 rounded-xl uppercase tracking-widest text-sm transition-colors">
+            <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp
+          </a>
+          <a href="/contact" class="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white font-bold px-6 py-3 rounded-xl uppercase tracking-widest text-sm transition-colors border border-white/30">
+            <span class="material-symbols-outlined text-base">mail</span> Contact Form
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <Footer />
+  <FloatingCTA />
+  <RezdyModal />
+</BaseLayout>

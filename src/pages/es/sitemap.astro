@@ -1,0 +1,105 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import FloatingCTA from '../../components/FloatingCTA.astro';
+import RezdyModal from '../../components/RezdyModal.astro';
+
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://cabosailing.com/es/" },
+    { "@type": "ListItem", "position": 2, "name": "Mapa del Sitio" }
+  ]
+});
+---
+
+<BaseLayout title="Mapa del Sitio | Cabo Sailing" description="Explora todas las páginas de Cabo Sailing — tours, flota, servicio de transporte, guía de viaje y políticas." hreflangs={{ en: '/sitemap', es: '/es/sitemap' }}>
+  <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
+  <Header variant="subpage" activePage="" />
+
+  <main class="flex-1 w-full overflow-x-hidden pt-[60px] lg:pt-[72px]">
+    <div class="max-w-[1100px] mx-auto px-5 lg:px-8 py-10 lg:py-16">
+
+      <!-- Breadcrumb -->
+      <nav class="flex items-center gap-1.5 text-xs text-slate-500 mb-6" aria-label="Breadcrumb">
+        <a href="/es/" class="hover:text-gold transition-colors">Inicio</a>
+        <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+        <span class="text-navy font-semibold">Mapa del Sitio</span>
+      </nav>
+
+      <!-- Header -->
+      <header class="mb-10">
+        <h1 class="text-3xl lg:text-4xl text-navy font-serif mb-3">Mapa del Sitio</h1>
+        <p class="text-slate-500 text-base lg:text-lg leading-relaxed">Todas las páginas de cabosailing.com, organizadas por sección.</p>
+      </header>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
+
+        <!-- Páginas Principales -->
+        <section class="bg-white rounded-2xl border border-border-light shadow-sm p-6 lg:p-8">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-1 h-7 bg-gold rounded-full"></div>
+            <h2 class="text-xl text-navy">Páginas Principales</h2>
+          </div>
+          <ul class="space-y-2 text-base">
+            <li><a href="/es/" class="text-slate-600 hover:text-accent-gold transition-colors">Inicio</a></li>
+            <li><a href="/es/tours" class="text-slate-600 hover:text-accent-gold transition-colors">Tours</a></li>
+            <li><a href="/es/fleet" class="text-slate-600 hover:text-accent-gold transition-colors">Nuestra Flota</a></li>
+            <li><a href="/es/shuttle-service" class="text-slate-600 hover:text-accent-gold transition-colors">Servicio de Transporte</a></li>
+            <li><a href="/es/travel-guide" class="text-slate-600 hover:text-accent-gold transition-colors">Guía de Viaje</a></li>
+            <li><a href="/es/contact" class="text-slate-600 hover:text-accent-gold transition-colors">Contacto</a></li>
+          </ul>
+        </section>
+
+        <!-- Tours -->
+        <section class="bg-white rounded-2xl border border-border-light shadow-sm p-6 lg:p-8">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-1 h-7 bg-gold rounded-full"></div>
+            <h2 class="text-xl text-navy">Tours y Charters</h2>
+          </div>
+          <ul class="space-y-2 text-base">
+            <li><a href="/es/private-snorkeling" class="text-slate-600 hover:text-accent-gold transition-colors">Snorkel Privado</a></li>
+            <li><a href="/es/shared-snorkeling" class="text-slate-600 hover:text-accent-gold transition-colors">Snorkel Compartido</a></li>
+            <li><a href="/es/private-sunset" class="text-slate-600 hover:text-accent-gold transition-colors">Atardecer Privado</a></li>
+            <li><a href="/es/shared-sunset" class="text-slate-600 hover:text-accent-gold transition-colors">Atardecer Compartido</a></li>
+            <li><a href="/es/whale-watching" class="text-slate-600 hover:text-accent-gold transition-colors">Avistamiento de Ballenas</a></li>
+            <li><a href="/es/scuba-diving" class="text-slate-600 hover:text-accent-gold transition-colors">Buceo</a></li>
+            <li><a href="/es/bachelorette" class="text-slate-600 hover:text-accent-gold transition-colors">Despedida de Soltera</a></li>
+          </ul>
+        </section>
+
+        <!-- Políticas e Información -->
+        <section class="bg-white rounded-2xl border border-border-light shadow-sm p-6 lg:p-8">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-1 h-7 bg-gold rounded-full"></div>
+            <h2 class="text-xl text-navy">Políticas e Información</h2>
+          </div>
+          <ul class="space-y-2 text-base">
+            <li><a href="/es/policies" class="text-slate-600 hover:text-accent-gold transition-colors">Reservas y Cancelaciones</a></li>
+            <li><a href="/es/sitemap" class="text-slate-600 hover:text-accent-gold transition-colors">Mapa del Sitio</a></li>
+          </ul>
+        </section>
+
+        <!-- Idiomas -->
+        <section class="bg-white rounded-2xl border border-border-light shadow-sm p-6 lg:p-8">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-1 h-7 bg-gold rounded-full"></div>
+            <h2 class="text-xl text-navy">Idiomas</h2>
+          </div>
+          <ul class="space-y-2 text-base">
+            <li><a href="/" class="text-slate-600 hover:text-accent-gold transition-colors">English</a></li>
+            <li><a href="/es/" class="text-slate-600 hover:text-accent-gold transition-colors">Español</a></li>
+          </ul>
+        </section>
+
+      </div>
+
+    </div>
+  </main>
+
+  <Footer />
+  <FloatingCTA />
+  <RezdyModal />
+</BaseLayout>

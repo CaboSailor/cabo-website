@@ -16,11 +16,20 @@
   </div>
 </div>
 
-<script is:inline defer src="https://cabosailing.rezdy.com/pluginJs"></script>
 <script is:inline>
 var _rezdyPromo='';
+var _rezdyPluginLoaded=false;
 fetch('/data/prices.json?v='+Date.now()).then(function(r){return r.json()}).then(function(d){_rezdyPromo=d.promoCode||''}).catch(function(){});
+function _loadRezdyPlugin(){
+  if(_rezdyPluginLoaded)return;
+  _rezdyPluginLoaded=true;
+  var s=document.createElement('script');
+  s.src='https://cabosailing.rezdy.com/pluginJs';
+  s.async=true;
+  document.head.appendChild(s);
+}
 function openRezdyModal(widgetId, type){
+  _loadRezdyPlugin();
   type = type || 'calendarWidget';
   var modal=document.getElementById('rezdyModal');
   var iframe=document.getElementById('rezdyIframe');
