@@ -1,0 +1,120 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import RezdyModal from '../../components/RezdyModal.astro';
+---
+
+<BaseLayout title="Gracias — Cabo Sailing" description="Recibimos tu solicitud y te responderemos pronto con disponibilidad y las mejores opciones." hreflangs={{ en: '/thank-you', es: '/es/thank-you' }}>
+  <Header variant="subpage" activePage="" />
+
+  <main class="flex-1 w-full overflow-x-hidden pt-[60px] lg:pt-[72px]">
+    <div class="max-w-[720px] mx-auto px-5 lg:px-8 py-12 lg:py-20">
+
+      <!-- Success header -->
+      <div class="text-center mb-10">
+        <div class="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center mx-auto mb-5">
+          <span class="material-symbols-outlined text-green-600 text-4xl">check_circle</span>
+        </div>
+        <h1 class="text-3xl lg:text-4xl text-navy mb-3">Listo &mdash; recibimos tu solicitud!</h1>
+        <p class="text-slate-600 text-base lg:text-lg leading-relaxed">Estamos revisando disponibilidad y te responderemos pronto con las mejores opciones.</p>
+      </div>
+
+      <!-- Request summary -->
+      <div id="summary-card" class="hidden bg-white rounded-2xl border border-border-light shadow-sm p-6 lg:p-8 mb-8">
+        <h2 class="text-sm font-bold text-navy uppercase tracking-widest mb-5">Resumen de tu Solicitud</h2>
+        <dl class="space-y-3 text-base">
+          <div id="row-activity" class="hidden flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1 sm:gap-4 border-b border-border-light/50 pb-3"><dt class="text-slate-500 font-medium">Actividad</dt><dd class="text-navy font-semibold" id="val-activity"></dd></div>
+          <div id="row-date" class="hidden flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1 sm:gap-4 border-b border-border-light/50 pb-3"><dt class="text-slate-500 font-medium">Fecha Preferida</dt><dd class="text-navy font-semibold" id="val-date"></dd></div>
+          <div id="row-guests" class="hidden flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1 sm:gap-4 border-b border-border-light/50 pb-3"><dt class="text-slate-500 font-medium">Invitados</dt><dd class="text-navy font-semibold" id="val-guests"></dd></div>
+          <div id="row-name" class="hidden flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1 sm:gap-4"><dt class="text-slate-500 font-medium">Nombre</dt><dd class="text-navy font-semibold" id="val-name"></dd></div>
+        </dl>
+      </div>
+
+      <!-- Email confirmation -->
+      <div id="email-block" class="hidden bg-light-grey rounded-2xl p-5 lg:p-6 mb-8 text-center">
+        <p class="text-sm text-slate-600 mb-1">Enviamos una copia de tu solicitud a:</p>
+        <p class="text-navy font-bold text-base lg:text-lg break-all" id="val-email"></p>
+        <p class="text-xs text-slate-500 mt-2">No lo recibiste? Por favor revisa tu carpeta de spam o correo no deseado.</p>
+      </div>
+
+      <!-- Urgent / faster CTA -->
+      <div class="bg-navy rounded-2xl p-6 lg:p-8 text-center text-white mb-8">
+        <p class="text-white/85 text-base lg:text-lg leading-relaxed mb-2">En horario de oficina, normalmente respondemos en minutos.</p>
+        <p class="text-white/70 text-sm lg:text-base mb-6">Si tu solicitud es urgente o prefieres una respuesta mas rapida:</p>
+        <a href="https://wa.me/526241916997?text=hola%2C%20acabo%20de%20enviar%20una%20solicitud%20en%20cabosailing.com" target="_blank" class="flex items-center justify-center gap-3 w-full bg-[#25D366] hover:bg-[#20c55e] text-white font-bold text-base lg:text-lg py-4 rounded-xl uppercase tracking-[0.1em] shadow-lg transition-colors mb-3">
+          <i class="fa-brands fa-whatsapp text-2xl"></i> Escribenos por WhatsApp
+        </a>
+        <a href="tel:+526241438485" class="block text-white/90 hover:text-gold transition-colors text-sm font-semibold">
+          <span class="material-symbols-outlined text-base align-middle mr-1">call</span>Llamanos: +52 624 143 8485
+        </a>
+      </div>
+
+      <!-- Submit another inquiry -->
+      <div class="text-center">
+        <a href="/es/contact" class="inline-flex items-center gap-2 text-navy border border-navy hover:bg-navy hover:text-white transition-colors font-bold text-sm uppercase tracking-widest px-8 py-3.5 rounded-xl">
+          <span class="material-symbols-outlined text-base">add</span> Enviar Otra Solicitud
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <Footer />
+  <RezdyModal />
+
+  <script is:inline>
+    (function() {
+      var params = new URLSearchParams(window.location.search);
+      function show(rowId, valId, value) {
+        if (!value) return;
+        var row = document.getElementById(rowId);
+        var val = document.getElementById(valId);
+        row.classList.remove('hidden');
+        row.classList.add('flex');
+        val.textContent = value;
+      }
+      function formatDate(iso) {
+        if (!iso) return '';
+        var parts = iso.split('-');
+        if (parts.length !== 3) return iso;
+        var d = new Date(parseInt(parts[0]), parseInt(parts[1]) - 1, parseInt(parts[2]));
+        if (isNaN(d.getTime())) return iso;
+        return d.toLocaleDateString('es-ES', { month: 'long', day: 'numeric', year: 'numeric' });
+      }
+      function combineActivity(activity, sailingType) {
+        var bad = ['', 'Not Selected', 'No Seleccionado', 'Undecided'];
+        var a = (activity || '').trim();
+        var s = (sailingType || '').trim();
+        if (bad.indexOf(s) === -1 && bad.indexOf(a) === -1) return a + ' — ' + s;
+        if (bad.indexOf(a) === -1) return a;
+        if (bad.indexOf(s) === -1) return s;
+        return '';
+      }
+
+      var name = params.get('name');
+      var email = params.get('email');
+      var date = params.get('date');
+      var guests = params.get('guests');
+      var activity = combineActivity(params.get('activity'), params.get('sailingType'));
+
+      var formattedDate = date && date !== 'Flexible' ? formatDate(date) : (date === 'Flexible' ? 'Flexible' : '');
+      var guestsText = guests && guests !== 'No especificado' ? guests + ' personas' : '';
+
+      var hasAny = name || email || activity || formattedDate || guestsText;
+      if (hasAny) {
+        if (activity || formattedDate || guestsText || name) {
+          document.getElementById('summary-card').classList.remove('hidden');
+          show('row-activity', 'val-activity', activity);
+          show('row-date', 'val-date', formattedDate);
+          show('row-guests', 'val-guests', guestsText);
+          show('row-name', 'val-name', name);
+        }
+        if (email) {
+          document.getElementById('email-block').classList.remove('hidden');
+          document.getElementById('val-email').textContent = email;
+        }
+      }
+    })();
+  </script>
+</BaseLayout>

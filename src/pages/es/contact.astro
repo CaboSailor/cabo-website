@@ -300,7 +300,11 @@ const breadcrumbSchema = JSON.stringify({
         emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_NOTIFY, templateParams),
         emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_AUTOREPLY, templateParams)
       ]).then(function() {
-        window.location.href = '/es/thank-you';
+        var qs = new URLSearchParams({
+          name: fullName, email: email, activity: activity,
+          sailingType: sailingType, date: date, guests: groupSize
+        }).toString();
+        window.location.href = '/es/thank-you?' + qs;
       }).catch(function(error) {
         console.error('EmailJS error:', error);
         submitBtn.disabled = false;
