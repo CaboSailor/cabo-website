@@ -41,7 +41,7 @@ Selecting a responsible, knowledgeable tour operator makes all the difference. E
 - **Expert Guides** &mdash; A knowledgeable marine biologist or naturalist enhances the trip, providing valuable insights about whale behaviors and conservation efforts.
 - **Respectful Distance** &mdash; Ethical tours maintain a safe distance from whales, allowing them to move freely without stress.
 
-Consider booking a private yacht charter for a luxurious and exclusive whale-watching experience. These charters have full control of the itinerary, offering an intimate way to witness marine life without the crowds. <a href="/fleet/" class="text-accent-gold font-semibold hover:underline">Cabo yacht charters</a> provide an elegant setting to enjoy the wonders of the sea.
+Consider booking a private yacht charter for a luxurious and exclusive whale-watching experience. These charters have full control of the itinerary, offering an intimate way to witness marine life without the crowds. <a href="/whale-watching/" class="text-accent-gold font-semibold hover:underline">Cabo yacht charters</a> provide an elegant setting to enjoy the wonders of the sea.
 
 ---
 

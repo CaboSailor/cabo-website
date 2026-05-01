@@ -64,7 +64,7 @@ For a different type of relaxation, some spas offer temazcal ceremonies, an anci
 
 A sunset cruise is one of Cabo's most romantic activities for honeymooners. Sailing past the famous Arch of Cabo San Lucas while the sky turns shades of orange and pink creates a magical experience.
 
-Many companies offer <a href="/fleet/" class="text-accent-gold font-semibold hover:underline">private yacht rentals</a> with dinner, champagne, and live music. Cabo Sailing Ocean Adventures is known for its luxury sailboats and top-tier service, making it an excellent option for honeymooners looking to spend an intimate evening on the water.
+Many companies offer <a href="/private-sunset/" class="text-accent-gold font-semibold hover:underline">private yacht rentals</a> with dinner, champagne, and live music. Cabo Sailing Ocean Adventures is known for its luxury sailboats and top-tier service, making it an excellent option for honeymooners looking to spend an intimate evening on the water.
 
 Some catamaran cruises for couples who prefer a group setting include open bars, live music, and dancing under the stars. These cruises are a fun way to mix relaxation with a lively atmosphere.
 

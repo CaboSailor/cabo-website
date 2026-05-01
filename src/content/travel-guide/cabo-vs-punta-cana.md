@@ -169,6 +169,6 @@ Already leaning toward Cabo? Browse our <a href="/travel-guide/" class="text-acc
 
 ## Book Your Cabo Sailing Adventure
 
-If Cabo appeals to you, and you want to explore its stunning coastlines, Cabo Sailing is the perfect choice for your adventure. Whether you are looking for a private yacht charter or a shared sailing experience, we offer customized options to make your day on the water unforgettable. Our <a href="/fleet/" class="text-accent-gold font-semibold hover:underline">luxury yachts and sailboats</a> are equipped with all the amenities you need for a relaxing and exciting time at sea.
+If Cabo appeals to you, and you want to explore its stunning coastlines, Cabo Sailing is the perfect choice for your adventure. Whether you are looking for a private yacht charter or a shared sailing experience, we offer customized options to make your day on the water unforgettable. Our <a href="/tours/" class="text-accent-gold font-semibold hover:underline">luxury yachts and sailboats</a> are equipped with all the amenities you need for a relaxing and exciting time at sea.
 
-<a href="/fleet/" class="text-accent-gold font-semibold hover:underline">Browse our fleet</a> and let us exceed your expectations.
+<a href="/tours/" class="text-accent-gold font-semibold hover:underline">Browse our tours</a> and let us exceed your expectations.

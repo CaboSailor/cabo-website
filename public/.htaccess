@@ -95,12 +95,14 @@ RewriteRule ^is-cabo-san-lucas-good-for-scuba-diving/?$ /scuba-diving/ [R=301,L]
 RewriteRule ^preparing-for-your-scuba-diving-trip-to-cabo-san-lucas/?$ /scuba-diving/ [R=301,L]
 
 # -----------------------------------------------------------------------------
-# Fleet (sailboat & yacht articles → /fleet/)
+# Old fleet/charter articles → /tours/ (fleet page retired 2026-05)
 # -----------------------------------------------------------------------------
-RewriteRule ^cabo-sailing-coupon-codes/?$ /fleet/ [R=301,L]
-RewriteRule ^the-best-time-to-book-a-sailing-tour-in-cabo-san-lucas/?$ /fleet/ [R=301,L]
-RewriteRule ^yacht-charter-costs-in-cabo-san-lucas-what-to-expect/?$ /fleet/ [R=301,L]
-RewriteRule ^cabo-luxury-sailboats-vs-yachts/?$ /fleet/ [R=301,L]
-RewriteRule ^what-you-need-to-know-about-sailboat-chartering-in-cabo-san-lucas/?$ /fleet/ [R=301,L]
-RewriteRule ^cabo-sailing-adds-luxurious-sport-yachts-fleet/?$ /fleet/ [R=301,L]
-RewriteRule ^how-to-charter-a-yacht-in-cabo-san-lucas/?$ /fleet/ [R=301,L]
+RewriteRule ^cabo-sailing-coupon-codes/?$ /tours/ [R=301,L]
+RewriteRule ^the-best-time-to-book-a-sailing-tour-in-cabo-san-lucas/?$ /tours/ [R=301,L]
+RewriteRule ^yacht-charter-costs-in-cabo-san-lucas-what-to-expect/?$ /tours/ [R=301,L]
+RewriteRule ^cabo-luxury-sailboats-vs-yachts/?$ /tours/ [R=301,L]
+RewriteRule ^what-you-need-to-know-about-sailboat-chartering-in-cabo-san-lucas/?$ /tours/ [R=301,L]
+RewriteRule ^cabo-sailing-adds-luxurious-sport-yachts-fleet/?$ /tours/ [R=301,L]
+RewriteRule ^how-to-charter-a-yacht-in-cabo-san-lucas/?$ /tours/ [R=301,L]
+RewriteRule ^fleet/?$ /tours/ [R=301,L]
+RewriteRule ^es/fleet/?$ /es/tours/ [R=301,L]

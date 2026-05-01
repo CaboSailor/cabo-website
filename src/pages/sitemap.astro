@@ -33,7 +33,7 @@ const breadcrumbSchema = JSON.stringify({
 });
 ---
 
-<BaseLayout title="Sitemap | Cabo Sailing" description="Browse every page on Cabo Sailing — tours, fleet, shuttle service, travel guide articles, and policies." hreflangs={{ en: '/sitemap', es: '/es/sitemap' }}>
+<BaseLayout title="Sitemap | Cabo Sailing" description="Browse every page on Cabo Sailing — tours, shuttle service, travel guide articles, and policies." hreflangs={{ en: '/sitemap', es: '/es/sitemap' }}>
   <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
   <Header variant="subpage" activePage="" />
 
@@ -64,7 +64,6 @@ const breadcrumbSchema = JSON.stringify({
           <ul class="space-y-2 text-base">
             <li><a href="/" class="text-slate-600 hover:text-accent-gold transition-colors">Home</a></li>
             <li><a href="/tours" class="text-slate-600 hover:text-accent-gold transition-colors">Tours</a></li>
-            <li><a href="/fleet" class="text-slate-600 hover:text-accent-gold transition-colors">Our Fleet</a></li>
             <li><a href="/shuttle-service" class="text-slate-600 hover:text-accent-gold transition-colors">Shuttle Service</a></li>
             <li><a href="/travel-guide" class="text-slate-600 hover:text-accent-gold transition-colors">Travel Guide</a></li>
             <li><a href="/contact" class="text-slate-600 hover:text-accent-gold transition-colors">Contact</a></li>

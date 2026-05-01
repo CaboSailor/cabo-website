@@ -8,7 +8,7 @@ category: "Activities"
 categoryLink: "/travel-guide-activities"
 activeSubmenu: "activities"
 bestTime: "Year-round — calmer seas Nov–Jun"
-relatedActivity: "/fleet"
+relatedActivity: "/tours"
 sidebarType: "default"
 ---
 
@@ -84,4 +84,4 @@ You could even use this shorter sailing trip to test the waters (pun intended) a
 
 If you find these successful, then the Sea of Cortez is your oyster. Happy Sailing!
 
-Our <a href="/fleet/" class="text-accent-gold font-semibold hover:underline">well-maintained sailboats and catamarans</a> are designed for smooth, stable sailing &mdash; which helps with seasickness too.
+Our <a href="/tours/" class="text-accent-gold font-semibold hover:underline">well-maintained sailboats and catamarans</a> are designed for smooth, stable sailing &mdash; which helps with seasickness too.

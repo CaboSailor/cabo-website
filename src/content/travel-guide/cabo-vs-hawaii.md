@@ -169,7 +169,7 @@ Already leaning toward Cabo? Browse our <a href="/travel-guide/" class="text-acc
 
 ## Book Your Cabo Adventure with Cabo Sailing
 
-If Cabo is your chosen destination, Cabo Sailing is ready to turn your trip into an experience you will treasure. Our <a href="/fleet/" class="text-accent-gold font-semibold hover:underline">private yacht charters</a>, shared sailing trips, and customizable excursions allow you to explore the breathtaking coastlines of Cabo with unmatched comfort and style. Guests appreciate our clear and simple booking process, exceptional service from start to finish, and commitment to safety on every voyage.
+If Cabo is your chosen destination, Cabo Sailing is ready to turn your trip into an experience you will treasure. Our <a href="/tours/" class="text-accent-gold font-semibold hover:underline">private yacht charters</a>, shared sailing trips, and customizable excursions allow you to explore the breathtaking coastlines of Cabo with unmatched comfort and style. Guests appreciate our clear and simple booking process, exceptional service from start to finish, and commitment to safety on every voyage.
 
 Whether you are celebrating a milestone, planning a romantic escape, or simply seeking a peaceful day on the water, our team goes above and beyond to exceed expectations. Many guests return again and again, drawn to the personalized attention and unforgettable moments they experience with us.
 

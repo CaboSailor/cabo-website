@@ -57,6 +57,6 @@ Regardless of the type of boat you rent, prioritizing safety is key. Make sure y
 
 Cabo San Lucas offers breathtaking landscapes, vibrant marine life, and exciting adventures on the water. Whether you're gliding over the crystal-clear waters or enjoying the sun setting over the ocean, renting a boat in Cabo is a memorable experience. Enjoy the freedom to explore hidden coves, enjoy water sports, or relax on the open sea.
 
-Choosing to <a href="/fleet/" class="text-accent-gold font-semibold hover:underline">rent a boat</a> in Cabo, with or without a license, opens up endless possibilities for exploration and fun. Consider your options and decide what suits your experience and preferences.
+Choosing to <a href="/tours/" class="text-accent-gold font-semibold hover:underline">rent a boat</a> in Cabo, with or without a license, opens up endless possibilities for exploration and fun. Consider your options and decide what suits your experience and preferences.
 
 The choice of exploring the open sea awaits you, whether you're a seasoned sailor or a curious beginner. With the right planning and the help of professional services, your Cabo adventure will surely be one to remember. If you need more information about our luxury yacht charter services, <a href="/contact/" class="text-accent-gold font-semibold hover:underline">get in touch</a> with us today.

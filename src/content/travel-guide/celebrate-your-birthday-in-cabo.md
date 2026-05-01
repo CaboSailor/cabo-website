@@ -40,7 +40,7 @@ Don't forget to call ahead and make a reservation, especially if you will be tra
 
 ## Go on a Birthday Adventure
 
-You're already in Cabo, so why not go all out? Rent a <a href="/fleet/" class="text-accent-gold font-semibold hover:underline">luxury sailboat or yacht</a> to enjoy a day out on the ocean, complete with an open bar, snacks, and lunch. Whether you want to snorkel, scuba dive, fish, or just enjoy the waves, getting out on the water and away from the crowds is a great way to celebrate your birthday.
+You're already in Cabo, so why not go all out? Rent a <a href="/tours/" class="text-accent-gold font-semibold hover:underline">luxury sailboat or yacht</a> to enjoy a day out on the ocean, complete with an open bar, snacks, and lunch. Whether you want to snorkel, scuba dive, fish, or just enjoy the waves, getting out on the water and away from the crowds is a great way to celebrate your birthday.
 
 You can even let the staff know about the celebration and they'll be happy to fulfill any special requests you might have!
 

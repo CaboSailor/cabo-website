@@ -8,7 +8,7 @@ category: "Activities"
 categoryLink: "/travel-guide-activities"
 activeSubmenu: "activities"
 bestTime: "Year-round — best deals May–Oct"
-relatedActivity: "/fleet"
+relatedActivity: "/tours"
 sidebarType: "default"
 ---
 
@@ -18,7 +18,7 @@ Dreaming of cruising along Cabo San Lucas' turquoise waters with a cold drink in
 
 ## Average Cost of Private Sailing in Cabo
 
-Private sailing charters in Cabo San Lucas range widely in price. Most half-day tours cost between $500 and $1,200 for small groups of up to six people. Full-day charters may run from $1,000 to $3,000, depending on the vessel size and inclusions. Some Cabo companies do charge over $4,000+ per day for high-end <a href="/fleet/" class="text-accent-gold font-semibold hover:underline">luxury yachts</a>.
+Private sailing charters in Cabo San Lucas range widely in price. Most half-day tours cost between $500 and $1,200 for small groups of up to six people. Full-day charters may run from $1,000 to $3,000, depending on the vessel size and inclusions. Some Cabo companies do charge over $4,000+ per day for high-end <a href="/tours/" class="text-accent-gold font-semibold hover:underline">luxury yachts</a>.
 
 For most travelers, the price covers the captain, crew, beverages, snacks, and snorkeling gear. Some companies even include transportation from your hotel. If you choose a premium yacht, expect extra amenities like open bars, gourmet meals, and upgraded cabins.
 
@@ -94,7 +94,7 @@ Even basic packages feel premium thanks to Cabo's natural beauty and the profess
 
 ## Tips for Booking Your Private Sailing Charter
 
-Timing matters when booking a sailing charter in Cabo San Lucas. Prices are usually lower if you book in advance, especially outside the busy months. Many travelers book at least two to four weeks before their trip. Early booking gives you <a href="/fleet/" class="text-accent-gold font-semibold hover:underline">more choices in boats</a>, departure times, and routes.
+Timing matters when booking a sailing charter in Cabo San Lucas. Prices are usually lower if you book in advance, especially outside the busy months. Many travelers book at least two to four weeks before their trip. Early booking gives you <a href="/tours/" class="text-accent-gold font-semibold hover:underline">more choices in boats</a>, departure times, and routes.
 
 If your travel dates fall during holidays or whale season, booking early becomes even more important. Popular slots fill up fast, and last-minute prices can rise sharply. For those visiting during summer, early morning or sunset cruises are more comfortable due to cooler weather and calmer waters.
 

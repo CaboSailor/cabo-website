@@ -22,7 +22,7 @@ With so many ways to sail, party, or relax your way into the evening, choosing t
 
 If your idea of the perfect evening includes soft music, fine wine, and a gourmet menu served on a sleek yacht, this is the sunset cruise for you. Luxury sunset sailing trips offer a refined experience complete with top-shelf drinks, attentive crew service, and a front-row view of the sun setting behind Cabo's famous Arch. These cruises often limit their capacity to keep things peaceful and spacious. You'll likely be aboard a French-made sailing yacht or catamaran, where the ambiance leans toward romantic and serene.
 
-From the gentle wind filling the sails to the curated menu and open bar, everything is designed for comfort and elegance. It's perfect for couples or small groups looking to avoid crowds without sacrificing the beauty of the open ocean. <a href="/fleet/" class="text-accent-gold font-semibold hover:underline">Luxury sailing charters in Cabo San Lucas</a> are a great combination of luxury and privacy.
+From the gentle wind filling the sails to the curated menu and open bar, everything is designed for comfort and elegance. It's perfect for couples or small groups looking to avoid crowds without sacrificing the beauty of the open ocean. <a href="/private-sunset/" class="text-accent-gold font-semibold hover:underline">Luxury sailing charters in Cabo San Lucas</a> are a great combination of luxury and privacy.
 
 ---
 
@@ -98,4 +98,4 @@ Finally, think about the vessel itself. Do you prefer a traditional sailboat, a 
 
 No matter which sunset cruise you choose, you're in for something special. The views, the breeze, and the atmosphere all come together to create a memory that lasts far beyond your time in Cabo.
 
-At Cabo Sailing Ocean Adventures, we've spent nearly two decades helping our guests create lasting memories. From <a href="/fleet/" class="text-accent-gold font-semibold hover:underline">private yacht charters</a> to shared sailing cruises, we offer experiences that combine comfort, flexibility, and impeccable service. Our crew takes pride in the details, so you can relax and enjoy the show. When you're ready to sail into the Cabo sunset, we'd be honored to welcome you aboard.
+At Cabo Sailing Ocean Adventures, we've spent nearly two decades helping our guests create lasting memories. From <a href="/private-sunset/" class="text-accent-gold font-semibold hover:underline">private yacht charters</a> to shared sailing cruises, we offer experiences that combine comfort, flexibility, and impeccable service. Our crew takes pride in the details, so you can relax and enjoy the show. When you're ready to sail into the Cabo sunset, we'd be honored to welcome you aboard.

@@ -29,7 +29,6 @@ const lp = (path: string) => getLocalePath(lang, path);
       <div>
         <p class="font-semibold text-sm uppercase tracking-widest mb-4">{t(lang, 'footer.company')}</p>
         <div class="space-y-2 text-white/60 text-sm">
-          <a href={lp('/fleet')} class="block hover:text-white transition-colors">{t(lang, 'nav.fleet')}</a>
           <a href={lp('/shuttle-service')} class="block hover:text-white transition-colors">{t(lang, 'nav.shuttleService')}</a>
           <a href={lp('/travel-guide')} class="block hover:text-white transition-colors">{t(lang, 'nav.travelGuide')}</a>
           <a href="#" class="block hover:text-white transition-colors">{t(lang, 'footer.aboutCrew')}</a>
