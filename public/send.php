@@ -82,44 +82,53 @@ $notifyHeaders =
     "Content-Type: text/plain; charset=UTF-8\r\n" .
     "X-Mailer: cabosailing.com contact form\r\n";
 
-// ===== Email 2: Autoreply to the guest =====
+// ===== Email 2: Autoreply to the guest (HTML so the WhatsApp number is a link) =====
+$h = function($s) { return htmlspecialchars((string)$s, ENT_QUOTES | ENT_HTML5, 'UTF-8'); };
+$waLink   = '<a href="https://wa.me/526241916997" style="color:#25D366;font-weight:bold;text-decoration:none">526241916997</a>';
+$telLink  = '<a href="tel:+526241438485" style="color:#0a1d37;font-weight:bold;text-decoration:none">+52 624 143 8485</a>';
+
 if ($lang === 'es') {
     $autoSubject = 'Tu solicitud de crucero en Cabo Sailing';
     $autoBody =
-        "Hola $fullName,\n\n" .
-        "Listo — recibimos tu solicitud!\n" .
-        "Estamos revisando disponibilidad y te responderemos pronto con las mejores opciones.\n\n" .
-        "Resumen de tu Solicitud:\n" .
-        "  Actividad:       $activity — $sailingType\n" .
-        "  Fecha Preferida: $date\n" .
-        "  Invitados:       $groupSize\n" .
-        "  Nombre:          $fullName\n\n" .
-        "En horario de oficina, normalmente respondemos en minutos.\n" .
-        "Si tu solicitud es urgente o prefieres una respuesta mas rapida:\n" .
-        "  WhatsApp: https://wa.me/526241916997\n" .
-        "  Llamanos: +52 624 143 8485\n\n" .
-        "— El equipo de Cabo Sailing\n";
+        '<div style="font-family:Arial,sans-serif;color:#1a1a1a;line-height:1.6;max-width:560px">' .
+        '<p>Hola ' . $h($fullName) . ',</p>' .
+        '<p><strong>Listo &mdash; recibimos tu solicitud!</strong><br>' .
+        'Estamos revisando disponibilidad y te responderemos pronto con las mejores opciones.</p>' .
+        '<p><strong>Resumen de tu Solicitud</strong><br>' .
+        'Actividad: ' . $h($activity) . ' &mdash; ' . $h($sailingType) . '<br>' .
+        'Fecha Preferida: ' . $h($date) . '<br>' .
+        'Invitados: ' . $h($groupSize) . '<br>' .
+        'Nombre: ' . $h($fullName) . '</p>' .
+        '<p>En horario de oficina, normalmente respondemos en minutos.<br>' .
+        'Si tu solicitud es urgente o prefieres una respuesta mas rapida:</p>' .
+        '<p>WhatsApp: ' . $waLink . '<br>' .
+        'Llamanos: ' . $telLink . '</p>' .
+        '<p>&mdash; El equipo de Cabo Sailing</p>' .
+        '</div>';
 } else {
     $autoSubject = 'Your Cabo Sailing cruise inquiry';
     $autoBody =
-        "Hi $fullName,\n\n" .
-        "You're all set — we've got your request!\n" .
-        "We're checking availability and will get back to you shortly with the best options.\n\n" .
-        "Your Request Summary:\n" .
-        "  Activity:       $activity — $sailingType\n" .
-        "  Preferred Date: $date\n" .
-        "  Guests:         $groupSize\n" .
-        "  Name:           $fullName\n\n" .
-        "During office hours, we usually reply within minutes.\n" .
-        "If your request is urgent or you prefer faster communication:\n" .
-        "  WhatsApp: https://wa.me/526241916997\n" .
-        "  Call:     +52 624 143 8485\n\n" .
-        "— Cabo Sailing Team\n";
+        '<div style="font-family:Arial,sans-serif;color:#1a1a1a;line-height:1.6;max-width:560px">' .
+        '<p>Hi ' . $h($fullName) . ',</p>' .
+        '<p><strong>You&rsquo;re all set &mdash; we&rsquo;ve got your request!</strong><br>' .
+        'We&rsquo;re checking availability and will get back to you shortly with the best options.</p>' .
+        '<p><strong>Your Request Summary</strong><br>' .
+        'Activity: ' . $h($activity) . ' &mdash; ' . $h($sailingType) . '<br>' .
+        'Preferred Date: ' . $h($date) . '<br>' .
+        'Guests: ' . $h($groupSize) . '<br>' .
+        'Name: ' . $h($fullName) . '</p>' .
+        '<p>During office hours, we usually reply within minutes.<br>' .
+        'If your request is urgent or you prefer faster communication:</p>' .
+        '<p>WhatsApp: ' . $waLink . '<br>' .
+        'Call: ' . $telLink . '</p>' .
+        '<p>&mdash; Cabo Sailing Team</p>' .
+        '</div>';
 }
 $autoHeaders =
     "From: Cabo Sailing <$companyEmail>\r\n" .
     "Reply-To: $companyEmail\r\n" .
-    "Content-Type: text/plain; charset=UTF-8\r\n" .
+    "MIME-Version: 1.0\r\n" .
+    "Content-Type: text/html; charset=UTF-8\r\n" .
     "X-Mailer: cabosailing.com contact form\r\n";
 
 $notifyOk = @mail($companyEmail, $notifySubject, $notifyBody, $notifyHeaders);
