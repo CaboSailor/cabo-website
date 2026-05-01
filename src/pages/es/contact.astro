@@ -1,25 +1,25 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import FloatingCTA from '../components/FloatingCTA.astro';
-import RezdyModal from '../components/RezdyModal.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import FloatingCTA from '../../components/FloatingCTA.astro';
+import RezdyModal from '../../components/RezdyModal.astro';
 import { Image } from 'astro:assets';
 
 // Hero image
-import heroImg from "../assets/images/boats/sailing-42/cabo-sailing-42-ocean.jpg";
+import heroImg from "../../assets/images/boats/sailing-42/cabo-sailing-42-ocean.jpg";
 
 const breadcrumbSchema = JSON.stringify({
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://cabosailing.com/" },
-    { "@type": "ListItem", "position": 2, "name": "Contact" }
+    { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://cabosailing.com/es/" },
+    { "@type": "ListItem", "position": 2, "name": "Contacto" }
   ]
 });
 ---
 
-<BaseLayout title="Contact Us — Cabo Sailing | Cabo San Lucas Tours & Charters" description="Contact Cabo Sailing for sailing tours, snorkeling, sunset cruises & scuba diving in Cabo San Lucas. Call, WhatsApp or fill out our form — we respond within minutes." hreflangs={{ en: '/contact', es: '/es/contact' }}>
+<BaseLayout title="Contacto — Cabo Sailing | Tours y Charters en Cabo San Lucas" description="Contacta a Cabo Sailing para tours en velero, snorkel, atardeceres y buceo en Cabo San Lucas. Llama, escribe por WhatsApp o llena nuestro formulario — respondemos en minutos." hreflangs={{ en: '/contact', es: '/es/contact' }}>
   <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
   <Header variant="subpage" activePage="contact" />
 
@@ -27,20 +27,20 @@ const breadcrumbSchema = JSON.stringify({
 
     <!-- ========== HERO BANNER ========== -->
     <div class="relative w-full h-[30vh] lg:h-[40vh] overflow-hidden">
-      <Image alt="Cabo San Lucas marina at sunset" class="w-full h-full object-cover" src={heroImg} width={1400} height={600} />
+      <Image alt="Marina de Cabo San Lucas al atardecer" class="w-full h-full object-cover" src={heroImg} width={1400} height={600} />
       <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/40 to-navy/20"></div>
       <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
-        <h1 class="text-3xl lg:text-5xl text-white mb-3">Get in Touch</h1>
-        <p class="text-white/80 text-base lg:text-lg max-w-xl">We'd love to hear from you. Reach out by phone, WhatsApp, email, or fill out the form below — we typically respond within minutes.</p>
+        <h1 class="text-3xl lg:text-5xl text-white mb-3">Ponte en Contacto</h1>
+        <p class="text-white/80 text-base lg:text-lg max-w-xl">Nos encantaria saber de ti. Contactanos por telefono, WhatsApp, correo o llena el formulario abajo — normalmente respondemos en minutos.</p>
       </div>
     </div>
 
     <!-- ========== BREADCRUMB ========== -->
     <div class="max-w-[1400px] mx-auto px-5 lg:px-10 pt-6">
       <nav class="flex items-center gap-1.5 text-xs text-slate-500 mb-4" aria-label="Breadcrumb">
-        <a href="/" class="hover:text-gold transition-colors">Home</a>
+        <a href="/es/" class="hover:text-gold transition-colors">Inicio</a>
         <span class="material-symbols-outlined text-[14px]">chevron_right</span>
-        <span class="text-navy font-semibold">Contact</span>
+        <span class="text-navy font-semibold">Contacto</span>
       </nav>
     </div>
 
@@ -48,7 +48,7 @@ const breadcrumbSchema = JSON.stringify({
     <div class="max-w-[1400px] mx-auto px-5 lg:px-10 -mt-10 relative z-10">
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         <!-- WhatsApp -->
-        <a href="https://wa.me/526241916997?text=hi%2C%20I'm%20sending%20you%20a%20message%20from%20cabosailing.com" target="_blank" class="bg-white rounded-2xl p-5 border border-border-light shadow-lg hover:shadow-xl transition-shadow flex items-center gap-4 group">
+        <a href="https://wa.me/526241916997?text=hola%2C%20te%20escribo%20desde%20cabosailing.com" target="_blank" class="bg-white rounded-2xl p-5 border border-border-light shadow-lg hover:shadow-xl transition-shadow flex items-center gap-4 group">
           <div class="w-12 h-12 rounded-full bg-[#25D366] flex items-center justify-center flex-shrink-0">
             <i class="fa-brands fa-whatsapp text-white text-2xl"></i>
           </div>
@@ -63,7 +63,7 @@ const breadcrumbSchema = JSON.stringify({
             <span class="material-symbols-outlined text-gold text-2xl">call</span>
           </div>
           <div>
-            <p class="text-sm text-slate-500 uppercase font-bold tracking-widest">Phone (MX)</p>
+            <p class="text-sm text-slate-500 uppercase font-bold tracking-widest">Telefono (MX)</p>
             <p class="text-base font-bold text-navy group-hover:text-gold transition-colors">+52 624 143 8485</p>
           </div>
         </a>
@@ -73,7 +73,7 @@ const breadcrumbSchema = JSON.stringify({
             <span class="material-symbols-outlined text-gold text-2xl">call</span>
           </div>
           <div>
-            <p class="text-sm text-slate-500 uppercase font-bold tracking-widest">Phone (US)</p>
+            <p class="text-sm text-slate-500 uppercase font-bold tracking-widest">Telefono (US)</p>
             <p class="text-base font-bold text-navy group-hover:text-gold transition-colors">619-784-2745</p>
           </div>
         </a>
@@ -83,7 +83,7 @@ const breadcrumbSchema = JSON.stringify({
             <span class="material-symbols-outlined text-white text-2xl">email</span>
           </div>
           <div>
-            <p class="text-sm text-slate-500 uppercase font-bold tracking-widest">Email</p>
+            <p class="text-sm text-slate-500 uppercase font-bold tracking-widest">Correo</p>
             <p class="text-base font-bold text-navy group-hover:text-gold transition-colors">info@cabosailing.com</p>
           </div>
         </a>
@@ -98,18 +98,18 @@ const breadcrumbSchema = JSON.stringify({
         <div>
           <div class="flex items-center gap-3 mb-8">
             <div class="w-1 h-8 bg-gold rounded-full"></div>
-            <h2 class="text-2xl lg:text-3xl text-navy">Send Us a Message</h2>
+            <h2 class="text-2xl lg:text-3xl text-navy">Enviar un Mensaje</h2>
           </div>
 
           <form id="contact-form" class="space-y-6">
             <!-- Name -->
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label class="block text-sm font-bold text-navy uppercase tracking-widest mb-2" for="first-name">First Name *</label>
+                <label class="block text-sm font-bold text-navy uppercase tracking-widest mb-2" for="first-name">Nombre *</label>
                 <input type="text" id="first-name" name="first-name" required class="w-full px-4 py-3 rounded-xl border border-border-light bg-light-grey text-navy font-medium focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-colors"/>
               </div>
               <div>
-                <label class="block text-sm font-bold text-navy uppercase tracking-widest mb-2" for="last-name">Last Name *</label>
+                <label class="block text-sm font-bold text-navy uppercase tracking-widest mb-2" for="last-name">Apellido *</label>
                 <input type="text" id="last-name" name="last-name" required class="w-full px-4 py-3 rounded-xl border border-border-light bg-light-grey text-navy font-medium focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-colors"/>
               </div>
             </div>
@@ -117,71 +117,71 @@ const breadcrumbSchema = JSON.stringify({
             <!-- Email & Phone -->
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label class="block text-sm font-bold text-navy uppercase tracking-widest mb-2" for="email">Email *</label>
+                <label class="block text-sm font-bold text-navy uppercase tracking-widest mb-2" for="email">Correo *</label>
                 <input type="email" id="email" name="email" required class="w-full px-4 py-3 rounded-xl border border-border-light bg-light-grey text-navy font-medium focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-colors"/>
               </div>
               <div>
-                <label class="block text-sm font-bold text-navy uppercase tracking-widest mb-2" for="phone">Phone</label>
+                <label class="block text-sm font-bold text-navy uppercase tracking-widest mb-2" for="phone">Telefono</label>
                 <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 rounded-xl border border-border-light bg-light-grey text-navy font-medium focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-colors"/>
               </div>
             </div>
 
             <!-- Activity -->
             <div>
-              <label class="block text-sm font-bold text-navy uppercase tracking-widest mb-2" for="activity">Activity *</label>
+              <label class="block text-sm font-bold text-navy uppercase tracking-widest mb-2" for="activity">Actividad *</label>
               <select id="activity" name="activity" required class="w-full px-4 py-3 rounded-xl border border-border-light bg-light-grey text-navy font-medium focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-colors appearance-none cursor-pointer">
-                <option value="" disabled selected>Select an activity...</option>
-                <option value="snorkeling">Snorkeling</option>
-                <option value="sunset-cruise">Sunset Cruise</option>
-                <option value="scuba-diving">Scuba Diving</option>
-                <option value="whale-watching">Whale Watching</option>
-                <option value="bachelorette">Bachelorette Party</option>
-                <option value="shuttle-service">Shuttle Service</option>
-                <option value="other">Other / Not Sure</option>
+                <option value="" disabled selected>Selecciona una actividad...</option>
+                <option value="snorkeling">Snorkel</option>
+                <option value="sunset-cruise">Crucero al Atardecer</option>
+                <option value="scuba-diving">Buceo</option>
+                <option value="whale-watching">Avistamiento de Ballenas</option>
+                <option value="bachelorette">Despedida de Soltera</option>
+                <option value="shuttle-service">Servicio de Transporte</option>
+                <option value="other">Otra / No estoy seguro</option>
               </select>
             </div>
 
             <!-- Sailing Type -->
             <div>
-              <label class="block text-sm font-bold text-navy uppercase tracking-widest mb-2" for="sailing-type">Sailing Type</label>
+              <label class="block text-sm font-bold text-navy uppercase tracking-widest mb-2" for="sailing-type">Tipo de Embarcacion</label>
               <select id="sailing-type" name="sailing-type" class="w-full px-4 py-3 rounded-xl border border-border-light bg-light-grey text-navy font-medium focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-colors appearance-none cursor-pointer">
-                <option value="" disabled selected>Select sailing type...</option>
-                <option value="shared-cruise">Shared Cruise</option>
-                <option value="private-sailing">Private Sailing</option>
-                <option value="private-yacht">Private Yacht</option>
-                <option value="undecided">I haven't decided yet</option>
+                <option value="" disabled selected>Selecciona el tipo...</option>
+                <option value="shared-cruise">Crucero Compartido</option>
+                <option value="private-sailing">Velero Privado</option>
+                <option value="private-yacht">Yate Privado</option>
+                <option value="undecided">Aun no he decidido</option>
               </select>
             </div>
 
             <!-- Date & Group Size -->
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label class="block text-sm font-bold text-navy uppercase tracking-widest mb-2" for="date">Preferred Date</label>
+                <label class="block text-sm font-bold text-navy uppercase tracking-widest mb-2" for="date">Fecha Preferida</label>
                 <input type="date" id="date" name="date" class="w-full px-4 py-3 rounded-xl border border-border-light bg-light-grey text-navy font-medium focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-colors"/>
               </div>
               <div>
-                <label class="block text-sm font-bold text-navy uppercase tracking-widest mb-2" for="group-size">Group Size</label>
-                <input type="number" id="group-size" name="group-size" min="1" max="50" placeholder="Number of guests" class="w-full px-4 py-3 rounded-xl border border-border-light bg-light-grey text-navy font-medium focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-colors"/>
+                <label class="block text-sm font-bold text-navy uppercase tracking-widest mb-2" for="group-size">Tamano del Grupo</label>
+                <input type="number" id="group-size" name="group-size" min="1" max="50" placeholder="Numero de invitados" class="w-full px-4 py-3 rounded-xl border border-border-light bg-light-grey text-navy font-medium focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-colors"/>
               </div>
             </div>
 
             <!-- Message -->
             <div>
-              <label class="block text-sm font-bold text-navy uppercase tracking-widest mb-2" for="message">Message</label>
-              <textarea id="message" name="message" rows="4" placeholder="Tell us about your trip — special requests, questions, anything at all..." class="w-full px-4 py-3 rounded-xl border border-border-light bg-light-grey text-navy font-medium focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-colors resize-none"></textarea>
+              <label class="block text-sm font-bold text-navy uppercase tracking-widest mb-2" for="message">Mensaje</label>
+              <textarea id="message" name="message" rows="4" placeholder="Cuentanos sobre tu viaje — peticiones especiales, preguntas, lo que sea..." class="w-full px-4 py-3 rounded-xl border border-border-light bg-light-grey text-navy font-medium focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-colors resize-none"></textarea>
             </div>
 
             <!-- Submit -->
             <button type="submit" class="w-full sm:w-auto bg-navy text-white font-bold text-sm py-4 px-10 rounded-2xl uppercase tracking-[0.15em] shadow-lg hover:bg-navy/90 transition-colors">
-              Send Message
+              Enviar Mensaje
             </button>
             <div id="form-success" class="hidden bg-green-50 border border-green-200 rounded-xl p-4 text-green-700 font-medium text-sm">
               <span class="material-symbols-outlined text-green-500 text-base align-middle mr-1">check_circle</span>
-              Thank you! We've received your message and will get back to you shortly.
+              Gracias! Recibimos tu mensaje y te responderemos pronto.
             </div>
             <div id="form-error" class="hidden bg-red-50 border border-red-200 rounded-xl p-4 text-red-700 font-medium text-sm">
               <span class="material-symbols-outlined text-red-500 text-base align-middle mr-1">error</span>
-              Something went wrong sending your message. Please try again or contact us directly at <a href="mailto:info@cabosailing.com" class="underline font-bold">info@cabosailing.com</a> or via <a href="https://wa.me/526241916997" target="_blank" class="underline font-bold">WhatsApp</a>.
+              Algo salio mal al enviar tu mensaje. Intenta de nuevo o contactanos directamente a <a href="mailto:info@cabosailing.com" class="underline font-bold">info@cabosailing.com</a> o por <a href="https://wa.me/526241916997" target="_blank" class="underline font-bold">WhatsApp</a>.
             </div>
           </form>
         </div>
@@ -190,42 +190,42 @@ const breadcrumbSchema = JSON.stringify({
         <div>
           <div class="flex items-center gap-3 mb-8">
             <div class="w-1 h-8 bg-gold rounded-full"></div>
-            <h2 class="text-2xl lg:text-3xl text-navy">Find Us</h2>
+            <h2 class="text-2xl lg:text-3xl text-navy">Encuentranos</h2>
           </div>
 
           <!-- Map -->
           <div class="rounded-2xl overflow-hidden border border-border-light shadow-lg mb-8 h-[300px] lg:h-[350px]">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.8!2d-109.9053!3d22.8825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86af4b0fe7ffff01%3A0x9c1c1f6b0e5c5c5c!2sCabo%20San%20Lucas%20Marina!5e0!3m2!1sen!2smx!4v1700000000000" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.8!2d-109.9053!3d22.8825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86af4b0fe7ffff01%3A0x9c1c1f6b0e5c5c5c!2sCabo%20San%20Lucas%20Marina!5e0!3m2!1ses!2smx!4v1700000000000" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
 
           <!-- Office Info -->
           <div class="bg-navy rounded-3xl p-8 text-white">
-            <h3 class="text-xl text-white mb-6">Office Information</h3>
+            <h3 class="text-xl text-white mb-6">Informacion de la Oficina</h3>
             <div class="space-y-5">
               <div class="flex items-start gap-4">
                 <span class="material-symbols-outlined text-gold text-2xl mt-0.5">pin_drop</span>
                 <div>
-                  <p class="font-bold text-white mb-1">Marina Location</p>
-                  <p class="text-white/70 leading-relaxed">Cabo San Lucas Marina, IGY Marina, Dock F<br/>Cabo San Lucas, BCS, Mexico</p>
+                  <p class="font-bold text-white mb-1">Ubicacion en la Marina</p>
+                  <p class="text-white/70 leading-relaxed">Marina Cabo San Lucas, IGY Marina, Muelle F<br/>Cabo San Lucas, BCS, Mexico</p>
                 </div>
               </div>
               <div class="flex items-start gap-4">
                 <span class="material-symbols-outlined text-gold text-2xl mt-0.5">schedule</span>
                 <div>
-                  <p class="font-bold text-white mb-1">Hours of Operation</p>
-                  <p class="text-white/70 leading-relaxed">Monday — Sunday: 7:00 AM – 8:00 PM<br/>We're available 365 days a year</p>
+                  <p class="font-bold text-white mb-1">Horario de Atencion</p>
+                  <p class="text-white/70 leading-relaxed">Lunes — Domingo: 7:00 AM – 8:00 PM<br/>Disponibles los 365 dias del ano</p>
                 </div>
               </div>
               <div class="flex items-start gap-4">
                 <i class="fa-brands fa-whatsapp text-[#25D366] text-2xl mt-0.5"></i>
                 <div>
-                  <p class="font-bold text-white mb-1">Fastest Response</p>
-                  <p class="text-white/70 leading-relaxed">WhatsApp is our fastest channel — most inquiries are answered within 5 minutes during business hours.</p>
+                  <p class="font-bold text-white mb-1">Respuesta mas Rapida</p>
+                  <p class="text-white/70 leading-relaxed">WhatsApp es nuestro canal mas rapido — la mayoria de las consultas se contestan en menos de 5 minutos en horario de oficina.</p>
                 </div>
               </div>
             </div>
-            <a href="https://wa.me/526241916997?text=hi%2C%20I'm%20sending%20you%20a%20message%20from%20cabosailing.com" target="_blank" class="flex items-center justify-center gap-2 w-full bg-[#25D366] text-white font-bold text-sm py-4 rounded-2xl uppercase tracking-[0.15em] shadow-lg mt-8 hover:bg-[#20c55e] transition-colors">
-              <i class="fa-brands fa-whatsapp text-xl"></i> Chat on WhatsApp
+            <a href="https://wa.me/526241916997?text=hola%2C%20te%20escribo%20desde%20cabosailing.com" target="_blank" class="flex items-center justify-center gap-2 w-full bg-[#25D366] text-white font-bold text-sm py-4 rounded-2xl uppercase tracking-[0.15em] shadow-lg mt-8 hover:bg-[#20c55e] transition-colors">
+              <i class="fa-brands fa-whatsapp text-xl"></i> Chatear por WhatsApp
             </a>
           </div>
         </div>
@@ -256,7 +256,7 @@ const breadcrumbSchema = JSON.stringify({
 
     // Format activity/sailing-type labels for display
     function formatLabel(value) {
-      if (!value) return 'Not selected';
+      if (!value) return 'No seleccionado';
       return value.replace(/-/g, ' ').replace(/\b\w/g, function(c) { return c.toUpperCase(); });
     }
 
@@ -270,17 +270,17 @@ const breadcrumbSchema = JSON.stringify({
       var firstName = data.get('first-name');
       var lastName = data.get('last-name');
       var email = data.get('email');
-      var phone = data.get('phone') || 'Not provided';
+      var phone = data.get('phone') || 'No proporcionado';
       var activity = formatLabel(data.get('activity'));
       var sailingType = formatLabel(data.get('sailing-type'));
       var date = data.get('date') || 'Flexible';
-      var groupSize = data.get('group-size') || 'Not specified';
-      var message = data.get('message') || 'No message';
+      var groupSize = data.get('group-size') || 'No especificado';
+      var message = data.get('message') || 'Sin mensaje';
       var fullName = firstName + ' ' + lastName;
 
       // Disable button while sending
       submitBtn.disabled = true;
-      submitBtn.textContent = 'Sending...';
+      submitBtn.textContent = 'Enviando...';
 
       // Template parameters (shared by both templates)
       var templateParams = {
@@ -300,11 +300,11 @@ const breadcrumbSchema = JSON.stringify({
         emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_NOTIFY, templateParams),
         emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_AUTOREPLY, templateParams)
       ]).then(function() {
-        window.location.href = '/thank-you';
+        window.location.href = '/es/thank-you';
       }).catch(function(error) {
         console.error('EmailJS error:', error);
         submitBtn.disabled = false;
-        submitBtn.textContent = 'Send Message';
+        submitBtn.textContent = 'Enviar Mensaje';
         document.getElementById('form-error').classList.remove('hidden');
         document.getElementById('form-success').classList.add('hidden');
       });
