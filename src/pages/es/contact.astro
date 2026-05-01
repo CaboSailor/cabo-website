@@ -102,6 +102,12 @@ const breadcrumbSchema = JSON.stringify({
           </div>
 
           <form id="contact-form" class="space-y-6">
+            <!-- Honeypot (hidden from users, bots fill it) -->
+            <div class="hidden" aria-hidden="true">
+              <label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"/></label>
+              <label>URL<input type="text" name="url" tabindex="-1" autocomplete="off"/></label>
+            </div>
+            <input type="hidden" name="lang" value="es"/>
             <!-- Name -->
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
@@ -239,21 +245,9 @@ const breadcrumbSchema = JSON.stringify({
   <FloatingCTA />
   <RezdyModal />
 
-  <!-- EmailJS SDK -->
-  <script is:inline src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
   <script is:inline>
-    // EmailJS — uses the same template IDs as /contact.
-    // Setup instructions live in src/pages/contact.astro.
-    var EMAILJS_PUBLIC_KEY = 'YOUR_PUBLIC_KEY';
-    var EMAILJS_SERVICE_ID = 'YOUR_SERVICE_ID';
-    var EMAILJS_TEMPLATE_NOTIFY = 'YOUR_TEMPLATE_ID_NOTIFY';
-    var EMAILJS_TEMPLATE_AUTOREPLY = 'YOUR_TEMPLATE_ID_AUTOREPLY';
-
-    emailjs.init(EMAILJS_PUBLIC_KEY);
-
     function formatLabel(value) {
-      if (!value) return 'No seleccionado';
+      if (!value) return '';
       return value.replace(/-/g, ' ').replace(/\b\w/g, function(c) { return c.toUpperCase(); });
     }
 
@@ -263,48 +257,31 @@ const breadcrumbSchema = JSON.stringify({
       var submitBtn = form.querySelector('button[type="submit"]');
       var data = new FormData(form);
 
-      var firstName = data.get('first-name');
-      var lastName = data.get('last-name');
-      var email = data.get('email');
-      var phone = data.get('phone') || 'No proporcionado';
-      var activity = formatLabel(data.get('activity'));
-      var sailingType = formatLabel(data.get('sailing-type'));
-      var date = data.get('date') || 'Flexible';
-      var groupSize = data.get('group-size') || 'No especificado';
-      var message = data.get('message') || 'Sin mensaje';
-      var fullName = firstName + ' ' + lastName;
-
       submitBtn.disabled = true;
       submitBtn.textContent = 'Enviando...';
 
-      var templateParams = {
-        guest_name: fullName,
-        guest_email: email,
-        guest_phone: phone,
-        reply_to: email,
-        activity: activity,
-        sailing_type: sailingType,
-        preferred_date: date,
-        group_size: groupSize,
-        message: message
-      };
-
-      Promise.all([
-        emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_NOTIFY, templateParams),
-        emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_AUTOREPLY, templateParams)
-      ]).then(function() {
-        var qs = new URLSearchParams({
-          name: fullName, email: email, activity: activity,
-          sailingType: sailingType, date: date, guests: groupSize
-        }).toString();
-        window.location.href = '/es/thank-you?' + qs;
-      }).catch(function(error) {
-        console.error('EmailJS error:', error);
-        submitBtn.disabled = false;
-        submitBtn.textContent = 'Enviar Mensaje';
-        document.getElementById('form-error').classList.remove('hidden');
-        document.getElementById('form-success').classList.add('hidden');
-      });
+      fetch('/send.php', { method: 'POST', body: data })
+        .then(function(r) { return r.json().then(function(j) { return { ok: r.ok, json: j }; }); })
+        .then(function(res) {
+          if (!res.ok || !res.json.ok) throw new Error(res.json.error || 'Send failed');
+          var fullName = (data.get('first-name') || '') + ' ' + (data.get('last-name') || '');
+          var qs = new URLSearchParams({
+            name: fullName.trim(),
+            email: data.get('email') || '',
+            activity: formatLabel(data.get('activity')),
+            sailingType: formatLabel(data.get('sailing-type')),
+            date: data.get('date') || '',
+            guests: data.get('group-size') || ''
+          }).toString();
+          window.location.href = '/es/thank-you?' + qs;
+        })
+        .catch(function(err) {
+          console.error('Send error:', err);
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Enviar Mensaje';
+          document.getElementById('form-error').classList.remove('hidden');
+          document.getElementById('form-success').classList.add('hidden');
+        });
     }
 
     document.getElementById('contact-form').addEventListener('submit', handleSubmit);
