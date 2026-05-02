@@ -54,8 +54,9 @@ const canonicalUrl = `${siteUrl}${canonicalPath}`;
       <link rel="alternate" hreflang="x-default" href={`${siteUrl}${hreflangs.en}`} />
     </>
   )}
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <link rel="icon" href="/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   <meta name="generator" content={Astro.generator} />
 
   <!-- Google Fonts — non-blocking load -->

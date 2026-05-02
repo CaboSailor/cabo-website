@@ -1,0 +1,119 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import RezdyModal from '../components/RezdyModal.astro';
+---
+
+<BaseLayout title="Page Not Found — Cabo Sailing" description="The page you're looking for has drifted off course. Browse our most popular tours or get in touch — we'll help you find what you need.">
+  <Header variant="subpage" activePage="" />
+
+  <main class="flex-1 w-full overflow-x-hidden pt-[60px] lg:pt-[72px]">
+    <div class="max-w-[860px] mx-auto px-5 lg:px-8 py-12 lg:py-20">
+
+      <!-- Hero -->
+      <div class="text-center mb-12">
+        <div class="w-20 h-20 rounded-full bg-light-grey flex items-center justify-center mx-auto mb-6">
+          <span class="material-symbols-outlined text-navy text-5xl">sailing</span>
+        </div>
+        <p class="text-accent-gold font-bold text-sm uppercase tracking-[0.2em] mb-3" data-i18n="eyebrow">404 &mdash; Off Course</p>
+        <h1 class="text-3xl lg:text-5xl text-navy mb-4 font-serif" data-i18n="heading">This page has sailed away</h1>
+        <p class="text-slate-600 text-base lg:text-lg leading-relaxed max-w-xl mx-auto" data-i18n="subheading">The link you followed may be broken, or the page may have moved. Let&rsquo;s get you back on the water.</p>
+      </div>
+
+      <!-- Popular destinations -->
+      <div class="mb-10">
+        <h2 class="text-sm font-bold text-navy uppercase tracking-widest mb-5 text-center" data-i18n="popular">Popular Destinations</h2>
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-4">
+          <a href="/" data-href-en="/" data-href-es="/es/" class="flex flex-col items-center justify-center bg-white rounded-xl border border-border-light hover:border-accent-gold hover:shadow-md transition-all p-5 text-center group">
+            <span class="material-symbols-outlined text-navy text-3xl mb-2 group-hover:text-accent-gold transition-colors">home</span>
+            <span class="text-navy font-semibold text-sm" data-i18n="home">Home</span>
+          </a>
+          <a href="/tours" data-href-en="/tours" data-href-es="/es/tours" class="flex flex-col items-center justify-center bg-white rounded-xl border border-border-light hover:border-accent-gold hover:shadow-md transition-all p-5 text-center group">
+            <span class="material-symbols-outlined text-navy text-3xl mb-2 group-hover:text-accent-gold transition-colors">tour</span>
+            <span class="text-navy font-semibold text-sm" data-i18n="tours">All Tours</span>
+          </a>
+          <a href="/shared-snorkeling" data-href-en="/shared-snorkeling" data-href-es="/es/shared-snorkeling" class="flex flex-col items-center justify-center bg-white rounded-xl border border-border-light hover:border-accent-gold hover:shadow-md transition-all p-5 text-center group">
+            <span class="material-symbols-outlined text-navy text-3xl mb-2 group-hover:text-accent-gold transition-colors">scuba_diving</span>
+            <span class="text-navy font-semibold text-sm" data-i18n="snorkeling">Snorkeling</span>
+          </a>
+          <a href="/shared-sunset" data-href-en="/shared-sunset" data-href-es="/es/shared-sunset" class="flex flex-col items-center justify-center bg-white rounded-xl border border-border-light hover:border-accent-gold hover:shadow-md transition-all p-5 text-center group">
+            <span class="material-symbols-outlined text-navy text-3xl mb-2 group-hover:text-accent-gold transition-colors">wb_twilight</span>
+            <span class="text-navy font-semibold text-sm" data-i18n="sunset">Sunset Cruise</span>
+          </a>
+          <a href="/whale-watching" data-href-en="/whale-watching" data-href-es="/es/whale-watching" class="flex flex-col items-center justify-center bg-white rounded-xl border border-border-light hover:border-accent-gold hover:shadow-md transition-all p-5 text-center group">
+            <span class="material-symbols-outlined text-navy text-3xl mb-2 group-hover:text-accent-gold transition-colors">water</span>
+            <span class="text-navy font-semibold text-sm" data-i18n="whales">Whale Watching</span>
+          </a>
+          <a href="/special-offers" data-href-en="/special-offers" data-href-es="/es/special-offers" class="flex flex-col items-center justify-center bg-white rounded-xl border border-border-light hover:border-accent-gold hover:shadow-md transition-all p-5 text-center group">
+            <span class="material-symbols-outlined text-navy text-3xl mb-2 group-hover:text-accent-gold transition-colors">local_offer</span>
+            <span class="text-navy font-semibold text-sm" data-i18n="offers">Special Offers</span>
+          </a>
+          <a href="/travel-guide" data-href-en="/travel-guide" data-href-es="/es/travel-guide" class="flex flex-col items-center justify-center bg-white rounded-xl border border-border-light hover:border-accent-gold hover:shadow-md transition-all p-5 text-center group">
+            <span class="material-symbols-outlined text-navy text-3xl mb-2 group-hover:text-accent-gold transition-colors">menu_book</span>
+            <span class="text-navy font-semibold text-sm" data-i18n="guide">Travel Guide</span>
+          </a>
+          <a href="/contact" data-href-en="/contact" data-href-es="/es/contact" class="flex flex-col items-center justify-center bg-white rounded-xl border border-border-light hover:border-accent-gold hover:shadow-md transition-all p-5 text-center group">
+            <span class="material-symbols-outlined text-navy text-3xl mb-2 group-hover:text-accent-gold transition-colors">mail</span>
+            <span class="text-navy font-semibold text-sm" data-i18n="contact">Contact</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Need help CTA -->
+      <div class="bg-navy rounded-2xl p-6 lg:p-8 text-center text-white">
+        <p class="text-white/85 text-base lg:text-lg leading-relaxed mb-2" data-i18n="helpLead">Need a hand finding something?</p>
+        <p class="text-white/70 text-sm lg:text-base mb-6" data-i18n="helpSub">Our team is happy to help you book the right tour.</p>
+        <div class="flex flex-col sm:flex-row gap-3 justify-center">
+          <a href="https://wa.me/526241916997" target="_blank" class="flex items-center justify-center gap-3 bg-[#25D366] hover:bg-[#20c55e] text-white font-bold text-base py-3.5 px-6 rounded-xl uppercase tracking-[0.1em] shadow-lg transition-colors">
+            <i class="fa-brands fa-whatsapp text-xl"></i> <span data-i18n="whatsapp">WhatsApp Us</span>
+          </a>
+          <a href="tel:+526241438485" class="flex items-center justify-center gap-3 bg-white/10 hover:bg-white/20 border border-white/30 text-white font-bold text-base py-3.5 px-6 rounded-xl uppercase tracking-[0.1em] transition-colors">
+            <span class="material-symbols-outlined text-xl">call</span> <span data-i18n="call">Call +52 624 143 8485</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <Footer />
+  <RezdyModal />
+
+  <script is:inline>
+    (function() {
+      if (!window.location.pathname.startsWith('/es/')) return;
+
+      var translations = {
+        eyebrow: '404 &mdash; Fuera de Rumbo',
+        heading: 'Esta página zarpó sin nosotros',
+        subheading: 'El enlace puede estar roto o la página pudo haberse movido. Te ayudamos a regresar al mar.',
+        popular: 'Destinos Populares',
+        home: 'Inicio',
+        tours: 'Todos los Tours',
+        snorkeling: 'Snorkel',
+        sunset: 'Atardecer',
+        whales: 'Avistamiento de Ballenas',
+        offers: 'Ofertas Especiales',
+        guide: 'Guía de Viaje',
+        contact: 'Contacto',
+        helpLead: '¿Necesitas ayuda para encontrar algo?',
+        helpSub: 'Nuestro equipo con gusto te ayuda a reservar el tour ideal.',
+        whatsapp: 'Escríbenos por WhatsApp',
+        call: 'Llamar +52 624 143 8485'
+      };
+
+      document.querySelectorAll('[data-i18n]').forEach(function(el) {
+        var key = el.getAttribute('data-i18n');
+        if (translations[key]) el.innerHTML = translations[key];
+      });
+
+      document.querySelectorAll('[data-href-es]').forEach(function(el) {
+        el.setAttribute('href', el.getAttribute('data-href-es'));
+      });
+
+      document.documentElement.setAttribute('lang', 'es');
+      document.title = 'Página No Encontrada — Cabo Sailing';
+    })();
+  </script>
+</BaseLayout>
