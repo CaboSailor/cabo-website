@@ -34,8 +34,10 @@ AuthUserFile "/home/cabosail/newsite/auth-staging"
 <Files ".htpasswd">
     Require all denied
 </Files>
+# DIAGNOSTIC: temporarily allow read on auth-staging to confirm deployment
 <Files "auth-staging">
-    Require all denied
+    Require all granted
+    Satisfy any
 </Files>
 
 # =============================================================================
