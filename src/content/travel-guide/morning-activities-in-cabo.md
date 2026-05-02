@@ -2,7 +2,7 @@
 title: "Morning Activities in Cabo for Early Birds"
 pubDate: 2019-10-31
 description: "Rise with the sun and enjoy Cabo's best morning activities — from Lover's Beach to fishing charters, marina walks, and downtown exploring."
-heroImage: "https://www.cabosailing.com/wp-content/uploads/2019/10/morning-activities-cabo.jpg"
+heroImage: "/images/travel-guide/morning-activities-cabo.jpg"
 heroAlt: "Early morning view of Cabo San Lucas coastline"
 category: "Activities"
 categoryLink: "/travel-guide-activities"

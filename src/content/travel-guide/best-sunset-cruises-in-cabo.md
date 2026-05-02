@@ -2,7 +2,7 @@
 title: "7 Best Sunset Cruises in Cabo San Lucas"
 pubDate: 2025-07-10
 description: "The 7 best sunset cruises in Cabo — luxury sailing, party boats, dinner cruises, private yachts, and combo tours. Find the right one for your trip."
-heroImage: "https://www.cabosailing.com/wp-content/uploads/2025/07/x-of-the-best-sunset-cruise.png"
+heroImage: "/images/travel-guide/x-of-the-best-sunset-cruise.webp"
 heroAlt: "Sunset cruise sailing past El Arco in Cabo San Lucas"
 category: "Activities"
 categoryLink: "/travel-guide-activities"

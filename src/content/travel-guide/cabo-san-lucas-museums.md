@@ -2,7 +2,7 @@
 title: "Cabo San Lucas Museums & Cultural Sites — 2026 Guide"
 pubDate: 2026-04-23
 description: "Cabo isn't just beaches — 5 museums and cultural sites worth a visit. Hours, prices, kid-friendly picks, and rainy-day alternatives. 2026 update."
-heroImage: "https://www.cabosailing.com/wp-content/uploads/2018/08/fun-activities-cabo.jpg.webp"
+heroImage: "/images/travel-guide/fun-activities-cabo.jpg.webp"
 heroAlt: "Museo de Cabo San Lucas exterior in Plaza Amelia Wilkes"
 category: "Culture & Food"
 categoryLink: "/travel-guide-culture"

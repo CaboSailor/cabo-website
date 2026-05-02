@@ -2,7 +2,7 @@
 title: "Cabo San Lucas Traditional Food You Must Try"
 pubDate: 2018-01-17
 description: "Cabo's must-try traditional foods — chocolate clams, fish tacos, smoked marlin, tamales, pitahaya, and local drinks like Clamato and Damiana."
-heroImage: "https://www.cabosailing.com/wp-content/uploads/2018/01/mexican-clams.jpg"
+heroImage: "/images/travel-guide/mexican-clams.jpg"
 heroAlt: "Traditional Mexican chocolate clams from Cabo San Lucas"
 category: "Culture & Food"
 categoryLink: "/travel-guide-culture"

@@ -2,7 +2,7 @@
 title: "Best Snorkeling & Diving in Cabo San Lucas 2026 — A Local Expert's Picks"
 pubDate: 2025-03-01
 description: "Discover Cabo's best snorkeling & diving spots in 2026 with local expert tips. From Pelican Rock to Cabo Pulmo. See our fleet and book a snorkel tour!"
-heroImage: "https://www.cabosailing.com/wp-content/uploads/2018/09/snorkeling-5.jpg.webp"
+heroImage: "/images/travel-guide/snorkeling-5.jpg.webp"
 heroAlt: "Snorkeling in crystal clear waters of Cabo San Lucas"
 category: "Activities"
 categoryLink: "/travel-guide-activities"
@@ -26,7 +26,7 @@ The first time I dropped in here, I remember how quickly the water changed--from
 It can get a bit busy, but that energy also adds to the experience--it feels like the heart of Cabo's ocean life.
 
 <div class="my-8 rounded-2xl overflow-hidden shadow-lg">
-  <img alt="Pelican Rock snorkeling spot near the Arch in Cabo San Lucas" class="w-full h-[280px] lg:h-[360px] object-cover" src="https://www.cabosailing.com/wp-content/uploads/2018/09/snorkeling-5.jpg.webp"/>
+  <img alt="Pelican Rock snorkeling spot near the Arch in Cabo San Lucas" class="w-full h-[280px] lg:h-[360px] object-cover" src="/images/travel-guide/snorkeling-5.jpg.webp"/>
 </div>
 
 ---
@@ -40,7 +40,7 @@ This horseshoe-shaped bay is naturally protected, which keeps the water calm and
 Bright tropical fish, coral formations, and subtle movements in the reef make this spot feel alive in a quieter, more peaceful way compared to Pelican Rock. It's the kind of place where you can just float and lose track of time.
 
 <div class="my-8 rounded-2xl overflow-hidden shadow-lg">
-  <img alt="Santa Maria Bay crystal clear snorkeling waters" class="w-full h-[280px] lg:h-[360px] object-cover" src="https://www.cabosailing.com/wp-content/uploads/2019/08/santa-maria-bay-featured-image.jpg.webp"/>
+  <img alt="Santa Maria Bay crystal clear snorkeling waters" class="w-full h-[280px] lg:h-[360px] object-cover" src="/images/travel-guide/santa-maria-bay-featured-image.jpg.webp"/>
 </div>
 
 ---
@@ -64,7 +64,7 @@ This is a protected marine park and one of the oldest coral reefs on the west co
 It's not a casual stop. It's a full-day adventure. But if you want to see what the Sea of Cortez can really offer, this is where it happens.
 
 <div class="my-8 rounded-2xl overflow-hidden shadow-lg">
-  <img alt="Cabo Pulmo marine park diving" class="w-full h-[280px] lg:h-[360px] object-cover" src="https://www.cabosailing.com/wp-content/uploads/2018/07/cabo-scuba-diving.jpg.webp"/>
+  <img alt="Cabo Pulmo marine park diving" class="w-full h-[280px] lg:h-[360px] object-cover" src="/images/travel-guide/cabo-scuba-diving.jpg.webp"/>
 </div>
 
 ---

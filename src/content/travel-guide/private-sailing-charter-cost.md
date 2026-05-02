@@ -2,7 +2,7 @@
 title: "How Much Does a Private Sailing Charter Cost?"
 pubDate: 2025-10-15
 description: "Private sailing charter prices in Cabo — half-day, full-day, and luxury yacht costs. What's included, pricing factors, and tips for booking."
-heroImage: "https://www.cabosailing.com/wp-content/uploads/2025/10/how-much-does-a-private-sailing-charter-in-cabo-san-lucas-cost.jpg"
+heroImage: "/images/travel-guide/how-much-does-a-private-sailing-charter-in-cabo-san-lucas-cost.webp"
 heroAlt: "Private sailing charter on the Sea of Cortez in Cabo San Lucas"
 category: "Activities"
 categoryLink: "/travel-guide-activities"

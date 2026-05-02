@@ -2,7 +2,7 @@
 title: "Is Cabo Worth It? Honest Value vs. Cost Breakdown (2026)"
 pubDate: 2026-04-23
 description: "Is Cabo San Lucas worth the price in 2026? Honest breakdown of what you get for your money — flights, hotels, dining, activities and how to save."
-heroImage: "https://www.cabosailing.com/wp-content/uploads/2018/08/fun-activities-cabo.jpg.webp"
+heroImage: "/images/travel-guide/fun-activities-cabo.jpg.webp"
 heroAlt: "Cabo San Lucas marina and resort area"
 category: "Traveling to Cabo"
 categoryLink: "/travel-guide-traveling"

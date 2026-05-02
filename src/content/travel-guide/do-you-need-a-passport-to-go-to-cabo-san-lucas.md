@@ -2,7 +2,7 @@
 title: "Do You Need a Passport for Cabo? 2026 Requirements"
 pubDate: 2025-02-05
 description: "Yes, US and Canadian citizens need a passport to enter Mexico by air. Cruise passengers sometimes use a passport card. Full 2026 rules and tips."
-heroImage: "https://www.cabosailing.com/wp-content/uploads/2019/08/los-cabos-international-airport-featured-image.jpg.webp"
+heroImage: "/images/travel-guide/los-cabos-international-airport-featured-image.jpg.webp"
 heroAlt: "Los Cabos International Airport terminal"
 category: "Traveling to Cabo"
 categoryLink: "/travel-guide-traveling"

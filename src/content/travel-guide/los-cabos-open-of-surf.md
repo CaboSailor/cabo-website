@@ -2,7 +2,7 @@
 title: "Los Cabos Open of Surf — Mexico's Premier Surf Event"
 pubDate: 2026-04-23
 description: "The Los Cabos Open of Surf at Zippers Beach — history, dates, how to attend, what to expect, and where to watch. Complete guide for spectators."
-heroImage: "https://www.cabosailing.com/wp-content/uploads/2018/08/fun-activities-cabo.jpg.webp"
+heroImage: "/images/travel-guide/fun-activities-cabo.jpg.webp"
 heroAlt: "Surfers competing at Zippers Beach during the Los Cabos Open of Surf"
 category: "Activities"
 categoryLink: "/travel-guide-activities"

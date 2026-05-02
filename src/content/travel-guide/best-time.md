@@ -2,7 +2,7 @@
 title: "Best Time to Visit Cabo San Lucas — Month-by-Month Guide"
 pubDate: 2025-01-15
 description: "The best time to visit Cabo depends on what you want — whales, low prices, calm water or nightlife. Month-by-month guide from locals at Cabo Sailing."
-heroImage: "https://www.cabosailing.com/wp-content/uploads/2019/08/los-cabos-international-airport-featured-image.jpg.webp"
+heroImage: "/images/travel-guide/los-cabos-international-airport-featured-image.jpg.webp"
 heroAlt: "Los Cabos International Airport terminal"
 category: "Traveling to Cabo"
 categoryLink: "/travel-guide-traveling"

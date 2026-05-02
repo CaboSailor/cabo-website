@@ -2,7 +2,7 @@
 title: "Honeymoon in Cabo — Tips for Couples"
 pubDate: 2025-03-20
 description: "Plan the perfect Cabo honeymoon — romantic resorts, sunset cruises, beach dining, couples spa, scenic beaches, and day trips for newlyweds."
-heroImage: "https://www.cabosailing.com/wp-content/uploads/2025/03/helpful-travel-tips-for-couples.jpg"
+heroImage: "/images/travel-guide/helpful-travel-tips-for-couples.jpg"
 heroAlt: "Romantic couple on the beach in Cabo San Lucas"
 category: "Culture & Food"
 categoryLink: "/travel-guide-culture"

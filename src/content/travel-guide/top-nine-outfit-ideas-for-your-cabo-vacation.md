@@ -2,7 +2,7 @@
 title: "What to Wear in Cabo — 9 Outfit Ideas by Activity (2026)"
 pubDate: 2026-04-23
 description: "What to pack for Cabo San Lucas — 9 outfits for beach, boat charters, dinners and nightlife. Fabrics, colors and what to leave at home. 2026 guide."
-heroImage: "https://www.cabosailing.com/wp-content/uploads/2018/08/fun-activities-cabo.jpg.webp"
+heroImage: "/images/travel-guide/fun-activities-cabo.jpg.webp"
 heroAlt: "Stylish outfit laid out for a Cabo San Lucas vacation"
 category: "Traveling to Cabo"
 categoryLink: "/travel-guide-traveling"

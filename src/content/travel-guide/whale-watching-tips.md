@@ -2,7 +2,7 @@
 title: "Cabo Whale Watching Tips — A Complete Guide"
 pubDate: 2025-02-17
 description: "Whale watching tips for Cabo — best season, species to spot, what to pack, responsible viewing, and top land-based lookout points."
-heroImage: "https://www.cabosailing.com/wp-content/uploads/2025/02/cabo-san-lucas-whale-watchi.png"
+heroImage: "/images/travel-guide/cabo-san-lucas-whale-watchi.png"
 heroAlt: "Whale watching in Cabo San Lucas with humpback whale breaching"
 category: "Attractions"
 categoryLink: "/travel-guide-attractions"

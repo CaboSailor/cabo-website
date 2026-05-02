@@ -2,7 +2,7 @@
 title: "Can You Swim in Cabo San Lucas? Safe Beaches & Warnings"
 pubDate: 2026-04-19
 description: "Which Cabo beaches are swimmable and which aren't? Local's guide to safe swimming in Cabo San Lucas — flags, currents, and the best calm-water beaches."
-heroImage: "https://www.cabosailing.com/wp-content/uploads/2017/11/cabo-san-lucas-medano-beach-1024x675.jpg"
+heroImage: "/images/travel-guide/cabo-san-lucas-medano-beach-1024x675.jpg"
 heroAlt: "Médano Beach in Cabo San Lucas with calm swimmable water"
 category: "Activities"
 categoryLink: "/travel-guide-activities"
@@ -19,7 +19,7 @@ Can you swim in Cabo? **Absolutely.** But here's what most travel blogs won't te
 Yes, you can swim in Cabo San Lucas &mdash; but **only at specific beaches**. The beaches facing the Pacific Ocean have steep drop-offs, powerful undertows, and unpredictable swells. They're marked with red flags for a reason. The swimmable beaches sit on the Sea of Cortez side, where the water is calm, warm, and often impossibly clear. Stick to those and you'll have an incredible time.
 
 <div class="my-10 rounded-2xl overflow-hidden shadow-lg">
-  <img alt="Médano Beach in downtown Cabo San Lucas" class="w-full h-[300px] lg:h-[420px] object-cover" src="https://www.cabosailing.com/wp-content/uploads/2017/11/cabo-san-lucas-medano-beach-1024x675.jpg"/>
+  <img alt="Médano Beach in downtown Cabo San Lucas" class="w-full h-[300px] lg:h-[420px] object-cover" src="/images/travel-guide/cabo-san-lucas-medano-beach-1024x675.jpg"/>
 </div>
 
 ---
@@ -122,7 +122,7 @@ Tucked near the marina, away from the tourist crowds. If you want a quieter, mor
 This is where it gets really good. These three spots are where we take our charter guests, and they're the reason most people say Cabo's water changed their whole trip.
 
 <div class="my-10 rounded-2xl overflow-hidden shadow-lg">
-  <img alt="Chileno Beach Blue Flag certified swimming and snorkeling beach in Cabo" class="w-full h-[300px] lg:h-[420px] object-cover" src="https://www.cabosailing.com/wp-content/uploads/2017/11/chileno-beach.jpg.webp"/>
+  <img alt="Chileno Beach Blue Flag certified swimming and snorkeling beach in Cabo" class="w-full h-[300px] lg:h-[420px] object-cover" src="/images/travel-guide/chileno-beach.jpg.webp"/>
 </div>
 
 ---
@@ -146,7 +146,7 @@ Another Blue Flag beach with sandy entry, consistently calm conditions, and a ro
 A short boat ride from the marina, right next to El Arco. This is where most visitors have their first underwater moment in Cabo. Shallow enough for beginners, loaded with colorful fish and sea fans, and there's always a chance a sea lion swims through. It's part of the Cabo San Lucas Marine Park and the main stop on our [shared snorkeling sailboat tours](/shared-snorkeling) &mdash; about 45 to 60 minutes in the water before cruising past the Arch.
 
 <div class="my-10 rounded-2xl overflow-hidden shadow-lg">
-  <img alt="Blue Flag swimming beaches in Cabo San Lucas" class="w-full h-[300px] lg:h-[420px] object-cover" src="https://www.cabosailing.com/wp-content/uploads/2019/12/blue-flag-swimming-beaches-in-cabo.jpeg.webp"/>
+  <img alt="Blue Flag swimming beaches in Cabo San Lucas" class="w-full h-[300px] lg:h-[420px] object-cover" src="/images/travel-guide/blue-flag-swimming-beaches-in-cabo.jpeg.webp"/>
 </div>
 
 ---

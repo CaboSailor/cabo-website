@@ -2,7 +2,7 @@
 title: "Cabo San Lucas Cruise Port — Best Things to Do in One Day"
 pubDate: 2026-04-23
 description: "Cruise day in Cabo? Maximize your hours ashore — best short tours, how to get to the Arch, lunch spots, tender timing and when to be back onboard."
-heroImage: "https://www.cabosailing.com/wp-content/uploads/2018/08/fun-activities-cabo.jpg.webp"
+heroImage: "/images/travel-guide/fun-activities-cabo.jpg.webp"
 heroAlt: "Cruise ship anchored off Cabo San Lucas with the Arch in the background"
 category: "Traveling to Cabo"
 categoryLink: "/travel-guide-traveling"

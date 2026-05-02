@@ -2,7 +2,7 @@
 title: "Todos Santos from Cabo — Day Trip Guide to the Pueblo Mágico"
 pubDate: 2026-04-23
 description: "Todos Santos is Baja's artsy pueblo mágico — just 1 hour from Cabo. Art galleries, Hotel California, beaches and how to do it in a day. Local's guide."
-heroImage: "https://www.cabosailing.com/wp-content/uploads/2018/08/fun-activities-cabo.jpg.webp"
+heroImage: "/images/travel-guide/fun-activities-cabo.jpg.webp"
 heroAlt: "Colorful colonial street in Todos Santos, Baja California Sur"
 category: "Attractions"
 categoryLink: "/travel-guide-attractions"

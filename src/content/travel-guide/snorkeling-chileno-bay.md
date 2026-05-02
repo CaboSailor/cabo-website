@@ -2,7 +2,7 @@
 title: "Snorkeling Tour in Chileno Bay — Cabo's Underwater Paradise"
 pubDate: 2023-03-10
 description: "Explore Chileno Bay on a Cabo snorkeling tour — crystal-clear water, tropical fish, sea turtles, and the best conditions in Los Cabos."
-heroImage: "https://www.cabosailing.com/wp-content/uploads/2018/09/snorkeling-1.jpg"
+heroImage: "/images/travel-guide/snorkeling-1.jpg"
 heroAlt: "Snorkeling in the clear waters of Chileno Bay, Cabo San Lucas"
 category: "Activities"
 categoryLink: "/travel-guide-activities"
