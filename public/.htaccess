@@ -24,14 +24,11 @@ ErrorDocument 404 /404.html
 # -----------------------------------------------------------------------------
 AuthType Basic
 AuthName "Cabo Sailing — Staging"
-AuthUserFile /home/cabosail/public_html/new/auth-test.txt
+AuthUserFile /home/cabosail/newsite/.htpasswd
 Require valid-user
 
-# Block direct download of the password hash files
+# Block direct download of the password hash file
 <Files ".htpasswd">
-    Require all denied
-</Files>
-<Files "auth-test.txt">
     Require all denied
 </Files>
 
