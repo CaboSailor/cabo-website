@@ -18,28 +18,6 @@ RewriteEngine On
 # -----------------------------------------------------------------------------
 ErrorDocument 404 /404.html
 
-# -----------------------------------------------------------------------------
-# Staging password protection (Basic Auth)
-# Remove this entire block before public launch.
-# -----------------------------------------------------------------------------
-AuthType Basic
-AuthName "Cabo Sailing - Staging"
-AuthBasicProvider file
-AuthUserFile "/home/cabosail/newsite/auth-staging"
-<RequireAll>
-  Require valid-user
-</RequireAll>
-
-# Block direct download of the password hash files
-<Files ".htpasswd">
-    Require all denied
-</Files>
-# DIAGNOSTIC: temporarily allow read on auth-staging to confirm deployment
-<Files "auth-staging">
-    Require all granted
-    Satisfy any
-</Files>
-
 # =============================================================================
 # 1. MIGRATED ARTICLES — old URL → new /travel-guide/<slug>/
 # =============================================================================
