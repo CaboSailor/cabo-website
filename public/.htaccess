@@ -23,9 +23,12 @@ ErrorDocument 404 /404.html
 # Remove this entire block before public launch.
 # -----------------------------------------------------------------------------
 AuthType Basic
-AuthName "Cabo Sailing — Staging"
-AuthUserFile /home/cabosail/newsite/.htpasswd
-Require valid-user
+AuthName "Cabo Sailing - Staging"
+AuthBasicProvider file
+AuthUserFile "/home/cabosail/newsite/.htpasswd"
+<RequireAll>
+  Require valid-user
+</RequireAll>
 
 # Block direct download of the password hash file
 <Files ".htpasswd">
