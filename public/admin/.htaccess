@@ -1,0 +1,19 @@
+# =============================================================================
+# Admin tool — password protected on all hosts (staging + production)
+# Independent of the staging-wide Basic Auth that gets removed at cutover.
+#
+# To set credentials on FastComet:
+#   cPanel → Directory Privacy → select /admin/ → set username + password
+#   (this creates the .htpasswd-admin file referenced below)
+# =============================================================================
+AuthType Basic
+AuthName "Cabo Sailing Admin"
+AuthUserFile "/home/cabosail/new.site/.htpasswd-admin"
+Require valid-user
+
+<Files ".htaccess">
+    Require all denied
+</Files>
+<Files ".htpasswd*">
+    Require all denied
+</Files>
