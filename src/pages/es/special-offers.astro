@@ -1,0 +1,277 @@
+---
+import { Image } from 'astro:assets';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import FloatingCTA from '../../components/FloatingCTA.astro';
+import RezdyModal from '../../components/RezdyModal.astro';
+
+// Hero
+import heroImg from '../../assets/images/guests-on-sailboats/sailing-near-cabos-rocky-coastline.png';
+
+// 3 promo cards
+import promoYacht from '../../assets/images/guests-on-yachts/leisurely-yacht-ride-on-a-sunny-sea.png';
+import promoPrivateSail from '../../assets/images/guests-on-sailboats/relaxing-summer-sailboat-escape.png';
+import promoSharedSail from '../../assets/images/guests-on-sailboats/golden-hour-sailing-with-friends.png';
+
+// Fleet (one image per boat — first frame from carousels.json)
+import yacht51 from '../../assets/images/boats/yacht-51/cabo-sailing-yacht-51-boat.png';
+import yacht45 from '../../assets/images/boats/yacht-45/cabo-private-yacht-45-charter.png';
+import yacht42 from '../../assets/images/boats/yacht-42/cabo-sailig-yacht-42-boat.png';
+import sailing42 from '../../assets/images/boats/sailing-42/cabo-sailing-42-sailing-view.png';
+import sailing38 from '../../assets/images/boats/sailing-38/cabo-sailing-38-home-boat.png';
+
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://cabosailing.com/es/" },
+    { "@type": "ListItem", "position": 2, "name": "Ofertas Especiales" }
+  ]
+});
+---
+
+<BaseLayout title="Ofertas Especiales | Cabo Sailing" description="Descuento por tiempo limitado del 30% en charters privados de yate, cruceros privados de vela y viajes compartidos en Cabo San Lucas. Servicio premium, grupos pequeños, precios todo incluido." hreflangs={{ en: '/special-offers', es: '/es/special-offers' }}>
+  <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
+  <Header variant="subpage" activePage="special-offers" />
+
+  <main class="flex-1 w-full overflow-x-hidden pt-[60px] lg:pt-[72px]">
+
+    <!-- Hero (wider than content column) -->
+    <div class="max-w-[1075px] mx-auto px-5 lg:px-8 pt-10 lg:pt-16">
+      <Image src={heroImg} alt="Navegando cerca de la costa rocosa de Cabo" class="w-full h-auto rounded-2xl" width={2048} height={1365} />
+    </div>
+
+    <div class="max-w-[1100px] mx-auto px-5 lg:px-8 pt-6 lg:pt-8 pb-10 lg:pb-16">
+
+      <!-- Breadcrumb -->
+      <nav class="flex items-center gap-1.5 text-xs text-slate-500 mb-6" aria-label="Breadcrumb">
+        <a href="/es/" class="hover:text-gold transition-colors">Inicio</a>
+        <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+        <span class="text-navy font-semibold">Ofertas Especiales</span>
+      </nav>
+
+      <!-- Header -->
+      <header class="mb-10 text-center">
+        <p class="text-xs lg:text-sm font-bold uppercase tracking-[0.25em] text-accent-gold mb-3">Promoción por Tiempo Limitado</p>
+        <h1 class="text-3xl lg:text-5xl text-navy font-serif mb-4">Ofertas Especiales</h1>
+        <p class="text-slate-500 text-base lg:text-lg leading-relaxed max-w-2xl mx-auto">Aprovecha <strong class="text-navy">30% de descuento</strong> en nuestros cruceros más solicitados &mdash; charters privados de yate, escapadas privadas de vela y viajes compartidos. Misma flota premium, misma tripulación 5 estrellas, mejor precio por tiempo limitado.</p>
+      </header>
+
+      <!-- 3 Promo Cards -->
+      <section class="grid grid-cols-3 gap-2 lg:gap-6 mb-14 lg:mb-20">
+
+        <!-- Yate Privado -->
+        <a href="/es/private-snorkeling" class="group relative block bg-white border border-border-light rounded-xl lg:rounded-[2rem] overflow-hidden shadow-lg lg:shadow-xl shadow-navy/5 transition-transform duration-300 hover:-translate-y-1">
+          <div class="relative aspect-[4/5] overflow-hidden">
+            <Image src={promoYacht} alt="Paseo tranquilo en yate bajo el sol" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" width={1024} height={1280} />
+            <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
+
+            <!-- Big 30% badge -->
+            <div class="absolute top-2 left-2 lg:top-4 lg:left-4 bg-accent-gold text-white rounded-lg lg:rounded-2xl px-2 py-1 lg:px-5 lg:py-3 shadow-2xl">
+              <div class="flex items-baseline gap-0.5 lg:gap-1">
+                <span class="font-serif font-bold text-base lg:text-4xl leading-none">30%</span>
+                <span class="font-bold text-[8px] lg:text-sm uppercase tracking-widest">Off</span>
+              </div>
+            </div>
+
+            <div class="absolute bottom-2 left-2 right-2 lg:bottom-5 lg:left-6 lg:right-6">
+              <h3 class="text-white text-xs lg:text-3xl font-serif leading-tight lg:mb-1">Yate Privado</h3>
+              <p class="hidden lg:block text-white/80 text-xs lg:text-sm uppercase tracking-widest font-semibold">Charter del barco completo</p>
+            </div>
+          </div>
+          <div class="p-2 lg:p-5 flex items-center justify-between">
+            <span class="text-navy/70 text-[10px] lg:text-sm leading-tight">Hasta 20 huéspedes<span class="hidden lg:inline"> &middot; Tripulación y bar incluidos</span></span>
+            <span class="material-symbols-outlined text-accent-gold text-base lg:text-2xl transition-transform group-hover:translate-x-1">arrow_forward</span>
+          </div>
+        </a>
+
+        <!-- Vela Privada -->
+        <a href="/es/private-sunset" class="group relative block bg-white border border-border-light rounded-xl lg:rounded-[2rem] overflow-hidden shadow-lg lg:shadow-xl shadow-navy/5 transition-transform duration-300 hover:-translate-y-1">
+          <div class="relative aspect-[4/5] overflow-hidden">
+            <Image src={promoPrivateSail} alt="Escapada de verano en velero" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" width={1024} height={1280} />
+            <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
+
+            <div class="absolute top-2 left-2 lg:top-4 lg:left-4 bg-accent-gold text-white rounded-lg lg:rounded-2xl px-2 py-1 lg:px-5 lg:py-3 shadow-2xl">
+              <div class="flex items-baseline gap-0.5 lg:gap-1">
+                <span class="font-serif font-bold text-base lg:text-4xl leading-none">30%</span>
+                <span class="font-bold text-[8px] lg:text-sm uppercase tracking-widest">Off</span>
+              </div>
+            </div>
+
+            <div class="absolute bottom-2 left-2 right-2 lg:bottom-5 lg:left-6 lg:right-6">
+              <h3 class="text-white text-xs lg:text-3xl font-serif leading-tight lg:mb-1">Vela Privada</h3>
+              <p class="hidden lg:block text-white/80 text-xs lg:text-sm uppercase tracking-widest font-semibold">Tu grupo, tu velero</p>
+            </div>
+          </div>
+          <div class="p-2 lg:p-5 flex items-center justify-between">
+            <span class="text-navy/70 text-[10px] lg:text-sm leading-tight">Hasta 14 huéspedes<span class="hidden lg:inline"> &middot; Navegación a vela real</span></span>
+            <span class="material-symbols-outlined text-accent-gold text-base lg:text-2xl transition-transform group-hover:translate-x-1">arrow_forward</span>
+          </div>
+        </a>
+
+        <!-- Vela Compartida -->
+        <a href="/es/shared-sunset" class="group relative block bg-white border border-border-light rounded-xl lg:rounded-[2rem] overflow-hidden shadow-lg lg:shadow-xl shadow-navy/5 transition-transform duration-300 hover:-translate-y-1">
+          <div class="relative aspect-[4/5] overflow-hidden">
+            <Image src={promoSharedSail} alt="Navegación con amigos en hora dorada" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" width={1024} height={1280} />
+            <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
+
+            <div class="absolute top-2 left-2 lg:top-4 lg:left-4 bg-accent-gold text-white rounded-lg lg:rounded-2xl px-2 py-1 lg:px-5 lg:py-3 shadow-2xl">
+              <div class="flex items-baseline gap-0.5 lg:gap-1">
+                <span class="font-serif font-bold text-base lg:text-4xl leading-none">30%</span>
+                <span class="font-bold text-[8px] lg:text-sm uppercase tracking-widest">Off</span>
+              </div>
+            </div>
+
+            <div class="absolute bottom-2 left-2 right-2 lg:bottom-5 lg:left-6 lg:right-6">
+              <h3 class="text-white text-xs lg:text-3xl font-serif leading-tight lg:mb-1">Vela Compartida</h3>
+              <p class="hidden lg:block text-white/80 text-xs lg:text-sm uppercase tracking-widest font-semibold">Precio por persona</p>
+            </div>
+          </div>
+          <div class="p-2 lg:p-5 flex items-center justify-between">
+            <span class="text-navy/70 text-[10px] lg:text-sm leading-tight">Máx. 12 huéspedes<span class="hidden lg:inline"> por tour</span></span>
+            <span class="material-symbols-outlined text-accent-gold text-base lg:text-2xl transition-transform group-hover:translate-x-1">arrow_forward</span>
+          </div>
+        </a>
+
+      </section>
+
+      <!-- Fleet (5 boats side-by-side) -->
+      <section>
+        <div class="flex items-center gap-4 mb-6">
+          <h2 class="text-xl lg:text-2xl font-serif text-navy font-semibold">Toda la flota &mdash; 30% de descuento</h2>
+          <div class="flex-1 h-px bg-gradient-to-r from-gold/30 to-transparent"></div>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+
+          <!-- 51' Luxury Yacht -->
+          <div class="bg-white border border-border-light rounded-2xl overflow-hidden shadow-lg shadow-navy/5">
+            <div class="relative aspect-[3/4] overflow-hidden">
+              <Image src={yacht51} alt="Yate de Lujo 51' charter privado en Cabo San Lucas" class="w-full h-full object-cover" style="transform: scale(1.1);" width={1023} height={1537} />
+              <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
+              <div class="absolute bottom-3 left-4">
+                <h4 class="text-white text-sm lg:text-base font-semibold">Yate de Lujo 51'</h4>
+                <div class="flex items-center gap-1 text-white/80 text-[10px] mt-0.5 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Hasta 20</span></div>
+              </div>
+              <div class="absolute top-3 right-3 bg-white text-navy font-bold text-xs px-2 py-1 rounded-lg shadow">-30%</div>
+            </div>
+            <div class="p-3 space-y-3">
+              <div class="flex flex-col">
+                <span class="text-accent-gold line-through decoration-2 text-xs font-semibold">$1,690</span>
+                <div class="flex items-baseline gap-1">
+                  <span class="text-slate-500 text-[10px] font-medium uppercase">desde</span>
+                  <span class="text-navy font-bold text-lg">$1,436</span>
+                </div>
+                <span class="text-slate-500 text-[10px] font-medium uppercase">/ 1&ndash;4 huéspedes</span>
+              </div>
+              <button type="button" onclick="openRezdyModal('165509')" class="block w-full bg-navy text-white font-bold text-[10px] py-2.5 rounded-lg uppercase tracking-widest text-center shadow">Ver Disponibilidad</button>
+            </div>
+          </div>
+
+          <!-- 45' Luxury Yacht -->
+          <div class="bg-white border border-border-light rounded-2xl overflow-hidden shadow-lg shadow-navy/5">
+            <div class="relative aspect-[3/4] overflow-hidden">
+              <Image src={yacht45} alt="Yate de Lujo 45' charter privado en Cabo San Lucas" class="w-full h-full object-cover" width={1023} height={1537} />
+              <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
+              <div class="absolute bottom-3 left-4">
+                <h4 class="text-white text-sm lg:text-base font-semibold">Yate de Lujo 45'</h4>
+                <div class="flex items-center gap-1 text-white/80 text-[10px] mt-0.5 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Hasta 12</span></div>
+              </div>
+              <div class="absolute top-3 right-3 bg-white text-navy font-bold text-xs px-2 py-1 rounded-lg shadow">-30%</div>
+            </div>
+            <div class="p-3 space-y-3">
+              <div class="flex flex-col">
+                <span class="text-accent-gold line-through decoration-2 text-xs font-semibold">$1,520</span>
+                <div class="flex items-baseline gap-1">
+                  <span class="text-slate-500 text-[10px] font-medium uppercase">desde</span>
+                  <span class="text-navy font-bold text-lg">$1,292</span>
+                </div>
+                <span class="text-slate-500 text-[10px] font-medium uppercase">/ 1&ndash;4 huéspedes</span>
+              </div>
+              <button type="button" onclick="openRezdyModal('528988')" class="block w-full bg-navy text-white font-bold text-[10px] py-2.5 rounded-lg uppercase tracking-widest text-center shadow">Ver Disponibilidad</button>
+            </div>
+          </div>
+
+          <!-- 42' Luxury Yacht -->
+          <div class="bg-white border border-border-light rounded-2xl overflow-hidden shadow-lg shadow-navy/5">
+            <div class="relative aspect-[3/4] overflow-hidden">
+              <Image src={yacht42} alt="Yate de Lujo 42' charter privado en Cabo San Lucas" class="w-full h-full object-cover" style="transform: scale(1.1);" width={1023} height={1537} />
+              <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
+              <div class="absolute bottom-3 left-4">
+                <h4 class="text-white text-sm lg:text-base font-semibold">Yate de Lujo 42'</h4>
+                <div class="flex items-center gap-1 text-white/80 text-[10px] mt-0.5 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Hasta 18</span></div>
+              </div>
+              <div class="absolute top-3 right-3 bg-white text-navy font-bold text-xs px-2 py-1 rounded-lg shadow">-30%</div>
+            </div>
+            <div class="p-3 space-y-3">
+              <div class="flex flex-col">
+                <span class="text-accent-gold line-through decoration-2 text-xs font-semibold">$1,350</span>
+                <div class="flex items-baseline gap-1">
+                  <span class="text-slate-500 text-[10px] font-medium uppercase">desde</span>
+                  <span class="text-navy font-bold text-lg">$1,148</span>
+                </div>
+                <span class="text-slate-500 text-[10px] font-medium uppercase">/ 1&ndash;4 huéspedes</span>
+              </div>
+              <button type="button" onclick="openRezdyModal('168008')" class="block w-full bg-navy text-white font-bold text-[10px] py-2.5 rounded-lg uppercase tracking-widest text-center shadow">Ver Disponibilidad</button>
+            </div>
+          </div>
+
+          <!-- 42' Sailing Boat -->
+          <div class="bg-white border border-border-light rounded-2xl overflow-hidden shadow-lg shadow-navy/5">
+            <div class="relative aspect-[3/4] overflow-hidden">
+              <Image src={sailing42} alt="Velero 42' charter privado en Cabo San Lucas" class="w-full h-full object-cover" style="transform: scale(1.1);" width={1024} height={1536} />
+              <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
+              <div class="absolute bottom-3 left-4">
+                <h4 class="text-white text-sm lg:text-base font-semibold">Velero 42'</h4>
+                <div class="flex items-center gap-1 text-white/80 text-[10px] mt-0.5 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Hasta 14</span></div>
+              </div>
+              <div class="absolute top-3 right-3 bg-white text-navy font-bold text-xs px-2 py-1 rounded-lg shadow">-30%</div>
+            </div>
+            <div class="p-3 space-y-3">
+              <div class="flex flex-col">
+                <span class="text-accent-gold line-through decoration-2 text-xs font-semibold">$1,090</span>
+                <div class="flex items-baseline gap-1">
+                  <span class="text-slate-500 text-[10px] font-medium uppercase">desde</span>
+                  <span class="text-navy font-bold text-lg">$927</span>
+                </div>
+                <span class="text-slate-500 text-[10px] font-medium uppercase">/ 1&ndash;4 huéspedes</span>
+              </div>
+              <a href="https://wa.me/526241916997?text=Hola%2C%20me%20gustaria%20reservar%20el%20Velero%2042" target="_blank" class="block w-full bg-navy text-white font-bold text-[10px] py-2.5 rounded-lg uppercase tracking-widest text-center shadow">Ver Disponibilidad</a>
+            </div>
+          </div>
+
+          <!-- 38' Sailing Boat -->
+          <div class="bg-white border border-border-light rounded-2xl overflow-hidden shadow-lg shadow-navy/5">
+            <div class="relative aspect-[3/4] overflow-hidden">
+              <Image src={sailing38} alt="Velero 38' charter privado en Cabo San Lucas" class="w-full h-full object-cover" style="transform: scale(1.1);" width={1024} height={1536} />
+              <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
+              <div class="absolute bottom-3 left-4">
+                <h4 class="text-white text-sm lg:text-base font-semibold">Velero 38'</h4>
+                <div class="flex items-center gap-1 text-white/80 text-[10px] mt-0.5 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Hasta 9</span></div>
+              </div>
+              <div class="absolute top-3 right-3 bg-white text-navy font-bold text-xs px-2 py-1 rounded-lg shadow">-30%</div>
+            </div>
+            <div class="p-3 space-y-3">
+              <div class="flex flex-col">
+                <span class="text-accent-gold line-through decoration-2 text-xs font-semibold">$825</span>
+                <div class="flex items-baseline gap-1">
+                  <span class="text-slate-500 text-[10px] font-medium uppercase">desde</span>
+                  <span class="text-navy font-bold text-lg">$701</span>
+                </div>
+                <span class="text-slate-500 text-[10px] font-medium uppercase">/ 1&ndash;4 huéspedes</span>
+              </div>
+              <button type="button" onclick="openRezdyModal('165682')" class="block w-full bg-navy text-white font-bold text-[10px] py-2.5 rounded-lg uppercase tracking-widest text-center shadow">Ver Disponibilidad</button>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <Footer />
+  <FloatingCTA />
+  <RezdyModal />
+</BaseLayout>
