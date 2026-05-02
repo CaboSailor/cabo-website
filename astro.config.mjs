@@ -18,6 +18,16 @@ export default defineConfig({
           es: 'es',
         },
       },
+      filter: (page) => !/\/(thank-you|sitemap)\/?$/.test(page),
+      serialize(item) {
+        if (item.links && item.links.length > 0) {
+          const enLink = item.links.find((l) => l.lang === 'en');
+          if (enLink && !item.links.some((l) => l.lang === 'x-default')) {
+            item.links.push({ url: enLink.url, lang: 'x-default' });
+          }
+        }
+        return item;
+      },
     }),
   ],
   i18n: {

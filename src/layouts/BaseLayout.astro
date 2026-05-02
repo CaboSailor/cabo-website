@@ -10,6 +10,7 @@ interface Props {
   ogImage?: string;
   ogImageAlt?: string;
   hreflangs?: { en: string; es: string };
+  noindex?: boolean;
 }
 
 const {
@@ -19,6 +20,7 @@ const {
   ogImage = "/og/home.jpg",
   ogImageAlt,
   hreflangs,
+  noindex = false,
 } = Astro.props;
 
 const lang = getLangFromUrl(Astro.url);
@@ -46,6 +48,7 @@ const canonicalUrl = `${siteUrl}${canonicalPath}`;
   <meta name="twitter:description" content={description} />
   <meta name="twitter:image" content={ogImageUrl} />
   <title>{title}</title>
+  {noindex && <meta name="robots" content="noindex, nofollow" />}
   <link rel="canonical" href={canonicalUrl} />
   {hreflangs && (
     <>

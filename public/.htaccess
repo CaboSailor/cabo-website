@@ -14,6 +14,22 @@
 RewriteEngine On
 
 # -----------------------------------------------------------------------------
+# Staging noindex: only when served from new.cabosailing.com
+# Belt-and-suspenders so the staging site can't leak into Google if Basic Auth
+# is ever accidentally removed.
+# -----------------------------------------------------------------------------
+<IfModule mod_headers.c>
+    SetEnvIfNoCase Host "new\.cabosailing\.com" IS_STAGING
+    Header set X-Robots-Tag "noindex, nofollow" env=IS_STAGING
+</IfModule>
+
+# -----------------------------------------------------------------------------
+# Canonical host: force non-www (matches astro.config.mjs site + sitemap)
+# -----------------------------------------------------------------------------
+RewriteCond %{HTTP_HOST} ^www\.cabosailing\.com$ [NC]
+RewriteRule ^(.*)$ https://cabosailing.com/$1 [R=301,L]
+
+# -----------------------------------------------------------------------------
 # Custom 404 page
 # -----------------------------------------------------------------------------
 ErrorDocument 404 /404.html
@@ -101,6 +117,10 @@ RewriteRule ^10-cabo-honeymoon-resorts-that-provide-the-perfect-romantic-atmosph
 RewriteRule ^15-spectacular-wedding-venues-in-cabo-san-lucas/?$ /bachelorette/ [R=301,L]
 RewriteRule ^romantic-getaway-in-los-cabos/?$ /bachelorette/ [R=301,L]
 RewriteRule ^plan-your-big-day-with-an-unforgettable-wedding-yacht-charter-experience/?$ /bachelorette/ [R=301,L]
+RewriteRule ^cabo-bachelorette/?$ /bachelorette/ [R=301,L]
+RewriteRule ^getting-married-cabo/?$ /bachelorette/ [R=301,L]
+RewriteRule ^wedding-in-cabo/?$ /bachelorette/ [R=301,L]
+RewriteRule ^how-to-make-your-cabo-honeymoon-truly-special-with-a-yacht-charter/?$ /bachelorette/ [R=301,L]
 
 # Snorkeling / scuba guides → consolidated /travel-guide/snorkeling-diving/
 RewriteRule ^how-to-make-the-most-of-a-snorkeling-trip-in-cabo-san-lucas/?$ /travel-guide/snorkeling-diving/ [R=301,L]
@@ -109,8 +129,19 @@ RewriteRule ^is-cabo-san-lucas-good-for-scuba-diving/?$ /travel-guide/snorkeling
 RewriteRule ^preparing-for-your-scuba-diving-trip-to-cabo-san-lucas/?$ /travel-guide/snorkeling-diving/ [R=301,L]
 RewriteRule ^cabo-snorkeling-journey-through-cabos-finest-snorkeling-sites/?$ /travel-guide/snorkeling-diving/ [R=301,L]
 
+# Old snorkeling tour pages → tour service pages
+RewriteRule ^cabo-snorkeling-tours/?$ /shared-snorkeling/ [R=301,L]
+RewriteRule ^los-cabos-snorkeling-tour/?$ /shared-snorkeling/ [R=301,L]
+RewriteRule ^private-cabo-snorkeling-tour-exploring-the-baja-peninsulas-vibrant-marine-life/?$ /private-snorkeling/ [R=301,L]
+RewriteRule ^cabo-snorkel-tour-exploring-the-best-snorkeling-spots-in-los-cabos/?$ /travel-guide-activities/ [R=301,L]
+RewriteRule ^snorkeling-tour-at-santa-maria-bay-explore-the-beauty-of-baja-peninsulas-aquatic-life/?$ /travel-guide-activities/ [R=301,L]
+
 # Whale-watching tour landing
 RewriteRule ^cabo-whale-watching-tours/?$ /whale-watching/ [R=301,L]
+RewriteRule ^cabo-whale-watching-season-back/?$ /whale-watching/ [R=301,L]
+
+# Fishing landing
+RewriteRule ^fishing-in-cabo/?$ /travel-guide-activities/ [R=301,L]
 
 # Old fleet/charter/pricing articles → /tours/ (fleet page retired 2026-05)
 RewriteRule ^fleet/?$ /tours/ [R=301,L]
@@ -128,6 +159,9 @@ RewriteRule ^cabo-sailing-adds-luxurious-sport-yachts-fleet/?$ /tours/ [R=301,L]
 RewriteRule ^how-to-charter-a-yacht-in-cabo-san-lucas/?$ /tours/ [R=301,L]
 RewriteRule ^all-inclusive-cabo-yacht-charter/?$ /tours/ [R=301,L]
 RewriteRule ^sailing-in-cabo-san-lucas-the-6-best-tours-to-consider/?$ /tours/ [R=301,L]
+RewriteRule ^luxury-yacht-rentals-in-cabo-san-lucas-what-to-expect/?$ /tours/ [R=301,L]
+RewriteRule ^sailing-vacations-in-cabo-a-unique-way-to-explore-mexicos-coastline/?$ /tours/ [R=301,L]
+RewriteRule ^things-to-know-before-going-on-a-yacht-vacation-in-cabo/?$ /tours/ [R=301,L]
 
 # Reviews → /about-us/ (where reviews live)
 RewriteRule ^cabo-sailing-reviews/?$ /about-us/ [R=301,L]
@@ -208,6 +242,10 @@ RewriteRule ^es/yates-de-lujo/?$ /es/tours/ [R=301,L]
 RewriteRule ^es/veleros-de-lujo/?$ /es/tours/ [R=301,L]
 RewriteRule ^es/contacto/?$ /es/contact/ [R=301,L]
 RewriteRule ^es/acerca-de-cabo-sailing/?$ /es/about-us/ [R=301,L]
+RewriteRule ^es/ofertas/?$ /es/special-offers/ [R=301,L]
+RewriteRule ^es/politicas-de-cancelacion/?$ /es/policies/ [R=301,L]
+RewriteRule ^es/politicas-de-privacidad/?$ /es/policies/ [R=301,L]
+RewriteRule ^es/transportacion/?$ /es/shuttle-service/ [R=301,L]
 
 # Old /es/paseos-y-barcos/* tour pages
 RewriteRule ^es/paseos-y-barcos/crucero-al-atardecer/?$ /es/shared-sunset/ [R=301,L]
@@ -248,6 +286,9 @@ RewriteRule ^cabo-san-lucas-activities/?$ /travel-guide-activities/ [R=301,L]
 RewriteRule ^ten-cabo-golf-courses/?$ /travel-guide-activities/ [R=301,L]
 RewriteRule ^finding-calm-in-cabo/?$ /travel-guide-activities/ [R=301,L]
 RewriteRule ^educational-excursions-in-cabo-san-lucas/?$ /travel-guide-activities/ [R=301,L]
+RewriteRule ^things-to-do-in-cabo/?$ /travel-guide-activities/ [R=301,L]
+RewriteRule ^10-fantastic-things-to-do-in-los-cabos-for-relaxation/?$ /travel-guide-activities/ [R=301,L]
+RewriteRule ^do-you-need-insurance-when-renting-a-boat-in-cabo-san-lucas/?$ /travel-guide/boat-rental-license-cabo/ [R=301,L]
 
 # -----------------------------------------------------------------------------
 # 3b. Attractions (beaches, landmarks, places) → /travel-guide-attractions/
@@ -293,6 +334,8 @@ RewriteRule ^20-all-inclusive-adult-only-resorts-in-cabo-san-lucas/?$ /travel-gu
 RewriteRule ^13-best-all-inclusive-family-resorts-in-cabo-san-lucas/?$ /travel-guide-traveling/ [R=301,L]
 RewriteRule ^flying-to-los-cabos/?$ /travel-guide-traveling/ [R=301,L]
 RewriteRule ^cabo-vacation-tips/?$ /travel-guide-traveling/ [R=301,L]
+RewriteRule ^traveling-green-in-cabo/?$ /travel-guide-traveling/ [R=301,L]
+RewriteRule ^where-is-los-cabos-located-your-yachting-destination-revealed/?$ /travel-guide-traveling/ [R=301,L]
 
 # -----------------------------------------------------------------------------
 # 3d. Culture & Food (restaurants, nightlife, history, art) → /travel-guide-culture/
