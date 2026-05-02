@@ -59,78 +59,78 @@ const breadcrumbSchema = JSON.stringify({
       </header>
 
       <!-- 3 Promo Cards -->
-      <section class="grid grid-cols-3 gap-2 lg:gap-6 mb-14 lg:mb-20">
+      <section class="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-6 mb-14 lg:mb-20">
 
         <!-- Yate Privado -->
-        <a href="/es/private-snorkeling" class="group relative block bg-white border border-border-light rounded-xl lg:rounded-[2rem] overflow-hidden shadow-lg lg:shadow-xl shadow-navy/5 transition-transform duration-300 hover:-translate-y-1">
+        <a href="/es/private-snorkeling" class="group relative block bg-white border border-border-light rounded-[2rem] overflow-hidden shadow-xl shadow-navy/5 transition-transform duration-300 hover:-translate-y-1">
           <div class="relative aspect-[4/5] overflow-hidden">
             <Image src={promoYacht} alt="Paseo tranquilo en yate bajo el sol" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" width={1024} height={1280} />
             <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
 
             <!-- Big 30% badge -->
-            <div class="absolute top-2 left-2 lg:top-4 lg:left-4 bg-accent-gold text-white rounded-lg lg:rounded-2xl px-2 py-1 lg:px-5 lg:py-3 shadow-2xl">
-              <div class="flex items-baseline gap-0.5 lg:gap-1">
-                <span class="font-serif font-bold text-base lg:text-4xl leading-none">30%</span>
-                <span class="font-bold text-[8px] lg:text-sm uppercase tracking-widest">Off</span>
+            <div class="absolute top-4 left-4 bg-accent-gold text-white rounded-2xl px-4 py-2 lg:px-5 lg:py-3 shadow-2xl">
+              <div class="flex items-baseline gap-1">
+                <span class="font-serif font-bold text-3xl lg:text-4xl leading-none">30%</span>
+                <span class="font-bold text-xs lg:text-sm uppercase tracking-widest">Off</span>
               </div>
             </div>
 
-            <div class="absolute bottom-2 left-2 right-2 lg:bottom-5 lg:left-6 lg:right-6">
-              <h3 class="text-white text-xs lg:text-3xl font-serif leading-tight lg:mb-1">Yate Privado</h3>
-              <p class="hidden lg:block text-white/80 text-xs lg:text-sm uppercase tracking-widest font-semibold">Charter del barco completo</p>
+            <div class="absolute bottom-5 left-6 right-6">
+              <h3 class="text-white text-2xl lg:text-3xl font-serif leading-tight mb-1">Yate Privado</h3>
+              <p class="text-white/80 text-xs lg:text-sm uppercase tracking-widest font-semibold">Charter del barco completo</p>
             </div>
           </div>
-          <div class="p-2 lg:p-5 flex items-center justify-between">
-            <span class="text-navy/70 text-[10px] lg:text-sm leading-tight">Hasta 20 huéspedes<span class="hidden lg:inline"> &middot; Tripulación y bar incluidos</span></span>
-            <span class="material-symbols-outlined text-accent-gold text-base lg:text-2xl transition-transform group-hover:translate-x-1">arrow_forward</span>
+          <div class="p-5 flex items-center justify-between">
+            <span class="text-navy/70 text-sm">Hasta 20 huéspedes &middot; Tripulación y bar incluidos</span>
+            <span class="material-symbols-outlined text-accent-gold transition-transform group-hover:translate-x-1">arrow_forward</span>
           </div>
         </a>
 
         <!-- Vela Privada -->
-        <a href="/es/private-sunset" class="group relative block bg-white border border-border-light rounded-xl lg:rounded-[2rem] overflow-hidden shadow-lg lg:shadow-xl shadow-navy/5 transition-transform duration-300 hover:-translate-y-1">
+        <a href="/es/private-sunset" class="group relative block bg-white border border-border-light rounded-[2rem] overflow-hidden shadow-xl shadow-navy/5 transition-transform duration-300 hover:-translate-y-1">
           <div class="relative aspect-[4/5] overflow-hidden">
             <Image src={promoPrivateSail} alt="Escapada de verano en velero" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" width={1024} height={1280} />
             <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
 
-            <div class="absolute top-2 left-2 lg:top-4 lg:left-4 bg-accent-gold text-white rounded-lg lg:rounded-2xl px-2 py-1 lg:px-5 lg:py-3 shadow-2xl">
-              <div class="flex items-baseline gap-0.5 lg:gap-1">
-                <span class="font-serif font-bold text-base lg:text-4xl leading-none">30%</span>
-                <span class="font-bold text-[8px] lg:text-sm uppercase tracking-widest">Off</span>
+            <div class="absolute top-4 left-4 bg-accent-gold text-white rounded-2xl px-4 py-2 lg:px-5 lg:py-3 shadow-2xl">
+              <div class="flex items-baseline gap-1">
+                <span class="font-serif font-bold text-3xl lg:text-4xl leading-none">30%</span>
+                <span class="font-bold text-xs lg:text-sm uppercase tracking-widest">Off</span>
               </div>
             </div>
 
-            <div class="absolute bottom-2 left-2 right-2 lg:bottom-5 lg:left-6 lg:right-6">
-              <h3 class="text-white text-xs lg:text-3xl font-serif leading-tight lg:mb-1">Vela Privada</h3>
-              <p class="hidden lg:block text-white/80 text-xs lg:text-sm uppercase tracking-widest font-semibold">Tu grupo, tu velero</p>
+            <div class="absolute bottom-5 left-6 right-6">
+              <h3 class="text-white text-2xl lg:text-3xl font-serif leading-tight mb-1">Vela Privada</h3>
+              <p class="text-white/80 text-xs lg:text-sm uppercase tracking-widest font-semibold">Tu grupo, tu velero</p>
             </div>
           </div>
-          <div class="p-2 lg:p-5 flex items-center justify-between">
-            <span class="text-navy/70 text-[10px] lg:text-sm leading-tight">Hasta 14 huéspedes<span class="hidden lg:inline"> &middot; Navegación a vela real</span></span>
-            <span class="material-symbols-outlined text-accent-gold text-base lg:text-2xl transition-transform group-hover:translate-x-1">arrow_forward</span>
+          <div class="p-5 flex items-center justify-between">
+            <span class="text-navy/70 text-sm">Hasta 14 huéspedes &middot; Navegación a vela real</span>
+            <span class="material-symbols-outlined text-accent-gold transition-transform group-hover:translate-x-1">arrow_forward</span>
           </div>
         </a>
 
         <!-- Vela Compartida -->
-        <a href="/es/shared-sunset" class="group relative block bg-white border border-border-light rounded-xl lg:rounded-[2rem] overflow-hidden shadow-lg lg:shadow-xl shadow-navy/5 transition-transform duration-300 hover:-translate-y-1">
+        <a href="/es/shared-sunset" class="group relative block bg-white border border-border-light rounded-[2rem] overflow-hidden shadow-xl shadow-navy/5 transition-transform duration-300 hover:-translate-y-1">
           <div class="relative aspect-[4/5] overflow-hidden">
             <Image src={promoSharedSail} alt="Navegación con amigos en hora dorada" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" width={1024} height={1280} />
             <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
 
-            <div class="absolute top-2 left-2 lg:top-4 lg:left-4 bg-accent-gold text-white rounded-lg lg:rounded-2xl px-2 py-1 lg:px-5 lg:py-3 shadow-2xl">
-              <div class="flex items-baseline gap-0.5 lg:gap-1">
-                <span class="font-serif font-bold text-base lg:text-4xl leading-none">30%</span>
-                <span class="font-bold text-[8px] lg:text-sm uppercase tracking-widest">Off</span>
+            <div class="absolute top-4 left-4 bg-accent-gold text-white rounded-2xl px-4 py-2 lg:px-5 lg:py-3 shadow-2xl">
+              <div class="flex items-baseline gap-1">
+                <span class="font-serif font-bold text-3xl lg:text-4xl leading-none">30%</span>
+                <span class="font-bold text-xs lg:text-sm uppercase tracking-widest">Off</span>
               </div>
             </div>
 
-            <div class="absolute bottom-2 left-2 right-2 lg:bottom-5 lg:left-6 lg:right-6">
-              <h3 class="text-white text-xs lg:text-3xl font-serif leading-tight lg:mb-1">Vela Compartida</h3>
-              <p class="hidden lg:block text-white/80 text-xs lg:text-sm uppercase tracking-widest font-semibold">Precio por persona</p>
+            <div class="absolute bottom-5 left-6 right-6">
+              <h3 class="text-white text-2xl lg:text-3xl font-serif leading-tight mb-1">Vela Compartida</h3>
+              <p class="text-white/80 text-xs lg:text-sm uppercase tracking-widest font-semibold">Precio por persona</p>
             </div>
           </div>
-          <div class="p-2 lg:p-5 flex items-center justify-between">
-            <span class="text-navy/70 text-[10px] lg:text-sm leading-tight">Máx. 12 huéspedes<span class="hidden lg:inline"> por tour</span></span>
-            <span class="material-symbols-outlined text-accent-gold text-base lg:text-2xl transition-transform group-hover:translate-x-1">arrow_forward</span>
+          <div class="p-5 flex items-center justify-between">
+            <span class="text-navy/70 text-sm">Máx. 12 huéspedes por tour</span>
+            <span class="material-symbols-outlined text-accent-gold transition-transform group-hover:translate-x-1">arrow_forward</span>
           </div>
         </a>
 
