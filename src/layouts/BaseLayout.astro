@@ -28,6 +28,32 @@ const siteUrl = 'https://cabosailing.com';
 const ogImageUrl = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}`;
 const canonicalPath = Astro.url.pathname.endsWith('/') ? Astro.url.pathname : `${Astro.url.pathname}/`;
 const canonicalUrl = `${siteUrl}${canonicalPath}`;
+
+const travelAgencySchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "TravelAgency",
+  "@id": "https://cabosailing.com/#organization",
+  "name": "Cabo Sailing Ocean Adventures",
+  "url": "https://cabosailing.com",
+  "logo": "https://cabosailing.com/og/home.jpg",
+  "image": "https://cabosailing.com/og/home.jpg",
+  "telephone": "+52-624-143-8485",
+  "priceRange": "$$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "F Dock, Centro, Marina",
+    "postalCode": "23450",
+    "addressLocality": "Cabo San Lucas",
+    "addressRegion": "Baja California Sur",
+    "addressCountry": "MX"
+  },
+  "openingHours": "Mo-Su 07:30-20:00",
+  "sameAs": [
+    "https://www.facebook.com/CaboSailing/",
+    "https://www.instagram.com/cabosailing/",
+    "https://www.youtube.com/@cabosailing4394/"
+  ]
+});
 ---
 
 <!DOCTYPE html>
@@ -60,6 +86,7 @@ const canonicalUrl = `${siteUrl}${canonicalPath}`;
   <meta name="twitter:image" content={ogImageUrl} />
   <title>{title}</title>
   {noindex && <meta name="robots" content="noindex, nofollow" />}
+  {!noindex && <script type="application/ld+json" set:html={travelAgencySchema} />}
   <link rel="canonical" href={canonicalUrl} />
   {hreflangs && (
     <>
