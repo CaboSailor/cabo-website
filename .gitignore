@@ -26,3 +26,6 @@ pnpm-debug.log*
 # legacy assets
 Videos/
 images/To edit/
+
+# local working files
+tmp/
