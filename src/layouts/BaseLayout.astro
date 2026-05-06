@@ -219,21 +219,6 @@ const travelAgencySchema = JSON.stringify({
   <script is:inline src="/js/prices.js" defer></script>
   <script is:inline src="/js/boat-swipe.js"></script>
 
-  <!-- Set title on Tomis chatbot iframe when it appears (a11y fix for third-party widget) -->
-  <script is:inline>
-    (function(){
-      var attempts = 0;
-      var t = setInterval(function(){
-        var bot = document.getElementById('tomis-bot');
-        if (bot && !bot.getAttribute('title')) {
-          bot.setAttribute('title', 'Cabo Sailing chat assistant');
-          clearInterval(t);
-        }
-        if (++attempts > 30) clearInterval(t);
-      }, 1000);
-    })();
-  </script>
-
   <!-- Activity-carousel initializer (powers <CarouselImage>) -->
   <script is:inline>
     (function() {
