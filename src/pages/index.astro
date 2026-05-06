@@ -32,7 +32,7 @@ import sailing38_4 from "../assets/images/guests-on-sailboats/cabo-sailing-38-gu
 import sharedSailing1 from "../assets/images/boats/sailing-42/cabo-sailing-42-sailing-view.jpg";
 import sharedSailing2 from "../assets/images/boats/sailing-42/cabo-sailing-42-aerial.jpg";
 import sharedSailing3 from "../assets/images/boats/sailing-42/cabo-sailing-42-exterior-01.jpg";
-import reviewsBg from "../assets/images/boats/sailing-42/cabo-sailing-42-guests-on-deck.jpeg";
+import reviewsBg from "../assets/images/boats/sailing-42/cabo-sailing-42-guests-on-deck.webp";
 
 // Glob all images so we can look them up by path from the JSON
 const allImages = import.meta.glob<{ default: ImageMetadata }>('../assets/images/**/*.{jpg,jpeg,png,webp}', { eager: true });
@@ -68,7 +68,7 @@ for (const [key, paths] of Object.entries(carouselConfig.fleet)) {
 
 <!-- Hero Section -->
 <div class="relative w-full h-[72vh] lg:h-[85vh] min-h-[560px] overflow-hidden" style="margin-bottom:-1px">
-  <Image src={heroSlide1} alt="Luxury sailboat in tropical waters" class="hero-slide absolute inset-0 w-full h-full object-cover block opacity-100 transition-opacity duration-1000" width={1920} height={1080} loading="eager" />
+  <Image src={heroSlide1} alt="Luxury sailboat in tropical waters" class="hero-slide absolute inset-0 w-full h-full object-cover block opacity-100 transition-opacity duration-1000" width={1920} height={1080} loading="eager" fetchpriority="high" />
   <Image src={heroSlide2} alt="Relaxing day on a luxury boat" class="hero-slide absolute inset-0 w-full h-full object-cover block opacity-0 transition-opacity duration-1000" width={1920} height={1080} />
   <Image src={heroSlide3} alt="Sailing through Cabo's vibrant waters" class="hero-slide absolute inset-0 w-full h-full object-cover block opacity-0 transition-opacity duration-1000" width={1920} height={1080} />
   <Image src={heroSlide4} alt="Guests enjoying a Cabo yacht charter" class="hero-slide absolute inset-0 w-full h-full object-cover block opacity-0 transition-opacity duration-1000" width={1920} height={1080} />
@@ -146,8 +146,8 @@ for (const [key, paths] of Object.entries(carouselConfig.fleet)) {
         <Image src={img} alt="Private Snorkeling" class="activity-slide absolute inset-0 w-full h-full object-cover" style={`opacity:${idx === 0 ? 1 : 0};`} width={1200} height={750} />
       ))}
       {activityImages['private-snorkeling'].length > 1 && (
-        <><button class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_left</span></button>
-        <button class="carousel-next absolute right-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_right</span></button>
+        <><button type="button" aria-label="Previous slide" class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_left</span></button>
+        <button type="button" aria-label="Next slide" class="carousel-next absolute right-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_right</span></button>
         <div class="carousel-dots absolute bottom-3 left-1/2 -translate-x-1/2 z-20 flex gap-2"></div>
         <div class="swipe-hint md:hidden absolute inset-0 z-20 pointer-events-none flex items-center justify-center">
           <div class="bg-black/55 backdrop-blur-sm text-white px-5 py-2.5 rounded-full flex items-center gap-2 shadow-2xl">
@@ -193,8 +193,8 @@ for (const [key, paths] of Object.entries(carouselConfig.fleet)) {
         <Image src={img} alt="Private Sunset Cruise" class="activity-slide absolute inset-0 w-full h-full object-cover" style={`opacity:${idx === 0 ? 1 : 0};`} width={1200} height={750} />
       ))}
       {activityImages['private-sunset'].length > 1 && (
-        <><button class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_left</span></button>
-        <button class="carousel-next absolute right-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_right</span></button>
+        <><button type="button" aria-label="Previous slide" class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_left</span></button>
+        <button type="button" aria-label="Next slide" class="carousel-next absolute right-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_right</span></button>
         <div class="carousel-dots absolute bottom-3 left-1/2 -translate-x-1/2 z-20 flex gap-2"></div>
         <div class="swipe-hint md:hidden absolute inset-0 z-20 pointer-events-none flex items-center justify-center">
           <div class="bg-black/55 backdrop-blur-sm text-white px-5 py-2.5 rounded-full flex items-center gap-2 shadow-2xl">
@@ -240,8 +240,8 @@ for (const [key, paths] of Object.entries(carouselConfig.fleet)) {
         <Image src={img} alt="Whale Watching" class="activity-slide absolute inset-0 w-full h-full object-cover" style={`opacity:${idx === 0 ? 1 : 0};`} width={1200} height={750} />
       ))}
       {activityImages['whale-watching'].length > 1 && (
-        <><button class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_left</span></button>
-        <button class="carousel-next absolute right-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_right</span></button>
+        <><button type="button" aria-label="Previous slide" class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_left</span></button>
+        <button type="button" aria-label="Next slide" class="carousel-next absolute right-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_right</span></button>
         <div class="carousel-dots absolute bottom-3 left-1/2 -translate-x-1/2 z-20 flex gap-2"></div>
         <div class="swipe-hint md:hidden absolute inset-0 z-20 pointer-events-none flex items-center justify-center">
           <div class="bg-black/55 backdrop-blur-sm text-white px-5 py-2.5 rounded-full flex items-center gap-2 shadow-2xl">
@@ -287,8 +287,8 @@ for (const [key, paths] of Object.entries(carouselConfig.fleet)) {
         <Image src={img} alt="Bachelorette Party" class="activity-slide absolute inset-0 w-full h-full object-cover" style={`opacity:${idx === 0 ? 1 : 0};`} width={1200} height={750} />
       ))}
       {activityImages['bachelorette-party'].length > 1 && (
-        <><button class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_left</span></button>
-        <button class="carousel-next absolute right-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_right</span></button>
+        <><button type="button" aria-label="Previous slide" class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_left</span></button>
+        <button type="button" aria-label="Next slide" class="carousel-next absolute right-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_right</span></button>
         <div class="carousel-dots absolute bottom-3 left-1/2 -translate-x-1/2 z-20 flex gap-2"></div>
         <div class="swipe-hint md:hidden absolute inset-0 z-20 pointer-events-none flex items-center justify-center">
           <div class="bg-black/55 backdrop-blur-sm text-white px-5 py-2.5 rounded-full flex items-center gap-2 shadow-2xl">
@@ -340,8 +340,8 @@ for (const [key, paths] of Object.entries(carouselConfig.fleet)) {
         <Image src={img} alt="Shared Snorkeling" class="activity-slide absolute inset-0 w-full h-full object-cover" style={`opacity:${idx === 0 ? 1 : 0};`} width={1200} height={750} />
       ))}
       {activityImages['shared-snorkeling'].length > 1 && (
-        <><button class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_left</span></button>
-        <button class="carousel-next absolute right-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_right</span></button>
+        <><button type="button" aria-label="Previous slide" class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_left</span></button>
+        <button type="button" aria-label="Next slide" class="carousel-next absolute right-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_right</span></button>
         <div class="carousel-dots absolute bottom-3 left-1/2 -translate-x-1/2 z-20 flex gap-2"></div>
         <div class="swipe-hint md:hidden absolute inset-0 z-20 pointer-events-none flex items-center justify-center">
           <div class="bg-black/55 backdrop-blur-sm text-white px-5 py-2.5 rounded-full flex items-center gap-2 shadow-2xl">
@@ -387,8 +387,8 @@ for (const [key, paths] of Object.entries(carouselConfig.fleet)) {
         <Image src={img} alt="Shared Sunset Cruise" class="activity-slide absolute inset-0 w-full h-full object-cover" style={`opacity:${idx === 0 ? 1 : 0};`} width={1200} height={750} />
       ))}
       {activityImages['shared-sunset'].length > 1 && (
-        <><button class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_left</span></button>
-        <button class="carousel-next absolute right-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_right</span></button>
+        <><button type="button" aria-label="Previous slide" class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_left</span></button>
+        <button type="button" aria-label="Next slide" class="carousel-next absolute right-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_right</span></button>
         <div class="carousel-dots absolute bottom-3 left-1/2 -translate-x-1/2 z-20 flex gap-2"></div>
         <div class="swipe-hint md:hidden absolute inset-0 z-20 pointer-events-none flex items-center justify-center">
           <div class="bg-black/55 backdrop-blur-sm text-white px-5 py-2.5 rounded-full flex items-center gap-2 shadow-2xl">
@@ -452,8 +452,8 @@ for (const [key, paths] of Object.entries(carouselConfig.fleet)) {
           <Image src={img} alt="Luxury Yacht 51' private charter in Cabo San Lucas" class={`activity-slide w-full h-full object-cover object-center ${idx > 0 ? 'absolute inset-0' : ''}`} style={`transform: scale(1.1); opacity:${idx === 0 ? 1 : 0}; transition: opacity 0.5s ease-in-out;`} width={1023} height={1537} format="png" quality={100} />
         ))}
         {fleetImages['yacht-51'].length > 1 && (
-          <><button class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_left</span></button>
-          <button class="carousel-next absolute right-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_right</span></button>
+          <><button type="button" aria-label="Previous slide" class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_left</span></button>
+          <button type="button" aria-label="Next slide" class="carousel-next absolute right-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_right</span></button>
           <div class="carousel-dots absolute bottom-3 left-1/2 -translate-x-1/2 z-20 flex gap-2"></div>
         <div class="swipe-hint md:hidden absolute inset-0 z-20 pointer-events-none flex items-center justify-center">
           <div class="bg-black/55 backdrop-blur-sm text-white px-5 py-2.5 rounded-full flex items-center gap-2 shadow-2xl">
@@ -486,8 +486,8 @@ for (const [key, paths] of Object.entries(carouselConfig.fleet)) {
           <Image src={img} alt="Luxury Yacht 45' private charter in Cabo San Lucas" class={`activity-slide w-full h-full object-cover object-center ${idx > 0 ? 'absolute inset-0' : ''}`} style={`transform: none !important; opacity:${idx === 0 ? 1 : 0}; transition: opacity 0.5s ease-in-out;`} width={1023} height={1537} format="png" quality={100} />
         ))}
         {fleetImages['yacht-45'].length > 1 && (
-          <><button class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_left</span></button>
-          <button class="carousel-next absolute right-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_right</span></button>
+          <><button type="button" aria-label="Previous slide" class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_left</span></button>
+          <button type="button" aria-label="Next slide" class="carousel-next absolute right-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_right</span></button>
           <div class="carousel-dots absolute bottom-3 left-1/2 -translate-x-1/2 z-20 flex gap-2"></div>
         <div class="swipe-hint md:hidden absolute inset-0 z-20 pointer-events-none flex items-center justify-center">
           <div class="bg-black/55 backdrop-blur-sm text-white px-5 py-2.5 rounded-full flex items-center gap-2 shadow-2xl">
@@ -520,8 +520,8 @@ for (const [key, paths] of Object.entries(carouselConfig.fleet)) {
           <Image src={img} alt="Luxury Yacht 42' private charter in Cabo San Lucas" class={`activity-slide w-full h-full object-cover object-center ${idx > 0 ? 'absolute inset-0' : ''}`} style={`transform: scale(1.1); opacity:${idx === 0 ? 1 : 0}; transition: opacity 0.5s ease-in-out;`} width={1023} height={1537} format="png" quality={100} />
         ))}
         {fleetImages['yacht-42'].length > 1 && (
-          <><button class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_left</span></button>
-          <button class="carousel-next absolute right-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_right</span></button>
+          <><button type="button" aria-label="Previous slide" class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_left</span></button>
+          <button type="button" aria-label="Next slide" class="carousel-next absolute right-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_right</span></button>
           <div class="carousel-dots absolute bottom-3 left-1/2 -translate-x-1/2 z-20 flex gap-2"></div>
         <div class="swipe-hint md:hidden absolute inset-0 z-20 pointer-events-none flex items-center justify-center">
           <div class="bg-black/55 backdrop-blur-sm text-white px-5 py-2.5 rounded-full flex items-center gap-2 shadow-2xl">
@@ -564,8 +564,8 @@ for (const [key, paths] of Object.entries(carouselConfig.fleet)) {
           <Image src={img} alt="Sailing Boat 42' private charter in Cabo San Lucas" class={`activity-slide w-full h-full object-cover object-center ${idx > 0 ? 'absolute inset-0' : ''}`} style={`transform: scale(1.1); opacity:${idx === 0 ? 1 : 0}; transition: opacity 0.5s ease-in-out;`} width={1024} height={1536} format="png" quality={100} />
         ))}
         {fleetImages['sailing-42'].length > 1 && (
-          <><button class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_left</span></button>
-          <button class="carousel-next absolute right-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_right</span></button>
+          <><button type="button" aria-label="Previous slide" class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_left</span></button>
+          <button type="button" aria-label="Next slide" class="carousel-next absolute right-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_right</span></button>
           <div class="carousel-dots absolute bottom-3 left-1/2 -translate-x-1/2 z-20 flex gap-2"></div>
         <div class="swipe-hint md:hidden absolute inset-0 z-20 pointer-events-none flex items-center justify-center">
           <div class="bg-black/55 backdrop-blur-sm text-white px-5 py-2.5 rounded-full flex items-center gap-2 shadow-2xl">
@@ -598,8 +598,8 @@ for (const [key, paths] of Object.entries(carouselConfig.fleet)) {
           <Image src={img} alt="Sailing Boat 38' private charter in Cabo San Lucas" class={`activity-slide w-full h-full object-cover object-center ${idx > 0 ? 'absolute inset-0' : ''}`} style={`transform: scale(1.1); opacity:${idx === 0 ? 1 : 0}; transition: opacity 0.5s ease-in-out;`} width={1024} height={1536} format="png" quality={100} />
         ))}
         {fleetImages['sailing-38'].length > 1 && (
-          <><button class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_left</span></button>
-          <button class="carousel-next absolute right-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_right</span></button>
+          <><button type="button" aria-label="Previous slide" class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_left</span></button>
+          <button type="button" aria-label="Next slide" class="carousel-next absolute right-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_right</span></button>
           <div class="carousel-dots absolute bottom-3 left-1/2 -translate-x-1/2 z-20 flex gap-2"></div>
         <div class="swipe-hint md:hidden absolute inset-0 z-20 pointer-events-none flex items-center justify-center">
           <div class="bg-black/55 backdrop-blur-sm text-white px-5 py-2.5 rounded-full flex items-center gap-2 shadow-2xl">
@@ -822,6 +822,8 @@ for (const [key, paths] of Object.entries(carouselConfig.fleet)) {
       if (dotsWrap) {
         slides.forEach(function(_, i) {
           var dot = document.createElement('button');
+          dot.type = 'button';
+          dot.setAttribute('aria-label', 'Go to slide ' + (i + 1));
           dot.className = 'w-2 h-2 rounded-full transition-all ' + (i === 0 ? 'bg-white scale-125' : 'bg-white/50');
           dot.addEventListener('click', function() { goTo(i); });
           dotsWrap.appendChild(dot);
