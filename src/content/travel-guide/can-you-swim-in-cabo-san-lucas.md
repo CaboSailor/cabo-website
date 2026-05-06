@@ -68,7 +68,7 @@ Yes, you can swim in Cabo San Lucas &mdash; but **only at specific beaches**. Th
     </tr>
     <tr class="border-b border-gray-100 bg-gray-50">
       <td class="px-4 py-3 font-semibold">Palmilla Beach</td>
-      <td class="px-4 py-3 text-yellow-600 font-semibold">🟡 Caution</td>
+      <td class="px-4 py-3 text-yellow-700 font-semibold">🟡 Caution</td>
       <td class="px-4 py-3">Usually calm, occasional swells</td>
       <td class="px-4 py-3">Wading, calm days only, check flags</td>
     </tr>

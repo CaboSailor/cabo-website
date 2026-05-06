@@ -77,12 +77,12 @@ It's also worth noting that Cabo San Lucas has a visible and active local police
     </tr>
     <tr class="border-b border-gray-100 bg-gray-50">
       <td class="px-4 py-3 font-semibold">Outer residential neighborhoods</td>
-      <td class="px-4 py-3 text-yellow-600 font-semibold">Use caution</td>
+      <td class="px-4 py-3 text-yellow-700 font-semibold">Use caution</td>
       <td class="px-4 py-3">Not tourist areas. No reason to visit. Stick to main roads if driving through.</td>
     </tr>
     <tr>
       <td class="px-4 py-3 font-semibold">Unlit side streets at night</td>
-      <td class="px-4 py-3 text-yellow-600 font-semibold">Use caution</td>
+      <td class="px-4 py-3 text-yellow-700 font-semibold">Use caution</td>
       <td class="px-4 py-3">A few blocks off the main strip can be poorly lit. Take a taxi instead of walking.</td>
     </tr>
   </tbody>
