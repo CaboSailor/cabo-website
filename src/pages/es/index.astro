@@ -339,7 +339,7 @@ for (const [key, paths] of Object.entries(carouselConfig.fleet)) {
     </div>
     <div class="absolute -bottom-6 right-2 md:-right-10 bg-slate-800 py-3 px-6 md:py-5 md:px-8 max-w-[260px] md:max-w-[280px] shadow-2xl z-20 border-b-4 border-slate-400 rounded-lg bg-opacity-80 backdrop-blur-sm">
       <h3 class="text-slate-200 font-serif-italic text-xl md:text-3xl mb-2">Exploradores de Baja</h3>
-      <p class="text-slate-500 text-xs md:text-sm leading-relaxed">Navegacion, snorkel y naturaleza salvaje en las aguas pristinas de Baja.</p>
+      <p class="text-slate-600 text-xs md:text-sm leading-relaxed">Navegacion, snorkel y naturaleza salvaje en las aguas pristinas de Baja.</p>
     </div>
   </div>
 
@@ -804,7 +804,10 @@ for (const [key, paths] of Object.entries(carouselConfig.fleet)) {
           var dot = document.createElement('button');
           dot.type = 'button';
           dot.setAttribute('aria-label', 'Ir a la diapositiva ' + (i + 1));
-          dot.className = 'w-2 h-2 rounded-full transition-all ' + (i === 0 ? 'bg-white scale-125' : 'bg-white/50');
+          dot.className = 'w-6 h-6 flex items-center justify-center';
+          var inner = document.createElement('span');
+          inner.className = 'block w-2 h-2 rounded-full transition-all ' + (i === 0 ? 'bg-white scale-125' : 'bg-white/50');
+          dot.appendChild(inner);
           dot.addEventListener('click', function() { goTo(i); });
           dotsWrap.appendChild(dot);
         });
@@ -815,8 +818,8 @@ for (const [key, paths] of Object.entries(carouselConfig.fleet)) {
         current = ((idx % slides.length) + slides.length) % slides.length;
         slides[current].style.opacity = '1';
         if (dotsWrap) {
-          dotsWrap.querySelectorAll('button').forEach(function(d, i) {
-            d.className = 'w-2 h-2 rounded-full transition-all ' + (i === current ? 'bg-white scale-125' : 'bg-white/50');
+          dotsWrap.querySelectorAll('button > span').forEach(function(s, i) {
+            s.className = 'block w-2 h-2 rounded-full transition-all ' + (i === current ? 'bg-white scale-125' : 'bg-white/50');
           });
         }
       }

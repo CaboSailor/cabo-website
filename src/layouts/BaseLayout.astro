@@ -219,6 +219,21 @@ const travelAgencySchema = JSON.stringify({
   <script is:inline src="/js/prices.js" defer></script>
   <script is:inline src="/js/boat-swipe.js"></script>
 
+  <!-- Set title on Tomis chatbot iframe when it appears (a11y fix for third-party widget) -->
+  <script is:inline>
+    (function(){
+      var attempts = 0;
+      var t = setInterval(function(){
+        var bot = document.getElementById('tomis-bot');
+        if (bot && !bot.getAttribute('title')) {
+          bot.setAttribute('title', 'Cabo Sailing chat assistant');
+          clearInterval(t);
+        }
+        if (++attempts > 30) clearInterval(t);
+      }, 1000);
+    })();
+  </script>
+
   <!-- Activity-carousel initializer (powers <CarouselImage>) -->
   <script is:inline>
     (function() {
@@ -236,7 +251,10 @@ const travelAgencySchema = JSON.stringify({
               var dot = document.createElement('button');
               dot.type = 'button';
               dot.setAttribute('aria-label', 'Go to slide ' + (i + 1));
-              dot.className = 'w-2 h-2 rounded-full transition-all ' + (i === 0 ? 'bg-white scale-125' : 'bg-white/50');
+              dot.className = 'w-6 h-6 flex items-center justify-center';
+              var inner = document.createElement('span');
+              inner.className = 'block w-2 h-2 rounded-full transition-all ' + (i === 0 ? 'bg-white scale-125' : 'bg-white/50');
+              dot.appendChild(inner);
               dot.addEventListener('click', function() { goTo(i); });
               dotsWrap.appendChild(dot);
             });
@@ -247,8 +265,8 @@ const travelAgencySchema = JSON.stringify({
             current = ((idx % slides.length) + slides.length) % slides.length;
             slides[current].style.opacity = '1';
             if (dotsWrap) {
-              dotsWrap.querySelectorAll('button').forEach(function(d, i) {
-                d.className = 'w-2 h-2 rounded-full transition-all ' + (i === current ? 'bg-white scale-125' : 'bg-white/50');
+              dotsWrap.querySelectorAll('button > span').forEach(function(s, i) {
+                s.className = 'block w-2 h-2 rounded-full transition-all ' + (i === current ? 'bg-white scale-125' : 'bg-white/50');
               });
             }
           }
