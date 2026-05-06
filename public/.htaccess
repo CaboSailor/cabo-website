@@ -34,19 +34,6 @@ RewriteRule ^(.*)$ https://cabosailing.com/$1 [R=301,L]
 # -----------------------------------------------------------------------------
 ErrorDocument 404 /404.html
 
-# -----------------------------------------------------------------------------
-# Staging password protection (Basic Auth)
-# Remove this block + public/.htpasswd before public launch.
-# -----------------------------------------------------------------------------
-AuthType Basic
-AuthName "Cabo Sailing Staging"
-AuthUserFile "/home/cabosail/new.site/.htpasswd"
-Require valid-user
-
-<Files ".htpasswd">
-    Require all denied
-</Files>
-
 # =============================================================================
 # 1. MIGRATED ARTICLES — old URL → new /travel-guide/<slug>/
 # =============================================================================
