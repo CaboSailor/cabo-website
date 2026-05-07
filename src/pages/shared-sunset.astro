@@ -239,7 +239,7 @@ const breadcrumbSchema = JSON.stringify({
       <p class="text-sm text-slate-500 leading-relaxed mb-4">Look for the Cabo Sailing team in black polo shirts with our logo. Please arrive 15 minutes before departure.</p>
       <div class="flex items-center gap-2 text-sm text-slate-500">
         <span class="material-symbols-outlined text-gold text-base">schedule</span>
-        <span class="font-semibold text-navy">DEPARTURES: 5:00 PM (Winter) &amp; 5:30 PM (Summer) DAILY</span>
+        <span class="font-semibold text-navy">DEPARTURES: 5:00 PM (Winter) &amp; 5:15 PM (Summer) DAILY</span>
       </div>
     </div>
   </div>
@@ -247,14 +247,9 @@ const breadcrumbSchema = JSON.stringify({
   <!-- Right column - Calendar -->
   <div class="w-[380px] flex-shrink-0">
     <div class="sticky top-[90px] bg-white rounded-3xl shadow-xl shadow-navy/5 border border-border-light overflow-hidden">
-      <div class="bg-navy p-5 text-center">
-        <h3 class="text-white text-lg font-heading">Book Your Spot</h3>
-        <div class="mt-3 flex items-center justify-center gap-2">
-          <span class="material-symbols-outlined text-gold text-base">local_offer</span>
-          <span class="text-white font-bold text-sm">Save 30%</span>
-          <span class="text-white/60 text-sm">— use promo code</span>
-          <span class="bg-white/15 text-white font-bold text-sm tracking-[0.15em] px-2.5 py-0.5 rounded border border-white/20">SAIL-15</span>
-        </div>
+      <div class="bg-gradient-to-br from-navy via-navy to-[#1a3a5c] p-6 text-center border-b-4 border-gold">
+        <h3 class="text-white text-2xl font-heading tracking-wide">Book Your Spot</h3>
+        <p class="text-white/70 text-sm mt-1">Limited spots — book today to secure your date</p>
       </div>
       <!-- Boat card 38'-42' (no icons) -->
       <div class="p-5 pb-0">
@@ -352,7 +347,10 @@ const breadcrumbSchema = JSON.stringify({
 
 <!-- Mobile boat card + calendar -->
 <div class="mt-8 border-t border-border-light pt-6">
-  <h3 class="text-lg text-navy mb-4 font-semibold">Book Your Spot</h3>
+  <div class="bg-gradient-to-br from-navy via-navy to-[#1a3a5c] rounded-2xl p-5 text-center mb-4 border-b-4 border-gold shadow-lg shadow-navy/20">
+    <h3 class="text-white text-2xl font-heading tracking-wide">Book Your Spot</h3>
+    <p class="text-white/70 text-sm mt-1">Limited spots — book today to secure your date</p>
+  </div>
   <div class="w-full bg-white border border-border-light rounded-2xl overflow-hidden shadow-md shadow-navy/5 mb-5">
     <div class="h-[240px] w-full relative">
       <Image src={cabosailingSailboat42} alt="Sailing Boat 38'-42'" class="w-full h-full object-cover" style="object-position: center 70%; transform: scale(1.1);" width={1000} height={1500} format="png" quality={100} />
@@ -429,7 +427,7 @@ const breadcrumbSchema = JSON.stringify({
   <p class="text-sm text-slate-500 leading-relaxed mb-4">Look for the Cabo Sailing team in black polo shirts with our logo. Please arrive 15 minutes before departure.</p>
   <div class="flex items-center gap-2 text-sm text-slate-500">
     <span class="material-symbols-outlined text-gold text-base">schedule</span>
-    <span class="font-semibold text-navy">DEPARTURES: 5:00 PM (Winter) &amp; 5:30 PM (Summer) DAILY</span>
+    <span class="font-semibold text-navy">DEPARTURES: 5:00 PM (Winter) &amp; 5:15 PM (Summer) DAILY</span>
   </div>
 </div>
 
@@ -460,7 +458,11 @@ const breadcrumbSchema = JSON.stringify({
         <span class="material-symbols-outlined text-slate-500 faq-chevron transition-transform duration-300">expand_more</span>
       </label>
       <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
-        <p class="text-sm text-slate-500 leading-relaxed">Our premium open bar includes an unlimited selection of cocktails, beer, wine, margaritas, and non-alcoholic options. Enjoy light snacks and appetizers as well. Everything is freshly prepared on board.</p>
+        <div class="text-sm text-slate-500 leading-relaxed space-y-3">
+          <div><p class="font-semibold text-navy mb-1">Unlimited Bar</p><p>Red &amp; white wine, margaritas, beer, rum, vodka, tequila, whiskey, fresh juices, sodas, and bottled water.</p></div>
+          <div><p class="font-semibold text-navy mb-1">Food</p><p>Tortilla chips with Mexican salsa &amp; homemade guacamole, cheeses and cold meats platter, and a sweet bite to finish.</p></div>
+          <p class="text-slate-500 italic">Vegetarian options available upon request.</p>
+        </div>
       </div>
     </div>
     <div class="faq-item border border-border-light rounded-2xl overflow-hidden bg-white">

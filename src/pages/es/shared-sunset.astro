@@ -44,7 +44,7 @@ const breadcrumbSchema = JSON.stringify({
 });
 ---
 
-<BaseLayout bodyClass="bg-white font-body text-text-main antialiased min-h-screen flex flex-col relative" title="Crucero al Atardecer Compartido en Cabo San Lucas | Cabo Sailing" description="Crucero compartido al atardecer en velero, Cabo San Lucas. Grupo pequeño, barra libre, snacks y vista al Arco. Salida diaria desde la marina." ogImage="/og/shared-sunset.jpg" ogImageAlt="Sunset sailing cruise in Cabo San Lucas" hreflangs={{ en: '/shared-sunset', es: '/es/shared-sunset' }}>
+<BaseLayout bodyClass="bg-white font-body text-text-main antialiased min-h-screen flex flex-col relative" title="Crucero al Atardecer Compartido en Cabo San Lucas | Cabo Sailing" description="Crucero compartido al atardecer en velero, Cabo San Lucas. Grupo pequeño, barra libre, snacks y vista al Arco. Salida diaria desde la marina." ogImage="/og/shared-sunset.jpg" ogImageAlt="Crucero al atardecer en Cabo San Lucas" hreflangs={{ en: '/shared-sunset', es: '/es/shared-sunset' }}>
   <script slot="head" type="application/ld+json" set:html={touristTripSchema} />
   <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
   <Header variant="subpage" activePage="tours" />
@@ -239,7 +239,7 @@ const breadcrumbSchema = JSON.stringify({
       <p class="text-sm text-slate-500 leading-relaxed mb-4">Busca al equipo de Cabo Sailing con polos negros y nuestro logo. Por favor llega 15 minutos antes de la salida.</p>
       <div class="flex items-center gap-2 text-sm text-slate-500">
         <span class="material-symbols-outlined text-gold text-base">schedule</span>
-        <span class="font-semibold text-navy">SALIDAS: 5:00 PM (Invierno) y 5:30 PM (Verano) DIARIO</span>
+        <span class="font-semibold text-navy">SALIDAS: 5:00 PM (Invierno) y 5:15 PM (Verano) DIARIO</span>
       </div>
     </div>
   </div>
@@ -247,14 +247,9 @@ const breadcrumbSchema = JSON.stringify({
   <!-- Right column - Calendar -->
   <div class="w-[380px] flex-shrink-0">
     <div class="sticky top-[90px] bg-white rounded-3xl shadow-xl shadow-navy/5 border border-border-light overflow-hidden">
-      <div class="bg-navy p-5 text-center">
-        <h3 class="text-white text-lg font-heading">Reserva Tu Lugar</h3>
-        <div class="mt-3 flex items-center justify-center gap-2">
-          <span class="material-symbols-outlined text-gold text-base">local_offer</span>
-          <span class="text-white font-bold text-sm">Ahorra 30%</span>
-          <span class="text-white/60 text-sm">— usa codigo</span>
-          <span class="bg-white/15 text-white font-bold text-sm tracking-[0.15em] px-2.5 py-0.5 rounded border border-white/20">SAIL-15</span>
-        </div>
+      <div class="bg-gradient-to-br from-navy via-navy to-[#1a3a5c] p-6 text-center border-b-4 border-gold">
+        <h3 class="text-white text-2xl font-heading tracking-wide">Reserva Tu Lugar</h3>
+        <p class="text-white/70 text-sm mt-1">Lugares limitados — reserva hoy para asegurar tu fecha</p>
       </div>
       <!-- Boat card 38'-42' (no icons) -->
       <div class="p-5 pb-0">
@@ -276,7 +271,7 @@ const breadcrumbSchema = JSON.stringify({
           <div class="flex justify-between items-center py-2 border-b border-border-light">
             <span class="text-sm text-slate-500">Por persona</span>
             <div class="flex items-baseline gap-2">
-              <span class="text-red-600 line-through decoration-2 text-sm font-semibold">$85</span>
+              <span class="text-red-600 line-through decoration-1 text-sm font-semibold">$85</span>
               <span class="text-navy font-bold text-xl">$72</span>
             </div>
           </div>
@@ -339,7 +334,7 @@ const breadcrumbSchema = JSON.stringify({
     <div>
       <p class="text-xs text-slate-500 uppercase font-bold tracking-widest mb-1">Por persona</p>
       <div class="flex items-baseline gap-2">
-        <span class="text-red-600 line-through decoration-2 text-sm font-semibold">$85</span>
+        <span class="text-red-600 line-through decoration-1 text-sm font-semibold">$85</span>
         <span class="text-navy font-bold text-2xl">$72</span>
       </div>
     </div>
@@ -352,7 +347,10 @@ const breadcrumbSchema = JSON.stringify({
 
 <!-- Mobile boat card + calendar -->
 <div class="mt-8 border-t border-border-light pt-6">
-  <h3 class="text-lg text-navy mb-4 font-semibold">Reserva Tu Lugar</h3>
+  <div class="bg-gradient-to-br from-navy via-navy to-[#1a3a5c] rounded-2xl p-5 text-center mb-4 border-b-4 border-gold shadow-lg shadow-navy/20">
+    <h3 class="text-white text-2xl font-heading tracking-wide">Reserva Tu Lugar</h3>
+    <p class="text-white/70 text-sm mt-1">Lugares limitados — reserva hoy para asegurar tu fecha</p>
+  </div>
   <div class="w-full bg-white border border-border-light rounded-2xl overflow-hidden shadow-md shadow-navy/5 mb-5">
     <div class="h-[240px] w-full relative">
       <Image src={cabosailingSailboat42} alt="Sailing Boat 38'-42'" class="w-full h-full object-cover" style="object-position: center 70%; transform: scale(1.1);" width={1000} height={1500} format="png" quality={100} />
@@ -429,7 +427,7 @@ const breadcrumbSchema = JSON.stringify({
   <p class="text-sm text-slate-500 leading-relaxed mb-4">Busca al equipo de Cabo Sailing con polos negros y nuestro logo. Por favor llega 15 minutos antes de la salida.</p>
   <div class="flex items-center gap-2 text-sm text-slate-500">
     <span class="material-symbols-outlined text-gold text-base">schedule</span>
-    <span class="font-semibold text-navy">SALIDAS: 5:00 PM (Invierno) y 5:30 PM (Verano) DIARIO</span>
+    <span class="font-semibold text-navy">SALIDAS: 5:00 PM (Invierno) y 5:15 PM (Verano) DIARIO</span>
   </div>
 </div>
 
@@ -460,7 +458,11 @@ const breadcrumbSchema = JSON.stringify({
         <span class="material-symbols-outlined text-slate-500 faq-chevron transition-transform duration-300">expand_more</span>
       </label>
       <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
-        <p class="text-sm text-slate-500 leading-relaxed">Nuestra barra libre premium incluye una seleccion ilimitada de cocteles, cerveza, vino, margaritas y opciones sin alcohol. Disfruta tambien de snacks y aperitivos ligeros. Todo se prepara fresco a bordo.</p>
+        <div class="text-sm text-slate-500 leading-relaxed space-y-3">
+          <div><p class="font-semibold text-navy mb-1">Barra libre ilimitada</p><p>Vino tinto y blanco, margaritas, cerveza, ron, vodka, tequila, whiskey, jugos naturales, refrescos y agua embotellada.</p></div>
+          <div><p class="font-semibold text-navy mb-1">Alimentos</p><p>Totopos con salsa mexicana y guacamole casero, tabla de quesos y carnes fr&iacute;as, y un toque dulce para finalizar.</p></div>
+          <p class="text-slate-500 italic">Opciones vegetarianas disponibles bajo solicitud.</p>
+        </div>
       </div>
     </div>
     <div class="faq-item border border-border-light rounded-2xl overflow-hidden bg-white">

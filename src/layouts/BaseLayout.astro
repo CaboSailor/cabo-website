@@ -299,5 +299,26 @@ const travelAgencySchema = JSON.stringify({
       }
     })();
   </script>
+
+  <!-- CallPage widget (EN/ES split by URL) -->
+  <script is:inline define:vars={{ cpId: Astro.url.pathname.startsWith('/es/') ? 'q0C2to4d4CuA5RnSlqnPlvgeDhIIiUqZ_2RgAkGsujs' : 'j2KO2_ebrGGrb3YivxZQCjn01aVqS5U2n-NN9_8HorQ' }}>
+    (function () {
+      if (window.callpage) { console.warn('CallPage already loaded'); return; }
+      var __cp = { id: cpId, version: '1.1' };
+      window.callpage = function (method) {
+        if (method === '__getQueue') return this.methods;
+        if (method) {
+          if (typeof window.callpage.execute === 'function') return window.callpage.execute.apply(this, arguments);
+          (this.methods = this.methods || []).push({ arguments: arguments });
+        }
+      };
+      window.callpage.__cp = __cp;
+      window.callpage('api.button.autoshow');
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://cdn-widget.callpage.io/build/js/callpage.js?v=' + new Date().toISOString().split('T')[0].replace(/-/g, '');
+      document.head.appendChild(s);
+    })();
+  </script>
 </body>
 </html>
