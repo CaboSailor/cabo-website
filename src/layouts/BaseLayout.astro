@@ -300,10 +300,20 @@ const travelAgencySchema = JSON.stringify({
     })();
   </script>
 
-  <!-- CallPage widget (EN/ES split by URL) -->
-  <script is:inline define:vars={{ cpId: Astro.url.pathname.startsWith('/es/') ? 'q0C2to4d4CuA5RnSlqnPlvgeDhIIiUqZ_2RgAkGsujs' : 'j2KO2_ebrGGrb3YivxZQCjn01aVqS5U2n-NN9_8HorQ' }}>
+  <!-- CallPage widget — picks mobile/desktop id at runtime, EN/ES split by URL -->
+  <script is:inline define:vars={{
+    isEs: Astro.url.pathname.startsWith('/es/'),
+    mobileEn: 'j2KO2_ebrGGrb3YivxZQCjn01aVqS5U2n-NN9_8HorQ',
+    mobileEs: 'j2KO2_ebrGGrb3YivxZQCjn01aVqS5U2n-NN9_8HorQ',
+    desktopEn: 'qoNED_n1BjQcP8l3eRJZoBFa9IyRicKIMc0Y_xxBwXI',
+    desktopEs: 'mWTcfUdhHZPBJliDqTc80TdbhJymDCnak-goFiZkEeo'
+  }}>
     (function () {
       if (window.callpage) { console.warn('CallPage already loaded'); return; }
+      var isDesktop = window.matchMedia('(min-width: 1024px)').matches;
+      var cpId = isDesktop
+        ? (isEs ? desktopEs : desktopEn)
+        : (isEs ? mobileEs  : mobileEn);
       var __cp = { id: cpId, version: '1.1' };
       window.callpage = function (method) {
         if (method === '__getQueue') return this.methods;
