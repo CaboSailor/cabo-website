@@ -1,47 +1,54 @@
 {
-  "promoCode": "SAIL-30",
+  "promoCode": "",
   "activities": {
     "private-sunset": {
       "name": "Private Sunset Sailing",
-      "fromPrice": 701,
-      "discountLabel": "Save 30%",
-      "color": "#1e3a5f"
+      "fromPrice": 495,
+      "discountLabel": "Save 35%",
+      "color": "#1e3a5f",
+      "promoCode": ""
     },
     "private-snorkeling": {
       "name": "Private Snorkeling",
-      "fromPrice": 701,
-      "discountLabel": "Save 30%",
-      "color": "#1e3a5f"
+      "fromPrice": 495,
+      "discountLabel": "Save 35%",
+      "color": "#1e3a5f",
+      "promoCode": ""
     },
     "whale-watching": {
       "name": "Whale Watching",
-      "fromPrice": 701,
-      "discountLabel": "Save 30%",
-      "color": "#1e3a5f"
+      "fromPrice": 495,
+      "discountLabel": "Save 35%",
+      "color": "#1e3a5f",
+      "promoCode": ""
     },
     "scuba-diving": {
       "name": "Scuba Diving",
       "fromPrice": 270,
-      "discountLabel": "",
-      "color": "#1e3a5f"
+      "discountLabel": "Save 35%",
+      "color": "#1e3a5f",
+      "promoCode": ""
     },
     "bachelorette-party": {
       "name": "Bachelorette Party",
-      "fromPrice": 701,
-      "discountLabel": "Save 30%",
-      "color": "#e8789a"
+      "fromPrice": 495,
+      "discountLabel": "Save 35%",
+      "color": "#e8789a",
+      "promoCode": ""
     },
     "shared-sunset": {
       "name": "Shared Sunset Sailing",
       "fromPrice": 72,
-      "discountLabel": "Save 30%",
-      "color": "#1e3a5f"
+      "discountLabel": "Save 35%",
+      "color": "#1e3a5f",
+      "promoCode": "SAIL-40"
     },
     "shared-snorkeling": {
       "name": "Shared Snorkeling",
-      "fromPrice": 84,
-      "discountLabel": "Save 30%",
-      "color": "#1e3a5f"
+      "fromPrice": 72,
+      "discountLabel": "Save 35%",
+      "color": "#1e3a5f",
+      "promoCode": "SAIL-40"
     }
   },
   "boats": {
@@ -49,43 +56,43 @@
       "name": "Luxury Yacht 51'",
       "regularPrice": 1690,
       "extraGuestRegular": 100,
-      "discount": 30,
-      "promoCode": "SAIL-30"
+      "discount": 35,
+      "promoCode": "SAIL-35"
     },
     "yacht-45": {
       "name": "Luxury Yacht 45'",
       "regularPrice": 1520,
       "extraGuestRegular": 100,
-      "discount": 30,
-      "promoCode": "SAIL-30"
+      "discount": 35,
+      "promoCode": "SAIL-35"
     },
     "yacht-42": {
       "name": "Luxury Yacht 42'",
       "regularPrice": 1350,
       "extraGuestRegular": 100,
-      "discount": 30,
-      "promoCode": "SAIL-30"
+      "discount": 35,
+      "promoCode": "SAIL-35"
     },
     "sailing-42": {
       "name": "Private Sailing 42'",
       "regularPrice": 1090,
       "extraGuestRegular": 100,
-      "discount": 30,
-      "promoCode": "SAIL-30"
+      "discount": 40,
+      "promoCode": "SAIL-40"
     },
     "sailing-38": {
       "name": "Private Sailing 38'",
       "regularPrice": 825,
       "extraGuestRegular": 100,
-      "discount": 30,
-      "promoCode": "SAIL-30"
+      "discount": 40,
+      "promoCode": "SAIL-40"
     },
     "shared-sailing": {
       "name": "Shared Sailing",
       "regularPrice": 120,
       "extraGuestRegular": 0,
-      "discount": 30,
-      "promoCode": "SAIL-30"
+      "discount": 40,
+      "promoCode": "SAIL-40"
     }
   },
   "scuba": {

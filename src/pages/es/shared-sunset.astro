@@ -253,7 +253,7 @@ const breadcrumbSchema = JSON.stringify({
       </div>
       <!-- Boat card 38'-42' (no icons) -->
       <div class="p-5 pb-0">
-        <div class="w-full bg-white border border-border-light rounded-2xl overflow-hidden shadow-md shadow-navy/5">
+        <div class="w-full bg-white border border-border-light rounded-2xl overflow-hidden shadow-md shadow-navy/5" data-boat="shared-sailing">
           <div class="h-[360px] w-full relative">
             <Image src={cabosailingSailboat42} alt="Sailing Boat 38'-42'" class="w-full h-full object-cover" style="object-position: center 70%; transform: scale(1.1);" width={1000} height={1500} format="png" quality={100} />
             <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
@@ -261,18 +261,21 @@ const breadcrumbSchema = JSON.stringify({
               <h3 class="text-white text-base font-heading">Sailing Boat 38'-42'</h3>
               <div class="flex items-center gap-2 text-white/80 text-[9px] mt-0.5 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Hasta 14 Pasajeros</span></div>
             </div>
+            <div class="absolute bottom-3 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-40%</div>
           </div>
         </div>
       </div>
       <div class="p-5">
-        <p class="text-center text-slate-500 text-sm mb-3">Selecciona una fecha para ver disponibilidad</p>
-        <iframe seamless="" width="100%" height="1000px" frameborder="0" class="rezdy" src="https://cabosailing.rezdy.com/productsCalendar/561442?iframe=true" style="border:none;"></iframe>
-        <div class="mt-5 space-y-3">
+        <p class="text-center text-slate-500 text-sm mb-1">Selecciona una fecha para ver disponibilidad</p>
+        <p class="text-center mb-3"><span class="inline-block text-[11px] font-bold uppercase tracking-wider text-white bg-gold px-2.5 py-0.5 rounded-full">C&oacute;digo de Descuento: <span class="text-[13px] font-extrabold" data-promo-for="shared-sunset">Sail-30</span></span></p>
+        <script defer type="text/javascript" src="https://cabosailing.rezdy.com/pluginJs" is:inline></script>
+        <iframe seamless="" width="300px" height="1000px" frameborder="0" class="rezdy mx-auto block" src="https://cabosailing.rezdy.com/calendarWidget/744012?iframe=true"></iframe>
+        <div class="mt-5 space-y-3" data-boat="shared-sailing">
           <div class="flex justify-between items-center py-2 border-b border-border-light">
             <span class="text-sm text-slate-500">Por persona</span>
             <div class="flex items-baseline gap-2">
-              <span class="text-red-600 line-through decoration-1 text-sm font-semibold">$85</span>
-              <span class="text-navy font-bold text-xl">$72</span>
+              <span class="text-gold line-through decoration-1 text-base font-semibold">$120</span>
+              <span class="text-navy font-bold text-xl">$84</span>
             </div>
           </div>
           <div class="flex justify-between items-center py-2">
@@ -329,16 +332,16 @@ const breadcrumbSchema = JSON.stringify({
 </div>
 
 <!-- Mobile price + book block -->
-<div class="mt-6 pt-6 border-t border-border-light">
+<div class="mt-6 pt-6 border-t border-border-light" data-boat="shared-sailing">
   <div class="flex items-center justify-between mb-4">
     <div>
       <p class="text-xs text-slate-500 uppercase font-bold tracking-widest mb-1">Por persona</p>
       <div class="flex items-baseline gap-2">
-        <span class="text-red-600 line-through decoration-1 text-sm font-semibold">$85</span>
-        <span class="text-navy font-bold text-2xl">$72</span>
+        <span class="text-gold line-through decoration-1 text-base font-semibold">$120</span>
+        <span class="text-navy font-bold text-2xl">$84</span>
       </div>
     </div>
-    <div class="bg-gold/10 text-gold text-[10px] font-bold px-3 py-1.5 rounded border border-gold/20 uppercase tracking-widest">Ahorra 30% — SAIL-15</div>
+    <div class="bg-gold/10 text-gold text-[10px] font-bold px-3 py-1.5 rounded border border-gold/20 uppercase tracking-widest"><span>Ahorra 40%</span> — <span data-promo-for="shared-sunset">SAIL-40</span></div>
   </div>
   <a href="https://wa.me/526241916997?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20el%20Crucero%20Compartido%20al%20Atardecer" target="_blank" class="block w-full bg-[#25D366] text-white font-bold text-[12px] py-4 rounded-2xl uppercase tracking-[0.2em] text-center shadow-lg mt-3">
     <i class="fa-brands fa-whatsapp text-lg mr-2" style="vertical-align:middle"></i> Reservar por WhatsApp
@@ -351,7 +354,7 @@ const breadcrumbSchema = JSON.stringify({
     <h3 class="text-white text-2xl font-heading tracking-wide">Reserva Tu Lugar</h3>
     <p class="text-white/70 text-sm mt-1">Lugares limitados — reserva hoy para asegurar tu fecha</p>
   </div>
-  <div class="w-full bg-white border border-border-light rounded-2xl overflow-hidden shadow-md shadow-navy/5 mb-5">
+  <div class="w-full bg-white border border-border-light rounded-2xl overflow-hidden shadow-md shadow-navy/5 mb-5" data-boat="shared-sailing">
     <div class="h-[240px] w-full relative">
       <Image src={cabosailingSailboat42} alt="Sailing Boat 38'-42'" class="w-full h-full object-cover" style="object-position: center 70%; transform: scale(1.1);" width={1000} height={1500} format="png" quality={100} />
       <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
@@ -359,10 +362,12 @@ const breadcrumbSchema = JSON.stringify({
         <h3 class="text-white text-base font-semibold">Sailing Boat 38'-42'</h3>
         <div class="flex items-center gap-2 text-white/80 text-[10px] mt-0.5 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-sm">group</span><span>Hasta 14 Pasajeros</span></div>
       </div>
+      <div class="absolute bottom-3 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-40%</div>
     </div>
   </div>
-  <p class="text-center text-slate-500 text-sm mb-3">Selecciona una fecha para ver disponibilidad</p>
-  <iframe seamless="" width="100%" height="800px" frameborder="0" class="rezdy" src="https://cabosailing.rezdy.com/productsCalendar/561442?iframe=true" style="border:none;"></iframe>
+  <p class="text-center text-slate-500 text-sm mb-1">Selecciona una fecha para ver disponibilidad</p>
+  <p class="text-center mb-3"><span class="inline-block text-[11px] font-bold uppercase tracking-wider text-white bg-gold px-2.5 py-0.5 rounded-full">C&oacute;digo de Descuento: <span class="text-[13px] font-extrabold" data-promo-for="shared-sunset">Sail-30</span></span></p>
+  <iframe seamless="" width="300px" height="1000px" frameborder="0" class="rezdy mx-auto block" src="https://cabosailing.rezdy.com/calendarWidget/744012?iframe=true"></iframe>
 </div>
 
 <div class="mt-10">
@@ -578,6 +583,7 @@ const breadcrumbSchema = JSON.stringify({
 
   <Footer />
   <FloatingCTA />
+  <script is:inline>window.__pageActivityId='shared-sunset';</script>
   <RezdyModal />
 
   <script is:inline>

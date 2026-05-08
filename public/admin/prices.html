@@ -27,10 +27,17 @@
   .global-row .apply-btn { background: #1e3a5f; color: #fff; border: none; padding: 8px 20px; border-radius: 8px; font-size: 13px; font-weight: 600; cursor: pointer; text-transform: uppercase; letter-spacing: 0.5px; }
   .global-row .apply-btn:hover { background: #15304f; }
 
-  /* Promo code */
+  /* Promo code (default fallback) */
   .promo-section { background: #fff; border-radius: 16px; padding: 20px 24px; margin-bottom: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
-  .promo-section h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #666; margin-bottom: 12px; }
+  .promo-section h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #666; margin-bottom: 6px; }
+  .promo-section .hint { font-size: 12px; color: #888; margin-bottom: 12px; }
   .promo-section input { width: 200px; padding: 8px 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 16px; }
+
+  /* Promo input on boat / activity cards */
+  .promo-field { display: flex; flex-direction: column; gap: 4px; margin-top: 12px; }
+  .promo-field label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; color: #888; }
+  .promo-field input { padding: 10px 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 16px; max-width: 220px; }
+  .promo-field input:focus { outline: none; border-color: #c9a227; box-shadow: 0 0 0 3px rgba(201,162,39,0.15); }
 
   /* Section headers */
   .section-title { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #96722a; margin: 28px 0 12px; padding-left: 4px; }
@@ -100,9 +107,10 @@ function render() {
   html += '<button class="apply-btn" onclick="applyGlobalDiscount()">Apply to All</button>';
   html += '</div></div>';
 
-  // Promo code
+  // Default promo code (fallback)
   html += '<div class="promo-section">';
-  html += '<h2>Promo Code</h2>';
+  html += '<h2>Default Promo Code</h2>';
+  html += '<div class="hint">Used when a product has no specific code.</div>';
   html += '<input type="text" id="promoCode" value="' + esc(prices.promoCode || '') + '" placeholder="e.g. SAIL-30">';
   html += '</div>';
 
@@ -126,7 +134,24 @@ function render() {
       html += field('Extra Guest', 'boat-extra-' + id, b.extraGuestRegular, '$');
       html += readonlyField('Extra Final', '$' + extraDisc, 'boat-extrafinal-' + id);
     }
-    html += '</div></div>';
+    html += '</div>';
+    html += '<div class="promo-field"><label>Promo Code</label><input type="text" id="boat-promo-' + id + '" value="' + esc(b.promoCode || '') + '" placeholder="e.g. SAIL-30"></div>';
+    html += '</div>';
+  });
+
+  // --- Activities ---
+  html += '<div class="section-title">Activities</div>';
+  var activityOrder = ['private-sunset', 'private-snorkeling', 'whale-watching', 'bachelorette-party', 'shared-sunset', 'shared-snorkeling', 'scuba-diving'];
+  activityOrder.forEach(function(id) {
+    var a = prices.activities && prices.activities[id];
+    if (!a) return;
+    html += '<div class="boat-card" data-aid="' + id + '">';
+    html += '<div class="boat-name">' + esc(a.name) + '</div>';
+    html += '<div class="fields">';
+    html += readonlyField('From Price', '$' + (a.fromPrice || 0).toLocaleString(), 'act-from-' + id);
+    html += '</div>';
+    html += '<div class="promo-field"><label>Promo Code</label><input type="text" id="act-promo-' + id + '" value="' + esc(a.promoCode || '') + '" placeholder="e.g. SAIL-30"></div>';
+    html += '</div>';
   });
 
   // --- Scuba ---
@@ -245,16 +270,40 @@ function saveAll() {
   if (prices.activities['shared-sunset']) prices.activities['shared-sunset'].fromPrice = sharedDisc;
   if (prices.activities['shared-snorkeling']) prices.activities['shared-snorkeling'].fromPrice = sharedDisc;
 
-  // Update discount labels
-  var topDiscount = prices.boats['yacht-51'].discount || 0;
+  // Update discount labels per activity's associated boat
+  var s38Disc = prices.boats['sailing-38'].discount || 0;
+  var sharedDisc40 = prices.boats['shared-sailing'].discount || 0;
+  var topDisc = prices.boats['yacht-51'].discount || 0;
+  var activityDiscMap = {
+    'private-sunset': s38Disc,
+    'private-snorkeling': s38Disc,
+    'whale-watching': s38Disc,
+    'bachelorette-party': s38Disc,
+    'shared-sunset': sharedDisc40,
+    'shared-snorkeling': sharedDisc40,
+    'scuba-diving': topDisc
+  };
   Object.keys(prices.activities).forEach(function(id) {
-    prices.activities[id].discountLabel = topDiscount > 0 ? 'Save ' + topDiscount + '%' : '';
+    var d = activityDiscMap[id] != null ? activityDiscMap[id] : topDisc;
+    prices.activities[id].discountLabel = d > 0 ? 'Save ' + d + '%' : '';
   });
 
-  // Promo code
+  // Default promo code (fallback)
   prices.promoCode = document.getElementById('promoCode').value.trim();
+
+  // Per-boat promo codes
   boatOrder.forEach(function(id) {
-    if (prices.boats[id]) prices.boats[id].promoCode = prices.promoCode;
+    if (!prices.boats[id]) return;
+    var el = document.getElementById('boat-promo-' + id);
+    if (el) prices.boats[id].promoCode = el.value.trim();
+  });
+
+  // Per-activity promo codes
+  var activityOrder = ['private-sunset', 'private-snorkeling', 'whale-watching', 'bachelorette-party', 'shared-sunset', 'shared-snorkeling', 'scuba-diving'];
+  activityOrder.forEach(function(id) {
+    if (!prices.activities || !prices.activities[id]) return;
+    var el = document.getElementById('act-promo-' + id);
+    if (el) prices.activities[id].promoCode = el.value.trim();
   });
 
   // Scuba

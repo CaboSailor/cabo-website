@@ -17,9 +17,21 @@
 </div>
 
 <script is:inline>
-var _rezdyPromo='';
+var _rezdyPrices=null;
 var _rezdyPluginLoaded=false;
-fetch('/data/prices.json?v='+Date.now()).then(function(r){return r.json()}).then(function(d){_rezdyPromo=d.promoCode||''}).catch(function(){});
+fetch('/data/prices.json?v='+Date.now()).then(function(r){return r.json()}).then(function(d){_rezdyPrices=d}).catch(function(){});
+function _rezdyResolvePromo(explicitId){
+  if(!_rezdyPrices)return '';
+  var ids=[];
+  if(explicitId)ids.push(explicitId);
+  if(window.__pageActivityId)ids.push(window.__pageActivityId);
+  for(var i=0;i<ids.length;i++){
+    var pid=ids[i];
+    if(_rezdyPrices.activities&&_rezdyPrices.activities[pid]&&_rezdyPrices.activities[pid].promoCode)return _rezdyPrices.activities[pid].promoCode;
+    if(_rezdyPrices.boats&&_rezdyPrices.boats[pid]&&_rezdyPrices.boats[pid].promoCode)return _rezdyPrices.boats[pid].promoCode;
+  }
+  return _rezdyPrices.promoCode||'';
+}
 function _loadRezdyPlugin(){
   if(_rezdyPluginLoaded)return;
   _rezdyPluginLoaded=true;
@@ -28,14 +40,15 @@ function _loadRezdyPlugin(){
   s.async=true;
   document.head.appendChild(s);
 }
-function openRezdyModal(widgetId, type){
+function openRezdyModal(widgetId, type, productId){
   _loadRezdyPlugin();
   type = type || 'calendarWidget';
   var modal=document.getElementById('rezdyModal');
   var iframe=document.getElementById('rezdyIframe');
   var card=modal.firstElementChild;
   var titleEl=modal.querySelector('.rezdy-modal-title');
-  if(_rezdyPromo){titleEl.innerHTML='Check Availability <span class="inline-block ml-3 text-[11px] lg:text-xs font-bold normal-case tracking-normal text-white bg-gold px-2 py-0.5 rounded-full">Use code: <span class="text-[13px] lg:text-sm font-extrabold">'+_rezdyPromo+'</span></span>';}else{titleEl.textContent='Check Availability';}
+  var promo=_rezdyResolvePromo(productId);
+  if(promo){titleEl.innerHTML='Check Availability <span class="inline-block ml-3 text-[11px] lg:text-xs font-bold normal-case tracking-normal text-white bg-gold px-2 py-0.5 rounded-full">Use code: <span class="text-[13px] lg:text-sm font-extrabold">'+promo+'</span></span>';}else{titleEl.textContent='Check Availability';}
   iframe.src='https://cabosailing.rezdy.com/'+type+'/'+widgetId+'?iframe=true';
   if(type==='productsCalendar'){
     card.classList.remove('max-w-[340px]','lg:max-w-[510px]');

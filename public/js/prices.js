@@ -28,14 +28,27 @@
         if(priceEls[2] && boat.extraGuestRegular > 0) priceEls[2].textContent = '$' + boat.extraGuestRegular;
         if(priceEls[3] && extraDiscounted > 0) priceEls[3].textContent = '$' + extraDiscounted;
 
-        // Update "Save XX%" badge inside the card
+        // Update "Save XX%" and "-XX%" badges inside the card
         var walker2 = document.createTreeWalker(card, NodeFilter.SHOW_TEXT, null, false);
         while(walker2.nextNode()){
           var txt = walker2.currentNode.textContent.trim();
           if(/^Save \d+%$/i.test(txt)){
             walker2.currentNode.textContent = 'Save ' + disc + '%';
+          } else if(/^Ahorra \d+%$/i.test(txt)){
+            walker2.currentNode.textContent = 'Ahorra ' + disc + '%';
+          } else if(/^-\d+%$/.test(txt)){
+            walker2.currentNode.textContent = '-' + disc + '%';
           }
         }
+      });
+
+      // --- 1b. Promo code badges: data-promo-for="<productId>" ---
+      document.querySelectorAll('[data-promo-for]').forEach(function(el){
+        var id = el.dataset.promoFor;
+        var code = (data.activities && data.activities[id] && data.activities[id].promoCode)
+          || (data.boats && data.boats[id] && data.boats[id].promoCode)
+          || data.promoCode || '';
+        if (code) el.textContent = code;
       });
 
       // --- 2. Activity sections: update "From $X" and discount badges ---
