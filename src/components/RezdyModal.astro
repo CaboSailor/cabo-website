@@ -2,8 +2,8 @@
 // Rezdy booking modal - include on any page that needs booking functionality
 ---
 
-<div id="rezdyModal" class="fixed inset-0 z-[200] hidden items-center justify-center bg-black/30 px-4" onclick="if(event.target===this)closeRezdyModal()">
-  <div class="relative bg-white rounded-2xl shadow-2xl w-full max-w-[340px] lg:max-w-[510px] max-h-[92vh] overflow-hidden flex flex-col">
+<div id="rezdyModal" class="fixed inset-0 z-[200] hidden items-start lg:items-center justify-center bg-black/30 px-4 py-[max(env(safe-area-inset-top),1rem)]" onclick="if(event.target===this)closeRezdyModal()">
+  <div class="relative bg-white rounded-2xl shadow-2xl w-full max-w-[340px] lg:max-w-[510px] max-h-[calc(100vh-max(env(safe-area-inset-top),1rem)-max(env(safe-area-inset-bottom),1rem)-1rem)] lg:max-h-[92vh] overflow-hidden flex flex-col">
     <div class="flex items-center justify-between px-4 py-3 border-b border-border-light bg-white">
       <span class="rezdy-modal-title text-navy font-bold text-sm uppercase tracking-[0.15em]">Check Availability</span>
       <button type="button" onclick="closeRezdyModal()" aria-label="Close" class="w-8 h-8 rounded-full flex items-center justify-center text-navy hover:bg-light-grey">
@@ -43,6 +43,17 @@ function _loadRezdyPlugin(){
 function openRezdyModal(widgetId, type, productId){
   _loadRezdyPlugin();
   type = type || 'calendarWidget';
+  // Auto-detect product/boat id from the click target's closest [data-boat] ancestor
+  if(!productId){
+    try{
+      var ev=window.event;
+      var src=ev&&(ev.target||ev.srcElement);
+      if(src&&src.closest){
+        var boatEl=src.closest('[data-boat]');
+        if(boatEl)productId=boatEl.dataset.boat;
+      }
+    }catch(_){}
+  }
   var modal=document.getElementById('rezdyModal');
   var iframe=document.getElementById('rezdyIframe');
   var card=modal.firstElementChild;
