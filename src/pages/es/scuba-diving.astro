@@ -83,9 +83,13 @@ const breadcrumbSchema = JSON.stringify({
       <button class="fleet-arrow right" onclick="heroNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
     </div>
 
+    <!-- Mobile discount banner -->
+    <div class="lg:hidden w-full text-center py-3 px-4 shadow-md bg-gold">
+      <p class="text-navy font-bold text-sm uppercase tracking-widest">Ahorra hasta 40% off &mdash; Tiempo Limitado</p>
+    </div>
+
     <!-- ========== MOBILE LAYOUT ========== -->
-    <div class="lg:hidden relative z-10 -mt-4 px-5">
-      <div class="bg-white rounded-3xl p-6 shadow-xl shadow-navy/5 border border-border-light">
+    <div class="lg:hidden mt-6 px-5">
         <nav class="flex items-center gap-1.5 text-xs text-slate-500 mb-4" aria-label="Breadcrumb">
           <a href="/es/" class="hover:text-gold transition-colors">Inicio</a>
           <span class="material-symbols-outlined text-[14px]">chevron_right</span>
@@ -101,26 +105,30 @@ const breadcrumbSchema = JSON.stringify({
             <span class="material-symbols-outlined text-base">location_on</span> Land's End, Cabo San Lucas
           </p>
         </div>
-        <div class="grid grid-cols-2 gap-4">
-          <div class="bg-light-grey rounded-2xl p-4 flex flex-col items-center text-center border border-border-light">
-            <span class="material-symbols-outlined text-gold mb-2">schedule</span>
-            <p class="text-xs text-slate-500 uppercase font-bold tracking-widest mb-1">Duración</p>
-            <p class="text-base font-bold text-navy">4 Horas</p>
+        <div class="grid grid-cols-2 gap-x-3 gap-y-3">
+          <div class="flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-gold text-lg">schedule</span>
+            <p class="text-xs font-semibold text-navy">4 Horas</p>
           </div>
-          <div class="bg-light-grey rounded-2xl p-4 flex flex-col items-center text-center border border-border-light">
-            <span class="material-symbols-outlined text-gold mb-2">trending_down</span>
-            <p class="text-xs text-slate-500 uppercase font-bold tracking-widest mb-1">Dificultad</p>
-            <p class="text-base font-bold text-navy">Media-Alta</p>
+          <div class="flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-gold text-lg">scuba_diving</span>
+            <p class="text-xs font-semibold text-navy">Certificados y No Certificados</p>
           </div>
-          <div class="bg-light-grey rounded-2xl p-4 flex flex-col items-center text-center border border-border-light">
-            <span class="material-symbols-outlined text-gold mb-2">scuba_diving</span>
-            <p class="text-xs text-slate-500 uppercase font-bold tracking-widest mb-1">Buzos</p>
-            <p class="text-base font-bold text-navy">Todos los Niveles</p>
+          <div class="flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-gold text-lg">event_available</span>
+            <p class="text-xs font-semibold text-navy">Cancelaci&oacute;n Flexible</p>
           </div>
-          <div class="bg-light-grey rounded-2xl p-4 flex flex-col items-center text-center border border-border-light">
-            <span class="material-symbols-outlined text-gold mb-2">event_available</span>
-            <p class="text-xs text-slate-500 uppercase font-bold tracking-widest mb-1">Cancelación Gratuita</p>
-            <p class="text-base font-bold text-navy">Hasta 24h</p>
+          <div class="flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-gold text-lg">sailing</span>
+            <p class="text-xs font-semibold text-navy">Yate o velero privado</p>
+          </div>
+          <div class="flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-gold text-lg">pool</span>
+            <p class="text-xs font-semibold text-navy">Tour de buceo y snorkel</p>
+          </div>
+          <div class="flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-gold text-lg">pin_drop</span>
+            <p class="text-xs font-semibold text-navy">Reserva de Cabo San Lucas</p>
           </div>
         </div>
         <div class="mt-6 pt-6 border-t border-border-light">
@@ -143,60 +151,10 @@ const breadcrumbSchema = JSON.stringify({
             </div>
           </div>
         </div>
-      </div>
       <div class="mt-8">
         <h3 class="text-lg text-navy mb-4">Sobre esta experiencia</h3>
         <p class="text-slate-500 leading-relaxed text-base"><span id="about-short">Una opción perfecta para grupos mixtos de buzos y snorkelers que quieren disfrutar un día juntos en el agua. Descubre el vibrante mundo submarino de Cabo San Lucas con nuestros tours guiados de buce</span><span id="about-full" class="hidden">o. Ya seas un buzo certificado o estés probando el buceo por primera vez, nuestros instructores certificados PADI garantizan una experiencia segura e inolvidable. Sumérgete en aguas cristalinas en algunos de los sitios de buceo más icónicos de Cabo y encuéntrate cara a cara con una increíble vida marina.</span><button id="about-read-more" onclick="document.getElementById('about-full').classList.remove('hidden');this.classList.add('hidden');" class="text-gold font-semibold ml-1 lg:hidden">Leer más</button></p>
       </div>
-      <div class="mt-10">
-        <div class="flex items-center gap-3 mb-6"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-lg text-navy">Qué Incluye</h3></div>
-        <div class="grid grid-cols-1 gap-5 pl-1">
-          <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[14px]">check</span></div><span class="text-slate-600 text-base font-medium">2 Inmersiones Guiadas</span></div>
-          <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[14px]">check</span></div><span class="text-slate-600 text-base font-medium">Equipo Completo de Buceo</span></div>
-          <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[14px]">check</span></div><span class="text-slate-600 text-base font-medium">Instructor / Guía PADI</span></div>
-          <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[14px]">check</span></div><span class="text-slate-600 text-base font-medium">Clase Introductoria</span></div>
-          <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[14px]">check</span></div><span class="text-slate-600 text-base font-medium">Almuerzo y Barra</span></div>
-          <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[14px]">check</span></div><span class="text-slate-600 text-base font-medium">Baño y Vestidor</span></div>
-        </div>
-        <div class="mt-6 bg-light-grey rounded-2xl p-5 border border-border-light space-y-4">
-          <div class="border-b border-border-light pb-3">
-            <p class="text-sm font-bold text-navy uppercase tracking-wider">Buceo Adicional</p>
-            <p class="text-sm text-slate-600 italic mt-1">No incluido en el precio del charter</p>
-          </div>
-          <div class="flex items-center justify-between">
-            <div><p class="text-base font-bold text-navy">Buzo Certificado (2 Inmersiones)</p><p class="text-sm text-slate-500">Guía PADI divemaster y equipo completo</p></div>
-            <span class="text-base font-bold text-gold">$270 USD</span>
-          </div>
-          <div class="flex items-center justify-between">
-            <div><p class="text-base font-bold text-navy">Buzo No Certificado (2 Inmersiones)</p><p class="text-sm text-slate-500">Instructor PADI, curso introductorio y equipo completo</p></div>
-            <span class="text-base font-bold text-gold">$290 USD</span>
-          </div>
-        </div>
-      </div>
-      <div class="mt-10">
-        <div class="flex items-center gap-3 mb-6"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-lg text-navy">Qué Traer</h3></div>
-        <div class="grid grid-cols-1 gap-5 pl-1">
-          <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full bg-gold/20 flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-gold text-[14px]">backpack</span></div><span class="text-slate-600 text-base font-medium">Traje de baño</span></div>
-          <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full bg-gold/20 flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-gold text-[14px]">wb_sunny</span></div><span class="text-slate-600 text-base font-medium">Protector solar (biodegradable de preferencia)</span></div>
-          <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full bg-gold/20 flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-gold text-[14px]">badge</span></div><span class="text-slate-600 text-base font-medium">Tarjeta de certificación (si eres buzo certificado)</span></div>
-          <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full bg-gold/20 flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-gold text-[14px]">favorite</span></div><span class="text-slate-600 text-base font-medium">¡Espíritu aventurero!</span></div>
-        </div>
-      </div>
-
-      <!-- Mobile Punto de Encuentro -->
-      <div class="mt-10 bg-light-grey rounded-2xl p-5 border border-border-light">
-        <div class="flex items-center gap-3 mb-4">
-          <span class="material-symbols-outlined text-gold">pin_drop</span>
-          <h3 class="text-base font-bold text-navy uppercase tracking-wider">Punto de Encuentro</h3>
-        </div>
-        <p class="text-base font-semibold text-navy mb-1">Cabo San Lucas Marina, Dock F</p>
-        <p class="text-sm text-slate-500 leading-relaxed mb-4">Busca al equipo de Cabo Sailing con camisas polo negras con nuestro logo. Por favor llega 15 minutos antes de la salida.</p>
-        <div class="flex items-center gap-2 text-sm text-slate-500">
-          <span class="material-symbols-outlined text-gold text-base">schedule</span>
-          <span class="font-semibold text-navy">SALIDAS: 9:00 AM y 12:30 PM DIARIO</span>
-        </div>
-      </div>
-
       <!-- Mobile: Elige Tu Barco -->
       <div class="mt-10">
         <div class="flex items-center gap-3 mb-6"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-lg text-navy">Recorre nuestros barcos — encuentra el ideal para tu experiencia única de buceo</h3></div>
@@ -281,6 +239,44 @@ const breadcrumbSchema = JSON.stringify({
               <button type="button" onclick="openRezdyModal('642955','productsCalendar')" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg">Ver Disponibilidad</button>
             </div>
           </div>
+        </div>
+      </div>
+
+      <!-- MOBILE: Qué Incluye (after boats) -->
+      <div class="mt-10">
+        <div class="flex items-center gap-3 mb-6"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-lg text-navy">Qu&eacute; Incluye</h3></div>
+        <div class="grid grid-cols-1 gap-5 pl-1">
+          <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[14px]">check</span></div><span class="text-slate-600 text-base font-medium">2 Inmersiones Guiadas</span></div>
+          <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[14px]">check</span></div><span class="text-slate-600 text-base font-medium">Equipo Completo de Buceo</span></div>
+          <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[14px]">check</span></div><span class="text-slate-600 text-base font-medium">Instructor / Gu&iacute;a PADI</span></div>
+          <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[14px]">check</span></div><span class="text-slate-600 text-base font-medium">Clase Introductoria</span></div>
+          <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[14px]">check</span></div><span class="text-slate-600 text-base font-medium">Almuerzo y Barra</span></div>
+          <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[14px]">check</span></div><span class="text-slate-600 text-base font-medium">Ba&ntilde;o y Vestidor</span></div>
+        </div>
+        <div class="mt-6 bg-light-grey rounded-2xl p-5 border border-border-light space-y-4">
+          <div class="border-b border-border-light pb-3">
+            <p class="text-sm font-bold text-navy uppercase tracking-wider">Buceo Adicional</p>
+            <p class="text-sm text-slate-600 italic mt-1">No incluido en el precio del charter</p>
+          </div>
+          <div class="flex items-center justify-between">
+            <div><p class="text-base font-bold text-navy">Buzo Certificado (2 Inmersiones)</p><p class="text-sm text-slate-500">Gu&iacute;a PADI divemaster y equipo completo</p></div>
+            <span class="text-base font-bold text-gold">$270 USD</span>
+          </div>
+          <div class="flex items-center justify-between">
+            <div><p class="text-base font-bold text-navy">Buzo No Certificado (2 Inmersiones)</p><p class="text-sm text-slate-500">Instructor PADI, curso introductorio y equipo completo</p></div>
+            <span class="text-base font-bold text-gold">$290 USD</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- MOBILE: Qué Traer (after boats) -->
+      <div class="mt-10">
+        <div class="flex items-center gap-3 mb-6"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-lg text-navy">Qu&eacute; Traer</h3></div>
+        <div class="grid grid-cols-1 gap-5 pl-1">
+          <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full bg-gold/20 flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-gold text-[14px]">backpack</span></div><span class="text-slate-600 text-base font-medium">Traje de ba&ntilde;o</span></div>
+          <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full bg-gold/20 flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-gold text-[14px]">wb_sunny</span></div><span class="text-slate-600 text-base font-medium">Protector solar (biodegradable de preferencia)</span></div>
+          <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full bg-gold/20 flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-gold text-[14px]">badge</span></div><span class="text-slate-600 text-base font-medium">Tarjeta de certificaci&oacute;n (si eres buzo certificado)</span></div>
+          <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full bg-gold/20 flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-gold text-[14px]">favorite</span></div><span class="text-slate-600 text-base font-medium">&iexcl;Esp&iacute;ritu aventurero!</span></div>
         </div>
       </div>
 
@@ -410,7 +406,11 @@ const breadcrumbSchema = JSON.stringify({
           <div class="rounded-2xl overflow-hidden"><Image alt="Celebraci&oacute;n en el barco en alta mar" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src={heroThumb4} width={600} height={400} /></div>
         </div>
       </div>
-      <div class="max-w-7xl mx-auto px-12 py-16">
+      <!-- Desktop discount banner -->
+      <div class="w-full text-center py-3 shadow-md bg-gold mt-6">
+        <p class="text-navy font-bold text-base uppercase tracking-widest">Ahorra hasta 40% off &mdash; Tiempo Limitado</p>
+      </div>
+      <div class="max-w-7xl mx-auto px-12 pt-16 pb-6">
         <div>
 
             <nav class="flex items-center gap-1.5 text-xs text-slate-500 mb-4" aria-label="Breadcrumb">
@@ -421,13 +421,14 @@ const breadcrumbSchema = JSON.stringify({
               <span class="text-navy font-semibold">Buceo</span>
             </nav>
 
-            <!-- Quick Stats Bar -->
-            <div class="flex items-center gap-8 pb-8 border-b border-border-light mb-10">
-              <div class="flex items-center gap-2"><span class="material-symbols-outlined text-gold">schedule</span><div><p class="text-xs text-slate-500 uppercase font-bold tracking-widest">Duración</p><p class="text-base font-bold text-navy">4 Horas</p><p class="text-xs text-slate-500 mt-0.5">Tiempo extra disponible</p></div></div>
-              <div class="w-px h-10 bg-border-light"></div>
-              <div class="flex items-center gap-2"><span class="material-symbols-outlined text-gold">trending_down</span><div><p class="text-xs text-slate-500 uppercase font-bold tracking-widest">Dificultad</p><p class="text-base font-bold text-navy">Media-Alta</p></div></div>
-              <div class="w-px h-10 bg-border-light"></div>
-              <div class="flex items-center gap-2"><span class="material-symbols-outlined text-gold">scuba_diving</span><div><p class="text-xs text-slate-500 uppercase font-bold tracking-widest">Buzos</p><p class="text-base font-bold text-navy">Certificados y no certificados</p></div></div>
+            <!-- Icons row -->
+            <div class="grid grid-cols-3 gap-x-6 gap-y-4 pb-8 border-b border-border-light mb-10">
+              <div class="flex items-center gap-2"><span class="material-symbols-outlined text-gold">schedule</span><p class="text-sm font-semibold text-navy">4 Horas</p></div>
+              <div class="flex items-center gap-2"><span class="material-symbols-outlined text-gold">scuba_diving</span><p class="text-sm font-semibold text-navy">Certificados y No Certificados</p></div>
+              <div class="flex items-center gap-2"><span class="material-symbols-outlined text-gold">event_available</span><p class="text-sm font-semibold text-navy">Cancelaci&oacute;n Flexible</p></div>
+              <div class="flex items-center gap-2"><span class="material-symbols-outlined text-gold">sailing</span><p class="text-sm font-semibold text-navy">Yate o velero privado</p></div>
+              <div class="flex items-center gap-2"><span class="material-symbols-outlined text-gold">pool</span><p class="text-sm font-semibold text-navy">Tour de buceo y snorkel</p></div>
+              <div class="flex items-center gap-2"><span class="material-symbols-outlined text-gold">pin_drop</span><p class="text-sm font-semibold text-navy">Reserva de Cabo San Lucas</p></div>
             </div>
 
             <!-- Photo Gallery Strip -->
@@ -477,77 +478,17 @@ const breadcrumbSchema = JSON.stringify({
               </div>
             </div>
 
-            <!-- About + Qué Incluye + Punto de Encuentro -->
-            <div class="mt-10 flex gap-12">
-              <!-- LEFT: About + Qué Incluye -->
-              <div class="flex-1">
-                <!-- About -->
-                <div class="mb-12">
-                  <h2 class="text-2xl text-navy mb-5">Sobre Esta Experiencia</h2>
-                  <p class="text-slate-500 leading-relaxed">Una opción perfecta para grupos mixtos de buzos y snorkelers que quieren disfrutar un día juntos en el agua. Descubre el vibrante mundo submarino de Cabo San Lucas con nuestros tours guiados de buceo. Ya seas un buzo certificado o estés probando el buceo por primera vez, nuestros instructores certificados PADI garantizan una experiencia segura e inolvidable. Sumérgete en aguas cristalinas en algunos de los sitios de buceo más icónicos de Cabo y encuéntrate cara a cara con una increíble vida marina.</p>
-                </div>
-
-                <!-- Qué Incluye -->
-                <div class="mb-12 bg-gradient-to-br from-sky-50 via-cyan-50/50 to-blue-50 rounded-3xl p-8 border border-sky-100">
-                  <div class="flex items-center gap-3 mb-6"><div class="w-1 h-6 bg-gold rounded-full"></div><h2 class="text-2xl text-navy">Qué Incluye</h2></div>
-                  <div class="grid grid-cols-2 gap-4">
-                    <div class="flex items-center gap-3 bg-white/70 rounded-2xl px-4 py-3 border border-white"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-base">check</span></div><span class="text-slate-700 font-semibold text-sm">2 Inmersiones Guiadas</span></div>
-                    <div class="flex items-center gap-3 bg-white/70 rounded-2xl px-4 py-3 border border-white"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-base">check</span></div><span class="text-slate-700 font-semibold text-sm">Equipo Completo de Buceo</span></div>
-                    <div class="flex items-center gap-3 bg-white/70 rounded-2xl px-4 py-3 border border-white"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-base">check</span></div><span class="text-slate-700 font-semibold text-sm">Instructor / Guía PADI</span></div>
-                    <div class="flex items-center gap-3 bg-white/70 rounded-2xl px-4 py-3 border border-white"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-base">check</span></div><span class="text-slate-700 font-semibold text-sm">Clase Introductoria</span></div>
-                    <div class="flex items-center gap-3 bg-white/70 rounded-2xl px-4 py-3 border border-white"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-base">check</span></div><span class="text-slate-700 font-semibold text-sm">Almuerzo y Barra</span></div>
-                    <div class="flex items-center gap-3 bg-white/70 rounded-2xl px-4 py-3 border border-white"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-base">check</span></div><span class="text-slate-700 font-semibold text-sm">Baño y Vestidor</span></div>
-                  </div>
-                  <div class="mt-6 bg-white rounded-2xl p-6 border border-white space-y-4">
-                    <div class="border-b border-border-light pb-3">
-                      <p class="text-sm font-bold text-navy uppercase tracking-wider">Buceo Adicional</p>
-                      <p class="text-sm text-slate-600 italic mt-1">No incluido en el precio del charter</p>
-                    </div>
-                    <div class="flex items-center justify-between">
-                      <div><p class="text-base font-bold text-navy">Buzo Certificado (2 Inmersiones)</p><p class="text-sm text-slate-500">Guía PADI divemaster y equipo completo</p></div>
-                      <span class="text-base font-bold text-gold">$270 USD</span>
-                    </div>
-                    <div class="flex items-center justify-between">
-                      <div><p class="text-base font-bold text-navy">Buzo No Certificado (2 Inmersiones)</p><p class="text-sm text-slate-500">Instructor PADI, curso introductorio y equipo completo</p></div>
-                      <span class="text-base font-bold text-gold">$290 USD</span>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Qué Traer -->
-                <div class="mb-12">
-                  <div class="flex items-center gap-3 mb-6"><div class="w-1 h-6 bg-gold rounded-full"></div><h2 class="text-2xl text-navy">Qué Traer</h2></div>
-                  <div class="grid grid-cols-2 gap-4">
-                    <div class="flex items-center gap-3 bg-light-grey rounded-2xl px-4 py-3 border border-border-light"><span class="material-symbols-outlined text-gold">checkroom</span><span class="text-slate-700 font-semibold text-sm">Traje de baño</span></div>
-                    <div class="flex items-center gap-3 bg-light-grey rounded-2xl px-4 py-3 border border-border-light"><span class="material-symbols-outlined text-gold">wb_sunny</span><span class="text-slate-700 font-semibold text-sm">Protector solar (biodegradable de preferencia)</span></div>
-                    <div class="flex items-center gap-3 bg-light-grey rounded-2xl px-4 py-3 border border-border-light"><span class="material-symbols-outlined text-gold">badge</span><span class="text-slate-700 font-semibold text-sm">Tarjeta de certificación (si aplica)</span></div>
-                    <div class="flex items-center gap-3 bg-light-grey rounded-2xl px-4 py-3 border border-border-light"><span class="material-symbols-outlined text-gold">favorite</span><span class="text-slate-700 font-semibold text-sm">¡Espíritu aventurero!</span></div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- RIGHT: Punto de Encuentro (sticky) -->
-              <div class="w-[380px] flex-shrink-0">
-                <div class="sticky top-[90px] bg-light-grey rounded-2xl p-8 border border-border-light">
-                  <div class="flex items-center gap-3 mb-4">
-                    <span class="material-symbols-outlined text-gold text-2xl">pin_drop</span>
-                    <h3 class="text-lg font-bold text-navy uppercase tracking-wider">Punto de Encuentro</h3>
-                  </div>
-                  <p class="text-lg font-semibold text-navy mb-1">Cabo San Lucas Marina, Dock F</p>
-                  <p class="text-sm text-slate-500 leading-relaxed mb-4">Busca al equipo de Cabo Sailing con camisas polo negras con nuestro logo. Por favor llega 15 minutos antes de la salida.</p>
-                  <div class="flex items-center gap-2 text-sm text-slate-500">
-                    <span class="material-symbols-outlined text-gold text-base">schedule</span>
-                    <span class="font-semibold text-navy">SALIDAS: 9:00 AM y 12:30 PM DIARIO</span>
-                  </div>
-                </div>
-              </div>
+            <!-- About -->
+            <div class="mb-12">
+              <h2 class="text-2xl text-navy mb-5">Sobre Esta Experiencia</h2>
+              <p class="text-slate-500 leading-relaxed">Una opción perfecta para grupos mixtos de buzos y snorkelers que quieren disfrutar un día juntos en el agua. Descubre el vibrante mundo submarino de Cabo San Lucas con nuestros tours guiados de buceo. Ya seas un buzo certificado o estés probando el buceo por primera vez, nuestros instructores certificados PADI garantizan una experiencia segura e inolvidable. Sumérgete en aguas cristalinas en algunos de los sitios de buceo más icónicos de Cabo y encuéntrate cara a cara con una increíble vida marina.</p>
             </div>
 
         </div>
       </div>
 
       <!-- DESKTOP: Elige Tu Barco — full width -->
-      <div class="max-w-[1400px] mx-auto px-10 py-16">
+      <div class="max-w-[1400px] mx-auto px-10 pt-4 pb-16">
         <div class="flex items-center gap-3 mb-8"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-lg lg:text-2xl text-navy">Explora nuestros barcos — encuentra el perfecto para tu experiencia única de buceo</h3></div>
         <div class="grid grid-cols-3 gap-5 pb-8 max-w-[1100px] mx-auto">
           <!-- Luxury Yacht 51' -->
@@ -646,6 +587,46 @@ const breadcrumbSchema = JSON.stringify({
               <button type="button" onclick="openRezdyModal('642955','productsCalendar')" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg">Ver Disponibilidad</button>
             </div>
           </div>
+        </div>
+      </div>
+
+      <!-- DESKTOP: Qué Incluye (after boats) -->
+      <div class="max-w-[1400px] mx-auto px-10 pt-8 pb-12">
+        <div class="bg-gradient-to-br from-sky-50 via-cyan-50/50 to-blue-50 rounded-3xl p-8 border border-sky-100">
+          <div class="flex items-center gap-3 mb-6"><div class="w-1 h-6 bg-gold rounded-full"></div><h2 class="text-2xl text-navy">Qu&eacute; Incluye</h2></div>
+          <div class="grid grid-cols-3 gap-4">
+            <div class="flex items-center gap-3 bg-white/70 rounded-2xl px-4 py-3 border border-white"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-base">check</span></div><span class="text-slate-700 font-semibold text-sm">2 Inmersiones Guiadas</span></div>
+            <div class="flex items-center gap-3 bg-white/70 rounded-2xl px-4 py-3 border border-white"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-base">check</span></div><span class="text-slate-700 font-semibold text-sm">Equipo Completo de Buceo</span></div>
+            <div class="flex items-center gap-3 bg-white/70 rounded-2xl px-4 py-3 border border-white"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-base">check</span></div><span class="text-slate-700 font-semibold text-sm">Instructor / Gu&iacute;a PADI</span></div>
+            <div class="flex items-center gap-3 bg-white/70 rounded-2xl px-4 py-3 border border-white"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-base">check</span></div><span class="text-slate-700 font-semibold text-sm">Clase Introductoria</span></div>
+            <div class="flex items-center gap-3 bg-white/70 rounded-2xl px-4 py-3 border border-white"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-base">check</span></div><span class="text-slate-700 font-semibold text-sm">Almuerzo y Barra</span></div>
+            <div class="flex items-center gap-3 bg-white/70 rounded-2xl px-4 py-3 border border-white"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-base">check</span></div><span class="text-slate-700 font-semibold text-sm">Ba&ntilde;o y Vestidor</span></div>
+          </div>
+          <div class="mt-6 bg-white rounded-2xl p-6 border border-white space-y-4">
+            <div class="border-b border-border-light pb-3">
+              <p class="text-sm font-bold text-navy uppercase tracking-wider">Buceo Adicional</p>
+              <p class="text-sm text-slate-600 italic mt-1">No incluido en el precio del charter</p>
+            </div>
+            <div class="flex items-center justify-between">
+              <div><p class="text-base font-bold text-navy">Buzo Certificado (2 Inmersiones)</p><p class="text-sm text-slate-500">Gu&iacute;a PADI divemaster y equipo completo</p></div>
+              <span class="text-base font-bold text-gold">$270 USD</span>
+            </div>
+            <div class="flex items-center justify-between">
+              <div><p class="text-base font-bold text-navy">Buzo No Certificado (2 Inmersiones)</p><p class="text-sm text-slate-500">Instructor PADI, curso introductorio y equipo completo</p></div>
+              <span class="text-base font-bold text-gold">$290 USD</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DESKTOP: Qué Traer (after boats) -->
+      <div class="max-w-[1400px] mx-auto px-10 pb-12">
+        <div class="flex items-center gap-3 mb-6"><div class="w-1 h-6 bg-gold rounded-full"></div><h2 class="text-2xl text-navy">Qu&eacute; Traer</h2></div>
+        <div class="grid grid-cols-4 gap-4">
+          <div class="flex items-center gap-3 bg-light-grey rounded-2xl px-4 py-3 border border-border-light"><span class="material-symbols-outlined text-gold">checkroom</span><span class="text-slate-700 font-semibold text-sm">Traje de ba&ntilde;o</span></div>
+          <div class="flex items-center gap-3 bg-light-grey rounded-2xl px-4 py-3 border border-border-light"><span class="material-symbols-outlined text-gold">wb_sunny</span><span class="text-slate-700 font-semibold text-sm">Protector solar</span></div>
+          <div class="flex items-center gap-3 bg-light-grey rounded-2xl px-4 py-3 border border-border-light"><span class="material-symbols-outlined text-gold">badge</span><span class="text-slate-700 font-semibold text-sm">Tarjeta de certificaci&oacute;n</span></div>
+          <div class="flex items-center gap-3 bg-light-grey rounded-2xl px-4 py-3 border border-border-light"><span class="material-symbols-outlined text-gold">favorite</span><span class="text-slate-700 font-semibold text-sm">&iexcl;Esp&iacute;ritu aventurero!</span></div>
         </div>
       </div>
 
