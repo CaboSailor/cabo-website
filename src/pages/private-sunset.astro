@@ -72,6 +72,14 @@ const breadcrumbSchema = JSON.stringify({
 <div class="flex-shrink-0 w-full h-full snap-center"><Image src={relaxingSunnyYacht} alt="Guests relaxing on a sunny yacht" class="w-full h-full object-cover" width={800} height={500} /></div>
 <div class="flex-shrink-0 w-full h-full snap-center"><Image src={familyFunSunnySailboat} alt="Family having fun on a sunny sailboat" class="w-full h-full object-cover" width={800} height={500} /></div>
 </div>
+<!-- Hero discount headline -->
+<div class="absolute top-5 left-4 right-4 pointer-events-none flex items-center gap-3">
+  <h1 class="text-gold text-2xl font-bold leading-tight whitespace-nowrap">Save up to 40% off</h1>
+  <svg class="flex-1 text-gold" viewBox="0 0 200 20" preserveAspectRatio="none" height="18" aria-hidden="true">
+    <path d="M0 5 Q 12.5 1 25 5 T 50 5 T 75 5 T 100 5 T 125 5 T 150 5 T 175 5 T 200 5" stroke="currentColor" stroke-width="1.25" fill="none" stroke-linecap="round" />
+    <path d="M0 15 Q 12.5 11 25 15 T 50 15 T 75 15 T 100 15 T 125 15 T 150 15 T 175 15 T 200 15" stroke="currentColor" stroke-width="1.25" fill="none" stroke-linecap="round" />
+  </svg>
+</div>
 <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent pt-10 pb-5 px-4">
   <div class="max-w-[360px] mx-auto text-center">
     <div class="flex items-center justify-center gap-0.5 mb-1.5">
@@ -90,7 +98,16 @@ const breadcrumbSchema = JSON.stringify({
 </div>
 <div class="hidden lg:block max-w-[1400px] mx-auto px-10 mt-6">
 <div class="grid grid-cols-4 grid-rows-2 gap-2 h-[55vh]">
-<div class="col-span-2 row-span-2 rounded-2xl overflow-hidden"><Image src={heroRomanticSunset} alt="Romantic sunset on a private yacht in Cabo" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
+<div class="col-span-2 row-span-2 rounded-2xl overflow-hidden relative">
+  <Image src={heroRomanticSunset} alt="Romantic sunset on a private yacht in Cabo" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} />
+  <div class="absolute top-8 left-8 right-8 pointer-events-none flex items-center gap-4">
+    <h1 class="text-gold text-3xl xl:text-4xl font-semibold leading-tight whitespace-nowrap">Save up to 40% off</h1>
+    <svg class="flex-1 text-gold" viewBox="0 0 200 20" preserveAspectRatio="none" height="24" aria-hidden="true">
+      <path d="M0 5 Q 12.5 1 25 5 T 50 5 T 75 5 T 100 5 T 125 5 T 150 5 T 175 5 T 200 5" stroke="currentColor" stroke-width="1" fill="none" stroke-linecap="round" />
+      <path d="M0 15 Q 12.5 11 25 15 T 50 15 T 75 15 T 100 15 T 125 15 T 150 15 T 175 15 T 200 15" stroke="currentColor" stroke-width="1" fill="none" stroke-linecap="round" />
+    </svg>
+  </div>
+</div>
 <div class="rounded-2xl overflow-hidden"><Image src={yachtGuestsRelaxing} alt="Yacht guests relaxing on the bow" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
 <div class="rounded-2xl overflow-hidden"><Image src={familyYachtEscape} alt="Family enjoying a yacht escape near El Arco" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
 <div class="rounded-2xl overflow-hidden"><Image src={relaxingSunnyYacht} alt="Guests relaxing on a sunny yacht" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
@@ -115,309 +132,146 @@ const breadcrumbSchema = JSON.stringify({
 
 <!-- DESKTOP: Full-width layout -->
 <div class="hidden lg:block max-w-[1400px] mx-auto px-10 mt-10">
-  <div>
-    <!-- Breadcrumbs -->
-    <nav class="flex items-center gap-1.5 text-xs text-slate-500 mb-4" aria-label="Breadcrumb">
-      <a href="/" class="hover:text-gold transition-colors">Home</a>
-      <span class="material-symbols-outlined text-[14px]">chevron_right</span>
-      <span>Tours</span>
-      <span class="material-symbols-outlined text-[14px]">chevron_right</span>
-      <span class="text-navy font-semibold">Private Sunset</span>
-    </nav>
-    <div class="mb-2">
-      <h1 class="text-4xl text-navy leading-tight">Private Sunset Sailing Cruise in Cabo</h1>
+  <!-- Breadcrumbs -->
+  <nav class="flex items-center gap-1.5 text-xs text-slate-500 mb-4" aria-label="Breadcrumb">
+    <a href="/" class="hover:text-gold transition-colors">Home</a>
+    <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+    <span>Tours</span>
+    <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+    <span class="text-navy font-semibold">Private Sunset</span>
+  </nav>
+  <h2 class="text-3xl text-navy leading-tight">Cabo Sailing &amp; Sunset Cruise</h2>
+  <p class="text-slate-700 text-lg leading-relaxed mt-2">A relaxed, beautiful way to experience Cabo at golden hour &mdash; sail past Land's End on your own private yacht or sailboat.</p>
+
+  <!-- Icons row -->
+  <div class="mt-8 grid grid-cols-4 gap-x-6 gap-y-4">
+    <div class="flex items-center gap-2">
+      <span class="material-symbols-outlined text-gold">schedule</span>
+      <p class="text-sm font-semibold text-navy">3 Hours</p>
     </div>
-    <p class="text-slate-500 text-base leading-relaxed mt-4">A relaxed, beautiful way to experience Cabo at its best.</p>
-    <p class="text-slate-500 text-sm font-medium flex items-center gap-1 mt-3 uppercase tracking-widest">
-      <span class="material-symbols-outlined text-base">location_on</span> Land's End, Cabo San Lucas
+    <div class="flex items-center gap-2">
+      <span class="material-symbols-outlined text-gold">wb_twilight</span>
+      <p class="text-sm font-semibold text-navy">Sunset Cruise</p>
+    </div>
+    <div class="flex items-center gap-2">
+      <span class="material-symbols-outlined text-gold">event_available</span>
+      <p class="text-sm font-semibold text-navy">Free Cancellation</p>
+    </div>
+    <div class="flex items-center gap-2">
+      <span class="material-symbols-outlined text-gold">favorite</span>
+      <p class="text-sm font-semibold text-navy">Romantic Vibes</p>
+    </div>
+    <div class="flex items-center gap-2">
+      <span class="material-symbols-outlined text-gold">add</span>
+      <p class="text-sm font-semibold text-navy">Extra Time Available</p>
+    </div>
+    <div class="flex items-center gap-2">
+      <span class="material-symbols-outlined text-gold">pin_drop</span>
+      <p class="text-sm font-semibold text-navy">Cabo Marina, Dock F</p>
+    </div>
+    <div class="flex items-center gap-2 col-span-2">
+      <span class="material-symbols-outlined text-gold">schedule</span>
+      <p class="text-sm font-semibold text-navy">DEPARTURES 4:00 PM (WINTER) &amp; 4:15 PM (SUMMER) DAILY</p>
+    </div>
+  </div>
+
+  <!-- About this experience -->
+  <div class="mt-12">
+    <h3 class="text-2xl text-navy mb-4">About this experience</h3>
+    <p class="text-slate-700 leading-relaxed text-base">
+      Experience the magic of golden hour on the Pacific with a private sunset sailing charter. Cruise along the stunning coastline of Cabo San Lucas as the sky erupts in brilliant oranges and pinks &mdash; the perfect backdrop for romance, celebration, or simply unwinding in style.
     </p>
+  </div>
 
-    <!-- Badges row -->
-    <div class="flex gap-4 mt-8">
-      <div class="bg-light-grey rounded-2xl px-6 py-4 flex flex-col items-center text-center border border-border-light flex-1">
-        <span class="material-symbols-outlined text-gold mb-2">schedule</span>
-        <p class="text-xs text-slate-500 uppercase font-bold tracking-widest mb-1">Duration</p>
-        <p class="text-base font-bold text-navy">3 Hours</p>
-        <p class="text-xs text-slate-500 mt-0.5">Extra time available</p>
-      </div>
-      <div class="bg-light-grey rounded-2xl px-6 py-4 flex flex-col items-center text-center border border-border-light flex-1">
-        <span class="material-symbols-outlined text-gold mb-2">wb_twilight</span>
-        <p class="text-xs text-slate-500 uppercase font-bold tracking-widest mb-1">Type</p>
-        <p class="text-base font-bold text-navy">Sunset</p>
-      </div>
-      <div class="bg-light-grey rounded-2xl px-6 py-4 flex flex-col items-center text-center border border-border-light flex-1">
-        <span class="material-symbols-outlined text-gold mb-2">favorite</span>
-        <p class="text-xs text-slate-500 uppercase font-bold tracking-widest mb-1">Occasion</p>
-        <p class="text-base font-bold text-navy">Romantic</p>
-      </div>
-      <div class="bg-light-grey rounded-2xl px-6 py-4 flex flex-col items-center text-center border border-border-light flex-1">
-        <span class="material-symbols-outlined text-gold mb-2">event_available</span>
-        <p class="text-xs text-slate-500 uppercase font-bold tracking-widest mb-1">Free Cancellation</p>
-        <p class="text-base font-bold text-navy">Up to 24h</p>
-      </div>
+  <!-- Suggested Itinerary timeline -->
+  <div class="mt-10">
+    <div class="flex items-center gap-3 mb-5">
+      <div class="w-1 h-6 bg-gold rounded-full"></div>
+      <h3 class="text-sm font-bold text-navy uppercase tracking-widest">Suggested Itinerary</h3>
     </div>
+    <ol class="relative border-l-2 border-gold/30 ml-2 space-y-5 pl-6">
+      <li class="relative"><span class="absolute -left-[33px] top-0 w-6 h-6 rounded-full bg-navy text-white text-[11px] font-bold flex items-center justify-center">1</span><span class="text-slate-600 text-base">Meet at the marina</span></li>
+      <li class="relative"><span class="absolute -left-[33px] top-0 w-6 h-6 rounded-full bg-navy text-white text-[11px] font-bold flex items-center justify-center">2</span><span class="text-slate-600 text-base">Cruise past Cabo's highlights (Arch, sea lions, beaches)</span></li>
+      <li class="relative"><span class="absolute -left-[33px] top-0 w-6 h-6 rounded-full bg-navy text-white text-[11px] font-bold flex items-center justify-center">3</span><span class="text-slate-600 text-base">Settle into the best views as the sun begins to drop</span></li>
+      <li class="relative"><span class="absolute -left-[33px] top-0 w-6 h-6 rounded-full bg-navy text-white text-[11px] font-bold flex items-center justify-center">4</span><span class="text-slate-600 text-base">Enjoy the golden hour with drinks and light bites</span></li>
+      <li class="relative"><span class="absolute -left-[33px] top-0 w-6 h-6 rounded-full bg-navy text-white text-[11px] font-bold flex items-center justify-center">5</span><span class="text-slate-600 text-base">Watch the sunset over the Pacific, then cruise back along the coastline</span></li>
+    </ol>
+    <p class="mt-5 text-slate-700 italic text-sm">No rush. No fixed script. Just a relaxed, beautiful time on the water.</p>
+  </div>
+</div>
 
-    <!-- About + What's Included (left) / Meeting Point (right) -->
-    <div class="mt-10 flex gap-12">
-      <!-- Left column: About + What's Included stacked -->
-      <div class="flex-1">
-        <h3 class="text-2xl text-navy mb-4">About this experience</h3>
-        <p class="text-slate-500 leading-relaxed text-base">
-          Experience the magic of golden hour on the Pacific with a private sunset sailing charter. Cruise along the stunning coastline of Cabo San Lucas as the sky erupts in brilliant oranges and pinks — the perfect backdrop for romance, celebration, or simply unwinding in style.
-        </p>
 
-        <!-- The Experience timeline -->
-        <div class="mt-8">
-          <div class="flex items-center gap-3 mb-5">
-            <div class="w-1 h-6 bg-gold rounded-full"></div>
-            <h3 class="text-sm font-bold text-navy uppercase tracking-widest">The Experience</h3>
-          </div>
-          <ol class="relative border-l-2 border-gold/30 ml-2 space-y-5 pl-6">
-            <li class="relative"><span class="absolute -left-[33px] top-0 w-6 h-6 rounded-full bg-navy text-white text-[11px] font-bold flex items-center justify-center">1</span><span class="text-slate-600 text-base">Meet at the marina</span></li>
-            <li class="relative"><span class="absolute -left-[33px] top-0 w-6 h-6 rounded-full bg-navy text-white text-[11px] font-bold flex items-center justify-center">2</span><span class="text-slate-600 text-base">Cruise past Cabo's highlights (Arch, sea lions, beaches)</span></li>
-            <li class="relative"><span class="absolute -left-[33px] top-0 w-6 h-6 rounded-full bg-navy text-white text-[11px] font-bold flex items-center justify-center">3</span><span class="text-slate-600 text-base">Settle into the best views as the sun begins to drop</span></li>
-            <li class="relative"><span class="absolute -left-[33px] top-0 w-6 h-6 rounded-full bg-navy text-white text-[11px] font-bold flex items-center justify-center">4</span><span class="text-slate-600 text-base">Enjoy the golden hour with drinks and light bites</span></li>
-            <li class="relative"><span class="absolute -left-[33px] top-0 w-6 h-6 rounded-full bg-navy text-white text-[11px] font-bold flex items-center justify-center">5</span><span class="text-slate-600 text-base">Watch the sunset over the Pacific, then cruise back along the coastline</span></li>
-          </ol>
-          <p class="mt-5 text-slate-500 italic text-sm">No rush. No fixed script. Just a relaxed, beautiful time on the water.</p>
-        </div>
+<!-- MOBILE: Title + intro -->
+<div class="lg:hidden mt-6 px-5">
+  <nav class="flex items-center gap-1.5 text-xs text-slate-500 mb-4" aria-label="Breadcrumb">
+    <a href="/" class="hover:text-gold transition-colors">Home</a>
+    <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+    <span>Tours</span>
+    <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+    <span class="text-navy font-semibold">Private Sunset</span>
+  </nav>
+  <h2 class="text-2xl text-navy leading-tight">Cabo Sailing &amp; Sunset Cruise</h2>
+  <p class="text-slate-700 text-base leading-relaxed mt-2">A relaxed, beautiful way to experience Cabo at golden hour &mdash; sail past Land's End on your own private yacht or sailboat.</p>
+</div>
 
-        <!-- What's Included -->
-        <div class="mt-10">
-          <div class="flex items-center gap-3 mb-6">
-            <div class="w-1 h-6 bg-gold rounded-full"></div>
-            <h3 class="text-2xl text-navy">What's Included</h3>
-          </div>
-          <div class="grid grid-cols-2 gap-5 pl-1">
-            <div class="flex items-center gap-4">
-              <div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0">
-                <span class="material-symbols-outlined text-white text-[14px]">local_bar</span>
-              </div>
-              <div>
-                <span class="text-slate-600 text-base font-medium">Open bar</span>
-                <p class="text-slate-500 text-sm">Premium drinks served throughout your cruise</p>
-              </div>
-            </div>
-            <div class="flex items-center gap-4">
-              <div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0">
-                <span class="material-symbols-outlined text-white text-[14px]">restaurant</span>
-              </div>
-              <div>
-                <span class="text-slate-600 text-base font-medium">Fresh Food &amp; Bites Onboard</span>
-                <p class="text-slate-500 text-sm">Freshly prepared appetizers and bites to enjoy as the sun sets</p>
-              </div>
-            </div>
-            <div class="flex items-center gap-4">
-              <div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0">
-                <span class="material-symbols-outlined text-white text-[14px]">wb_twilight</span>
-              </div>
-              <div>
-                <span class="text-slate-600 text-base font-medium">Private sunset experience</span>
-                <p class="text-slate-500 text-sm">Front-row views of Cabo's most iconic sunset</p>
-              </div>
-            </div>
-            <div class="flex items-center gap-4">
-              <div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0">
-                <span class="material-symbols-outlined text-white text-[14px]">sailing</span>
-              </div>
-              <div>
-                <span class="text-slate-600 text-base font-medium">Private yacht or sailboat</span>
-                <p class="text-slate-500 text-sm">Only your group onboard — no sharing</p>
-              </div>
-            </div>
-            <div class="flex items-center gap-4">
-              <div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0">
-                <span class="material-symbols-outlined text-white text-[14px]">music_note</span>
-              </div>
-              <div>
-                <span class="text-slate-600 text-base font-medium">Bluetooth music system</span>
-                <p class="text-slate-500 text-sm">Set your own vibe for the evening</p>
-              </div>
-            </div>
-            <div class="flex items-center gap-4">
-              <div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0">
-                <span class="material-symbols-outlined text-white text-[14px]">person</span>
-              </div>
-              <div>
-                <span class="text-slate-600 text-base font-medium">Experienced bilingual crew</span>
-                <p class="text-slate-500 text-sm">Professional, friendly, and safety-first</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Right column: Meeting Point -->
-      <div class="w-[380px] flex-shrink-0">
-        <div class="sticky top-[90px] bg-light-grey rounded-2xl p-8 border border-border-light">
-          <div class="flex items-center gap-3 mb-4">
-            <span class="material-symbols-outlined text-gold text-2xl">pin_drop</span>
-            <h3 class="text-lg font-bold text-navy uppercase tracking-wider">Meeting Point</h3>
-          </div>
-          <p class="text-lg font-semibold text-navy mb-1">Cabo San Lucas Marina, Dock F</p>
-          <p class="text-sm text-slate-500 leading-relaxed mb-4">Look for the Cabo Sailing team in black polo shirts with our logo. Please arrive 15 minutes before departure.</p>
-          <div class="flex items-center gap-2 text-sm text-slate-500">
-            <span class="material-symbols-outlined text-gold text-base">schedule</span>
-            <span class="font-semibold text-navy">DEPARTURES: 4:00 PM (Winter) &amp; 4:15 PM (Summer) DAILY</span>
-          </div>
-        </div>
-      </div>
+<!-- MOBILE: Icons row -->
+<div class="lg:hidden mt-5 px-5">
+  <div class="grid grid-cols-2 gap-x-3 gap-y-3">
+    <div class="flex items-center gap-1.5">
+      <span class="material-symbols-outlined text-gold text-lg">schedule</span>
+      <p class="text-xs font-semibold text-navy">3 Hours</p>
+    </div>
+    <div class="flex items-center gap-1.5">
+      <span class="material-symbols-outlined text-gold text-lg">wb_twilight</span>
+      <p class="text-xs font-semibold text-navy">Sunset Cruise</p>
+    </div>
+    <div class="flex items-center gap-1.5">
+      <span class="material-symbols-outlined text-gold text-lg">event_available</span>
+      <p class="text-xs font-semibold text-navy">Free Cancellation</p>
+    </div>
+    <div class="flex items-center gap-1.5">
+      <span class="material-symbols-outlined text-gold text-lg">favorite</span>
+      <p class="text-xs font-semibold text-navy">Romantic Vibes</p>
+    </div>
+    <div class="flex items-center gap-1.5">
+      <span class="material-symbols-outlined text-gold text-lg">add</span>
+      <p class="text-xs font-semibold text-navy">Extra Time Available</p>
+    </div>
+    <div class="flex items-center gap-1.5">
+      <span class="material-symbols-outlined text-gold text-lg">pin_drop</span>
+      <p class="text-xs font-semibold text-navy">Cabo Marina, Dock F</p>
+    </div>
+    <div class="flex items-center gap-1.5 col-span-2">
+      <span class="material-symbols-outlined text-gold text-lg">schedule</span>
+      <p class="text-xs font-semibold text-navy">DEPARTURES 4:00 PM (WINTER) &amp; 4:15 PM (SUMMER) DAILY</p>
     </div>
   </div>
 </div>
 
-<!-- MOBILE: Original card layout -->
-<div class="lg:hidden relative z-10 -mt-4 px-5">
-<div class="bg-white rounded-3xl p-6 shadow-xl shadow-navy/5 border border-border-light">
-<nav class="flex items-center gap-1.5 text-xs text-slate-500 mb-4" aria-label="Breadcrumb">
-<a href="/" class="hover:text-gold transition-colors">Home</a>
-<span class="material-symbols-outlined text-[14px]">chevron_right</span>
-<span>Tours</span>
-<span class="material-symbols-outlined text-[14px]">chevron_right</span>
-<span class="text-navy font-semibold">Private Sunset</span>
-</nav>
-<div class="flex flex-col gap-1 mb-6">
-<div>
-<h1 class="text-2xl text-navy leading-tight">Private Sunset Sailing Cruise in Cabo</h1>
-</div>
-<p class="text-slate-500 text-sm leading-relaxed mt-2">A relaxed, beautiful way to experience Cabo at its best.</p>
-<p class="text-slate-500 text-sm font-medium flex items-center gap-1 mt-2 uppercase tracking-widest">
-<span class="material-symbols-outlined text-base">location_on</span> Land's End, Cabo San Lucas
-                    </p>
-</div>
-<div class="grid grid-cols-2 gap-4">
-<div class="bg-light-grey rounded-2xl p-4 flex flex-col items-center text-center border border-border-light">
-<span class="material-symbols-outlined text-gold mb-2">schedule</span>
-<p class="text-xs text-slate-500 uppercase font-bold tracking-widest mb-1">Duration</p>
-<p class="text-base font-bold text-navy">3 Hours</p>
-</div>
-<div class="bg-light-grey rounded-2xl p-4 flex flex-col items-center text-center border border-border-light">
-<span class="material-symbols-outlined text-gold mb-2">wb_twilight</span>
-<p class="text-xs text-slate-500 uppercase font-bold tracking-widest mb-1">Type</p>
-<p class="text-base font-bold text-navy">Sunset</p>
-</div>
-<div class="bg-light-grey rounded-2xl p-4 flex flex-col items-center text-center border border-border-light">
-<span class="material-symbols-outlined text-gold mb-2">favorite</span>
-<p class="text-xs text-slate-500 uppercase font-bold tracking-widest mb-1">Occasion</p>
-<p class="text-base font-bold text-navy">Romantic</p>
-</div>
-<div class="bg-light-grey rounded-2xl p-4 flex flex-col items-center text-center border border-border-light">
-<span class="material-symbols-outlined text-gold mb-2">event_available</span>
-<p class="text-xs text-slate-500 uppercase font-bold tracking-widest mb-1">Free Cancellation</p>
-<p class="text-base font-bold text-navy">Up to 24h</p>
-</div>
-</div>
-<div class="mt-6 pt-6 border-t border-border-light">
-<input class="hidden" id="highlights-toggle" type="checkbox"/>
-<label class="flex items-center justify-between cursor-pointer group" for="highlights-toggle">
-<div class="flex items-center gap-3">
-<div class="p-2 bg-navy/5 rounded-full group-active:bg-navy/10 transition-colors">
-<span class="material-symbols-outlined text-navy text-xl">auto_awesome</span>
-</div>
-<span class="text-base font-semibold text-navy">Cruise Highlights</span>
-</div>
-<span class="material-symbols-outlined text-slate-300 chevron-icon transition-transform">chevron_right</span>
-</label>
-<div class="max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out" id="highlights-content">
-<div class="space-y-4">
-<div>
-<h3 class="text-sm font-bold text-navy uppercase tracking-wider mb-1">Golden Hour Views</h3>
-<p class="text-sm text-slate-500 leading-relaxed">Watch the sun dip below the Pacific horizon from the deck of your private yacht.</p>
-</div>
-<div>
-<h3 class="text-sm font-bold text-navy uppercase tracking-wider mb-1">Premium Open Bar</h3>
-<p class="text-sm text-slate-500 leading-relaxed">Toast the sunset with champagne, fine wines, spirits, and craft cocktails.</p>
-</div>
-<div>
-<h3 class="text-sm font-bold text-navy uppercase tracking-wider mb-1">Curated Appetizers</h3>
-<p class="text-sm text-slate-500 leading-relaxed">Enjoy a selection of gourmet appetizers prepared by our onboard crew.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="mt-10">
-<h3 class="text-lg text-navy mb-4">About this experience</h3>
-<div id="about-text">
-<p class="text-slate-500 leading-relaxed text-base"><span id="about-short">Experience the magic of golden hour on the Pacific with a private sunset sailing charter. Cruise along the stunning coastline of Cabo San Lucas as the sky erupts in brilliant oranges and pinks....</span><span id="about-full" class="hidden"> The perfect backdrop for romance, celebration, or simply unwinding in style.</span>
-<span id="about-read-more" class="text-gold font-semibold ml-1 cursor-pointer" onclick="document.getElementById('about-full').classList.remove('hidden');document.getElementById('about-short').textContent='Experience the magic of golden hour on the Pacific with a private sunset sailing charter. Cruise along the stunning coastline of Cabo San Lucas as the sky erupts in brilliant oranges and pinks —';this.remove()">Read more</span></p>
-</div>
-<div class="mt-7">
-<div class="flex items-center gap-3 mb-4">
-<div class="w-1 h-5 bg-gold rounded-full"></div>
-<h3 class="text-xs font-bold text-navy uppercase tracking-widest">The Experience</h3>
-</div>
-<ol class="relative border-l-2 border-gold/30 ml-2 space-y-4 pl-5">
-<li class="relative"><span class="absolute -left-[29px] top-0 w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center">1</span><span class="text-slate-600 text-sm">Meet at the marina</span></li>
-<li class="relative"><span class="absolute -left-[29px] top-0 w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center">2</span><span class="text-slate-600 text-sm">Cruise past Cabo's highlights (Arch, sea lions, beaches)</span></li>
-<li class="relative"><span class="absolute -left-[29px] top-0 w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center">3</span><span class="text-slate-600 text-sm">Settle into the best views as the sun begins to drop</span></li>
-<li class="relative"><span class="absolute -left-[29px] top-0 w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center">4</span><span class="text-slate-600 text-sm">Enjoy the golden hour with drinks and light bites</span></li>
-<li class="relative"><span class="absolute -left-[29px] top-0 w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center">5</span><span class="text-slate-600 text-sm">Watch the sunset over the Pacific, then cruise back along the coastline</span></li>
-</ol>
-<p class="mt-4 text-slate-500 italic text-xs">No rush. No fixed script. Just a relaxed, beautiful time on the water.</p>
-</div>
-</div>
-<div class="mt-10">
-<div class="flex items-center gap-3 mb-6">
-<div class="w-1 h-6 bg-gold rounded-full"></div>
-<h3 class="text-lg text-navy">What's Included</h3>
-</div>
-<div class="grid grid-cols-1 gap-5 pl-1">
-<div class="flex items-center gap-4">
-<div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[14px]">local_bar</span></div>
-<div>
-<span class="text-slate-600 text-base font-medium">Open bar</span>
-<p class="text-slate-500 text-sm">Premium drinks served throughout your cruise</p>
-</div>
-</div>
-<div class="flex items-center gap-4">
-<div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[14px]">restaurant</span></div>
-<div>
-<span class="text-slate-600 text-base font-medium">Fresh Food &amp; Bites Onboard</span>
-<p class="text-slate-500 text-sm">Freshly prepared appetizers and bites to enjoy as the sun sets</p>
-</div>
-</div>
-<div class="flex items-center gap-4">
-<div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[14px]">wb_twilight</span></div>
-<div>
-<span class="text-slate-600 text-base font-medium">Private sunset experience</span>
-<p class="text-slate-500 text-sm">Front-row views of Cabo's most iconic sunset</p>
-</div>
-</div>
-<div class="flex items-center gap-4">
-<div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[14px]">sailing</span></div>
-<div>
-<span class="text-slate-600 text-base font-medium">Private yacht or sailboat</span>
-<p class="text-slate-500 text-sm">Only your group onboard — no sharing</p>
-</div>
-</div>
-<div class="flex items-center gap-4">
-<div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[14px]">music_note</span></div>
-<div>
-<span class="text-slate-600 text-base font-medium">Bluetooth music system</span>
-<p class="text-slate-500 text-sm">Set your own vibe for the evening</p>
-</div>
-</div>
-<div class="flex items-center gap-4">
-<div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[14px]">person</span></div>
-<div>
-<span class="text-slate-600 text-base font-medium">Experienced bilingual crew</span>
-<p class="text-slate-500 text-sm">Professional, friendly, and safety-first</p>
-</div>
-</div>
-</div>
-</div>
-</div><!-- close lg:hidden mobile card wrapper -->
-<div class="lg:hidden mx-5 mt-10 mb-6 bg-light-grey rounded-2xl p-5 border border-border-light">
-  <div class="flex items-center gap-3 mb-4">
-    <span class="material-symbols-outlined text-gold">pin_drop</span>
-    <h3 class="text-base font-bold text-navy uppercase tracking-wider">Meeting Point</h3>
-  </div>
-  <p class="text-base font-semibold text-navy mb-1">Cabo San Lucas Marina, Dock F</p>
-  <p class="text-sm text-slate-500 leading-relaxed mb-4">Look for the Cabo Sailing team in black polo shirts with our logo. Please arrive 15 minutes before departure.</p>
-  <div class="flex items-center gap-2 text-sm text-slate-500">
-    <span class="material-symbols-outlined text-gold text-base">schedule</span>
-    <span class="font-semibold text-navy">DEPARTURES: 4:00 PM (Winter) &amp; 4:15 PM (Summer) DAILY</span>
+<!-- MOBILE: About + Suggested Itinerary -->
+<div class="lg:hidden mt-8 px-5">
+  <h3 class="text-lg text-navy mb-3">About this experience</h3>
+  <p class="text-slate-700 leading-relaxed text-base">Experience the magic of golden hour on the Pacific with a private sunset sailing charter. Cruise along the stunning coastline of Cabo San Lucas as the sky erupts in brilliant oranges and pinks &mdash; the perfect backdrop for romance, celebration, or simply unwinding in style.</p>
+
+  <div class="mt-7 faq-item border border-border-light rounded-2xl overflow-hidden bg-white">
+    <input class="hidden" id="mobile-itinerary" type="checkbox"/>
+    <label class="flex items-center justify-between p-4 cursor-pointer" for="mobile-itinerary">
+      <span class="flex items-center gap-3">
+        <div class="w-1 h-5 bg-gold rounded-full"></div>
+        <span class="text-xs font-bold text-navy uppercase tracking-widest">Suggested Itinerary</span>
+      </span>
+      <span class="material-symbols-outlined text-slate-500 faq-chevron transition-transform duration-300">expand_more</span>
+    </label>
+    <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
+      <ol class="relative border-l-2 border-gold/30 ml-2 space-y-4 pl-5 mt-2">
+        <li class="relative"><span class="absolute -left-[29px] top-0 w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center">1</span><span class="text-slate-600 text-sm">Meet at the marina</span></li>
+        <li class="relative"><span class="absolute -left-[29px] top-0 w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center">2</span><span class="text-slate-600 text-sm">Cruise past Cabo's highlights (Arch, sea lions, beaches)</span></li>
+        <li class="relative"><span class="absolute -left-[29px] top-0 w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center">3</span><span class="text-slate-600 text-sm">Settle into the best views as the sun begins to drop</span></li>
+        <li class="relative"><span class="absolute -left-[29px] top-0 w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center">4</span><span class="text-slate-600 text-sm">Enjoy the golden hour with drinks and light bites</span></li>
+        <li class="relative"><span class="absolute -left-[29px] top-0 w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center">5</span><span class="text-slate-600 text-sm">Watch the sunset over the Pacific, then cruise back along the coastline</span></li>
+      </ol>
+      <p class="mt-4 text-slate-700 italic text-xs">No rush. No fixed script. Just a relaxed, beautiful time on the water.</p>
+    </div>
   </div>
 </div>
 
@@ -487,7 +341,7 @@ const breadcrumbSchema = JSON.stringify({
   </div>
 </div>
 
-<div class="flex flex-col gap-5 lg:grid lg:grid-cols-2 lg:max-w-3xl lg:mx-auto pb-8">
+<div class="flex flex-col gap-5 lg:grid lg:grid-cols-2 lg:max-w-[730px] lg:mx-auto pb-8">
   <!-- Sailing Boat 42' -->
   <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="sailing-42">
     <CarouselImage type="boat" id="sailing-42" alt="Sailing Boat 42' private sunset charter">
@@ -525,6 +379,52 @@ const breadcrumbSchema = JSON.stringify({
         <div class="flex flex-col items-end"><span class="text-slate-500 text-[11px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-accent-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-500 text-[11px] font-medium">/pp</span></div></div>
       </div>
       <button type="button" onclick="openRezdyModal('165682')" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg">Check Availability</button>
+    </div>
+  </div>
+</div>
+
+<!-- What's Included -->
+<div class="mt-12">
+  <div class="flex items-center gap-3 mb-6">
+    <div class="w-1 h-6 bg-gold rounded-full"></div>
+    <h3 class="text-lg lg:text-2xl text-navy">What's Included</h3>
+  </div>
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 pl-1">
+    <div class="flex items-start gap-4">
+      <div class="w-7 h-7 rounded-full bg-navy flex items-center justify-center flex-shrink-0">
+        <span class="material-symbols-outlined text-white text-[15px]">local_bar</span>
+      </div>
+      <div><span class="text-slate-700 text-base font-semibold">Open bar</span><p class="text-slate-700 text-sm mt-0.5">Premium drinks served throughout your cruise</p></div>
+    </div>
+    <div class="flex items-start gap-4">
+      <div class="w-7 h-7 rounded-full bg-navy flex items-center justify-center flex-shrink-0">
+        <span class="material-symbols-outlined text-white text-[15px]">restaurant</span>
+      </div>
+      <div><span class="text-slate-700 text-base font-semibold">Fresh Food &amp; Bites Onboard</span><p class="text-slate-700 text-sm mt-0.5">Freshly prepared appetizers and bites to enjoy as the sun sets</p></div>
+    </div>
+    <div class="flex items-start gap-4">
+      <div class="w-7 h-7 rounded-full bg-navy flex items-center justify-center flex-shrink-0">
+        <span class="material-symbols-outlined text-white text-[15px]">wb_twilight</span>
+      </div>
+      <div><span class="text-slate-700 text-base font-semibold">Private sunset experience</span><p class="text-slate-700 text-sm mt-0.5">Front-row views of Cabo's most iconic sunset</p></div>
+    </div>
+    <div class="flex items-start gap-4">
+      <div class="w-7 h-7 rounded-full bg-navy flex items-center justify-center flex-shrink-0">
+        <span class="material-symbols-outlined text-white text-[15px]">sailing</span>
+      </div>
+      <div><span class="text-slate-700 text-base font-semibold">Private yacht or sailboat</span><p class="text-slate-700 text-sm mt-0.5">Only your group onboard &mdash; no sharing</p></div>
+    </div>
+    <div class="flex items-start gap-4">
+      <div class="w-7 h-7 rounded-full bg-navy flex items-center justify-center flex-shrink-0">
+        <span class="material-symbols-outlined text-white text-[15px]">music_note</span>
+      </div>
+      <div><span class="text-slate-700 text-base font-semibold">Bluetooth music system</span><p class="text-slate-700 text-sm mt-0.5">Set your own vibe for the evening</p></div>
+    </div>
+    <div class="flex items-start gap-4">
+      <div class="w-7 h-7 rounded-full bg-navy flex items-center justify-center flex-shrink-0">
+        <span class="material-symbols-outlined text-white text-[15px]">person</span>
+      </div>
+      <div><span class="text-slate-700 text-base font-semibold">Experienced bilingual crew</span><p class="text-slate-700 text-sm mt-0.5">Professional, friendly, and safety-first</p></div>
     </div>
   </div>
 </div>
