@@ -2,4 +2,39 @@ User-agent: *
 Allow: /
 Disallow: /admin/
 
+# OpenAI training crawler
+User-agent: GPTBot
+Allow: /
+Disallow: /admin/
+
+# OpenAI search index
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /admin/
+
+# ChatGPT user-initiated browsing (e.g., when a user asks ChatGPT to fetch a page)
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /admin/
+
+# Anthropic / Claude
+User-agent: ClaudeBot
+Allow: /
+Disallow: /admin/
+
+User-agent: anthropic-ai
+Allow: /
+Disallow: /admin/
+
+# Google's AI training crawler (separate from Googlebot, opt-in/out independently)
+User-agent: Google-Extended
+Allow: /
+Disallow: /admin/
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+Disallow: /admin/
+
 Sitemap: https://cabosailing.com/sitemap-index.xml
+LLM: https://cabosailing.com/llms.txt

@@ -1,0 +1,56 @@
+# Cabo Sailing Ocean Adventures
+
+> Private and shared yacht & sailboat charters in Cabo San Lucas, Mexico — snorkeling, sunset cruises, whale watching (Dec–Apr), scuba diving, and bachelorette parties. Operating from Cabo San Lucas Marina, Dock F.
+
+Cabo Sailing operates a fleet of luxury yachts (42'/45'/51') and sailboats (38'/42') for private group charters, plus shared small-group sailing tours. Bilingual crew, all-inclusive pricing (open bar, food, gear), free cancellation up to 24 hours.
+
+## Booking & Tours
+
+- [Tours overview](https://cabosailing.com/tours/): All available activities — private and shared, sunset and snorkel
+- [Special offers](https://cabosailing.com/special-offers/): Current discounts on yachts (35% off) and sailboats (40% off)
+- [Contact](https://cabosailing.com/contact/): Phone, WhatsApp, email, and contact form
+
+## Private Activities (charter the whole boat)
+
+- [Private snorkeling](https://cabosailing.com/private-snorkeling/): 3-hour private charter — Pelican Rock or Chileno/Santa María Bay. Yachts up to 20 guests, sailboats up to 14
+- [Private sunset cruise](https://cabosailing.com/private-sunset/): 3-hour golden-hour charter past Land's End and the Arch. Departures 4:00 PM (winter) / 4:15 PM (summer)
+- [Whale watching](https://cabosailing.com/whale-watching/): Private humpback and gray whale charters, mid-December through mid-April, with naturalist guide
+- [Scuba diving](https://cabosailing.com/scuba-diving/): PADI-led 4-hour tour for certified and non-certified divers in the Cabo San Lucas Reserve
+- [Bachelorette party charter](https://cabosailing.com/bachelorette/): Private celebration cruises — yachts up to 20 guests, custom themes available
+
+## Shared Activities (per-person pricing, max 14 guests)
+
+- [Shared snorkeling tour](https://cabosailing.com/shared-snorkeling/): 9:00 AM daily, 3 hours, sail past the Arch and snorkel at Pelican Rock
+- [Shared sunset cruise](https://cabosailing.com/shared-sunset/): 5:00 PM (winter) / 5:15 PM (summer), 2 hours, golden-hour sailing
+
+## Shuttle Service
+
+- [Shuttle service](https://cabosailing.com/shuttle-service/): Private airport and resort transfers in Cabo, Palmilla, and Puerto Los Cabos
+
+## Travel Guide (long-form articles)
+
+- [Travel guide hub](https://cabosailing.com/travel-guide/): Full index of articles
+- [Activities](https://cabosailing.com/travel-guide-activities/): What to do in Cabo
+- [Attractions](https://cabosailing.com/travel-guide-attractions/): Iconic sights and natural wonders
+- [Traveling to Cabo](https://cabosailing.com/travel-guide-traveling/): Airport, transportation, logistics
+- [Culture & food](https://cabosailing.com/travel-guide-culture/): Local cuisine, history, etiquette
+
+## About & Policies
+
+- [About us](https://cabosailing.com/about-us/): Family-owned operator since 2005, bilingual crew, fleet maintenance philosophy
+- [Cancellation & weather policies](https://cabosailing.com/policies/): Free cancellation up to 24h, weather guarantees, refund terms
+
+## Key facts
+
+- **Location**: Cabo San Lucas Marina, IGY Marina, Dock F (meeting point for all tours)
+- **Phone (Mexico)**: +52 624 143 8485
+- **Phone (US)**: +1 619 784 2745
+- **WhatsApp**: +52 624 191 6997
+- **Languages**: English and Spanish (every page is available at /en/ and /es/)
+- **Booking**: Direct via Rezdy on each tour page, or by phone/WhatsApp/contact form
+- **Pricing source of truth**: Live prices fetched from /data/prices.json (JSON feed)
+
+## Optional
+
+- [Special offers feed (JSON)](https://cabosailing.com/data/prices.json): Current discount percentages and per-boat regular prices
+- [Sitemap](https://cabosailing.com/sitemap-index.xml): Full site map with bilingual hreflangs

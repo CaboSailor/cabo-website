@@ -44,9 +44,27 @@ const tourDropdown = [
   <header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-border-light/50 transition-all duration-300">
     <!-- Mobile header (home) -->
     <div class="mobile-only flex items-center justify-between px-6 py-3">
-      <a href="https://wa.me/526241916997?text=hi%2C%20I'm%20sending%20you%20a%20message%20from%20cabosailing.com" target="_blank" aria-label="Chat on WhatsApp" class="flex items-center justify-center w-10 h-10 -ml-2 bg-[#25D366] rounded-full text-white active:scale-95 transition-transform shadow-md">
-        <i class="fa-brands fa-whatsapp text-2xl"></i>
-      </a>
+      <div class="flex items-center gap-2 -ml-2">
+        <a href="https://wa.me/526241916997?text=hi%2C%20I'm%20sending%20you%20a%20message%20from%20cabosailing.com" target="_blank" aria-label="Chat on WhatsApp" class="flex items-center justify-center w-10 h-10 bg-[#25D366] rounded-full text-white active:scale-95 transition-transform shadow-md">
+          <i class="fa-brands fa-whatsapp text-2xl"></i>
+        </a>
+        <div class="relative">
+          <button type="button" id="phone-toggle" aria-label="Call us" class="flex items-center justify-center w-10 h-10 bg-navy rounded-full text-white active:scale-95 transition-transform shadow-md">
+            <span class="material-symbols-outlined text-xl">call</span>
+          </button>
+          <div id="phone-dropdown" class="hidden absolute left-0 top-full mt-2 bg-white rounded-xl shadow-xl border border-border-light min-w-[210px] z-50 overflow-hidden">
+            <a href="tel:+526241438485" class="flex items-center gap-3 px-4 py-3 text-sm text-navy hover:bg-light-grey transition-colors">
+              <span class="text-[10px] font-bold uppercase tracking-widest bg-navy text-white px-2 py-0.5 rounded">MX</span>
+              <span class="font-semibold">+52 624 143 8485</span>
+            </a>
+            <div class="h-px bg-border-light"></div>
+            <a href="tel:+16197842745" class="flex items-center gap-3 px-4 py-3 text-sm text-navy hover:bg-light-grey transition-colors">
+              <span class="text-[10px] font-bold uppercase tracking-widest bg-navy text-white px-2 py-0.5 rounded">US</span>
+              <span class="font-semibold">+1 619 784 2745</span>
+            </a>
+          </div>
+        </div>
+      </div>
       <div class="flex-shrink-0 flex items-center justify-center">
         <a href={lp('/')}><Image src={logo} alt="Cabo Sailing" class="h-10 w-auto object-contain" width={301} height={69} /></a>
       </div>
@@ -87,7 +105,6 @@ const tourDropdown = [
         ))}
       </nav>
       <div class="flex items-center gap-4">
-        <a href="tel:+526241438485" class="text-sm font-semibold text-navy hover:text-gold transition-colors flex items-center gap-1"><span class="material-symbols-outlined text-base">call</span> +52 624 143 8485</a>
         <a href="https://wa.me/526241916997?text=hi%2C%20I'm%20sending%20you%20a%20message%20from%20cabosailing.com" target="_blank" aria-label="Chat on WhatsApp" class="flex items-center justify-center w-10 h-10 bg-[#25D366] rounded-full text-white hover:scale-105 transition-transform shadow-md">
           <i class="fa-brands fa-whatsapp text-xl"></i>
         </a>
@@ -99,9 +116,27 @@ const tourDropdown = [
   <>
     <!-- Mobile header (subpage) -->
     <div class="lg:hidden fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-3 bg-white/80 backdrop-blur-md border-b border-border-light/50">
-      <a href="https://wa.me/526241916997?text=hi%2C%20I'm%20sending%20you%20a%20message%20from%20cabosailing.com" target="_blank" aria-label="Chat on WhatsApp" class="flex items-center justify-center w-10 h-10 -ml-2 bg-[#25D366] rounded-full text-white active:scale-95 transition-transform shadow-md">
-        <i class="fa-brands fa-whatsapp text-2xl"></i>
-      </a>
+      <div class="flex items-center gap-2 -ml-2">
+        <a href="https://wa.me/526241916997?text=hi%2C%20I'm%20sending%20you%20a%20message%20from%20cabosailing.com" target="_blank" aria-label="Chat on WhatsApp" class="flex items-center justify-center w-10 h-10 bg-[#25D366] rounded-full text-white active:scale-95 transition-transform shadow-md">
+          <i class="fa-brands fa-whatsapp text-2xl"></i>
+        </a>
+        <div class="relative">
+          <button type="button" id="phone-toggle" aria-label="Call us" class="flex items-center justify-center w-10 h-10 bg-navy rounded-full text-white active:scale-95 transition-transform shadow-md">
+            <span class="material-symbols-outlined text-xl">call</span>
+          </button>
+          <div id="phone-dropdown" class="hidden absolute left-0 top-full mt-2 bg-white rounded-xl shadow-xl border border-border-light min-w-[210px] z-50 overflow-hidden">
+            <a href="tel:+526241438485" class="flex items-center gap-3 px-4 py-3 text-sm text-navy hover:bg-light-grey transition-colors">
+              <span class="text-[10px] font-bold uppercase tracking-widest bg-navy text-white px-2 py-0.5 rounded">MX</span>
+              <span class="font-semibold">+52 624 143 8485</span>
+            </a>
+            <div class="h-px bg-border-light"></div>
+            <a href="tel:+16197842745" class="flex items-center gap-3 px-4 py-3 text-sm text-navy hover:bg-light-grey transition-colors">
+              <span class="text-[10px] font-bold uppercase tracking-widest bg-navy text-white px-2 py-0.5 rounded">US</span>
+              <span class="font-semibold">+1 619 784 2745</span>
+            </a>
+          </div>
+        </div>
+      </div>
       <div class="flex-shrink-0 flex items-center justify-center">
         <a href={lp('/')}><Image src={logo} alt="Cabo Sailing" class="h-10 w-auto object-contain" width={301} height={69} /></a>
       </div>
@@ -143,8 +178,7 @@ const tourDropdown = [
           ))}
         </nav>
         <div class="flex items-center gap-4">
-          <a href="tel:+526241438485" class="text-sm font-semibold text-navy hover:text-gold transition-colors flex items-center gap-1"><span class="material-symbols-outlined text-base">call</span> +52 624 143 8485</a>
-          <a href="https://wa.me/526241916997?text=hi%2C%20I'm%20sending%20you%20a%20message%20from%20cabosailing.com" target="_blank" aria-label="Chat on WhatsApp" class="flex items-center justify-center w-10 h-10 bg-[#25D366] rounded-full text-white hover:scale-105 transition-transform shadow-md">
+            <a href="https://wa.me/526241916997?text=hi%2C%20I'm%20sending%20you%20a%20message%20from%20cabosailing.com" target="_blank" aria-label="Chat on WhatsApp" class="flex items-center justify-center w-10 h-10 bg-[#25D366] rounded-full text-white hover:scale-105 transition-transform shadow-md">
             <i class="fa-brands fa-whatsapp text-xl"></i>
           </a>
           <a href={switchUrl} class="text-sm font-bold uppercase tracking-widest text-navy hover:text-gold transition-colors border border-border-light rounded-full px-3 py-1.5">{altLang === 'es' ? 'ES' : 'EN'}</a>
@@ -153,3 +187,16 @@ const tourDropdown = [
     </header>
   </>
 )}
+
+<script is:inline>
+  document.addEventListener('click', function(e) {
+    var toggle = document.getElementById('phone-toggle');
+    var dropdown = document.getElementById('phone-dropdown');
+    if (!toggle || !dropdown) return;
+    if (toggle.contains(e.target)) {
+      dropdown.classList.toggle('hidden');
+    } else if (!dropdown.contains(e.target)) {
+      dropdown.classList.add('hidden');
+    }
+  });
+</script>
