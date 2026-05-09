@@ -104,6 +104,11 @@ const breadcrumbSchema = JSON.stringify({
     <button class="fleet-arrow right" onclick="heroNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
   </div>
 
+  <!-- Mobile discount banner -->
+  <div class="lg:hidden w-full text-center py-3 px-4 shadow-md" style="background-color:#E8789A;">
+    <p class="text-white font-bold text-sm uppercase tracking-widest">&#127881; Ahorra hasta 40% off &mdash; Tiempo Limitado &#127881;</p>
+  </div>
+
   <!-- Decorative festive ribbon divider -->
   <div class="festive-divider w-full"></div>
   <div class="flex items-center justify-center py-2 bg-white text-base text-slate-500 font-medium tracking-widest gap-2 text-center">
@@ -138,26 +143,34 @@ const breadcrumbSchema = JSON.stringify({
           <span class="material-symbols-outlined text-base">location_on</span> Cabo Marina, Muelle F
         </p>
       </div>
-      <div class="grid grid-cols-2 gap-3">
-        <div class="bg-light-grey rounded-2xl p-3 flex flex-col items-center text-center border border-border-light">
-          <span class="material-symbols-outlined text-gold mb-1">schedule</span>
-          <p class="text-xs text-slate-500 uppercase font-bold tracking-widest mb-0.5">Duración</p>
-          <p class="text-sm font-bold text-navy">3 Horas</p>
+      <div class="grid grid-cols-2 gap-x-3 gap-y-3">
+        <div class="flex items-center gap-1.5">
+          <span class="material-symbols-outlined text-lg" style="color:#E8789A;">schedule</span>
+          <p class="text-xs font-semibold text-navy">3 Horas</p>
         </div>
-        <div class="bg-light-grey rounded-2xl p-3 flex flex-col items-center text-center border border-border-light">
-          <span class="material-symbols-outlined mb-1" style="color:#E8789A;">celebration</span>
-          <p class="text-xs text-slate-500 uppercase font-bold tracking-widest mb-0.5">Grupo</p>
-          <p class="text-sm font-bold text-navy">Charter Privado</p>
+        <div class="flex items-center gap-1.5">
+          <span class="material-symbols-outlined text-lg" style="color:#E8789A;">add</span>
+          <p class="text-xs font-semibold text-navy">Tiempo Extra Disponible</p>
         </div>
-        <div class="bg-light-grey rounded-2xl p-3 flex flex-col items-center text-center border border-border-light">
-          <span class="material-symbols-outlined text-gold mb-1">groups</span>
-          <p class="text-xs text-slate-500 uppercase font-bold tracking-widest mb-0.5">Capacidad</p>
-          <p class="text-sm font-bold text-navy">Hasta 14</p>
+        <div class="flex items-center gap-1.5">
+          <span class="material-symbols-outlined text-lg" style="color:#E8789A;">celebration</span>
+          <p class="text-xs font-semibold text-navy">Charter Privado</p>
         </div>
-        <div class="bg-light-grey rounded-2xl p-3 flex flex-col items-center text-center border border-border-light">
-          <span class="material-symbols-outlined text-gold filled mb-1">star</span>
-          <p class="text-xs text-slate-500 uppercase font-bold tracking-widest mb-0.5">Calificación</p>
-          <p class="text-sm font-bold text-navy">5.0 / 5.0</p>
+        <div class="flex items-center gap-1.5">
+          <span class="material-symbols-outlined text-lg" style="color:#E8789A;">groups</span>
+          <p class="text-xs font-semibold text-navy">Hasta 20 Pasajeros</p>
+        </div>
+        <div class="flex items-center gap-1.5">
+          <span class="material-symbols-outlined text-lg" style="color:#E8789A;">event_available</span>
+          <p class="text-xs font-semibold text-navy">Cancelaci&oacute;n Gratuita</p>
+        </div>
+        <div class="flex items-center gap-1.5">
+          <span class="material-symbols-outlined text-lg" style="color:#E8789A;">pin_drop</span>
+          <p class="text-xs font-semibold text-navy">Cabo Marina, Muelle F</p>
+        </div>
+        <div class="flex items-center gap-1.5 col-span-2">
+          <span class="material-symbols-outlined text-lg filled" style="color:#E8789A;">star</span>
+          <p class="text-xs font-semibold text-navy">5.0 / 5.0</p>
         </div>
       </div>
       <div class="mt-6 pt-6 border-t border-border-light">
@@ -183,27 +196,6 @@ const breadcrumbSchema = JSON.stringify({
       <h3 class="text-lg text-navy mb-3">Por Qué Esta Es La Indicada</h3>
       <p class="text-slate-500 leading-relaxed text-base font-semibold mb-3" style="color:#E8789A;">Esto no es solo un paseo en barco — es tu evento principal.</p>
       <p class="text-slate-500 leading-relaxed text-base">Imagina esto: música sonando, bebidas fluyendo, tu grupo riendo en cubierta… el Arco de fondo, tu coctel favorito en mano, y cero estrés por la logística. Celebra a la futura novia en un yate privado con barra libre, excelente comida y las vistas más icónicas de Cabo. Sin multitudes, sin estrés, solo tu grupo y un día perfecto en el agua. Nosotros nos encargamos de todo — tú solo llegas y disfrutas.</p>
-    </div>
-
-    <div class="mt-10">
-      <div class="flex items-center gap-3 mb-6"><div class="w-1 h-6 rounded-full" style="background-color:#E8789A;"></div><h3 class="text-lg text-navy">Qué Incluye</h3></div>
-      <div class="grid grid-cols-1 gap-5 pl-1">
-        <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0" style="background-color:#E8789A;"><span class="material-symbols-outlined text-white text-[14px]">check</span></div><span class="text-slate-600 text-base font-medium">Tu propio barco privado</span></div>
-        <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0" style="background-color:#E8789A;"><span class="material-symbols-outlined text-white text-[14px]">check</span></div><span class="text-slate-600 text-base font-medium">Coordinador de crucero dedicado</span></div>
-        <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0" style="background-color:#E8789A;"><span class="material-symbols-outlined text-white text-[14px]">check</span></div><span class="text-slate-600 text-base font-medium">Comida deliciosa y snacks</span></div>
-        <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0" style="background-color:#E8789A;"><span class="material-symbols-outlined text-white text-[14px]">check</span></div><span class="text-slate-600 text-base font-medium">Toallas</span></div>
-        <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0" style="background-color:#E8789A;"><span class="material-symbols-outlined text-white text-[14px]">check</span></div><span class="text-slate-600 text-base font-medium">Tripulación bilingüe con experiencia</span></div>
-        <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0" style="background-color:#E8789A;"><span class="material-symbols-outlined text-white text-[14px]">check</span></div><span class="text-slate-600 text-base font-medium">Barra libre (cocteles, cerveza, tequila)</span></div>
-        <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0" style="background-color:#E8789A;"><span class="material-symbols-outlined text-white text-[14px]">check</span></div><span class="text-slate-600 text-base font-medium">Equipo de snorkel y paddleboard</span></div>
-        <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0" style="background-color:#E8789A;"><span class="material-symbols-outlined text-white text-[14px]">check</span></div><span class="text-slate-600 text-base font-medium">Tapete acuático (en yates)</span></div>
-        <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0" style="background-color:#E8789A;"><span class="material-symbols-outlined text-white text-[14px]">check</span></div><span class="text-slate-600 text-base font-medium">Sistema de sonido Bluetooth</span></div>
-      </div>
-    </div>
-
-    <div class="mt-10 rounded-3xl p-6 border border-border-light" style="background:linear-gradient(135deg,#0A1D37,#1a3a6b);">
-      <div class="flex items-center gap-3 mb-4"><span class="material-symbols-outlined text-gold text-2xl">pin_drop</span><h3 class="text-lg text-white">Punto de Encuentro</h3></div>
-      <p class="text-white/70 text-base leading-relaxed">Cabo Marina, Muelle F. Busca al equipo de Cabo Sailing con camisas doradas. Por favor llega 15 minutos antes de la salida.</p>
-      <div class="mt-4 flex items-center gap-2 text-sm font-bold uppercase tracking-widest" style="color:#C5A059;"><span class="material-symbols-outlined text-base">schedule</span>Salidas: 10:00 AM o 4:00 PM diario</div>
     </div>
 
     <div class="mt-12 px-0">
@@ -318,6 +310,22 @@ const breadcrumbSchema = JSON.stringify({
             </table>
           </div>
         </div>
+      </div>
+    </div>
+
+    <!-- Que Incluye (mobile, after boats) -->
+    <div class="mt-10">
+      <div class="flex items-center gap-3 mb-6"><div class="w-1 h-6 rounded-full" style="background-color:#E8789A;"></div><h3 class="text-lg text-navy">Qu&eacute; Incluye</h3></div>
+      <div class="grid grid-cols-1 gap-5 pl-1">
+        <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0" style="background-color:#E8789A;"><span class="material-symbols-outlined text-white text-[14px]">check</span></div><span class="text-slate-600 text-base font-medium">Tu propio barco privado</span></div>
+        <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0" style="background-color:#E8789A;"><span class="material-symbols-outlined text-white text-[14px]">check</span></div><span class="text-slate-600 text-base font-medium">Coordinador de crucero dedicado</span></div>
+        <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0" style="background-color:#E8789A;"><span class="material-symbols-outlined text-white text-[14px]">check</span></div><span class="text-slate-600 text-base font-medium">Comida deliciosa y snacks</span></div>
+        <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0" style="background-color:#E8789A;"><span class="material-symbols-outlined text-white text-[14px]">check</span></div><span class="text-slate-600 text-base font-medium">Toallas</span></div>
+        <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0" style="background-color:#E8789A;"><span class="material-symbols-outlined text-white text-[14px]">check</span></div><span class="text-slate-600 text-base font-medium">Tripulaci&oacute;n biling&uuml;e con experiencia</span></div>
+        <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0" style="background-color:#E8789A;"><span class="material-symbols-outlined text-white text-[14px]">check</span></div><span class="text-slate-600 text-base font-medium">Barra libre (cocteles, cerveza, tequila)</span></div>
+        <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0" style="background-color:#E8789A;"><span class="material-symbols-outlined text-white text-[14px]">check</span></div><span class="text-slate-600 text-base font-medium">Equipo de snorkel y paddleboard</span></div>
+        <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0" style="background-color:#E8789A;"><span class="material-symbols-outlined text-white text-[14px]">check</span></div><span class="text-slate-600 text-base font-medium">Tapete acu&aacute;tico (en yates)</span></div>
+        <div class="flex items-center gap-4"><div class="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0" style="background-color:#E8789A;"><span class="material-symbols-outlined text-white text-[14px]">check</span></div><span class="text-slate-600 text-base font-medium">Sistema de sonido Bluetooth</span></div>
       </div>
     </div>
 
@@ -465,6 +473,10 @@ const breadcrumbSchema = JSON.stringify({
         <div class="rounded-2xl overflow-hidden"><Image src={joyfulSailboatAdventure} alt="Aventura alegre en velero por la costa de Cabo" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} format="png" quality={90} /></div>
       </div>
     </div>
+    <!-- Desktop discount banner -->
+    <div class="w-full text-center py-3 shadow-md mt-6" style="background-color:#E8789A;">
+      <p class="text-white font-bold text-base uppercase tracking-widest">&#127881; Ahorra hasta 40% off &mdash; Tiempo Limitado &#127881;</p>
+    </div>
     <div class="max-w-[1400px] mx-auto px-10 py-16">
       <div>
 
@@ -476,15 +488,15 @@ const breadcrumbSchema = JSON.stringify({
             <span class="text-navy font-semibold">Despedida de Soltera</span>
           </nav>
 
-          <!-- Quick Stats Bar -->
-          <div class="flex items-center gap-8 pb-8 border-b border-border-light mb-10">
-            <div class="flex items-center gap-2"><span class="material-symbols-outlined text-gold">schedule</span><div><p class="text-xs text-slate-500 uppercase font-bold tracking-widest">Duración</p><p class="text-base font-bold text-navy">3 Horas</p><p class="text-xs text-slate-500 mt-0.5">Tiempo extra disponible y recomendado :)</p></div></div>
-            <div class="w-px h-10 bg-border-light"></div>
-            <div class="flex items-center gap-2"><span class="material-symbols-outlined" style="color:#E8789A;">celebration</span><div><p class="text-xs text-slate-500 uppercase font-bold tracking-widest">Tipo de Grupo</p><p class="text-base font-bold text-navy">Charter Privado</p></div></div>
-            <div class="w-px h-10 bg-border-light"></div>
-            <div class="flex items-center gap-2"><span class="material-symbols-outlined text-gold">groups</span><div><p class="text-xs text-slate-500 uppercase font-bold tracking-widest">Capacidad</p><p class="text-base font-bold text-navy">Hasta 14 Invitadas</p></div></div>
-            <div class="w-px h-10 bg-border-light"></div>
-            <div class="flex items-center gap-2"><span class="material-symbols-outlined text-gold filled">star</span><div><p class="text-xs text-slate-500 uppercase font-bold tracking-widest">Calificación</p><p class="text-base font-bold text-navy">5.0 / 5.0</p></div></div>
+          <!-- Icons row -->
+          <div class="grid grid-cols-4 gap-x-6 gap-y-4 pb-8 border-b border-border-light mb-10">
+            <div class="flex items-center gap-2"><span class="material-symbols-outlined" style="color:#E8789A;">schedule</span><p class="text-sm font-semibold text-navy">3 Horas</p></div>
+            <div class="flex items-center gap-2"><span class="material-symbols-outlined" style="color:#E8789A;">add</span><p class="text-sm font-semibold text-navy">Tiempo Extra Disponible</p></div>
+            <div class="flex items-center gap-2"><span class="material-symbols-outlined" style="color:#E8789A;">celebration</span><p class="text-sm font-semibold text-navy">Charter Privado</p></div>
+            <div class="flex items-center gap-2"><span class="material-symbols-outlined" style="color:#E8789A;">groups</span><p class="text-sm font-semibold text-navy">Hasta 20 Pasajeros</p></div>
+            <div class="flex items-center gap-2"><span class="material-symbols-outlined" style="color:#E8789A;">event_available</span><p class="text-sm font-semibold text-navy">Cancelaci&oacute;n Gratuita</p></div>
+            <div class="flex items-center gap-2"><span class="material-symbols-outlined" style="color:#E8789A;">pin_drop</span><p class="text-sm font-semibold text-navy">Cabo Marina, Muelle F</p></div>
+            <div class="flex items-center gap-2 col-span-2"><span class="material-symbols-outlined filled" style="color:#E8789A;">star</span><p class="text-sm font-semibold text-navy">5.0 / 5.0</p></div>
           </div>
 
           <!-- About -->
@@ -513,44 +525,6 @@ const breadcrumbSchema = JSON.stringify({
                 <span class="material-symbols-outlined text-gold text-3xl mb-3 block">pool</span>
                 <h3 class="text-base font-bold text-navy uppercase tracking-wider mb-2">🥂 El Día Chill de Lujo</h3>
                 <p class="text-base text-slate-500 leading-relaxed">Nada, flota, paddleboard, saborea y relájate. Gran mezcla de diversión y relax.</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- About + What's Included (left) / Meeting Point (right) -->
-          <div class="mt-10 flex gap-12">
-            <!-- Left column: About + What's Included stacked -->
-            <div class="flex-1">
-              <!-- What's Included -->
-              <div class="mb-12">
-                <div class="flex items-center gap-3 mb-6"><div class="w-1 h-6 rounded-full" style="background-color:#E8789A;"></div><h2 class="text-2xl text-navy">Qué Incluye</h2></div>
-                <div class="grid grid-cols-2 gap-4">
-                  <div class="flex items-center gap-3"><div class="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0" style="background-color:#E8789A;"><span class="material-symbols-outlined text-white text-base">check</span></div><span class="text-slate-600 font-medium">Tu propio barco privado</span></div>
-                  <div class="flex items-center gap-3"><div class="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0" style="background-color:#E8789A;"><span class="material-symbols-outlined text-white text-base">check</span></div><span class="text-slate-600 font-medium">Coordinador de crucero dedicado</span></div>
-                  <div class="flex items-center gap-3"><div class="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0" style="background-color:#E8789A;"><span class="material-symbols-outlined text-white text-base">check</span></div><span class="text-slate-600 font-medium">Comida deliciosa y snacks</span></div>
-                  <div class="flex items-center gap-3"><div class="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0" style="background-color:#E8789A;"><span class="material-symbols-outlined text-white text-base">check</span></div><span class="text-slate-600 font-medium">Toallas</span></div>
-                  <div class="flex items-center gap-3"><div class="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0" style="background-color:#E8789A;"><span class="material-symbols-outlined text-white text-base">check</span></div><span class="text-slate-600 font-medium">Tripulación bilingüe con experiencia</span></div>
-                  <div class="flex items-center gap-3"><div class="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0" style="background-color:#E8789A;"><span class="material-symbols-outlined text-white text-base">check</span></div><span class="text-slate-600 font-medium">Barra libre (cocteles, cerveza, tequila)</span></div>
-                  <div class="flex items-center gap-3"><div class="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0" style="background-color:#E8789A;"><span class="material-symbols-outlined text-white text-base">check</span></div><span class="text-slate-600 font-medium">Equipo de snorkel y paddleboard</span></div>
-                  <div class="flex items-center gap-3"><div class="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0" style="background-color:#E8789A;"><span class="material-symbols-outlined text-white text-base">check</span></div><span class="text-slate-600 font-medium">Tapete acuático (en yates)</span></div>
-                  <div class="flex items-center gap-3 col-span-2"><div class="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0" style="background-color:#E8789A;"><span class="material-symbols-outlined text-white text-base">check</span></div><span class="text-slate-600 font-medium">Sistema de sonido Bluetooth</span></div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Right column: Meeting Point -->
-            <div class="w-[380px] flex-shrink-0">
-              <div class="sticky top-[90px] bg-light-grey rounded-2xl p-8 border border-border-light">
-                <div class="flex items-center gap-3 mb-4">
-                  <span class="material-symbols-outlined text-gold text-2xl">pin_drop</span>
-                  <h3 class="text-lg font-bold text-navy uppercase tracking-wider">Punto de Encuentro</h3>
-                </div>
-                <p class="text-lg font-semibold text-navy mb-1">Cabo San Lucas Marina, Muelle F</p>
-                <p class="text-sm text-slate-500 leading-relaxed mb-4">Busca al equipo de Cabo Sailing con camisas doradas. Por favor llega 15 minutos antes de la salida.</p>
-                <div class="flex items-center gap-2 text-sm text-slate-500">
-                  <span class="material-symbols-outlined text-gold text-base">schedule</span>
-                  <span class="font-semibold text-navy">SALIDAS: 10:00 AM o 4:00 PM DIARIO</span>
-                </div>
               </div>
             </div>
           </div>
@@ -671,6 +645,22 @@ const breadcrumbSchema = JSON.stringify({
             <tr><td class="py-3 pr-4 font-semibold text-navy">Velero 38'</td><td class="py-3 pr-4 text-slate-500">Hasta 9</td><td class="py-3 text-slate-500">Sol, brisa y la energía perfecta.</td></tr>
           </tbody>
         </table>
+      </div>
+
+      <!-- Desktop Que Incluye (after boats) -->
+      <div class="mt-10 mb-12 max-w-4xl mx-auto">
+        <div class="flex items-center gap-3 mb-6"><div class="w-1 h-6 rounded-full" style="background-color:#E8789A;"></div><h2 class="text-2xl text-navy">Qu&eacute; Incluye</h2></div>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="flex items-center gap-3"><div class="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0" style="background-color:#E8789A;"><span class="material-symbols-outlined text-white text-base">check</span></div><span class="text-slate-600 font-medium">Tu propio barco privado</span></div>
+          <div class="flex items-center gap-3"><div class="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0" style="background-color:#E8789A;"><span class="material-symbols-outlined text-white text-base">check</span></div><span class="text-slate-600 font-medium">Coordinador de crucero dedicado</span></div>
+          <div class="flex items-center gap-3"><div class="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0" style="background-color:#E8789A;"><span class="material-symbols-outlined text-white text-base">check</span></div><span class="text-slate-600 font-medium">Comida deliciosa y snacks</span></div>
+          <div class="flex items-center gap-3"><div class="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0" style="background-color:#E8789A;"><span class="material-symbols-outlined text-white text-base">check</span></div><span class="text-slate-600 font-medium">Toallas</span></div>
+          <div class="flex items-center gap-3"><div class="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0" style="background-color:#E8789A;"><span class="material-symbols-outlined text-white text-base">check</span></div><span class="text-slate-600 font-medium">Tripulaci&oacute;n biling&uuml;e con experiencia</span></div>
+          <div class="flex items-center gap-3"><div class="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0" style="background-color:#E8789A;"><span class="material-symbols-outlined text-white text-base">check</span></div><span class="text-slate-600 font-medium">Barra libre (cocteles, cerveza, tequila)</span></div>
+          <div class="flex items-center gap-3"><div class="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0" style="background-color:#E8789A;"><span class="material-symbols-outlined text-white text-base">check</span></div><span class="text-slate-600 font-medium">Equipo de snorkel y paddleboard</span></div>
+          <div class="flex items-center gap-3"><div class="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0" style="background-color:#E8789A;"><span class="material-symbols-outlined text-white text-base">check</span></div><span class="text-slate-600 font-medium">Tapete acu&aacute;tico (en yates)</span></div>
+          <div class="flex items-center gap-3 col-span-2"><div class="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0" style="background-color:#E8789A;"><span class="material-symbols-outlined text-white text-base">check</span></div><span class="text-slate-600 font-medium">Sistema de sonido Bluetooth</span></div>
+        </div>
       </div>
 
           <!-- Desktop FAQ -->
