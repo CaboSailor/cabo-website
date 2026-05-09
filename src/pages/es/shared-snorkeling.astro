@@ -51,6 +51,14 @@ const breadcrumbSchema = JSON.stringify({
 <div class="flex-shrink-0 w-full h-full snap-center"><Image src={thumb3} alt="Paseo en barco bajo el sol por el océano" class="w-full h-full object-cover" width={800} height={500} /></div>
 <div class="flex-shrink-0 w-full h-full snap-center"><Image src={thumb4} alt="Sol y celebración a bordo del yate" class="w-full h-full object-cover" width={800} height={500} /></div>
 </div>
+<!-- Hero discount headline -->
+<div class="absolute top-5 left-4 right-4 pointer-events-none flex items-center gap-3">
+  <h1 class="text-gold text-2xl font-bold leading-tight whitespace-nowrap">Ahorra hasta 40% off</h1>
+  <svg class="flex-1 text-gold" viewBox="0 0 200 20" preserveAspectRatio="none" height="18" aria-hidden="true">
+    <path d="M0 5 Q 12.5 1 25 5 T 50 5 T 75 5 T 100 5 T 125 5 T 150 5 T 175 5 T 200 5" stroke="currentColor" stroke-width="1.25" fill="none" stroke-linecap="round" />
+    <path d="M0 15 Q 12.5 11 25 15 T 50 15 T 75 15 T 100 15 T 125 15 T 150 15 T 175 15 T 200 15" stroke="currentColor" stroke-width="1.25" fill="none" stroke-linecap="round" />
+  </svg>
+</div>
 <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent pt-10 pb-5 px-4">
   <div class="max-w-[360px] mx-auto text-center">
     <div class="flex items-center justify-center gap-0.5 mb-1.5">
@@ -69,7 +77,16 @@ const breadcrumbSchema = JSON.stringify({
 </div>
 <div class="hidden lg:block max-w-[1400px] mx-auto px-10 mt-6 relative">
 <div class="grid grid-cols-4 grid-rows-2 gap-2 h-[55vh]">
-<div class="col-span-2 row-span-2 rounded-2xl overflow-hidden"><Image src={img_4k_01_38_47_13_Still123} alt="Aerial view sailboat in turquoise water" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
+<div class="col-span-2 row-span-2 rounded-2xl overflow-hidden relative">
+  <Image src={img_4k_01_38_47_13_Still123} alt="Aerial view sailboat in turquoise water" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} />
+  <div class="absolute top-8 left-8 right-8 pointer-events-none flex items-center gap-4">
+    <h1 class="text-gold text-3xl xl:text-4xl font-semibold leading-tight whitespace-nowrap">Ahorra hasta 40% off</h1>
+    <svg class="flex-1 text-gold" viewBox="0 0 200 20" preserveAspectRatio="none" height="24" aria-hidden="true">
+      <path d="M0 5 Q 12.5 1 25 5 T 50 5 T 75 5 T 100 5 T 125 5 T 150 5 T 175 5 T 200 5" stroke="currentColor" stroke-width="1" fill="none" stroke-linecap="round" />
+      <path d="M0 15 Q 12.5 11 25 15 T 50 15 T 75 15 T 100 15 T 125 15 T 150 15 T 175 15 T 200 15" stroke="currentColor" stroke-width="1" fill="none" stroke-linecap="round" />
+    </svg>
+  </div>
+</div>
 <div class="rounded-2xl overflow-hidden"><Image src={thumb1} alt="Personas haciendo snorkel disfrutando un paseo en barco soleado" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
 <div class="rounded-2xl overflow-hidden"><Image src={thumb2} alt="Persona con esnórquel explorando el paraíso submarino" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
 <div class="rounded-2xl overflow-hidden"><Image src={thumb3} alt="Paseo en barco bajo el sol por el océano" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
@@ -104,62 +121,63 @@ const breadcrumbSchema = JSON.stringify({
       <span class="material-symbols-outlined text-[14px]">chevron_right</span>
       <span class="text-navy font-semibold">Snorkel Compartido</span>
     </nav>
-    <div class="mb-2">
-      <h1 class="text-4xl text-navy leading-tight">Tour de Snorkel y Velero Compartido en Cabo</h1>
-    </div>
-    <p class="text-slate-500 text-base leading-relaxed mt-4">
-      Unete a una aventura en velero con grupo pequeno a los lugares mas iconicos de Cabo — navega frente al Arco, haz snorkel en Pelican Rock y disfruta de barra libre y almuerzo a bordo.
-    </p>
-    <p class="text-slate-500 text-base leading-relaxed mt-3">
-      Una forma relajada y social de disfrutar Cabo a un precio inigualable — nunca mas de 14 pasajeros a bordo.
-    </p>
+    <h2 class="text-3xl text-navy leading-tight">Cabo Sailing &amp; Shared Snorkeling</h2>
+    <p class="text-slate-700 text-lg leading-relaxed mt-2">Una aventura en velero con grupo pequeno al Arco y Pelican Rock &mdash; nunca mas de 14 pasajeros a bordo.</p>
 
-    <!-- Badges row -->
-    <div class="flex gap-4 mt-8">
-      <div class="bg-light-grey rounded-2xl px-6 py-4 flex flex-col items-center text-center border border-border-light flex-1">
-        <span class="material-symbols-outlined text-gold mb-2">schedule</span>
-        <p class="text-xs text-slate-500 uppercase font-bold tracking-widest mb-1">Duracion</p>
-        <p class="text-base font-bold text-navy">3 Horas</p>
+    <!-- Icons row -->
+    <div class="mt-8 grid grid-cols-4 gap-x-6 gap-y-4">
+      <div class="flex items-center gap-2">
+        <span class="material-symbols-outlined text-gold">schedule</span>
+        <p class="text-sm font-semibold text-navy">3 Horas</p>
       </div>
-      <div class="bg-light-grey rounded-2xl px-6 py-4 flex flex-col items-center text-center border border-border-light flex-1">
-        <span class="material-symbols-outlined text-gold mb-2">sailing</span>
-        <p class="text-xs text-slate-500 uppercase font-bold tracking-widest mb-1">Dificultad</p>
-        <p class="text-base font-bold text-navy">Facil</p>
+      <div class="flex items-center gap-2">
+        <span class="material-symbols-outlined text-gold">groups</span>
+        <p class="text-sm font-semibold text-navy">Grupo Peque&ntilde;o (Max 14)</p>
       </div>
-      <div class="bg-light-grey rounded-2xl px-6 py-4 flex flex-col items-center text-center border border-border-light flex-1">
-        <span class="material-symbols-outlined text-gold mb-2">family_restroom</span>
-        <p class="text-xs text-slate-500 uppercase font-bold tracking-widest mb-1">Familia</p>
-        <p class="text-base font-bold text-navy">Apto</p>
+      <div class="flex items-center gap-2">
+        <span class="material-symbols-outlined text-gold">event_available</span>
+        <p class="text-sm font-semibold text-navy">Cancelaci&oacute;n Gratuita</p>
       </div>
-      <div class="bg-light-grey rounded-2xl px-6 py-4 flex flex-col items-center text-center border border-border-light flex-1">
-        <span class="material-symbols-outlined text-gold mb-2">event_available</span>
-        <p class="text-xs text-slate-500 uppercase font-bold tracking-widest mb-1">Cancelacion Gratuita</p>
-        <p class="text-base font-bold text-navy">Hasta 24h</p>
+      <div class="flex items-center gap-2">
+        <span class="material-symbols-outlined text-gold">family_restroom</span>
+        <p class="text-sm font-semibold text-navy">Apto para Familias</p>
+      </div>
+      <div class="flex items-center gap-2">
+        <span class="material-symbols-outlined text-gold">local_offer</span>
+        <p class="text-sm font-semibold text-navy">Excelente Valor</p>
+      </div>
+      <div class="flex items-center gap-2">
+        <span class="material-symbols-outlined text-gold">pin_drop</span>
+        <p class="text-sm font-semibold text-navy">Cabo Marina, Muelle F</p>
+      </div>
+      <div class="flex items-center gap-2 col-span-2">
+        <span class="material-symbols-outlined text-gold">schedule</span>
+        <p class="text-sm font-semibold text-navy">SALIDAS 9:00 AM DIARIO</p>
       </div>
     </div>
 
     <!-- Sobre esta experiencia -->
-    <div class="mt-10">
+    <div class="mt-12">
       <h3 class="text-2xl text-navy mb-4">Sobre esta experiencia</h3>
-      <p class="text-slate-500 leading-relaxed text-base">
-        Unete a nuestro popular tour de snorkel compartido y descubre la magia de Cabo San Lucas junto a otros aventureros. Visita el famoso Arco, haz snorkel entre peces tropicales en Pelican Rock y disfruta de barra libre y almuerzo a bordo — todo a un precio inigualable. Nuestra experimentada tripulacion bilingue se asegura de que todos tengan una experiencia segura, divertida e inolvidable en el agua.
+      <p class="text-slate-700 leading-relaxed text-base">
+        Unete a nuestro popular tour de snorkel compartido y descubre la magia de Cabo San Lucas junto a otros aventureros. Visita el famoso Arco, haz snorkel entre peces tropicales en Pelican Rock y disfruta de barra libre y almuerzo a bordo &mdash; todo a un precio inigualable. Nuestra experimentada tripulacion bilingue se asegura de que todos tengan una experiencia segura, divertida e inolvidable en el agua.
       </p>
+    </div>
 
-      <!-- La Experiencia timeline -->
-      <div class="mt-8">
-        <div class="flex items-center gap-3 mb-5">
-          <div class="w-1 h-6 bg-gold rounded-full"></div>
-          <h3 class="text-sm font-bold text-navy uppercase tracking-widest">La Experiencia</h3>
-        </div>
-        <ol class="relative border-l-2 border-gold/30 ml-2 space-y-5 pl-6">
-          <li class="relative"><span class="absolute -left-[33px] top-0 w-6 h-6 rounded-full bg-navy text-white text-[11px] font-bold flex items-center justify-center">1</span><span class="text-slate-600 text-base">9:00 AM — Abordaje en la marina, las bebidas comienzan de inmediato</span></li>
-          <li class="relative"><span class="absolute -left-[33px] top-0 w-6 h-6 rounded-full bg-navy text-white text-[11px] font-bold flex items-center justify-center">2</span><span class="text-slate-600 text-base">Navega frente a Land's End — el Arco, la colonia de lobos marinos y formaciones rocosas</span></li>
-          <li class="relative"><span class="absolute -left-[33px] top-0 w-6 h-6 rounded-full bg-navy text-white text-[11px] font-bold flex items-center justify-center">3</span><span class="text-slate-600 text-base">Snorkel en Pelican Rock con peces tropicales, rayas y lobos marinos</span></li>
-          <li class="relative"><span class="absolute -left-[33px] top-0 w-6 h-6 rounded-full bg-navy text-white text-[11px] font-bold flex items-center justify-center">4</span><span class="text-slate-600 text-base">Disfruta del almuerzo y bebidas ilimitadas en cubierta</span></li>
-          <li class="relative"><span class="absolute -left-[33px] top-0 w-6 h-6 rounded-full bg-navy text-white text-[11px] font-bold flex items-center justify-center">5</span><span class="text-slate-600 text-base">12:00 PM — Regreso a la marina con nuevos amigos y grandes recuerdos</span></li>
-        </ol>
-        <p class="mt-5 text-slate-500 italic text-sm">Una aventura relajada y social en el agua — y un valor inigualable.</p>
+    <!-- Itinerario Sugerido timeline -->
+    <div class="mt-10">
+      <div class="flex items-center gap-3 mb-5">
+        <div class="w-1 h-6 bg-gold rounded-full"></div>
+        <h3 class="text-sm font-bold text-navy uppercase tracking-widest">Itinerario Sugerido</h3>
       </div>
+      <ol class="relative border-l-2 border-gold/30 ml-2 space-y-5 pl-6">
+        <li class="relative"><span class="absolute -left-[33px] top-0 w-6 h-6 rounded-full bg-navy text-white text-[11px] font-bold flex items-center justify-center">1</span><span class="text-slate-600 text-base">9:00 AM &mdash; Abordaje en la marina, las bebidas comienzan de inmediato</span></li>
+        <li class="relative"><span class="absolute -left-[33px] top-0 w-6 h-6 rounded-full bg-navy text-white text-[11px] font-bold flex items-center justify-center">2</span><span class="text-slate-600 text-base">Navega frente a Land's End &mdash; el Arco, la colonia de lobos marinos y formaciones rocosas</span></li>
+        <li class="relative"><span class="absolute -left-[33px] top-0 w-6 h-6 rounded-full bg-navy text-white text-[11px] font-bold flex items-center justify-center">3</span><span class="text-slate-600 text-base">Snorkel en Pelican Rock con peces tropicales, rayas y lobos marinos</span></li>
+        <li class="relative"><span class="absolute -left-[33px] top-0 w-6 h-6 rounded-full bg-navy text-white text-[11px] font-bold flex items-center justify-center">4</span><span class="text-slate-600 text-base">Disfruta del almuerzo y bebidas ilimitadas en cubierta</span></li>
+        <li class="relative"><span class="absolute -left-[33px] top-0 w-6 h-6 rounded-full bg-navy text-white text-[11px] font-bold flex items-center justify-center">5</span><span class="text-slate-600 text-base">12:00 PM &mdash; Regreso a la marina con nuevos amigos y grandes recuerdos</span></li>
+      </ol>
+      <p class="mt-5 text-slate-700 italic text-sm">Una aventura relajada y social en el agua &mdash; y un valor inigualable.</p>
     </div>
 
     <!-- Que Incluye -->
@@ -226,19 +244,6 @@ const breadcrumbSchema = JSON.stringify({
       </div>
     </div>
 
-    <!-- Punto de Encuentro - desktop -->
-    <div class="mt-12 bg-light-grey rounded-2xl p-8 border border-border-light max-w-[500px] ml-auto">
-      <div class="flex items-center gap-3 mb-4">
-        <span class="material-symbols-outlined text-gold text-2xl">pin_drop</span>
-        <h3 class="text-lg font-bold text-navy uppercase tracking-wider">Punto de Encuentro</h3>
-      </div>
-      <p class="text-lg font-semibold text-navy mb-1">Cabo San Lucas Marina, IGY Marina, Dock F</p>
-      <p class="text-sm text-slate-500 leading-relaxed mb-4">Busca al equipo de Cabo Sailing con polos negros y nuestro logo. Por favor llega 15 minutos antes de la salida.</p>
-      <div class="flex items-center gap-2 text-sm text-slate-500">
-        <span class="material-symbols-outlined text-gold text-base">schedule</span>
-        <span class="font-semibold text-navy">SALIDAS: 9:00 AM DIARIO</span>
-      </div>
-    </div>
   </div>
 
   <!-- Right column - Calendar -->
@@ -291,127 +296,124 @@ const breadcrumbSchema = JSON.stringify({
   </div>
 </div>
 
-<!-- MOBILE: Card layout -->
-<div class="lg:hidden relative z-10 -mt-4 px-5">
-<div class="bg-white rounded-3xl p-6 shadow-xl shadow-navy/5 border border-border-light">
-<nav class="flex items-center gap-1.5 text-xs text-slate-500 mb-4" aria-label="Breadcrumb">
-<a href="/es/" class="hover:text-gold transition-colors">Inicio</a>
-<span class="material-symbols-outlined text-[14px]">chevron_right</span>
-<span>Tours</span>
-<span class="material-symbols-outlined text-[14px]">chevron_right</span>
-<span class="text-navy font-semibold">Snorkel Compartido</span>
-</nav>
-<div class="flex flex-col gap-1 mb-6">
-<div>
-<h1 class="text-2xl text-navy leading-tight">Tour de Snorkel y Velero Compartido en Cabo</h1>
-</div>
-<p class="text-slate-500 text-sm leading-relaxed mt-3">Unete a una aventura en velero con grupo pequeno — navega frente al Arco, haz snorkel en Pelican Rock y disfruta de barra libre y almuerzo a bordo.</p>
-<p class="text-slate-500 text-sm leading-relaxed mt-2">Una forma relajada y social de disfrutar Cabo a un precio inigualable — nunca mas de 14 pasajeros a bordo.</p>
-</div>
-<div class="grid grid-cols-2 gap-4">
-<div class="bg-light-grey rounded-2xl p-4 flex flex-col items-center text-center border border-border-light">
-<span class="material-symbols-outlined text-gold mb-2">schedule</span>
-<p class="text-xs text-slate-500 uppercase font-bold tracking-widest mb-1">Duracion</p>
-<p class="text-base font-bold text-navy">3 Horas</p>
-</div>
-<div class="bg-light-grey rounded-2xl p-4 flex flex-col items-center text-center border border-border-light">
-<span class="material-symbols-outlined text-gold mb-2">sailing</span>
-<p class="text-xs text-slate-500 uppercase font-bold tracking-widest mb-1">Dificultad</p>
-<p class="text-base font-bold text-navy">Facil</p>
-</div>
-<div class="bg-light-grey rounded-2xl p-4 flex flex-col items-center text-center border border-border-light">
-<span class="material-symbols-outlined text-gold mb-2">family_restroom</span>
-<p class="text-xs text-slate-500 uppercase font-bold tracking-widest mb-1">Familia</p>
-<p class="text-base font-bold text-navy">Apto</p>
-</div>
-<div class="bg-light-grey rounded-2xl p-4 flex flex-col items-center text-center border border-border-light">
-<span class="material-symbols-outlined text-gold mb-2">event_available</span>
-<p class="text-xs text-slate-500 uppercase font-bold tracking-widest mb-1">Cancelacion Gratuita</p>
-<p class="text-base font-bold text-navy">Hasta 24h</p>
-</div>
+
+<!-- MOBILE: Title + intro -->
+<div class="lg:hidden mt-6 px-5">
+  <nav class="flex items-center gap-1.5 text-xs text-slate-500 mb-4" aria-label="Breadcrumb">
+    <a href="/es/" class="hover:text-gold transition-colors">Inicio</a>
+    <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+    <span>Tours</span>
+    <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+    <span class="text-navy font-semibold">Snorkel Compartido</span>
+  </nav>
+  <h2 class="text-2xl text-navy leading-tight">Cabo Sailing &amp; Shared Snorkeling</h2>
+  <p class="text-slate-700 text-base leading-relaxed mt-2">Una aventura en velero con grupo pequeno al Arco y Pelican Rock &mdash; nunca mas de 14 pasajeros a bordo.</p>
 </div>
 
-<div class="mt-10">
-<h3 class="text-lg text-navy mb-4">Sobre esta experiencia</h3>
-<p class="text-slate-500 leading-relaxed text-base">Unete a nuestro popular tour de snorkel compartido y descubre la magia de Cabo San Lucas junto a otros aventureros. Visita el famoso Arco, haz snorkel entre peces tropicales en Pelican Rock y disfruta de barra libre y almuerzo a bordo — todo a un precio inigualable.</p>
-<div class="mt-7">
-<div class="flex items-center gap-3 mb-4">
-<div class="w-1 h-5 bg-gold rounded-full"></div>
-<h3 class="text-xs font-bold text-navy uppercase tracking-widest">La Experiencia</h3>
-</div>
-<ol class="relative border-l-2 border-gold/30 ml-2 space-y-4 pl-5">
-<li class="relative"><span class="absolute -left-[29px] top-0 w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center">1</span><span class="text-slate-600 text-sm">9:00 AM — Abordaje en la marina, las bebidas comienzan de inmediato</span></li>
-<li class="relative"><span class="absolute -left-[29px] top-0 w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center">2</span><span class="text-slate-600 text-sm">Navega frente a Land's End — el Arco, colonia de lobos marinos, formaciones rocosas</span></li>
-<li class="relative"><span class="absolute -left-[29px] top-0 w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center">3</span><span class="text-slate-600 text-sm">Snorkel en Pelican Rock con peces tropicales y lobos marinos</span></li>
-<li class="relative"><span class="absolute -left-[29px] top-0 w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center">4</span><span class="text-slate-600 text-sm">Disfruta del almuerzo y bebidas ilimitadas en cubierta</span></li>
-<li class="relative"><span class="absolute -left-[29px] top-0 w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center">5</span><span class="text-slate-600 text-sm">12:00 PM — Regreso a la marina con nuevos amigos</span></li>
-</ol>
-<p class="mt-4 text-slate-500 italic text-xs">Una aventura relajada y social en el agua — y un valor inigualable.</p>
-</div>
-</div>
-<div class="mt-10">
-<div class="flex items-center gap-3 mb-6">
-<div class="w-1 h-6 bg-gold rounded-full"></div>
-<h3 class="text-lg text-navy">Que Incluye</h3>
-</div>
-<div class="grid grid-cols-1 gap-5 pl-1">
-<div class="flex items-center gap-4">
-<div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[14px]">local_bar</span></div>
-<div>
-<span class="text-slate-600 text-base font-medium">Barra libre</span>
-<p class="text-slate-500 text-sm">Disfruta de bebidas refrescantes durante todo el crucero</p>
-</div>
-</div>
-<div class="flex items-center gap-4">
-<div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[14px]">restaurant</span></div>
-<div>
-<span class="text-slate-600 text-base font-medium">Almuerzo ligero a bordo</span>
-<p class="text-slate-500 text-sm">Snacks frescos servidos despues del snorkel</p>
-</div>
-</div>
-<div class="flex items-center gap-4">
-<div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[14px]">scuba_diving</span></div>
-<div>
-<span class="text-slate-600 text-base font-medium">Experiencia de snorkel</span>
-<p class="text-slate-500 text-sm">Equipo incluido — explora los mejores spots de Cabo</p>
-</div>
-</div>
-<div class="flex items-center gap-4">
-<div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[14px]">sailing</span></div>
-<div>
-<span class="text-slate-600 text-base font-medium">Velero comodo</span>
-<p class="text-slate-500 text-sm">Navegacion suave con cupo limitado de pasajeros</p>
-</div>
-</div>
-<div class="flex items-center gap-4">
-<div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[14px]">dry_cleaning</span></div>
-<div>
-<span class="text-slate-600 text-base font-medium">Toallas incluidas</span>
-<p class="text-slate-500 text-sm">Todo lo que necesitas para el agua</p>
-</div>
-</div>
-<div class="flex items-center gap-4">
-<div class="w-6 h-6 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[14px]">person</span></div>
-<div>
-<span class="text-slate-600 text-base font-medium">Tripulacion bilingue experimentada</span>
-<p class="text-slate-500 text-sm">Amigable, profesional y enfocada en la seguridad</p>
-</div>
-</div>
-</div>
-</div>
-</div><!-- close bg-white mobile card -->
-</div><!-- close lg:hidden mobile card wrapper -->
-
-<div class="lg:hidden mx-5 mt-10 mb-6 bg-light-grey rounded-2xl p-5 border border-border-light">
-  <div class="flex items-center gap-3 mb-4">
-    <span class="material-symbols-outlined text-gold">pin_drop</span>
-    <h3 class="text-base font-bold text-navy uppercase tracking-wider">Punto de Encuentro</h3>
+<!-- MOBILE: Icons row -->
+<div class="lg:hidden mt-5 px-5">
+  <div class="grid grid-cols-2 gap-x-3 gap-y-3">
+    <div class="flex items-center gap-1.5">
+      <span class="material-symbols-outlined text-gold text-lg">schedule</span>
+      <p class="text-xs font-semibold text-navy">3 Horas</p>
+    </div>
+    <div class="flex items-center gap-1.5">
+      <span class="material-symbols-outlined text-gold text-lg">groups</span>
+      <p class="text-xs font-semibold text-navy">Grupo Peque&ntilde;o (Max 14)</p>
+    </div>
+    <div class="flex items-center gap-1.5">
+      <span class="material-symbols-outlined text-gold text-lg">event_available</span>
+      <p class="text-xs font-semibold text-navy">Cancelaci&oacute;n Gratuita</p>
+    </div>
+    <div class="flex items-center gap-1.5">
+      <span class="material-symbols-outlined text-gold text-lg">family_restroom</span>
+      <p class="text-xs font-semibold text-navy">Apto para Familias</p>
+    </div>
+    <div class="flex items-center gap-1.5">
+      <span class="material-symbols-outlined text-gold text-lg">local_offer</span>
+      <p class="text-xs font-semibold text-navy">Excelente Valor</p>
+    </div>
+    <div class="flex items-center gap-1.5">
+      <span class="material-symbols-outlined text-gold text-lg">pin_drop</span>
+      <p class="text-xs font-semibold text-navy">Cabo Marina, Muelle F</p>
+    </div>
+    <div class="flex items-center gap-1.5 col-span-2">
+      <span class="material-symbols-outlined text-gold text-lg">schedule</span>
+      <p class="text-xs font-semibold text-navy">SALIDAS 9:00 AM DIARIO</p>
+    </div>
   </div>
-  <p class="text-base font-semibold text-navy mb-1">Cabo San Lucas Marina, IGY Marina, Dock F</p>
-  <p class="text-sm text-slate-500 leading-relaxed mb-4">Busca al equipo de Cabo Sailing con polos negros y nuestro logo. Por favor llega 15 minutos antes de la salida.</p>
-  <div class="flex items-center gap-2 text-sm text-slate-500">
-    <span class="material-symbols-outlined text-gold text-base">schedule</span>
-    <span class="font-semibold text-navy">SALIDAS: 9:00 AM DIARIO</span>
+</div>
+
+<!-- MOBILE: Sobre esta experiencia + Itinerario Sugerido -->
+<div class="lg:hidden mt-8 px-5">
+  <h3 class="text-lg text-navy mb-3">Sobre esta experiencia</h3>
+  <p class="text-slate-700 leading-relaxed text-base">Unete a nuestro popular tour de snorkel compartido y descubre la magia de Cabo San Lucas junto a otros aventureros. Visita el famoso Arco, haz snorkel entre peces tropicales en Pelican Rock y disfruta de barra libre y almuerzo a bordo &mdash; todo a un precio inigualable.</p>
+
+  <div class="mt-7 faq-item border border-border-light rounded-2xl overflow-hidden bg-white">
+    <input class="hidden" id="mobile-itinerary" type="checkbox"/>
+    <label class="flex items-center justify-between p-4 cursor-pointer" for="mobile-itinerary">
+      <span class="flex items-center gap-3">
+        <div class="w-1 h-5 bg-gold rounded-full"></div>
+        <span class="text-xs font-bold text-navy uppercase tracking-widest">Itinerario Sugerido</span>
+      </span>
+      <span class="material-symbols-outlined text-slate-500 faq-chevron transition-transform duration-300">expand_more</span>
+    </label>
+    <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
+      <ol class="relative border-l-2 border-gold/30 ml-2 space-y-4 pl-5 mt-2">
+        <li class="relative"><span class="absolute -left-[29px] top-0 w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center">1</span><span class="text-slate-600 text-sm">9:00 AM &mdash; Abordaje en la marina, las bebidas comienzan de inmediato</span></li>
+        <li class="relative"><span class="absolute -left-[29px] top-0 w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center">2</span><span class="text-slate-600 text-sm">Navega frente a Land's End &mdash; el Arco, lobos marinos, formaciones rocosas</span></li>
+        <li class="relative"><span class="absolute -left-[29px] top-0 w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center">3</span><span class="text-slate-600 text-sm">Snorkel en Pelican Rock con peces tropicales y lobos marinos</span></li>
+        <li class="relative"><span class="absolute -left-[29px] top-0 w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center">4</span><span class="text-slate-600 text-sm">Disfruta del almuerzo y bebidas ilimitadas en cubierta</span></li>
+        <li class="relative"><span class="absolute -left-[29px] top-0 w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center">5</span><span class="text-slate-600 text-sm">12:00 PM &mdash; Regreso a la marina con nuevos amigos</span></li>
+      </ol>
+      <p class="mt-4 text-slate-700 italic text-xs">Una aventura relajada y social en el agua &mdash; y un valor inigualable.</p>
+    </div>
+  </div>
+</div>
+
+<!-- MOBILE: Que Incluye -->
+<div class="lg:hidden mt-10 px-5">
+  <div class="flex items-center gap-3 mb-6">
+    <div class="w-1 h-6 bg-gold rounded-full"></div>
+    <h3 class="text-lg text-navy">Que Incluye</h3>
+  </div>
+  <div class="grid grid-cols-1 gap-5 pl-1">
+    <div class="flex items-start gap-4">
+      <div class="w-7 h-7 rounded-full bg-navy flex items-center justify-center flex-shrink-0">
+        <span class="material-symbols-outlined text-white text-[15px]">local_bar</span>
+      </div>
+      <div><span class="text-slate-700 text-base font-semibold">Barra libre</span><p class="text-slate-700 text-sm mt-0.5">Bebidas refrescantes durante todo el crucero</p></div>
+    </div>
+    <div class="flex items-start gap-4">
+      <div class="w-7 h-7 rounded-full bg-navy flex items-center justify-center flex-shrink-0">
+        <span class="material-symbols-outlined text-white text-[15px]">restaurant</span>
+      </div>
+      <div><span class="text-slate-700 text-base font-semibold">Almuerzo ligero a bordo</span><p class="text-slate-700 text-sm mt-0.5">Snacks frescos servidos despues del snorkel</p></div>
+    </div>
+    <div class="flex items-start gap-4">
+      <div class="w-7 h-7 rounded-full bg-navy flex items-center justify-center flex-shrink-0">
+        <span class="material-symbols-outlined text-white text-[15px]">scuba_diving</span>
+      </div>
+      <div><span class="text-slate-700 text-base font-semibold">Experiencia de snorkel</span><p class="text-slate-700 text-sm mt-0.5">Equipo incluido &mdash; explora los mejores spots de Cabo</p></div>
+    </div>
+    <div class="flex items-start gap-4">
+      <div class="w-7 h-7 rounded-full bg-navy flex items-center justify-center flex-shrink-0">
+        <span class="material-symbols-outlined text-white text-[15px]">sailing</span>
+      </div>
+      <div><span class="text-slate-700 text-base font-semibold">Velero comodo</span><p class="text-slate-700 text-sm mt-0.5">Navegacion suave con cupo limitado de pasajeros</p></div>
+    </div>
+    <div class="flex items-start gap-4">
+      <div class="w-7 h-7 rounded-full bg-navy flex items-center justify-center flex-shrink-0">
+        <span class="material-symbols-outlined text-white text-[15px]">dry_cleaning</span>
+      </div>
+      <div><span class="text-slate-700 text-base font-semibold">Toallas incluidas</span><p class="text-slate-700 text-sm mt-0.5">Todo lo que necesitas para el agua</p></div>
+    </div>
+    <div class="flex items-start gap-4">
+      <div class="w-7 h-7 rounded-full bg-navy flex items-center justify-center flex-shrink-0">
+        <span class="material-symbols-outlined text-white text-[15px]">person</span>
+      </div>
+      <div><span class="text-slate-700 text-base font-semibold">Tripulacion bilingue experimentada</span><p class="text-slate-700 text-sm mt-0.5">Amigable, profesional y enfocada en la seguridad</p></div>
+    </div>
   </div>
 </div>
 
