@@ -3,7 +3,7 @@ title: "Babymoon in Cabo San Lucas — Romantic Pre-Baby Getaway Guide"
 pubDate: 2026-04-23
 description: "Planning a Cabo babymoon? Pregnancy-safe activities, best resorts, what to pack, and what to skip. Local's guide for expecting couples in 2026."
 heroImage: "/images/travel-guide/fun-activities-cabo.jpg.webp"
-heroAlt: "Couple enjoying a sunset view in Cabo San Lucas"
+heroAlt: "Babymoon in Cabo San Lucas"
 category: "Traveling to Cabo"
 categoryLink: "/travel-guide-traveling"
 activeSubmenu: "traveling"

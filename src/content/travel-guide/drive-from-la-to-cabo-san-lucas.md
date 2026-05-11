@@ -3,7 +3,7 @@ title: "LA to Cabo San Lucas Drive — Complete 2026 Road Trip Guide"
 pubDate: 2026-04-23
 description: "Driving LA to Cabo — distance, time, border crossing, safety, best stops and what to know for 2026. Local's tested route guide with overnight stops."
 heroImage: "/images/travel-guide/fun-activities-cabo.jpg.webp"
-heroAlt: "Highway through the Baja California desert toward Cabo San Lucas"
+heroAlt: "Highway through the Baja California desert"
 category: "Traveling to Cabo"
 categoryLink: "/travel-guide-traveling"
 activeSubmenu: "traveling"

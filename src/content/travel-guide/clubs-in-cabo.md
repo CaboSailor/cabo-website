@@ -3,7 +3,7 @@ title: "12 Famous Clubs in Cabo for Your Night Out"
 pubDate: 2025-03-20
 description: "The best nightclubs in Cabo San Lucas — El Squid Roe, Mandala, La Vaquita, Mango Deck, and more. Where to dance, drink, and party in 2026."
 heroImage: "/images/travel-guide/most-famous-clubs-in-cabo-for-night.jpg"
-heroAlt: "Nightlife scene at a club in Cabo San Lucas"
+heroAlt: "Nightclub scene in Cabo San Lucas"
 category: "Culture & Food"
 categoryLink: "/travel-guide-culture"
 activeSubmenu: "culture"

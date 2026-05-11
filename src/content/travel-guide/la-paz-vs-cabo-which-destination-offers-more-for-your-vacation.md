@@ -3,7 +3,7 @@ title: "La Paz vs. Cabo San Lucas — Which Is Better for Your Trip?"
 pubDate: 2026-04-23
 description: "La Paz vs. Cabo San Lucas compared — beaches, activities, prices, nightlife. Which fits families vs. couples, and can you do both in one trip?"
 heroImage: "/images/la-paz/la-paz-bcs.webp"
-heroAlt: "La Paz waterfront at sunset, Baja California Sur"
+heroAlt: "La Paz vs Cabo San Lucas comparison"
 category: "Traveling to Cabo"
 categoryLink: "/travel-guide-traveling"
 activeSubmenu: "traveling"

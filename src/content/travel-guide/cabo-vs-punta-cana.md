@@ -3,7 +3,7 @@ title: "Cabo vs Punta Cana — Which Destination Is Right?"
 pubDate: 2025-09-20
 description: "Cabo vs Punta Cana compared — geography, beaches, climate, cost, cuisine, and nightlife. Find out which 2026 vacation destination fits your style."
 heroImage: "/images/travel-guide/cabo-vs-punta-cana-which-destination.webp"
-heroAlt: "Side-by-side comparison of Cabo San Lucas and Punta Cana beach destinations"
+heroAlt: "Cabo vs Punta Cana destination comparison"
 category: "Traveling to Cabo"
 categoryLink: "/travel-guide-traveling"
 activeSubmenu: "traveling"

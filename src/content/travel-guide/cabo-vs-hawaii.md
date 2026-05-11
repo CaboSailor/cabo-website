@@ -3,7 +3,7 @@ title: "Cabo vs Hawaii — Which Vacation Spot Is Better?"
 pubDate: 2025-09-10
 description: "Cabo vs Hawaii compared — weather, beaches, activities, cost, dining, and nightlife. Decide which 2026 vacation destination matches your travel style."
 heroImage: "/images/travel-guide/cabo-vs-hawaii-which-vacation-spot.webp"
-heroAlt: "Side-by-side comparison of Cabo San Lucas and Hawaii vacation destinations"
+heroAlt: "Cabo vs Hawaii vacation comparison"
 category: "Traveling to Cabo"
 categoryLink: "/travel-guide-traveling"
 activeSubmenu: "traveling"

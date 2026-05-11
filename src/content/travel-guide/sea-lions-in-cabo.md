@@ -2,8 +2,8 @@
 title: "Sea Lions in Cabo San Lucas — Where to See Them Up Close"
 pubDate: 2026-04-23
 description: "Cabo's famous sea lion colony at Land's End — where to see them, best boat tours, swimming safely, and what time of year they're most active."
-heroImage: "/images/travel-guide/snorkeling-5.jpg.webp"
-heroAlt: "Sea lions resting on rocks at Land's End in Cabo San Lucas"
+heroImage: "/images/blog/seal-and-divers-in-underwater-harmony.png"
+heroAlt: "Seal and divers in underwater harmony"
 category: "Attractions"
 categoryLink: "/travel-guide-attractions"
 activeSubmenu: "attractions"

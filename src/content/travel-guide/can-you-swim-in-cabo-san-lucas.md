@@ -2,8 +2,8 @@
 title: "Can You Swim in Cabo San Lucas? Safe Beaches & Warnings"
 pubDate: 2026-04-19
 description: "Which Cabo beaches are swimmable and which aren't? Local's guide to safe swimming in Cabo San Lucas — flags, currents, and the best calm-water beaches."
-heroImage: "/images/travel-guide/cabo-san-lucas-medano-beach-1024x675.jpg"
-heroAlt: "Médano Beach in Cabo San Lucas with calm swimmable water"
+heroImage: "/images/travel-guide/santa-maria-bay-featured-image.jpg.webp"
+heroAlt: "Swimming and snorkeling in the crystal clear waters of Cabo San Lucas"
 category: "Activities"
 categoryLink: "/travel-guide-activities"
 activeSubmenu: "activities"

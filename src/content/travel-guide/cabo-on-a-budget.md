@@ -3,7 +3,7 @@ title: "Cabo on a Budget — 2026 Guide to Doing Cabo for Less"
 pubDate: 2026-04-23
 description: "Cabo doesn't have to be expensive. 2026 budget guide — where to stay, eat and play for less. Free activities, local restaurants, transit tips."
 heroImage: "/images/travel-guide/fun-activities-cabo.jpg.webp"
-heroAlt: "Colorful street food stand in downtown Cabo San Lucas"
+heroAlt: "Street food in downtown Cabo San Lucas"
 category: "Traveling to Cabo"
 categoryLink: "/travel-guide-traveling"
 activeSubmenu: "traveling"

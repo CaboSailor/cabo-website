@@ -2,7 +2,7 @@
 title: "6 Whale Species You Can Spot in Cabo San Lucas (2026)"
 pubDate: 2026-04-23
 description: "Humpback, gray, blue, fin, sperm, orca — the 6 whale species you can see in Cabo San Lucas. When, where and how to identify each. Local's field guide."
-heroImage: "/images/travel-guide/snorkeling-5.jpg.webp"
+heroImage: "/images/blog/cabo-whale-watching-humpback.jpg"
 heroAlt: "Humpback whale breaching near Cabo San Lucas"
 category: "Activities"
 categoryLink: "/travel-guide-activities"

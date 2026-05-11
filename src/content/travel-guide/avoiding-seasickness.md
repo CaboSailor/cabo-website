@@ -3,7 +3,7 @@ title: "Avoiding Seasickness on Your Cabo Sailing Trip"
 pubDate: 2019-02-13
 description: "Don't let seasickness ruin your Cabo cruise. Proven tips — ginger, hydration, horizon tricks, and medication — to sail comfortably."
 heroImage: "/images/travel-guide/cabo-sailing-adventures.jpg"
-heroAlt: "Sailing adventure on the Sea of Cortez in Cabo San Lucas"
+heroAlt: "Sailing adventure in Cabo San Lucas"
 category: "Activities"
 categoryLink: "/travel-guide-activities"
 activeSubmenu: "activities"

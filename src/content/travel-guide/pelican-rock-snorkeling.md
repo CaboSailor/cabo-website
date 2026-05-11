@@ -3,7 +3,7 @@ title: "Pelican Rock Snorkeling Tour in Cabo San Lucas"
 pubDate: 2023-03-13
 description: "Pelican Rock snorkeling tour — explore Cabo bay's best underwater spot with colorful fish, sea lions, and crystal-clear water near Lover's Beach."
 heroImage: "/images/travel-guide/42-f-2-1.jpg"
-heroAlt: "Snorkeling at Pelican Rock in Cabo San Lucas bay"
+heroAlt: "Pelican Rock snorkeling in Cabo San Lucas"
 category: "Activities"
 categoryLink: "/travel-guide-activities"
 activeSubmenu: "activities"

@@ -3,7 +3,7 @@ title: "Is It Safe for Kids to Snorkel in Cabo? Parent's Guide (2026)"
 pubDate: 2026-04-23
 description: "Yes — with the right beach, tour, and preparation. Age guidelines, best kid-friendly snorkel spots, gear tips, and how to build confidence. Local's guide."
 heroImage: "/images/travel-guide/snorkeling-5.jpg.webp"
-heroAlt: "Family snorkeling together in calm waters in Cabo San Lucas"
+heroAlt: "Family snorkeling in Cabo San Lucas"
 category: "Activities"
 categoryLink: "/travel-guide-activities"
 activeSubmenu: "activities"

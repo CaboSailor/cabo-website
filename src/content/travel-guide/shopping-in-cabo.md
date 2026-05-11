@@ -3,7 +3,7 @@ title: "Best Shopping Destinations in Cabo San Lucas"
 pubDate: 2024-12-11
 description: "Where to shop in Cabo — luxury malls, artisan markets, glass factory, Talavera pottery, and designer boutiques. A local's guide to the best spots."
 heroImage: "/images/travel-guide/best-destinations-for-shopp.png"
-heroAlt: "Shopping district in Cabo San Lucas"
+heroAlt: "Shopping in Cabo San Lucas"
 category: "Activities"
 categoryLink: "/travel-guide-activities"
 activeSubmenu: "activities"

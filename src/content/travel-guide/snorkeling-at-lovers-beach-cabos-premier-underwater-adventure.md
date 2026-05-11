@@ -3,7 +3,7 @@ title: "Snorkeling at Lover's Beach — Cabo's Best Underwater Spot"
 pubDate: 2026-04-23
 description: "Complete Lover's Beach snorkeling guide — how to get there, marine life, best time to go, what to bring, and how it compares to other Cabo snorkel spots."
 heroImage: "/images/travel-guide/snorkeling-5.jpg.webp"
-heroAlt: "Snorkeling in the clear waters near Lover's Beach, Cabo San Lucas"
+heroAlt: "Snorkeling at Lover's Beach in Cabo San Lucas"
 category: "Activities"
 categoryLink: "/travel-guide-activities"
 activeSubmenu: "activities"
