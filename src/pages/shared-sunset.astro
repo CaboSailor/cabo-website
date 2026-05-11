@@ -359,8 +359,16 @@ const breadcrumbSchema = JSON.stringify({
   </div>
 </div>
 
-<!-- MOBILE: Boat card -->
+<!-- MOBILE: Book Your Spot banner -->
 <div class="lg:hidden mt-10 mx-5">
+  <div class="bg-gradient-to-br from-navy via-navy to-[#1a3a5c] rounded-2xl p-5 text-center border-b-4 border-gold shadow-lg shadow-navy/20">
+    <h3 class="text-white text-2xl font-heading tracking-wide">Book Your Spot</h3>
+    <p class="text-white/70 text-sm mt-1">Limited spots &mdash; book today to secure your date</p>
+  </div>
+</div>
+
+<!-- MOBILE: Boat card -->
+<div class="lg:hidden mt-4 mx-5">
   <div class="w-full bg-white border border-border-light rounded-2xl overflow-hidden shadow-md shadow-navy/5" data-boat="shared-sailing">
     <div class="h-[400px] w-full relative">
       <Image src={cabosailingSailboat42} alt="Sailing Boat 38'-42'" class="w-full h-full object-cover" style="object-position: center 70%; transform: scale(1.1);" width={1000} height={1500} format="png" quality={100} />
@@ -374,13 +382,9 @@ const breadcrumbSchema = JSON.stringify({
   </div>
 </div>
 
-<!-- MOBILE: Book Your Spot -->
-<div class="lg:hidden mt-10 mx-5 mb-6">
-  <div class="bg-gradient-to-br from-navy via-navy to-[#1a3a5c] rounded-2xl p-5 text-center mb-4 border-b-4 border-gold shadow-lg shadow-navy/20">
-    <h3 class="text-white text-2xl font-heading tracking-wide">Book Your Spot</h3>
-    <p class="text-white/70 text-sm mt-1">Limited spots &mdash; book today to secure your date</p>
-  </div>
-  <div class="space-y-3 mb-4" data-boat="shared-sailing">
+<!-- MOBILE: Price / Duration -->
+<div class="lg:hidden mt-4 mx-5">
+  <div class="space-y-3" data-boat="shared-sailing">
     <div class="flex justify-between items-center py-2 border-b border-border-light">
       <span class="text-sm text-slate-500">Per person</span>
       <div class="flex items-baseline gap-2">
@@ -393,6 +397,10 @@ const breadcrumbSchema = JSON.stringify({
       <span class="text-navy font-semibold">2 Hours</span>
     </div>
   </div>
+</div>
+
+<!-- MOBILE: Calendar + WhatsApp -->
+<div class="lg:hidden mt-6 mx-5 mb-6">
   <p class="text-center text-slate-500 text-sm mb-1">Select a date to check availability</p>
   <p class="text-center mb-3"><span class="inline-block text-[11px] font-bold uppercase tracking-wider text-white bg-gold px-2.5 py-0.5 rounded-full">Discount Code: <span class="text-[13px] font-extrabold" data-promo-for="shared-sunset">Sail-30</span></span></p>
   <iframe seamless="" width="300px" height="1000px" frameborder="0" class="rezdy mx-auto block" src="https://cabosailing.rezdy.com/calendarWidget/744012?iframe=true"></iframe>
