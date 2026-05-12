@@ -15,14 +15,6 @@ const currentPath = Astro.url.pathname;
 const switchUrl = getLocalePath(altLang, currentPath.replace(/^\/es(\/|$)/, '/'));
 const lp = (path: string) => getLocalePath(lang, path);
 
-const navLinks = [
-  { href: lp('/'), label: t(lang, 'nav.home'), key: 'home' },
-  { href: lp('/tours'), label: t(lang, 'nav.tours'), key: 'tours', hasDropdown: true },
-  { href: lp('/shuttle-service'), label: t(lang, 'nav.shuttle'), key: 'shuttle' },
-  { href: lp('/travel-guide'), label: t(lang, 'nav.travelGuide'), key: 'travel-guide' },
-  { href: lp('/special-offers'), label: t(lang, 'nav.specialOffers'), key: 'special-offers' },
-];
-
 const tourDropdown = [
   { group: t(lang, 'nav.tourDropdown.snorkeling'), items: [
     { href: lp('/private-snorkeling'), label: t(lang, 'nav.tourDropdown.privateSnorkeling') },
@@ -37,6 +29,22 @@ const tourDropdown = [
     { href: lp('/bachelorette'), label: t(lang, 'nav.tourDropdown.bachelorette') },
     { href: lp('/scuba-diving'), label: t(lang, 'nav.tourDropdown.scubaDiving') },
   ]},
+];
+
+const fleetDropdown = [
+  { group: null, items: [
+    { href: lp('/yacht-charter-cabo'), label: t(lang, 'nav.fleetDropdown.luxuryYachts') },
+    { href: lp('/sailing-cruises'), label: t(lang, 'nav.fleetDropdown.luxurySailboats') },
+    { href: lp('/shuttle-service'), label: t(lang, 'nav.fleetDropdown.shuttle') },
+  ]},
+];
+
+const navLinks = [
+  { href: lp('/'), label: t(lang, 'nav.home'), key: 'home' },
+  { href: lp('/tours'), label: t(lang, 'nav.tours'), key: 'tours', hasDropdown: true, dropdownData: tourDropdown },
+  { href: lp('/yacht-charter-cabo'), label: t(lang, 'nav.fleet'), key: 'fleet', hasDropdown: true, dropdownData: fleetDropdown },
+  { href: lp('/travel-guide'), label: t(lang, 'nav.travelGuide'), key: 'travel-guide' },
+  { href: lp('/special-offers'), label: t(lang, 'nav.specialOffers'), key: 'special-offers' },
 ];
 ---
 
@@ -88,7 +96,7 @@ const tourDropdown = [
             <div class="relative group">
               <a href={link.href} class={`text-sm font-semibold uppercase tracking-widest hover:text-gold transition-colors flex items-center gap-1 ${activePage === link.key ? 'text-gold' : 'text-navy'}`}>{link.label} <span class="material-symbols-outlined text-sm">expand_more</span></a>
               <div class="absolute top-full left-0 mt-2 bg-white rounded-xl shadow-xl border border-border-light py-3 min-w-[220px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                {tourDropdown.map((section, idx) => (
+                {link.dropdownData.map((section, idx) => (
                   <>
                     {idx > 0 && <div class="h-px bg-border-light my-2"></div>}
                     {section.group && <p class="px-4 py-1 text-[10px] font-bold text-slate-500 uppercase tracking-widest">{section.group}</p>}
@@ -161,7 +169,7 @@ const tourDropdown = [
               <div class="relative group">
                 <a href={link.href} class={`text-sm font-semibold uppercase tracking-widest hover:text-gold transition-colors flex items-center gap-1 ${activePage === link.key ? 'text-gold' : 'text-navy'}`}>{link.label} <span class="material-symbols-outlined text-sm">expand_more</span></a>
                 <div class="absolute top-full left-0 mt-2 bg-white rounded-xl shadow-xl border border-border-light py-3 min-w-[220px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                  {tourDropdown.map((section, idx) => (
+                  {link.dropdownData.map((section, idx) => (
                     <>
                       {idx > 0 && <div class="h-px bg-border-light my-2"></div>}
                       {section.group && <p class="px-4 py-1 text-[10px] font-bold text-slate-500 uppercase tracking-widest">{section.group}</p>}

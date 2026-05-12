@@ -2,12 +2,18 @@
   "nav": {
     "home": "Inicio",
     "tours": "Tours",
+    "fleet": "Flota",
     "shuttle": "Transporte",
     "shuttleService": "Servicio de Transporte",
     "travelGuide": "Guia de Viaje",
     "contact": "Contacto",
     "contactInfo": "Informacion de Contacto",
     "specialOffers": "Ofertas Especiales",
+    "fleetDropdown": {
+      "luxuryYachts": "Yates de Lujo",
+      "luxurySailboats": "Veleros de Lujo",
+      "shuttle": "Servicio de Transporte"
+    },
     "tourDropdown": {
       "snorkeling": "Snorkel",
       "sunset": "Atardecer",

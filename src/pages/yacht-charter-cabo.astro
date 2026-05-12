@@ -1,0 +1,643 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import FloatingCTA from '../components/FloatingCTA.astro';
+import RezdyModal from '../components/RezdyModal.astro';
+import CarouselImage from '../components/CarouselImage.astro';
+import { Image } from 'astro:assets';
+
+import heroYachtCharter from "../assets/images/guests-on-yachts/cabo-yacht-charter-guests-01.jpg";
+import yachtCoastline from "../assets/images/guests-on-yachts/luxury-yacht-cruising-on-sunny-coastline.png";
+import familyYachtEscape from "../assets/images/guests-on-yachts/family-enjoying-a-yacht-escape.png";
+import cheersYachtRetreat from "../assets/images/guests-on-yachts/cheers-on-a-sunny-yacht-retreat.png";
+import paddleboardingCabo from "../assets/images/guests-on-yachts/paddleboarding-in-sunny-cabo-waters.png";
+
+import romanticSunset from "../assets/images/guests-on-yachts/romantic-sunset-on-the-boat.png";
+import celebrationYacht from "../assets/images/bachelorette/celebration-on-a-sunny-yacht-party.png";
+import yachtAtArch from "../assets/images/boats/yacht-45/cruising-along-the-arch.jpg";
+import snorkelIcon from "../assets/icons/Snorkel 2.png";
+import sunFilledBoatDay from "../assets/images/guests-on-yachts/sun-filled-boat-day-with-friends.png";
+
+const touristTripSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "TouristTrip",
+  "name": "Private Yacht Charter & Rental in Cabo San Lucas",
+  "description": "Private yacht charter and luxury yacht rental in Cabo San Lucas for families, celebrations and groups. Choose from 3 luxury yachts, fully crewed and all-inclusive — bar, food, snorkel gear and paddleboards.",
+  "touristType": "Families, Couples, Groups, Celebrations",
+  "provider": {
+    "@type": "TravelAgency",
+    "name": "Cabo Sailing Ocean Adventures",
+    "url": "https://cabosailing.com"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://cabosailing.com/yacht-charter-cabo/",
+    "priceCurrency": "USD",
+    "lowPrice": "1148",
+    "availability": "https://schema.org/InStock"
+  }
+});
+
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://cabosailing.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Tours", "item": "https://cabosailing.com/tours/" },
+    { "@type": "ListItem", "position": 3, "name": "Yacht Charter in Cabo" }
+  ]
+});
+---
+
+<BaseLayout bodyClass="bg-white font-body text-text-main antialiased min-h-screen flex flex-col relative" title="Yacht Charter Cabo San Lucas — Private Luxury Yacht Rental | Cabo Sailing" description="Private yacht charter & luxury yacht rental in Cabo San Lucas. 3 luxury yachts, fully crewed, all-inclusive bar, food, snorkel gear & paddleboards. From $1,148." ogImage="/og/yacht-charter-cabo.jpg" ogImageAlt="Private yacht charter and luxury yacht rental in Cabo San Lucas" hreflangs={{ en: '/yacht-charter-cabo', es: '/es/yacht-charter-cabo' }}>
+  <script slot="head" type="application/ld+json" set:html={touristTripSchema} />
+  <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
+  <Header variant="subpage" activePage="tours" />
+
+  <style is:inline>
+    .faq-item input:checked ~ .faq-answer {
+      max-height: 800px; margin-top: 0.75rem; opacity: 1;
+    }
+    .faq-item input:checked ~ label .faq-chevron { transform: rotate(180deg); }
+  </style>
+
+  <main class="flex-1 w-full overflow-x-hidden pt-[60px] lg:pt-[72px]">
+
+<!-- Hero Gallery -->
+<div class="lg:hidden relative w-full h-[45vh] overflow-hidden">
+<div class="flex overflow-x-auto snap-x snap-mandatory h-full no-scrollbar">
+<div class="flex-shrink-0 w-full h-full snap-center"><Image src={heroYachtCharter} alt="Guests enjoying a private yacht charter in Cabo San Lucas" class="w-full h-full object-cover" width={800} height={500} /></div>
+<div class="flex-shrink-0 w-full h-full snap-center"><Image src={yachtCoastline} alt="Luxury yacht rental Cabo San Lucas cruising the coastline" class="w-full h-full object-cover" width={800} height={500} /></div>
+<div class="flex-shrink-0 w-full h-full snap-center"><Image src={familyYachtEscape} alt="Family enjoying a private yacht rental in Cabo" class="w-full h-full object-cover" width={800} height={500} /></div>
+<div class="flex-shrink-0 w-full h-full snap-center"><Image src={cheersYachtRetreat} alt="Guests celebrating on a luxury yacht charter in Cabo San Lucas" class="w-full h-full object-cover" width={800} height={500} /></div>
+<div class="flex-shrink-0 w-full h-full snap-center"><Image src={paddleboardingCabo} alt="Paddleboarding in sunny Cabo waters" class="w-full h-full object-cover" width={800} height={500} /></div>
+</div>
+<div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent pt-10 pb-5 px-4">
+  <div class="max-w-[360px] mx-auto text-center">
+    <div class="flex items-center justify-center gap-0.5 mb-1.5">
+      <span class="material-symbols-outlined text-gold filled text-lg">star</span>
+      <span class="material-symbols-outlined text-gold filled text-lg">star</span>
+      <span class="material-symbols-outlined text-gold filled text-lg">star</span>
+      <span class="material-symbols-outlined text-gold filled text-lg">star</span>
+      <span class="material-symbols-outlined text-gold filled text-lg">star</span>
+    </div>
+    <p class="text-white text-base leading-snug">"Booked the yacht for my parents' 40th anniversary. Every detail was perfect — best decision of the trip."</p>
+    <p class="text-white/50 text-xs uppercase tracking-widest font-bold mt-2">Daniel R. &mdash; Denver, CO</p>
+  </div>
+</div>
+<button class="fleet-arrow left" onclick="heroNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
+<button class="fleet-arrow right" onclick="heroNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
+</div>
+<div class="hidden lg:block max-w-[1400px] mx-auto px-10 mt-6 relative">
+<div class="grid grid-cols-4 grid-rows-2 gap-2 h-[55vh]">
+<div class="col-span-2 row-span-2 rounded-2xl overflow-hidden"><Image src={heroYachtCharter} alt="Guests enjoying a private yacht charter in Cabo San Lucas" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
+<div class="rounded-2xl overflow-hidden"><Image src={yachtCoastline} alt="Luxury yacht rental Cabo San Lucas cruising the coastline" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
+<div class="rounded-2xl overflow-hidden"><Image src={familyYachtEscape} alt="Family enjoying a private yacht rental in Cabo" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
+<div class="rounded-2xl overflow-hidden"><Image src={cheersYachtRetreat} alt="Guests celebrating on a luxury yacht charter in Cabo San Lucas" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
+<div class="rounded-2xl overflow-hidden"><Image src={paddleboardingCabo} alt="Paddleboarding in sunny Cabo waters" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
+</div>
+<div class="mt-4 flex justify-center">
+  <div class="max-w-[520px] flex items-start gap-4">
+    <div class="flex-shrink-0 flex items-center gap-0.5 mt-0.5">
+      <span class="material-symbols-outlined text-gold filled text-base">star</span>
+      <span class="material-symbols-outlined text-gold filled text-base">star</span>
+      <span class="material-symbols-outlined text-gold filled text-base">star</span>
+      <span class="material-symbols-outlined text-gold filled text-base">star</span>
+      <span class="material-symbols-outlined text-gold filled text-base">star</span>
+    </div>
+    <div>
+      <p class="text-navy text-sm leading-snug">"Booked the yacht for my parents' 40th anniversary. Every detail was perfect &mdash; best decision of the trip."</p>
+      <p class="text-navy/60 text-[10px] uppercase tracking-widest font-bold mt-2">Daniel R. &mdash; Denver, CO</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Discount banner -->
+<div class="w-full text-center py-3 px-4 shadow-md bg-gold mt-4 lg:mt-6">
+  <p class="text-navy font-bold text-sm lg:text-base uppercase tracking-widest">Save up to 40% off &mdash; Limited Time</p>
+</div>
+
+<!-- DESKTOP: Title + intro -->
+<div class="hidden lg:block max-w-[1400px] mx-auto px-10 mt-10">
+  <nav class="flex items-center gap-1.5 text-xs text-slate-500 mb-4" aria-label="Breadcrumb">
+    <a href="/" class="hover:text-gold transition-colors">Home</a>
+    <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+    <span>Tours</span>
+    <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+    <span class="text-navy font-semibold">Yacht Charter in Cabo</span>
+  </nav>
+  <h1 class="text-4xl text-navy leading-tight">Private Yacht Charter &amp; Rental in Cabo San Lucas</h1>
+  <p class="text-slate-700 text-lg leading-relaxed mt-2">Charter a private yacht or sailboat for your group &mdash; family days, celebrations, anniversaries, and group getaways. All-inclusive, fully crewed, and designed around you.</p>
+
+  <!-- Icons row -->
+  <div class="mt-8 grid grid-cols-4 gap-x-6 gap-y-4">
+    <div class="flex items-center gap-2">
+      <span class="material-symbols-outlined text-gold">schedule</span>
+      <p class="text-sm font-semibold text-navy">3 Hours</p>
+    </div>
+    <div class="flex items-center gap-2">
+      <span class="material-symbols-outlined text-gold">add</span>
+      <p class="text-sm font-semibold text-navy">Extra Time Available</p>
+    </div>
+    <div class="flex items-center gap-2">
+      <span class="material-symbols-outlined text-gold">celebration</span>
+      <p class="text-sm font-semibold text-navy">Private Charter</p>
+    </div>
+    <div class="flex items-center gap-2">
+      <span class="material-symbols-outlined text-gold">groups</span>
+      <p class="text-sm font-semibold text-navy">Up to 20 Guests</p>
+    </div>
+    <div class="flex items-center gap-2">
+      <span class="material-symbols-outlined text-gold">family_restroom</span>
+      <p class="text-sm font-semibold text-navy">Family Friendly</p>
+    </div>
+    <div class="flex items-center gap-2">
+      <span class="material-symbols-outlined text-gold">local_bar</span>
+      <p class="text-sm font-semibold text-navy">All-Inclusive</p>
+    </div>
+    <div class="flex items-center gap-2">
+      <span class="material-symbols-outlined text-gold">event_available</span>
+      <p class="text-sm font-semibold text-navy">Free Cancellation</p>
+    </div>
+    <div class="flex items-center gap-2">
+      <span class="material-symbols-outlined text-gold">pin_drop</span>
+      <p class="text-sm font-semibold text-navy">Cabo Marina, Dock F</p>
+    </div>
+  </div>
+
+  <!-- About this experience -->
+  <div class="mt-12">
+    <h3 class="text-2xl text-navy mb-4">About this experience</h3>
+    <p class="text-slate-700 leading-relaxed text-base">
+      A private yacht charter in Cabo San Lucas is the most flexible, comfortable way to experience the Sea of Cortez. Pick the yacht that fits your group, tell us what you want to do, and we&rsquo;ll build the day around you &mdash; snorkel at Chileno or Santa Mar&iacute;a Bay, cruise to the Arch, swim and paddleboard in a quiet cove, or celebrate a milestone on the water. Crew, fuel, premium open bar, food, snorkel gear, paddleboards, towels, and Bluetooth speakers are all included. You just step onboard.
+    </p>
+  </div>
+</div>
+
+<!-- MOBILE: Title + intro -->
+<div class="lg:hidden mt-6 px-5">
+  <nav class="flex items-center gap-1.5 text-xs text-slate-500 mb-4" aria-label="Breadcrumb">
+    <a href="/" class="hover:text-gold transition-colors">Home</a>
+    <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+    <span>Tours</span>
+    <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+    <span class="text-navy font-semibold">Yacht Charter</span>
+  </nav>
+  <h1 class="text-2xl text-navy leading-tight">Private Yacht Charter &amp; Rental in Cabo San Lucas</h1>
+  <p class="text-slate-700 text-base leading-relaxed mt-2">Charter a private yacht or sailboat for your group &mdash; family days, celebrations, anniversaries, and group getaways. All-inclusive, fully crewed, and designed around you.</p>
+</div>
+
+<!-- MOBILE: Icons row -->
+<div class="lg:hidden mt-5 px-5">
+  <div class="grid grid-cols-2 gap-x-3 gap-y-3">
+    <div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-gold text-lg">schedule</span><p class="text-xs font-semibold text-navy">3 Hours</p></div>
+    <div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-gold text-lg">add</span><p class="text-xs font-semibold text-navy">Extra Time Available</p></div>
+    <div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-gold text-lg">celebration</span><p class="text-xs font-semibold text-navy">Private Charter</p></div>
+    <div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-gold text-lg">groups</span><p class="text-xs font-semibold text-navy">Up to 20 Guests</p></div>
+    <div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-gold text-lg">family_restroom</span><p class="text-xs font-semibold text-navy">Family Friendly</p></div>
+    <div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-gold text-lg">local_bar</span><p class="text-xs font-semibold text-navy">All-Inclusive</p></div>
+    <div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-gold text-lg">event_available</span><p class="text-xs font-semibold text-navy">Free Cancellation</p></div>
+    <div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-gold text-lg">pin_drop</span><p class="text-xs font-semibold text-navy">Cabo Marina, Dock F</p></div>
+  </div>
+</div>
+
+<!-- MOBILE: About -->
+<div class="lg:hidden mt-8 px-5">
+  <h3 class="text-lg text-navy mb-3">About this experience</h3>
+  <p class="text-slate-700 leading-relaxed text-base">A private yacht charter in Cabo San Lucas is the most flexible, comfortable way to experience the Sea of Cortez. Pick the yacht that fits your group, tell us what you want to do, and we&rsquo;ll build the day around you &mdash; snorkel at Chileno or Santa Mar&iacute;a Bay, cruise to the Arch, swim and paddleboard in a quiet cove, or celebrate a milestone on the water.</p>
+</div>
+
+<!-- ===== UNIQUE BLOCK #1: Charter for any occasion ===== -->
+<div class="mt-12 lg:max-w-[1400px] lg:mx-auto lg:px-10 px-5">
+  <div class="flex items-center gap-3 mb-6"><div class="w-1 h-6 bg-gold rounded-full"></div><h2 class="text-lg lg:text-3xl text-navy">Charter for any occasion</h2></div>
+  <p class="text-slate-700 text-base lg:text-lg leading-relaxed mb-8 lg:max-w-3xl">Every charter is built around your group. Here&rsquo;s how guests use the boat most often &mdash; pick the one that fits and we&rsquo;ll handle the rest.</p>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+    <a href="/private-snorkeling" class="group bg-white border border-border-light rounded-2xl overflow-hidden shadow-md shadow-navy/5 hover:shadow-xl transition-shadow">
+      <div class="h-44 overflow-hidden"><Image src={familyYachtEscape} alt="Family yacht charter day in Cabo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
+      <div class="p-5">
+        <h3 class="text-base font-bold text-navy mb-2">Family Day</h3>
+        <p class="text-sm text-slate-600 leading-relaxed">Calm bays, easy snorkeling, kid-friendly crew. Perfect for kids and grandparents alike.</p>
+        <p class="text-xs text-accent-gold font-semibold uppercase tracking-widest mt-3 group-hover:underline">Explore family snorkeling &rarr;</p>
+      </div>
+    </a>
+    <a href="/bachelorette" class="group bg-white border border-border-light rounded-2xl overflow-hidden shadow-md shadow-navy/5 hover:shadow-xl transition-shadow">
+      <div class="h-44 overflow-hidden"><Image src={celebrationYacht} alt="Birthday and anniversary yacht charter celebration" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
+      <div class="p-5">
+        <h3 class="text-base font-bold text-navy mb-2">Celebration</h3>
+        <p class="text-sm text-slate-600 leading-relaxed">Birthdays, anniversaries, bachelor &amp; bachelorette parties, family reunions. Custom playlist, your call.</p>
+        <p class="text-xs text-accent-gold font-semibold uppercase tracking-widest mt-3 group-hover:underline">See celebration charters &rarr;</p>
+      </div>
+    </a>
+    <a href="/private-sunset" class="group bg-white border border-border-light rounded-2xl overflow-hidden shadow-md shadow-navy/5 hover:shadow-xl transition-shadow">
+      <div class="h-44 overflow-hidden"><Image src={romanticSunset} alt="Romantic sunset yacht charter for couples" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
+      <div class="p-5">
+        <h3 class="text-base font-bold text-navy mb-2">Romance</h3>
+        <p class="text-sm text-slate-600 leading-relaxed">Couples, honeymoons, proposals. Champagne, golden-hour light, and Cabo&rsquo;s most photogenic backdrop.</p>
+        <p class="text-xs text-accent-gold font-semibold uppercase tracking-widest mt-3 group-hover:underline">Explore sunset cruises &rarr;</p>
+      </div>
+    </a>
+    <a href="#choose-your-yacht" class="group bg-white border border-border-light rounded-2xl overflow-hidden shadow-md shadow-navy/5 hover:shadow-xl transition-shadow">
+      <div class="h-44 overflow-hidden"><Image src={sunFilledBoatDay} alt="Group of friends on a private yacht in Cabo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
+      <div class="p-5">
+        <h3 class="text-base font-bold text-navy mb-2">Group Getaway</h3>
+        <p class="text-sm text-slate-600 leading-relaxed">Friend trips, corporate retreats, milestone weekends. Up to 20 guests on our largest yacht.</p>
+        <p class="text-xs text-accent-gold font-semibold uppercase tracking-widest mt-3 group-hover:underline">Pick your yacht &rarr;</p>
+      </div>
+    </a>
+  </div>
+</div>
+
+<!-- ===== Choose Your Yacht ===== -->
+<div id="choose-your-yacht" class="mt-14 lg:max-w-[1400px] lg:mx-auto lg:px-10 lg:py-8 px-5">
+  <div class="flex items-center gap-3 mb-8"><div class="w-1 h-6 bg-gold rounded-full"></div><h2 class="text-lg lg:text-2xl text-navy">Choose your yacht &mdash; built for any group size</h2></div>
+
+  <!-- Luxury yachts -->
+  <div class="flex flex-col gap-5 lg:grid lg:grid-cols-3 lg:max-w-[1100px] lg:mx-auto pb-8">
+    <!-- Yacht 51' — Most Spacious -->
+    <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="yacht-51">
+      <CarouselImage type="boat" id="yacht-51" alt="Luxury Yacht 51' private charter in Cabo">
+        <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
+        <div class="absolute bottom-5 left-6">
+          <h3 class="text-white text-lg lg:text-xl">Luxury Yacht 51'</h3>
+          <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Up to 20 Guests</span></div>
+        </div>
+        <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Most Spacious</div>
+        <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-30%</div>
+      </CarouselImage>
+      <div class="p-4 space-y-4">
+        <p class="text-slate-700 text-sm italic text-center pb-3 border-b border-border-light/50">Best for large groups &amp; maximum space</p>
+        <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$1,690</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$1,436</span><span class="text-slate-500 text-[11px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="flex flex-col items-end"><span class="text-slate-500 text-[11px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-500 text-[11px] font-medium">/pp</span></div></div></div>
+        <button type="button" onclick="openRezdyModal('165509')" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg cursor-pointer">Check Availability</button>
+      </div>
+    </div>
+    <!-- Yacht 45' — Most Popular -->
+    <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="yacht-45">
+      <CarouselImage type="boat" id="yacht-45" alt="Luxury Yacht 45' private charter in Cabo" imgStyle="transform: none;">
+        <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
+        <div class="absolute bottom-5 left-6">
+          <h3 class="text-white text-lg lg:text-xl">Luxury Yacht 45'</h3>
+          <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Up to 12 Guests</span></div>
+        </div>
+        <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Most Popular</div>
+        <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-30%</div>
+      </CarouselImage>
+      <div class="p-4 space-y-4">
+        <p class="text-slate-700 text-sm italic text-center pb-3 border-b border-border-light/50">Newest vessel, sleek &amp; modern luxury</p>
+        <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$1,520</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$1,292</span><span class="text-slate-500 text-[11px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="flex flex-col items-end"><span class="text-slate-500 text-[11px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-500 text-[11px] font-medium">/pp</span></div></div></div>
+        <button type="button" onclick="openRezdyModal('528988')" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg cursor-pointer">Check Availability</button>
+      </div>
+    </div>
+    <!-- Yacht 42' — Best Value -->
+    <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="yacht-42">
+      <CarouselImage type="boat" id="yacht-42" alt="Luxury Yacht 42' private charter in Cabo">
+        <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
+        <div class="absolute bottom-5 left-6">
+          <h3 class="text-white text-lg lg:text-xl">Luxury Yacht 42'</h3>
+          <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Up to 18 Guests</span></div>
+        </div>
+        <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Best Value</div>
+        <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-30%</div>
+      </CarouselImage>
+      <div class="p-4 space-y-4">
+        <p class="text-slate-700 text-sm italic text-center pb-3 border-b border-border-light/50">Great value, perfect for families</p>
+        <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$1,350</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$1,148</span><span class="text-slate-500 text-[11px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="flex flex-col items-end"><span class="text-slate-500 text-[11px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-500 text-[11px] font-medium">/pp</span></div></div></div>
+        <button type="button" onclick="openRezdyModal('168008')" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg cursor-pointer">Check Availability</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quick comparison -->
+  <div class="mt-6 lg:max-w-[1100px] lg:mx-auto">
+    <div class="hidden lg:block">
+      <div class="flex items-center gap-3 mb-4"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-xl text-navy">Quick Comparison</h3></div>
+      <table class="w-full text-left border-collapse">
+        <thead>
+          <tr class="border-b-2 border-gold/30">
+            <th class="py-3 pr-4 text-xs font-bold text-navy uppercase tracking-widest">Boat</th>
+            <th class="py-3 pr-4 text-xs font-bold text-navy uppercase tracking-widest">Guests</th>
+            <th class="py-3 pr-4 text-xs font-bold text-navy uppercase tracking-widest">From</th>
+            <th class="py-3 text-xs font-bold text-navy uppercase tracking-widest">Best for</th>
+          </tr>
+        </thead>
+        <tbody class="text-sm">
+          <tr class="border-b border-border-light"><td class="py-3 pr-4 font-semibold text-navy">51' Yacht</td><td class="py-3 pr-4 text-slate-700">Up to 20</td><td class="py-3 pr-4 text-slate-700">$1,436</td><td class="py-3 text-slate-700">Big groups, reunions, corporate</td></tr>
+          <tr class="border-b border-border-light bg-gold/5"><td class="py-3 pr-4 font-semibold text-navy"><span class="text-gold mr-1">&#11088;</span>45' Yacht</td><td class="py-3 pr-4 text-slate-700">Up to 12</td><td class="py-3 pr-4 text-slate-700">$1,292</td><td class="py-3 text-slate-700">Newest, premium feel, celebrations</td></tr>
+          <tr><td class="py-3 pr-4 font-semibold text-navy">42' Yacht</td><td class="py-3 pr-4 text-slate-700">Up to 18</td><td class="py-3 pr-4 text-slate-700">$1,148</td><td class="py-3 text-slate-700">Families &amp; mid-size groups</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Cinematic Arch image ===== -->
+<div class="mt-14 lg:max-w-[1400px] lg:mx-auto lg:px-10 px-5">
+  <div class="relative rounded-2xl overflow-hidden shadow-xl shadow-navy/10">
+    <Image src={yachtAtArch} alt="Luxury private yacht charter cruising past the Arch of Cabo San Lucas" class="w-full h-[260px] lg:h-[420px] object-cover" width={1600} height={900} />
+    <div class="absolute inset-0 bg-gradient-to-t from-navy/50 via-transparent to-transparent"></div>
+    <div class="absolute bottom-6 left-6 right-6 lg:bottom-10 lg:left-10">
+      <p class="text-white text-xs lg:text-sm uppercase tracking-[0.2em] font-bold mb-1 lg:mb-2">Cabo San Lucas</p>
+      <h3 class="text-white text-xl lg:text-3xl font-heading leading-tight max-w-2xl">Cruise past the Arch, anchor in a quiet bay, and own the day.</h3>
+    </div>
+  </div>
+</div>
+
+<!-- ===== UNIQUE BLOCK #2: Build your day ===== -->
+<div class="mt-14 lg:max-w-[1400px] lg:mx-auto lg:px-10 px-5">
+  <div class="flex items-center gap-3 mb-6"><div class="w-1 h-6 bg-gold rounded-full"></div><h2 class="text-lg lg:text-3xl text-navy">Build your day on the water</h2></div>
+  <p class="text-slate-700 text-base lg:text-lg leading-relaxed mb-8 lg:max-w-3xl">There&rsquo;s no fixed script. Mix and match what you&rsquo;d like to do during your 3-hour charter &mdash; or extend to 4, 5, or 6 hours to fit it all in.</p>
+  <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-5">
+    <div class="bg-light-grey rounded-2xl p-5 border border-border-light">
+      <div class="w-10 h-10 rounded-full bg-navy flex items-center justify-center mb-3"><Image src={snorkelIcon} alt="" class="w-5 h-5 object-contain" style="filter: brightness(0) invert(1);" width={40} height={40} /></div>
+      <h3 class="text-base font-bold text-navy mb-1">Snorkel</h3>
+      <p class="text-sm text-slate-600 leading-relaxed">Chileno Bay, Santa Mar&iacute;a, or Pelican Rock. Full gear and guide included.</p>
+    </div>
+    <div class="bg-light-grey rounded-2xl p-5 border border-border-light">
+      <div class="w-10 h-10 rounded-full bg-navy flex items-center justify-center mb-3"><span class="material-symbols-outlined text-white text-lg">surfing</span></div>
+      <h3 class="text-base font-bold text-navy mb-1">Paddleboard</h3>
+      <p class="text-sm text-slate-600 leading-relaxed">SUPs and a floating water mat available on all yachts.</p>
+    </div>
+    <div class="bg-light-grey rounded-2xl p-5 border border-border-light">
+      <div class="w-10 h-10 rounded-full bg-navy flex items-center justify-center mb-3"><span class="material-symbols-outlined text-white text-lg">wb_twilight</span></div>
+      <h3 class="text-base font-bold text-navy mb-1">Sunset Cruise</h3>
+      <p class="text-sm text-slate-600 leading-relaxed">Time your charter for golden hour &mdash; Cabo&rsquo;s most iconic light.</p>
+    </div>
+    <div class="bg-light-grey rounded-2xl p-5 border border-border-light">
+      <div class="w-10 h-10 rounded-full bg-navy flex items-center justify-center mb-3"><span class="material-symbols-outlined text-white text-lg">water</span></div>
+      <h3 class="text-base font-bold text-navy mb-1">Whale Watching</h3>
+      <p class="text-sm text-slate-600 leading-relaxed">Dec&ndash;Apr. Add this to a charter or do a dedicated trip &mdash; <a href="/whale-watching" class="text-accent-gold font-semibold hover:underline">see whale watching</a>.</p>
+    </div>
+    <div class="bg-light-grey rounded-2xl p-5 border border-border-light">
+      <div class="w-10 h-10 rounded-full bg-navy flex items-center justify-center mb-3"><span class="material-symbols-outlined text-white text-lg">restaurant</span></div>
+      <h3 class="text-base font-bold text-navy mb-1">Custom Menu</h3>
+      <p class="text-sm text-slate-600 leading-relaxed">Standard menu included. Mexican, kosher, vegan, or vegetarian options on request.</p>
+    </div>
+    <div class="bg-light-grey rounded-2xl p-5 border border-border-light">
+      <div class="w-10 h-10 rounded-full bg-navy flex items-center justify-center mb-3"><span class="material-symbols-outlined text-white text-lg">cake</span></div>
+      <h3 class="text-base font-bold text-navy mb-1">Decorations</h3>
+      <p class="text-sm text-slate-600 leading-relaxed">Birthdays, anniversaries, bachelorette: ask about custom decorations and cake.</p>
+    </div>
+    <div class="bg-light-grey rounded-2xl p-5 border border-border-light">
+      <div class="w-10 h-10 rounded-full bg-navy flex items-center justify-center mb-3"><span class="material-symbols-outlined text-white text-lg">music_note</span></div>
+      <h3 class="text-base font-bold text-navy mb-1">Your Playlist</h3>
+      <p class="text-sm text-slate-600 leading-relaxed">Bluetooth speakers on every boat &mdash; bring your own playlist.</p>
+    </div>
+    <div class="bg-light-grey rounded-2xl p-5 border border-border-light">
+      <div class="w-10 h-10 rounded-full bg-navy flex items-center justify-center mb-3"><span class="material-symbols-outlined text-white text-lg">schedule</span></div>
+      <h3 class="text-base font-bold text-navy mb-1">Extra Hours</h3>
+      <p class="text-sm text-slate-600 leading-relaxed">Standard charter is 3 hours. Extend by the hour to make a full day of it.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ===== What's Included ===== -->
+<div class="mt-14 lg:max-w-[1400px] lg:mx-auto lg:px-10 px-5">
+  <div class="flex items-center gap-3 mb-6"><div class="w-1 h-6 bg-gold rounded-full"></div><h2 class="text-lg lg:text-2xl text-navy">What&rsquo;s Included</h2></div>
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 pl-1">
+    <div class="flex items-start gap-4"><div class="w-7 h-7 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[15px]">local_bar</span></div><div><span class="text-slate-700 text-base font-semibold">Premium open bar</span><p class="text-slate-700 text-sm mt-0.5">Wine, margaritas, beer, rum, vodka, tequila, whiskey, juices, sodas</p></div></div>
+    <div class="flex items-start gap-4"><div class="w-7 h-7 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[15px]">restaurant</span></div><div><span class="text-slate-700 text-base font-semibold">Fresh food onboard</span><p class="text-slate-700 text-sm mt-0.5">Guacamole, chips, sushi rolls, quesadillas, fruit, dessert</p></div></div>
+    <div class="flex items-start gap-4"><div class="w-7 h-7 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><Image src={snorkelIcon} alt="" class="w-4 h-4 object-contain" style="filter: brightness(0) invert(1);" width={28} height={28} /></div><div><span class="text-slate-700 text-base font-semibold">Snorkel gear</span><p class="text-slate-700 text-sm mt-0.5">Mask, fins, vest &mdash; all sizes available</p></div></div>
+    <div class="flex items-start gap-4"><div class="w-7 h-7 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[15px]">surfing</span></div><div><span class="text-slate-700 text-base font-semibold">Paddleboard &amp; water mat</span><p class="text-slate-700 text-sm mt-0.5">Available on yachts</p></div></div>
+    <div class="flex items-start gap-4"><div class="w-7 h-7 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[15px]">music_note</span></div><div><span class="text-slate-700 text-base font-semibold">Bluetooth speaker</span><p class="text-slate-700 text-sm mt-0.5">On every boat &mdash; connect your phone, your playlist</p></div></div>
+    <div class="flex items-start gap-4"><div class="w-7 h-7 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[15px]">dry_cleaning</span></div><div><span class="text-slate-700 text-base font-semibold">Towels provided</span><p class="text-slate-700 text-sm mt-0.5">Everything you need for the water</p></div></div>
+    <div class="flex items-start gap-4"><div class="w-7 h-7 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[15px]">person</span></div><div><span class="text-slate-700 text-base font-semibold">Experienced bilingual crew</span><p class="text-slate-700 text-sm mt-0.5">Friendly, professional, safety-focused</p></div></div>
+    <div class="flex items-start gap-4"><div class="w-7 h-7 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[15px]">anchor</span></div><div><span class="text-slate-700 text-base font-semibold">Fuel &amp; marina fees</span><p class="text-slate-700 text-sm mt-0.5">No hidden surcharges &mdash; one price covers it all</p></div></div>
+  </div>
+</div>
+
+<!-- ===== UNIQUE BLOCK #3: Why charter with us ===== -->
+<div class="mt-14 lg:max-w-[1400px] lg:mx-auto lg:px-10 px-5">
+  <div class="rounded-3xl bg-navy text-white p-8 lg:p-12">
+    <div class="flex items-center gap-3 mb-5"><div class="w-1 h-6 bg-gold rounded-full"></div><h2 class="text-lg lg:text-2xl">Why charter with Cabo Sailing</h2></div>
+    <p class="text-white/90 text-base lg:text-lg leading-relaxed mb-8 lg:max-w-3xl">Quality over quantity. Every single charter is planned and executed for one outcome: a day your group remembers for years. That&rsquo;s the only standard we work to.</p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div>
+        <div class="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center mb-3"><span class="material-symbols-outlined text-gold">verified</span></div>
+        <h3 class="text-base font-bold mb-1">Every detail planned</h3>
+        <p class="text-sm text-white/80 leading-relaxed">We don&rsquo;t over-book or rush departures. Your day is built around your group, not the schedule.</p>
+      </div>
+      <div>
+        <div class="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center mb-3"><span class="material-symbols-outlined text-gold">sailing</span></div>
+        <h3 class="text-base font-bold mb-1">Yachts &amp; true sailboats</h3>
+        <p class="text-sm text-white/80 leading-relaxed">Five vessels, one team. Pick a motor yacht for comfort or a sailboat for the real thing &mdash; same standard of service either way.</p>
+      </div>
+      <div>
+        <div class="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center mb-3"><span class="material-symbols-outlined text-gold">handshake</span></div>
+        <h3 class="text-base font-bold mb-1">Honest pricing</h3>
+        <p class="text-sm text-white/80 leading-relaxed">All-inclusive means all-inclusive. Bar, food, gear, fuel, marina fees &mdash; one price, no surprises.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== FAQ ===== -->
+<div class="mt-14 lg:max-w-[1400px] lg:mx-auto lg:px-10 px-5">
+  <div class="flex items-center gap-3 mb-6"><div class="w-1 h-6 bg-gold rounded-full"></div><h2 class="text-lg lg:text-3xl text-navy">Frequently Asked Questions</h2></div>
+  <div class="space-y-3 lg:max-w-3xl">
+    <div class="faq-item border border-border-light rounded-2xl overflow-hidden bg-white">
+      <input class="hidden" id="faq-yc-menu" type="checkbox"/>
+      <label class="flex items-center justify-between p-4 cursor-pointer" for="faq-yc-menu">
+        <span class="flex items-center gap-2 text-base font-semibold text-navy"><span class="material-symbols-outlined text-gold" style="font-size:18px">restaurant</span>Onboard Menu &amp; Bar</span>
+        <span class="material-symbols-outlined text-slate-500 faq-chevron transition-transform duration-300">expand_more</span>
+      </label>
+      <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
+        <div class="text-sm text-slate-700 leading-relaxed space-y-3">
+          <div><p class="font-semibold text-navy mb-1">Bar</p><p>Premium open bar: red &amp; white wine, margaritas, beer, rum, vodka, tequila, whiskey, juices, sodas, bottled water.</p></div>
+          <div><p class="font-semibold text-navy mb-1">Snorkeling Menu</p><p>Tortilla chips with Mexican salsa &amp; homemade guacamole, fresh baguette sandwiches, fresh-cut fruit platter, warm-last-minute quesadillas and a sweet bite to finish.</p></div>
+          <div><p class="font-semibold text-navy mb-1">Sunset Menu</p><p>Tortilla chips with Mexican salsa and homemade guacamole, California-style sushi rolls, cheese and cold-cut platters, freshly made quesadillas, a selection of seasonal fruit, and a sweet bite to finish.</p></div>
+          <div class="border-t border-border-light pt-3"><p><span class="font-semibold text-navy">Mexican Menu &mdash; $14 USD per person:</span> Tortilla chips with salsa &amp; homemade guacamole, beef and chicken corn tortilla burritos, rice and beans, freshly made quesadillas, and dessert.</p></div>
+          <p class="text-slate-500 italic">Contact our office team for Kosher, Vegan or Vegetarian options.</p>
+        </div>
+      </div>
+    </div>
+    <div class="faq-item border border-border-light rounded-2xl overflow-hidden bg-white">
+      <input class="hidden" id="faq-yc-1" type="checkbox"/>
+      <label class="flex items-center justify-between p-4 cursor-pointer" for="faq-yc-1">
+        <span class="text-base font-semibold text-navy">Can we choose the route?</span>
+        <span class="material-symbols-outlined text-slate-500 faq-chevron transition-transform duration-300">expand_more</span>
+      </label>
+      <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
+        <p class="text-sm text-slate-700 leading-relaxed">Yes &mdash; that&rsquo;s the whole point of a private yacht charter. Tell us in advance what you&rsquo;d like (snorkel, sunset timing, quiet swim, paddleboarding, photos at the Arch) and we&rsquo;ll build the day around you. Your captain can also adjust on the water if your group changes its mind.</p>
+      </div>
+    </div>
+    <div class="faq-item border border-border-light rounded-2xl overflow-hidden bg-white">
+      <input class="hidden" id="faq-yc-snorkel" type="checkbox"/>
+      <label class="flex items-center justify-between p-4 cursor-pointer" for="faq-yc-snorkel">
+        <span class="text-base font-semibold text-navy">Can we snorkel during the yacht charter?</span>
+        <span class="material-symbols-outlined text-slate-500 faq-chevron transition-transform duration-300">expand_more</span>
+      </label>
+      <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
+        <p class="text-sm text-slate-700 leading-relaxed">Yes. Snorkel gear is included on every yacht charter &mdash; mask, fins, and life vests in all sizes. Your captain will anchor at the best spot of the day, typically <strong>Chileno Bay</strong> or <strong>Santa Mar&iacute;a Bay</strong> &mdash; both calm, clear, and full of tropical fish. Beginners and kids are welcome; the crew helps anyone who needs it.</p>
+      </div>
+    </div>
+    <div class="faq-item border border-border-light rounded-2xl overflow-hidden bg-white">
+      <input class="hidden" id="faq-yc-occasion" type="checkbox"/>
+      <label class="flex items-center justify-between p-4 cursor-pointer" for="faq-yc-occasion">
+        <span class="text-base font-semibold text-navy">Is this good for bachelorette parties or families?</span>
+        <span class="material-symbols-outlined text-slate-500 faq-chevron transition-transform duration-300">expand_more</span>
+      </label>
+      <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
+        <p class="text-sm text-slate-700 leading-relaxed">Both &mdash; our yachts are built for groups of any age and any vibe. Shaded seating and calm spaces for kids and grandparents, plenty of deck for dancing and sunbathing. We host <a href="/bachelorette" class="text-accent-gold font-semibold hover:underline">bachelorette parties</a>, family reunions, anniversaries, birthdays, and corporate retreats every week. Bring your own decorations and playlist &mdash; we&rsquo;ll take care of the rest.</p>
+      </div>
+    </div>
+    <div class="faq-item border border-border-light rounded-2xl overflow-hidden bg-white">
+      <input class="hidden" id="faq-yc-weather" type="checkbox"/>
+      <label class="flex items-center justify-between p-4 cursor-pointer" for="faq-yc-weather">
+        <span class="text-base font-semibold text-navy">What happens if the weather is bad?</span>
+        <span class="material-symbols-outlined text-slate-500 faq-chevron transition-transform duration-300">expand_more</span>
+      </label>
+      <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
+        <p class="text-sm text-slate-700 leading-relaxed">If the captain determines it&rsquo;s unsafe to sail, we reschedule your charter to another date at no charge &mdash; or refund in full if you can&rsquo;t rebook. Cabo&rsquo;s weather is excellent year-round, but in the rare case of high winds or rough seas, we always prioritize safety. See our <a href="/policies" class="text-accent-gold font-semibold hover:underline">cancellation &amp; weather policies</a> for full details.</p>
+      </div>
+    </div>
+    <div class="faq-item border border-border-light rounded-2xl overflow-hidden bg-white">
+      <input class="hidden" id="faq-yc-2" type="checkbox"/>
+      <label class="flex items-center justify-between p-4 cursor-pointer" for="faq-yc-2">
+        <span class="text-base font-semibold text-navy">How long is a standard charter? Can we extend?</span>
+        <span class="material-symbols-outlined text-slate-500 faq-chevron transition-transform duration-300">expand_more</span>
+      </label>
+      <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
+        <p class="text-sm text-slate-700 leading-relaxed">Standard charter is 3 hours. You can extend by the hour for a full day of snorkeling, paddleboarding, lunch, and a sunset return. Let us know when booking and we&rsquo;ll quote the extra time.</p>
+      </div>
+    </div>
+    <div class="faq-item border border-border-light rounded-2xl overflow-hidden bg-white">
+      <input class="hidden" id="faq-yc-3" type="checkbox"/>
+      <label class="flex items-center justify-between p-4 cursor-pointer" for="faq-yc-3">
+        <span class="text-base font-semibold text-navy">How many guests can each boat hold?</span>
+        <span class="material-symbols-outlined text-slate-500 faq-chevron transition-transform duration-300">expand_more</span>
+      </label>
+      <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
+        <p class="text-sm text-slate-700 leading-relaxed">38' Sailboat &mdash; 9 guests, 42' Sailboat &mdash; 14 guests, 42' Yacht &mdash; 18 guests, 45' Yacht &mdash; 12 guests, 51' Yacht &mdash; 20 guests. The 51' is our largest, ideal for reunions and corporate trips.</p>
+      </div>
+    </div>
+    <div class="faq-item border border-border-light rounded-2xl overflow-hidden bg-white">
+      <input class="hidden" id="faq-yc-4" type="checkbox"/>
+      <label class="flex items-center justify-between p-4 cursor-pointer" for="faq-yc-4">
+        <span class="text-base font-semibold text-navy">Is the open bar really unlimited?</span>
+        <span class="material-symbols-outlined text-slate-500 faq-chevron transition-transform duration-300">expand_more</span>
+      </label>
+      <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
+        <p class="text-sm text-slate-700 leading-relaxed">Yes &mdash; premium open bar is included for all guests for the duration of the charter. There are no surcharges for spirits, wine, or beer.</p>
+      </div>
+    </div>
+    <div class="faq-item border border-border-light rounded-2xl overflow-hidden bg-white">
+      <input class="hidden" id="faq-yc-5" type="checkbox"/>
+      <label class="flex items-center justify-between p-4 cursor-pointer" for="faq-yc-5">
+        <span class="text-base font-semibold text-navy">Is gratuity included?</span>
+        <span class="material-symbols-outlined text-slate-500 faq-chevron transition-transform duration-300">expand_more</span>
+      </label>
+      <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
+        <p class="text-sm text-slate-700 leading-relaxed">Gratuity for the crew is not included &mdash; it&rsquo;s at your discretion. 15&ndash;20% of the charter price is customary if you&rsquo;ve had a great time.</p>
+      </div>
+    </div>
+    <div class="faq-item border border-border-light rounded-2xl overflow-hidden bg-white">
+      <input class="hidden" id="faq-yc-6" type="checkbox"/>
+      <label class="flex items-center justify-between p-4 cursor-pointer" for="faq-yc-6">
+        <span class="text-base font-semibold text-navy">Can we bring our own food, drinks, or decorations?</span>
+        <span class="material-symbols-outlined text-slate-500 faq-chevron transition-transform duration-300">expand_more</span>
+      </label>
+      <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
+        <p class="text-sm text-slate-700 leading-relaxed">Yes. You&rsquo;re welcome to bring decorations, a cake, or specialty items. The included food and bar are extensive, so most groups don&rsquo;t need to. Just let us know in advance.</p>
+      </div>
+    </div>
+    <div class="faq-item border border-border-light rounded-2xl overflow-hidden bg-white">
+      <input class="hidden" id="faq-yc-7" type="checkbox"/>
+      <label class="flex items-center justify-between p-4 cursor-pointer" for="faq-yc-7">
+        <span class="text-base font-semibold text-navy">Where do we meet?</span>
+        <span class="material-symbols-outlined text-slate-500 faq-chevron transition-transform duration-300">expand_more</span>
+      </label>
+      <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
+        <p class="text-sm text-slate-700 leading-relaxed">All charters depart from Cabo Marina, Dock F. We&rsquo;ll send detailed directions and a map after booking. <a href="/shuttle-service" class="text-accent-gold font-semibold hover:underline">Shuttle service</a> is available from any Cabo hotel.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Trust links -->
+<div class="mt-10 lg:max-w-[1400px] lg:mx-auto lg:px-10 px-5">
+  <p class="text-sm text-slate-500 text-center">Have questions before booking? Learn more <a href="/about-us" class="text-accent-gold font-semibold hover:underline">about us</a> or review our <a href="/policies" class="text-accent-gold font-semibold hover:underline">cancellation &amp; weather policies</a>.</p>
+</div>
+
+<!-- CTA box -->
+<div class="mt-12 lg:max-w-[1400px] lg:mx-auto lg:px-10 px-5">
+  <div class="rounded-2xl bg-navy text-white text-center px-6 py-10 lg:py-14 shadow-lg">
+    <h3 class="font-heading text-2xl lg:text-3xl mb-2">Your private yacht is waiting</h3>
+    <p class="text-white/80 mb-6">Check live availability now</p>
+    <a href="#choose-your-yacht" class="inline-block bg-gold text-navy font-bold text-[12px] px-8 py-4 rounded-2xl uppercase tracking-[0.2em] shadow-lg">Pick Your Yacht</a>
+  </div>
+</div>
+
+<!-- Reviews -->
+<div class="px-5 pb-32 lg:max-w-[1400px] lg:mx-auto lg:px-10 lg:py-16 lg:pb-20 mt-8">
+  <div class="flex items-center gap-3 mb-4 lg:mb-8"><div class="w-1 h-6 bg-gold rounded-full"></div><h2 class="text-lg lg:text-3xl text-navy">What Our Guests Say</h2></div>
+  <div class="relative">
+    <div id="m-carousel" class="flex overflow-x-auto gap-4 lg:gap-6 no-scrollbar snap-x snap-mandatory pb-4 lg:overflow-hidden">
+      <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
+        <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Chartered the 45' for my husband's 50th and they thought of everything &mdash; the cake we asked for, his favorite playlist, even a custom toast from the captain. Worth every penny."</p>
+        <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center text-white text-sm font-bold">EM</div><div><p class="text-sm font-bold text-navy">Erin M.</p><p class="text-base text-slate-500">San Francisco, CA</p></div></div>
+      </div>
+      <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
+        <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Family reunion with 18 of us on the 51' yacht. Three generations, everyone happy. The crew was incredible with the kids and the food kept coming. Best family memory we've ever made."</p>
+        <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-gold flex items-center justify-center text-white text-sm font-bold">RH</div><div><p class="text-sm font-bold text-navy">Robert H.</p><p class="text-base text-slate-500">Dallas, TX</p></div></div>
+      </div>
+      <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
+        <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Booked the 38' sailboat for our 10th anniversary. Quiet, intimate, just the two of us with a beautiful sunset. The captain gave us privacy when we wanted it and stories when we asked. Magical."</p>
+        <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy/70 flex items-center justify-center text-white text-sm font-bold">SK</div><div><p class="text-sm font-bold text-navy">Sarah &amp; Kevin</p><p class="text-base text-slate-500">Toronto, ON</p></div></div>
+      </div>
+      <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
+        <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Corporate retreat for 14 on the 42' yacht. Extended to 5 hours and used it as the offsite. Snorkeling, paddleboards, lunch, and a working lounge area. Professional, polished, and fun."</p>
+        <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center text-white text-sm font-bold">JL</div><div><p class="text-sm font-bold text-navy">Jordan L.</p><p class="text-base text-slate-500">Seattle, WA</p></div></div>
+      </div>
+      <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
+        <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"My in-laws are in their 70s and we did the 42' yacht for a family afternoon. The crew helped them with everything, the boat was steady and comfortable, and they're still talking about it months later."</p>
+        <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-gold flex items-center justify-center text-white text-sm font-bold">AN</div><div><p class="text-sm font-bold text-navy">Anita N.</p><p class="text-base text-slate-500">Boston, MA</p></div></div>
+      </div>
+      <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
+        <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Friends weekend, 10 of us. The boat became the centerpiece of the trip. Music on the Bluetooth, paddleboards in a quiet cove, sunset back at the marina. Already planning the next one."</p>
+        <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy/70 flex items-center justify-center text-white text-sm font-bold">TP</div><div><p class="text-sm font-bold text-navy">Tessa P.</p><p class="text-base text-slate-500">New York, NY</p></div></div>
+      </div>
+    </div>
+    <button onclick="scrollMReviews(-1)" class="hidden lg:flex absolute left-[-20px] top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white border border-border-light shadow-md items-center justify-center hover:bg-light-grey transition-colors z-10"><span class="material-symbols-outlined text-navy text-xl">chevron_left</span></button>
+    <button onclick="scrollMReviews(1)" class="hidden lg:flex absolute right-[-20px] top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white border border-border-light shadow-md items-center justify-center hover:bg-light-grey transition-colors z-10"><span class="material-symbols-outlined text-navy text-xl">chevron_right</span></button>
+    <div class="hidden lg:flex justify-center gap-2 mt-4">
+      <button onclick="goToMPage(0)" class="m-review-dot w-2.5 h-2.5 rounded-full bg-navy transition-colors"></button>
+      <button onclick="goToMPage(1)" class="m-review-dot w-2.5 h-2.5 rounded-full bg-border-light transition-colors"></button>
+    </div>
+  </div>
+</div>
+
+  </main>
+
+  <Footer />
+  <FloatingCTA />
+  <script is:inline>window.__pageActivityId='yacht-charter-cabo';</script>
+  <RezdyModal />
+
+  <script is:inline>
+  function heroNav(btn, dir) {
+    var wrap = btn.closest('.overflow-hidden').querySelector('.snap-x');
+    if (!wrap) return;
+    wrap.scrollBy({ left: dir * wrap.offsetWidth, behavior: 'smooth' });
+  }
+
+  var mPage = 0;
+  function scrollMReviews(dir) {
+    mPage = Math.max(0, Math.min(1, mPage + dir));
+    var container = document.getElementById('m-carousel');
+    var card = container.children[0];
+    var gap = 24;
+    container.scrollTo({ left: (card.offsetWidth + gap) * 3 * mPage, behavior: 'smooth' });
+    document.querySelectorAll('.m-review-dot').forEach(function(dot, i) {
+      dot.className = 'm-review-dot w-2.5 h-2.5 rounded-full transition-colors ' + (i === mPage ? 'bg-navy' : 'bg-border-light');
+    });
+  }
+  function goToMPage(page) { mPage = page; scrollMReviews(0); }
+  </script>
+</BaseLayout>
