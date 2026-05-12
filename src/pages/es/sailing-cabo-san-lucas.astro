@@ -1,0 +1,635 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import FloatingCTA from '../../components/FloatingCTA.astro';
+import RezdyModal from '../../components/RezdyModal.astro';
+import CarouselImage from '../../components/CarouselImage.astro';
+import { Image } from 'astro:assets';
+
+import heroSailingCoastline from "../../assets/images/guests-on-sailboats/sailing-near-cabos-rocky-coastline.png";
+import sailingGuestsWaving from "../../assets/images/guests-on-sailboats/cabo-sailing-guests-waving.jpg";
+import goldenHourSailing from "../../assets/images/guests-on-sailboats/golden-hour-sailing-with-friends.png";
+import sailingHorizon from "../../assets/images/guests-on-sailboats/sailing-into-the-sunny-horizon.png";
+import sailingSnorkelTour from "../../assets/images/guests-on-sailboats/cabo-sailing-snorkeling-tour.jpg";
+
+import sailboatsPelicansRock from "../../assets/images/blog/sailboats-passing-by-pelicans-rock.png";
+import snorkelIcon from "../../assets/icons/Snorkel 2.png";
+
+const touristTripSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "TouristTrip",
+  "name": "Navegar en Cabo San Lucas — Cruceros en Velero y Charters Privados",
+  "description": "Navegación real en Cabo San Lucas — cruceros en velero compartidos desde $102 por persona y charters de velero privados desde $701. Barra libre, comida, equipo de snorkel, salidas diarias desde Marina Cabo.",
+  "touristType": "Parejas, Familias, Viajeros Solos, Grupos",
+  "provider": {
+    "@type": "TravelAgency",
+    "name": "Cabo Sailing Ocean Adventures",
+    "url": "https://cabosailing.com"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://cabosailing.com/es/sailing-cabo-san-lucas/",
+    "priceCurrency": "USD",
+    "lowPrice": "102",
+    "availability": "https://schema.org/InStock"
+  }
+});
+
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://cabosailing.com/es/" },
+    { "@type": "ListItem", "position": 2, "name": "Tours", "item": "https://cabosailing.com/es/tours/" },
+    { "@type": "ListItem", "position": 3, "name": "Navegar en Cabo San Lucas" }
+  ]
+});
+---
+
+<BaseLayout bodyClass="bg-white font-body text-text-main antialiased min-h-screen flex flex-col relative" title="Navegar en Cabo San Lucas — Cruceros en Velero y Charters Privados | Cabo Sailing" description="Navegar en Cabo San Lucas — cruceros en velero compartidos desde $102/persona y charters privados desde $701. Navegación real, todo incluido, salidas diarias desde Marina Cabo." ogImage="/og/sailing-cabo-san-lucas.jpg" ogImageAlt="Navegar en Cabo San Lucas — cruceros en velero y charters privados" hreflangs={{ en: '/sailing-cabo-san-lucas', es: '/es/sailing-cabo-san-lucas' }}>
+  <script slot="head" type="application/ld+json" set:html={touristTripSchema} />
+  <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
+  <Header variant="subpage" activePage="tours" />
+
+  <style is:inline>
+    .faq-item input:checked ~ .faq-answer {
+      max-height: 800px; margin-top: 0.75rem; opacity: 1;
+    }
+    .faq-item input:checked ~ label .faq-chevron { transform: rotate(180deg); }
+  </style>
+
+  <main class="flex-1 w-full overflow-x-hidden pt-[60px] lg:pt-[72px]">
+
+<!-- Hero Gallery -->
+<div class="lg:hidden relative w-full h-[45vh] overflow-hidden">
+<div class="flex overflow-x-auto snap-x snap-mandatory h-full no-scrollbar">
+<div class="flex-shrink-0 w-full h-full snap-center"><Image src={heroSailingCoastline} alt="Navegando en Cabo San Lucas por la costa rocosa" class="w-full h-full object-cover" width={800} height={500} /></div>
+<div class="flex-shrink-0 w-full h-full snap-center"><Image src={sailingGuestsWaving} alt="Invitados en un velero en Cabo saludando desde la cubierta" class="w-full h-full object-cover" width={800} height={500} /></div>
+<div class="flex-shrink-0 w-full h-full snap-center"><Image src={goldenHourSailing} alt="Navegación al atardecer en Cabo San Lucas — hora dorada con amigos" class="w-full h-full object-cover" width={800} height={500} /></div>
+<div class="flex-shrink-0 w-full h-full snap-center"><Image src={sailingHorizon} alt="Navegando hacia el horizonte soleado de Cabo" class="w-full h-full object-cover" width={800} height={500} /></div>
+<div class="flex-shrink-0 w-full h-full snap-center"><Image src={sailingSnorkelTour} alt="Snorkel y navegación en Cabo San Lucas — invitados haciendo snorkel desde el velero" class="w-full h-full object-cover" width={800} height={500} /></div>
+</div>
+<div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent pt-10 pb-5 px-4">
+  <div class="max-w-[360px] mx-auto text-center">
+    <div class="flex items-center justify-center gap-0.5 mb-1.5">
+      <span class="material-symbols-outlined text-gold filled text-lg">star</span>
+      <span class="material-symbols-outlined text-gold filled text-lg">star</span>
+      <span class="material-symbols-outlined text-gold filled text-lg">star</span>
+      <span class="material-symbols-outlined text-gold filled text-lg">star</span>
+      <span class="material-symbols-outlined text-gold filled text-lg">star</span>
+    </div>
+    <p class="text-white text-base leading-snug">"La noche más mágica de nuestro viaje a Cabo. Velas arriba, el sol bajando, sin ruido de motor — solo el viento y el agua."</p>
+    <p class="text-white/50 text-xs uppercase tracking-widest font-bold mt-2">Laura &amp; Mark T. &mdash; Vancouver, BC</p>
+  </div>
+</div>
+<button class="fleet-arrow left" onclick="heroNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
+<button class="fleet-arrow right" onclick="heroNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
+</div>
+<div class="hidden lg:block max-w-[1400px] mx-auto px-10 mt-6 relative">
+<div class="grid grid-cols-4 grid-rows-2 gap-2 h-[55vh]">
+<div class="col-span-2 row-span-2 rounded-2xl overflow-hidden"><Image src={heroSailingCoastline} alt="Navegando en Cabo San Lucas por la costa rocosa" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
+<div class="rounded-2xl overflow-hidden"><Image src={sailingGuestsWaving} alt="Invitados en un velero en Cabo saludando desde la cubierta" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
+<div class="rounded-2xl overflow-hidden"><Image src={goldenHourSailing} alt="Navegación al atardecer en Cabo San Lucas — hora dorada con amigos" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
+<div class="rounded-2xl overflow-hidden"><Image src={sailingHorizon} alt="Navegando hacia el horizonte soleado de Cabo" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
+<div class="rounded-2xl overflow-hidden"><Image src={sailingSnorkelTour} alt="Snorkel y navegación en Cabo San Lucas — invitados haciendo snorkel desde el velero" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
+</div>
+<div class="mt-4 flex justify-center">
+  <div class="max-w-[520px] flex items-start gap-4">
+    <div class="flex-shrink-0 flex items-center gap-0.5 mt-0.5">
+      <span class="material-symbols-outlined text-gold filled text-base">star</span>
+      <span class="material-symbols-outlined text-gold filled text-base">star</span>
+      <span class="material-symbols-outlined text-gold filled text-base">star</span>
+      <span class="material-symbols-outlined text-gold filled text-base">star</span>
+      <span class="material-symbols-outlined text-gold filled text-base">star</span>
+    </div>
+    <div>
+      <p class="text-navy text-sm leading-snug">"La noche más mágica de nuestro viaje a Cabo. Velas arriba, el sol bajando, sin ruido de motor &mdash; solo el viento y el agua."</p>
+      <p class="text-navy/60 text-[10px] uppercase tracking-widest font-bold mt-2">Laura &amp; Mark T. &mdash; Vancouver, BC</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Discount banner -->
+<div class="w-full text-center py-3 px-4 shadow-md bg-gold mt-4 lg:mt-6">
+  <p class="text-navy font-bold text-sm lg:text-base uppercase tracking-widest">Ahorra hasta 40% &mdash; Tiempo Limitado</p>
+</div>
+
+<!-- DESKTOP: Title + intro -->
+<div class="hidden lg:block max-w-[1400px] mx-auto px-10 mt-10">
+  <nav class="flex items-center gap-1.5 text-xs text-slate-500 mb-4" aria-label="Breadcrumb">
+    <a href="/es/" class="hover:text-gold transition-colors">Inicio</a>
+    <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+    <span>Tours</span>
+    <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+    <span class="text-navy font-semibold">Navegar en Cabo San Lucas</span>
+  </nav>
+  <h1 class="text-4xl text-navy leading-tight">Navegar en Cabo San Lucas &mdash; Cruceros en Velero y Charters Privados</h1>
+  <p class="text-slate-700 text-lg leading-relaxed mt-2">Navegación real en veleros de verdad &mdash; cruceros compartidos con nuevos amigos o charters privados donde el barco es tuyo. Todo incluido, salidas diarias desde Marina Cabo.</p>
+
+  <!-- Icons row -->
+  <div class="mt-8 grid grid-cols-4 gap-x-6 gap-y-4">
+    <div class="flex items-center gap-2">
+      <span class="material-symbols-outlined text-gold">schedule</span>
+      <p class="text-sm font-semibold text-navy">3 Horas</p>
+    </div>
+    <div class="flex items-center gap-2">
+      <span class="material-symbols-outlined text-gold">event_available</span>
+      <p class="text-sm font-semibold text-navy">Salidas Diarias 9 AM</p>
+    </div>
+    <div class="flex items-center gap-2">
+      <span class="material-symbols-outlined text-gold">sailing</span>
+      <p class="text-sm font-semibold text-navy">Navegación Real</p>
+    </div>
+    <div class="flex items-center gap-2">
+      <span class="material-symbols-outlined text-gold">groups</span>
+      <p class="text-sm font-semibold text-navy">Hasta 14 Invitados</p>
+    </div>
+    <div class="flex items-center gap-2">
+      <span class="material-symbols-outlined text-gold">family_restroom</span>
+      <p class="text-sm font-semibold text-navy">Apto para Familias</p>
+    </div>
+    <div class="flex items-center gap-2">
+      <span class="material-symbols-outlined text-gold">local_bar</span>
+      <p class="text-sm font-semibold text-navy">Todo Incluido</p>
+    </div>
+    <div class="flex items-center gap-2">
+      <span class="material-symbols-outlined text-gold">event_repeat</span>
+      <p class="text-sm font-semibold text-navy">Cancelación Gratis</p>
+    </div>
+    <div class="flex items-center gap-2">
+      <span class="material-symbols-outlined text-gold">pin_drop</span>
+      <p class="text-sm font-semibold text-navy">Marina Cabo, Muelle F</p>
+    </div>
+  </div>
+
+  <!-- About this experience -->
+  <div class="mt-12">
+    <h3 class="text-2xl text-navy mb-4">Sobre esta experiencia</h3>
+    <p class="text-slate-700 leading-relaxed text-base">
+      Navegar en Cabo San Lucas es un día diferente en el agua. El motor está apagado. Las velas están arriba. Escuchas el viento y el agua, no un diésel. Operamos la flota de veleros de Cabo con tres formas de subir a bordo &mdash; un crucero compartido en velero para viajeros solos y grupos pequeños, y dos veleros privados (42' y 38') para grupos que quieren todo el barco. Cada viaje navega por Land's End y el Arco, hace snorkel en Pelican Rock, e incluye barra libre, comida fresca, equipo de snorkel, toallas, bocinas Bluetooth y una tripulación bilingüe. Tres horas estándar; extiende por hora para un día más largo.
+    </p>
+  </div>
+</div>
+
+<!-- MOBILE: Title + intro -->
+<div class="lg:hidden mt-6 px-5">
+  <nav class="flex items-center gap-1.5 text-xs text-slate-500 mb-4" aria-label="Breadcrumb">
+    <a href="/es/" class="hover:text-gold transition-colors">Inicio</a>
+    <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+    <span>Tours</span>
+    <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+    <span class="text-navy font-semibold">Navegar en Cabo</span>
+  </nav>
+  <h1 class="text-2xl text-navy leading-tight">Navegar en Cabo San Lucas &mdash; Cruceros en Velero y Charters Privados</h1>
+  <p class="text-slate-700 text-base leading-relaxed mt-2">Navegación real en veleros de verdad &mdash; cruceros compartidos con nuevos amigos o charters privados donde el barco es tuyo. Todo incluido, salidas diarias desde Marina Cabo.</p>
+</div>
+
+<!-- MOBILE: Icons row -->
+<div class="lg:hidden mt-5 px-5">
+  <div class="grid grid-cols-2 gap-x-3 gap-y-3">
+    <div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-gold text-lg">schedule</span><p class="text-xs font-semibold text-navy">3 Horas</p></div>
+    <div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-gold text-lg">event_available</span><p class="text-xs font-semibold text-navy">Salidas Diarias 9 AM</p></div>
+    <div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-gold text-lg">sailing</span><p class="text-xs font-semibold text-navy">Navegación Real</p></div>
+    <div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-gold text-lg">groups</span><p class="text-xs font-semibold text-navy">Hasta 14 Invitados</p></div>
+    <div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-gold text-lg">family_restroom</span><p class="text-xs font-semibold text-navy">Apto para Familias</p></div>
+    <div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-gold text-lg">local_bar</span><p class="text-xs font-semibold text-navy">Todo Incluido</p></div>
+    <div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-gold text-lg">event_repeat</span><p class="text-xs font-semibold text-navy">Cancelación Gratis</p></div>
+    <div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-gold text-lg">pin_drop</span><p class="text-xs font-semibold text-navy">Marina Cabo, Muelle F</p></div>
+  </div>
+</div>
+
+<!-- MOBILE: About -->
+<div class="lg:hidden mt-8 px-5">
+  <h3 class="text-lg text-navy mb-3">Sobre esta experiencia</h3>
+  <p class="text-slate-700 leading-relaxed text-base">Navegar en Cabo San Lucas es un día diferente en el agua. El motor está apagado. Las velas están arriba. Escuchas el viento y el agua, no un diésel. Operamos la flota de veleros de Cabo con tres formas de subir a bordo &mdash; un crucero compartido en velero para viajeros solos y grupos pequeños, y dos veleros privados (42' y 38') para grupos que quieren todo el barco.</p>
+</div>
+
+<!-- ===== UNIQUE BLOCK #1: Why sail instead of motor ===== -->
+<div class="mt-12 lg:max-w-[1400px] lg:mx-auto lg:px-10 px-5">
+  <div class="flex items-center gap-3 mb-6"><div class="w-1 h-6 bg-gold rounded-full"></div><h2 class="text-lg lg:text-3xl text-navy">Por qué navegar en velero y no en motor</h2></div>
+  <p class="text-slate-700 text-base lg:text-lg leading-relaxed mb-8 lg:max-w-3xl">Un velero no es un yate a motor con un mástil decorativo. Cabo Sailing es una verdadera flota de veleros &mdash; aquí está por qué los invitados nos eligen sobre un charter a motor.</p>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+    <div class="bg-light-grey rounded-2xl p-6 border border-border-light">
+      <div class="w-12 h-12 rounded-full bg-navy flex items-center justify-center mb-4"><span class="material-symbols-outlined text-white text-2xl">volume_off</span></div>
+      <h3 class="text-base font-bold text-navy mb-2">Silencioso</h3>
+      <p class="text-sm text-slate-600 leading-relaxed">Sin zumbido del motor. Escucha el océano, el viento y tu grupo &mdash; la forma en que Cabo debe experimentarse.</p>
+    </div>
+    <div class="bg-light-grey rounded-2xl p-6 border border-border-light">
+      <div class="w-12 h-12 rounded-full bg-navy flex items-center justify-center mb-4"><span class="material-symbols-outlined text-white text-2xl">eco</span></div>
+      <h3 class="text-base font-bold text-navy mb-2">Ecológico</h3>
+      <p class="text-sm text-slate-600 leading-relaxed">Cuando el viento coopera, navegamos solo con velas. Cero emisiones, cero ruido, cero combustible.</p>
+    </div>
+    <div class="bg-light-grey rounded-2xl p-6 border border-border-light">
+      <div class="w-12 h-12 rounded-full bg-navy flex items-center justify-center mb-4"><span class="material-symbols-outlined text-white text-2xl">sailing</span></div>
+      <h3 class="text-base font-bold text-navy mb-2">Navegación real</h3>
+      <p class="text-sm text-slate-600 leading-relaxed">Veleros auténticos y tripulación de navegantes reales &mdash; no lanchas a motor con velas decorativas. El viento hace el trabajo.</p>
+    </div>
+    <div class="bg-light-grey rounded-2xl p-6 border border-border-light">
+      <div class="w-12 h-12 rounded-full bg-navy flex items-center justify-center mb-4"><span class="material-symbols-outlined text-white text-2xl">favorite</span></div>
+      <h3 class="text-base font-bold text-navy mb-2">Romántico</h3>
+      <p class="text-sm text-slate-600 leading-relaxed">Ritmo más lento, luz dorada, el barco inclinándose suavemente. Lunas de miel, aniversarios, momentos tranquilos.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Choose your sailing experience ===== -->
+<div id="choose-your-sailing" class="mt-14 lg:max-w-[1400px] lg:mx-auto lg:px-10 lg:py-8 px-5">
+  <div class="flex items-center gap-3 mb-8"><div class="w-1 h-6 bg-gold rounded-full"></div><h2 class="text-lg lg:text-2xl text-navy">Elige tu experiencia en velero</h2></div>
+
+  <div class="flex flex-col gap-5 lg:grid lg:grid-cols-3 lg:max-w-[1100px] lg:mx-auto pb-8">
+    <!-- Shared Sailing Cruise -->
+    <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="shared-sailing">
+      <CarouselImage type="boat" id="shared-sailing" alt="Crucero compartido en velero en Cabo San Lucas">
+        <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
+        <div class="absolute bottom-5 left-6">
+          <h3 class="text-white text-lg lg:text-xl">Crucero Compartido en Velero</h3>
+          <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Grupo mixto, hasta 14</span></div>
+        </div>
+        <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Mejor Valor</div>
+        <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-15%</div>
+      </CarouselImage>
+      <div class="p-4 space-y-4">
+        <p class="text-slate-700 text-sm italic text-center pb-3 border-b border-border-light/50">Ambiente social &mdash; viajeros solos y grupos pequeños</p>
+        <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$120</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$102</span><span class="text-slate-500 text-[11px] font-medium uppercase">/ persona</span></div></div><div class="flex flex-col items-end"><span class="text-slate-500 text-[11px] font-medium">Salidas</span><span class="text-navy font-bold text-sm">9:00 AM diario</span></div></div>
+        <button type="button" onclick="openRezdyModal('744011')" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg cursor-pointer">Ver Disponibilidad</button>
+      </div>
+    </div>
+    <!-- Private Sailing 42' -->
+    <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="sailing-42">
+      <CarouselImage type="boat" id="sailing-42" alt="Velero Privado 42' charter en Cabo San Lucas">
+        <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
+        <div class="absolute bottom-5 left-6">
+          <h3 class="text-white text-lg lg:text-xl">Velero Privado 42'</h3>
+          <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Solo tu grupo, hasta 14</span></div>
+        </div>
+        <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Más Popular</div>
+        <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-15%</div>
+      </CarouselImage>
+      <div class="p-4 space-y-4">
+        <p class="text-slate-700 text-sm italic text-center pb-3 border-b border-border-light/50">Cubierta espaciosa &mdash; días familiares, viajes con amigos, aniversarios</p>
+        <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$1,090</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$927</span><span class="text-slate-500 text-[11px] font-medium uppercase">/ 1-4 invitados</span></div></div><div class="flex flex-col items-end"><span class="text-slate-500 text-[11px] font-medium">Invitados extra</span><div class="flex items-baseline gap-1"><span class="text-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-500 text-[11px] font-medium">/pp</span></div></div></div>
+        <button type="button" onclick="openRezdyModal('642955','productsCalendar')" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg cursor-pointer">Ver Disponibilidad</button>
+      </div>
+    </div>
+    <!-- Private Sailing 38' -->
+    <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="sailing-38">
+      <CarouselImage type="boat" id="sailing-38" alt="Velero Privado 38' charter en Cabo San Lucas">
+        <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
+        <div class="absolute bottom-5 left-6">
+          <h3 class="text-white text-lg lg:text-xl">Velero Privado 38'</h3>
+          <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Solo tu grupo, hasta 9</span></div>
+        </div>
+        <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Más Íntimo</div>
+        <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-15%</div>
+      </CarouselImage>
+      <div class="p-4 space-y-4">
+        <p class="text-slate-700 text-sm italic text-center pb-3 border-b border-border-light/50">Sensación clásica de velero &mdash; parejas, lunas de miel, propuestas</p>
+        <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$825</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$701</span><span class="text-slate-500 text-[11px] font-medium uppercase">/ 1-4 invitados</span></div></div><div class="flex flex-col items-end"><span class="text-slate-500 text-[11px] font-medium">Invitados extra</span><div class="flex items-baseline gap-1"><span class="text-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-500 text-[11px] font-medium">/pp</span></div></div></div>
+        <button type="button" onclick="openRezdyModal('165682')" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg cursor-pointer">Ver Disponibilidad</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quick comparison -->
+  <div class="mt-6 lg:max-w-[1100px] lg:mx-auto">
+    <div class="hidden lg:block">
+      <div class="flex items-center gap-3 mb-4"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-xl text-navy">Comparación Rápida</h3></div>
+      <table class="w-full text-left border-collapse">
+        <thead>
+          <tr class="border-b-2 border-gold/30">
+            <th class="py-3 pr-4 text-xs font-bold text-navy uppercase tracking-widest">Experiencia</th>
+            <th class="py-3 pr-4 text-xs font-bold text-navy uppercase tracking-widest">Invitados</th>
+            <th class="py-3 pr-4 text-xs font-bold text-navy uppercase tracking-widest">Desde</th>
+            <th class="py-3 text-xs font-bold text-navy uppercase tracking-widest">Ideal para</th>
+          </tr>
+        </thead>
+        <tbody class="text-sm">
+          <tr class="border-b border-border-light"><td class="py-3 pr-4 font-semibold text-navy">Crucero Compartido en Velero</td><td class="py-3 pr-4 text-slate-700">Mixto, hasta 14</td><td class="py-3 pr-4 text-slate-700">$102 / persona</td><td class="py-3 text-slate-700">Viajeros solos, parejas, ambiente social</td></tr>
+          <tr class="border-b border-border-light bg-gold/5"><td class="py-3 pr-4 font-semibold text-navy"><span class="text-gold mr-1">&#11088;</span>Velero Privado 42'</td><td class="py-3 pr-4 text-slate-700">Tu grupo, hasta 14</td><td class="py-3 pr-4 text-slate-700">$927 (1-4)</td><td class="py-3 text-slate-700">Días familiares, amigos, aniversarios</td></tr>
+          <tr><td class="py-3 pr-4 font-semibold text-navy">Velero Privado 38'</td><td class="py-3 pr-4 text-slate-700">Tu grupo, hasta 9</td><td class="py-3 pr-4 text-slate-700">$701 (1-4)</td><td class="py-3 text-slate-700">Parejas, lunas de miel, íntimo</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Cinematic Pelican Rock image ===== -->
+<div class="mt-14 lg:max-w-[1400px] lg:mx-auto lg:px-10 px-5">
+  <div class="relative rounded-2xl overflow-hidden shadow-xl shadow-navy/10">
+    <Image src={sailboatsPelicansRock} alt="Veleros pasando por Pelican Rock en Land's End, Cabo San Lucas" class="w-full h-[260px] lg:h-[420px] object-cover" width={1600} height={900} />
+    <div class="absolute inset-0 bg-gradient-to-t from-navy/50 via-transparent to-transparent"></div>
+    <div class="absolute bottom-6 left-6 right-6 lg:bottom-10 lg:left-10">
+      <p class="text-white text-xs lg:text-sm uppercase tracking-[0.2em] font-bold mb-1 lg:mb-2">Cabo San Lucas</p>
+      <h3 class="text-white text-xl lg:text-3xl font-heading leading-tight max-w-2xl">Navega junto a Land&rsquo;s End, haz snorkel en Pelican Rock, y siente el viento.</h3>
+    </div>
+  </div>
+</div>
+
+<!-- ===== UNIQUE BLOCK #2: Build your sailing day ===== -->
+<div class="mt-14 lg:max-w-[1400px] lg:mx-auto lg:px-10 px-5">
+  <div class="flex items-center gap-3 mb-6"><div class="w-1 h-6 bg-gold rounded-full"></div><h2 class="text-lg lg:text-3xl text-navy">Arma tu día de navegación</h2></div>
+  <p class="text-slate-700 text-base lg:text-lg leading-relaxed mb-8 lg:max-w-3xl">La navegación es la experiencia &mdash; lo que hagas durante el viaje depende de ti. Combina actividades durante tu viaje de 3 horas o extiende por hora.</p>
+  <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-5">
+    <a href="/es/shared-snorkeling" class="bg-light-grey rounded-2xl p-5 border border-border-light hover:shadow-md transition-shadow">
+      <div class="w-10 h-10 rounded-full bg-navy flex items-center justify-center mb-3"><Image src={snorkelIcon} alt="" class="w-5 h-5 object-contain" style="filter: brightness(0) invert(1);" width={40} height={40} /></div>
+      <h3 class="text-base font-bold text-navy mb-1">Snorkel + Velero</h3>
+      <p class="text-sm text-slate-600 leading-relaxed">Navega junto al Arco, ancla en Pelican Rock, nada entre peces tropicales. Equipo y guía incluidos.</p>
+    </a>
+    <a href="/es/shared-sunset" class="bg-light-grey rounded-2xl p-5 border border-border-light hover:shadow-md transition-shadow">
+      <div class="w-10 h-10 rounded-full bg-navy flex items-center justify-center mb-3"><span class="material-symbols-outlined text-white text-lg">wb_twilight</span></div>
+      <h3 class="text-base font-bold text-navy mb-1">Navegación al Atardecer</h3>
+      <p class="text-sm text-slate-600 leading-relaxed">Programa tu navegación para la hora dorada &mdash; velas arriba, sol bajando, bebidas en cubierta.</p>
+    </a>
+    <div class="bg-light-grey rounded-2xl p-5 border border-border-light">
+      <div class="w-10 h-10 rounded-full bg-navy flex items-center justify-center mb-3"><span class="material-symbols-outlined text-white text-lg">explore</span></div>
+      <h3 class="text-base font-bold text-navy mb-1">Ruta Personalizada</h3>
+      <p class="text-sm text-slate-600 leading-relaxed">Solo privados. Dinos qué te gustaría &mdash; construiremos la ruta a tu medida.</p>
+    </div>
+    <a href="/es/whale-watching" class="bg-light-grey rounded-2xl p-5 border border-border-light hover:shadow-md transition-shadow">
+      <div class="w-10 h-10 rounded-full bg-navy flex items-center justify-center mb-3"><span class="material-symbols-outlined text-white text-lg">water</span></div>
+      <h3 class="text-base font-bold text-navy mb-1">Avistamiento de Ballenas</h3>
+      <p class="text-sm text-slate-600 leading-relaxed">Dic&ndash;Abr. Navega y observa jorobadas saltando &mdash; o reserva un viaje dedicado.</p>
+    </a>
+    <div class="bg-light-grey rounded-2xl p-5 border border-border-light">
+      <div class="w-10 h-10 rounded-full bg-navy flex items-center justify-center mb-3"><span class="material-symbols-outlined text-white text-lg">sailing</span></div>
+      <h3 class="text-base font-bold text-navy mb-1">Toma el Timón</h3>
+      <p class="text-sm text-slate-600 leading-relaxed">¿Navegantes de verdad? Nuestra tripulación da la bienvenida a invitados al timón y en las líneas, bajo supervisión.</p>
+    </div>
+    <div class="bg-light-grey rounded-2xl p-5 border border-border-light">
+      <div class="w-10 h-10 rounded-full bg-navy flex items-center justify-center mb-3"><span class="material-symbols-outlined text-white text-lg">restaurant</span></div>
+      <h3 class="text-base font-bold text-navy mb-1">Menú Personalizado</h3>
+      <p class="text-sm text-slate-600 leading-relaxed">Menú estándar incluido. Opción mexicana +$14 por persona. Kosher, veganas, vegetarianas bajo solicitud.</p>
+    </div>
+    <div class="bg-light-grey rounded-2xl p-5 border border-border-light">
+      <div class="w-10 h-10 rounded-full bg-navy flex items-center justify-center mb-3"><span class="material-symbols-outlined text-white text-lg">music_note</span></div>
+      <h3 class="text-base font-bold text-navy mb-1">Tu Playlist</h3>
+      <p class="text-sm text-slate-600 leading-relaxed">Bocinas Bluetooth en cada velero &mdash; trae tu propia playlist.</p>
+    </div>
+    <div class="bg-light-grey rounded-2xl p-5 border border-border-light">
+      <div class="w-10 h-10 rounded-full bg-navy flex items-center justify-center mb-3"><span class="material-symbols-outlined text-white text-lg">schedule</span></div>
+      <h3 class="text-base font-bold text-navy mb-1">Horas Extra</h3>
+      <p class="text-sm text-slate-600 leading-relaxed">Solo privados. Navegación estándar de 3 horas; extiende por hora para un día completo.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ===== What's Included ===== -->
+<div class="mt-14 lg:max-w-[1400px] lg:mx-auto lg:px-10 px-5">
+  <div class="flex items-center gap-3 mb-6"><div class="w-1 h-6 bg-gold rounded-full"></div><h2 class="text-lg lg:text-2xl text-navy">Qué Incluye</h2></div>
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 pl-1">
+    <div class="flex items-start gap-4"><div class="w-7 h-7 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[15px]">local_bar</span></div><div><span class="text-slate-700 text-base font-semibold">Barra libre ilimitada</span><p class="text-slate-700 text-sm mt-0.5">Vino, margaritas, cerveza, ron, vodka, tequila, whiskey, jugos, refrescos</p></div></div>
+    <div class="flex items-start gap-4"><div class="w-7 h-7 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[15px]">restaurant</span></div><div><span class="text-slate-700 text-base font-semibold">Comida fresca a bordo</span><p class="text-slate-700 text-sm mt-0.5">Guacamole, totopos, sándwiches de baguette, fruta fresca, postre</p></div></div>
+    <div class="flex items-start gap-4"><div class="w-7 h-7 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><Image src={snorkelIcon} alt="" class="w-4 h-4 object-contain" style="filter: brightness(0) invert(1);" width={28} height={28} /></div><div><span class="text-slate-700 text-base font-semibold">Equipo de snorkel</span><p class="text-slate-700 text-sm mt-0.5">Visor, aletas, chaleco &mdash; todas las tallas disponibles</p></div></div>
+    <div class="flex items-start gap-4"><div class="w-7 h-7 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[15px]">music_note</span></div><div><span class="text-slate-700 text-base font-semibold">Bocina Bluetooth</span><p class="text-slate-700 text-sm mt-0.5">En cada velero &mdash; conecta tu teléfono, tu playlist</p></div></div>
+    <div class="flex items-start gap-4"><div class="w-7 h-7 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[15px]">dry_cleaning</span></div><div><span class="text-slate-700 text-base font-semibold">Toallas incluidas</span><p class="text-slate-700 text-sm mt-0.5">Todo lo que necesitas para el agua</p></div></div>
+    <div class="flex items-start gap-4"><div class="w-7 h-7 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[15px]">person</span></div><div><span class="text-slate-700 text-base font-semibold">Tripulación bilingüe de navegantes</span><p class="text-slate-700 text-sm mt-0.5">Navegantes reales, amables, profesionales, enfocados en seguridad</p></div></div>
+    <div class="flex items-start gap-4"><div class="w-7 h-7 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[15px]">anchor</span></div><div><span class="text-slate-700 text-base font-semibold">Combustible y cuotas de marina</span><p class="text-slate-700 text-sm mt-0.5">Sin cargos ocultos &mdash; un precio lo cubre todo</p></div></div>
+    <div class="flex items-start gap-4"><div class="w-7 h-7 rounded-full bg-navy flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-white text-[15px]">event_repeat</span></div><div><span class="text-slate-700 text-base font-semibold">Cancelación gratis</span><p class="text-slate-700 text-sm mt-0.5">Hasta 24 horas antes de la salida</p></div></div>
+  </div>
+</div>
+
+<!-- ===== UNIQUE BLOCK #3: Why sail with Cabo Sailing ===== -->
+<div class="mt-14 lg:max-w-[1400px] lg:mx-auto lg:px-10 px-5">
+  <div class="rounded-3xl bg-navy text-white p-8 lg:p-12">
+    <div class="flex items-center gap-3 mb-5"><div class="w-1 h-6 bg-gold rounded-full"></div><h2 class="text-lg lg:text-2xl">Por qué navegar con Cabo Sailing</h2></div>
+    <p class="text-white/90 text-base lg:text-lg leading-relaxed mb-8 lg:max-w-3xl">Servicio incomparable desde la reserva hasta la ejecución. Cada navegación &mdash; compartida o privada &mdash; es planeada y ejecutada para un solo resultado: un día que tu grupo recordará por años. Ese es el único estándar al que trabajamos.</p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div>
+        <div class="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center mb-3"><span class="material-symbols-outlined text-gold">sailing</span></div>
+        <h3 class="text-base font-bold mb-1">Veleros reales, navegantes reales</h3>
+        <p class="text-sm text-white/80 leading-relaxed">No operamos yates a motor con velas decorativas. Nuestros capitanes son navegantes. Tu viaje es navegación de verdad.</p>
+      </div>
+      <div>
+        <div class="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center mb-3"><span class="material-symbols-outlined text-gold">verified</span></div>
+        <h3 class="text-base font-bold mb-1">Todo incluido, sin sorpresas</h3>
+        <p class="text-sm text-white/80 leading-relaxed">Bar, comida, equipo, combustible, cuotas de marina &mdash; un precio lo cubre todo. Sin extras en el barco.</p>
+      </div>
+      <div>
+        <div class="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center mb-3"><span class="material-symbols-outlined text-gold">event_available</span></div>
+        <h3 class="text-base font-bold mb-1">Salidas diarias, fácil de reservar</h3>
+        <p class="text-sm text-white/80 leading-relaxed">Salidas a las 9 AM todos los días. Reserva en línea, por WhatsApp o por teléfono &mdash; tú decides.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Custom proposal inquiry block ===== -->
+<div class="mt-14 lg:max-w-[1400px] lg:mx-auto lg:px-10 px-5">
+  <div class="rounded-2xl border-2 border-gold bg-gold/5 p-6 lg:p-10">
+    <div class="flex flex-col lg:flex-row lg:items-center gap-5 lg:gap-8">
+      <div class="flex-shrink-0 w-14 h-14 lg:w-16 lg:h-16 rounded-full bg-gold flex items-center justify-center mx-auto lg:mx-0">
+        <span class="material-symbols-outlined text-white text-3xl">forum</span>
+      </div>
+      <div class="flex-1 text-center lg:text-left">
+        <h2 class="text-xl lg:text-2xl text-navy font-heading mb-2">¿Planeas una navegación especial? Hablemos.</h2>
+        <p class="text-sm lg:text-base text-slate-700 leading-relaxed">Cuéntanos el tamaño de tu grupo, fechas, y lo que te gustaría hacer &mdash; te respondemos con una propuesta personalizada en 24 horas. Aniversarios, lunas de miel, reuniones familiares, viajes corporativos y momentos especiales bienvenidos.</p>
+      </div>
+      <a href="https://wa.me/526241916997?text=%C2%A1Hola%20Cabo%20Sailing%21%20Me%20gustar%C3%ADa%20recibir%20una%20propuesta%20personalizada%20para%20un%20crucero%20en%20velero.%0A%0ATama%C3%B1o%20del%20grupo%3A%0AFecha%20preferida%3A%0AOcasi%C3%B3n%3A%0ASolicitudes%20especiales%20%2F%20horas%20extra%3A" target="_blank" rel="noopener" class="flex-shrink-0 bg-[#25D366] text-white font-bold text-[11px] lg:text-[12px] px-6 lg:px-8 py-4 rounded-2xl uppercase tracking-[0.15em] text-center shadow-lg hover:bg-[#20bd5a] transition-colors whitespace-nowrap">
+        <i class="fa-brands fa-whatsapp text-lg mr-2" style="vertical-align:middle"></i>Solicitar Propuesta
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== FAQ ===== -->
+<div class="mt-14 lg:max-w-[1400px] lg:mx-auto lg:px-10 px-5">
+  <div class="flex items-center gap-3 mb-6"><div class="w-1 h-6 bg-gold rounded-full"></div><h2 class="text-lg lg:text-3xl text-navy">Preguntas Frecuentes</h2></div>
+  <div class="space-y-3 lg:max-w-3xl">
+    <div class="faq-item border border-border-light rounded-2xl overflow-hidden bg-white">
+      <input class="hidden" id="faq-s-menu" type="checkbox"/>
+      <label class="flex items-center justify-between p-4 cursor-pointer" for="faq-s-menu">
+        <span class="flex items-center gap-2 text-base font-semibold text-navy"><span class="material-symbols-outlined text-gold" style="font-size:18px">restaurant</span>Bar y Menú a Bordo</span>
+        <span class="material-symbols-outlined text-slate-500 faq-chevron transition-transform duration-300">expand_more</span>
+      </label>
+      <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
+        <div class="text-sm text-slate-700 leading-relaxed space-y-3">
+          <div><p class="font-semibold text-navy mb-1">Bar</p><p>Barra libre ilimitada: vino tinto y blanco, margaritas, cerveza, ron, vodka, tequila, whiskey, jugos, refrescos, agua embotellada.</p></div>
+          <div><p class="font-semibold text-navy mb-1">Menú de Snorkel</p><p>Totopos con salsa mexicana y guacamole casero, sándwiches de baguette fresca, plato de fruta fresca y un postre para terminar.</p></div>
+          <div><p class="font-semibold text-navy mb-1">Menú del Atardecer</p><p>Totopos con salsa mexicana y guacamole casero, sushi rolls estilo California, tabla de quesos y carnes frías, selección de fruta de temporada y un postre para terminar.</p></div>
+          <div class="border-t border-border-light pt-3"><p><span class="font-semibold text-navy">Menú Mexicano &mdash; $14 USD por persona:</span> Totopos con salsa y guacamole casero, burritos de res y pollo en tortilla de harina, arroz y frijoles, y postre.</p></div>
+          <p class="text-slate-500 italic">Contacta a nuestro equipo de oficina para opciones Kosher, Veganas o Vegetarianas.</p>
+        </div>
+      </div>
+    </div>
+    <div class="faq-item border border-border-light rounded-2xl overflow-hidden bg-white">
+      <input class="hidden" id="faq-s-real" type="checkbox"/>
+      <label class="flex items-center justify-between p-4 cursor-pointer" for="faq-s-real">
+        <span class="text-base font-semibold text-navy">¿Realmente navegamos, o es solo un motor con un mástil?</span>
+        <span class="material-symbols-outlined text-slate-500 faq-chevron transition-transform duration-300">expand_more</span>
+      </label>
+      <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
+        <p class="text-sm text-slate-700 leading-relaxed">Realmente navegamos. Cuando el viento lo permite &mdash; que es la mayoría de las salidas &mdash; motor apagado, velas arriba, el barco se mueve con el viento. Somos una flota de veleros, no lanchas a motor con aparejo decorativo.</p>
+      </div>
+    </div>
+    <div class="faq-item border border-border-light rounded-2xl overflow-hidden bg-white">
+      <input class="hidden" id="faq-s-wind" type="checkbox"/>
+      <label class="flex items-center justify-between p-4 cursor-pointer" for="faq-s-wind">
+        <span class="text-base font-semibold text-navy">¿Qué pasa si no hay viento?</span>
+        <span class="material-symbols-outlined text-slate-500 faq-chevron transition-transform duration-300">expand_more</span>
+      </label>
+      <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
+        <p class="text-sm text-slate-700 leading-relaxed">Siempre salimos. Incluso en días con poco viento experimentarás navegación real durante partes del viaje. Usamos el motor según sea necesario para mantener el itinerario &mdash; misma parada de snorkel, mismo paisaje, mismo día todo incluido.</p>
+      </div>
+    </div>
+    <div class="faq-item border border-border-light rounded-2xl overflow-hidden bg-white">
+      <input class="hidden" id="faq-s-bumpy" type="checkbox"/>
+      <label class="flex items-center justify-between p-4 cursor-pointer" for="faq-s-bumpy">
+        <span class="text-base font-semibold text-navy">¿Navegar en velero es muy movido?</span>
+        <span class="material-symbols-outlined text-slate-500 faq-chevron transition-transform duration-300">expand_more</span>
+      </label>
+      <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
+        <p class="text-sm text-slate-700 leading-relaxed">Las aguas de Cabo suelen ser tranquilas. Los veleros se inclinan (escoran) suavemente al navegar &mdash; la mayoría de los invitados lo encuentra emocionante. Si alguien en tu grupo se siente incómodo, reducimos vela o vamos a motor para una navegación más estable.</p>
+      </div>
+    </div>
+    <div class="faq-item border border-border-light rounded-2xl overflow-hidden bg-white">
+      <input class="hidden" id="faq-s-help" type="checkbox"/>
+      <label class="flex items-center justify-between p-4 cursor-pointer" for="faq-s-help">
+        <span class="text-base font-semibold text-navy">¿Podemos ayudar a navegar?</span>
+        <span class="material-symbols-outlined text-slate-500 faq-chevron transition-transform duration-300">expand_more</span>
+      </label>
+      <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
+        <p class="text-sm text-slate-700 leading-relaxed">¡Sí! Nuestra tripulación da la bienvenida a invitados que quieren manejar una línea, ajustar velas o tomar el timón bajo supervisión. Es una de las partes favoritas para quienes ya navegan &mdash; y una excelente introducción para los curiosos.</p>
+      </div>
+    </div>
+    <div class="faq-item border border-border-light rounded-2xl overflow-hidden bg-white">
+      <input class="hidden" id="faq-s-private-vs-shared" type="checkbox"/>
+      <label class="flex items-center justify-between p-4 cursor-pointer" for="faq-s-private-vs-shared">
+        <span class="text-base font-semibold text-navy">Privado vs. compartido &mdash; ¿cómo elijo?</span>
+        <span class="material-symbols-outlined text-slate-500 faq-chevron transition-transform duration-300">expand_more</span>
+      </label>
+      <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
+        <p class="text-sm text-slate-700 leading-relaxed"><strong>Compartido</strong> es lo mejor para viajeros solos, parejas y grupos pequeños (1&ndash;4) que quieren un ambiente social y el menor precio por persona &mdash; $102 por persona para un viaje de 3 horas de navegación y snorkel con invitados mixtos. <strong>Privado</strong> es lo mejor para grupos de 5+, cualquiera que celebre algo especial, o quien quiera el barco (y la atención del capitán) para sí mismo &mdash; desde $701 por el barco.</p>
+      </div>
+    </div>
+    <div class="faq-item border border-border-light rounded-2xl overflow-hidden bg-white">
+      <input class="hidden" id="faq-s-snorkel" type="checkbox"/>
+      <label class="flex items-center justify-between p-4 cursor-pointer" for="faq-s-snorkel">
+        <span class="text-base font-semibold text-navy">¿Podemos hacer snorkel desde el velero?</span>
+        <span class="material-symbols-outlined text-slate-500 faq-chevron transition-transform duration-300">expand_more</span>
+      </label>
+      <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
+        <p class="text-sm text-slate-700 leading-relaxed">Sí. <strong>Pelican Rock</strong> es la parada estándar de snorkel en cada navegación &mdash; aguas tranquilas, claras, peces tropicales, leones marinos. Equipo de snorkel en todas las tallas incluido. Principiantes y niños bienvenidos; la tripulación ayuda a quien lo necesite.</p>
+      </div>
+    </div>
+    <div class="faq-item border border-border-light rounded-2xl overflow-hidden bg-white">
+      <input class="hidden" id="faq-s-sunset" type="checkbox"/>
+      <label class="flex items-center justify-between p-4 cursor-pointer" for="faq-s-sunset">
+        <span class="text-base font-semibold text-navy">¿Es buena la navegación al atardecer?</span>
+        <span class="material-symbols-outlined text-slate-500 faq-chevron transition-transform duration-300">expand_more</span>
+      </label>
+      <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
+        <p class="text-sm text-slate-700 leading-relaxed">Sí &mdash; es nuestra reserva privada más popular. Hora dorada, velas arriba, sin ruido de motor. Reserva una <a href="/es/shared-sunset" class="text-accent-gold font-semibold hover:underline">navegación al atardecer compartida</a>, un <a href="/es/private-sunset" class="text-accent-gold font-semibold hover:underline">charter privado al atardecer</a>, o agrega un regreso al atardecer a un charter privado de día.</p>
+      </div>
+    </div>
+    <div class="faq-item border border-border-light rounded-2xl overflow-hidden bg-white">
+      <input class="hidden" id="faq-s-weather" type="checkbox"/>
+      <label class="flex items-center justify-between p-4 cursor-pointer" for="faq-s-weather">
+        <span class="text-base font-semibold text-navy">¿Qué pasa si el clima está mal?</span>
+        <span class="material-symbols-outlined text-slate-500 faq-chevron transition-transform duration-300">expand_more</span>
+      </label>
+      <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
+        <p class="text-sm text-slate-700 leading-relaxed">Si el capitán determina que no es seguro navegar, reprogramamos tu viaje sin cargo &mdash; o reembolso completo si no puedes reprogramar. El clima en Cabo es excelente todo el año, pero en el raro caso de vientos fuertes o mar agitada, siempre priorizamos la seguridad. Consulta nuestras <a href="/es/policies" class="text-accent-gold font-semibold hover:underline">políticas de cancelación y clima</a>.</p>
+      </div>
+    </div>
+    <div class="faq-item border border-border-light rounded-2xl overflow-hidden bg-white">
+      <input class="hidden" id="faq-s-where" type="checkbox"/>
+      <label class="flex items-center justify-between p-4 cursor-pointer" for="faq-s-where">
+        <span class="text-base font-semibold text-navy">¿Dónde nos vemos?</span>
+        <span class="material-symbols-outlined text-slate-500 faq-chevron transition-transform duration-300">expand_more</span>
+      </label>
+      <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
+        <p class="text-sm text-slate-700 leading-relaxed">Todas las navegaciones salen de Marina Cabo, Muelle F. Te enviaremos direcciones detalladas y un mapa después de reservar. <a href="/es/shuttle-service" class="text-accent-gold font-semibold hover:underline">Servicio de transporte</a> disponible desde cualquier hotel de Cabo.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Trust links -->
+<div class="mt-10 lg:max-w-[1400px] lg:mx-auto lg:px-10 px-5">
+  <p class="text-sm text-slate-500 text-center">¿Tienes preguntas antes de reservar? Conoce más <a href="/es/about-us" class="text-accent-gold font-semibold hover:underline">sobre nosotros</a> o revisa nuestras <a href="/es/policies" class="text-accent-gold font-semibold hover:underline">políticas de cancelación y clima</a>.</p>
+</div>
+
+<!-- CTA box -->
+<div class="mt-12 lg:max-w-[1400px] lg:mx-auto lg:px-10 px-5">
+  <div class="rounded-2xl bg-navy text-white text-center px-6 py-10 lg:py-14 shadow-lg">
+    <h3 class="font-heading text-2xl lg:text-3xl mb-2">Tu velero te espera</h3>
+    <p class="text-white/80 mb-6">Consulta disponibilidad ahora</p>
+    <a href="#choose-your-sailing" class="inline-block bg-gold text-navy font-bold text-[12px] px-8 py-4 rounded-2xl uppercase tracking-[0.2em] shadow-lg">Elige Tu Navegación</a>
+  </div>
+</div>
+
+<!-- Reviews -->
+<div class="px-5 pb-32 lg:max-w-[1400px] lg:mx-auto lg:px-10 lg:py-16 lg:pb-20 mt-8">
+  <div class="flex items-center gap-3 mb-4 lg:mb-8"><div class="w-1 h-6 bg-gold rounded-full"></div><h2 class="text-lg lg:text-3xl text-navy">Lo que Dicen Nuestros Invitados</h2></div>
+  <div class="relative">
+    <div id="m-carousel" class="flex overflow-x-auto gap-4 lg:gap-6 no-scrollbar snap-x snap-mandatory pb-4 lg:overflow-hidden">
+      <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
+        <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"El velero 38' para nuestro aniversario &mdash; absolutamente mágico. Viento en las velas, sin otros turistas, atardecer perfecto. La mejor decisión de nuestro viaje."</p>
+        <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center text-white text-sm font-bold">LM</div><div><p class="text-sm font-bold text-navy">Laura &amp; Mark T.</p><p class="text-base text-slate-500">Vancouver, BC</p></div></div>
+      </div>
+      <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
+        <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Familia de 10 en el 42'. Tres generaciones navegando junto al Arco. Los niños lo AMARON. Suave, hermoso, y la tripulación increíble."</p>
+        <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-gold flex items-center justify-center text-white text-sm font-bold">PR</div><div><p class="text-sm font-bold text-navy">Patricia R.</p><p class="text-base text-slate-500">San Diego, CA</p></div></div>
+      </div>
+      <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
+        <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Hice el snorkel-y-velero compartido sola. Grupo pequeño, gente encantadora, el capitán explicó la navegación. Los mejores $102 que gasté en Cabo."</p>
+        <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy/70 flex items-center justify-center text-white text-sm font-bold">JG</div><div><p class="text-sm font-bold text-navy">Julia G.</p><p class="text-base text-slate-500">Brooklyn, NY</p></div></div>
+      </div>
+      <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
+        <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Navegación al atardecer &mdash; lo más romántico que hemos hecho. Hora dorada, velas arriba, una copa de champaña. Vale cada centavo."</p>
+        <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center text-white text-sm font-bold">DJ</div><div><p class="text-sm font-bold text-navy">David &amp; Jenna</p><p class="text-base text-slate-500">Austin, TX</p></div></div>
+      </div>
+      <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
+        <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Navegamos en casa, así que mi esposo era escéptico de una experiencia turística. La tripulación lo dejó tomar el timón. Dijo que fue lo mejor del viaje."</p>
+        <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-gold flex items-center justify-center text-white text-sm font-bold">MK</div><div><p class="text-sm font-bold text-navy">Megan K.</p><p class="text-base text-slate-500">Newport, RI</p></div></div>
+      </div>
+      <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
+        <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Reservamos dos días seguidos &mdash; snorkel y velero el día 1, atardecer privado el día 2. Ambas tripulaciones excelentes. Ya planeando volver."</p>
+        <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy/70 flex items-center justify-center text-white text-sm font-bold">CW</div><div><p class="text-sm font-bold text-navy">Carlos W.</p><p class="text-base text-slate-500">Ciudad de México, MX</p></div></div>
+      </div>
+    </div>
+    <button onclick="scrollMReviews(-1)" class="hidden lg:flex absolute left-[-20px] top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white border border-border-light shadow-md items-center justify-center hover:bg-light-grey transition-colors z-10"><span class="material-symbols-outlined text-navy text-xl">chevron_left</span></button>
+    <button onclick="scrollMReviews(1)" class="hidden lg:flex absolute right-[-20px] top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white border border-border-light shadow-md items-center justify-center hover:bg-light-grey transition-colors z-10"><span class="material-symbols-outlined text-navy text-xl">chevron_right</span></button>
+    <div class="hidden lg:flex justify-center gap-2 mt-4">
+      <button onclick="goToMPage(0)" class="m-review-dot w-2.5 h-2.5 rounded-full bg-navy transition-colors"></button>
+      <button onclick="goToMPage(1)" class="m-review-dot w-2.5 h-2.5 rounded-full bg-border-light transition-colors"></button>
+    </div>
+  </div>
+</div>
+
+  </main>
+
+  <Footer />
+  <FloatingCTA />
+  <script is:inline>window.__pageActivityId='sailing-cabo-san-lucas';</script>
+  <RezdyModal />
+
+  <script is:inline>
+  function heroNav(btn, dir) {
+    var wrap = btn.closest('.overflow-hidden').querySelector('.snap-x');
+    if (!wrap) return;
+    wrap.scrollBy({ left: dir * wrap.offsetWidth, behavior: 'smooth' });
+  }
+
+  var mPage = 0;
+  function scrollMReviews(dir) {
+    mPage = Math.max(0, Math.min(1, mPage + dir));
+    var container = document.getElementById('m-carousel');
+    var card = container.children[0];
+    var gap = 24;
+    container.scrollTo({ left: (card.offsetWidth + gap) * 3 * mPage, behavior: 'smooth' });
+    document.querySelectorAll('.m-review-dot').forEach(function(dot, i) {
+      dot.className = 'm-review-dot w-2.5 h-2.5 rounded-full transition-colors ' + (i === mPage ? 'bg-navy' : 'bg-border-light');
+    });
+  }
+  function goToMPage(page) { mPage = page; scrollMReviews(0); }
+  </script>
+</BaseLayout>
