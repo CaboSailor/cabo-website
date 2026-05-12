@@ -1,0 +1,125 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import FloatingCTA from '../../components/FloatingCTA.astro';
+import { getCollection } from 'astro:content';
+
+const CATEGORY = 'Activities';
+const CATEGORY_LABEL = 'Actividades';
+const CATEGORY_INTRO = 'Desde el snorkel en bah&iacute;as cristalinas hasta la pesca de altura y los cruceros al atardecer &mdash; explora todo lo que Cabo tiene para ofrecer con nuestras gu&iacute;as a fondo.';
+const HERO_IMAGE = '/images/blog/sunny-sailboat-adventure-at-sea.png';
+const HERO_ALT = 'Aventura de velero al sol en Cabo';
+
+const allArticles = await getCollection('travel-guide-es');
+const articles = allArticles
+  .filter((a) => a.data.category === CATEGORY)
+  .sort((a, b) => a.data.title.localeCompare(b.data.title));
+
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://cabosailing.com/es/" },
+    { "@type": "ListItem", "position": 2, "name": "Guía de Viaje", "item": "https://cabosailing.com/es/travel-guide/" },
+    { "@type": "ListItem", "position": 3, "name": CATEGORY_LABEL }
+  ]
+});
+---
+
+<BaseLayout title={`${CATEGORY_LABEL} — Guía de Viaje | Cabo Sailing`} description="Descubre las mejores actividades en Cabo San Lucas — snorkel, buceo, pesca, navegación y más. Tu guía de qué hacer en Los Cabos." hreflangs={{ en: '/travel-guide-activities', es: '/es/travel-guide-activities' }}>
+  <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
+  <Header variant="subpage" activePage="travel-guide" />
+
+  <main class="flex-1 w-full overflow-x-hidden pt-[60px] lg:pt-[72px]">
+
+    <!-- Hero Section -->
+    <div class="relative w-full h-[40vh] min-h-[300px] lg:h-[50vh]">
+      <img alt={HERO_ALT} class="w-full h-full object-cover object-top" src={HERO_IMAGE}/>
+      <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/40 to-transparent"></div>
+      <div class="absolute inset-0 flex flex-col items-center justify-end z-10 text-center px-8 pb-10">
+        <div class="flex flex-col items-center gap-3">
+          <div class="flex items-center gap-2">
+            <a href="/es/travel-guide" class="text-white/70 text-xs uppercase tracking-[0.2em] font-bold hover:text-white transition-colors">Guía de Viaje</a>
+            <span class="text-white/40 text-xs">/</span>
+            <span class="text-white text-xs uppercase tracking-[0.2em] font-bold">{CATEGORY_LABEL}</span>
+          </div>
+          <h1 class="text-3xl md:text-5xl font-serif text-white uppercase tracking-[0.15em] leading-tight drop-shadow-lg font-light">
+            {CATEGORY_LABEL}
+          </h1>
+          <div class="w-12 h-[1px] bg-accent-gold-light"></div>
+          <p class="text-white/90 text-sm max-w-[400px] leading-relaxed">Snorkel, buceo, navegaci&oacute;n, pesca y todo lo que puedes vivir en Cabo San Lucas.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Horizontal Sub-Menu -->
+    <div class="sticky top-[60px] z-40 bg-white border-b border-border-light/50 shadow-sm">
+      <div class="max-w-5xl mx-auto">
+        <nav class="flex overflow-x-auto no-scrollbar">
+          <a href="/es/travel-guide" class="shrink-0 px-4 lg:px-6 py-3.5 text-sm font-bold uppercase tracking-widest border-b-2 border-transparent text-navy/70 hover:text-navy hover:border-accent-gold/50 transition-colors">Inicio</a>
+          <a href="/es/travel-guide-activities" class="shrink-0 px-4 lg:px-6 py-3.5 text-sm font-bold uppercase tracking-widest border-b-2 border-accent-gold text-navy transition-colors">Actividades</a>
+          <a href="/es/travel-guide-attractions" class="shrink-0 px-4 lg:px-6 py-3.5 text-sm font-bold uppercase tracking-widest border-b-2 border-transparent text-navy/70 hover:text-navy hover:border-accent-gold/50 transition-colors">Atracciones</a>
+          <a href="/es/travel-guide-traveling" class="shrink-0 px-4 lg:px-6 py-3.5 text-sm font-bold uppercase tracking-widest border-b-2 border-transparent text-navy/70 hover:text-navy hover:border-accent-gold/50 transition-colors whitespace-nowrap">Viajando a Cabo</a>
+          <a href="/es/travel-guide-culture" class="shrink-0 px-4 lg:px-6 py-3.5 text-sm font-bold uppercase tracking-widest border-b-2 border-transparent text-navy/70 hover:text-navy hover:border-accent-gold/50 transition-colors whitespace-nowrap">Cultura y Comida</a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Articles Grid -->
+    <div class="px-6 lg:px-0 max-w-5xl mx-auto pt-10 pb-16">
+
+      <p class="text-navy/60 text-base lg:text-lg leading-relaxed max-w-2xl mb-10" set:html={CATEGORY_INTRO} />
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        {articles.map((article) => {
+          const excerpt = article.data.description.length > 150
+            ? article.data.description.slice(0, 147) + '...'
+            : article.data.description;
+          return (
+            <a href={`/es/travel-guide/${article.id}/`} class="guide-card bg-white rounded-2xl overflow-hidden shadow-md border border-border-light/60 block">
+              <div class="h-[220px] lg:h-[240px] overflow-hidden">
+                <img alt={article.data.heroAlt} class="w-full h-full object-cover" src={article.data.heroImage} loading="lazy"/>
+              </div>
+              <div class="p-5 lg:p-6">
+                <div class="flex items-center gap-2 mb-3">
+                  <span class="bg-accent-gold/10 text-accent-gold text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-widest border border-accent-gold/20">{CATEGORY_LABEL}</span>
+                </div>
+                <h3 class="text-lg font-serif text-navy font-semibold mb-2 leading-snug">{article.data.title}</h3>
+                <p class="text-navy/70 text-sm leading-relaxed mb-4">{excerpt}</p>
+                <div class="inline-flex items-center gap-1 text-accent-gold text-sm font-bold uppercase tracking-widest">Leer art&iacute;culo <span class="material-symbols-outlined text-base">arrow_forward</span></div>
+              </div>
+            </a>
+          );
+        })}
+      </div>
+    </div>
+
+    <!-- CTA Buttons -->
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-3 px-6 lg:px-0 max-w-5xl mx-auto mb-12">
+      <a href="/es/tours" class="inline-flex items-center gap-2 bg-accent-gold hover:bg-accent-gold-dark text-white text-sm font-bold uppercase tracking-widest px-6 py-3 rounded-full transition-colors">
+        Ver Nuestros Tours
+      </a>
+      <a href="https://wa.me/526241439798" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white text-sm font-bold uppercase tracking-widest px-6 py-3 rounded-full transition-colors">
+        Pedir Cotizaci&oacute;n
+      </a>
+    </div>
+
+  </main>
+
+  <Footer />
+  <FloatingCTA />
+</BaseLayout>
+
+<style>
+  .guide-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .guide-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+  }
+  .guide-card:active {
+    transform: scale(0.98);
+  }
+</style>

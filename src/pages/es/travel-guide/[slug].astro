@@ -1,0 +1,316 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import FloatingCTA from '../../../components/FloatingCTA.astro';
+import SnorkelBoatCards from '../../../components/SnorkelBoatCards.astro';
+import { Image } from 'astro:assets';
+import { getCollection, render } from 'astro:content';
+
+// Sidebar images
+import yacht45Img from "../../../assets/images/boats/yacht-45/cabo-private-yacht-45-exterior-01.jpg";
+import whalesImg from "../../../assets/images/whales/cabo-whale-watching-humpback.jpg";
+import sailing42Img from "../../../assets/images/boats/sailing-42/cabo-sailing-42-exterior-01.jpg";
+
+const CATEGORY_LABELS_ES: Record<string, string> = {
+  'Activities': 'Actividades',
+  'Attractions': 'Atracciones',
+  'Traveling to Cabo': 'Viajando a Cabo',
+  'Culture & Food': 'Cultura y Comida',
+};
+
+export async function getStaticPaths() {
+  const posts = await getCollection('travel-guide-es');
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+const { title, description, heroImage, heroAlt, category, categoryLink, activeSubmenu, bestTime, relatedActivity, sidebarType, hasBoatCards } = post.data;
+const categoryLabel = CATEGORY_LABELS_ES[category] || category;
+
+// Get up to 3 other guides from the same category
+const allPosts = await getCollection('travel-guide-es');
+const relatedPosts = allPosts
+  .filter((p) => p.data.category === category && p.id !== post.id)
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 3);
+
+const canonicalUrl = `https://cabosailing.com/es/travel-guide/${post.id}/`;
+const pubDateISO = post.data.pubDate.toISOString();
+const articleSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": title,
+  "description": description,
+  "image": heroImage,
+  "datePublished": pubDateISO,
+  "dateModified": pubDateISO,
+  "inLanguage": "es",
+  "author": {
+    "@type": "Organization",
+    "name": "Cabo Sailing Ocean Adventures",
+    "url": "https://cabosailing.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Cabo Sailing Ocean Adventures",
+    "url": "https://cabosailing.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://cabosailing.com/favicon.svg"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": canonicalUrl
+  }
+});
+
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://cabosailing.com/es/" },
+    { "@type": "ListItem", "position": 2, "name": "Guía de Viaje", "item": "https://cabosailing.com/es/travel-guide/" },
+    { "@type": "ListItem", "position": 3, "name": title }
+  ]
+});
+---
+
+<BaseLayout title={`${title} | Cabo Sailing`} description={description} ogImage={heroImage} ogImageAlt={heroAlt} hreflangs={{ en: `/travel-guide/${post.id}/`, es: `/es/travel-guide/${post.id}/` }}>
+  <script slot="head" type="application/ld+json" set:html={articleSchema} />
+  <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
+  <Header variant="subpage" activePage="travel-guide" />
+
+  <main class="flex-1 w-full overflow-x-hidden pt-[60px] lg:pt-[72px]">
+
+    <!-- Travel Guide Sub-Menu -->
+    <div class="sticky top-[60px] z-40 bg-white border-b border-border-light/50 shadow-sm">
+      <div class="max-w-5xl mx-auto">
+        <nav class="flex overflow-x-auto no-scrollbar">
+          <a href="/es/travel-guide" class={`shrink-0 px-4 lg:px-6 py-3.5 text-sm font-bold uppercase tracking-widest border-b-2 transition-colors ${activeSubmenu === 'home' ? 'border-accent-gold text-navy' : 'border-transparent text-navy/70 hover:text-navy hover:border-accent-gold/50'}`}>Inicio</a>
+          <a href="/es/travel-guide-activities" class={`shrink-0 px-4 lg:px-6 py-3.5 text-sm font-bold uppercase tracking-widest border-b-2 transition-colors ${activeSubmenu === 'activities' ? 'border-accent-gold text-navy' : 'border-transparent text-navy/70 hover:text-navy hover:border-accent-gold/50'}`}>Actividades</a>
+          <a href="/es/travel-guide-attractions" class={`shrink-0 px-4 lg:px-6 py-3.5 text-sm font-bold uppercase tracking-widest border-b-2 transition-colors ${activeSubmenu === 'attractions' ? 'border-accent-gold text-navy' : 'border-transparent text-navy/70 hover:text-navy hover:border-accent-gold/50'}`}>Atracciones</a>
+          <a href="/es/travel-guide-traveling" class={`shrink-0 px-4 lg:px-6 py-3.5 text-sm font-bold uppercase tracking-widest border-b-2 transition-colors whitespace-nowrap ${activeSubmenu === 'traveling' ? 'border-accent-gold text-navy' : 'border-transparent text-navy/70 hover:text-navy hover:border-accent-gold/50'}`}>Viajando a Cabo</a>
+          <a href="/es/travel-guide-culture" class={`shrink-0 px-4 lg:px-6 py-3.5 text-sm font-bold uppercase tracking-widest border-b-2 transition-colors whitespace-nowrap ${activeSubmenu === 'culture' ? 'border-accent-gold text-navy' : 'border-transparent text-navy/70 hover:text-navy hover:border-accent-gold/50'}`}>Cultura y Comida</a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Hero (contained, About Us style) -->
+    <div class="max-w-[1075px] mx-auto px-5 lg:px-8 pt-10 lg:pt-16">
+      <img alt={heroAlt} class="w-full h-auto rounded-2xl" src={heroImage}/>
+    </div>
+
+    <!-- Article + Sidebar Layout -->
+    <div class="max-w-[1400px] mx-auto px-6 lg:px-10 py-10 lg:py-14">
+      <div class="lg:flex lg:gap-12">
+
+        <!-- Article Content -->
+        <article class="article-body lg:flex-1 lg:order-2 max-w-3xl">
+
+          {/* Breadcrumbs */}
+          <nav class="flex items-center gap-1.5 text-xs text-navy/60 mb-6" aria-label="Breadcrumb">
+            <a href="/es/" class="hover:text-navy transition-colors">Inicio</a>
+            <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+            <a href="/es/travel-guide" class="hover:text-navy transition-colors">Guía de Viaje</a>
+            <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+            <a href={categoryLink} class="hover:text-navy transition-colors">{categoryLabel}</a>
+            <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+            <span class="text-navy/60">{title}</span>
+          </nav>
+
+          <header class="mb-10">
+            <h1 class="text-3xl lg:text-4xl text-navy font-serif mb-3">{title}</h1>
+            <p class="text-slate-500 text-base lg:text-lg leading-relaxed">{description}</p>
+          </header>
+
+          {/* Quick Facts Box */}
+          {(category || bestTime) && (
+            <div class="quick-facts mb-10 rounded-2xl border border-accent-gold/20 bg-accent-gold/5 p-5 lg:p-6">
+              <h3 class="text-xs font-bold uppercase tracking-[0.2em] text-accent-gold mb-4 flex items-center gap-2">
+                <span class="material-symbols-outlined text-base">info</span>
+                Datos R&aacute;pidos
+              </h3>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+                {category && (
+                  <div>
+                    <span class="block text-navy/60 text-xs uppercase tracking-wider mb-1">Categor&iacute;a</span>
+                    <span class="text-navy font-semibold">{categoryLabel}</span>
+                  </div>
+                )}
+                {bestTime && (
+                  <div>
+                    <span class="block text-navy/60 text-xs uppercase tracking-wider mb-1">Mejor &Eacute;poca</span>
+                    <span class="text-navy font-semibold">{bestTime}</span>
+                  </div>
+                )}
+              </div>
+            </div>
+          )}
+
+          <Content />
+
+          {/* CTA Buttons */}
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-3 mt-12 mb-4">
+            <a href="/es/tours" class="inline-flex items-center gap-2 bg-accent-gold hover:bg-accent-gold-dark text-navy text-sm font-bold uppercase tracking-widest px-6 py-3 rounded-full transition-colors">
+              Ver Nuestros Tours
+            </a>
+            <a href="https://wa.me/526241439798" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white text-sm font-bold uppercase tracking-widest px-6 py-3 rounded-full transition-colors">
+              Pedir Cotizaci&oacute;n
+            </a>
+          </div>
+
+          {/* More in [Category] */}
+          {relatedPosts.length > 0 && (
+            <div class="mt-14">
+              <h3 class="text-xs font-bold uppercase tracking-[0.2em] text-accent-gold mb-6 flex items-center gap-2">
+                <span class="material-symbols-outlined text-base">auto_stories</span>
+                M&aacute;s en {categoryLabel}
+              </h3>
+              <div class="grid gap-4">
+                {relatedPosts.map((related) => (
+                  <a href={`/es/travel-guide/${related.id}`} class="flex items-center gap-4 bg-white border border-border-light rounded-2xl p-3 shadow-sm hover:shadow-md transition-shadow group">
+                    <img alt={related.data.heroAlt} class="w-20 h-20 rounded-xl object-cover shrink-0" src={related.data.heroImage} />
+                    <div class="min-w-0">
+                      <h4 class="text-sm font-bold text-navy mb-1 group-hover:text-accent-gold transition-colors line-clamp-2">{related.data.title}</h4>
+                      <p class="text-navy/70 text-xs leading-relaxed line-clamp-2">{related.data.description}</p>
+                    </div>
+                  </a>
+                ))}
+              </div>
+            </div>
+          )}
+
+        </article>
+
+        <!-- Sidebar -->
+        <aside class="lg:w-[420px] lg:order-1 lg:shrink-0 mt-14 lg:mt-0">
+          <div class="lg:sticky lg:top-[140px]">
+            <h3 class="text-xs font-bold uppercase tracking-[0.2em] text-accent-gold mb-6">Actividades Sugeridas</h3>
+
+            {sidebarType === "default" && (
+              <div class="space-y-4 mb-8">
+                <a href="/es/shuttle-service" class="flex items-center gap-4 bg-white border border-border-light rounded-2xl p-3 shadow-sm hover:shadow-md transition-shadow">
+                  <img alt="Servicio de Transporte desde Aeropuerto" class="w-20 h-20 rounded-xl object-cover shrink-0" src="/images/travel-guide/los-cabos-international-airport-featured-image.jpg.webp"/>
+                  <div>
+                    <h4 class="text-sm font-bold text-navy mb-1">Transporte</h4>
+                    <p class="text-navy/70 text-xs leading-relaxed">Traslados al hotel sin complicaciones. C&oacute;modos y privados.</p>
+                    <span class="text-accent-gold text-[10px] font-bold uppercase tracking-widest mt-1 inline-block">Reservar traslado</span>
+                  </div>
+                </a>
+                <a href="/es/private-snorkeling" class="flex items-center gap-4 bg-white border border-border-light rounded-2xl p-3 shadow-sm hover:shadow-md transition-shadow">
+                  <Image alt="Snorkel Privado" class="w-20 h-20 rounded-xl object-cover shrink-0" src={yacht45Img} />
+                  <div>
+                    <h4 class="text-sm font-bold text-navy mb-1">Snorkel Privado</h4>
+                    <p class="text-navy/70 text-xs leading-relaxed">Tu propio yate a Pelican Rock y el Arco. Barra libre y equipo incluidos.</p>
+                    <span class="text-accent-gold text-[10px] font-bold uppercase tracking-widest mt-1 inline-block">Desde $701</span>
+                  </div>
+                </a>
+                <a href="/es/whale-watching" class="flex items-center gap-4 bg-white border border-border-light rounded-2xl p-3 shadow-sm hover:shadow-md transition-shadow">
+                  <Image alt="Avistamiento de Ballenas" class="w-20 h-20 rounded-xl object-cover shrink-0" src={whalesImg} />
+                  <div>
+                    <h4 class="text-sm font-bold text-navy mb-1">Avistamiento de Ballenas</h4>
+                    <p class="text-navy/70 text-xs leading-relaxed">Observa ballenas jorobadas desde un velero privado. Temporada dic&ndash;abr.</p>
+                    <span class="text-accent-gold text-[10px] font-bold uppercase tracking-widest mt-1 inline-block">Desde $701</span>
+                  </div>
+                </a>
+              </div>
+            )}
+
+            {sidebarType === "snorkeling" && (
+              <div class="space-y-4 mb-8">
+                <a href="/es/private-snorkeling" class="flex items-center gap-4 bg-white border border-border-light rounded-2xl p-3 shadow-sm hover:shadow-md transition-shadow">
+                  <Image alt="Snorkel Privado" class="w-20 h-20 rounded-xl object-cover shrink-0" src={yacht45Img} />
+                  <div>
+                    <h4 class="text-sm font-bold text-navy mb-1">Snorkel Privado</h4>
+                    <p class="text-navy/70 text-xs leading-relaxed">Tu propio yate a Pelican Rock y el Arco. Barra libre y equipo incluidos.</p>
+                    <span class="text-accent-gold text-[10px] font-bold uppercase tracking-widest mt-1 inline-block">Desde $701</span>
+                  </div>
+                </a>
+                <a href="/es/shared-snorkeling" class="flex items-center gap-4 bg-white border border-border-light rounded-2xl p-3 shadow-sm hover:shadow-md transition-shadow">
+                  <Image alt="Snorkel Compartido" class="w-20 h-20 rounded-xl object-cover shrink-0" src={sailing42Img} />
+                  <div>
+                    <h4 class="text-sm font-bold text-navy mb-1">Snorkel Compartido</h4>
+                    <p class="text-navy/70 text-xs leading-relaxed">&Uacute;nete a un crucero en velero con snorkel, barra libre y comida.</p>
+                    <span class="text-accent-gold text-[10px] font-bold uppercase tracking-widest mt-1 inline-block">Desde $102/p</span>
+                  </div>
+                </a>
+                <a href="/es/scuba-diving" class="flex items-center gap-4 bg-white border border-border-light rounded-2xl p-3 shadow-sm hover:shadow-md transition-shadow">
+                  <img alt="Buceo" class="w-20 h-20 rounded-xl object-cover shrink-0" src="/images/travel-guide/cabo-scuba-diving.jpg.webp"/>
+                  <div>
+                    <h4 class="text-sm font-bold text-navy mb-1">Buceo</h4>
+                    <p class="text-navy/70 text-xs leading-relaxed">Explora el mundo submarino de Cabo con instructores certificados.</p>
+                    <span class="text-accent-gold text-[10px] font-bold uppercase tracking-widest mt-1 inline-block">Ver opciones</span>
+                  </div>
+                </a>
+              </div>
+            )}
+          </div>
+        </aside>
+
+      </div>
+    </div>
+
+  </main>
+
+  <Footer />
+  <FloatingCTA />
+</BaseLayout>
+
+<style>
+  .article-body :global(hr) {
+    border: none;
+    border-top: 1px solid rgba(10,29,55,0.08);
+    margin: 2.5rem 0;
+  }
+  .article-body h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0a1d37;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  .article-body h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #0a1d37;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+  }
+  .article-body p {
+    color: rgba(10,29,55,0.7);
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 1.25rem;
+  }
+  .article-body :global(a) {
+    color: #c5a059;
+    font-weight: 600;
+  }
+  .article-body :global(a:hover) {
+    text-decoration: underline;
+  }
+  .article-body :global(.spot-list) {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+  }
+  .article-body :global(.spot-list li) {
+    padding: 0.5rem 0;
+    color: rgba(10,29,55,0.7);
+    font-size: 1rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  .article-body :global(.spot-list li strong) {
+    color: #0a1d37;
+  }
+</style>

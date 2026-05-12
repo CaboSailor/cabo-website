@@ -31,6 +31,13 @@ const relatedPosts = allPosts
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
   .slice(0, 3);
 
+// Check if a Spanish translation exists for hreflang
+const esPosts = await getCollection('travel-guide-es');
+const hasEsTranslation = esPosts.some((p) => p.id === post.id);
+const hreflangs = hasEsTranslation
+  ? { en: `/travel-guide/${post.id}/`, es: `/es/travel-guide/${post.id}/` }
+  : undefined;
+
 const canonicalUrl = `https://cabosailing.com/travel-guide/${post.id}/`;
 const pubDateISO = post.data.pubDate.toISOString();
 const articleSchema = JSON.stringify({
@@ -72,7 +79,7 @@ const breadcrumbSchema = JSON.stringify({
 });
 ---
 
-<BaseLayout title={`${title} | Cabo Sailing`} description={description} ogImage={heroImage} ogImageAlt={heroAlt}>
+<BaseLayout title={`${title} | Cabo Sailing`} description={description} ogImage={heroImage} ogImageAlt={heroAlt} hreflangs={hreflangs}>
   <script slot="head" type="application/ld+json" set:html={articleSchema} />
   <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
   <Header variant="subpage" activePage="travel-guide" />

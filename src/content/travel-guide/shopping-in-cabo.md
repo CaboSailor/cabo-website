@@ -16,6 +16,18 @@ Shopping in Cabo San Lucas isn't just about grabbing a quick souvenir on the way
 
 ---
 
+## &Aacute;nima Village: Cabo's Newest Luxury Shopping Destination
+
+The biggest shopping news in Los Cabos right now is &Aacute;nima Village, the brand-new open-air luxury village that opened its first phase at Cabo del Sol in December 2025. Set along the Tourist Corridor at Carretera Transpeninsular Km 10.3 (about a 15-minute drive east of downtown Cabo San Lucas), it has quickly become *the* place locals and visitors are talking about.
+
+Designed by Sordo Madaleno Arquitectos in partnership with the SOMA Group, &Aacute;nima blends botanical gardens, open-air walkways, and modern architecture that feels at home in the desert-meets-sea landscape of Baja. The concept goes beyond shopping &mdash; it's pitched as a destination where brands, wellness, art, and nature come together.
+
+The current Phase 1 lineup includes fashion, athleisure, and lifestyle brands like Golden Goose, Hugo Boss, Sandro, Ferragamo, Coach, Farm Rio, Alo Yoga, AllSaints, Nike, and Guess, plus a growing roster of restaurants and cafes. Phase 2, set to open in early 2026, will push the village toward 84 total brands and bring in heavy hitters like Louis Vuitton, Cartier, Rolex, Tiffany &amp; Co., Bvlgari, Dior, Prada, and Valentino.
+
+Hours are 10am to 9pm daily, and entrance is free. If you only have time for one luxury shopping stop on your trip, this is the one to put on the list.
+
+---
+
 ## Plaza Puerto Para&iacute;so: The Ultimate Shopping Hub
 
 If you want to shop like a local (and a tourist), head to Plaza Puerto Para&iacute;so. It's one of Cabo's most popular malls, right on the marina. You'll find a blend of everything here &mdash; brand-name stores, unique boutiques, and plenty of places to grab a snack or drink when you need a break from shopping.
