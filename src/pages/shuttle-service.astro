@@ -7,8 +7,8 @@ import RezdyModal from '../components/RezdyModal.astro';
 import { Image } from 'astro:assets';
 
 // Images
-import vanImg from "../assets/images/cabo-airport-shuttle-van.png";
 import vanDesertImg from "../assets/images/blog/van-shuttle-in-the-desert.png";
+import rocksImg from "../assets/images/blog/relaxing-in-front-of-the-rocks.jpg";
 
 const breadcrumbSchema = JSON.stringify({
   "@context": "https://schema.org",
@@ -18,10 +18,33 @@ const breadcrumbSchema = JSON.stringify({
     { "@type": "ListItem", "position": 2, "name": "Shuttle Service" }
   ]
 });
+
+const faqs = [
+  { q: "How do I book shuttle service?", a: "During the booking process you'll be asked if you would like to include private shuttle service for your cruise." },
+  { q: "I just want more information. How do I contact you?", a: "You can click the Contact Us button, send us a message on WhatsApp, or give us a call. We'll be happy to help you confirm availability, pricing, and pickup details." },
+  { q: "Can I book my cruise first and decide about transportation later?", a: "Absolutely. You can reserve your cruise first and add shuttle service later, subject to availability." },
+  { q: "How far does your shuttle service operate?", a: "We offer shuttle service throughout Cabo San Lucas and San José del Cabo. For longer-distance areas such as East Cape, La Ribera, Pescadero, or Todos Santos, we'll be happy to send you a custom quote." },
+  { q: "Is the shuttle private or shared?", a: "All of our shuttle services are private. The van is reserved only for your group." },
+  { q: "Can I book one-way transportation only?", a: "Absolutely. You can choose round-trip or one-way transportation. Please see the pricing table above for details." },
+  { q: "Can you pick up guests from multiple locations?", a: "In most cases, yes. Some routes or pickup combinations may require extra time or an additional charge. We'll confirm this with you before finalizing the service." },
+  { q: "Does the driver speak English?", a: "Yes. Our drivers speak both English and Spanish." },
+  { q: "What kind of van will pick us up?", a: "We operate modern, air-conditioned Toyota vans. Each van seats up to 11 guests comfortably and safely." }
+];
+
+const faqSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs.map(f => ({
+    "@type": "Question",
+    "name": f.q,
+    "acceptedAnswer": { "@type": "Answer", "text": f.a }
+  }))
+});
 ---
 
 <BaseLayout title="Los Cabos Airport Shuttle & Transfer Service | Cabo Sailing" description="Reliable airport shuttle and transfer service in Los Cabos. Air-conditioned vehicles, bilingual drivers, door-to-door service from SJD Airport to Cabo San Lucas." hreflangs={{ en: '/shuttle-service', es: '/es/shuttle-service' }}>
   <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
+  <script slot="head" type="application/ld+json" set:html={faqSchema} />
   <Header variant="subpage" activePage="shuttle" />
 
   <main class="flex-1 w-full overflow-x-hidden pt-[60px] lg:pt-[72px]">
@@ -36,45 +59,39 @@ const breadcrumbSchema = JSON.stringify({
           <p class="text-white/80 text-base font-medium tracking-wide uppercase">Private Door-to-Door Service</p>
         </div>
       </div>
-      <div class="px-5 -mt-8 relative z-10">
-        <div class="bg-white rounded-3xl p-6 shadow-xl shadow-navy/5 border border-border-light">
-          <nav class="flex items-center gap-1.5 text-xs text-slate-500 mb-4" aria-label="Breadcrumb">
-            <a href="/" class="hover:text-gold transition-colors">Home</a>
-            <span class="material-symbols-outlined text-[14px]">chevron_right</span>
-            <span class="text-navy font-semibold">Shuttle Service</span>
-          </nav>
-          <p class="text-navy font-bold text-center mb-6 leading-relaxed text-lg">Why use our service?</p>
-          <div class="space-y-4">
-            <div class="flex items-center gap-3">
-              <div class="flex-shrink-0 w-6 h-6 rounded-full bg-cabo-blue/10 flex items-center justify-center">
-                <span class="material-symbols-outlined text-cabo-blue text-base">security</span>
-              </div>
-              <span class="text-base font-medium text-slate-600">Safety is our #1 priority!</span>
+      <div class="px-5 pt-5">
+        <nav class="flex items-center gap-1.5 text-xs text-slate-500 mb-4" aria-label="Breadcrumb">
+          <a href="/" class="hover:text-gold transition-colors">Home</a>
+          <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+          <span class="text-navy font-semibold">Shuttle Service</span>
+        </nav>
+        <p class="text-navy font-bold mb-4 text-lg">Why use our service?</p>
+        <div class="space-y-3">
+          <div class="flex items-center gap-3">
+            <div class="flex-shrink-0 w-6 h-6 rounded-full bg-cabo-blue/10 flex items-center justify-center">
+              <span class="material-symbols-outlined text-cabo-blue text-base">security</span>
             </div>
-            <div class="flex items-center gap-3">
-              <div class="flex-shrink-0 w-6 h-6 rounded-full bg-cabo-blue/10 flex items-center justify-center">
-                <span class="material-symbols-outlined text-cabo-blue text-base">language</span>
-              </div>
-              <span class="text-base font-medium text-slate-600">Professional bilingual drivers</span>
+            <span class="text-base font-medium text-slate-600">Safety is our #1 priority!</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="flex-shrink-0 w-6 h-6 rounded-full bg-cabo-blue/10 flex items-center justify-center">
+              <span class="material-symbols-outlined text-cabo-blue text-base">language</span>
             </div>
-            <div class="flex items-center gap-3">
-              <div class="flex-shrink-0 w-6 h-6 rounded-full bg-cabo-blue/10 flex items-center justify-center">
-                <span class="material-symbols-outlined text-cabo-blue text-base">payments</span>
-              </div>
-              <span class="text-base font-medium text-slate-600">Competitive Prices</span>
+            <span class="text-base font-medium text-slate-600">Professional bilingual drivers</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="flex-shrink-0 w-6 h-6 rounded-full bg-cabo-blue/10 flex items-center justify-center">
+              <span class="material-symbols-outlined text-cabo-blue text-base">payments</span>
             </div>
+            <span class="text-base font-medium text-slate-600">Competitive Prices</span>
           </div>
         </div>
-      </div>
-      <div class="px-5 mt-8 space-y-3">
-        <button class="w-full bg-cabo-yellow hover:bg-yellow-500 text-navy font-bold py-4 rounded-2xl shadow-md transition-all active:scale-[0.98] text-base uppercase tracking-wider">Airport Transportation Form</button>
-        <button class="w-full bg-cabo-yellow hover:bg-yellow-500 text-navy font-bold py-4 rounded-2xl shadow-md transition-all active:scale-[0.98] text-base uppercase tracking-wider">Cruise Pick Up Form</button>
       </div>
 
       <!-- MOBILE: Seamless Shuttle Section -->
       <div class="px-5 pt-8 pb-6">
         <div class="flex items-center gap-3 mb-4"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-lg text-navy">Seamless Shuttle to Your Cruise &amp; Back</h3></div>
-        <Image src={vanImg} alt="Cabo Sailing shuttle" class="w-full h-48 object-cover rounded-2xl mb-4" width={600} height={200} />
+        <Image src={rocksImg} alt="Guests relaxing in front of the rocks" class="w-full h-48 object-cover rounded-2xl mb-4" width={600} height={200} />
         <p class="text-base text-slate-500 leading-relaxed mb-3">Getting to the marina for your sailing charter should be the easiest part of your day. Our private shuttle picks you up right at your lodging and takes you directly to the Cabo San Lucas Marina — and brings you back when your cruise is over.</p>
         <p class="text-base text-slate-500 leading-relaxed">No waiting for taxis, no navigating unfamiliar streets. Just step in, relax, and let us handle the ride so you can focus on the adventure ahead.</p>
         <div class="flex gap-6 mt-6">
@@ -124,21 +141,13 @@ const breadcrumbSchema = JSON.stringify({
         </div>
       </div>
 
-      <!-- Mobile: CTA -->
-      <div class="mt-16 px-5 py-12 bg-light-grey">
-        <h3 class="text-center text-navy font-bold italic mb-8">Inquire for Service Now!</h3>
-        <div class="space-y-3">
-          <button class="w-full bg-cabo-yellow hover:bg-yellow-500 text-navy font-bold py-4 rounded-2xl shadow-md transition-all active:scale-[0.98] text-base uppercase tracking-wider">Cruise Pick Up Form</button>
-          <button class="w-full bg-white border border-border-light hover:bg-light-grey text-navy font-bold py-4 rounded-2xl shadow-md transition-all active:scale-[0.98] text-base uppercase tracking-wider">Airport Transportation Form</button>
-        </div>
-      </div>
     </div><!-- end mobile -->
 
     <!-- ========== DESKTOP LAYOUT ========== -->
     <div class="hidden lg:block">
 
       <!-- Hero Gallery -->
-      <div class="max-w-[1400px] mx-auto px-10 pt-10">
+      <div class="max-w-[1400px] mx-auto px-10 pt-6">
         <div class="rounded-2xl overflow-hidden relative h-[55vh]">
           <Image alt="Cabo Sailing shuttle van in the desert" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src={vanDesertImg} width={1400} height={800} />
           <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent rounded-2xl"></div>
@@ -150,7 +159,7 @@ const breadcrumbSchema = JSON.stringify({
       </div>
 
       <!-- Breadcrumb -->
-      <div class="max-w-[1400px] mx-auto px-10 pt-8">
+      <div class="max-w-[1400px] mx-auto px-10 pt-5">
         <nav class="flex items-center gap-1.5 text-xs text-slate-500" aria-label="Breadcrumb">
           <a href="/" class="hover:text-gold transition-colors">Home</a>
           <span class="material-symbols-outlined text-[14px]">chevron_right</span>
@@ -159,8 +168,8 @@ const breadcrumbSchema = JSON.stringify({
       </div>
 
       <!-- Why Choose Us -->
-      <div class="max-w-[1400px] mx-auto px-10 py-16">
-        <div class="grid grid-cols-3 gap-8 mb-16">
+      <div class="max-w-[1400px] mx-auto px-10 py-10">
+        <div class="grid grid-cols-3 gap-6 mb-10">
           <div class="bg-light-grey rounded-2xl p-8 border border-border-light text-center">
             <div class="w-14 h-14 rounded-full bg-cabo-blue/10 flex items-center justify-center mx-auto mb-4">
               <span class="material-symbols-outlined text-cabo-blue text-2xl">security</span>
@@ -185,11 +194,11 @@ const breadcrumbSchema = JSON.stringify({
         </div>
 
         <!-- About Section -->
-        <div class="flex gap-16 items-center mb-20">
+        <div class="flex gap-12 items-center">
           <div class="flex-1">
-            <div class="flex items-center gap-3 mb-6"><div class="w-1 h-8 bg-gold rounded-full"></div><h2 class="text-3xl text-navy">Seamless Shuttle to Your Cruise &amp; Back</h2></div>
+            <div class="flex items-center gap-3 mb-4"><div class="w-1 h-8 bg-gold rounded-full"></div><h2 class="text-3xl text-navy">Seamless Shuttle to Your Cruise &amp; Back</h2></div>
             <p class="text-slate-500 text-lg leading-relaxed mb-4">Getting to the marina for your sailing charter should be the easiest part of your day. Our private shuttle picks you up right at your lodging and takes you directly to the Cabo San Lucas Marina — and brings you back when your cruise is over.</p>
-            <p class="text-slate-500 text-lg leading-relaxed mb-8">No waiting for taxis, no navigating unfamiliar streets. Just step in, relax, and let us handle the ride so you can focus on the adventure ahead.</p>
+            <p class="text-slate-500 text-lg leading-relaxed mb-6">No waiting for taxis, no navigating unfamiliar streets. Just step in, relax, and let us handle the ride so you can focus on the adventure ahead.</p>
             <div class="flex gap-10">
               <div><p class="text-2xl font-bold text-navy font-serif">All Day</p><p class="text-xs text-slate-500 uppercase tracking-widest font-bold mt-1">Available</p></div>
               <div class="w-px bg-border-light"></div>
@@ -199,15 +208,15 @@ const breadcrumbSchema = JSON.stringify({
             </div>
           </div>
           <div class="w-[400px] h-[300px] rounded-3xl overflow-hidden flex-shrink-0">
-            <Image alt="Cabo Sailing shuttle van" class="w-full h-full object-cover" src={vanImg} width={400} height={300} />
+            <Image alt="Guests relaxing in front of the rocks" class="w-full h-full object-cover" src={rocksImg} width={400} height={300} />
           </div>
         </div>
       </div>
 
       <!-- Hotel & Residential Transfers -->
-      <div class="bg-light-grey py-20">
+      <div class="bg-light-grey py-12">
         <div class="max-w-[1400px] mx-auto px-10">
-          <div class="text-center mb-10">
+          <div class="text-center mb-8">
             <h2 class="text-3xl text-navy mb-2">Transportation Service</h2>
             <p class="text-slate-500 text-base">Can be booked during your cruise booking process or separately.</p>
           </div>
@@ -239,22 +248,31 @@ const breadcrumbSchema = JSON.stringify({
         </div>
       </div>
 
-      <!-- CTA Section -->
-      <div class="max-w-[1400px] mx-auto px-10 py-20">
-        <div class="bg-navy rounded-3xl p-12 text-center">
-          <h2 class="text-3xl text-white mb-3 font-serif">Ready to Book Your Transfer?</h2>
-          <p class="text-white/70 text-lg mb-8 max-w-2xl mx-auto">Start your Cabo vacation stress-free. Book your private transportation today.</p>
-          <div class="flex justify-center gap-4">
-            <button class="bg-cabo-yellow hover:bg-yellow-500 text-navy font-bold px-10 py-4 rounded-full uppercase tracking-widest text-sm transition-colors shadow-lg">Cruise Pick Up Form</button>
-            <button class="bg-white/20 text-white font-bold px-10 py-4 rounded-full uppercase tracking-widest text-sm hover:bg-white/30 transition-colors border border-white/40">Airport Transportation Form</button>
-          </div>
-        </div>
-      </div>
-
     </div><!-- end desktop layout -->
 
+    <!-- FAQ Section -->
+    <section class="px-5 pt-12 pb-8 lg:max-w-4xl lg:mx-auto lg:px-10 lg:pt-12 lg:pb-8">
+      <div class="text-center mb-8 lg:mb-12">
+        <h2 class="text-2xl lg:text-3xl text-navy mb-2">Frequently Asked Questions</h2>
+        <p class="text-slate-500 text-base">Everything you need to know about our shuttle service.</p>
+      </div>
+      <div class="space-y-3">
+        {faqs.map((faq) => (
+          <details class="group bg-white border border-border-light rounded-2xl overflow-hidden">
+            <summary class="flex items-center justify-between gap-4 p-5 lg:p-6 cursor-pointer list-none">
+              <span class="text-navy font-bold text-base lg:text-lg">{faq.q}</span>
+              <span class="material-symbols-outlined text-cabo-blue flex-shrink-0 transition-transform duration-200 group-open:rotate-45">add</span>
+            </summary>
+            <div class="px-5 pb-5 lg:px-6 lg:pb-6 -mt-1">
+              <p class="text-slate-500 text-base leading-relaxed">{faq.a}</p>
+            </div>
+          </details>
+        ))}
+      </div>
+    </section>
+
     <!-- Guest Reviews Carousel -->
-    <div class="px-5 pb-12 lg:max-w-[1400px] lg:mx-auto lg:px-10 lg:py-16">
+    <div class="px-5 pb-12 lg:max-w-[1400px] lg:mx-auto lg:px-10 lg:pt-4 lg:pb-12">
       <div class="flex items-center gap-3 mb-4 lg:mb-8"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-lg lg:text-3xl text-navy">What Our Guests Say</h3></div>
       <div class="relative">
         <div id="m-carousel" class="flex overflow-x-auto gap-4 lg:gap-6 no-scrollbar snap-x snap-mandatory pb-4 lg:overflow-hidden">
