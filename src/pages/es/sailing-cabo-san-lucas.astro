@@ -7,8 +7,8 @@ import RezdyModal from '../../components/RezdyModal.astro';
 import CarouselImage from '../../components/CarouselImage.astro';
 import { Image } from 'astro:assets';
 
-import heroSailingCoastline from "../../assets/images/guests-on-sailboats/sailing-on-the-calm-ocean-waters.png";
-import sailingGuestsWaving from "../../assets/images/guests-on-sailboats/cabo-sailing-guests-waving.jpg";
+import heroSailingCoastline from "../../assets/images/guests-on-sailboats/sailing-near-cabos-rocky-coastline.png";
+import sailingCalmWaters from "../../assets/images/guests-on-sailboats/sailing-on-the-calm-ocean-waters.png";
 import goldenHourSailing from "../../assets/images/guests-on-sailboats/golden-hour-sailing-with-friends.png";
 import sailingHorizon from "../../assets/images/guests-on-sailboats/sailing-into-the-sunny-horizon.png";
 import sailingSnorkelTour from "../../assets/images/guests-on-sailboats/cabo-sailing-snorkeling-tour.jpg";
@@ -64,8 +64,8 @@ const breadcrumbSchema = JSON.stringify({
 <!-- Hero Gallery -->
 <div class="lg:hidden relative w-full h-[45vh] overflow-hidden">
 <div class="flex overflow-x-auto snap-x snap-mandatory h-full no-scrollbar">
-<div class="flex-shrink-0 w-full h-full snap-center"><Image src={heroSailingCoastline} alt="Navegando en aguas tranquilas de Cabo San Lucas" class="w-full h-full object-cover" width={800} height={500} /></div>
-<div class="flex-shrink-0 w-full h-full snap-center"><Image src={sailingGuestsWaving} alt="Invitados en un velero en Cabo saludando desde la cubierta" class="w-full h-full object-cover" width={800} height={500} /></div>
+<div class="flex-shrink-0 w-full h-full snap-center"><Image src={heroSailingCoastline} alt="Navegando en Cabo San Lucas por la costa rocosa" class="w-full h-full object-cover" width={800} height={500} /></div>
+<div class="flex-shrink-0 w-full h-full snap-center"><Image src={sailingCalmWaters} alt="Navegando en aguas tranquilas de Cabo San Lucas" class="w-full h-full object-cover" width={800} height={500} /></div>
 <div class="flex-shrink-0 w-full h-full snap-center"><Image src={goldenHourSailing} alt="Navegación al atardecer en Cabo San Lucas — hora dorada con amigos" class="w-full h-full object-cover" width={800} height={500} /></div>
 <div class="flex-shrink-0 w-full h-full snap-center"><Image src={sailingHorizon} alt="Navegando hacia el horizonte soleado de Cabo" class="w-full h-full object-cover" width={800} height={500} /></div>
 <div class="flex-shrink-0 w-full h-full snap-center"><Image src={sailingSnorkelTour} alt="Snorkel y navegación en Cabo San Lucas — invitados haciendo snorkel desde el velero" class="w-full h-full object-cover" width={800} height={500} /></div>
@@ -88,8 +88,8 @@ const breadcrumbSchema = JSON.stringify({
 </div>
 <div class="hidden lg:block max-w-[1400px] mx-auto px-10 mt-6 relative">
 <div class="grid grid-cols-4 grid-rows-2 gap-2 h-[55vh]">
-<div class="col-span-2 row-span-2 rounded-2xl overflow-hidden"><Image src={heroSailingCoastline} alt="Navegando en aguas tranquilas de Cabo San Lucas" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
-<div class="rounded-2xl overflow-hidden"><Image src={sailingGuestsWaving} alt="Invitados en un velero en Cabo saludando desde la cubierta" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
+<div class="col-span-2 row-span-2 rounded-2xl overflow-hidden"><Image src={heroSailingCoastline} alt="Navegando en Cabo San Lucas por la costa rocosa" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
+<div class="rounded-2xl overflow-hidden"><Image src={sailingCalmWaters} alt="Navegando en aguas tranquilas de Cabo San Lucas" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
 <div class="rounded-2xl overflow-hidden"><Image src={goldenHourSailing} alt="Navegación al atardecer en Cabo San Lucas — hora dorada con amigos" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
 <div class="rounded-2xl overflow-hidden"><Image src={sailingHorizon} alt="Navegando hacia el horizonte soleado de Cabo" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
 <div class="rounded-2xl overflow-hidden"><Image src={sailingSnorkelTour} alt="Snorkel y navegación en Cabo San Lucas — invitados haciendo snorkel desde el velero" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
