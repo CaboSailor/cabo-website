@@ -8,10 +8,7 @@ import { Image } from 'astro:assets';
 
 // Images
 import vanImg from "../assets/images/cabo-airport-shuttle-van.png";
-import archImg from "../assets/images/blog/the-famous-cabo-san-lucas-arch.jpg";
-import sailing42_10 from "../assets/images/boats/sailing-42/cabo-sailing-42-exterior-01.jpg";
-import guestsImg from "../assets/images/guests-on-sailboats/cabo-charter-guests-smiling.jpg";
-import guestsYachtImg from "../assets/images/guests-on-yachts/cabo-yacht-charter-guests-04.jpg";
+import vanDesertImg from "../assets/images/blog/van-shuttle-in-the-desert.png";
 
 const breadcrumbSchema = JSON.stringify({
   "@context": "https://schema.org",
@@ -32,22 +29,12 @@ const breadcrumbSchema = JSON.stringify({
     <!-- ========== MOBILE LAYOUT ========== -->
     <div class="lg:hidden">
       <div class="relative w-full h-[45vh] overflow-hidden">
-        <div class="flex overflow-x-auto snap-x snap-mandatory h-full no-scrollbar">
-          <div class="flex-shrink-0 w-full h-full snap-center relative">
-            <Image alt="Cabo Sailing shuttle van" class="w-full h-full object-cover" src={vanImg} width={800} height={500} />
-            <div class="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/40 to-transparent"></div>
-            <div class="absolute bottom-12 left-0 right-0 px-6">
-              <h1 class="text-3xl text-white mb-2 leading-tight font-serif">Seamless Shuttle to Your Cruise &amp; Back</h1>
-              <p class="text-white/80 text-base font-medium tracking-wide uppercase">Private Door-to-Door Service</p>
-            </div>
-          </div>
-          <div class="flex-shrink-0 w-full h-full snap-center"><Image alt="The famous Cabo San Lucas Arch" class="w-full h-full object-cover" src={archImg} width={800} height={500} /></div>
-          <div class="flex-shrink-0 w-full h-full snap-center"><Image alt="Sailing 42 with guests" class="w-full h-full object-cover" src={sailing42_10} width={800} height={500} /></div>
-          <div class="flex-shrink-0 w-full h-full snap-center"><Image alt="Happy guests on sailboat" class="w-full h-full object-cover" src={guestsImg} width={800} height={500} /></div>
-          <div class="flex-shrink-0 w-full h-full snap-center"><Image alt="Guests toasting on yacht" class="w-full h-full object-cover" src={guestsYachtImg} width={800} height={500} /></div>
+        <Image alt="Cabo Sailing shuttle van in the desert" class="w-full h-full object-cover" src={vanDesertImg} width={800} height={500} />
+        <div class="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/40 to-transparent"></div>
+        <div class="absolute bottom-12 left-0 right-0 px-6">
+          <h1 class="text-3xl text-white mb-2 leading-tight font-serif">Seamless Shuttle to Your Cruise &amp; Back</h1>
+          <p class="text-white/80 text-base font-medium tracking-wide uppercase">Private Door-to-Door Service</p>
         </div>
-        <button class="fleet-arrow left" onclick="heroNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
-        <button class="fleet-arrow right" onclick="heroNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
       </div>
       <div class="px-5 -mt-8 relative z-10">
         <div class="bg-white rounded-3xl p-6 shadow-xl shadow-navy/5 border border-border-light">
@@ -137,55 +124,6 @@ const breadcrumbSchema = JSON.stringify({
         </div>
       </div>
 
-      <!-- Mobile: Airport Private Service -->
-      <div class="mt-16 px-5">
-        <div class="text-center mb-8">
-          <h2 class="text-2xl text-navy mb-2">Airport Private Service</h2>
-          <p class="text-slate-500 text-base uppercase tracking-[0.2em] font-bold">Official Transfers</p>
-        </div>
-        <div class="space-y-6">
-          <div class="bg-white rounded-[2rem] overflow-hidden border border-border-light shadow-lg">
-            <div class="bg-cabo-blue py-3 px-6 text-center">
-              <h3 class="text-white text-sm font-bold uppercase tracking-widest">Airport to San Jose Del Cabo</h3>
-            </div>
-            <div class="p-6 text-center">
-              <p class="text-slate-500 text-sm mb-2">To San Jose hotels zone and residential area</p>
-              <div class="flex justify-center items-baseline gap-1">
-                <span class="text-navy font-bold text-3xl">$75</span>
-                <span class="text-navy/60 text-base font-bold uppercase">USD</span>
-              </div>
-              <p class="text-base text-slate-500 mt-2 font-bold uppercase tracking-wider">1 to 10 Guests</p>
-            </div>
-          </div>
-          <div class="bg-white rounded-[2rem] overflow-hidden border border-border-light shadow-lg">
-            <div class="bg-cabo-orange py-3 px-6 text-center">
-              <h3 class="text-white text-sm font-bold uppercase tracking-widest">Airport to Puerto Los Cabos</h3>
-            </div>
-            <div class="p-6 text-center">
-              <p class="text-slate-500 text-sm mb-2">To the Los Cabos Corridor area (between SJD &amp; CSL)</p>
-              <div class="flex justify-center items-baseline gap-1">
-                <span class="text-navy font-bold text-3xl">$95</span>
-                <span class="text-navy/60 text-base font-bold uppercase">USD</span>
-              </div>
-              <p class="text-base text-slate-500 mt-2 font-bold uppercase tracking-wider">1 to 10 Guests</p>
-            </div>
-          </div>
-          <div class="bg-white rounded-[2rem] overflow-hidden border border-border-light shadow-lg">
-            <div class="bg-cabo-green py-3 px-6 text-center">
-              <h3 class="text-white text-sm font-bold uppercase tracking-widest">Airport to Diamante Area</h3>
-            </div>
-            <div class="p-6 text-center">
-              <p class="text-slate-500 text-sm mb-2">To Cabo San Lucas hotels zone and residential area</p>
-              <div class="flex justify-center items-baseline gap-1">
-                <span class="text-navy font-bold text-3xl">$120</span>
-                <span class="text-navy/60 text-base font-bold uppercase">USD</span>
-              </div>
-              <p class="text-base text-slate-500 mt-2 font-bold uppercase tracking-wider">1 to 10 Guests</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <!-- Mobile: CTA -->
       <div class="mt-16 px-5 py-12 bg-light-grey">
         <h3 class="text-center text-navy font-bold italic mb-8">Inquire for Service Now!</h3>
@@ -201,19 +139,13 @@ const breadcrumbSchema = JSON.stringify({
 
       <!-- Hero Gallery -->
       <div class="max-w-[1400px] mx-auto px-10 pt-10">
-        <div class="grid grid-cols-4 grid-rows-2 gap-2 h-[55vh]">
-          <div class="col-span-2 row-span-2 rounded-2xl overflow-hidden relative">
-            <Image alt="Cabo Sailing shuttle van" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src={vanImg} width={1200} height={800} />
-            <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent rounded-2xl"></div>
-            <div class="absolute bottom-6 left-6">
-              <span class="bg-cabo-blue text-white text-sm font-bold px-4 py-1.5 rounded-full uppercase tracking-widest mb-3 inline-block">Door-to-Door Service</span>
-              <h1 class="text-4xl text-white leading-tight">Seamless Shuttle to<br/>Your Cruise &amp; Back</h1>
-            </div>
+        <div class="rounded-2xl overflow-hidden relative h-[55vh]">
+          <Image alt="Cabo Sailing shuttle van in the desert" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src={vanDesertImg} width={1400} height={800} />
+          <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent rounded-2xl"></div>
+          <div class="absolute bottom-6 left-6">
+            <span class="bg-cabo-blue text-white text-sm font-bold px-4 py-1.5 rounded-full uppercase tracking-widest mb-3 inline-block">Door-to-Door Service</span>
+            <h1 class="text-4xl text-white leading-tight">Seamless Shuttle to<br/>Your Cruise &amp; Back</h1>
           </div>
-          <div class="rounded-2xl overflow-hidden"><Image alt="The famous Cabo San Lucas Arch" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src={archImg} width={600} height={400} /></div>
-          <div class="rounded-2xl overflow-hidden"><Image alt="Sailing 42 with guests" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src={sailing42_10} width={600} height={400} /></div>
-          <div class="rounded-2xl overflow-hidden"><Image alt="Happy guests on sailboat" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src={guestsImg} width={600} height={400} /></div>
-          <div class="rounded-2xl overflow-hidden"><Image alt="Guests toasting on yacht" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src={guestsYachtImg} width={600} height={400} /></div>
         </div>
       </div>
 
@@ -319,55 +251,6 @@ const breadcrumbSchema = JSON.stringify({
         </div>
       </div>
 
-      <!-- Airport Transfers -->
-      <div class="max-w-[1400px] mx-auto px-10 pb-20">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl text-navy mb-2">Airport Private Service</h2>
-          <p class="text-slate-500 text-base uppercase tracking-[0.2em] font-bold">Official Transfers</p>
-        </div>
-        <div class="grid grid-cols-3 gap-8">
-          <div class="bg-white rounded-3xl overflow-hidden border border-border-light shadow-sm hover:shadow-lg transition-shadow">
-            <div class="bg-cabo-blue py-4 px-6 text-center">
-              <h3 class="text-white text-sm font-bold uppercase tracking-widest">Airport to San Jose Del Cabo</h3>
-            </div>
-            <div class="p-8 text-center">
-              <p class="text-slate-500 text-sm mb-4">To San Jose hotels zone and residential area</p>
-              <div class="flex justify-center items-baseline gap-1 mb-2">
-                <span class="text-navy font-bold text-5xl">$75</span>
-                <span class="text-navy/60 text-lg font-bold uppercase">USD</span>
-              </div>
-              <p class="text-base text-slate-500 font-bold uppercase tracking-wider">1 to 10 Guests</p>
-            </div>
-          </div>
-          <div class="bg-white rounded-3xl overflow-hidden border border-border-light shadow-sm hover:shadow-lg transition-shadow">
-            <div class="bg-cabo-orange py-4 px-6 text-center">
-              <h3 class="text-white text-sm font-bold uppercase tracking-widest">Airport to Puerto Los Cabos</h3>
-            </div>
-            <div class="p-8 text-center">
-              <p class="text-slate-500 text-sm mb-4">To the Los Cabos Corridor area (between SJD &amp; CSL)</p>
-              <div class="flex justify-center items-baseline gap-1 mb-2">
-                <span class="text-navy font-bold text-5xl">$95</span>
-                <span class="text-navy/60 text-lg font-bold uppercase">USD</span>
-              </div>
-              <p class="text-base text-slate-500 font-bold uppercase tracking-wider">1 to 10 Guests</p>
-            </div>
-          </div>
-          <div class="bg-white rounded-3xl overflow-hidden border border-border-light shadow-sm hover:shadow-lg transition-shadow">
-            <div class="bg-cabo-green py-4 px-6 text-center">
-              <h3 class="text-white text-sm font-bold uppercase tracking-widest">Airport to Diamante Area</h3>
-            </div>
-            <div class="p-8 text-center">
-              <p class="text-slate-500 text-sm mb-4">To Cabo San Lucas hotels zone and residential area</p>
-              <div class="flex justify-center items-baseline gap-1 mb-2">
-                <span class="text-navy font-bold text-5xl">$120</span>
-                <span class="text-navy/60 text-lg font-bold uppercase">USD</span>
-              </div>
-              <p class="text-base text-slate-500 font-bold uppercase tracking-wider">1 to 10 Guests</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
     </div><!-- end desktop layout -->
 
     <!-- Guest Reviews Carousel -->
@@ -425,30 +308,6 @@ const breadcrumbSchema = JSON.stringify({
     .no-scrollbar::-webkit-scrollbar { display: none; }
     .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
     .material-symbols-outlined.filled { font-variation-settings: 'FILL' 1; }
-    .fleet-arrow {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      z-index: 10;
-      width: 36px;
-      height: 36px;
-      border-radius: 50%;
-      border: none;
-      background: rgba(255,255,255,0.25);
-      backdrop-filter: blur(4px);
-      -webkit-backdrop-filter: blur(4px);
-      color: white;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: background 0.2s;
-      padding: 0;
-    }
-    .fleet-arrow:hover { background: rgba(255,255,255,0.45); }
-    .fleet-arrow.left { left: 10px; }
-    .fleet-arrow.right { right: 10px; }
-    .fleet-arrow .material-symbols-outlined { font-size: 20px; line-height: 1; }
   </style>
 
   <script is:inline>
@@ -464,11 +323,5 @@ const breadcrumbSchema = JSON.stringify({
       });
     }
     function goToShuttlePage(page) { shuttlePage = page; scrollShuttleReviews(0); }
-
-    function heroNav(btn, dir) {
-      var wrap = btn.closest('.overflow-hidden').querySelector('.snap-x');
-      if (!wrap) return;
-      wrap.scrollBy({ left: dir * wrap.offsetWidth, behavior: 'smooth' });
-    }
   </script>
 </BaseLayout>
