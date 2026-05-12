@@ -337,3 +337,10 @@ RewriteRule ^the-best-bars-in-cabo/?$ /travel-guide-culture/ [R=301,L]
 RewriteRule ^foodie-hotspots-in-cabo-san-lucas/?$ /travel-guide-culture/ [R=301,L]
 RewriteRule ^where-to-eat-in-cabo/?$ /travel-guide-culture/ [R=301,L]
 RewriteRule ^unique-dining-experiences-in-cabo/?$ /travel-guide-culture/ [R=301,L]
+
+# -----------------------------------------------------------------------------
+# Sailing page slug rename (May 2026): /sailing-cruises → /sailing-cabo-san-lucas
+# Catches cached browser HTML still pointing to the previous Header dropdown URL.
+# -----------------------------------------------------------------------------
+RewriteRule ^sailing-cruises/?$ /sailing-cabo-san-lucas/ [R=301,L]
+RewriteRule ^es/sailing-cruises/?$ /es/sailing-cabo-san-lucas/ [R=301,L]
