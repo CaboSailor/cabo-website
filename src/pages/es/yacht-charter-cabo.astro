@@ -44,7 +44,7 @@ const breadcrumbSchema = JSON.stringify({
   "@type": "BreadcrumbList",
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://cabosailing.com/es/" },
-    { "@type": "ListItem", "position": 2, "name": "Tours", "item": "https://cabosailing.com/es/tours/" },
+    { "@type": "ListItem", "position": 2, "name": "Renta de Yates", "item": "https://cabosailing.com/es/yacht-charter-cabo/" },
     { "@type": "ListItem", "position": 3, "name": "Charter de Yate en Cabo" }
   ]
 });
@@ -53,7 +53,7 @@ const breadcrumbSchema = JSON.stringify({
 <BaseLayout bodyClass="bg-white font-body text-text-main antialiased min-h-screen flex flex-col relative" title="Charter de Yate en Cabo San Lucas — Renta de Yate Privado de Lujo | Cabo Sailing" description="Charter de yate privado y renta de yate de lujo en Cabo San Lucas. 3 yates de lujo, con tripulación, todo incluido — bar, comida, equipo de snorkel y paddleboards. Desde $1,148." ogImage="/og/yacht-charter-cabo.jpg" ogImageAlt="Charter de yate privado y renta de yate de lujo en Cabo San Lucas" hreflangs={{ en: '/yacht-charter-cabo', es: '/es/yacht-charter-cabo' }}>
   <script slot="head" type="application/ld+json" set:html={touristTripSchema} />
   <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
-  <Header variant="subpage" activePage="tours" />
+  <Header variant="subpage" activePage="fleet" />
 
   <style is:inline>
     .faq-item input:checked ~ .faq-answer {
@@ -124,7 +124,7 @@ const breadcrumbSchema = JSON.stringify({
   <nav class="flex items-center gap-1.5 text-xs text-slate-500 mb-4" aria-label="Breadcrumb">
     <a href="/es/" class="hover:text-gold transition-colors">Inicio</a>
     <span class="material-symbols-outlined text-[14px]">chevron_right</span>
-    <span>Tours</span>
+    <a href="/es/yacht-charter-cabo/" class="hover:text-gold transition-colors">Renta de Yates</a>
     <span class="material-symbols-outlined text-[14px]">chevron_right</span>
     <span class="text-navy font-semibold">Charter de Yate en Cabo</span>
   </nav>
@@ -181,7 +181,7 @@ const breadcrumbSchema = JSON.stringify({
   <nav class="flex items-center gap-1.5 text-xs text-slate-500 mb-4" aria-label="Breadcrumb">
     <a href="/es/" class="hover:text-gold transition-colors">Inicio</a>
     <span class="material-symbols-outlined text-[14px]">chevron_right</span>
-    <span>Tours</span>
+    <a href="/es/yacht-charter-cabo/" class="hover:text-gold transition-colors">Renta de Yates</a>
     <span class="material-symbols-outlined text-[14px]">chevron_right</span>
     <span class="text-navy font-semibold">Charter de Yate</span>
   </nav>

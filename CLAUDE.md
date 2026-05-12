@@ -133,7 +133,7 @@ When migrating an article from the old WordPress site:
 1. **Create the content file** in `src/content/travel-guide/` with the old URL slug as filename
 2. **Frontmatter**: use the pre-approved title/description from `priority-content.csv` or `ctr-meta-tags.csv` if available. Do NOT include `" | Cabo Sailing"` in the title — the template appends it
 3. **Content**: strip all Divi shortcodes, wrapper divs, and inline classes. Preserve heading structure (H2/H3). Add `---` before every H2
-4. **Internal links**: rewrite `cabosailing.com/transportation/` → `/shuttle-service/`, `cabosailing.com/luxury-yachts/` → `/fleet/`, `cabosailing.com/luxury-sailboats/` → `/fleet/`, `cabosailing.com/book-now/` → `/contact/`. Check `migration/redirects.json` for other mappings
+4. **Internal links**: rewrite `cabosailing.com/transportation/` → `/shuttle-service/`, `cabosailing.com/luxury-yachts/` → `/yacht-charter-cabo/`, `cabosailing.com/luxury-sailboats/` → `/sailing-cabo-san-lucas/`, `cabosailing.com/book-now/` → `/contact/`. Check `migration/redirects.json` for other mappings. There is no `/fleet/` page — it's a dropdown label only (the nav label is "Yacht Rentals" and points to `/yacht-charter-cabo/`)
 5. **Link styling**: all internal links in article body use `class="text-accent-gold font-semibold hover:underline"`
 6. **301 redirect**: add a RewriteRule in `public/.htaccess` mapping the old slug to `/travel-guide/<slug>/`. Use `/?$` to match with or without trailing slash
 7. **Hub page card**: add a card to the appropriate category hub page (`travel-guide-activities.astro`, `travel-guide-attractions.astro`, `travel-guide-traveling.astro`, or `travel-guide-culture.astro`). Articles do NOT appear on hub pages automatically
