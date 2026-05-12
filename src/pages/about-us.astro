@@ -23,9 +23,25 @@ const breadcrumbSchema = JSON.stringify({
 
   <main class="flex-1 w-full overflow-x-hidden pt-[60px] lg:pt-[72px]">
 
-    <!-- Hero (wider than content column) -->
-    <div class="max-w-[1075px] mx-auto px-5 lg:px-8 pt-10 lg:pt-16">
-      <Image src={heroCaptain} alt="Captain aboard our 51' luxury sailing yacht in Cabo San Lucas" class="w-full h-auto rounded-2xl" width={2880} height={1920} />
+    <!-- Hero (shuttle-service style: full-bleed mobile, contained desktop, gradient overlay + title) -->
+    <div class="lg:hidden relative w-full h-[45vh] overflow-hidden">
+      <Image src={heroCaptain} alt="Captain aboard our 51' luxury sailing yacht in Cabo San Lucas" class="w-full h-full object-cover" width={2880} height={1920} />
+      <div class="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/40 to-transparent"></div>
+      <div class="absolute bottom-12 left-0 right-0 px-6">
+        <span class="bg-accent-gold text-navy text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest mb-3 inline-block">5-Star Local Charter</span>
+        <h1 class="text-3xl text-white mb-2 leading-tight font-serif">About Us</h1>
+      </div>
+    </div>
+
+    <div class="hidden lg:block max-w-[1400px] mx-auto px-10 pt-6">
+      <div class="rounded-2xl overflow-hidden relative h-[55vh]">
+        <Image src={heroCaptain} alt="Captain aboard our 51' luxury sailing yacht in Cabo San Lucas" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={2880} height={1920} />
+        <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent rounded-2xl"></div>
+        <div class="absolute bottom-6 left-6 right-6 max-w-3xl">
+          <span class="bg-accent-gold text-navy text-sm font-bold px-4 py-1.5 rounded-full uppercase tracking-widest mb-3 inline-block">5-Star Local Charter</span>
+          <h1 class="text-4xl text-white leading-tight font-serif">About Us</h1>
+        </div>
+      </div>
     </div>
 
     <div class="max-w-[860px] mx-auto px-5 lg:px-8 pt-6 lg:pt-8 pb-10 lg:pb-16">
@@ -39,7 +55,6 @@ const breadcrumbSchema = JSON.stringify({
 
       <!-- Header -->
       <header class="mb-10">
-        <h1 class="text-3xl lg:text-4xl text-navy font-serif mb-3">About Us</h1>
         <p class="text-slate-500 text-base lg:text-lg leading-relaxed">Cabo Sailing is a locally owned charter company offering private and shared sailing, snorkeling, sunset, whale watching, and bachelorette cruises on the Sea of Cortez. We&rsquo;re a small, hands-on team involved in every part of your experience, dedicated to creating unforgettable moments in Cabo.</p>
       </header>
 
