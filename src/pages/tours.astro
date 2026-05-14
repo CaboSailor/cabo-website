@@ -7,8 +7,8 @@ import CarouselImage from '../components/CarouselImage.astro';
 import YachtIcon from '../components/YachtIcon.astro';
 
 const sharedTours = [
-  { href: '/shared-snorkeling', id: 'shared-snorkeling', label: 'Shared Snorkeling', tagline: '3.5 hrs · group of up to 19', alt: 'Shared Snorkeling tour in Cabo San Lucas' },
-  { href: '/shared-sunset',     id: 'shared-sunset',     label: 'Shared Sunset',     tagline: '2 hrs · group of up to 19',   alt: 'Shared Sunset cruise in Cabo San Lucas' },
+  { href: '/shared-snorkeling', id: 'shared-snorkeling', label: 'Shared Snorkeling', tagline: '3 hrs · group of up to 14', alt: 'Shared Snorkeling tour in Cabo San Lucas' },
+  { href: '/shared-sunset',     id: 'shared-sunset',     label: 'Shared Sunset',     tagline: '2 hrs · group of up to 14', alt: 'Shared Sunset cruise in Cabo San Lucas' },
 ];
 
 const privateTours = [
@@ -22,23 +22,23 @@ const privateTours = [
 const faqs = [
   {
     q: "What's the real difference between a shared tour and a private charter?",
-    a: "A shared tour is a fixed-schedule group trip — you join other guests on a sailboat (up to 19 people), and the price is per person. A private charter means the whole boat is yours: pick the date, the time, who's on board, the route, and even the music. Shared is the value option; private is the experience option."
+    a: "A shared tour is a small-group sailing experience with a set departure time. You join other guests onboard one of our sailboats, with a maximum of 14 guests, plus open bar, food, crew, and a relaxed Cabo atmosphere.\n\nA private charter is reserved only for your group. You choose the date, time, boat style, and overall pace of the cruise — with more flexibility for the route, music, and special requests.\n\nBoth are great ways to enjoy Cabo from the water. Shared tours are easy, social, and relaxed. Private charters are more personal, flexible, and fully yours."
   },
   {
     q: "Sailboat or yacht — which should I pick?",
-    a: "Sailboats are quieter, more romantic, and feel closer to the water — great for couples, sunset sails, and anyone who wants the actual sailing experience. Yachts have wider decks, more shade, smoother rides in any sea, full bathrooms, and more space to move — better for bigger groups, families with kids or grandparents, and if amenities matter more than wind in the sails."
+    a: "Both are beautiful ways to experience Cabo — it mostly depends on the style of cruise you have in mind.\n\nA sailboat offers a classic Cabo sailing feel: open air, quiet movement, ocean breeze, and a relaxed connection to the water.\n\nA yacht offers a spacious, luxurious lounge-style experience with comfortable seating areas, shaded space, indoor cabin access, and yacht amenities.\n\nChoose a sailboat for the sailing atmosphere. Choose a yacht for the luxury lounge experience. Either way, you'll enjoy Cabo's coastline, great service, and a memorable time on the water."
   },
   {
     q: "We've never been on a boat. Which tour is the easiest start?",
-    a: "Our shared snorkel-and-sail and shared sunset are the calmest entry points — the Sea of Cortez side of Cabo is naturally protected, and our captains stay in calm water. If you'd rather have full control of pace and stops, a private charter on a yacht is the smoothest option for first-timers."
+    a: "If you'd rather have full control of pace and stops, a private charter on a yacht is the smoothest option for first-timers.\n\nThat said, our 2-hour shared sunset sail is the calmest and might offer a good entry point."
   },
   {
-    q: "Are these tours kid-friendly?",
-    a: "Yes. Snorkel tours work great from about age 5 with a parent in the water; sunset cruises are fine for all ages. For families, a private charter is usually the right call — you control the schedule, the route, and how long you spend at each stop. Life jackets are on board, free, and required for kids."
+    q: "Are these cruises kid-friendly?",
+    a: "Absolutely. All of our cruises are family-friendly, and kids of all ages usually love being out on the water.\n\nOur crew is friendly, patient, and highly accommodating with families. Whether you're joining a snorkeling cruise, sunset cruise, or private charter, we'll help make the experience comfortable and fun for both kids and adults.\n\nWe carry safety gear and life jackets for children of different ages and sizes, and our crew will help with anything needed before and during the cruise."
   },
   {
     q: "Will I get seasick? How rough does the water get?",
-    a: "Most of our tours stay inside Cabo Bay, which is sheltered and usually flat. Open-ocean conditions show up mainly on whale-watching trips that go a bit further out. If you're prone to motion sickness, eat a light meal beforehand, take a Bonine/Dramamine an hour before boarding, and pick a yacht over a sailboat — the wider hull is noticeably steadier."
+    a: "Most cruises take place close to shore and in confined bays where conditions are usually comfortable and enjoyable. Some days the ocean can be more active.\n\nIf you're sensitive to motion, we recommend eating lightly before boarding, staying hydrated, and considering motion-sickness medication before the cruise if you normally use it. Our crew also keeps an eye on conditions and will always choose the safest, most comfortable route available for the day."
   },
   {
     q: "What's included on the tour?",
@@ -189,7 +189,9 @@ const faqSchema = JSON.stringify({
               <span class="material-symbols-outlined text-slate-300 faq-chevron transition-transform flex-shrink-0">expand_more</span>
             </label>
             <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out">
-              <p class="text-sm lg:text-base text-slate-600 leading-relaxed pt-3">{item.a}</p>
+              {item.a.split('\n\n').map((para, i) => (
+                <p class={`text-sm lg:text-base text-slate-600 leading-relaxed ${i === 0 ? 'pt-3' : 'pt-2'}`}>{para}</p>
+              ))}
             </div>
           </div>
         ))}
