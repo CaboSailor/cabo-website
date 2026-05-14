@@ -5,6 +5,7 @@ import Footer from '../components/Footer.astro';
 import FloatingCTA from '../components/FloatingCTA.astro';
 import RezdyModal from '../components/RezdyModal.astro';
 import CarouselImage from '../components/CarouselImage.astro';
+import WhaleFlukeIcon from '../components/WhaleFlukeIcon.astro';
 import { Image } from 'astro:assets';
 
 import { whaleWatching as feb_15_56 } from "../data/tour-heroes";
@@ -137,7 +138,7 @@ const breadcrumbSchema = JSON.stringify({
       <p class="text-sm font-semibold text-navy">3 Hours</p>
     </div>
     <div class="flex items-center gap-2">
-      <span class="material-symbols-outlined text-gold">water</span>
+      <WhaleFlukeIcon class="text-gold text-2xl" />
       <p class="text-sm font-semibold text-navy">Whale Season Dec&ndash;Apr</p>
     </div>
     <div class="flex items-center gap-2">
@@ -209,7 +210,7 @@ const breadcrumbSchema = JSON.stringify({
       <p class="text-xs font-semibold text-navy">3 Hours</p>
     </div>
     <div class="flex items-center gap-1.5">
-      <span class="material-symbols-outlined text-gold text-lg">water</span>
+      <WhaleFlukeIcon class="text-gold text-lg" />
       <p class="text-xs font-semibold text-navy">Whale Season Dec&ndash;Apr</p>
     </div>
     <div class="flex items-center gap-1.5">
@@ -575,32 +576,32 @@ const breadcrumbSchema = JSON.stringify({
     <div id="m-carousel" class="flex overflow-x-auto gap-4 lg:gap-6 no-scrollbar snap-x snap-mandatory pb-4 lg:overflow-hidden">
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"We saw a mother humpback and her calf breach just 20 meters from the boat. The crew was incredibly knowledgeable and the whole experience was breathtaking. Best activity in Cabo, hands down!"</p>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Saw a mama humpback and her baby breach maybe 20 yards from the boat. I have video. Crew knew so much about whale behavior and just kept feeding us info. Best thing we did in Cabo by far."</p>
         <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center text-white text-sm font-bold">RK</div><div><p class="text-sm font-bold text-navy">Rachel K.</p><p class="text-base text-slate-500">Seattle, WA</p></div></div>
       </div>
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Took the kids on the whale watching tour and it was the highlight of our entire vacation. We counted 5 different whales! The crew made it so fun and educational. We'll be back next season for sure."</p>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Took our kids (8 and 11) on the whale watching tour and they were obsessed. We counted 5 different whales!! Crew kept them engaged the whole time. Already trying to plan next winter back."</p>
         <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-gold flex items-center justify-center text-white text-sm font-bold">TF</div><div><p class="text-sm font-bold text-navy">Tom F.</p><p class="text-base text-slate-500">Denver, CO</p></div></div>
       </div>
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"I've done whale watching in Alaska and Hawaii — this was right up there with the best. The open bar was a bonus, the crew was wonderful, and the whales put on an incredible show. Highly recommend Cabo Sailing!"</p>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"I've done whale watching in Alaska and in Maui, and Cabo holds its own. The whales were active that day and we saw multiple breaches. Open bar was a nice surprise. Highly recommend."</p>
         <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy/70 flex items-center justify-center text-white text-sm font-bold">MG</div><div><p class="text-sm font-bold text-navy">Maria G.</p><p class="text-base text-slate-500">San Francisco, CA</p></div></div>
       </div>
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"The captain knew exactly where to find the whales. Within 15 minutes we had humpbacks surfacing all around us. The sailboat approach is so much more peaceful than the big tour boats. Unforgettable experience."</p>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"The captain clearly knew where to look. We had whales around us within 15 mins. Way better experience on a sailboat too. We passed one of the big motor boats and it was packed and loud. We had room to move and could actually hear ourselves."</p>
         <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center text-white text-sm font-bold">DL</div><div><p class="text-sm font-bold text-navy">David L.</p><p class="text-base text-slate-500">Austin, TX</p></div></div>
       </div>
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"My daughter is a marine biology student and even she was impressed by the crew's knowledge. They explained whale behavior, migration patterns — it felt like a private National Geographic tour with cocktails!"</p>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"My daughter is studying marine biology and even she was impressed (she's a hard sell). Crew talked about behavior, migration patterns, the whole thing. Plus cocktails. Like a Nat Geo tour you can drink on."</p>
         <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-gold flex items-center justify-center text-white text-sm font-bold">PH</div><div><p class="text-sm font-bold text-navy">Patricia H.</p><p class="text-base text-slate-500">Miami, FL</p></div></div>
       </div>
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"We've done whale watching three times now with Cabo Sailing and every trip is special. This year we saw a whale breach so close the splash hit the boat! The crew's excitement was just as contagious as ours."</p>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Third year doing the whale watching with these guys. This year a whale breached so close that water actually hit the boat! Even the crew was freaking out. Every trip has been special but this one was on another level."</p>
         <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy/70 flex items-center justify-center text-white text-sm font-bold">CJ</div><div><p class="text-sm font-bold text-navy">Chris &amp; Jamie</p><p class="text-base text-slate-500">Chicago, IL</p></div></div>
       </div>
     </div>

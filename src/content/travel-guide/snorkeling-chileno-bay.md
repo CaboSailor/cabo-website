@@ -2,8 +2,8 @@
 title: "Snorkeling Tour in Chileno Bay — Cabo's Underwater Paradise"
 pubDate: 2023-03-10
 description: "Explore Chileno Bay on a Cabo snorkeling tour — crystal-clear water, tropical fish, sea turtles, and the best conditions in Los Cabos."
-heroImage: "/images/travel-guide/snorkeling-1.jpg"
-heroAlt: "Snorkeling in Chileno Bay"
+heroImage: "/images/blog/joyful-moments-by-the-sparkling-sea.webp"
+heroAlt: "Joyful moments snorkeling by the sparkling sea at Chileno Bay"
 category: "Activities"
 categoryLink: "/travel-guide-activities"
 activeSubmenu: "activities"
@@ -25,7 +25,7 @@ You can expect the knowledgeable, local crew on board to point you to the best s
 
 ### Snorkeling tour in Chileno Bay Experience
 
-With smooth water conditions in both Chileno and Santa Maria Bays, you'll enjoy a <a href="/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">comfortable and safe snorkeling experience</a>.
+With smooth water conditions in both Chileno and Santa Maria Bays, you'll enjoy a <a href="/private-snorkeling/" class="text-accent-gold font-semibold hover:underline">comfortable and safe snorkeling experience</a>.
 As you dive into the crystal-clear water of Chileno Bay, the variety of aquatic life that calls this place home will amaze you. The Sea of Cortez is home to over 900 species of fish, given that it is common to spot sea turtles, sea lions, and even Mobula Rays swimming and jumping.
 The Baja peninsula and the Sea Of Cortez are a haven for marine life and for underwater exploration of any kind.
 
@@ -38,7 +38,7 @@ Cabo Sailing provides snorkel gear and other swimming aids to ensure you have th
 After a swim with the colorful fish and vibrant corals, take a break on the white sand of Chileno Beach.
 As you return on board, enjoy a freshwater shower to wash off the sea salt, and sit or lay down to bask under the sun. You will be served traditional Mexican refreshments and are welcome to use the open bar before and while heading back out to the open Sea of Cortez.
 In the meantime sailing back to Cabo San Lucas Bay, you'll have the opportunity to explore the rock formations. You will have the chance to view from a close distance the famous Cabo arch and Land's End, where the local marine life calls the area home.
-Don't miss out on the opportunity to go on a snorkeling tour in Chileno Bay and explore the beauty of Chileno Bay with Cabo Sailing. <a href="/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">Book your snorkeling tour today</a> and experience the natural wonder of Los Cabos like never before.
+Don't miss out on the opportunity to go on a snorkeling tour in Chileno Bay and explore the beauty of Chileno Bay with Cabo Sailing. <a href="/private-snorkeling/" class="text-accent-gold font-semibold hover:underline">Book your snorkeling tour today</a> and experience the natural wonder of Los Cabos like never before.
 From Santa Maria Bay snorkeling to Chileno Bay snorkeling, there's no shortage of breathtaking experiences to enjoy in the calm and clear waters of Los Cabos.
 
 ### Protecting yourself from the sun with sunscreen and sunblock and stay hydrated

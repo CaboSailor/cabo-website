@@ -2,8 +2,8 @@
 title: "Do You Need a License to Rent a Boat in Cabo?"
 pubDate: 2024-09-09
 description: "Do you need a boating license in Cabo? Rules for small boats, yachts, bareboat charters, and skippered rentals — everything you need to know."
-heroImage: "/images/travel-guide/Do-You-Need-A-License-To-Rent-A-Boat-In-Cabo.j2.jpg"
-heroAlt: "Boat rental in Cabo San Lucas"
+heroImage: "/images/blog/libreta-del-mar-mexico.webp"
+heroAlt: "Libreta del Mar — Mexico's official boating license document"
 category: "Activities"
 categoryLink: "/travel-guide-activities"
 activeSubmenu: "activities"

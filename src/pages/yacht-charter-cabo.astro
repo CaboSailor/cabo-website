@@ -5,6 +5,7 @@ import Footer from '../components/Footer.astro';
 import FloatingCTA from '../components/FloatingCTA.astro';
 import RezdyModal from '../components/RezdyModal.astro';
 import CarouselImage from '../components/CarouselImage.astro';
+import WhaleFlukeIcon from '../components/WhaleFlukeIcon.astro';
 import { Image } from 'astro:assets';
 
 import heroYachtCharter from "../assets/images/guests-on-yachts/cabo-yacht-charter-guests-01.jpg";
@@ -217,7 +218,7 @@ const breadcrumbSchema = JSON.stringify({
     <a href="/private-snorkeling" class="group bg-white border border-border-light rounded-2xl overflow-hidden shadow-md shadow-navy/5 hover:shadow-xl transition-shadow">
       <div class="h-44 overflow-hidden"><Image src={familyYachtEscape} alt="Family yacht charter day in Cabo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
       <div class="p-5">
-        <h3 class="text-base font-bold text-navy mb-2">Family Day</h3>
+        <h3 class="text-base font-bold text-navy mb-2">Family Snorkeling Day</h3>
         <p class="text-sm text-slate-600 leading-relaxed">Calm bays, easy snorkeling, kid-friendly crew. Perfect for kids and grandparents alike.</p>
         <p class="text-xs text-accent-gold font-semibold uppercase tracking-widest mt-3 group-hover:underline">Explore family snorkeling &rarr;</p>
       </div>
@@ -227,13 +228,13 @@ const breadcrumbSchema = JSON.stringify({
       <div class="p-5">
         <h3 class="text-base font-bold text-navy mb-2">Celebration</h3>
         <p class="text-sm text-slate-600 leading-relaxed">Birthdays, anniversaries, bachelor &amp; bachelorette parties, family reunions. Custom playlist, your call.</p>
-        <p class="text-xs text-accent-gold font-semibold uppercase tracking-widest mt-3 group-hover:underline">See celebration charters &rarr;</p>
+        <p class="text-xs text-accent-gold font-semibold uppercase tracking-widest mt-3 group-hover:underline">See Bachelorette party &rarr;</p>
       </div>
     </a>
     <a href="/private-sunset" class="group bg-white border border-border-light rounded-2xl overflow-hidden shadow-md shadow-navy/5 hover:shadow-xl transition-shadow">
       <div class="h-44 overflow-hidden"><Image src={romanticSunset} alt="Romantic sunset yacht charter for couples" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
       <div class="p-5">
-        <h3 class="text-base font-bold text-navy mb-2">Romance</h3>
+        <h3 class="text-base font-bold text-navy mb-2">Romantic Sunset</h3>
         <p class="text-sm text-slate-600 leading-relaxed">Couples, honeymoons, proposals. Champagne, golden-hour light, and Cabo&rsquo;s most photogenic backdrop.</p>
         <p class="text-xs text-accent-gold font-semibold uppercase tracking-widest mt-3 group-hover:underline">Explore sunset cruises &rarr;</p>
       </div>
@@ -364,7 +365,7 @@ const breadcrumbSchema = JSON.stringify({
       <p class="text-sm text-slate-600 leading-relaxed">Time your charter for golden hour &mdash; Cabo&rsquo;s most iconic light.</p>
     </div>
     <div class="bg-light-grey rounded-2xl p-5 border border-border-light">
-      <div class="w-10 h-10 rounded-full bg-navy flex items-center justify-center mb-3"><span class="material-symbols-outlined text-white text-lg">water</span></div>
+      <div class="w-10 h-10 rounded-full bg-navy flex items-center justify-center mb-3"><WhaleFlukeIcon class="text-white text-lg" /></div>
       <h3 class="text-base font-bold text-navy mb-1">Whale Watching</h3>
       <p class="text-sm text-slate-600 leading-relaxed">Dec&ndash;Apr. Add this to a charter or do a dedicated trip &mdash; <a href="/whale-watching" class="text-accent-gold font-semibold hover:underline">see whale watching</a>.</p>
     </div>
@@ -593,32 +594,32 @@ const breadcrumbSchema = JSON.stringify({
     <div id="m-carousel" class="flex overflow-x-auto gap-4 lg:gap-6 no-scrollbar snap-x snap-mandatory pb-4 lg:overflow-hidden">
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Chartered the 45' for my husband's 50th and they thought of everything &mdash; the cake we asked for, his favorite playlist, even a custom toast from the captain. Worth every penny."</p>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Did the 45' for my husband's 50th birthday. I sent over his playlist and asked if they could grab a cake and they handled it all. The captain even did a little toast that made him tear up. Worth every penny."</p>
         <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center text-white text-sm font-bold">EM</div><div><p class="text-sm font-bold text-navy">Erin M.</p><p class="text-base text-slate-500">San Francisco, CA</p></div></div>
       </div>
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Family reunion with 18 of us on the 51' yacht. Three generations, everyone happy. The crew was incredible with the kids and the food kept coming. Best family memory we've ever made."</p>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"18 of us for our family reunion on the 51 footer. Three generations all on one boat and somehow everyone was happy at the same time. Crew was so good with the kids. Food just kept coming. Honestly the best family memory we have."</p>
         <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-gold flex items-center justify-center text-white text-sm font-bold">RH</div><div><p class="text-sm font-bold text-navy">Robert H.</p><p class="text-base text-slate-500">Dallas, TX</p></div></div>
       </div>
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Booked the 38' sailboat for our 10th anniversary. Quiet, intimate, just the two of us with a beautiful sunset. The captain gave us privacy when we wanted it and stories when we asked. Magical."</p>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"10 year anniversary trip, booked the 38 sailboat. Just us and the crew. Captain was great at reading the room, gave us space when we were having a moment and chatted when we wanted to chat. Sunset was unreal."</p>
         <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy/70 flex items-center justify-center text-white text-sm font-bold">SK</div><div><p class="text-sm font-bold text-navy">Sarah &amp; Kevin</p><p class="text-base text-slate-500">Toronto, ON</p></div></div>
       </div>
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Corporate retreat for 14 on the 42' yacht. Extended to 5 hours and used it as the offsite. Snorkeling, paddleboards, lunch, and a working lounge area. Professional, polished, and fun."</p>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Did our team offsite on the 42' yacht for 14 people. Extended to 5 hours. We did snorkeling, paddleboards, had lunch on board, and ended up brainstorming on the lounge deck. Way better than a conference room."</p>
         <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center text-white text-sm font-bold">JL</div><div><p class="text-sm font-bold text-navy">Jordan L.</p><p class="text-base text-slate-500">Seattle, WA</p></div></div>
       </div>
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"My in-laws are in their 70s and we did the 42' yacht for a family afternoon. The crew helped them with everything, the boat was steady and comfortable, and they're still talking about it months later."</p>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"My in-laws are mid 70s and I was a little worried about how they'd do on a boat. We did the 42' yacht and the crew was so attentive with them. Boat was steady, plenty of shade. They still bring it up in family chats months later."</p>
         <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-gold flex items-center justify-center text-white text-sm font-bold">AN</div><div><p class="text-sm font-bold text-navy">Anita N.</p><p class="text-base text-slate-500">Boston, MA</p></div></div>
       </div>
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Friends weekend, 10 of us. The boat became the centerpiece of the trip. Music on the Bluetooth, paddleboards in a quiet cove, sunset back at the marina. Already planning the next one."</p>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Group of 10 friends, did a long weekend in Cabo. Booked the yacht for one day and it became the thing everyone talks about. Bluetooth speaker, paddleboards in a hidden cove, beers, sunset on the way back. Doing it again next year."</p>
         <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy/70 flex items-center justify-center text-white text-sm font-bold">TP</div><div><p class="text-sm font-bold text-navy">Tessa P.</p><p class="text-base text-slate-500">New York, NY</p></div></div>
       </div>
     </div>

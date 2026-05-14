@@ -2,8 +2,8 @@
 title: "Is It Safe for Kids to Snorkel in Cabo? Parent's Guide (2026)"
 pubDate: 2026-04-23
 description: "Yes — with the right beach, tour, and preparation. Age guidelines, best kid-friendly snorkel spots, gear tips, and how to build confidence. Local's guide."
-heroImage: "/images/travel-guide/snorkeling-5.jpg.webp"
-heroAlt: "Family snorkeling in Cabo San Lucas"
+heroImage: "/images/blog/joyful-yacht-outing-on-a-sunny-day.webp"
+heroAlt: "Family enjoying a joyful yacht outing on a sunny day in Cabo San Lucas"
 category: "Activities"
 categoryLink: "/travel-guide-activities"
 activeSubmenu: "activities"
@@ -66,7 +66,7 @@ The important caveat: **not all Cabo beaches are safe for swimming.** The Pacifi
     <tr class="border-b border-gray-100">
       <td class="px-4 py-3 font-semibold">8&ndash;11</td>
       <td class="px-4 py-3">Swim independently and use full snorkel gear</td>
-      <td class="px-4 py-3">Beach snorkeling at Chileno or Santa Mar&iacute;a. Can join a calm <a href="/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">shared snorkeling tour</a> with parent supervision</td>
+      <td class="px-4 py-3">Beach snorkeling at Chileno or Santa Mar&iacute;a. Can join a calm <a href="/private-snorkeling/" class="text-accent-gold font-semibold hover:underline">private snorkeling tour</a> with parent supervision</td>
     </tr>
     <tr>
       <td class="px-4 py-3 font-semibold">12+</td>

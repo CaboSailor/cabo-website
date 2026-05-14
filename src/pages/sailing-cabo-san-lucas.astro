@@ -5,6 +5,7 @@ import Footer from '../components/Footer.astro';
 import FloatingCTA from '../components/FloatingCTA.astro';
 import RezdyModal from '../components/RezdyModal.astro';
 import CarouselImage from '../components/CarouselImage.astro';
+import WhaleFlukeIcon from '../components/WhaleFlukeIcon.astro';
 import { Image } from 'astro:assets';
 
 import heroSailingCoastline from "../assets/images/guests-on-sailboats/sailing-near-cabos-rocky-coastline.png";
@@ -335,23 +336,25 @@ const breadcrumbSchema = JSON.stringify({
   <div class="flex items-center gap-3 mb-6"><div class="w-1 h-6 bg-gold rounded-full"></div><h2 class="text-lg lg:text-3xl text-navy">Build your sailing day</h2></div>
   <p class="text-slate-700 text-base lg:text-lg leading-relaxed mb-8 lg:max-w-3xl">Sailing is the experience &mdash; what you do during it is up to you. Mix and match during your 3-hour trip or extend by the hour.</p>
   <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-5">
-    <a href="/shared-snorkeling" class="bg-light-grey rounded-2xl p-5 border border-border-light hover:shadow-md transition-shadow">
+    <div class="bg-light-grey rounded-2xl p-5 border border-border-light hover:shadow-md transition-shadow">
       <div class="w-10 h-10 rounded-full bg-navy flex items-center justify-center mb-3"><Image src={snorkelIcon} alt="" class="w-5 h-5 object-contain" style="filter: brightness(0) invert(1);" width={40} height={40} /></div>
       <h3 class="text-base font-bold text-navy mb-1">Snorkel + Sail</h3>
-      <p class="text-sm text-slate-600 leading-relaxed">Sail past the Arch, anchor at Pelican Rock, swim with tropical fish. Gear and guide included.</p>
-    </a>
-    <a href="/shared-sunset" class="bg-light-grey rounded-2xl p-5 border border-border-light hover:shadow-md transition-shadow">
+      <p class="text-sm text-slate-600 leading-relaxed mb-2">Sail past the Arch, anchor at Pelican Rock, swim with tropical fish. Gear and guide included.</p>
+      <p class="text-sm leading-relaxed"><a href="/shared-snorkeling" class="text-accent-gold font-semibold hover:underline">Shared snorkeling</a> &middot; <a href="/private-snorkeling" class="text-accent-gold font-semibold hover:underline">Private snorkeling</a></p>
+    </div>
+    <div class="bg-light-grey rounded-2xl p-5 border border-border-light hover:shadow-md transition-shadow">
       <div class="w-10 h-10 rounded-full bg-navy flex items-center justify-center mb-3"><span class="material-symbols-outlined text-white text-lg">wb_twilight</span></div>
       <h3 class="text-base font-bold text-navy mb-1">Sunset Sail</h3>
-      <p class="text-sm text-slate-600 leading-relaxed">Time your sail for golden hour &mdash; sails up, sun down, drinks on deck.</p>
-    </a>
+      <p class="text-sm text-slate-600 leading-relaxed mb-2">Time your sail for golden hour &mdash; sails up, sun down, drinks on deck.</p>
+      <p class="text-sm leading-relaxed"><a href="/shared-sunset" class="text-accent-gold font-semibold hover:underline">Public sunset</a> &middot; <a href="/private-sunset" class="text-accent-gold font-semibold hover:underline">Private sunset</a></p>
+    </div>
     <div class="bg-light-grey rounded-2xl p-5 border border-border-light">
       <div class="w-10 h-10 rounded-full bg-navy flex items-center justify-center mb-3"><span class="material-symbols-outlined text-white text-lg">explore</span></div>
       <h3 class="text-base font-bold text-navy mb-1">Custom Route</h3>
       <p class="text-sm text-slate-600 leading-relaxed">Private only. Tell us what you&rsquo;d like &mdash; we&rsquo;ll build the route around your group.</p>
     </div>
     <a href="/whale-watching" class="bg-light-grey rounded-2xl p-5 border border-border-light hover:shadow-md transition-shadow">
-      <div class="w-10 h-10 rounded-full bg-navy flex items-center justify-center mb-3"><span class="material-symbols-outlined text-white text-lg">water</span></div>
+      <div class="w-10 h-10 rounded-full bg-navy flex items-center justify-center mb-3"><WhaleFlukeIcon class="text-white text-lg" /></div>
       <h3 class="text-base font-bold text-navy mb-1">Whale Watching</h3>
       <p class="text-sm text-slate-600 leading-relaxed">Dec&ndash;Apr. Sail and watch for breaching humpbacks &mdash; or book a dedicated trip.</p>
     </a>
@@ -560,32 +563,32 @@ const breadcrumbSchema = JSON.stringify({
     <div id="m-carousel" class="flex overflow-x-auto gap-4 lg:gap-6 no-scrollbar snap-x snap-mandatory pb-4 lg:overflow-hidden">
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"The 38' sailboat for our anniversary &mdash; absolutely magical. Wind in the sails, no other tourists, perfect sunset. The best decision of our trip."</p>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Booked the 38 footer for our anniversary. So glad we picked sailing over a motor yacht. Wind in the sails, no engine noise, no other tourists. Sunset was perfect. Best decision we made all week."</p>
         <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center text-white text-sm font-bold">LM</div><div><p class="text-sm font-bold text-navy">Laura &amp; Mark T.</p><p class="text-base text-slate-500">Vancouver, BC</p></div></div>
       </div>
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Family of 10 on the 42'. Three generations sailing past the Arch. The kids LOVED it. Smooth, beautiful, and the crew was incredible."</p>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Family of 10 on the 42'. Three generations, ages 8 to 78. Kids were obsessed, grandparents stayed comfy in the shade. Crew handled everyone perfectly. Smooth ride past the Arch. One of those days we'll talk about for years."</p>
         <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-gold flex items-center justify-center text-white text-sm font-bold">PR</div><div><p class="text-sm font-bold text-navy">Patricia R.</p><p class="text-base text-slate-500">San Diego, CA</p></div></div>
       </div>
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Did the shared sailing snorkel solo. Small group, lovely people, captain explained the sailing as we went. Best $102 I spent in Cabo."</p>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Did the shared trip solo (was a little nervous about that) and ended up meeting some great people. Group was small, captain explained what was happening with the sails as we went. Best $102 I spent in Cabo for sure."</p>
         <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy/70 flex items-center justify-center text-white text-sm font-bold">JG</div><div><p class="text-sm font-bold text-navy">Julia G.</p><p class="text-base text-slate-500">Brooklyn, NY</p></div></div>
       </div>
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Sunset sail &mdash; the most romantic thing we&rsquo;ve ever done. Golden hour, sails up, a glass of champagne. Worth every penny."</p>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Did the sunset sail with my husband for our 5 year anniversary. Easily the most romantic thing we&rsquo;ve ever done. Sails up at golden hour, champagne in hand, the whole thing. Worth every penny."</p>
         <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center text-white text-sm font-bold">DJ</div><div><p class="text-sm font-bold text-navy">David &amp; Jenna</p><p class="text-base text-slate-500">Austin, TX</p></div></div>
       </div>
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"We sail back home, so my husband was skeptical of a tourist sailing experience. The crew let him take the helm. He said it was the highlight of the whole trip."</p>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"My husband sails back home so he was kind of an eye-roll about doing a tourist sail. The captain picked up on it and let him take the helm for a bit. He didn't shut up about it the rest of the trip."</p>
         <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-gold flex items-center justify-center text-white text-sm font-bold">MK</div><div><p class="text-sm font-bold text-navy">Megan K.</p><p class="text-base text-slate-500">Newport, RI</p></div></div>
       </div>
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Booked two days back to back &mdash; snorkel-and-sail on day 1, private sunset on day 2. Both crews were excellent. Already planning to come back."</p>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Did two days in a row, snorkel/sail on day 1 and private sunset on day 2. Both crews were great, different vibes but equally good. We're coming back next year and booking the same combo."</p>
         <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy/70 flex items-center justify-center text-white text-sm font-bold">CW</div><div><p class="text-sm font-bold text-navy">Carlos W.</p><p class="text-base text-slate-500">Mexico City, MX</p></div></div>
       </div>
     </div>

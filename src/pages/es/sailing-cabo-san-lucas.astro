@@ -5,6 +5,7 @@ import Footer from '../../components/Footer.astro';
 import FloatingCTA from '../../components/FloatingCTA.astro';
 import RezdyModal from '../../components/RezdyModal.astro';
 import CarouselImage from '../../components/CarouselImage.astro';
+import WhaleFlukeIcon from '../../components/WhaleFlukeIcon.astro';
 import { Image } from 'astro:assets';
 
 import heroSailingCoastline from "../../assets/images/guests-on-sailboats/sailing-near-cabos-rocky-coastline.png";
@@ -332,23 +333,25 @@ const breadcrumbSchema = JSON.stringify({
   <div class="flex items-center gap-3 mb-6"><div class="w-1 h-6 bg-gold rounded-full"></div><h2 class="text-lg lg:text-3xl text-navy">Arma tu día de navegación</h2></div>
   <p class="text-slate-700 text-base lg:text-lg leading-relaxed mb-8 lg:max-w-3xl">La navegación es la experiencia &mdash; lo que hagas durante el viaje depende de ti. Combina actividades durante tu viaje de 3 horas o extiende por hora.</p>
   <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-5">
-    <a href="/es/shared-snorkeling" class="bg-light-grey rounded-2xl p-5 border border-border-light hover:shadow-md transition-shadow">
+    <div class="bg-light-grey rounded-2xl p-5 border border-border-light hover:shadow-md transition-shadow">
       <div class="w-10 h-10 rounded-full bg-navy flex items-center justify-center mb-3"><Image src={snorkelIcon} alt="" class="w-5 h-5 object-contain" style="filter: brightness(0) invert(1);" width={40} height={40} /></div>
       <h3 class="text-base font-bold text-navy mb-1">Snorkel + Velero</h3>
-      <p class="text-sm text-slate-600 leading-relaxed">Navega junto al Arco, ancla en Pelican Rock, nada entre peces tropicales. Equipo y guía incluidos.</p>
-    </a>
-    <a href="/es/shared-sunset" class="bg-light-grey rounded-2xl p-5 border border-border-light hover:shadow-md transition-shadow">
+      <p class="text-sm text-slate-600 leading-relaxed mb-2">Navega junto al Arco, ancla en Pelican Rock, nada entre peces tropicales. Equipo y guía incluidos.</p>
+      <p class="text-sm leading-relaxed"><a href="/es/shared-snorkeling" class="text-accent-gold font-semibold hover:underline">Snorkel compartido</a> &middot; <a href="/es/private-snorkeling" class="text-accent-gold font-semibold hover:underline">Snorkel privado</a></p>
+    </div>
+    <div class="bg-light-grey rounded-2xl p-5 border border-border-light hover:shadow-md transition-shadow">
       <div class="w-10 h-10 rounded-full bg-navy flex items-center justify-center mb-3"><span class="material-symbols-outlined text-white text-lg">wb_twilight</span></div>
       <h3 class="text-base font-bold text-navy mb-1">Navegación al Atardecer</h3>
-      <p class="text-sm text-slate-600 leading-relaxed">Programa tu navegación para la hora dorada &mdash; velas arriba, sol bajando, bebidas en cubierta.</p>
-    </a>
+      <p class="text-sm text-slate-600 leading-relaxed mb-2">Programa tu navegación para la hora dorada &mdash; velas arriba, sol bajando, bebidas en cubierta.</p>
+      <p class="text-sm leading-relaxed"><a href="/es/shared-sunset" class="text-accent-gold font-semibold hover:underline">Atardecer público</a> &middot; <a href="/es/private-sunset" class="text-accent-gold font-semibold hover:underline">Atardecer privado</a></p>
+    </div>
     <div class="bg-light-grey rounded-2xl p-5 border border-border-light">
       <div class="w-10 h-10 rounded-full bg-navy flex items-center justify-center mb-3"><span class="material-symbols-outlined text-white text-lg">explore</span></div>
       <h3 class="text-base font-bold text-navy mb-1">Ruta Personalizada</h3>
       <p class="text-sm text-slate-600 leading-relaxed">Solo privados. Dinos qué te gustaría &mdash; construiremos la ruta a tu medida.</p>
     </div>
     <a href="/es/whale-watching" class="bg-light-grey rounded-2xl p-5 border border-border-light hover:shadow-md transition-shadow">
-      <div class="w-10 h-10 rounded-full bg-navy flex items-center justify-center mb-3"><span class="material-symbols-outlined text-white text-lg">water</span></div>
+      <div class="w-10 h-10 rounded-full bg-navy flex items-center justify-center mb-3"><WhaleFlukeIcon class="text-white text-lg" /></div>
       <h3 class="text-base font-bold text-navy mb-1">Avistamiento de Ballenas</h3>
       <p class="text-sm text-slate-600 leading-relaxed">Dic&ndash;Abr. Navega y observa jorobadas saltando &mdash; o reserva un viaje dedicado.</p>
     </a>
@@ -557,32 +560,32 @@ const breadcrumbSchema = JSON.stringify({
     <div id="m-carousel" class="flex overflow-x-auto gap-4 lg:gap-6 no-scrollbar snap-x snap-mandatory pb-4 lg:overflow-hidden">
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"El velero 38' para nuestro aniversario &mdash; absolutamente mágico. Viento en las velas, sin otros turistas, atardecer perfecto. La mejor decisión de nuestro viaje."</p>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Reservamos el velero de 38' para nuestro aniversario. Que bueno que elegimos velero en vez de yate de motor. Viento en las velas, sin ruido de motor, sin otros turistas. El atardecer perfecto. La mejor decisión de toda la semana."</p>
         <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center text-white text-sm font-bold">LM</div><div><p class="text-sm font-bold text-navy">Laura &amp; Mark T.</p><p class="text-base text-slate-500">Vancouver, BC</p></div></div>
       </div>
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Familia de 10 en el 42'. Tres generaciones navegando junto al Arco. Los niños lo AMARON. Suave, hermoso, y la tripulación increíble."</p>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Familia de 10 en el 42'. Tres generaciones, edades de 8 a 78. Los niños obsesionados, los abuelos cómodos en la sombra. La tripulación manejó a todos a la perfección. Paseo suave junto al Arco. Uno de esos días que vamos a recordar por años."</p>
         <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-gold flex items-center justify-center text-white text-sm font-bold">PR</div><div><p class="text-sm font-bold text-navy">Patricia R.</p><p class="text-base text-slate-500">San Diego, CA</p></div></div>
       </div>
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Hice el snorkel-y-velero compartido sola. Grupo pequeño, gente encantadora, el capitán explicó la navegación. Los mejores $102 que gasté en Cabo."</p>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Hice el tour compartido sola (al principio nerviosa por eso) y termine conociendo gente buenisima. Grupo pequeño, el capitán explicaba lo que iba pasando con las velas mientras navegábamos. Los mejores $102 que gasté en Cabo."</p>
         <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy/70 flex items-center justify-center text-white text-sm font-bold">JG</div><div><p class="text-sm font-bold text-navy">Julia G.</p><p class="text-base text-slate-500">Brooklyn, NY</p></div></div>
       </div>
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Navegación al atardecer &mdash; lo más romántico que hemos hecho. Hora dorada, velas arriba, una copa de champaña. Vale cada centavo."</p>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Hicimos la navegación al atardecer con mi esposo por nuestros 5 años de aniversario. Fácilmente lo más romántico que hemos hecho. Velas arriba en la hora dorada, champaña en la mano, todo el cuento. Vale cada peso."</p>
         <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center text-white text-sm font-bold">DJ</div><div><p class="text-sm font-bold text-navy">David &amp; Jenna</p><p class="text-base text-slate-500">Austin, TX</p></div></div>
       </div>
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Navegamos en casa, así que mi esposo era escéptico de una experiencia turística. La tripulación lo dejó tomar el timón. Dijo que fue lo mejor del viaje."</p>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Mi esposo navega en casa así que estaba con cara de fastidio por hacer un tour turístico. El capitán lo notó y lo dejó tomar el timón un rato. No paró de hablar del tema el resto del viaje."</p>
         <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-gold flex items-center justify-center text-white text-sm font-bold">MK</div><div><p class="text-sm font-bold text-navy">Megan K.</p><p class="text-base text-slate-500">Newport, RI</p></div></div>
       </div>
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Reservamos dos días seguidos &mdash; snorkel y velero el día 1, atardecer privado el día 2. Ambas tripulaciones excelentes. Ya planeando volver."</p>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Hicimos dos días seguidos, snorkel/velero el día 1 y atardecer privado el día 2. Las dos tripulaciones excelentes, vibras distintas pero igual de buenas. Volvemos el próximo año a hacer la misma combinación."</p>
         <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy/70 flex items-center justify-center text-white text-sm font-bold">CW</div><div><p class="text-sm font-bold text-navy">Carlos W.</p><p class="text-base text-slate-500">Ciudad de México, MX</p></div></div>
       </div>
     </div>

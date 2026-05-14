@@ -2,8 +2,8 @@
 title: "Celebrate Your Birthday in Cabo San Lucas"
 pubDate: 2018-09-19
 description: "Plan an unforgettable birthday in Cabo — fine dining, yacht adventures, nightlife, and spa days. Ideas for every style of celebration."
-heroImage: "/images/travel-guide/celebrate-in-cabo-san-lucas-1080x675.jpg"
-heroAlt: "Birthday celebration in Cabo San Lucas"
+heroImage: "/images/blog/celebration-on-the-yacht-under-the-sun.webp"
+heroAlt: "Birthday celebration on a yacht under the sun in Cabo San Lucas"
 category: "Activities"
 categoryLink: "/travel-guide-activities"
 activeSubmenu: "activities"

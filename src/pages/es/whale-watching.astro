@@ -5,6 +5,7 @@ import Footer from '../../components/Footer.astro';
 import FloatingCTA from '../../components/FloatingCTA.astro';
 import RezdyModal from '../../components/RezdyModal.astro';
 import CarouselImage from '../../components/CarouselImage.astro';
+import WhaleFlukeIcon from '../../components/WhaleFlukeIcon.astro';
 import { Image } from 'astro:assets';
 
 import { whaleWatching as feb_15_56 } from "../../data/tour-heroes";
@@ -116,7 +117,7 @@ const breadcrumbSchema = JSON.stringify({
       <p class="text-sm font-semibold text-navy">3 Horas</p>
     </div>
     <div class="flex items-center gap-2">
-      <span class="material-symbols-outlined text-gold">water</span>
+      <WhaleFlukeIcon class="text-gold text-2xl" />
       <p class="text-sm font-semibold text-navy">Temporada Dic&ndash;Abr</p>
     </div>
     <div class="flex items-center gap-2">
@@ -188,7 +189,7 @@ const breadcrumbSchema = JSON.stringify({
       <p class="text-xs font-semibold text-navy">3 Horas</p>
     </div>
     <div class="flex items-center gap-1.5">
-      <span class="material-symbols-outlined text-gold text-lg">water</span>
+      <WhaleFlukeIcon class="text-gold text-lg" />
       <p class="text-xs font-semibold text-navy">Temporada Dic&ndash;Abr</p>
     </div>
     <div class="flex items-center gap-1.5">
@@ -554,32 +555,32 @@ const breadcrumbSchema = JSON.stringify({
     <div id="m-carousel" class="flex overflow-x-auto gap-4 lg:gap-6 no-scrollbar snap-x snap-mandatory pb-4 lg:overflow-hidden">
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Vimos a una mama jorobada y su cria saltar a solo 20 metros del barco. La tripulacion fue increiblemente conocedora y toda la experiencia fue impresionante. La mejor actividad en Cabo, sin duda!"</p>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Vimos a una mama jorobada y a su bebe saltar como a 20 metros del barco. Tengo video. La tripulacion sabia muchisimo del comportamiento de las ballenas y nos siguio dando informacion todo el tiempo. Lo mejor que hicimos en Cabo de lejos."</p>
         <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center text-white text-sm font-bold">RK</div><div><p class="text-sm font-bold text-navy">Rachel K.</p><p class="text-base text-slate-500">Seattle, WA</p></div></div>
       </div>
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Llevamos a los ninos al tour de avistamiento de ballenas y fue lo mejor de toda nuestras vacaciones. Contamos 5 ballenas distintas! La tripulacion lo hizo divertido y educativo. Definitivamente volveremos la proxima temporada."</p>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Llevamos a nuestros hijos (8 y 11 anos) al tour de avistamiento de ballenas y quedaron obsesionados. Contamos 5 ballenas distintas!! La tripulacion los mantuvo entretenidos todo el tiempo. Ya estamos planeando volver el proximo invierno."</p>
         <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-gold flex items-center justify-center text-white text-sm font-bold">TF</div><div><p class="text-sm font-bold text-navy">Tom F.</p><p class="text-base text-slate-500">Denver, CO</p></div></div>
       </div>
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"He hecho avistamiento de ballenas en Alaska y Hawaii — esto estuvo a la altura de los mejores. La barra libre fue un plus, la tripulacion encantadora y las ballenas dieron un espectaculo increible. Muy recomendado Cabo Sailing!"</p>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"He hecho avistamiento en Alaska y en Maui, y Cabo se defiende bien. Las ballenas estaban activas ese dia y vimos varios saltos. La barra libre fue una sorpresa agradable. Muy recomendado."</p>
         <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy/70 flex items-center justify-center text-white text-sm font-bold">MG</div><div><p class="text-sm font-bold text-navy">Maria G.</p><p class="text-base text-slate-500">San Francisco, CA</p></div></div>
       </div>
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"El capitan sabia exactamente donde encontrar a las ballenas. En 15 minutos teniamos jorobadas saliendo a la superficie por todos lados. Hacerlo en velero es mucho mas tranquilo que en los grandes barcos turisticos. Experiencia inolvidable."</p>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"El capitan claramente sabia donde buscar. En 15 minutos teniamos ballenas alrededor de nosotros. Hacerlo en velero es muchisimo mejor. Pasamos junto a uno de los barcos grandes a motor y estaba lleno y ruidoso. Nosotros teniamos espacio y se podia oir al otro."</p>
         <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center text-white text-sm font-bold">DL</div><div><p class="text-sm font-bold text-navy">David L.</p><p class="text-base text-slate-500">Austin, TX</p></div></div>
       </div>
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Mi hija estudia biologia marina y hasta ella quedo impresionada con el conocimiento de la tripulacion. Explicaron el comportamiento de las ballenas, patrones de migracion — se sintio como un tour privado de National Geographic con cocteles!"</p>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Mi hija estudia biologia marina y hasta ella quedo impresionada (no se impresiona facil). La tripulacion hablo de comportamiento, patrones de migracion, todo el rollo. Mas cocteles. Como un tour de National Geographic donde si puedes tomar."</p>
         <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-gold flex items-center justify-center text-white text-sm font-bold">PH</div><div><p class="text-sm font-bold text-navy">Patricia H.</p><p class="text-base text-slate-500">Miami, FL</p></div></div>
       </div>
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Hemos hecho avistamiento de ballenas tres veces ahora con Cabo Sailing y cada viaje es especial. Este ano vimos una ballena saltar tan cerca que la salpicadura llego al barco! La emocion de la tripulacion fue tan contagiosa como la nuestra."</p>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Tercer ano haciendo el avistamiento de ballenas con ellos. Este ano una ballena salto tan cerca que el agua nos llego al barco! Hasta la tripulacion estaba emocionada. Cada viaje ha sido especial pero este fue de otro nivel."</p>
         <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy/70 flex items-center justify-center text-white text-sm font-bold">CJ</div><div><p class="text-sm font-bold text-navy">Chris &amp; Jamie</p><p class="text-base text-slate-500">Chicago, IL</p></div></div>
       </div>
     </div>
