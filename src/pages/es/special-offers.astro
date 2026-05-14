@@ -39,7 +39,15 @@ const breadcrumbSchema = JSON.stringify({
 
     <!-- Hero (wider than content column) -->
     <div class="max-w-[1075px] mx-auto px-5 lg:px-8 pt-10 lg:pt-16">
-      <Image src={heroImg} alt="Navegando cerca de la costa rocosa de Cabo" class="w-full h-auto rounded-2xl" width={2048} height={1365} />
+      <div class="relative rounded-2xl overflow-hidden">
+        <Image src={heroImg} alt="Navegando cerca de la costa rocosa de Cabo" class="w-full h-auto" width={2048} height={1365} />
+        <!-- Text overlay (sits lower, over the ocean for natural contrast) -->
+        <div class="absolute inset-x-0 bottom-0 flex flex-col items-start px-5 sm:px-8 lg:px-12 xl:px-16 pb-10 sm:pb-16 lg:pb-[7.5rem] xl:pb-[9.5rem]">
+          <p class="text-[10px] sm:text-xs xl:text-sm font-bold uppercase tracking-[0.2em] sm:tracking-[0.25em] text-white mb-1.5 sm:mb-3 [text-shadow:0_2px_8px_rgba(0,0,0,0.55)]">Promoci&oacute;n por Tiempo Limitado</p>
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-white font-serif mb-2 sm:mb-4 leading-tight [text-shadow:0_3px_14px_rgba(0,0,0,0.6)]">Ofertas Especiales</h1>
+          <p class="text-white text-sm sm:text-base lg:text-lg xl:text-xl leading-relaxed max-w-xl [text-shadow:0_2px_10px_rgba(0,0,0,0.55)]">Aprovecha <strong class="text-white">hasta 40% de descuento</strong> en nuestros cruceros m&aacute;s solicitados</p>
+        </div>
+      </div>
     </div>
 
     <div class="max-w-[1100px] mx-auto px-5 lg:px-8 pt-6 lg:pt-8 pb-10 lg:pb-16">
@@ -51,12 +59,8 @@ const breadcrumbSchema = JSON.stringify({
         <span class="text-navy font-semibold">Ofertas Especiales</span>
       </nav>
 
-      <!-- Header -->
-      <header class="mb-10 text-center">
-        <p class="text-xs lg:text-sm font-bold uppercase tracking-[0.25em] text-accent-gold mb-3">Promoción por Tiempo Limitado</p>
-        <h1 class="text-3xl lg:text-5xl text-navy font-serif mb-4">Ofertas Especiales</h1>
-        <p class="text-slate-500 text-base lg:text-lg leading-relaxed max-w-2xl mx-auto">Aprovecha <strong class="text-navy">hasta 40% de descuento</strong> en nuestros cruceros más solicitados &mdash; charters privados de yate, escapadas privadas de vela y viajes compartidos. Misma flota premium, misma tripulación 5 estrellas, mejor precio por tiempo limitado.</p>
-      </header>
+      <!-- Short supporting copy under hero (title is on the image at all sizes) -->
+      <p class="text-slate-500 text-base lg:text-lg leading-relaxed max-w-3xl mx-auto text-center mb-10">Misma flota premium, misma tripulaci&oacute;n 5 estrellas, mejor precio por tiempo limitado.</p>
 
       <!-- 3 Promo Cards -->
       <section class="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-6 mb-14 lg:mb-20">

@@ -41,11 +41,11 @@ const breadcrumbSchema = JSON.stringify({
     <div class="max-w-[1075px] mx-auto px-5 lg:px-8 pt-10 lg:pt-16">
       <div class="relative rounded-2xl overflow-hidden">
         <Image src={heroImg} alt="Sailing near Cabo's rocky coastline" class="w-full h-auto" width={2048} height={1365} />
-        <!-- Desktop-only text overlay (text sits lower, over the ocean for natural contrast) -->
-        <div class="hidden lg:flex absolute inset-x-0 bottom-0 flex-col items-start px-12 xl:px-16 pb-[7.5rem] xl:pb-[9.5rem]">
-          <p class="text-xs xl:text-sm font-bold uppercase tracking-[0.25em] text-white mb-3 [text-shadow:0_2px_8px_rgba(0,0,0,0.55)]">Limited&ndash;Time Savings</p>
-          <h1 class="text-5xl xl:text-6xl text-white font-serif mb-4 leading-tight [text-shadow:0_3px_14px_rgba(0,0,0,0.6)]">Special Offers</h1>
-          <p class="text-white text-lg xl:text-xl leading-relaxed max-w-xl [text-shadow:0_2px_10px_rgba(0,0,0,0.55)]">Lock in <strong class="text-white">up to 40% off</strong> our most-loved cruises</p>
+        <!-- Text overlay (sits lower, over the ocean for natural contrast) -->
+        <div class="absolute inset-x-0 bottom-0 flex flex-col items-start px-5 sm:px-8 lg:px-12 xl:px-16 pb-10 sm:pb-16 lg:pb-[7.5rem] xl:pb-[9.5rem]">
+          <p class="text-[10px] sm:text-xs xl:text-sm font-bold uppercase tracking-[0.2em] sm:tracking-[0.25em] text-white mb-1.5 sm:mb-3 [text-shadow:0_2px_8px_rgba(0,0,0,0.55)]">Limited&ndash;Time Savings</p>
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-white font-serif mb-2 sm:mb-4 leading-tight [text-shadow:0_3px_14px_rgba(0,0,0,0.6)]">Special Offers</h1>
+          <p class="text-white text-sm sm:text-base lg:text-lg xl:text-xl leading-relaxed max-w-xl [text-shadow:0_2px_10px_rgba(0,0,0,0.55)]">Lock in <strong class="text-white">up to 40% off</strong> our most-loved cruises</p>
         </div>
       </div>
     </div>
@@ -59,14 +59,8 @@ const breadcrumbSchema = JSON.stringify({
         <span class="text-navy font-semibold">Special Offers</span>
       </nav>
 
-      <!-- Header (mobile shows full; desktop hides title/subtitle since they're on the hero) -->
-      <header class="mb-10 text-center lg:hidden">
-        <p class="text-xs font-bold uppercase tracking-[0.25em] text-accent-gold mb-3">Limited&ndash;Time Savings</p>
-        <h1 class="text-3xl text-navy font-serif mb-4">Special Offers</h1>
-        <p class="text-slate-500 text-base leading-relaxed max-w-2xl mx-auto">Lock in <strong class="text-navy">up to 40% off</strong> our most-loved cruises. Same premium fleet, same five-star crew, lower price for a limited time.</p>
-      </header>
-      <!-- Desktop: short supporting copy under hero -->
-      <p class="hidden lg:block text-slate-500 text-lg leading-relaxed max-w-3xl mx-auto text-center mb-10">Same premium fleet, same five-star crew, lower price for a limited time.</p>
+      <!-- Short supporting copy under hero (title is on the image at all sizes) -->
+      <p class="text-slate-500 text-base lg:text-lg leading-relaxed max-w-3xl mx-auto text-center mb-10">Same premium fleet, same five-star crew, lower price for a limited time.</p>
 
       <!-- 3 Promo Cards -->
       <section class="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-6 mb-14 lg:mb-20">
