@@ -39,7 +39,15 @@ const breadcrumbSchema = JSON.stringify({
 
     <!-- Hero (wider than content column) -->
     <div class="max-w-[1075px] mx-auto px-5 lg:px-8 pt-10 lg:pt-16">
-      <Image src={heroImg} alt="Sailing near Cabo's rocky coastline" class="w-full h-auto rounded-2xl" width={2048} height={1365} />
+      <div class="relative rounded-2xl overflow-hidden">
+        <Image src={heroImg} alt="Sailing near Cabo's rocky coastline" class="w-full h-auto" width={2048} height={1365} />
+        <!-- Desktop-only text overlay -->
+        <div class="hidden lg:flex absolute inset-0 flex-col justify-center items-start px-12 xl:px-16 bg-gradient-to-r from-navy/70 via-navy/40 to-transparent">
+          <p class="text-xs xl:text-sm font-bold uppercase tracking-[0.25em] text-accent-gold mb-3 drop-shadow-lg">Limited&ndash;Time Savings</p>
+          <h1 class="text-5xl xl:text-6xl text-white font-serif mb-4 leading-tight drop-shadow-2xl">Special Offers</h1>
+          <p class="text-white/95 text-lg xl:text-xl leading-relaxed max-w-xl drop-shadow-lg">Lock in <strong class="text-accent-gold">up to 40% off</strong> our most-loved cruises</p>
+        </div>
+      </div>
     </div>
 
     <div class="max-w-[1100px] mx-auto px-5 lg:px-8 pt-6 lg:pt-8 pb-10 lg:pb-16">
@@ -51,12 +59,14 @@ const breadcrumbSchema = JSON.stringify({
         <span class="text-navy font-semibold">Special Offers</span>
       </nav>
 
-      <!-- Header -->
-      <header class="mb-10 text-center">
-        <p class="text-xs lg:text-sm font-bold uppercase tracking-[0.25em] text-accent-gold mb-3">Limited&ndash;Time Savings</p>
-        <h1 class="text-3xl lg:text-5xl text-navy font-serif mb-4">Special Offers</h1>
-        <p class="text-slate-500 text-base lg:text-lg leading-relaxed max-w-2xl mx-auto">Lock in <strong class="text-navy">up to 40% off</strong> our most-loved cruises &mdash; private yacht charters, private sailing escapes, and shared sailing trips. Same premium fleet, same five-star crew, lower price for a limited time.</p>
+      <!-- Header (mobile shows full; desktop hides title/subtitle since they're on the hero) -->
+      <header class="mb-10 text-center lg:hidden">
+        <p class="text-xs font-bold uppercase tracking-[0.25em] text-accent-gold mb-3">Limited&ndash;Time Savings</p>
+        <h1 class="text-3xl text-navy font-serif mb-4">Special Offers</h1>
+        <p class="text-slate-500 text-base leading-relaxed max-w-2xl mx-auto">Lock in <strong class="text-navy">up to 40% off</strong> our most-loved cruises &mdash; private yacht charters, private sailing escapes, and shared sailing trips. Same premium fleet, same five-star crew, lower price for a limited time.</p>
       </header>
+      <!-- Desktop: short supporting copy under hero -->
+      <p class="hidden lg:block text-slate-500 text-lg leading-relaxed max-w-3xl mx-auto text-center mb-10">Private yacht charters, private sailing escapes, and shared sailing trips. Same premium fleet, same five-star crew, lower price for a limited time.</p>
 
       <!-- 3 Promo Cards -->
       <section class="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-6 mb-14 lg:mb-20">
