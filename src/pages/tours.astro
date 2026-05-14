@@ -111,7 +111,7 @@ const faqSchema = JSON.stringify({
         {sharedTours.map((t) => (
           <a href={t.href} class="group block rounded-2xl overflow-hidden shadow-lg border border-border-light bg-white">
             <CarouselImage type="activity" id={t.id} alt={t.alt} groupHoverZoom wrapperClass="relative h-[180px] lg:h-[240px] overflow-hidden w-full">
-              <div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-navy/15 to-transparent"></div>
             </CarouselImage>
             <div class="p-4 text-center">
               <h3 class="text-sm lg:text-base font-bold text-navy group-hover:text-gold transition-colors">{t.label}</h3>
@@ -133,7 +133,7 @@ const faqSchema = JSON.stringify({
         {privateTours.map((t) => (
           <a href={t.href} class="group block rounded-2xl overflow-hidden shadow-lg border border-border-light bg-white">
             <CarouselImage type="activity" id={t.id} alt={t.alt} groupHoverZoom wrapperClass="relative h-[180px] lg:h-[220px] overflow-hidden w-full">
-              <div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-navy/15 to-transparent"></div>
             </CarouselImage>
             <div class="p-4 text-center">
               <h3 class="text-sm lg:text-base font-bold text-navy group-hover:text-gold transition-colors">{t.label}</h3>

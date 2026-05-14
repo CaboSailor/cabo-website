@@ -41,11 +41,11 @@ const breadcrumbSchema = JSON.stringify({
     <div class="max-w-[1075px] mx-auto px-5 lg:px-8 pt-10 lg:pt-16">
       <div class="relative rounded-2xl overflow-hidden">
         <Image src={heroImg} alt="Sailing near Cabo's rocky coastline" class="w-full h-auto" width={2048} height={1365} />
-        <!-- Desktop-only text overlay -->
-        <div class="hidden lg:flex absolute inset-0 flex-col justify-center items-start px-12 xl:px-16 bg-gradient-to-r from-navy/70 via-navy/40 to-transparent">
-          <p class="text-xs xl:text-sm font-bold uppercase tracking-[0.25em] text-accent-gold mb-3 drop-shadow-lg">Limited&ndash;Time Savings</p>
-          <h1 class="text-5xl xl:text-6xl text-white font-serif mb-4 leading-tight drop-shadow-2xl">Special Offers</h1>
-          <p class="text-white/95 text-lg xl:text-xl leading-relaxed max-w-xl drop-shadow-lg">Lock in <strong class="text-accent-gold">up to 40% off</strong> our most-loved cruises</p>
+        <!-- Desktop-only text overlay (text sits lower, over the ocean for natural contrast) -->
+        <div class="hidden lg:flex absolute inset-x-0 bottom-0 flex-col items-start px-12 xl:px-16 pb-[7.5rem] xl:pb-[9.5rem]">
+          <p class="text-xs xl:text-sm font-bold uppercase tracking-[0.25em] text-white mb-3 [text-shadow:0_2px_8px_rgba(0,0,0,0.55)]">Limited&ndash;Time Savings</p>
+          <h1 class="text-5xl xl:text-6xl text-white font-serif mb-4 leading-tight [text-shadow:0_3px_14px_rgba(0,0,0,0.6)]">Special Offers</h1>
+          <p class="text-white text-lg xl:text-xl leading-relaxed max-w-xl [text-shadow:0_2px_10px_rgba(0,0,0,0.55)]">Lock in <strong class="text-white">up to 40% off</strong> our most-loved cruises</p>
         </div>
       </div>
     </div>
@@ -63,10 +63,10 @@ const breadcrumbSchema = JSON.stringify({
       <header class="mb-10 text-center lg:hidden">
         <p class="text-xs font-bold uppercase tracking-[0.25em] text-accent-gold mb-3">Limited&ndash;Time Savings</p>
         <h1 class="text-3xl text-navy font-serif mb-4">Special Offers</h1>
-        <p class="text-slate-500 text-base leading-relaxed max-w-2xl mx-auto">Lock in <strong class="text-navy">up to 40% off</strong> our most-loved cruises &mdash; private yacht charters, private sailing escapes, and shared sailing trips. Same premium fleet, same five-star crew, lower price for a limited time.</p>
+        <p class="text-slate-500 text-base leading-relaxed max-w-2xl mx-auto">Lock in <strong class="text-navy">up to 40% off</strong> our most-loved cruises. Same premium fleet, same five-star crew, lower price for a limited time.</p>
       </header>
       <!-- Desktop: short supporting copy under hero -->
-      <p class="hidden lg:block text-slate-500 text-lg leading-relaxed max-w-3xl mx-auto text-center mb-10">Private yacht charters, private sailing escapes, and shared sailing trips. Same premium fleet, same five-star crew, lower price for a limited time.</p>
+      <p class="hidden lg:block text-slate-500 text-lg leading-relaxed max-w-3xl mx-auto text-center mb-10">Same premium fleet, same five-star crew, lower price for a limited time.</p>
 
       <!-- 3 Promo Cards -->
       <section class="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-6 mb-14 lg:mb-20">
@@ -75,7 +75,7 @@ const breadcrumbSchema = JSON.stringify({
         <a href="/private-snorkeling" class="group relative block bg-white border border-border-light rounded-[2rem] overflow-hidden shadow-xl shadow-navy/5 transition-transform duration-300 hover:-translate-y-1">
           <div class="relative aspect-[4/5] overflow-hidden">
             <Image src={promoYacht} alt="Leisurely yacht ride on a sunny sea" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" width={1024} height={1280} />
-            <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-navy/25 via-navy/5 to-transparent"></div>
 
             <!-- Big 35% badge -->
             <div class="absolute top-4 left-4 bg-accent-gold text-white rounded-2xl px-4 py-2 lg:px-5 lg:py-3 shadow-2xl">
@@ -100,7 +100,7 @@ const breadcrumbSchema = JSON.stringify({
         <a href="/private-sunset" class="group relative block bg-white border border-border-light rounded-[2rem] overflow-hidden shadow-xl shadow-navy/5 transition-transform duration-300 hover:-translate-y-1">
           <div class="relative aspect-[4/5] overflow-hidden">
             <Image src={promoPrivateSail} alt="Relaxing summer sailboat escape" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" width={1024} height={1280} />
-            <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-navy/25 via-navy/5 to-transparent"></div>
 
             <div class="absolute top-4 left-4 bg-accent-gold text-white rounded-2xl px-4 py-2 lg:px-5 lg:py-3 shadow-2xl">
               <div class="flex items-baseline gap-1">
@@ -124,7 +124,7 @@ const breadcrumbSchema = JSON.stringify({
         <a href="/shared-sunset" class="group relative block bg-white border border-border-light rounded-[2rem] overflow-hidden shadow-xl shadow-navy/5 transition-transform duration-300 hover:-translate-y-1">
           <div class="relative aspect-[4/5] overflow-hidden">
             <Image src={promoSharedSail} alt="Golden hour sailing with friends" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" width={1024} height={1280} />
-            <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-navy/25 via-navy/5 to-transparent"></div>
 
             <div class="absolute top-4 left-4 bg-accent-gold text-white rounded-2xl px-4 py-2 lg:px-5 lg:py-3 shadow-2xl">
               <div class="flex items-baseline gap-1">
@@ -159,7 +159,7 @@ const breadcrumbSchema = JSON.stringify({
           <div class="bg-white border border-border-light rounded-2xl overflow-hidden shadow-lg shadow-navy/5" data-boat="yacht-51">
             <div class="relative aspect-[3/4] overflow-hidden">
               <Image src={yacht51} alt="Luxury Yacht 51' private charter in Cabo San Lucas" class="w-full h-full object-cover" style="transform: scale(1.1);" width={1023} height={1537} />
-              <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-navy/15 via-transparent to-transparent"></div>
               <div class="absolute bottom-3 left-4">
                 <h4 class="text-white text-sm lg:text-base font-semibold">Luxury Yacht 51'</h4>
                 <div class="flex items-center gap-1 text-white/80 text-[10px] mt-0.5 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Up to 20</span></div>
@@ -183,7 +183,7 @@ const breadcrumbSchema = JSON.stringify({
           <div class="bg-white border border-border-light rounded-2xl overflow-hidden shadow-lg shadow-navy/5" data-boat="yacht-45">
             <div class="relative aspect-[3/4] overflow-hidden">
               <Image src={yacht45} alt="Luxury Yacht 45' private charter in Cabo San Lucas" class="w-full h-full object-cover" width={1023} height={1537} />
-              <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-navy/15 via-transparent to-transparent"></div>
               <div class="absolute bottom-3 left-4">
                 <h4 class="text-white text-sm lg:text-base font-semibold">Luxury Yacht 45'</h4>
                 <div class="flex items-center gap-1 text-white/80 text-[10px] mt-0.5 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Up to 12</span></div>
@@ -207,7 +207,7 @@ const breadcrumbSchema = JSON.stringify({
           <div class="bg-white border border-border-light rounded-2xl overflow-hidden shadow-lg shadow-navy/5" data-boat="yacht-42">
             <div class="relative aspect-[3/4] overflow-hidden">
               <Image src={yacht42} alt="Luxury Yacht 42' private charter in Cabo San Lucas" class="w-full h-full object-cover" style="transform: scale(1.1);" width={1023} height={1537} />
-              <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-navy/15 via-transparent to-transparent"></div>
               <div class="absolute bottom-3 left-4">
                 <h4 class="text-white text-sm lg:text-base font-semibold">Luxury Yacht 42'</h4>
                 <div class="flex items-center gap-1 text-white/80 text-[10px] mt-0.5 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Up to 18</span></div>
@@ -231,7 +231,7 @@ const breadcrumbSchema = JSON.stringify({
           <div class="bg-white border border-border-light rounded-2xl overflow-hidden shadow-lg shadow-navy/5" data-boat="sailing-42">
             <div class="relative aspect-[3/4] overflow-hidden">
               <Image src={sailing42} alt="Sailing Boat 42' private charter in Cabo San Lucas" class="w-full h-full object-cover" style="transform: scale(1.1);" width={1024} height={1536} />
-              <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-navy/15 via-transparent to-transparent"></div>
               <div class="absolute bottom-3 left-4">
                 <h4 class="text-white text-sm lg:text-base font-semibold">Sailing Boat 42'</h4>
                 <div class="flex items-center gap-1 text-white/80 text-[10px] mt-0.5 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Up to 14</span></div>
@@ -255,7 +255,7 @@ const breadcrumbSchema = JSON.stringify({
           <div class="bg-white border border-border-light rounded-2xl overflow-hidden shadow-lg shadow-navy/5" data-boat="sailing-38">
             <div class="relative aspect-[3/4] overflow-hidden">
               <Image src={sailing38} alt="Sailing Boat 38' private charter in Cabo San Lucas" class="w-full h-full object-cover" style="transform: scale(1.1);" width={1024} height={1536} />
-              <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-navy/15 via-transparent to-transparent"></div>
               <div class="absolute bottom-3 left-4">
                 <h4 class="text-white text-sm lg:text-base font-semibold">Sailing Boat 38'</h4>
                 <div class="flex items-center gap-1 text-white/80 text-[10px] mt-0.5 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Up to 9</span></div>
