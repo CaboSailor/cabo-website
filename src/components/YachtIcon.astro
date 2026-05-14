@@ -1,0 +1,31 @@
+---
+interface Props {
+  class?: string;
+}
+const { class: className = '' } = Astro.props;
+---
+<svg viewBox="0 0 32 24" width="1.35em" height="1em" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class={className}>
+  <!-- Antenna -->
+  <line x1="11" y1="2" x2="11" y2="5"/>
+  <circle cx="11" cy="1.6" r="0.45" fill="currentColor" stroke="none"/>
+
+  <!-- Bridge (upper cabin, slanted back) -->
+  <path d="M9 5 L15.5 5 L14 8 L8 8 Z"/>
+
+  <!-- Main cabin (mid level, longer and slanted forward to bow) -->
+  <path d="M6.5 8 L19.5 8 L17.5 11.5 L5 11.5 Z"/>
+
+  <!-- Hull (bow pointing right) -->
+  <path d="M3 11.5 L26 11.5 L28.5 13 L25 17.5 L5.5 17.5 L3 14 Z"/>
+
+  <!-- Door / hatch -->
+  <rect x="6.5" y="13.2" width="2.6" height="2.2" rx="0.4"/>
+
+  <!-- Portholes -->
+  <circle cx="15" cy="14.3" r="0.65"/>
+  <circle cx="17.5" cy="14.3" r="0.65"/>
+  <circle cx="20" cy="14.3" r="0.65"/>
+
+  <!-- Water line -->
+  <path d="M1.5 20 q1.7 -1.2 3.4 0 t3.4 0 t3.4 0 t3.4 0 t3.4 0 t3.4 0 t3.4 0 t3.4 0"/>
+</svg>

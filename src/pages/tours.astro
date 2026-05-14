@@ -4,15 +4,62 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import FloatingCTA from '../components/FloatingCTA.astro';
 import CarouselImage from '../components/CarouselImage.astro';
+import YachtIcon from '../components/YachtIcon.astro';
 
-const tiles = [
-  { href: '/private-snorkeling',  id: 'private-snorkeling', label: 'Private Snorkeling',     alt: 'Private Snorkeling' },
-  { href: '/private-sunset',      id: 'private-sunset',     label: 'Private Sunset',         alt: 'Private Sunset' },
-  { href: '/shared-snorkeling',   id: 'shared-snorkeling',  label: 'Shared Snorkeling',      alt: 'Shared Snorkeling' },
-  { href: '/shared-sunset',       id: 'shared-sunset',      label: 'Shared Sunset',          alt: 'Shared Sunset' },
-  { href: '/whale-watching',      id: 'whale-watching',     label: 'Private Whale Watching', alt: 'Private Whale Watching' },
-  { href: '/bachelorette',        id: 'bachelorette-party', label: 'Bachelorette Party',     alt: 'Bachelorette Party' },
-  { href: '/scuba-diving',        id: 'scuba-diving',       label: 'Scuba Diving',           alt: 'Scuba Diving' },
+const sharedTours = [
+  { href: '/shared-snorkeling', id: 'shared-snorkeling', label: 'Shared Snorkeling', tagline: '3.5 hrs · group of up to 19', alt: 'Shared Snorkeling tour in Cabo San Lucas' },
+  { href: '/shared-sunset',     id: 'shared-sunset',     label: 'Shared Sunset',     tagline: '2 hrs · group of up to 19',   alt: 'Shared Sunset cruise in Cabo San Lucas' },
+];
+
+const privateTours = [
+  { href: '/private-snorkeling', id: 'private-snorkeling', label: 'Private Snorkeling',     tagline: 'Sailboat or yacht · your group only', alt: 'Private Snorkeling charter in Cabo San Lucas' },
+  { href: '/private-sunset',     id: 'private-sunset',     label: 'Private Sunset',         tagline: 'Sailboat or yacht · your group only', alt: 'Private Sunset charter in Cabo San Lucas' },
+  { href: '/whale-watching',     id: 'whale-watching',     label: 'Private Whale Watching', tagline: 'Dec–Apr · your group only',           alt: 'Private Whale Watching tour in Cabo San Lucas' },
+  { href: '/bachelorette',       id: 'bachelorette-party', label: 'Bachelorette Party',     tagline: 'Decorated yacht · made for the bride', alt: 'Bachelorette Party charter in Cabo San Lucas' },
+  { href: '/scuba-diving',       id: 'scuba-diving',       label: 'Scuba Diving',           tagline: 'PADI dive boat · all levels',          alt: 'Scuba Diving tour in Cabo San Lucas' },
+];
+
+const faqs = [
+  {
+    q: "What's the real difference between a shared tour and a private charter?",
+    a: "A shared tour is a fixed-schedule group trip — you join other guests on a sailboat (up to 19 people), and the price is per person. A private charter means the whole boat is yours: pick the date, the time, who's on board, the route, and even the music. Shared is the value option; private is the experience option."
+  },
+  {
+    q: "Sailboat or yacht — which should I pick?",
+    a: "Sailboats are quieter, more romantic, and feel closer to the water — great for couples, sunset sails, and anyone who wants the actual sailing experience. Yachts have wider decks, more shade, smoother rides in any sea, full bathrooms, and more space to move — better for bigger groups, families with kids or grandparents, and if amenities matter more than wind in the sails."
+  },
+  {
+    q: "We've never been on a boat. Which tour is the easiest start?",
+    a: "Our shared snorkel-and-sail and shared sunset are the calmest entry points — the Sea of Cortez side of Cabo is naturally protected, and our captains stay in calm water. If you'd rather have full control of pace and stops, a private charter on a yacht is the smoothest option for first-timers."
+  },
+  {
+    q: "Are these tours kid-friendly?",
+    a: "Yes. Snorkel tours work great from about age 5 with a parent in the water; sunset cruises are fine for all ages. For families, a private charter is usually the right call — you control the schedule, the route, and how long you spend at each stop. Life jackets are on board, free, and required for kids."
+  },
+  {
+    q: "Will I get seasick? How rough does the water get?",
+    a: "Most of our tours stay inside Cabo Bay, which is sheltered and usually flat. Open-ocean conditions show up mainly on whale-watching trips that go a bit further out. If you're prone to motion sickness, eat a light meal beforehand, take a Bonine/Dramamine an hour before boarding, and pick a yacht over a sailboat — the wider hull is noticeably steadier."
+  },
+  {
+    q: "What's included on the tour?",
+    a: "All our tours include an open premium bar (beer, wine, margaritas, cocktails, sodas, water), food appropriate to the trip (snorkel menu, sunset menu, etc.), all snorkel gear when applicable, and an English-speaking crew. The full menu and bar list are on each tour page."
+  },
+  {
+    q: "How far in advance should I book?",
+    a: "For private charters in high season (December–April, plus US holiday weeks), aim for 4–6 weeks ahead — the popular dates sell out. Shared tours have more flexibility but the best time slots (sunset, weekends) still fill up. Off-season, a week or two is usually enough."
+  },
+  {
+    q: "Do you offer hotel pickup or a shuttle to the marina?",
+    a: "All tours depart from the Cabo San Lucas marina — taxis and Ubers from any hotel in the area run about 10–20 minutes. We also run a dedicated shuttle service you can book separately if you'd like door-to-door, group, or late-night pickup."
+  },
+  {
+    q: "What happens if the weather cancels the tour?",
+    a: "If we cancel because of weather or sea conditions, you get a full refund or a free reschedule — your choice. Cabo weather is reliable most of the year, so cancellations are rare outside of occasional September/October tropical activity."
+  },
+  {
+    q: "How many people can each private charter fit?",
+    a: "Sailboats range from 2 guests (38-footer for couples) up to about 10 (42-footer). Yachts comfortably handle 10–14, and our largest yacht fits up to 25. If you're not sure which boat suits your group, tell us the headcount and the occasion and we'll match you to the right one."
+  },
 ];
 
 const breadcrumbSchema = JSON.stringify({
@@ -23,10 +70,21 @@ const breadcrumbSchema = JSON.stringify({
     { "@type": "ListItem", "position": 2, "name": "Tours" }
   ]
 });
+
+const faqSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs.map(({ q, a }) => ({
+    "@type": "Question",
+    "name": q,
+    "acceptedAnswer": { "@type": "Answer", "text": a }
+  }))
+});
 ---
 
-<BaseLayout title="Tours — Cabo Sailing | Boat Tours in Cabo San Lucas" description="Explore all boat tours in Cabo San Lucas. Private & shared snorkeling, sunset cruises, whale watching, bachelorette parties & scuba diving." hreflangs={{ en: '/tours', es: '/es/tours' }}>
+<BaseLayout title="Tours — Cabo Sailing | Boat Tours in Cabo San Lucas" description="All boat tours in Cabo San Lucas — shared snorkel & sunset sails, private charters on sailboats & yachts, whale watching, bachelorette parties & scuba. Compare and book." hreflangs={{ en: '/tours', es: '/es/tours' }}>
   <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
+  <script slot="head" type="application/ld+json" set:html={faqSchema} />
   <Header variant="subpage" activePage="tours" />
 
   <main class="flex-1 w-full overflow-x-hidden pt-[60px] lg:pt-[72px]">
@@ -39,28 +97,111 @@ const breadcrumbSchema = JSON.stringify({
         <span class="text-navy font-semibold">Tours</span>
       </nav>
       <h1 class="text-3xl lg:text-4xl font-serif text-navy mb-3">Our Tours</h1>
-      <p class="text-slate-500 text-sm lg:text-base max-w-md mx-auto">Choose your perfect experience on the water in Cabo San Lucas.</p>
+      <p class="text-slate-500 text-sm lg:text-base max-w-xl mx-auto">Two ways to sail Cabo — join a small group on a shared tour, or have the whole boat to yourselves.</p>
     </div>
 
-    <!-- Tour grid -->
-    <div class="max-w-[900px] mx-auto px-5 lg:px-10 pb-16">
-      <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
+    <!-- Shared Tours -->
+    <section class="max-w-[1100px] mx-auto px-5 lg:px-10 pt-4 lg:pt-6 pb-8 lg:pb-12">
+      <div class="flex items-center gap-3 mb-2">
+        <div class="w-1 h-7 bg-gold rounded-full"></div>
+        <h2 class="text-xl lg:text-2xl font-serif text-navy">Shared Tours</h2>
+      </div>
+      <p class="text-slate-500 text-sm lg:text-base mb-5 lg:mb-7 ml-4">Fixed schedule, set price per person, small group on a sailboat — the easy, social way to get on the water.</p>
+      <div class="grid grid-cols-2 gap-4 lg:gap-6">
+        {sharedTours.map((t) => (
+          <a href={t.href} class="group block rounded-2xl overflow-hidden shadow-lg border border-border-light bg-white">
+            <CarouselImage type="activity" id={t.id} alt={t.alt} groupHoverZoom wrapperClass="relative h-[180px] lg:h-[240px] overflow-hidden w-full">
+              <div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
+            </CarouselImage>
+            <div class="p-4 text-center">
+              <h3 class="text-sm lg:text-base font-bold text-navy group-hover:text-gold transition-colors">{t.label}</h3>
+              <p class="text-xs lg:text-sm text-slate-500 mt-1">{t.tagline}</p>
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
 
-        {tiles.map((t) => (
+    <!-- Private Tours -->
+    <section class="max-w-[1100px] mx-auto px-5 lg:px-10 pt-2 lg:pt-4 pb-10 lg:pb-14">
+      <div class="flex items-center gap-3 mb-2">
+        <div class="w-1 h-7 bg-gold rounded-full"></div>
+        <h2 class="text-xl lg:text-2xl font-serif text-navy">Private Charters</h2>
+      </div>
+      <p class="text-slate-500 text-sm lg:text-base mb-5 lg:mb-7 ml-4">The whole boat is yours — pick your sailboat or yacht, your route, and your pace.</p>
+      <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
+        {privateTours.map((t) => (
           <a href={t.href} class="group block rounded-2xl overflow-hidden shadow-lg border border-border-light bg-white">
             <CarouselImage type="activity" id={t.id} alt={t.alt} groupHoverZoom wrapperClass="relative h-[180px] lg:h-[220px] overflow-hidden w-full">
               <div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
             </CarouselImage>
             <div class="p-4 text-center">
               <h3 class="text-sm lg:text-base font-bold text-navy group-hover:text-gold transition-colors">{t.label}</h3>
+              <p class="text-xs lg:text-sm text-slate-500 mt-1">{t.tagline}</p>
             </div>
           </a>
         ))}
-
       </div>
-    </div>
+    </section>
+
+    <!-- Choose your vessel -->
+    <section class="bg-light-grey border-y border-border-light">
+      <div class="max-w-[1100px] mx-auto px-5 lg:px-10 py-10 lg:py-14">
+        <div class="text-center mb-6 lg:mb-8">
+          <h2 class="text-xl lg:text-2xl font-serif text-navy mb-2">Sailboat or Yacht?</h2>
+          <p class="text-slate-500 text-sm lg:text-base max-w-xl mx-auto">Every private charter starts with the same question. Here's the short version.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6">
+          <a href="/sailing-cabo-san-lucas" class="group bg-white rounded-2xl p-6 lg:p-7 border border-border-light shadow-sm hover:shadow-md transition-shadow flex flex-col">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="material-symbols-outlined text-gold text-3xl">sailing</span>
+              <h3 class="text-lg lg:text-xl font-serif text-navy">Sailboat</h3>
+            </div>
+            <p class="text-slate-600 text-sm lg:text-base leading-relaxed mb-4">Quiet, romantic, closer to the water. Best for couples, intimate groups, and anyone who wants real sails-up sailing.</p>
+            <span class="text-accent-gold text-sm font-bold uppercase tracking-widest mt-auto group-hover:underline">See the sailboats <span class="material-symbols-outlined text-base align-middle">arrow_forward</span></span>
+          </a>
+          <a href="/yacht-charter-cabo" class="group bg-white rounded-2xl p-6 lg:p-7 border border-border-light shadow-sm hover:shadow-md transition-shadow flex flex-col">
+            <div class="flex items-center gap-3 mb-3">
+              <YachtIcon class="text-gold text-3xl" />
+              <h3 class="text-lg lg:text-xl font-serif text-navy">Yacht</h3>
+            </div>
+            <p class="text-slate-600 text-sm lg:text-base leading-relaxed mb-4">Wider decks, more shade, smoother ride. Best for bigger groups, families with kids or older guests, and anyone who wants the amenities of a full yacht.</p>
+            <span class="text-accent-gold text-sm font-bold uppercase tracking-widest mt-auto group-hover:underline">See the yachts <span class="material-symbols-outlined text-base align-middle">arrow_forward</span></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="max-w-[900px] mx-auto px-5 lg:px-10 py-12 lg:py-16">
+      <div class="flex items-center gap-3 mb-2">
+        <div class="w-1 h-7 bg-gold rounded-full"></div>
+        <h2 class="text-xl lg:text-2xl font-serif text-navy">Before You Book — FAQ</h2>
+      </div>
+      <p class="text-slate-500 text-sm lg:text-base mb-6 lg:mb-8 ml-4">The questions guests ask most before picking a tour.</p>
+
+      <div class="flex flex-col gap-3 lg:gap-4">
+        {faqs.map((item, idx) => (
+          <div class="faq-item border border-border-light rounded-2xl px-5 py-4 lg:px-6 lg:py-5 bg-white">
+            <input class="hidden" id={`tfaq${idx + 1}`} type="checkbox" />
+            <label class="flex items-start lg:items-center justify-between gap-3 cursor-pointer" for={`tfaq${idx + 1}`}>
+              <span class="font-semibold text-navy text-sm lg:text-base">{item.q}</span>
+              <span class="material-symbols-outlined text-slate-300 faq-chevron transition-transform flex-shrink-0">expand_more</span>
+            </label>
+            <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out">
+              <p class="text-sm lg:text-base text-slate-600 leading-relaxed pt-3">{item.a}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
 
   </main>
+
+  <style is:global>
+    .faq-item input:checked ~ .faq-answer { max-height: 1000px; opacity: 1; }
+    .faq-item input:checked ~ label .faq-chevron { transform: rotate(180deg); }
+  </style>
 
   <Footer />
   <FloatingCTA />

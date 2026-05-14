@@ -4,15 +4,62 @@ import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import FloatingCTA from '../../components/FloatingCTA.astro';
 import CarouselImage from '../../components/CarouselImage.astro';
+import YachtIcon from '../../components/YachtIcon.astro';
 
-const tiles = [
-  { href: '/es/private-snorkeling', id: 'private-snorkeling', label: 'Snorkel Privado',           alt: 'Snorkel Privado' },
-  { href: '/es/private-sunset',     id: 'private-sunset',     label: 'Atardecer Privado',         alt: 'Atardecer Privado' },
-  { href: '/es/shared-snorkeling',  id: 'shared-snorkeling',  label: 'Snorkel Compartido',        alt: 'Snorkel Compartido' },
-  { href: '/es/shared-sunset',      id: 'shared-sunset',      label: 'Atardecer Compartido',      alt: 'Atardecer Compartido' },
-  { href: '/es/whale-watching',     id: 'whale-watching',     label: 'Avistamiento de Ballenas',  alt: 'Avistamiento de Ballenas Privado' },
-  { href: '/es/bachelorette',       id: 'bachelorette-party', label: 'Despedida de Soltera',      alt: 'Despedida de Soltera' },
-  { href: '/es/scuba-diving',       id: 'scuba-diving',       label: 'Buceo',                     alt: 'Buceo' },
+const sharedTours = [
+  { href: '/es/shared-snorkeling', id: 'shared-snorkeling', label: 'Snorkel Compartido',   tagline: '3.5 hrs · grupo hasta 19',  alt: 'Tour compartido de snorkel en Cabo San Lucas' },
+  { href: '/es/shared-sunset',     id: 'shared-sunset',     label: 'Atardecer Compartido', tagline: '2 hrs · grupo hasta 19',    alt: 'Crucero compartido al atardecer en Cabo San Lucas' },
+];
+
+const privateTours = [
+  { href: '/es/private-snorkeling', id: 'private-snorkeling', label: 'Snorkel Privado',          tagline: 'Velero o yate · solo tu grupo',         alt: 'Charter privado de snorkel en Cabo San Lucas' },
+  { href: '/es/private-sunset',     id: 'private-sunset',     label: 'Atardecer Privado',        tagline: 'Velero o yate · solo tu grupo',         alt: 'Charter privado al atardecer en Cabo San Lucas' },
+  { href: '/es/whale-watching',     id: 'whale-watching',     label: 'Avistamiento de Ballenas', tagline: 'Dic–Abr · solo tu grupo',               alt: 'Tour privado de avistamiento de ballenas en Cabo San Lucas' },
+  { href: '/es/bachelorette',       id: 'bachelorette-party', label: 'Despedida de Soltera',     tagline: 'Yate decorado · hecho para la novia',   alt: 'Charter de despedida de soltera en Cabo San Lucas' },
+  { href: '/es/scuba-diving',       id: 'scuba-diving',       label: 'Buceo',                    tagline: 'Barco PADI · todos los niveles',        alt: 'Tour de buceo en Cabo San Lucas' },
+];
+
+const faqs = [
+  {
+    q: "¿Cuál es la diferencia real entre un tour compartido y un charter privado?",
+    a: "Un tour compartido es un viaje grupal con horario fijo — te subes a un velero con otros invitados (hasta 19 personas) y el precio es por persona. Un charter privado es el barco completo para ti: tú escoges la fecha, la hora, los invitados, la ruta y hasta la música. El compartido es la opción de valor; el privado es la experiencia exclusiva."
+  },
+  {
+    q: "¿Velero o yate — cuál me conviene?",
+    a: "Los veleros son más tranquilos, románticos y se sienten más cerca del agua — ideales para parejas, atardeceres y para quien quiere la experiencia real de navegar a vela. Los yates tienen cubiertas más amplias, más sombra, andan más suave con cualquier mar, baños completos y más espacio para moverse — mejor para grupos grandes, familias con niños o abuelos, y si las amenidades importan más que el viento en las velas."
+  },
+  {
+    q: "Nunca hemos estado en un barco. ¿Cuál tour es más fácil para empezar?",
+    a: "Nuestro snorkel-y-vela compartido y el atardecer compartido son las opciones más tranquilas — el lado del Mar de Cortés en Cabo es naturalmente protegido y nuestros capitanes se quedan en aguas calmas. Si prefieres tener control total del ritmo y las paradas, un charter privado en yate es la opción más suave para principiantes."
+  },
+  {
+    q: "¿Los tours son aptos para niños?",
+    a: "Sí. Los tours de snorkel funcionan bien desde aproximadamente los 5 años con un padre en el agua; los cruceros al atardecer son aptos para todas las edades. Para familias, el charter privado suele ser la mejor opción — controlas el horario, la ruta y cuánto tiempo se pasa en cada parada. Los chalecos salvavidas están a bordo, son gratuitos y obligatorios para niños."
+  },
+  {
+    q: "¿Me voy a marear? ¿Qué tan agitada está el agua?",
+    a: "La mayoría de nuestros tours se quedan dentro de la Bahía de Cabo, que está protegida y normalmente plana. Las condiciones de mar abierto aparecen sobre todo en los tours de avistamiento de ballenas que se alejan un poco más. Si te mareas con facilidad, come algo ligero antes, toma una Bonine/Dramamine una hora antes de embarcar y elige yate sobre velero — el casco más ancho es notablemente más estable."
+  },
+  {
+    q: "¿Qué incluye el tour?",
+    a: "Todos nuestros tours incluyen barra libre premium (cerveza, vino, margaritas, cocteles, refrescos, agua), comida apropiada al viaje (menú de snorkel, menú de atardecer, etc.), todo el equipo de snorkel cuando aplica y una tripulación que habla inglés. El menú completo y la barra están en cada página de tour."
+  },
+  {
+    q: "¿Con cuánta anticipación debo reservar?",
+    a: "Para charters privados en temporada alta (diciembre–abril, más las semanas festivas de EE.UU.), apunta a 4–6 semanas antes — las fechas populares se llenan. Los tours compartidos tienen más flexibilidad pero los mejores horarios (atardecer, fines de semana) también se llenan. En temporada baja, una o dos semanas suelen ser suficientes."
+  },
+  {
+    q: "¿Ofrecen transporte desde el hotel o shuttle a la marina?",
+    a: "Todos los tours salen de la marina de Cabo San Lucas — los taxis y Ubers desde cualquier hotel de la zona son de 10–20 minutos. También operamos un servicio de shuttle dedicado que puedes reservar por separado si quieres puerta a puerta, grupo o servicio nocturno."
+  },
+  {
+    q: "¿Qué pasa si el clima cancela el tour?",
+    a: "Si cancelamos por clima o condiciones del mar, recibes un reembolso completo o reprogramas sin costo — tú eliges. El clima en Cabo es confiable la mayor parte del año, así que las cancelaciones son raras fuera de la actividad tropical ocasional de septiembre/octubre."
+  },
+  {
+    q: "¿Cuántas personas caben en un charter privado?",
+    a: "Los veleros van desde 2 invitados (38 pies para parejas) hasta unos 10 (42 pies). Los yates manejan cómodamente 10–14, y nuestro yate más grande llega hasta 25. Si no estás seguro de qué barco le queda a tu grupo, dinos el número de personas y la ocasión y te recomendamos el correcto."
+  },
 ];
 
 const breadcrumbSchema = JSON.stringify({
@@ -23,10 +70,21 @@ const breadcrumbSchema = JSON.stringify({
     { "@type": "ListItem", "position": 2, "name": "Tours" }
   ]
 });
+
+const faqSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs.map(({ q, a }) => ({
+    "@type": "Question",
+    "name": q,
+    "acceptedAnswer": { "@type": "Answer", "text": a }
+  }))
+});
 ---
 
-<BaseLayout title="Tours — Cabo Sailing | Tours en Barco en Cabo San Lucas" description="Explora todos los tours en barco en Cabo San Lucas. Snorkel privado y compartido, cruceros al atardecer, avistamiento de ballenas, despedidas de soltera y buceo." hreflangs={{ en: '/tours', es: '/es/tours' }}>
+<BaseLayout title="Tours — Cabo Sailing | Tours en Barco en Cabo San Lucas" description="Todos los tours en barco en Cabo San Lucas — snorkel y atardecer compartidos, charters privados en veleros y yates, avistamiento de ballenas, despedidas de soltera y buceo. Compara y reserva." hreflangs={{ en: '/tours', es: '/es/tours' }}>
   <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
+  <script slot="head" type="application/ld+json" set:html={faqSchema} />
   <Header variant="subpage" activePage="tours" />
 
   <main class="flex-1 w-full overflow-x-hidden pt-[60px] lg:pt-[72px]">
@@ -39,28 +97,111 @@ const breadcrumbSchema = JSON.stringify({
         <span class="text-navy font-semibold">Tours</span>
       </nav>
       <h1 class="text-3xl lg:text-4xl font-serif text-navy mb-3">Nuestros Tours</h1>
-      <p class="text-slate-500 text-sm lg:text-base max-w-md mx-auto">Elige tu experiencia perfecta en el agua en Cabo San Lucas.</p>
+      <p class="text-slate-500 text-sm lg:text-base max-w-xl mx-auto">Dos formas de navegar en Cabo — únete a un grupo pequeño en un tour compartido, o lleva el barco completo solo para ustedes.</p>
     </div>
 
-    <!-- Tour grid -->
-    <div class="max-w-[900px] mx-auto px-5 lg:px-10 pb-16">
-      <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
+    <!-- Tours Compartidos -->
+    <section class="max-w-[1100px] mx-auto px-5 lg:px-10 pt-4 lg:pt-6 pb-8 lg:pb-12">
+      <div class="flex items-center gap-3 mb-2">
+        <div class="w-1 h-7 bg-gold rounded-full"></div>
+        <h2 class="text-xl lg:text-2xl font-serif text-navy">Tours Compartidos</h2>
+      </div>
+      <p class="text-slate-500 text-sm lg:text-base mb-5 lg:mb-7 ml-4">Horario fijo, precio por persona, grupo pequeño en velero — la forma fácil y social de subirse al agua.</p>
+      <div class="grid grid-cols-2 gap-4 lg:gap-6">
+        {sharedTours.map((t) => (
+          <a href={t.href} class="group block rounded-2xl overflow-hidden shadow-lg border border-border-light bg-white">
+            <CarouselImage type="activity" id={t.id} alt={t.alt} groupHoverZoom wrapperClass="relative h-[180px] lg:h-[240px] overflow-hidden w-full">
+              <div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
+            </CarouselImage>
+            <div class="p-4 text-center">
+              <h3 class="text-sm lg:text-base font-bold text-navy group-hover:text-gold transition-colors">{t.label}</h3>
+              <p class="text-xs lg:text-sm text-slate-500 mt-1">{t.tagline}</p>
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
 
-        {tiles.map((t) => (
+    <!-- Charters Privados -->
+    <section class="max-w-[1100px] mx-auto px-5 lg:px-10 pt-2 lg:pt-4 pb-10 lg:pb-14">
+      <div class="flex items-center gap-3 mb-2">
+        <div class="w-1 h-7 bg-gold rounded-full"></div>
+        <h2 class="text-xl lg:text-2xl font-serif text-navy">Charters Privados</h2>
+      </div>
+      <p class="text-slate-500 text-sm lg:text-base mb-5 lg:mb-7 ml-4">El barco completo es tuyo — elige velero o yate, tu ruta y tu ritmo.</p>
+      <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
+        {privateTours.map((t) => (
           <a href={t.href} class="group block rounded-2xl overflow-hidden shadow-lg border border-border-light bg-white">
             <CarouselImage type="activity" id={t.id} alt={t.alt} groupHoverZoom wrapperClass="relative h-[180px] lg:h-[220px] overflow-hidden w-full">
               <div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
             </CarouselImage>
             <div class="p-4 text-center">
               <h3 class="text-sm lg:text-base font-bold text-navy group-hover:text-gold transition-colors">{t.label}</h3>
+              <p class="text-xs lg:text-sm text-slate-500 mt-1">{t.tagline}</p>
             </div>
           </a>
         ))}
-
       </div>
-    </div>
+    </section>
+
+    <!-- Elige tu embarcación -->
+    <section class="bg-light-grey border-y border-border-light">
+      <div class="max-w-[1100px] mx-auto px-5 lg:px-10 py-10 lg:py-14">
+        <div class="text-center mb-6 lg:mb-8">
+          <h2 class="text-xl lg:text-2xl font-serif text-navy mb-2">¿Velero o Yate?</h2>
+          <p class="text-slate-500 text-sm lg:text-base max-w-xl mx-auto">Todo charter privado empieza con la misma pregunta. Esta es la versión corta.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6">
+          <a href="/es/sailing-cabo-san-lucas" class="group bg-white rounded-2xl p-6 lg:p-7 border border-border-light shadow-sm hover:shadow-md transition-shadow flex flex-col">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="material-symbols-outlined text-gold text-3xl">sailing</span>
+              <h3 class="text-lg lg:text-xl font-serif text-navy">Velero</h3>
+            </div>
+            <p class="text-slate-600 text-sm lg:text-base leading-relaxed mb-4">Tranquilo, romántico, más cerca del agua. Ideal para parejas, grupos íntimos y para quien quiere la experiencia real de navegar a vela.</p>
+            <span class="text-accent-gold text-sm font-bold uppercase tracking-widest mt-auto group-hover:underline">Ver los veleros <span class="material-symbols-outlined text-base align-middle">arrow_forward</span></span>
+          </a>
+          <a href="/es/yacht-charter-cabo" class="group bg-white rounded-2xl p-6 lg:p-7 border border-border-light shadow-sm hover:shadow-md transition-shadow flex flex-col">
+            <div class="flex items-center gap-3 mb-3">
+              <YachtIcon class="text-gold text-3xl" />
+              <h3 class="text-lg lg:text-xl font-serif text-navy">Yate</h3>
+            </div>
+            <p class="text-slate-600 text-sm lg:text-base leading-relaxed mb-4">Cubiertas más amplias, más sombra, viaje más suave. Ideal para grupos grandes, familias con niños o invitados mayores, y para quien quiere las amenidades de un yate completo.</p>
+            <span class="text-accent-gold text-sm font-bold uppercase tracking-widest mt-auto group-hover:underline">Ver los yates <span class="material-symbols-outlined text-base align-middle">arrow_forward</span></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="max-w-[900px] mx-auto px-5 lg:px-10 py-12 lg:py-16">
+      <div class="flex items-center gap-3 mb-2">
+        <div class="w-1 h-7 bg-gold rounded-full"></div>
+        <h2 class="text-xl lg:text-2xl font-serif text-navy">Antes de Reservar — Preguntas Frecuentes</h2>
+      </div>
+      <p class="text-slate-500 text-sm lg:text-base mb-6 lg:mb-8 ml-4">Las preguntas que los huéspedes hacen más antes de elegir un tour.</p>
+
+      <div class="flex flex-col gap-3 lg:gap-4">
+        {faqs.map((item, idx) => (
+          <div class="faq-item border border-border-light rounded-2xl px-5 py-4 lg:px-6 lg:py-5 bg-white">
+            <input class="hidden" id={`tfaq${idx + 1}`} type="checkbox" />
+            <label class="flex items-start lg:items-center justify-between gap-3 cursor-pointer" for={`tfaq${idx + 1}`}>
+              <span class="font-semibold text-navy text-sm lg:text-base">{item.q}</span>
+              <span class="material-symbols-outlined text-slate-300 faq-chevron transition-transform flex-shrink-0">expand_more</span>
+            </label>
+            <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out">
+              <p class="text-sm lg:text-base text-slate-600 leading-relaxed pt-3">{item.a}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
 
   </main>
+
+  <style is:global>
+    .faq-item input:checked ~ .faq-answer { max-height: 1000px; opacity: 1; }
+    .faq-item input:checked ~ label .faq-chevron { transform: rotate(180deg); }
+  </style>
 
   <Footer />
   <FloatingCTA />
