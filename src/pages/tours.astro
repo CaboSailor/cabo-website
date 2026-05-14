@@ -46,11 +46,11 @@ const faqs = [
   },
   {
     q: "How far in advance should I book?",
-    a: "For private charters in high season (December–April, plus US holiday weeks), aim for 4–6 weeks ahead — the popular dates sell out. Shared tours have more flexibility but the best time slots (sunset, weekends) still fill up. Off-season, a week or two is usually enough."
+    a: "For private charters in high season (December–April, plus US holiday weeks), aim for 2–4 weeks ahead — the popular dates sell out. Shared tours have more flexibility but the best time slots (sunset, weekends) still fill up. Off-season, a week or two is usually enough."
   },
   {
     q: "Do you offer hotel pickup or a shuttle to the marina?",
-    a: "All tours depart from the Cabo San Lucas marina — taxis and Ubers from any hotel in the area run about 10–20 minutes. We also run a dedicated shuttle service you can book separately if you'd like door-to-door, group, or late-night pickup."
+    a: "Yes. We offer private <a href=\"/shuttle-service/\" class=\"text-accent-gold font-semibold hover:underline\">shuttle service</a> to and from the marina, which can be added to your booking for a smooth door-to-door experience.\n\nAll cruises depart from IGY Marina in downtown Cabo San Lucas. If you prefer to arrive on your own, taxis and Ubers are also easy to use from most hotels in the Cabo area."
   },
   {
     q: "What happens if the weather cancels the tour?",
@@ -58,7 +58,7 @@ const faqs = [
   },
   {
     q: "How many people can each private charter fit?",
-    a: "Sailboats range from 2 guests (38-footer for couples) up to about 10 (42-footer). Yachts comfortably handle 10–14, and our largest yacht fits up to 25. If you're not sure which boat suits your group, tell us the headcount and the occasion and we'll match you to the right one."
+    a: "Our sailboats can host up to 14 guests, depending on the vessel and cruise type.\n\nOur yachts can host between 12 and 20 guests, depending on which yacht you choose.\n\nIf you're not sure which boat is the best fit, just send us your group size and the type of experience you're planning — we'll help match you with the right option."
   },
 ];
 
@@ -190,7 +190,7 @@ const faqSchema = JSON.stringify({
             </label>
             <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out">
               {item.a.split('\n\n').map((para, i) => (
-                <p class={`text-sm lg:text-base text-slate-600 leading-relaxed ${i === 0 ? 'pt-3' : 'pt-2'}`}>{para}</p>
+                <p class={`text-sm lg:text-base text-slate-600 leading-relaxed ${i === 0 ? 'pt-3' : 'pt-2'}`} set:html={para} />
               ))}
             </div>
           </div>

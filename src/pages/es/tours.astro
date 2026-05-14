@@ -46,11 +46,11 @@ const faqs = [
   },
   {
     q: "¿Con cuánta anticipación debo reservar?",
-    a: "Para charters privados en temporada alta (diciembre–abril, más las semanas festivas de EE.UU.), apunta a 4–6 semanas antes — las fechas populares se llenan. Los tours compartidos tienen más flexibilidad pero los mejores horarios (atardecer, fines de semana) también se llenan. En temporada baja, una o dos semanas suelen ser suficientes."
+    a: "Para charters privados en temporada alta (diciembre–abril, más las semanas festivas de EE.UU.), apunta a 2–4 semanas antes — las fechas populares se llenan. Los tours compartidos tienen más flexibilidad pero los mejores horarios (atardecer, fines de semana) también se llenan. En temporada baja, una o dos semanas suelen ser suficientes."
   },
   {
     q: "¿Ofrecen transporte desde el hotel o shuttle a la marina?",
-    a: "Todos los tours salen de la marina de Cabo San Lucas — los taxis y Ubers desde cualquier hotel de la zona son de 10–20 minutos. También operamos un servicio de shuttle dedicado que puedes reservar por separado si quieres puerta a puerta, grupo o servicio nocturno."
+    a: "Sí. Ofrecemos <a href=\"/es/shuttle-service/\" class=\"text-accent-gold font-semibold hover:underline\">servicio privado de shuttle</a> hacia y desde la marina, que se puede agregar a tu reserva para una experiencia puerta a puerta sin complicaciones.\n\nTodos los cruceros salen de IGY Marina en el centro de Cabo San Lucas. Si prefieres llegar por tu cuenta, los taxis y Ubers también son fáciles de usar desde la mayoría de los hoteles del área de Cabo."
   },
   {
     q: "¿Qué pasa si el clima cancela el tour?",
@@ -58,7 +58,7 @@ const faqs = [
   },
   {
     q: "¿Cuántas personas caben en un charter privado?",
-    a: "Los veleros van desde 2 invitados (38 pies para parejas) hasta unos 10 (42 pies). Los yates manejan cómodamente 10–14, y nuestro yate más grande llega hasta 25. Si no estás seguro de qué barco le queda a tu grupo, dinos el número de personas y la ocasión y te recomendamos el correcto."
+    a: "Nuestros veleros pueden recibir hasta 14 invitados, dependiendo de la embarcación y el tipo de crucero.\n\nNuestros yates pueden recibir entre 12 y 20 invitados, según el yate que elijas.\n\nSi no estás seguro de qué barco le queda mejor a tu grupo, mándanos el número de personas y el tipo de experiencia que planeas — te ayudamos a elegir la opción correcta."
   },
 ];
 
@@ -190,7 +190,7 @@ const faqSchema = JSON.stringify({
             </label>
             <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out">
               {item.a.split('\n\n').map((para, i) => (
-                <p class={`text-sm lg:text-base text-slate-600 leading-relaxed ${i === 0 ? 'pt-3' : 'pt-2'}`}>{para}</p>
+                <p class={`text-sm lg:text-base text-slate-600 leading-relaxed ${i === 0 ? 'pt-3' : 'pt-2'}`} set:html={para} />
               ))}
             </div>
           </div>
