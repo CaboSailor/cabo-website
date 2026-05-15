@@ -1,5 +1,5 @@
 ---
-title: "Can You Swim in Cabo San Lucas? Safe Beaches & Warnings"
+title: "Can You Swim in Cabo? Safe Beaches & Warnings"
 pubDate: 2026-04-19
 description: "Which Cabo beaches are swimmable and which aren't? Local's guide to safe swimming in Cabo San Lucas — flags, currents, and the best calm-water beaches."
 heroImage: "/images/travel-guide/santa-maria-bay-featured-image.jpg.webp"

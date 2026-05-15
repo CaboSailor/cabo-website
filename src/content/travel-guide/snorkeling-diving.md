@@ -1,5 +1,5 @@
 ---
-title: "Best Snorkeling & Diving in Cabo San Lucas 2026 — A Local Expert's Picks"
+title: "Best Snorkeling & Diving in Cabo San Lucas 2026"
 pubDate: 2025-03-01
 description: "Discover Cabo's best snorkeling & diving spots in 2026 with local expert tips. From Pelican Rock to Cabo Pulmo. See our fleet and book a snorkel tour!"
 heroImage: "/images/blog/snorkelers-enjoying-a-sunny-boat-ride.png"

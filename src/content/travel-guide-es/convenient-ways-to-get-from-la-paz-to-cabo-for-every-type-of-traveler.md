@@ -1,13 +1,13 @@
 ---
-title: "De La Paz a Cabo San Lucas &mdash; 5 Formas de Llegar (Gu&iacute;a 2026)"
+title: "De La Paz a Cabo — 5 Formas de Llegar (2026)"
 pubDate: 2026-04-23
-description: "De La Paz a Cabo en 2026 &mdash; autob&uacute;s, shuttle, renta de auto, taxi o transfer privado. Distancia, precios, tiempos y la mejor opci&oacute;n para cada viajero."
+description: "De La Paz a Cabo en 2026 — autobús, shuttle, renta de auto, taxi o transfer privado. Distancia, precios, tiempos y la mejor opción para cada viajero."
 heroImage: "/images/la-paz/la-paz-bcs.webp"
 heroAlt: "De La Paz a Cabo San Lucas — 5 formas de llegar"
 category: "Traveling to Cabo"
 categoryLink: "/es/travel-guide-traveling/"
 activeSubmenu: "traveling"
-bestTime: "Todo el año — el viaje es esc&eacute;nico en cualquier temporada"
+bestTime: "Todo el año — el viaje es escénico en cualquier temporada"
 sidebarType: "default"
 ---
 

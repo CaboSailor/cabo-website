@@ -1,13 +1,13 @@
 ---
-title: "&iquest;Necesitas Pasaporte para Cabo? Requisitos 2026"
+title: "¿Necesitas Pasaporte para Cabo? Requisitos 2026"
 pubDate: 2025-02-05
-description: "S&iacute;, los ciudadanos de EE. UU. y Canad&aacute; necesitan pasaporte para entrar a M&eacute;xico por aire. Pasajeros de crucero a veces usan tarjeta de pasaporte. Reglas y consejos 2026."
+description: "Sí, los ciudadanos de EE. UU. y Canadá necesitan pasaporte para entrar a México por aire. Pasajeros de crucero a veces usan tarjeta de pasaporte. Reglas y consejos 2026."
 heroImage: "/images/travel-guide/los-cabos-international-airport-featured-image.jpg.webp"
 heroAlt: "Terminal del Aeropuerto Internacional de Los Cabos"
 category: "Traveling to Cabo"
 categoryLink: "/es/travel-guide-traveling/"
 activeSubmenu: "traveling"
-bestTime: "Todo el a&ntilde;o — los requisitos de entrada no cambian por temporada"
+bestTime: "Todo el año — los requisitos de entrada no cambian por temporada"
 sidebarType: "default"
 ---
 

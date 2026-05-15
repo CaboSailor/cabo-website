@@ -1,13 +1,13 @@
 ---
-title: "Mejor &Eacute;poca para Visitar Cabo San Lucas — Gu&iacute;a Mes a Mes"
+title: "Mejor Época para Visitar Cabo — Guía Mes a Mes"
 pubDate: 2025-01-15
-description: "La mejor &eacute;poca para visitar Cabo depende de lo que busques — ballenas, precios bajos, agua tranquila o vida nocturna. Gu&iacute;a mes a mes desde los locales de Cabo Sailing."
+description: "La mejor época para visitar Cabo depende de lo que busques — ballenas, precios bajos, agua tranquila o vida nocturna. Guía mes a mes desde los locales de Cabo Sailing."
 heroImage: "/images/travel-guide/los-cabos-international-airport-featured-image.jpg.webp"
-heroAlt: "&iquest;Necesitas Pasaporte para ir a Cabo San Lucas?"
+heroAlt: "¿Necesitas Pasaporte para ir a Cabo San Lucas?"
 category: "Traveling to Cabo"
 categoryLink: "/es/travel-guide-traveling/"
 activeSubmenu: "traveling"
-bestTime: "Diciembre–abril (alta) o mayo–junio (mejor relaci&oacute;n calidad-precio)"
+bestTime: "Diciembre–abril (alta) o mayo–junio (mejor relación calidad-precio)"
 relatedActivity: "/es/whale-watching/"
 sidebarType: "default"
 ---

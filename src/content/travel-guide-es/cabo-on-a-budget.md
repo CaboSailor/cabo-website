@@ -1,13 +1,13 @@
 ---
-title: "Cabo con Presupuesto Limitado &mdash; Gu&iacute;a 2026 para Disfrutar Cabo Gastando Menos"
+title: "Cabo con Presupuesto Limitado — Guía 2026"
 pubDate: 2026-04-23
-description: "Cabo no tiene que ser caro. Gu&iacute;a de presupuesto 2026 &mdash; d&oacute;nde alojarte, comer y divertirte gastando menos. Actividades gratis, restaurantes locales, consejos de transporte."
+description: "Cabo no tiene que ser caro. Guía de presupuesto 2026 — dónde alojarte, comer y divertirte gastando menos. Actividades gratis, restaurantes locales, consejos de transporte."
 heroImage: "/images/travel-guide/fun-activities-cabo.jpg.webp"
 heroAlt: "Comida callejera en el centro de Cabo San Lucas"
 category: "Traveling to Cabo"
 categoryLink: "/es/travel-guide-traveling/"
 activeSubmenu: "traveling"
-bestTime: "May&ndash;Jun y Sep&ndash;Oct &mdash; temporada media, precios m&aacute;s bajos"
+bestTime: "May–Jun y Sep–Oct — temporada media, precios más bajos"
 sidebarType: "default"
 ---
 

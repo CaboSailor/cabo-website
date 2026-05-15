@@ -1,9 +1,9 @@
 ---
-title: "Tips para Avistamiento de Ballenas en Cabo — Gu&iacute;a Completa"
+title: "Avistamiento de Ballenas en Cabo — Tips y Guía"
 pubDate: 2025-02-17
-description: "Tips para avistamiento de ballenas en Cabo — mejor temporada, especies que ver&aacute;s, qu&eacute; llevar, observaci&oacute;n responsable y los mejores miradores desde la costa."
+description: "Tips para avistamiento de ballenas en Cabo — mejor temporada, especies que verás, qué llevar, observación responsable y los mejores miradores desde la costa."
 heroImage: "/images/blog/humpback-whale-breaching-in-vibrant-ocean.png"
-heroAlt: "Ballena jorobada saltando del agua en el oc&eacute;ano vibrante"
+heroAlt: "Ballena jorobada saltando del agua en el océano vibrante"
 category: "Attractions"
 categoryLink: "/es/travel-guide-attractions/"
 activeSubmenu: "attractions"

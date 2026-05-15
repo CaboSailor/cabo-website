@@ -1,5 +1,5 @@
 ---
-title: "La Paz to Cabo San Lucas — 5 Ways to Get There (2026 Guide)"
+title: "La Paz to Cabo — 5 Ways to Get There (2026)"
 pubDate: 2026-04-23
 description: "La Paz to Cabo in 2026 — bus, shuttle, rental car, taxi or private transfer. Distance, prices, timing and the best option for each type of traveler."
 heroImage: "/images/la-paz/la-paz-bcs.webp"

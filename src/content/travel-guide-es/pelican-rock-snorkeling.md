@@ -1,13 +1,13 @@
 ---
 title: "Tour de Snorkel en Pelican Rock en Cabo San Lucas"
 pubDate: 2023-03-13
-description: "Tour de snorkel en Pelican Rock — explora el mejor punto submarino de la bah&iacute;a de Cabo con peces de colores, lobos marinos y agua cristalina cerca de Playa del Amor."
+description: "Tour de snorkel en Pelican Rock — explora el mejor punto submarino de la bahía de Cabo con peces de colores, lobos marinos y agua cristalina cerca de Playa del Amor."
 heroImage: "/images/travel-guide/42-f-2-1.jpg"
 heroAlt: "Snorkel en Pelican Rock en Cabo San Lucas"
 category: "Activities"
 categoryLink: "/es/travel-guide-activities/"
 activeSubmenu: "activities"
-bestTime: "Todo el año — el agua m&aacute;s tranquila de la bah&iacute;a"
+bestTime: "Todo el año — el agua más tranquila de la bahía"
 sidebarType: "snorkeling"
 ---
 

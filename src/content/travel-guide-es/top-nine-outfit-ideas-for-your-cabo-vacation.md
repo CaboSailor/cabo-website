@@ -1,7 +1,7 @@
 ---
-title: "Qu&eacute; Ponerse en Cabo &mdash; 9 Outfits por Actividad (2026)"
+title: "Qué Ponerse en Cabo — 9 Outfits (2026)"
 pubDate: 2026-04-23
-description: "Qu&eacute; empacar para Cabo San Lucas — 9 outfits para playa, charters de barco, cenas y vida nocturna. Telas, colores y qu&eacute; dejar en casa. Gu&iacute;a 2026."
+description: "Qué empacar para Cabo San Lucas — 9 outfits para playa, charters de barco, cenas y vida nocturna. Telas, colores y qué dejar en casa. Guía 2026."
 heroImage: "/images/travel-guide/fun-activities-cabo.jpg.webp"
 heroAlt: "Ideas de outfits para tus vacaciones en Cabo"
 category: "Traveling to Cabo"

@@ -1,13 +1,13 @@
 ---
-title: "Babymoon en Cabo San Lucas — Gu&iacute;a de Escapada Rom&aacute;ntica Pre-Beb&eacute;"
+title: "Babymoon en Cabo — Guía de Escapada Romántica"
 pubDate: 2026-04-23
-description: "&iquest;Planeas un babymoon en Cabo? Actividades seguras durante el embarazo, mejores resorts, qu&eacute; empacar y qu&eacute; evitar. Gu&iacute;a local para parejas en 2026."
+description: "¿Planeas un babymoon en Cabo? Actividades seguras durante el embarazo, mejores resorts, qué empacar y qué evitar. Guía local para parejas en 2026."
 heroImage: "/images/travel-guide/fun-activities-cabo.jpg.webp"
 heroAlt: "Babymoon en Cabo San Lucas"
 category: "Traveling to Cabo"
 categoryLink: "/es/travel-guide-traveling/"
 activeSubmenu: "traveling"
-bestTime: "Nov–May — clima c&aacute;lido, seco y con poca humedad"
+bestTime: "Nov–May — clima cálido, seco y con poca humedad"
 sidebarType: "default"
 ---
 

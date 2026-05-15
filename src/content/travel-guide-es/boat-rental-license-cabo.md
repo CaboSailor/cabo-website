@@ -1,7 +1,7 @@
 ---
 title: "¿Necesitas Licencia para Rentar un Bote en Cabo?"
 pubDate: 2024-09-09
-description: "¿Necesitas licencia de navegaci&oacute;n en Cabo? Reglas para botes peque&ntilde;os, yates, charters bareboat y rentas con capit&aacute;n — todo lo que necesitas saber."
+description: "¿Necesitas licencia de navegación en Cabo? Reglas para botes pequeños, yates, charters bareboat y rentas con capitán — todo lo que necesitas saber."
 heroImage: "/images/travel-guide/Do-You-Need-A-License-To-Rent-A-Boat-In-Cabo.j2.jpg"
 heroAlt: "Renta de botes en Cabo San Lucas"
 category: "Activities"

@@ -1,13 +1,13 @@
 ---
-title: "¿Cu&aacute;nto Cuesta un Charter Privado de Velero?"
+title: "¿Cuánto Cuesta un Charter Privado de Velero?"
 pubDate: 2025-10-15
-description: "Precios de charters privados de velero en Cabo — costos de medio d&iacute;a, d&iacute;a completo y yates de lujo. Qu&eacute; incluye, factores de precio y tips para reservar."
+description: "Precios de charters privados de velero en Cabo — costos de medio día, día completo y yates de lujo. Qué incluye, factores de precio y tips para reservar."
 heroImage: "/images/travel-guide/how-much-does-a-private-sailing-charter-in-cabo-san-lucas-cost.webp"
 heroAlt: "Charter privado de velero en Cabo San Lucas"
 category: "Activities"
 categoryLink: "/es/travel-guide-activities/"
 activeSubmenu: "activities"
-bestTime: "Todo el a&ntilde;o — mejores ofertas mayo–octubre"
+bestTime: "Todo el año — mejores ofertas mayo–octubre"
 relatedActivity: "/es/tours/"
 sidebarType: "default"
 ---

@@ -1,7 +1,7 @@
 ---
-title: "Puerto de Cruceros de Cabo San Lucas — Mejores Cosas que Hacer en un D&iacute;a"
+title: "Crucero a Cabo San Lucas — Qué Hacer en un Día"
 pubDate: 2026-04-23
-description: "&iquest;D&iacute;a de crucero en Cabo? Aprovecha al m&aacute;ximo tus horas en tierra — mejores tours cortos, c&oacute;mo llegar al Arco, lugares para comer, horarios de tenders y cu&aacute;ndo regresar al barco."
+description: "¿Día de crucero en Cabo? Aprovecha al máximo tus horas en tierra — mejores tours cortos, cómo llegar al Arco, lugares para comer, horarios de tenders y cuándo regresar al barco."
 heroImage: "/images/travel-guide/fun-activities-cabo.jpg.webp"
 heroAlt: "Puerto de Cruceros de Cabo San Lucas"
 category: "Traveling to Cabo"

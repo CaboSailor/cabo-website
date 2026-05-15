@@ -1,9 +1,9 @@
 ---
 title: "Celebra tu Cumpleaños en Cabo San Lucas"
 pubDate: 2018-09-19
-description: "Planea un cumpleaños inolvidable en Cabo — alta cocina, aventuras en yate, vida nocturna y d&iacute;as de spa. Ideas para cada estilo de celebraci&oacute;n."
+description: "Planea un cumpleaños inolvidable en Cabo — alta cocina, aventuras en yate, vida nocturna y días de spa. Ideas para cada estilo de celebración."
 heroImage: "/images/travel-guide/celebrate-in-cabo-san-lucas-1080x675.jpg"
-heroAlt: "Celebraci&oacute;n de cumpleaños en Cabo San Lucas"
+heroAlt: "Celebración de cumpleaños en Cabo San Lucas"
 category: "Activities"
 categoryLink: "/es/travel-guide-activities/"
 activeSubmenu: "activities"

@@ -1,5 +1,5 @@
 ---
-title: "La Paz vs. Cabo San Lucas — Which Is Better for Your Trip?"
+title: "La Paz vs. Cabo San Lucas — Which Is Better?"
 pubDate: 2026-04-23
 description: "La Paz vs. Cabo San Lucas compared — beaches, activities, prices, nightlife. Which fits families vs. couples, and can you do both in one trip?"
 heroImage: "/images/la-paz/la-paz-bcs.webp"

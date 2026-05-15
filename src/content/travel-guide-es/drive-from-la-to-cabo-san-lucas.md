@@ -1,13 +1,13 @@
 ---
-title: "Manejar de LA a Cabo San Lucas &mdash; Gu&iacute;a Completa de Road Trip 2026"
+title: "De LA a Cabo San Lucas — Guía de Road Trip 2026"
 pubDate: 2026-04-23
-description: "Manejando de LA a Cabo &mdash; distancia, tiempo, cruce fronterizo, seguridad, mejores paradas y todo lo que debes saber para 2026. Gu&iacute;a local con paradas para pernoctar."
+description: "Manejando de LA a Cabo — distancia, tiempo, cruce fronterizo, seguridad, mejores paradas y todo lo que debes saber para 2026. Guía local con paradas para pernoctar."
 heroImage: "/images/travel-guide/fun-activities-cabo.jpg.webp"
 heroAlt: "Carretera atravesando el desierto de Baja California"
 category: "Traveling to Cabo"
 categoryLink: "/es/travel-guide-traveling/"
 activeSubmenu: "traveling"
-bestTime: "Oct&ndash;May &mdash; temperaturas m&aacute;s frescas en el desierto, menos lluvia"
+bestTime: "Oct–May — temperaturas más frescas en el desierto, menos lluvia"
 sidebarType: "default"
 ---
 

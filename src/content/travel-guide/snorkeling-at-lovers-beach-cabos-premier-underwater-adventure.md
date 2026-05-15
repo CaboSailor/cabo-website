@@ -1,5 +1,5 @@
 ---
-title: "Snorkeling at Lover's Beach — Cabo's Best Underwater Spot"
+title: "Snorkel at Lover's Beach — Cabo's Best Spot"
 pubDate: 2026-04-23
 description: "Complete Lover's Beach snorkeling guide — how to get there, marine life, best time to go, what to bring, and how it compares to other Cabo snorkel spots."
 heroImage: "/images/blog/vibrant-underwater-reef-canyon-scene.webp"

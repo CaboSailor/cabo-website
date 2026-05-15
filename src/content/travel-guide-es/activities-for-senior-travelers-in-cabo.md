@@ -1,13 +1,13 @@
 ---
-title: "Cabo para Adultos Mayores &mdash; Mejores Actividades para Viajeros Mayores (2026)"
+title: "Cabo para Adultos Mayores — Mejores Actividades 2026"
 pubDate: 2026-04-23
-description: "Cabo San Lucas para adultos mayores &mdash; cruceros tranquilos, playas accesibles, golf, avistamiento de ballenas y las mejores actividades de bajo impacto. Gu&iacute;a enfocada en la comodidad."
+description: "Cabo San Lucas para adultos mayores — cruceros tranquilos, playas accesibles, golf, avistamiento de ballenas y las mejores actividades de bajo impacto. Guía enfocada en la comodidad."
 heroImage: "/images/travel-guide/fun-activities-cabo.jpg.webp"
 heroAlt: "Pareja mayor en un crucero al atardecer en Cabo"
 category: "Traveling to Cabo"
 categoryLink: "/es/travel-guide-traveling/"
 activeSubmenu: "traveling"
-bestTime: "Nov&ndash;Abr &mdash; temperaturas c&aacute;lidas, secas y c&oacute;modas"
+bestTime: "Nov–Abr — temperaturas cálidas, secas y cómodas"
 sidebarType: "default"
 ---
 

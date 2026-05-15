@@ -1,5 +1,5 @@
 ---
-title: "Cabo for Seniors — Best Activities for Older Travelers (2026)"
+title: "Cabo for Seniors — Best Activities (2026)"
 pubDate: 2026-04-23
 description: "Cabo San Lucas for seniors — gentle boat cruises, accessible beaches, golf, whale watching and the best low-impact activities. Comfort-first guide."
 heroImage: "/images/travel-guide/fun-activities-cabo.jpg.webp"

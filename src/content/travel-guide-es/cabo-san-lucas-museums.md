@@ -1,13 +1,13 @@
 ---
-title: "Museos y Sitios Culturales de Cabo San Lucas — Gu&iacute;a 2026"
+title: "Museos y Sitios Culturales de Cabo — Guía 2026"
 pubDate: 2026-04-23
-description: "Cabo no son solo playas — 5 museos y sitios culturales que valen la pena. Horarios, precios, opciones para ni&ntilde;os y alternativas para d&iacute;as lluviosos."
+description: "Cabo no son solo playas — 5 museos y sitios culturales que valen la pena. Horarios, precios, opciones para niños y alternativas para días lluviosos."
 heroImage: "/images/travel-guide/fun-activities-cabo.jpg.webp"
 heroAlt: "Museo de Cabo San Lucas"
 category: "Culture & Food"
 categoryLink: "/es/travel-guide-culture/"
 activeSubmenu: "culture"
-bestTime: "Todo el a&ntilde;o — perfecto para escapar del calor o un d&iacute;a lluvioso"
+bestTime: "Todo el año — perfecto para escapar del calor o un día lluvioso"
 sidebarType: "default"
 ---
 

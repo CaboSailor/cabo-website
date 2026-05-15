@@ -1,13 +1,13 @@
 ---
-title: "&iquest;Se Puede Nadar en Cabo San Lucas? Playas Seguras y Advertencias"
+title: "¿Se Puede Nadar en Cabo? Playas Seguras"
 pubDate: 2026-04-19
-description: "&iquest;Qu&eacute; playas de Cabo se pueden nadar y cu&aacute;les no? Gu&iacute;a local de natación segura en Cabo San Lucas — banderas, corrientes y las mejores playas de aguas tranquilas."
+description: "¿Qué playas de Cabo se pueden nadar y cuáles no? Guía local de natación segura en Cabo San Lucas — banderas, corrientes y las mejores playas de aguas tranquilas."
 heroImage: "/images/travel-guide/santa-maria-bay-featured-image.jpg.webp"
 heroAlt: "Nadando y haciendo snorkel en las aguas cristalinas de Cabo San Lucas"
 category: "Activities"
 categoryLink: "/es/travel-guide-activities/"
 activeSubmenu: "activities"
-bestTime: "Todo el año — el agua es nadable en cualquier estaci&oacute;n"
+bestTime: "Todo el año — el agua es nadable en cualquier estación"
 relatedActivity: "/es/private-snorkeling/"
 sidebarType: "snorkeling"
 ---

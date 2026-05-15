@@ -1,13 +1,13 @@
 ---
-title: "C&oacute;mo Evitar el Mareo en tu Viaje de Vela en Cabo"
+title: "Cómo Evitar el Mareo en tu Viaje de Vela en Cabo"
 pubDate: 2019-02-13
-description: "No dejes que el mareo arruine tu crucero en Cabo. Consejos comprobados — jengibre, hidrataci&oacute;n, trucos del horizonte y medicamentos — para navegar c&oacute;modamente."
+description: "No dejes que el mareo arruine tu crucero en Cabo. Consejos comprobados — jengibre, hidratación, trucos del horizonte y medicamentos — para navegar cómodamente."
 heroImage: "/images/travel-guide/cabo-sailing-adventures.jpg"
 heroAlt: "Aventura de vela en Cabo San Lucas"
 category: "Activities"
 categoryLink: "/es/travel-guide-activities/"
 activeSubmenu: "activities"
-bestTime: "Todo el año — mar m&aacute;s tranquilo de noviembre a junio"
+bestTime: "Todo el año — mar más tranquilo de noviembre a junio"
 relatedActivity: "/es/tours/"
 sidebarType: "default"
 ---

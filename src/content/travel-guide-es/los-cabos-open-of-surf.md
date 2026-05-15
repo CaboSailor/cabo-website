@@ -1,7 +1,7 @@
 ---
-title: "Los Cabos Open of Surf — El Evento de Surf M&aacute;s Importante de M&eacute;xico"
+title: "Los Cabos Open of Surf — Guía del Evento"
 pubDate: 2026-04-23
-description: "El Los Cabos Open of Surf en Playa Zippers — historia, fechas, c&oacute;mo asistir, qu&eacute; esperar y d&oacute;nde verlo. Gu&iacute;a completa para espectadores."
+description: "El Los Cabos Open of Surf en Playa Zippers — historia, fechas, cómo asistir, qué esperar y dónde verlo. Guía completa para espectadores."
 heroImage: "/images/travel-guide/fun-activities-cabo.jpg.webp"
 heroAlt: "Surfistas compitiendo en el Los Cabos Open of Surf"
 category: "Activities"

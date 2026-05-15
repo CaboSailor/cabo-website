@@ -1,13 +1,13 @@
 ---
-title: "Todos Santos desde Cabo — Gu&iacute;a de Excursi&oacute;n al Pueblo M&aacute;gico"
+title: "Todos Santos desde Cabo — Guía de Excursión"
 pubDate: 2026-04-23
-description: "Todos Santos es el pueblo m&aacute;gico m&aacute;s art&iacute;stico de Baja — a solo 1 hora de Cabo. Galer&iacute;as de arte, Hotel California, playas y c&oacute;mo recorrerlo en un d&iacute;a. Gu&iacute;a local."
+description: "Todos Santos es el pueblo mágico más artístico de Baja — a solo 1 hora de Cabo. Galerías de arte, Hotel California, playas y cómo recorrerlo en un día. Guía local."
 heroImage: "/images/blog/hotel-california-at-sunset.png"
 heroAlt: "Hotel California al atardecer en Todos Santos"
 category: "Attractions"
 categoryLink: "/es/travel-guide-attractions/"
 activeSubmenu: "attractions"
-bestTime: "Nov–May — c&aacute;lido y seco, perfecto para caminar el pueblo"
+bestTime: "Nov–May — cálido y seco, perfecto para caminar el pueblo"
 sidebarType: "default"
 ---
 

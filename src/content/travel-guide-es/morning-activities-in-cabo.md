@@ -1,7 +1,7 @@
 ---
 title: "Actividades Matutinas en Cabo para los Madrugadores"
 pubDate: 2019-10-31
-description: "Lev&aacute;ntate con el sol y disfruta las mejores actividades matutinas de Cabo — desde Playa del Amor hasta charters de pesca, paseos por la marina y exploraci&oacute;n del centro."
+description: "Levántate con el sol y disfruta las mejores actividades matutinas de Cabo — desde Playa del Amor hasta charters de pesca, paseos por la marina y exploración del centro."
 heroImage: "/images/travel-guide/morning-activities-cabo.jpg"
 heroAlt: "Mañana temprano en Cabo San Lucas"
 category: "Activities"

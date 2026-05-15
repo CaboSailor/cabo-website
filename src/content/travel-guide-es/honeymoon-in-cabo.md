@@ -1,13 +1,13 @@
 ---
 title: "Luna de Miel en Cabo — Tips para Parejas"
 pubDate: 2025-03-20
-description: "Planea la luna de miel perfecta en Cabo — resorts rom&aacute;nticos, cruceros al atardecer, cenas en la playa, spas para parejas, playas y excursiones para reci&eacute;n casados."
+description: "Planea la luna de miel perfecta en Cabo — resorts románticos, cruceros al atardecer, cenas en la playa, spas para parejas, playas y excursiones para recién casados."
 heroImage: "/images/travel-guide/helpful-travel-tips-for-couples.jpg"
 heroAlt: "Pareja en luna de miel en Cabo San Lucas"
 category: "Culture & Food"
 categoryLink: "/es/travel-guide-culture/"
 activeSubmenu: "culture"
-bestTime: "Nov–May — c&aacute;lido, seco y perfecto para el romance"
+bestTime: "Nov–May — cálido, seco y perfecto para el romance"
 relatedActivity: "/es/private-sunset/"
 sidebarType: "default"
 ---

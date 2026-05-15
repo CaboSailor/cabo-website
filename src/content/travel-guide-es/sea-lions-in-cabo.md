@@ -1,13 +1,13 @@
 ---
-title: "Lobos Marinos en Cabo San Lucas — D&oacute;nde Verlos de Cerca"
+title: "Lobos Marinos en Cabo — Dónde Verlos de Cerca"
 pubDate: 2026-04-23
-description: "La famosa colonia de lobos marinos en Land's End — d&oacute;nde verlos, mejores tours en bote, c&oacute;mo nadar de forma segura y cu&aacute;ndo est&aacute;n m&aacute;s activos."
+description: "La famosa colonia de lobos marinos en Land's End — dónde verlos, mejores tours en bote, cómo nadar de forma segura y cuándo están más activos."
 heroImage: "/images/blog/seal-and-divers-in-underwater-harmony.png"
-heroAlt: "Lobo marino y buzos en armon&iacute;a bajo el agua"
+heroAlt: "Lobo marino y buzos en armonía bajo el agua"
 category: "Attractions"
 categoryLink: "/es/travel-guide-attractions/"
 activeSubmenu: "attractions"
-bestTime: "Todo el a&ntilde;o — m&aacute;s activos Sep–May, cr&iacute;as visibles Dic–Mar"
+bestTime: "Todo el año — más activos Sep–May, crías visibles Dic–Mar"
 sidebarType: "snorkeling"
 ---
 

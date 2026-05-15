@@ -1,13 +1,13 @@
 ---
-title: "¿Es Seguro Cabo San Lucas en 2026? Gu&iacute;a Local de Seguridad"
+title: "¿Es Seguro Cabo? Guía Local de Seguridad 2026"
 pubDate: 2025-02-10
-description: "¿Es seguro Cabo? Gu&iacute;a honesta de seguridad 2026 desde el punto de vista local &mdash; estad&iacute;sticas de delitos, zonas seguras, fraudes a evitar, seguridad en el agua y consejos para familias. Actualizada regularmente."
+description: "¿Es seguro Cabo? Guía local de seguridad 2026 — estadísticas, zonas seguras, fraudes a evitar y consejos para familias."
 heroImage: "/images/travel-guide/los-cabos-international-airport-featured-image.jpg.webp"
 heroAlt: "¿Es Seguro Cabo San Lucas?"
 category: "Traveling to Cabo"
 categoryLink: "/es/travel-guide-traveling/"
 activeSubmenu: "traveling"
-bestTime: "Todo el año &mdash; Cabo es seguro en cualquier temporada"
+bestTime: "Todo el año — Cabo es seguro en cualquier temporada"
 relatedActivity: "/es/shuttle-service/"
 sidebarType: "default"
 ---

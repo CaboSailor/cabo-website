@@ -1,5 +1,5 @@
 ---
-title: "Los Mejores Lugares de Snorkel y Buceo en Cabo San Lucas 2026 — Recomendaciones de un Experto Local"
+title: "Mejores Lugares de Snorkel y Buceo en Cabo 2026"
 pubDate: 2025-03-01
 description: "Descubre los mejores lugares de snorkel y buceo en Cabo en 2026 con tips de un experto local. De Pelican Rock a Cabo Pulmo. ¡Conoce nuestra flota y reserva un tour!"
 heroImage: "/images/blog/snorkelers-enjoying-a-sunny-boat-ride.png"

@@ -1,5 +1,5 @@
 ---
-title: "Comida Tradicional de Cabo San Lucas que Debes Probar"
+title: "Comida Tradicional de Cabo que Debes Probar"
 pubDate: 2018-01-17
 description: "Las comidas tradicionales que debes probar en Cabo — almejas chocolatas, tacos de pescado, marlin ahumado, tamales, pitahaya y bebidas locales como el Clamato y la Damiana."
 heroImage: "/images/travel-guide/mexican-clams.jpg"

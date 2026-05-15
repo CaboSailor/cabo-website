@@ -1,13 +1,13 @@
 ---
-title: "Tour de Snorkel en Bah&iacute;a Chileno — El Para&iacute;so Submarino de Cabo"
+title: "Snorkel en Bahía Chileno — Paraíso Submarino"
 pubDate: 2023-03-10
-description: "Explora Bah&iacute;a Chileno en un tour de snorkel en Cabo — agua cristalina, peces tropicales, tortugas marinas y las mejores condiciones de Los Cabos."
+description: "Explora Bahía Chileno en un tour de snorkel en Cabo — agua cristalina, peces tropicales, tortugas marinas y las mejores condiciones de Los Cabos."
 heroImage: "/images/travel-guide/snorkeling-1.jpg"
-heroAlt: "Snorkel en Bah&iacute;a Chileno"
+heroAlt: "Snorkel en Bahía Chileno"
 category: "Activities"
 categoryLink: "/es/travel-guide-activities/"
 activeSubmenu: "activities"
-bestTime: "Todo el año — agua m&aacute;s c&aacute;lida de mayo a octubre"
+bestTime: "Todo el año — agua más cálida de mayo a octubre"
 sidebarType: "snorkeling"
 ---
 

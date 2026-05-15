@@ -1,5 +1,5 @@
 ---
-title: "Todos Santos from Cabo — Day Trip Guide to the Pueblo Mágico"
+title: "Todos Santos from Cabo — Day Trip Guide"
 pubDate: 2026-04-23
 description: "Todos Santos is Baja's artsy pueblo mágico — just 1 hour from Cabo. Art galleries, Hotel California, beaches and how to do it in a day. Local's guide."
 heroImage: "/images/blog/hotel-california-at-sunset.png"

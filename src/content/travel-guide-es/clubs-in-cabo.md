@@ -1,13 +1,13 @@
 ---
 title: "12 Clubs Famosos en Cabo para tu Noche de Fiesta"
 pubDate: 2025-03-20
-description: "Los mejores antros en Cabo San Lucas — El Squid Roe, Mandala, La Vaquita, Mango Deck y m&aacute;s. D&oacute;nde bailar, beber y festejar en 2026."
+description: "Los mejores antros en Cabo San Lucas — El Squid Roe, Mandala, La Vaquita, Mango Deck y más. Dónde bailar, beber y festejar en 2026."
 heroImage: "/images/travel-guide/most-famous-clubs-in-cabo-for-night.jpg"
 heroAlt: "Ambiente de antro en Cabo San Lucas"
 category: "Culture & Food"
 categoryLink: "/es/travel-guide-culture/"
 activeSubmenu: "culture"
-bestTime: "Todo el a&ntilde;o — los antros de Cabo est&aacute;n llenos cada noche"
+bestTime: "Todo el año — los antros de Cabo están llenos cada noche"
 relatedActivity: "/es/private-sunset/"
 sidebarType: "default"
 ---

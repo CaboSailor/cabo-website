@@ -1,13 +1,13 @@
 ---
-title: "Cabo vs Punta Cana — &iquest;Cu&aacute;l Destino es para Ti?"
+title: "Cabo vs Punta Cana — ¿Cuál Destino es para Ti?"
 pubDate: 2025-09-20
-description: "Cabo vs Punta Cana comparados — geograf&iacute;a, playas, clima, costo, gastronom&iacute;a y vida nocturna. Descubre cu&aacute;l destino de vacaciones 2026 va con tu estilo."
+description: "Cabo vs Punta Cana comparados — geografía, playas, clima, costo, gastronomía y vida nocturna. Descubre cuál destino de vacaciones 2026 va con tu estilo."
 heroImage: "/images/travel-guide/cabo-vs-punta-cana-which-destination.webp"
-heroAlt: "Comparaci&oacute;n entre los destinos Cabo y Punta Cana"
+heroAlt: "Comparación entre los destinos Cabo y Punta Cana"
 category: "Traveling to Cabo"
 categoryLink: "/es/travel-guide-traveling/"
 activeSubmenu: "traveling"
-bestTime: "Todo el a&ntilde;o — ambos destinos brillan en distintas temporadas"
+bestTime: "Todo el año — ambos destinos brillan en distintas temporadas"
 sidebarType: "default"
 ---
 

@@ -1,13 +1,13 @@
 ---
-title: "Snorkel en Playa del Amor &mdash; El Mejor Lugar Submarino de Cabo"
+title: "Snorkel en Playa del Amor — Spot Submarino"
 pubDate: 2026-04-23
-description: "Gu&iacute;a completa de snorkel en Playa del Amor &mdash; c&oacute;mo llegar, vida marina, mejor &eacute;poca, qu&eacute; llevar y c&oacute;mo se compara con otros puntos de snorkel en Cabo."
+description: "Guía completa de snorkel en Playa del Amor — cómo llegar, vida marina, mejor época, qué llevar y cómo se compara con otros puntos de snorkel en Cabo."
 heroImage: "/images/travel-guide/snorkeling-5.jpg.webp"
 heroAlt: "Snorkel en Playa del Amor en Cabo San Lucas"
 category: "Activities"
 categoryLink: "/es/travel-guide-activities/"
 activeSubmenu: "activities"
-bestTime: "Mayo&ndash;Nov &mdash; agua m&aacute;s c&aacute;lida y mejor visibilidad"
+bestTime: "Mayo–Nov — agua más cálida y mejor visibilidad"
 sidebarType: "snorkeling"
 ---
 

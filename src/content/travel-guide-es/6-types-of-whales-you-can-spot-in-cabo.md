@@ -1,13 +1,13 @@
 ---
-title: "6 Especies de Ballenas que Puedes Ver en Cabo San Lucas (2026)"
+title: "6 Especies de Ballenas en Cabo San Lucas (2026)"
 pubDate: 2026-04-23
-description: "Jorobada, gris, azul, rorcual, cachalote, orca — las 6 especies de ballenas que puedes ver en Cabo San Lucas. Cu&aacute;ndo, d&oacute;nde y c&oacute;mo identificar a cada una."
+description: "Jorobada, gris, azul, rorcual, cachalote, orca — las 6 especies de ballenas que puedes ver en Cabo San Lucas. Cuándo, dónde y cómo identificar a cada una."
 heroImage: "/images/blog/cabo-whale-watching-humpback.jpg"
 heroAlt: "Ballena jorobada saltando cerca de Cabo San Lucas"
 category: "Activities"
 categoryLink: "/es/travel-guide-activities/"
 activeSubmenu: "activities"
-bestTime: "Dic–Abr — temporada alta de ballenas, jorobadas y grises son las m&aacute;s comunes"
+bestTime: "Dic–Abr — temporada alta de ballenas, jorobadas y grises son las más comunes"
 sidebarType: "default"
 ---
 
