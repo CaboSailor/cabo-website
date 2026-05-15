@@ -9,7 +9,7 @@ The `astro-test/` directory has been retired — all source code was moved to th
 Deployment is automated via **GitHub Actions** to **FastComet** hosting (Apache).
 
 - Pushing to `main` triggers a build and FTP deploy (`.github/workflows/deploy.yml`).
-- The built site (`dist/`) is deployed to the `new.cabosailing.com` subdomain.
+- The built site (`dist/`) is deployed straight to production at `cabosailing.com` (FTP path `/home/cabosail/public_html`).
 - FTP credentials are stored as GitHub repository secrets: `FTP_SERVER`, `FTP_USERNAME`, `FTP_PASSWORD`.
 - 301 redirects are in `public/.htaccess` (Apache RewriteRule format). These only work on the deployed server, not the Astro dev/preview server.
 
