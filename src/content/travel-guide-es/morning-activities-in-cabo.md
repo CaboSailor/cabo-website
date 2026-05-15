@@ -5,7 +5,7 @@ description: "Lev&aacute;ntate con el sol y disfruta las mejores actividades mat
 heroImage: "/images/travel-guide/morning-activities-cabo.jpg"
 heroAlt: "Mañana temprano en Cabo San Lucas"
 category: "Activities"
-categoryLink: "/es/travel-guide-activities"
+categoryLink: "/es/travel-guide-activities/"
 activeSubmenu: "activities"
 bestTime: "Todo el año — las mañanas son agradables en cada temporada"
 sidebarType: "default"

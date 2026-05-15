@@ -5,7 +5,7 @@ description: "Cabo vs Hawaii comparados — clima, playas, actividades, costo, g
 heroImage: "/images/travel-guide/cabo-vs-hawaii-which-vacation-spot.webp"
 heroAlt: "Comparaci&oacute;n de vacaciones entre Cabo y Hawaii"
 category: "Traveling to Cabo"
-categoryLink: "/es/travel-guide-traveling"
+categoryLink: "/es/travel-guide-traveling/"
 activeSubmenu: "traveling"
 bestTime: "Todo el a&ntilde;o — cada destino tiene sus propias temporadas altas"
 sidebarType: "default"

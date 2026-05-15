@@ -5,7 +5,7 @@ description: "Driving LA to Cabo — distance, time, border crossing, safety, be
 heroImage: "/images/travel-guide/fun-activities-cabo.jpg.webp"
 heroAlt: "Highway through the Baja California desert"
 category: "Traveling to Cabo"
-categoryLink: "/travel-guide-traveling"
+categoryLink: "/travel-guide-traveling/"
 activeSubmenu: "traveling"
 bestTime: "Oct–May — cooler desert temps, less rain"
 sidebarType: "default"

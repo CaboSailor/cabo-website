@@ -5,10 +5,10 @@ description: "Where to shop in Cabo — luxury malls, artisan markets, glass fac
 heroImage: "/images/travel-guide/best-destinations-for-shopp.png"
 heroAlt: "Shopping in Cabo San Lucas"
 category: "Activities"
-categoryLink: "/travel-guide-activities"
+categoryLink: "/travel-guide-activities/"
 activeSubmenu: "activities"
 bestTime: "Year-round — shops and markets are open every day"
-relatedActivity: "/shared-snorkeling"
+relatedActivity: "/shared-snorkeling/"
 sidebarType: "default"
 ---
 

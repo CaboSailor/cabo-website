@@ -5,10 +5,10 @@ description: "Plan an unforgettable birthday in Cabo — fine dining, yacht adve
 heroImage: "/images/blog/celebration-on-the-yacht-under-the-sun.webp"
 heroAlt: "Birthday celebration on a yacht under the sun in Cabo San Lucas"
 category: "Activities"
-categoryLink: "/travel-guide-activities"
+categoryLink: "/travel-guide-activities/"
 activeSubmenu: "activities"
 bestTime: "Year-round — Cabo celebrates every season"
-relatedActivity: "/bachelorette"
+relatedActivity: "/bachelorette/"
 sidebarType: "default"
 ---
 

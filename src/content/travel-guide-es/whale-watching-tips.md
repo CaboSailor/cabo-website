@@ -5,10 +5,10 @@ description: "Tips para avistamiento de ballenas en Cabo — mejor temporada, es
 heroImage: "/images/blog/humpback-whale-breaching-in-vibrant-ocean.png"
 heroAlt: "Ballena jorobada saltando del agua en el oc&eacute;ano vibrante"
 category: "Attractions"
-categoryLink: "/es/travel-guide-attractions"
+categoryLink: "/es/travel-guide-attractions/"
 activeSubmenu: "attractions"
 bestTime: "Dic–Abr — temporada alta de ballenas"
-relatedActivity: "/es/whale-watching"
+relatedActivity: "/es/whale-watching/"
 sidebarType: "default"
 ---
 

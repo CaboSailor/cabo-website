@@ -5,7 +5,7 @@ description: "Cabo San Lucas para adultos mayores &mdash; cruceros tranquilos, p
 heroImage: "/images/travel-guide/fun-activities-cabo.jpg.webp"
 heroAlt: "Pareja mayor en un crucero al atardecer en Cabo"
 category: "Traveling to Cabo"
-categoryLink: "/es/travel-guide-traveling"
+categoryLink: "/es/travel-guide-traveling/"
 activeSubmenu: "traveling"
 bestTime: "Nov&ndash;Abr &mdash; temperaturas c&aacute;lidas, secas y c&oacute;modas"
 sidebarType: "default"

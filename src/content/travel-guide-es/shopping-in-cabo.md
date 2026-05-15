@@ -5,10 +5,10 @@ description: "Dónde comprar en Cabo — plazas de lujo, mercados artesanales, f
 heroImage: "/images/travel-guide/best-destinations-for-shopp.png"
 heroAlt: "De compras en Cabo San Lucas"
 category: "Activities"
-categoryLink: "/es/travel-guide-activities"
+categoryLink: "/es/travel-guide-activities/"
 activeSubmenu: "activities"
 bestTime: "Todo el año — tiendas y mercados abren todos los días"
-relatedActivity: "/es/shared-snorkeling"
+relatedActivity: "/es/shared-snorkeling/"
 sidebarType: "default"
 ---
 

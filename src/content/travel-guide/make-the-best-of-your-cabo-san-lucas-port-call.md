@@ -5,7 +5,7 @@ description: "Cruise day in Cabo? Maximize your hours ashore — best short tour
 heroImage: "/images/travel-guide/fun-activities-cabo.jpg.webp"
 heroAlt: "Cabo San Lucas Cruise Port"
 category: "Traveling to Cabo"
-categoryLink: "/travel-guide-traveling"
+categoryLink: "/travel-guide-traveling/"
 activeSubmenu: "traveling"
 bestTime: "Oct–Apr — peak cruise season, best weather"
 sidebarType: "default"

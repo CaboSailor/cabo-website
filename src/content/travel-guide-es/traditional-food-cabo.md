@@ -5,10 +5,10 @@ description: "Las comidas tradicionales que debes probar en Cabo — almejas cho
 heroImage: "/images/travel-guide/mexican-clams.jpg"
 heroAlt: "Almejas chocolatas tradicionales de Cabo"
 category: "Culture & Food"
-categoryLink: "/es/travel-guide-culture"
+categoryLink: "/es/travel-guide-culture/"
 activeSubmenu: "culture"
 bestTime: "Todo el año — mariscos frescos y cocina local en cada temporada"
-relatedActivity: "/es/private-sunset"
+relatedActivity: "/es/private-sunset/"
 sidebarType: "default"
 ---
 

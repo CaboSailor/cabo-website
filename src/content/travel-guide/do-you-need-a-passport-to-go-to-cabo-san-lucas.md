@@ -5,7 +5,7 @@ description: "Yes, US and Canadian citizens need a passport to enter Mexico by a
 heroImage: "/images/travel-guide/los-cabos-international-airport-featured-image.jpg.webp"
 heroAlt: "Los Cabos International Airport terminal"
 category: "Traveling to Cabo"
-categoryLink: "/travel-guide-traveling"
+categoryLink: "/travel-guide-traveling/"
 activeSubmenu: "traveling"
 bestTime: "Year-round — entry requirements don't change by season"
 sidebarType: "default"

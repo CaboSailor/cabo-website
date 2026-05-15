@@ -5,7 +5,7 @@ description: "La Paz vs. Cabo San Lucas compared — beaches, activities, prices
 heroImage: "/images/la-paz/la-paz-bcs.webp"
 heroAlt: "La Paz vs Cabo San Lucas comparison"
 category: "Traveling to Cabo"
-categoryLink: "/travel-guide-traveling"
+categoryLink: "/travel-guide-traveling/"
 activeSubmenu: "traveling"
 bestTime: "Year-round — both destinations have great weather"
 sidebarType: "default"

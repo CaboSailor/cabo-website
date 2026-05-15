@@ -5,7 +5,7 @@ description: "Tour de snorkel en Pelican Rock — explora el mejor punto submari
 heroImage: "/images/travel-guide/42-f-2-1.jpg"
 heroAlt: "Snorkel en Pelican Rock en Cabo San Lucas"
 category: "Activities"
-categoryLink: "/es/travel-guide-activities"
+categoryLink: "/es/travel-guide-activities/"
 activeSubmenu: "activities"
 bestTime: "Todo el año — el agua m&aacute;s tranquila de la bah&iacute;a"
 sidebarType: "snorkeling"

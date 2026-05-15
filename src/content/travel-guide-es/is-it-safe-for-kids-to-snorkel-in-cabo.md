@@ -5,7 +5,7 @@ description: "S&iacute; — con la playa correcta, el tour adecuado y buena prep
 heroImage: "/images/travel-guide/snorkeling-5.jpg.webp"
 heroAlt: "Familia haciendo snorkel en Cabo San Lucas"
 category: "Activities"
-categoryLink: "/es/travel-guide-activities"
+categoryLink: "/es/travel-guide-activities/"
 activeSubmenu: "activities"
 bestTime: "May–Oct — agua m&aacute;s c&aacute;lida y tranquila"
 sidebarType: "snorkeling"

@@ -5,7 +5,7 @@ description: "&iquest;Planeas un babymoon en Cabo? Actividades seguras durante e
 heroImage: "/images/travel-guide/fun-activities-cabo.jpg.webp"
 heroAlt: "Babymoon en Cabo San Lucas"
 category: "Traveling to Cabo"
-categoryLink: "/es/travel-guide-traveling"
+categoryLink: "/es/travel-guide-traveling/"
 activeSubmenu: "traveling"
 bestTime: "Nov–May — clima c&aacute;lido, seco y con poca humedad"
 sidebarType: "default"

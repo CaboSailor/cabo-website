@@ -5,7 +5,7 @@ description: "Cabo doesn't have to be expensive. 2026 budget guide — where to 
 heroImage: "/images/travel-guide/fun-activities-cabo.jpg.webp"
 heroAlt: "Street food in downtown Cabo San Lucas"
 category: "Traveling to Cabo"
-categoryLink: "/travel-guide-traveling"
+categoryLink: "/travel-guide-traveling/"
 activeSubmenu: "traveling"
 bestTime: "May–Jun and Sep–Oct — shoulder season, lowest prices"
 sidebarType: "default"

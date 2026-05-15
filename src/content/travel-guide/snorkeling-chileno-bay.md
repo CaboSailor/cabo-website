@@ -5,7 +5,7 @@ description: "Explore Chileno Bay on a Cabo snorkeling tour — crystal-clear wa
 heroImage: "/images/blog/joyful-moments-by-the-sparkling-sea.webp"
 heroAlt: "Joyful moments snorkeling by the sparkling sea at Chileno Bay"
 category: "Activities"
-categoryLink: "/travel-guide-activities"
+categoryLink: "/travel-guide-activities/"
 activeSubmenu: "activities"
 bestTime: "Year-round — warmest water May–Oct"
 sidebarType: "snorkeling"

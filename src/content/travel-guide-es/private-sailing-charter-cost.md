@@ -5,10 +5,10 @@ description: "Precios de charters privados de velero en Cabo — costos de medio
 heroImage: "/images/travel-guide/how-much-does-a-private-sailing-charter-in-cabo-san-lucas-cost.webp"
 heroAlt: "Charter privado de velero en Cabo San Lucas"
 category: "Activities"
-categoryLink: "/es/travel-guide-activities"
+categoryLink: "/es/travel-guide-activities/"
 activeSubmenu: "activities"
 bestTime: "Todo el a&ntilde;o — mejores ofertas mayo–octubre"
-relatedActivity: "/es/tours"
+relatedActivity: "/es/tours/"
 sidebarType: "default"
 ---
 

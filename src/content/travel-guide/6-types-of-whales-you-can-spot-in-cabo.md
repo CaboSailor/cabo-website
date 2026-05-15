@@ -5,7 +5,7 @@ description: "Humpback, gray, blue, fin, sperm, orca — the 6 whale species you
 heroImage: "/images/blog/cabo-whale-watching-humpback.jpg"
 heroAlt: "Humpback whale breaching near Cabo San Lucas"
 category: "Activities"
-categoryLink: "/travel-guide-activities"
+categoryLink: "/travel-guide-activities/"
 activeSubmenu: "activities"
 bestTime: "Dec–Apr — peak whale season, humpbacks and grays most common"
 sidebarType: "default"

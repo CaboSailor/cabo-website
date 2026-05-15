@@ -5,7 +5,7 @@ description: "Todos Santos es el pueblo m&aacute;gico m&aacute;s art&iacute;stic
 heroImage: "/images/blog/hotel-california-at-sunset.png"
 heroAlt: "Hotel California al atardecer en Todos Santos"
 category: "Attractions"
-categoryLink: "/es/travel-guide-attractions"
+categoryLink: "/es/travel-guide-attractions/"
 activeSubmenu: "attractions"
 bestTime: "Nov–May — c&aacute;lido y seco, perfecto para caminar el pueblo"
 sidebarType: "default"

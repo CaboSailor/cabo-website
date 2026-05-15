@@ -5,7 +5,7 @@ description: "Manejando de LA a Cabo &mdash; distancia, tiempo, cruce fronterizo
 heroImage: "/images/travel-guide/fun-activities-cabo.jpg.webp"
 heroAlt: "Carretera atravesando el desierto de Baja California"
 category: "Traveling to Cabo"
-categoryLink: "/es/travel-guide-traveling"
+categoryLink: "/es/travel-guide-traveling/"
 activeSubmenu: "traveling"
 bestTime: "Oct&ndash;May &mdash; temperaturas m&aacute;s frescas en el desierto, menos lluvia"
 sidebarType: "default"

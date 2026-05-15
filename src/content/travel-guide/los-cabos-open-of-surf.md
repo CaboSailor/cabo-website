@@ -5,7 +5,7 @@ description: "The Los Cabos Open of Surf at Zippers Beach — history, dates, ho
 heroImage: "/images/blog/surfer-riding-the-wave-along-the-coast.webp"
 heroAlt: "Surfer riding a wave along the Los Cabos coast"
 category: "Activities"
-categoryLink: "/travel-guide-activities"
+categoryLink: "/travel-guide-activities/"
 activeSubmenu: "activities"
 bestTime: "Jun — event typically held in early summer"
 sidebarType: "default"

@@ -7,16 +7,16 @@ import CarouselImage from '../components/CarouselImage.astro';
 import YachtIcon from '../components/YachtIcon.astro';
 
 const sharedTours = [
-  { href: '/shared-snorkeling', id: 'shared-snorkeling', label: 'Shared Snorkeling', tagline: '3 hrs · group of up to 14', alt: 'Shared Snorkeling tour in Cabo San Lucas' },
-  { href: '/shared-sunset',     id: 'shared-sunset',     label: 'Shared Sunset',     tagline: '2 hrs · group of up to 14', alt: 'Shared Sunset cruise in Cabo San Lucas' },
+  { href: '/shared-snorkeling/', id: 'shared-snorkeling', label: 'Shared Snorkeling', tagline: '3 hrs · group of up to 14', alt: 'Shared Snorkeling tour in Cabo San Lucas' },
+  { href: '/shared-sunset/',     id: 'shared-sunset',     label: 'Shared Sunset',     tagline: '2 hrs · group of up to 14', alt: 'Shared Sunset cruise in Cabo San Lucas' },
 ];
 
 const privateTours = [
-  { href: '/private-snorkeling', id: 'private-snorkeling', label: 'Private Snorkeling',     tagline: 'Sailboat or yacht · your group only', alt: 'Private Snorkeling charter in Cabo San Lucas' },
-  { href: '/private-sunset',     id: 'private-sunset',     label: 'Private Sunset',         tagline: 'Sailboat or yacht · your group only', alt: 'Private Sunset charter in Cabo San Lucas' },
-  { href: '/whale-watching',     id: 'whale-watching',     label: 'Private Whale Watching', tagline: 'Dec–Apr · your group only',           alt: 'Private Whale Watching tour in Cabo San Lucas' },
-  { href: '/bachelorette',       id: 'bachelorette-party', label: 'Bachelorette Party',     tagline: 'Decorated yacht · made for the bride', alt: 'Bachelorette Party charter in Cabo San Lucas' },
-  { href: '/scuba-diving',       id: 'scuba-diving',       label: 'Scuba Diving',           tagline: 'PADI dive boat · all levels',          alt: 'Scuba Diving tour in Cabo San Lucas' },
+  { href: '/private-snorkeling/', id: 'private-snorkeling', label: 'Private Snorkeling',     tagline: 'Sailboat or yacht · your group only', alt: 'Private Snorkeling charter in Cabo San Lucas' },
+  { href: '/private-sunset/',     id: 'private-sunset',     label: 'Private Sunset',         tagline: 'Sailboat or yacht · your group only', alt: 'Private Sunset charter in Cabo San Lucas' },
+  { href: '/whale-watching/',     id: 'whale-watching',     label: 'Private Whale Watching', tagline: 'Dec–Apr · your group only',           alt: 'Private Whale Watching tour in Cabo San Lucas' },
+  { href: '/bachelorette/',       id: 'bachelorette-party', label: 'Bachelorette Party',     tagline: 'Decorated yacht · made for the bride', alt: 'Bachelorette Party charter in Cabo San Lucas' },
+  { href: '/scuba-diving/',       id: 'scuba-diving',       label: 'Scuba Diving',           tagline: 'PADI dive boat · all levels',          alt: 'Scuba Diving tour in Cabo San Lucas' },
 ];
 
 const faqs = [
@@ -152,7 +152,7 @@ const faqSchema = JSON.stringify({
           <p class="text-slate-500 text-sm lg:text-base max-w-xl mx-auto">Every private charter starts with the same question. Here's the short version.</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6">
-          <a href="/sailing-cabo-san-lucas" class="group bg-white rounded-2xl p-6 lg:p-7 border border-border-light shadow-sm hover:shadow-md transition-shadow flex flex-col">
+          <a href="/sailing-cabo-san-lucas/" class="group bg-white rounded-2xl p-6 lg:p-7 border border-border-light shadow-sm hover:shadow-md transition-shadow flex flex-col">
             <div class="flex items-center gap-3 mb-3">
               <span class="material-symbols-outlined text-gold text-3xl">sailing</span>
               <h3 class="text-lg lg:text-xl font-serif text-navy">Sailboat</h3>
@@ -160,7 +160,7 @@ const faqSchema = JSON.stringify({
             <p class="text-slate-600 text-sm lg:text-base leading-relaxed mb-4">Quiet, romantic, closer to the water. Best for couples, intimate groups, and anyone who wants real sails-up sailing.</p>
             <span class="text-accent-gold text-sm font-bold uppercase tracking-widest mt-auto group-hover:underline">See the sailboats <span class="material-symbols-outlined text-base align-middle">arrow_forward</span></span>
           </a>
-          <a href="/yacht-charter-cabo" class="group bg-white rounded-2xl p-6 lg:p-7 border border-border-light shadow-sm hover:shadow-md transition-shadow flex flex-col">
+          <a href="/yacht-charter-cabo/" class="group bg-white rounded-2xl p-6 lg:p-7 border border-border-light shadow-sm hover:shadow-md transition-shadow flex flex-col">
             <div class="flex items-center gap-3 mb-3">
               <YachtIcon class="text-gold text-3xl" />
               <h3 class="text-lg lg:text-xl font-serif text-navy">Yacht</h3>

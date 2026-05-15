@@ -5,7 +5,7 @@ description: "Gu&iacute;a completa de snorkel en Playa del Amor &mdash; c&oacute
 heroImage: "/images/travel-guide/snorkeling-5.jpg.webp"
 heroAlt: "Snorkel en Playa del Amor en Cabo San Lucas"
 category: "Activities"
-categoryLink: "/es/travel-guide-activities"
+categoryLink: "/es/travel-guide-activities/"
 activeSubmenu: "activities"
 bestTime: "Mayo&ndash;Nov &mdash; agua m&aacute;s c&aacute;lida y mejor visibilidad"
 sidebarType: "snorkeling"

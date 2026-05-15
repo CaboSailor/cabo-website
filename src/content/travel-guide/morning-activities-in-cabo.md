@@ -5,7 +5,7 @@ description: "Rise with the sun and enjoy Cabo's best morning activities — fro
 heroImage: "/images/travel-guide/morning-activities-cabo.jpg"
 heroAlt: "Early morning in Cabo San Lucas"
 category: "Activities"
-categoryLink: "/travel-guide-activities"
+categoryLink: "/travel-guide-activities/"
 activeSubmenu: "activities"
 bestTime: "Year-round — mornings are pleasant in every season"
 sidebarType: "default"

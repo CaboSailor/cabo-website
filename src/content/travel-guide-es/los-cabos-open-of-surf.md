@@ -5,7 +5,7 @@ description: "El Los Cabos Open of Surf en Playa Zippers — historia, fechas, c
 heroImage: "/images/travel-guide/fun-activities-cabo.jpg.webp"
 heroAlt: "Surfistas compitiendo en el Los Cabos Open of Surf"
 category: "Activities"
-categoryLink: "/es/travel-guide-activities"
+categoryLink: "/es/travel-guide-activities/"
 activeSubmenu: "activities"
 bestTime: "Jun — el evento se realiza generalmente a inicios del verano"
 sidebarType: "default"

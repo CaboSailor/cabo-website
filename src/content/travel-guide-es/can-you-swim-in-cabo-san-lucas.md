@@ -5,10 +5,10 @@ description: "&iquest;Qu&eacute; playas de Cabo se pueden nadar y cu&aacute;les 
 heroImage: "/images/travel-guide/santa-maria-bay-featured-image.jpg.webp"
 heroAlt: "Nadando y haciendo snorkel en las aguas cristalinas de Cabo San Lucas"
 category: "Activities"
-categoryLink: "/es/travel-guide-activities"
+categoryLink: "/es/travel-guide-activities/"
 activeSubmenu: "activities"
 bestTime: "Todo el año — el agua es nadable en cualquier estaci&oacute;n"
-relatedActivity: "/es/private-snorkeling"
+relatedActivity: "/es/private-snorkeling/"
 sidebarType: "snorkeling"
 ---
 
@@ -107,7 +107,7 @@ La playa para nadar m&aacute;s larga de Cabo y la primera que descubre la mayor&
 
 ### Playa del Amor
 
-Solo accesible por taxi acu&aacute;tico o barco, escondida entre las rocas en Land's End. El lado del Mar de Cort&eacute;s es tranquilo, nadable y bellamente resguardado. El lado del Pac&iacute;fico &mdash; llamado Playa del Divorcio &mdash; se ve tentador pero las corrientes son extremadamente peligrosas. **Nunca nades del lado de Playa del Divorcio.** Pasamos por Playa del Amor en cada [crucero compartido de snorkel](/es/shared-snorkeling) y siempre es uno de los momentos m&aacute;s destacados.
+Solo accesible por taxi acu&aacute;tico o barco, escondida entre las rocas en Land's End. El lado del Mar de Cort&eacute;s es tranquilo, nadable y bellamente resguardado. El lado del Pac&iacute;fico &mdash; llamado Playa del Divorcio &mdash; se ve tentador pero las corrientes son extremadamente peligrosas. **Nunca nades del lado de Playa del Divorcio.** Pasamos por Playa del Amor en cada [crucero compartido de snorkel](/es/shared-snorkeling/) y siempre es uno de los momentos m&aacute;s destacados.
 
 ---
 
@@ -131,19 +131,19 @@ Aqu&iacute; es donde se pone realmente bueno. Estos tres lugares son a donde lle
 
 Una cala protegida en forma de herradura a lo largo del Corredor Tur&iacute;stico con certificaci&oacute;n Bandera Azul. El agua es tan clara que se siente como nadar dentro de un acuario. Peces &aacute;ngel, peces loro, peces globo, rayas &mdash; todos paseando por el arrecife justo debajo de la superficie.
 
-Esta es nuestra parada favorita en los [charters privados de snorkel](/es/private-snorkeling). Anclamos dentro de la bah&iacute;a y los hu&eacute;spedes nadan directamente desde el barco. Sin multitudes, sin prisas, solo t&uacute; y el arrecife. Es de esos lugares donde pierdes la noci&oacute;n del tiempo bajo el agua.
+Esta es nuestra parada favorita en los [charters privados de snorkel](/es/private-snorkeling/). Anclamos dentro de la bah&iacute;a y los hu&eacute;spedes nadan directamente desde el barco. Sin multitudes, sin prisas, solo t&uacute; y el arrecife. Es de esos lugares donde pierdes la noci&oacute;n del tiempo bajo el agua.
 
 ---
 
 ### Bah&iacute;a de Chileno &mdash; Confiable y Hermosa
 
-Otra playa Bandera Azul con entrada de arena, condiciones consistentemente tranquilas y un arrecife rocoso que atrae especies m&aacute;s grandes de lo que esperar&iacute;as &mdash; morenas, rayas, cardúmenes densos de peces tropicales. Paramos aqu&iacute; tanto en nuestros charters [privados](/es/private-snorkeling) como [compartidos](/es/shared-snorkeling). En un viaje privado, muchas veces combinamos Chileno con Santa Mar&iacute;a en una sola salida &mdash; comida, bar abierto y las dos mejores bah&iacute;as de Cabo, todo en un d&iacute;a.
+Otra playa Bandera Azul con entrada de arena, condiciones consistentemente tranquilas y un arrecife rocoso que atrae especies m&aacute;s grandes de lo que esperar&iacute;as &mdash; morenas, rayas, cardúmenes densos de peces tropicales. Paramos aqu&iacute; tanto en nuestros charters [privados](/es/private-snorkeling/) como [compartidos](/es/shared-snorkeling/). En un viaje privado, muchas veces combinamos Chileno con Santa Mar&iacute;a en una sola salida &mdash; comida, bar abierto y las dos mejores bah&iacute;as de Cabo, todo en un d&iacute;a.
 
 ---
 
 ### Pelican Rock &mdash; El Cl&aacute;sico Primer Snorkel
 
-Un corto viaje en barco desde la marina, justo al lado de El Arco. Aqu&iacute; es donde la mayor&iacute;a de los visitantes tienen su primer momento bajo el agua en Cabo. Lo suficientemente poco profundo para principiantes, lleno de peces coloridos y abanicos de mar, y siempre hay posibilidad de que pase nadando un lobo marino. Es parte del Parque Marino de Cabo San Lucas y la parada principal en nuestros [tours compartidos de snorkel en velero](/es/shared-snorkeling) &mdash; alrededor de 45 a 60 minutos en el agua antes de pasear frente al Arco.
+Un corto viaje en barco desde la marina, justo al lado de El Arco. Aqu&iacute; es donde la mayor&iacute;a de los visitantes tienen su primer momento bajo el agua en Cabo. Lo suficientemente poco profundo para principiantes, lleno de peces coloridos y abanicos de mar, y siempre hay posibilidad de que pase nadando un lobo marino. Es parte del Parque Marino de Cabo San Lucas y la parada principal en nuestros [tours compartidos de snorkel en velero](/es/shared-snorkeling/) &mdash; alrededor de 45 a 60 minutos en el agua antes de pasear frente al Arco.
 
 <div class="my-10 rounded-2xl overflow-hidden shadow-lg">
   <img alt="Playas Bandera Azul para nadar en Cabo San Lucas" class="w-full h-[300px] lg:h-[420px] object-cover" src="/images/travel-guide/blue-flag-swimming-beaches-in-cabo.jpeg.webp"/>
@@ -209,9 +209,9 @@ El sol de Cabo no es broma, especialmente en el agua donde los reflejos amplific
 
 Operamos los dos, as&iacute; que aqu&iacute; va la diferencia real:
 
-**Snorkel compartido** en nuestros [cruceros en velero](/es/shared-snorkeling) es la mejor relaci&oacute;n calidad-precio en Cabo. Grupo pequeño, velero a Pelican Rock, bar abierto, paseo frente al Arco. Social, relajado, divertido. Perfecto si eres pareja o viajero solo y quieres conocer gente y ver lo m&aacute;s destacado.
+**Snorkel compartido** en nuestros [cruceros en velero](/es/shared-snorkeling/) es la mejor relaci&oacute;n calidad-precio en Cabo. Grupo pequeño, velero a Pelican Rock, bar abierto, paseo frente al Arco. Social, relajado, divertido. Perfecto si eres pareja o viajero solo y quieres conocer gente y ver lo m&aacute;s destacado.
 
-**Snorkel privado** en un [charter privado](/es/private-snorkeling) es una experiencia totalmente diferente. Tu grupo, tu barco, tu horario. Llevamos a los grupos privados a Santa Mar&iacute;a y Chileno &mdash; las bah&iacute;as m&aacute;s tranquilas y pristinas que los tours compartidos no visitan. Tripulaci&oacute;n dedicada, todo el equipo de snorkel, bar abierto, comida. T&uacute; decides cu&aacute;nto tiempo te quedas en el agua y a d&oacute;nde ir despu&eacute;s.
+**Snorkel privado** en un [charter privado](/es/private-snorkeling/) es una experiencia totalmente diferente. Tu grupo, tu barco, tu horario. Llevamos a los grupos privados a Santa Mar&iacute;a y Chileno &mdash; las bah&iacute;as m&aacute;s tranquilas y pristinas que los tours compartidos no visitan. Tripulaci&oacute;n dedicada, todo el equipo de snorkel, bar abierto, comida. T&uacute; decides cu&aacute;nto tiempo te quedas en el agua y a d&oacute;nde ir despu&eacute;s.
 
 ---
 
@@ -232,13 +232,13 @@ En nuestros charters proporcionamos todo el equipo de snorkel, bar abierto y com
 
 ## El Plan Soñado: Cabo Pulmo
 
-Si quieres llevar tu snorkel a otro nivel, el Parque Nacional Marino Cabo Pulmo est&aacute; a unas dos horas al este. Es hogar de uno de los arrecifes de coral m&aacute;s antiguos de la costa oeste de Norteam&eacute;rica &mdash; un parque marino protegido con cardúmenes enormes de peces, tortugas marinas, rayas y una visibilidad que te dejar&aacute; con la boca abierta. Es un compromiso de d&iacute;a completo, pero los snorkelistas y buzos serios dicen que es lo mejor de todo su viaje a Cabo. Lo cubrimos en detalle en nuestra [gu&iacute;a de snorkel y buceo](/es/travel-guide/snorkeling-diving).
+Si quieres llevar tu snorkel a otro nivel, el Parque Nacional Marino Cabo Pulmo est&aacute; a unas dos horas al este. Es hogar de uno de los arrecifes de coral m&aacute;s antiguos de la costa oeste de Norteam&eacute;rica &mdash; un parque marino protegido con cardúmenes enormes de peces, tortugas marinas, rayas y una visibilidad que te dejar&aacute; con la boca abierta. Es un compromiso de d&iacute;a completo, pero los snorkelistas y buzos serios dicen que es lo mejor de todo su viaje a Cabo. Lo cubrimos en detalle en nuestra [gu&iacute;a de snorkel y buceo](/es/travel-guide/snorkeling-diving/).
 
 ---
 
 ## Avi&eacute;ntate al Agua
 
-La mejor manera de experimentar las playas para nadar de Cabo no es desde la arena &mdash; es desde el agua. Un charter te permite visitar Santa Mar&iacute;a, Chileno y Pelican Rock en un solo d&iacute;a, evitar los puntos de acceso saturados y nadar en lugares que la mayor&iacute;a de los visitantes nunca ven. Ya sea que te unas a un [crucero compartido](/es/shared-snorkeling) o tomes un [charter privado](/es/private-snorkeling) con tu grupo, nuestra tripulaci&oacute;n sabe exactamente d&oacute;nde est&aacute;n las mejores condiciones ese d&iacute;a. Lo hacemos cada mañana desde IGY Marina &mdash; es lo que amamos. [Mand&aacute;nos un mensaje](https://wa.me/526241439798) y te armamos el viaje correcto para ti.
+La mejor manera de experimentar las playas para nadar de Cabo no es desde la arena &mdash; es desde el agua. Un charter te permite visitar Santa Mar&iacute;a, Chileno y Pelican Rock en un solo d&iacute;a, evitar los puntos de acceso saturados y nadar en lugares que la mayor&iacute;a de los visitantes nunca ven. Ya sea que te unas a un [crucero compartido](/es/shared-snorkeling/) o tomes un [charter privado](/es/private-snorkeling/) con tu grupo, nuestra tripulaci&oacute;n sabe exactamente d&oacute;nde est&aacute;n las mejores condiciones ese d&iacute;a. Lo hacemos cada mañana desde IGY Marina &mdash; es lo que amamos. [Mand&aacute;nos un mensaje](https://wa.me/526241439798) y te armamos el viaje correcto para ti.
 
 <script type="application/ld+json">
 {

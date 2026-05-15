@@ -5,7 +5,7 @@ description: "Complete Lover's Beach snorkeling guide — how to get there, mari
 heroImage: "/images/blog/vibrant-underwater-reef-canyon-scene.webp"
 heroAlt: "Vibrant underwater reef canyon scene at Lover's Beach in Cabo San Lucas"
 category: "Activities"
-categoryLink: "/travel-guide-activities"
+categoryLink: "/travel-guide-activities/"
 activeSubmenu: "activities"
 bestTime: "May–Nov — warmest water, best visibility"
 sidebarType: "snorkeling"

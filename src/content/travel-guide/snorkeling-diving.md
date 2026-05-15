@@ -5,10 +5,10 @@ description: "Discover Cabo's best snorkeling & diving spots in 2026 with local 
 heroImage: "/images/blog/snorkelers-enjoying-a-sunny-boat-ride.png"
 heroAlt: "Snorkelers enjoying a sunny boat ride in Cabo"
 category: "Activities"
-categoryLink: "/travel-guide-activities"
+categoryLink: "/travel-guide-activities/"
 activeSubmenu: "activities"
 bestTime: "May–November for calm water & best visibility"
-relatedActivity: "/private-snorkeling"
+relatedActivity: "/private-snorkeling/"
 sidebarType: "snorkeling"
 hasBoatCards: true
 ---

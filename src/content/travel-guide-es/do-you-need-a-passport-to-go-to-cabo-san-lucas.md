@@ -5,7 +5,7 @@ description: "S&iacute;, los ciudadanos de EE. UU. y Canad&aacute; necesitan pas
 heroImage: "/images/travel-guide/los-cabos-international-airport-featured-image.jpg.webp"
 heroAlt: "Terminal del Aeropuerto Internacional de Los Cabos"
 category: "Traveling to Cabo"
-categoryLink: "/es/travel-guide-traveling"
+categoryLink: "/es/travel-guide-traveling/"
 activeSubmenu: "traveling"
 bestTime: "Todo el a&ntilde;o — los requisitos de entrada no cambian por temporada"
 sidebarType: "default"

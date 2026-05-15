@@ -5,7 +5,7 @@ description: "Jorobada, gris, azul, rorcual, cachalote, orca — las 6 especies 
 heroImage: "/images/blog/cabo-whale-watching-humpback.jpg"
 heroAlt: "Ballena jorobada saltando cerca de Cabo San Lucas"
 category: "Activities"
-categoryLink: "/es/travel-guide-activities"
+categoryLink: "/es/travel-guide-activities/"
 activeSubmenu: "activities"
 bestTime: "Dic–Abr — temporada alta de ballenas, jorobadas y grises son las m&aacute;s comunes"
 sidebarType: "default"

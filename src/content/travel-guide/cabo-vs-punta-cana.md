@@ -5,7 +5,7 @@ description: "Cabo vs Punta Cana compared — geography, beaches, climate, cost,
 heroImage: "/images/travel-guide/cabo-vs-punta-cana-which-destination.webp"
 heroAlt: "Cabo vs Punta Cana destination comparison"
 category: "Traveling to Cabo"
-categoryLink: "/travel-guide-traveling"
+categoryLink: "/travel-guide-traveling/"
 activeSubmenu: "traveling"
 bestTime: "Year-round — both destinations shine in different seasons"
 sidebarType: "default"

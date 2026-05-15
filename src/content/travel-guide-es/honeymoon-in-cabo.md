@@ -5,10 +5,10 @@ description: "Planea la luna de miel perfecta en Cabo — resorts rom&aacute;nti
 heroImage: "/images/travel-guide/helpful-travel-tips-for-couples.jpg"
 heroAlt: "Pareja en luna de miel en Cabo San Lucas"
 category: "Culture & Food"
-categoryLink: "/es/travel-guide-culture"
+categoryLink: "/es/travel-guide-culture/"
 activeSubmenu: "culture"
 bestTime: "Nov–May — c&aacute;lido, seco y perfecto para el romance"
-relatedActivity: "/es/private-sunset"
+relatedActivity: "/es/private-sunset/"
 sidebarType: "default"
 ---
 

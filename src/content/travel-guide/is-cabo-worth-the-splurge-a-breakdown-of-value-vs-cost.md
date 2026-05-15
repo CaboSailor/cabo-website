@@ -5,7 +5,7 @@ description: "Is Cabo San Lucas worth the price in 2026? Honest breakdown of wha
 heroImage: "/images/travel-guide/fun-activities-cabo.jpg.webp"
 heroAlt: "Is Cabo Worth It? Honest Value vs. Cost Breakdown"
 category: "Traveling to Cabo"
-categoryLink: "/travel-guide-traveling"
+categoryLink: "/travel-guide-traveling/"
 activeSubmenu: "traveling"
 bestTime: "Year-round — best deals May–Jun and Sep–Oct"
 sidebarType: "default"

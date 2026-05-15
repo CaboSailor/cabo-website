@@ -5,10 +5,10 @@ description: "The 7 best sunset cruises in Cabo — luxury sailing, party boats,
 heroImage: "/images/travel-guide/x-of-the-best-sunset-cruise.webp"
 heroAlt: "Sunset cruise in Cabo San Lucas"
 category: "Activities"
-categoryLink: "/travel-guide-activities"
+categoryLink: "/travel-guide-activities/"
 activeSubmenu: "activities"
 bestTime: "Year-round — Cabo has 300+ days of sunshine"
-relatedActivity: "/private-sunset"
+relatedActivity: "/private-sunset/"
 sidebarType: "default"
 ---
 

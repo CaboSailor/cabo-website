@@ -5,10 +5,10 @@ description: "Descubre los mejores lugares de snorkel y buceo en Cabo en 2026 co
 heroImage: "/images/blog/snorkelers-enjoying-a-sunny-boat-ride.png"
 heroAlt: "Snorkelistas disfrutando un paseo en barco soleado en Cabo"
 category: "Activities"
-categoryLink: "/es/travel-guide-activities"
+categoryLink: "/es/travel-guide-activities/"
 activeSubmenu: "activities"
 bestTime: "Mayo–Noviembre para agua calmada y mejor visibilidad"
-relatedActivity: "/es/private-snorkeling"
+relatedActivity: "/es/private-snorkeling/"
 sidebarType: "snorkeling"
 hasBoatCards: true
 ---

@@ -5,10 +5,10 @@ description: "The best nightclubs in Cabo San Lucas — El Squid Roe, Mandala, L
 heroImage: "/images/travel-guide/most-famous-clubs-in-cabo-for-night.jpg"
 heroAlt: "Nightclub scene in Cabo San Lucas"
 category: "Culture & Food"
-categoryLink: "/travel-guide-culture"
+categoryLink: "/travel-guide-culture/"
 activeSubmenu: "culture"
 bestTime: "Year-round — Cabo's clubs are busy every night"
-relatedActivity: "/private-sunset"
+relatedActivity: "/private-sunset/"
 sidebarType: "default"
 ---
 

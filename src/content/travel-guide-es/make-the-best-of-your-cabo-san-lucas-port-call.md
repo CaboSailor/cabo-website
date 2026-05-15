@@ -5,7 +5,7 @@ description: "&iquest;D&iacute;a de crucero en Cabo? Aprovecha al m&aacute;ximo 
 heroImage: "/images/travel-guide/fun-activities-cabo.jpg.webp"
 heroAlt: "Puerto de Cruceros de Cabo San Lucas"
 category: "Traveling to Cabo"
-categoryLink: "/es/travel-guide-traveling"
+categoryLink: "/es/travel-guide-traveling/"
 activeSubmenu: "traveling"
 bestTime: "Oct–Abr — temporada alta de cruceros, mejor clima"
 sidebarType: "default"

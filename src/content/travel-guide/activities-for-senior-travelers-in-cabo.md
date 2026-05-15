@@ -5,7 +5,7 @@ description: "Cabo San Lucas for seniors — gentle boat cruises, accessible bea
 heroImage: "/images/travel-guide/fun-activities-cabo.jpg.webp"
 heroAlt: "Senior couple on a sunset cruise in Cabo"
 category: "Traveling to Cabo"
-categoryLink: "/travel-guide-traveling"
+categoryLink: "/travel-guide-traveling/"
 activeSubmenu: "traveling"
 bestTime: "Nov–Apr — warm, dry, comfortable temperatures"
 sidebarType: "default"

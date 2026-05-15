@@ -5,7 +5,7 @@ description: "Todos Santos is Baja's artsy pueblo mágico — just 1 hour from C
 heroImage: "/images/blog/hotel-california-at-sunset.png"
 heroAlt: "Hotel California at sunset in Todos Santos"
 category: "Attractions"
-categoryLink: "/travel-guide-attractions"
+categoryLink: "/travel-guide-attractions/"
 activeSubmenu: "attractions"
 bestTime: "Nov–May — warm and dry, perfect for walking the town"
 sidebarType: "default"

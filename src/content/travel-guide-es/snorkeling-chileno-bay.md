@@ -5,7 +5,7 @@ description: "Explora Bah&iacute;a Chileno en un tour de snorkel en Cabo — agu
 heroImage: "/images/travel-guide/snorkeling-1.jpg"
 heroAlt: "Snorkel en Bah&iacute;a Chileno"
 category: "Activities"
-categoryLink: "/es/travel-guide-activities"
+categoryLink: "/es/travel-guide-activities/"
 activeSubmenu: "activities"
 bestTime: "Todo el año — agua m&aacute;s c&aacute;lida de mayo a octubre"
 sidebarType: "snorkeling"

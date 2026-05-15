@@ -5,7 +5,7 @@ description: "Do you need a boating license in Cabo? Rules for small boats, yach
 heroImage: "/images/blog/libreta-del-mar-mexico.webp"
 heroAlt: "Libreta del Mar — Mexico's official boating license document"
 category: "Activities"
-categoryLink: "/travel-guide-activities"
+categoryLink: "/travel-guide-activities/"
 activeSubmenu: "activities"
 bestTime: "Year-round — calm seas Oct–Jun"
 sidebarType: "default"

@@ -7,16 +7,16 @@ import CarouselImage from '../../components/CarouselImage.astro';
 import YachtIcon from '../../components/YachtIcon.astro';
 
 const sharedTours = [
-  { href: '/es/shared-snorkeling', id: 'shared-snorkeling', label: 'Snorkel Compartido',   tagline: '3 hrs · grupo hasta 14', alt: 'Tour compartido de snorkel en Cabo San Lucas' },
-  { href: '/es/shared-sunset',     id: 'shared-sunset',     label: 'Atardecer Compartido', tagline: '2 hrs · grupo hasta 14', alt: 'Crucero compartido al atardecer en Cabo San Lucas' },
+  { href: '/es/shared-snorkeling/', id: 'shared-snorkeling', label: 'Snorkel Compartido',   tagline: '3 hrs · grupo hasta 14', alt: 'Tour compartido de snorkel en Cabo San Lucas' },
+  { href: '/es/shared-sunset/',     id: 'shared-sunset',     label: 'Atardecer Compartido', tagline: '2 hrs · grupo hasta 14', alt: 'Crucero compartido al atardecer en Cabo San Lucas' },
 ];
 
 const privateTours = [
-  { href: '/es/private-snorkeling', id: 'private-snorkeling', label: 'Snorkel Privado',          tagline: 'Velero o yate · solo tu grupo',         alt: 'Charter privado de snorkel en Cabo San Lucas' },
-  { href: '/es/private-sunset',     id: 'private-sunset',     label: 'Atardecer Privado',        tagline: 'Velero o yate · solo tu grupo',         alt: 'Charter privado al atardecer en Cabo San Lucas' },
-  { href: '/es/whale-watching',     id: 'whale-watching',     label: 'Avistamiento de Ballenas', tagline: 'Dic–Abr · solo tu grupo',               alt: 'Tour privado de avistamiento de ballenas en Cabo San Lucas' },
-  { href: '/es/bachelorette',       id: 'bachelorette-party', label: 'Despedida de Soltera',     tagline: 'Yate decorado · hecho para la novia',   alt: 'Charter de despedida de soltera en Cabo San Lucas' },
-  { href: '/es/scuba-diving',       id: 'scuba-diving',       label: 'Buceo',                    tagline: 'Barco PADI · todos los niveles',        alt: 'Tour de buceo en Cabo San Lucas' },
+  { href: '/es/private-snorkeling/', id: 'private-snorkeling', label: 'Snorkel Privado',          tagline: 'Velero o yate · solo tu grupo',         alt: 'Charter privado de snorkel en Cabo San Lucas' },
+  { href: '/es/private-sunset/',     id: 'private-sunset',     label: 'Atardecer Privado',        tagline: 'Velero o yate · solo tu grupo',         alt: 'Charter privado al atardecer en Cabo San Lucas' },
+  { href: '/es/whale-watching/',     id: 'whale-watching',     label: 'Avistamiento de Ballenas', tagline: 'Dic–Abr · solo tu grupo',               alt: 'Tour privado de avistamiento de ballenas en Cabo San Lucas' },
+  { href: '/es/bachelorette/',       id: 'bachelorette-party', label: 'Despedida de Soltera',     tagline: 'Yate decorado · hecho para la novia',   alt: 'Charter de despedida de soltera en Cabo San Lucas' },
+  { href: '/es/scuba-diving/',       id: 'scuba-diving',       label: 'Buceo',                    tagline: 'Barco PADI · todos los niveles',        alt: 'Tour de buceo en Cabo San Lucas' },
 ];
 
 const faqs = [
@@ -152,7 +152,7 @@ const faqSchema = JSON.stringify({
           <p class="text-slate-500 text-sm lg:text-base max-w-xl mx-auto">Todo charter privado empieza con la misma pregunta. Esta es la versión corta.</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6">
-          <a href="/es/sailing-cabo-san-lucas" class="group bg-white rounded-2xl p-6 lg:p-7 border border-border-light shadow-sm hover:shadow-md transition-shadow flex flex-col">
+          <a href="/es/sailing-cabo-san-lucas/" class="group bg-white rounded-2xl p-6 lg:p-7 border border-border-light shadow-sm hover:shadow-md transition-shadow flex flex-col">
             <div class="flex items-center gap-3 mb-3">
               <span class="material-symbols-outlined text-gold text-3xl">sailing</span>
               <h3 class="text-lg lg:text-xl font-serif text-navy">Velero</h3>
@@ -160,7 +160,7 @@ const faqSchema = JSON.stringify({
             <p class="text-slate-600 text-sm lg:text-base leading-relaxed mb-4">Tranquilo, romántico, más cerca del agua. Ideal para parejas, grupos íntimos y para quien quiere la experiencia real de navegar a vela.</p>
             <span class="text-accent-gold text-sm font-bold uppercase tracking-widest mt-auto group-hover:underline">Ver los veleros <span class="material-symbols-outlined text-base align-middle">arrow_forward</span></span>
           </a>
-          <a href="/es/yacht-charter-cabo" class="group bg-white rounded-2xl p-6 lg:p-7 border border-border-light shadow-sm hover:shadow-md transition-shadow flex flex-col">
+          <a href="/es/yacht-charter-cabo/" class="group bg-white rounded-2xl p-6 lg:p-7 border border-border-light shadow-sm hover:shadow-md transition-shadow flex flex-col">
             <div class="flex items-center gap-3 mb-3">
               <YachtIcon class="text-gold text-3xl" />
               <h3 class="text-lg lg:text-xl font-serif text-navy">Yate</h3>

@@ -5,10 +5,10 @@ description: "Is Cabo safe? Honest 2026 safety guide from locals — crime stats
 heroImage: "/images/travel-guide/los-cabos-international-airport-featured-image.jpg.webp"
 heroAlt: "Is Cabo San Lucas Safe?"
 category: "Traveling to Cabo"
-categoryLink: "/travel-guide-traveling"
+categoryLink: "/travel-guide-traveling/"
 activeSubmenu: "traveling"
 bestTime: "Year-round — Cabo is safe in every season"
-relatedActivity: "/shuttle-service"
+relatedActivity: "/shuttle-service/"
 sidebarType: "default"
 ---
 
@@ -99,8 +99,8 @@ The short version: if you stay in the areas tourists normally visit, you'll feel
   <li><strong>Use ATMs inside banks or hotels</strong> &mdash; rather than standalone machines on the street</li>
   <li><strong>Keep valuables secure</strong> &mdash; avoid displaying expensive jewelry or large amounts of cash</li>
   <li><strong>Stick to well-traveled areas at night</strong> &mdash; the main tourist zones are lively and safe, but quieter side streets are best avoided after dark</li>
-  <li><strong>Use trusted transportation</strong> &mdash; hotel shuttles, reputable taxi services, or pre-arranged transfers are the way to go. Providers like <a href="/shuttle-service" class="text-accent-gold font-semibold hover:underline">Cabo Sailing</a> offer reliable airport shuttle service.</li>
-  <li><strong>Respect the ocean</strong> &mdash; some Cabo beaches have strong currents and riptides. Always check flag warnings and signs before swimming. Stick to designated swimming areas like Medano Beach and Chileno Bay. See our <a href="/travel-guide/can-you-swim-in-cabo-san-lucas" class="text-accent-gold font-semibold hover:underline">swim safety guide</a> for a full beach-by-beach breakdown.</li>
+  <li><strong>Use trusted transportation</strong> &mdash; hotel shuttles, reputable taxi services, or pre-arranged transfers are the way to go. Providers like <a href="/shuttle-service/" class="text-accent-gold font-semibold hover:underline">Cabo Sailing</a> offer reliable airport shuttle service.</li>
+  <li><strong>Respect the ocean</strong> &mdash; some Cabo beaches have strong currents and riptides. Always check flag warnings and signs before swimming. Stick to designated swimming areas like Medano Beach and Chileno Bay. See our <a href="/travel-guide/can-you-swim-in-cabo-san-lucas/" class="text-accent-gold font-semibold hover:underline">swim safety guide</a> for a full beach-by-beach breakdown.</li>
   <li><strong>Trust your instincts</strong> &mdash; if something feels off, step away. This applies anywhere in the world</li>
 </ul>
 
@@ -119,10 +119,10 @@ In fact, many visitors are pleasantly surprised by how safe and friendly the are
 Cabo is one of the most family-friendly destinations in Mexico. The main beaches have calm water (especially Medano and Chileno Bay), resorts offer kids' clubs and family pools, and the marina area is stroller-friendly and easy to navigate.
 
 <ul class="spot-list">
-  <li><strong>Beaches</strong> &mdash; stick to flagged, lifeguarded beaches. <a href="/travel-guide/can-you-swim-in-cabo-san-lucas" class="text-accent-gold font-semibold hover:underline">Our swim safety guide</a> covers which beaches are safe for kids.</li>
+  <li><strong>Beaches</strong> &mdash; stick to flagged, lifeguarded beaches. <a href="/travel-guide/can-you-swim-in-cabo-san-lucas/" class="text-accent-gold font-semibold hover:underline">Our swim safety guide</a> covers which beaches are safe for kids.</li>
   <li><strong>Food & water</strong> &mdash; drink bottled or purified water (every hotel and restaurant uses it). Stick to cooked foods for very young children.</li>
   <li><strong>Medical care</strong> &mdash; Cabo has modern hospitals and English-speaking doctors. Most resorts have an on-site or on-call physician.</li>
-  <li><strong>Transportation</strong> &mdash; car seats aren't standard in taxis. Bring your own or book a <a href="/shuttle-service" class="text-accent-gold font-semibold hover:underline">private shuttle</a> that can accommodate one.</li>
+  <li><strong>Transportation</strong> &mdash; car seats aren't standard in taxis. Bring your own or book a <a href="/shuttle-service/" class="text-accent-gold font-semibold hover:underline">private shuttle</a> that can accommodate one.</li>
 </ul>
 
 ---

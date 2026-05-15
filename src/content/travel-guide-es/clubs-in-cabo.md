@@ -5,10 +5,10 @@ description: "Los mejores antros en Cabo San Lucas — El Squid Roe, Mandala, La
 heroImage: "/images/travel-guide/most-famous-clubs-in-cabo-for-night.jpg"
 heroAlt: "Ambiente de antro en Cabo San Lucas"
 category: "Culture & Food"
-categoryLink: "/es/travel-guide-culture"
+categoryLink: "/es/travel-guide-culture/"
 activeSubmenu: "culture"
 bestTime: "Todo el a&ntilde;o — los antros de Cabo est&aacute;n llenos cada noche"
-relatedActivity: "/es/private-sunset"
+relatedActivity: "/es/private-sunset/"
 sidebarType: "default"
 ---
 

@@ -5,7 +5,7 @@ description: "Planning a Cabo babymoon? Pregnancy-safe activities, best resorts,
 heroImage: "/images/travel-guide/fun-activities-cabo.jpg.webp"
 heroAlt: "Babymoon in Cabo San Lucas"
 category: "Traveling to Cabo"
-categoryLink: "/travel-guide-traveling"
+categoryLink: "/travel-guide-traveling/"
 activeSubmenu: "traveling"
 bestTime: "Nov–May — warm, dry weather with minimal humidity"
 sidebarType: "default"

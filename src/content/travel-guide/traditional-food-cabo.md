@@ -5,10 +5,10 @@ description: "Cabo's must-try traditional foods — chocolate clams, fish tacos,
 heroImage: "/images/travel-guide/mexican-clams.jpg"
 heroAlt: "Traditional Mexican chocolate clams from Cabo"
 category: "Culture & Food"
-categoryLink: "/travel-guide-culture"
+categoryLink: "/travel-guide-culture/"
 activeSubmenu: "culture"
 bestTime: "Year-round — fresh seafood and local cuisine every season"
-relatedActivity: "/private-sunset"
+relatedActivity: "/private-sunset/"
 sidebarType: "default"
 ---
 

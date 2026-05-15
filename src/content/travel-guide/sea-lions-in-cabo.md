@@ -5,7 +5,7 @@ description: "Cabo's famous sea lion colony at Land's End — where to see them,
 heroImage: "/images/blog/seal-and-divers-in-underwater-harmony.png"
 heroAlt: "Seal and divers in underwater harmony"
 category: "Attractions"
-categoryLink: "/travel-guide-attractions"
+categoryLink: "/travel-guide-attractions/"
 activeSubmenu: "attractions"
 bestTime: "Year-round — most active Sep–May, pups visible Dec–Mar"
 sidebarType: "snorkeling"

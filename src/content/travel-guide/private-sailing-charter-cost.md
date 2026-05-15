@@ -5,10 +5,10 @@ description: "Private sailing charter prices in Cabo — half-day, full-day, and
 heroImage: "/images/travel-guide/how-much-does-a-private-sailing-charter-in-cabo-san-lucas-cost.webp"
 heroAlt: "Private sailing charter in Cabo San Lucas"
 category: "Activities"
-categoryLink: "/travel-guide-activities"
+categoryLink: "/travel-guide-activities/"
 activeSubmenu: "activities"
 bestTime: "Year-round — best deals May–Oct"
-relatedActivity: "/tours"
+relatedActivity: "/tours/"
 sidebarType: "default"
 ---
 

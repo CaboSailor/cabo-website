@@ -92,11 +92,11 @@ const breadcrumbSchema = JSON.stringify({
     <div class="sticky top-[60px] z-40 bg-white border-b border-border-light/50 shadow-sm">
       <div class="max-w-5xl mx-auto">
         <nav class="flex overflow-x-auto no-scrollbar">
-          <a href="/es/travel-guide" class={`shrink-0 px-4 lg:px-6 py-3.5 text-sm font-bold uppercase tracking-widest border-b-2 transition-colors ${activeSubmenu === 'home' ? 'border-accent-gold text-navy' : 'border-transparent text-navy/70 hover:text-navy hover:border-accent-gold/50'}`}>Inicio</a>
-          <a href="/es/travel-guide-activities" class={`shrink-0 px-4 lg:px-6 py-3.5 text-sm font-bold uppercase tracking-widest border-b-2 transition-colors ${activeSubmenu === 'activities' ? 'border-accent-gold text-navy' : 'border-transparent text-navy/70 hover:text-navy hover:border-accent-gold/50'}`}>Actividades</a>
-          <a href="/es/travel-guide-attractions" class={`shrink-0 px-4 lg:px-6 py-3.5 text-sm font-bold uppercase tracking-widest border-b-2 transition-colors ${activeSubmenu === 'attractions' ? 'border-accent-gold text-navy' : 'border-transparent text-navy/70 hover:text-navy hover:border-accent-gold/50'}`}>Atracciones</a>
-          <a href="/es/travel-guide-traveling" class={`shrink-0 px-4 lg:px-6 py-3.5 text-sm font-bold uppercase tracking-widest border-b-2 transition-colors whitespace-nowrap ${activeSubmenu === 'traveling' ? 'border-accent-gold text-navy' : 'border-transparent text-navy/70 hover:text-navy hover:border-accent-gold/50'}`}>Viajando a Cabo</a>
-          <a href="/es/travel-guide-culture" class={`shrink-0 px-4 lg:px-6 py-3.5 text-sm font-bold uppercase tracking-widest border-b-2 transition-colors whitespace-nowrap ${activeSubmenu === 'culture' ? 'border-accent-gold text-navy' : 'border-transparent text-navy/70 hover:text-navy hover:border-accent-gold/50'}`}>Cultura y Comida</a>
+          <a href="/es/travel-guide/" class={`shrink-0 px-4 lg:px-6 py-3.5 text-sm font-bold uppercase tracking-widest border-b-2 transition-colors ${activeSubmenu === 'home' ? 'border-accent-gold text-navy' : 'border-transparent text-navy/70 hover:text-navy hover:border-accent-gold/50'}`}>Inicio</a>
+          <a href="/es/travel-guide-activities/" class={`shrink-0 px-4 lg:px-6 py-3.5 text-sm font-bold uppercase tracking-widest border-b-2 transition-colors ${activeSubmenu === 'activities' ? 'border-accent-gold text-navy' : 'border-transparent text-navy/70 hover:text-navy hover:border-accent-gold/50'}`}>Actividades</a>
+          <a href="/es/travel-guide-attractions/" class={`shrink-0 px-4 lg:px-6 py-3.5 text-sm font-bold uppercase tracking-widest border-b-2 transition-colors ${activeSubmenu === 'attractions' ? 'border-accent-gold text-navy' : 'border-transparent text-navy/70 hover:text-navy hover:border-accent-gold/50'}`}>Atracciones</a>
+          <a href="/es/travel-guide-traveling/" class={`shrink-0 px-4 lg:px-6 py-3.5 text-sm font-bold uppercase tracking-widest border-b-2 transition-colors whitespace-nowrap ${activeSubmenu === 'traveling' ? 'border-accent-gold text-navy' : 'border-transparent text-navy/70 hover:text-navy hover:border-accent-gold/50'}`}>Viajando a Cabo</a>
+          <a href="/es/travel-guide-culture/" class={`shrink-0 px-4 lg:px-6 py-3.5 text-sm font-bold uppercase tracking-widest border-b-2 transition-colors whitespace-nowrap ${activeSubmenu === 'culture' ? 'border-accent-gold text-navy' : 'border-transparent text-navy/70 hover:text-navy hover:border-accent-gold/50'}`}>Cultura y Comida</a>
         </nav>
       </div>
     </div>
@@ -133,9 +133,9 @@ const breadcrumbSchema = JSON.stringify({
           <nav class="flex items-center gap-1.5 text-xs text-navy/60 mb-6" aria-label="Breadcrumb">
             <a href="/es/" class="hover:text-navy transition-colors">Inicio</a>
             <span class="material-symbols-outlined text-[14px]">chevron_right</span>
-            <a href="/es/travel-guide" class="hover:text-navy transition-colors">Guía de Viaje</a>
+            <a href="/es/travel-guide/" class="hover:text-navy transition-colors">Guía de Viaje</a>
             <span class="material-symbols-outlined text-[14px]">chevron_right</span>
-            <a href={categoryLink} class="hover:text-navy transition-colors">{categoryLabel}</a>
+            <a href={categoryLink.endsWith('/') ? categoryLink : `${categoryLink}/`} class="hover:text-navy transition-colors">{categoryLabel}</a>
             <span class="material-symbols-outlined text-[14px]">chevron_right</span>
             <span class="text-navy/60">{title}</span>
           </nav>
@@ -172,7 +172,7 @@ const breadcrumbSchema = JSON.stringify({
 
           {/* CTA Buttons */}
           <div class="flex flex-col sm:flex-row items-center justify-center gap-3 mt-12 mb-4">
-            <a href="/es/tours" class="inline-flex items-center gap-2 bg-accent-gold hover:bg-accent-gold-dark text-navy text-sm font-bold uppercase tracking-widest px-6 py-3 rounded-full transition-colors">
+            <a href="/es/tours/" class="inline-flex items-center gap-2 bg-accent-gold hover:bg-accent-gold-dark text-navy text-sm font-bold uppercase tracking-widest px-6 py-3 rounded-full transition-colors">
               Ver Nuestros Tours
             </a>
             <a href="https://wa.me/526241439798" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white text-sm font-bold uppercase tracking-widest px-6 py-3 rounded-full transition-colors">
@@ -189,7 +189,7 @@ const breadcrumbSchema = JSON.stringify({
               </h3>
               <div class="grid gap-4">
                 {relatedPosts.map((related) => (
-                  <a href={`/es/travel-guide/${related.id}`} class="flex items-center gap-4 bg-white border border-border-light rounded-2xl p-3 shadow-sm hover:shadow-md transition-shadow group">
+                  <a href={`/es/travel-guide/${related.id}/`} class="flex items-center gap-4 bg-white border border-border-light rounded-2xl p-3 shadow-sm hover:shadow-md transition-shadow group">
                     <img alt={related.data.heroAlt} class="w-20 h-20 rounded-xl object-cover shrink-0" src={related.data.heroImage} />
                     <div class="min-w-0">
                       <h4 class="text-sm font-bold text-navy mb-1 group-hover:text-accent-gold transition-colors line-clamp-2">{related.data.title}</h4>
@@ -210,7 +210,7 @@ const breadcrumbSchema = JSON.stringify({
 
             {sidebarType === "default" && (
               <div class="space-y-4 mb-8">
-                <a href="/es/shuttle-service" class="flex items-center gap-4 bg-white border border-border-light rounded-2xl p-3 shadow-sm hover:shadow-md transition-shadow">
+                <a href="/es/shuttle-service/" class="flex items-center gap-4 bg-white border border-border-light rounded-2xl p-3 shadow-sm hover:shadow-md transition-shadow">
                   <img alt="Servicio de Transporte desde Aeropuerto" class="w-20 h-20 rounded-xl object-cover shrink-0" src="/images/travel-guide/los-cabos-international-airport-featured-image.jpg.webp"/>
                   <div>
                     <h4 class="text-sm font-bold text-navy mb-1">Transporte</h4>
@@ -218,7 +218,7 @@ const breadcrumbSchema = JSON.stringify({
                     <span class="text-accent-gold text-[10px] font-bold uppercase tracking-widest mt-1 inline-block">Reservar traslado</span>
                   </div>
                 </a>
-                <a href="/es/private-snorkeling" class="flex items-center gap-4 bg-white border border-border-light rounded-2xl p-3 shadow-sm hover:shadow-md transition-shadow">
+                <a href="/es/private-snorkeling/" class="flex items-center gap-4 bg-white border border-border-light rounded-2xl p-3 shadow-sm hover:shadow-md transition-shadow">
                   <Image alt="Snorkel Privado" class="w-20 h-20 rounded-xl object-cover shrink-0" src={yacht45Img} />
                   <div>
                     <h4 class="text-sm font-bold text-navy mb-1">Snorkel Privado</h4>
@@ -226,7 +226,7 @@ const breadcrumbSchema = JSON.stringify({
                     <span class="text-accent-gold text-[10px] font-bold uppercase tracking-widest mt-1 inline-block">Desde $701</span>
                   </div>
                 </a>
-                <a href="/es/whale-watching" class="flex items-center gap-4 bg-white border border-border-light rounded-2xl p-3 shadow-sm hover:shadow-md transition-shadow">
+                <a href="/es/whale-watching/" class="flex items-center gap-4 bg-white border border-border-light rounded-2xl p-3 shadow-sm hover:shadow-md transition-shadow">
                   <Image alt="Avistamiento de Ballenas" class="w-20 h-20 rounded-xl object-cover shrink-0" src={whalesImg} />
                   <div>
                     <h4 class="text-sm font-bold text-navy mb-1">Avistamiento de Ballenas</h4>
@@ -239,7 +239,7 @@ const breadcrumbSchema = JSON.stringify({
 
             {sidebarType === "snorkeling" && (
               <div class="space-y-4 mb-8">
-                <a href="/es/private-snorkeling" class="flex items-center gap-4 bg-white border border-border-light rounded-2xl p-3 shadow-sm hover:shadow-md transition-shadow">
+                <a href="/es/private-snorkeling/" class="flex items-center gap-4 bg-white border border-border-light rounded-2xl p-3 shadow-sm hover:shadow-md transition-shadow">
                   <Image alt="Snorkel Privado" class="w-20 h-20 rounded-xl object-cover shrink-0" src={yacht45Img} />
                   <div>
                     <h4 class="text-sm font-bold text-navy mb-1">Snorkel Privado</h4>
@@ -247,7 +247,7 @@ const breadcrumbSchema = JSON.stringify({
                     <span class="text-accent-gold text-[10px] font-bold uppercase tracking-widest mt-1 inline-block">Desde $701</span>
                   </div>
                 </a>
-                <a href="/es/shared-snorkeling" class="flex items-center gap-4 bg-white border border-border-light rounded-2xl p-3 shadow-sm hover:shadow-md transition-shadow">
+                <a href="/es/shared-snorkeling/" class="flex items-center gap-4 bg-white border border-border-light rounded-2xl p-3 shadow-sm hover:shadow-md transition-shadow">
                   <Image alt="Snorkel Compartido" class="w-20 h-20 rounded-xl object-cover shrink-0" src={sailing42Img} />
                   <div>
                     <h4 class="text-sm font-bold text-navy mb-1">Snorkel Compartido</h4>
@@ -255,7 +255,7 @@ const breadcrumbSchema = JSON.stringify({
                     <span class="text-accent-gold text-[10px] font-bold uppercase tracking-widest mt-1 inline-block">Desde $102/p</span>
                   </div>
                 </a>
-                <a href="/es/scuba-diving" class="flex items-center gap-4 bg-white border border-border-light rounded-2xl p-3 shadow-sm hover:shadow-md transition-shadow">
+                <a href="/es/scuba-diving/" class="flex items-center gap-4 bg-white border border-border-light rounded-2xl p-3 shadow-sm hover:shadow-md transition-shadow">
                   <img alt="Buceo" class="w-20 h-20 rounded-xl object-cover shrink-0" src="/images/travel-guide/cabo-scuba-diving.jpg.webp"/>
                   <div>
                     <h4 class="text-sm font-bold text-navy mb-1">Buceo</h4>

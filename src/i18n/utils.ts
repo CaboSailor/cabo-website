@@ -21,8 +21,14 @@ export function t(lang: string, key: string): string {
 export function getLocalePath(lang: string, path: string): string {
   // Remove any existing /es/ prefix
   const cleanPath = path.replace(/^\/es(\/|$)/, '/');
-  if (lang === 'es') return `/es${cleanPath === '/' ? '' : cleanPath}`;
-  return cleanPath;
+  const withLocale = lang === 'es' ? `/es${cleanPath === '/' ? '' : cleanPath}` : cleanPath;
+  // Normalize to trailing slash so internal links never trigger a 301 hop.
+  const match = withLocale.match(/^([^?#]*)([?#].*)?$/);
+  const pathPart = match?.[1] ?? withLocale;
+  const rest = match?.[2] ?? '';
+  if (pathPart === '/' || pathPart.endsWith('/')) return withLocale;
+  if (/\.[a-z0-9]+$/i.test(pathPart)) return withLocale;
+  return `${pathPart}/${rest}`;
 }
 
 export function getAlternateLang(lang: string): string {

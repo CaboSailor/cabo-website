@@ -5,10 +5,10 @@ description: "Plan the perfect Cabo honeymoon — romantic resorts, sunset cruis
 heroImage: "/images/travel-guide/helpful-travel-tips-for-couples.jpg"
 heroAlt: "Romantic honeymoon couple in Cabo San Lucas"
 category: "Culture & Food"
-categoryLink: "/travel-guide-culture"
+categoryLink: "/travel-guide-culture/"
 activeSubmenu: "culture"
 bestTime: "Nov–May — warm, dry, perfect for romance"
-relatedActivity: "/private-sunset"
+relatedActivity: "/private-sunset/"
 sidebarType: "default"
 ---
 

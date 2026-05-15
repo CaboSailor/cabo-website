@@ -5,10 +5,10 @@ description: "Planea un cumpleaños inolvidable en Cabo — alta cocina, aventur
 heroImage: "/images/travel-guide/celebrate-in-cabo-san-lucas-1080x675.jpg"
 heroAlt: "Celebraci&oacute;n de cumpleaños en Cabo San Lucas"
 category: "Activities"
-categoryLink: "/es/travel-guide-activities"
+categoryLink: "/es/travel-guide-activities/"
 activeSubmenu: "activities"
 bestTime: "Todo el año — Cabo celebra en cada temporada"
-relatedActivity: "/es/bachelorette"
+relatedActivity: "/es/bachelorette/"
 sidebarType: "default"
 ---
 

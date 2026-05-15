@@ -5,7 +5,7 @@ description: "Cabo no son solo playas — 5 museos y sitios culturales que valen
 heroImage: "/images/travel-guide/fun-activities-cabo.jpg.webp"
 heroAlt: "Museo de Cabo San Lucas"
 category: "Culture & Food"
-categoryLink: "/es/travel-guide-culture"
+categoryLink: "/es/travel-guide-culture/"
 activeSubmenu: "culture"
 bestTime: "Todo el a&ntilde;o — perfecto para escapar del calor o un d&iacute;a lluvioso"
 sidebarType: "default"

@@ -5,7 +5,7 @@ description: "&iquest;Vale la pena Cabo San Lucas en 2026? An&aacute;lisis hones
 heroImage: "/images/travel-guide/fun-activities-cabo.jpg.webp"
 heroAlt: "&iquest;Vale la Pena Cabo? An&aacute;lisis Honesto de Valor vs. Costo"
 category: "Traveling to Cabo"
-categoryLink: "/es/travel-guide-traveling"
+categoryLink: "/es/travel-guide-traveling/"
 activeSubmenu: "traveling"
 bestTime: "Todo el año — mejores precios en mayo–junio y septiembre–octubre"
 sidebarType: "default"

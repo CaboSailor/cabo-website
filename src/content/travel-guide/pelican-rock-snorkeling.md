@@ -5,7 +5,7 @@ description: "Pelican Rock snorkeling tour — explore Cabo bay's best underwate
 heroImage: "/images/travel-guide/42-f-2-1.jpg"
 heroAlt: "Pelican Rock snorkeling in Cabo San Lucas"
 category: "Activities"
-categoryLink: "/travel-guide-activities"
+categoryLink: "/travel-guide-activities/"
 activeSubmenu: "activities"
 bestTime: "Year-round — calmest water in the bay"
 sidebarType: "snorkeling"

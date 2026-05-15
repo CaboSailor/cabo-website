@@ -5,7 +5,7 @@ description: "La Paz to Cabo in 2026 — bus, shuttle, rental car, taxi or priva
 heroImage: "/images/la-paz/la-paz-bcs.webp"
 heroAlt: "La Paz to Cabo San Lucas — 5 Ways to Get There"
 category: "Traveling to Cabo"
-categoryLink: "/travel-guide-traveling"
+categoryLink: "/travel-guide-traveling/"
 activeSubmenu: "traveling"
 bestTime: "Year-round — the drive is scenic in every season"
 sidebarType: "default"

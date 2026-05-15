@@ -5,7 +5,7 @@ description: "¿Necesitas licencia de navegaci&oacute;n en Cabo? Reglas para bot
 heroImage: "/images/travel-guide/Do-You-Need-A-License-To-Rent-A-Boat-In-Cabo.j2.jpg"
 heroAlt: "Renta de botes en Cabo San Lucas"
 category: "Activities"
-categoryLink: "/es/travel-guide-activities"
+categoryLink: "/es/travel-guide-activities/"
 activeSubmenu: "activities"
 bestTime: "Todo el año — mar tranquilo de octubre a junio"
 sidebarType: "default"

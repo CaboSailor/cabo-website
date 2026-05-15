@@ -5,7 +5,7 @@ description: "Yes — with the right beach, tour, and preparation. Age guideline
 heroImage: "/images/blog/joyful-yacht-outing-on-a-sunny-day.webp"
 heroAlt: "Family enjoying a joyful yacht outing on a sunny day in Cabo San Lucas"
 category: "Activities"
-categoryLink: "/travel-guide-activities"
+categoryLink: "/travel-guide-activities/"
 activeSubmenu: "activities"
 bestTime: "May–Oct — warmest, calmest water"
 sidebarType: "snorkeling"

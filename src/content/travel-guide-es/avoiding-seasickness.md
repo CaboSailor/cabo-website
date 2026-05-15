@@ -5,10 +5,10 @@ description: "No dejes que el mareo arruine tu crucero en Cabo. Consejos comprob
 heroImage: "/images/travel-guide/cabo-sailing-adventures.jpg"
 heroAlt: "Aventura de vela en Cabo San Lucas"
 category: "Activities"
-categoryLink: "/es/travel-guide-activities"
+categoryLink: "/es/travel-guide-activities/"
 activeSubmenu: "activities"
 bestTime: "Todo el año — mar m&aacute;s tranquilo de noviembre a junio"
-relatedActivity: "/es/tours"
+relatedActivity: "/es/tours/"
 sidebarType: "default"
 ---
 

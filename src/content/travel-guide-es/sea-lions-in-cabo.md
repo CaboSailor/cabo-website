@@ -5,7 +5,7 @@ description: "La famosa colonia de lobos marinos en Land's End — d&oacute;nde 
 heroImage: "/images/blog/seal-and-divers-in-underwater-harmony.png"
 heroAlt: "Lobo marino y buzos en armon&iacute;a bajo el agua"
 category: "Attractions"
-categoryLink: "/es/travel-guide-attractions"
+categoryLink: "/es/travel-guide-attractions/"
 activeSubmenu: "attractions"
 bestTime: "Todo el a&ntilde;o — m&aacute;s activos Sep–May, cr&iacute;as visibles Dic–Mar"
 sidebarType: "snorkeling"

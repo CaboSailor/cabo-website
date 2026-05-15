@@ -28,6 +28,7 @@ const siteUrl = 'https://cabosailing.com';
 const ogImageUrl = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}`;
 const canonicalPath = Astro.url.pathname.endsWith('/') ? Astro.url.pathname : `${Astro.url.pathname}/`;
 const canonicalUrl = `${siteUrl}${canonicalPath}`;
+const withSlash = (p: string) => (p.endsWith('/') ? p : `${p}/`);
 
 const travelAgencySchema = JSON.stringify({
   "@context": "https://schema.org",
@@ -90,9 +91,9 @@ const travelAgencySchema = JSON.stringify({
   <link rel="canonical" href={canonicalUrl} />
   {hreflangs && (
     <>
-      <link rel="alternate" hreflang="en" href={`${siteUrl}${hreflangs.en}`} />
-      <link rel="alternate" hreflang="es" href={`${siteUrl}${hreflangs.es}`} />
-      <link rel="alternate" hreflang="x-default" href={`${siteUrl}${hreflangs.en}`} />
+      <link rel="alternate" hreflang="en" href={`${siteUrl}${withSlash(hreflangs.en)}`} />
+      <link rel="alternate" hreflang="es" href={`${siteUrl}${withSlash(hreflangs.es)}`} />
+      <link rel="alternate" hreflang="x-default" href={`${siteUrl}${withSlash(hreflangs.en)}`} />
     </>
   )}
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico?v=2" />

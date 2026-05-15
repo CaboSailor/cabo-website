@@ -5,10 +5,10 @@ description: "¿Es seguro Cabo? Gu&iacute;a honesta de seguridad 2026 desde el p
 heroImage: "/images/travel-guide/los-cabos-international-airport-featured-image.jpg.webp"
 heroAlt: "¿Es Seguro Cabo San Lucas?"
 category: "Traveling to Cabo"
-categoryLink: "/es/travel-guide-traveling"
+categoryLink: "/es/travel-guide-traveling/"
 activeSubmenu: "traveling"
 bestTime: "Todo el año &mdash; Cabo es seguro en cualquier temporada"
-relatedActivity: "/es/shuttle-service"
+relatedActivity: "/es/shuttle-service/"
 sidebarType: "default"
 ---
 
@@ -99,8 +99,8 @@ La versi&oacute;n corta: si te quedas en las &aacute;reas que los turistas norma
   <li><strong>Usa cajeros dentro de bancos u hoteles</strong> &mdash; en lugar de cajeros independientes en la calle</li>
   <li><strong>Mant&eacute;n los objetos de valor seguros</strong> &mdash; evita mostrar joyas costosas o grandes cantidades de efectivo</li>
   <li><strong>Qu&eacute;date en zonas concurridas de noche</strong> &mdash; las zonas tur&iacute;sticas principales son animadas y seguras, pero las calles laterales m&aacute;s tranquilas son mejor evitarlas despu&eacute;s del anochecer</li>
-  <li><strong>Usa transporte confiable</strong> &mdash; transportes del hotel, taxis de empresas reconocidas o traslados pre-arreglados son la mejor opci&oacute;n. Operadores como <a href="/es/shuttle-service" class="text-accent-gold font-semibold hover:underline">Cabo Sailing</a> ofrecen servicio confiable de traslado al aeropuerto.</li>
-  <li><strong>Respeta el oc&eacute;ano</strong> &mdash; algunas playas de Cabo tienen corrientes fuertes y resacas. Siempre revisa las banderas de advertencia y los letreros antes de meterte. Qu&eacute;date en &aacute;reas de nado designadas como Playa El M&eacute;dano y Bah&iacute;a Chileno. Ve nuestra <a href="/es/travel-guide/can-you-swim-in-cabo-san-lucas" class="text-accent-gold font-semibold hover:underline">gu&iacute;a de seguridad para nadar</a> para un desglose playa por playa.</li>
+  <li><strong>Usa transporte confiable</strong> &mdash; transportes del hotel, taxis de empresas reconocidas o traslados pre-arreglados son la mejor opci&oacute;n. Operadores como <a href="/es/shuttle-service/" class="text-accent-gold font-semibold hover:underline">Cabo Sailing</a> ofrecen servicio confiable de traslado al aeropuerto.</li>
+  <li><strong>Respeta el oc&eacute;ano</strong> &mdash; algunas playas de Cabo tienen corrientes fuertes y resacas. Siempre revisa las banderas de advertencia y los letreros antes de meterte. Qu&eacute;date en &aacute;reas de nado designadas como Playa El M&eacute;dano y Bah&iacute;a Chileno. Ve nuestra <a href="/es/travel-guide/can-you-swim-in-cabo-san-lucas/" class="text-accent-gold font-semibold hover:underline">gu&iacute;a de seguridad para nadar</a> para un desglose playa por playa.</li>
   <li><strong>Conf&iacute;a en tus instintos</strong> &mdash; si algo se siente mal, al&eacute;jate. Esto aplica en cualquier parte del mundo</li>
 </ul>
 
@@ -119,10 +119,10 @@ De hecho, muchos visitantes se sorprenden gratamente por lo seguro y amigable qu
 Cabo es uno de los destinos m&aacute;s familiares de M&eacute;xico. Las playas principales tienen agua tranquila (sobre todo M&eacute;dano y Bah&iacute;a Chileno), los resorts ofrecen kids&rsquo; clubs y albercas familiares, y la zona de la marina es accesible para carriolas y f&aacute;cil de recorrer.
 
 <ul class="spot-list">
-  <li><strong>Playas</strong> &mdash; qu&eacute;date en playas con bandera y salvavidas. <a href="/es/travel-guide/can-you-swim-in-cabo-san-lucas" class="text-accent-gold font-semibold hover:underline">Nuestra gu&iacute;a de seguridad para nadar</a> cubre cu&aacute;les son seguras para niños.</li>
+  <li><strong>Playas</strong> &mdash; qu&eacute;date en playas con bandera y salvavidas. <a href="/es/travel-guide/can-you-swim-in-cabo-san-lucas/" class="text-accent-gold font-semibold hover:underline">Nuestra gu&iacute;a de seguridad para nadar</a> cubre cu&aacute;les son seguras para niños.</li>
   <li><strong>Comida y agua</strong> &mdash; bebe agua embotellada o purificada (todo hotel y restaurante la usan). Para niños muy pequeños, mejor comida cocida.</li>
   <li><strong>Atenci&oacute;n m&eacute;dica</strong> &mdash; Cabo tiene hospitales modernos y doctores que hablan ingl&eacute;s. La mayor&iacute;a de los resorts tienen un m&eacute;dico en sitio o de guardia.</li>
-  <li><strong>Transporte</strong> &mdash; los asientos para niños no son est&aacute;ndar en taxis. Trae el tuyo o reserva un <a href="/es/shuttle-service" class="text-accent-gold font-semibold hover:underline">traslado privado</a> que pueda incluir uno.</li>
+  <li><strong>Transporte</strong> &mdash; los asientos para niños no son est&aacute;ndar en taxis. Trae el tuyo o reserva un <a href="/es/shuttle-service/" class="text-accent-gold font-semibold hover:underline">traslado privado</a> que pueda incluir uno.</li>
 </ul>
 
 ---

@@ -5,10 +5,10 @@ description: "Whale watching tips for Cabo — best season, species to spot, wha
 heroImage: "/images/blog/humpback-whale-breaching-in-vibrant-ocean.png"
 heroAlt: "Humpback whale breaching in vibrant ocean"
 category: "Attractions"
-categoryLink: "/travel-guide-attractions"
+categoryLink: "/travel-guide-attractions/"
 activeSubmenu: "attractions"
 bestTime: "Dec–Apr — peak whale season"
-relatedActivity: "/whale-watching"
+relatedActivity: "/whale-watching/"
 sidebarType: "default"
 ---
 

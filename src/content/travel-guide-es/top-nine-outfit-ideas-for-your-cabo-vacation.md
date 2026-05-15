@@ -5,7 +5,7 @@ description: "Qu&eacute; empacar para Cabo San Lucas — 9 outfits para playa, c
 heroImage: "/images/travel-guide/fun-activities-cabo.jpg.webp"
 heroAlt: "Ideas de outfits para tus vacaciones en Cabo"
 category: "Traveling to Cabo"
-categoryLink: "/es/travel-guide-traveling"
+categoryLink: "/es/travel-guide-traveling/"
 activeSubmenu: "traveling"
 bestTime: "Todo el año — capas ligeras para las noches de invierno, traje de baño todo el año"
 sidebarType: "default"

@@ -5,10 +5,10 @@ description: "Don't let seasickness ruin your Cabo cruise. Proven tips — ginge
 heroImage: "/images/blog/celebration-on-the-boat-at-sea.webp"
 heroAlt: "Group celebrating on a sailboat at sea in Cabo San Lucas"
 category: "Activities"
-categoryLink: "/travel-guide-activities"
+categoryLink: "/travel-guide-activities/"
 activeSubmenu: "activities"
 bestTime: "Year-round — calmer seas Nov–Jun"
-relatedActivity: "/tours"
+relatedActivity: "/tours/"
 sidebarType: "default"
 ---
 

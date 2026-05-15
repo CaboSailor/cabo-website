@@ -5,7 +5,7 @@ description: "What to pack for Cabo San Lucas — 9 outfits for beach, boat char
 heroImage: "/images/travel-guide/fun-activities-cabo.jpg.webp"
 heroAlt: "Cabo vacation outfit ideas"
 category: "Traveling to Cabo"
-categoryLink: "/travel-guide-traveling"
+categoryLink: "/travel-guide-traveling/"
 activeSubmenu: "traveling"
 bestTime: "Year-round — light layers for winter evenings, swimwear all year"
 sidebarType: "default"

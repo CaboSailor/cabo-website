@@ -5,10 +5,10 @@ description: "Los 7 mejores cruceros al atardecer en Cabo — veleros de lujo, f
 heroImage: "/images/travel-guide/x-of-the-best-sunset-cruise.webp"
 heroAlt: "Crucero al atardecer en Cabo San Lucas"
 category: "Activities"
-categoryLink: "/es/travel-guide-activities"
+categoryLink: "/es/travel-guide-activities/"
 activeSubmenu: "activities"
 bestTime: "Todo el a&ntilde;o — Cabo tiene m&aacute;s de 300 d&iacute;as de sol"
-relatedActivity: "/es/private-sunset"
+relatedActivity: "/es/private-sunset/"
 sidebarType: "default"
 ---
 

@@ -5,10 +5,10 @@ description: "La mejor &eacute;poca para visitar Cabo depende de lo que busques 
 heroImage: "/images/travel-guide/los-cabos-international-airport-featured-image.jpg.webp"
 heroAlt: "&iquest;Necesitas Pasaporte para ir a Cabo San Lucas?"
 category: "Traveling to Cabo"
-categoryLink: "/es/travel-guide-traveling"
+categoryLink: "/es/travel-guide-traveling/"
 activeSubmenu: "traveling"
 bestTime: "Diciembre–abril (alta) o mayo–junio (mejor relaci&oacute;n calidad-precio)"
-relatedActivity: "/es/whale-watching"
+relatedActivity: "/es/whale-watching/"
 sidebarType: "default"
 ---
 
@@ -26,7 +26,7 @@ Este per&iacute;odo tambi&eacute;n es la temporada de avistamiento de ballenas, 
 
 Festivales como las celebraciones de San Jos&eacute; del Cabo en marzo y la Semana Santa en abril tambi&eacute;n le dan energ&iacute;a extra a la regi&oacute;n.
 
-Si el avistamiento de ballenas est&aacute; en tu lista, este es el momento para visitar. Reservar una [experiencia en velero o yate](/es/whale-watching) ofrece un encuentro m&aacute;s tranquilo y personal en comparaci&oacute;n con los barcos m&aacute;s grandes.
+Si el avistamiento de ballenas est&aacute; en tu lista, este es el momento para visitar. Reservar una [experiencia en velero o yate](/es/whale-watching/) ofrece un encuentro m&aacute;s tranquilo y personal en comparaci&oacute;n con los barcos m&aacute;s grandes.
 
 <div class="my-8 rounded-2xl overflow-hidden shadow-lg">
   <img alt="Ballena jorobada saltando en Cabo San Lucas" class="w-full h-[280px] lg:h-[360px] object-cover" src="/images/whales/cabo-whale-watching-breaching.jpg" />
@@ -101,7 +101,7 @@ Los mejores lugares para nadar incluyen:
 
 ## Buceo y Snorkel
 
-Cabo es conocido por sus excelentes [lugares para snorkel y buceo](/es/travel-guide/snorkeling-diving), donde puedes ver vida marina colorida y aguas cristalinas.
+Cabo es conocido por sus excelentes [lugares para snorkel y buceo](/es/travel-guide/snorkeling-diving/), donde puedes ver vida marina colorida y aguas cristalinas.
 
 Muchos de los mejores puntos son accesibles solo en barco, por lo que las excursiones guiadas son una gran opci&oacute;n.
 

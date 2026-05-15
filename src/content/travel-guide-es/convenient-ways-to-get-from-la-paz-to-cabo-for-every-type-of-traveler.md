@@ -5,7 +5,7 @@ description: "De La Paz a Cabo en 2026 &mdash; autob&uacute;s, shuttle, renta de
 heroImage: "/images/la-paz/la-paz-bcs.webp"
 heroAlt: "De La Paz a Cabo San Lucas — 5 formas de llegar"
 category: "Traveling to Cabo"
-categoryLink: "/es/travel-guide-traveling"
+categoryLink: "/es/travel-guide-traveling/"
 activeSubmenu: "traveling"
 bestTime: "Todo el año — el viaje es esc&eacute;nico en cualquier temporada"
 sidebarType: "default"

@@ -5,7 +5,7 @@ description: "Cabo no tiene que ser caro. Gu&iacute;a de presupuesto 2026 &mdash
 heroImage: "/images/travel-guide/fun-activities-cabo.jpg.webp"
 heroAlt: "Comida callejera en el centro de Cabo San Lucas"
 category: "Traveling to Cabo"
-categoryLink: "/es/travel-guide-traveling"
+categoryLink: "/es/travel-guide-traveling/"
 activeSubmenu: "traveling"
 bestTime: "May&ndash;Jun y Sep&ndash;Oct &mdash; temporada media, precios m&aacute;s bajos"
 sidebarType: "default"
