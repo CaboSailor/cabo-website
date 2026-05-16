@@ -97,7 +97,7 @@ Today the town is a mix of Mexican families who have lived here for generations,
 The area around Todos Santos is rich in biodiversity:
 
 <ul class="spot-list">
-  <li><strong>Whale watching (Dec&ndash;Apr)</strong> &mdash; humpback and gray whales are visible from shore along the Pacific coast. For a closer encounter, book a <a href="/whale-watching/" class="text-accent-gold font-semibold hover:underline">whale watching tour</a> from Cabo.</li>
+  <li><strong>Whale watching (Dec&ndash;Apr)</strong> &mdash; humpback and gray whales are visible from shore along the Pacific coast. For a closer encounter, book a <a href="/tours/whale-watching/" class="text-accent-gold font-semibold hover:underline">whale watching tour</a> from Cabo.</li>
   <li><strong>Sea turtle release (Jul&ndash;Dec)</strong> &mdash; several conservation programs in the area allow visitors to help release baby sea turtles at sunset. Check locally for schedules.</li>
   <li><strong>Desert flora</strong> &mdash; the Sierra de la Laguna biosphere surrounds the town, with approximately 125 endemic plant species including cardon cacti, elephant trees, and wild fig trees.</li>
   <li><strong>Birding</strong> &mdash; over 40 species have been documented in the area, including ospreys, pelicans, and frigatebirds along the coast.</li>

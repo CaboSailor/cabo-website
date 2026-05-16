@@ -1,39 +1,39 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import Header from '../../components/Header.astro';
-import Footer from '../../components/Footer.astro';
-import FloatingCTA from '../../components/FloatingCTA.astro';
-import RezdyModal from '../../components/RezdyModal.astro';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import FloatingCTA from '../../../components/FloatingCTA.astro';
+import RezdyModal from '../../../components/RezdyModal.astro';
 import { Image } from 'astro:assets';
 
 // Hero / main images
-import { scubaDiving as heroImg } from "../../data/tour-heroes";
-import scubaImg7 from "../../assets/images/scuba-diving/scuba-diving-adventure-in-tropical-waters.png";
-import scubaImg9 from "../../assets/images/scuba-diving/vibrant-tropical-school-of-fish-underwater.png";
-import scubaImg5 from "../../assets/images/scuba-diving/seal-and-divers-in-underwater-harmony.png";
-import scubaImg17 from "../../assets/images/scuba-diving/diver-through-vibrant-coral-reef-window.png";
+import { scubaDiving as heroImg } from "../../../data/tour-heroes";
+import scubaImg7 from "../../../assets/images/scuba-diving/scuba-diving-adventure-in-tropical-waters.png";
+import scubaImg9 from "../../../assets/images/scuba-diving/vibrant-tropical-school-of-fish-underwater.png";
+import scubaImg5 from "../../../assets/images/scuba-diving/seal-and-divers-in-underwater-harmony.png";
+import scubaImg17 from "../../../assets/images/scuba-diving/diver-through-vibrant-coral-reef-window.png";
 
 // Boat images
-import yacht51_9 from "../../assets/images/boats/yacht-51/cabo-luxury-yacht-51-ocean-view.jpg";
-import yacht51_2 from "../../assets/images/boats/yacht-51/cabo-luxury-yacht-51-exterior-01.jpg";
-import yacht51_7 from "../../assets/images/boats/yacht-51/cabo-luxury-yacht-51-exterior-03.jpg";
-import yacht45_1 from "../../assets/images/boats/yacht-45/cabo-private-yacht-45-exterior-01.jpg";
-import yacht45_5 from "../../assets/images/boats/yacht-45/cabo-private-yacht-45-exterior-03.jpg";
-import yacht45_6 from "../../assets/images/boats/yacht-45/cabo-private-yacht-45-bow.jpg";
-import yacht42_3 from "../../assets/images/boats/yacht-42/cabo-private-yacht-42-exterior-02.jpg";
-import yacht42_2 from "../../assets/images/boats/yacht-42/cabo-private-yacht-42-exterior-01.jpg";
-import yacht42_5 from "../../assets/images/boats/yacht-42/cabo-private-yacht-42-exterior-03.jpg";
-import sailing42_10 from "../../assets/images/boats/sailing-42/cabo-sailing-42-exterior-01.jpg";
-import sailing42_17 from "../../assets/images/boats/sailing-42/cabo-sailing-42-sailing-view.jpg";
-import sailing42_12 from "../../assets/images/boats/sailing-42/cabo-sailing-42-exterior-02.jpg";
+import yacht51_9 from "../../../assets/images/boats/yacht-51/cabo-luxury-yacht-51-ocean-view.jpg";
+import yacht51_2 from "../../../assets/images/boats/yacht-51/cabo-luxury-yacht-51-exterior-01.jpg";
+import yacht51_7 from "../../../assets/images/boats/yacht-51/cabo-luxury-yacht-51-exterior-03.jpg";
+import yacht45_1 from "../../../assets/images/boats/yacht-45/cabo-private-yacht-45-exterior-01.jpg";
+import yacht45_5 from "../../../assets/images/boats/yacht-45/cabo-private-yacht-45-exterior-03.jpg";
+import yacht45_6 from "../../../assets/images/boats/yacht-45/cabo-private-yacht-45-bow.jpg";
+import yacht42_3 from "../../../assets/images/boats/yacht-42/cabo-private-yacht-42-exterior-02.jpg";
+import yacht42_2 from "../../../assets/images/boats/yacht-42/cabo-private-yacht-42-exterior-01.jpg";
+import yacht42_5 from "../../../assets/images/boats/yacht-42/cabo-private-yacht-42-exterior-03.jpg";
+import sailing42_10 from "../../../assets/images/boats/sailing-42/cabo-sailing-42-exterior-01.jpg";
+import sailing42_17 from "../../../assets/images/boats/sailing-42/cabo-sailing-42-sailing-view.jpg";
+import sailing42_12 from "../../../assets/images/boats/sailing-42/cabo-sailing-42-exterior-02.jpg";
 
 // Hero grid thumbnails
-import heroThumb1 from "../../assets/images/scuba-diving/school-of-fish-in-clear-ocean.png";
-import galleryLeft from "../../assets/images/guests-on-sailboats/snorkeler-exploring-underwater-paradise.png";
-import galleryRight from "../../assets/images/scuba-diving/swirling-school-of-fish-in-blue-water.png";
-import heroThumb2 from "../../assets/images/guests-on-sailboats/snorkelers-enjoying-a-sunny-boat-ride.png";
-import heroThumb3 from "../../assets/images/guests-on-yachts/paddleboarding-adventure-on-a-sunny-beach.png";
-import heroThumb4 from "../../assets/images/guests-on-yachts/celebration-on-the-boat-at-sea.png";
+import heroThumb1 from "../../../assets/images/scuba-diving/school-of-fish-in-clear-ocean.png";
+import galleryLeft from "../../../assets/images/guests-on-sailboats/snorkeler-exploring-underwater-paradise.png";
+import galleryRight from "../../../assets/images/scuba-diving/swirling-school-of-fish-in-blue-water.png";
+import heroThumb2 from "../../../assets/images/guests-on-sailboats/snorkelers-enjoying-a-sunny-boat-ride.png";
+import heroThumb3 from "../../../assets/images/guests-on-yachts/paddleboarding-adventure-on-a-sunny-beach.png";
+import heroThumb4 from "../../../assets/images/guests-on-yachts/celebration-on-the-boat-at-sea.png";
 
 // Icons
 
@@ -42,12 +42,13 @@ const breadcrumbSchema = JSON.stringify({
   "@type": "BreadcrumbList",
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://cabosailing.com/es/" },
-    { "@type": "ListItem", "position": 2, "name": "Buceo" }
+    { "@type": "ListItem", "position": 2, "name": "Tours", "item": "https://cabosailing.com/es/tours/" },
+    { "@type": "ListItem", "position": 3, "name": "Buceo" }
   ]
 });
 ---
 
-<BaseLayout title="Buceo Privado en Cabo San Lucas | Cabo Sailing" description="Tours privados de buceo a los mejores sitios de Cabo — Pelican Rock, Land's End, Santa María. Guías certificados PADI y equipo completo incluido." ogImage="/og/scuba-diving-sailboat.jpg" ogImageAlt="Scuba diving in Cabo San Lucas" hreflangs={{ en: '/scuba-diving', es: '/es/scuba-diving' }}>
+<BaseLayout title="Buceo Privado en Cabo San Lucas | Cabo Sailing" description="Tours privados de buceo a los mejores sitios de Cabo — Pelican Rock, Land's End, Santa María. Guías certificados PADI y equipo completo incluido." ogImage="/og/scuba-diving-sailboat.jpg" ogImageAlt="Scuba diving in Cabo San Lucas" hreflangs={{ en: '/tours/scuba-diving', es: '/es/tours/scuba-diving' }}>
   <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
   <Header variant="subpage" activePage="scuba-diving" />
 
@@ -93,7 +94,7 @@ const breadcrumbSchema = JSON.stringify({
         <nav class="flex items-center gap-1.5 text-xs text-slate-500 mb-4" aria-label="Breadcrumb">
           <a href="/es/" class="hover:text-gold transition-colors">Inicio</a>
           <span class="material-symbols-outlined text-[14px]">chevron_right</span>
-          <span>Tours</span>
+          <a href="/es/tours/" class="hover:text-gold transition-colors">Tours</a>
           <span class="material-symbols-outlined text-[14px]">chevron_right</span>
           <span class="text-navy font-semibold">Buceo</span>
         </nav>
@@ -401,7 +402,7 @@ const breadcrumbSchema = JSON.stringify({
             <nav class="flex items-center gap-1.5 text-xs text-slate-500 mb-4" aria-label="Breadcrumb">
               <a href="/es/" class="hover:text-gold transition-colors">Inicio</a>
               <span class="material-symbols-outlined text-[14px]">chevron_right</span>
-              <span>Tours</span>
+              <a href="/es/tours/" class="hover:text-gold transition-colors">Tours</a>
               <span class="material-symbols-outlined text-[14px]">chevron_right</span>
               <span class="text-navy font-semibold">Buceo</span>
             </nav>

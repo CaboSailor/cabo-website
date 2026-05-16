@@ -41,7 +41,7 @@ Once ashore, you'll be at the Cabo San Lucas marina &mdash; right in the center 
 Focus on one main activity and a quick lunch:
 
 <ul class="spot-list">
-  <li><strong><a href="/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">Snorkeling tour to the Arch</a></strong> &mdash; 2.5-hour shared cruise past the sea lion colony, Pelican Rock, and Lover's Beach. The most popular cruise-passenger activity in Cabo.</li>
+  <li><strong><a href="/tours/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">Snorkeling tour to the Arch</a></strong> &mdash; 2.5-hour shared cruise past the sea lion colony, Pelican Rock, and Lover's Beach. The most popular cruise-passenger activity in Cabo.</li>
   <li><strong>Water taxi to Lover's Beach</strong> &mdash; 10-minute ride from the marina. Spend an hour at one of Cabo's most iconic beaches, then taxi back.</li>
   <li><strong>Walk the marina + lunch</strong> &mdash; browse the shops, grab fish tacos at a waterfront restaurant, and take photos of the Arch from the marina walkway.</li>
 </ul>
@@ -52,7 +52,7 @@ Add a second activity or a proper sit-down meal:
 
 <ul class="spot-list">
   <li><strong>Snorkeling tour + Medano Beach</strong> &mdash; do the 2.5-hour cruise in the morning, then walk to Medano Beach for swimming, a beach chair, and lunch.</li>
-  <li><strong><a href="/private-snorkeling/" class="text-accent-gold font-semibold hover:underline">Private boat tour</a></strong> &mdash; if you're traveling with a group, a 3-hour private charter gives you the Arch, snorkeling, and open bar at your own pace.</li>
+  <li><strong><a href="/tours/private-snorkeling/" class="text-accent-gold font-semibold hover:underline">Private boat tour</a></strong> &mdash; if you're traveling with a group, a 3-hour private charter gives you the Arch, snorkeling, and open bar at your own pace.</li>
   <li><strong>Downtown explore + golf</strong> &mdash; walk the marina area in the morning, then taxi to one of Cabo's courses for a quick 9 holes.</li>
 </ul>
 
@@ -62,7 +62,7 @@ You have time for a real Cabo day:
 
 <ul class="spot-list">
   <li><strong>Morning snorkel + afternoon beach + sunset stroll</strong> &mdash; the full Cabo experience in one day.</li>
-  <li><strong><a href="/whale-watching/" class="text-accent-gold font-semibold hover:underline">Whale watching</a> (Dec&ndash;Apr)</strong> &mdash; a 2&ndash;3 hour whale watching tour plus time for lunch and beach.</li>
+  <li><strong><a href="/tours/whale-watching/" class="text-accent-gold font-semibold hover:underline">Whale watching</a> (Dec&ndash;Apr)</strong> &mdash; a 2&ndash;3 hour whale watching tour plus time for lunch and beach.</li>
   <li><strong>Day trip to San Jos&eacute; del Cabo</strong> &mdash; 30-minute taxi ride to the quieter, more artistic sister city. Walk the gallery district, eat at a local restaurant, and return by mid-afternoon.</li>
 </ul>
 
@@ -104,7 +104,7 @@ Typically 6&ndash;10 hours, though some itineraries allow only 4&ndash;5 hours. 
 
 **Can I walk to the Arch from the cruise port?**
 
-You can't walk to the Arch itself &mdash; it's at the tip of Land's End, accessible only by water. But you can see it from certain spots along the marina. To get up close, take a water taxi or <a href="/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">snorkeling tour</a>.
+You can't walk to the Arch itself &mdash; it's at the tip of Land's End, accessible only by water. But you can see it from certain spots along the marina. To get up close, take a water taxi or <a href="/tours/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">snorkeling tour</a>.
 
 **Is it safe to explore Cabo on my own from the cruise port?**
 

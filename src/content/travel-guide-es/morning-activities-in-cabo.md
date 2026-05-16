@@ -25,7 +25,7 @@ En este art&iacute;culo, veremos algunas de las mejores actividades en Cabo para
 
 ### Playa del Amor
 
-Una de las pocas desventajas de visitar Cabo son las fuertes corrientes del agua, que hacen que nadar en la mayor&iacute;a de las playas de los alrededores no sea seguro. Sin embargo, hay algunos lugares donde nadar es seguro, como Playa del Amor. Esta tranquila playa es conocida para nadar y para deportes acu&aacute;ticos como el <a href="/es/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">snorkel</a> y el buceo.
+Una de las pocas desventajas de visitar Cabo son las fuertes corrientes del agua, que hacen que nadar en la mayor&iacute;a de las playas de los alrededores no sea seguro. Sin embargo, hay algunos lugares donde nadar es seguro, como Playa del Amor. Esta tranquila playa es conocida para nadar y para deportes acu&aacute;ticos como el <a href="/es/tours/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">snorkel</a> y el buceo.
 
 Playa del Amor puede llenarse mucho durante el d&iacute;a y por la tarde, por eso las mejores horas para visitarla son temprano en la mañana. ¡Eso la hace una actividad perfecta para los madrugadores! Los pescadores locales ofrecen viajes de regreso a la playa por tan solo $10, lo que la convierte en una actividad accesible.
 

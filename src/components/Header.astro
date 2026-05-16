@@ -17,17 +17,17 @@ const lp = (path: string) => getLocalePath(lang, path);
 
 const tourDropdown = [
   { group: t(lang, 'nav.tourDropdown.snorkeling'), items: [
-    { href: lp('/private-snorkeling'), label: t(lang, 'nav.tourDropdown.privateSnorkeling') },
-    { href: lp('/shared-snorkeling'), label: t(lang, 'nav.tourDropdown.sharedSnorkeling') },
+    { href: lp('/tours/private-snorkeling'), label: t(lang, 'nav.tourDropdown.privateSnorkeling') },
+    { href: lp('/tours/shared-snorkeling'), label: t(lang, 'nav.tourDropdown.sharedSnorkeling') },
   ]},
   { group: t(lang, 'nav.tourDropdown.sunset'), items: [
-    { href: lp('/private-sunset'), label: t(lang, 'nav.tourDropdown.privateSunset') },
-    { href: lp('/shared-sunset'), label: t(lang, 'nav.tourDropdown.sharedSunset') },
+    { href: lp('/tours/private-sunset'), label: t(lang, 'nav.tourDropdown.privateSunset') },
+    { href: lp('/tours/shared-sunset'), label: t(lang, 'nav.tourDropdown.sharedSunset') },
   ]},
   { group: null, items: [
-    { href: lp('/whale-watching'), label: t(lang, 'nav.tourDropdown.whaleWatching') },
-    { href: lp('/bachelorette'), label: t(lang, 'nav.tourDropdown.bachelorette') },
-    { href: lp('/scuba-diving'), label: t(lang, 'nav.tourDropdown.scubaDiving') },
+    { href: lp('/tours/whale-watching'), label: t(lang, 'nav.tourDropdown.whaleWatching') },
+    { href: lp('/tours/bachelorette'), label: t(lang, 'nav.tourDropdown.bachelorette') },
+    { href: lp('/tours/scuba-diving'), label: t(lang, 'nav.tourDropdown.scubaDiving') },
   ]},
 ];
 

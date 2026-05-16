@@ -97,17 +97,17 @@ RewriteRule ^cabo-san-lucas-traditional-food/?$ /travel-guide/traditional-food-c
 # =============================================================================
 
 # Bachelorette / weddings / celebrations → /bachelorette/
-RewriteRule ^bachelorette-party/?$ /bachelorette/ [R=301,L]
-RewriteRule ^es/bachelorette-party/?$ /es/bachelorette/ [R=301,L]
-RewriteRule ^15-bachelorette-boat-party-ideas-for-the-ultimate-celebration/?$ /bachelorette/ [R=301,L]
-RewriteRule ^10-cabo-honeymoon-resorts-that-provide-the-perfect-romantic-atmosphere/?$ /bachelorette/ [R=301,L]
-RewriteRule ^15-spectacular-wedding-venues-in-cabo-san-lucas/?$ /bachelorette/ [R=301,L]
-RewriteRule ^romantic-getaway-in-los-cabos/?$ /bachelorette/ [R=301,L]
-RewriteRule ^plan-your-big-day-with-an-unforgettable-wedding-yacht-charter-experience/?$ /bachelorette/ [R=301,L]
-RewriteRule ^cabo-bachelorette/?$ /bachelorette/ [R=301,L]
-RewriteRule ^getting-married-cabo/?$ /bachelorette/ [R=301,L]
-RewriteRule ^wedding-in-cabo/?$ /bachelorette/ [R=301,L]
-RewriteRule ^how-to-make-your-cabo-honeymoon-truly-special-with-a-yacht-charter/?$ /bachelorette/ [R=301,L]
+RewriteRule ^bachelorette-party/?$ /tours/bachelorette/ [R=301,L]
+RewriteRule ^es/bachelorette-party/?$ /es/tours/bachelorette/ [R=301,L]
+RewriteRule ^15-bachelorette-boat-party-ideas-for-the-ultimate-celebration/?$ /tours/bachelorette/ [R=301,L]
+RewriteRule ^10-cabo-honeymoon-resorts-that-provide-the-perfect-romantic-atmosphere/?$ /tours/bachelorette/ [R=301,L]
+RewriteRule ^15-spectacular-wedding-venues-in-cabo-san-lucas/?$ /tours/bachelorette/ [R=301,L]
+RewriteRule ^romantic-getaway-in-los-cabos/?$ /tours/bachelorette/ [R=301,L]
+RewriteRule ^plan-your-big-day-with-an-unforgettable-wedding-yacht-charter-experience/?$ /tours/bachelorette/ [R=301,L]
+RewriteRule ^cabo-bachelorette/?$ /tours/bachelorette/ [R=301,L]
+RewriteRule ^getting-married-cabo/?$ /tours/bachelorette/ [R=301,L]
+RewriteRule ^wedding-in-cabo/?$ /tours/bachelorette/ [R=301,L]
+RewriteRule ^how-to-make-your-cabo-honeymoon-truly-special-with-a-yacht-charter/?$ /tours/bachelorette/ [R=301,L]
 
 # Snorkeling / scuba guides → consolidated /travel-guide/snorkeling-diving/
 RewriteRule ^how-to-make-the-most-of-a-snorkeling-trip-in-cabo-san-lucas/?$ /travel-guide/snorkeling-diving/ [R=301,L]
@@ -117,15 +117,15 @@ RewriteRule ^preparing-for-your-scuba-diving-trip-to-cabo-san-lucas/?$ /travel-g
 RewriteRule ^cabo-snorkeling-journey-through-cabos-finest-snorkeling-sites/?$ /travel-guide/snorkeling-diving/ [R=301,L]
 
 # Old snorkeling tour pages → tour service pages
-RewriteRule ^cabo-snorkeling-tours/?$ /shared-snorkeling/ [R=301,L]
-RewriteRule ^los-cabos-snorkeling-tour/?$ /shared-snorkeling/ [R=301,L]
-RewriteRule ^private-cabo-snorkeling-tour-exploring-the-baja-peninsulas-vibrant-marine-life/?$ /private-snorkeling/ [R=301,L]
+RewriteRule ^cabo-snorkeling-tours/?$ /tours/shared-snorkeling/ [R=301,L]
+RewriteRule ^los-cabos-snorkeling-tour/?$ /tours/shared-snorkeling/ [R=301,L]
+RewriteRule ^private-cabo-snorkeling-tour-exploring-the-baja-peninsulas-vibrant-marine-life/?$ /tours/private-snorkeling/ [R=301,L]
 RewriteRule ^cabo-snorkel-tour-exploring-the-best-snorkeling-spots-in-los-cabos/?$ /travel-guide-activities/ [R=301,L]
 RewriteRule ^snorkeling-tour-at-santa-maria-bay-explore-the-beauty-of-baja-peninsulas-aquatic-life/?$ /travel-guide-activities/ [R=301,L]
 
 # Whale-watching tour landing
-RewriteRule ^cabo-whale-watching-tours/?$ /whale-watching/ [R=301,L]
-RewriteRule ^cabo-whale-watching-season-back/?$ /whale-watching/ [R=301,L]
+RewriteRule ^cabo-whale-watching-tours/?$ /tours/whale-watching/ [R=301,L]
+RewriteRule ^cabo-whale-watching-season-back/?$ /tours/whale-watching/ [R=301,L]
 
 # Fishing landing
 RewriteRule ^fishing-in-cabo/?$ /travel-guide-activities/ [R=301,L]
@@ -176,12 +176,12 @@ RewriteRule ^book-now/?$ /contact/ [R=301,L]
 # Old /tours-and-boats/* tour pages → individual service pages
 # (specific rules first, then catch-all to /tours/)
 # -----------------------------------------------------------------------------
-RewriteRule ^tours-and-boats/cabo-sunset-cruise/?$ /shared-sunset/ [R=301,L]
-RewriteRule ^tours-and-boats/cabo-whale-watching/?$ /whale-watching/ [R=301,L]
-RewriteRule ^tours-and-boats/cabo-snorkeling/?$ /shared-snorkeling/ [R=301,L]
-RewriteRule ^tours-and-boats/cabo-scuba-diving/?$ /scuba-diving/ [R=301,L]
-RewriteRule ^tours-and-boats/yacht-bachelorette-party-in-cabo/?$ /bachelorette/ [R=301,L]
-RewriteRule ^tours-and-boats/shared-sailing-cruises/?$ /shared-sunset/ [R=301,L]
+RewriteRule ^tours-and-boats/cabo-sunset-cruise/?$ /tours/shared-sunset/ [R=301,L]
+RewriteRule ^tours-and-boats/cabo-whale-watching/?$ /tours/whale-watching/ [R=301,L]
+RewriteRule ^tours-and-boats/cabo-snorkeling/?$ /tours/shared-snorkeling/ [R=301,L]
+RewriteRule ^tours-and-boats/cabo-scuba-diving/?$ /tours/scuba-diving/ [R=301,L]
+RewriteRule ^tours-and-boats/yacht-bachelorette-party-in-cabo/?$ /tours/bachelorette/ [R=301,L]
+RewriteRule ^tours-and-boats/shared-sailing-cruises/?$ /tours/shared-sunset/ [R=301,L]
 RewriteRule ^tours-and-boats/cabo-day-trip/?$ /tours/ [R=301,L]
 RewriteRule ^tours-and-boats(/.*)?$ /tours/ [R=301,L]
 
@@ -189,7 +189,7 @@ RewriteRule ^tours-and-boats(/.*)?$ /tours/ [R=301,L]
 # Old /book-now/* booking pages → /tours/
 # (specific rule for shared booking, then catch-all)
 # -----------------------------------------------------------------------------
-RewriteRule ^book-now/shared-snorkeling-or-sunset-sailing/?$ /shared-snorkeling/ [R=301,L]
+RewriteRule ^book-now/shared-snorkeling-or-sunset-sailing/?$ /tours/shared-snorkeling/ [R=301,L]
 RewriteRule ^book-now/.+$ /tours/ [R=301,L]
 
 # -----------------------------------------------------------------------------
@@ -199,7 +199,7 @@ RewriteRule ^category/cabo-activities/?$ /travel-guide-activities/ [R=301,L]
 RewriteRule ^category/cabo-snorkeling/?$ /travel-guide-activities/ [R=301,L]
 RewriteRule ^category/cabo-attractions/?$ /travel-guide-attractions/ [R=301,L]
 RewriteRule ^category/cabo-food/?$ /travel-guide-culture/ [R=301,L]
-RewriteRule ^category/getting-married-in-cabo/?$ /bachelorette/ [R=301,L]
+RewriteRule ^category/getting-married-in-cabo/?$ /tours/bachelorette/ [R=301,L]
 RewriteRule ^category/traveling-to-cabo/?$ /travel-guide-traveling/ [R=301,L]
 RewriteRule ^category(/.*)?$ /travel-guide/ [R=301,L]
 
@@ -216,8 +216,8 @@ RewriteRule ^catalog/.+$ /tours/ [R=301,L]
 RewriteRule ^productsCalendar/.+$ /tours/ [R=301,L]
 RewriteRule ^calendarWidget/.+$ /tours/ [R=301,L]
 # Old numeric-prefix product URLs (e.g. /168008/your-own-private-42-luxury-yacht)
-RewriteRule ^[0-9]+/.+(snorkeling|sunset)-sailing.*$ /shared-snorkeling/ [R=301,L]
-RewriteRule ^[0-9]+/.+sailboat-for-snorkeling-or-sunset-sailing/?$ /shared-snorkeling/ [R=301,L]
+RewriteRule ^[0-9]+/.+(snorkeling|sunset)-sailing.*$ /tours/shared-snorkeling/ [R=301,L]
+RewriteRule ^[0-9]+/.+sailboat-for-snorkeling-or-sunset-sailing/?$ /tours/shared-snorkeling/ [R=301,L]
 RewriteRule ^[0-9]+/.+$ /tours/ [R=301,L]
 
 # =============================================================================
@@ -235,9 +235,9 @@ RewriteRule ^es/politicas-de-privacidad/?$ /es/policies/ [R=301,L]
 RewriteRule ^es/transportacion/?$ /es/shuttle-service/ [R=301,L]
 
 # Old /es/paseos-y-barcos/* tour pages
-RewriteRule ^es/paseos-y-barcos/crucero-al-atardecer/?$ /es/shared-sunset/ [R=301,L]
-RewriteRule ^es/paseos-y-barcos/avistamiento-de-ballenas/?$ /es/whale-watching/ [R=301,L]
-RewriteRule ^es/paseos-y-barcos/fiesta-de-despedida-de-soltera-en-yate/?$ /es/bachelorette/ [R=301,L]
+RewriteRule ^es/paseos-y-barcos/crucero-al-atardecer/?$ /es/tours/shared-sunset/ [R=301,L]
+RewriteRule ^es/paseos-y-barcos/avistamiento-de-ballenas/?$ /es/tours/whale-watching/ [R=301,L]
+RewriteRule ^es/paseos-y-barcos/fiesta-de-despedida-de-soltera-en-yate/?$ /es/tours/bachelorette/ [R=301,L]
 RewriteRule ^es/paseos-y-barcos(/.*)?$ /es/tours/ [R=301,L]
 
 # Old /es/reservar/* booking pages → /es/contact/
@@ -344,3 +344,23 @@ RewriteRule ^unique-dining-experiences-in-cabo/?$ /travel-guide-culture/ [R=301,
 # -----------------------------------------------------------------------------
 RewriteRule ^sailing-cruises/?$ /sailing-cabo-san-lucas/ [R=301,L]
 RewriteRule ^es/sailing-cruises/?$ /es/sailing-cabo-san-lucas/ [R=301,L]
+
+# -----------------------------------------------------------------------------
+# Tour pages moved under /tours/ (May 2026): /<slug>/ → /tours/<slug>/
+# Site launched ~3 weeks ago, so Google indexed the flat URLs first.
+# -----------------------------------------------------------------------------
+RewriteRule ^private-snorkeling/?$ /tours/private-snorkeling/ [R=301,L]
+RewriteRule ^shared-snorkeling/?$ /tours/shared-snorkeling/ [R=301,L]
+RewriteRule ^private-sunset/?$ /tours/private-sunset/ [R=301,L]
+RewriteRule ^shared-sunset/?$ /tours/shared-sunset/ [R=301,L]
+RewriteRule ^whale-watching/?$ /tours/whale-watching/ [R=301,L]
+RewriteRule ^bachelorette/?$ /tours/bachelorette/ [R=301,L]
+RewriteRule ^scuba-diving/?$ /tours/scuba-diving/ [R=301,L]
+
+RewriteRule ^es/private-snorkeling/?$ /es/tours/private-snorkeling/ [R=301,L]
+RewriteRule ^es/shared-snorkeling/?$ /es/tours/shared-snorkeling/ [R=301,L]
+RewriteRule ^es/private-sunset/?$ /es/tours/private-sunset/ [R=301,L]
+RewriteRule ^es/shared-sunset/?$ /es/tours/shared-sunset/ [R=301,L]
+RewriteRule ^es/whale-watching/?$ /es/tours/whale-watching/ [R=301,L]
+RewriteRule ^es/bachelorette/?$ /es/tours/bachelorette/ [R=301,L]
+RewriteRule ^es/scuba-diving/?$ /es/tours/scuba-diving/ [R=301,L]

@@ -156,7 +156,7 @@ La **orca** (*Orcinus orca*) es t&eacute;cnicamente el miembro m&aacute;s grande
 
 ## Mejores formas de ver ballenas en Cabo
 
-La forma m&aacute;s confiable de ver ballenas es en un <a href="/es/whale-watching/" class="text-accent-gold font-semibold hover:underline">tour de avistamiento de ballenas</a> dedicado durante la temporada alta (diciembre&ndash;abril). La mayor&iacute;a de los tours salen de la marina de Cabo San Lucas y se dirigen al lado del Pac&iacute;fico, donde las jorobadas y grises son m&aacute;s activas.
+La forma m&aacute;s confiable de ver ballenas es en un <a href="/es/tours/whale-watching/" class="text-accent-gold font-semibold hover:underline">tour de avistamiento de ballenas</a> dedicado durante la temporada alta (diciembre&ndash;abril). La mayor&iacute;a de los tours salen de la marina de Cabo San Lucas y se dirigen al lado del Pac&iacute;fico, donde las jorobadas y grises son m&aacute;s activas.
 
 <ul class="spot-list">
   <li><strong>Tour de avistamiento de ballenas</strong> &mdash; viajes dedicados de 2&ndash;3 horas con capitanes experimentados que saben d&oacute;nde encontrarlas. Las mejores probabilidades de encuentros cercanos</li>

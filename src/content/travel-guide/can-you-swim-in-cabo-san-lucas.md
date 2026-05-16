@@ -8,7 +8,7 @@ category: "Activities"
 categoryLink: "/travel-guide-activities/"
 activeSubmenu: "activities"
 bestTime: "Year-round — water is swimmable in every season"
-relatedActivity: "/private-snorkeling/"
+relatedActivity: "/tours/private-snorkeling/"
 sidebarType: "snorkeling"
 ---
 
@@ -107,7 +107,7 @@ The longest swimmable beach in Cabo and the one most visitors discover first. Ca
 
 ### Lover's Beach
 
-Only accessible by water taxi or boat, tucked between the rocks at Land's End. The Sea of Cortez side is calm, swimmable, and beautifully sheltered. The Pacific side &mdash; called Divorce Beach &mdash; looks tempting but the currents are extremely dangerous. **Never swim on the Divorce Beach side.** We pass by Lover's Beach on every [shared snorkeling cruise](/shared-snorkeling/) and it's always a highlight.
+Only accessible by water taxi or boat, tucked between the rocks at Land's End. The Sea of Cortez side is calm, swimmable, and beautifully sheltered. The Pacific side &mdash; called Divorce Beach &mdash; looks tempting but the currents are extremely dangerous. **Never swim on the Divorce Beach side.** We pass by Lover's Beach on every [shared snorkeling cruise](/tours/shared-snorkeling/) and it's always a highlight.
 
 ---
 
@@ -131,19 +131,19 @@ This is where it gets really good. These three spots are where we take our chart
 
 A protected horseshoe cove along the Tourist Corridor with Blue Flag certification. The water is so clear it feels like swimming inside an aquarium. Angelfish, parrotfish, pufferfish, rays &mdash; all cruising through the reef just below the surface.
 
-This is our favorite stop on [private snorkeling charters](/private-snorkeling/). We anchor inside the bay and guests swim right off the boat. No crowds, no rush, just you and the reef. It's the kind of place where you lose track of time underwater.
+This is our favorite stop on [private snorkeling charters](/tours/private-snorkeling/). We anchor inside the bay and guests swim right off the boat. No crowds, no rush, just you and the reef. It's the kind of place where you lose track of time underwater.
 
 ---
 
 ### Chileno Bay &mdash; Reliable and Beautiful
 
-Another Blue Flag beach with sandy entry, consistently calm conditions, and a rocky reef that attracts bigger species than you'd expect &mdash; eels, rays, dense schools of tropical fish. We stop here on both our [private](/private-snorkeling/) and [shared](/shared-snorkeling/) charters. On a private trip, we often combine Chileno with Santa Mar&iacute;a in a single outing &mdash; lunch, open bar, and the best two bays in Cabo, all in one day.
+Another Blue Flag beach with sandy entry, consistently calm conditions, and a rocky reef that attracts bigger species than you'd expect &mdash; eels, rays, dense schools of tropical fish. We stop here on both our [private](/tours/private-snorkeling/) and [shared](/tours/shared-snorkeling/) charters. On a private trip, we often combine Chileno with Santa Mar&iacute;a in a single outing &mdash; lunch, open bar, and the best two bays in Cabo, all in one day.
 
 ---
 
 ### Pelican Rock &mdash; The Classic First Dive
 
-A short boat ride from the marina, right next to El Arco. This is where most visitors have their first underwater moment in Cabo. Shallow enough for beginners, loaded with colorful fish and sea fans, and there's always a chance a sea lion swims through. It's part of the Cabo San Lucas Marine Park and the main stop on our [shared snorkeling sailboat tours](/shared-snorkeling/) &mdash; about 45 to 60 minutes in the water before cruising past the Arch.
+A short boat ride from the marina, right next to El Arco. This is where most visitors have their first underwater moment in Cabo. Shallow enough for beginners, loaded with colorful fish and sea fans, and there's always a chance a sea lion swims through. It's part of the Cabo San Lucas Marine Park and the main stop on our [shared snorkeling sailboat tours](/tours/shared-snorkeling/) &mdash; about 45 to 60 minutes in the water before cruising past the Arch.
 
 <div class="my-10 rounded-2xl overflow-hidden shadow-lg">
   <img alt="Blue Flag swimming beaches in Cabo San Lucas" class="w-full h-[300px] lg:h-[420px] object-cover" src="/images/travel-guide/blue-flag-swimming-beaches-in-cabo.jpeg.webp"/>
@@ -209,9 +209,9 @@ The Cabo sun is no joke, especially on the water where reflections amplify UV ex
 
 We run both, so here's the real difference:
 
-**Shared snorkeling** on our [sailboat cruises](/shared-snorkeling/) is the best value in Cabo. Small group, sailboat to Pelican Rock, open bar, sail past the Arch. Social, relaxed, fun. Perfect if you're a couple or solo traveler who wants to meet people and see the highlights.
+**Shared snorkeling** on our [sailboat cruises](/tours/shared-snorkeling/) is the best value in Cabo. Small group, sailboat to Pelican Rock, open bar, sail past the Arch. Social, relaxed, fun. Perfect if you're a couple or solo traveler who wants to meet people and see the highlights.
 
-**Private snorkeling** on a [private charter](/private-snorkeling/) is a different experience entirely. Your group, your boat, your schedule. We take private groups to Santa Mar&iacute;a and Chileno &mdash; the quieter, more pristine bays that shared tours don't visit. Dedicated crew, all snorkel gear, open bar, lunch. You decide how long to stay in the water and where to go next.
+**Private snorkeling** on a [private charter](/tours/private-snorkeling/) is a different experience entirely. Your group, your boat, your schedule. We take private groups to Santa Mar&iacute;a and Chileno &mdash; the quieter, more pristine bays that shared tours don't visit. Dedicated crew, all snorkel gear, open bar, lunch. You decide how long to stay in the water and where to go next.
 
 ---
 
@@ -238,7 +238,7 @@ If you want to take your snorkeling to another level, Cabo Pulmo National Marine
 
 ## Dive In
 
-The best way to experience Cabo's swimmable beaches isn't from the sand &mdash; it's from the water. A charter lets you hit Santa Mar&iacute;a, Chileno, and Pelican Rock in a single day, skip the crowded access points, and swim in spots most visitors never see. Whether you join a [shared cruise](/shared-snorkeling/) or take a [private charter](/private-snorkeling/) with your group, our crew knows exactly where the conditions are best that day. We do this every morning from IGY Marina &mdash; it's what we love. [Send us a message](https://wa.me/526241439798) and we'll put together the right trip for you.
+The best way to experience Cabo's swimmable beaches isn't from the sand &mdash; it's from the water. A charter lets you hit Santa Mar&iacute;a, Chileno, and Pelican Rock in a single day, skip the crowded access points, and swim in spots most visitors never see. Whether you join a [shared cruise](/tours/shared-snorkeling/) or take a [private charter](/tours/private-snorkeling/) with your group, our crew knows exactly where the conditions are best that day. We do this every morning from IGY Marina &mdash; it's what we love. [Send us a message](https://wa.me/526241439798) and we'll put together the right trip for you.
 
 <script type="application/ld+json">
 {

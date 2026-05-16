@@ -25,7 +25,7 @@ A menudo ver&aacute;s lobos marinos en:
 
 <ul class="spot-list">
   <li><strong>Las rocas de Land's End</strong> &mdash; la colonia m&aacute;s grande, decenas de animales tomando sol y ladrando</li>
-  <li><strong>Pelican Rock</strong> &mdash; grupos m&aacute;s peque&ntilde;os, frecuentemente vistos haciendo <a href="/es/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">snorkel</a></li>
+  <li><strong>Pelican Rock</strong> &mdash; grupos m&aacute;s peque&ntilde;os, frecuentemente vistos haciendo <a href="/es/tours/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">snorkel</a></li>
   <li><strong>El rompeolas de la marina</strong> &mdash; lobos marinos solitarios a veces se suben a las rocas cerca de la entrada del puerto</li>
   <li><strong>&Aacute;rea de la Playa del Amor</strong> &mdash; ocasionalmente se ven nadando cerca de la orilla</li>
 </ul>
@@ -70,8 +70,8 @@ Los lobos marinos viven en Cabo todo el a&ntilde;o, pero su nivel de actividad v
 La forma m&aacute;s popular es en un **tour de snorkel o vela** que pasa por Land's End. La mayor&iacute;a de los tours en bote en Cabo incluyen un paso por la colonia de lobos marinos como parte de la ruta hacia el Arco.
 
 <ul class="spot-list">
-  <li><strong><a href="/es/private-snorkeling/" class="text-accent-gold font-semibold hover:underline">Tour privado de snorkel</a></strong> &mdash; tu propio bote, parada en Pelican Rock y el Arco. Mejor oportunidad de pasar tiempo extendido cerca de la colonia.</li>
-  <li><strong><a href="/es/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">Tour compartido de snorkel</a></strong> &mdash; opci&oacute;n en grupo peque&ntilde;o, misma ruta pasando por los lobos marinos a un precio m&aacute;s accesible.</li>
+  <li><strong><a href="/es/tours/private-snorkeling/" class="text-accent-gold font-semibold hover:underline">Tour privado de snorkel</a></strong> &mdash; tu propio bote, parada en Pelican Rock y el Arco. Mejor oportunidad de pasar tiempo extendido cerca de la colonia.</li>
+  <li><strong><a href="/es/tours/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">Tour compartido de snorkel</a></strong> &mdash; opci&oacute;n en grupo peque&ntilde;o, misma ruta pasando por los lobos marinos a un precio m&aacute;s accesible.</li>
   <li><strong>Taxi acu&aacute;tico a la Playa del Amor</strong> &mdash; pasa justo por la colonia en el camino. Boletos de viaje redondo disponibles en la marina.</li>
   <li><strong>Kayak o paddleboard</strong> &mdash; puedes remar desde Playa El M&eacute;dano hasta Land's End. Calcula 30&ndash;45 minutos por tramo.</li>
 </ul>

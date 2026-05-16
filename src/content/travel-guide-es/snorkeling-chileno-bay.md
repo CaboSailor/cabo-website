@@ -25,7 +25,7 @@ Espera que la tripulaci&oacute;n local, con amplio conocimiento del &aacute;rea,
 
 ### La Experiencia del Tour de Snorkel en Bah&iacute;a Chileno
 
-Con condiciones de aguas tranquilas tanto en Bah&iacute;a Chileno como en Bah&iacute;a Santa Mar&iacute;a, disfrutar&aacute;s de una <a href="/es/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">experiencia de snorkel c&oacute;moda y segura</a>.
+Con condiciones de aguas tranquilas tanto en Bah&iacute;a Chileno como en Bah&iacute;a Santa Mar&iacute;a, disfrutar&aacute;s de una <a href="/es/tours/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">experiencia de snorkel c&oacute;moda y segura</a>.
 Al sumergirte en las aguas cristalinas de Bah&iacute;a Chileno, te asombrar&aacute; la variedad de vida acu&aacute;tica que vive en este lugar. El Mar de Cort&eacute;s alberga m&aacute;s de 900 especies de peces, por lo que es com&uacute;n ver tortugas marinas, lobos marinos e incluso mantarrayas Mobula nadando y saltando.
 La pen&iacute;nsula de Baja y el Mar de Cort&eacute;s son un refugio para la vida marina y para la exploraci&oacute;n submarina de cualquier tipo.
 
@@ -38,7 +38,7 @@ Cabo Sailing proporciona equipo de snorkel y otros accesorios de natación para 
 Despu&eacute;s de nadar entre los peces de colores y los corales vibrantes, toma un descanso en la arena blanca de Playa Chileno.
 Al regresar a bordo, disfruta de una ducha de agua dulce para quitarte la sal del mar, y si&eacute;ntate o rec&uacute;estate a tomar el sol. Te servir&aacute;n bebidas mexicanas tradicionales y eres bienvenido a usar la barra libre antes y mientras regresamos al Mar de Cort&eacute;s abierto.
 Mientras navegamos de regreso a la bah&iacute;a de Cabo San Lucas, tendr&aacute;s la oportunidad de explorar las formaciones rocosas. Podr&aacute;s ver de cerca el famoso arco de Cabo y Land's End, donde la vida marina local hace su hogar.
-No te pierdas la oportunidad de tomar un tour de snorkel en Bah&iacute;a Chileno y explorar su belleza con Cabo Sailing. <a href="/es/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">Reserva tu tour de snorkel hoy</a> y vive la maravilla natural de Los Cabos como nunca antes.
+No te pierdas la oportunidad de tomar un tour de snorkel en Bah&iacute;a Chileno y explorar su belleza con Cabo Sailing. <a href="/es/tours/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">Reserva tu tour de snorkel hoy</a> y vive la maravilla natural de Los Cabos como nunca antes.
 Desde el snorkel en Bah&iacute;a Santa Mar&iacute;a hasta el de Bah&iacute;a Chileno, no faltan experiencias impresionantes que disfrutar en las aguas tranquilas y claras de Los Cabos.
 
 ### Prot&eacute;gete del Sol con Bloqueador y Mant&eacute;nte Hidratado

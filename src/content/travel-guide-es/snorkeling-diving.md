@@ -8,7 +8,7 @@ category: "Activities"
 categoryLink: "/es/travel-guide-activities/"
 activeSubmenu: "activities"
 bestTime: "Mayo–Noviembre para agua calmada y mejor visibilidad"
-relatedActivity: "/es/private-snorkeling/"
+relatedActivity: "/es/tours/private-snorkeling/"
 sidebarType: "snorkeling"
 hasBoatCards: true
 ---

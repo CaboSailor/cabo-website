@@ -51,7 +51,7 @@ A Playa del Amor solo se llega por agua &mdash; no hay carretera ni sendero peat
 
 <ul class="spot-list">
   <li><strong>Taxi acu&aacute;tico</strong> &mdash; pequeñas pangas (lanchas abiertas) salen de la marina de Cabo San Lucas cada pocos minutos. El viaje redondo cuesta aproximadamente $15 USD. Acuerda un horario de regreso con tu lanchero</li>
-  <li><strong>Tour de snorkel</strong> &mdash; la mayor&iacute;a de los <a href="/es/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">tours compartidos de snorkel</a> y <a href="/es/private-snorkeling/" class="text-accent-gold font-semibold hover:underline">tours privados de snorkel</a> incluyen una parada en o cerca de Playa del Amor como parte de la ruta</li>
+  <li><strong>Tour de snorkel</strong> &mdash; la mayor&iacute;a de los <a href="/es/tours/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">tours compartidos de snorkel</a> y <a href="/es/tours/private-snorkeling/" class="text-accent-gold font-semibold hover:underline">tours privados de snorkel</a> incluyen una parada en o cerca de Playa del Amor como parte de la ruta</li>
   <li><strong>Kayak o paddleboard</strong> &mdash; puedes remar desde Playa El M&eacute;dano hasta Playa del Amor en unos 30&ndash;45 minutos. Hay rentas en El M&eacute;dano</li>
 </ul>
 

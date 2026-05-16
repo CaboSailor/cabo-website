@@ -16,13 +16,13 @@ sidebarType: "snorkeling"
 ## Experience the Beauty of Los Cabos with the Pelican Rock Cabo Snorkeling Tour
 
 A journey into the heart of Cabo bay with a Pelican Rock Cabo Snorkeling Tour is a perfect choice. This tour is an opportunity to explore, under the waves, the stunning bay of Cabo San Lucas.
-On a <a href="/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">Cabo snorkeling tour</a>, you will discover the wonders of the Sea of Cortez. This body of water is one of the most beautiful in Mexico and the world.
+On a <a href="/tours/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">Cabo snorkeling tour</a>, you will discover the wonders of the Sea of Cortez. This body of water is one of the most beautiful in Mexico and the world.
 
 ---
 
 ## Day Sails and boat tours to Pelican Rock
 
-Day sail and bout tours to Pelican Rock start with daily departures from Cabo marina and into the Bay. Whether <a href="/private-snorkeling/" class="text-accent-gold font-semibold hover:underline">private snorkeling tours</a> or shared those leave daily.
+Day sail and bout tours to Pelican Rock start with daily departures from Cabo marina and into the Bay. Whether <a href="/tours/private-snorkeling/" class="text-accent-gold font-semibold hover:underline">private snorkeling tours</a> or shared those leave daily.
 Boarding the vessel, you will be welcomed by the friendly crew of Cabo Sailing. Expect to be well looked after.
 The welcoming personnel will provide fresh towels, snorkel gear, swimming aids, and refreshments. Sit down, lay back, and relax on comfortable cushions. The smooth waters of Cabo San Lucas bay are leading you now on an eventful journey.
 

@@ -8,7 +8,7 @@ category: "Culture & Food"
 categoryLink: "/es/travel-guide-culture/"
 activeSubmenu: "culture"
 bestTime: "Todo el año — mariscos frescos y cocina local en cada temporada"
-relatedActivity: "/es/private-sunset/"
+relatedActivity: "/es/tours/private-sunset/"
 sidebarType: "default"
 ---
 
@@ -56,4 +56,4 @@ Normalmente la prepara el grupo ind&iacute;gena Guaycura para diversas ceremonia
 
 No te pierdas ninguna de estas delicias que te ayudar&aacute;n a conocer m&aacute;s sobre Cabo San Lucas.
 
-¿Quieres probar los sabores de Cabo en el mar? Nuestros <a href="/es/private-sunset/" class="text-accent-gold font-semibold hover:underline">cruceros privados al atardecer</a> incluyen una comida preparada por chef en el agua &mdash; la forma m&aacute;s fresca de vivir la cocina local.
+¿Quieres probar los sabores de Cabo en el mar? Nuestros <a href="/es/tours/private-sunset/" class="text-accent-gold font-semibold hover:underline">cruceros privados al atardecer</a> incluyen una comida preparada por chef en el agua &mdash; la forma m&aacute;s fresca de vivir la cocina local.

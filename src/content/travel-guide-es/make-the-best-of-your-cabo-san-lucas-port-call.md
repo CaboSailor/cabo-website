@@ -41,7 +41,7 @@ Una vez en tierra, estar&aacute;s en la marina de Cabo San Lucas &mdash; justo e
 Enf&oacute;cate en una sola actividad principal y una comida r&aacute;pida:
 
 <ul class="spot-list">
-  <li><strong><a href="/es/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">Tour de snorkel al Arco</a></strong> &mdash; crucero compartido de 2.5 horas que pasa por la colonia de lobos marinos, Pelican Rock y la Playa del Amor. La actividad m&aacute;s popular para cruceristas en Cabo.</li>
+  <li><strong><a href="/es/tours/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">Tour de snorkel al Arco</a></strong> &mdash; crucero compartido de 2.5 horas que pasa por la colonia de lobos marinos, Pelican Rock y la Playa del Amor. La actividad m&aacute;s popular para cruceristas en Cabo.</li>
   <li><strong>Taxi acu&aacute;tico a la Playa del Amor</strong> &mdash; 10 minutos desde la marina. Pasa una hora en una de las playas m&aacute;s ic&oacute;nicas de Cabo y regresa en taxi.</li>
   <li><strong>Recorre la marina + comida</strong> &mdash; visita las tiendas, come tacos de pescado en un restaurante frente al mar y toma fotos del Arco desde el malec&oacute;n de la marina.</li>
 </ul>
@@ -52,7 +52,7 @@ Agrega una segunda actividad o una buena comida sentado:
 
 <ul class="spot-list">
   <li><strong>Tour de snorkel + Playa El M&eacute;dano</strong> &mdash; haz el crucero de 2.5 horas en la ma&ntilde;ana, luego camina a Playa El M&eacute;dano para nadar, rentar una silla y comer.</li>
-  <li><strong><a href="/es/private-snorkeling/" class="text-accent-gold font-semibold hover:underline">Tour privado en bote</a></strong> &mdash; si viajas con un grupo, un charter privado de 3 horas te da el Arco, snorkel y barra libre a tu propio ritmo.</li>
+  <li><strong><a href="/es/tours/private-snorkeling/" class="text-accent-gold font-semibold hover:underline">Tour privado en bote</a></strong> &mdash; si viajas con un grupo, un charter privado de 3 horas te da el Arco, snorkel y barra libre a tu propio ritmo.</li>
   <li><strong>Recorrido por el centro + golf</strong> &mdash; recorre la marina por la ma&ntilde;ana y luego toma un taxi a uno de los campos de golf de Cabo para jugar 9 hoyos r&aacute;pidos.</li>
 </ul>
 
@@ -62,7 +62,7 @@ Tienes tiempo para un d&iacute;a completo en Cabo:
 
 <ul class="spot-list">
   <li><strong>Snorkel en la ma&ntilde;ana + playa por la tarde + paseo al atardecer</strong> &mdash; la experiencia completa de Cabo en un d&iacute;a.</li>
-  <li><strong><a href="/es/whale-watching/" class="text-accent-gold font-semibold hover:underline">Avistamiento de ballenas</a> (Dic&ndash;Abr)</strong> &mdash; un tour de 2 a 3 horas m&aacute;s tiempo para comer y playa.</li>
+  <li><strong><a href="/es/tours/whale-watching/" class="text-accent-gold font-semibold hover:underline">Avistamiento de ballenas</a> (Dic&ndash;Abr)</strong> &mdash; un tour de 2 a 3 horas m&aacute;s tiempo para comer y playa.</li>
   <li><strong>Excursi&oacute;n a San Jos&eacute; del Cabo</strong> &mdash; 30 minutos en taxi a la ciudad hermana m&aacute;s tranquila y art&iacute;stica. Recorre el distrito de galer&iacute;as, come en un restaurante local y regresa a media tarde.</li>
 </ul>
 
@@ -104,7 +104,7 @@ Normalmente entre 6 y 10 horas, aunque algunos itinerarios solo permiten 4&ndash
 
 **&iquest;Puedo caminar al Arco desde el puerto de cruceros?**
 
-No puedes caminar hasta el Arco mismo &mdash; est&aacute; en la punta de Land's End, accesible solo por agua. Pero puedes verlo desde ciertos puntos a lo largo de la marina. Para acercarte, toma un taxi acu&aacute;tico o un <a href="/es/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">tour de snorkel</a>.
+No puedes caminar hasta el Arco mismo &mdash; est&aacute; en la punta de Land's End, accesible solo por agua. Pero puedes verlo desde ciertos puntos a lo largo de la marina. Para acercarte, toma un taxi acu&aacute;tico o un <a href="/es/tours/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">tour de snorkel</a>.
 
 **&iquest;Es seguro explorar Cabo por mi cuenta desde el puerto de cruceros?**
 

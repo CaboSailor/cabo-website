@@ -1,25 +1,25 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import FloatingCTA from '../components/FloatingCTA.astro';
-import RezdyModal from '../components/RezdyModal.astro';
-import CarouselImage from '../components/CarouselImage.astro';
-import WhaleFlukeIcon from '../components/WhaleFlukeIcon.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import FloatingCTA from '../../components/FloatingCTA.astro';
+import RezdyModal from '../../components/RezdyModal.astro';
+import CarouselImage from '../../components/CarouselImage.astro';
 import { Image } from 'astro:assets';
 
-import { whaleWatching as feb_15_56 } from "../data/tour-heroes";
-import IGP5740 from "../assets/images/whales/whale-breaching-near-yacht-in-daylight.png";
-import Cabo_Sailing_Ocean_adventures_5 from "../assets/images/whales/sailing-with-a-whale-in-view.png";
-import family_on_board from "../assets/images/whales/cabo-whale-watching-family.jpg";
-import IGP5743 from "../assets/images/whales/cabo-whale-watching-close-up.png";
+import { privateSnorkeling as heroSunnyYachtCruise } from "../../data/tour-heroes";
+import sunnySailboatAdventure from "../../assets/images/guests-on-yachts/sunny-day-sailboat-adventure-on-the-coast.png";
+import relaxingLuxuryBoat from "../../assets/images/guests-on-yachts/relaxing-day-on-a-luxury-boat.png";
+import sailingGuestsWaving from "../../assets/images/guests-on-sailboats/cabo-sailing-guests-waving.jpg";
+import cheersCoastalAdventure from "../../assets/images/guests-on-sailboats/cheers-on-a-sunny-coastal-adventure.png";
+import Chileno from "../../assets/images/blog/chileno-bay-cabo-snorkeling.jpg";
 
 const touristTripSchema = JSON.stringify({
   "@context": "https://schema.org",
   "@type": "TouristTrip",
-  "name": "Private Whale Watching in Cabo San Lucas",
-  "description": "Private whale watching charters during humpback season (Dec\u2013Apr). See humpbacks and grays up close from your own yacht or sailboat in Cabo San Lucas.",
-  "touristType": "Families, Nature Lovers, Couples",
+  "name": "Private Snorkeling Tour in Cabo San Lucas",
+  "description": "Private snorkel tour to Pelican Rock and the Arch of Cabo San Lucas. All gear, drinks and snacks included. Up to 12 guests on your own boat.",
+  "touristType": "Families, Snorkelers, Groups",
   "provider": {
     "@type": "TravelAgency",
     "name": "Cabo Sailing Ocean Adventures",
@@ -27,7 +27,7 @@ const touristTripSchema = JSON.stringify({
   },
   "offers": {
     "@type": "Offer",
-    "url": "https://cabosailing.com/whale-watching/",
+    "url": "https://cabosailing.com/tours/private-snorkeling/",
     "priceCurrency": "USD",
     "availability": "https://schema.org/InStock"
   }
@@ -39,12 +39,12 @@ const breadcrumbSchema = JSON.stringify({
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://cabosailing.com/" },
     { "@type": "ListItem", "position": 2, "name": "Tours", "item": "https://cabosailing.com/tours/" },
-    { "@type": "ListItem", "position": 3, "name": "Private Whale Watching" }
+    { "@type": "ListItem", "position": 3, "name": "Private Snorkeling Tour" }
   ]
 });
 ---
 
-<BaseLayout bodyClass="bg-white font-body text-text-main antialiased min-h-screen flex flex-col relative" title="Private Whale Watching in Cabo San Lucas (Dec–Apr) | Cabo Sailing" description="Private whale watching charters during humpback season (Dec–Apr). See humpbacks and grays up close from your own yacht or sailboat in Cabo San Lucas." ogImage="/og/whale-watching-sailing.jpg" ogImageAlt="Whale watching in Cabo San Lucas" hreflangs={{ en: '/whale-watching', es: '/es/whale-watching' }}>
+<BaseLayout bodyClass="bg-white font-body text-text-main antialiased min-h-screen flex flex-col relative" title="Private Snorkeling Tour in Cabo San Lucas | Cabo Sailing" description="Private snorkel tour to Pelican Rock and the Arch of Cabo San Lucas. All gear, drinks and snacks included. Up to 12 guests on your own boat." ogImage="/og/private-snorkeling.jpg" ogImageAlt="Private snorkeling tour at Pelican Rock, Cabo San Lucas" hreflangs={{ en: '/tours/private-snorkeling', es: '/es/tours/private-snorkeling' }}>
   <script slot="head" type="application/ld+json" set:html={touristTripSchema} />
   <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
   <Header variant="subpage" activePage="tours" />
@@ -66,35 +66,35 @@ const breadcrumbSchema = JSON.stringify({
 <!-- Hero Gallery -->
 <div class="lg:hidden relative w-full h-[45vh] overflow-hidden">
 <div class="flex overflow-x-auto snap-x snap-mandatory h-full no-scrollbar">
-<div class="flex-shrink-0 w-full h-full snap-center"><Image src={feb_15_56} alt="Humpback whale breaching" class="w-full h-full object-cover" width={800} height={500} /></div>
-<div class="flex-shrink-0 w-full h-full snap-center"><Image src={IGP5740} alt="Humpback whale breaching near a Cabo Sailing yacht" class="w-full h-full object-cover" width={800} height={500} /></div>
-<div class="flex-shrink-0 w-full h-full snap-center"><Image src={Cabo_Sailing_Ocean_adventures_5} alt="Whale watching from sailboat" class="w-full h-full object-cover" width={800} height={500} /></div>
-<div class="flex-shrink-0 w-full h-full snap-center"><Image src={family_on_board} alt="Family on board whale watching" class="w-full h-full object-cover" width={800} height={500} /></div>
-<div class="flex-shrink-0 w-full h-full snap-center"><Image src={IGP5743} alt="Whale spotting in Cabo" class="w-full h-full object-cover" width={800} height={500} /></div>
+<div class="flex-shrink-0 w-full h-full snap-center"><Image src={heroSunnyYachtCruise} alt="Sunny yacht cruise on the open sea" class="w-full h-full object-cover" width={800} height={500} /></div>
+<div class="flex-shrink-0 w-full h-full snap-center"><Image src={sunnySailboatAdventure} alt="Sunny day sailboat adventure on the coast" class="w-full h-full object-cover" width={800} height={500} /></div>
+<div class="flex-shrink-0 w-full h-full snap-center"><Image src={relaxingLuxuryBoat} alt="Relaxing day on a luxury boat" class="w-full h-full object-cover" width={800} height={500} /></div>
+<div class="flex-shrink-0 w-full h-full snap-center"><Image src={sailingGuestsWaving} alt="Sailing guests waving from the boat" class="w-full h-full object-cover" width={800} height={500} /></div>
+<div class="flex-shrink-0 w-full h-full snap-center"><Image src={cheersCoastalAdventure} alt="Cheers on a sunny coastal adventure" class="w-full h-full object-cover" width={800} height={500} /></div>
 </div>
 <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/20 to-transparent pt-10 pb-5 px-4">
   <div class="max-w-[360px] mx-auto text-center">
     <div class="flex items-center justify-center gap-0.5 mb-1.5">
-      <span class="material-symbols-outlined text-gold filled text-lg">star</span>
-      <span class="material-symbols-outlined text-gold filled text-lg">star</span>
-      <span class="material-symbols-outlined text-gold filled text-lg">star</span>
-      <span class="material-symbols-outlined text-gold filled text-lg">star</span>
-      <span class="material-symbols-outlined text-gold filled text-lg">star</span>
+      <span class="material-symbols-outlined text-gold filled text-sm">star</span>
+      <span class="material-symbols-outlined text-gold filled text-sm">star</span>
+      <span class="material-symbols-outlined text-gold filled text-sm">star</span>
+      <span class="material-symbols-outlined text-gold filled text-sm">star</span>
+      <span class="material-symbols-outlined text-gold filled text-sm">star</span>
     </div>
-    <p class="text-white text-base leading-snug">"We saw whales breaching just meters away. The kids are still talking about it."</p>
-    <p class="text-white/50 text-xs uppercase tracking-widest font-bold mt-2">David &amp; Lisa M. &mdash; Chicago, IL</p>
+    <p class="text-white text-base leading-snug">"Hands down the best snorkeling trip we've ever done. The crew made it feel so special."</p>
+    <p class="text-white/50 text-[10px] uppercase tracking-widest font-bold mt-2">Mike &amp; Sarah T. &mdash; Austin, TX</p>
   </div>
 </div>
 <button class="fleet-arrow left" onclick="heroNav(this,-1)"><span class="material-symbols-outlined">chevron_left</span></button>
 <button class="fleet-arrow right" onclick="heroNav(this,1)"><span class="material-symbols-outlined">chevron_right</span></button>
 </div>
 <div class="hidden lg:block max-w-[1400px] mx-auto px-10 mt-6 relative">
-<div class="grid grid-cols-4 grid-rows-2 gap-2 h-[55vh]">
-<div class="col-span-2 row-span-2 rounded-2xl overflow-hidden"><Image src={feb_15_56} alt="Humpback whale breaching" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
-<div class="rounded-2xl overflow-hidden"><Image src={IGP5740} alt="Humpback whale breaching near a Cabo Sailing yacht" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
-<div class="rounded-2xl overflow-hidden"><Image src={Cabo_Sailing_Ocean_adventures_5} alt="Whale watching from sailboat" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
-<div class="rounded-2xl overflow-hidden"><Image src={family_on_board} alt="Family on board whale watching" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
-<div class="rounded-2xl overflow-hidden"><Image src={IGP5743} alt="Whale spotting in Cabo" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
+<div class="grid grid-cols-4 grid-rows-2 gap-2 h-[55vh]" id="hero-desktop-grid">
+<div class="col-span-2 row-span-2 rounded-2xl overflow-hidden"><Image src={heroSunnyYachtCruise} alt="Sunny yacht cruise on the open sea" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
+<div class="rounded-2xl overflow-hidden"><Image src={sunnySailboatAdventure} alt="Sunny day sailboat adventure on the coast" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
+<div class="rounded-2xl overflow-hidden"><Image src={relaxingLuxuryBoat} alt="Relaxing day on a luxury boat" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
+<div class="rounded-2xl overflow-hidden"><Image src={sailingGuestsWaving} alt="Sailing guests waving from the boat" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
+<div class="rounded-2xl overflow-hidden"><Image src={cheersCoastalAdventure} alt="Cheers on a sunny coastal adventure" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
 </div>
 <div class="mt-4 flex justify-center">
   <div class="max-w-[520px] flex items-start gap-4">
@@ -106,8 +106,8 @@ const breadcrumbSchema = JSON.stringify({
       <span class="material-symbols-outlined text-gold filled text-base">star</span>
     </div>
     <div>
-      <p class="text-navy text-sm leading-snug">"We saw whales breaching just meters away. The kids are still talking about it."</p>
-      <p class="text-navy/60 text-[10px] uppercase tracking-widest font-bold mt-2">David &amp; Lisa M. &mdash; Chicago, IL</p>
+      <p class="text-navy text-sm leading-snug">"Hands down the best snorkeling trip we've ever done. The crew made it feel so special."</p>
+      <p class="text-navy/60 text-[10px] uppercase tracking-widest font-bold mt-2">Mike &amp; Sarah T. &mdash; Austin, TX</p>
     </div>
   </div>
 </div>
@@ -124,12 +124,12 @@ const breadcrumbSchema = JSON.stringify({
   <nav class="flex items-center gap-1.5 text-xs text-slate-500 mb-4" aria-label="Breadcrumb">
     <a href="/" class="hover:text-gold transition-colors">Home</a>
     <span class="material-symbols-outlined text-[14px]">chevron_right</span>
-    <span>Tours</span>
+    <a href="/tours/" class="hover:text-gold transition-colors">Tours</a>
     <span class="material-symbols-outlined text-[14px]">chevron_right</span>
-    <span class="text-navy font-semibold">Whale Watching</span>
+    <span class="text-navy font-semibold">Private Snorkeling</span>
   </nav>
-  <h1 class="text-3xl text-navy leading-tight">Cabo Sailing &amp; Whale Watching</h1>
-  <p class="text-slate-700 text-lg leading-relaxed mt-2">See humpback and gray whales up close on your own private boat with an expert naturalist crew.</p>
+  <h1 class="text-4xl text-navy leading-tight">Your Own Private Snorkeling Cruise in Cabo</h1>
+  <p class="text-slate-700 text-lg leading-relaxed mt-2">Your own private yacht or sailboat to Cabo's best snorkeling spots.</p>
 
   <!-- Icons row -->
   <div class="mt-8 grid grid-cols-4 gap-x-6 gap-y-4">
@@ -138,16 +138,16 @@ const breadcrumbSchema = JSON.stringify({
       <p class="text-sm font-semibold text-navy">3 Hours</p>
     </div>
     <div class="flex items-center gap-2">
-      <WhaleFlukeIcon class="text-gold text-2xl" />
-      <p class="text-sm font-semibold text-navy">Whale Season Dec&ndash;Apr</p>
+      <span class="material-symbols-outlined text-gold">family_restroom</span>
+      <p class="text-sm font-semibold text-navy">Family Friendly</p>
     </div>
     <div class="flex items-center gap-2">
       <span class="material-symbols-outlined text-gold">event_available</span>
       <p class="text-sm font-semibold text-navy">Free Cancellation</p>
     </div>
     <div class="flex items-center gap-2">
-      <span class="material-symbols-outlined text-gold">family_restroom</span>
-      <p class="text-sm font-semibold text-navy">Family Friendly</p>
+      <span class="material-symbols-outlined text-gold">groups</span>
+      <p class="text-sm font-semibold text-navy">Small Groups</p>
     </div>
     <div class="flex items-center gap-2">
       <span class="material-symbols-outlined text-gold">add</span>
@@ -159,7 +159,7 @@ const breadcrumbSchema = JSON.stringify({
     </div>
     <div class="flex items-center gap-2 col-span-2">
       <span class="material-symbols-outlined text-gold">schedule</span>
-      <p class="text-sm font-semibold text-navy">MID-DEC TO MID-APR &middot; FLEXIBLE DEPARTURES</p>
+      <p class="text-sm font-semibold text-navy">DEPARTURES 9:00 AM &amp; 12:30 PM DAILY</p>
     </div>
   </div>
 
@@ -167,7 +167,7 @@ const breadcrumbSchema = JSON.stringify({
   <div class="mt-12">
     <h3 class="text-2xl text-navy mb-4">About this experience</h3>
     <p class="text-slate-700 leading-relaxed text-base">
-      Every winter, thousands of humpback and gray whales migrate to the warm waters off Cabo San Lucas &mdash; and our private charters put you right in their path. Watch in wonder as these gentle giants breach, slap their tails, and sing &mdash; sometimes just meters from the boat. Our experienced naturalist crew knows exactly where to find them, and follows responsible whale-watching practices to keep every encounter safe and respectful.
+      Enjoy a private snorkeling adventure in Cabo San Lucas aboard your own luxury sailboat or private yacht. Cruise along the stunning coastline, relax with drinks and snacks, and take in views of Cabo's famous landmarks including the Arch and Lover's Beach. Sailboats typically snorkel at Pelican Rock near Land's End, while private yachts cruise to the beautiful bays of Chileno or Santa Mar&iacute;a, known for their clear waters and vibrant marine life. This exclusive experience offers comfort, privacy, and unforgettable moments on the Sea of Cortez.
     </p>
   </div>
 
@@ -178,28 +178,27 @@ const breadcrumbSchema = JSON.stringify({
       <h3 class="text-sm font-bold text-navy uppercase tracking-widest">Suggested Itinerary</h3>
     </div>
     <ol class="relative border-l-2 border-gold/30 ml-2 space-y-5 pl-6">
-      <li class="relative"><span class="absolute -left-[33px] top-0 w-6 h-6 rounded-full bg-navy text-white text-[11px] font-bold flex items-center justify-center">1</span><span class="text-slate-600 text-base">Meet at the marina &amp; board your private boat</span></li>
-      <li class="relative"><span class="absolute -left-[33px] top-0 w-6 h-6 rounded-full bg-navy text-white text-[11px] font-bold flex items-center justify-center">2</span><span class="text-slate-600 text-base">Cruise past the Arch and the sea lion colony</span></li>
-      <li class="relative"><span class="absolute -left-[33px] top-0 w-6 h-6 rounded-full bg-navy text-white text-[11px] font-bold flex items-center justify-center">3</span><span class="text-slate-600 text-base">Head out to whale territory with your naturalist guide</span></li>
-      <li class="relative"><span class="absolute -left-[33px] top-0 w-6 h-6 rounded-full bg-navy text-white text-[11px] font-bold flex items-center justify-center">4</span><span class="text-slate-600 text-base">Watch humpbacks and grays breach, sing &amp; tail-slap</span></li>
-      <li class="relative"><span class="absolute -left-[33px] top-0 w-6 h-6 rounded-full bg-navy text-white text-[11px] font-bold flex items-center justify-center">5</span><span class="text-slate-600 text-base">Relax onboard with drinks, lunch &amp; great views</span></li>
+      <li class="relative"><span class="absolute -left-[33px] top-0 w-6 h-6 rounded-full bg-navy text-white text-[11px] font-bold flex items-center justify-center">1</span><span class="text-slate-600 text-base">Meet at the marina</span></li>
+      <li class="relative"><span class="absolute -left-[33px] top-0 w-6 h-6 rounded-full bg-navy text-white text-[11px] font-bold flex items-center justify-center">2</span><span class="text-slate-600 text-base">Cruise past Cabo's highlights (Arch, sea lions, beaches)</span></li>
+      <li class="relative"><span class="absolute -left-[33px] top-0 w-6 h-6 rounded-full bg-navy text-white text-[11px] font-bold flex items-center justify-center">3</span><span class="text-slate-600 text-base">Head to the snorkeling area</span></li>
+      <li class="relative"><span class="absolute -left-[33px] top-0 w-6 h-6 rounded-full bg-navy text-white text-[11px] font-bold flex items-center justify-center">4</span><span class="text-slate-600 text-base">Snorkel with provided gear</span></li>
+      <li class="relative"><span class="absolute -left-[33px] top-0 w-6 h-6 rounded-full bg-navy text-white text-[11px] font-bold flex items-center justify-center">5</span><span class="text-slate-600 text-base">Relax onboard with drinks, food, and great views</span></li>
     </ol>
-    <p class="mt-5 text-slate-700 italic text-sm">No rush. No fixed script. Just a great time on the water with the whales.</p>
+    <p class="mt-5 text-slate-700 italic text-sm">No rush. No fixed script. Just a great time on the water.</p>
   </div>
 </div>
-
 
 <!-- MOBILE: Title + intro -->
 <div class="lg:hidden mt-6 px-5">
   <nav class="flex items-center gap-1.5 text-xs text-slate-500 mb-4" aria-label="Breadcrumb">
     <a href="/" class="hover:text-gold transition-colors">Home</a>
     <span class="material-symbols-outlined text-[14px]">chevron_right</span>
-    <span>Tours</span>
+    <a href="/tours/" class="hover:text-gold transition-colors">Tours</a>
     <span class="material-symbols-outlined text-[14px]">chevron_right</span>
-    <span class="text-navy font-semibold">Whale Watching</span>
+    <span class="text-navy font-semibold">Private Snorkeling</span>
   </nav>
-  <h1 class="text-2xl text-navy leading-tight">Cabo Sailing &amp; Whale Watching</h1>
-  <p class="text-slate-700 text-base leading-relaxed mt-2">See humpback and gray whales up close on your own private boat with an expert naturalist crew.</p>
+  <h1 class="text-2xl text-navy leading-tight">Your Own Private Snorkeling Cruise in Cabo</h1>
+  <p class="text-slate-700 text-base leading-relaxed mt-2">Your own private yacht or sailboat to Cabo's best snorkeling spots.</p>
 </div>
 
 <!-- MOBILE: Icons row -->
@@ -210,16 +209,16 @@ const breadcrumbSchema = JSON.stringify({
       <p class="text-xs font-semibold text-navy">3 Hours</p>
     </div>
     <div class="flex items-center gap-1.5">
-      <WhaleFlukeIcon class="text-gold text-lg" />
-      <p class="text-xs font-semibold text-navy">Whale Season Dec&ndash;Apr</p>
+      <span class="material-symbols-outlined text-gold text-lg">family_restroom</span>
+      <p class="text-xs font-semibold text-navy">Family Friendly</p>
     </div>
     <div class="flex items-center gap-1.5">
       <span class="material-symbols-outlined text-gold text-lg">event_available</span>
       <p class="text-xs font-semibold text-navy">Free Cancellation</p>
     </div>
     <div class="flex items-center gap-1.5">
-      <span class="material-symbols-outlined text-gold text-lg">family_restroom</span>
-      <p class="text-xs font-semibold text-navy">Family Friendly</p>
+      <span class="material-symbols-outlined text-gold text-lg">groups</span>
+      <p class="text-xs font-semibold text-navy">Small Groups</p>
     </div>
     <div class="flex items-center gap-1.5">
       <span class="material-symbols-outlined text-gold text-lg">add</span>
@@ -231,7 +230,7 @@ const breadcrumbSchema = JSON.stringify({
     </div>
     <div class="flex items-center gap-1.5 col-span-2">
       <span class="material-symbols-outlined text-gold text-lg">schedule</span>
-      <p class="text-xs font-semibold text-navy">MID-DEC TO MID-APR &middot; FLEXIBLE DEPARTURES</p>
+      <p class="text-xs font-semibold text-navy">DEPARTURES 9:00 AM &amp; 12:30 PM DAILY</p>
     </div>
   </div>
 </div>
@@ -239,7 +238,7 @@ const breadcrumbSchema = JSON.stringify({
 <!-- MOBILE: About + Suggested Itinerary -->
 <div class="lg:hidden mt-8 px-5">
   <h3 class="text-lg text-navy mb-3">About this experience</h3>
-  <p class="text-slate-700 leading-relaxed text-base">Every winter, thousands of humpback and gray whales migrate to the warm waters off Cabo San Lucas &mdash; and our private charters put you right in their path. Watch as these gentle giants breach, slap their tails, and sing &mdash; sometimes just meters from the boat.</p>
+  <p class="text-slate-700 leading-relaxed text-base">Enjoy a private snorkeling adventure in Cabo San Lucas aboard your own luxury sailboat or private yacht. Cruise along the stunning coastline, relax with drinks and snacks, and take in views of Cabo's famous landmarks including the Arch and Lover's Beach. Sailboats typically snorkel at Pelican Rock near Land's End, while private yachts cruise to the beautiful bays of Chileno or Santa Mar&iacute;a, known for their clear waters and vibrant marine life.</p>
 
   <div class="mt-7 faq-item border border-border-light rounded-2xl overflow-hidden bg-white">
     <input class="hidden" id="mobile-itinerary" type="checkbox"/>
@@ -252,24 +251,23 @@ const breadcrumbSchema = JSON.stringify({
     </label>
     <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
       <ol class="relative border-l-2 border-gold/30 ml-2 space-y-4 pl-5 mt-2">
-        <li class="relative"><span class="absolute -left-[29px] top-0 w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center">1</span><span class="text-slate-600 text-sm">Meet at the marina &amp; board your private boat</span></li>
-        <li class="relative"><span class="absolute -left-[29px] top-0 w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center">2</span><span class="text-slate-600 text-sm">Cruise past the Arch and the sea lion colony</span></li>
-        <li class="relative"><span class="absolute -left-[29px] top-0 w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center">3</span><span class="text-slate-600 text-sm">Head to whale territory with your naturalist guide</span></li>
-        <li class="relative"><span class="absolute -left-[29px] top-0 w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center">4</span><span class="text-slate-600 text-sm">Watch humpbacks and grays breach &amp; sing</span></li>
-        <li class="relative"><span class="absolute -left-[29px] top-0 w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center">5</span><span class="text-slate-600 text-sm">Relax onboard with drinks, lunch &amp; great views</span></li>
+        <li class="relative"><span class="absolute -left-[29px] top-0 w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center">1</span><span class="text-slate-600 text-sm">Meet at the marina</span></li>
+        <li class="relative"><span class="absolute -left-[29px] top-0 w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center">2</span><span class="text-slate-600 text-sm">Cruise past Cabo's highlights (Arch, sea lions, beaches)</span></li>
+        <li class="relative"><span class="absolute -left-[29px] top-0 w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center">3</span><span class="text-slate-600 text-sm">Head to the snorkeling area</span></li>
+        <li class="relative"><span class="absolute -left-[29px] top-0 w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center">4</span><span class="text-slate-600 text-sm">Snorkel with provided gear</span></li>
+        <li class="relative"><span class="absolute -left-[29px] top-0 w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center">5</span><span class="text-slate-600 text-sm">Relax onboard with drinks, food, and great views</span></li>
       </ol>
-      <p class="mt-4 text-slate-700 italic text-xs">No rush. Just a great time on the water with the whales.</p>
+      <p class="mt-4 text-slate-700 italic text-xs">No rush. No fixed script. Just a great time on the water.</p>
     </div>
   </div>
 </div>
 
-<!-- Choose Your Boat -->
 <div id="choose-your-boat" class="mt-12 lg:mt-0 lg:max-w-[1400px] lg:mx-auto lg:px-10 lg:py-16 px-5">
-<div class="flex items-center gap-3 mb-8"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-lg lg:text-2xl text-navy">Scroll our boats — find a perfect fit for your unique whale watching experience</h3></div>
+<div class="flex items-center gap-3 mb-8"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-lg lg:text-2xl text-navy">Scroll our boats — find a perfect fit for your unique snorkeling experience</h3></div>
 <div class="flex flex-col gap-5 lg:grid lg:grid-cols-3 lg:max-w-[1100px] lg:mx-auto pb-8">
-  <!-- Yacht 51' -->
+  <!-- Luxury Yacht 51' — Most Spacious -->
   <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="yacht-51">
-    <CarouselImage type="boat" id="yacht-51" alt="Luxury Yacht 51' private whale-watching charter">
+    <CarouselImage type="boat" id="yacht-51" alt="Luxury Yacht 51' private snorkeling charter">
       <div class="absolute inset-0 bg-gradient-to-t from-navy/25 via-navy/5 to-transparent"></div>
       <div class="absolute bottom-5 left-6">
         <h3 class="text-white text-lg lg:text-xl">Luxury Yacht 51'</h3>
@@ -279,16 +277,16 @@ const breadcrumbSchema = JSON.stringify({
       <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-30%</div>
     </CarouselImage>
     <div class="p-4 space-y-4">
-      <p class="text-slate-500 text-sm italic text-center pb-3 border-b border-border-light/50">Best for large groups &amp; maximum space</p>
+      <p class="text-slate-700 text-sm italic text-center pb-3 border-b border-border-light/50">Best for large groups &amp; maximum space</p>
       <div class="space-y-4">
         <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$1,690</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$1,436</span><span class="text-slate-500 text-[11px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="flex flex-col items-end"><span class="text-slate-500 text-[11px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-500 text-[11px] font-medium">/pp</span></div></div></div>
       </div>
       <button type="button" onclick="openRezdyModal('165509')" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg">Check Availability</button>
     </div>
   </div>
-  <!-- Yacht 45' -->
+  <!-- Luxury Yacht 45' — Most Popular -->
   <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="yacht-45">
-    <CarouselImage type="boat" id="yacht-45" alt="Luxury Yacht 45' private whale-watching charter" imgStyle="transform: none;">
+    <CarouselImage type="boat" id="yacht-45" alt="Luxury Yacht 45' private snorkeling charter" imgStyle="transform: none;">
       <div class="absolute inset-0 bg-gradient-to-t from-navy/25 via-navy/5 to-transparent"></div>
       <div class="absolute bottom-5 left-6">
         <h3 class="text-white text-lg lg:text-xl">Luxury Yacht 45'</h3>
@@ -298,16 +296,16 @@ const breadcrumbSchema = JSON.stringify({
       <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-30%</div>
     </CarouselImage>
     <div class="p-4 space-y-4">
-      <p class="text-slate-500 text-sm italic text-center pb-3 border-b border-border-light/50">Newest vessel, sleek &amp; modern luxury</p>
+      <p class="text-slate-700 text-sm italic text-center pb-3 border-b border-border-light/50">Newest vessel, sleek &amp; modern luxury</p>
       <div class="space-y-4">
         <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$1,520</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$1,292</span><span class="text-slate-500 text-[11px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="flex flex-col items-end"><span class="text-slate-500 text-[11px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-500 text-[11px] font-medium">/pp</span></div></div></div>
       </div>
       <button type="button" onclick="openRezdyModal('528988')" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg">Check Availability</button>
     </div>
   </div>
-  <!-- Yacht 42' -->
+  <!-- Luxury Yacht 42' — Best Value -->
   <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="yacht-42">
-    <CarouselImage type="boat" id="yacht-42" alt="Luxury Yacht 42' private whale-watching charter">
+    <CarouselImage type="boat" id="yacht-42" alt="Luxury Yacht 42' private snorkeling charter">
       <div class="absolute inset-0 bg-gradient-to-t from-navy/25 via-navy/5 to-transparent"></div>
       <div class="absolute bottom-5 left-6">
         <h3 class="text-white text-lg lg:text-xl">Luxury Yacht 42'</h3>
@@ -317,18 +315,19 @@ const breadcrumbSchema = JSON.stringify({
       <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-30%</div>
     </CarouselImage>
     <div class="p-4 space-y-4">
-      <p class="text-slate-500 text-sm italic text-center pb-3 border-b border-border-light/50">Great value, perfect for whale spotting</p>
+      <p class="text-slate-700 text-sm italic text-center pb-3 border-b border-border-light/50">Great value, perfect for families</p>
       <div class="space-y-4">
         <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$1,350</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$1,148</span><span class="text-slate-500 text-[11px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="flex flex-col items-end"><span class="text-slate-500 text-[11px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-500 text-[11px] font-medium">/pp</span></div></div></div>
       </div>
-      <button type="button" onclick="openRezdyModal('168008')" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg">Check Availability</button>
+      <button type="button" onclick="openRezdyModal('168008')" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg cursor-pointer">Check Availability</button>
     </div>
   </div>
 </div>
+
 <div class="flex flex-col gap-5 lg:grid lg:grid-cols-2 lg:max-w-[730px] lg:mx-auto pb-8">
-  <!-- Sailing 42' -->
+  <!-- Sailing Boat 42' — Best Value -->
   <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="sailing-42">
-    <CarouselImage type="boat" id="sailing-42" alt="Sailing Boat 42' private whale-watching charter">
+    <CarouselImage type="boat" id="sailing-42" alt="Sailing Boat 42' private snorkeling charter">
       <div class="absolute inset-0 bg-gradient-to-t from-navy/25 via-navy/5 to-transparent"></div>
       <div class="absolute bottom-5 left-6">
         <h3 class="text-white text-lg lg:text-xl">Sailing Boat 42'</h3>
@@ -338,16 +337,16 @@ const breadcrumbSchema = JSON.stringify({
       <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-30%</div>
     </CarouselImage>
     <div class="p-4 space-y-4">
-      <p class="text-slate-500 text-sm italic text-center pb-3 border-b border-border-light/50">Smooth sailing, get close to nature</p>
+      <p class="text-slate-700 text-sm italic text-center pb-3 border-b border-border-light/50">Smooth sailing, snorkel at Pelican Rock</p>
       <div class="space-y-4">
         <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$1,090</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$927</span><span class="text-slate-500 text-[11px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="flex flex-col items-end"><span class="text-slate-500 text-[11px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-500 text-[11px] font-medium">/pp</span></div></div></div>
       </div>
-      <button type="button" onclick="openRezdyModal('642955','productsCalendar')" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg">Check Availability</button>
+      <button type="button" onclick="openRezdyModal('642955','productsCalendar')" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg cursor-pointer">Check Availability</button>
     </div>
   </div>
-  <!-- Sailing 38' -->
+  <!-- Sailing Boat 38' -->
   <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="sailing-38">
-    <CarouselImage type="boat" id="sailing-38" alt="Sailing Boat 38' private whale-watching charter">
+    <CarouselImage type="boat" id="sailing-38" alt="Sailing Boat 38' private snorkeling charter">
       <div class="absolute inset-0 bg-gradient-to-t from-navy/25 via-navy/5 to-transparent"></div>
       <div class="absolute bottom-5 left-6">
         <h3 class="text-white text-lg lg:text-xl">Sailing Boat 38'</h3>
@@ -356,11 +355,11 @@ const breadcrumbSchema = JSON.stringify({
       <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-30%</div>
     </CarouselImage>
     <div class="p-4 space-y-4">
-      <p class="text-slate-500 text-sm italic text-center pb-3 border-b border-border-light/50">Intimate &amp; adventurous, classic sailing</p>
+      <p class="text-slate-700 text-sm italic text-center pb-3 border-b border-border-light/50">Intimate &amp; adventurous, classic sailing</p>
       <div class="space-y-4">
         <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$825</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$701</span><span class="text-slate-500 text-[11px] font-medium uppercase">/ 1-4 guests</span></div></div><div class="flex flex-col items-end"><span class="text-slate-500 text-[11px] font-medium">Extra guests</span><div class="flex items-baseline gap-1"><span class="text-gold line-through text-[12px]">$100</span><span class="text-navy font-bold text-base">$85</span><span class="text-slate-500 text-[11px] font-medium">/pp</span></div></div></div>
       </div>
-      <button type="button" onclick="openRezdyModal('165682')" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg">Check Availability</button>
+      <button type="button" onclick="openRezdyModal('165682')" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg cursor-pointer">Check Availability</button>
     </div>
   </div>
 </div>
@@ -374,45 +373,46 @@ const breadcrumbSchema = JSON.stringify({
   <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 pl-1">
     <div class="flex items-start gap-4">
       <div class="w-7 h-7 rounded-full bg-navy flex items-center justify-center flex-shrink-0">
-        <span class="material-symbols-outlined text-white text-[15px]">groups</span>
+        <span class="material-symbols-outlined text-white text-[15px]">local_bar</span>
       </div>
-      <div><span class="text-slate-700 text-base font-semibold">Private boat</span><p class="text-slate-700 text-sm mt-0.5">Only your group onboard &mdash; no sharing</p></div>
+      <div><span class="text-slate-700 text-base font-semibold">Open bar</span><p class="text-slate-700 text-sm mt-0.5">Premium drinks served throughout your cruise</p></div>
+    </div>
+    <div class="flex items-start gap-4">
+      <div class="w-7 h-7 rounded-full bg-navy flex items-center justify-center flex-shrink-0">
+        <span class="material-symbols-outlined text-white text-[15px]">restaurant</span>
+      </div>
+      <div><span class="text-slate-700 text-base font-semibold">Fresh food onboard</span><p class="text-slate-700 text-sm mt-0.5">Light lunch or snacks, depending on your cruise</p></div>
+    </div>
+    <div class="flex items-start gap-4">
+      <div class="w-7 h-7 rounded-full bg-navy flex items-center justify-center flex-shrink-0">
+        <span class="material-symbols-outlined text-white text-[15px]">scuba_diving</span>
+      </div>
+      <div><span class="text-slate-700 text-base font-semibold">Snorkeling experience</span><p class="text-slate-700 text-sm mt-0.5">Gear included &mdash; explore Cabo's best spots</p></div>
+    </div>
+    <div class="flex items-start gap-4">
+      <div class="w-7 h-7 rounded-full bg-navy flex items-center justify-center flex-shrink-0">
+        <span class="material-symbols-outlined text-white text-[15px]">surfing</span>
+      </div>
+      <div><span class="text-slate-700 text-base font-semibold">Paddleboard &amp; water mat</span><p class="text-slate-700 text-sm mt-0.5">Available on yachts</p></div>
     </div>
     <div class="flex items-start gap-4">
       <div class="w-7 h-7 rounded-full bg-navy flex items-center justify-center flex-shrink-0">
         <span class="material-symbols-outlined text-white text-[15px]">sailing</span>
       </div>
-      <div><span class="text-slate-700 text-base font-semibold">Sailboats &amp; luxury yachts</span><p class="text-slate-700 text-sm mt-0.5">Choose the perfect vessel for your group</p></div>
+      <div><span class="text-slate-700 text-base font-semibold">Sailboats &amp; luxury yachts</span><p class="text-slate-700 text-sm mt-0.5">We'll match the best option for your group</p></div>
     </div>
     <div class="flex items-start gap-4">
       <div class="w-7 h-7 rounded-full bg-navy flex items-center justify-center flex-shrink-0">
-        <span class="material-symbols-outlined text-white text-[15px]">local_bar</span>
+        <span class="material-symbols-outlined text-white text-[15px]">dry_cleaning</span>
       </div>
-      <div><span class="text-slate-700 text-base font-semibold">Open bar &amp; light lunch</span><p class="text-slate-700 text-sm mt-0.5">Premium drinks plus a fresh light lunch onboard</p></div>
-    </div>
-    <div class="flex items-start gap-4">
-      <div class="w-7 h-7 rounded-full bg-navy flex items-center justify-center flex-shrink-0">
-        <span class="material-symbols-outlined text-white text-[15px]">person</span>
-      </div>
-      <div><span class="text-slate-700 text-base font-semibold">Naturalist crew</span><p class="text-slate-700 text-sm mt-0.5">Expert bilingual whale-watching guide</p></div>
-    </div>
-    <div class="flex items-start gap-4">
-      <div class="w-7 h-7 rounded-full bg-navy flex items-center justify-center flex-shrink-0">
-        <span class="material-symbols-outlined text-white text-[15px]">eco</span>
-      </div>
-      <div><span class="text-slate-700 text-base font-semibold">Responsible practices</span><p class="text-slate-700 text-sm mt-0.5">Ethical, safe-distance whale watching</p></div>
-    </div>
-    <div class="flex items-start gap-4">
-      <div class="w-7 h-7 rounded-full bg-navy flex items-center justify-center flex-shrink-0">
-        <span class="material-symbols-outlined text-white text-[15px]">star</span>
-      </div>
-      <div><span class="text-slate-700 text-base font-semibold">5-star rated activity</span><p class="text-slate-700 text-sm mt-0.5">Top-rated whale tour in Cabo San Lucas</p></div>
+      <div><span class="text-slate-700 text-base font-semibold">Towels provided</span><p class="text-slate-700 text-sm mt-0.5">Everything you need for the water</p></div>
     </div>
   </div>
 </div>
 
-<!-- Quick Comparison -->
+<!-- Comparison Table - Desktop: always visible, Mobile: dropdown -->
 <div class="mt-10">
+  <!-- Mobile: dropdown toggle -->
   <div class="lg:hidden faq-item">
     <input class="hidden" id="comparison-toggle" type="checkbox"/>
     <label class="flex items-center justify-between cursor-pointer border border-border-light rounded-2xl p-4 bg-white" for="comparison-toggle">
@@ -430,16 +430,17 @@ const breadcrumbSchema = JSON.stringify({
             </tr>
           </thead>
           <tbody class="text-sm">
-            <tr class="border-b border-border-light"><td class="py-3 pr-4 font-semibold text-navy">42' Yacht</td><td class="py-3 pr-4 text-slate-500">Up to 18</td><td class="py-3 text-slate-500">Luxury experience — lowest cost</td></tr>
-            <tr class="border-b border-border-light bg-gold/5"><td class="py-3 pr-4 font-semibold text-navy"><span class="text-gold mr-1">&#11088;</span>45' Yacht</td><td class="py-3 pr-4 text-slate-500">Up to 12</td><td class="py-3 text-slate-500">Newest vessel</td></tr>
-            <tr class="border-b border-border-light"><td class="py-3 pr-4 font-semibold text-navy">51' Yacht</td><td class="py-3 pr-4 text-slate-500">Up to 20</td><td class="py-3 text-slate-500">Most spacious, largest yacht</td></tr>
-            <tr class="border-b border-border-light bg-gold/5"><td class="py-3 pr-4 font-semibold text-navy"><span class="text-gold mr-1">&#11088;</span>42' Sailboat</td><td class="py-3 pr-4 text-slate-500">Up to 14</td><td class="py-3 text-slate-500">True sailing experience — spacious</td></tr>
-            <tr><td class="py-3 pr-4 font-semibold text-navy">38' Sailboat</td><td class="py-3 pr-4 text-slate-500">Up to 9</td><td class="py-3 text-slate-500">Best sailing experience</td></tr>
+            <tr class="border-b border-border-light"><td class="py-3 pr-4 font-semibold text-navy">42' Yacht</td><td class="py-3 pr-4 text-slate-700">Up to 18</td><td class="py-3 text-slate-700">Comfort + value — snorkel in Chileno Bay</td></tr>
+            <tr class="border-b border-border-light bg-gold/5"><td class="py-3 pr-4 font-semibold text-navy"><span class="text-gold mr-1">&#11088;</span>45' Yacht</td><td class="py-3 pr-4 text-slate-700">Up to 12</td><td class="py-3 text-slate-700">Premium feel — snorkel in Chileno Bay</td></tr>
+            <tr class="border-b border-border-light"><td class="py-3 pr-4 font-semibold text-navy">51' Yacht</td><td class="py-3 pr-4 text-slate-700">Up to 20</td><td class="py-3 text-slate-700">Big groups, big space — snorkel in Chileno Bay</td></tr>
+            <tr class="border-b border-border-light bg-gold/5"><td class="py-3 pr-4 font-semibold text-navy"><span class="text-gold mr-1">&#11088;</span>42' Sailboat</td><td class="py-3 pr-4 text-slate-700">Up to 14</td><td class="py-3 text-slate-700">Sail &amp; snorkel — Pelican Rock</td></tr>
+            <tr><td class="py-3 pr-4 font-semibold text-navy">38' Sailboat</td><td class="py-3 pr-4 text-slate-700">Up to 9</td><td class="py-3 text-slate-700">Small group sailing — Pelican Rock</td></tr>
           </tbody>
         </table>
       </div>
     </div>
   </div>
+  <!-- Desktop: always visible -->
   <div class="hidden lg:block">
     <div class="flex items-center gap-3 mb-4"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-xl text-navy">Quick Comparison</h3></div>
     <table class="w-full text-left border-collapse">
@@ -451,19 +452,17 @@ const breadcrumbSchema = JSON.stringify({
         </tr>
       </thead>
       <tbody class="text-sm">
-        <tr class="border-b border-border-light"><td class="py-3 pr-4 font-semibold text-navy">42' Yacht</td><td class="py-3 pr-4 text-slate-500">Up to 18</td><td class="py-3 text-slate-500">Luxury experience — lowest cost</td></tr>
-        <tr class="border-b border-border-light bg-gold/5"><td class="py-3 pr-4 font-semibold text-navy"><span class="text-gold mr-1">&#11088;</span>45' Yacht</td><td class="py-3 pr-4 text-slate-500">Up to 12</td><td class="py-3 text-slate-500">Newest vessel</td></tr>
-        <tr class="border-b border-border-light"><td class="py-3 pr-4 font-semibold text-navy">51' Yacht</td><td class="py-3 pr-4 text-slate-500">Up to 20</td><td class="py-3 text-slate-500">Most spacious, largest yacht</td></tr>
-        <tr class="border-b border-border-light bg-gold/5"><td class="py-3 pr-4 font-semibold text-navy"><span class="text-gold mr-1">&#11088;</span>42' Sailboat</td><td class="py-3 pr-4 text-slate-500">Up to 14</td><td class="py-3 text-slate-500">True sailing experience — spacious</td></tr>
-        <tr><td class="py-3 pr-4 font-semibold text-navy">38' Sailboat</td><td class="py-3 pr-4 text-slate-500">Up to 9</td><td class="py-3 text-slate-500">Best sailing experience</td></tr>
+        <tr class="border-b border-border-light"><td class="py-3 pr-4 font-semibold text-navy">42' Yacht</td><td class="py-3 pr-4 text-slate-700">Up to 18</td><td class="py-3 text-slate-700">Comfort + value — snorkel in Chileno Bay</td></tr>
+        <tr class="border-b border-border-light bg-gold/5"><td class="py-3 pr-4 font-semibold text-navy"><span class="text-gold mr-1">&#11088;</span>45' Yacht</td><td class="py-3 pr-4 text-slate-700">Up to 12</td><td class="py-3 text-slate-700">Premium feel — snorkel in Chileno Bay</td></tr>
+        <tr class="border-b border-border-light"><td class="py-3 pr-4 font-semibold text-navy">51' Yacht</td><td class="py-3 pr-4 text-slate-700">Up to 20</td><td class="py-3 text-slate-700">Big groups, big space — snorkel in Chileno Bay</td></tr>
+        <tr class="border-b border-border-light bg-gold/5"><td class="py-3 pr-4 font-semibold text-navy"><span class="text-gold mr-1">&#11088;</span>42' Sailboat</td><td class="py-3 pr-4 text-slate-700">Up to 14</td><td class="py-3 text-slate-700">Sail &amp; snorkel — Pelican Rock</td></tr>
+        <tr><td class="py-3 pr-4 font-semibold text-navy">38' Sailboat</td><td class="py-3 pr-4 text-slate-700">Up to 9</td><td class="py-3 text-slate-700">Small group sailing — Pelican Rock</td></tr>
       </tbody>
     </table>
   </div>
 </div>
 </div><!-- close Choose Your Boat wrapper -->
-
-<!-- FAQ -->
-<div class="mt-12 lg:max-w-[1400px] lg:mx-auto lg:px-10 lg:py-8 px-5">
+<div class="mt-12 lg:max-w-[1400px] lg:mx-auto lg:px-10 lg:py-8">
 <div class="flex items-center gap-3 mb-6">
 <div class="w-1 h-6 bg-gold rounded-full"></div>
 <h3 class="text-lg lg:text-3xl text-navy">Frequently Asked Questions</h3>
@@ -472,68 +471,48 @@ const breadcrumbSchema = JSON.stringify({
 
 <div class="space-y-3">
     <div class="faq-item border border-border-light rounded-2xl overflow-hidden bg-white">
-      <input class="hidden" id="faq-season" type="checkbox"/>
-      <label class="flex items-center justify-between p-4 cursor-pointer" for="faq-season">
-        <span class="text-base font-semibold text-navy">When is the best time for sightings?</span>
-        <span class="material-symbols-outlined text-slate-500 faq-chevron transition-transform duration-300">expand_more</span>
-      </label>
-      <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
-        <p class="text-sm text-slate-500 leading-relaxed">Whale season in Cabo runs from mid-December to mid-April. Morning tours often have calmer waters, while afternoon winds can sometimes lead to more active whale behavior.</p>
-      </div>
-    </div>
-    <div class="faq-item border border-border-light rounded-2xl overflow-hidden bg-white">
-      <input class="hidden" id="faq-species" type="checkbox"/>
-      <label class="flex items-center justify-between p-4 cursor-pointer" for="faq-species">
-        <span class="text-base font-semibold text-navy">Which whale species can we see in Cabo?</span>
-        <span class="material-symbols-outlined text-slate-500 faq-chevron transition-transform duration-300">expand_more</span>
-      </label>
-      <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
-        <p class="text-sm text-slate-500 leading-relaxed">The most common sightings are humpback and gray whales. Occasionally, visitors may spot blue whales, orcas, or whale sharks in the surrounding waters.</p>
-      </div>
-    </div>
-    <div class="faq-item border border-border-light rounded-2xl overflow-hidden bg-white">
-      <input class="hidden" id="faq-origin" type="checkbox"/>
-      <label class="flex items-center justify-between p-4 cursor-pointer" for="faq-origin">
-        <span class="text-base font-semibold text-navy">Where do the whales come from?</span>
-        <span class="material-symbols-outlined text-slate-500 faq-chevron transition-transform duration-300">expand_more</span>
-      </label>
-      <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
-        <p class="text-sm text-slate-500 leading-relaxed">Most whales in Cabo migrate from the cold waters of Alaska and Canada. They travel thousands of miles to the warm lagoons of Baja to mate and give birth.</p>
-      </div>
-    </div>
-    <div class="faq-item border border-border-light rounded-2xl overflow-hidden bg-white">
-      <input class="hidden" id="faq-responsible" type="checkbox"/>
-      <label class="flex items-center justify-between p-4 cursor-pointer" for="faq-responsible">
-        <span class="text-base font-semibold text-navy">Responsible whale watching</span>
-        <span class="material-symbols-outlined text-slate-500 faq-chevron transition-transform duration-300">expand_more</span>
-      </label>
-      <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
-        <p class="text-sm text-slate-500 leading-relaxed">We strictly follow environmental guidelines to minimize impact. This includes maintaining safe distances, limiting observation time, and avoiding any disruption to their natural behavior.</p>
-      </div>
-    </div>
-    <div class="faq-item border border-border-light rounded-2xl overflow-hidden bg-white">
-      <input class="hidden" id="faq-menu" type="checkbox"/>
-      <label class="flex items-center justify-between p-4 cursor-pointer" for="faq-menu">
+      <input class="hidden" id="faq-yacht-menu" type="checkbox"/>
+      <label class="flex items-center justify-between p-4 cursor-pointer" for="faq-yacht-menu">
         <span class="flex items-center gap-2 text-base font-semibold text-navy"><span class="material-symbols-outlined text-gold" style="font-size:18px">restaurant</span>Bar &amp; menu on board</span>
         <span class="material-symbols-outlined text-slate-500 faq-chevron transition-transform duration-300">expand_more</span>
       </label>
       <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
-        <div class="text-sm text-slate-500 leading-relaxed space-y-3">
-          <div><p class="font-semibold text-navy mb-1">Bar</p><p>Premium open bar includes red &amp; white wine, margaritas, beer, rum, vodka, tequila, whiskey, juices, sodas, and bottled water.</p></div>
-          <div><p class="font-semibold text-navy mb-1">Snorkeling Menu</p><p>Tortilla chips with Mexican salsa &amp; homemade guacamole, fresh baguette sandwiches, fresh-cut fruit platter, freshly made quesadillas (yacht only) and a sweet bite to finish.</p></div><div><p class="font-semibold text-navy mb-1">Sunset Menu</p><p>Tortilla chips with Mexican salsa and homemade guacamole, California-style sushi rolls, cheese and cold-cut platters, freshly made quesadillas (yacht only), a selection of seasonal fruit, and a sweet bite to finish.</p></div>
-          <div class="border-t border-border-light pt-3"><p><span class="font-semibold text-navy">Mexican Menu — $14 USD per person:</span> Tortilla chips with salsa and homemade guacamole, beef and chicken corn tortilla burritos, rice and beans, freshly made quesadillas, and dessert.</p></div>
+        <div class="text-sm text-slate-700 leading-relaxed space-y-3">
+          <div><p class="font-semibold text-navy mb-1">Bar</p><p>Premium brands open bar includes red and white wine, margaritas, beer, rum, vodka, tequila, whiskey, juices, sodas, and bottled water.</p></div>
+          <div><p class="font-semibold text-navy mb-1">Food</p><div class="mt-2"><p class="font-semibold text-navy mb-1">Snorkeling Menu</p><p>Tortilla chips with Mexican salsa &amp; homemade guacamole, fresh baguette sandwiches, fresh-cut fruit platter, freshly made quesadillas (yacht only) and a sweet bite to finish.</p></div></div>
+          <div class="border-t border-border-light pt-3"><p class="font-semibold text-navy mb-1">Options:</p><p><span class="font-semibold text-navy">Mexican Menu — $14 USD per person:</span> Tortilla chips with salsa and homemade guacamole, beef and chicken corn tortilla burritos, rice and beans, freshly made quesadillas (yacht only), and dessert.</p></div>
           <p class="text-slate-500 italic">Contact our office team for Kosher, Vegan or Vegetarian options.</p>
         </div>
       </div>
     </div>
     <div class="faq-item border border-border-light rounded-2xl overflow-hidden bg-white">
-      <input class="hidden" id="faq-bring" type="checkbox"/>
-      <label class="flex items-center justify-between p-4 cursor-pointer" for="faq-bring">
+      <input class="hidden" id="faq-1" type="checkbox"/>
+      <label class="flex items-center justify-between p-4 cursor-pointer" for="faq-1">
         <span class="text-base font-semibold text-navy">What should we bring?</span>
         <span class="material-symbols-outlined text-slate-500 faq-chevron transition-transform duration-300">expand_more</span>
       </label>
       <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
-        <p class="text-sm text-slate-500 leading-relaxed">We recommend sunscreen, a hat, polarized sunglasses, and a light jacket as it can get breezy on the water. Don't forget your camera!</p>
+        <p class="text-sm text-slate-700 leading-relaxed">We recommend bringing a towel, biodegradable sunscreen, sunglasses, and a hat. Don't forget your camera for the stunning views!</p>
+      </div>
+    </div>
+    <div class="faq-item border border-border-light rounded-2xl overflow-hidden bg-white">
+      <input class="hidden" id="faq-2" type="checkbox"/>
+      <label class="flex items-center justify-between p-4 cursor-pointer" for="faq-2">
+        <span class="text-base font-semibold text-navy">Can we customize our route?</span>
+        <span class="material-symbols-outlined text-slate-500 faq-chevron transition-transform duration-300">expand_more</span>
+      </label>
+      <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
+        <p class="text-sm text-slate-700 leading-relaxed">Absolutely! This is a private tour, so you can spend more time snorkeling, whale watching (in season), or just sailing at your own pace.</p>
+      </div>
+    </div>
+    <div class="faq-item border border-border-light rounded-2xl overflow-hidden bg-white">
+      <input class="hidden" id="faq-3" type="checkbox"/>
+      <label class="flex items-center justify-between p-4 cursor-pointer" for="faq-3">
+        <span class="text-base font-semibold text-navy">Is the open bar included?</span>
+        <span class="material-symbols-outlined text-slate-500 faq-chevron transition-transform duration-300">expand_more</span>
+      </label>
+      <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
+        <p class="text-sm text-slate-700 leading-relaxed">Yes, a premium open bar featuring spirits, beer, wine, and soft drinks is included for all guests throughout the duration of the charter.</p>
       </div>
     </div>
 </div>
@@ -543,66 +522,83 @@ const breadcrumbSchema = JSON.stringify({
 <div class="mt-10 lg:max-w-[1400px] lg:mx-auto lg:px-10 px-5">
   <p class="text-sm text-slate-500 text-center">Have questions before booking? Learn more <a href="/about-us/" class="text-accent-gold font-semibold hover:underline">about us</a> or review our <a href="/policies/" class="text-accent-gold font-semibold hover:underline">cancellation &amp; weather policies</a>.</p>
 </div>
-
 <div class="mt-12 lg:max-w-[1400px] lg:mx-auto lg:px-10 px-5">
   <div class="rounded-2xl bg-navy text-white text-center px-6 py-10 lg:py-14 shadow-lg">
     <h3 class="font-heading text-2xl lg:text-3xl mb-2">Your private boat is waiting</h3>
-    <p class="text-white/80 mb-6">Whale season is short — book your spot now</p>
+    <p class="text-white/80 mb-6">Check live availability now</p>
     <a href="#choose-your-boat" class="inline-block bg-gold text-navy font-bold text-[12px] px-8 py-4 rounded-2xl uppercase tracking-[0.2em] shadow-lg">Check Availability</a>
   </div>
 </div>
 
-<!-- Whales of Cabo -->
-<div class="px-5 pt-8 pb-6 lg:max-w-[1400px] lg:mx-auto lg:px-10 lg:pt-16 lg:pb-10">
-  <div class="flex items-center gap-3 mb-4"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-lg lg:text-3xl text-navy">The Whales of Cabo</h3></div>
-  <div class="lg:flex lg:gap-10 lg:items-start">
-    <Image src={feb_15_56} alt="Humpback whale breaching off Cabo San Lucas" class="w-full h-48 lg:h-[300px] object-cover rounded-2xl mb-4 lg:mb-0 lg:w-1/2 lg:flex-shrink-0" width={800} height={500} />
-    <div>
-      <p class="text-base text-slate-500 leading-relaxed mb-3">Whales are mammals that breathe air and nurse their young. Humpbacks are known for their spectacular breaching and complex songs that can travel for miles underwater. Most whales in Cabo migrate from the cold waters of Alaska and Canada — they travel thousands of miles to the warm lagoons of Baja to mate and give birth.</p>
-      <p class="text-base text-slate-500 leading-relaxed">The most common sightings here are humpback and gray whales. Occasionally, you may also spot blue whales, orcas, or whale sharks in the surrounding waters.</p>
-      <div class="mt-5 grid grid-cols-3 gap-3">
-        <div class="bg-light-grey rounded-xl p-3 text-center border border-border-light"><p class="text-navy font-bold text-lg">Dec–Apr</p><p class="text-[10px] text-slate-500 uppercase font-bold tracking-wider mt-1">Season</p></div>
-        <div class="bg-light-grey rounded-xl p-3 text-center border border-border-light"><p class="text-navy font-bold text-lg">2+</p><p class="text-[10px] text-slate-500 uppercase font-bold tracking-wider mt-1">Species</p></div>
-        <div class="bg-light-grey rounded-xl p-3 text-center border border-border-light"><p class="text-navy font-bold text-lg">3 hr</p><p class="text-[10px] text-slate-500 uppercase font-bold tracking-wider mt-1">Cruise</p></div>
+    <!-- Snorkeling at Pelican's Rock -->
+    <div class="px-5 pt-8 pb-6 lg:max-w-[1400px] lg:mx-auto lg:px-10 lg:pt-16 lg:pb-10">
+      <div class="flex items-center gap-3 mb-4"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-lg lg:text-3xl text-navy">Snorkeling at Pelican Rock</h3></div>
+      <div class="lg:flex lg:gap-10 lg:items-start">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsPNXa1dALuRh7RdwyoRf93TCW1fJtrL0kaOjRkJ5k1272Y4OJqjAX5NrV2iXzb2LCN_llfLfVJtxTluIdzkWhNSqNzUPx6wAprsrWurADI6oGQbeAC2IteDT4KNG_J-4XqrPA6IQ4p5cbton6Fa-Sd8g3vPEfxR3xMElXTmmINn23_-OP89a8rgBDXbNFjJVWxlln2hbvdyZw6ajy9TauowJqm0fgMILlpngP4MzbKmss4Qy_1Zi7RmYw4XItoHpivSHT5yhBTt0" alt="Snorkeling at Pelican Rock" class="w-full h-48 lg:h-[300px] object-cover rounded-2xl mb-4 lg:mb-0 lg:w-1/2 lg:flex-shrink-0"/>
+        <div>
+          <p class="text-base text-slate-700 leading-relaxed mb-3">Pelican Rock is one of the most popular stops on Cabo snorkeling tours. Located inside the protected waters of Cabo San Lucas Bay, just a short 15-minute boat ride from the marina, it offers excellent snorkeling conditions. Sea lions, frigate birds, and pelicans are often seen around this iconic landmark.</p>
+          <p class="text-base text-slate-700 leading-relaxed">With clear water and abundant marine life, Pelican Rock is a fantastic snorkeling spot for both beginners and experienced snorkelers.</p>
+        </div>
       </div>
     </div>
-  </div>
-</div>
 
-<!-- Reviews -->
+    <!-- Snorkeling at Chileno Bay -->
+    <div class="px-5 pb-6 lg:max-w-[1400px] lg:mx-auto lg:px-10 lg:pb-10">
+      <div class="flex items-center gap-3 mb-4"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-lg lg:text-3xl text-navy">Snorkeling at Chileno Bay</h3></div>
+      <div class="lg:flex lg:flex-row-reverse lg:gap-10 lg:items-start">
+        <Image src={Chileno} alt="Snorkeling at Chileno Bay" class="w-full h-48 lg:h-[300px] object-cover rounded-2xl mb-4 lg:mb-0 lg:w-1/2 lg:flex-shrink-0" width={800} height={500} />
+        <div>
+          <p class="text-base text-slate-700 leading-relaxed mb-3">Chileno Bay is another excellent snorkeling location in Los Cabos, known for its crystal-clear water and abundant marine life. This protected cove offers calm conditions and great visibility, making it perfect for both beginners and experienced snorkelers.</p>
+          <p class="text-base text-slate-700 leading-relaxed">You can often spot schools of tropical fish and other marine species while exploring the reef. Chileno Bay is one of the highlights of our private yacht snorkeling cruises.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Snorkeling at Santa María Bay -->
+    <div class="px-5 pb-6 lg:max-w-[1400px] lg:mx-auto lg:px-10 lg:pb-10">
+      <div class="flex items-center gap-3 mb-4"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-lg lg:text-3xl text-navy">Snorkeling at Santa Mar&iacute;a Bay</h3></div>
+      <div class="lg:flex lg:gap-10 lg:items-start">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsPNXa1dALuRh7RdwyoRf93TCW1fJtrL0kaOjRkJ5k1272Y4OJqjAX5NrV2iXzb2LCN_llfLfVJtxTluIdzkWhNSqNzUPx6wAprsrWurADI6oGQbeAC2IteDT4KNG_J-4XqrPA6IQ4p5cbton6Fa-Sd8g3vPEfxR3xMElXTmmINn23_-OP89a8rgBDXbNFjJVWxlln2hbvdyZw6ajy9TauowJqm0fgMILlpngP4MzbKmss4Qy_1Zi7RmYw4XItoHpivSHT5yhBTt0" alt="Snorkeling at Santa María Bay" class="w-full h-48 lg:h-[300px] object-cover rounded-2xl mb-4 lg:mb-0 lg:w-1/2 lg:flex-shrink-0"/>
+        <div>
+          <p class="text-base text-slate-700 leading-relaxed mb-3">Santa Mar&iacute;a Bay is one of the most beautiful and protected snorkeling spots in Los Cabos. This horseshoe-shaped bay features calm, clear turquoise waters and a sandy bottom, making it ideal for swimming and snorkeling.</p>
+          <p class="text-base text-slate-700 leading-relaxed">The area is part of a marine sanctuary, often filled with colorful fish and vibrant marine life. Santa Mar&iacute;a Bay is a favorite stop during our private yacht cruises along the Cabo coastline.</p>
+        </div>
+      </div>
+    </div>
+
 <div class="px-5 pb-32 lg:max-w-[1400px] lg:mx-auto lg:px-10 lg:py-16 lg:pb-20">
   <div class="flex items-center gap-3 mb-4 lg:mb-8"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-lg lg:text-3xl text-navy">What Our Guests Say</h3></div>
   <div class="relative">
     <div id="m-carousel" class="flex overflow-x-auto gap-4 lg:gap-6 no-scrollbar snap-x snap-mandatory pb-4 lg:overflow-hidden">
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Saw a mama humpback and her baby breach maybe 20 yards from the boat. I have video. Crew knew so much about whale behavior and just kept feeding us info. Best thing we did in Cabo by far."</p>
-        <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center text-white text-sm font-bold">RK</div><div><p class="text-sm font-bold text-navy">Rachel K.</p><p class="text-base text-slate-500">Seattle, WA</p></div></div>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Pelican Rock had so many fish I lost count, and a sea lion swam right past us like he was checking us out lol. Crew was great, open bar was generous, no complaints at all. This is the one to book."</p>
+        <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center text-white text-sm font-bold">JM</div><div><p class="text-sm font-bold text-navy">Jessica M.</p><p class="text-base text-slate-500">Austin, TX</p></div></div>
       </div>
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Took our kids (8 and 11) on the whale watching tour and they were obsessed. We counted 5 different whales!! Crew kept them engaged the whole time. Already trying to plan next winter back."</p>
-        <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-gold flex items-center justify-center text-white text-sm font-bold">TF</div><div><p class="text-sm font-bold text-navy">Tom F.</p><p class="text-base text-slate-500">Denver, CO</p></div></div>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Family of 6, did the private charter and so worth it. The kids were freaking out at all the fish. Snorkel gear felt clean and fit well (we have 3 kids of different ages). Having the whole boat to ourselves was the whole point and totally worth the price."</p>
+        <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-gold flex items-center justify-center text-white text-sm font-bold">DH</div><div><p class="text-sm font-bold text-navy">David H.</p><p class="text-base text-slate-500">Chicago, IL</p></div></div>
       </div>
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"I've done whale watching in Alaska and in Maui, and Cabo holds its own. The whales were active that day and we saw multiple breaches. Open bar was a nice surprise. Highly recommend."</p>
-        <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy/70 flex items-center justify-center text-white text-sm font-bold">MG</div><div><p class="text-sm font-bold text-navy">Maria G.</p><p class="text-base text-slate-500">San Francisco, CA</p></div></div>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Sailing to the Arch and snorkeling at Pelican Rock - bucket list checked off. The crew spoke perfect English and were funny too, made the trip way more fun than expected. Open bar and snacks kept everyone happy. 10/10 would do again."</p>
+        <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy/70 flex items-center justify-center text-white text-sm font-bold">AP</div><div><p class="text-sm font-bold text-navy">Amanda P.</p><p class="text-base text-slate-500">Seattle, WA</p></div></div>
       </div>
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"The captain clearly knew where to look. We had whales around us within 15 mins. Way better experience on a sailboat too. We passed one of the big motor boats and it was packed and loud. We had room to move and could actually hear ourselves."</p>
-        <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center text-white text-sm font-bold">DL</div><div><p class="text-sm font-bold text-navy">David L.</p><p class="text-base text-slate-500">Austin, TX</p></div></div>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Our guide spotted a turtle and got us over to it before it swam off. It just hung out near us for a few minutes, so cool. Water was super clear that day. Loved that we could chill on the boat between swims with no schedule to rush."</p>
+        <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center text-white text-sm font-bold">MR</div><div><p class="text-sm font-bold text-navy">Mike R.</p><p class="text-base text-slate-500">Portland, OR</p></div></div>
       </div>
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"My daughter is studying marine biology and even she was impressed (she's a hard sell). Crew talked about behavior, migration patterns, the whole thing. Plus cocktails. Like a Nat Geo tour you can drink on."</p>
-        <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-gold flex items-center justify-center text-white text-sm font-bold">PH</div><div><p class="text-sm font-bold text-navy">Patricia H.</p><p class="text-base text-slate-500">Miami, FL</p></div></div>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Brought my parents (76 and 73) and was worried about them getting in and out of the water. The crew was super attentive, helped them with the ladder, made sure they were comfortable the whole time. My dad doesn't compliment things easily and he said it was his favorite day of the trip."</p>
+        <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-gold flex items-center justify-center text-white text-sm font-bold">LT</div><div><p class="text-sm font-bold text-navy">Lisa T.</p><p class="text-base text-slate-500">Phoenix, AZ</p></div></div>
       </div>
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Third year doing the whale watching with these guys. This year a whale breached so close that water actually hit the boat! Even the crew was freaking out. Every trip has been special but this one was on another level."</p>
-        <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy/70 flex items-center justify-center text-white text-sm font-bold">CJ</div><div><p class="text-sm font-bold text-navy">Chris &amp; Jamie</p><p class="text-base text-slate-500">Chicago, IL</p></div></div>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Second year in a row booking with these guys. One of the crew actually remembered us from last year! Same great experience. If you can swing the private, just do it. The shared looks fine but having the whole boat is a different vibe."</p>
+        <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy/70 flex items-center justify-center text-white text-sm font-bold">BN</div><div><p class="text-sm font-bold text-navy">Brian N.</p><p class="text-base text-slate-500">San Diego, CA</p></div></div>
       </div>
     </div>
     <button onclick="scrollMReviews(-1)" class="hidden lg:flex absolute left-[-20px] top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white border border-border-light shadow-md items-center justify-center hover:bg-light-grey transition-colors z-10"><span class="material-symbols-outlined text-navy text-xl">chevron_left</span></button>
@@ -619,23 +615,9 @@ const breadcrumbSchema = JSON.stringify({
 
   <Footer />
   <FloatingCTA />
-  <script is:inline>window.__pageActivityId='whale-watching';</script>
+  <script is:inline>window.__pageActivityId='private-snorkeling';</script>
   <RezdyModal />
 
-  <!-- Rezdy Booking Modal -->
-<div id="rezdyModal" class="fixed inset-0 z-[200] hidden items-center justify-center bg-black/30 px-4" onclick="if(event.target===this)closeRezdyModal()">
-  <div class="relative bg-white rounded-2xl shadow-2xl w-full max-w-[340px] max-h-[92vh] overflow-hidden flex flex-col">
-    <div class="flex items-center justify-between px-4 py-3 border-b border-border-light bg-white">
-      <span class="text-navy font-bold text-sm uppercase tracking-[0.15em]">Check Availability</span>
-      <button type="button" onclick="closeRezdyModal()" aria-label="Close" class="w-8 h-8 rounded-full flex items-center justify-center text-navy hover:bg-light-grey">
-        <span class="material-symbols-outlined">close</span>
-      </button>
-    </div>
-    <div class="flex-1 overflow-auto bg-white">
-      <iframe id="rezdyIframe" seamless="" width="300" height="1000" frameborder="0" class="rezdy block mx-auto" src=""></iframe>
-    </div>
-  </div>
-</div>
 
   <script is:inline>
 
@@ -658,9 +640,9 @@ const breadcrumbSchema = JSON.stringify({
   }
   function goToMPage(page) { mPage = page; scrollMReviews(0); }
 
+  // Fleet boat card arrow navigation
   function fleetNav(btn, dir) {
-    var wrap = btn.closest('[class*="h-["]');
-    if (!wrap) wrap = btn.parentElement;
+    var wrap = btn.parentElement;
     var slides = wrap.querySelectorAll('.boat-slide');
     var current = 0;
     slides.forEach(function(s, i) { if (s.style.opacity === '1' || s.classList.contains('opacity-100')) current = i; });

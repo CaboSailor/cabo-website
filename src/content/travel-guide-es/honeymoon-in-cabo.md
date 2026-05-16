@@ -8,7 +8,7 @@ category: "Culture & Food"
 categoryLink: "/es/travel-guide-culture/"
 activeSubmenu: "culture"
 bestTime: "Nov–May — cálido, seco y perfecto para el romance"
-relatedActivity: "/es/private-sunset/"
+relatedActivity: "/es/tours/private-sunset/"
 sidebarType: "default"
 ---
 
@@ -32,7 +32,7 @@ Algunos resorts ofrecen paquetes de luna de miel que incluyen tratamientos de sp
 
 Los Cabos tiene buen clima la mayor parte del a&ntilde;o, pero algunas temporadas ofrecen mejores condiciones para una luna de miel.
 
-De noviembre a mayo, las temperaturas se mantienen c&aacute;lidas sin ser demasiado calurosas. Es la mejor &eacute;poca para actividades al aire libre, <a href="/es/private-sunset/" class="text-accent-gold font-semibold hover:underline">cruceros privados al atardecer</a> y caminatas rom&aacute;nticas por la playa. Los meses pico van de diciembre a abril, lo que significa tarifas de hotel m&aacute;s altas y clima ideal.
+De noviembre a mayo, las temperaturas se mantienen c&aacute;lidas sin ser demasiado calurosas. Es la mejor &eacute;poca para actividades al aire libre, <a href="/es/tours/private-sunset/" class="text-accent-gold font-semibold hover:underline">cruceros privados al atardecer</a> y caminatas rom&aacute;nticas por la playa. Los meses pico van de diciembre a abril, lo que significa tarifas de hotel m&aacute;s altas y clima ideal.
 
 De junio a septiembre llegan temperaturas m&aacute;s c&aacute;lidas y lluvias ocasionales. Es temporada baja, lo que facilita encontrar buenas ofertas en resorts. Las parejas que buscan una luna de miel m&aacute;s tranquila pueden apreciar menos multitudes y precios m&aacute;s bajos durante esta &eacute;poca.
 
@@ -64,7 +64,7 @@ Para un tipo distinto de relajaci&oacute;n, algunos spas ofrecen ceremonias de t
 
 Un crucero al atardecer es una de las actividades m&aacute;s rom&aacute;nticas en Cabo para reci&eacute;n casados. Navegar frente al famoso Arco de Cabo San Lucas mientras el cielo se tiñe de naranja y rosa crea una experiencia m&aacute;gica.
 
-Muchas compa&ntilde;&iacute;as ofrecen <a href="/es/private-sunset/" class="text-accent-gold font-semibold hover:underline">renta de yates privados</a> con cena, champagne y m&uacute;sica en vivo. Cabo Sailing Ocean Adventures es conocido por sus veleros de lujo y su servicio de primera, lo que lo convierte en una excelente opci&oacute;n para parejas que buscan pasar una velada &iacute;ntima en el mar.
+Muchas compa&ntilde;&iacute;as ofrecen <a href="/es/tours/private-sunset/" class="text-accent-gold font-semibold hover:underline">renta de yates privados</a> con cena, champagne y m&uacute;sica en vivo. Cabo Sailing Ocean Adventures es conocido por sus veleros de lujo y su servicio de primera, lo que lo convierte en una excelente opci&oacute;n para parejas que buscan pasar una velada &iacute;ntima en el mar.
 
 Algunos cruceros en catamar&aacute;n para parejas que prefieren un ambiente grupal incluyen barra libre, m&uacute;sica en vivo y baile bajo las estrellas. Estos cruceros son una forma divertida de mezclar relax con un ambiente animado.
 
@@ -76,7 +76,7 @@ Cabo San Lucas tiene muchas playas hermosas, pero algunas son ideales para el ro
 
 Playa del Amor es visita obligada para reci&eacute;n casados. Accesible solo en barco, esta playa apartada ofrece formaciones rocosas espectaculares y aguas turquesas. Las parejas pueden llevar un picnic y pasar una tarde tranquila tomando el sol.
 
-Para un ambiente m&aacute;s tranquilo, Playa Santa Mar&iacute;a es ideal para hacer <a href="/es/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">snorkel</a> y relajarse en una bah&iacute;a calmada. La arena dorada suave y las aguas cristalinas la hacen una de las mejores playas para un d&iacute;a rom&aacute;ntico junto al mar.
+Para un ambiente m&aacute;s tranquilo, Playa Santa Mar&iacute;a es ideal para hacer <a href="/es/tours/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">snorkel</a> y relajarse en una bah&iacute;a calmada. La arena dorada suave y las aguas cristalinas la hacen una de las mejores playas para un d&iacute;a rom&aacute;ntico junto al mar.
 
 Bah&iacute;a Chileno es otra gran opci&oacute;n. Sus aguas poco profundas son perfectas para nadar y hacer snorkel, y el arrecife de coral atrae vida marina colorida, lo que la hace excelente para parejas que aman el oc&eacute;ano.
 
@@ -102,4 +102,4 @@ Empacar para Cabo es sencillo, pero es importante llevar ropa ligera, sandalias 
 
 El transporte es otro factor a considerar. Los taxis en Cabo pueden ser caros, as&iacute; que rentar un auto o usar <a href="/es/shuttle-service/" class="text-accent-gold font-semibold hover:underline">servicios de shuttle</a> contratados con anticipaci&oacute;n puede facilitar mucho los traslados.
 
-Una <a href="/es/private-sunset/" class="text-accent-gold font-semibold hover:underline">navegaci&oacute;n privada al atardecer</a> es la experiencia m&aacute;s rom&aacute;ntica que ofrece Cabo &mdash; champagne, vistas al mar y ustedes dos. Es lo m&aacute;s memorable de la mayor&iacute;a de las lunas de miel aqu&iacute;.
+Una <a href="/es/tours/private-sunset/" class="text-accent-gold font-semibold hover:underline">navegaci&oacute;n privada al atardecer</a> es la experiencia m&aacute;s rom&aacute;ntica que ofrece Cabo &mdash; champagne, vistas al mar y ustedes dos. Es lo m&aacute;s memorable de la mayor&iacute;a de las lunas de miel aqu&iacute;.

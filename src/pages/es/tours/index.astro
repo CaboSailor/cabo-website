@@ -1,22 +1,22 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import Header from '../../components/Header.astro';
-import Footer from '../../components/Footer.astro';
-import FloatingCTA from '../../components/FloatingCTA.astro';
-import CarouselImage from '../../components/CarouselImage.astro';
-import YachtIcon from '../../components/YachtIcon.astro';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import FloatingCTA from '../../../components/FloatingCTA.astro';
+import CarouselImage from '../../../components/CarouselImage.astro';
+import YachtIcon from '../../../components/YachtIcon.astro';
 
 const sharedTours = [
-  { href: '/es/shared-snorkeling/', id: 'shared-snorkeling', label: 'Snorkel Compartido',   tagline: '3 hrs · grupo hasta 14', alt: 'Tour compartido de snorkel en Cabo San Lucas' },
-  { href: '/es/shared-sunset/',     id: 'shared-sunset',     label: 'Atardecer Compartido', tagline: '2 hrs · grupo hasta 14', alt: 'Crucero compartido al atardecer en Cabo San Lucas' },
+  { href: '/es/tours/shared-snorkeling/', id: 'shared-snorkeling', label: 'Snorkel Compartido',   tagline: '3 hrs · grupo hasta 14', alt: 'Tour compartido de snorkel en Cabo San Lucas' },
+  { href: '/es/tours/shared-sunset/',     id: 'shared-sunset',     label: 'Atardecer Compartido', tagline: '2 hrs · grupo hasta 14', alt: 'Crucero compartido al atardecer en Cabo San Lucas' },
 ];
 
 const privateTours = [
-  { href: '/es/private-snorkeling/', id: 'private-snorkeling', label: 'Snorkel Privado',          tagline: 'Velero o yate · solo tu grupo',         alt: 'Charter privado de snorkel en Cabo San Lucas' },
-  { href: '/es/private-sunset/',     id: 'private-sunset',     label: 'Atardecer Privado',        tagline: 'Velero o yate · solo tu grupo',         alt: 'Charter privado al atardecer en Cabo San Lucas' },
-  { href: '/es/whale-watching/',     id: 'whale-watching',     label: 'Avistamiento de Ballenas', tagline: 'Dic–Abr · solo tu grupo',               alt: 'Tour privado de avistamiento de ballenas en Cabo San Lucas' },
-  { href: '/es/bachelorette/',       id: 'bachelorette-party', label: 'Despedida de Soltera',     tagline: 'Yate decorado · hecho para la novia',   alt: 'Charter de despedida de soltera en Cabo San Lucas' },
-  { href: '/es/scuba-diving/',       id: 'scuba-diving',       label: 'Buceo',                    tagline: 'Barco PADI · todos los niveles',        alt: 'Tour de buceo en Cabo San Lucas' },
+  { href: '/es/tours/private-snorkeling/', id: 'private-snorkeling', label: 'Snorkel Privado',          tagline: 'Velero o yate · solo tu grupo',         alt: 'Charter privado de snorkel en Cabo San Lucas' },
+  { href: '/es/tours/private-sunset/',     id: 'private-sunset',     label: 'Atardecer Privado',        tagline: 'Velero o yate · solo tu grupo',         alt: 'Charter privado al atardecer en Cabo San Lucas' },
+  { href: '/es/tours/whale-watching/',     id: 'whale-watching',     label: 'Avistamiento de Ballenas', tagline: 'Dic–Abr · solo tu grupo',               alt: 'Tour privado de avistamiento de ballenas en Cabo San Lucas' },
+  { href: '/es/tours/bachelorette/',       id: 'bachelorette-party', label: 'Despedida de Soltera',     tagline: 'Yate decorado · hecho para la novia',   alt: 'Charter de despedida de soltera en Cabo San Lucas' },
+  { href: '/es/tours/scuba-diving/',       id: 'scuba-diving',       label: 'Buceo',                    tagline: 'Barco PADI · todos los niveles',        alt: 'Tour de buceo en Cabo San Lucas' },
 ];
 
 const faqs = [

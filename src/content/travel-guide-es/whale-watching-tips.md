@@ -8,11 +8,11 @@ category: "Attractions"
 categoryLink: "/es/travel-guide-attractions/"
 activeSubmenu: "attractions"
 bestTime: "Dic–Abr — temporada alta de ballenas"
-relatedActivity: "/es/whale-watching/"
+relatedActivity: "/es/tours/whale-watching/"
 sidebarType: "default"
 ---
 
-Las aguas que rodean Cabo San Lucas est&aacute;n entre los lugares m&aacute;s espectaculares del mundo para ver ballenas. Cada a&ntilde;o, las jorobadas, las ballenas grises e incluso la elusiva ballena azul recorren miles de kil&oacute;metros desde las fr&iacute;as aguas del &Aacute;rtico hasta los mares c&aacute;lidos y tranquilos de Baja California Sur. Estos gigantes amables llegan a aparearse, dar a luz y cuidar a sus cr&iacute;as antes de emprender el largo viaje de regreso al norte. Parado en la costa de Cabo, es posible avistar ballenas saltando, golpeando con la cola e incluso asomando la cabeza fuera del agua justo despu&eacute;s de las olas. Pero la experiencia m&aacute;s gratificante sucede en el mar. El <a href="/es/whale-watching/" class="text-accent-gold font-semibold hover:underline">avistamiento de ballenas en Cabo San Lucas</a> es un encuentro &iacute;ntimo con la naturaleza. La imagen de una madre jorobada ense&ntilde;ando a su cr&iacute;a a nadar o el sonido del exhalar de una ballena rompiendo el silencio del mar se queda contigo para siempre.
+Las aguas que rodean Cabo San Lucas est&aacute;n entre los lugares m&aacute;s espectaculares del mundo para ver ballenas. Cada a&ntilde;o, las jorobadas, las ballenas grises e incluso la elusiva ballena azul recorren miles de kil&oacute;metros desde las fr&iacute;as aguas del &Aacute;rtico hasta los mares c&aacute;lidos y tranquilos de Baja California Sur. Estos gigantes amables llegan a aparearse, dar a luz y cuidar a sus cr&iacute;as antes de emprender el largo viaje de regreso al norte. Parado en la costa de Cabo, es posible avistar ballenas saltando, golpeando con la cola e incluso asomando la cabeza fuera del agua justo despu&eacute;s de las olas. Pero la experiencia m&aacute;s gratificante sucede en el mar. El <a href="/es/tours/whale-watching/" class="text-accent-gold font-semibold hover:underline">avistamiento de ballenas en Cabo San Lucas</a> es un encuentro &iacute;ntimo con la naturaleza. La imagen de una madre jorobada ense&ntilde;ando a su cr&iacute;a a nadar o el sonido del exhalar de una ballena rompiendo el silencio del mar se queda contigo para siempre.
 
 Para presenciar esta migraci&oacute;n incre&iacute;ble en su mejor momento, planear el viaje correcto es clave. Conocer la temporada, elegir el tour adecuado y respetar la vida marina aseguran una experiencia memorable.
 
@@ -41,7 +41,7 @@ Seleccionar un operador responsable y experto hace toda la diferencia. El avista
 - **Gu&iacute;as expertos** &mdash; Un bi&oacute;logo marino o naturalista con conocimientos enriquece el viaje, brindando informaci&oacute;n valiosa sobre el comportamiento de las ballenas y los esfuerzos de conservaci&oacute;n.
 - **Distancia respetuosa** &mdash; Los tours &eacute;ticos mantienen una distancia segura de las ballenas, permitiendo que se muevan libremente sin estr&eacute;s.
 
-Considera reservar un yate privado para una experiencia de avistamiento lujosa y exclusiva. Estos charters tienen control total del itinerario y ofrecen una forma &iacute;ntima de presenciar la vida marina sin las multitudes. Los <a href="/es/whale-watching/" class="text-accent-gold font-semibold hover:underline">charters de yates en Cabo</a> brindan un entorno elegante para disfrutar las maravillas del mar.
+Considera reservar un yate privado para una experiencia de avistamiento lujosa y exclusiva. Estos charters tienen control total del itinerario y ofrecen una forma &iacute;ntima de presenciar la vida marina sin las multitudes. Los <a href="/es/tours/whale-watching/" class="text-accent-gold font-semibold hover:underline">charters de yates en Cabo</a> brindan un entorno elegante para disfrutar las maravillas del mar.
 
 ---
 

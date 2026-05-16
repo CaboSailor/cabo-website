@@ -1,18 +1,18 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import Header from '../../components/Header.astro';
-import Footer from '../../components/Footer.astro';
-import FloatingCTA from '../../components/FloatingCTA.astro';
-import RezdyModal from '../../components/RezdyModal.astro';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import FloatingCTA from '../../../components/FloatingCTA.astro';
+import RezdyModal from '../../../components/RezdyModal.astro';
 import { Image } from 'astro:assets';
 
-import { sharedSunset as img_31_03_25_Gil_airbnb_shoot_photos_35mm_226_topaz_sharpen_exposure } from "../../data/tour-heroes";
-import sailboatRelaxationUnderGoldenHourSun from "../../assets/images/guests-on-sailboats/sailboat-relaxation-under-golden-hour-sun.png";
-import goldenHourSailingWithFriends from "../../assets/images/guests-on-sailboats/golden-hour-sailing-with-friends.png";
-import relaxingOnTheSailboatAtSea from "../../assets/images/guests-on-sailboats/relaxing-on-the-sailboat-at-sea.png";
-import relaxingSailboatRideInGoldenHour from "../../assets/images/guests-on-sailboats/relaxing-sailboat-ride-in-golden-hour.png";
-import sunsetRelaxationOnASailboat from "../../assets/images/guests-on-sailboats/sunset-relaxation-on-a-sailboat.png";
-import cabosailingSailboat42 from "../../assets/images/boats/sailing-42/cabosailing-sailiboat-42.png";
+import { sharedSunset as img_31_03_25_Gil_airbnb_shoot_photos_35mm_226_topaz_sharpen_exposure } from "../../../data/tour-heroes";
+import sailboatRelaxationUnderGoldenHourSun from "../../../assets/images/guests-on-sailboats/sailboat-relaxation-under-golden-hour-sun.png";
+import goldenHourSailingWithFriends from "../../../assets/images/guests-on-sailboats/golden-hour-sailing-with-friends.png";
+import relaxingOnTheSailboatAtSea from "../../../assets/images/guests-on-sailboats/relaxing-on-the-sailboat-at-sea.png";
+import relaxingSailboatRideInGoldenHour from "../../../assets/images/guests-on-sailboats/relaxing-sailboat-ride-in-golden-hour.png";
+import sunsetRelaxationOnASailboat from "../../../assets/images/guests-on-sailboats/sunset-relaxation-on-a-sailboat.png";
+import cabosailingSailboat42 from "../../../assets/images/boats/sailing-42/cabosailing-sailiboat-42.png";
 
 const touristTripSchema = JSON.stringify({
   "@context": "https://schema.org",
@@ -27,7 +27,7 @@ const touristTripSchema = JSON.stringify({
   },
   "offers": {
     "@type": "Offer",
-    "url": "https://cabosailing.com/es/shared-sunset/",
+    "url": "https://cabosailing.com/es/tours/shared-sunset/",
     "priceCurrency": "USD",
     "availability": "https://schema.org/InStock"
   }
@@ -44,7 +44,7 @@ const breadcrumbSchema = JSON.stringify({
 });
 ---
 
-<BaseLayout bodyClass="bg-white font-body text-text-main antialiased min-h-screen flex flex-col relative" title="Crucero al Atardecer Compartido en Cabo San Lucas | Cabo Sailing" description="Crucero compartido al atardecer en velero, Cabo San Lucas. Grupo pequeño, barra libre, snacks y vista al Arco. Salida diaria desde la marina." ogImage="/og/shared-sunset.jpg" ogImageAlt="Crucero al atardecer en Cabo San Lucas" hreflangs={{ en: '/shared-sunset', es: '/es/shared-sunset' }}>
+<BaseLayout bodyClass="bg-white font-body text-text-main antialiased min-h-screen flex flex-col relative" title="Crucero al Atardecer Compartido en Cabo San Lucas | Cabo Sailing" description="Crucero compartido al atardecer en velero, Cabo San Lucas. Grupo pequeño, barra libre, snacks y vista al Arco. Salida diaria desde la marina." ogImage="/og/shared-sunset.jpg" ogImageAlt="Crucero al atardecer en Cabo San Lucas" hreflangs={{ en: '/tours/shared-sunset', es: '/es/tours/shared-sunset' }}>
   <script slot="head" type="application/ld+json" set:html={touristTripSchema} />
   <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
   <Header variant="subpage" activePage="tours" />
@@ -126,7 +126,7 @@ const breadcrumbSchema = JSON.stringify({
     <nav class="flex items-center gap-1.5 text-xs text-slate-500 mb-4" aria-label="Breadcrumb">
       <a href="/es/" class="hover:text-gold transition-colors">Inicio</a>
       <span class="material-symbols-outlined text-[14px]">chevron_right</span>
-      <span>Tours</span>
+      <a href="/es/tours/" class="hover:text-gold transition-colors">Tours</a>
       <span class="material-symbols-outlined text-[14px]">chevron_right</span>
       <span class="text-navy font-semibold">Atardecer Compartido</span>
     </nav>
@@ -290,7 +290,7 @@ const breadcrumbSchema = JSON.stringify({
   <nav class="flex items-center gap-1.5 text-xs text-slate-500 mb-4" aria-label="Breadcrumb">
     <a href="/es/" class="hover:text-gold transition-colors">Inicio</a>
     <span class="material-symbols-outlined text-[14px]">chevron_right</span>
-    <span>Tours</span>
+    <a href="/es/tours/" class="hover:text-gold transition-colors">Tours</a>
     <span class="material-symbols-outlined text-[14px]">chevron_right</span>
     <span class="text-navy font-semibold">Atardecer Compartido</span>
   </nav>
@@ -462,7 +462,7 @@ const breadcrumbSchema = JSON.stringify({
       <h3 class="text-base lg:text-xl text-navy mb-1">Quieres el barco solo para ti?</h3>
       <p class="text-sm lg:text-base text-slate-500">Reserva un charter privado al atardecer para tu grupo — elige entre veleros o yates de lujo y personaliza tu experiencia.</p>
     </div>
-    <a href="/es/private-sunset/" class="block lg:inline-block bg-navy text-white font-bold text-[11px] px-6 py-4 rounded-2xl uppercase tracking-[0.2em] text-center shadow-lg whitespace-nowrap">Ver Tours Privados</a>
+    <a href="/es/tours/private-sunset/" class="block lg:inline-block bg-navy text-white font-bold text-[11px] px-6 py-4 rounded-2xl uppercase tracking-[0.2em] text-center shadow-lg whitespace-nowrap">Ver Tours Privados</a>
   </div>
 </div>
 

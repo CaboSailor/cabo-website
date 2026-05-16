@@ -84,7 +84,7 @@ Here are the best activities and practical tips for seniors visiting Cabo in 202
 
 ## Sunset cruises
 
-A <a href="/private-sunset/" class="text-accent-gold font-semibold hover:underline">private sunset cruise</a> is arguably the best activity in Cabo for seniors. You board a comfortable boat at the marina, cruise past the Arch and Land&rsquo;s End while the sun sets over the Pacific, and enjoy drinks and appetizers without lifting a finger.
+A <a href="/tours/private-sunset/" class="text-accent-gold font-semibold hover:underline">private sunset cruise</a> is arguably the best activity in Cabo for seniors. You board a comfortable boat at the marina, cruise past the Arch and Land&rsquo;s End while the sun sets over the Pacific, and enjoy drinks and appetizers without lifting a finger.
 
 <ul class="spot-list">
   <li><strong>Why it&rsquo;s ideal</strong> &mdash; seated the entire time, shaded areas on most boats, gentle pace, staff handles everything</li>
@@ -181,7 +181,7 @@ Medano Beach is the most accessible &mdash; flat sand, calm water, and full serv
 
 **What are the best gentle activities in Cabo for seniors?**
 
-Sunset cruises, whale watching (Dec&ndash;Apr), marina walks, the San Jos&eacute; Estuary, golf, spa days, and leisurely dining are all excellent low-impact options. A <a href="/private-sunset/" class="text-accent-gold font-semibold hover:underline">private sunset cruise</a> is consistently the top recommendation.
+Sunset cruises, whale watching (Dec&ndash;Apr), marina walks, the San Jos&eacute; Estuary, golf, spa days, and leisurely dining are all excellent low-impact options. A <a href="/tours/private-sunset/" class="text-accent-gold font-semibold hover:underline">private sunset cruise</a> is consistently the top recommendation.
 
 <script type="application/ld+json">
 {

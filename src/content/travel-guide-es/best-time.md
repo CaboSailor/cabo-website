@@ -8,7 +8,7 @@ category: "Traveling to Cabo"
 categoryLink: "/es/travel-guide-traveling/"
 activeSubmenu: "traveling"
 bestTime: "Diciembre–abril (alta) o mayo–junio (mejor relación calidad-precio)"
-relatedActivity: "/es/whale-watching/"
+relatedActivity: "/es/tours/whale-watching/"
 sidebarType: "default"
 ---
 
@@ -26,7 +26,7 @@ Este per&iacute;odo tambi&eacute;n es la temporada de avistamiento de ballenas, 
 
 Festivales como las celebraciones de San Jos&eacute; del Cabo en marzo y la Semana Santa en abril tambi&eacute;n le dan energ&iacute;a extra a la regi&oacute;n.
 
-Si el avistamiento de ballenas est&aacute; en tu lista, este es el momento para visitar. Reservar una [experiencia en velero o yate](/es/whale-watching/) ofrece un encuentro m&aacute;s tranquilo y personal en comparaci&oacute;n con los barcos m&aacute;s grandes.
+Si el avistamiento de ballenas est&aacute; en tu lista, este es el momento para visitar. Reservar una [experiencia en velero o yate](/es/tours/whale-watching/) ofrece un encuentro m&aacute;s tranquilo y personal en comparaci&oacute;n con los barcos m&aacute;s grandes.
 
 <div class="my-8 rounded-2xl overflow-hidden shadow-lg">
   <img alt="Ballena jorobada saltando en Cabo San Lucas" class="w-full h-[280px] lg:h-[360px] object-cover" src="/images/whales/cabo-whale-watching-breaching.jpg" />

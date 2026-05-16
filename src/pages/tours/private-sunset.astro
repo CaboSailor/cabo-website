@@ -1,18 +1,18 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import FloatingCTA from '../components/FloatingCTA.astro';
-import RezdyModal from '../components/RezdyModal.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import FloatingCTA from '../../components/FloatingCTA.astro';
+import RezdyModal from '../../components/RezdyModal.astro';
 import { Image } from 'astro:assets';
-import CarouselImage from '../components/CarouselImage.astro';
+import CarouselImage from '../../components/CarouselImage.astro';
 
-import { privateSunset as heroRomanticSunset } from "../data/tour-heroes";
-import yachtGuestsRelaxing from "../assets/images/guests-on-yachts/cabo-yacht-guests-relaxing.jpg";
-import familyYachtEscape from "../assets/images/guests-on-yachts/family-enjoying-a-yacht-escape.png";
-import relaxingSunnyYacht from "../assets/images/guests-on-yachts/relaxing-on-a-sunny-yacht.png";
-import familyFunSunnySailboat from "../assets/images/guests-on-sailboats/family-fun-on-a-sunny-sailboat.png";
-import landsEndGoldenHour from "../assets/images/guests-on-yachts/luxury-yacht-cruising-on-sunny-waters.png";
+import { privateSunset as heroRomanticSunset } from "../../data/tour-heroes";
+import yachtGuestsRelaxing from "../../assets/images/guests-on-yachts/cabo-yacht-guests-relaxing.jpg";
+import familyYachtEscape from "../../assets/images/guests-on-yachts/family-enjoying-a-yacht-escape.png";
+import relaxingSunnyYacht from "../../assets/images/guests-on-yachts/relaxing-on-a-sunny-yacht.png";
+import familyFunSunnySailboat from "../../assets/images/guests-on-sailboats/family-fun-on-a-sunny-sailboat.png";
+import landsEndGoldenHour from "../../assets/images/guests-on-yachts/luxury-yacht-cruising-on-sunny-waters.png";
 
 const touristTripSchema = JSON.stringify({
   "@context": "https://schema.org",
@@ -27,7 +27,7 @@ const touristTripSchema = JSON.stringify({
   },
   "offers": {
     "@type": "Offer",
-    "url": "https://cabosailing.com/private-sunset/",
+    "url": "https://cabosailing.com/tours/private-sunset/",
     "priceCurrency": "USD",
     "availability": "https://schema.org/InStock"
   }
@@ -44,7 +44,7 @@ const breadcrumbSchema = JSON.stringify({
 });
 ---
 
-<BaseLayout bodyClass="bg-white font-body text-text-main antialiased min-h-screen flex flex-col relative" title="Private Sunset Cruise in Cabo San Lucas | Cabo Sailing" description="Private sunset cruise for up to 12 guests on our yacht or sailboat. Open bar, snacks and front-row views of the Arch of Cabo San Lucas." ogImage="/og/private-sunset.jpg" ogImageAlt="Private sunset sailing at the Arch of Cabo San Lucas" hreflangs={{ en: '/private-sunset', es: '/es/private-sunset' }}>
+<BaseLayout bodyClass="bg-white font-body text-text-main antialiased min-h-screen flex flex-col relative" title="Private Sunset Cruise in Cabo San Lucas | Cabo Sailing" description="Private sunset cruise for up to 12 guests on our yacht or sailboat. Open bar, snacks and front-row views of the Arch of Cabo San Lucas." ogImage="/og/private-sunset.jpg" ogImageAlt="Private sunset sailing at the Arch of Cabo San Lucas" hreflangs={{ en: '/tours/private-sunset', es: '/es/tours/private-sunset' }}>
   <script slot="head" type="application/ld+json" set:html={touristTripSchema} />
   <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
   <Header variant="subpage" activePage="tours" />
@@ -124,7 +124,7 @@ const breadcrumbSchema = JSON.stringify({
   <nav class="flex items-center gap-1.5 text-xs text-slate-500 mb-4" aria-label="Breadcrumb">
     <a href="/" class="hover:text-gold transition-colors">Home</a>
     <span class="material-symbols-outlined text-[14px]">chevron_right</span>
-    <span>Tours</span>
+    <a href="/tours/" class="hover:text-gold transition-colors">Tours</a>
     <span class="material-symbols-outlined text-[14px]">chevron_right</span>
     <span class="text-navy font-semibold">Private Sunset</span>
   </nav>
@@ -194,7 +194,7 @@ const breadcrumbSchema = JSON.stringify({
   <nav class="flex items-center gap-1.5 text-xs text-slate-500 mb-4" aria-label="Breadcrumb">
     <a href="/" class="hover:text-gold transition-colors">Home</a>
     <span class="material-symbols-outlined text-[14px]">chevron_right</span>
-    <span>Tours</span>
+    <a href="/tours/" class="hover:text-gold transition-colors">Tours</a>
     <span class="material-symbols-outlined text-[14px]">chevron_right</span>
     <span class="text-navy font-semibold">Private Sunset</span>
   </nav>

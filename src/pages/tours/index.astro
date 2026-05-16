@@ -1,22 +1,22 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import FloatingCTA from '../components/FloatingCTA.astro';
-import CarouselImage from '../components/CarouselImage.astro';
-import YachtIcon from '../components/YachtIcon.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import FloatingCTA from '../../components/FloatingCTA.astro';
+import CarouselImage from '../../components/CarouselImage.astro';
+import YachtIcon from '../../components/YachtIcon.astro';
 
 const sharedTours = [
-  { href: '/shared-snorkeling/', id: 'shared-snorkeling', label: 'Shared Snorkeling', tagline: '3 hrs · group of up to 14', alt: 'Shared Snorkeling tour in Cabo San Lucas' },
-  { href: '/shared-sunset/',     id: 'shared-sunset',     label: 'Shared Sunset',     tagline: '2 hrs · group of up to 14', alt: 'Shared Sunset cruise in Cabo San Lucas' },
+  { href: '/tours/shared-snorkeling/', id: 'shared-snorkeling', label: 'Shared Snorkeling', tagline: '3 hrs · group of up to 14', alt: 'Shared Snorkeling tour in Cabo San Lucas' },
+  { href: '/tours/shared-sunset/',     id: 'shared-sunset',     label: 'Shared Sunset',     tagline: '2 hrs · group of up to 14', alt: 'Shared Sunset cruise in Cabo San Lucas' },
 ];
 
 const privateTours = [
-  { href: '/private-snorkeling/', id: 'private-snorkeling', label: 'Private Snorkeling',     tagline: 'Sailboat or yacht · your group only', alt: 'Private Snorkeling charter in Cabo San Lucas' },
-  { href: '/private-sunset/',     id: 'private-sunset',     label: 'Private Sunset',         tagline: 'Sailboat or yacht · your group only', alt: 'Private Sunset charter in Cabo San Lucas' },
-  { href: '/whale-watching/',     id: 'whale-watching',     label: 'Private Whale Watching', tagline: 'Dec–Apr · your group only',           alt: 'Private Whale Watching tour in Cabo San Lucas' },
-  { href: '/bachelorette/',       id: 'bachelorette-party', label: 'Bachelorette Party',     tagline: 'Decorated yacht · made for the bride', alt: 'Bachelorette Party charter in Cabo San Lucas' },
-  { href: '/scuba-diving/',       id: 'scuba-diving',       label: 'Scuba Diving',           tagline: 'PADI dive boat · all levels',          alt: 'Scuba Diving tour in Cabo San Lucas' },
+  { href: '/tours/private-snorkeling/', id: 'private-snorkeling', label: 'Private Snorkeling',     tagline: 'Sailboat or yacht · your group only', alt: 'Private Snorkeling charter in Cabo San Lucas' },
+  { href: '/tours/private-sunset/',     id: 'private-sunset',     label: 'Private Sunset',         tagline: 'Sailboat or yacht · your group only', alt: 'Private Sunset charter in Cabo San Lucas' },
+  { href: '/tours/whale-watching/',     id: 'whale-watching',     label: 'Private Whale Watching', tagline: 'Dec–Apr · your group only',           alt: 'Private Whale Watching tour in Cabo San Lucas' },
+  { href: '/tours/bachelorette/',       id: 'bachelorette-party', label: 'Bachelorette Party',     tagline: 'Decorated yacht · made for the bride', alt: 'Bachelorette Party charter in Cabo San Lucas' },
+  { href: '/tours/scuba-diving/',       id: 'scuba-diving',       label: 'Scuba Diving',           tagline: 'PADI dive boat · all levels',          alt: 'Scuba Diving tour in Cabo San Lucas' },
 ];
 
 const faqs = [

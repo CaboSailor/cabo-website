@@ -1,24 +1,24 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import Header from '../../components/Header.astro';
-import Footer from '../../components/Footer.astro';
-import FloatingCTA from '../../components/FloatingCTA.astro';
-import RezdyModal from '../../components/RezdyModal.astro';
-import CarouselImage from '../../components/CarouselImage.astro';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import FloatingCTA from '../../../components/FloatingCTA.astro';
+import RezdyModal from '../../../components/RezdyModal.astro';
+import CarouselImage from '../../../components/CarouselImage.astro';
 import { Image } from 'astro:assets';
 
-import DSC_0107_2 from "../../assets/images/bachelorette/cabo-bachelorette-boat-party-01.jpg";
-import frame_grabs_yacht_30 from "../../assets/images/guests-on-yachts/cabo-yacht-charter-guests-03.jpg";
-import DSC_0307_2 from "../../assets/images/bachelorette/cabo-bachelorette-boat-party-02.jpg";
-import img_4k_01_41_40_08_Still129 from "../../assets/images/guests-on-sailboats/cabo-sailing-adventure-guests.jpg";
-import { bachelorette as heroSunnyYachtFun } from "../../data/tour-heroes";
-import celebrationSunnyYacht from "../../assets/images/bachelorette/celebration-on-a-sunny-yacht-party.png";
-import funInSunAtSea from "../../assets/images/bachelorette/fun-in-the-sun-at-sea.png";
-import sunshineCelebrationYacht from "../../assets/images/guests-on-sailboats/sunshine-and-celebration-on-the-yacht.png";
-import joyfulSailboatAdventure from "../../assets/images/guests-on-sailboats/joyful-sailboat-adventure-by-the-coast.png";
-import DSC_3713 from "../../assets/images/bachelorette/relaxing-boat-day-by-the-coast.png";
-import DSC_4259_copy from "../../assets/images/bachelorette/cabo-bachelorette-group-photo.jpg";
-import caboSailingLogo from "../../assets/images/cabo-sailing-logo.png";
+import DSC_0107_2 from "../../../assets/images/bachelorette/cabo-bachelorette-boat-party-01.jpg";
+import frame_grabs_yacht_30 from "../../../assets/images/guests-on-yachts/cabo-yacht-charter-guests-03.jpg";
+import DSC_0307_2 from "../../../assets/images/bachelorette/cabo-bachelorette-boat-party-02.jpg";
+import img_4k_01_41_40_08_Still129 from "../../../assets/images/guests-on-sailboats/cabo-sailing-adventure-guests.jpg";
+import { bachelorette as heroSunnyYachtFun } from "../../../data/tour-heroes";
+import celebrationSunnyYacht from "../../../assets/images/bachelorette/celebration-on-a-sunny-yacht-party.png";
+import funInSunAtSea from "../../../assets/images/bachelorette/fun-in-the-sun-at-sea.png";
+import sunshineCelebrationYacht from "../../../assets/images/guests-on-sailboats/sunshine-and-celebration-on-the-yacht.png";
+import joyfulSailboatAdventure from "../../../assets/images/guests-on-sailboats/joyful-sailboat-adventure-by-the-coast.png";
+import DSC_3713 from "../../../assets/images/bachelorette/relaxing-boat-day-by-the-coast.png";
+import DSC_4259_copy from "../../../assets/images/bachelorette/cabo-bachelorette-group-photo.jpg";
+import caboSailingLogo from "../../../assets/images/cabo-sailing-logo.png";
 
 const touristTripSchema = JSON.stringify({
   "@context": "https://schema.org",
@@ -33,7 +33,7 @@ const touristTripSchema = JSON.stringify({
   },
   "offers": {
     "@type": "Offer",
-    "url": "https://cabosailing.com/es/bachelorette/",
+    "url": "https://cabosailing.com/es/tours/bachelorette/",
     "priceCurrency": "USD",
     "availability": "https://schema.org/InStock"
   }
@@ -50,7 +50,7 @@ const breadcrumbSchema = JSON.stringify({
 });
 ---
 
-<BaseLayout bodyClass="bg-white font-body text-text-main antialiased min-h-screen flex flex-col relative" title="Despedida de Soltera Privada en Cabo San Lucas | Cabo Sailing" description="Charters privados de yate y velero para despedidas de soltera en Cabo. Decoración personalizada, barra libre, parada de snorkel y opción al atardecer — un fin de semana inolvidable en el agua." ogImage="/og/bachelorette.jpg" ogImageAlt="Despedida de soltera en yate en Cabo San Lucas" hreflangs={{ en: '/bachelorette', es: '/es/bachelorette' }}>
+<BaseLayout bodyClass="bg-white font-body text-text-main antialiased min-h-screen flex flex-col relative" title="Despedida de Soltera Privada en Cabo San Lucas | Cabo Sailing" description="Charters privados de yate y velero para despedidas de soltera en Cabo. Decoración personalizada, barra libre, parada de snorkel y opción al atardecer — un fin de semana inolvidable en el agua." ogImage="/og/bachelorette.jpg" ogImageAlt="Despedida de soltera en yate en Cabo San Lucas" hreflangs={{ en: '/tours/bachelorette', es: '/es/tours/bachelorette' }}>
   <script slot="head" type="application/ld+json" set:html={touristTripSchema} />
   <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
   <Header variant="subpage" activePage="tours" />
@@ -123,7 +123,7 @@ const breadcrumbSchema = JSON.stringify({
       <nav class="flex items-center gap-1.5 text-xs text-slate-500 mb-4" aria-label="Breadcrumb">
         <a href="/es/" class="hover:text-gold transition-colors">Inicio</a>
         <span class="material-symbols-outlined text-[14px]">chevron_right</span>
-        <span>Tours</span>
+        <a href="/es/tours/" class="hover:text-gold transition-colors">Tours</a>
         <span class="material-symbols-outlined text-[14px]">chevron_right</span>
         <span class="text-navy font-semibold">Despedida de Soltera</span>
       </nav>
@@ -469,7 +469,7 @@ const breadcrumbSchema = JSON.stringify({
           <nav class="flex items-center gap-1.5 text-xs text-slate-500 mb-4" aria-label="Breadcrumb">
             <a href="/es/" class="hover:text-gold transition-colors">Inicio</a>
             <span class="material-symbols-outlined text-[14px]">chevron_right</span>
-            <span>Tours</span>
+            <a href="/es/tours/" class="hover:text-gold transition-colors">Tours</a>
             <span class="material-symbols-outlined text-[14px]">chevron_right</span>
             <span class="text-navy font-semibold">Despedida de Soltera</span>
           </nav>

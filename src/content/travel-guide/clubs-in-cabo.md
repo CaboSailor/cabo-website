@@ -8,7 +8,7 @@ category: "Culture & Food"
 categoryLink: "/travel-guide-culture/"
 activeSubmenu: "culture"
 bestTime: "Year-round — Cabo's clubs are busy every night"
-relatedActivity: "/private-sunset/"
+relatedActivity: "/tours/private-sunset/"
 sidebarType: "default"
 ---
 
@@ -98,4 +98,4 @@ For those looking for adult entertainment, Splash is Cabo's premier gentleman's 
 
 Singapur provides another option for those seeking an exclusive adult-themed club. Known for its upscale atmosphere, private VIP lounges, and high-energy music, it attracts those looking for a more intimate late-night experience. Open until 5 AM, it's often the final stop for those ending their night in Cabo.
 
-Start your night different &mdash; kick off the evening with a <a href="/private-sunset/" class="text-accent-gold font-semibold hover:underline">sunset sailing cruise</a> before hitting the clubs. There's no better way to set the tone.
+Start your night different &mdash; kick off the evening with a <a href="/tours/private-sunset/" class="text-accent-gold font-semibold hover:underline">sunset sailing cruise</a> before hitting the clubs. There's no better way to set the tone.

@@ -8,7 +8,7 @@ category: "Traveling to Cabo"
 categoryLink: "/travel-guide-traveling/"
 activeSubmenu: "traveling"
 bestTime: "December–April (peak) or May–June (best value)"
-relatedActivity: "/whale-watching/"
+relatedActivity: "/tours/whale-watching/"
 sidebarType: "default"
 ---
 
@@ -26,7 +26,7 @@ This period is also whale watching season, when humpback whales migrate through 
 
 Festivals like San Jos&eacute; del Cabo's celebrations in March and Semana Santa in April also bring additional energy to the region.
 
-If whale watching is on your list, this is the time to visit. Booking a [sailing or yacht-based experience](/whale-watching/) offers a quieter, more personal encounter compared to larger boats.
+If whale watching is on your list, this is the time to visit. Booking a [sailing or yacht-based experience](/tours/whale-watching/) offers a quieter, more personal encounter compared to larger boats.
 
 <div class="my-8 rounded-2xl overflow-hidden shadow-lg">
   <img alt="Humpback whale breaching in Cabo San Lucas" class="w-full h-[280px] lg:h-[360px] object-cover" src="/images/whales/cabo-whale-watching-breaching.jpg" />

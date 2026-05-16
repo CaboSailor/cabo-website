@@ -8,7 +8,7 @@ category: "Activities"
 categoryLink: "/es/travel-guide-activities/"
 activeSubmenu: "activities"
 bestTime: "Todo el año — Cabo celebra en cada temporada"
-relatedActivity: "/es/bachelorette/"
+relatedActivity: "/es/tours/bachelorette/"
 sidebarType: "default"
 ---
 
@@ -62,4 +62,4 @@ Como con la mayor&iacute;a de las cosas en Cabo, si crees que querr&aacute;s un 
 
 Hay tanto que ver y hacer en Cabo, lo que lo hace el lugar ideal para celebrar un cumpleaños, ya sea que quieras una celebraci&oacute;n relajante o emocionante. Con una mente abierta y un poco de planeaci&oacute;n, seguro crear&aacute;s muchos recuerdos de cumpleaños con tus amigos o familia que podr&aacute;s atesorar.
 
-¿Buscas celebrar en el agua? Nuestros <a href="/es/bachelorette/" class="text-accent-gold font-semibold hover:underline">cruceros privados de fiesta</a> son perfectos para cumpleaños, despedidas de soltera y celebraciones grupales.
+¿Buscas celebrar en el agua? Nuestros <a href="/es/tours/bachelorette/" class="text-accent-gold font-semibold hover:underline">cruceros privados de fiesta</a> son perfectos para cumpleaños, despedidas de soltera y celebraciones grupales.

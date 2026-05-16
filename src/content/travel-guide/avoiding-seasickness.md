@@ -16,7 +16,7 @@ sidebarType: "default"
 
 Cabo is a stunning holiday destination, which no doubt is most synonymous with sailing and cruising adventures.
 
-While there are also a whole host of activities to enjoy on dry land, such as golfing, exploring downtown, as well as bird watching at the beautiful San Jos&eacute; Del Cabo estuary, Cabo's crowning glory is almost certainly the many <a href="/whale-watching/" class="text-accent-gold font-semibold hover:underline">whale watching tours</a> available, allowing you to experience these majestic, gentle creatures first hand.
+While there are also a whole host of activities to enjoy on dry land, such as golfing, exploring downtown, as well as bird watching at the beautiful San Jos&eacute; Del Cabo estuary, Cabo's crowning glory is almost certainly the many <a href="/tours/whale-watching/" class="text-accent-gold font-semibold hover:underline">whale watching tours</a> available, allowing you to experience these majestic, gentle creatures first hand.
 
 However, if like so many, your dream is to witness such a sight, how do you achieve this if you also suffer with seasickness? While the Sea of Cortez, and waters surrounding the Gulf of Mexico are far calmer in comparison with the Atlantic Ocean, being on a smaller cruising boat or yacht can still be challenging for those more severely afflicted.
 
@@ -52,7 +52,7 @@ Yes, this might seem like the last thing you'd think you'd want to be doing to p
 
 Eat plain foods that aren't fatty or spicy, such as crackers, or banana. This will help to line your stomach, and when accompanied with peppermint or ginger, can really help relieve symptoms.
 
-Don't worry if you find yourself too nervous to eat beforehand, or find your hotel only offers a breakfast involving unavoidable fatty, or heavily flavored foods. Many <a href="/private-sunset/" class="text-accent-gold font-semibold hover:underline">cruises</a> offer a light lunch, or nibbles as part of their itinerary, so you may find nibbling on some of the delicious options on offer may help.
+Don't worry if you find yourself too nervous to eat beforehand, or find your hotel only offers a breakfast involving unavoidable fatty, or heavily flavored foods. Many <a href="/tours/private-sunset/" class="text-accent-gold font-semibold hover:underline">cruises</a> offer a light lunch, or nibbles as part of their itinerary, so you may find nibbling on some of the delicious options on offer may help.
 
 ---
 
@@ -78,7 +78,7 @@ If your sea sickness is aggressively severe, and you can't take to the water, th
 
 As mentioned in the beginning of this article, there are a whole host of landlocked activities to enjoy, as well as miles of gorgeous coastline to explore.
 
-There are also <a href="/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">snorkeling trips</a> that offer a shorter duration of cruising and allow you to get closer to the vast selection of stunning sea life Cabo is home to.
+There are also <a href="/tours/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">snorkeling trips</a> that offer a shorter duration of cruising and allow you to get closer to the vast selection of stunning sea life Cabo is home to.
 
 You could even use this shorter sailing trip to test the waters (pun intended) and try out the seasickness methods offered above.
 

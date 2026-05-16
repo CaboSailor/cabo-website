@@ -16,13 +16,13 @@ sidebarType: "snorkeling"
 ## Vive la Belleza de Los Cabos con el Tour de Snorkel en Pelican Rock
 
 Un viaje al coraz&oacute;n de la bah&iacute;a de Cabo con un Tour de Snorkel en Pelican Rock es la elecci&oacute;n perfecta. Este tour es una oportunidad para explorar, bajo las olas, la impresionante bah&iacute;a de Cabo San Lucas.
-En un <a href="/es/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">tour de snorkel en Cabo</a>, descubrir&aacute;s las maravillas del Mar de Cort&eacute;s. Este cuerpo de agua es uno de los m&aacute;s hermosos de M&eacute;xico y del mundo.
+En un <a href="/es/tours/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">tour de snorkel en Cabo</a>, descubrir&aacute;s las maravillas del Mar de Cort&eacute;s. Este cuerpo de agua es uno de los m&aacute;s hermosos de M&eacute;xico y del mundo.
 
 ---
 
 ## Paseos de D&iacute;a y Tours en Bote a Pelican Rock
 
-Los paseos de d&iacute;a y tours en bote a Pelican Rock comienzan con salidas diarias desde la marina de Cabo y entran a la bah&iacute;a. Ya sea en <a href="/es/private-snorkeling/" class="text-accent-gold font-semibold hover:underline">tours privados de snorkel</a> o compartidos, salen todos los d&iacute;as.
+Los paseos de d&iacute;a y tours en bote a Pelican Rock comienzan con salidas diarias desde la marina de Cabo y entran a la bah&iacute;a. Ya sea en <a href="/es/tours/private-snorkeling/" class="text-accent-gold font-semibold hover:underline">tours privados de snorkel</a> o compartidos, salen todos los d&iacute;as.
 Al subir a bordo, te recibir&aacute; la amable tripulaci&oacute;n de Cabo Sailing. Espera que te atiendan muy bien.
 El personal de bienvenida te proporcionar&aacute; toallas frescas, equipo de snorkel, accesorios de natación y bebidas. Si&eacute;ntate, rec&uacute;estate y rel&aacute;jate sobre c&oacute;modos cojines. Las aguas tranquilas de la bah&iacute;a de Cabo San Lucas te llevan ahora en un viaje lleno de aventuras.
 

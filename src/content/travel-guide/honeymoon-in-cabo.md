@@ -8,7 +8,7 @@ category: "Culture & Food"
 categoryLink: "/travel-guide-culture/"
 activeSubmenu: "culture"
 bestTime: "Nov–May — warm, dry, perfect for romance"
-relatedActivity: "/private-sunset/"
+relatedActivity: "/tours/private-sunset/"
 sidebarType: "default"
 ---
 
@@ -32,7 +32,7 @@ Some resorts offer honeymoon packages that include spa treatments, romantic dinn
 
 Los Cabos has pleasant weather most of the year, but some seasons offer better conditions for a honeymoon.
 
-From November to May, the temperatures stay warm without being too hot. This is the best time for outdoor activities, <a href="/private-sunset/" class="text-accent-gold font-semibold hover:underline">private sunset cruises</a>, and romantic beach walks. The peak travel months fall between December and April, which means higher hotel rates and ideal weather.
+From November to May, the temperatures stay warm without being too hot. This is the best time for outdoor activities, <a href="/tours/private-sunset/" class="text-accent-gold font-semibold hover:underline">private sunset cruises</a>, and romantic beach walks. The peak travel months fall between December and April, which means higher hotel rates and ideal weather.
 
 June through September brings warmer temperatures and occasional rain. This is the low season, making it easier to find resort deals. Couples looking for a quieter honeymoon may appreciate fewer crowds and lower prices during this time.
 
@@ -64,7 +64,7 @@ For a different type of relaxation, some spas offer temazcal ceremonies, an anci
 
 A sunset cruise is one of Cabo's most romantic activities for honeymooners. Sailing past the famous Arch of Cabo San Lucas while the sky turns shades of orange and pink creates a magical experience.
 
-Many companies offer <a href="/private-sunset/" class="text-accent-gold font-semibold hover:underline">private yacht rentals</a> with dinner, champagne, and live music. Cabo Sailing Ocean Adventures is known for its luxury sailboats and top-tier service, making it an excellent option for honeymooners looking to spend an intimate evening on the water.
+Many companies offer <a href="/tours/private-sunset/" class="text-accent-gold font-semibold hover:underline">private yacht rentals</a> with dinner, champagne, and live music. Cabo Sailing Ocean Adventures is known for its luxury sailboats and top-tier service, making it an excellent option for honeymooners looking to spend an intimate evening on the water.
 
 Some catamaran cruises for couples who prefer a group setting include open bars, live music, and dancing under the stars. These cruises are a fun way to mix relaxation with a lively atmosphere.
 
@@ -76,7 +76,7 @@ Cabo San Lucas has many beautiful beaches, but some are better suited for romanc
 
 Lover's Beach is a must-visit for honeymooners. Accessible only by boat, this secluded beach offers stunning rock formations and clear turquoise waters. Couples can bring a picnic and spend a quiet afternoon soaking up the sun.
 
-For a more peaceful setting, Santa Mar&iacute;a Beach is ideal for <a href="/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">snorkeling</a> and relaxing in a calm bay. The soft golden sand and crystal-clear waters make it one of the best beaches for a romantic day by the sea.
+For a more peaceful setting, Santa Mar&iacute;a Beach is ideal for <a href="/tours/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">snorkeling</a> and relaxing in a calm bay. The soft golden sand and crystal-clear waters make it one of the best beaches for a romantic day by the sea.
 
 Chileno Bay is another great option. Its shallow waters are perfect for swimming and snorkeling, and the surrounding coral reef attracts colorful marine life, making it a great spot for couples who love the ocean.
 
@@ -102,4 +102,4 @@ Packing for Cabo is simple, but it's important to bring lightweight clothing, co
 
 Transportation is another factor to consider. Taxis in Cabo can be expensive, so renting a car or using pre-arranged <a href="/shuttle-service/" class="text-accent-gold font-semibold hover:underline">shuttle services</a> can make getting around more convenient.
 
-A <a href="/private-sunset/" class="text-accent-gold font-semibold hover:underline">private sunset sail</a> is the most romantic experience Cabo has to offer &mdash; champagne, ocean views, and the two of you. It's the highlight of most honeymoons here.
+A <a href="/tours/private-sunset/" class="text-accent-gold font-semibold hover:underline">private sunset sail</a> is the most romantic experience Cabo has to offer &mdash; champagne, ocean views, and the two of you. It's the highlight of most honeymoons here.

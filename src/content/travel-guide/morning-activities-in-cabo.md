@@ -25,7 +25,7 @@ In this article, we will look at some of the top activities in Cabo for early bi
 
 ### Lover's Beach
 
-One of the sole drawbacks of visiting Cabo is the water's strong undercurrents, which make swimming on most surrounding beaches unsafe. However, there are a few locations where swimming is safe such as Lover's Beach. This tranquil beach is known for swimming and watersports like <a href="/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">snorkeling</a> and scuba.
+One of the sole drawbacks of visiting Cabo is the water's strong undercurrents, which make swimming on most surrounding beaches unsafe. However, there are a few locations where swimming is safe such as Lover's Beach. This tranquil beach is known for swimming and watersports like <a href="/tours/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">snorkeling</a> and scuba.
 
 Lover's Beach can get very crowded during the daytime and afternoons therefore the ultimate visiting hours are during the early morning hours. That makes it a perfect activity for early birds! Local fishermen will offer return rides to the beach for as little as $10, making it an affordable activity.
 

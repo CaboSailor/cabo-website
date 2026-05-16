@@ -1,30 +1,31 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import Header from '../../components/Header.astro';
-import Footer from '../../components/Footer.astro';
-import FloatingCTA from '../../components/FloatingCTA.astro';
-import RezdyModal from '../../components/RezdyModal.astro';
-import CarouselImage from '../../components/CarouselImage.astro';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import FloatingCTA from '../../../components/FloatingCTA.astro';
+import RezdyModal from '../../../components/RezdyModal.astro';
+import CarouselImage from '../../../components/CarouselImage.astro';
 import { Image } from 'astro:assets';
 
-import { privateSnorkeling as heroSunnyYachtCruise } from "../../data/tour-heroes";
-import sunnySailboatAdventure from "../../assets/images/guests-on-yachts/sunny-day-sailboat-adventure-on-the-coast.png";
-import relaxingLuxuryBoat from "../../assets/images/guests-on-yachts/relaxing-day-on-a-luxury-boat.png";
-import sailingGuestsWaving from "../../assets/images/guests-on-sailboats/cabo-sailing-guests-waving.jpg";
-import cheersCoastalAdventure from "../../assets/images/guests-on-sailboats/cheers-on-a-sunny-coastal-adventure.png";
-import Chileno from "../../assets/images/blog/chileno-bay-cabo-snorkeling.jpg";
+import { privateSnorkeling as heroSunnyYachtCruise } from "../../../data/tour-heroes";
+import sunnySailboatAdventure from "../../../assets/images/guests-on-yachts/sunny-day-sailboat-adventure-on-the-coast.png";
+import relaxingLuxuryBoat from "../../../assets/images/guests-on-yachts/relaxing-day-on-a-luxury-boat.png";
+import sailingGuestsWaving from "../../../assets/images/guests-on-sailboats/cabo-sailing-guests-waving.jpg";
+import cheersCoastalAdventure from "../../../assets/images/guests-on-sailboats/cheers-on-a-sunny-coastal-adventure.png";
+import Chileno from "../../../assets/images/blog/chileno-bay-cabo-snorkeling.jpg";
 
 const breadcrumbSchema = JSON.stringify({
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://cabosailing.com/es/" },
-    { "@type": "ListItem", "position": 2, "name": "Snorkel Privado" }
+    { "@type": "ListItem", "position": 2, "name": "Tours", "item": "https://cabosailing.com/es/tours/" },
+    { "@type": "ListItem", "position": 3, "name": "Snorkel Privado" }
   ]
 });
 ---
 
-<BaseLayout bodyClass="bg-white font-body text-text-main antialiased min-h-screen flex flex-col relative" title="Tour Privado de Snorkel en Cabo San Lucas | Cabo Sailing" description="Tour privado de snorkel a Pelican Rock y el Arco de Cabo San Lucas. Equipo, bebidas y snacks incluidos. Hasta 12 personas en barco privado." ogImage="/og/private-snorkeling.jpg" ogImageAlt="Private snorkeling tour at Pelican Rock, Cabo San Lucas" hreflangs={{ en: '/private-snorkeling', es: '/es/private-snorkeling' }}>
+<BaseLayout bodyClass="bg-white font-body text-text-main antialiased min-h-screen flex flex-col relative" title="Tour Privado de Snorkel en Cabo San Lucas | Cabo Sailing" description="Tour privado de snorkel a Pelican Rock y el Arco de Cabo San Lucas. Equipo, bebidas y snacks incluidos. Hasta 12 personas en barco privado." ogImage="/og/private-snorkeling.jpg" ogImageAlt="Private snorkeling tour at Pelican Rock, Cabo San Lucas" hreflangs={{ en: '/tours/private-snorkeling', es: '/es/tours/private-snorkeling' }}>
   <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
   <Header variant="subpage" activePage="tours" />
 
@@ -103,7 +104,7 @@ const breadcrumbSchema = JSON.stringify({
   <nav class="flex items-center gap-1.5 text-xs text-slate-500 mb-4" aria-label="Breadcrumb">
     <a href="/es/" class="hover:text-gold transition-colors">Inicio</a>
     <span class="material-symbols-outlined text-[14px]">chevron_right</span>
-    <span>Tours</span>
+    <a href="/es/tours/" class="hover:text-gold transition-colors">Tours</a>
     <span class="material-symbols-outlined text-[14px]">chevron_right</span>
     <span class="text-navy font-semibold">Snorkel Privado</span>
   </nav>
@@ -173,7 +174,7 @@ const breadcrumbSchema = JSON.stringify({
   <nav class="flex items-center gap-1.5 text-xs text-slate-500 mb-4" aria-label="Breadcrumb">
     <a href="/es/" class="hover:text-gold transition-colors">Inicio</a>
     <span class="material-symbols-outlined text-[14px]">chevron_right</span>
-    <span>Tours</span>
+    <a href="/es/tours/" class="hover:text-gold transition-colors">Tours</a>
     <span class="material-symbols-outlined text-[14px]">chevron_right</span>
     <span class="text-navy font-semibold">Snorkel Privado</span>
   </nav>

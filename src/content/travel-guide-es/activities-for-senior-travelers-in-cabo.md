@@ -84,7 +84,7 @@ Aqu&iacute; tienes las mejores actividades y consejos pr&aacute;cticos para adul
 
 ## Cruceros al atardecer
 
-Un <a href="/es/private-sunset/" class="text-accent-gold font-semibold hover:underline">crucero privado al atardecer</a> es probablemente la mejor actividad en Cabo para adultos mayores. Abordas un barco c&oacute;modo en la marina, navegas frente al Arco y Land&rsquo;s End mientras el sol se pone sobre el Pac&iacute;fico, y disfrutas de bebidas y bocadillos sin mover un dedo.
+Un <a href="/es/tours/private-sunset/" class="text-accent-gold font-semibold hover:underline">crucero privado al atardecer</a> es probablemente la mejor actividad en Cabo para adultos mayores. Abordas un barco c&oacute;modo en la marina, navegas frente al Arco y Land&rsquo;s End mientras el sol se pone sobre el Pac&iacute;fico, y disfrutas de bebidas y bocadillos sin mover un dedo.
 
 <ul class="spot-list">
   <li><strong>Por qu&eacute; es ideal</strong> &mdash; sentado todo el tiempo, &aacute;reas con sombra en la mayor&iacute;a de los barcos, ritmo tranquilo, el personal se encarga de todo</li>
@@ -181,7 +181,7 @@ Playa El M&eacute;dano es la m&aacute;s accesible &mdash; arena plana, agua tran
 
 **¿Cu&aacute;les son las mejores actividades suaves en Cabo para adultos mayores?**
 
-Cruceros al atardecer, avistamiento de ballenas (dic&ndash;abr), caminatas por la marina, el Estero de San Jos&eacute;, golf, d&iacute;as de spa y comidas pausadas son todas excelentes opciones de bajo impacto. Un <a href="/es/private-sunset/" class="text-accent-gold font-semibold hover:underline">crucero privado al atardecer</a> es consistentemente la principal recomendaci&oacute;n.
+Cruceros al atardecer, avistamiento de ballenas (dic&ndash;abr), caminatas por la marina, el Estero de San Jos&eacute;, golf, d&iacute;as de spa y comidas pausadas son todas excelentes opciones de bajo impacto. Un <a href="/es/tours/private-sunset/" class="text-accent-gold font-semibold hover:underline">crucero privado al atardecer</a> es consistentemente la principal recomendaci&oacute;n.
 
 <script type="application/ld+json">
 {

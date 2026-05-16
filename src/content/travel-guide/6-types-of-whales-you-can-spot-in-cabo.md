@@ -156,7 +156,7 @@ The **orca** (*Orcinus orca*) is technically the largest member of the dolphin f
 
 ## Best ways to see whales in Cabo
 
-The most reliable way to see whales is on a dedicated <a href="/whale-watching/" class="text-accent-gold font-semibold hover:underline">whale-watching tour</a> during peak season (December&ndash;April). Most tours depart from the Cabo San Lucas marina and head toward the Pacific side, where humpbacks and grays are most active.
+The most reliable way to see whales is on a dedicated <a href="/tours/whale-watching/" class="text-accent-gold font-semibold hover:underline">whale-watching tour</a> during peak season (December&ndash;April). Most tours depart from the Cabo San Lucas marina and head toward the Pacific side, where humpbacks and grays are most active.
 
 <ul class="spot-list">
   <li><strong>Whale-watching tour</strong> &mdash; dedicated 2&ndash;3 hour trips with experienced captains who know where to find whales. Best odds of close encounters</li>

@@ -8,7 +8,7 @@ category: "Culture & Food"
 categoryLink: "/es/travel-guide-culture/"
 activeSubmenu: "culture"
 bestTime: "Todo el año — los antros de Cabo están llenos cada noche"
-relatedActivity: "/es/private-sunset/"
+relatedActivity: "/es/tours/private-sunset/"
 sidebarType: "default"
 ---
 
@@ -98,4 +98,4 @@ Para quienes buscan entretenimiento para adultos, Splash es el principal gentlem
 
 Singapur ofrece otra opci&oacute;n para quienes buscan un club exclusivo para adultos. Conocido por su ambiente elegante, sus lounges privados VIP y su m&uacute;sica de alta energ&iacute;a, atrae a quienes buscan una experiencia m&aacute;s &iacute;ntima al final de la noche. Abierto hasta las 5 AM, suele ser la &uacute;ltima parada para quienes cierran su noche en Cabo.
 
-Empieza tu noche distinto &mdash; arranca la velada con un <a href="/es/private-sunset/" class="text-accent-gold font-semibold hover:underline">crucero al atardecer en velero</a> antes de irte a los antros. No hay mejor forma de poner el tono.
+Empieza tu noche distinto &mdash; arranca la velada con un <a href="/es/tours/private-sunset/" class="text-accent-gold font-semibold hover:underline">crucero al atardecer en velero</a> antes de irte a los antros. No hay mejor forma de poner el tono.

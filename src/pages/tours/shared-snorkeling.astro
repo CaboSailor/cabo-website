@@ -14,17 +14,38 @@ import thumb4 from "../../assets/images/guests-on-sailboats/sunshine-and-celebra
 import sailing42BoatCard from "../../assets/images/boats/sailing-42/cabosailing-sailiboat-42.png";
 import pelicanRockImg from "../../assets/images/guests-on-sailboats/relaxing-sailboat-getaway-with-friends.png";
 
+const touristTripSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "TouristTrip",
+  "name": "Shared Snorkeling Tour in Cabo San Lucas",
+  "description": "Shared snorkel tour to Cabo's best reefs — the Arch and Pelican Rock. Small group, all gear, drinks and snacks included. Daily departures.",
+  "touristType": "Budget Travelers, Solo Travelers, Couples",
+  "provider": {
+    "@type": "TravelAgency",
+    "name": "Cabo Sailing Ocean Adventures",
+    "url": "https://cabosailing.com"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://cabosailing.com/tours/shared-snorkeling/",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock"
+  }
+});
+
 const breadcrumbSchema = JSON.stringify({
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://cabosailing.com/es/" },
-    { "@type": "ListItem", "position": 2, "name": "Snorkel Compartido" }
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://cabosailing.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Tours", "item": "https://cabosailing.com/tours/" },
+    { "@type": "ListItem", "position": 3, "name": "Shared Snorkeling Tour" }
   ]
 });
 ---
 
-<BaseLayout bodyClass="bg-white font-body text-text-main antialiased min-h-screen flex flex-col relative" title="Tour de Snorkel Compartido en Cabo San Lucas | Cabo Sailing" description="Tour compartido de snorkel a los mejores arrecifes del Arco y Pelican Rock. Equipo, bebidas y snacks incluidos. Salidas diarias desde la marina." ogImage="/og/shared-snorkeling.jpg" ogImageAlt="Small-group snorkeling tour in Cabo San Lucas" hreflangs={{ en: '/shared-snorkeling', es: '/es/shared-snorkeling' }}>
+<BaseLayout bodyClass="bg-white font-body text-text-main antialiased min-h-screen flex flex-col relative" title="Shared Snorkeling Tour in Cabo — Small Group | Cabo Sailing" description="Shared snorkel tour to Cabo's best reefs — the Arch and Pelican Rock. Small group, all gear, drinks and snacks included. Daily departures." ogImage="/og/shared-snorkeling.jpg" ogImageAlt="Small-group snorkeling tour in Cabo San Lucas" hreflangs={{ en: '/tours/shared-snorkeling', es: '/es/tours/shared-snorkeling' }}>
+  <script slot="head" type="application/ld+json" set:html={touristTripSchema} />
   <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
   <Header variant="subpage" activePage="tours" />
 
@@ -46,10 +67,10 @@ const breadcrumbSchema = JSON.stringify({
 <div class="lg:hidden relative w-full h-[45vh] overflow-hidden">
 <div class="flex overflow-x-auto snap-x snap-mandatory h-full no-scrollbar">
 <div class="flex-shrink-0 w-full h-full snap-center"><Image src={img_4k_01_38_47_13_Still123} alt="Aerial view sailboat in turquoise water" class="w-full h-full object-cover" width={800} height={500} /></div>
-<div class="flex-shrink-0 w-full h-full snap-center"><Image src={thumb1} alt="Personas haciendo snorkel disfrutando un paseo en barco soleado" class="w-full h-full object-cover" width={800} height={500} /></div>
-<div class="flex-shrink-0 w-full h-full snap-center"><Image src={thumb2} alt="Persona con esnórquel explorando el paraíso submarino" class="w-full h-full object-cover" width={800} height={500} /></div>
-<div class="flex-shrink-0 w-full h-full snap-center"><Image src={thumb3} alt="Paseo en barco bajo el sol por el océano" class="w-full h-full object-cover" width={800} height={500} /></div>
-<div class="flex-shrink-0 w-full h-full snap-center"><Image src={thumb4} alt="Sol y celebración a bordo del yate" class="w-full h-full object-cover" width={800} height={500} /></div>
+<div class="flex-shrink-0 w-full h-full snap-center"><Image src={thumb1} alt="Snorkelers enjoying a sunny boat ride" class="w-full h-full object-cover" width={800} height={500} /></div>
+<div class="flex-shrink-0 w-full h-full snap-center"><Image src={thumb2} alt="Snorkeler exploring underwater paradise" class="w-full h-full object-cover" width={800} height={500} /></div>
+<div class="flex-shrink-0 w-full h-full snap-center"><Image src={thumb3} alt="Sunlit boat ride by the ocean" class="w-full h-full object-cover" width={800} height={500} /></div>
+<div class="flex-shrink-0 w-full h-full snap-center"><Image src={thumb4} alt="Sunshine and celebration on the yacht" class="w-full h-full object-cover" width={800} height={500} /></div>
 </div>
 <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/20 to-transparent pt-10 pb-5 px-4">
   <div class="max-w-[360px] mx-auto text-center">
@@ -60,7 +81,7 @@ const breadcrumbSchema = JSON.stringify({
       <span class="material-symbols-outlined text-gold filled text-lg">star</span>
       <span class="material-symbols-outlined text-gold filled text-lg">star</span>
     </div>
-    <p class="text-white text-base leading-snug">"Mucho mejor que los tours en grupos grandes. Barco pequeno, gran tripulacion, snorkel increible."</p>
+    <p class="text-white text-base leading-snug">"Way better than the big group tours. Small boat, great crew, amazing snorkeling."</p>
     <p class="text-white/50 text-xs uppercase tracking-widest font-bold mt-2">Chris &amp; Emma W. &mdash; San Diego, CA</p>
   </div>
 </div>
@@ -70,10 +91,10 @@ const breadcrumbSchema = JSON.stringify({
 <div class="hidden lg:block max-w-[1400px] mx-auto px-10 mt-6 relative">
 <div class="grid grid-cols-4 grid-rows-2 gap-2 h-[55vh]">
 <div class="col-span-2 row-span-2 rounded-2xl overflow-hidden"><Image src={img_4k_01_38_47_13_Still123} alt="Aerial view sailboat in turquoise water" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
-<div class="rounded-2xl overflow-hidden"><Image src={thumb1} alt="Personas haciendo snorkel disfrutando un paseo en barco soleado" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
-<div class="rounded-2xl overflow-hidden"><Image src={thumb2} alt="Persona con esnórquel explorando el paraíso submarino" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
-<div class="rounded-2xl overflow-hidden"><Image src={thumb3} alt="Paseo en barco bajo el sol por el océano" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
-<div class="rounded-2xl overflow-hidden"><Image src={thumb4} alt="Sol y celebración a bordo del yate" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
+<div class="rounded-2xl overflow-hidden"><Image src={thumb1} alt="Snorkelers enjoying a sunny boat ride" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
+<div class="rounded-2xl overflow-hidden"><Image src={thumb2} alt="Snorkeler exploring underwater paradise" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
+<div class="rounded-2xl overflow-hidden"><Image src={thumb3} alt="Sunlit boat ride by the ocean" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
+<div class="rounded-2xl overflow-hidden"><Image src={thumb4} alt="Sunshine and celebration on the yacht" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" width={800} height={500} /></div>
 </div>
 <div class="mt-4 flex justify-center">
   <div class="max-w-[520px] flex items-start gap-4">
@@ -85,7 +106,7 @@ const breadcrumbSchema = JSON.stringify({
       <span class="material-symbols-outlined text-gold filled text-base">star</span>
     </div>
     <div>
-      <p class="text-navy text-sm leading-snug">"Mucho mejor que los tours en grupos grandes. Barco pequeno, gran tripulacion, snorkel increible."</p>
+      <p class="text-navy text-sm leading-snug">"Way better than the big group tours. Small boat, great crew, amazing snorkeling."</p>
       <p class="text-navy/60 text-[10px] uppercase tracking-widest font-bold mt-2">Chris &amp; Emma W. &mdash; San Diego, CA</p>
     </div>
   </div>
@@ -94,7 +115,7 @@ const breadcrumbSchema = JSON.stringify({
 
 <!-- Discount banner -->
 <div class="w-full text-center py-3 px-4 shadow-md bg-gold mt-4 lg:mt-6">
-  <p class="text-navy font-bold text-sm lg:text-base uppercase tracking-widest">Ahorra hasta 40% off &mdash; Tiempo Limitado</p>
+  <p class="text-navy font-bold text-sm lg:text-base uppercase tracking-widest">Save up to 40% off &mdash; Limited Time</p>
 </div>
 
 <!-- DESKTOP: Two-column layout -->
@@ -103,76 +124,76 @@ const breadcrumbSchema = JSON.stringify({
   <div class="flex-1 min-w-0">
     <!-- Breadcrumbs -->
     <nav class="flex items-center gap-1.5 text-xs text-slate-500 mb-4" aria-label="Breadcrumb">
-      <a href="/es/" class="hover:text-gold transition-colors">Inicio</a>
+      <a href="/" class="hover:text-gold transition-colors">Home</a>
       <span class="material-symbols-outlined text-[14px]">chevron_right</span>
-      <span>Tours</span>
+      <a href="/tours/" class="hover:text-gold transition-colors">Tours</a>
       <span class="material-symbols-outlined text-[14px]">chevron_right</span>
-      <span class="text-navy font-semibold">Snorkel Compartido</span>
+      <span class="text-navy font-semibold">Shared Snorkeling</span>
     </nav>
-    <h1 class="text-3xl text-navy leading-tight">Paseo compartido de vela y snorkel en Cabo</h1>
-    <p class="text-slate-700 text-lg leading-relaxed mt-2">Una aventura en velero con grupo pequeno al Arco y Pelican Rock &mdash; nunca mas de 14 pasajeros a bordo.</p>
+    <h1 class="text-3xl text-navy leading-tight">Cabo Sailing &amp; Shared Snorkeling</h1>
+    <p class="text-slate-700 text-lg leading-relaxed mt-2">A small-group sailing adventure to Cabo's iconic Arch and Pelican Rock &mdash; never more than 14 guests onboard.</p>
 
     <!-- Icons row -->
     <div class="mt-8 grid grid-cols-4 gap-x-6 gap-y-4">
       <div class="flex items-center gap-2">
         <span class="material-symbols-outlined text-gold">schedule</span>
-        <p class="text-sm font-semibold text-navy">3 Horas</p>
+        <p class="text-sm font-semibold text-navy">3 Hours</p>
       </div>
       <div class="flex items-center gap-2">
         <span class="material-symbols-outlined text-gold">groups</span>
-        <p class="text-sm font-semibold text-navy">Grupo Peque&ntilde;o</p>
+        <p class="text-sm font-semibold text-navy">Small Group</p>
       </div>
       <div class="flex items-center gap-2">
         <span class="material-symbols-outlined text-gold">event_available</span>
-        <p class="text-sm font-semibold text-navy">Cancelaci&oacute;n Gratuita</p>
+        <p class="text-sm font-semibold text-navy">Free Cancellation</p>
       </div>
       <div class="flex items-center gap-2">
         <span class="material-symbols-outlined text-gold">family_restroom</span>
-        <p class="text-sm font-semibold text-navy">Apto para Familias</p>
+        <p class="text-sm font-semibold text-navy">Family Friendly</p>
       </div>
       <div class="flex items-center gap-2">
         <span class="material-symbols-outlined text-gold">local_offer</span>
-        <p class="text-sm font-semibold text-navy">Excelente Valor</p>
+        <p class="text-sm font-semibold text-navy">Great Value</p>
       </div>
       <div class="flex items-center gap-2">
         <span class="material-symbols-outlined text-gold">pin_drop</span>
-        <p class="text-sm font-semibold text-navy">Cabo Marina, Muelle F</p>
+        <p class="text-sm font-semibold text-navy">Cabo Marina, Dock F</p>
       </div>
       <div class="flex items-center gap-2 col-span-2">
         <span class="material-symbols-outlined text-gold">schedule</span>
-        <p class="text-sm font-semibold text-navy">SALIDAS 9:00 AM DIARIO</p>
+        <p class="text-sm font-semibold text-navy">DEPARTURES 9:00 AM DAILY</p>
       </div>
     </div>
 
-    <!-- Sobre esta experiencia -->
+    <!-- About this experience -->
     <div class="mt-12">
-      <h3 class="text-2xl text-navy mb-4">Sobre esta experiencia</h3>
+      <h3 class="text-2xl text-navy mb-4">About this experience</h3>
       <p class="text-slate-700 leading-relaxed text-base">
-        Unete a nuestro popular tour de snorkel compartido y descubre la magia de Cabo San Lucas junto a otros aventureros. Visita el famoso Arco, haz snorkel entre peces tropicales en Pelican Rock y disfruta de barra libre y almuerzo a bordo &mdash; todo a un precio inigualable. Nuestra experimentada tripulacion bilingue se asegura de que todos tengan una experiencia segura, divertida e inolvidable en el agua.
+        Join our popular shared snorkeling tour and discover the magic of Cabo San Lucas alongside fellow adventurers. Visit the famous Arch, snorkel alongside tropical fish at Pelican Rock, and enjoy a refreshing open bar and lunch onboard &mdash; all at an unbeatable price. Our experienced bilingual crew makes sure everyone has a safe, fun, and unforgettable time on the water.
       </p>
     </div>
 
-    <!-- Itinerario Sugerido timeline -->
+    <!-- Suggested Itinerary timeline -->
     <div class="mt-10">
       <div class="flex items-center gap-3 mb-5">
         <div class="w-1 h-6 bg-gold rounded-full"></div>
-        <h3 class="text-sm font-bold text-navy uppercase tracking-widest">Itinerario Sugerido</h3>
+        <h3 class="text-sm font-bold text-navy uppercase tracking-widest">Suggested Itinerary</h3>
       </div>
       <ol class="relative border-l-2 border-gold/30 ml-2 space-y-5 pl-6">
-        <li class="relative"><span class="absolute -left-[33px] top-0 w-6 h-6 rounded-full bg-navy text-white text-[11px] font-bold flex items-center justify-center">1</span><span class="text-slate-600 text-base">9:00 AM &mdash; Abordaje en la marina, las bebidas comienzan de inmediato</span></li>
-        <li class="relative"><span class="absolute -left-[33px] top-0 w-6 h-6 rounded-full bg-navy text-white text-[11px] font-bold flex items-center justify-center">2</span><span class="text-slate-600 text-base">Navega frente a Land's End &mdash; el Arco, la colonia de lobos marinos y formaciones rocosas</span></li>
-        <li class="relative"><span class="absolute -left-[33px] top-0 w-6 h-6 rounded-full bg-navy text-white text-[11px] font-bold flex items-center justify-center">3</span><span class="text-slate-600 text-base">Snorkel en Pelican Rock con peces tropicales, rayas y lobos marinos</span></li>
-        <li class="relative"><span class="absolute -left-[33px] top-0 w-6 h-6 rounded-full bg-navy text-white text-[11px] font-bold flex items-center justify-center">4</span><span class="text-slate-600 text-base">Disfruta del almuerzo y bebidas ilimitadas en cubierta</span></li>
-        <li class="relative"><span class="absolute -left-[33px] top-0 w-6 h-6 rounded-full bg-navy text-white text-[11px] font-bold flex items-center justify-center">5</span><span class="text-slate-600 text-base">12:00 PM &mdash; Regreso a la marina con nuevos amigos y grandes recuerdos</span></li>
+        <li class="relative"><span class="absolute -left-[33px] top-0 w-6 h-6 rounded-full bg-navy text-white text-[11px] font-bold flex items-center justify-center">1</span><span class="text-slate-600 text-base">9:00 AM &mdash; Board at the marina, drinks start flowing right away</span></li>
+        <li class="relative"><span class="absolute -left-[33px] top-0 w-6 h-6 rounded-full bg-navy text-white text-[11px] font-bold flex items-center justify-center">2</span><span class="text-slate-600 text-base">Sail past Land's End &mdash; the Arch, the sea lion colony, and rock formations</span></li>
+        <li class="relative"><span class="absolute -left-[33px] top-0 w-6 h-6 rounded-full bg-navy text-white text-[11px] font-bold flex items-center justify-center">3</span><span class="text-slate-600 text-base">Snorkel at Pelican Rock with tropical fish, rays, and sea lions</span></li>
+        <li class="relative"><span class="absolute -left-[33px] top-0 w-6 h-6 rounded-full bg-navy text-white text-[11px] font-bold flex items-center justify-center">4</span><span class="text-slate-600 text-base">Enjoy lunch and unlimited drinks on deck</span></li>
+        <li class="relative"><span class="absolute -left-[33px] top-0 w-6 h-6 rounded-full bg-navy text-white text-[11px] font-bold flex items-center justify-center">5</span><span class="text-slate-600 text-base">12:00 PM &mdash; Sail back to the marina with new friends and great memories</span></li>
       </ol>
-      <p class="mt-5 text-slate-700 italic text-sm">Una aventura relajada y social en el agua &mdash; y un valor inigualable.</p>
+      <p class="mt-5 text-slate-700 italic text-sm">A relaxed, social adventure on the water &mdash; and unbeatable value.</p>
     </div>
 
-    <!-- Que Incluye -->
+    <!-- What's Included -->
     <div class="mt-10">
       <div class="flex items-center gap-3 mb-6">
         <div class="w-1 h-6 bg-gold rounded-full"></div>
-        <h3 class="text-2xl text-navy">Que Incluye</h3>
+        <h3 class="text-2xl text-navy">What's Included</h3>
       </div>
       <div class="grid grid-cols-2 gap-5 pl-1">
         <div class="flex items-center gap-4">
@@ -180,8 +201,8 @@ const breadcrumbSchema = JSON.stringify({
             <span class="material-symbols-outlined text-white text-[14px]">local_bar</span>
           </div>
           <div>
-            <span class="text-slate-600 text-base font-medium">Barra libre</span>
-            <p class="text-slate-500 text-sm">Disfruta de bebidas refrescantes durante todo el crucero</p>
+            <span class="text-slate-600 text-base font-medium">Open bar</span>
+            <p class="text-slate-500 text-sm">Enjoy refreshing drinks throughout the cruise</p>
           </div>
         </div>
         <div class="flex items-center gap-4">
@@ -189,8 +210,8 @@ const breadcrumbSchema = JSON.stringify({
             <span class="material-symbols-outlined text-white text-[14px]">restaurant</span>
           </div>
           <div>
-            <span class="text-slate-600 text-base font-medium">Almuerzo ligero a bordo</span>
-            <p class="text-slate-500 text-sm">Snacks frescos servidos despues del snorkel</p>
+            <span class="text-slate-600 text-base font-medium">Light lunch onboard</span>
+            <p class="text-slate-500 text-sm">Fresh snacks served after snorkeling</p>
           </div>
         </div>
         <div class="flex items-center gap-4">
@@ -198,8 +219,8 @@ const breadcrumbSchema = JSON.stringify({
             <span class="material-symbols-outlined text-white text-[14px]">scuba_diving</span>
           </div>
           <div>
-            <span class="text-slate-600 text-base font-medium">Experiencia de snorkel</span>
-            <p class="text-slate-500 text-sm">Equipo incluido — explora los mejores spots de Cabo</p>
+            <span class="text-slate-600 text-base font-medium">Snorkeling experience</span>
+            <p class="text-slate-500 text-sm">Gear included — explore Cabo's best spots</p>
           </div>
         </div>
         <div class="flex items-center gap-4">
@@ -207,8 +228,8 @@ const breadcrumbSchema = JSON.stringify({
             <span class="material-symbols-outlined text-white text-[14px]">sailing</span>
           </div>
           <div>
-            <span class="text-slate-600 text-base font-medium">Velero comodo</span>
-            <p class="text-slate-500 text-sm">Navegacion suave con cupo limitado de pasajeros</p>
+            <span class="text-slate-600 text-base font-medium">Comfortable sailing yacht</span>
+            <p class="text-slate-500 text-sm">Smooth ride with limited guests onboard</p>
           </div>
         </div>
         <div class="flex items-center gap-4">
@@ -216,8 +237,8 @@ const breadcrumbSchema = JSON.stringify({
             <span class="material-symbols-outlined text-white text-[14px]">dry_cleaning</span>
           </div>
           <div>
-            <span class="text-slate-600 text-base font-medium">Toallas incluidas</span>
-            <p class="text-slate-500 text-sm">Todo lo que necesitas para el agua</p>
+            <span class="text-slate-600 text-base font-medium">Towels provided</span>
+            <p class="text-slate-500 text-sm">Everything you need for the water</p>
           </div>
         </div>
         <div class="flex items-center gap-4">
@@ -225,8 +246,8 @@ const breadcrumbSchema = JSON.stringify({
             <span class="material-symbols-outlined text-white text-[14px]">person</span>
           </div>
           <div>
-            <span class="text-slate-600 text-base font-medium">Tripulacion bilingue experimentada</span>
-            <p class="text-slate-500 text-sm">Amigable, profesional y enfocada en la seguridad</p>
+            <span class="text-slate-600 text-base font-medium">Experienced bilingual crew</span>
+            <p class="text-slate-500 text-sm">Friendly, professional, and safety-focused</p>
           </div>
         </div>
       </div>
@@ -238,46 +259,46 @@ const breadcrumbSchema = JSON.stringify({
   <div class="w-[380px] flex-shrink-0">
     <div class="sticky top-[90px] bg-white rounded-3xl shadow-xl shadow-navy/5 border border-border-light overflow-hidden">
       <div class="bg-gradient-to-br from-navy via-navy to-[#1a3a5c] p-6 text-center border-b-4 border-gold">
-        <h3 class="text-white text-2xl font-heading tracking-wide">Reserva Tu Lugar</h3>
-        <p class="text-white/70 text-sm mt-1">Lugares limitados — reserva hoy para asegurar tu fecha</p>
+        <h3 class="text-white text-2xl font-heading tracking-wide">Book Your Spot</h3>
+        <p class="text-white/70 text-sm mt-1">Limited spots — book today to secure your date</p>
       </div>
       <!-- Boat card 38'-42' (no icons) -->
       <div class="p-5 pb-0">
         <div class="w-full bg-white border border-border-light rounded-2xl overflow-hidden shadow-md shadow-navy/5" data-boat="shared-sailing">
           <div class="h-[400px] w-full relative">
-            <Image src={sailing42BoatCard} alt="Velero 38'-42'" class="w-full h-full object-cover object-center" width={1024} height={1536} format="png" quality={100} />
+            <Image src={sailing42BoatCard} alt="Sailing Boat 38'-42'" class="w-full h-full object-cover object-center" width={1024} height={1536} format="png" quality={100} />
             <div class="absolute inset-0 bg-gradient-to-t from-navy/15 via-transparent to-transparent"></div>
             <div class="absolute bottom-4 left-4">
-              <h3 class="text-white text-lg font-heading">Velero 38'-42'</h3>
-              <div class="flex items-center gap-2 text-white/90 text-xs mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-sm">group</span><span>Hasta 14 Pasajeros</span></div>
+              <h3 class="text-white text-lg font-heading">Sailing Boat 38'-42'</h3>
+              <div class="flex items-center gap-2 text-white/90 text-xs mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-sm">group</span><span>Up to 14 Guests</span></div>
             </div>
             <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-30%</div>
           </div>
         </div>
       </div>
       <div class="p-5">
-        <p class="text-center text-slate-500 text-sm mb-1">Selecciona una fecha para ver disponibilidad</p>
-        <p class="text-center mb-3"><span class="inline-block text-[11px] font-bold uppercase tracking-wider text-white bg-gold px-2.5 py-0.5 rounded-full">C&oacute;digo de Descuento: <span class="text-[13px] font-extrabold" data-promo-for="shared-snorkeling">Sail-30</span></span></p>
+        <p class="text-center text-slate-500 text-sm mb-1">Select a date to check availability</p>
+        <p class="text-center mb-3"><span class="inline-block text-[11px] font-bold uppercase tracking-wider text-white bg-gold px-2.5 py-0.5 rounded-full">Discount Code: <span class="text-[13px] font-extrabold" data-promo-for="shared-snorkeling">Sail-30</span></span></p>
         <script defer type="text/javascript" src="https://cabosailing.rezdy.com/pluginJs" is:inline></script>
         <iframe seamless="" width="300px" height="1000px" frameborder="0" class="rezdy mx-auto block" src="https://cabosailing.rezdy.com/calendarWidget/744011?iframe=true"></iframe>
         <div class="mt-5 space-y-3" data-boat="shared-sailing">
           <div class="flex justify-between items-center py-2 border-b border-border-light">
-            <span class="text-sm text-slate-500">Por persona</span>
+            <span class="text-sm text-slate-500">Per person</span>
             <div class="flex items-baseline gap-2">
               <span class="text-gold line-through decoration-1 text-base font-semibold">$120</span>
               <span class="text-navy font-bold text-xl">$102</span>
             </div>
           </div>
           <div class="flex justify-between items-center py-2">
-            <span class="text-sm text-slate-500">Duracion</span>
-            <span class="text-navy font-semibold">3 Horas</span>
+            <span class="text-sm text-slate-500">Duration</span>
+            <span class="text-navy font-semibold">3 Hours</span>
           </div>
         </div>
         <button onclick="document.getElementById('rezdy-modal-shared-snorkel').classList.remove('hidden')" class="block w-full bg-navy text-white font-bold text-sm py-4 rounded-2xl uppercase tracking-[0.15em] text-center shadow-lg mt-5 hover:bg-navy/90 transition-colors cursor-pointer">
-          Ver Disponibilidad
+          Check Availability
         </button>
         <a href="https://wa.me/526241916997?text=Hi%2C%20I'd%20like%20to%20book%20the%20Shared%20Snorkeling%20Tour" target="_blank" class="block w-full bg-[#25D366] text-white font-bold text-sm py-4 rounded-2xl uppercase tracking-[0.15em] text-center shadow-lg mt-3 hover:bg-[#20bd5a] transition-colors">
-          <i class="fa-brands fa-whatsapp text-lg mr-2" style="vertical-align:middle"></i> Reservar por WhatsApp
+          <i class="fa-brands fa-whatsapp text-lg mr-2" style="vertical-align:middle"></i> Book via WhatsApp
         </a>
       </div>
     </div>
@@ -288,14 +309,14 @@ const breadcrumbSchema = JSON.stringify({
 <!-- MOBILE: Title + intro -->
 <div class="lg:hidden mt-6 px-5">
   <nav class="flex items-center gap-1.5 text-xs text-slate-500 mb-4" aria-label="Breadcrumb">
-    <a href="/es/" class="hover:text-gold transition-colors">Inicio</a>
+    <a href="/" class="hover:text-gold transition-colors">Home</a>
     <span class="material-symbols-outlined text-[14px]">chevron_right</span>
-    <span>Tours</span>
+    <a href="/tours/" class="hover:text-gold transition-colors">Tours</a>
     <span class="material-symbols-outlined text-[14px]">chevron_right</span>
-    <span class="text-navy font-semibold">Snorkel Compartido</span>
+    <span class="text-navy font-semibold">Shared Snorkeling</span>
   </nav>
-  <h1 class="text-2xl text-navy leading-tight">Paseo compartido de vela y snorkel en Cabo</h1>
-  <p class="text-slate-700 text-base leading-relaxed mt-2">Una aventura en velero con grupo pequeno al Arco y Pelican Rock &mdash; nunca mas de 14 pasajeros a bordo.</p>
+  <h1 class="text-2xl text-navy leading-tight">Cabo Sailing &amp; Shared Snorkeling</h1>
+  <p class="text-slate-700 text-base leading-relaxed mt-2">A small-group sailing adventure to Cabo's iconic Arch and Pelican Rock &mdash; never more than 14 guests onboard.</p>
 </div>
 
 <!-- MOBILE: Icons row -->
@@ -303,67 +324,67 @@ const breadcrumbSchema = JSON.stringify({
   <div class="grid grid-cols-2 gap-x-3 gap-y-3">
     <div class="flex items-center gap-1.5">
       <span class="material-symbols-outlined text-gold text-lg">schedule</span>
-      <p class="text-xs font-semibold text-navy">3 Horas</p>
+      <p class="text-xs font-semibold text-navy">3 Hours</p>
     </div>
     <div class="flex items-center gap-1.5">
       <span class="material-symbols-outlined text-gold text-lg">groups</span>
-      <p class="text-xs font-semibold text-navy">Grupo Peque&ntilde;o</p>
+      <p class="text-xs font-semibold text-navy">Small Group</p>
     </div>
     <div class="flex items-center gap-1.5">
       <span class="material-symbols-outlined text-gold text-lg">event_available</span>
-      <p class="text-xs font-semibold text-navy">Cancelaci&oacute;n Gratuita</p>
+      <p class="text-xs font-semibold text-navy">Free Cancellation</p>
     </div>
     <div class="flex items-center gap-1.5">
       <span class="material-symbols-outlined text-gold text-lg">family_restroom</span>
-      <p class="text-xs font-semibold text-navy">Apto para Familias</p>
+      <p class="text-xs font-semibold text-navy">Family Friendly</p>
     </div>
     <div class="flex items-center gap-1.5">
       <span class="material-symbols-outlined text-gold text-lg">local_offer</span>
-      <p class="text-xs font-semibold text-navy">Excelente Valor</p>
+      <p class="text-xs font-semibold text-navy">Great Value</p>
     </div>
     <div class="flex items-center gap-1.5">
       <span class="material-symbols-outlined text-gold text-lg">pin_drop</span>
-      <p class="text-xs font-semibold text-navy">Cabo Marina, Muelle F</p>
+      <p class="text-xs font-semibold text-navy">Cabo Marina, Dock F</p>
     </div>
     <div class="flex items-center gap-1.5 col-span-2">
       <span class="material-symbols-outlined text-gold text-lg">schedule</span>
-      <p class="text-xs font-semibold text-navy">SALIDAS 9:00 AM DIARIO</p>
+      <p class="text-xs font-semibold text-navy">DEPARTURES 9:00 AM DAILY</p>
     </div>
   </div>
 </div>
 
-<!-- MOBILE: Sobre esta experiencia + Itinerario Sugerido -->
+<!-- MOBILE: About + Suggested Itinerary -->
 <div class="lg:hidden mt-8 px-5">
-  <h3 class="text-lg text-navy mb-3">Sobre esta experiencia</h3>
-  <p class="text-slate-700 leading-relaxed text-base">Unete a nuestro popular tour de snorkel compartido y descubre la magia de Cabo San Lucas junto a otros aventureros. Visita el famoso Arco, haz snorkel entre peces tropicales en Pelican Rock y disfruta de barra libre y almuerzo a bordo &mdash; todo a un precio inigualable.</p>
+  <h3 class="text-lg text-navy mb-3">About this experience</h3>
+  <p class="text-slate-700 leading-relaxed text-base">Join our popular shared snorkeling tour and discover the magic of Cabo San Lucas alongside fellow adventurers. Visit the famous Arch, snorkel alongside tropical fish at Pelican Rock, and enjoy a refreshing open bar and lunch onboard &mdash; all at an unbeatable price.</p>
 
   <div class="mt-7 faq-item border border-border-light rounded-2xl overflow-hidden bg-white">
     <input class="hidden" id="mobile-itinerary" type="checkbox"/>
     <label class="flex items-center justify-between p-4 cursor-pointer" for="mobile-itinerary">
       <span class="flex items-center gap-3">
         <div class="w-1 h-5 bg-gold rounded-full"></div>
-        <span class="text-xs font-bold text-navy uppercase tracking-widest">Itinerario Sugerido</span>
+        <span class="text-xs font-bold text-navy uppercase tracking-widest">Suggested Itinerary</span>
       </span>
       <span class="material-symbols-outlined text-slate-500 faq-chevron transition-transform duration-300">expand_more</span>
     </label>
     <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
       <ol class="relative border-l-2 border-gold/30 ml-2 space-y-4 pl-5 mt-2">
-        <li class="relative"><span class="absolute -left-[29px] top-0 w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center">1</span><span class="text-slate-600 text-sm">9:00 AM &mdash; Abordaje en la marina, las bebidas comienzan de inmediato</span></li>
-        <li class="relative"><span class="absolute -left-[29px] top-0 w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center">2</span><span class="text-slate-600 text-sm">Navega frente a Land's End &mdash; el Arco, lobos marinos, formaciones rocosas</span></li>
-        <li class="relative"><span class="absolute -left-[29px] top-0 w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center">3</span><span class="text-slate-600 text-sm">Snorkel en Pelican Rock con peces tropicales y lobos marinos</span></li>
-        <li class="relative"><span class="absolute -left-[29px] top-0 w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center">4</span><span class="text-slate-600 text-sm">Disfruta del almuerzo y bebidas ilimitadas en cubierta</span></li>
-        <li class="relative"><span class="absolute -left-[29px] top-0 w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center">5</span><span class="text-slate-600 text-sm">12:00 PM &mdash; Regreso a la marina con nuevos amigos</span></li>
+        <li class="relative"><span class="absolute -left-[29px] top-0 w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center">1</span><span class="text-slate-600 text-sm">9:00 AM &mdash; Board at the marina, drinks start flowing right away</span></li>
+        <li class="relative"><span class="absolute -left-[29px] top-0 w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center">2</span><span class="text-slate-600 text-sm">Sail past Land's End &mdash; the Arch, sea lion colony, rock formations</span></li>
+        <li class="relative"><span class="absolute -left-[29px] top-0 w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center">3</span><span class="text-slate-600 text-sm">Snorkel at Pelican Rock with tropical fish and sea lions</span></li>
+        <li class="relative"><span class="absolute -left-[29px] top-0 w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center">4</span><span class="text-slate-600 text-sm">Enjoy lunch and unlimited drinks on deck</span></li>
+        <li class="relative"><span class="absolute -left-[29px] top-0 w-5 h-5 rounded-full bg-navy text-white text-[10px] font-bold flex items-center justify-center">5</span><span class="text-slate-600 text-sm">12:00 PM &mdash; Sail back to the marina with new friends</span></li>
       </ol>
-      <p class="mt-4 text-slate-700 italic text-xs">Una aventura relajada y social en el agua &mdash; y un valor inigualable.</p>
+      <p class="mt-4 text-slate-700 italic text-xs">A relaxed, social adventure on the water &mdash; and unbeatable value.</p>
     </div>
   </div>
 </div>
 
-<!-- MOBILE: Reserva Tu Lugar banner -->
+<!-- MOBILE: Book Your Spot banner -->
 <div class="lg:hidden mt-10 mx-5">
   <div class="bg-gradient-to-br from-navy via-navy to-[#1a3a5c] rounded-2xl p-5 text-center border-b-4 border-gold shadow-lg shadow-navy/20">
-    <h3 class="text-white text-2xl font-heading tracking-wide">Reserva Tu Lugar</h3>
-    <p class="text-white/70 text-sm mt-1">Lugares limitados — reserva hoy para asegurar tu fecha</p>
+    <h3 class="text-white text-2xl font-heading tracking-wide">Book Your Spot</h3>
+    <p class="text-white/70 text-sm mt-1">Limited spots — book today to secure your date</p>
   </div>
 </div>
 
@@ -371,86 +392,86 @@ const breadcrumbSchema = JSON.stringify({
 <div class="lg:hidden mt-4 mx-5">
   <div class="w-full bg-white border border-border-light rounded-2xl overflow-hidden shadow-md shadow-navy/5" data-boat="shared-sailing">
     <div class="h-[400px] w-full relative">
-      <Image src={sailing42BoatCard} alt="Velero 38'-42'" class="w-full h-full object-cover object-center" width={1024} height={1536} format="png" quality={100} />
+      <Image src={sailing42BoatCard} alt="Sailing Boat 38'-42'" class="w-full h-full object-cover object-center" width={1024} height={1536} format="png" quality={100} />
       <div class="absolute inset-0 bg-gradient-to-t from-navy/15 via-transparent to-transparent"></div>
       <div class="absolute bottom-4 left-4">
-        <h3 class="text-white text-lg font-heading">Velero 38'-42'</h3>
-        <div class="flex items-center gap-2 text-white/90 text-xs mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-sm">group</span><span>Hasta 14 Pasajeros</span></div>
+        <h3 class="text-white text-lg font-heading">Sailing Boat 38'-42'</h3>
+        <div class="flex items-center gap-2 text-white/90 text-xs mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-sm">group</span><span>Up to 14 Guests</span></div>
       </div>
       <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-30%</div>
     </div>
   </div>
 </div>
 
-<!-- MOBILE: Por persona / Duracion -->
+<!-- MOBILE: Price / Duration -->
 <div class="lg:hidden mt-4 mx-5">
   <div class="space-y-3" data-boat="shared-sailing">
     <div class="flex justify-between items-center py-2 border-b border-border-light">
-      <span class="text-sm text-slate-500">Por persona</span>
+      <span class="text-sm text-slate-500">Per person</span>
       <div class="flex items-baseline gap-2">
         <span class="text-gold line-through decoration-1 text-base font-semibold">$120</span>
         <span class="text-navy font-bold text-xl">$102</span>
       </div>
     </div>
     <div class="flex justify-between items-center py-2">
-      <span class="text-sm text-slate-500">Duracion</span>
-      <span class="text-navy font-semibold">3 Horas</span>
+      <span class="text-sm text-slate-500">Duration</span>
+      <span class="text-navy font-semibold">3 Hours</span>
     </div>
   </div>
 </div>
 
 <!-- MOBILE: Calendar + WhatsApp -->
 <div class="lg:hidden mt-6 mx-5 mb-6">
-  <p class="text-center text-slate-500 text-sm mb-1">Selecciona una fecha para ver disponibilidad</p>
-  <p class="text-center mb-3"><span class="inline-block text-[11px] font-bold uppercase tracking-wider text-white bg-gold px-2.5 py-0.5 rounded-full">C&oacute;digo de Descuento: <span class="text-[13px] font-extrabold" data-promo-for="shared-snorkeling">Sail-30</span></span></p>
+  <p class="text-center text-slate-500 text-sm mb-1">Select a date to check availability</p>
+  <p class="text-center mb-3"><span class="inline-block text-[11px] font-bold uppercase tracking-wider text-white bg-gold px-2.5 py-0.5 rounded-full">Discount Code: <span class="text-[13px] font-extrabold" data-promo-for="shared-snorkeling">Sail-30</span></span></p>
   <iframe seamless="" width="300px" height="1000px" frameborder="0" class="rezdy mx-auto block" src="https://cabosailing.rezdy.com/calendarWidget/744011?iframe=true"></iframe>
   <a href="https://wa.me/526241916997?text=Hi%2C%20I'd%20like%20to%20book%20the%20Shared%20Snorkeling%20Tour" target="_blank" class="block w-full bg-[#25D366] text-white font-bold text-[12px] py-4 rounded-2xl uppercase tracking-[0.2em] text-center shadow-lg mt-4">
-    <i class="fa-brands fa-whatsapp text-lg mr-2" style="vertical-align:middle"></i> Reservar por WhatsApp
+    <i class="fa-brands fa-whatsapp text-lg mr-2" style="vertical-align:middle"></i> Book via WhatsApp
   </a>
 </div>
 
-<!-- MOBILE: Que Incluye -->
+<!-- MOBILE: What's Included -->
 <div class="lg:hidden mt-10 px-5">
   <div class="flex items-center gap-3 mb-6">
     <div class="w-1 h-6 bg-gold rounded-full"></div>
-    <h3 class="text-lg text-navy">Que Incluye</h3>
+    <h3 class="text-lg text-navy">What's Included</h3>
   </div>
   <div class="grid grid-cols-1 gap-5 pl-1">
     <div class="flex items-start gap-4">
       <div class="w-7 h-7 rounded-full bg-navy flex items-center justify-center flex-shrink-0">
         <span class="material-symbols-outlined text-white text-[15px]">local_bar</span>
       </div>
-      <div><span class="text-slate-700 text-base font-semibold">Barra libre</span><p class="text-slate-700 text-sm mt-0.5">Bebidas refrescantes durante todo el crucero</p></div>
+      <div><span class="text-slate-700 text-base font-semibold">Open bar</span><p class="text-slate-700 text-sm mt-0.5">Refreshing drinks throughout the cruise</p></div>
     </div>
     <div class="flex items-start gap-4">
       <div class="w-7 h-7 rounded-full bg-navy flex items-center justify-center flex-shrink-0">
         <span class="material-symbols-outlined text-white text-[15px]">restaurant</span>
       </div>
-      <div><span class="text-slate-700 text-base font-semibold">Almuerzo ligero a bordo</span><p class="text-slate-700 text-sm mt-0.5">Snacks frescos servidos despues del snorkel</p></div>
+      <div><span class="text-slate-700 text-base font-semibold">Light lunch onboard</span><p class="text-slate-700 text-sm mt-0.5">Fresh snacks served after snorkeling</p></div>
     </div>
     <div class="flex items-start gap-4">
       <div class="w-7 h-7 rounded-full bg-navy flex items-center justify-center flex-shrink-0">
         <span class="material-symbols-outlined text-white text-[15px]">scuba_diving</span>
       </div>
-      <div><span class="text-slate-700 text-base font-semibold">Experiencia de snorkel</span><p class="text-slate-700 text-sm mt-0.5">Equipo incluido &mdash; explora los mejores spots de Cabo</p></div>
+      <div><span class="text-slate-700 text-base font-semibold">Snorkeling experience</span><p class="text-slate-700 text-sm mt-0.5">Gear included &mdash; explore Cabo's best spots</p></div>
     </div>
     <div class="flex items-start gap-4">
       <div class="w-7 h-7 rounded-full bg-navy flex items-center justify-center flex-shrink-0">
         <span class="material-symbols-outlined text-white text-[15px]">sailing</span>
       </div>
-      <div><span class="text-slate-700 text-base font-semibold">Velero comodo</span><p class="text-slate-700 text-sm mt-0.5">Navegacion suave con cupo limitado de pasajeros</p></div>
+      <div><span class="text-slate-700 text-base font-semibold">Comfortable sailing yacht</span><p class="text-slate-700 text-sm mt-0.5">Smooth ride with limited guests onboard</p></div>
     </div>
     <div class="flex items-start gap-4">
       <div class="w-7 h-7 rounded-full bg-navy flex items-center justify-center flex-shrink-0">
         <span class="material-symbols-outlined text-white text-[15px]">dry_cleaning</span>
       </div>
-      <div><span class="text-slate-700 text-base font-semibold">Toallas incluidas</span><p class="text-slate-700 text-sm mt-0.5">Todo lo que necesitas para el agua</p></div>
+      <div><span class="text-slate-700 text-base font-semibold">Towels provided</span><p class="text-slate-700 text-sm mt-0.5">Everything you need for the water</p></div>
     </div>
     <div class="flex items-start gap-4">
       <div class="w-7 h-7 rounded-full bg-navy flex items-center justify-center flex-shrink-0">
         <span class="material-symbols-outlined text-white text-[15px]">person</span>
       </div>
-      <div><span class="text-slate-700 text-base font-semibold">Tripulacion bilingue experimentada</span><p class="text-slate-700 text-sm mt-0.5">Amigable, profesional y enfocada en la seguridad</p></div>
+      <div><span class="text-slate-700 text-base font-semibold">Experienced bilingual crew</span><p class="text-slate-700 text-sm mt-0.5">Friendly, professional, and safety-focused</p></div>
     </div>
   </div>
 </div>
@@ -459,10 +480,10 @@ const breadcrumbSchema = JSON.stringify({
 <div class="mt-12 lg:max-w-[1400px] lg:mx-auto lg:px-10 px-5">
   <div class="rounded-2xl border border-border-light bg-light-grey p-5 lg:p-8 flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-6">
     <div class="flex-1">
-      <h3 class="text-base lg:text-xl text-navy mb-1">Quieres el barco solo para ti?</h3>
-      <p class="text-sm lg:text-base text-slate-500">Reserva un charter privado para tu grupo — elige entre veleros o yates de lujo y haz snorkel en Chileno o Santa Maria.</p>
+      <h3 class="text-base lg:text-xl text-navy mb-1">Want the boat all to yourself?</h3>
+      <p class="text-sm lg:text-base text-slate-500">Book a private charter for your group — choose from sailboats or luxury yachts and snorkel at Chileno or Santa María.</p>
     </div>
-    <a href="/es/private-snorkeling/" class="block lg:inline-block bg-navy text-white font-bold text-[11px] px-6 py-4 rounded-2xl uppercase tracking-[0.2em] text-center shadow-lg whitespace-nowrap">Ver Tours Privados</a>
+    <a href="/tours/private-snorkeling/" class="block lg:inline-block bg-navy text-white font-bold text-[11px] px-6 py-4 rounded-2xl uppercase tracking-[0.2em] text-center shadow-lg whitespace-nowrap">See Private Tours</a>
   </div>
 </div>
 
@@ -470,7 +491,7 @@ const breadcrumbSchema = JSON.stringify({
 <div class="mt-12 lg:max-w-[1400px] lg:mx-auto lg:px-10 lg:py-8 px-5">
 <div class="flex items-center gap-3 mb-6">
 <div class="w-1 h-6 bg-gold rounded-full"></div>
-<h3 class="text-lg lg:text-3xl text-navy">Preguntas Frecuentes</h3>
+<h3 class="text-lg lg:text-3xl text-navy">Frequently Asked Questions</h3>
 </div>
 <div class="space-y-6 lg:max-w-3xl">
 
@@ -478,55 +499,55 @@ const breadcrumbSchema = JSON.stringify({
     <div class="faq-item border border-border-light rounded-2xl overflow-hidden bg-white">
       <input class="hidden" id="faq-shared-menu" type="checkbox"/>
       <label class="flex items-center justify-between p-4 cursor-pointer" for="faq-shared-menu">
-        <span class="flex items-center gap-2 text-base font-semibold text-navy"><span class="material-symbols-outlined text-gold" style="font-size:18px">restaurant</span>Menu del Crucero y Barra</span>
+        <span class="flex items-center gap-2 text-base font-semibold text-navy"><span class="material-symbols-outlined text-gold" style="font-size:18px">restaurant</span>Cruise Menu &amp; Bar</span>
         <span class="material-symbols-outlined text-slate-500 faq-chevron transition-transform duration-300">expand_more</span>
       </label>
       <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
         <div class="text-sm text-slate-500 leading-relaxed space-y-3">
-          <div><p class="font-semibold text-navy mb-1">Barra Libre</p><p>Vino tinto y blanco, margaritas, cerveza, ron, vodka, tequila, whiskey, jugos naturales, refrescos y agua embotellada.</p></div>
-          <div><p class="font-semibold text-navy mb-1">Comida</p><p>Totopos con salsa mexicana y guacamole casero, sandwiches de baguette, plato de fruta fresca de temporada y un postre para terminar.</p></div>
-          <p class="text-slate-500 italic">Opciones vegetarianas disponibles bajo peticion.</p>
+          <div><p class="font-semibold text-navy mb-1">Unlimited Bar</p><p>Red &amp; white wine, margaritas, beer, rum, vodka, tequila, whiskey, fresh juices, sodas, and bottled water.</p></div>
+          <div><p class="font-semibold text-navy mb-1">Food</p><p>Tortilla chips with Mexican salsa &amp; homemade guacamole, fresh baguette sandwiches, seasonal fresh-cut fruit platter, and a sweet bite to finish.</p></div>
+          <p class="text-slate-500 italic">Vegetarian options available upon request.</p>
         </div>
       </div>
     </div>
     <div class="faq-item border border-border-light rounded-2xl overflow-hidden bg-white">
       <input class="hidden" id="faq-1" type="checkbox"/>
       <label class="flex items-center justify-between p-4 cursor-pointer" for="faq-1">
-        <span class="text-base font-semibold text-navy">Cuantas personas van en el tour compartido?</span>
+        <span class="text-base font-semibold text-navy">How many people are on the shared tour?</span>
         <span class="material-symbols-outlined text-slate-500 faq-chevron transition-transform duration-300">expand_more</span>
       </label>
       <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
-        <p class="text-sm text-slate-500 leading-relaxed">Nuestros tours compartidos normalmente tienen de 10 a 14 pasajeros a bordo. Es una excelente manera de conocer a otros viajeros mientras disfrutas de la experiencia de Cabo en un ambiente pequeno y social.</p>
+        <p class="text-sm text-slate-500 leading-relaxed">Our shared tours typically have 10–14 guests onboard. It's a great way to meet fellow travelers while enjoying the Cabo experience in a small, social setting.</p>
       </div>
     </div>
     <div class="faq-item border border-border-light rounded-2xl overflow-hidden bg-white">
       <input class="hidden" id="faq-2" type="checkbox"/>
       <label class="flex items-center justify-between p-4 cursor-pointer" for="faq-2">
-        <span class="text-base font-semibold text-navy">Que debo llevar?</span>
+        <span class="text-base font-semibold text-navy">What should I bring?</span>
         <span class="material-symbols-outlined text-slate-500 faq-chevron transition-transform duration-300">expand_more</span>
       </label>
       <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
-        <p class="text-sm text-slate-500 leading-relaxed">Trae protector solar, traje de bano, lentes de sol y camara. Todo lo demas esta incluido. Recomendamos protector solar biodegradable para proteger la vida marina.</p>
+        <p class="text-sm text-slate-500 leading-relaxed">Bring sunscreen, a swimsuit, sunglasses, and a camera. Everything else is provided. We recommend biodegradable sunscreen to protect the marine life.</p>
       </div>
     </div>
     <div class="faq-item border border-border-light rounded-2xl overflow-hidden bg-white">
       <input class="hidden" id="faq-3" type="checkbox"/>
       <label class="flex items-center justify-between p-4 cursor-pointer" for="faq-3">
-        <span class="text-base font-semibold text-navy">Necesito experiencia previa en navegacion?</span>
+        <span class="text-base font-semibold text-navy">Do I need previous sailing experience?</span>
         <span class="material-symbols-outlined text-slate-500 faq-chevron transition-transform duration-300">expand_more</span>
       </label>
       <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
-        <p class="text-sm text-slate-500 leading-relaxed">Para nada! Nuestra tripulacion profesional se encarga de toda la navegacion — tu solo relajate y disfruta del paseo. Tampoco necesitas experiencia para el snorkel; nuestros guias te explican todo y te acompanan en el agua.</p>
+        <p class="text-sm text-slate-500 leading-relaxed">Not at all! Our professional crew handles all the sailing — you just sit back, relax, and enjoy the ride. No experience is needed for snorkeling either; our guides will walk you through everything and stay with you in the water.</p>
       </div>
     </div>
     <div class="faq-item border border-border-light rounded-2xl overflow-hidden bg-white">
       <input class="hidden" id="faq-4" type="checkbox"/>
       <label class="flex items-center justify-between p-4 cursor-pointer" for="faq-4">
-        <span class="text-base font-semibold text-navy">Es una actividad apta para familias?</span>
+        <span class="text-base font-semibold text-navy">Is this a family-friendly activity?</span>
         <span class="material-symbols-outlined text-slate-500 faq-chevron transition-transform duration-300">expand_more</span>
       </label>
       <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
-        <p class="text-sm text-slate-500 leading-relaxed">Absolutamente! Este tour es ideal para familias con ninos de todas las edades. Proporcionamos chalecos salvavidas en todas las tallas, y la zona de snorkel en Pelican Rock tiene aguas tranquilas y poco profundas, perfectas para principiantes y ninos. Nuestra tripulacion tiene experiencia con pasajeros jovenes y se asegurara de que todos pasen un rato seguro y divertido.</p>
+        <p class="text-sm text-slate-500 leading-relaxed">Absolutely! This tour is great for families with kids of all ages. We provide life vests in all sizes, and the snorkeling area at Pelican Rock has calm, shallow waters that are perfect for beginners and children. Our crew is experienced with young guests and will make sure everyone has a safe and fun time.</p>
       </div>
     </div>
 </div>
@@ -534,29 +555,29 @@ const breadcrumbSchema = JSON.stringify({
 </div><!-- close FAQ wrapper -->
 <!-- Trust links -->
 <div class="mt-10 lg:max-w-[1400px] lg:mx-auto lg:px-10 px-5">
-  <p class="text-sm text-slate-500 text-center">¿Tienes preguntas antes de reservar? Conoce más <a href="/es/about-us/" class="text-accent-gold font-semibold hover:underline">sobre nosotros</a> o consulta nuestras <a href="/es/policies/" class="text-accent-gold font-semibold hover:underline">políticas de cancelación y clima</a>.</p>
+  <p class="text-sm text-slate-500 text-center">Have questions before booking? Learn more <a href="/about-us/" class="text-accent-gold font-semibold hover:underline">about us</a> or review our <a href="/policies/" class="text-accent-gold font-semibold hover:underline">cancellation &amp; weather policies</a>.</p>
 </div>
 
 <div class="mt-12 lg:max-w-[1400px] lg:mx-auto lg:px-10 px-5">
   <div class="rounded-2xl bg-navy text-white text-center px-6 py-10 lg:py-14 shadow-lg">
-    <h3 class="font-heading text-2xl lg:text-3xl mb-2">Tu lugar te espera</h3>
-    <p class="text-white/80 mb-6">Consulta disponibilidad en tiempo real</p>
-    <a href="javascript:void(0)" onclick="document.getElementById('rezdy-modal-shared-snorkel').classList.remove('hidden')" class="inline-block bg-gold text-navy font-bold text-[12px] px-8 py-4 rounded-2xl uppercase tracking-[0.2em] shadow-lg">Ver Disponibilidad</a>
+    <h3 class="font-heading text-2xl lg:text-3xl mb-2">Your spot is waiting</h3>
+    <p class="text-white/80 mb-6">Check live availability now</p>
+    <a href="javascript:void(0)" onclick="document.getElementById('rezdy-modal-shared-snorkel').classList.remove('hidden')" class="inline-block bg-gold text-navy font-bold text-[12px] px-8 py-4 rounded-2xl uppercase tracking-[0.2em] shadow-lg">Check Availability</a>
   </div>
 </div>
 
 <!-- Snorkeling at Pelican's Rock -->
 <div class="px-5 pt-8 pb-6 lg:max-w-[1400px] lg:mx-auto lg:px-10 lg:pt-16 lg:pb-10">
-  <div class="flex items-center gap-3 mb-4"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-lg lg:text-3xl text-navy">Snorkel en Pelican Rock</h3></div>
+  <div class="flex items-center gap-3 mb-4"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-lg lg:text-3xl text-navy">Snorkeling at Pelican Rock</h3></div>
   <div class="lg:flex lg:gap-10 lg:items-start">
-    <Image src={pelicanRockImg} alt="Snorkel en Pelican Rock" class="w-full h-48 lg:h-[300px] object-cover rounded-2xl mb-4 lg:mb-0 lg:w-1/2 lg:flex-shrink-0" width={800} height={500} />
+    <Image src={pelicanRockImg} alt="Snorkeling at Pelican Rock" class="w-full h-48 lg:h-[300px] object-cover rounded-2xl mb-4 lg:mb-0 lg:w-1/2 lg:flex-shrink-0" width={800} height={500} />
     <div>
-      <p class="text-base text-slate-500 leading-relaxed mb-3">Pelican Rock es uno de los puntos de snorkel mas preciados de Cabo, ubicado justo en la base del famoso arco de Land's End. Las aguas tranquilas y cristalinas albergan un ecosistema vibrante de coloridos peces tropicales, morenas, rayas y juguetones lobos marinos.</p>
-      <p class="text-base text-slate-500 leading-relaxed">Nuestra tripulacion ancla a pocos metros de la roca, dandote un asiento de primera fila al teatro submarino de la naturaleza — una experiencia que hace que los huespedes regresen ano tras ano.</p>
+      <p class="text-base text-slate-500 leading-relaxed mb-3">Pelican Rock is one of Cabo's most treasured snorkeling spots, nestled right at the base of the famous Land's End arch. The calm, crystal-clear waters shelter a thriving ecosystem of colorful tropical fish, moray eels, rays, and playful sea lions.</p>
+      <p class="text-base text-slate-500 leading-relaxed">Our crew anchors just meters from the rock, giving you a front-row seat to nature's underwater theater — an experience that keeps guests coming back year after year.</p>
       <div class="mt-5 grid grid-cols-3 gap-3">
-        <div class="bg-light-grey rounded-xl p-3 text-center border border-border-light"><p class="text-navy font-bold text-lg">15+</p><p class="text-[10px] text-slate-500 uppercase font-bold tracking-wider mt-1">Especies de Peces</p></div>
-        <div class="bg-light-grey rounded-xl p-3 text-center border border-border-light"><p class="text-navy font-bold text-lg">10m</p><p class="text-[10px] text-slate-500 uppercase font-bold tracking-wider mt-1">Visibilidad</p></div>
-        <div class="bg-light-grey rounded-xl p-3 text-center border border-border-light"><p class="text-navy font-bold text-lg">Todos</p><p class="text-[10px] text-slate-500 uppercase font-bold tracking-wider mt-1">Niveles</p></div>
+        <div class="bg-light-grey rounded-xl p-3 text-center border border-border-light"><p class="text-navy font-bold text-lg">15+</p><p class="text-[10px] text-slate-500 uppercase font-bold tracking-wider mt-1">Fish Species</p></div>
+        <div class="bg-light-grey rounded-xl p-3 text-center border border-border-light"><p class="text-navy font-bold text-lg">10m</p><p class="text-[10px] text-slate-500 uppercase font-bold tracking-wider mt-1">Visibility</p></div>
+        <div class="bg-light-grey rounded-xl p-3 text-center border border-border-light"><p class="text-navy font-bold text-lg">All</p><p class="text-[10px] text-slate-500 uppercase font-bold tracking-wider mt-1">Skill Levels</p></div>
       </div>
     </div>
   </div>
@@ -564,37 +585,37 @@ const breadcrumbSchema = JSON.stringify({
 
 <!-- Reviews -->
 <div class="px-5 pb-32 lg:max-w-[1400px] lg:mx-auto lg:px-10 lg:py-16 lg:pb-20">
-  <div class="flex items-center gap-3 mb-4 lg:mb-8"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-lg lg:text-3xl text-navy">Lo Que Dicen Nuestros Huespedes</h3></div>
+  <div class="flex items-center gap-3 mb-4 lg:mb-8"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-lg lg:text-3xl text-navy">What Our Guests Say</h3></div>
   <div class="relative">
     <div id="m-carousel" class="flex overflow-x-auto gap-4 lg:gap-6 no-scrollbar snap-x snap-mandatory pb-4 lg:overflow-hidden">
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Me encanto cada minuto! La tripulacion super bien, las bebidas no paraban, y el snorkel mucho mejor de lo que esperaba para un tour compartido. Un lobo marino se acerco a nosotros en Pelican Rock!"</p>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Loved every minute of this! Crew was great, drinks were flowing, and snorkeling was way better than I expected for a shared tour. A sea lion came right up to us at Pelican Rock!"</p>
         <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center text-white text-sm font-bold">SM</div><div><p class="text-sm font-bold text-navy">Sarah M.</p><p class="text-base text-slate-500">San Diego, CA</p></div></div>
       </div>
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"El mejor tour que hicimos en Cabo. El hecho de que sea un velero hace una diferencia enorme, mucho mas tranquilo que las lanchas dando vueltas. La comida y las bebidas tambien mejores de lo que esperaba."</p>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Best tour we did in Cabo. The fact that it's a sailboat makes a huge difference, so much quieter than the motorboats running around. Food and drinks were better than expected too."</p>
         <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-gold flex items-center justify-center text-white text-sm font-bold">JR</div><div><p class="text-sm font-bold text-navy">James R.</p><p class="text-base text-slate-500">Austin, TX</p></div></div>
       </div>
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Lo hicimos en nuestra luna de miel y que gran medio dia. Navegar junto al Arco, snorkel con muchisimos peces, y los cocteles de regreso fueron perfectos. Ya estamos planeando un viaje de vuelta."</p>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Did this on our honeymoon and what a great half day. Sailing past the Arch, snorkeling with tons of fish, and the cocktails on the way back were perfect. Already planning a return trip."</p>
         <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy/70 flex items-center justify-center text-white text-sm font-bold">AL</div><div><p class="text-sm font-bold text-navy">Amanda &amp; Luis</p><p class="text-base text-slate-500">Chicago, IL</p></div></div>
       </div>
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"La tripulacion vio un cardumen de mantarrayas en nuestra parada de snorkel y llevo a todos hasta ellas. De ninguna manera te pasa eso en uno de los barcos grandes de fiesta. El grupo pequeno si hace la diferencia."</p>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"The crew spotted a school of rays during our snorkel stop and brought everyone over to them. No way that happens on one of the big party boats. Small group really does make a difference."</p>
         <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy flex items-center justify-center text-white text-sm font-bold">MH</div><div><p class="text-sm font-bold text-navy">Michelle H.</p><p class="text-base text-slate-500">Denver, CO</p></div></div>
       </div>
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Realmente buen valor. Te incluye snorkel, navegacion al Arco, barra libre y snacks por menos de lo que otras companias cobran solo por el snorkel. Y el barco nunca estuvo lleno, que era lo que me preocupaba."</p>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Genuinely good value. You get snorkeling, sailing past the Arch, open bar, and snacks for less than what other companies charge just for snorkeling. And the boat was never crowded, which I was worried about."</p>
         <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-gold flex items-center justify-center text-white text-sm font-bold">KW</div><div><p class="text-sm font-bold text-navy">Kevin W.</p><p class="text-base text-slate-500">Seattle, WA</p></div></div>
       </div>
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Segunda vez haciendo el snorkel compartido con ellos. La primera fue tan buena que volvimos a reservar. Tripulacion distinta esta vez pero la misma vibra. No reservaria con nadie mas en Cabo."</p>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Second time doing the shared snorkel with these guys. First time was so good we just rebooked. Different crew this time but same vibe. Wouldn't book with anyone else in Cabo."</p>
         <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy/70 flex items-center justify-center text-white text-sm font-bold">TP</div><div><p class="text-sm font-bold text-navy">Tom P.</p><p class="text-base text-slate-500">Portland, OR</p></div></div>
       </div>
     </div>
@@ -620,14 +641,14 @@ const breadcrumbSchema = JSON.stringify({
   <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" onclick="document.getElementById('rezdy-modal-shared-snorkel').classList.add('hidden')"></div>
   <div class="relative z-10 bg-white rounded-3xl shadow-2xl w-[92%] max-w-lg max-h-[85vh] overflow-hidden flex flex-col">
     <div class="flex items-center justify-between px-5 py-4 border-b border-border-light">
-      <h3 class="font-heading text-navy text-lg font-semibold">Reservar — Tour de Snorkel Compartido</h3>
+      <h3 class="font-heading text-navy text-lg font-semibold">Book — Shared Snorkeling Tour</h3>
       <button onclick="document.getElementById('rezdy-modal-shared-snorkel').classList.add('hidden')" class="w-9 h-9 flex items-center justify-center rounded-full bg-surface-light text-navy hover:bg-navy hover:text-white transition-colors">
         <span class="material-symbols-outlined text-xl">close</span>
       </button>
     </div>
     <div class="flex-1 overflow-y-auto p-5">
-      <p class="text-center text-slate-500 text-sm mb-1">Selecciona una fecha para ver disponibilidad</p>
-      <p class="text-center mb-3"><span class="inline-block text-[11px] font-bold uppercase tracking-wider text-white bg-gold px-2.5 py-0.5 rounded-full">C&oacute;digo de Descuento: <span class="text-[13px] font-extrabold" data-promo-for="shared-snorkeling">Sail-30</span></span></p>
+      <p class="text-center text-slate-500 text-sm mb-1">Select a date to check availability</p>
+      <p class="text-center mb-3"><span class="inline-block text-[11px] font-bold uppercase tracking-wider text-white bg-gold px-2.5 py-0.5 rounded-full">Discount Code: <span class="text-[13px] font-extrabold" data-promo-for="shared-snorkeling">Sail-30</span></span></p>
       <iframe seamless="" width="300px" height="1000px" frameborder="0" class="rezdy mx-auto block" src="https://cabosailing.rezdy.com/calendarWidget/744011?iframe=true"></iframe>
     </div>
   </div>

@@ -1,26 +1,26 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import FloatingCTA from '../components/FloatingCTA.astro';
-import RezdyModal from '../components/RezdyModal.astro';
-import CarouselImage from '../components/CarouselImage.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import FloatingCTA from '../../components/FloatingCTA.astro';
+import RezdyModal from '../../components/RezdyModal.astro';
+import CarouselImage from '../../components/CarouselImage.astro';
 import { Image } from 'astro:assets';
 
 // Hero / main images
-import { scubaDiving as heroImg } from "../data/tour-heroes";
-import scubaImg7 from "../assets/images/scuba-diving/scuba-diving-adventure-in-tropical-waters.png";
-import scubaImg9 from "../assets/images/scuba-diving/vibrant-tropical-school-of-fish-underwater.png";
-import scubaImg5 from "../assets/images/scuba-diving/seal-and-divers-in-underwater-harmony.png";
-import scubaImg17 from "../assets/images/scuba-diving/diver-through-vibrant-coral-reef-window.png";
+import { scubaDiving as heroImg } from "../../data/tour-heroes";
+import scubaImg7 from "../../assets/images/scuba-diving/scuba-diving-adventure-in-tropical-waters.png";
+import scubaImg9 from "../../assets/images/scuba-diving/vibrant-tropical-school-of-fish-underwater.png";
+import scubaImg5 from "../../assets/images/scuba-diving/seal-and-divers-in-underwater-harmony.png";
+import scubaImg17 from "../../assets/images/scuba-diving/diver-through-vibrant-coral-reef-window.png";
 
 // Boat images (carousel originals kept for hero/gallery)
-import heroThumb1 from "../assets/images/scuba-diving/school-of-fish-in-clear-ocean.png";
-import galleryLeft from "../assets/images/guests-on-sailboats/snorkeler-exploring-underwater-paradise.png";
-import galleryRight from "../assets/images/scuba-diving/swirling-school-of-fish-in-blue-water.png";
-import heroThumb2 from "../assets/images/guests-on-sailboats/snorkelers-enjoying-a-sunny-boat-ride.png";
-import heroThumb3 from "../assets/images/guests-on-yachts/paddleboarding-adventure-on-a-sunny-beach.png";
-import heroThumb4 from "../assets/images/guests-on-yachts/celebration-on-the-boat-at-sea.png";
+import heroThumb1 from "../../assets/images/scuba-diving/school-of-fish-in-clear-ocean.png";
+import galleryLeft from "../../assets/images/guests-on-sailboats/snorkeler-exploring-underwater-paradise.png";
+import galleryRight from "../../assets/images/scuba-diving/swirling-school-of-fish-in-blue-water.png";
+import heroThumb2 from "../../assets/images/guests-on-sailboats/snorkelers-enjoying-a-sunny-boat-ride.png";
+import heroThumb3 from "../../assets/images/guests-on-yachts/paddleboarding-adventure-on-a-sunny-beach.png";
+import heroThumb4 from "../../assets/images/guests-on-yachts/celebration-on-the-boat-at-sea.png";
 
 const touristTripSchema = JSON.stringify({
   "@context": "https://schema.org",
@@ -35,7 +35,7 @@ const touristTripSchema = JSON.stringify({
   },
   "offers": {
     "@type": "Offer",
-    "url": "https://cabosailing.com/scuba-diving/",
+    "url": "https://cabosailing.com/tours/scuba-diving/",
     "priceCurrency": "USD",
     "availability": "https://schema.org/InStock"
   }
@@ -52,7 +52,7 @@ const breadcrumbSchema = JSON.stringify({
 });
 ---
 
-<BaseLayout title="Private Scuba Diving Charters in Cabo San Lucas | Cabo Sailing" description="Private scuba diving charters to Cabo's top dive sites — Pelican Rock, Land's End, Santa María. PADI guides, full gear and surface support included." ogImage="/og/scuba-diving-sailboat.jpg" ogImageAlt="Scuba diving in Cabo San Lucas" hreflangs={{ en: '/scuba-diving', es: '/es/scuba-diving' }}>
+<BaseLayout title="Private Scuba Diving Charters in Cabo San Lucas | Cabo Sailing" description="Private scuba diving charters to Cabo's top dive sites — Pelican Rock, Land's End, Santa María. PADI guides, full gear and surface support included." ogImage="/og/scuba-diving-sailboat.jpg" ogImageAlt="Scuba diving in Cabo San Lucas" hreflangs={{ en: '/tours/scuba-diving', es: '/es/tours/scuba-diving' }}>
   <script slot="head" type="application/ld+json" set:html={touristTripSchema} />
   <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
   <Header variant="subpage" activePage="scuba-diving" />
@@ -99,7 +99,7 @@ const breadcrumbSchema = JSON.stringify({
         <nav class="flex items-center gap-1.5 text-xs text-slate-500 mb-4" aria-label="Breadcrumb">
           <a href="/" class="hover:text-gold transition-colors">Home</a>
           <span class="material-symbols-outlined text-[14px]">chevron_right</span>
-          <span>Tours</span>
+          <a href="/tours/" class="hover:text-gold transition-colors">Tours</a>
           <span class="material-symbols-outlined text-[14px]">chevron_right</span>
           <span class="text-navy font-semibold">Scuba Diving</span>
         </nav>
@@ -383,7 +383,7 @@ const breadcrumbSchema = JSON.stringify({
             <nav class="flex items-center gap-1.5 text-xs text-slate-500 mb-4" aria-label="Breadcrumb">
               <a href="/" class="hover:text-gold transition-colors">Home</a>
               <span class="material-symbols-outlined text-[14px]">chevron_right</span>
-              <span>Tours</span>
+              <a href="/tours/" class="hover:text-gold transition-colors">Tours</a>
               <span class="material-symbols-outlined text-[14px]">chevron_right</span>
               <span class="text-navy font-semibold">Scuba Diving</span>
             </nav>

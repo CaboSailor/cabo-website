@@ -16,7 +16,7 @@ sidebarType: "default"
 
 Cabo es un destino vacacional impresionante, sin duda muy asociado con las aventuras de vela y crucero.
 
-Aunque tambi&eacute;n hay un mont&oacute;n de actividades para disfrutar en tierra firme, como golf, explorar el centro o ir a observar aves en el hermoso estuario de San Jos&eacute; del Cabo, la joya de la corona de Cabo seguramente son los muchos <a href="/es/whale-watching/" class="text-accent-gold font-semibold hover:underline">tours de avistamiento de ballenas</a> disponibles, que te permiten ver a estas majestuosas y dulces criaturas de cerca.
+Aunque tambi&eacute;n hay un mont&oacute;n de actividades para disfrutar en tierra firme, como golf, explorar el centro o ir a observar aves en el hermoso estuario de San Jos&eacute; del Cabo, la joya de la corona de Cabo seguramente son los muchos <a href="/es/tours/whale-watching/" class="text-accent-gold font-semibold hover:underline">tours de avistamiento de ballenas</a> disponibles, que te permiten ver a estas majestuosas y dulces criaturas de cerca.
 
 Sin embargo, si como muchos, tu sueño es presenciar tal espect&aacute;culo, ¿c&oacute;mo lograrlo si tambi&eacute;n sufres de mareos? Aunque el Mar de Cort&eacute;s y las aguas que rodean el Golfo de M&eacute;xico son mucho m&aacute;s tranquilas que las del oc&eacute;ano Atl&aacute;ntico, estar en un bote o yate m&aacute;s peque&ntilde;o todav&iacute;a puede ser un reto para los m&aacute;s afectados.
 
@@ -52,7 +52,7 @@ S&iacute;, esto puede parecer lo &uacute;ltimo que querr&iacute;as hacer para pr
 
 Come alimentos sencillos que no sean grasosos ni picantes, como galletas saladas o pl&aacute;tano. Esto ayudar&aacute; a forrar tu est&oacute;mago, y acompa&ntilde;ado de menta o jengibre, realmente puede ayudar a aliviar los s&iacute;ntomas.
 
-No te preocupes si est&aacute;s muy nervioso para comer antes, o si tu hotel solo ofrece un desayuno con alimentos grasos o muy sazonados que no puedes evitar. Muchos <a href="/es/private-sunset/" class="text-accent-gold font-semibold hover:underline">cruceros</a> ofrecen un almuerzo ligero o aperitivos como parte de su itinerario, as&iacute; que tal vez encuentres que comer un poco de las deliciosas opciones disponibles te ayuda.
+No te preocupes si est&aacute;s muy nervioso para comer antes, o si tu hotel solo ofrece un desayuno con alimentos grasos o muy sazonados que no puedes evitar. Muchos <a href="/es/tours/private-sunset/" class="text-accent-gold font-semibold hover:underline">cruceros</a> ofrecen un almuerzo ligero o aperitivos como parte de su itinerario, as&iacute; que tal vez encuentres que comer un poco de las deliciosas opciones disponibles te ayuda.
 
 ---
 
@@ -78,7 +78,7 @@ Si tu mareo es muy severo y simplemente no puedes salir al agua, no sientas que 
 
 Como mencionamos al principio del art&iacute;culo, hay una gran cantidad de actividades en tierra para disfrutar, as&iacute; como kil&oacute;metros de hermosa costa para explorar.
 
-Tambi&eacute;n hay <a href="/es/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">tours de snorkel</a> que ofrecen una duraci&oacute;n m&aacute;s corta de navegaci&oacute;n y te permiten acercarte a la enorme variedad de impresionante vida marina que Cabo alberga.
+Tambi&eacute;n hay <a href="/es/tours/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">tours de snorkel</a> que ofrecen una duraci&oacute;n m&aacute;s corta de navegaci&oacute;n y te permiten acercarte a la enorme variedad de impresionante vida marina que Cabo alberga.
 
 Incluso podr&iacute;as usar este viaje de vela m&aacute;s corto para probar el agua (juego de palabras intencional) y poner a prueba los m&eacute;todos contra el mareo que mencionamos arriba.
 

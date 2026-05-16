@@ -8,11 +8,11 @@ category: "Attractions"
 categoryLink: "/travel-guide-attractions/"
 activeSubmenu: "attractions"
 bestTime: "Dec–Apr — peak whale season"
-relatedActivity: "/whale-watching/"
+relatedActivity: "/tours/whale-watching/"
 sidebarType: "default"
 ---
 
-The waters surrounding Cabo San Lucas are among the most spectacular places on earth to whale watch. Every year, humpbacks, gray whales, and even the elusive blue whale travel thousands of miles from the cold Arctic waters to the warm, calm seas of Baja California Sur. These gentle giants arrive to mate, give birth, and nurture their young before heading back on their long journey north. Standing on the shores of Cabo, it is possible to spot whales breaching, tail-slapping, and even spy-hopping just beyond the waves. But the most rewarding experience happens on the water. <a href="/whale-watching/" class="text-accent-gold font-semibold hover:underline">Whale watching in Cabo San Lucas</a> is an intimate encounter with nature. The sight of a mother humpback teaching her calf to swim or the sound of a whale's exhale breaking the silence of the sea stays with you forever.
+The waters surrounding Cabo San Lucas are among the most spectacular places on earth to whale watch. Every year, humpbacks, gray whales, and even the elusive blue whale travel thousands of miles from the cold Arctic waters to the warm, calm seas of Baja California Sur. These gentle giants arrive to mate, give birth, and nurture their young before heading back on their long journey north. Standing on the shores of Cabo, it is possible to spot whales breaching, tail-slapping, and even spy-hopping just beyond the waves. But the most rewarding experience happens on the water. <a href="/tours/whale-watching/" class="text-accent-gold font-semibold hover:underline">Whale watching in Cabo San Lucas</a> is an intimate encounter with nature. The sight of a mother humpback teaching her calf to swim or the sound of a whale's exhale breaking the silence of the sea stays with you forever.
 
 To witness this incredible migration at its best, planning the right trip is key. Understanding the whale-watching season, picking the right tour, and respecting marine life ensure a memorable experience.
 
@@ -41,7 +41,7 @@ Selecting a responsible, knowledgeable tour operator makes all the difference. E
 - **Expert Guides** &mdash; A knowledgeable marine biologist or naturalist enhances the trip, providing valuable insights about whale behaviors and conservation efforts.
 - **Respectful Distance** &mdash; Ethical tours maintain a safe distance from whales, allowing them to move freely without stress.
 
-Consider booking a private yacht charter for a luxurious and exclusive whale-watching experience. These charters have full control of the itinerary, offering an intimate way to witness marine life without the crowds. <a href="/whale-watching/" class="text-accent-gold font-semibold hover:underline">Cabo yacht charters</a> provide an elegant setting to enjoy the wonders of the sea.
+Consider booking a private yacht charter for a luxurious and exclusive whale-watching experience. These charters have full control of the itinerary, offering an intimate way to witness marine life without the crowds. <a href="/tours/whale-watching/" class="text-accent-gold font-semibold hover:underline">Cabo yacht charters</a> provide an elegant setting to enjoy the wonders of the sea.
 
 ---
 

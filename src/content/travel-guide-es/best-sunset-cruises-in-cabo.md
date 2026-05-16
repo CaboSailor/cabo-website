@@ -8,7 +8,7 @@ category: "Activities"
 categoryLink: "/es/travel-guide-activities/"
 activeSubmenu: "activities"
 bestTime: "Todo el año — Cabo tiene más de 300 días de sol"
-relatedActivity: "/es/private-sunset/"
+relatedActivity: "/es/tours/private-sunset/"
 sidebarType: "default"
 ---
 
@@ -22,7 +22,7 @@ Con tantas formas de navegar, festejar o simplemente relajarte hacia la noche, e
 
 Si tu idea de la noche perfecta incluye m&uacute;sica suave, buen vino y un men&uacute; gourmet servido en un yate elegante, este es tu crucero al atardecer. Los paseos de lujo en velero ofrecen una experiencia refinada con bebidas premium, atenci&oacute;n personalizada de la tripulaci&oacute;n y una vista privilegiada del sol ocult&aacute;ndose detr&aacute;s del famoso Arco de Cabo. Estos cruceros suelen limitar su capacidad para mantener un ambiente tranquilo y espacioso. Lo m&aacute;s probable es que est&eacute;s a bordo de un yate o catamar&aacute;n de fabricaci&oacute;n francesa, donde el ambiente es rom&aacute;ntico y sereno.
 
-Desde el viento suave llenando las velas hasta el men&uacute; cuidado y la barra libre, todo est&aacute; pensado para tu comodidad y elegancia. Es perfecto para parejas o grupos peque&ntilde;os que quieren evitar las multitudes sin renunciar a la belleza del mar abierto. Los <a href="/es/private-sunset/" class="text-accent-gold font-semibold hover:underline">charters de velero de lujo en Cabo San Lucas</a> son una excelente combinaci&oacute;n de lujo y privacidad.
+Desde el viento suave llenando las velas hasta el men&uacute; cuidado y la barra libre, todo est&aacute; pensado para tu comodidad y elegancia. Es perfecto para parejas o grupos peque&ntilde;os que quieren evitar las multitudes sin renunciar a la belleza del mar abierto. Los <a href="/es/tours/private-sunset/" class="text-accent-gold font-semibold hover:underline">charters de velero de lujo en Cabo San Lucas</a> son una excelente combinaci&oacute;n de lujo y privacidad.
 
 ---
 
@@ -98,4 +98,4 @@ Por &uacute;ltimo, piensa en la embarcaci&oacute;n. ¿Prefieres un velero tradic
 
 No importa qu&eacute; crucero al atardecer elijas, te espera algo especial. Las vistas, la brisa y el ambiente se unen para crear un recuerdo que dura mucho m&aacute;s all&aacute; de tu tiempo en Cabo.
 
-En Cabo Sailing Ocean Adventures llevamos casi dos d&eacute;cadas ayudando a nuestros hu&eacute;spedes a crear recuerdos duraderos. Desde <a href="/es/private-sunset/" class="text-accent-gold font-semibold hover:underline">charters de yate privado</a> hasta cruceros en velero compartidos, ofrecemos experiencias que combinan comodidad, flexibilidad y un servicio impecable. Nuestra tripulaci&oacute;n cuida cada detalle, para que t&uacute; solo te relajes y disfrutes el espect&aacute;culo. Cuando est&eacute;s listo para navegar hacia el atardecer de Cabo, ser&aacute; un honor recibirte a bordo.
+En Cabo Sailing Ocean Adventures llevamos casi dos d&eacute;cadas ayudando a nuestros hu&eacute;spedes a crear recuerdos duraderos. Desde <a href="/es/tours/private-sunset/" class="text-accent-gold font-semibold hover:underline">charters de yate privado</a> hasta cruceros en velero compartidos, ofrecemos experiencias que combinan comodidad, flexibilidad y un servicio impecable. Nuestra tripulaci&oacute;n cuida cada detalle, para que t&uacute; solo te relajes y disfrutes el espect&aacute;culo. Cuando est&eacute;s listo para navegar hacia el atardecer de Cabo, ser&aacute; un honor recibirte a bordo.

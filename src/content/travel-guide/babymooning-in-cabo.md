@@ -94,7 +94,7 @@ Not everything in Cabo is off the table when you're expecting. Here's a clear br
   </tbody>
 </table>
 
-A <a href="/private-sunset/" class="text-accent-gold font-semibold hover:underline">private sunset cruise</a> is the most popular babymoon activity we see &mdash; it's relaxing, romantic, and you can customize the experience (mocktails, specific food requests, a quiet playlist).
+A <a href="/tours/private-sunset/" class="text-accent-gold font-semibold hover:underline">private sunset cruise</a> is the most popular babymoon activity we see &mdash; it's relaxing, romantic, and you can customize the experience (mocktails, specific food requests, a quiet playlist).
 
 ---
 

@@ -85,7 +85,7 @@ While Hawaii's tropical vibe comes with lush, green surroundings, Cabo presents 
 
 Hawaii boasts more than 750 miles of coastline, giving travelers an array of beaches to choose from. Waikiki Beach on Oahu is perfect for those who enjoy vibrant city life combined with surf culture, dining, and nightlife. Kaanapali Beach in Maui is known for its long, walkable shoreline and calm waters, while Poipu Beach on Kauai is a family favorite with gentle waves and safe swimming areas. The Big Island's black sand beaches provide a striking natural experience, and Punalu&#699;u Beach is particularly famous for its resident sea turtles. Hidden coves and less-crowded stretches of sand reward visitors seeking quiet and seclusion.
 
-Cabo San Lucas may have a shorter coastline, but its beaches are unforgettable. Lover's Beach at Land's End is framed by dramatic rock formations, making it one of the most photographed spots in the region. Medano Beach is lively and ideal for swimming, sunbathing, and enjoying beachside dining. Santa Maria Beach, a quieter spot, gives excellent <a href="/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">snorkeling</a> opportunities with crystal-clear waters.
+Cabo San Lucas may have a shorter coastline, but its beaches are unforgettable. Lover's Beach at Land's End is framed by dramatic rock formations, making it one of the most photographed spots in the region. Medano Beach is lively and ideal for swimming, sunbathing, and enjoying beachside dining. Santa Maria Beach, a quieter spot, gives excellent <a href="/tours/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">snorkeling</a> opportunities with crystal-clear waters.
 
 While Hawaii has more variety, Cabo impresses with its striking desert-meets-ocean scenery and intimate, picturesque beach experiences.
 
@@ -161,7 +161,7 @@ Hawaii's entertainment offerings lean heavily into cultural experiences. You can
 
 Cabo San Lucas is famous for its lively nightlife, attracting travelers seeking energetic and diverse evening experiences. From beach clubs to upscale bars and nightclubs, there is something for every taste. The marina hosts numerous trendy venues, while iconic spots like Cabo Wabo Cantina, co-owned by rock legend Sammy Hagar, feature live music and a spirited atmosphere.
 
-For those who prefer a quieter evening, Cabo presents more relaxed options, such as <a href="/private-sunset/" class="text-accent-gold font-semibold hover:underline">sunset cruises</a> and beachfront bars. However, if you are looking for an exciting night out, Cabo has much more to offer compared to Hawaii's laid-back bar scene.
+For those who prefer a quieter evening, Cabo presents more relaxed options, such as <a href="/tours/private-sunset/" class="text-accent-gold font-semibold hover:underline">sunset cruises</a> and beachfront bars. However, if you are looking for an exciting night out, Cabo has much more to offer compared to Hawaii's laid-back bar scene.
 
 Already leaning toward Cabo? Browse our <a href="/travel-guide/" class="text-accent-gold font-semibold hover:underline">complete travel guide</a> for more tips on planning your trip.
 

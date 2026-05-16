@@ -66,7 +66,7 @@ The important caveat: **not all Cabo beaches are safe for swimming.** The Pacifi
     <tr class="border-b border-gray-100">
       <td class="px-4 py-3 font-semibold">8&ndash;11</td>
       <td class="px-4 py-3">Swim independently and use full snorkel gear</td>
-      <td class="px-4 py-3">Beach snorkeling at Chileno or Santa Mar&iacute;a. Can join a calm <a href="/private-snorkeling/" class="text-accent-gold font-semibold hover:underline">private snorkeling tour</a> with parent supervision</td>
+      <td class="px-4 py-3">Beach snorkeling at Chileno or Santa Mar&iacute;a. Can join a calm <a href="/tours/private-snorkeling/" class="text-accent-gold font-semibold hover:underline">private snorkeling tour</a> with parent supervision</td>
     </tr>
     <tr>
       <td class="px-4 py-3 font-semibold">12+</td>
@@ -114,7 +114,7 @@ Getting the right gear makes or breaks the experience. An ill-fitting mask that 
     <li>&bull; <strong>Guides in the water</strong> &mdash; look for tours where guides swim alongside guests, not just watch from the boat</li>
     <li>&bull; <strong>Shallow snorkel stops</strong> &mdash; some tours go to deep-water sites that aren&rsquo;t suitable for kids. Ask about depth and conditions at each stop</li>
     <li>&bull; <strong>Shade and snacks</strong> &mdash; boats with covered areas and provided snacks/drinks make the overall experience more comfortable for families</li>
-    <li>&bull; <strong>Flexible schedule</strong> &mdash; a <a href="/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">shared snorkeling tour</a> with a family-friendly operator is a good option for most families</li>
+    <li>&bull; <strong>Flexible schedule</strong> &mdash; a <a href="/tours/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">shared snorkeling tour</a> with a family-friendly operator is a good option for most families</li>
   </ul>
 </div>
 

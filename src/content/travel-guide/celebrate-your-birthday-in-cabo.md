@@ -8,7 +8,7 @@ category: "Activities"
 categoryLink: "/travel-guide-activities/"
 activeSubmenu: "activities"
 bestTime: "Year-round — Cabo celebrates every season"
-relatedActivity: "/bachelorette/"
+relatedActivity: "/tours/bachelorette/"
 sidebarType: "default"
 ---
 
@@ -62,4 +62,4 @@ As with most things in Cabo, if you think you might want a spa day during your v
 
 There is so much to see and do in Cabo, making it the ideal place to celebrate a birthday, whether you want the celebration to be a relaxing or exciting one. With an open mind and a little planning, you're sure to make plenty of birthday memories with your friends or family to look back on.
 
-Looking to celebrate on the water? Our <a href="/bachelorette/" class="text-accent-gold font-semibold hover:underline">private party cruises</a> are perfect for birthdays, bachelorettes, and group celebrations.
+Looking to celebrate on the water? Our <a href="/tours/bachelorette/" class="text-accent-gold font-semibold hover:underline">private party cruises</a> are perfect for birthdays, bachelorettes, and group celebrations.

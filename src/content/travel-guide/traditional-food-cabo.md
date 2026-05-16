@@ -8,7 +8,7 @@ category: "Culture & Food"
 categoryLink: "/travel-guide-culture/"
 activeSubmenu: "culture"
 bestTime: "Year-round — fresh seafood and local cuisine every season"
-relatedActivity: "/private-sunset/"
+relatedActivity: "/tours/private-sunset/"
 sidebarType: "default"
 ---
 
@@ -56,4 +56,4 @@ It is usually prepared with indigenous Guaycura for various ceremonies. This is 
 
 You should not miss out on any delicacies which will help you to know more about Cabo San Lucas.
 
-Want to taste Cabo's flavors at sea? Our <a href="/private-sunset/" class="text-accent-gold font-semibold hover:underline">private sunset cruises</a> include a chef-prepared meal on the water &mdash; the freshest way to experience local cuisine.
+Want to taste Cabo's flavors at sea? Our <a href="/tours/private-sunset/" class="text-accent-gold font-semibold hover:underline">private sunset cruises</a> include a chef-prepared meal on the water &mdash; the freshest way to experience local cuisine.

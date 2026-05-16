@@ -97,7 +97,7 @@ Hoy el pueblo es una mezcla de familias mexicanas que han vivido aqu&iacute; por
 La regi&oacute;n alrededor de Todos Santos es rica en biodiversidad:
 
 <ul class="spot-list">
-  <li><strong>Avistamiento de ballenas (Dic&ndash;Abr)</strong> &mdash; las ballenas jorobadas y grises se ven desde la costa del Pac&iacute;fico. Para un encuentro m&aacute;s cercano, reserva un <a href="/es/whale-watching/" class="text-accent-gold font-semibold hover:underline">tour de avistamiento</a> desde Cabo.</li>
+  <li><strong>Avistamiento de ballenas (Dic&ndash;Abr)</strong> &mdash; las ballenas jorobadas y grises se ven desde la costa del Pac&iacute;fico. Para un encuentro m&aacute;s cercano, reserva un <a href="/es/tours/whale-watching/" class="text-accent-gold font-semibold hover:underline">tour de avistamiento</a> desde Cabo.</li>
   <li><strong>Liberaci&oacute;n de tortugas marinas (Jul&ndash;Dic)</strong> &mdash; varios programas de conservaci&oacute;n en la zona permiten que los visitantes ayuden a liberar tortugas beb&eacute; al atardecer. Consulta los horarios localmente.</li>
   <li><strong>Flora del desierto</strong> &mdash; la biosfera de la Sierra de la Laguna rodea el pueblo, con aproximadamente 125 especies de plantas end&eacute;micas, incluyendo cactus card&oacute;n, &aacute;rboles elefante e higueras silvestres.</li>
   <li><strong>Observaci&oacute;n de aves</strong> &mdash; se han documentado m&aacute;s de 40 especies en la zona, incluyendo &aacute;guilas pescadoras, pel&iacute;canos y fragatas a lo largo de la costa.</li>

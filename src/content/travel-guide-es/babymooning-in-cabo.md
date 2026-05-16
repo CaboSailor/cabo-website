@@ -94,7 +94,7 @@ No todo en Cabo est&aacute; descartado cuando est&aacute;s embarazada. Aqu&iacut
   </tbody>
 </table>
 
-Un <a href="/es/private-sunset/" class="text-accent-gold font-semibold hover:underline">crucero privado al atardecer</a> es la actividad de babymoon m&aacute;s popular que vemos &mdash; es relajante, rom&aacute;ntico y puedes personalizar la experiencia (mocktails, peticiones espec&iacute;ficas de comida, una playlist tranquila).
+Un <a href="/es/tours/private-sunset/" class="text-accent-gold font-semibold hover:underline">crucero privado al atardecer</a> es la actividad de babymoon m&aacute;s popular que vemos &mdash; es relajante, rom&aacute;ntico y puedes personalizar la experiencia (mocktails, peticiones espec&iacute;ficas de comida, una playlist tranquila).
 
 ---
 
