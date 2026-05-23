@@ -13,6 +13,7 @@ import relaxingLuxuryBoat from "../../assets/images/guests-on-yachts/relaxing-da
 import sailingGuestsWaving from "../../assets/images/guests-on-sailboats/cabo-sailing-guests-waving.jpg";
 import cheersCoastalAdventure from "../../assets/images/guests-on-sailboats/cheers-on-a-sunny-coastal-adventure.png";
 import Chileno from "../../assets/images/blog/chileno-bay-cabo-snorkeling.jpg";
+import SantaMaria from "../../assets/images/blog/joyful-moments-by-the-sparkling-sea.png";
 
 const touristTripSchema = JSON.stringify({
   "@context": "https://schema.org",
@@ -515,6 +516,16 @@ const breadcrumbSchema = JSON.stringify({
         <p class="text-sm text-slate-700 leading-relaxed">Yes, a premium open bar featuring spirits, beer, wine, and soft drinks is included for all guests throughout the duration of the charter.</p>
       </div>
     </div>
+    <div class="faq-item border border-border-light rounded-2xl overflow-hidden bg-white">
+      <input class="hidden" id="faq-4" type="checkbox"/>
+      <label class="flex items-center justify-between p-4 cursor-pointer" for="faq-4">
+        <span class="text-base font-semibold text-navy">Are there shared cruises options?</span>
+        <span class="material-symbols-outlined text-slate-500 faq-chevron transition-transform duration-300">expand_more</span>
+      </label>
+      <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
+        <p class="text-sm text-slate-700 leading-relaxed">Yes. Cabo Sailing offers <a href="/tours/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">shared snorkeling cruises</a> and <a href="/tours/shared-sunset/" class="text-accent-gold font-semibold hover:underline">shared sunset sailing cruises</a> for guests who prefer a small-group experience instead of a private charter.</p>
+      </div>
+    </div>
 </div>
 </div>
 </div><!-- close FAQ wrapper -->
@@ -558,7 +569,7 @@ const breadcrumbSchema = JSON.stringify({
     <div class="px-5 pb-6 lg:max-w-[1400px] lg:mx-auto lg:px-10 lg:pb-10">
       <div class="flex items-center gap-3 mb-4"><div class="w-1 h-6 bg-gold rounded-full"></div><h3 class="text-lg lg:text-3xl text-navy">Snorkeling at Santa Mar&iacute;a Bay</h3></div>
       <div class="lg:flex lg:gap-10 lg:items-start">
-        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsPNXa1dALuRh7RdwyoRf93TCW1fJtrL0kaOjRkJ5k1272Y4OJqjAX5NrV2iXzb2LCN_llfLfVJtxTluIdzkWhNSqNzUPx6wAprsrWurADI6oGQbeAC2IteDT4KNG_J-4XqrPA6IQ4p5cbton6Fa-Sd8g3vPEfxR3xMElXTmmINn23_-OP89a8rgBDXbNFjJVWxlln2hbvdyZw6ajy9TauowJqm0fgMILlpngP4MzbKmss4Qy_1Zi7RmYw4XItoHpivSHT5yhBTt0" alt="Snorkeling at Santa María Bay" class="w-full h-48 lg:h-[300px] object-cover rounded-2xl mb-4 lg:mb-0 lg:w-1/2 lg:flex-shrink-0"/>
+        <Image src={SantaMaria} alt="Snorkeling at Santa María Bay" class="w-full h-48 lg:h-[300px] object-cover rounded-2xl mb-4 lg:mb-0 lg:w-1/2 lg:flex-shrink-0" width={800} height={500} />
         <div>
           <p class="text-base text-slate-700 leading-relaxed mb-3">Santa Mar&iacute;a Bay is one of the most beautiful and protected snorkeling spots in Los Cabos. This horseshoe-shaped bay features calm, clear turquoise waters and a sandy bottom, making it ideal for swimming and snorkeling.</p>
           <p class="text-base text-slate-700 leading-relaxed">The area is part of a marine sanctuary, often filled with colorful fish and vibrant marine life. Santa Mar&iacute;a Bay is a favorite stop during our private yacht cruises along the Cabo coastline.</p>
