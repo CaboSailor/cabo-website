@@ -6,7 +6,10 @@ import FloatingCTA from '../components/FloatingCTA.astro';
 import RezdyModal from '../components/RezdyModal.astro';
 import CarouselImage from '../components/CarouselImage.astro';
 import WhaleFlukeIcon from '../components/WhaleFlukeIcon.astro';
-import { Image } from 'astro:assets';
+import Video from '../components/Video.astro';
+import { Image, getImage } from 'astro:assets';
+
+import sailingPosterSource from "../assets/images/guests-on-sailboats/luxury-sailboat-in-tropical-waters.png";
 
 import heroSailingCoastline from "../assets/images/guests-on-sailboats/sailing-near-cabos-rocky-coastline.png";
 import sailingCalmWaters from "../assets/images/guests-on-sailboats/sailing-on-the-calm-ocean-waters.png";
@@ -49,11 +52,37 @@ const breadcrumbSchema = JSON.stringify({
     { "@type": "ListItem", "position": 3, "name": "Sailing in Cabo San Lucas" }
   ]
 });
+
+const sailingPoster = await getImage({
+  src: sailingPosterSource,
+  width: 1280,
+  format: 'webp',
+  quality: 80,
+});
+const sailingPosterAbsUrl = new URL(sailingPoster.src, Astro.site).href;
+
+const videoSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Real Sailing in Cabo San Lucas — Shared & Private Sailboat Cruises",
+  "description": "Real sailing in Cabo San Lucas aboard our 38' and 42' sailboats. Shared cruises from $102 per person and private charters from $701 — departing daily from Cabo Marina.",
+  "thumbnailUrl": sailingPosterAbsUrl,
+  "uploadDate": "2026-05-24",
+  "duration": "PT1M8S",
+  "contentUrl": "https://www.youtube.com/watch?v=Zx7KO9vSCEs",
+  "embedUrl": "https://www.youtube.com/embed/Zx7KO9vSCEs",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Cabo Sailing Ocean Adventures",
+    "logo": { "@type": "ImageObject", "url": "https://cabosailing.com/og/home.jpg" }
+  }
+});
 ---
 
 <BaseLayout bodyClass="bg-white font-body text-text-main antialiased min-h-screen flex flex-col relative" title="Sailing in Cabo San Lucas — Sailboat Cruises | Cabo Sailing" description="Sailing in Cabo San Lucas — shared sailboat cruises from $102/person and private sailing charters from $701. Real sailing, all-inclusive, departing daily from Cabo Marina." ogImage="/og/sailing-cabo-san-lucas.jpg" ogImageAlt="Sailing in Cabo San Lucas — sailboat cruises and private charters" hreflangs={{ en: '/sailing-cabo-san-lucas', es: '/es/sailing-cabo-san-lucas' }}>
   <script slot="head" type="application/ld+json" set:html={touristTripSchema} />
   <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
+  <script slot="head" type="application/ld+json" set:html={videoSchema} />
   <Header variant="subpage" activePage="fleet" />
 
   <style is:inline>
@@ -237,6 +266,17 @@ const breadcrumbSchema = JSON.stringify({
     </div>
   </div>
 </div>
+
+<!-- ===== Promo video ===== -->
+<section class="mt-14 px-5 lg:max-w-[1100px] lg:mx-auto lg:px-10">
+  <div class="flex items-center gap-3 mb-6"><div class="w-1 h-6 bg-gold rounded-full"></div><h2 class="text-lg lg:text-3xl text-navy">See what sailing in Cabo really feels like</h2></div>
+  <Video
+    videoId="Zx7KO9vSCEs"
+    title="Real Sailing in Cabo San Lucas — Shared & Private Sailboat Cruises"
+    poster={sailingPoster.src}
+  />
+  <p class="text-sm text-slate-500 text-center mt-3 italic">Filmed aboard our 38' and 42' sailboats off Cabo San Lucas.</p>
+</section>
 
 <!-- ===== Choose your sailing experience ===== -->
 <div id="choose-your-sailing" class="mt-14 lg:max-w-[1400px] lg:mx-auto lg:px-10 lg:py-8 px-5">

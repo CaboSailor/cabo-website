@@ -1,0 +1,48 @@
+---
+// Lazy-loaded YouTube embed using lite-youtube-embed.
+// Loads only the poster image on first paint (~3KB). The full YouTube
+// iframe (~1.2MB) is only fetched when the user clicks play.
+//
+// Usage:
+//   <Video videoId="Zx7KO9vSCEs" title="..." poster="/images/video/foo.jpg" />
+//
+// If `poster` is omitted, YouTube's hosted thumbnail is used.
+
+interface Props {
+  videoId: string;
+  title: string;
+  poster?: string;
+  aspectRatio?: string;
+}
+const {
+  videoId,
+  title,
+  poster = `https://i.ytimg.com/vi/${videoId}/maxresdefault.jpg`,
+  aspectRatio = '16/9',
+} = Astro.props;
+---
+
+<lite-youtube
+  videoid={videoId}
+  style={`background-image: url('${poster}'); aspect-ratio: ${aspectRatio};`}
+  playlabel={`Play: ${title}`}
+>
+  <button type="button" class="lty-playbtn" aria-label={`Play: ${title}`}></button>
+</lite-youtube>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.3.3/src/lite-yt-embed.css" />
+<script src="https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.3.3/src/lite-yt-embed.js" defer is:inline></script>
+
+<style>
+  lite-youtube {
+    background-position: center;
+    background-size: cover;
+    display: block;
+    position: relative;
+    width: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+  }
+</style>

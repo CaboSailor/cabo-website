@@ -6,7 +6,10 @@ import FloatingCTA from '../../components/FloatingCTA.astro';
 import RezdyModal from '../../components/RezdyModal.astro';
 import CarouselImage from '../../components/CarouselImage.astro';
 import WhaleFlukeIcon from '../../components/WhaleFlukeIcon.astro';
-import { Image } from 'astro:assets';
+import Video from '../../components/Video.astro';
+import { Image, getImage } from 'astro:assets';
+
+import sailingPosterSource from "../../assets/images/guests-on-sailboats/luxury-sailboat-in-tropical-waters.png";
 
 import heroSailingCoastline from "../../assets/images/guests-on-sailboats/sailing-near-cabos-rocky-coastline.png";
 import sailingCalmWaters from "../../assets/images/guests-on-sailboats/sailing-on-the-calm-ocean-waters.png";
@@ -46,11 +49,38 @@ const breadcrumbSchema = JSON.stringify({
     { "@type": "ListItem", "position": 3, "name": "Navegar en Cabo San Lucas" }
   ]
 });
+
+const sailingPoster = await getImage({
+  src: sailingPosterSource,
+  width: 1280,
+  format: 'webp',
+  quality: 80,
+});
+const sailingPosterAbsUrl = new URL(sailingPoster.src, Astro.site).href;
+
+const videoSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Navegación Real en Cabo San Lucas — Cruceros en Velero Compartidos y Privados",
+  "description": "Navegación real en Cabo San Lucas a bordo de nuestros veleros de 38' y 42'. Cruceros compartidos desde $102 por persona y charters privados desde $701 — salidas diarias desde Marina Cabo.",
+  "thumbnailUrl": sailingPosterAbsUrl,
+  "uploadDate": "2026-05-24",
+  "duration": "PT1M8S",
+  "contentUrl": "https://www.youtube.com/watch?v=Zx7KO9vSCEs",
+  "embedUrl": "https://www.youtube.com/embed/Zx7KO9vSCEs",
+  "inLanguage": "es",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Cabo Sailing Ocean Adventures",
+    "logo": { "@type": "ImageObject", "url": "https://cabosailing.com/og/home.jpg" }
+  }
+});
 ---
 
 <BaseLayout bodyClass="bg-white font-body text-text-main antialiased min-h-screen flex flex-col relative" title="Navegar en Cabo San Lucas — Cruceros en Velero | Cabo Sailing" description="Navegar en Cabo San Lucas — cruceros en velero compartidos desde $102/persona y charters privados desde $701. Navegación real, todo incluido, salidas diarias desde Marina Cabo." ogImage="/og/sailing-cabo-san-lucas.jpg" ogImageAlt="Navegar en Cabo San Lucas — cruceros en velero y charters privados" hreflangs={{ en: '/sailing-cabo-san-lucas', es: '/es/sailing-cabo-san-lucas' }}>
   <script slot="head" type="application/ld+json" set:html={touristTripSchema} />
   <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
+  <script slot="head" type="application/ld+json" set:html={videoSchema} />
   <Header variant="subpage" activePage="fleet" />
 
   <style is:inline>
@@ -234,6 +264,17 @@ const breadcrumbSchema = JSON.stringify({
     </div>
   </div>
 </div>
+
+<!-- ===== Video promocional ===== -->
+<section class="mt-14 px-5 lg:max-w-[1100px] lg:mx-auto lg:px-10">
+  <div class="flex items-center gap-3 mb-6"><div class="w-1 h-6 bg-gold rounded-full"></div><h2 class="text-lg lg:text-3xl text-navy">Mira cómo se vive navegar en Cabo</h2></div>
+  <Video
+    videoId="Zx7KO9vSCEs"
+    title="Navegación Real en Cabo San Lucas — Cruceros en Velero Compartidos y Privados"
+    poster={sailingPoster.src}
+  />
+  <p class="text-sm text-slate-500 text-center mt-3 italic">Filmado a bordo de nuestros veleros de 38' y 42' frente a Cabo San Lucas.</p>
+</section>
 
 <!-- ===== Choose your sailing experience ===== -->
 <div id="choose-your-sailing" class="mt-14 lg:max-w-[1400px] lg:mx-auto lg:px-10 lg:py-8 px-5">
