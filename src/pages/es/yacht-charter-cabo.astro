@@ -6,7 +6,10 @@ import FloatingCTA from '../../components/FloatingCTA.astro';
 import RezdyModal from '../../components/RezdyModal.astro';
 import CarouselImage from '../../components/CarouselImage.astro';
 import WhaleFlukeIcon from '../../components/WhaleFlukeIcon.astro';
-import { Image } from 'astro:assets';
+import Video from '../../components/Video.astro';
+import { Image, getImage } from 'astro:assets';
+
+import yachtPosterSource from "../../assets/images/guests-on-yachts/relaxing-day-on-a-luxury-boat.png";
 
 import heroYachtCharter from "../../assets/images/guests-on-yachts/cabo-yacht-charter-guests-01.jpg";
 import yachtCoastline from "../../assets/images/guests-on-yachts/luxury-yacht-cruising-on-sunny-coastline.png";
@@ -48,11 +51,38 @@ const breadcrumbSchema = JSON.stringify({
     { "@type": "ListItem", "position": 3, "name": "Charter de Yate en Cabo" }
   ]
 });
+
+const yachtPoster = await getImage({
+  src: yachtPosterSource,
+  width: 1280,
+  format: 'webp',
+  quality: 80,
+});
+const yachtPosterAbsUrl = new URL(yachtPoster.src, Astro.site).href;
+
+const videoSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Charter de Yate Privado en Cabo San Lucas — Cruceros de Lujo con Cabo Sailing",
+  "description": "Charter de yate privado en Cabo San Lucas — yates de lujo para familias, celebraciones y grupos. Con tripulación y todo incluido: bar, comida, equipo de snorkel y paddleboards. Desde $1,148.",
+  "thumbnailUrl": yachtPosterAbsUrl,
+  "uploadDate": "2026-05-24",
+  "duration": "PT1M5S",
+  "contentUrl": "https://www.youtube.com/watch?v=UUmenZURAOs",
+  "embedUrl": "https://www.youtube.com/embed/UUmenZURAOs",
+  "inLanguage": "es",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Cabo Sailing Ocean Adventures",
+    "logo": { "@type": "ImageObject", "url": "https://cabosailing.com/og/home.jpg" }
+  }
+});
 ---
 
 <BaseLayout bodyClass="bg-white font-body text-text-main antialiased min-h-screen flex flex-col relative" title="Charter de Yate en Cabo San Lucas — Yate Privado | Cabo Sailing" description="Charter de yate privado y renta de yate de lujo en Cabo San Lucas. 3 yates de lujo, con tripulación, todo incluido — bar, comida, equipo de snorkel y paddleboards. Desde $1,148." ogImage="/og/yacht-charter-cabo.jpg" ogImageAlt="Charter de yate privado y renta de yate de lujo en Cabo San Lucas" hreflangs={{ en: '/yacht-charter-cabo', es: '/es/yacht-charter-cabo' }}>
   <script slot="head" type="application/ld+json" set:html={touristTripSchema} />
   <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
+  <script slot="head" type="application/ld+json" set:html={videoSchema} />
   <Header variant="subpage" activePage="fleet" />
 
   <style is:inline>
@@ -248,6 +278,17 @@ const breadcrumbSchema = JSON.stringify({
     </a>
   </div>
 </div>
+
+<!-- ===== Video promocional ===== -->
+<section class="mt-14 px-5 lg:max-w-[1100px] lg:mx-auto lg:px-10">
+  <div class="flex items-center gap-3 mb-6"><div class="w-1 h-6 bg-gold rounded-full"></div><h2 class="text-lg lg:text-3xl text-navy">Mira cómo se vive un charter de yate en Cabo</h2></div>
+  <Video
+    videoId="UUmenZURAOs"
+    title="Charter de Yate Privado en Cabo San Lucas — Cruceros de Lujo con Cabo Sailing"
+    poster={yachtPoster.src}
+  />
+  <p class="text-sm text-slate-500 text-center mt-3 italic">Filmado a bordo de nuestros yates de lujo frente a Cabo San Lucas.</p>
+</section>
 
 <!-- ===== Choose Your Yacht ===== -->
 <div id="choose-your-yacht" class="mt-14 lg:max-w-[1400px] lg:mx-auto lg:px-10 lg:py-8 px-5">
