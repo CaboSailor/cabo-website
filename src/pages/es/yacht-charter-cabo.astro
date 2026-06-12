@@ -7,6 +7,7 @@ import RezdyModal from '../../components/RezdyModal.astro';
 import CarouselImage from '../../components/CarouselImage.astro';
 import WhaleFlukeIcon from '../../components/WhaleFlukeIcon.astro';
 import Video from '../../components/Video.astro';
+import WavyLines from '../../components/WavyLines.astro';
 import { Image, getImage } from 'astro:assets';
 
 import yachtPosterSource from "../../assets/images/guests-on-yachts/relaxing-day-on-a-luxury-boat.png";
@@ -280,14 +281,19 @@ const videoSchema = JSON.stringify({
 </div>
 
 <!-- ===== Video promocional ===== -->
-<section class="mt-14 px-5 lg:max-w-[1100px] lg:mx-auto lg:px-10">
-  <div class="flex items-center gap-3 mb-6"><div class="w-1 h-6 bg-gold rounded-full"></div><h2 class="text-lg lg:text-3xl text-navy">Mira cómo se vive un charter de yate en Cabo</h2></div>
-  <Video
-    videoId="UUmenZURAOs"
-    title="Charter de Yate Privado en Cabo San Lucas — Cruceros de Lujo con Cabo Sailing"
-    poster={yachtPoster.src}
-  />
-  <p class="text-sm text-slate-500 text-center mt-3 italic">Filmado a bordo de nuestros yates de lujo frente a Cabo San Lucas.</p>
+<section class="relative mt-14 overflow-hidden">
+  <WavyLines />
+  <div class="relative z-10 px-5 lg:max-w-[1400px] lg:mx-auto lg:px-10">
+    <div class="flex items-center gap-3 mb-6"><div class="w-1 h-6 bg-gold rounded-full"></div><h2 class="text-lg lg:text-3xl text-navy">Mira cómo se vive un charter de yate en Cabo</h2></div>
+    <div class="lg:max-w-[1100px] lg:mx-auto">
+      <Video
+        videoId="UUmenZURAOs"
+        title="Charter de Yate Privado en Cabo San Lucas — Cruceros de Lujo con Cabo Sailing"
+        poster={yachtPoster.src}
+      />
+      <p class="text-sm text-slate-500 text-center mt-3 italic">Filmado a bordo de nuestros yates de lujo frente a Cabo San Lucas.</p>
+    </div>
+  </div>
 </section>
 
 <!-- ===== Choose Your Yacht ===== -->
@@ -461,7 +467,7 @@ const videoSchema = JSON.stringify({
       <div>
         <div class="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center mb-3"><span class="material-symbols-outlined text-gold">sailing</span></div>
         <h3 class="text-base font-bold mb-1">Yates y verdaderos veleros</h3>
-        <p class="text-sm text-white/80 leading-relaxed">Cinco embarcaciones, un solo equipo. Elige un yate a motor para mayor comodidad o un velero para la experiencia auténtica &mdash; mismo estándar de servicio en ambos.</p>
+        <p class="text-sm text-white/80 leading-relaxed">Ocho embarcaciones, un solo equipo. Elige un yate a motor para mayor comodidad o un velero para la experiencia auténtica &mdash; mismo estándar de servicio en ambos.</p>
       </div>
       <div>
         <div class="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center mb-3"><span class="material-symbols-outlined text-gold">handshake</span></div>

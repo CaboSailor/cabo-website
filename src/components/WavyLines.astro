@@ -1,0 +1,24 @@
+---
+// Decorative wavy lines spanning the full container width.
+//
+// Drop inside a `relative overflow-hidden` wrapper to use as a
+// behind-content backdrop. Designed for the promo-video sections where
+// the video is centered and these lines fill the empty space on both
+// sides + pass behind the video itself.
+//
+// Hidden on mobile (only renders at `lg` and up) since there's no
+// empty side-space on narrow viewports.
+//
+// Color follows `currentColor` so it can be themed by the parent's
+// text color. Default usage: text-accent-gold on the parent.
+---
+<svg
+  class="hidden lg:block absolute inset-0 w-full h-full pointer-events-none text-accent-gold"
+  viewBox="0 0 1600 600"
+  preserveAspectRatio="none"
+  aria-hidden="true"
+>
+  <path d="M0 100 C 200 50, 500 160, 800 100 C 1100 40, 1400 140, 1600 100" stroke="currentColor" stroke-width="1.5" fill="none" opacity="0.3" />
+  <path d="M0 300 C 250 240, 600 380, 1000 290 C 1300 230, 1450 330, 1600 300" stroke="currentColor" stroke-width="2" fill="none" opacity="0.5" />
+  <path d="M0 500 C 200 440, 550 560, 900 480 C 1250 410, 1450 510, 1600 500" stroke="currentColor" stroke-width="1.5" fill="none" opacity="0.3" />
+</svg>

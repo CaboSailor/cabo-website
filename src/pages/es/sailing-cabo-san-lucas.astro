@@ -7,6 +7,7 @@ import RezdyModal from '../../components/RezdyModal.astro';
 import CarouselImage from '../../components/CarouselImage.astro';
 import WhaleFlukeIcon from '../../components/WhaleFlukeIcon.astro';
 import Video from '../../components/Video.astro';
+import WavyLines from '../../components/WavyLines.astro';
 import { Image, getImage } from 'astro:assets';
 
 import sailingPosterSource from "../../assets/images/guests-on-sailboats/luxury-sailboat-in-tropical-waters.png";
@@ -265,14 +266,19 @@ const videoSchema = JSON.stringify({
 </div>
 
 <!-- ===== Video promocional ===== -->
-<section class="mt-14 px-5 lg:max-w-[1100px] lg:mx-auto lg:px-10">
-  <div class="flex items-center gap-3 mb-6"><div class="w-1 h-6 bg-gold rounded-full"></div><h2 class="text-lg lg:text-3xl text-navy">Mira cómo se vive navegar en Cabo</h2></div>
-  <Video
-    videoId="Zx7KO9vSCEs"
-    title="Navegación Real en Cabo San Lucas — Cruceros en Velero Compartidos y Privados"
-    poster={sailingPoster.src}
-  />
-  <p class="text-sm text-slate-500 text-center mt-3 italic">Filmado a bordo de nuestros veleros de 38' y 42' frente a Cabo San Lucas.</p>
+<section class="relative mt-14 overflow-hidden">
+  <WavyLines />
+  <div class="relative z-10 px-5 lg:max-w-[1400px] lg:mx-auto lg:px-10">
+    <div class="flex items-center gap-3 mb-6"><div class="w-1 h-6 bg-gold rounded-full"></div><h2 class="text-lg lg:text-3xl text-navy">Mira cómo se vive navegar en Cabo</h2></div>
+    <div class="lg:max-w-[1100px] lg:mx-auto">
+      <Video
+        videoId="Zx7KO9vSCEs"
+        title="Navegación Real en Cabo San Lucas — Cruceros en Velero Compartidos y Privados"
+        poster={sailingPoster.src}
+      />
+      <p class="text-sm text-slate-500 text-center mt-3 italic">Filmado a bordo de nuestros veleros de 38' y 42' frente a Cabo San Lucas.</p>
+    </div>
+  </div>
 </section>
 
 <!-- ===== Choose your sailing experience ===== -->

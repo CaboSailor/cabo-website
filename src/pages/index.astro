@@ -57,9 +57,54 @@ for (const [key, paths] of Object.entries(carouselConfig.fleet)) {
   fleetImages[key] = getImages(paths as string[]);
 }
 
+// FAQ schema — mirrors the on-page FAQ section below
+const faqSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the best private yacht cruise in Cabo?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Cabo Sailing offers private yacht cruises in Cabo San Lucas for couples, families, and groups. Cruises include an open bar, food, snorkeling gear, towels, paddleboards, crew, and sightseeing at Land's End, the Arch, Lover's Beach, and nearby snorkeling bays." }
+    },
+    {
+      "@type": "Question",
+      "name": "What's included in the cruise?",
+      "acceptedAnswer": { "@type": "Answer", "text": "All cruises include crew, open bar, snorkeling gear, and light food or snacks. Private charters can be customized based on your preferences." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the cruise private or shared?",
+      "acceptedAnswer": { "@type": "Answer", "text": "We offer both options. Private charters are exclusively for your group, while shared cruises are limited to small groups (max 12 guests) for a more comfortable experience." }
+    },
+    {
+      "@type": "Question",
+      "name": "How many people are on board?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Private cruises vary by your group (up to 18–20 guests depending on the yacht). Shared cruises are intentionally limited to 12 guests to avoid crowds." }
+    },
+    {
+      "@type": "Question",
+      "name": "What is your cancellation policy?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Free cancellation or changes up to 48 hours before departure. 50% refund between 48–24 hours. No refund within 24 hours or for no-shows." }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens in case of bad weather?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Safety comes first. If conditions are not suitable, we'll reschedule your cruise or provide a full refund." }
+    },
+    {
+      "@type": "Question",
+      "name": "Why choose you over other Cabo cruises?",
+      "acceptedAnswer": { "@type": "Answer", "text": "We operate our own fleet, limit group sizes, and focus on personalized service—offering a more comfortable and premium experience than typical crowded tours." }
+    }
+  ]
+});
+
 ---
 
 <BaseLayout title="Private Yacht & Sailboat Charters in Cabo San Lucas | Cabo Sailing" description="Private yacht and sailboat charters in Cabo San Lucas — sunset cruises, snorkeling, whale watching and bachelorettes. Crew, drinks and gear included." ogImage="/og/home.jpg" ogImageAlt="Cabo Sailing luxury yacht in Cabo San Lucas" hreflangs={{ en: '/', es: '/es/' }}>
+
+<script slot="head" type="application/ld+json" set:html={faqSchema} />
 
 <Header variant="home" activePage="home" />
 
@@ -173,7 +218,7 @@ for (const [key, paths] of Object.entries(carouselConfig.fleet)) {
     <div class="space-y-4">
       <h2 class="text-3xl lg:text-4xl font-serif-italic text-navy leading-tight">Private Snorkeling Cruise <span class="text-xl lg:text-2xl text-navy/70">(Yacht or Sailboat)</span></h2>
       <p class="text-accent-gold-dark text-[11px] font-bold tracking-widest uppercase">Trusted by hundreds of guests every month</p>
-      <p class="text-navy/70 text-sm font-medium flex items-center gap-1.5"><span class="material-symbols-outlined text-base">schedule</span> 3 Hours</p>
+      <p class="text-navy/70 text-sm font-medium flex items-center gap-1.5"><span class="material-symbols-outlined text-base">schedule</span> 3 Hours <span class="text-navy/30 px-0.5">&bull;</span> <span class="text-accent-gold-dark font-bold">From $495</span></p>
     </div>
     <p class="text-navy/70 text-sm lg:text-base leading-relaxed">A private cruise to Cabo's best snorkeling spots with time to swim, relax, and enjoy food and drinks onboard.<br/>Perfect for families, couples, or groups who want a fun, flexible experience at their own pace.<br/>No crowds, more time in the water, and a crew focused entirely on your group.</p>
     <ul class="space-y-2">
@@ -220,7 +265,7 @@ for (const [key, paths] of Object.entries(carouselConfig.fleet)) {
     <div class="space-y-4">
       <h2 class="text-3xl lg:text-4xl font-serif-italic text-navy leading-tight">Private Sunset Cruise <span class="text-xl lg:text-2xl text-navy/70">(Yacht or Sailboat)</span></h2>
       <p class="text-accent-gold-dark text-[11px] font-bold tracking-widest uppercase">Favorite choice for couples</p>
-      <p class="text-navy/70 text-sm font-medium flex items-center gap-1.5"><span class="material-symbols-outlined text-base">schedule</span> 3 Hours</p>
+      <p class="text-navy/70 text-sm font-medium flex items-center gap-1.5"><span class="material-symbols-outlined text-base">schedule</span> 3 Hours <span class="text-navy/30 px-0.5">&bull;</span> <span class="text-accent-gold-dark font-bold">From $495</span></p>
     </div>
     <p class="text-navy/70 text-sm lg:text-base leading-relaxed">A private evening cruise past Cabo's Arch with drinks, light bites, and unforgettable sunset views.<br/>Ideal for couples, celebrations, or anyone looking for a relaxed and memorable experience.<br/>More intimate, smoother, and far less crowded than typical sunset tours.</p>
     <ul class="space-y-2">
@@ -235,56 +280,9 @@ for (const [key, paths] of Object.entries(carouselConfig.fleet)) {
   </div>
 </div>
 
-<!-- Activity 3: Whale Watching -->
-<div data-activity="whale-watching" class="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12 items-center">
-  <div class="md:col-span-7 relative group">
-    <div class="absolute top-6 left-6 z-30 bg-accent-gold-dark text-white px-4 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase shadow-xl">Sells Out Fast</div>
-
-    <div class={`aspect-[4/3] md:aspect-[16/9] overflow-hidden rounded-lg shadow-2xl ${activityImages['whale-watching'].length > 1 ? 'activity-carousel' : ''} relative`}>
-      {activityImages['whale-watching'].map((img, idx) => (
-        <Image src={img} alt="Whale Watching" class="activity-slide absolute inset-0 w-full h-full object-cover" style={`opacity:${idx === 0 ? 1 : 0};`} width={1200} height={750} />
-      ))}
-      {activityImages['whale-watching'].length > 1 && (
-        <><button type="button" aria-label="Previous slide" class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_left</span></button>
-        <button type="button" aria-label="Next slide" class="carousel-next absolute right-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_right</span></button>
-        <div class="carousel-dots absolute bottom-3 left-1/2 -translate-x-1/2 z-20 flex gap-2"></div>
-        <div class="swipe-hint md:hidden absolute inset-0 z-20 pointer-events-none flex items-center justify-center">
-          <div class="bg-black/55 backdrop-blur-sm text-white px-5 py-2.5 rounded-full flex items-center gap-2 shadow-2xl">
-            <span class="material-symbols-outlined text-2xl">arrow_back</span>
-            <span class="text-[11px] uppercase tracking-widest font-bold">Swipe</span>
-            <span class="material-symbols-outlined text-2xl">arrow_forward</span>
-          </div>
-        </div></>
-      )}
-    </div>
-    <div class="absolute -bottom-4 right-2 md:-right-10 bg-teal-900 p-3 md:p-8 max-w-[260px] md:max-w-[280px] shadow-2xl z-20 border-b-4 border-teal-400 rounded-lg bg-opacity-80 backdrop-blur-sm">
-      <h3 class="text-teal-200 font-serif-italic text-2xl md:text-3xl mb-0 md:mb-4">Ocean Giants</h3>
-      <p class="text-teal-50/70 hidden md:block text-xs md:text-sm leading-relaxed">A front-row seat to the most majestic migration on the planet.</p>
-    </div>
-  </div>
-
-  <div class="md:col-span-5 space-y-3 pt-4 md:pt-0">
-    <div class="space-y-4">
-      <h2 class="text-3xl lg:text-4xl font-serif-italic text-navy leading-tight">Private Whale Watching Cruise <span class="text-xl lg:text-2xl text-navy/70">(Yacht or Sailboat)</span></h2>
-      <p class="text-accent-gold-dark text-[11px] font-bold tracking-widest uppercase">Last month's best seller</p>
-      <p class="text-navy/70 text-sm font-medium flex items-center gap-1.5"><span class="material-symbols-outlined text-base">schedule</span> 3 Hours</p>
-    </div>
-    <p class="text-navy/70 text-sm lg:text-base leading-relaxed">A private cruise to see Cabo's whales up close, guided by an experienced crew in their natural habitat.<br/>Perfect for families, couples, or small groups looking for a more personal and comfortable wildlife experience.<br/>Closer encounters, no crowds, and the flexibility to follow the whales at your own pace.</p>
-    <ul class="space-y-2">
-      <li class="flex items-start gap-3 text-navy/70 font-medium text-sm lg:text-base leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> Your own private yacht or sailboat</li>
-      <li class="flex items-start gap-3 text-navy/70 font-medium text-sm lg:text-base leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> Up-close whale encounters — front-row views in their natural habitat</li>
-      <li class="flex items-start gap-3 text-navy/70 font-medium text-sm lg:text-base leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> All-inclusive experience — drinks, snacks, and expert crew</li>
-    </ul>
-    <div class="pt-2 space-y-4">
-      <a href="/tours/whale-watching/" class="block text-center bg-transparent text-navy border border-navy w-full py-3 rounded-lg font-bold tracking-widest text-sm hover:bg-navy/5 transition-all uppercase">Whale Watching Details</a>
-    </div>
-    <div class="md:hidden border-b border-border-light mt-8"></div>
-  </div>
-</div>
-
-<!-- Activity 4: Bachelorette Party -->
+<!-- Activity 3: Bachelorette Party -->
 <div data-activity="bachelorette-party" class="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12 items-center">
-  <div class="md:col-span-7 order-1 md:order-2 relative group">
+  <div class="md:col-span-7 relative group">
     <div class="absolute top-6 left-6 z-30 bg-accent-gold-dark text-white px-4 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase shadow-xl">VIP Experience</div>
 
     <div class={`aspect-[4/3] md:aspect-[16/9] overflow-hidden rounded-lg shadow-2xl ${activityImages['bachelorette-party'].length > 1 ? 'activity-carousel' : ''} relative`}>
@@ -304,17 +302,17 @@ for (const [key, paths] of Object.entries(carouselConfig.fleet)) {
         </div></>
       )}
     </div>
-    <div class="absolute -bottom-4 left-2 md:-left-10 bg-indigo-900 p-3 md:p-8 max-w-[260px] md:max-w-[280px] shadow-2xl z-20 border-b-4 border-pink-400 rounded-lg bg-opacity-80 backdrop-blur-sm">
+    <div class="absolute -bottom-4 right-2 md:-right-10 bg-indigo-900 p-3 md:p-8 max-w-[260px] md:max-w-[280px] shadow-2xl z-20 border-b-4 border-pink-400 rounded-lg bg-opacity-80 backdrop-blur-sm">
       <h3 class="text-indigo-100 font-serif-italic text-2xl md:text-3xl mb-0 md:mb-4">Ultimate Soir&eacute;e</h3>
       <p class="text-indigo-200 hidden md:block text-xs md:text-sm leading-relaxed">Custom themes and cocktails for a celebration she will never forget.</p>
     </div>
   </div>
 
-  <div class="md:col-span-5 order-2 md:order-1 space-y-3 pt-4 md:pt-0">
+  <div class="md:col-span-5 space-y-3 pt-4 md:pt-0">
     <div class="space-y-4">
       <h2 class="text-3xl lg:text-4xl font-serif-italic text-navy leading-tight">Private Bachelorette Party Cruise <span class="text-xl lg:text-2xl text-navy/70">(Yacht or Sailboat)</span></h2>
       <p class="text-accent-gold-dark text-[11px] font-bold tracking-widest uppercase">Trusted event experts</p>
-      <p class="text-navy/70 text-sm font-medium flex items-center gap-1.5"><span class="material-symbols-outlined text-base">schedule</span> 3 Hours</p>
+      <p class="text-navy/70 text-sm font-medium flex items-center gap-1.5"><span class="material-symbols-outlined text-base">schedule</span> 3 Hours <span class="text-navy/30 px-0.5">&bull;</span> <span class="text-accent-gold-dark font-bold">From $495</span></p>
     </div>
     <p class="text-navy/70 text-sm lg:text-base leading-relaxed">A private cruise designed for celebrating—music, drinks, great views, and plenty of time to relax and have fun with your group.<br/>Perfect for bachelorette parties looking for a stylish, fun, and stress-free experience on the water.<br/>Your own space, no crowds, and a crew that takes care of everything so you can focus on celebrating.</p>
     <ul class="space-y-2">
@@ -324,6 +322,52 @@ for (const [key, paths] of Object.entries(carouselConfig.fleet)) {
     </ul>
     <div class="pt-2 space-y-4">
       <a href="/tours/bachelorette/" class="block text-center bg-transparent text-navy border border-navy w-full py-3 rounded-lg font-bold tracking-widest text-sm hover:bg-navy/5 transition-all uppercase">Bachelorette Cruise Details</a>
+    </div>
+    <div class="md:hidden border-b border-border-light mt-8"></div>
+  </div>
+</div>
+
+<!-- Activity 4: Whale Watching -->
+<div data-activity="whale-watching" class="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12 items-center">
+  <div class="md:col-span-7 order-1 md:order-2 relative group">
+
+    <div class={`aspect-[4/3] md:aspect-[16/9] overflow-hidden rounded-lg shadow-2xl ${activityImages['whale-watching'].length > 1 ? 'activity-carousel' : ''} relative`}>
+      {activityImages['whale-watching'].map((img, idx) => (
+        <Image src={img} alt="Whale Watching" class="activity-slide absolute inset-0 w-full h-full object-cover" style={`opacity:${idx === 0 ? 1 : 0};`} width={1200} height={750} />
+      ))}
+      {activityImages['whale-watching'].length > 1 && (
+        <><button type="button" aria-label="Previous slide" class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_left</span></button>
+        <button type="button" aria-label="Next slide" class="carousel-next absolute right-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_right</span></button>
+        <div class="carousel-dots absolute bottom-3 left-1/2 -translate-x-1/2 z-20 flex gap-2"></div>
+        <div class="swipe-hint md:hidden absolute inset-0 z-20 pointer-events-none flex items-center justify-center">
+          <div class="bg-black/55 backdrop-blur-sm text-white px-5 py-2.5 rounded-full flex items-center gap-2 shadow-2xl">
+            <span class="material-symbols-outlined text-2xl">arrow_back</span>
+            <span class="text-[11px] uppercase tracking-widest font-bold">Swipe</span>
+            <span class="material-symbols-outlined text-2xl">arrow_forward</span>
+          </div>
+        </div></>
+      )}
+    </div>
+    <div class="absolute -bottom-4 left-2 md:-left-10 bg-teal-900 p-3 md:p-8 max-w-[260px] md:max-w-[280px] shadow-2xl z-20 border-b-4 border-teal-400 rounded-lg bg-opacity-80 backdrop-blur-sm">
+      <h3 class="text-teal-200 font-serif-italic text-2xl md:text-3xl mb-0 md:mb-4">Ocean Giants</h3>
+      <p class="text-teal-50/70 hidden md:block text-xs md:text-sm leading-relaxed">A front-row seat to the most majestic migration on the planet.</p>
+    </div>
+  </div>
+
+  <div class="md:col-span-5 order-2 md:order-1 space-y-3 pt-4 md:pt-0">
+    <div class="space-y-4">
+      <h2 class="text-3xl lg:text-4xl font-serif-italic text-navy leading-tight">Private Whale Watching Cruise <span class="text-xl lg:text-2xl text-navy/70">(Yacht or Sailboat)</span></h2>
+      <p class="text-accent-gold-dark text-[11px] font-bold tracking-widest uppercase">Available during whale season, Dec&ndash;Apr.</p>
+      <p class="text-navy/70 text-sm font-medium flex items-center gap-1.5"><span class="material-symbols-outlined text-base">schedule</span> 3 Hours <span class="text-navy/30 px-0.5">&bull;</span> <span class="text-accent-gold-dark font-bold">From $495</span></p>
+    </div>
+    <p class="text-navy/70 text-sm lg:text-base leading-relaxed">A private cruise to see Cabo's whales up close, guided by an experienced crew in their natural habitat.<br/>Perfect for families, couples, or small groups looking for a more personal and comfortable wildlife experience.<br/>Closer encounters, no crowds, and the flexibility to follow the whales at your own pace.</p>
+    <ul class="space-y-2">
+      <li class="flex items-start gap-3 text-navy/70 font-medium text-sm lg:text-base leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> Your own private yacht or sailboat</li>
+      <li class="flex items-start gap-3 text-navy/70 font-medium text-sm lg:text-base leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> Up-close whale encounters — front-row views in their natural habitat</li>
+      <li class="flex items-start gap-3 text-navy/70 font-medium text-sm lg:text-base leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> All-inclusive experience — drinks, snacks, and expert crew</li>
+    </ul>
+    <div class="pt-2 space-y-4">
+      <a href="/tours/whale-watching/" class="block text-center bg-transparent text-navy border border-navy w-full py-3 rounded-lg font-bold tracking-widest text-sm hover:bg-navy/5 transition-all uppercase">Whale Watching Details</a>
     </div>
   </div>
 </div>
@@ -367,7 +411,7 @@ for (const [key, paths] of Object.entries(carouselConfig.fleet)) {
     <div class="space-y-4">
       <h2 class="text-3xl lg:text-4xl font-serif-italic text-navy leading-tight">Small Group Shared Snorkeling Cruise</h2>
       <p class="text-accent-gold-dark text-[11px] font-bold tracking-widest uppercase">Favorite for small groups</p>
-      <p class="text-navy/70 text-sm font-medium flex items-center gap-1.5"><span class="material-symbols-outlined text-base">schedule</span> 3 Hours</p>
+      <p class="text-navy/70 text-sm font-medium flex items-center gap-1.5"><span class="material-symbols-outlined text-base">schedule</span> 3 Hours <span class="text-navy/30 px-0.5">&bull;</span> <span class="text-accent-gold-dark font-bold">From $72</span></p>
     </div>
     <p class="text-navy/70 text-sm lg:text-base leading-relaxed">A shared sailing trip to Cabo's best snorkeling spots with drinks, light food, and a friendly atmosphere.<br/>Perfect for travelers who want a high-quality experience without booking a private boat.<br/>Limited to small groups, so it feels comfortable—not crowded like typical tours.</p>
     <ul class="space-y-2">
@@ -414,7 +458,7 @@ for (const [key, paths] of Object.entries(carouselConfig.fleet)) {
     <div class="space-y-4">
       <h2 class="text-3xl lg:text-4xl font-serif-italic text-navy leading-tight">Small Group Shared Sunset Sailing Cruise</h2>
       <p class="text-accent-gold-dark text-[11px] font-bold tracking-widest uppercase">Trusted by hundreds of guests every month</p>
-      <p class="text-navy/70 text-sm font-medium flex items-center gap-1.5"><span class="material-symbols-outlined text-base">schedule</span> 2 Hours</p>
+      <p class="text-navy/70 text-sm font-medium flex items-center gap-1.5"><span class="material-symbols-outlined text-base">schedule</span> 2 Hours <span class="text-navy/30 px-0.5">&bull;</span> <span class="text-accent-gold-dark font-bold">From $72</span></p>
     </div>
     <p class="text-navy/70 text-sm lg:text-base leading-relaxed">A relaxing sunset sail past Cabo's Arch with drinks, music, and stunning views.<br/>Ideal for couples or friends looking for an easy, memorable evening on the water.<br/>Small group setting, smooth sailing, and a more laid-back vibe than party cruises.</p>
     <ul class="space-y-2">
@@ -775,7 +819,7 @@ for (const [key, paths] of Object.entries(carouselConfig.fleet)) {
     </details>
     <details class="group bg-white border border-border-light rounded-2xl px-5 py-4 shadow-sm">
       <summary class="flex items-center justify-between cursor-pointer list-none font-serif text-navy text-base lg:text-lg font-semibold">How many people are on board?<span class="material-symbols-outlined text-accent-gold transition-transform group-open:rotate-180">expand_more</span></summary>
-      <p class="text-navy/70 text-sm lg:text-base leading-relaxed mt-3">Private cruises vary by your group (up to 18–20 guests depending on the yacht). Shared cruises are intentionally limited to around 14 guests to avoid crowds.</p>
+      <p class="text-navy/70 text-sm lg:text-base leading-relaxed mt-3">Private cruises vary by your group (up to 18–20 guests depending on the yacht). Shared cruises are intentionally limited to 12 guests to avoid crowds.</p>
     </details>
     <details class="group bg-white border border-border-light rounded-2xl px-5 py-4 shadow-sm">
       <summary class="flex items-center justify-between cursor-pointer list-none font-serif text-navy text-base lg:text-lg font-semibold">What is your cancellation policy?<span class="material-symbols-outlined text-accent-gold transition-transform group-open:rotate-180">expand_more</span></summary>

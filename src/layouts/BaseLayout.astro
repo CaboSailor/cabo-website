@@ -32,7 +32,7 @@ const withSlash = (p: string) => (p.endsWith('/') ? p : `${p}/`);
 
 const travelAgencySchema = JSON.stringify({
   "@context": "https://schema.org",
-  "@type": "TravelAgency",
+  "@type": ["TravelAgency", "LocalBusiness"],
   "@id": "https://cabosailing.com/#organization",
   "name": "Cabo Sailing Ocean Adventures",
   "url": "https://cabosailing.com",
