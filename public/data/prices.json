@@ -36,15 +36,15 @@
       "color": "#e8789a",
       "promoCode": ""
     },
-    "shared-sunset": {
-      "name": "Shared Sunset Sailing",
+    "sunset-sailing": {
+      "name": "Sunset Sailing",
       "fromPrice": 72,
       "discountLabel": "Save 35%",
       "color": "#1e3a5f",
       "promoCode": "SAIL-40"
     },
-    "shared-snorkeling": {
-      "name": "Shared Snorkeling",
+    "snorkeling-cruise": {
+      "name": "Snorkeling Cruise",
       "fromPrice": 72,
       "discountLabel": "Save 35%",
       "color": "#1e3a5f",
@@ -87,8 +87,8 @@
       "discount": 40,
       "promoCode": "SAIL-40"
     },
-    "shared-sailing": {
-      "name": "Shared Sailing",
+    "sailing-cruise": {
+      "name": "Sailing Cruise",
       "regularPrice": 120,
       "extraGuestRegular": 0,
       "discount": 40,

@@ -25,7 +25,7 @@ You'll often spot sea lions:
 
 <ul class="spot-list">
   <li><strong>Land's End rocks</strong> &mdash; the largest colony, dozens of animals basking and barking</li>
-  <li><strong>Pelican Rock</strong> &mdash; smaller groups, often seen while <a href="/tours/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">snorkeling</a></li>
+  <li><strong>Pelican Rock</strong> &mdash; smaller groups, often seen while <a href="/tours/snorkeling-cruise/" class="text-accent-gold font-semibold hover:underline">snorkeling</a></li>
   <li><strong>The marina breakwater</strong> &mdash; lone sea lions sometimes haul out on the rocks near the harbor entrance</li>
   <li><strong>Lover's Beach area</strong> &mdash; occasionally seen swimming near shore</li>
 </ul>
@@ -71,7 +71,7 @@ The most popular way is on a **snorkeling or sailing tour** that passes through 
 
 <ul class="spot-list">
   <li><strong><a href="/tours/private-snorkeling/" class="text-accent-gold font-semibold hover:underline">Private snorkeling tour</a></strong> &mdash; your own boat, stop at Pelican Rock and the Arch. Best chance for extended time near the colony.</li>
-  <li><strong><a href="/tours/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">Shared snorkeling tour</a></strong> &mdash; small-group option, same route past the sea lions at a lower price point.</li>
+  <li><strong><a href="/tours/snorkeling-cruise/" class="text-accent-gold font-semibold hover:underline">Group snorkeling tour</a></strong> &mdash; small-group option, same route past the sea lions at a lower price point.</li>
   <li><strong>Water taxi to Lover's Beach</strong> &mdash; passes right by the colony on the way. Round-trip tickets available at the marina.</li>
   <li><strong>Kayak or paddleboard</strong> &mdash; you can paddle from Medano Beach to Land's End. Allow 30&ndash;45 minutes each way.</li>
 </ul>

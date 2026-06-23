@@ -157,7 +157,7 @@ const videoSchema = JSON.stringify({
     <span class="text-navy font-semibold">Navegar en Cabo San Lucas</span>
   </nav>
   <h1 class="text-4xl text-navy leading-tight">Navegar en Cabo San Lucas &mdash; Cruceros en Velero y Charters Privados</h1>
-  <p class="text-slate-700 text-lg leading-relaxed mt-2">Navegación real en veleros de verdad &mdash; cruceros compartidos con nuevos amigos o charters privados donde el barco es tuyo. Todo incluido, salidas diarias desde Marina Cabo.</p>
+  <p class="text-slate-700 text-lg leading-relaxed mt-2">Navegación real en veleros de verdad &mdash; cruceros en velero con nuevos amigos o charters privados donde el barco es tuyo. Todo incluido, salidas diarias desde Marina Cabo.</p>
 
   <!-- Icons row -->
   <div class="mt-8 grid grid-cols-4 gap-x-6 gap-y-4">
@@ -214,7 +214,7 @@ const videoSchema = JSON.stringify({
     <span class="text-navy font-semibold">Navegar en Cabo</span>
   </nav>
   <h1 class="text-2xl text-navy leading-tight">Navegar en Cabo San Lucas &mdash; Cruceros en Velero y Charters Privados</h1>
-  <p class="text-slate-700 text-base leading-relaxed mt-2">Navegación real en veleros de verdad &mdash; cruceros compartidos con nuevos amigos o charters privados donde el barco es tuyo. Todo incluido, salidas diarias desde Marina Cabo.</p>
+  <p class="text-slate-700 text-base leading-relaxed mt-2">Navegación real en veleros de verdad &mdash; cruceros en velero con nuevos amigos o charters privados donde el barco es tuyo. Todo incluido, salidas diarias desde Marina Cabo.</p>
 </div>
 
 <!-- MOBILE: Icons row -->
@@ -286,9 +286,9 @@ const videoSchema = JSON.stringify({
   <div class="flex items-center gap-3 mb-8"><div class="w-1 h-6 bg-gold rounded-full"></div><h2 class="text-lg lg:text-2xl text-navy">Elige tu experiencia en velero</h2></div>
 
   <div class="flex flex-col gap-5 lg:grid lg:grid-cols-3 lg:max-w-[1100px] lg:mx-auto pb-8">
-    <!-- Shared Sailing Cruise -->
-    <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="shared-sailing">
-      <CarouselImage type="boat" id="shared-sailing" alt="Crucero compartido en velero en Cabo San Lucas">
+    <!-- Sailing Cruise Cruise -->
+    <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="sailing-cruise">
+      <CarouselImage type="boat" id="sailing-cruise" alt="Crucero compartido en velero en Cabo San Lucas">
         <div class="absolute inset-0 bg-gradient-to-t from-navy/25 via-navy/5 to-transparent"></div>
         <div class="absolute bottom-5 left-6">
           <h3 class="text-white text-lg lg:text-xl">Crucero Compartido en Velero</h3>
@@ -383,13 +383,13 @@ const videoSchema = JSON.stringify({
       <div class="w-10 h-10 rounded-full bg-navy flex items-center justify-center mb-3"><Image src={snorkelIcon} alt="" class="w-5 h-5 object-contain" style="filter: brightness(0) invert(1);" width={40} height={40} /></div>
       <h3 class="text-base font-bold text-navy mb-1">Snorkel + Velero</h3>
       <p class="text-sm text-slate-600 leading-relaxed mb-2">Navega junto al Arco, ancla en Pelican Rock, nada entre peces tropicales. Equipo y guía incluidos.</p>
-      <p class="text-sm leading-relaxed"><a href="/es/tours/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">Snorkel compartido</a> &middot; <a href="/es/tours/private-snorkeling/" class="text-accent-gold font-semibold hover:underline">Snorkel privado</a></p>
+      <p class="text-sm leading-relaxed"><a href="/es/tours/snorkeling-cruise/" class="text-accent-gold font-semibold hover:underline">Snorkel compartido</a> &middot; <a href="/es/tours/private-snorkeling/" class="text-accent-gold font-semibold hover:underline">Snorkel privado</a></p>
     </div>
     <div class="bg-light-grey rounded-2xl p-5 border border-border-light hover:shadow-md transition-shadow">
       <div class="w-10 h-10 rounded-full bg-navy flex items-center justify-center mb-3"><span class="material-symbols-outlined text-white text-lg">wb_twilight</span></div>
       <h3 class="text-base font-bold text-navy mb-1">Navegación al Atardecer</h3>
       <p class="text-sm text-slate-600 leading-relaxed mb-2">Programa tu navegación para la hora dorada &mdash; velas arriba, sol bajando, bebidas en cubierta.</p>
-      <p class="text-sm leading-relaxed"><a href="/es/tours/shared-sunset/" class="text-accent-gold font-semibold hover:underline">Atardecer público</a> &middot; <a href="/es/tours/private-sunset/" class="text-accent-gold font-semibold hover:underline">Atardecer privado</a></p>
+      <p class="text-sm leading-relaxed"><a href="/es/tours/sunset-sailing/" class="text-accent-gold font-semibold hover:underline">Atardecer público</a> &middot; <a href="/es/tours/private-sunset/" class="text-accent-gold font-semibold hover:underline">Atardecer privado</a></p>
     </div>
     <div class="bg-light-grey rounded-2xl p-5 border border-border-light">
       <div class="w-10 h-10 rounded-full bg-navy flex items-center justify-center mb-3"><span class="material-symbols-outlined text-white text-lg">explore</span></div>
@@ -559,7 +559,7 @@ const videoSchema = JSON.stringify({
         <span class="material-symbols-outlined text-slate-500 faq-chevron transition-transform duration-300">expand_more</span>
       </label>
       <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
-        <p class="text-sm text-slate-700 leading-relaxed">Sí &mdash; es nuestra reserva privada más popular. Hora dorada, velas arriba, sin ruido de motor. Reserva una <a href="/es/tours/shared-sunset/" class="text-accent-gold font-semibold hover:underline">navegación al atardecer compartida</a>, un <a href="/es/tours/private-sunset/" class="text-accent-gold font-semibold hover:underline">charter privado al atardecer</a>, o agrega un regreso al atardecer a un charter privado de día.</p>
+        <p class="text-sm text-slate-700 leading-relaxed">Sí &mdash; es nuestra reserva privada más popular. Hora dorada, velas arriba, sin ruido de motor. Reserva una <a href="/es/tours/sunset-sailing/" class="text-accent-gold font-semibold hover:underline">navegación al atardecer compartida</a>, un <a href="/es/tours/private-sunset/" class="text-accent-gold font-semibold hover:underline">charter privado al atardecer</a>, o agrega un regreso al atardecer a un charter privado de día.</p>
       </div>
     </div>
     <div class="faq-item border border-border-light rounded-2xl overflow-hidden bg-white">

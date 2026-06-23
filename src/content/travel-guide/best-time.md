@@ -115,7 +115,7 @@ Many of the best spots are accessible by boat, making guided excursions a great 
 
 Spending time on the water is one of the highlights of any Cabo trip.
 
-A private or shared yacht allows you to explore the coastline, visit landmarks like El Arco, and access more secluded areas for swimming or snorkeling.
+A private or group sailing yacht allows you to explore the coastline, visit landmarks like El Arco, and access more secluded areas for swimming or snorkeling.
 
 For a more refined experience, many travelers opt for smaller, well-maintained sailing yachts or luxury motor yachts, which offer a smoother ride and a more personalized atmosphere. Providers like [Cabo Sailing](/) offer both private charters and small-group cruises throughout the year.
 

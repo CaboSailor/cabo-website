@@ -41,7 +41,7 @@ Once ashore, you'll be at the Cabo San Lucas marina &mdash; right in the center 
 Focus on one main activity and a quick lunch:
 
 <ul class="spot-list">
-  <li><strong><a href="/tours/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">Snorkeling tour to the Arch</a></strong> &mdash; 2.5-hour shared cruise past the sea lion colony, Pelican Rock, and Lover's Beach. The most popular cruise-passenger activity in Cabo.</li>
+  <li><strong><a href="/tours/snorkeling-cruise/" class="text-accent-gold font-semibold hover:underline">Snorkeling tour to the Arch</a></strong> &mdash; 2.5-hour sailing cruise past the sea lion colony, Pelican Rock, and Lover's Beach. The most popular cruise-passenger activity in Cabo.</li>
   <li><strong>Water taxi to Lover's Beach</strong> &mdash; 10-minute ride from the marina. Spend an hour at one of Cabo's most iconic beaches, then taxi back.</li>
   <li><strong>Walk the marina + lunch</strong> &mdash; browse the shops, grab fish tacos at a waterfront restaurant, and take photos of the Arch from the marina walkway.</li>
 </ul>
@@ -104,7 +104,7 @@ Typically 6&ndash;10 hours, though some itineraries allow only 4&ndash;5 hours. 
 
 **Can I walk to the Arch from the cruise port?**
 
-You can't walk to the Arch itself &mdash; it's at the tip of Land's End, accessible only by water. But you can see it from certain spots along the marina. To get up close, take a water taxi or <a href="/tours/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">snorkeling tour</a>.
+You can't walk to the Arch itself &mdash; it's at the tip of Land's End, accessible only by water. But you can see it from certain spots along the marina. To get up close, take a water taxi or <a href="/tours/snorkeling-cruise/" class="text-accent-gold font-semibold hover:underline">snorkeling tour</a>.
 
 **Is it safe to explore Cabo on my own from the cruise port?**
 

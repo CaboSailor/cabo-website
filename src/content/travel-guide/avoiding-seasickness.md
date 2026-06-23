@@ -78,7 +78,7 @@ If your sea sickness is aggressively severe, and you can't take to the water, th
 
 As mentioned in the beginning of this article, there are a whole host of landlocked activities to enjoy, as well as miles of gorgeous coastline to explore.
 
-There are also <a href="/tours/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">snorkeling trips</a> that offer a shorter duration of cruising and allow you to get closer to the vast selection of stunning sea life Cabo is home to.
+There are also <a href="/tours/snorkeling-cruise/" class="text-accent-gold font-semibold hover:underline">snorkeling trips</a> that offer a shorter duration of cruising and allow you to get closer to the vast selection of stunning sea life Cabo is home to.
 
 You could even use this shorter sailing trip to test the waters (pun intended) and try out the seasickness methods offered above.
 

@@ -26,11 +26,11 @@ From the gentle wind filling the sails to the curated menu and open bar, everyth
 
 ---
 
-## 2. Shared Sailing Adventures
+## 2. Sailing Cruise Adventures
 
-Want a high-quality experience without going fully private? Shared sailing cruises are a great middle ground. These sunset trips combine the professional service and gorgeous sailboats you'd find on a private charter with the camaraderie of a small group. Most shared charters cap their passenger numbers to ensure there's still room to lounge, move around, and enjoy the views.
+Want a high-quality experience without going fully private? Group sailing cruises are a great middle ground. These sunset trips combine the professional service and gorgeous sailboats you'd find on a private charter with the camaraderie of a small group. Most group charters cap their passenger numbers to ensure there's still room to lounge, move around, and enjoy the views.
 
-These tours typically include an open bar and light bites as you sail along the Cabo coastline. You'll get fantastic views of the Arch, Lover's Beach, and sea life like dolphins or rays leaping from the water. For those who appreciate an upscale but social vibe, shared sailing is a favorite.
+These tours typically include an open bar and light bites as you sail along the Cabo coastline. You'll get fantastic views of the Arch, Lover's Beach, and sea life like dolphins or rays leaping from the water. For those who appreciate an upscale but social vibe, sailing cruise is a favorite.
 
 ---
 
@@ -86,7 +86,7 @@ Even the marine life adds to the magic. Depending on the time of year, you might
 
 ## How to Choose the Right Sunset Cruise
 
-With so many great options, how do you pick the right one? It comes down to your priorities. For calm, romantic vibes, go with a luxury or shared sailing cruise. If you're celebrating with friends, a party boat might be more your speed. Families often prefer the added fun of snorkeling or wildlife viewing.
+With so many great options, how do you pick the right one? It comes down to your priorities. For calm, romantic vibes, go with a luxury or sailing cruise cruise. If you're celebrating with friends, a party boat might be more your speed. Families often prefer the added fun of snorkeling or wildlife viewing.
 
 Also, consider how long you want to be on the water. Some cruises are quick one-hour loops, while others offer a full three-hour experience with multiple stops. Food and drink menus vary too, so if you have dietary preferences, check those details before booking.
 
@@ -98,4 +98,4 @@ Finally, think about the vessel itself. Do you prefer a traditional sailboat, a 
 
 No matter which sunset cruise you choose, you're in for something special. The views, the breeze, and the atmosphere all come together to create a memory that lasts far beyond your time in Cabo.
 
-At Cabo Sailing Ocean Adventures, we've spent nearly two decades helping our guests create lasting memories. From <a href="/tours/private-sunset/" class="text-accent-gold font-semibold hover:underline">private yacht charters</a> to shared sailing cruises, we offer experiences that combine comfort, flexibility, and impeccable service. Our crew takes pride in the details, so you can relax and enjoy the show. When you're ready to sail into the Cabo sunset, we'd be honored to welcome you aboard.
+At Cabo Sailing Ocean Adventures, we've spent nearly two decades helping our guests create lasting memories. From <a href="/tours/private-sunset/" class="text-accent-gold font-semibold hover:underline">private yacht charters</a> to sailing cruise cruises, we offer experiences that combine comfort, flexibility, and impeccable service. Our crew takes pride in the details, so you can relax and enjoy the show. When you're ready to sail into the Cabo sunset, we'd be honored to welcome you aboard.

@@ -102,7 +102,7 @@ Cabo tiene comida callejera y restaurantes locales incre&iacute;bles si te aleja
   <li><strong>Caminata al Cañ&oacute;n de la Zorra</strong> &mdash; un cañ&oacute;n esc&eacute;nico en el desierto a unos 20 minutos del pueblo. La entrada cuesta alrededor de $2. Lleva agua y zapatos resistentes</li>
   <li><strong>Camioneta local a San Jos&eacute; del Cabo</strong> &mdash; $3&ndash;$4 por trayecto. Explora el distrito de arte, come y regresa en cami&oacute;n</li>
   <li><strong>Renta de equipo de snorkel</strong> &mdash; $10&ndash;$15 por d&iacute;a en tiendas cerca de la marina. Ll&eacute;valo a Bah&iacute;a Chileno o Bah&iacute;a Santa Mar&iacute;a (ambas playas p&uacute;blicas gratuitas)</li>
-  <li><strong>Tour compartido de snorkel</strong> &mdash; los tours grupales empiezan en $30&ndash;$50 por persona. Ve el Arco, los lobos marinos y haz snorkel en Pelican Rock</li>
+  <li><strong>Tour de Snorkel</strong> &mdash; los tours grupales empiezan en $30&ndash;$50 por persona. Ve el Arco, los lobos marinos y haz snorkel en Pelican Rock</li>
 </ul>
 
 ---

@@ -51,7 +51,7 @@ Lover&rsquo;s Beach is only accessible by water &mdash; there&rsquo;s no road or
 
 <ul class="spot-list">
   <li><strong>Water taxi</strong> &mdash; small pangas (open boats) depart from the Cabo San Lucas marina every few minutes. Round trip costs approximately $15 USD. Agree on a return time with your driver</li>
-  <li><strong>Snorkeling tour</strong> &mdash; most <a href="/tours/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">shared snorkeling tours</a> and <a href="/tours/private-snorkeling/" class="text-accent-gold font-semibold hover:underline">private snorkeling tours</a> include a stop at or near Lover&rsquo;s Beach as part of the route</li>
+  <li><strong>Snorkeling tour</strong> &mdash; most <a href="/tours/snorkeling-cruise/" class="text-accent-gold font-semibold hover:underline">snorkeling tours</a> and <a href="/tours/private-snorkeling/" class="text-accent-gold font-semibold hover:underline">private snorkeling tours</a> include a stop at or near Lover&rsquo;s Beach as part of the route</li>
   <li><strong>Kayak or paddleboard</strong> &mdash; you can paddle from Medano Beach to Lover&rsquo;s Beach in about 30&ndash;45 minutes. Rentals available on Medano</li>
 </ul>
 

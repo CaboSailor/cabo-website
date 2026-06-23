@@ -114,7 +114,7 @@ Getting the right gear makes or breaks the experience. An ill-fitting mask that 
     <li>&bull; <strong>Guides in the water</strong> &mdash; look for tours where guides swim alongside guests, not just watch from the boat</li>
     <li>&bull; <strong>Shallow snorkel stops</strong> &mdash; some tours go to deep-water sites that aren&rsquo;t suitable for kids. Ask about depth and conditions at each stop</li>
     <li>&bull; <strong>Shade and snacks</strong> &mdash; boats with covered areas and provided snacks/drinks make the overall experience more comfortable for families</li>
-    <li>&bull; <strong>Flexible schedule</strong> &mdash; a <a href="/tours/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">shared snorkeling tour</a> with a family-friendly operator is a good option for most families</li>
+    <li>&bull; <strong>Flexible schedule</strong> &mdash; a <a href="/tours/snorkeling-cruise/" class="text-accent-gold font-semibold hover:underline">snorkeling tour</a> with a family-friendly operator is a good option for most families</li>
   </ul>
 </div>
 

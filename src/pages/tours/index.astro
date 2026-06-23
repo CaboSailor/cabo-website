@@ -7,8 +7,8 @@ import CarouselImage from '../../components/CarouselImage.astro';
 import YachtIcon from '../../components/YachtIcon.astro';
 
 const sharedTours = [
-  { href: '/tours/shared-snorkeling/', id: 'shared-snorkeling', label: 'Shared Snorkeling', tagline: '3 hrs · group of up to 14', alt: 'Shared Snorkeling tour in Cabo San Lucas' },
-  { href: '/tours/shared-sunset/',     id: 'shared-sunset',     label: 'Shared Sunset',     tagline: '2 hrs · group of up to 14', alt: 'Shared Sunset cruise in Cabo San Lucas' },
+  { href: '/tours/snorkeling-cruise/', id: 'snorkeling-cruise', label: 'Snorkeling Cruise', tagline: '3 hrs · group of up to 14', alt: 'Snorkeling Cruise tour in Cabo San Lucas' },
+  { href: '/tours/sunset-sailing/',     id: 'sunset-sailing',     label: 'Sunset Sailing',     tagline: '2 hrs · group of up to 14', alt: 'Sunset Sailing cruise in Cabo San Lucas' },
 ];
 
 const privateTours = [
@@ -21,8 +21,8 @@ const privateTours = [
 
 const faqs = [
   {
-    q: "What's the real difference between a shared tour and a private charter?",
-    a: "A shared tour is a small-group sailing experience with a set departure time. You join other guests onboard one of our sailboats, with a maximum of 14 guests, plus open bar, food, crew, and a relaxed Cabo atmosphere.\n\nA private charter is reserved only for your group. You choose the date, time, boat style, and overall pace of the cruise — with more flexibility for the route, music, and special requests.\n\nBoth are great ways to enjoy Cabo from the water. Shared tours are easy, social, and relaxed. Private charters are more personal, flexible, and fully yours."
+    q: "What's the real difference between a group tour and a private charter?",
+    a: "A group tour is a small-group sailing experience with a set departure time. You join other guests onboard one of our sailboats, with a maximum of 14 guests, plus open bar, food, crew, and a relaxed Cabo atmosphere.\n\nA private charter is reserved only for your group. You choose the date, time, boat style, and overall pace of the cruise — with more flexibility for the route, music, and special requests.\n\nBoth are great ways to enjoy Cabo from the water. Group sailing tours are easy, social, and relaxed. Private charters are more personal, flexible, and fully yours."
   },
   {
     q: "Sailboat or yacht — which should I pick?",
@@ -30,7 +30,7 @@ const faqs = [
   },
   {
     q: "We've never been on a boat. Which tour is the easiest start?",
-    a: "If you'd rather have full control of pace and stops, a private charter on a yacht is the smoothest option for first-timers.\n\nThat said, our 2-hour shared sunset sail is the calmest and might offer a good entry point."
+    a: "If you'd rather have full control of pace and stops, a private charter on a yacht is the smoothest option for first-timers.\n\nThat said, our 2-hour sunset sailing sail is the calmest and might offer a good entry point."
   },
   {
     q: "Are these cruises kid-friendly?",
@@ -46,7 +46,7 @@ const faqs = [
   },
   {
     q: "How far in advance should I book?",
-    a: "For private charters in high season (December–April, plus US holiday weeks), aim for 2–4 weeks ahead — the popular dates sell out. Shared tours have more flexibility but the best time slots (sunset, weekends) still fill up. Off-season, a week or two is usually enough."
+    a: "For private charters in high season (December–April, plus US holiday weeks), aim for 2–4 weeks ahead — the popular dates sell out. Group sailing tours have more flexibility but the best time slots (sunset, weekends) still fill up. Off-season, a week or two is usually enough."
   },
   {
     q: "Do you offer hotel pickup or a shuttle to the marina?",
@@ -82,7 +82,7 @@ const faqSchema = JSON.stringify({
 });
 ---
 
-<BaseLayout title="Tours — Cabo Sailing | Boat Tours in Cabo San Lucas" description="All boat tours in Cabo San Lucas — shared snorkel & sunset sails, private charters on sailboats & yachts, whale watching, bachelorette parties & scuba. Compare and book." hreflangs={{ en: '/tours', es: '/es/tours' }}>
+<BaseLayout title="Tours — Cabo Sailing | Boat Tours in Cabo San Lucas" description="All boat tours in Cabo San Lucas — group snorkel & sunset sails, private charters on sailboats & yachts, whale watching, bachelorette parties & scuba. Compare and book." hreflangs={{ en: '/tours', es: '/es/tours' }}>
   <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
   <script slot="head" type="application/ld+json" set:html={faqSchema} />
   <Header variant="subpage" activePage="tours" />
@@ -97,14 +97,14 @@ const faqSchema = JSON.stringify({
         <span class="text-navy font-semibold">Tours</span>
       </nav>
       <h1 class="text-3xl lg:text-4xl font-serif text-navy mb-3">Our Tours</h1>
-      <p class="text-slate-500 text-sm lg:text-base max-w-xl mx-auto">Two ways to sail Cabo — join a small group on a shared tour, or have the whole boat to yourselves.</p>
+      <p class="text-slate-500 text-sm lg:text-base max-w-xl mx-auto">Two ways to sail Cabo — join a small group on a group tour, or have the whole boat to yourselves.</p>
     </div>
 
-    <!-- Shared Tours -->
+    <!-- Sailing Cruises -->
     <section class="max-w-[1100px] mx-auto px-5 lg:px-10 pt-4 lg:pt-6 pb-8 lg:pb-12">
       <div class="flex items-center gap-3 mb-2">
         <div class="w-1 h-7 bg-gold rounded-full"></div>
-        <h2 class="text-xl lg:text-2xl font-serif text-navy">Shared Tours</h2>
+        <h2 class="text-xl lg:text-2xl font-serif text-navy">Sailing Cruises</h2>
       </div>
       <p class="text-slate-500 text-sm lg:text-base mb-5 lg:mb-7 ml-4">Fixed schedule, set price per person, small group on a sailboat — the easy, social way to get on the water.</p>
       <div class="grid grid-cols-2 gap-4 lg:gap-6">

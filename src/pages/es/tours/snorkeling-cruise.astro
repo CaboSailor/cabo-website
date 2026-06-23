@@ -21,12 +21,12 @@ const breadcrumbSchema = JSON.stringify({
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://cabosailing.com/es/" },
     { "@type": "ListItem", "position": 2, "name": "Tours", "item": "https://cabosailing.com/es/tours/" },
-    { "@type": "ListItem", "position": 3, "name": "Snorkel Compartido" }
+    { "@type": "ListItem", "position": 3, "name": "Crucero de Snorkel" }
   ]
 });
 ---
 
-<BaseLayout bodyClass="bg-white font-body text-text-main antialiased min-h-screen flex flex-col relative" title="Tour de Snorkel Compartido en Cabo San Lucas | Cabo Sailing" description="Tour compartido de snorkel a los mejores arrecifes del Arco y Pelican Rock. Equipo, bebidas y snacks incluidos. Salidas diarias desde la marina." ogImage="/og/shared-snorkeling.jpg" ogImageAlt="Small-group snorkeling tour in Cabo San Lucas" hreflangs={{ en: '/tours/shared-snorkeling', es: '/es/tours/shared-snorkeling' }}>
+<BaseLayout bodyClass="bg-white font-body text-text-main antialiased min-h-screen flex flex-col relative" title="Tour de Crucero de Snorkel en Cabo San Lucas | Cabo Sailing" description="Tour de Snorkel a los mejores arrecifes del Arco y Pelican Rock. Equipo, bebidas y snacks incluidos. Salidas diarias desde la marina." ogImage="/og/snorkeling-cruise.jpg" ogImageAlt="Small-group snorkeling tour in Cabo San Lucas" hreflangs={{ en: '/tours/snorkeling-cruise', es: '/es/tours/snorkeling-cruise' }}>
   <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
   <Header variant="subpage" activePage="tours" />
 
@@ -109,7 +109,7 @@ const breadcrumbSchema = JSON.stringify({
       <span class="material-symbols-outlined text-[14px]">chevron_right</span>
       <a href="/es/tours/" class="hover:text-gold transition-colors">Tours</a>
       <span class="material-symbols-outlined text-[14px]">chevron_right</span>
-      <span class="text-navy font-semibold">Snorkel Compartido</span>
+      <span class="text-navy font-semibold">Crucero de Snorkel</span>
     </nav>
     <h1 class="text-3xl text-navy leading-tight">Paseo compartido de vela y snorkel en Cabo</h1>
     <p class="text-slate-700 text-lg leading-relaxed mt-2">Una aventura en velero con grupo pequeno al Arco y Pelican Rock &mdash; nunca mas de 14 pasajeros a bordo.</p>
@@ -150,7 +150,7 @@ const breadcrumbSchema = JSON.stringify({
     <div class="mt-12">
       <h3 class="text-2xl text-navy mb-4">Sobre esta experiencia</h3>
       <p class="text-slate-700 leading-relaxed text-base">
-        Unete a nuestro popular tour de snorkel compartido y descubre la magia de Cabo San Lucas junto a otros aventureros. Visita el famoso Arco, haz snorkel entre peces tropicales en Pelican Rock y disfruta de barra libre y almuerzo a bordo &mdash; todo a un precio inigualable. Nuestra experimentada tripulacion bilingue se asegura de que todos tengan una experiencia segura, divertida e inolvidable en el agua.
+        Unete a nuestro popular tour de crucero de snorkel y descubre la magia de Cabo San Lucas junto a otros aventureros. Visita el famoso Arco, haz snorkel entre peces tropicales en Pelican Rock y disfruta de barra libre y almuerzo a bordo &mdash; todo a un precio inigualable. Nuestra experimentada tripulacion bilingue se asegura de que todos tengan una experiencia segura, divertida e inolvidable en el agua.
       </p>
     </div>
 
@@ -250,7 +250,7 @@ const breadcrumbSchema = JSON.stringify({
       </div>
       <!-- Boat card 38'-42' (no icons) -->
       <div class="p-5 pb-0">
-        <div class="w-full bg-white border border-border-light rounded-2xl overflow-hidden shadow-md shadow-navy/5" data-boat="shared-sailing">
+        <div class="w-full bg-white border border-border-light rounded-2xl overflow-hidden shadow-md shadow-navy/5" data-boat="sailing-cruise">
           <div class="h-[400px] w-full relative">
             <Image src={sailing42BoatCard} alt="Velero 38'-42'" class="w-full h-full object-cover object-center" width={1024} height={1536} format="png" quality={100} />
             <div class="absolute inset-0 bg-gradient-to-t from-navy/15 via-transparent to-transparent"></div>
@@ -264,10 +264,10 @@ const breadcrumbSchema = JSON.stringify({
       </div>
       <div class="p-5">
         <p class="text-center text-slate-500 text-sm mb-1">Selecciona una fecha para ver disponibilidad</p>
-        <p class="text-center mb-3"><span class="inline-block text-[11px] font-bold uppercase tracking-wider text-white bg-gold px-2.5 py-0.5 rounded-full">C&oacute;digo de Descuento: <span class="text-[13px] font-extrabold" data-promo-for="shared-snorkeling">Sail-30</span></span></p>
+        <p class="text-center mb-3"><span class="inline-block text-[11px] font-bold uppercase tracking-wider text-white bg-gold px-2.5 py-0.5 rounded-full">C&oacute;digo de Descuento: <span class="text-[13px] font-extrabold" data-promo-for="snorkeling-cruise">Sail-30</span></span></p>
         <script defer type="text/javascript" src="https://cabosailing.rezdy.com/pluginJs" is:inline></script>
         <iframe seamless="" width="300px" height="1000px" frameborder="0" class="rezdy mx-auto block" src="https://cabosailing.rezdy.com/calendarWidget/744011?iframe=true"></iframe>
-        <div class="mt-5 space-y-3" data-boat="shared-sailing">
+        <div class="mt-5 space-y-3" data-boat="sailing-cruise">
           <div class="flex justify-between items-center py-2 border-b border-border-light">
             <span class="text-sm text-slate-500">Por persona</span>
             <div class="flex items-baseline gap-2">
@@ -283,7 +283,7 @@ const breadcrumbSchema = JSON.stringify({
         <button onclick="document.getElementById('rezdy-modal-shared-snorkel').classList.remove('hidden')" class="block w-full bg-navy text-white font-bold text-sm py-4 rounded-2xl uppercase tracking-[0.15em] text-center shadow-lg mt-5 hover:bg-navy/90 transition-colors cursor-pointer">
           Ver Disponibilidad
         </button>
-        <a href="https://wa.me/526241916997?text=Hi%2C%20I'd%20like%20to%20book%20the%20Shared%20Snorkeling%20Tour" target="_blank" class="block w-full bg-[#25D366] text-white font-bold text-sm py-4 rounded-2xl uppercase tracking-[0.15em] text-center shadow-lg mt-3 hover:bg-[#20bd5a] transition-colors">
+        <a href="https://wa.me/526241916997?text=Hi%2C%20I'd%20like%20to%20book%20the%20Snorkeling%20Cruise%20Tour" target="_blank" class="block w-full bg-[#25D366] text-white font-bold text-sm py-4 rounded-2xl uppercase tracking-[0.15em] text-center shadow-lg mt-3 hover:bg-[#20bd5a] transition-colors">
           <i class="fa-brands fa-whatsapp text-lg mr-2" style="vertical-align:middle"></i> Reservar por WhatsApp
         </a>
       </div>
@@ -299,7 +299,7 @@ const breadcrumbSchema = JSON.stringify({
     <span class="material-symbols-outlined text-[14px]">chevron_right</span>
     <a href="/es/tours/" class="hover:text-gold transition-colors">Tours</a>
     <span class="material-symbols-outlined text-[14px]">chevron_right</span>
-    <span class="text-navy font-semibold">Snorkel Compartido</span>
+    <span class="text-navy font-semibold">Crucero de Snorkel</span>
   </nav>
   <h1 class="text-2xl text-navy leading-tight">Paseo compartido de vela y snorkel en Cabo</h1>
   <p class="text-slate-700 text-base leading-relaxed mt-2">Una aventura en velero con grupo pequeno al Arco y Pelican Rock &mdash; nunca mas de 14 pasajeros a bordo.</p>
@@ -342,7 +342,7 @@ const breadcrumbSchema = JSON.stringify({
 <!-- MOBILE: Sobre esta experiencia + Itinerario Sugerido -->
 <div class="lg:hidden mt-8 px-5">
   <h3 class="text-lg text-navy mb-3">Sobre esta experiencia</h3>
-  <p class="text-slate-700 leading-relaxed text-base">Unete a nuestro popular tour de snorkel compartido y descubre la magia de Cabo San Lucas junto a otros aventureros. Visita el famoso Arco, haz snorkel entre peces tropicales en Pelican Rock y disfruta de barra libre y almuerzo a bordo &mdash; todo a un precio inigualable.</p>
+  <p class="text-slate-700 leading-relaxed text-base">Unete a nuestro popular tour de crucero de snorkel y descubre la magia de Cabo San Lucas junto a otros aventureros. Visita el famoso Arco, haz snorkel entre peces tropicales en Pelican Rock y disfruta de barra libre y almuerzo a bordo &mdash; todo a un precio inigualable.</p>
 
   <div class="mt-7 faq-item border border-border-light rounded-2xl overflow-hidden bg-white">
     <input class="hidden" id="mobile-itinerary" type="checkbox"/>
@@ -376,7 +376,7 @@ const breadcrumbSchema = JSON.stringify({
 
 <!-- MOBILE: Boat card -->
 <div class="lg:hidden mt-4 mx-5">
-  <div class="w-full bg-white border border-border-light rounded-2xl overflow-hidden shadow-md shadow-navy/5" data-boat="shared-sailing">
+  <div class="w-full bg-white border border-border-light rounded-2xl overflow-hidden shadow-md shadow-navy/5" data-boat="sailing-cruise">
     <div class="h-[400px] w-full relative">
       <Image src={sailing42BoatCard} alt="Velero 38'-42'" class="w-full h-full object-cover object-center" width={1024} height={1536} format="png" quality={100} />
       <div class="absolute inset-0 bg-gradient-to-t from-navy/15 via-transparent to-transparent"></div>
@@ -391,7 +391,7 @@ const breadcrumbSchema = JSON.stringify({
 
 <!-- MOBILE: Por persona / Duracion -->
 <div class="lg:hidden mt-4 mx-5">
-  <div class="space-y-3" data-boat="shared-sailing">
+  <div class="space-y-3" data-boat="sailing-cruise">
     <div class="flex justify-between items-center py-2 border-b border-border-light">
       <span class="text-sm text-slate-500">Por persona</span>
       <div class="flex items-baseline gap-2">
@@ -409,9 +409,9 @@ const breadcrumbSchema = JSON.stringify({
 <!-- MOBILE: Calendar + WhatsApp -->
 <div class="lg:hidden mt-6 mx-5 mb-6">
   <p class="text-center text-slate-500 text-sm mb-1">Selecciona una fecha para ver disponibilidad</p>
-  <p class="text-center mb-3"><span class="inline-block text-[11px] font-bold uppercase tracking-wider text-white bg-gold px-2.5 py-0.5 rounded-full">C&oacute;digo de Descuento: <span class="text-[13px] font-extrabold" data-promo-for="shared-snorkeling">Sail-30</span></span></p>
+  <p class="text-center mb-3"><span class="inline-block text-[11px] font-bold uppercase tracking-wider text-white bg-gold px-2.5 py-0.5 rounded-full">C&oacute;digo de Descuento: <span class="text-[13px] font-extrabold" data-promo-for="snorkeling-cruise">Sail-30</span></span></p>
   <iframe seamless="" width="300px" height="1000px" frameborder="0" class="rezdy mx-auto block" src="https://cabosailing.rezdy.com/calendarWidget/744011?iframe=true"></iframe>
-  <a href="https://wa.me/526241916997?text=Hi%2C%20I'd%20like%20to%20book%20the%20Shared%20Snorkeling%20Tour" target="_blank" class="block w-full bg-[#25D366] text-white font-bold text-[12px] py-4 rounded-2xl uppercase tracking-[0.2em] text-center shadow-lg mt-4">
+  <a href="https://wa.me/526241916997?text=Hi%2C%20I'd%20like%20to%20book%20the%20Snorkeling%20Cruise%20Tour" target="_blank" class="block w-full bg-[#25D366] text-white font-bold text-[12px] py-4 rounded-2xl uppercase tracking-[0.2em] text-center shadow-lg mt-4">
     <i class="fa-brands fa-whatsapp text-lg mr-2" style="vertical-align:middle"></i> Reservar por WhatsApp
   </a>
 </div>
@@ -601,7 +601,7 @@ const breadcrumbSchema = JSON.stringify({
       </div>
       <div class="snap-center shrink-0 w-[85vw] sm:w-[420px] lg:w-[calc((100%-3rem)/3)] bg-light-grey rounded-2xl p-5 border border-border-light">
         <div class="flex items-center gap-1 mb-2"><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span><span class="material-symbols-outlined text-gold filled text-base">star</span></div>
-        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Segunda vez haciendo el snorkel compartido con ellos. La primera fue tan buena que volvimos a reservar. Tripulacion distinta esta vez pero la misma vibra. No reservaria con nadie mas en Cabo."</p>
+        <p class="text-base text-slate-600 leading-relaxed italic mb-3">"Segunda vez haciendo el crucero de snorkel con ellos. La primera fue tan buena que volvimos a reservar. Tripulacion distinta esta vez pero la misma vibra. No reservaria con nadie mas en Cabo."</p>
         <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-navy/70 flex items-center justify-center text-white text-sm font-bold">TP</div><div><p class="text-sm font-bold text-navy">Tom P.</p><p class="text-base text-slate-500">Portland, OR</p></div></div>
       </div>
     </div>
@@ -619,22 +619,22 @@ const breadcrumbSchema = JSON.stringify({
 
   <Footer />
   <FloatingCTA />
-  <script is:inline>window.__pageActivityId='shared-snorkeling';</script>
+  <script is:inline>window.__pageActivityId='snorkeling-cruise';</script>
   <RezdyModal />
 
-  <!-- Rezdy Booking Modal - Shared Snorkeling -->
+  <!-- Rezdy Booking Modal - Snorkeling Cruise -->
 <div id="rezdy-modal-shared-snorkel" class="hidden fixed inset-0 z-[200] flex items-center justify-center">
   <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" onclick="document.getElementById('rezdy-modal-shared-snorkel').classList.add('hidden')"></div>
   <div class="relative z-10 bg-white rounded-3xl shadow-2xl w-[92%] max-w-lg max-h-[85vh] overflow-hidden flex flex-col">
     <div class="flex items-center justify-between px-5 py-4 border-b border-border-light">
-      <h3 class="font-heading text-navy text-lg font-semibold">Reservar — Tour de Snorkel Compartido</h3>
+      <h3 class="font-heading text-navy text-lg font-semibold">Reservar — Tour de Crucero de Snorkel</h3>
       <button onclick="document.getElementById('rezdy-modal-shared-snorkel').classList.add('hidden')" class="w-9 h-9 flex items-center justify-center rounded-full bg-surface-light text-navy hover:bg-navy hover:text-white transition-colors">
         <span class="material-symbols-outlined text-xl">close</span>
       </button>
     </div>
     <div class="flex-1 overflow-y-auto p-5">
       <p class="text-center text-slate-500 text-sm mb-1">Selecciona una fecha para ver disponibilidad</p>
-      <p class="text-center mb-3"><span class="inline-block text-[11px] font-bold uppercase tracking-wider text-white bg-gold px-2.5 py-0.5 rounded-full">C&oacute;digo de Descuento: <span class="text-[13px] font-extrabold" data-promo-for="shared-snorkeling">Sail-30</span></span></p>
+      <p class="text-center mb-3"><span class="inline-block text-[11px] font-bold uppercase tracking-wider text-white bg-gold px-2.5 py-0.5 rounded-full">C&oacute;digo de Descuento: <span class="text-[13px] font-extrabold" data-promo-for="snorkeling-cruise">Sail-30</span></span></p>
       <iframe seamless="" width="300px" height="1000px" frameborder="0" class="rezdy mx-auto block" src="https://cabosailing.rezdy.com/calendarWidget/744011?iframe=true"></iframe>
     </div>
   </div>

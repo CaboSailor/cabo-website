@@ -41,7 +41,7 @@ Una vez en tierra, estar&aacute;s en la marina de Cabo San Lucas &mdash; justo e
 Enf&oacute;cate en una sola actividad principal y una comida r&aacute;pida:
 
 <ul class="spot-list">
-  <li><strong><a href="/es/tours/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">Tour de snorkel al Arco</a></strong> &mdash; crucero compartido de 2.5 horas que pasa por la colonia de lobos marinos, Pelican Rock y la Playa del Amor. La actividad m&aacute;s popular para cruceristas en Cabo.</li>
+  <li><strong><a href="/es/tours/snorkeling-cruise/" class="text-accent-gold font-semibold hover:underline">Tour de snorkel al Arco</a></strong> &mdash; crucero compartido de 2.5 horas que pasa por la colonia de lobos marinos, Pelican Rock y la Playa del Amor. La actividad m&aacute;s popular para cruceristas en Cabo.</li>
   <li><strong>Taxi acu&aacute;tico a la Playa del Amor</strong> &mdash; 10 minutos desde la marina. Pasa una hora en una de las playas m&aacute;s ic&oacute;nicas de Cabo y regresa en taxi.</li>
   <li><strong>Recorre la marina + comida</strong> &mdash; visita las tiendas, come tacos de pescado en un restaurante frente al mar y toma fotos del Arco desde el malec&oacute;n de la marina.</li>
 </ul>
@@ -104,7 +104,7 @@ Normalmente entre 6 y 10 horas, aunque algunos itinerarios solo permiten 4&ndash
 
 **&iquest;Puedo caminar al Arco desde el puerto de cruceros?**
 
-No puedes caminar hasta el Arco mismo &mdash; est&aacute; en la punta de Land's End, accesible solo por agua. Pero puedes verlo desde ciertos puntos a lo largo de la marina. Para acercarte, toma un taxi acu&aacute;tico o un <a href="/es/tours/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">tour de snorkel</a>.
+No puedes caminar hasta el Arco mismo &mdash; est&aacute; en la punta de Land's End, accesible solo por agua. Pero puedes verlo desde ciertos puntos a lo largo de la marina. Para acercarte, toma un taxi acu&aacute;tico o un <a href="/es/tours/snorkeling-cruise/" class="text-accent-gold font-semibold hover:underline">tour de snorkel</a>.
 
 **&iquest;Es seguro explorar Cabo por mi cuenta desde el puerto de cruceros?**
 

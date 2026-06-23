@@ -118,7 +118,7 @@ for (const [key, paths] of Object.entries(carouselConfig.fleet)) {
   <p class="text-navy/70 text-sm mt-2 max-w-[400px] mx-auto">Privado o en grupo pequeno — disenado para comodidad, espacio y momentos inolvidables.</p>
   <div class="flex items-center justify-center gap-1 mt-6 bg-light-grey rounded-full p-1 max-w-[360px] mx-auto border border-border-light">
     <button id="toggle-private" onclick="document.getElementById('section-private').scrollIntoView({behavior:'smooth',block:'start'});document.getElementById('toggle-private').classList.add('bg-navy','text-white','shadow-md');document.getElementById('toggle-private').classList.remove('text-navy/70');document.getElementById('toggle-shared').classList.remove('bg-navy','text-white','shadow-md');document.getElementById('toggle-shared').classList.add('text-navy/70')" class="flex-1 py-2.5 rounded-full text-sm font-bold uppercase tracking-widest transition-all bg-navy text-white shadow-md">Cruceros Privados</button>
-    <button id="toggle-shared" onclick="document.getElementById('section-shared').scrollIntoView({behavior:'smooth',block:'start'});document.getElementById('toggle-shared').classList.add('bg-navy','text-white','shadow-md');document.getElementById('toggle-shared').classList.remove('text-navy/70');document.getElementById('toggle-private').classList.remove('bg-navy','text-white','shadow-md');document.getElementById('toggle-private').classList.add('text-navy/70')" class="flex-1 py-2.5 rounded-full text-sm font-bold uppercase tracking-widest transition-all text-navy/70">Cruceros Compartidos</button>
+    <button id="toggle-shared" onclick="document.getElementById('section-shared').scrollIntoView({behavior:'smooth',block:'start'});document.getElementById('toggle-shared').classList.add('bg-navy','text-white','shadow-md');document.getElementById('toggle-shared').classList.remove('text-navy/70');document.getElementById('toggle-private').classList.remove('bg-navy','text-white','shadow-md');document.getElementById('toggle-private').classList.add('text-navy/70')" class="flex-1 py-2.5 rounded-full text-sm font-bold uppercase tracking-widest transition-all text-navy/70">Cruceros en Velero</button>
   </div>
 </div>
 
@@ -320,16 +320,16 @@ for (const [key, paths] of Object.entries(carouselConfig.fleet)) {
 <section id="section-shared" class="py-16 lg:py-24 bg-[#f5f3ef] border-y border-border-light/50 scroll-mt-[80px]">
 <div class="max-w-screen-2xl mx-auto px-6 lg:px-10 space-y-12 lg:space-y-20">
 
-<!-- Activity 5: Shared Snorkeling -->
-<div data-activity="shared-snorkeling" class="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12 items-center">
+<!-- Activity 5: Snorkeling Cruise -->
+<div data-activity="snorkeling-cruise" class="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12 items-center">
   <div class="md:col-span-7 relative group">
     <div class="absolute top-6 left-6 z-30 bg-accent-gold-dark text-white px-4 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase shadow-xl">Mas Popular</div>
 
-    <div class={`aspect-[4/3] md:aspect-[16/9] overflow-hidden rounded-lg shadow-2xl ${activityImages['shared-snorkeling'].length > 1 ? 'activity-carousel' : ''} relative`}>
-      {activityImages['shared-snorkeling'].map((img, idx) => (
-        <Image src={img} alt="Snorkel Compartido" class="activity-slide absolute inset-0 w-full h-full object-cover" style={`opacity:${idx === 0 ? 1 : 0};`} width={1200} height={750} />
+    <div class={`aspect-[4/3] md:aspect-[16/9] overflow-hidden rounded-lg shadow-2xl ${activityImages['snorkeling-cruise'].length > 1 ? 'activity-carousel' : ''} relative`}>
+      {activityImages['snorkeling-cruise'].map((img, idx) => (
+        <Image src={img} alt="Crucero de Snorkel" class="activity-slide absolute inset-0 w-full h-full object-cover" style={`opacity:${idx === 0 ? 1 : 0};`} width={1200} height={750} />
       ))}
-      {activityImages['shared-snorkeling'].length > 1 && (
+      {activityImages['snorkeling-cruise'].length > 1 && (
         <><button type="button" aria-label="Diapositiva anterior" class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_left</span></button>
         <button type="button" aria-label="Diapositiva siguiente" class="carousel-next absolute right-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_right</span></button>
         <div class="carousel-dots absolute bottom-3 left-1/2 -translate-x-1/2 z-20 flex gap-2"></div>
@@ -361,22 +361,22 @@ for (const [key, paths] of Object.entries(carouselConfig.fleet)) {
       <li class="flex items-start gap-3 text-navy/70 font-medium text-sm lg:text-base leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> Servicio todo incluido — barra libre, almuerzo, equipo y toallas incluidas</li>
     </ul>
     <div class="space-y-4">
-      <a href="/es/tours/shared-snorkeling/" class="block text-center bg-transparent text-navy border border-navy w-full py-3 rounded-lg font-bold tracking-widest text-sm hover:bg-navy/5 transition-all uppercase">Detalles Snorkel Compartido</a>
+      <a href="/es/tours/snorkeling-cruise/" class="block text-center bg-transparent text-navy border border-navy w-full py-3 rounded-lg font-bold tracking-widest text-sm hover:bg-navy/5 transition-all uppercase">Detalles Crucero de Snorkel</a>
     </div>
     <div class="md:hidden border-b border-border-light mt-8"></div>
   </div>
 </div>
 
-<!-- Activity 6: Shared Sunset Cruise -->
-<div data-activity="shared-sunset" class="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12 items-center">
+<!-- Activity 6: Sunset Sailing -->
+<div data-activity="sunset-sailing" class="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12 items-center">
   <div class="md:col-span-7 order-1 md:order-2 relative group">
     <div class="absolute top-6 left-6 z-30 bg-accent-gold-dark text-white px-4 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase shadow-xl">Premium</div>
 
-    <div class={`aspect-[4/3] md:aspect-[16/9] overflow-hidden rounded-lg shadow-2xl ${activityImages['shared-sunset'].length > 1 ? 'activity-carousel' : ''} relative`}>
-      {activityImages['shared-sunset'].map((img, idx) => (
+    <div class={`aspect-[4/3] md:aspect-[16/9] overflow-hidden rounded-lg shadow-2xl ${activityImages['sunset-sailing'].length > 1 ? 'activity-carousel' : ''} relative`}>
+      {activityImages['sunset-sailing'].map((img, idx) => (
         <Image src={img} alt="Crucero Compartido al Atardecer" class="activity-slide absolute inset-0 w-full h-full object-cover" style={`opacity:${idx === 0 ? 1 : 0};`} width={1200} height={750} />
       ))}
-      {activityImages['shared-sunset'].length > 1 && (
+      {activityImages['sunset-sailing'].length > 1 && (
         <><button type="button" aria-label="Diapositiva anterior" class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_left</span></button>
         <button type="button" aria-label="Diapositiva siguiente" class="carousel-next absolute right-3 top-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center w-12 h-24 rounded-md text-white/60 hover:text-white/95 transition-all"><span class="material-symbols-outlined text-7xl font-light">chevron_right</span></button>
         <div class="carousel-dots absolute bottom-3 left-1/2 -translate-x-1/2 z-20 flex gap-2"></div>
@@ -408,7 +408,7 @@ for (const [key, paths] of Object.entries(carouselConfig.fleet)) {
       <li class="flex items-start gap-3 text-navy/70 font-medium text-sm lg:text-base leading-relaxed"><span class="material-symbols-outlined text-accent-gold text-lg mt-1">check</span> Vistas inolvidables del atardecer — primera fila en el agua</li>
     </ul>
     <div class="space-y-4">
-      <a href="/es/tours/shared-sunset/" class="block text-center bg-transparent text-navy border border-navy w-full py-3 rounded-lg font-bold tracking-widest text-sm hover:bg-navy/5 transition-all uppercase">Detalles Atardecer Compartido</a>
+      <a href="/es/tours/sunset-sailing/" class="block text-center bg-transparent text-navy border border-navy w-full py-3 rounded-lg font-bold tracking-widest text-sm hover:bg-navy/5 transition-all uppercase">Detalles Velero al Atardecer</a>
     </div>
   </div>
 </div>
@@ -416,10 +416,10 @@ for (const [key, paths] of Object.entries(carouselConfig.fleet)) {
 </div>
 <!-- Bottom Toggle -->
 <div class="px-6 pt-12 lg:max-w-[800px] lg:mx-auto text-center">
-  <p class="text-navy/70 text-sm mb-4">Cambia entre experiencias privadas y compartidas</p>
+  <p class="text-navy/70 text-sm mb-4">Cambia entre experiencias privadas y en velero</p>
   <div class="flex items-center justify-center gap-1 bg-white rounded-full p-1 max-w-[360px] mx-auto border border-border-light shadow-sm">
     <button onclick="document.getElementById('section-private').scrollIntoView({behavior:'smooth',block:'start'})" class="flex-1 py-2.5 rounded-full text-sm font-bold uppercase tracking-widest transition-all text-navy/70 hover:bg-navy/5">Cruceros Privados</button>
-    <button onclick="document.getElementById('section-shared').scrollIntoView({behavior:'smooth',block:'start'})" class="flex-1 py-2.5 rounded-full text-sm font-bold uppercase tracking-widest transition-all bg-navy text-white shadow-md">Cruceros Compartidos</button>
+    <button onclick="document.getElementById('section-shared').scrollIntoView({behavior:'smooth',block:'start'})" class="flex-1 py-2.5 rounded-full text-sm font-bold uppercase tracking-widest transition-all bg-navy text-white shadow-md">Cruceros en Velero</button>
   </div>
 </div>
 </section>
@@ -609,9 +609,9 @@ for (const [key, paths] of Object.entries(carouselConfig.fleet)) {
       </div>
     </div>
 
-    <!-- Shared Sailing Card -->
+    <!-- Sailing Cruise Card -->
     <div class="w-full bg-white border-2 border-navy/80 rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/10">
-      <CarouselImage type="boat" id="shared-sailing" alt="Velero compartido 42' en Cabo San Lucas" imgStyle="transform: scale(1.1); object-position: center 90%;">
+      <CarouselImage type="boat" id="sailing-cruise" alt="Velero compartido 42' en Cabo San Lucas" imgStyle="transform: scale(1.1); object-position: center 90%;">
         <div class="absolute inset-0 bg-gradient-to-t from-navy/15 via-transparent to-transparent"></div>
         <div class="absolute bottom-5 left-6">
           <h4 class="text-white text-lg lg:text-xl">Velero 38'–42'</h4>
@@ -746,11 +746,11 @@ for (const [key, paths] of Object.entries(carouselConfig.fleet)) {
     </details>
     <details class="group bg-white border border-border-light rounded-2xl px-5 py-4 shadow-sm">
       <summary class="flex items-center justify-between cursor-pointer list-none font-serif text-navy text-base lg:text-lg font-semibold">El crucero es privado o compartido?<span class="material-symbols-outlined text-accent-gold transition-transform group-open:rotate-180">expand_more</span></summary>
-      <p class="text-navy/70 text-sm lg:text-base leading-relaxed mt-3">Ofrecemos ambas opciones. Los charters privados son exclusivamente para tu grupo, mientras que los cruceros compartidos estan limitados a grupos pequenos (maximo 12 huespedes) para una experiencia mas comoda.</p>
+      <p class="text-navy/70 text-sm lg:text-base leading-relaxed mt-3">Ofrecemos ambas opciones. Los charters privados son exclusivamente para tu grupo, mientras que los cruceros en velero estan limitados a grupos pequenos (maximo 12 huespedes) para una experiencia mas comoda.</p>
     </details>
     <details class="group bg-white border border-border-light rounded-2xl px-5 py-4 shadow-sm">
       <summary class="flex items-center justify-between cursor-pointer list-none font-serif text-navy text-base lg:text-lg font-semibold">Cuantas personas van a bordo?<span class="material-symbols-outlined text-accent-gold transition-transform group-open:rotate-180">expand_more</span></summary>
-      <p class="text-navy/70 text-sm lg:text-base leading-relaxed mt-3">Los cruceros privados varian segun tu grupo (hasta 18-20 huespedes dependiendo del yate). Los cruceros compartidos estan intencionalmente limitados a unos 14 huespedes para evitar multitudes.</p>
+      <p class="text-navy/70 text-sm lg:text-base leading-relaxed mt-3">Los cruceros privados varian segun tu grupo (hasta 18-20 huespedes dependiendo del yate). Los cruceros en velero estan intencionalmente limitados a unos 14 huespedes para evitar multitudes.</p>
     </details>
     <details class="group bg-white border border-border-light rounded-2xl px-5 py-4 shadow-sm">
       <summary class="flex items-center justify-between cursor-pointer list-none font-serif text-navy text-base lg:text-lg font-semibold">Cual es su politica de cancelacion?<span class="material-symbols-outlined text-accent-gold transition-transform group-open:rotate-180">expand_more</span></summary>

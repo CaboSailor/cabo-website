@@ -18,11 +18,11 @@ const lp = (path: string) => getLocalePath(lang, path);
 const tourDropdown = [
   { group: t(lang, 'nav.tourDropdown.snorkeling'), items: [
     { href: lp('/tours/private-snorkeling'), label: t(lang, 'nav.tourDropdown.privateSnorkeling') },
-    { href: lp('/tours/shared-snorkeling'), label: t(lang, 'nav.tourDropdown.sharedSnorkeling') },
+    { href: lp('/tours/snorkeling-cruise'), label: t(lang, 'nav.tourDropdown.sharedSnorkeling') },
   ]},
   { group: t(lang, 'nav.tourDropdown.sunset'), items: [
     { href: lp('/tours/private-sunset'), label: t(lang, 'nav.tourDropdown.privateSunset') },
-    { href: lp('/tours/shared-sunset'), label: t(lang, 'nav.tourDropdown.sharedSunset') },
+    { href: lp('/tours/sunset-sailing'), label: t(lang, 'nav.tourDropdown.sharedSunset') },
   ]},
   { group: null, items: [
     { href: lp('/tours/whale-watching'), label: t(lang, 'nav.tourDropdown.whaleWatching') },

@@ -78,7 +78,7 @@ Si tu mareo es muy severo y simplemente no puedes salir al agua, no sientas que 
 
 Como mencionamos al principio del art&iacute;culo, hay una gran cantidad de actividades en tierra para disfrutar, as&iacute; como kil&oacute;metros de hermosa costa para explorar.
 
-Tambi&eacute;n hay <a href="/es/tours/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">tours de snorkel</a> que ofrecen una duraci&oacute;n m&aacute;s corta de navegaci&oacute;n y te permiten acercarte a la enorme variedad de impresionante vida marina que Cabo alberga.
+Tambi&eacute;n hay <a href="/es/tours/snorkeling-cruise/" class="text-accent-gold font-semibold hover:underline">tours de snorkel</a> que ofrecen una duraci&oacute;n m&aacute;s corta de navegaci&oacute;n y te permiten acercarte a la enorme variedad de impresionante vida marina que Cabo alberga.
 
 Incluso podr&iacute;as usar este viaje de vela m&aacute;s corto para probar el agua (juego de palabras intencional) y poner a prueba los m&eacute;todos contra el mareo que mencionamos arriba.
 

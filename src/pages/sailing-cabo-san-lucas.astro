@@ -21,14 +21,14 @@ import sailingSnorkelTour from "../assets/images/guests-on-sailboats/cabo-sailin
 import sailboatsPelicansRock from "../assets/images/blog/sailboats-passing-by-pelicans-rock.png";
 import romanticKissSunset from "../assets/images/guests-on-sailboats/romantic-sailboat-kiss-at-sunset.png";
 import sailingFamily from "../assets/images/guests-on-sailboats/family-fun-on-a-sunny-sailboat.png";
-import sharedSunsetSailing from "../assets/images/guests-on-sailboats/cabo-shared-sunset-sailing.jpg";
+import sharedSunsetSailing from "../assets/images/guests-on-sailboats/cabo-sunset-sailing-sailing.jpg";
 import snorkelIcon from "../assets/icons/Snorkel 2.png";
 
 const touristTripSchema = JSON.stringify({
   "@context": "https://schema.org",
   "@type": "TouristTrip",
   "name": "Sailing in Cabo San Lucas — Sailboat Cruises & Private Charters",
-  "description": "Real sailing in Cabo San Lucas — shared sailboat cruises from $102 per person and private sailing charters from $701. All-inclusive bar, food, snorkel gear, departing daily from Cabo Marina.",
+  "description": "Real sailing in Cabo San Lucas — group sailing cruises from $102 per person and private sailing charters from $701. All-inclusive bar, food, snorkel gear, departing daily from Cabo Marina.",
   "touristType": "Couples, Families, Solo Travelers, Groups",
   "provider": {
     "@type": "TravelAgency",
@@ -64,8 +64,8 @@ const sailingPosterAbsUrl = new URL(sailingPoster.src, Astro.site).href;
 const videoSchema = JSON.stringify({
   "@context": "https://schema.org",
   "@type": "VideoObject",
-  "name": "Real Sailing in Cabo San Lucas — Shared & Private Sailboat Cruises",
-  "description": "Real sailing in Cabo San Lucas aboard our 38' and 42' sailboats. Shared cruises from $102 per person and private charters from $701 — departing daily from Cabo Marina.",
+  "name": "Real Sailing in Cabo San Lucas — Group & Private Sailboat Cruises",
+  "description": "Real sailing in Cabo San Lucas aboard our 38' and 42' sailboats. Group sailing cruises from $102 per person and private charters from $701 — departing daily from Cabo Marina.",
   "thumbnailUrl": sailingPosterAbsUrl,
   "uploadDate": "2026-05-24T12:00:00-07:00",
   "duration": "PT1M8S",
@@ -79,7 +79,7 @@ const videoSchema = JSON.stringify({
 });
 ---
 
-<BaseLayout bodyClass="bg-white font-body text-text-main antialiased min-h-screen flex flex-col relative" title="Sailing in Cabo San Lucas — Sailboat Cruises | Cabo Sailing" description="Sailing in Cabo San Lucas — shared sailboat cruises from $102/person and private sailing charters from $701. Real sailing, all-inclusive, departing daily from Cabo Marina." ogImage="/og/sailing-cabo-san-lucas.jpg" ogImageAlt="Sailing in Cabo San Lucas — sailboat cruises and private charters" hreflangs={{ en: '/sailing-cabo-san-lucas', es: '/es/sailing-cabo-san-lucas' }}>
+<BaseLayout bodyClass="bg-white font-body text-text-main antialiased min-h-screen flex flex-col relative" title="Sailing in Cabo San Lucas — Sailboat Cruises | Cabo Sailing" description="Sailing in Cabo San Lucas — group sailing cruises from $102/person and private sailing charters from $701. Real sailing, all-inclusive, departing daily from Cabo Marina." ogImage="/og/sailing-cabo-san-lucas.jpg" ogImageAlt="Sailing in Cabo San Lucas — sailboat cruises and private charters" hreflangs={{ en: '/sailing-cabo-san-lucas', es: '/es/sailing-cabo-san-lucas' }}>
   <script slot="head" type="application/ld+json" set:html={touristTripSchema} />
   <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
   <script slot="head" type="application/ld+json" set:html={videoSchema} />
@@ -159,7 +159,7 @@ const videoSchema = JSON.stringify({
     <span class="text-navy font-semibold">Sailing in Cabo San Lucas</span>
   </nav>
   <h1 class="text-4xl text-navy leading-tight">Sailing in Cabo San Lucas &mdash; Sailboat Cruises &amp; Private Charters</h1>
-  <p class="text-slate-700 text-lg leading-relaxed mt-2">Real sailing on real sailboats &mdash; shared cruises with new friends or private charters where the boat is yours. All-inclusive, departing daily from Cabo Marina.</p>
+  <p class="text-slate-700 text-lg leading-relaxed mt-2">Real sailing on real sailboats &mdash; sailing cruises with new friends or private charters where the boat is yours. All-inclusive, departing daily from Cabo Marina.</p>
 
   <!-- Icons row -->
   <div class="mt-8 grid grid-cols-4 gap-x-6 gap-y-4">
@@ -201,7 +201,7 @@ const videoSchema = JSON.stringify({
   <div class="mt-12">
     <h3 class="text-2xl text-navy mb-4">About this experience</h3>
     <p class="text-slate-700 leading-relaxed text-base">
-      Sailing in Cabo San Lucas is a different kind of day on the water. The engine is off. The sails are up. You hear the wind and the water, not a diesel. We operate Cabo&rsquo;s sailing fleet with three ways to come aboard &mdash; a shared sailboat cruise for solo travelers and small groups, and two private sailboats (42' and 38') for groups who want the whole boat. Every trip sails past Land&rsquo;s End and the Arch, snorkels at Pelican Rock, and includes an unlimited bar, fresh food, snorkel gear, towels, Bluetooth speakers, and a bilingual sailing crew. Three hours standard; extend by the hour for a longer day.
+      Sailing in Cabo San Lucas is a different kind of day on the water. The engine is off. The sails are up. You hear the wind and the water, not a diesel. We operate Cabo&rsquo;s sailing fleet with three ways to come aboard &mdash; a group sailing cruise for solo travelers and small groups, and two private sailboats (42' and 38') for groups who want the whole boat. Every trip sails past Land&rsquo;s End and the Arch, snorkels at Pelican Rock, and includes an unlimited bar, fresh food, snorkel gear, towels, Bluetooth speakers, and a bilingual sailing crew. Three hours standard; extend by the hour for a longer day.
     </p>
   </div>
 </div>
@@ -216,7 +216,7 @@ const videoSchema = JSON.stringify({
     <span class="text-navy font-semibold">Sailing in Cabo</span>
   </nav>
   <h1 class="text-2xl text-navy leading-tight">Sailing in Cabo San Lucas &mdash; Sailboat Cruises &amp; Private Charters</h1>
-  <p class="text-slate-700 text-base leading-relaxed mt-2">Real sailing on real sailboats &mdash; shared cruises with new friends or private charters where the boat is yours. All-inclusive, departing daily from Cabo Marina.</p>
+  <p class="text-slate-700 text-base leading-relaxed mt-2">Real sailing on real sailboats &mdash; sailing cruises with new friends or private charters where the boat is yours. All-inclusive, departing daily from Cabo Marina.</p>
 </div>
 
 <!-- MOBILE: Icons row -->
@@ -236,7 +236,7 @@ const videoSchema = JSON.stringify({
 <!-- MOBILE: About -->
 <div class="lg:hidden mt-8 px-5">
   <h3 class="text-lg text-navy mb-3">About this experience</h3>
-  <p class="text-slate-700 leading-relaxed text-base">Sailing in Cabo San Lucas is a different kind of day on the water. The engine is off. The sails are up. You hear the wind and the water, not a diesel. We operate Cabo&rsquo;s sailing fleet with three ways to come aboard &mdash; a shared sailboat cruise for solo travelers and small groups, and two private sailboats (42' and 38') for groups who want the whole boat.</p>
+  <p class="text-slate-700 leading-relaxed text-base">Sailing in Cabo San Lucas is a different kind of day on the water. The engine is off. The sails are up. You hear the wind and the water, not a diesel. We operate Cabo&rsquo;s sailing fleet with three ways to come aboard &mdash; a group sailing cruise for solo travelers and small groups, and two private sailboats (42' and 38') for groups who want the whole boat.</p>
 </div>
 
 <!-- ===== UNIQUE BLOCK #1: Why sail instead of motor ===== -->
@@ -275,7 +275,7 @@ const videoSchema = JSON.stringify({
     <div class="lg:max-w-[1100px] lg:mx-auto">
       <Video
         videoId="Zx7KO9vSCEs"
-        title="Real Sailing in Cabo San Lucas — Shared & Private Sailboat Cruises"
+        title="Real Sailing in Cabo San Lucas — Group & Private Sailboat Cruises"
         poster={sailingPoster.src}
       />
       <p class="text-sm text-slate-500 text-center mt-3 italic">Filmed aboard our 38' and 42' sailboats off Cabo San Lucas.</p>
@@ -288,12 +288,12 @@ const videoSchema = JSON.stringify({
   <div class="flex items-center gap-3 mb-8"><div class="w-1 h-6 bg-gold rounded-full"></div><h2 class="text-lg lg:text-2xl text-navy">Choose your sailing experience</h2></div>
 
   <div class="flex flex-col gap-5 lg:grid lg:grid-cols-3 lg:max-w-[1100px] lg:mx-auto pb-8">
-    <!-- Shared Sailing Cruise -->
-    <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="shared-sailing">
-      <CarouselImage type="boat" id="shared-sailing" alt="Shared sailing cruise in Cabo San Lucas — sailboat at sea">
+    <!-- Sailing Cruise Cruise -->
+    <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="sailing-cruise">
+      <CarouselImage type="boat" id="sailing-cruise" alt="Group sailing cruise in Cabo San Lucas — sailboat at sea">
         <div class="absolute inset-0 bg-gradient-to-t from-navy/25 via-navy/5 to-transparent"></div>
         <div class="absolute bottom-5 left-6">
-          <h3 class="text-white text-lg lg:text-xl">Shared Sailing Cruise</h3>
+          <h3 class="text-white text-lg lg:text-xl">Sailing Cruise Cruise</h3>
           <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Mixed group, up to 14</span></div>
         </div>
         <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Best Value</div>
@@ -355,7 +355,7 @@ const videoSchema = JSON.stringify({
           </tr>
         </thead>
         <tbody class="text-sm">
-          <tr class="border-b border-border-light"><td class="py-3 pr-4 font-semibold text-navy">Shared Sailing Cruise</td><td class="py-3 pr-4 text-slate-700">Mixed, up to 14</td><td class="py-3 pr-4 text-slate-700">$102 / person</td><td class="py-3 text-slate-700">Solo travelers, couples, social vibe</td></tr>
+          <tr class="border-b border-border-light"><td class="py-3 pr-4 font-semibold text-navy">Sailing Cruise Cruise</td><td class="py-3 pr-4 text-slate-700">Mixed, up to 14</td><td class="py-3 pr-4 text-slate-700">$102 / person</td><td class="py-3 text-slate-700">Solo travelers, couples, social vibe</td></tr>
           <tr class="border-b border-border-light bg-gold/5"><td class="py-3 pr-4 font-semibold text-navy"><span class="text-gold mr-1">&#11088;</span>Private Sailing 42'</td><td class="py-3 pr-4 text-slate-700">Your group, up to 14</td><td class="py-3 pr-4 text-slate-700">$927 (1-4)</td><td class="py-3 text-slate-700">Family days, friend trips, anniversaries</td></tr>
           <tr><td class="py-3 pr-4 font-semibold text-navy">Private Sailing 38'</td><td class="py-3 pr-4 text-slate-700">Your group, up to 9</td><td class="py-3 pr-4 text-slate-700">$701 (1-4)</td><td class="py-3 text-slate-700">Couples, honeymoons, intimate</td></tr>
         </tbody>
@@ -385,13 +385,13 @@ const videoSchema = JSON.stringify({
       <div class="w-10 h-10 rounded-full bg-navy flex items-center justify-center mb-3"><Image src={snorkelIcon} alt="" class="w-5 h-5 object-contain" style="filter: brightness(0) invert(1);" width={40} height={40} /></div>
       <h3 class="text-base font-bold text-navy mb-1">Snorkel + Sail</h3>
       <p class="text-sm text-slate-600 leading-relaxed mb-2">Sail past the Arch, anchor at Pelican Rock, swim with tropical fish. Gear and guide included.</p>
-      <p class="text-sm leading-relaxed"><a href="/tours/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">Shared snorkeling</a> &middot; <a href="/tours/private-snorkeling/" class="text-accent-gold font-semibold hover:underline">Private snorkeling</a></p>
+      <p class="text-sm leading-relaxed"><a href="/tours/snorkeling-cruise/" class="text-accent-gold font-semibold hover:underline">Snorkeling Cruise</a> &middot; <a href="/tours/private-snorkeling/" class="text-accent-gold font-semibold hover:underline">Private snorkeling</a></p>
     </div>
     <div class="bg-light-grey rounded-2xl p-5 border border-border-light hover:shadow-md transition-shadow">
       <div class="w-10 h-10 rounded-full bg-navy flex items-center justify-center mb-3"><span class="material-symbols-outlined text-white text-lg">wb_twilight</span></div>
       <h3 class="text-base font-bold text-navy mb-1">Sunset Sail</h3>
       <p class="text-sm text-slate-600 leading-relaxed mb-2">Time your sail for golden hour &mdash; sails up, sun down, drinks on deck.</p>
-      <p class="text-sm leading-relaxed"><a href="/tours/shared-sunset/" class="text-accent-gold font-semibold hover:underline">Public sunset</a> &middot; <a href="/tours/private-sunset/" class="text-accent-gold font-semibold hover:underline">Private sunset</a></p>
+      <p class="text-sm leading-relaxed"><a href="/tours/sunset-sailing/" class="text-accent-gold font-semibold hover:underline">Public sunset</a> &middot; <a href="/tours/private-sunset/" class="text-accent-gold font-semibold hover:underline">Private sunset</a></p>
     </div>
     <div class="bg-light-grey rounded-2xl p-5 border border-border-light">
       <div class="w-10 h-10 rounded-full bg-navy flex items-center justify-center mb-3"><span class="material-symbols-outlined text-white text-lg">explore</span></div>
@@ -445,7 +445,7 @@ const videoSchema = JSON.stringify({
 <div class="mt-14 lg:max-w-[1400px] lg:mx-auto lg:px-10 px-5">
   <div class="rounded-3xl bg-navy text-white p-8 lg:p-12">
     <div class="flex items-center gap-3 mb-5"><div class="w-1 h-6 bg-gold rounded-full"></div><h2 class="text-lg lg:text-2xl">Why sail with Cabo Sailing</h2></div>
-    <p class="text-white/90 text-base lg:text-lg leading-relaxed mb-8 lg:max-w-3xl">Un-matched service from booking to execution. Every sail &mdash; shared or private &mdash; is planned and run for one outcome: a day your group remembers for years. That&rsquo;s the only standard we work to.</p>
+    <p class="text-white/90 text-base lg:text-lg leading-relaxed mb-8 lg:max-w-3xl">Un-matched service from booking to execution. Every sail &mdash; group or private &mdash; is planned and run for one outcome: a day your group remembers for years. That&rsquo;s the only standard we work to.</p>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
       <div>
         <div class="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center mb-3"><span class="material-symbols-outlined text-gold">sailing</span></div>
@@ -561,7 +561,7 @@ const videoSchema = JSON.stringify({
         <span class="material-symbols-outlined text-slate-500 faq-chevron transition-transform duration-300">expand_more</span>
       </label>
       <div class="faq-answer max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out px-4 pb-4">
-        <p class="text-sm text-slate-700 leading-relaxed">Yes &mdash; it&rsquo;s our most popular private sailing booking. Golden hour, sails up, no engine. Book a dedicated <a href="/tours/shared-sunset/" class="text-accent-gold font-semibold hover:underline">shared sunset sail</a>, a <a href="/tours/private-sunset/" class="text-accent-gold font-semibold hover:underline">private sunset charter</a>, or add a sunset return to a private day charter.</p>
+        <p class="text-sm text-slate-700 leading-relaxed">Yes &mdash; it&rsquo;s our most popular private sailing booking. Golden hour, sails up, no engine. Book a dedicated <a href="/tours/sunset-sailing/" class="text-accent-gold font-semibold hover:underline">sunset sailing sail</a>, a <a href="/tours/private-sunset/" class="text-accent-gold font-semibold hover:underline">private sunset charter</a>, or add a sunset return to a private day charter.</p>
       </div>
     </div>
     <div class="faq-item border border-border-light rounded-2xl overflow-hidden bg-white">

@@ -85,7 +85,7 @@ While Hawaii's tropical vibe comes with lush, green surroundings, Cabo presents 
 
 Hawaii boasts more than 750 miles of coastline, giving travelers an array of beaches to choose from. Waikiki Beach on Oahu is perfect for those who enjoy vibrant city life combined with surf culture, dining, and nightlife. Kaanapali Beach in Maui is known for its long, walkable shoreline and calm waters, while Poipu Beach on Kauai is a family favorite with gentle waves and safe swimming areas. The Big Island's black sand beaches provide a striking natural experience, and Punalu&#699;u Beach is particularly famous for its resident sea turtles. Hidden coves and less-crowded stretches of sand reward visitors seeking quiet and seclusion.
 
-Cabo San Lucas may have a shorter coastline, but its beaches are unforgettable. Lover's Beach at Land's End is framed by dramatic rock formations, making it one of the most photographed spots in the region. Medano Beach is lively and ideal for swimming, sunbathing, and enjoying beachside dining. Santa Maria Beach, a quieter spot, gives excellent <a href="/tours/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">snorkeling</a> opportunities with crystal-clear waters.
+Cabo San Lucas may have a shorter coastline, but its beaches are unforgettable. Lover's Beach at Land's End is framed by dramatic rock formations, making it one of the most photographed spots in the region. Medano Beach is lively and ideal for swimming, sunbathing, and enjoying beachside dining. Santa Maria Beach, a quieter spot, gives excellent <a href="/tours/snorkeling-cruise/" class="text-accent-gold font-semibold hover:underline">snorkeling</a> opportunities with crystal-clear waters.
 
 While Hawaii has more variety, Cabo impresses with its striking desert-meets-ocean scenery and intimate, picturesque beach experiences.
 
@@ -169,7 +169,7 @@ Already leaning toward Cabo? Browse our <a href="/travel-guide/" class="text-acc
 
 ## Book Your Cabo Adventure with Cabo Sailing
 
-If Cabo is your chosen destination, Cabo Sailing is ready to turn your trip into an experience you will treasure. Our <a href="/tours/" class="text-accent-gold font-semibold hover:underline">private yacht charters</a>, shared sailing trips, and customizable excursions allow you to explore the breathtaking coastlines of Cabo with unmatched comfort and style. Guests appreciate our clear and simple booking process, exceptional service from start to finish, and commitment to safety on every voyage.
+If Cabo is your chosen destination, Cabo Sailing is ready to turn your trip into an experience you will treasure. Our <a href="/tours/" class="text-accent-gold font-semibold hover:underline">private yacht charters</a>, sailing trips, and customizable excursions allow you to explore the breathtaking coastlines of Cabo with unmatched comfort and style. Guests appreciate our clear and simple booking process, exceptional service from start to finish, and commitment to safety on every voyage.
 
 Whether you are celebrating a milestone, planning a romantic escape, or simply seeking a peaceful day on the water, our team goes above and beyond to exceed expectations. Many guests return again and again, drawn to the personalized attention and unforgettable moments they experience with us.
 

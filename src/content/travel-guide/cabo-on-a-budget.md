@@ -102,7 +102,7 @@ Cabo has incredible street food and local restaurants if you step a few blocks a
   <li><strong>Fox Canyon hike</strong> &mdash; a scenic desert canyon about 20 minutes from town. Entrance is around $2. Bring water and sturdy shoes</li>
   <li><strong>Local bus to San Jos&eacute; del Cabo</strong> &mdash; $3&ndash;$4 each way. Explore the art district, eat lunch, and take the bus back</li>
   <li><strong>Snorkel gear rental</strong> &mdash; $10&ndash;$15 per day from shops near the marina. Bring it to Chileno Bay or Santa Mar&iacute;a Bay (both free public beaches)</li>
-  <li><strong>Shared snorkeling tour</strong> &mdash; group tours start around $30&ndash;$50 per person. See the Arch, sea lions, and snorkel at Pelican Rock</li>
+  <li><strong>Group snorkeling tour</strong> &mdash; group tours start around $30&ndash;$50 per person. See the Arch, sea lions, and snorkel at Pelican Rock</li>
 </ul>
 
 ---
@@ -159,7 +159,7 @@ Yes. All beaches in Mexico are public by federal law. Medano Beach, Chileno Bay,
 
 **Can I find budget tours in Cabo?**
 
-Absolutely. Shared snorkeling tours run $30&ndash;$50 per person. Water taxis to Lover&rsquo;s Beach are $10&ndash;$15. Glass-bottom boat rides are around $15. The best deals are found by booking directly at the marina rather than through your hotel.
+Absolutely. Group snorkeling tours run $30&ndash;$50 per person. Water taxis to Lover&rsquo;s Beach are $10&ndash;$15. Glass-bottom boat rides are around $15. The best deals are found by booking directly at the marina rather than through your hotel.
 
 <script type="application/ld+json">
 {
@@ -195,7 +195,7 @@ Absolutely. Shared snorkeling tours run $30&ndash;$50 per person. Water taxis to
       "name": "Can I find budget tours in Cabo?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absolutely. Shared snorkeling tours run $30-$50 per person. Water taxis to Lover's Beach are $10-$15. Glass-bottom boat rides are around $15."
+        "text": "Absolutely. Group snorkeling tours run $30-$50 per person. Water taxis to Lover's Beach are $10-$15. Glass-bottom boat rides are around $15."
       }
     }
   ]

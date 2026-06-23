@@ -117,8 +117,8 @@ RewriteRule ^preparing-for-your-scuba-diving-trip-to-cabo-san-lucas/?$ /travel-g
 RewriteRule ^cabo-snorkeling-journey-through-cabos-finest-snorkeling-sites/?$ /travel-guide/snorkeling-diving/ [R=301,L]
 
 # Old snorkeling tour pages → tour service pages
-RewriteRule ^cabo-snorkeling-tours/?$ /tours/shared-snorkeling/ [R=301,L]
-RewriteRule ^los-cabos-snorkeling-tour/?$ /tours/shared-snorkeling/ [R=301,L]
+RewriteRule ^cabo-snorkeling-tours/?$ /tours/snorkeling-cruise/ [R=301,L]
+RewriteRule ^los-cabos-snorkeling-tour/?$ /tours/snorkeling-cruise/ [R=301,L]
 RewriteRule ^private-cabo-snorkeling-tour-exploring-the-baja-peninsulas-vibrant-marine-life/?$ /tours/private-snorkeling/ [R=301,L]
 RewriteRule ^cabo-snorkel-tour-exploring-the-best-snorkeling-spots-in-los-cabos/?$ /travel-guide-activities/ [R=301,L]
 RewriteRule ^snorkeling-tour-at-santa-maria-bay-explore-the-beauty-of-baja-peninsulas-aquatic-life/?$ /travel-guide-activities/ [R=301,L]
@@ -176,12 +176,12 @@ RewriteRule ^book-now/?$ /contact/ [R=301,L]
 # Old /tours-and-boats/* tour pages → individual service pages
 # (specific rules first, then catch-all to /tours/)
 # -----------------------------------------------------------------------------
-RewriteRule ^tours-and-boats/cabo-sunset-cruise/?$ /tours/shared-sunset/ [R=301,L]
+RewriteRule ^tours-and-boats/cabo-sunset-cruise/?$ /tours/sunset-sailing/ [R=301,L]
 RewriteRule ^tours-and-boats/cabo-whale-watching/?$ /tours/whale-watching/ [R=301,L]
-RewriteRule ^tours-and-boats/cabo-snorkeling/?$ /tours/shared-snorkeling/ [R=301,L]
+RewriteRule ^tours-and-boats/cabo-snorkeling/?$ /tours/snorkeling-cruise/ [R=301,L]
 RewriteRule ^tours-and-boats/cabo-scuba-diving/?$ /tours/scuba-diving/ [R=301,L]
 RewriteRule ^tours-and-boats/yacht-bachelorette-party-in-cabo/?$ /tours/bachelorette/ [R=301,L]
-RewriteRule ^tours-and-boats/shared-sailing-cruises/?$ /tours/shared-sunset/ [R=301,L]
+RewriteRule ^tours-and-boats/shared-sailing-cruises/?$ /tours/sunset-sailing/ [R=301,L]
 RewriteRule ^tours-and-boats/cabo-day-trip/?$ /tours/ [R=301,L]
 RewriteRule ^tours-and-boats(/.*)?$ /tours/ [R=301,L]
 
@@ -189,7 +189,7 @@ RewriteRule ^tours-and-boats(/.*)?$ /tours/ [R=301,L]
 # Old /book-now/* booking pages → /tours/
 # (specific rule for shared booking, then catch-all)
 # -----------------------------------------------------------------------------
-RewriteRule ^book-now/shared-snorkeling-or-sunset-sailing/?$ /tours/shared-snorkeling/ [R=301,L]
+RewriteRule ^book-now/shared-snorkeling-or-sunset-sailing/?$ /tours/snorkeling-cruise/ [R=301,L]
 RewriteRule ^book-now/.+$ /tours/ [R=301,L]
 
 # -----------------------------------------------------------------------------
@@ -216,8 +216,8 @@ RewriteRule ^catalog/.+$ /tours/ [R=301,L]
 RewriteRule ^productsCalendar/.+$ /tours/ [R=301,L]
 RewriteRule ^calendarWidget/.+$ /tours/ [R=301,L]
 # Old numeric-prefix product URLs (e.g. /168008/your-own-private-42-luxury-yacht)
-RewriteRule ^[0-9]+/.+(snorkeling|sunset)-sailing.*$ /tours/shared-snorkeling/ [R=301,L]
-RewriteRule ^[0-9]+/.+sailboat-for-snorkeling-or-sunset-sailing/?$ /tours/shared-snorkeling/ [R=301,L]
+RewriteRule ^[0-9]+/.+(snorkeling|sunset)-sailing.*$ /tours/snorkeling-cruise/ [R=301,L]
+RewriteRule ^[0-9]+/.+sailboat-for-snorkeling-or-sunset-sailing/?$ /tours/snorkeling-cruise/ [R=301,L]
 RewriteRule ^[0-9]+/.+$ /tours/ [R=301,L]
 
 # =============================================================================
@@ -235,7 +235,7 @@ RewriteRule ^es/politicas-de-privacidad/?$ /es/policies/ [R=301,L]
 RewriteRule ^es/transportacion/?$ /es/shuttle-service/ [R=301,L]
 
 # Old /es/paseos-y-barcos/* tour pages
-RewriteRule ^es/paseos-y-barcos/crucero-al-atardecer/?$ /es/tours/shared-sunset/ [R=301,L]
+RewriteRule ^es/paseos-y-barcos/crucero-al-atardecer/?$ /es/tours/sunset-sailing/ [R=301,L]
 RewriteRule ^es/paseos-y-barcos/avistamiento-de-ballenas/?$ /es/tours/whale-watching/ [R=301,L]
 RewriteRule ^es/paseos-y-barcos/fiesta-de-despedida-de-soltera-en-yate/?$ /es/tours/bachelorette/ [R=301,L]
 RewriteRule ^es/paseos-y-barcos(/.*)?$ /es/tours/ [R=301,L]
@@ -345,22 +345,32 @@ RewriteRule ^unique-dining-experiences-in-cabo/?$ /travel-guide-culture/ [R=301,
 RewriteRule ^sailing-cruises/?$ /sailing-cabo-san-lucas/ [R=301,L]
 RewriteRule ^es/sailing-cruises/?$ /es/sailing-cabo-san-lucas/ [R=301,L]
 
+
+# -----------------------------------------------------------------------------
+# Tour slug rename (June 2026): "shared-*" → descriptive names (SEO rebrand)
+# Old indexed URLs redirect to new canonical slugs.
+# -----------------------------------------------------------------------------
+RewriteRule ^tours/shared-snorkeling/?$ /tours/snorkeling-cruise/ [R=301,L]
+RewriteRule ^tours/shared-sunset/?$ /tours/sunset-sailing/ [R=301,L]
+RewriteRule ^es/tours/shared-snorkeling/?$ /es/tours/snorkeling-cruise/ [R=301,L]
+RewriteRule ^es/tours/shared-sunset/?$ /es/tours/sunset-sailing/ [R=301,L]
+
 # -----------------------------------------------------------------------------
 # Tour pages moved under /tours/ (May 2026): /<slug>/ → /tours/<slug>/
 # Site launched ~3 weeks ago, so Google indexed the flat URLs first.
 # -----------------------------------------------------------------------------
 RewriteRule ^private-snorkeling/?$ /tours/private-snorkeling/ [R=301,L]
-RewriteRule ^shared-snorkeling/?$ /tours/shared-snorkeling/ [R=301,L]
+RewriteRule ^shared-snorkeling/?$ /tours/snorkeling-cruise/ [R=301,L]
 RewriteRule ^private-sunset/?$ /tours/private-sunset/ [R=301,L]
-RewriteRule ^shared-sunset/?$ /tours/shared-sunset/ [R=301,L]
+RewriteRule ^shared-sunset/?$ /tours/sunset-sailing/ [R=301,L]
 RewriteRule ^whale-watching/?$ /tours/whale-watching/ [R=301,L]
 RewriteRule ^bachelorette/?$ /tours/bachelorette/ [R=301,L]
 RewriteRule ^scuba-diving/?$ /tours/scuba-diving/ [R=301,L]
 
 RewriteRule ^es/private-snorkeling/?$ /es/tours/private-snorkeling/ [R=301,L]
-RewriteRule ^es/shared-snorkeling/?$ /es/tours/shared-snorkeling/ [R=301,L]
+RewriteRule ^es/shared-snorkeling/?$ /es/tours/snorkeling-cruise/ [R=301,L]
 RewriteRule ^es/private-sunset/?$ /es/tours/private-sunset/ [R=301,L]
-RewriteRule ^es/shared-sunset/?$ /es/tours/shared-sunset/ [R=301,L]
+RewriteRule ^es/shared-sunset/?$ /es/tours/sunset-sailing/ [R=301,L]
 RewriteRule ^es/whale-watching/?$ /es/tours/whale-watching/ [R=301,L]
 RewriteRule ^es/bachelorette/?$ /es/tours/bachelorette/ [R=301,L]
 RewriteRule ^es/scuba-diving/?$ /es/tours/scuba-diving/ [R=301,L]

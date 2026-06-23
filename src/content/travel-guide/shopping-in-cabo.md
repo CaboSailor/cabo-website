@@ -8,7 +8,7 @@ category: "Activities"
 categoryLink: "/travel-guide-activities/"
 activeSubmenu: "activities"
 bestTime: "Year-round — shops and markets are open every day"
-relatedActivity: "/tours/shared-snorkeling/"
+relatedActivity: "/tours/snorkeling-cruise/"
 sidebarType: "default"
 ---
 
@@ -104,4 +104,4 @@ For a more relaxed shopping experience, head to The Shoppes at Palmilla, located
 
 If you're looking for fine jewelry, local art, or fashion, you'll find something special here. After browsing, enjoy a coffee while taking in the beautiful surroundings. The tranquil atmosphere and high-end offerings make it a favorite for those seeking a quieter, more luxurious shopping experience.
 
-Need a break from the shops? Spend a morning on the water with a <a href="/tours/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">snorkeling cruise</a> &mdash; the perfect way to balance retail therapy with ocean adventure.
+Need a break from the shops? Spend a morning on the water with a <a href="/tours/snorkeling-cruise/" class="text-accent-gold font-semibold hover:underline">snorkeling cruise</a> &mdash; the perfect way to balance retail therapy with ocean adventure.

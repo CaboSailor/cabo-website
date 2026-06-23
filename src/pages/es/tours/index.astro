@@ -7,8 +7,8 @@ import CarouselImage from '../../../components/CarouselImage.astro';
 import YachtIcon from '../../../components/YachtIcon.astro';
 
 const sharedTours = [
-  { href: '/es/tours/shared-snorkeling/', id: 'shared-snorkeling', label: 'Snorkel Compartido',   tagline: '3 hrs · grupo hasta 14', alt: 'Tour compartido de snorkel en Cabo San Lucas' },
-  { href: '/es/tours/shared-sunset/',     id: 'shared-sunset',     label: 'Atardecer Compartido', tagline: '2 hrs · grupo hasta 14', alt: 'Crucero compartido al atardecer en Cabo San Lucas' },
+  { href: '/es/tours/snorkeling-cruise/', id: 'snorkeling-cruise', label: 'Crucero de Snorkel',   tagline: '3 hrs · grupo hasta 14', alt: 'Tour de Snorkel en Cabo San Lucas' },
+  { href: '/es/tours/sunset-sailing/',     id: 'sunset-sailing',     label: 'Velero al Atardecer', tagline: '2 hrs · grupo hasta 14', alt: 'Crucero compartido al atardecer en Cabo San Lucas' },
 ];
 
 const privateTours = [
@@ -82,7 +82,7 @@ const faqSchema = JSON.stringify({
 });
 ---
 
-<BaseLayout title="Tours — Cabo Sailing | Tours en Barco en Cabo San Lucas" description="Tours en barco en Cabo San Lucas — snorkel y atardecer compartidos, charters privados, ballenas, despedidas de soltera y buceo." hreflangs={{ en: '/tours', es: '/es/tours' }}>
+<BaseLayout title="Tours — Cabo Sailing | Tours en Barco en Cabo San Lucas" description="Tours en barco en Cabo San Lucas — snorkel y velero al atardecers, charters privados, ballenas, despedidas de soltera y buceo." hreflangs={{ en: '/tours', es: '/es/tours' }}>
   <script slot="head" type="application/ld+json" set:html={breadcrumbSchema} />
   <script slot="head" type="application/ld+json" set:html={faqSchema} />
   <Header variant="subpage" activePage="tours" />

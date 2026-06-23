@@ -76,7 +76,7 @@ Cabo San Lucas has many beautiful beaches, but some are better suited for romanc
 
 Lover's Beach is a must-visit for honeymooners. Accessible only by boat, this secluded beach offers stunning rock formations and clear turquoise waters. Couples can bring a picnic and spend a quiet afternoon soaking up the sun.
 
-For a more peaceful setting, Santa Mar&iacute;a Beach is ideal for <a href="/tours/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">snorkeling</a> and relaxing in a calm bay. The soft golden sand and crystal-clear waters make it one of the best beaches for a romantic day by the sea.
+For a more peaceful setting, Santa Mar&iacute;a Beach is ideal for <a href="/tours/snorkeling-cruise/" class="text-accent-gold font-semibold hover:underline">snorkeling</a> and relaxing in a calm bay. The soft golden sand and crystal-clear waters make it one of the best beaches for a romantic day by the sea.
 
 Chileno Bay is another great option. Its shallow waters are perfect for swimming and snorkeling, and the surrounding coral reef attracts colorful marine life, making it a great spot for couples who love the ocean.
 

@@ -189,9 +189,9 @@ January and February are the peak months. Humpback and gray whale populations ov
 
 No. Swimming with whales is not permitted in Mexico. Federal regulations require boats to maintain a 30-meter distance, and entering the water near whales is prohibited. This protects both the animals and swimmers &mdash; a whale&rsquo;s tail fluke can weigh several hundred kilograms.
 
-**Private vs. shared whale-watching tour &mdash; which is better?**
+**Private vs. group whale-watching tour &mdash; which is better?**
 
-A private tour gives you flexibility on timing, route, and how long you stay near whales. A shared tour costs less and still offers excellent sightings &mdash; the whales are the same regardless of the boat. For photographers or families with small children, private is usually worth the upgrade.
+A private tour gives you flexibility on timing, route, and how long you stay near whales. A group tour costs less and still offers excellent sightings &mdash; the whales are the same regardless of the boat. For photographers or families with small children, private is usually worth the upgrade.
 
 **Are whales dangerous to boats?**
 
@@ -220,10 +220,10 @@ Whale-watching boats in Cabo have an excellent safety record. Captains are train
     },
     {
       "@type": "Question",
-      "name": "Is a private or shared whale-watching tour better?",
+      "name": "Is a private or group whale-watching tour better?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A private tour gives you flexibility on timing, route, and how long you stay near whales. A shared tour costs less and still offers excellent sightings. For photographers or families with small children, private is usually worth the upgrade."
+        "text": "A private tour gives you flexibility on timing, route, and how long you stay near whales. A group tour costs less and still offers excellent sightings. For photographers or families with small children, private is usually worth the upgrade."
       }
     },
     {

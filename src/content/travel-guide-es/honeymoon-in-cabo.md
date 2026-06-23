@@ -76,7 +76,7 @@ Cabo San Lucas tiene muchas playas hermosas, pero algunas son ideales para el ro
 
 Playa del Amor es visita obligada para reci&eacute;n casados. Accesible solo en barco, esta playa apartada ofrece formaciones rocosas espectaculares y aguas turquesas. Las parejas pueden llevar un picnic y pasar una tarde tranquila tomando el sol.
 
-Para un ambiente m&aacute;s tranquilo, Playa Santa Mar&iacute;a es ideal para hacer <a href="/es/tours/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">snorkel</a> y relajarse en una bah&iacute;a calmada. La arena dorada suave y las aguas cristalinas la hacen una de las mejores playas para un d&iacute;a rom&aacute;ntico junto al mar.
+Para un ambiente m&aacute;s tranquilo, Playa Santa Mar&iacute;a es ideal para hacer <a href="/es/tours/snorkeling-cruise/" class="text-accent-gold font-semibold hover:underline">snorkel</a> y relajarse en una bah&iacute;a calmada. La arena dorada suave y las aguas cristalinas la hacen una de las mejores playas para un d&iacute;a rom&aacute;ntico junto al mar.
 
 Bah&iacute;a Chileno es otra gran opci&oacute;n. Sus aguas poco profundas son perfectas para nadar y hacer snorkel, y el arrecife de coral atrae vida marina colorida, lo que la hace excelente para parejas que aman el oc&eacute;ano.
 

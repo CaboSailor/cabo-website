@@ -12,10 +12,10 @@
     "bachelorette-party": [
       "bachelorette/celebration-on-a-sunny-yacht-party.png"
     ],
-    "shared-snorkeling": [
+    "snorkeling-cruise": [
       "guests-on-sailboats/sailing-through-cabo's-vibrant-waters.png"
     ],
-    "shared-sunset": [
+    "sunset-sailing": [
       "guests-on-sailboats/sailboat-relaxation-under-golden-hour-sun.png"
     ],
     "scuba-diving": [
@@ -43,7 +43,7 @@
       "boats/sailing-38/cabo-sailing-38-home-boat.png",
       "guests-on-sailboats/relaxing-sailboat-getaway-with-friends.png"
     ],
-    "shared-sailing": [
+    "sailing-cruise": [
       "boats/sailing-42/cabosailing-sailiboat-42.png"
     ]
   }

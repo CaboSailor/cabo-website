@@ -125,7 +125,7 @@ Aqu&iacute; tienes un desglose realista para una pareja con 5 noches en 2026:
 
 ## &iquest;Vale la pena Cabo para&hellip;
 
-**&iquest;Familias?** S&iacute; &mdash; si quieres un destino de playa seguro y c&oacute;modo, con agua tranquila (Playa M&eacute;dano), clima confiable y actividades que les encantan a los niños como <a href="/es/tours/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">snorkel</a> y avistamiento de ballenas. Los resorts todo incluido facilitan el control del presupuesto. La principal contra es el costo &mdash; Cabo es m&aacute;s caro que la Riviera Maya para familias.
+**&iquest;Familias?** S&iacute; &mdash; si quieres un destino de playa seguro y c&oacute;modo, con agua tranquila (Playa M&eacute;dano), clima confiable y actividades que les encantan a los niños como <a href="/es/tours/snorkeling-cruise/" class="text-accent-gold font-semibold hover:underline">snorkel</a> y avistamiento de ballenas. Los resorts todo incluido facilitan el control del presupuesto. La principal contra es el costo &mdash; Cabo es m&aacute;s caro que la Riviera Maya para familias.
 
 **&iquest;Lunamieleros?** Por supuesto. Los paisajes espectaculares de Cabo &mdash; el Arco, los paisajes de desierto y mar, los atardeceres sobre el Pac&iacute;fico &mdash; son dif&iacute;ciles de superar. Un <a href="/es/tours/private-sunset/" class="text-accent-gold font-semibold hover:underline">crucero privado al atardecer</a> es una de las actividades m&aacute;s populares para luna de miel por una buena raz&oacute;n.
 
@@ -195,7 +195,7 @@ Aqu&iacute; tienes un desglose realista para una pareja con 5 noches en 2026:
 <ul class="spot-list">
   <li><strong>Viaja en temporada media</strong> &mdash; mayo&ndash;junio y septiembre&ndash;octubre ofrecen las mejores ofertas en vuelos y hoteles. El clima sigue siendo c&aacute;lido.</li>
   <li><strong>Come donde comen los locales</strong> &mdash; las taquer&iacute;as y los puestos de mariscos en el centro de Cabo sirven excelente comida por $5&ndash;$15 por persona.</li>
-  <li><strong>Reserva tours compartidos</strong> &mdash; un <a href="/es/tours/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">crucero de snorkel compartido</a> te da la misma ruta que un charter privado a una fracci&oacute;n del precio.</li>
+  <li><strong>Reserva tours compartidos</strong> &mdash; un <a href="/es/tours/snorkeling-cruise/" class="text-accent-gold font-semibold hover:underline">crucero de snorkel</a> te da la misma ruta que un charter privado a una fracci&oacute;n del precio.</li>
   <li><strong>Evita el taxi al corredor hotelero</strong> &mdash; usa un <a href="/es/shuttle-service/" class="text-accent-gold font-semibold hover:underline">shuttle compartido del aeropuerto</a> en lugar de un traslado privado.</li>
   <li><strong>Actividades gratis</strong> &mdash; camina por la marina, n&aacute;dale a Playa M&eacute;dano, explora el Art Walk de los jueves en San Jos&eacute; del Cabo, o haz una caminata en Fox Canyon.</li>
 </ul>

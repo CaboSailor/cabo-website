@@ -52,13 +52,13 @@ Pricing also changes based on inclusions and upgrades. Extras such as gourmet me
 
 ---
 
-## Private Sailing Vs. Shared Sailing
+## Private Sailing Vs. Sailing Cruise
 
-Private sailing gives you the entire boat to yourself. You decide the schedule, route, and pace. Shared sailing means you join other guests on the same vessel. Each has its pros and cons.
+Private sailing gives you the entire boat to yourself. You decide the schedule, route, and pace. Group sailing means you join other guests on the same vessel. Each has its pros and cons.
 
 Private charters are ideal for romantic getaways, family trips, or special occasions. You enjoy complete privacy, flexible timing, and personalized service. Onboard staff focus only on your group, which makes the experience smoother and more relaxed.
 
-Shared sails are budget-friendly, usually costing $80 to $120 per person for a 2- to 3-hour trip. They're great for solo travelers or those who enjoy socializing. However, they often follow fixed routes and schedules, and space is shared with strangers.
+Group sailing cruises are budget-friendly, usually costing $80 to $120 per person for a 2- to 3-hour trip. They're great for solo travelers or those who enjoy socializing. However, they often follow fixed routes and schedules, and space is shared with strangers.
 
 ---
 

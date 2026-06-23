@@ -8,7 +8,7 @@ category: "Activities"
 categoryLink: "/es/travel-guide-activities/"
 activeSubmenu: "activities"
 bestTime: "Todo el año — tiendas y mercados abren todos los días"
-relatedActivity: "/es/tours/shared-snorkeling/"
+relatedActivity: "/es/tours/snorkeling-cruise/"
 sidebarType: "default"
 ---
 
@@ -104,4 +104,4 @@ Para una experiencia de compras m&aacute;s relajada, ve a The Shoppes at Palmill
 
 Si buscas joyer&iacute;a fina, arte local o moda, vas a encontrar algo especial aqu&iacute;. Despu&eacute;s de recorrer las tiendas, disfruta un caf&eacute; mientras admiras el paisaje. El ambiente tranquilo y la oferta de alta gama lo hacen el favorito de quienes buscan una experiencia de compras m&aacute;s exclusiva y reposada.
 
-¿Necesitas un descanso de las tiendas? Pasa una mañana en el mar con un <a href="/es/tours/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">crucero de snorkel</a> &mdash; la forma perfecta de equilibrar la terapia de compras con una aventura en el oc&eacute;ano.
+¿Necesitas un descanso de las tiendas? Pasa una mañana en el mar con un <a href="/es/tours/snorkeling-cruise/" class="text-accent-gold font-semibold hover:underline">crucero de snorkel</a> &mdash; la forma perfecta de equilibrar la terapia de compras con una aventura en el oc&eacute;ano.

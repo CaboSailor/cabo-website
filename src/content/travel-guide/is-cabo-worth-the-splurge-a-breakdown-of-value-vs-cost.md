@@ -125,13 +125,13 @@ Here's a realistic breakdown for a couple staying 5 nights in 2026:
 
 ## Is Cabo worth it for&hellip;
 
-**Families?** Yes &mdash; if you want a safe, easy beach destination with calm water (Medano Beach), reliable weather, and activities kids love like <a href="/tours/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">snorkeling</a> and whale watching. All-inclusive resorts simplify budgeting. The main trade-off is cost &mdash; Cabo is pricier than Riviera Maya for families.
+**Families?** Yes &mdash; if you want a safe, easy beach destination with calm water (Medano Beach), reliable weather, and activities kids love like <a href="/tours/snorkeling-cruise/" class="text-accent-gold font-semibold hover:underline">snorkeling</a> and whale watching. All-inclusive resorts simplify budgeting. The main trade-off is cost &mdash; Cabo is pricier than Riviera Maya for families.
 
 **Honeymooners?** Absolutely. Cabo's dramatic scenery &mdash; the Arch, desert-meets-ocean landscapes, sunsets over the Pacific &mdash; is hard to beat. A <a href="/tours/private-sunset/" class="text-accent-gold font-semibold hover:underline">private sunset cruise</a> is one of the most popular honeymoon activities for a reason.
 
 **Bachelorette groups?** One of the top destinations for it. Short flights from most US cities, boat parties, pool scene, and nightlife. A <a href="/tours/bachelorette/" class="text-accent-gold font-semibold hover:underline">private yacht charter</a> is the signature Cabo bachelorette experience.
 
-**Budget travelers?** It's doable but requires planning. Stay in downtown Cabo (not the hotel corridor), eat at local taquer&iacute;as, use shared tours, and travel in shoulder season (May&ndash;Jun, Sep&ndash;Oct). You can do Cabo for under $150/day per person.
+**Budget travelers?** It's doable but requires planning. Stay in downtown Cabo (not the hotel corridor), eat at local taquer&iacute;as, use group tours, and travel in shoulder season (May&ndash;Jun, Sep&ndash;Oct). You can do Cabo for under $150/day per person.
 
 **Luxury travelers?** This is where Cabo shines. The concentration of five-star resorts, private charters, and high-end dining is among the best in Mexico. If you're spending the money anyway, Cabo delivers.
 
@@ -195,7 +195,7 @@ Here's a realistic breakdown for a couple staying 5 nights in 2026:
 <ul class="spot-list">
   <li><strong>Travel in shoulder season</strong> &mdash; May&ndash;June and September&ndash;October offer the best deals on flights and hotels. Weather is still warm.</li>
   <li><strong>Eat where locals eat</strong> &mdash; taquer&iacute;as and mariscos stands in downtown Cabo serve excellent food for $5&ndash;$15 per person.</li>
-  <li><strong>Book shared tours</strong> &mdash; a <a href="/tours/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">shared snorkeling cruise</a> gives you the same route as a private charter at a fraction of the price.</li>
+  <li><strong>Book group tours</strong> &mdash; a <a href="/tours/snorkeling-cruise/" class="text-accent-gold font-semibold hover:underline">snorkeling cruise</a> gives you the same route as a private charter at a fraction of the price.</li>
   <li><strong>Skip the hotel corridor taxi</strong> &mdash; use a <a href="/shuttle-service/" class="text-accent-gold font-semibold hover:underline">shared airport shuttle</a> instead of a private transfer for airport runs.</li>
   <li><strong>Free activities</strong> &mdash; walk the marina, swim at Medano Beach, explore the Thursday Art Walk in San Jos&eacute; del Cabo, or hike Fox Canyon.</li>
 </ul>
@@ -220,7 +220,7 @@ September and early October typically have the lowest prices for flights and hot
 
 **Can you do Cabo on a budget?**
 
-Yes. Stay downtown, eat at local spots, use shared tours and shuttles, and travel in shoulder season. A budget-conscious couple can do Cabo for under $300/day total.
+Yes. Stay downtown, eat at local spots, use group tours and shuttles, and travel in shoulder season. A budget-conscious couple can do Cabo for under $300/day total.
 
 **Is Cabo safe for tourists?**
 
@@ -252,7 +252,7 @@ Yes. Cabo San Lucas is one of Mexico's safest tourist destinations. Read our ful
       "name": "Can you do Cabo San Lucas on a budget?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Stay downtown, eat at local spots, use shared tours and shuttles, and travel in shoulder season. A budget-conscious couple can do Cabo for under $300/day total."
+        "text": "Yes. Stay downtown, eat at local spots, use group tours and shuttles, and travel in shoulder season. A budget-conscious couple can do Cabo for under $300/day total."
       }
     },
     {

@@ -152,6 +152,6 @@ Though Cabo's winter temperatures remain mild, ocean breezes can make it feel co
 
 Whale watching in Cabo San Lucas is more than just an excursion &mdash; it is an unforgettable connection with nature. From witnessing humpback whales breach against the backdrop of Land's End to seeing a mother guide her newborn through the Sea of Cortez, each experience brings a deeper appreciation for marine life.
 
-To make the most of this incredible journey, choosing the right experience matters. Cabo Sailing offers private yacht charters, luxury sailing experiences, and shared tours, ensuring comfort, personalized service, and a front-row seat to nature's most awe-inspiring show. With experienced captains, well-maintained boats, and a commitment to exceeding expectations, we create an atmosphere where guests return time and time.
+To make the most of this incredible journey, choosing the right experience matters. Cabo Sailing offers private yacht charters, luxury sailing experiences, and group tours, ensuring comfort, personalized service, and a front-row seat to nature's most awe-inspiring show. With experienced captains, well-maintained boats, and a commitment to exceeding expectations, we create an atmosphere where guests return time and time.
 
 For those seeking an adventure, Cabo Sailing's whale-watching tours in Cabo San Lucas provide the perfect blend of relaxation and discovery.

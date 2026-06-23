@@ -66,7 +66,7 @@ La advertencia importante: **no todas las playas de Cabo son seguras para nadar.
     <tr class="border-b border-gray-100">
       <td class="px-4 py-3 font-semibold">8&ndash;11</td>
       <td class="px-4 py-3">Nadar de forma independiente y usar equipo completo de snorkel</td>
-      <td class="px-4 py-3">Snorkel en la playa en Chileno o Santa Mar&iacute;a. Pueden unirse a un <a href="/es/tours/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">tour de snorkel compartido</a> tranquilo con supervisi&oacute;n de los pap&aacute;s</td>
+      <td class="px-4 py-3">Snorkel en la playa en Chileno o Santa Mar&iacute;a. Pueden unirse a un <a href="/es/tours/snorkeling-cruise/" class="text-accent-gold font-semibold hover:underline">tour de crucero de snorkel</a> tranquilo con supervisi&oacute;n de los pap&aacute;s</td>
     </tr>
     <tr>
       <td class="px-4 py-3 font-semibold">12+</td>
@@ -114,7 +114,7 @@ Tener el equipo correcto hace toda la diferencia. Un visor que no ajusta bien y 
     <li>&bull; <strong>Gu&iacute;as en el agua</strong> &mdash; busca tours donde los gu&iacute;as nadan junto a los hu&eacute;spedes, no solo observan desde el barco</li>
     <li>&bull; <strong>Paradas de snorkel poco profundas</strong> &mdash; algunos tours van a sitios profundos que no son apropiados para ni&ntilde;os. Pregunta sobre la profundidad y condiciones de cada parada</li>
     <li>&bull; <strong>Sombra y snacks</strong> &mdash; barcos con &aacute;reas cubiertas y snacks/bebidas incluidos hacen la experiencia general m&aacute;s c&oacute;moda para familias</li>
-    <li>&bull; <strong>Horario flexible</strong> &mdash; un <a href="/es/tours/shared-snorkeling/" class="text-accent-gold font-semibold hover:underline">tour de snorkel compartido</a> con un operador familiar es una buena opci&oacute;n para la mayor&iacute;a de las familias</li>
+    <li>&bull; <strong>Horario flexible</strong> &mdash; un <a href="/es/tours/snorkeling-cruise/" class="text-accent-gold font-semibold hover:underline">tour de crucero de snorkel</a> con un operador familiar es una buena opci&oacute;n para la mayor&iacute;a de las familias</li>
   </ul>
 </div>
 
