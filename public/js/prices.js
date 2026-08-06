@@ -51,6 +51,35 @@
         if (code) el.textContent = code;
       });
 
+      // --- 1c. "Up to XX% off" banners: data-max-discount="page" uses the boats
+      // shown on this page; "site" uses the highest discount across all boats ---
+      document.querySelectorAll('[data-max-discount]').forEach(function(el){
+        var ids;
+        if(el.dataset.maxDiscount === 'site'){
+          ids = Object.keys(data.boats);
+        } else {
+          ids = [];
+          document.querySelectorAll('[data-boat]').forEach(function(c){
+            if(ids.indexOf(c.dataset.boat) === -1) ids.push(c.dataset.boat);
+          });
+          if(ids.length === 0) ids = Object.keys(data.boats);
+        }
+        var max = 0;
+        ids.forEach(function(id){
+          var b = data.boats[id];
+          if(b && b.discount > max) max = b.discount;
+        });
+        if(max > 0){
+          var wb = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, null, false);
+          while(wb.nextNode()){
+            var node = wb.currentNode;
+            if(/\d+%/.test(node.textContent)){
+              node.textContent = node.textContent.replace(/\d+%/, max + '%');
+            }
+          }
+        }
+      });
+
       // --- 2. Activity sections: update "From $X" and discount badges ---
       document.querySelectorAll('[data-activity]').forEach(function(section){
         var actId = section.dataset.activity;

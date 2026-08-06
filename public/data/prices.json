@@ -56,36 +56,36 @@
       "name": "Luxury Yacht 51'",
       "regularPrice": 1690,
       "extraGuestRegular": 100,
-      "discount": 35,
-      "promoCode": "SAIL-35"
+      "discount": 25,
+      "promoCode": "CABO25"
     },
     "yacht-45": {
       "name": "Luxury Yacht 45'",
       "regularPrice": 1520,
       "extraGuestRegular": 100,
-      "discount": 35,
-      "promoCode": "SAIL-35"
+      "discount": 25,
+      "promoCode": "CABO25"
     },
     "yacht-42": {
       "name": "Luxury Yacht 42'",
       "regularPrice": 1350,
       "extraGuestRegular": 100,
-      "discount": 35,
-      "promoCode": "SAIL-35"
+      "discount": 25,
+      "promoCode": "CABO25"
     },
     "sailing-42": {
       "name": "Private Sailing 42'",
       "regularPrice": 1090,
       "extraGuestRegular": 100,
-      "discount": 40,
-      "promoCode": "SAIL-40"
+      "discount": 35,
+      "promoCode": "CABO35"
     },
     "sailing-38": {
       "name": "Private Sailing 38'",
       "regularPrice": 825,
       "extraGuestRegular": 100,
-      "discount": 40,
-      "promoCode": "SAIL-40"
+      "discount": 35,
+      "promoCode": "CABO35"
     },
     "sailing-cruise": {
       "name": "Sailing Cruise",
