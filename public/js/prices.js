@@ -51,6 +51,15 @@
         if (code) el.textContent = code;
       });
 
+      // --- 1b2. Comparison-table cells: data-boat-price="<boatId>" shows the
+      // discounted from-price for that boat ---
+      document.querySelectorAll('[data-boat-price]').forEach(function(el){
+        var b = data.boats[el.dataset.boatPrice];
+        if(!b) return;
+        var d = b.discount || 0;
+        el.textContent = '$' + Math.round(b.regularPrice * (1 - d / 100)).toLocaleString();
+      });
+
       // --- 1c. "Up to XX% off" banners: data-max-discount="page" uses the boats
       // shown on this page; "site" uses the highest discount across all boats ---
       document.querySelectorAll('[data-max-discount]').forEach(function(el){
