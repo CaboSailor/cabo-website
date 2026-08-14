@@ -19,6 +19,8 @@ import yacht51 from '../../assets/images/boats/yacht-51/cabo-sailing-yacht-51-bo
 import yacht45 from '../../assets/images/boats/yacht-45/cabo-private-yacht-45-charter.png';
 import yacht42 from '../../assets/images/boats/yacht-42/cabo-sailig-yacht-42-boat.png';
 import sailing42 from '../../assets/images/boats/sailing-42/cabo-sailing-42-sailing-view.png';
+import groupSnorkel from '../../assets/images/guests-on-sailboats/joyful-sailboat-adventure-by-the-coast.png';
+import groupSunset from '../../assets/images/guests-on-sailboats/sailing-towards-cabos-golden-hour.png';
 import sailing38 from '../../assets/images/boats/sailing-38/cabo-sailing-38-home-boat.png';
 
 const breadcrumbSchema = JSON.stringify({
@@ -140,7 +142,7 @@ const breadcrumbSchema = JSON.stringify({
 
       </section>
 
-      <!-- Fleet (5 boats side-by-side) -->
+      <!-- Fleet (7 boats side-by-side) -->
       <section>
         <div class="flex items-center gap-4 mb-6">
           <h2 class="text-xl lg:text-2xl font-serif text-navy font-semibold">Toda la flota &mdash; 25-40% de descuento</h2>
@@ -241,7 +243,7 @@ const breadcrumbSchema = JSON.stringify({
                 </div>
                 <span class="text-slate-500 text-[10px] font-medium uppercase">/ 1&ndash;4 huéspedes</span>
               </div>
-              <a href="https://wa.me/526241916997?text=Hola%2C%20me%20gustaria%20reservar%20el%20Velero%2042" target="_blank" class="block w-full bg-navy text-white font-bold text-[10px] py-2.5 rounded-lg uppercase tracking-widest text-center shadow">Ver Disponibilidad</a>
+              <button type="button" onclick="openRezdyModal('642955','productsCalendar')" class="block w-full bg-navy text-white font-bold text-[10px] py-2.5 rounded-lg uppercase tracking-widest text-center shadow">Ver Disponibilidad</button>
             </div>
           </div>
 
@@ -266,6 +268,54 @@ const breadcrumbSchema = JSON.stringify({
                 <span class="text-slate-500 text-[10px] font-medium uppercase">/ 1&ndash;4 huéspedes</span>
               </div>
               <button type="button" onclick="openRezdyModal('165682')" class="block w-full bg-navy text-white font-bold text-[10px] py-2.5 rounded-lg uppercase tracking-widest text-center shadow">Ver Disponibilidad</button>
+            </div>
+          </div>
+
+          <!-- Group Snorkeling Sailing -->
+          <div class="bg-white border border-border-light rounded-2xl overflow-hidden shadow-lg shadow-navy/5" data-boat="sailing-cruise">
+            <div class="relative aspect-[3/4] overflow-hidden">
+              <Image src={groupSnorkel} alt="Esnórquel compartido en velero en Cabo San Lucas" class="w-full h-full object-cover" style="object-position: 57% center;" width={1200} height={800} />
+              <div class="absolute inset-0 bg-gradient-to-t from-navy/15 via-transparent to-transparent"></div>
+              <div class="absolute bottom-3 left-4">
+                <h4 class="text-white text-sm lg:text-base font-semibold">Esnórquel en Grupo</h4>
+                <div class="flex items-center gap-1 text-white/80 text-[10px] mt-0.5 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Hasta 14</span></div>
+              </div>
+              <div class="absolute top-3 right-3 bg-white text-navy font-bold text-xs px-2 py-1 rounded-lg shadow">-40%</div>
+            </div>
+            <div class="p-3 space-y-3">
+              <div class="flex flex-col">
+                <span class="text-accent-gold line-through decoration-1 text-xs font-semibold">$120</span>
+                <div class="flex items-baseline gap-1">
+                  <span class="text-slate-500 text-[10px] font-medium uppercase">desde</span>
+                  <span class="text-navy font-bold text-lg">$72</span>
+                </div>
+                <span class="text-slate-500 text-[10px] font-medium uppercase">/ persona</span>
+              </div>
+              <button type="button" onclick="openRezdyModal('744011','calendarWidget','sailing-cruise')" class="block w-full bg-accent-gold text-white font-bold text-[10px] py-2.5 rounded-lg uppercase tracking-widest text-center shadow">Ver Disponibilidad</button>
+            </div>
+          </div>
+
+          <!-- Group Sunset Sailing -->
+          <div class="bg-white border border-border-light rounded-2xl overflow-hidden shadow-lg shadow-navy/5" data-boat="sailing-cruise">
+            <div class="relative aspect-[3/4] overflow-hidden">
+              <Image src={groupSunset} alt="Atardecer compartido en velero en Cabo San Lucas" class="w-full h-full object-cover" style="object-position: 35% center;" width={1200} height={800} />
+              <div class="absolute inset-0 bg-gradient-to-t from-navy/15 via-transparent to-transparent"></div>
+              <div class="absolute bottom-3 left-4">
+                <h4 class="text-white text-sm lg:text-base font-semibold">Atardecer en Grupo</h4>
+                <div class="flex items-center gap-1 text-white/80 text-[10px] mt-0.5 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Hasta 14</span></div>
+              </div>
+              <div class="absolute top-3 right-3 bg-white text-navy font-bold text-xs px-2 py-1 rounded-lg shadow">-40%</div>
+            </div>
+            <div class="p-3 space-y-3">
+              <div class="flex flex-col">
+                <span class="text-accent-gold line-through decoration-1 text-xs font-semibold">$120</span>
+                <div class="flex items-baseline gap-1">
+                  <span class="text-slate-500 text-[10px] font-medium uppercase">desde</span>
+                  <span class="text-navy font-bold text-lg">$72</span>
+                </div>
+                <span class="text-slate-500 text-[10px] font-medium uppercase">/ persona</span>
+              </div>
+              <button type="button" onclick="openRezdyModal('744012','calendarWidget','sailing-cruise')" class="block w-full bg-accent-gold text-white font-bold text-[10px] py-2.5 rounded-lg uppercase tracking-widest text-center shadow">Ver Disponibilidad</button>
             </div>
           </div>
 

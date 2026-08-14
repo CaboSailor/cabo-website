@@ -38,8 +38,8 @@ function getImage(relativePath: string): ImageMetadata {
   return mod.default;
 }
 
-function getImages(paths: string[]): ImageMetadata[] {
-  return paths.map(getImage);
+function getImages(paths: (string | { src: string })[]): ImageMetadata[] {
+  return paths.map((p) => getImage(typeof p === 'string' ? p : p.src));
 }
 
 const activities = [
@@ -403,20 +403,20 @@ const faqSchema = JSON.stringify({
     <div class="w-full bg-white border-2 border-navy/80 rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/10" data-boat="sailing-cruise">
       <CarouselImage type="boat" id="sailing-cruise" alt="Sailing Cruise Boat 42' in Cabo San Lucas" imgStyle="transform: scale(1.1); object-position: center 90%;">
         <div class="absolute inset-0 bg-gradient-to-t from-navy/15 via-transparent to-transparent"></div>
+        <div class="absolute top-0 left-0 right-0 z-10 bg-navy text-white text-center py-2 lg:py-2.5 text-[11px] lg:text-[10px] font-bold uppercase tracking-[0.15em] lg:tracking-[0.2em] flex items-center justify-center gap-2"><span class="material-symbols-outlined text-gold text-sm lg:text-base">groups</span>Group Sailing — Join Others</div>
         <div class="absolute bottom-5 left-6">
           <h4 class="text-white text-lg lg:text-xl">Sailing Boat 38'–42'</h4>
           <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs lg:text-[10px] mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-sm lg:text-base">group</span><span>Up to 14 Guests</span></div>
         </div>
-        <div class="absolute top-4 right-4 bg-accent-gold-dark text-white text-[10px] lg:text-[9px] font-bold px-2.5 py-1 lg:px-3 lg:py-1 rounded-full uppercase tracking-widest">Sailing Cruise</div>
         <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-40%</div>
       </CarouselImage>
-      <div class="p-4 space-y-4 lg:p-4 lg:space-y-4">
+      <div class="p-4 space-y-4 lg:p-4 lg:space-y-2">
         <div class="space-y-4">
-          <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-accent-gold line-through decoration-1 text-[1.1rem] lg:text-[1.25rem] font-semibold">$120</span><div class="flex items-baseline gap-2"><span class="text-slate-500 text-[11px] font-medium uppercase">from</span><span class="text-navy font-bold text-2xl lg:text-2xl">$102</span><span class="text-slate-500 text-[11px] font-medium uppercase">/ person</span></div></div></div>
+          <div class="flex justify-between items-end"><span class="order-2 text-accent-gold line-through decoration-1 text-[1.1rem] lg:text-[1.25rem] font-semibold">$120</span><div class="order-1 flex items-baseline gap-2"><span class="text-slate-500 text-[11px] font-medium uppercase">from</span><span class="text-navy font-bold text-2xl lg:text-2xl">$102</span><span class="text-slate-500 text-[11px] font-medium uppercase">/ person</span></div></div>
         </div>
-        <button type="button" onclick="openRezdyModal('642955','productsCalendar','sailing-cruise')" class="block w-full bg-accent-gold text-white font-bold text-[11px] lg:text-[10px] py-3.5 lg:py-3 rounded-xl uppercase tracking-[0.1em] lg:tracking-[0.15em] text-center shadow-lg">Check Availability</button>
+        <button type="button" onclick="openRezdyModal('744011','calendarWidget','sailing-cruise')" class="block w-full bg-accent-gold text-white font-bold text-[11px] lg:text-[10px] py-3.5 lg:py-2.5 rounded-xl uppercase tracking-[0.1em] lg:tracking-[0.15em] text-center shadow-lg">Snorkel — Check Availability</button>
+        <button type="button" onclick="openRezdyModal('744012','calendarWidget','sailing-cruise')" class="block w-full bg-accent-gold text-white font-bold text-[11px] lg:text-[10px] py-3.5 lg:py-2.5 rounded-xl uppercase tracking-[0.1em] lg:tracking-[0.15em] text-center shadow-lg">Sunset — Check Availability</button>
       </div>
-      <div class="bg-navy text-white text-center py-2 lg:py-2.5 text-[11px] lg:text-[10px] font-bold uppercase tracking-[0.15em] lg:tracking-[0.2em] flex items-center justify-center gap-2"><span class="material-symbols-outlined text-gold text-sm lg:text-base">groups</span>Group Sailing — Join Others</div>
     </div>
 
   </div>

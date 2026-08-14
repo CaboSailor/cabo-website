@@ -44,7 +44,10 @@
       "guests-on-sailboats/relaxing-sailboat-getaway-with-friends.png"
     ],
     "sailing-cruise": [
-      "boats/sailing-42/cabosailing-sailiboat-42.png"
+      "boats/sailing-42/cabosailing-sailiboat-42.png",
+      { "src": "guests-on-sailboats/cabo-sailing-guests-waving.jpg", "style": "object-position: center;", "width": 1080, "height": 1059 },
+      { "src": "guests-on-sailboats/sailboat-relaxation-under-golden-hour-sun.png", "style": "object-position: 55% center;", "width": 1200, "height": 800 },
+      { "src": "guests-on-sailboats/sunshine-and-celebration-on-the-yacht.png", "style": "object-position: 55% center;", "width": 1200, "height": 799 }
     ]
   }
 }

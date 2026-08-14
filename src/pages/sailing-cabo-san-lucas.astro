@@ -292,17 +292,19 @@ const videoSchema = JSON.stringify({
     <div class="w-full bg-white border border-border-light rounded-[2.5rem] overflow-hidden shadow-xl shadow-navy/5" data-boat="sailing-cruise">
       <CarouselImage type="boat" id="sailing-cruise" alt="Group sailing cruise in Cabo San Lucas — sailboat at sea">
         <div class="absolute inset-0 bg-gradient-to-t from-navy/25 via-navy/5 to-transparent"></div>
+        <div class="absolute top-0 left-0 right-0 z-10 bg-navy text-white text-center py-2 lg:py-2.5 text-[11px] lg:text-[10px] font-bold uppercase tracking-[0.15em] lg:tracking-[0.2em] flex items-center justify-center gap-2"><span class="material-symbols-outlined text-gold text-sm lg:text-base">groups</span>Group Sailing — Join Others</div>
         <div class="absolute bottom-5 left-6">
           <h3 class="text-white text-lg lg:text-xl">Sailing Cruise</h3>
           <div class="flex items-center gap-1 lg:gap-2 text-white/80 text-xs mt-0.5 lg:mt-1 font-semibold uppercase tracking-wider"><span class="material-symbols-outlined text-gold text-xs">group</span><span>Mixed group, up to 14</span></div>
         </div>
-        <div class="absolute top-4 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Best Value</div>
+        <div class="absolute top-12 right-4 bg-gold text-white text-[10px] lg:text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Best Value</div>
         <div class="absolute bottom-4 right-4 bg-white text-navy font-bold text-sm px-3 py-1.5 rounded-xl shadow-lg">-15%</div>
       </CarouselImage>
       <div class="p-4 space-y-4">
         <p class="text-slate-700 text-sm italic text-center pb-3 border-b border-border-light/50">Social vibe &mdash; solo travelers &amp; small groups</p>
-        <div class="flex justify-between items-end"><div class="flex flex-col"><span class="text-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$120</span><div class="flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$102</span><span class="text-slate-500 text-[11px] font-medium uppercase">/ person</span></div></div><div class="flex flex-col items-end"><span class="text-slate-500 text-[11px] font-medium">Departures</span><span class="text-navy font-bold text-sm">9:00 AM daily</span></div></div>
-        <button type="button" onclick="openRezdyModal('744011')" class="block w-full bg-navy text-white font-bold text-[11px] py-3.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg cursor-pointer">Check Availability</button>
+        <div class="flex justify-between items-end"><span class="order-2 text-gold line-through decoration-2 text-[0.9rem] lg:text-[1.05rem] font-semibold">$120</span><div class="order-1 flex items-baseline gap-2"><span class="text-navy font-bold text-2xl">$102</span><span class="text-slate-500 text-[11px] font-medium uppercase">/ person</span></div></div>
+        <button type="button" onclick="openRezdyModal('744011','calendarWidget','sailing-cruise')" class="block w-full bg-accent-gold text-white font-bold text-[11px] py-3.5 lg:py-2.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg cursor-pointer">Snorkel — Check Availability</button>
+        <button type="button" onclick="openRezdyModal('744012','calendarWidget','sailing-cruise')" class="block w-full bg-accent-gold text-white font-bold text-[11px] py-3.5 lg:py-2.5 rounded-xl uppercase tracking-[0.15em] text-center shadow-lg cursor-pointer">Sunset — Check Availability</button>
       </div>
     </div>
     <!-- Private Sailing 42' -->

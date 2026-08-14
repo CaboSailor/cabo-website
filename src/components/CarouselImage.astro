@@ -56,16 +56,23 @@ const bucket = type === 'boat'
   ? (carouselConfig.fleet as Record<string, string[]>)
   : (carouselConfig.activities as Record<string, string[]>);
 
-const paths = bucket[id] || [];
-if (!paths.length) {
+// Each entry is a path string, or { src, style, width, height } to override the slide's
+// inline style and/or rendered aspect ratio (e.g. keep a landscape photo's natural ratio
+// so the card crops only its width, with object-position picking the horizontal focus).
+type SlideEntry = string | { src: string; style?: string; width?: number; height?: number };
+const entries = (bucket[id] || []) as SlideEntry[];
+if (!entries.length) {
   throw new Error(`CarouselImage: no images configured for ${type} "${id}" in carousels.json`);
 }
 
-const images: ImageMetadata[] = paths.map((p) => {
+const images: { meta: ImageMetadata; style?: string; width?: number; height?: number }[] = entries.map((entry) => {
+  const p = typeof entry === 'string' ? entry : entry.src;
   const key = `../assets/images/${p}`;
   const mod = allImages[key];
   if (!mod) throw new Error(`CarouselImage: image not found ${p} (looked up as ${key})`);
-  return mod.default;
+  return typeof entry === 'string'
+    ? { meta: mod.default }
+    : { meta: mod.default, style: entry.style, width: entry.width, height: entry.height };
 });
 
 const isMulti = images.length > 1;
@@ -87,12 +94,12 @@ const wrapperClass = [
 <div class={wrapperClass}>
   {images.map((img, idx) => (
     <Image
-      src={img}
+      src={img.meta}
       alt={alt}
       class={`activity-slide ${baseImgClass}${idx > 0 ? ' absolute inset-0' : ''}${groupHoverZoom ? ' group-hover:scale-105 transition-transform duration-500' : ''}`}
-      style={`${slideStyle} opacity:${idx === 0 ? 1 : 0}; transition: opacity 0.5s ease-in-out;`}
-      width={finalWidth}
-      height={finalHeight}
+      style={`${img.style ?? slideStyle} opacity:${idx === 0 ? 1 : 0}; transition: opacity 0.5s ease-in-out;`}
+      width={img.width ?? finalWidth}
+      height={img.height ?? finalHeight}
       format={type === 'boat' ? 'png' : undefined}
       quality={type === 'boat' ? 100 : 80}
     />
